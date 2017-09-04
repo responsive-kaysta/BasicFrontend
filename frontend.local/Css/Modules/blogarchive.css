@@ -1,0 +1,50 @@
+﻿/* blogarchive.less */
+.blogarchive div[class^="col-"] {
+  margin-bottom: 20px !important;
+}
+.blogarchive a {
+  white-space: normal;
+  transition: all 200ms ease;
+  padding: 12px 18px;
+  display: block;
+}
+.blogarchive a:hover {
+  text-decoration: none;
+}
+.blogarchive .date {
+  font-size: .9rem;
+  text-align: right;
+  margin-bottom: 5px;
+}
+.blogarchive h2 {
+  font-size: 1.2rem;
+  font-family: "Lato", sans-serif;
+}
+.blogarchive p {
+  font-size: 1rem;
+}
+.blogarchive a:hover p {
+  text-decoration: underline;
+}
+/*
+.content .equal {
+    max-height: 200px;
+}
+
+.blogarchive .equalizer {
+    min-width: 33%;
+    max-height: 200px;
+}
+
+*/
+@media (min-width: 768px) {
+  section.blogarchive > div > div > a:hover,
+  a:visited:hover {
+    -moz-transform: scale(1.01);
+    -webkit-transform: scale(1.01);
+    transform: scale(1.01);
+  }
+  .blogarchive a:hover p {
+    text-decoration: underline;
+  }
+}

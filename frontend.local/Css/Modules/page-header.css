@@ -1,0 +1,12 @@
+﻿/* page-header */
+.page-header {
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid #eee;
+}
+.page-header {
+  margin-bottom: 0.75rem;
+}
+.page-header > h1 {
+  padding-bottom: 0.75rem;
+}

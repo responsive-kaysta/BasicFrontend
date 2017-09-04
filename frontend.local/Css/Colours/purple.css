@@ -1,0 +1,39 @@
+﻿/* purple.less */
+.purple {
+  background: #C2357B;
+}
+.purple nav > ul li {
+  background: #C2357B;
+  background-color: #C2357B;
+}
+.purple * {
+  color: #fff;
+}
+.purple a,
+.purple a:visited {
+  text-decoration: underline;
+}
+.purple a:hover,
+.purple a:visited:hover {
+  text-decoration: none;
+}
+.purple a.button {
+  border: 1px solid #fff;
+  background: rgba(255, 255, 255, 0);
+  text-decoration: none;
+}
+.purple a.button:hover {
+  background: #fff;
+  color: #C2357B;
+}
+.purple a.button.fill {
+  background: #fff;
+  color: #C2357B;
+}
+.purple a.button.fill:hover {
+  background: rgba(255, 255, 255, 0.5);
+  color: #fff;
+}
+.purple + .triangle:before {
+  border-color: transparent transparent transparent #C2357B;
+}

@@ -1,0 +1,35 @@
+﻿/* tooltipster.less */
+.tooltip_templates {
+  display: none;
+}
+.even {
+  color: black;
+  background-color: lightgray;
+}
+.odd {
+  color: black;
+}
+.tooltipster {
+  display: none;
+  color: black;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.tooltip_ul {
+  color: black;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+ul.tooltip_ul > li {
+  color: black;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.25rem;
+}
+div.tooltip_templates > div > h2,
+p {
+  color: whitesmoke;
+}

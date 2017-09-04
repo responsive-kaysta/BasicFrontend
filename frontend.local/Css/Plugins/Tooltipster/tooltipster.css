@@ -1,0 +1,20 @@
+﻿/* tooltipster.less */
+.tooltip_templates {
+  display: none;
+}
+.even {
+  background-color: lightgray;
+}
+ul.tooltip_ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+li.tooltipster {
+  list-style: none;
+  margin: 0;
+  padding: 0.5em;
+}
+.tooltip_p {
+  color: white;
+}

@@ -1,0 +1,56 @@
+﻿/* dark.less */
+.dark {
+  background: #1c1c1e;
+}
+.dark nav > ul li {
+  background: #1c1c1e;
+  background-color: #1c1c1e;
+}
+.dark a,
+.dark a:visited {
+  color: #dddddd;
+}
+.dark a:hover,
+.dark a:visited:hover {
+  text-decoration: underline;
+}
+.dark a.button {
+  border: 1px solid #fff;
+  background: rgba(255, 255, 255, 0);
+  color: #1c1c1e;
+}
+.dark a.button:hover {
+  background: #fff;
+  color: #1c1c1e;
+}
+.dark a.button.fill {
+  background: #fff;
+  color: #1c1c1e;
+}
+.dark a.button.fill:hover {
+  background: rgba(255, 255, 255, 0.5);
+  color: #1c1c1e;
+}
+.dark code,
+.dark pre {
+  background-color: rgba(248, 248, 248, 0.1);
+}
+.dark + .triangle:before {
+  border-color: transparent transparent transparent #1c1c1e;
+}
+/* blogarchive dark */
+section.blogarchive .dark h2 {
+  font-size: 1.2rem;
+  font-family: "Lato", sans-serif;
+  color: #1c1c1e;
+}
+section.blogarchive .dark .date {
+  font-size: .9rem;
+  text-align: right;
+  color: #1c1c1e;
+}
+section.blogarchive > div.col-md-6 > div.content {
+  border: 1px solid #333;
+  color: #1c1c1e;
+  background: #eee;
+}

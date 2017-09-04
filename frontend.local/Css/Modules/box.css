@@ -1,0 +1,11 @@
+﻿/* box.less */
+.box > .h1 {
+  text-align: center;
+  font-size: 2.0rem;
+  font-weight: 900;
+}
+.box > .h2 {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 700;
+}

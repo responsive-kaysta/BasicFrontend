@@ -1,0 +1,19 @@
+﻿/* banner.less */
+.banner {
+  margin-bottom: 0.75rem;
+}
+.banner-headline {
+  font-size: 62px;
+  text-align: center;
+}
+.banner-tagline {
+  font-weight: 100;
+  font-size: 40px;
+  text-align: center;
+}
+.banner-headline {
+  margin-bottom: 1.25rem;
+}
+.banner-tagline {
+  margin-bottom: 0.75rem;
+}
