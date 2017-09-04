@@ -14171,6 +14171,12 @@ if (typeof jQuery === 'undefined') {
 
 }(jQuery);
 
+/* include.js */
+
+$(document).ready(function () {
+    $('#header').load('/Frontend/Shared/header.html');
+    $('#footer').load('/Frontend/Shared/footer.html');
+});
 /**
  * tooltipster http://iamceege.github.io/tooltipster/
  * A rockin' custom tooltip jQuery plugin

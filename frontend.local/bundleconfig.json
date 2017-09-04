@@ -72,6 +72,8 @@
 
       "Scripts/bootstrap.js",
 
+      "Scripts/Modules/Include/include.js",
+
       "Scripts/Plugins/Tooltipster/tooltipster.bundle.js",
       "Scripts/Plugins/Tooltipster/tooltipster.js",
 
