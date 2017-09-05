@@ -14187,7 +14187,7 @@ $(document).ready(function () {
     $("#colourscheme").change(function () {
         // alert($("#colourscheme :selected").attr('value'))
         var colour = $("#colourscheme :selected").attr('value');
-        window.location = "index.html?colour=" + colour;
+        window.location = "?colour=" + colour;
     });
 
     var vars = [], hash;
@@ -14218,8 +14218,16 @@ $(document).ready(function () {
 
 $(document).ready(function () {
 
-    var module = "";
+    var path = "";
 
+    path = $(location).attr('path'); 
+
+    if (path == null || path == "" || path == "index.html") {
+        $('.main-content').load('/Frontend/Modules/jumbotron.html');
+    }
+
+    /*
+    var module = "";
     $("#moduleloader").change(function () {
         // alert($("#colourscheme :selected").attr('value'))
         module = $("#moduleloader :selected").attr('value');
@@ -14233,12 +14241,8 @@ $(document).ready(function () {
         else if (module == "texts") {
             $('#modules').load('/Frontend/Modules/texts.html');
         }
-
-
     });
-
-    
-
+    */
 
 });
 

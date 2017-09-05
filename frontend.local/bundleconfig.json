@@ -1,30 +1,25 @@
 ﻿[
   {
     "outputFileName": "Content/bundle.css",
-
     "inputFiles": [
-
       "Content/bootstrap.css",
       "Content/bootstrap-theme.css",
-
       "Css/reset.css",
       "Css/global.css",
-
+      /* colours */
       "Css/Colours/dark.css",
       "Css/Colours/light.css",
       "Css/Colours/blue.css",
       "Css/Colours/yellow.css",
       "Css/Colours/purple.css",
-
       "Css/Colours/colours.css",
-
+      /* navbar, header, footer */
       "Css/Modules/navbar.css",
       "Css/Modules/header.css",
       "Css/Modules/footer.css",
-
+      /* modules */
       "Css/Modules/toggle.css",
       "Css/Modules/triangle.css",
-
       "Css/Modules/abstract.css",
       "Css/Modules/banner.css",
       "Css/Modules/blockquote.css",
@@ -40,17 +35,17 @@
       "Css/Modules/jumbotron.css",
       "Css/Modules/panel.css",
       "Css/Modules/page-header.css",
+      "Css/Modules/seperator.css",
       "Css/Modules/text--center.css",
       "Css/Modules/text.css",
       "Css/Modules/video-wrapper.css",
-
+      /* custom */
       "Css/style.css",
-
+      /* tooltipster */
       "Css/Plugins/Tooltipster/tooltipster.bundle.min.css",
       "Css/Plugins/Tooltipster/tooltipster-sideTip-punk.min.css",
-
       "Css/Plugins/Tooltipster/tooltipster.css",
-
+      /* other modules */
       "Css/Plugins/Effects/loadmore.css"
 
     ],
@@ -64,11 +59,9 @@
   {    
     "outputFileName": "Scripts/app.js",
     "inputFiles": [
-
       "Scripts/jquery-3.1.1.js",
       "Scripts/jquery.validate.js",
       "Scripts/jquery.validate.unobtrusive.js",
-
       "Scripts/bootstrap.js",
 
       "Scripts/Modules/System/include.js",
@@ -79,12 +72,8 @@
       "Scripts/Plugins/Tooltipster/tooltipster.js",
 
       "Scripts/Modules/EqualHeight/equalheight.js",
-
       "Scripts/Modules/LoadMore/loadmore.js",
-
       "Scripts/Modules/SearchBox/searchbox.js"
-
-
     ]
   }
 

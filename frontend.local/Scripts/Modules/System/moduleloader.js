@@ -2,8 +2,16 @@
 
 $(document).ready(function () {
 
-    var module = "";
+    var path = "";
 
+    path = $(location).attr('path'); 
+
+    if (path == null || path == "" || path == "index.html") {
+        $('.main-content').load('/Frontend/Modules/jumbotron.html');
+    }
+
+    /*
+    var module = "";
     $("#moduleloader").change(function () {
         // alert($("#colourscheme :selected").attr('value'))
         module = $("#moduleloader :selected").attr('value');
@@ -17,8 +25,7 @@ $(document).ready(function () {
         else if (module == "texts") {
             $('#modules').load('/Frontend/Modules/texts.html');
         }
-
-        
     });
+    */
 
 });
