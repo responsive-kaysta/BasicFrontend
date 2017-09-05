@@ -12,7 +12,6 @@
 
       "Css/Colours/dark.css",
       "Css/Colours/light.css",
-
       "Css/Colours/blue.css",
       "Css/Colours/yellow.css",
       "Css/Colours/purple.css",
@@ -58,7 +57,7 @@
 
     "minify": {
       "enabled": true,
-      "commentMode": "all"
+      "commentMode": "none"
     }
   },
 
@@ -72,7 +71,9 @@
 
       "Scripts/bootstrap.js",
 
-      "Scripts/Modules/Include/include.js",
+      "Scripts/Modules/System/include.js",
+      "Scripts/Modules/System/colourscheme.js",
+      "Scripts/Modules/System/moduleloader.js",
 
       "Scripts/Plugins/Tooltipster/tooltipster.bundle.js",
       "Scripts/Plugins/Tooltipster/tooltipster.js",

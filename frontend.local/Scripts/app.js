@@ -14174,9 +14174,74 @@ if (typeof jQuery === 'undefined') {
 /* include.js */
 
 $(document).ready(function () {
+    
     $('#header').load('/Frontend/Shared/header.html');
     $('#footer').load('/Frontend/Shared/footer.html');
+    
 });
+
+/* colourscheme.js */
+
+$(document).ready(function () {
+    
+    $("#colourscheme").change(function () {
+        // alert($("#colourscheme :selected").attr('value'))
+        var colour = $("#colourscheme :selected").attr('value');
+        window.location = "index.html?colour=" + colour;
+    });
+
+    var vars = [], hash;
+    var q = document.URL.split('?')[1];
+    if (q != undefined) {
+        q = q.split('&');
+        for (var i = 0; i < q.length; i++) {
+            hash = q[i].split('=');
+            vars.push(hash[1]);
+            vars[hash[0]] = hash[1];
+        }
+    }
+
+    var colour = vars['colour'];
+
+    if (colour == null || colour == "") {
+        $("#header").addClass("dark");
+        $("#footer").addClass("dark");
+    }
+    else {
+        $("#header").addClass(colour);
+        $("#footer").addClass(colour);
+    }
+
+});
+
+/* moduleloader.js */
+
+$(document).ready(function () {
+
+    var module = "";
+
+    $("#moduleloader").change(function () {
+        // alert($("#colourscheme :selected").attr('value'))
+        module = $("#moduleloader :selected").attr('value');
+
+        if (module == null || module == "") {
+            $('#modules').load('/Frontend/Modules/headings.html');
+        }
+        else if (module == "headings") {
+            $('#modules').load('/Frontend/Modules/headings.html');
+        }
+        else if (module == "texts") {
+            $('#modules').load('/Frontend/Modules/texts.html');
+        }
+
+
+    });
+
+    
+
+
+});
+
 /**
  * tooltipster http://iamceege.github.io/tooltipster/
  * A rockin' custom tooltip jQuery plugin
