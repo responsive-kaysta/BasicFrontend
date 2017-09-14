@@ -3,7 +3,6 @@
 $(document).ready(function () {
     
     $("#colourscheme").change(function () {
-        // alert($("#colourscheme :selected").attr('value'))
         var colour = $("#colourscheme :selected").attr('value');
         window.location = "?colour=" + colour;
     });

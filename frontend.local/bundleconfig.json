@@ -64,10 +64,6 @@
       "Scripts/jquery.validate.unobtrusive.js",
       "Scripts/bootstrap.js",
 
-      "Scripts/Modules/System/include.js",
-      "Scripts/Modules/System/colourscheme.js",
-      "Scripts/Modules/System/moduleloader.js",
-
       "Scripts/Plugins/Tooltipster/tooltipster.bundle.js",
       "Scripts/Plugins/Tooltipster/tooltipster.js",
 
