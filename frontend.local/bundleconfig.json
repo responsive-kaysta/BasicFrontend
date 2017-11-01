@@ -46,8 +46,11 @@
       "Css/Plugins/Tooltipster/tooltipster-sideTip-punk.min.css",
       "Css/Plugins/Tooltipster/tooltipster.css",
       /* other modules */
-      "Css/Plugins/Effects/loadmore.css"
+      "Css/Plugins/Effects/loadmore.css",
 
+
+      /* !Allways last entry - Windows specific */
+      "Css/ie10-viewport-bug-workaround.css"
     ],
 
     "minify": {

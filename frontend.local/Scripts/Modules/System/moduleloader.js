@@ -7,7 +7,7 @@ $(document).ready(function () {
     path = $(location).attr('path'); 
 
     if (path == null || path == "" || path == "index.html") {
-        $('.main-content').load('/Frontend/Modules/jumbotron.html');
+        $('.main-content').load('/Frontend/Shared/home.html');
     }
 
     /*
