@@ -59,13 +59,16 @@
     }
   },
 
-  {    
+  {
     "outputFileName": "Scripts/app.js",
     "inputFiles": [
+
       "Scripts/jquery-3.2.1.js",
       "Scripts/jquery.validate.js",
       "Scripts/jquery.validate.unobtrusive.js",
       "Scripts/bootstrap.js",
+
+      "Scripts/Modules/Navigation/navigation.js",
 
       "Scripts/Plugins/Tooltipster/tooltipster.bundle.js",
       "Scripts/Plugins/Tooltipster/tooltipster.js",
@@ -73,6 +76,7 @@
       "Scripts/Modules/EqualHeight/equalheight.js",
       "Scripts/Modules/LoadMore/loadmore.js",
       "Scripts/Modules/SearchBox/searchbox.js"
+
     ]
   }
 

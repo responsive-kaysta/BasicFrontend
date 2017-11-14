@@ -1,0 +1,105 @@
+﻿
+<div class="umb-grid">
+    <div class="grid-section">
+        <div>
+            <div class="row clearfix">
+                <div class="col-md-12 column">
+                    <div>
+                        <div class='page-header'><h1>InMemoryLoader im Einsatz – Aufbau einer InMemoryLoader Anwendung</h1></div>
+                        <p class='lead'>Wie im Artikel &quot;In-Memory .NET Anwendungen&quot; beschrieben, lassen sich mit InMemoryLoader  sehr performante, sichere und modulare Anwendungen aufbauen und mit relativ geringem Aufwand realisieren.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="row clearfix">
+                <div class="col-md-12 column">
+                    <div>
+                        <div class='abstract'>Einf&#252;hrung</div>
+                        <p>Ein grosser Vorteil besteht darin, dass der gesamte Code im User-Stack gespeichert und aufgel&#246;st ist – sprich: zur Laufzeit wird der gesamte Code im RAM aufgel&#246;st und daraus ausgef&#252;hrt - wobei sich dies nat&#252;rlich nicht auf GUI, Web-Page etc. Bezieht. GUI&#39;s usw. M&#252;ssen vom Client gerendert werden, die Instanz jedoch wird komplett im RAM verwaltet.</p>
+                        <p>In diesem Artikel beschreibe ich nun die unterschiedlichen M&#246;glichkeiten, Vorteile und Stolpersteine die bei der Verwendung von InMemoryLoader bestehen.</p>
+                        <p>Nat&#252;rlich ist der Projektaufbau an sich individuell – sprich: es ist keine Vorgabe oder Notwendigkeit das Projekt so aufzubauen wie ich das hier vorschlage. Dieser Artikel beschreibt im Wesentlichen wie InMemoryLoader verwendet wird.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="row clearfix">
+                <div class="col-md-12 column">
+                    <div>
+                        <div class='abstract'>Versionen</div>
+                        <ul>
+                            <li>InMemoryLoaderBase -&gt; 0.3.1.2</li>
+                            <li>InMemoryLoader -&gt; 0.3.1.4</li>
+                            <li>InMemoryLoaderCommon -&gt; 0.3.0.4</li>
+                            <li>log4net -&gt; 2.0.8</li>
+                        </ul>
+                        <p><a rel="noopener noreferrer" href="http://https//www.nuget.org/packages?q=InMemoryLoader" target="_blank" title="InMemoryLoader">Siehe nuget.org InMemoryLoader</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="row clearfix">
+                <div class="col-md-12 column">
+                    <div>
+                        <div class='abstract'>Projektaufbau</div>
+                        <p><em>Die Funktionsweise von InMemoryLoader versuche ich anhand eines Integration-Tests zu beschreiben. Hierbei handelt es sich um ein Console-Programm das InMemoryLoader implementiert und ein Library-Project welches die Helper und Extensions der InMemoryLoaderCommon Komponente ausführt und testet.</em></p>
+                        <p>Der Projektaufbau ist schnell beschrieben, in diesem Tutorial/Blog m&#246;chte ich die einfachste und beste Methode aufzeigen mit der sich InMemory-Anwendungen realisieren lassen.</p>
+                        <p>Als 1. setze ich eine leere Solution auf und f&#252;ge dieser ein Console-Projekt und ein Library-Projekt hinzu, wobei ich darauf achte, dass alles im &quot;Solution folder&quot; platziert wird. Siehe folgenden Screenshot.</p>
+                        <img src="/media/1018/solution_setup_1.png">
+                        <p>Danach konfiguriere ich die Solution-Options wobei die Plattform generell auf &quot;Any CPU&quot; gesetzt wird. Spezifische Konfigurationen x86/x64 sind seit der aktuellen Version nicht mehr zu setzten. Siehe folgenden Screenshot.</p>
+                        <img src="/media/1021/solution_options_1.png">
+                        <p>Folgende Links enthalten weitere Informationen die beim Einstieg bestimmt hilfreich sind.</p>
+                        <p style="line-height: 106%;"><u><a href="http://www.mono-project.com/docs/getting-started/" target="_top">http://www.mono-project.com/docs/getting-started/</a></u></p>
+                        <p style="line-height: 106%;"><u><a href="http://www.mono-project.com/archived/visual_studio_integration/" target="_top">http://www.mono-project.com/archived/visual_studio_integration/</a></u></p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="row clearfix">
+                <div class="col-md-12 column">
+                    <div>
+                        <div class='abstract'>nuget Packages</div>
+                        <p>Ich versuche Projekt-Referenzen im Projekt soweit als m&#246;glich zu vermeiden und integriere alles M&#246;gliche via nuget-Packeges. Folgender Link enth&#228;lt weitere Informationen die bestimmt hilfreich sind.</p>
+                        <p style="line-height: 106%;"><u><a href="https://docs.microsoft.com/en-us/nuget/what-is-nuget" target="_top">https://docs.microsoft.com/en-us/nuget/what-is-nuget</a></u></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="row clearfix">
+                <div class="col-md-12 column">
+                    <div>
+                        <div class='abstract'>InMemoryLoaderIntegrationTest</div>
+                        <p><em><strong>Erweiterungen</strong></em></p>
+                        <p>Zunächst werden die benötigten Erweiterungen dem Projekt hinzugefügt welches, je nach eingesetzter Entwicklungsumgebung, recht einfach ist.</p>
+                        <p>In diesem Fall sind dies</p>
+                        <ul>
+                            <li>InMemoryLoaderBase</li>
+                            <li>InMemoryLoader</li>
+                            <li>InMemoryLoaderCommon</li>
+                            <li>Microsoft.CSharp</li>
+                            <li>log4net</li>
+                        </ul>
+                        <p>Siehe Screenshot</p>
+                        <img src="/media/1020/nuget_1.png">
+                        <p><em><strong>ApplicationBase </strong></em></p>
+                        <p>Als erstes erstelle ich immer eine "Basis-Klasse", die ich jeweils <em>AppBase</em> oder <em>ApplicationBase</em> nenne, um die benötigten Objekte, Konstanten, Konfigurationen etc. Zu verwalten. Dabei implementiere ich sie immer via Singleton, zudem muss diese immer von <em>AbstractLoaderBase</em> oder <em>AbstractCommonBase</em> ableiten. Verwendet man InMemoryLoaderCommon muss <em>AbstractCommonBase</em> verwendet werden, ansonsten reicht <em>AbstractLoaderBase</em>.</p>
+                        <pre>//<br />// AppBase.cs<br />//<br />// Author: responsive kaysta &lt;me@responsive-kaysta.ch&gt;<br />//<br />// Copyright (c) 2017 responsive kaysta<br />//<br />// Permission is hereby granted, free of charge, to any person obtaining a copy<br />// of this software and associated documentation files (the &quot;Software&quot;), to deal<br />// in the Software without restriction, including without limitation the rights<br />// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell<br />// copies of the Software, and to permit persons to whom the Software is<br />// furnished to do so, subject to the following conditions:<br />//<br />// The above copyright notice and this permission notice shall be included in<br />// all copies or substantial portions of the Software.<br />//<br />// THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR<br />// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,<br />// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE<br />// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER<br />// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,<br />// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN<br />// THE SOFTWARE.<br /><br />using System;<br />using System.Configuration;<br />using log4net;<br />using System.Threading;<br />using InMemoryLoaderCommon;<br /><br />namespace Application<br />{<br />    /// &lt;summary&gt;<br />    /// App base.<br />    /// &lt;/summary&gt;<br />    public sealed class AppBase : AbstractCommonBase<br />    {<br />        /// &lt;summary&gt;<br />        /// The log.<br />        /// &lt;/summary&gt;<br />        private static readonly ILog log = LogManager.GetLogger(typeof(AppBase));<br /><br />        /// &lt;summary&gt;<br />        /// The instance.<br />        /// &lt;/summary&gt;<br />        private static volatile AppBase instance;<br /><br />        /// &lt;summary&gt;<br />        /// The sync root.<br />        /// &lt;/summary&gt;<br />        private static readonly object syncRoot = new Object();<br /><br />        /// &lt;summary&gt;<br />        /// Gets the common component path.<br />        /// &lt;/summary&gt;<br />        /// &lt;value&gt;The common component path.&lt;/value&gt;<br />        internal string commonComponentPath { get { return ConfigurationManager.AppSettings[&quot;CommonComponentPath&quot;].ToString(); } }<br />        /// &lt;summary&gt;<br />        /// Gets the console culture.<br />        /// &lt;/summary&gt;<br />        /// &lt;value&gt;The console culture.&lt;/value&gt;<br />        internal string consoleCulture { get { return ConfigurationManager.AppSettings[&quot;ConsoleCulture&quot;].ToString(); } }<br /><br />        /// &lt;summary&gt;<br />        /// The instance text.<br />        /// &lt;/summary&gt;<br />        internal string instanceText = &quot;Create a new instance of Type: {0}&quot;;<br /><br />        /// &lt;summary&gt;<br />        /// Initializes a new instance of the &lt;see cref=&quot;Application.AppBase&quot;/&gt; class.<br />        /// &lt;/summary&gt;<br />        private AppBase()<br />        {<br />            log4net.Config.XmlConfigurator.Configure();<br /><br />            log.DebugFormat(&quot;Create a new instance of Type: {0}&quot;, this.GetType().ToString());<br /><br />            base.ConsoleCulture = this.consoleCulture;<br /><br />            string path = string.Empty;<br /><br />            path = string.IsNullOrEmpty(this.commonComponentPath) ? AppDomain.CurrentDomain.BaseDirectory : this.commonComponentPath;<br /><br />            base.AssemblyPath = path;<br /><br />            base.SetCulture();<br />            log.DebugFormat(&quot;CurrentCulture set to: {0}&quot;, Thread.CurrentThread.CurrentCulture.DisplayName);<br /><br />            base.GetAssemblyPath();<br />            base.SetInMemoryLoader();<br />            base.SetClassRegistry();<br />            base.SetInMemoryLoaderCommon();<br />        }<br /><br />        /// &lt;summary&gt;<br />        /// Gets the instance.<br />        /// &lt;/summary&gt;<br />        /// &lt;value&gt;The instance.&lt;/value&gt;<br />        public static AppBase Instance<br />        {<br />            get<br />            {<br />                if (instance == null)<br />                {<br />                    lock (syncRoot)<br />                    {<br />                        if (instance == null)<br />                        {<br />                            instance = new AppBase();<br />                        }<br />                    }<br />                }<br />                return instance;<br />            }<br />        }<br />    }<br />}</pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row clearfix">
+    <div class="col-md-12 column">
+        <hr />
+        <p>Autor: responsive kaysta</p>
+        <p>Published/Updated: 11/14/2017 7:26:42 PM</p>
+        <hr />
+    </div>
+</div>
