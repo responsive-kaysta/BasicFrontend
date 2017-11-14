@@ -35,7 +35,7 @@ h5 a {
   font-family: inherit !important;
 }
 p {
-  font-size: 16px;
+  font-size: 1.0rem;
   font-weight: normal;
   line-height: 1.4;
   letter-spacing: 0.2px;
@@ -47,7 +47,7 @@ p {
   margin-bottom: 1.0rem;
 }
 .lead {
-  font-size: 19px;
+  font-size: 1.2rem;
   font-weight: 500;
   line-height: 1.6;
 }
@@ -68,4 +68,7 @@ p {
   font-weight: 100;
   font-size: 40px;
   margin-bottom: 1.0rem;
+}
+strong {
+  font-weight: 900;
 }

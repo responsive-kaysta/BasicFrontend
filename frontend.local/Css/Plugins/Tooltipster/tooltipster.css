@@ -3,18 +3,35 @@
   display: none;
 }
 .even {
+  color: black;
   background-color: lightgray;
 }
-ul.tooltip_ul {
+.odd {
+  color: black;
+}
+.tooltipster {
+  display: none;
+  color: black;
   list-style: none;
   margin: 0;
   padding: 0;
 }
-li.tooltipster {
+.tooltip_ul {
+  color: black;
   list-style: none;
   margin: 0;
-  padding: 0.5em;
+  padding: 0;
 }
-.tooltip_p {
-  color: white;
+ul.tooltip_ul > li {
+  color: black;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.25rem;
+}
+div.tooltip_templates > div > h2 {
+  color: whitesmoke;
+}
+div.tooltip_templates > div > p {
+  color: whitesmoke;
 }

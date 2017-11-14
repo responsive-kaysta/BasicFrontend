@@ -6,6 +6,9 @@
   background: #1c1c1e;
   background-color: #1c1c1e;
 }
+p .dark {
+  color: #1c1c1e;
+}
 .dark a,
 .dark a:visited {
   color: #dddddd;
@@ -41,6 +44,23 @@
 /* blogarchive dark */
 section.blogarchive .dark h2 {
   font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.6;
+  font-family: "Lato", sans-serif;
+  color: #1c1c1e;
+}
+section.blogarchive .dark p {
+  font-size: 1.0rem;
+  font-family: "Lato", sans-serif;
+  color: #1c1c1e;
+}
+section.blogarchive .dark p .lead {
+  font-size: 1.1rem;
+  font-family: "Lato", sans-serif;
+  color: #1c1c1e;
+}
+section.blogarchive .dark p .small {
+  font-size: .85rem;
   font-family: "Lato", sans-serif;
   color: #1c1c1e;
 }
@@ -51,6 +71,6 @@ section.blogarchive .dark .date {
 }
 section.blogarchive > div.col-md-6 > div.content {
   border: 1px solid #333;
-  color: #1c1c1e;
   background: #eee;
+  color: #1c1c1e;
 }

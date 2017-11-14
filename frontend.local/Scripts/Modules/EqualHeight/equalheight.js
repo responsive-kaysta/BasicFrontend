@@ -67,6 +67,5 @@
     $(window).resize(function () {
         equalHeightChecker();
     });
-
-
+    
 })(jQuery);
