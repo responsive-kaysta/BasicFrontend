@@ -1,18 +1,5 @@
 ﻿[
 
-
-  {
-    "outputFile": "Scripts/Plugins/Tooltipster/tooltipster.bundle.es5.js",
-    "inputFile": "Scripts/Plugins/Tooltipster/tooltipster.bundle.js"
-  },
-  {
-    "outputFile": "Scripts/Plugins/Tooltipster/tooltipster.core.es5.js",
-    "inputFile": "Scripts/Plugins/Tooltipster/tooltipster.core.js"
-  },
-  {
-    "outputFile": "Scripts/Plugins/Tooltipster/tooltipster.es5.js",
-    "inputFile": "Scripts/Plugins/Tooltipster/tooltipster.js"
-  },
   {
     "outputFile": "Scripts/Modules/EqualHeight/equalheight.es5.js",
     "inputFile": "Scripts/Modules/EqualHeight/equalheight.js"

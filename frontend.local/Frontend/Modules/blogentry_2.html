@@ -1,0 +1,186 @@
+﻿
+<div class="umb-grid">
+    <div class="grid-section">
+        <div>
+            <div class="row clearfix">
+                <div class="col-md-12 column">
+                    <div>
+                        <div class='page-header'><h1>Aufbau einer InMemoryLoader Anwendung</h1></div>
+                        <h2 class='tagline'>Teil 1 – Konfiguration und Initialisierung</h2>
+                        <p class='lead'>Wie im Artikel &quot;In-Memory .NET Anwendungen&quot; beschrieben, lassen sich mit InMemoryLoader  sehr performante, sichere und modulare Anwendungen aufbauen und mit relativ geringem Aufwand realisieren.</p>
+                        <p>Ein grosser Vorteil besteht darin, dass der gesamte Code im User-Stack gespeichert und aufgel&#246;st ist – sprich: zur Laufzeit wird der gesamte Code im RAM aufgel&#246;st und daraus ausgef&#252;hrt - wobei sich dies nat&#252;rlich nicht auf GUI, Web-Page etc. Bezieht. GUI&#39;s usw. M&#252;ssen vom Client gerendert werden, die Instanz jedoch wird komplett im RAM verwaltet.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="row clearfix">
+                <div class="col-md-12 column">
+                    <div>
+                        <div class='abstract'>Einf&#252;hrung</div>
+                        <p>In diesem Artikel beschreibe ich nun die unterschiedlichen M&#246;glichkeiten, Vorteile und Stolpersteine die bei der Verwendung von InMemoryLoader bestehen.</p>
+                        <p>Nat&#252;rlich ist der Projektaufbau an sich individuell – sprich: es ist keine Vorgabe oder Notwendigkeit das Projekt so aufzubauen wie ich das hier vorschlage. Dieser Artikel beschreibt im Wesentlichen wie InMemoryLoader verwendet wird.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="row clearfix">
+                <div class="col-md-12 column">
+                    <div>
+                        <div class='abstract'>Versionen</div>
+                        <ul>
+                            <li>InMemoryLoaderBase -&gt; 0.3.1.2</li>
+                            <li>InMemoryLoader -&gt; 0.3.1.4</li>
+                            <li>InMemoryLoaderCommon -&gt; 0.3.0.4</li>
+                            <li>log4net -&gt; 2.0.8</li>
+                        </ul>
+                        <p>Siehe <a rel="noopener noreferrer" href="https://https//www.nuget.org/packages?q=InMemoryLoader" target="_blank" title="InMemoryLoader">https//www.nuget.org/packages?q=InMemoryLoader</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="row clearfix">
+                <div class="col-md-12 column">
+                    <div>
+                        <div class='abstract'>Projektaufbau</div>
+                        <p><em>Die Funktionsweise von InMemoryLoader versuche ich anhand eines Integration-Tests zu beschreiben. Hierbei handelt es sich um ein Console-Programm das InMemoryLoader implementiert und ein Library-Project welches die Helper und Extensions der InMemoryLoaderCommon Komponente ausführt und testet.</em></p>
+                        <p>Der Projektaufbau ist schnell beschrieben, in diesem Tutorial/Blog m&#246;chte ich die einfachste und beste Methode aufzeigen mit der sich InMemory-Anwendungen realisieren lassen.</p>
+                        <p>Als 1. setze ich eine leere Solution auf und f&#252;ge dieser ein Console-Projekt und ein Library-Projekt hinzu, wobei ich darauf achte, dass alles im &quot;Solution folder&quot; platziert wird.</p>
+                        <p>Danach konfiguriere ich die Solution-Options wobei die Plattform generell auf &quot;Any CPU&quot; gesetzt wird. Spezifische Konfigurationen x86/x64 sind seit der aktuellen Version nicht mehr zu setzten.</p>
+                        <p>Folgende Links enthalten weitere Informationen die beim Einstieg bestimmt hilfreich sind.</p>
+                        <ul>
+                            <li><a rel="noopener noreferrer" href="http://www.mono-project.com/docs/getting-started/" target="_blank" title="getting-started">http://www.mono-project.com/docs/getting-started/</a></li>
+                            <li><a rel="noopener noreferrer" href="http://www.mono-project.com/archived/visual_studio_integration/" target="_blank" title="visual_studio_integration">http://www.mono-project.com/archived/visual_studio_integration/</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="row clearfix">
+                <div class="col-md-12 column">
+                    <div>
+                        <div class='abstract'>nuget Packages</div>
+                        <p>Ich versuche Projekt-Referenzen im Projekt soweit als m&#246;glich zu vermeiden und integriere alles M&#246;gliche via nuget-Packeges. Folgender Link enth&#228;lt weitere Informationen die bestimmt hilfreich sind.</p>
+                        <p><u><a href="https://docs.microsoft.com/en-us/nuget/what-is-nuget" target="_top">https://docs.microsoft.com/en-us/nuget/what-is-nuget</a></u></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="row clearfix">
+                <div class="col-md-12 column">
+                    <div>
+                        <div class='abstract'>InMemoryLoaderIntegrationTest</div>
+                        <p><em><strong>Erweiterungen</strong></em></p>
+                        <p>Zun&#228;chst werden die ben&#246;tigten Erweiterungen dem Projekt hinzugef&#252;gt welches, je nach eingesetzter Entwicklungsumgebung, recht einfach ist.</p>
+                        <p>In diesem Fall sind dies</p>
+                        <ul>
+                            <li>InMemoryLoaderBase</li>
+                            <li>InMemoryLoader</li>
+                            <li>InMemoryLoaderCommon</li>
+                            <li>Microsoft.CSharp</li>
+                            <li>log4net</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="row clearfix">
+                <div class="col-md-12 column">
+                    <div>
+                        <p><em><strong>ApplicationBase</strong></em><span data-ccp-props="{&quot;335559739&quot;:120,&quot;335559740&quot;:251}"> </span></p>
+                        <p>Als erstes erstelle ich immer eine "Basis-Klasse", die ich jeweils <em>AppBase</em> oder <em>ApplicationBase</em> nenne, um die benötigten Objekte, Konstanten, Konfigurationen etc. Zu verwalten. Dabei implementiere ich sie immer via Singleton, zudem muss diese immer von <em>AbstractLoaderBase</em> oder <em>AbstractCommonBase</em> ableiten. Verwendet man <em>InMemoryLoaderCommon</em> muss <em>AbstractCommonBase</em> verwendet werden, ansonsten reicht <em>AbstractLoaderBase</em>.</p>
+                        <pre>using System;<br />using System.Configuration;<br />using log4net;<br />using System.Threading;<br />using InMemoryLoaderCommon;<br /><br />namespace Application<br />{<br />    /// &lt;summary&gt;<br />    /// App base.<br />    /// &lt;/summary&gt;<br />    public sealed class AppBase : AbstractCommonBase<br />    {<br />        /// &lt;summary&gt;<br />        /// The log.<br />        /// &lt;/summary&gt;<br />        private static readonly ILog log = LogManager.GetLogger(typeof(AppBase));<br /><br />        /// &lt;summary&gt;<br />        /// The instance.<br />        /// &lt;/summary&gt;<br />        private static volatile AppBase instance;<br /><br />        /// &lt;summary&gt;<br />        /// The sync root.<br />        /// &lt;/summary&gt;<br />        private static readonly object syncRoot = new Object();<br /><br />        /// &lt;summary&gt;<br />        /// Gets the common component path.<br />        /// &lt;/summary&gt;<br />        /// &lt;value&gt;The common component path.&lt;/value&gt;<br />        internal string commonComponentPath { get { return ConfigurationManager.AppSettings[&quot;CommonComponentPath&quot;].ToString(); } }<br />        /// &lt;summary&gt;<br />        /// Gets the console culture.<br />        /// &lt;/summary&gt;<br />        /// &lt;value&gt;The console culture.&lt;/value&gt;<br />        internal string consoleCulture { get { return ConfigurationManager.AppSettings[&quot;ConsoleCulture&quot;].ToString(); } }<br /><br />        /// &lt;summary&gt;<br />        /// The instance text.<br />        /// &lt;/summary&gt;<br />        internal string instanceText = &quot;Create a new instance of Type: {0}&quot;;<br /><br />        /// &lt;summary&gt;<br />        /// Initializes a new instance of the &lt;see cref=&quot;Application.AppBase&quot;/&gt; class.<br />        /// &lt;/summary&gt;<br />        private AppBase()<br />        {<br />            log4net.Config.XmlConfigurator.Configure();<br /><br />            log.DebugFormat(&quot;Create a new instance of Type: {0}&quot;, this.GetType().ToString());<br /><br />            base.ConsoleCulture = this.consoleCulture;<br /><br />            string path = string.Empty;<br /><br />            path = string.IsNullOrEmpty(this.commonComponentPath) ? AppDomain.CurrentDomain.BaseDirectory : this.commonComponentPath;<br /><br />            base.AssemblyPath = path;<br /><br />            base.SetCulture();<br />            log.DebugFormat(&quot;CurrentCulture set to: {0}&quot;, Thread.CurrentThread.CurrentCulture.DisplayName);<br /><br />            base.GetAssemblyPath();<br />            base.SetInMemoryLoader();<br />            base.SetClassRegistry();<br />            base.SetInMemoryLoaderCommon();<br />        }<br /><br />        /// &lt;summary&gt;<br />        /// Gets the instance.<br />        /// &lt;/summary&gt;<br />        /// &lt;value&gt;The instance.&lt;/value&gt;<br />        public static AppBase Instance<br />        {<br />            get<br />            {<br />                if (instance == null)<br />                {<br />                    lock (syncRoot)<br />                    {<br />                        if (instance == null)<br />                        {<br />                            instance = new AppBase();<br />                        }<br />                    }<br />                }<br />                return instance;<br />            }<br />        }<br />    }<br />}</pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="row clearfix">
+                <div class="col-md-12 column">
+                    <div>
+                        <p><em><strong>Code-Beschreibung AppBase</strong></em></p>
+                        <p>Ich möchte an dieser Stelle nicht auf jede Code-Zeile eingehen da sich der Code an sich selber beschreiben sollte.</p>
+                        <p>Trotzdem einige Erläuterungen</p>
+                        <p><em><strong>Constructor: log4net</strong></em></p>
+                        <p>Gehen wir auf den Constructor <em>private AppBase()</em> etwas näher ein. Ich verwende grundsätzlich <em>log4net</em> zur Protokollierung so dass ich weiss was im Programm läuft. Deshalb wird zu aller erst dies initialisiert. Die Konfiguration ist in der Konfiguration welche ich später beschreibe.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="row clearfix">
+                <div class="col-md-12 column">
+                    <div>
+                        <p><em><strong>Constructor: Setzen der Umgebungsvariablen und initialisieren</strong></em></p>
+<pre>private AppBase()<br />        {<br />            log4net.Config.XmlConfigurator.Configure();<br /><br />            log.DebugFormat(&quot;Create a new instance of Type: {0}&quot;, this.GetType().ToString());<br /><br />            base.ConsoleCulture = this.consoleCulture;<br /><br />            string path = string.Empty;<br /><br />            path = string.IsNullOrEmpty(this.commonComponentPath) ? AppDomain.CurrentDomain.BaseDirectory : this.commonComponentPath;<br /><br />            base.AssemblyPath = path;<br /><br />            base.SetCulture();<br />            log.DebugFormat(&quot;CurrentCulture set to: {0}&quot;, Thread.CurrentThread.CurrentCulture.DisplayName);<br /><br />            base.GetAssemblyPath();<br />            base.SetInMemoryLoader();<br />            base.SetClassRegistry();<br />            base.SetInMemoryLoaderCommon();<br />        }</pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="row clearfix">
+                <div class="col-md-12 column">
+                    <div>
+                        <p>Zuerst setzen wir die Culture global so dass Datum, Zeit etc. Korrekt ausgegeben wird.</p>
+                        <p>Als nächstes setzen wir den Pfad zu den Assemblie's so dass InMemoryLoader weiss wo die entsprechenden Dll's liegen. Dies kann entweder via Konfiguration <em>CommonComponentPath</em> oder durch auslesen <em>AppDomain.CurrentDomain.BaseDirectory</em> geschehen wobei ich letzteres bevorzuge da dies automatisch und der Laufzeitumgebung entsprechend geschieht.</p>
+                        <p>Dann wird die Culture gesetzt, das Auslesen von <em>base.GetAssemblyPath();</em> ist nur zur Sicherheit.</p>
+                        <p>Danach wird InMemoryLoader <em>base.SetInMemoryLoader();, </em>die Class-Registry <em>base.SetClassRegistry();</em> und schlussendlich <em>base.SetInMemoryLoaderCommon();</em> ausgeführt.</p>
+                        <p>Somit ist InMemoryLoader als auch die CommonComponent initialisiert und bereit zur Anwendung.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="row clearfix">
+                <div class="col-md-12 column">
+                    <div>
+                        <p><em><strong>Code-Beschreibung App.config</strong></em></p>
+                        <p>Die Konfiguration an sich ist sehr einfach da ich mich bemühe möglichst alle Bestandteile und laufzeitspezifischen Details mit den "Boardmitteln" abzudecken.</p>
+<pre>&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;<br />&lt;configuration&gt;<br />	&lt;configSections&gt;<br />		&lt;section name=&quot;log4net&quot; type=&quot;log4net.Config.Log4NetConfigurationSectionHandler, log4net&quot; /&gt;<br />	&lt;/configSections&gt;<br />	&lt;appSettings&gt;<br />		&lt;!-- &lt;add key=&quot;CommonComponentPath&quot; value=&quot;D:\github\InMemoryLoaderMaster\InMemoryLoaderCommonTestSuite\bin\Debug\&quot; /&gt; --&gt;<br />		&lt;add key=&quot;CommonComponentPath&quot; value=&quot;&quot; /&gt;<br />		&lt;add key=&quot;ConsoleCulture&quot; value=&quot;en-GB&quot; /&gt;<br />		&lt;add key=&quot;ApplicationKey&quot; value=&quot;u5QfmfACqWmOclsedZdCA50TVijQVjendQ7ceeaxumAEcdKDjMrqOiWInN6d8f7p&quot; /&gt;<br />	&lt;/appSettings&gt;<br />	&lt;log4net&gt;<br />		&lt;appender name=&quot;Console&quot; type=&quot;log4net.Appender.ConsoleAppender&quot;&gt;<br />			&lt;layout type=&quot;log4net.Layout.PatternLayout&quot;&gt;<br />				&lt;conversionPattern value=&quot;%date %-5level: %message%newline&quot; /&gt;<br />			&lt;/layout&gt;<br />		&lt;/appender&gt;<br />		&lt;appender name=&quot;RollingFileAppender&quot; type=&quot;log4net.Appender.RollingFileAppender&quot;&gt;<br />			&lt;file value=&quot;/home/kaysta/github/InMemoryLoaderIntegrationTest/InMemoryLoaderIntegrationTest.log&quot; /&gt;<br />			&lt;appendToFile value=&quot;true&quot; /&gt;<br />			&lt;rollingStyle value=&quot;Size&quot; /&gt;<br />			&lt;maxSizeRollBackups value=&quot;10&quot; /&gt;<br />			&lt;maximumFileSize value=&quot;10MB&quot; /&gt;<br />			&lt;staticLogFileName value=&quot;true&quot; /&gt;<br />			&lt;layout type=&quot;log4net.Layout.PatternLayout&quot;&gt;<br />				&lt;conversionPattern value=&quot;%date %-5level[%logger]: %message%newline&quot; /&gt;<br />			&lt;/layout&gt;<br />		&lt;/appender&gt;<br />		&lt;appender name=&quot;ManagedColoredConsoleAppender&quot; type=&quot;log4net.Appender.ManagedColoredConsoleAppender&quot;&gt;<br />			&lt;mapping&gt;<br />				&lt;level value=&quot;ERROR&quot; /&gt;<br />				&lt;foreColor value=&quot;DarkRed&quot; /&gt;<br />			&lt;/mapping&gt;<br />			&lt;mapping&gt;<br />				&lt;level value=&quot;WARN&quot; /&gt;<br />				&lt;foreColor value=&quot;Yellow&quot; /&gt;<br />			&lt;/mapping&gt;<br />			&lt;mapping&gt;<br />				&lt;level value=&quot;INFO&quot; /&gt;<br />				&lt;foreColor value=&quot;White&quot; /&gt;<br />			&lt;/mapping&gt;<br />			&lt;mapping&gt;<br />				&lt;level value=&quot;DEBUG&quot; /&gt;<br />				&lt;foreColor value=&quot;DarkGreen&quot; /&gt;<br />			&lt;/mapping&gt;<br />			&lt;layout type=&quot;log4net.Layout.PatternLayout&quot;&gt;<br />				&lt;conversionPattern value=&quot;%date %-5level %-20.20logger: %message%newline&quot; /&gt;<br />			&lt;/layout&gt;<br />		&lt;/appender&gt;<br />		&lt;root&gt;<br />			&lt;level value=&quot;DEBUG&quot; /&gt;<br />			&lt;appender-ref ref=&quot;ManagedColoredConsoleAppender&quot; /&gt;<br />			&lt;appender-ref ref=&quot;RollingFileAppender&quot; /&gt;<br />		&lt;/root&gt;<br />		&lt;logger name=&quot;CheckUtilsTest&quot;&gt;<br />			&lt;level value=&quot;DEBUG&quot; /&gt;<br />		&lt;/logger&gt;<br />		&lt;logger name=&quot;InMemoryLoader&quot;&gt;<br />			&lt;level value=&quot;INFO&quot; /&gt;<br />		&lt;/logger&gt;<br />		&lt;logger name=&quot;InMemoryLoaderBase&quot;&gt;<br />			&lt;level value=&quot;INFO&quot; /&gt;<br />		&lt;/logger&gt;<br />		&lt;logger name=&quot;InMemoryLoaderCommon&quot;&gt;<br />			&lt;level value=&quot;INFO&quot; /&gt;<br />		&lt;/logger&gt;<br />		&lt;logger name=&quot;PowerUpStringUtils&quot;&gt;<br />			&lt;level value=&quot;INFO&quot; /&gt;<br />		&lt;/logger&gt;<br />		&lt;logger name=&quot;PowerUpCheckUtils&quot;&gt;<br />			&lt;level value=&quot;INFO&quot; /&gt;<br />		&lt;/logger&gt;<br />		&lt;logger name=&quot;PowerUpConvertUtils&quot;&gt;<br />			&lt;level value=&quot;INFO&quot; /&gt;<br />		&lt;/logger&gt;<br />		&lt;logger name=&quot;PowerUpCryptUtils&quot;&gt;<br />			&lt;level value=&quot;INFO&quot; /&gt;<br />		&lt;/logger&gt;<br />		&lt;logger name=&quot;PowerUpXmlUtils&quot;&gt;<br />			&lt;level value=&quot;INFO&quot; /&gt;<br />		&lt;/logger&gt;<br />		&lt;logger name=&quot;PowerUpDateTimeUtils&quot;&gt;<br />			&lt;level value=&quot;INFO&quot; /&gt;<br />		&lt;/logger&gt;<br />		&lt;logger name=&quot;PowerUpEmailUtils&quot;&gt;<br />			&lt;level value=&quot;INFO&quot; /&gt;<br />		&lt;/logger&gt;<br />		&lt;logger name=&quot;PowerUpFileSystemUtils&quot;&gt;<br />			&lt;level value=&quot;INFO&quot; /&gt;<br />		&lt;/logger&gt;<br />		&lt;logger name=&quot;PowerUpGetUtils&quot;&gt;<br />			&lt;level value=&quot;INFO&quot; /&gt;<br />		&lt;/logger&gt;<br />	&lt;/log4net&gt;<br />&lt;/configuration&gt;</pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="row clearfix">
+                <div class="col-md-12 column">
+                    <div>
+                        <p>Der Schlüssel <em>CommonComponentPath</em> ist optional und wird gesetzt, wenn sich die Assemblie's nicht im "bin" Ordner der Anwendung befinden. Hier kann z.B. ein gemapptes Laufwerk oder dergleichen angegeben werden. <br />!Zugriffs- und Ausführungsrechte müssen natürlich gegeben sein. Wird dieser Schlüssel nicht angegeben wird automatisch via <em>AppDomain.CurrentDomain.BaseDirectory</em> das Verzeichnis gesetzt.</p>
+                        <p>Der Schlüssel <em>ConsoleCulture</em> wird zwingend benötigt um die Laufzeitumgebung – Sprache, Datumformat etc. - korrekt zu setzen. <br /><strong>!Zwingend zu setzen!</strong></p>
+                        <p>Der Schlüssel <em>ApplicationKey</em> ist optional und muss genau dem entsprechenden Wert enthalten. Der Wert wird als Parameter der<em> Init()-Methode AbstractPowerUpComponent</em> übergeben und dient der einfachen Vallidierung. <br /><strong>!Muss genau dem Wert entsprechen!</strong><br />So kann sichergestellt werden das die Anwendung auch wirklich "valid" ist.</p>
+                        <p>Die Sektion <em> &lt;log4net&gt;</em> sollte sich eigentlich von selbst erklären, ansonsten empfehle ich folgende Seite um sich einzuarbeiten.</p>
+                        <p><a rel="noopener noreferrer" href="https://logging.apache.org/log4net/release/config-examples.html" target="_blank" title="config-examples">https://logging.apache.org/log4net/release/config-examples.html </a></p>
+                        <p>Dies wars fürs erste, weiter geht’s in Teil 2 – InMemoryLoader-Erweiterungen realisieren</p>
+                        <p><strong>Weiterführende Links und Informationen </strong></p>
+                        <p><a href="https://github.com/responsive-kaysta/InMemoryLoader"><span>https://github.com/responsive-kaysta/InMemoryLoader</span></a><span data-ccp-props="{&quot;335559739&quot;:120,&quot;335559740&quot;:251}"> </span></p>
+                        <p><a href="https://github.com/responsive-kaysta/InMemoryLoaderBase"><span>https://github.com/responsive-kaysta/InMemoryLoaderBase</span></a><span data-ccp-props="{&quot;335559739&quot;:120,&quot;335559740&quot;:251}"> </span></p>
+                        <p><a href="https://github.com/responsive-kaysta/InMemoryLoaderCommon"><span>https://github.com/responsive-kaysta/InMemoryLoaderCom</span><span>mon</span></a><span data-ccp-props="{&quot;335559739&quot;:120,&quot;335559740&quot;:251}"> </span></p>
+                        <p><a href="http://www.mono-project.com/docs/getting-started/"><span>http://www.mono-project.com/docs/getting-started/</span></a><span data-ccp-props="{&quot;335559739&quot;:120,&quot;335559740&quot;:251}"> </span></p>
+                        <p><a href="http://www.mono-project.com/archived/visual_studio_integration/"><span>http://www.mono-project.com/archived/visual_studio_integration/</span></a><span data-ccp-props="{&quot;335559739&quot;:120,&quot;335559740&quot;:251}"> </span></p>
+                        <p><a href="https://docs.microsoft.com/en-us/nuget/what-is-nuget"><span>https://docs.microsoft.com/en-us/nuget/what-is-nuget</span></a><span data-ccp-props="{&quot;335559739&quot;:120,&quot;335559740&quot;:251}"> </span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row clearfix">
+    <div class="col-md-12 column">
+        <hr />
+        <p>Autor: responsive kaysta</p>
+        <p>Published/Updated: 11/15/2017 4:32:16 PM</p>
+        <hr />
+    </div>
+</div>
+
+<script type="text/javascript" src="/Scripts/jquery-3.2.1.js"></script>
+<script type="text/javascript" src="/Scripts/jquery.validate.js"></script>
+<script type="text/javascript" src="/Scripts/bootstrap.js"></script>
+<script type="text/javascript" src="/Scripts/Plugins/Tooltipster/tooltipster.bundle.js"></script>
+
+<script type="text/javascript" src="/Scripts/app.js"></script>

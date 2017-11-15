@@ -74,7 +74,6 @@
 
       "Scripts/jquery-3.2.1.js",
       "Scripts/jquery.validate.js",
-      "Scripts/jquery.validate.unobtrusive.js",
       "Scripts/bootstrap.js",
 
       "Scripts/Modules/Navigation/navigation.es5.js",
@@ -84,7 +83,9 @@
 
       "Scripts/Modules/EqualHeight/equalheight.es5.js",
       "Scripts/Modules/LoadMore/loadmore.es5.js",
-      "Scripts/Modules/SearchBox/searchbox.es5.js"
+      "Scripts/Modules/SearchBox/searchbox.es5.js",
+      "Scripts/Modules/System/colourscheme.es5.js",
+      "Scripts/Modules/System/moduleloader.es5.js"
 
     ]
   }

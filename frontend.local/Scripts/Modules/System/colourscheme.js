@@ -1,6 +1,7 @@
 ﻿/* colourscheme.js */
 
 $(document).ready(function () {
+
     
     $("#colourscheme").change(function () {
         var colour = $("#colourscheme :selected").attr('value');
@@ -28,5 +29,5 @@ $(document).ready(function () {
         $("#header").addClass(colour);
         $("#footer").addClass(colour);
     }
-
+    
 });
