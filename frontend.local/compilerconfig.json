@@ -1,4 +1,47 @@
 ﻿[
+
+
+  {
+    "outputFile": "Scripts/Plugins/Tooltipster/tooltipster.bundle.es5.js",
+    "inputFile": "Scripts/Plugins/Tooltipster/tooltipster.bundle.js"
+  },
+  {
+    "outputFile": "Scripts/Plugins/Tooltipster/tooltipster.core.es5.js",
+    "inputFile": "Scripts/Plugins/Tooltipster/tooltipster.core.js"
+  },
+  {
+    "outputFile": "Scripts/Plugins/Tooltipster/tooltipster.es5.js",
+    "inputFile": "Scripts/Plugins/Tooltipster/tooltipster.js"
+  },
+  {
+    "outputFile": "Scripts/Modules/EqualHeight/equalheight.es5.js",
+    "inputFile": "Scripts/Modules/EqualHeight/equalheight.js"
+  },
+  {
+    "outputFile": "Scripts/Modules/LoadMore/loadmore.es5.js",
+    "inputFile": "Scripts/Modules/LoadMore/loadmore.js"
+  },
+  {
+    "outputFile": "Scripts/Modules/Navigation/navigation.es5.js",
+    "inputFile": "Scripts/Modules/Navigation/navigation.js"
+  },
+  {
+    "outputFile": "Scripts/Modules/SearchBox/searchbox.es5.js",
+    "inputFile": "Scripts/Modules/SearchBox/searchbox.js"
+  },
+  {
+    "outputFile": "Scripts/Modules/System/colourscheme.es5.js",
+    "inputFile": "Scripts/Modules/System/colourscheme.js"
+  },
+  {
+    "outputFile": "Scripts/Modules/System/include.es5.js",
+    "inputFile": "Scripts/Modules/System/include.js"
+  },
+  {
+    "outputFile": "Scripts/Modules/System/moduleloader.es5.js",
+    "inputFile": "Scripts/Modules/System/moduleloader.js"
+  },
+
   {
     "outputFile": "Css/Modules/abstract.css",
     "inputFile": "Css/Modules/abstract.less"
@@ -154,46 +197,6 @@
   {
     "outputFile": "Css/style.css",
     "inputFile": "Css/style.less"
-  },
-  {
-    "outputFile": "Scripts/Plugins/Tooltipster/tooltipster.bundle.es5.js",
-    "inputFile": "Scripts/Plugins/Tooltipster/tooltipster.bundle.js"
-  },
-  {
-    "outputFile": "Scripts/Plugins/Tooltipster/tooltipster.core.es5.js",
-    "inputFile": "Scripts/Plugins/Tooltipster/tooltipster.core.js"
-  },
-  {
-    "outputFile": "Scripts/Plugins/Tooltipster/tooltipster.es5.js",
-    "inputFile": "Scripts/Plugins/Tooltipster/tooltipster.js"
-  },
-  {
-    "outputFile": "Scripts/Modules/EqualHeight/equalheight.es5.js",
-    "inputFile": "Scripts/Modules/EqualHeight/equalheight.js"
-  },
-  {
-    "outputFile": "Scripts/Modules/LoadMore/loadmore.es5.js",
-    "inputFile": "Scripts/Modules/LoadMore/loadmore.js"
-  },
-  {
-    "outputFile": "Scripts/Modules/Navigation/navigation.es5.js",
-    "inputFile": "Scripts/Modules/Navigation/navigation.js"
-  },
-  {
-    "outputFile": "Scripts/Modules/SearchBox/searchbox.es5.js",
-    "inputFile": "Scripts/Modules/SearchBox/searchbox.js"
-  },
-  {
-    "outputFile": "Scripts/Modules/System/colourscheme.es5.js",
-    "inputFile": "Scripts/Modules/System/colourscheme.js"
-  },
-  {
-    "outputFile": "Scripts/Modules/System/include.es5.js",
-    "inputFile": "Scripts/Modules/System/include.js"
-  },
-  {
-    "outputFile": "Scripts/Modules/System/moduleloader.es5.js",
-    "inputFile": "Scripts/Modules/System/moduleloader.js"
   },
   {
     "outputFile": "Css/Modules/image.css",

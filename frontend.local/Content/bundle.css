@@ -7743,6 +7743,7 @@ footer.dark .footer-brand {
 .equal {
   display: table;
   table-layout: fixed;
+  min-height: 190px;
 }
 .equal .vcenter {
   display: table-cell;
@@ -8239,6 +8240,35 @@ img {
 .panel {
   margin-top: 1.0rem;
   margin-bottom: 1.75rem;
+  min-height: 200px;
+}
+@media (min-width: 360px) {
+  .panel {
+    margin-top: 1.0rem;
+    margin-bottom: 1.75rem;
+    min-height: 100px;
+  }
+}
+@media (min-width: 768px) {
+  .panel {
+    margin-top: 1.0rem;
+    margin-bottom: 1.75rem;
+    min-height: 100px;
+  }
+}
+@media (max-width: 1024px) {
+  .panel {
+    margin-top: 1.0rem;
+    margin-bottom: 1.75rem;
+    min-height: 240px;
+  }
+}
+@media (min-width: 1025px) {
+  .panel {
+    margin-top: 1.0rem;
+    margin-bottom: 1.75rem;
+    min-height: 200px;
+  }
 }
 /* page-header */
 .page-header {

@@ -41,8 +41,10 @@
     function equalHeightChecker() {
         if (window.innerWidth > 767 && !heightIsSet) {
             $('.equalizer').each(function () {
-                equalheight(this);
-                heightIsSet = true;
+                $(this).find('.equal').each(function () {
+                    this.style.height = 'auto';
+                });
+                heightIsSet = false;
             });
         } else if (window.innerWidth < 768 && heightIsSet) {
             $('.equalizer').each(function () {

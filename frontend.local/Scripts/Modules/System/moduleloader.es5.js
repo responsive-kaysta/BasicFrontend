@@ -30,6 +30,8 @@ $(document).ready(function () {
         $('.main-content').load('/Frontend/Modules/blogoverview.html');
     } else if (module == "blogentry") {
         $('.main-content').load('/Frontend/Modules/blogentry.html');
+    } else if (module == "blogentry_1") {
+        $('.main-content').load('/Frontend/Modules/blogentry_1.html');
     } else if (module == "aboutoverview") {
         $('.main-content').load('/Frontend/Modules/aboutoverview.html');
     } else {
