@@ -1,5 +1,5 @@
 ﻿[
-
+  /* Compile js */
   {
     "outputFile": "Scripts/Modules/EqualHeight/equalheight.es5.js",
     "inputFile": "Scripts/Modules/EqualHeight/equalheight.js"
@@ -29,6 +29,7 @@
     "inputFile": "Scripts/Modules/System/moduleloader.js"
   },
 
+  /* Compile less */
   {
     "outputFile": "Css/Modules/abstract.css",
     "inputFile": "Css/Modules/abstract.less"
@@ -114,8 +115,8 @@
     "inputFile": "Css/Modules/seperator.less"
   },
   {
-    "outputFile": "Css/Modules/text--center.css",
-    "inputFile": "Css/Modules/text--center.less"
+    "outputFile": "Css/Modules/text-center.css",
+    "inputFile": "Css/Modules/text-center.less"
   },
   {
     "outputFile": "Css/Modules/text.css",
