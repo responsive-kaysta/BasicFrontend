@@ -38,3 +38,36 @@
 .blue + .triangle:before {
   border-color: transparent transparent transparent #51c1f5;
 }
+/* blogarchive blue */
+section.blogarchive .blue h2 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.6;
+  font-family: "Lato", sans-serif;
+  color: #51c1f5;
+}
+section.blogarchive .blue p {
+  font-size: 1.0rem;
+  font-family: "Lato", sans-serif;
+  color: #51c1f5;
+}
+section.blogarchive .blue p .lead {
+  font-size: 1.1rem;
+  font-family: "Lato", sans-serif;
+  color: #51c1f5;
+}
+section.blogarchive .blue p .small {
+  font-size: .85rem;
+  font-family: "Lato", sans-serif;
+  color: #51c1f5;
+}
+section.blogarchive .blue .date {
+  font-size: .9rem;
+  text-align: right;
+  color: #51c1f5;
+}
+section.blogarchive > div.col-md-6 > div.content {
+  border: 1px solid #333;
+  color: #51c1f5;
+  background: #000;
+}
