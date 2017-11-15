@@ -16,3 +16,6 @@ code {
   font-size: 0.75rem;
   font-family: "Courier 10 Pitch", Courier, monospace;
 }
+pre {
+  margin-bottom: 30px;
+}

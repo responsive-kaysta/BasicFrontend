@@ -1,13 +1,8 @@
 ﻿/* colourscheme.js */
 
-"use strict";
+'use strict';
 
 $(document).ready(function () {
-
-    $("#colourscheme").change(function () {
-        var colour = $("#colourscheme :selected").attr('value');
-        window.location = "?colour=" + colour;
-    });
 
     var vars = [],
         hash;
@@ -20,6 +15,11 @@ $(document).ready(function () {
             vars[hash[0]] = hash[1];
         }
     }
+
+    $("#colourscheme").change(function () {
+        var colour = $("#colourscheme :selected").attr('value');
+        window.location = "?colour=" + colour;
+    });
 
     var colour = vars['colour'];
 

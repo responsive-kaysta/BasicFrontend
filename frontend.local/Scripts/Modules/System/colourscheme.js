@@ -2,12 +2,6 @@
 
 $(document).ready(function () {
 
-    
-    $("#colourscheme").change(function () {
-        var colour = $("#colourscheme :selected").attr('value');
-        window.location = "?colour=" + colour;
-    });
-
     var vars = [], hash;
     var q = document.URL.split('?')[1];
     if (q != undefined) {
@@ -19,6 +13,11 @@ $(document).ready(function () {
         }
     }
 
+    $("#colourscheme").change(function () {
+        var colour = $("#colourscheme :selected").attr('value');
+        window.location = "?colour=" + colour;
+    });
+    
     var colour = vars['colour'];
 
     if (colour == null || colour == "") {

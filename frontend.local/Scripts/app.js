@@ -15492,14 +15492,9 @@ $('input#searchQuery').keyup(function () {
 
 /* colourscheme.js */
 
-"use strict";
+'use strict';
 
 $(document).ready(function () {
-
-    $("#colourscheme").change(function () {
-        var colour = $("#colourscheme :selected").attr('value');
-        window.location = "?colour=" + colour;
-    });
 
     var vars = [],
         hash;
@@ -15512,6 +15507,11 @@ $(document).ready(function () {
             vars[hash[0]] = hash[1];
         }
     }
+
+    $("#colourscheme").change(function () {
+        var colour = $("#colourscheme :selected").attr('value');
+        window.location = "?colour=" + colour;
+    });
 
     var colour = vars['colour'];
 
@@ -15555,10 +15555,12 @@ $(document).ready(function () {
         $('.main-content').load('/Frontend/Modules/about.html');
     } else if (module == "blogoverview") {
         $('.main-content').load('/Frontend/Modules/blogoverview.html');
-    } else if (module == "blogentry") {
-        $('.main-content').load('/Frontend/Modules/blogentry.html');
     } else if (module == "blogentry_1") {
         $('.main-content').load('/Frontend/Modules/blogentry_1.html');
+    } else if (module == "blogentry_2") {
+        $('.main-content').load('/Frontend/Modules/blogentry_2.html');
+    } else if (module == "blogentry_3") {
+        $('.main-content').load('/Frontend/Modules/blogentry_3.html');
     } else if (module == "aboutoverview") {
         $('.main-content').load('/Frontend/Modules/aboutoverview.html');
     } else {

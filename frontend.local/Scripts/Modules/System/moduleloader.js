@@ -1,7 +1,7 @@
 ﻿/* moduleloader.js */
 
 $(document).ready(function () {
-
+    
     var vars = [], hash;
     var q = document.URL.split('?')[1];
     if (q != undefined) {
@@ -12,7 +12,7 @@ $(document).ready(function () {
             vars[hash[0]] = hash[1];
         }
     }
-
+    
     var module = vars['module'];
 
     if (module == null || module == "") {
@@ -35,12 +35,16 @@ $(document).ready(function () {
         $('.main-content').load('/Frontend/Modules/blogoverview.html');
     }
 
-    else if (module == "blogentry") {
-        $('.main-content').load('/Frontend/Modules/blogentry.html');
-    }
-
     else if (module == "blogentry_1") {
         $('.main-content').load('/Frontend/Modules/blogentry_1.html');
+    }
+
+    else if (module == "blogentry_2") {
+        $('.main-content').load('/Frontend/Modules/blogentry_2.html');
+    }
+
+    else if (module == "blogentry_3") {
+        $('.main-content').load('/Frontend/Modules/blogentry_3.html');
     }
 
     else if (module == "aboutoverview") {
