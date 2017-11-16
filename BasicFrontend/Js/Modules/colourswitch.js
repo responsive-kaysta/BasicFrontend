@@ -3,7 +3,7 @@
 var cookie;
 var colour;
 
-$(document).ready(function () {
+(function ($) {
 
     cookie = readCookie("colourscheme");
 
@@ -25,4 +25,4 @@ $(document).ready(function () {
     $("#header").addClass(colour);
     $("#footer").addClass(colour);
 
-});
+})(jQuery);

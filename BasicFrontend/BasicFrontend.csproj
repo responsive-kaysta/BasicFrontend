@@ -470,6 +470,13 @@
       <DependentUpon>colourswitch.es5.js</DependentUpon>
     </Content>
     <Content Include="Js\Modules\colourswitch.js" />
+    <Content Include="Js\Modules\navigation.es5.js">
+      <DependentUpon>navigation.js</DependentUpon>
+    </Content>
+    <Content Include="Js\Modules\navigation.es5.min.js">
+      <DependentUpon>navigation.es5.js</DependentUpon>
+    </Content>
+    <Content Include="Js\Modules\navigation.js" />
     <Content Include="Js\Plugins\Tooltipster\tooltipster-SVG.es5.js">
       <DependentUpon>tooltipster-SVG.js</DependentUpon>
     </Content>

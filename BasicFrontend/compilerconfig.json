@@ -44,6 +44,14 @@
     "inputFile": "Js/Modules/colourswitch.js"
   },
   {
+    "outputFile": "Js/Modules/navigation.es5.js",
+    "inputFile": "Js/Modules/navigation.js"
+  },
+
+
+
+
+  {
     "outputFile": "Css/Colours/colours.css",
     "inputFile": "Css/Colours/colours.less"
   },
