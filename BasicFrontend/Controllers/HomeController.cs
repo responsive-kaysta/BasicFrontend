@@ -55,5 +55,10 @@ namespace BasicFrontend.Controllers
         {
             return View();
         }
+
+        public ActionResult MasterArchive()
+        {
+            return View();
+        }
     }
 }

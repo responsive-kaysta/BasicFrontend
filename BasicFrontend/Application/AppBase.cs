@@ -75,6 +75,8 @@ namespace BasicFrontend.Application
 
         public string linkDisclaimer = "/Home/Disclaimer";
 
+        public string linkMasterArchive = "/Home/MasterArchive";
+
         public string linkBlog = "/Blog/Index";
         public string linkBlog1 = "/Blog/Blog1";
         public string linkBlog2 = "/Blog/Blog2";

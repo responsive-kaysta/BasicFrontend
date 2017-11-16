@@ -34,9 +34,7 @@
       "Css/Modules/text-center.css",
       "Css/Modules/text.css",
       "Css/Modules/video-wrapper.css",
-      "Css/Plugins/Tooltipster/tooltipster.bundle.css",
-      "Css/Plugins/Tooltipster/Themes/tooltipster-sideTip-punk.min.css",
-      "Css/Plugins/Tooltipster/tooltipster.css",
+
       "Css/Colours/dark.css",
       "Css/Colours/light.css",
       "Css/Colours/blue.css",
@@ -44,6 +42,11 @@
       "Css/Colours/purple.css",
       "Css/Colours/colours.css",
       "Css/style.css",
+
+      "Css/Plugins/Tooltipster/tooltipster.bundle.css",
+      "Css/Plugins/Tooltipster/Themes/tooltipster-sideTip-punk.min.css",
+      "Css/Plugins/Tooltipster/tooltipster.css",
+
       "Css/ie10-viewport-bug-workaround.css"
     ],
     "minify": {
@@ -58,13 +61,14 @@
       "Scripts/jquery.validate.es5.js",
       "Scripts/jquery.validate.unobtrusive.es5.js",
       "Scripts/bootstrap.es5.js",
-      "Js/Plugins/tooltipster.main.es5.js",
-      "Js/Plugins/tooltipster.bundle.es5.js",
-      "Js/Plugins/tooltipster-SVG.es5.js",
+      "Js/Plugins/Tooltipster/tooltipster.bundle.es5.js",
       "Js/global.es5.js",
       "Js/Modules/colourswitch.es5.js",
       "Js/Modules/navigation.es5.js",
-      "Js/Modules/equalheight.es5.js"
+      "Js/Modules/equalheight.es5.js",
+      "Js/Modules/loadmore.es5.js",
+      "Js/Modules/searchbox.es5.js",
+      "Js/Plugins/Tooltipster/tooltipster.es5.js"
 
     ]
   }

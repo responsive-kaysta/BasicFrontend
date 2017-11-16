@@ -20,16 +20,8 @@
     "inputFile": "Scripts/bootstrap.js"
   },
   {
-    "outputFile": "Js/Plugins/Tooltipster/tooltipster.main.es5.js",
-    "inputFile": "Js/Plugins/Tooltipster/tooltipster.main.js"
-  },
-  {
     "outputFile": "Js/Plugins/Tooltipster/tooltipster.bundle.es5.js",
     "inputFile": "Js/Plugins/Tooltipster/tooltipster.bundle.js"
-  },
-  {
-    "outputFile": "Js/Plugins/Tooltipster/tooltipster-SVG.es5.js",
-    "inputFile": "Js/Plugins/Tooltipster/tooltipster-SVG.js"
   },
   {
     "outputFile": "Js/Plugins/Tooltipster/tooltipster.es5.js",
@@ -50,6 +42,14 @@
   {
     "outputFile": "Js/Modules/equalheight.es5.js",
     "inputFile": "Js/Modules/equalheight.js"
+  },
+  {
+    "outputFile": "Js/Modules/loadmore.es5.js",
+    "inputFile": "Js/Modules/loadmore.js"
+  },
+  {
+    "outputFile": "Js/Modules/searchbox.es5.js",
+    "inputFile": "Js/Modules/searchbox.js"
   },
   {
     "outputFile": "Css/Colours/colours.css",
@@ -211,5 +211,4 @@
     "outputFile": "Css/Plugins/Tooltipster/tooltipster.css",
     "inputFile": "Css/Plugins/Tooltipster/tooltipster.less"
   }
-
 ]

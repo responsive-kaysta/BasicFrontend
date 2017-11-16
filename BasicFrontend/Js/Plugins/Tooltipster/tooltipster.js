@@ -1,6 +1,6 @@
 ﻿/* tooltipster.js */
 
-$(document).ready(function () {
+(function ($) {
 
     $('.tooltipster').tooltipster({
         animation: 'fade',
@@ -17,4 +17,4 @@ $(document).ready(function () {
 
     $('ul.tooltip_ul li:odd').addClass('odd');
 
-});
+})(jQuery);

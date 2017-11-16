@@ -480,6 +480,13 @@
       <DependentUpon>equalheight.es5.js</DependentUpon>
     </Content>
     <Content Include="Js\Modules\equalheight.js" />
+    <Content Include="Js\Modules\loadmore.es5.js">
+      <DependentUpon>loadmore.js</DependentUpon>
+    </Content>
+    <Content Include="Js\Modules\loadmore.es5.min.js">
+      <DependentUpon>loadmore.es5.js</DependentUpon>
+    </Content>
+    <Content Include="Js\Modules\loadmore.js" />
     <Content Include="Js\Modules\navigation.es5.js">
       <DependentUpon>navigation.js</DependentUpon>
     </Content>
@@ -487,6 +494,13 @@
       <DependentUpon>navigation.es5.js</DependentUpon>
     </Content>
     <Content Include="Js\Modules\navigation.js" />
+    <Content Include="Js\Modules\searchbox.es5.js">
+      <DependentUpon>searchbox.js</DependentUpon>
+    </Content>
+    <Content Include="Js\Modules\searchbox.es5.min.js">
+      <DependentUpon>searchbox.es5.js</DependentUpon>
+    </Content>
+    <Content Include="Js\Modules\searchbox.js" />
     <Content Include="Js\Plugins\Tooltipster\tooltipster-SVG.es5.js">
       <DependentUpon>tooltipster-SVG.js</DependentUpon>
     </Content>
@@ -621,6 +635,7 @@
     <Content Include="Views\Blog\Blog3.cshtml" />
     <Content Include="Views\Blog\Blog4.cshtml" />
     <Content Include="Views\Blog\Blog5.cshtml" />
+    <Content Include="Views\Home\MasterArchive.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
