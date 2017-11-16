@@ -1,0 +1,24 @@
+﻿/* button.less */
+a.button {
+  border-radius: 3px;
+  padding: 8px 18px !important;
+  margin-top: 20px;
+  font-family: "Lato", sans-serif !important;
+  font-size: 1rem;
+  background: transparent;
+  transition: all 0.2s ease-in-out;
+}
+a.button:hover {
+  background: #000;
+  color: #fff;
+  text-decoration: none !important;
+}
+a.button.fill {
+  background: #000;
+  color: #fff;
+}
+a.button.fill:hover {
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  text-decoration: none;
+}

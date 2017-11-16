@@ -1,0 +1,10 @@
+﻿/* loadmore.less */
+.tooltipster {
+  display: none;
+}
+.totop a {
+  display: none;
+}
+#loadMore {
+  margin-bottom: 1.0em;
+}

@@ -1,0 +1,76 @@
+﻿/* light.less */
+.light {
+  background: #fff;
+}
+.light nav > ul li {
+  background: #fff;
+  background-color: #fff;
+}
+.light * {
+  color: #000;
+}
+.light a,
+.light a:visited {
+  color: #f45376 !important;
+}
+.light a:hover,
+.light a:visited:hover {
+  text-decoration: underline;
+}
+.light a.button {
+  border: 1px solid #000;
+  background: transparent;
+  color: #000;
+}
+.light a.button:hover {
+  background: #000;
+  color: #fff;
+}
+.light a.button.fill {
+  background: #000;
+  color: #fff;
+}
+.light a.button.fill:hover {
+  background: rgba(0, 0, 0, 0.2);
+  color: #000;
+}
+.light code,
+.light pre {
+  background-color: #f8f8f8;
+}
+.light + .triangle:before {
+  border-color: transparent transparent transparent #fff;
+}
+/* blogarchive light */
+section.blogarchive .light h2 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.6;
+  font-family: "Lato", sans-serif;
+  color: #1c1c1e;
+}
+section.blogarchive .light p {
+  font-size: 1.0rem;
+  font-family: "Lato", sans-serif;
+  color: #1c1c1e;
+}
+section.blogarchive .light p .lead {
+  font-size: 1.1rem;
+  font-family: "Lato", sans-serif;
+  color: #1c1c1e;
+}
+section.blogarchive .light p .small {
+  font-size: .85rem;
+  font-family: "Lato", sans-serif;
+  color: #1c1c1e;
+}
+section.blogarchive .light .date {
+  font-size: .9rem;
+  text-align: right;
+  color: #1c1c1e;
+}
+section.blogarchive > div.col-md-6 > div.content {
+  border: 1px solid #333;
+  color: #1c1c1e;
+  background: #000;
+}

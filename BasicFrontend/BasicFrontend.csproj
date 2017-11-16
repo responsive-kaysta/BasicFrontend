@@ -120,6 +120,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Application\AppBase.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -131,26 +132,322 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.css.map">
+      <DependentUpon>bootstrap-theme.css</DependentUpon>
+    </Content>
     <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap-theme.min.css.map">
+      <DependentUpon>bootstrap-theme.min.css</DependentUpon>
+    </Content>
     <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.css.map">
+      <DependentUpon>bootstrap.css</DependentUpon>
+    </Content>
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\bootstrap.min.css.map">
+      <DependentUpon>bootstrap.min.css</DependentUpon>
+    </Content>
+    <Content Include="Content\bundle.css" />
+    <Content Include="Content\bundle.min.css">
+      <DependentUpon>bundle.css</DependentUpon>
+    </Content>
+    <Content Include="Css\Colours\blue.css">
+      <DependentUpon>blue.less</DependentUpon>
+    </Content>
+    <Content Include="Css\Colours\blue.min.css">
+      <DependentUpon>blue.css</DependentUpon>
+    </Content>
+    <Content Include="Css\Colours\colours.css">
+      <DependentUpon>colours.less</DependentUpon>
+    </Content>
+    <Content Include="Css\Colours\colours.min.css">
+      <DependentUpon>colours.css</DependentUpon>
+    </Content>
+    <Content Include="Css\Colours\dark.css">
+      <DependentUpon>dark.less</DependentUpon>
+    </Content>
+    <Content Include="Css\Colours\dark.min.css">
+      <DependentUpon>dark.css</DependentUpon>
+    </Content>
+    <Content Include="Css\Colours\light.css">
+      <DependentUpon>light.less</DependentUpon>
+    </Content>
+    <Content Include="Css\Colours\light.min.css">
+      <DependentUpon>light.css</DependentUpon>
+    </Content>
+    <Content Include="Css\Colours\purple.css">
+      <DependentUpon>purple.less</DependentUpon>
+    </Content>
+    <Content Include="Css\Colours\purple.min.css">
+      <DependentUpon>purple.css</DependentUpon>
+    </Content>
+    <Content Include="Css\Colours\yellow.css">
+      <DependentUpon>yellow.less</DependentUpon>
+    </Content>
+    <Content Include="Css\Colours\yellow.min.css">
+      <DependentUpon>yellow.css</DependentUpon>
+    </Content>
+    <Content Include="Css\global.css">
+      <DependentUpon>global.less</DependentUpon>
+    </Content>
+    <Content Include="Css\global.min.css">
+      <DependentUpon>global.css</DependentUpon>
+    </Content>
+    <Content Include="Css\ie10-viewport-bug-workaround.css">
+      <DependentUpon>ie10-viewport-bug-workaround.less</DependentUpon>
+    </Content>
+    <Content Include="Css\ie10-viewport-bug-workaround.min.css">
+      <DependentUpon>ie10-viewport-bug-workaround.css</DependentUpon>
+    </Content>
+    <Content Include="Css\Modules\abstract.css">
+      <DependentUpon>abstract.less</DependentUpon>
+    </Content>
+    <Content Include="Css\Modules\abstract.min.css">
+      <DependentUpon>abstract.css</DependentUpon>
+    </Content>
+    <Content Include="Css\Modules\banner.css">
+      <DependentUpon>banner.less</DependentUpon>
+    </Content>
+    <Content Include="Css\Modules\banner.min.css">
+      <DependentUpon>banner.css</DependentUpon>
+    </Content>
+    <Content Include="Css\Modules\blockquote.css">
+      <DependentUpon>blockquote.less</DependentUpon>
+    </Content>
+    <Content Include="Css\Modules\blockquote.min.css">
+      <DependentUpon>blockquote.css</DependentUpon>
+    </Content>
+    <Content Include="Css\Modules\blogarchive.css">
+      <DependentUpon>blogarchive.less</DependentUpon>
+    </Content>
+    <Content Include="Css\Modules\blogarchive.min.css">
+      <DependentUpon>blogarchive.css</DependentUpon>
+    </Content>
+    <Content Include="Css\Modules\box.css">
+      <DependentUpon>box.less</DependentUpon>
+    </Content>
+    <Content Include="Css\Modules\box.min.css">
+      <DependentUpon>box.css</DependentUpon>
+    </Content>
+    <Content Include="Css\Modules\breadcrumb.css">
+      <DependentUpon>breadcrumb.less</DependentUpon>
+    </Content>
+    <Content Include="Css\Modules\breadcrumb.min.css">
+      <DependentUpon>breadcrumb.css</DependentUpon>
+    </Content>
+    <Content Include="Css\Modules\button.css">
+      <DependentUpon>button.less</DependentUpon>
+    </Content>
+    <Content Include="Css\Modules\button.min.css">
+      <DependentUpon>button.css</DependentUpon>
+    </Content>
+    <Content Include="Css\Modules\code.css">
+      <DependentUpon>code.less</DependentUpon>
+    </Content>
+    <Content Include="Css\Modules\code.min.css">
+      <DependentUpon>code.css</DependentUpon>
+    </Content>
+    <Content Include="Css\Modules\container.css">
+      <DependentUpon>container.less</DependentUpon>
+    </Content>
+    <Content Include="Css\Modules\container.min.css">
+      <DependentUpon>container.css</DependentUpon>
+    </Content>
+    <Content Include="Css\Modules\equal.css">
+      <DependentUpon>equal.less</DependentUpon>
+    </Content>
+    <Content Include="Css\Modules\equal.min.css">
+      <DependentUpon>equal.css</DependentUpon>
+    </Content>
+    <Content Include="Css\Modules\footer.css">
+      <DependentUpon>footer.less</DependentUpon>
+    </Content>
+    <Content Include="Css\Modules\footer.min.css">
+      <DependentUpon>footer.css</DependentUpon>
+    </Content>
+    <Content Include="Css\Modules\full.css">
+      <DependentUpon>full.less</DependentUpon>
+    </Content>
+    <Content Include="Css\Modules\full.min.css">
+      <DependentUpon>full.css</DependentUpon>
+    </Content>
+    <Content Include="Css\Modules\gallery.css">
+      <DependentUpon>gallery.less</DependentUpon>
+    </Content>
+    <Content Include="Css\Modules\gallery.min.css">
+      <DependentUpon>gallery.css</DependentUpon>
+    </Content>
+    <Content Include="Css\Modules\header.css">
+      <DependentUpon>header.less</DependentUpon>
+    </Content>
+    <Content Include="Css\Modules\header.min.css">
+      <DependentUpon>header.css</DependentUpon>
+    </Content>
+    <Content Include="Css\Modules\hr.css">
+      <DependentUpon>hr.less</DependentUpon>
+    </Content>
+    <Content Include="Css\Modules\hr.min.css">
+      <DependentUpon>hr.css</DependentUpon>
+    </Content>
+    <Content Include="Css\Modules\image.css">
+      <DependentUpon>image.less</DependentUpon>
+    </Content>
+    <Content Include="Css\Modules\image.min.css">
+      <DependentUpon>image.css</DependentUpon>
+    </Content>
+    <Content Include="Css\Modules\jumbotron.css">
+      <DependentUpon>jumbotron.less</DependentUpon>
+    </Content>
+    <Content Include="Css\Modules\jumbotron.min.css">
+      <DependentUpon>jumbotron.css</DependentUpon>
+    </Content>
+    <Content Include="Css\Modules\list.css">
+      <DependentUpon>list.less</DependentUpon>
+    </Content>
+    <Content Include="Css\Modules\list.min.css">
+      <DependentUpon>list.css</DependentUpon>
+    </Content>
+    <Content Include="Css\Modules\navbar.css">
+      <DependentUpon>navbar.less</DependentUpon>
+    </Content>
+    <Content Include="Css\Modules\navbar.min.css">
+      <DependentUpon>navbar.css</DependentUpon>
+    </Content>
+    <Content Include="Css\Modules\page-header.css">
+      <DependentUpon>page-header.less</DependentUpon>
+    </Content>
+    <Content Include="Css\Modules\page-header.min.css">
+      <DependentUpon>page-header.css</DependentUpon>
+    </Content>
+    <Content Include="Css\Modules\panel.css">
+      <DependentUpon>panel.less</DependentUpon>
+    </Content>
+    <Content Include="Css\Modules\panel.min.css">
+      <DependentUpon>panel.css</DependentUpon>
+    </Content>
+    <Content Include="Css\Modules\seperator.css">
+      <DependentUpon>seperator.less</DependentUpon>
+    </Content>
+    <Content Include="Css\Modules\seperator.min.css">
+      <DependentUpon>seperator.css</DependentUpon>
+    </Content>
+    <Content Include="Css\Modules\text-center.css">
+      <DependentUpon>text-center.less</DependentUpon>
+    </Content>
+    <Content Include="Css\Modules\text-center.min.css">
+      <DependentUpon>text-center.css</DependentUpon>
+    </Content>
+    <Content Include="Css\Modules\text.css">
+      <DependentUpon>text.less</DependentUpon>
+    </Content>
+    <Content Include="Css\Modules\text.min.css">
+      <DependentUpon>text.css</DependentUpon>
+    </Content>
+    <Content Include="Css\Modules\toggle.css">
+      <DependentUpon>toggle.less</DependentUpon>
+    </Content>
+    <Content Include="Css\Modules\toggle.min.css">
+      <DependentUpon>toggle.css</DependentUpon>
+    </Content>
+    <Content Include="Css\Modules\triangle.css">
+      <DependentUpon>triangle.less</DependentUpon>
+    </Content>
+    <Content Include="Css\Modules\triangle.min.css">
+      <DependentUpon>triangle.css</DependentUpon>
+    </Content>
+    <Content Include="Css\Modules\video-wrapper.css">
+      <DependentUpon>video-wrapper.less</DependentUpon>
+    </Content>
+    <Content Include="Css\Modules\video-wrapper.min.css">
+      <DependentUpon>video-wrapper.css</DependentUpon>
+    </Content>
+    <Content Include="Css\Plugins\Effects\loadmore.css">
+      <DependentUpon>loadmore.less</DependentUpon>
+    </Content>
+    <Content Include="Css\Plugins\Effects\loadmore.min.css">
+      <DependentUpon>loadmore.css</DependentUpon>
+    </Content>
+    <Content Include="Css\Plugins\Tooltipster\tooltipster-sideTip-borderless.min.css" />
+    <Content Include="Css\Plugins\Tooltipster\tooltipster-sideTip-light.min.css" />
+    <Content Include="Css\Plugins\Tooltipster\tooltipster-sideTip-noir.min.css" />
+    <Content Include="Css\Plugins\Tooltipster\tooltipster-sideTip-punk.min.css" />
+    <Content Include="Css\Plugins\Tooltipster\tooltipster-sideTip-shadow.min.css" />
+    <Content Include="Css\Plugins\Tooltipster\tooltipster.bundle.css" />
+    <Content Include="Css\Plugins\Tooltipster\tooltipster.core.css" />
+    <Content Include="Css\Plugins\Tooltipster\tooltipster.css">
+      <DependentUpon>tooltipster.less</DependentUpon>
+    </Content>
+    <Content Include="Css\Plugins\Tooltipster\tooltipster.min.css">
+      <DependentUpon>tooltipster.css</DependentUpon>
+    </Content>
+    <Content Include="Css\reset.css">
+      <DependentUpon>reset.less</DependentUpon>
+    </Content>
+    <Content Include="Css\reset.min.css">
+      <DependentUpon>reset.css</DependentUpon>
+    </Content>
+    <Content Include="Css\style.css">
+      <DependentUpon>style.less</DependentUpon>
+    </Content>
+    <Content Include="Css\style.min.css">
+      <DependentUpon>style.css</DependentUpon>
+    </Content>
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="Content\bootstrap.min.css.map" />
-    <Content Include="Content\bootstrap.css.map" />
-    <Content Include="Content\bootstrap-theme.min.css.map" />
-    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="bundleconfig.json" />
     <None Include="compilerconfig.json" />
     <None Include="compilerconfig.json.defaults">
       <DependentUpon>compilerconfig.json</DependentUpon>
     </None>
+    <Content Include="Css\Colours\blue.less" />
+    <Content Include="Css\Colours\colours.less" />
+    <Content Include="Css\Colours\dark.less" />
+    <Content Include="Css\Colours\light.less" />
+    <Content Include="Css\Colours\purple.less" />
+    <Content Include="Css\Colours\yellow.less" />
+    <Content Include="Css\global.less" />
+    <Content Include="Css\ie10-viewport-bug-workaround.less" />
+    <Content Include="Css\Modules\abstract.less" />
+    <Content Include="Css\Modules\banner.less" />
+    <Content Include="Css\Modules\blockquote.less" />
+    <Content Include="Css\Modules\blogarchive.less" />
+    <Content Include="Css\Modules\box.less" />
+    <Content Include="Css\Modules\breadcrumb.less" />
+    <Content Include="Css\Modules\button.less" />
+    <Content Include="Css\Modules\code.less" />
+    <Content Include="Css\Modules\container.less" />
+    <Content Include="Css\Modules\equal.less" />
+    <Content Include="Css\Modules\footer.less" />
+    <Content Include="Css\Modules\full.less" />
+    <Content Include="Css\Modules\gallery.less" />
+    <Content Include="Css\Modules\header.less" />
+    <Content Include="Css\Modules\hr.less" />
+    <Content Include="Css\Modules\image.less" />
+    <Content Include="Css\Modules\jumbotron.less" />
+    <Content Include="Css\Modules\list.less" />
+    <Content Include="Css\Modules\navbar.less" />
+    <Content Include="Css\Modules\page-header.less" />
+    <Content Include="Css\Modules\panel.less" />
+    <Content Include="Css\Modules\seperator.less" />
+    <Content Include="Css\Modules\text-center.less" />
+    <Content Include="Css\Modules\text.less" />
+    <Content Include="Css\Modules\toggle.less" />
+    <Content Include="Css\Modules\triangle.less" />
+    <Content Include="Css\Modules\video-wrapper.less" />
+    <Content Include="Css\reset.less" />
+    <Content Include="Css\style.less" />
+    <Content Include="Css\Plugins\Effects\loadmore.less" />
+    <Content Include="Css\Plugins\Tooltipster\tooltipster.less" />
     <None Include="Scripts\jquery-3.2.1.intellisense.js" />
+    <Content Include="Scripts\app.js" />
+    <Content Include="Scripts\app.min.js">
+      <DependentUpon>app.js</DependentUpon>
+    </Content>
     <Content Include="Scripts\bootstrap.es5.js">
       <DependentUpon>bootstrap.js</DependentUpon>
     </Content>
@@ -167,6 +464,12 @@
     <Content Include="Scripts\jquery-3.2.1.es5.min.js">
       <DependentUpon>jquery-3.2.1.es5.js</DependentUpon>
     </Content>
+    <Content Include="Scripts\jquery-3.2.1.intellisense.es5.js">
+      <DependentUpon>jquery-3.2.1.intellisense.js</DependentUpon>
+    </Content>
+    <Content Include="Scripts\jquery-3.2.1.intellisense.es5.min.js">
+      <DependentUpon>jquery-3.2.1.intellisense.es5.js</DependentUpon>
+    </Content>
     <Content Include="Scripts\jquery-3.2.1.js" />
     <Content Include="Scripts\jquery-3.2.1.min.js" />
     <Content Include="Scripts\jquery-3.2.1.min.map">
@@ -178,9 +481,21 @@
     <Content Include="Scripts\jquery-3.2.1.slim.min.map">
       <DependentUpon>jquery-3.2.1.slim.min.js</DependentUpon>
     </Content>
+    <Content Include="Scripts\jquery.validate.es5.js">
+      <DependentUpon>jquery.validate.js</DependentUpon>
+    </Content>
+    <Content Include="Scripts\jquery.validate.es5.min.js">
+      <DependentUpon>jquery.validate.es5.js</DependentUpon>
+    </Content>
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js">
       <DependentUpon>jquery.validate.js</DependentUpon>
+    </Content>
+    <Content Include="Scripts\jquery.validate.unobtrusive.es5.js">
+      <DependentUpon>jquery.validate.unobtrusive.js</DependentUpon>
+    </Content>
+    <Content Include="Scripts\jquery.validate.unobtrusive.es5.min.js">
+      <DependentUpon>jquery.validate.unobtrusive.es5.js</DependentUpon>
     </Content>
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js">
@@ -204,12 +519,19 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\Footer.cshtml" />
+    <Content Include="Views\Shared\Header.cshtml" />
+    <Content Include="Views\Shared\Colourswitch.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Me.cshtml" />
+    <Content Include="Views\Home\Laws.cshtml" />
+    <Content Include="Views\Home\Disclaimer.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Js\Modules\" />
+    <Folder Include="Js\Plugins\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>

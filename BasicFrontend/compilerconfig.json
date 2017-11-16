@@ -2,5 +2,177 @@
   {
     "outputFile": "Scripts/jquery-3.2.1.es5.js",
     "inputFile": "Scripts/jquery-3.2.1.js"
+  },
+  {
+    "outputFile": "Scripts/jquery.validate.es5.js",
+    "inputFile": "Scripts/jquery.validate.js"
+  },
+  {
+    "outputFile": "Scripts/jquery.validate.unobtrusive.es5.js",
+    "inputFile": "Scripts/jquery.validate.unobtrusive.js"
+  },
+  {
+    "outputFile": "Scripts/jquery-3.2.1.intellisense.es5.js",
+    "inputFile": "Scripts/jquery-3.2.1.intellisense.js"
+  },
+  {
+    "outputFile": "Scripts/bootstrap.es5.js",
+    "inputFile": "Scripts/bootstrap.js"
+  },
+  {
+    "outputFile": "Css/Colours/colours.css",
+    "inputFile": "Css/Colours/colours.less"
+  },
+  {
+    "outputFile": "Css/Colours/blue.css",
+    "inputFile": "Css/Colours/blue.less"
+  },
+  {
+    "outputFile": "Css/Colours/dark.css",
+    "inputFile": "Css/Colours/dark.less"
+  },
+  {
+    "outputFile": "Css/Colours/light.css",
+    "inputFile": "Css/Colours/light.less"
+  },
+  {
+    "outputFile": "Css/Colours/purple.css",
+    "inputFile": "Css/Colours/purple.less"
+  },
+  {
+    "outputFile": "Css/Colours/yellow.css",
+    "inputFile": "Css/Colours/yellow.less"
+  },
+  {
+    "outputFile": "Css/Modules/abstract.css",
+    "inputFile": "Css/Modules/abstract.less"
+  },
+  {
+    "outputFile": "Css/Modules/banner.css",
+    "inputFile": "Css/Modules/banner.less"
+  },
+  {
+    "outputFile": "Css/Modules/blockquote.css",
+    "inputFile": "Css/Modules/blockquote.less"
+  },
+  {
+    "outputFile": "Css/Modules/blogarchive.css",
+    "inputFile": "Css/Modules/blogarchive.less"
+  },
+  {
+    "outputFile": "Css/Modules/box.css",
+    "inputFile": "Css/Modules/box.less"
+  },
+  {
+    "outputFile": "Css/Modules/breadcrumb.css",
+    "inputFile": "Css/Modules/breadcrumb.less"
+  },
+  {
+    "outputFile": "Css/Modules/button.css",
+    "inputFile": "Css/Modules/button.less"
+  },
+  {
+    "outputFile": "Css/Modules/code.css",
+    "inputFile": "Css/Modules/code.less"
+  },
+  {
+    "outputFile": "Css/Modules/container.css",
+    "inputFile": "Css/Modules/container.less"
+  },
+  {
+    "outputFile": "Css/Modules/equal.css",
+    "inputFile": "Css/Modules/equal.less"
+  },
+  {
+    "outputFile": "Css/Modules/footer.css",
+    "inputFile": "Css/Modules/footer.less"
+  },
+  {
+    "outputFile": "Css/Modules/full.css",
+    "inputFile": "Css/Modules/full.less"
+  },
+  {
+    "outputFile": "Css/Modules/gallery.css",
+    "inputFile": "Css/Modules/gallery.less"
+  },
+  {
+    "outputFile": "Css/Modules/header.css",
+    "inputFile": "Css/Modules/header.less"
+  },
+  {
+    "outputFile": "Css/Modules/hr.css",
+    "inputFile": "Css/Modules/hr.less"
+  },
+  {
+    "outputFile": "Css/Modules/image.css",
+    "inputFile": "Css/Modules/image.less"
+  },
+  {
+    "outputFile": "Css/Modules/jumbotron.css",
+    "inputFile": "Css/Modules/jumbotron.less"
+  },
+  {
+    "outputFile": "Css/Modules/list.css",
+    "inputFile": "Css/Modules/list.less"
+  },
+  {
+    "outputFile": "Css/Modules/navbar.css",
+    "inputFile": "Css/Modules/navbar.less"
+  },
+  {
+    "outputFile": "Css/Modules/page-header.css",
+    "inputFile": "Css/Modules/page-header.less"
+  },
+  {
+    "outputFile": "Css/Modules/panel.css",
+    "inputFile": "Css/Modules/panel.less"
+  },
+  {
+    "outputFile": "Css/Modules/seperator.css",
+    "inputFile": "Css/Modules/seperator.less"
+  },
+  {
+    "outputFile": "Css/Modules/text-center.css",
+    "inputFile": "Css/Modules/text-center.less"
+  },
+  {
+    "outputFile": "Css/Modules/text.css",
+    "inputFile": "Css/Modules/text.less"
+  },
+  {
+    "outputFile": "Css/Modules/toggle.css",
+    "inputFile": "Css/Modules/toggle.less"
+  },
+  {
+    "outputFile": "Css/Modules/triangle.css",
+    "inputFile": "Css/Modules/triangle.less"
+  },
+  {
+    "outputFile": "Css/Modules/video-wrapper.css",
+    "inputFile": "Css/Modules/video-wrapper.less"
+  },
+  {
+    "outputFile": "Css/Plugins/Effects/loadmore.css",
+    "inputFile": "Css/Plugins/Effects/loadmore.less"
+  },
+  {
+    "outputFile": "Css/Plugins/Tooltipster/tooltipster.css",
+    "inputFile": "Css/Plugins/Tooltipster/tooltipster.less"
+  },
+  {
+    "outputFile": "Css/global.css",
+    "inputFile": "Css/global.less"
+  },
+  {
+    "outputFile": "Css/ie10-viewport-bug-workaround.css",
+    "inputFile": "Css/ie10-viewport-bug-workaround.less"
+  },
+  {
+    "outputFile": "Css/style.css",
+    "inputFile": "Css/style.less"
+  },
+  {
+    "outputFile": "Css/reset.css",
+    "inputFile": "Css/reset.less"
   }
 ]
