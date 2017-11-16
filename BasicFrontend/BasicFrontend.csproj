@@ -124,6 +124,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\BlogController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -367,15 +368,27 @@
     <Content Include="Css\Plugins\Effects\loadmore.min.css">
       <DependentUpon>loadmore.css</DependentUpon>
     </Content>
-    <Content Include="Css\Plugins\Tooltipster\tooltipster-sideTip-borderless.min.css" />
-    <Content Include="Css\Plugins\Tooltipster\tooltipster-sideTip-light.min.css" />
-    <Content Include="Css\Plugins\Tooltipster\tooltipster-sideTip-noir.min.css" />
-    <Content Include="Css\Plugins\Tooltipster\tooltipster-sideTip-punk.min.css" />
-    <Content Include="Css\Plugins\Tooltipster\tooltipster-sideTip-shadow.min.css" />
-    <Content Include="Css\Plugins\Tooltipster\tooltipster.bundle.css" />
-    <Content Include="Css\Plugins\Tooltipster\tooltipster.core.css" />
+    <Content Include="Css\Plugins\Tooltipster\Themes\tooltipster-sideTip-borderless.min.css" />
+    <Content Include="Css\Plugins\Tooltipster\Themes\tooltipster-sideTip-light.min.css" />
+    <Content Include="Css\Plugins\Tooltipster\Themes\tooltipster-sideTip-noir.min.css" />
+    <Content Include="Css\Plugins\Tooltipster\Themes\tooltipster-sideTip-punk.min.css" />
+    <Content Include="Css\Plugins\Tooltipster\Themes\tooltipster-sideTip-shadow.min.css" />
+    <None Include="Css\Plugins\Tooltipster\tooltipster.bundle.less" />
+    <None Include="Css\Plugins\Tooltipster\tooltipster.main.less" />
+    <Content Include="Css\Plugins\Tooltipster\tooltipster.bundle.css">
+      <DependentUpon>tooltipster.bundle.less</DependentUpon>
+    </Content>
+    <Content Include="Css\Plugins\Tooltipster\tooltipster.bundle.min.css">
+      <DependentUpon>tooltipster.bundle.css</DependentUpon>
+    </Content>
     <Content Include="Css\Plugins\Tooltipster\tooltipster.css">
       <DependentUpon>tooltipster.less</DependentUpon>
+    </Content>
+    <Content Include="Css\Plugins\Tooltipster\tooltipster.main.css">
+      <DependentUpon>tooltipster.main.less</DependentUpon>
+    </Content>
+    <Content Include="Css\Plugins\Tooltipster\tooltipster.main.min.css">
+      <DependentUpon>tooltipster.main.css</DependentUpon>
     </Content>
     <Content Include="Css\Plugins\Tooltipster\tooltipster.min.css">
       <DependentUpon>tooltipster.css</DependentUpon>
@@ -443,7 +456,59 @@
     <Content Include="Css\style.less" />
     <Content Include="Css\Plugins\Effects\loadmore.less" />
     <Content Include="Css\Plugins\Tooltipster\tooltipster.less" />
+    <Content Include="Js\Plugins\Tooltipster\tooltipster-SVG.es5.js">
+      <DependentUpon>tooltipster-SVG.js</DependentUpon>
+    </Content>
+    <Content Include="Js\Plugins\Tooltipster\tooltipster-SVG.es5.min.js">
+      <DependentUpon>tooltipster-SVG.es5.js</DependentUpon>
+    </Content>
+    <Content Include="Js\Plugins\Tooltipster\tooltipster-SVG.js" />
+    <Content Include="Js\Plugins\Tooltipster\tooltipster.bundle.es5.js">
+      <DependentUpon>tooltipster.bundle.js</DependentUpon>
+    </Content>
+    <Content Include="Js\Plugins\Tooltipster\tooltipster.bundle.es5.min.js">
+      <DependentUpon>tooltipster.bundle.es5.js</DependentUpon>
+    </Content>
+    <Content Include="Js\Plugins\Tooltipster\tooltipster.bundle.js" />
+    <Content Include="Js\Plugins\Tooltipster\tooltipster.es5.js">
+      <DependentUpon>tooltipster.js</DependentUpon>
+    </Content>
+    <Content Include="Js\Plugins\Tooltipster\tooltipster.es5.min.js">
+      <DependentUpon>tooltipster.es5.js</DependentUpon>
+    </Content>
+    <Content Include="Js\Plugins\Tooltipster\tooltipster.js" />
+    <Content Include="Js\Plugins\Tooltipster\tooltipster.main.es5.js">
+      <DependentUpon>tooltipster.main.js</DependentUpon>
+    </Content>
+    <Content Include="Js\Plugins\Tooltipster\tooltipster.main.es5.min.js">
+      <DependentUpon>tooltipster.main.es5.js</DependentUpon>
+    </Content>
+    <Content Include="Js\Plugins\Tooltipster\tooltipster.main.js" />
+    <Content Include="Media\Web.config" />
     <None Include="Scripts\jquery-3.2.1.intellisense.js" />
+    <Content Include="Media\1001\photo-1482062364825-616fd23b8fc1.jpg" />
+    <Content Include="Media\1002\photo-1485856407642-7f9ba0268b51.jpg" />
+    <Content Include="Media\1003\programming_blog.jpeg" />
+    <Content Include="Media\1004\technics-q-g-410-130-8.jpg" />
+    <Content Include="Media\1005\w600_1233b38aa07790c27799d7a3b9d31906.png" />
+    <Content Include="Media\1006\analytics-programming.png" />
+    <Content Include="Media\1007\archive-bg.jpg" />
+    <Content Include="Media\1008\code-820275_960_720.jpg" />
+    <Content Include="Media\1009\coding-924920_960_720.jpg" />
+    <Content Include="Media\1010\w600_1233b38aa07790c27799d7a3b9d31906.png" />
+    <Content Include="Media\1011\archive-bg.jpg" />
+    <Content Include="Media\1012\code4.png" />
+    <Content Include="Media\1013\kentico-cms_1.png" />
+    <Content Include="Media\1014\memory.jpg" />
+    <Content Include="Media\1015\memory_2.jpg" />
+    <Content Include="Media\1016\programming_blog.jpeg" />
+    <Content Include="Media\1017\monodevelop_1.png" />
+    <Content Include="Media\1018\solution_setup_1.png" />
+    <Content Include="Media\1019\monodevelop_1.png" />
+    <Content Include="Media\1020\nuget_1.png" />
+    <Content Include="Media\1021\solution_options_1.png" />
+    <Content Include="Media\1032\monodevelop_1.png" />
+    <Content Include="Media\technics-q-g-410-130-8.jpg" />
     <Content Include="Scripts\app.js" />
     <Content Include="Scripts\app.min.js">
       <DependentUpon>app.js</DependentUpon>
@@ -527,11 +592,16 @@
     <Content Include="Views\Home\Me.cshtml" />
     <Content Include="Views\Home\Laws.cshtml" />
     <Content Include="Views\Home\Disclaimer.cshtml" />
+    <Content Include="Views\Blog\Index.cshtml" />
+    <Content Include="Views\Blog\Blog1.cshtml" />
+    <Content Include="Views\Blog\Blog2.cshtml" />
+    <Content Include="Views\Blog\Blog3.cshtml" />
+    <Content Include="Views\Blog\Blog4.cshtml" />
+    <Content Include="Views\Blog\Blog5.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Js\Modules\" />
-    <Folder Include="Js\Plugins\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>

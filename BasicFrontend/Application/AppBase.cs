@@ -68,5 +68,18 @@ namespace BasicFrontend.Application
 
         public string linkHome = "/";
         public string linkIndex = "/Home/Index";
+
+        public string linkAbout = "/Home/About";
+        public string linkAboutMe = "/Home/Me";
+        public string linkAboutLaws = "/Home/Laws";
+
+        public string linkDisclaimer = "/Home/Disclaimer";
+
+        public string linkBlog = "/Blog/Index";
+        public string linkBlog1 = "/Blog/Blog1";
+        public string linkBlog2 = "/Blog/Blog2";
+        public string linkBlog3 = "/Blog/Blog3";
+
+       
     }
 }

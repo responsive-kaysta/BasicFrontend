@@ -1,0 +1,292 @@
+﻿
+@{
+    ViewBag.Title = "Blog1";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="umb-grid">
+    <div class="grid-section">
+        <div>
+            <div class="row clearfix">
+                <div class="col-md-12 column">
+                    <div>
+
+
+
+                        <div class='page-header'><h1>InMemoryLoader</h1></div>
+
+
+
+
+
+
+                        <p class='lead'>InMemoryLoader ist eine in C# (Mono) geschriebene Funktions- oder Klassen-Bibliothek die das dynamische Laden von .NET Assemblies zur Laufzeit erm&#246;glicht.</p>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="row clearfix">
+                <div class="col-md-12 column">
+                    <div>
+
+
+
+                        <div class='abstract'>Beschreibung</div>
+
+
+
+
+
+
+                        <p>Das Projekt &quot;InMemoryLoader&quot; ist aus einer Anforderung oder Idee entstanden, ein m&#246;glichst modulares Web-Framework f&#252;r Business-Anwendungen meines damaligen Arbeitgebers zu entwickeln.</p>
+
+
+
+
+
+
+                        <p>Ich musste unterschiedlichste Technologien (ASP Web-Sites, SAP Dienste, Web-Service, CMS Systeme , ubterschiedliche Datenbanken) kombinieren bzw. Daten aus diesen Systemen verarbeiten.</p>
+
+
+
+
+
+
+                        <p>Damit die einzelnen Anwendungen modeular, schlank und einfach wartbar blieben, entschied ich mich die einzelnen Bestandteile in einzelne Module aufzuteilen. Die einzelnen Module m&#252;ssen jedoch verkn&#252;pf- oder kombinierbar sein weshalb ich zudem ein Modul entwickelte, dass die Verwaltug/Registrierung erm&#246;glichte.</p>
+
+
+
+
+
+
+                        <p>Hierbei werden die .Dll’s einmalig geladen und gepr&#252;ft, in eine Collection geschrieben und zur Laufzeit einmalig instanziert und im Memory gespeichert.</p>
+
+
+
+
+
+
+                        <p>So werden sehr effiziente Applikationen ohne fixe Referenzen m&#246;glich, das Projekt kann so viel schlanker und effizienter gehalten werden. Zudem kann zur Laufzeit sehr einfach Funktionalit&#228;t hinzugef&#252;gt werden und so die Startup-Time von Anwendungen massiv verk&#252;rzen.</p>
+
+
+
+
+
+
+                        <p>Ein weitere Vorteil besteht darin, dass so verschiedene Funktionscontainer erstellt werden k&#246;nnen. Bsp.: je nach User-Context k&#246;nnen so verschiedene Funktionen angeboten werden. Dies erh&#246;ht nicht nur die Performance, die Funktionen stehen so auch nur dem jeweiligen Context zur Verf&#252;gung wodurch die Anwendungen theoretisch sicherer sind.</p>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="row clearfix">
+                <div class="col-md-12 column">
+                    <div>
+
+
+
+                        <div class='abstract'>Status</div>
+
+
+
+
+
+
+                        <p>InMemoryLoader befindet sich (noch) im Entwicklungsstadium, kann jedoch ohne weiteres eingesetzt werden da die Grundfunktionen ausgereift und stabil sind.</p>
+
+
+
+
+
+
+                        <p>Im Wesentlichen besteht sie aus zwei nuget-Packages die mit Mono entwickelt wurden und so &#252;ber Platzformgrenzen hinweg verwendet werden k&#246;nnen.</p>
+
+
+
+
+
+                        <ul>
+                            <li><a rel="noopener noreferrer" href="https://www.nuget.org/packages/InMemoryLoader/" target="_blank" title="InMemoryLoader">Link zu InMemoryLoader auf nuget.org</a></li>
+                            <li><a rel="noopener noreferrer" href="https://www.nuget.org/packages/InMemoryLoaderBase/" target="_blank" title="InMemoryLoaderBase">Link zu InMemoryLoaderBase auf nuget.org</a></li>
+                        </ul>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="row clearfix">
+                <div class="col-md-12 column">
+                    <div>
+
+
+
+                        <div class='abstract'>Getting started, Projektsetup, einfaches CMD Programm</div>
+
+
+
+
+
+
+                        <p>Es steht ein einfaches CMD-Programm zur Verf&#252;gung welches auf einfache Art und Weise die Funktionsweise darstellt. Ich verzichte hier auf ein aufwendiges how-to da der Code einfach ist und sich selbst beschreibt.</p>
+
+
+
+
+
+                        <ul>
+                            <li>Link zum Beispielprojekt (inaktiv zur Zeit)</li>
+                        </ul>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="row clearfix">
+                <div class="col-md-12 column">
+                    <div>
+
+
+
+                        <div class='abstract'>InMemoryLoader</div>
+
+
+
+
+
+
+                        <p>Der Kern des ganzen ist InMemoryLoader, in dieser Bibliothek werden verschiedene Funktionen angeboten um .Dll&#39;s zu pr&#252;fen, zu laden und registrieren. Das Paket ben&#246;tigt InMemoryLoaderBase und log4net.</p>
+
+
+
+
+
+
+                        <div class='abstract'>InMemoryLoaderBase</div>
+
+
+
+
+
+
+                        <p>InMemoryLoaderBase beinhaltet Interfaces und abstrakte Klassen die im Basispaket zwingend ben&#246;tigt werden.</p>
+
+
+
+
+
+
+                        <div class='abstract'>InMemoryLoaderCommon</div>
+
+
+
+
+
+
+                        <p>Eine Sammlung recht hilfreicher Utilities f&#252;r String-Operationen, Datum- und Konvertierungs-Funktionen, Check- und Crypt-Funktionen etc.</p>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="row clearfix">
+                <div class="col-md-12 column">
+                    <div>
+
+
+
+                        <div class='abstract'>Abh&#228;ngigkeiten</div>
+
+
+
+
+
+
+                        <p>InMemoryLoader ben&#246;tigt InMemoryLoaderBase, dieses Package enth&#228;lt verschiedene Interfaces und abstrakte Klassen ohne die der Loader nicht funktioniert. Es handelt sich hierbei um reine Hilfsmittel.</p>
+
+
+
+
+
+
+                        <p>Zudem setzt InMemoryLoader/Base log4net zur Protokollierung ein, die entsprechende(n) Bibliothek(en) werden mit dem nuget-Package ausgeliefert.</p>
+
+
+
+
+
+                        <ul>
+                            <li><a rel="noopener noreferrer" href="https://www.nuget.org/packages/log4net/" target="_blank" title="log4net">Link zu log4net</a></li>
+                        </ul>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="row clearfix">
+                <div class="col-md-12 column">
+                    <div>
+
+
+
+                        <div class='abstract'>Weiterf&#252;hrende Informationen und Links</div>
+
+
+
+
+
+                        <div class="umb-grid">
+                            <div class="grid-section">
+                                <div>
+                                    <div class="row clearfix">
+                                        <div class="col-md-12 column">
+                                            <div>
+                                                <ul>
+                                                    <li><a rel="noopener noreferrer" href="https://github.com/responsive-kaysta/InMemoryLoader" target="_blank" title="InMemoryLoader">InMemoryLoader</a></li>
+                                                    <li><a rel="noopener noreferrer" href="https://github.com/responsive-kaysta/InMemoryLoaderBase" target="_blank" title="InMemoryLoaderBase">InMemoryLoaderBase</a></li>
+                                                    <li><a rel="noopener noreferrer" href="https://github.com/responsive-kaysta/InMemoryLoaderCommon" target="_blank" title="InMemoryLoaderCommon">InMemoryLoaderCommon</a></li>
+                                                    <li><a rel="noopener noreferrer" href="http://en.wikipedia.org/wiki/Late_binding" target="_blank" title="Late_binding">Late Binding</a></li>
+                                                    <li><a rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/In-memory_processing" target="_blank" title="In-memory_processing">In Memory processing</a></li>
+                                                    <li><a rel="noopener noreferrer" href="http://www.gridgain.com/four-myths-of-in-memory-computing/" target="_blank" title="four-myths-of-in-memory-computing">four-myths-of-in-memory-computing</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row clearfix">
+    <div class="col-md-12 column">
+        <hr />
+        <p>Autor: responsive kaysta</p>
+        <p>Published/Updated: 11/15/2017 3:13:58 AM</p>
+        <hr />
+    </div>
+</div>

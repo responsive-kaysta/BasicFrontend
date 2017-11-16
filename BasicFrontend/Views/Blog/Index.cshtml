@@ -1,0 +1,67 @@
+﻿@using BasicFrontend.Application;
+
+@{
+    AppBase appBase = AppBase.Instance;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="page-header">
+    <h1>Blog</h1>
+</div>
+
+<p>Ich publiziere auf diesen Seiten hoffentlich sinnvolle, hilfreiche und interessante Beiträge, Schnipsel und Ideen.</p>
+
+<section class="blogarchive equalizer">
+
+    <div class="col-sm-12 col-md-6 equal">
+        <div class="dark">
+            <a href="/blog/aufbau-einer-inmemoryloader-anwendung/" style="background-image: url('/media/1032/monodevelop_1.png'); background-position: center; background-repeat: no-repeat; background-size: cover;">
+                <div class="date">Wednesday, November 15, 2017</div>
+                <h2>Aufbau einer InMemoryLoader Anwendung</h2>
+                <p class="lead">Wie im Artikel In-Memory .NET Anwendungen beschrieben, lassen sich mit InMemoryLoader seh&hellip;</p>
+                <p class="small">responsive kaysta</p>
+            </a>
+        </div>
+    </div>
+    <div class="col-sm-12 col-md-6 equal">
+        <div class="dark">
+            <a href="/blog/projekt-masterarchive/" style="background-image: url('/media/1011/archive-bg.jpg'); background-position: center; background-repeat: no-repeat; background-size: cover;">
+                <div class="date">Sunday, November 12, 2017</div>
+                <h2>Projekt MasterArchive</h2>
+                <p class="lead">Ich startete mit dem Projekt MasterArchive bereits im Jahr 2008 mit dem Ziel, News-Artikel&hellip;</p>
+                <p class="small">responsive kaysta</p>
+            </a>
+        </div>
+    </div>
+    <div class="col-sm-12 col-md-6 equal">
+        <div class="light">
+            <a href="/blog/kentico-cms-document-loader/" style="background-image: url('/media/1013/kentico-cms_1.png'); background-position: center; background-repeat: no-repeat; background-size: cover;">
+                <div class="date">Sunday, November 12, 2017</div>
+                <h2>Kentico CMS Document Loader</h2>
+                <p class="lead">Mein Arbeitgeber setzt in diversen Projekten auf Kentico CMS, ein recht umfangreiches CMS&hellip;</p>
+                <p class="small">responsive kaysta</p>
+            </a>
+        </div>
+    </div>
+    <div class="col-sm-12 col-md-6 equal">
+        <div class="light">
+            <a href="/blog/in-memory-net-anwendungen/" style="background-image: url('/media/1015/memory_2.jpg'); background-position: center; background-repeat: no-repeat; background-size: cover;">
+                <div class="date">Sunday, November 12, 2017</div>
+                <h2>In-Memory .NET Anwendungen</h2>
+                <p class="lead">In einer grossen, international tätigen Firma ergab sich die Aufgabenstellung ein möglichs&hellip;</p>
+                <p class="small">responsive kaysta</p>
+            </a>
+        </div>
+    </div>
+    <div class="col-sm-12 col-md-6 equal">
+        <div class="light">
+            <a href="@appBase.linkBlog1" style="background-image: url('/media/1014/memory.jpg'); background-position: center; background-repeat: no-repeat; background-size: cover;">
+                <div class="date">Sunday, November 12, 2017</div>
+                <h2>InMemoryLoader</h2>
+                <p class="lead">InMemoryLoader ist eine in C# (Mono) geschriebene Funktions- oder Klassen-Bibliothek die d&hellip;</p>
+                <p class="small">responsive kaysta</p>
+            </a>
+        </div>
+    </div>
+
+</section>

@@ -1,4 +1,9 @@
-﻿
+﻿@using BasicFrontend.Application;
+
+@{
+    AppBase appBase = AppBase.Instance;
+}
+
 <div class="container">
     <div class="row">
         <div class="col-xs-8 col-sm-12 col-md-4">
@@ -9,23 +14,27 @@
         <div class="col-sm-12 col-md-8">
             <nav>
                 <ul class="level-2">
+                    
                     <li class="has-child">
                         <span>About</span>
                         <ul class="sublevel level-3">
                             <li>
-                                <a href="?module=aboutme">Me</a>
+                                <a href="@appBase.linkAboutMe">Me</a>
                             </li>
                             <li>
-                                <a href="?module=about">My Laws</a>
+                                <a href="@appBase.linkAboutLaws">My Laws</a>
                             </li>
                         </ul>
                     </li>
+
                     <li>
-                        <a href="?module=blogoverview">Blog</a>
+                        <a href="@appBase.linkBlog">Blog</a>
                     </li>
+
                     <li>
-                        <a href="?module=disclaimer">Disclaimer</a>
+                        <a href="@appBase.linkDisclaimer">Disclaimer</a>
                     </li>
+
                 </ul>
             </nav>
         </div>

@@ -4,7 +4,6 @@
     AppBase appBase = AppBase.Instance;
 }
 
-
 <div class="container">
 
     <div class="col-sm-12 col-md-4">
@@ -14,13 +13,13 @@
                 <a href="@appBase.linkHome">Home</a>
             </li>
             <li class="">
-                <a href="/">About</a>
+                <a href="@appBase.linkAbout">About</a>
             </li>
             <li>
-                <a href="?module=blogoverview">Blog</a>
+                <a href="@appBase.linkBlog">Blog</a>
             </li>
             <li>
-                <a href="?module=disclaimer">Disclaimer</a>
+                <a href="@appBase.linkDisclaimer">Disclaimer</a>
             </li>
         </ul>
     </div>

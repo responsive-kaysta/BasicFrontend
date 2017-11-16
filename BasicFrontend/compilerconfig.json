@@ -20,6 +20,22 @@
     "inputFile": "Scripts/bootstrap.js"
   },
   {
+    "outputFile": "Js/Plugins/Tooltipster/tooltipster.main.es5.js",
+    "inputFile": "Js/Plugins/Tooltipster/tooltipster.main.js"
+  },
+  {
+    "outputFile": "Js/Plugins/Tooltipster/tooltipster.bundle.es5.js",
+    "inputFile": "Js/Plugins/Tooltipster/tooltipster.bundle.js"
+  },
+  {
+    "outputFile": "Js/Plugins/Tooltipster/tooltipster-SVG.es5.js",
+    "inputFile": "Js/Plugins/Tooltipster/tooltipster-SVG.js"
+  },
+  {
+    "outputFile": "Js/Plugins/Tooltipster/tooltipster.es5.js",
+    "inputFile": "Js/Plugins/Tooltipster/tooltipster.js"
+  },
+  {
     "outputFile": "Css/Colours/colours.css",
     "inputFile": "Css/Colours/colours.less"
   },
@@ -156,16 +172,8 @@
     "inputFile": "Css/Plugins/Effects/loadmore.less"
   },
   {
-    "outputFile": "Css/Plugins/Tooltipster/tooltipster.css",
-    "inputFile": "Css/Plugins/Tooltipster/tooltipster.less"
-  },
-  {
     "outputFile": "Css/global.css",
     "inputFile": "Css/global.less"
-  },
-  {
-    "outputFile": "Css/ie10-viewport-bug-workaround.css",
-    "inputFile": "Css/ie10-viewport-bug-workaround.less"
   },
   {
     "outputFile": "Css/style.css",
@@ -174,5 +182,17 @@
   {
     "outputFile": "Css/reset.css",
     "inputFile": "Css/reset.less"
+  },
+  {
+    "outputFile": "Css/Plugins/Tooltipster/tooltipster.main.css",
+    "inputFile": "Css/Plugins/Tooltipster/tooltipster.main.less"
+  },
+  {
+    "outputFile": "Css/Plugins/Tooltipster/tooltipster.bundle.css",
+    "inputFile": "Css/Plugins/Tooltipster/tooltipster.bundle.less"
+  },
+  {
+    "outputFile": "Css/Plugins/Tooltipster/tooltipster.css",
+    "inputFile": "Css/Plugins/Tooltipster/tooltipster.less"
   }
 ]
