@@ -5800,3 +5800,77 @@ if (typeof jQuery === 'undefined') {
     });
   });
 })(jQuery);
+
+
+/* global.js */
+
+"use strict";
+
+function createCookie(name, value, days) {
+    if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
+        var expires = "; expires=" + date.toGMTString();
+    } else var expires = "";
+
+    document.cookie = name + "=" + value + expires + "; path=/";
+}
+
+function readCookie(name) {
+    var nameEQ = name + "=";
+    var ca = document.cookie.split(';');
+    for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+    }
+    return null;
+}
+
+function eraseCookie(name) {
+    createCookie(name, "", -1);
+}
+
+// read value from querystring
+var vars = [],
+    hash;
+
+var q = document.URL.split('?')[1];
+if (q != undefined) {
+    q = q.split('&');
+    for (var i = 0; i < q.length; i++) {
+        hash = q[i].split('=');
+        vars.push(hash[1]);
+        vars[hash[0]] = hash[1];
+    }
+}
+
+
+/* colourswitch.js */
+
+"use strict";
+
+var cookie;
+var colour;
+
+$(document).ready(function () {
+
+    cookie = readCookie("colourscheme");
+
+    $("#colourswitch").change(function () {
+        colour = $("#colourswitch :selected").attr('value');
+        createCookie("colourscheme", colour, "1");
+        window.location = "/";
+    });
+
+    if (cookie == null || cookie == "") {
+        colour = "dark";
+        createCookie("colourscheme", colour, "1");
+    } else {
+        colour = cookie;
+        createCookie("colourscheme", colour, "1");
+    }
+
+    $("#header").addClass(colour);
+    $("#footer").addClass(colour);
+});

@@ -68,7 +68,10 @@
 
       "Js/Plugins/tooltipster.main.es5.js",
       "Js/Plugins/tooltipster.bundle.es5.js",
-      "Js/Plugins/tooltipster-SVG.es5.js"
+      "Js/Plugins/tooltipster-SVG.es5.js",
+
+      "Js/global.es5.js",
+      "Js/Modules/colourswitch.es5.js"
 
     ]
   }

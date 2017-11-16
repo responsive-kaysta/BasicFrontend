@@ -36,6 +36,14 @@
     "inputFile": "Js/Plugins/Tooltipster/tooltipster.js"
   },
   {
+    "outputFile": "Js/global.es5.js",
+    "inputFile": "Js/global.js"
+  },
+  {
+    "outputFile": "Js/Modules/colourswitch.es5.js",
+    "inputFile": "Js/Modules/colourswitch.js"
+  },
+  {
     "outputFile": "Css/Colours/colours.css",
     "inputFile": "Css/Colours/colours.less"
   },

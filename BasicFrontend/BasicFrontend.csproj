@@ -456,6 +456,20 @@
     <Content Include="Css\style.less" />
     <Content Include="Css\Plugins\Effects\loadmore.less" />
     <Content Include="Css\Plugins\Tooltipster\tooltipster.less" />
+    <Content Include="Js\global.es5.js">
+      <DependentUpon>global.js</DependentUpon>
+    </Content>
+    <Content Include="Js\global.es5.min.js">
+      <DependentUpon>global.es5.js</DependentUpon>
+    </Content>
+    <Content Include="Js\global.js" />
+    <Content Include="Js\Modules\colourswitch.es5.js">
+      <DependentUpon>colourswitch.js</DependentUpon>
+    </Content>
+    <Content Include="Js\Modules\colourswitch.es5.min.js">
+      <DependentUpon>colourswitch.es5.js</DependentUpon>
+    </Content>
+    <Content Include="Js\Modules\colourswitch.js" />
     <Content Include="Js\Plugins\Tooltipster\tooltipster-SVG.es5.js">
       <DependentUpon>tooltipster-SVG.js</DependentUpon>
     </Content>
@@ -520,9 +534,6 @@
       <DependentUpon>bootstrap.es5.js</DependentUpon>
     </Content>
     <Content Include="Scripts\bootstrap.js" />
-    <Content Include="Scripts\bootstrap.min.js">
-      <DependentUpon>bootstrap.js</DependentUpon>
-    </Content>
     <Content Include="Scripts\jquery-3.2.1.es5.js">
       <DependentUpon>jquery-3.2.1.js</DependentUpon>
     </Content>
@@ -553,9 +564,6 @@
       <DependentUpon>jquery.validate.es5.js</DependentUpon>
     </Content>
     <Content Include="Scripts\jquery.validate.js" />
-    <Content Include="Scripts\jquery.validate.min.js">
-      <DependentUpon>jquery.validate.js</DependentUpon>
-    </Content>
     <Content Include="Scripts\jquery.validate.unobtrusive.es5.js">
       <DependentUpon>jquery.validate.unobtrusive.js</DependentUpon>
     </Content>
@@ -563,9 +571,6 @@
       <DependentUpon>jquery.validate.unobtrusive.es5.js</DependentUpon>
     </Content>
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
-    <Content Include="Scripts\jquery.validate.unobtrusive.min.js">
-      <DependentUpon>jquery.validate.unobtrusive.js</DependentUpon>
-    </Content>
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.matchmedia.addListener.js" />
@@ -601,7 +606,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Js\Modules\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
