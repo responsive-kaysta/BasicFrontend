@@ -47,10 +47,10 @@
     "outputFile": "Js/Modules/navigation.es5.js",
     "inputFile": "Js/Modules/navigation.js"
   },
-
-
-
-
+  {
+    "outputFile": "Js/Modules/equalheight.es5.js",
+    "inputFile": "Js/Modules/equalheight.js"
+  },
   {
     "outputFile": "Css/Colours/colours.css",
     "inputFile": "Css/Colours/colours.less"
@@ -211,4 +211,5 @@
     "outputFile": "Css/Plugins/Tooltipster/tooltipster.css",
     "inputFile": "Css/Plugins/Tooltipster/tooltipster.less"
   }
+
 ]

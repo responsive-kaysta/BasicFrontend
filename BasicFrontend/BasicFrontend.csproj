@@ -470,6 +470,16 @@
       <DependentUpon>colourswitch.es5.js</DependentUpon>
     </Content>
     <Content Include="Js\Modules\colourswitch.js" />
+    <Content Include="Js\Modules\colourswitch.min.js">
+      <DependentUpon>colourswitch.js</DependentUpon>
+    </Content>
+    <Content Include="Js\Modules\equalheight.es5.js">
+      <DependentUpon>equalheight.js</DependentUpon>
+    </Content>
+    <Content Include="Js\Modules\equalheight.es5.min.js">
+      <DependentUpon>equalheight.es5.js</DependentUpon>
+    </Content>
+    <Content Include="Js\Modules\equalheight.js" />
     <Content Include="Js\Modules\navigation.es5.js">
       <DependentUpon>navigation.js</DependentUpon>
     </Content>
@@ -506,6 +516,7 @@
     </Content>
     <Content Include="Js\Plugins\Tooltipster\tooltipster.main.js" />
     <Content Include="Media\Web.config" />
+    <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Scripts\jquery-3.2.1.intellisense.js" />
     <Content Include="Media\1001\photo-1482062364825-616fd23b8fc1.jpg" />
     <Content Include="Media\1002\photo-1485856407642-7f9ba0268b51.jpg" />
