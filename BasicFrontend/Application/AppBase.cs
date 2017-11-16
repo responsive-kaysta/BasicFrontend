@@ -84,6 +84,7 @@ namespace BasicFrontend.Application
         public string linkBlog4 = "/Blog/Blog4";
         public string linkBlog5 = "/Blog/Blog5";
         public string linkBlog6 = "/Blog/Blog6";
+        public string linkBlog7 = "/Blog/Blog7";
 
     }
 }

@@ -554,7 +554,6 @@
     <Content Include="Media\1020\nuget_1.png" />
     <Content Include="Media\1021\solution_options_1.png" />
     <Content Include="Media\1032\monodevelop_1.png" />
-    <Content Include="Media\technics-q-g-410-130-8.jpg" />
     <Content Include="Scripts\app.js" />
     <Content Include="Scripts\app.min.js">
       <DependentUpon>app.js</DependentUpon>
@@ -636,6 +635,8 @@
     <Content Include="Views\Blog\Blog4.cshtml" />
     <Content Include="Views\Blog\Blog5.cshtml" />
     <Content Include="Views\Home\MasterArchive.cshtml" />
+    <Content Include="Views\Blog\Blog6.cshtml" />
+    <Content Include="Views\Blog\Blog7.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

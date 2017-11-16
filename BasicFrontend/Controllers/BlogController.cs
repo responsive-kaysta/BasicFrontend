@@ -63,5 +63,10 @@ namespace BasicFrontend.Controllers
         {
             return View();
         }
+
+        public ActionResult Blog7()
+        {
+            return View();
+        }
     }
 }

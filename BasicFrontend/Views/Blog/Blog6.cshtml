@@ -1,0 +1,389 @@
+﻿@using BasicFrontend.Application;
+
+@{
+    AppBase appBase = AppBase.Instance;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="umb-grid">
+    <div class="grid-section">
+        <div>
+            <div class="row clearfix">
+                <div class="col-md-12 column">
+                    <div>
+                        <div class='page-header'><h1>Einsatz einer InMemoryLoader Anwendung</h1></div>
+
+                        <h2 class='tagline'>Teil 2 – Anwendungen/Erweiterungen programmieren</h2>
+
+                        <p class='lead'>Dies ist der 2. Teil der &quot;InMemoryLoader Anwendung&quot; Blog/Tutorial Serie in der ich den Aufbau, die Realisierung/Implementierung und Anwendung beschreiben.</p>
+
+                        <p>Ich gehe hierbei nicht auf den 1. Teil ein – bitte lest hierzu den entsprechenden Blog-Eintrag unter folgendem Link.</p>
+
+                        <p><a data-udi="umb://document/0f4faa39b73941969ff0cd0949acf7eb" href="/blog/aufbau-einer-inmemoryloader-anwendung/" title="Aufbau einer InMemoryLoader Anwendung">Teil 1 – Konfiguration und Initialisierung</a></p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="row clearfix">
+                <div class="col-md-12 column">
+                    <div>
+
+                        <div class='abstract'>Einf&#252;hrung</div>
+
+                        <p>In diesem Teil beschreibe ich wie man InMemoryLoader benutzt und dessen vollen Funktionsumfang in einer CMD-Anwendungeinsetzt. Konfiguration und Initialisierung wurde ja bereits ausf&#252;hrlich beschrieben.</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="row clearfix">
+                <div class="col-md-12 column">
+                    <div>
+
+
+
+                        <div class='abstract'>InMemoryLoader Komponente erstellen</div>
+
+
+
+
+
+
+                        <p>&#220;blicherweise erstelle ich immer einen Unit-Test um das Programm, die Komponente usw. Ausf&#252;hrlich zu testen. TDD sollte Euch allen ja bekannt sein, hierzu jedoch einige Informationen.</p>
+
+
+
+
+
+                        <ul>
+                            <li><a rel="noopener noreferrer" href="https://de.wikipedia.org/wiki/Testgetriebene_Entwicklung" target="_blank" title="Testgetriebene_Entwicklung">https://de.wikipedia.org/wiki/Testgetriebene_Entwicklung</a></li>
+                        </ul>
+
+
+
+
+
+                        <p>Da mir jedoch ein Unit-Test einfach zu wenig ausf&#252;hrlich ist und ich Erweiterungen usw. genau und unter realen Bedingungen testen m&#246;chte, entschied ich mich, einen sogenannten Integration-Test zu erstellen.</p>
+
+
+
+
+
+
+                        <p>Hierzu f&#252;ge ich ein neues Projekt – Library-Project - der Solution hinzu und gebe ihr einen sprechenden Namen. In diesem Fall CheckUtilsTest. Mit dieser Komponente teste ich die komplette InMemoryLoaderCommon.CheckUtils Komponente (noch im Aufbau).</p>
+
+
+
+
+
+                        <p><em><strong>CheckUtilsTestClass</strong></em></p>
+
+
+
+
+
+                        <p>Zun&#228;chst k&#252;mmern wir uns um die korrekte Implementierung so dass wir die Komponente mit dem vollen Funktionsumfang benutzen k&#246;nnen.</p>
+
+
+
+
+
+                        <ol>
+                            <li>Erstellen von CheckUtilsTestClass.Base.cs</li>
+                            <li>Erstellen von CheckUtilsTestClass.Int.cs</li>
+                        </ol>
+
+
+
+
+                        <p><em><strong>Code CheckUtilsTestClass.Base.cs</strong></em></p>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="row clearfix">
+                <div class="col-md-12 column">
+                    <div>
+
+
+
+                        <pre>using System;<br />using System.Linq;<br />using log4net;<br />using InMemoryLoader;<br />using InMemoryLoaderBase;<br /><br />namespace CheckUtilsTest<br />{<br />    /// &lt;summary&gt;<br />    /// Check utils test class.<br />    /// &lt;/summary&gt;<br />    public partial class CheckUtilsTestClass : AbstractPowerUpComponent<br />    {<br />        /// &lt;summary&gt;<br />        /// The log.<br />        /// &lt;/summary&gt;<br />        private static readonly ILog log = LogManager.GetLogger(typeof(CheckUtilsTestClass));<br />        /// &lt;summary&gt;<br />        /// The is byte.<br />        /// &lt;/summary&gt;<br />        private static byte[] isByte = new byte[isInt];<br />        /// &lt;summary&gt;<br />        /// The is date.<br />        /// &lt;/summary&gt;<br />        private static DateTime isDate = DateTime.Now;<br />        /// &lt;summary&gt;<br />        /// The is string.<br />        /// &lt;/summary&gt;<br />        private const string isString = &quot;Some String&quot;;<br />        /// &lt;summary&gt;<br />        /// The is decimal.<br />        /// &lt;/summary&gt;<br />        private const Decimal isDecimal = 3.12m;<br />        /// &lt;summary&gt;<br />        /// The is double.<br />        /// &lt;/summary&gt;<br />        private const Double isDouble = 3.12;<br />        /// &lt;summary&gt;<br />        /// The is float.<br />        /// &lt;/summary&gt;<br />        private const float isFloat = 1.32f;<br />        /// &lt;summary&gt;<br />        /// The is string float.<br />        /// &lt;/summary&gt;<br />        private const string isStringFloat = &quot;5.687&quot;;<br />        /// &lt;summary&gt;<br />        /// The is int.<br />        /// &lt;/summary&gt;<br />        private const long isLong = 12345678;<br />        /// &lt;summary&gt;<br />        /// The is string int.<br />        /// &lt;/summary&gt;<br />        private const string isStringLong = &quot;521345678&quot;;<br />        /// &lt;summary&gt;<br />        /// The is string URL.<br />        /// &lt;/summary&gt;<br />        private const string isStringUrl = &quot;http://www.google.ch/&quot;;<br />        /// &lt;summary&gt;<br />        /// The is string no URL.<br />        /// &lt;/summary&gt;<br />        private const string isStringNoUrl = &quot;Some String&quot;;<br />        /// &lt;summary&gt;<br />        /// The is int.<br />        /// &lt;/summary&gt;<br />        private const int isInt = 123;<br />        /// &lt;summary&gt;<br />        /// The is string int.<br />        /// &lt;/summary&gt;<br />        private const string isStringInt = &quot;521&quot;;<br /><br />        /// &lt;summary&gt;<br />        /// Gets or sets the component loader.<br />        /// &lt;/summary&gt;<br />        /// &lt;value&gt;The component loader.&lt;/value&gt;<br />        private static ComponentLoader ComponentLoader { get; set; }<br /><br />        /// &lt;summary&gt;<br />        /// Gets the check utils.<br />        /// &lt;/summary&gt;<br />        /// &lt;value&gt;The check utils.&lt;/value&gt;<br />        private static IDynamicClassInfo CheckUtils<br />        {<br />            get<br />            {<br />                return ComponentLoader.ComponentRegistry.SingleOrDefault(str =&gt; str.Key.Class.EndsWith(&quot;CheckUtils&quot;)).Value;<br />            }<br />        }<br /><br />        /// &lt;summary&gt;<br />        /// Initializes a new instance of the &lt;see cref=&quot;CheckUtilsTest.CheckUtilsTestClass&quot;/&gt; class.<br />        /// &lt;/summary&gt;<br />        public CheckUtilsTestClass()<br />        {<br />            log.DebugFormat(&quot;Create a new instance of Type: {0}&quot;, this.GetType().ToString());<br />            ComponentLoader = ComponentLoader.Instance;<br />        }<br /><br />        /// &lt;summary&gt;<br />        /// Determines whether this instance is check utils test the specified logVerbose.<br />        /// &lt;/summary&gt;<br />        /// &lt;returns&gt;&lt;c&gt;true&lt;/c&gt; if this instance is check utils test the specified logVerbose; otherwise, &lt;c&gt;false&lt;/c&gt;.&lt;/returns&gt;<br />        /// &lt;param name=&quot;logVerbose&quot;&gt;If set to &lt;c&gt;true&lt;/c&gt; log verbose.&lt;/param&gt;<br />        public bool IsCheckUtilsTest(bool logVerbose)<br />        {<br />            bool isCheckUtilsTest = false;<br /><br />            isCheckUtilsTest = IsStringIntTest1();<br />            isCheckUtilsTest = IsStringIntTest2();<br />            isCheckUtilsTest = IsStringIntTest3();<br />            isCheckUtilsTest = IsStringIntTest4();<br /><br />            return isCheckUtilsTest;<br />        }<br /><br />    }<br /><br />}</pre>
+
+
+
+
+
+                        <p><em><strong>Code-Beschreibung CheckUtilsTestClass.Base.cs</strong></em></p>
+
+
+
+
+                        <p>Damit der Code übersichtlich bleibt, setze ich umfangreiche Klassen eigentlich immer als <em>partial class</em> um. Pratial classes werden beim Kompilieren zusammengefasst und ermöglichen so auch die parallele Entwicklung. <span class="TextRun SCXW215376297" style="font-weight: normal; font-style: normal; font-size: 12pt; font-family: Calibri,'Calibri_MSFontService',sans-serif; line-height: 19px;"><span class="NormalTextRun SCXW215376297" style="background-color: inherit;">Weitere Informationen unter folgendem Link.</span></span></p>
+                        <ul>
+                            <li><a rel="noopener noreferrer" href="https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods" target="_blank" title="partial-classes-and-methods">https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods</a></li>
+                        </ul>
+
+
+
+
+
+                        <pre>public partial class CheckUtilsTestClass : AbstractPowerUpComponent</pre>
+
+
+
+
+
+                        <p>Damit InmemoryLoader Komponenten entwickelt werden können bzw. Die Funktion überhaupt in die <em>ClassRegistry</em> aufgenommen werden kann, muss zwingend von <em>AbstractPowerUpComponent</em> abgeleitet werden.</p>
+
+
+
+
+                        <p>Sehr wichtig ist folgendes Property, welches eine Instanz des <em>ComponentLoader</em> zurück gibt.</p>
+
+
+
+
+
+                        <pre>private static ComponentLoader ComponentLoader { get; set; }</pre>
+
+
+
+
+
+                        <p>Ebenso wie folgende <em>Getter-Methode</em> die die Instanz der <em>CheckUtils</em> zurück gibt.</p>
+
+
+
+
+
+                        <pre>private static IDynamicClassInfo CheckUtils<br />        {<br />            get<br />            {<br />                return ComponentLoader.ComponentRegistry.SingleOrDefault(str =&gt; str.Key.Class.EndsWith(&quot;CheckUtils&quot;)).Value;<br />            }<br />        }</pre>
+
+
+
+
+
+                        <p>Die Instanz von <em>ComponentLoader</em> muss dabei, möglichst im <em>Constructor</em>, gesetzt werden.</p>
+
+
+
+
+
+                        <pre>public CheckUtilsTestClass()<br />        {<br />            log.DebugFormat(&quot;Create a new instance of Type: {0}&quot;, this.GetType().ToString());<br />            ComponentLoader = ComponentLoader.Instance;<br />        }</pre>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="row clearfix">
+                <div class="col-md-12 column">
+                    <div>
+
+
+                        <p><em><strong>Code CheckUtilsTestClass.Int.cs</strong></em></p>
+
+
+
+
+
+                        <pre>using System;<br />using InMemoryLoaderBase;<br />using System.Globalization;<br /><br />namespace CheckUtilsTest<br />{<br />    /// &lt;summary&gt;<br />    /// Check utils test class.<br />    /// &lt;/summary&gt;<br />    public partial class CheckUtilsTestClass : AbstractPowerUpComponent<br />    {<br />        /// &lt;summary&gt;<br />        /// Determines if is string int test1.<br />        /// &lt;/summary&gt;<br />        /// &lt;returns&gt;&lt;c&gt;true&lt;/c&gt; if is string int test1; otherwise, &lt;c&gt;false&lt;/c&gt;.&lt;/returns&gt;<br />        private static bool IsStringIntTest1()<br />        {<br />            try<br />            {<br />                object[] paramArg = { isInt };<br />                var result = ComponentLoader.InvokeMethod(CheckUtils, &quot;IsStringInt&quot;, paramArg);<br />                log.DebugFormat(&quot;IsStringIntTest1 (true) = {0}&quot;, result);<br />                return result;<br />            }<br />            catch (Exception ex)<br />            {<br />                throw ex;<br />            }<br />        }<br />        /// &lt;summary&gt;<br />        /// Determines if is string int test2.<br />        /// &lt;/summary&gt;<br />        /// &lt;returns&gt;&lt;c&gt;true&lt;/c&gt; if is string int test2; otherwise, &lt;c&gt;false&lt;/c&gt;.&lt;/returns&gt;<br />        private static bool IsStringIntTest2()<br />        {<br />            try<br />            {<br />                object[] paramArg = { isStringInt };<br />                var result = ComponentLoader.InvokeMethod(CheckUtils, &quot;IsStringInt&quot;, paramArg);<br />                log.DebugFormat(&quot;IsStringIntTest2 (true) = {0}&quot;, result);<br />                return result;<br />            }<br />            catch (Exception ex)<br />            {<br />                throw ex;<br />            }<br />        }<br />        /// &lt;summary&gt;<br />        /// Determines if is string int test3.<br />        /// &lt;/summary&gt;<br />        /// &lt;returns&gt;&lt;c&gt;true&lt;/c&gt; if is string int test3; otherwise, &lt;c&gt;false&lt;/c&gt;.&lt;/returns&gt;<br />        private static bool IsStringIntTest3()<br />        {<br />            try<br />            {<br />                object[] paramArg = { isStringInt, CultureInfo.CurrentCulture };<br />                var result = ComponentLoader.InvokeMethod(CheckUtils, &quot;IsStringInt&quot;, paramArg);<br />                log.DebugFormat(&quot;IsStringIntTest3 (true) = {0}&quot;, result);<br />                return result;<br />            }<br />            catch (Exception ex)<br />            {<br />                throw ex;<br />            }<br />        }<br />        /// &lt;summary&gt;<br />        /// Determines if is string int test4.<br />        /// &lt;/summary&gt;<br />        /// &lt;returns&gt;&lt;c&gt;true&lt;/c&gt; if is string int test4; otherwise, &lt;c&gt;false&lt;/c&gt;.&lt;/returns&gt;<br />        private static bool IsStringIntTest4()<br />        {<br />            try<br />            {<br />                object[] paramArg = { isString, CultureInfo.CurrentCulture };<br />                var result = ComponentLoader.InvokeMethod(CheckUtils, &quot;IsStringInt&quot;, paramArg);<br />                log.DebugFormat(&quot;IsStringIntTest4 (false) = {0}&quot;, result);<br />                return result == false;<br />            }<br />            catch (Exception ex)<br />            {<br />                throw ex;<br />            }<br />        }<br />    }<br />}</pre>
+
+
+
+
+
+                        <p><em><strong>Code-Beschreibung CheckUtilsTestClass.Int.cs</strong></em></p>
+
+
+
+
+
+                        <p>Dieser Code ist recht einfach und beschreibt sich eigentlich von selbst. Trotzdem m&#246;chte ich darauf hinweisen, dass die effizienteste Mothode InMemoryLoader Funktionen auszuf&#252;hren, folgende ist.</p>
+
+
+
+
+
+
+                        <pre>object[] paramArg = { isInt };<br />var result = ComponentLoader.InvokeMethod(CheckUtils, &quot;IsStringInt&quot;, paramArg);<br />log.DebugFormat(&quot;IsStringIntTest1 (true) = {0}&quot;, result);<br />return result;</pre>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="row clearfix">
+                <div class="col-md-12 column">
+                    <div>
+
+
+
+                        <div class='abstract'>Komponente einsetzen</div>
+
+
+
+
+
+
+                        <p>Widmen wir uns wieder dem Console-Programm und k&#252;mmern uns um die korrekte Initialisierung und Verwendung der eben erstellten Komponente.</p>
+
+
+
+
+
+                        <p>Ich arbeite gerne mit <em>Utility</em> oder <em>Helper-Klassen</em>. Einfach deshalb damit ich die Logik im Programm schlank und übersichtlich halten kann. Dazu erstelle ich eine Helper-Klasse <em>TestHelperClass</em>.</p>
+
+
+
+
+                        <p><em><strong>Code TestHelperClass.cs</strong></em></p>
+
+
+
+
+                        @Html.Raw("<pre>using log4net;<br />using Application;<br />using System;<br />using System.Linq;<br />using InMemoryLoaderBase;<br />using System.IO;<br /><br />namespace TestHelper<br />{<br />    /// &lt;summary&gt;<br />    /// Test helper class.<br />    /// &lt;/summary&gt;<br />    internal class TestHelperClass<br />    {<br />        /// &lt;summary&gt;<br />        /// The log.<br />        /// &lt;/summary&gt;<br />        private static readonly ILog log = LogManager.GetLogger(typeof(TestHelperClass));<br />        /// &lt;summary&gt;<br />        /// The app base.<br />        /// &lt;/summary&gt;<br />        private static readonly AppBase appBase = AppBase.Instance;<br /><br />        /// &lt;summary&gt;<br />        /// The check utils test assembly.<br />        /// &lt;/summary&gt;<br />        private readonly string checkUtilsTestAssembly = @Path.Combine(AppDomain.CurrentDomain.BaseDirectory, &quot;CheckUtilsTest.dll&quot;);<br /><br />        /// &lt;summary&gt;<br />        /// Gets or sets the check utils test class.<br />        /// &lt;/summary&gt;<br />        /// &lt;value&gt;The check utils test class.&lt;/value&gt;<br />        internal IDynamicClassInfo checkUtilsTestClass { get; set; }<br /><br />        /// &lt;summary&gt;<br />        /// Initializes a new instance of the &lt;see cref=&quot;TestHelper.TestHelperClass&quot;/&gt; class.<br />        /// &lt;/summary&gt;<br />        internal TestHelperClass()<br />        {<br />            log.DebugFormat(appBase.instanceText, this.GetType().ToString());<br />        }<br /><br /><br />        internal bool InitCheckUtilsTest()<br />        {<br />            var component = new DynamicClassSetup();<br /><br />            component.Assembly = checkUtilsTestAssembly;<br />            component.Class = &quot;CheckUtilsTestClass&quot;;<br /><br />            object[] paramArgument = { AbstractPowerUpComponent.Key };<br />            var init = appBase.ComponentLoader.InvokeMethod(component.Assembly, component.Class, component.InitMethod, paramArgument);<br />            log.InfoFormat(&quot;Is CheckUtilsTestClass init: {0}&quot;, init);<br /><br />            init = appBase.SetClassRegistry();<br />            checkUtilsTestClass = appBase.ComponentLoader.ComponentRegistry.SingleOrDefault(str =&gt; str.Key.Class.EndsWith(&quot;CheckUtilsTestClass&quot;)).Value;<br /><br />            return init;<br />        }<br /><br /><br />        internal bool RunCheckUtilsTest()<br />        {<br />            object[] param = { true };<br />            var result = appBase.ComponentLoader.InvokeMethod(checkUtilsTestClass, &quot;IsCheckUtilsTest&quot;, param);<br />            log.DebugFormat(&quot;IsCheckUtilsTest: {0}&quot;, result);<br /><br />            return result;<br />        }<br /><br />    }<br /><br />}</pre>");
+                        
+
+
+
+
+
+                        <p><em><strong>Code-Beschreibung TestHelperClass.cs</strong></em></p>
+
+
+
+
+                        <p>Der Pfad zur Komponente muss fix gegeben sein und optimalerweise als <em>static</em> oder <em>readonly Field</em> deklariert werden.</p>
+
+
+
+
+                        @Html.Raw("<pre>private readonly string checkUtilsTestAssembly = @Path.Combine(AppDomain.CurrentDomain.BaseDirectory, &quot;CheckUtilsTest.dll&quot;);</pre>");
+                        
+
+
+
+
+
+
+                        <p>Die Komponente wird mit folgendem Code initialisiert.</p>
+
+
+
+
+
+
+                        <pre>internal bool InitCheckUtilsTest()<br />        {<br />            var component = new DynamicClassSetup();<br /><br />            component.Assembly = checkUtilsTestAssembly;<br />            component.Class = &quot;CheckUtilsTestClass&quot;;<br /><br />            object[] paramArgument = { AbstractPowerUpComponent.Key };<br />            var init = appBase.ComponentLoader.InvokeMethod(component.Assembly, component.Class, component.InitMethod, paramArgument);<br />            log.InfoFormat(&quot;Is CheckUtilsTestClass init: {0}&quot;, init);<br /><br />            init = appBase.SetClassRegistry();<br />            checkUtilsTestClass = appBase.ComponentLoader.ComponentRegistry.SingleOrDefault(str =&gt; str.Key.Class.EndsWith(&quot;CheckUtilsTestClass&quot;)).Value;<br /><br />            return init;<br />        }</pre>
+
+
+
+
+
+                        <p>Zu erwähnen ist, dass immer der <em>Key</em> in der <em>Init-Methode</em> als Parameter mitgegeben werden muss. Dies ist <strong>zwingend notwendig</strong> das die Initialisierung nicht gelingt bzw. mit einer Exception quitiert wird. Der Key kann in der <em>App.config</em> hinterlegt werden, einfacher ist jedoch die Verwendung der Konstante <em>AbstractPowerUpComponent.Key.</em></p>
+
+
+
+
+
+                        <p>Danach kann die Komponente mit folgendem Code ausgef&#252;hrt werden.</p>
+
+
+
+
+
+
+                        <pre>internal bool RunCheckUtilsTest()<br />        {<br />            object[] param = { true };<br />            var result = appBase.ComponentLoader.InvokeMethod(checkUtilsTestClass, &quot;IsCheckUtilsTest&quot;, param);<br />            log.DebugFormat(&quot;IsCheckUtilsTest: {0}&quot;, result);<br /><br />            return result;<br />        }</pre>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="row clearfix">
+                <div class="col-md-12 column">
+                    <div>
+
+
+
+                        <div class='abstract'>Last but not least</div>
+
+
+
+
+
+
+                        <p>Das Ganze kann nun im Programm ausgef&#252;hrt werden.</p>
+
+
+
+
+
+                        <p><em><strong>Code Programm.cs</strong></em></p>
+
+
+
+
+
+                        <pre>using System;<br />using log4net;<br />using Application;<br />using TestHelper;<br /><br />namespace InMemoryLoaderIntegrationTest<br />{<br />    /// &lt;summary&gt;<br />    /// Main class.<br />    /// &lt;/summary&gt;<br />	class MainClass<br />	{<br />        /// &lt;summary&gt;<br />        /// The log.<br />        /// &lt;/summary&gt;<br />        private static readonly ILog log = LogManager.GetLogger(typeof(MainClass));<br />        /// &lt;summary&gt;<br />        /// The app base.<br />        /// &lt;/summary&gt;<br />        private static readonly AppBase appBase = AppBase.Instance;<br /><br />        /// &lt;summary&gt;<br />        /// The entry point of the program, where the program control starts and ends.<br />        /// &lt;/summary&gt;<br />        /// &lt;param name=&quot;args&quot;&gt;The command-line arguments.&lt;/param&gt;<br />		public static void Main (string[] args)<br />		{<br />            log.Info(&quot;Start InMemoryLoaderIntegrationTest&quot;);<br />            try<br />            {<br />                var appKey = appBase.ApplicationKey;<br />                log.DebugFormat(&quot;ApplicationKey: {0}&quot;, appKey);<br /><br />                var testHelper = new TestHelperClass();<br />                var checkUtilsTest = testHelper.InitCheckUtilsTest();<br />                checkUtilsTest = testHelper.RunCheckUtilsTest();<br />                log.InfoFormat(&quot;Testrun CheckUtilsTest: {0}&quot;, checkUtilsTest);<br />            }<br />            catch (Exception ex)<br />            {<br />                log.Fatal(ex.ToString());<br />            }<br />	}<br />    }<br />}</pre>
+
+
+
+
+
+                        <p><em><strong>Einfach, oder?</strong></em></p>
+
+
+
+
+
+                        <p>Das komplette Code-Listing wie auch das Programm ist im folgendem Artikel.</p>
+
+
+
+
+
+                        <p><a data-udi="umb://document/d7c1a09dedae4b0cbdc949188f335583" href="/blog/inmemoryloaderintegrationtest-code-listing/" title="InMemoryLoaderIntegrationTest Code-Listing">Code-Listing</a></p>
+
+
+
+
+
+                        <div class='abstract'>Weiterf&#252;hrende Informationen</div>
+
+
+
+
+
+                        <ul>
+                            <li><a rel="noopener noreferrer" href="https://de.wikipedia.org/wiki/Testgetriebene_Entwicklung" target="_blank" title="Testgetriebene_Entwicklung">https://de.wikipedia.org/wiki/Testgetriebene_Entwicklung</a></li>
+                            <li><a rel="noopener noreferrer" href="https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods" target="_blank" title="partial-classes-and-methods">https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods</a></li>
+                        </ul>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row clearfix">
+    <div class="col-md-12 column">
+        <hr />
+        <p>Autor: responsive kaysta</p>
+        <p>Published/Updated: 11/16/2017 10:55:55 PM</p>
+        <hr />
+    </div>
+</div>

@@ -1,0 +1,186 @@
+﻿@using BasicFrontend.Application;
+
+@{
+    AppBase appBase = AppBase.Instance;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="umb-grid">
+    <div class="grid-section">
+        <div>
+            <div class="row clearfix">
+                <div class="col-md-12 column">
+                    <div>
+
+
+
+                        <div class='page-header'><h1>Code-Listing: InMemoryLoaderIntegrationTest</h1></div>
+
+
+
+
+
+
+                        <p class='lead'>Das komplette Code-Listing zu den Blogeintr&#228;gen Teil 1 – Konfiguration und Initialisierung und Teil 2 – Anwendungen/Erweiterungen programmieren.</p>
+
+
+
+
+
+
+                        <p>Link zum Projekt als tar.gz Archiv - restore nuget packages &amp; build!</p>
+
+
+
+
+
+                        <p><a data-udi="umb://media/1619036a955f45df85241ae8ddb1d4fc" href="/media/1033/inmemoryloaderintegrationtesttar.gz" title="InMemoryLoaderIntegrationTest.tar.gz">InMemoryLoaderIntegrationTest.tar.gz</a></p>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="row clearfix">
+                <div class="col-md-12 column">
+                    <div>
+
+
+
+                        <div class='abstract'>Programm.cs</div>
+
+
+
+
+
+
+                        <pre>//<br />// Program.cs<br />//<br />// Author: responsive kaysta &lt;me@responsive-kaysta.ch&gt;<br />//<br />// Copyright (c) 2017 responsive kaysta<br />//<br />// Permission is hereby granted, free of charge, to any person obtaining a copy<br />// of this software and associated documentation files (the &quot;Software&quot;), to deal<br />// in the Software without restriction, including without limitation the rights<br />// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell<br />// copies of the Software, and to permit persons to whom the Software is<br />// furnished to do so, subject to the following conditions:<br />//<br />// The above copyright notice and this permission notice shall be included in<br />// all copies or substantial portions of the Software.<br />//<br />// THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR<br />// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,<br />// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE<br />// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER<br />// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,<br />// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN<br />// THE SOFTWARE.<br /><br />using System;<br />using log4net;<br />using Application;<br />using TestHelper;<br /><br />namespace InMemoryLoaderIntegrationTest<br />{<br />    /// &lt;summary&gt;<br />    /// Main class.<br />    /// &lt;/summary&gt;<br />	class MainClass<br />	{<br />        /// &lt;summary&gt;<br />        /// The log.<br />        /// &lt;/summary&gt;<br />        private static readonly ILog log = LogManager.GetLogger(typeof(MainClass));<br />        /// &lt;summary&gt;<br />        /// The app base.<br />        /// &lt;/summary&gt;<br />        private static readonly AppBase appBase = AppBase.Instance;<br /><br />        /// &lt;summary&gt;<br />        /// The entry point of the program, where the program control starts and ends.<br />        /// &lt;/summary&gt;<br />        /// &lt;param name=&quot;args&quot;&gt;The command-line arguments.&lt;/param&gt;<br />		public static void Main (string[] args)<br />		{<br />            log.Info(&quot;Start InMemoryLoaderIntegrationTest&quot;);<br />            try<br />            {<br />                // Test if AppBase is ready zo go<br />                var appKey = appBase.ApplicationKey;<br />                log.DebugFormat(&quot;ApplicationKey: {0}&quot;, appKey);<br /><br />                // Create an instanz<br />                var testHelper = new TestHelperClass();<br />                // Initialize the component<br />                var checkUtilsTest = testHelper.InitCheckUtilsTest();<br />                // Run the Test<br />                checkUtilsTest = testHelper.RunCheckUtilsTest();<br />                // Test run okay?<br />                log.InfoFormat(&quot;Testrun CheckUtilsTest: {0}&quot;, checkUtilsTest);<br />            }<br />            catch (Exception ex)<br />            {<br />                log.Fatal(ex.ToString());<br />            }<br />	}<br />    }<br />}</pre>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="row clearfix">
+                <div class="col-md-12 column">
+                    <div>
+
+
+
+                        <div class='abstract'>AppBase.cs</div>
+
+
+
+
+
+
+                        <pre>//<br />// AppBase.cs<br />//<br />// Author: responsive kaysta &lt;me@responsive-kaysta.ch&gt;<br />//<br />// Copyright (c) 2017 responsive kaysta<br />//<br />// Permission is hereby granted, free of charge, to any person obtaining a copy<br />// of this software and associated documentation files (the &quot;Software&quot;), to deal<br />// in the Software without restriction, including without limitation the rights<br />// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell<br />// copies of the Software, and to permit persons to whom the Software is<br />// furnished to do so, subject to the following conditions:<br />//<br />// The above copyright notice and this permission notice shall be included in<br />// all copies or substantial portions of the Software.<br />//<br />// THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR<br />// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,<br />// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE<br />// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER<br />// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,<br />// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN<br />// THE SOFTWARE.<br /><br />using System;<br />using System.Configuration;<br />using log4net;<br />using System.Threading;<br />using InMemoryLoaderCommon;<br /><br />namespace Application<br />{<br />    /// &lt;summary&gt;<br />    /// App base.<br />    /// &lt;/summary&gt;<br />    public sealed class AppBase : AbstractCommonBase<br />    {<br />        /// &lt;summary&gt;<br />        /// The log.<br />        /// &lt;/summary&gt;<br />        private static readonly ILog log = LogManager.GetLogger(typeof(AppBase));<br /><br />        /// &lt;summary&gt;<br />        /// The instance.<br />        /// &lt;/summary&gt;<br />        private static volatile AppBase instance;<br /><br />        /// &lt;summary&gt;<br />        /// The sync root.<br />        /// &lt;/summary&gt;<br />        private static readonly object syncRoot = new Object();<br /><br />        /// &lt;summary&gt;<br />        /// Gets the common component path.<br />        /// &lt;/summary&gt;<br />        /// &lt;value&gt;The common component path.&lt;/value&gt;<br />        internal string commonComponentPath { get { return ConfigurationManager.AppSettings[&quot;CommonComponentPath&quot;].ToString(); } }<br />        /// &lt;summary&gt;<br />        /// Gets the console culture.<br />        /// &lt;/summary&gt;<br />        /// &lt;value&gt;The console culture.&lt;/value&gt;<br />        internal string consoleCulture { get { return ConfigurationManager.AppSettings[&quot;ConsoleCulture&quot;].ToString(); } }<br /><br />        /// &lt;summary&gt;<br />        /// The instance text.<br />        /// &lt;/summary&gt;<br />        internal string instanceText = &quot;Create a new instance of Type: {0}&quot;;<br /><br />        /// &lt;summary&gt;<br />        /// Initializes a new instance of the &lt;see cref=&quot;Application.AppBase&quot;/&gt; class.<br />        /// &lt;/summary&gt;<br />        private AppBase()<br />        {<br />            log4net.Config.XmlConfigurator.Configure();<br /><br />            log.DebugFormat(&quot;Create a new instance of Type: {0}&quot;, this.GetType().ToString());<br /><br />            base.ConsoleCulture = this.consoleCulture;<br /><br />            string path = string.Empty;<br /><br />            path = string.IsNullOrEmpty(this.commonComponentPath) ? AppDomain.CurrentDomain.BaseDirectory : this.commonComponentPath;<br /><br />            base.AssemblyPath = path;<br /><br />            base.SetCulture();<br />            log.DebugFormat(&quot;CurrentCulture set to: {0}&quot;, Thread.CurrentThread.CurrentCulture.DisplayName);<br /><br />            base.GetAssemblyPath();<br />            base.SetInMemoryLoader();<br />            base.SetClassRegistry();<br />            base.SetInMemoryLoaderCommon();<br />        }<br /><br />        /// &lt;summary&gt;<br />        /// Gets the instance.<br />        /// &lt;/summary&gt;<br />        /// &lt;value&gt;The instance.&lt;/value&gt;<br />        public static AppBase Instance<br />        {<br />            get<br />            {<br />                if (instance == null)<br />                {<br />                    lock (syncRoot)<br />                    {<br />                        if (instance == null)<br />                        {<br />                            instance = new AppBase();<br />                        }<br />                    }<br />                }<br />                return instance;<br />            }<br />        }<br />    }<br />}</pre>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="row clearfix">
+                <div class="col-md-12 column">
+                    <div>
+
+
+
+                        <div class='abstract'>TestHelperClass.cs</div>
+
+
+
+
+
+                        @Html.Raw("<pre>//<br />// CheckUtilsTest.cs<br />//<br />// Author: responsive kaysta &lt;me@responsive-kaysta.ch&gt;<br />//<br />// Copyright (c) 2017 responsive kaysta<br />//<br />// Permission is hereby granted, free of charge, to any person obtaining a copy<br />// of this software and associated documentation files (the &quot;Software&quot;), to deal<br />// in the Software without restriction, including without limitation the rights<br />// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell<br />// copies of the Software, and to permit persons to whom the Software is<br />// furnished to do so, subject to the following conditions:<br />//<br />// The above copyright notice and this permission notice shall be included in<br />// all copies or substantial portions of the Software.<br />//<br />// THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR<br />// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,<br />// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE<br />// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER<br />// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,<br />// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN<br />// THE SOFTWARE.<br /><br />using log4net;<br />using Application;<br />using System;<br />using System.Linq;<br />using InMemoryLoaderBase;<br />using System.IO;<br /><br />namespace TestHelper<br />{<br />    /// &lt;summary&gt;<br />    /// Test helper class.<br />    /// &lt;/summary&gt;<br />    internal class TestHelperClass<br />    {<br />        /// &lt;summary&gt;<br />        /// The log.<br />        /// &lt;/summary&gt;<br />        private static readonly ILog log = LogManager.GetLogger(typeof(TestHelperClass));<br />        /// &lt;summary&gt;<br />        /// The app base.<br />        /// &lt;/summary&gt;<br />        private static readonly AppBase appBase = AppBase.Instance;<br /><br />        /// &lt;summary&gt;<br />        /// The check utils test assembly.<br />        /// &lt;/summary&gt;<br />        private readonly string checkUtilsTestAssembly = @Path.Combine(AppDomain.CurrentDomain.BaseDirectory, &quot;CheckUtilsTest.dll&quot;);<br /><br />        /// &lt;summary&gt;<br />        /// Gets or sets the check utils test class.<br />        /// &lt;/summary&gt;<br />        /// &lt;value&gt;The check utils test class.&lt;/value&gt;<br />        internal IDynamicClassInfo checkUtilsTestClass { get; set; }<br /><br />        /// &lt;summary&gt;<br />        /// Initializes a new instance of the &lt;see cref=&quot;TestHelper.TestHelperClass&quot;/&gt; class.<br />        /// &lt;/summary&gt;<br />        internal TestHelperClass()<br />        {<br />            log.DebugFormat(appBase.instanceText, this.GetType().ToString());<br />        }<br /><br />        /// &lt;summary&gt;<br />        /// Inits the check utils test.<br />        /// &lt;/summary&gt;<br />        /// &lt;returns&gt;&lt;c&gt;true&lt;/c&gt;, if check utils test was inited, &lt;c&gt;false&lt;/c&gt; otherwise.&lt;/returns&gt;<br />        internal bool InitCheckUtilsTest()<br />        {<br />            // New instance of the setup class<br />            var component = new DynamicClassSetup();<br /><br />            // The full path to the Assembly<br />            component.Assembly = checkUtilsTestAssembly;<br />            // The class we whant to use<br />            component.Class = &quot;CheckUtilsTestClass&quot;;<br /><br />            // Absolutely requiered! Without this key the instatiation whill fail.<br />            object[] paramArgument = { AbstractPowerUpComponent.Key };<br />            // Invoke th InitMethod<br />            var init = appBase.ComponentLoader.InvokeMethod(component.Assembly, component.Class, component.InitMethod, paramArgument);<br />            log.InfoFormat(&quot;Is CheckUtilsTestClass init: {0}&quot;, init);<br /><br />            // Set the ClassRegistry, now the component is ready to use<br />            init = appBase.SetClassRegistry();<br />            checkUtilsTestClass = appBase.ComponentLoader.ComponentRegistry.SingleOrDefault(str =&gt; str.Key.Class.EndsWith(&quot;CheckUtilsTestClass&quot;)).Value;<br /><br />            return init;<br />        }<br /><br />        /// &lt;summary&gt;<br />        /// Runs the check utils test.<br />        /// &lt;/summary&gt;<br />        /// &lt;returns&gt;&lt;c&gt;true&lt;/c&gt;, if check utils test was run, &lt;c&gt;false&lt;/c&gt; otherwise.&lt;/returns&gt;<br />        internal bool RunCheckUtilsTest()<br />        {<br />            object[] param = { true };<br />            var result = appBase.ComponentLoader.InvokeMethod(checkUtilsTestClass, &quot;IsCheckUtilsTest&quot;, param);<br />            log.DebugFormat(&quot;IsCheckUtilsTest: {0}&quot;, result);<br /><br />            return result;<br />        }<br />    }<br />}</pre>");
+                        
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="row clearfix">
+                <div class="col-md-12 column">
+                    <div>
+
+
+
+                        <div class='abstract'>App.config</div>
+
+
+
+
+
+
+                        <pre>&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;<br />&lt;configuration&gt;<br />	&lt;configSections&gt;<br />		&lt;section name=&quot;log4net&quot; type=&quot;log4net.Config.Log4NetConfigurationSectionHandler, log4net&quot; /&gt;<br />	&lt;/configSections&gt;<br />	&lt;appSettings&gt;<br />		&lt;!-- &lt;add key=&quot;CommonComponentPath&quot; value=&quot;D:\github\InMemoryLoaderMaster\InMemoryLoaderCommonTestSuite\bin\Debug\&quot; /&gt; --&gt;<br />		&lt;add key=&quot;CommonComponentPath&quot; value=&quot;&quot; /&gt;<br />		&lt;add key=&quot;ConsoleCulture&quot; value=&quot;en-GB&quot; /&gt;<br />		&lt;add key=&quot;ApplicationKey&quot; value=&quot;u5QfmfACqWmOclsedZdCA50TVijQVjendQ7ceeaxumAEcdKDjMrqOiWInN6d8f7p&quot; /&gt;<br />	&lt;/appSettings&gt;<br />	&lt;log4net&gt;<br />		&lt;appender name=&quot;Console&quot; type=&quot;log4net.Appender.ConsoleAppender&quot;&gt;<br />			&lt;layout type=&quot;log4net.Layout.PatternLayout&quot;&gt;<br />				&lt;conversionPattern value=&quot;%date %-5level: %message%newline&quot; /&gt;<br />			&lt;/layout&gt;<br />		&lt;/appender&gt;<br />		&lt;appender name=&quot;RollingFileAppender&quot; type=&quot;log4net.Appender.RollingFileAppender&quot;&gt;<br />			&lt;file value=&quot;/home/kaysta/github/InMemoryLoaderIntegrationTest/InMemoryLoaderIntegrationTest.log&quot; /&gt;<br />			&lt;appendToFile value=&quot;true&quot; /&gt;<br />			&lt;rollingStyle value=&quot;Size&quot; /&gt;<br />			&lt;maxSizeRollBackups value=&quot;10&quot; /&gt;<br />			&lt;maximumFileSize value=&quot;10MB&quot; /&gt;<br />			&lt;staticLogFileName value=&quot;true&quot; /&gt;<br />			&lt;layout type=&quot;log4net.Layout.PatternLayout&quot;&gt;<br />				&lt;conversionPattern value=&quot;%date %-5level[%logger]: %message%newline&quot; /&gt;<br />			&lt;/layout&gt;<br />		&lt;/appender&gt;<br />		&lt;appender name=&quot;ManagedColoredConsoleAppender&quot; type=&quot;log4net.Appender.ManagedColoredConsoleAppender&quot;&gt;<br />			&lt;mapping&gt;<br />				&lt;level value=&quot;ERROR&quot; /&gt;<br />				&lt;foreColor value=&quot;DarkRed&quot; /&gt;<br />			&lt;/mapping&gt;<br />			&lt;mapping&gt;<br />				&lt;level value=&quot;WARN&quot; /&gt;<br />				&lt;foreColor value=&quot;Yellow&quot; /&gt;<br />			&lt;/mapping&gt;<br />			&lt;mapping&gt;<br />				&lt;level value=&quot;INFO&quot; /&gt;<br />				&lt;foreColor value=&quot;White&quot; /&gt;<br />			&lt;/mapping&gt;<br />			&lt;mapping&gt;<br />				&lt;level value=&quot;DEBUG&quot; /&gt;<br />				&lt;foreColor value=&quot;DarkGreen&quot; /&gt;<br />			&lt;/mapping&gt;<br />			&lt;layout type=&quot;log4net.Layout.PatternLayout&quot;&gt;<br />				&lt;conversionPattern value=&quot;%date %-5level %-20.20logger: %message%newline&quot; /&gt;<br />			&lt;/layout&gt;<br />		&lt;/appender&gt;<br />		&lt;root&gt;<br />			&lt;level value=&quot;DEBUG&quot; /&gt;<br />			&lt;appender-ref ref=&quot;ManagedColoredConsoleAppender&quot; /&gt;<br />			&lt;appender-ref ref=&quot;RollingFileAppender&quot; /&gt;<br />		&lt;/root&gt;<br />		&lt;logger name=&quot;CheckUtilsTest&quot;&gt;<br />			&lt;level value=&quot;DEBUG&quot; /&gt;<br />		&lt;/logger&gt;<br />		&lt;logger name=&quot;InMemoryLoader&quot;&gt;<br />			&lt;level value=&quot;INFO&quot; /&gt;<br />		&lt;/logger&gt;<br />		&lt;logger name=&quot;InMemoryLoaderBase&quot;&gt;<br />			&lt;level value=&quot;INFO&quot; /&gt;<br />		&lt;/logger&gt;<br />		&lt;logger name=&quot;InMemoryLoaderCommon&quot;&gt;<br />			&lt;level value=&quot;INFO&quot; /&gt;<br />		&lt;/logger&gt;<br />		&lt;logger name=&quot;PowerUpStringUtils&quot;&gt;<br />			&lt;level value=&quot;INFO&quot; /&gt;<br />		&lt;/logger&gt;<br />		&lt;logger name=&quot;PowerUpCheckUtils&quot;&gt;<br />			&lt;level value=&quot;INFO&quot; /&gt;<br />		&lt;/logger&gt;<br />		&lt;logger name=&quot;PowerUpConvertUtils&quot;&gt;<br />			&lt;level value=&quot;INFO&quot; /&gt;<br />		&lt;/logger&gt;<br />		&lt;logger name=&quot;PowerUpCryptUtils&quot;&gt;<br />			&lt;level value=&quot;INFO&quot; /&gt;<br />		&lt;/logger&gt;<br />		&lt;logger name=&quot;PowerUpXmlUtils&quot;&gt;<br />			&lt;level value=&quot;INFO&quot; /&gt;<br />		&lt;/logger&gt;<br />		&lt;logger name=&quot;PowerUpDateTimeUtils&quot;&gt;<br />			&lt;level value=&quot;INFO&quot; /&gt;<br />		&lt;/logger&gt;<br />		&lt;logger name=&quot;PowerUpEmailUtils&quot;&gt;<br />			&lt;level value=&quot;INFO&quot; /&gt;<br />		&lt;/logger&gt;<br />		&lt;logger name=&quot;PowerUpFileSystemUtils&quot;&gt;<br />			&lt;level value=&quot;INFO&quot; /&gt;<br />		&lt;/logger&gt;<br />		&lt;logger name=&quot;PowerUpGetUtils&quot;&gt;<br />			&lt;level value=&quot;INFO&quot; /&gt;<br />		&lt;/logger&gt;<br />	&lt;/log4net&gt;<br />&lt;/configuration&gt;</pre>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="row clearfix">
+                <div class="col-md-12 column">
+                    <div>
+
+
+
+                        <div class='abstract'>CheckUtilsTestClass.Base.cs</div>
+
+
+
+
+
+
+                        <pre>//<br />// CheckUtilsTestClass.Base.cs<br />//<br />// Author: responsive kaysta &lt;me@responsive-kaysta.ch&gt;<br />//<br />// Copyright (c) 2017 responsive kaysta<br />//<br />// Permission is hereby granted, free of charge, to any person obtaining a copy<br />// of this software and associated documentation files (the &quot;Software&quot;), to deal<br />// in the Software without restriction, including without limitation the rights<br />// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell<br />// copies of the Software, and to permit persons to whom the Software is<br />// furnished to do so, subject to the following conditions:<br />//<br />// The above copyright notice and this permission notice shall be included in<br />// all copies or substantial portions of the Software.<br />//<br />// THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR<br />// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,<br />// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE<br />// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER<br />// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,<br />// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN<br />// THE SOFTWARE.<br /><br />using System;<br />using System.Linq;<br />using log4net;<br />using InMemoryLoader;<br />using InMemoryLoaderBase;<br /><br />namespace CheckUtilsTest<br />{<br />    /// &lt;summary&gt;<br />    /// Check utils test class.<br />    /// &lt;/summary&gt;<br />    public partial class CheckUtilsTestClass : AbstractPowerUpComponent<br />    {<br />        /// &lt;summary&gt;<br />        /// The log.<br />        /// &lt;/summary&gt;<br />        private static readonly ILog log = LogManager.GetLogger(typeof(CheckUtilsTestClass));<br />        /// &lt;summary&gt;<br />        /// The is byte.<br />        /// &lt;/summary&gt;<br />        private static byte[] isByte = new byte[isInt];<br />        /// &lt;summary&gt;<br />        /// The is date.<br />        /// &lt;/summary&gt;<br />        private static DateTime isDate = DateTime.Now;<br />        /// &lt;summary&gt;<br />        /// The is string.<br />        /// &lt;/summary&gt;<br />        private const string isString = &quot;Some String&quot;;<br />        /// &lt;summary&gt;<br />        /// The is decimal.<br />        /// &lt;/summary&gt;<br />        private const Decimal isDecimal = 3.12m;<br />        /// &lt;summary&gt;<br />        /// The is double.<br />        /// &lt;/summary&gt;<br />        private const Double isDouble = 3.12;<br />        /// &lt;summary&gt;<br />        /// The is float.<br />        /// &lt;/summary&gt;<br />        private const float isFloat = 1.32f;<br />        /// &lt;summary&gt;<br />        /// The is string float.<br />        /// &lt;/summary&gt;<br />        private const string isStringFloat = &quot;5.687&quot;;<br />        /// &lt;summary&gt;<br />        /// The is int.<br />        /// &lt;/summary&gt;<br />        private const long isLong = 12345678;<br />        /// &lt;summary&gt;<br />        /// The is string int.<br />        /// &lt;/summary&gt;<br />        private const string isStringLong = &quot;521345678&quot;;<br />        /// &lt;summary&gt;<br />        /// The is string URL.<br />        /// &lt;/summary&gt;<br />        private const string isStringUrl = &quot;http://www.google.ch/&quot;;<br />        /// &lt;summary&gt;<br />        /// The is string no URL.<br />        /// &lt;/summary&gt;<br />        private const string isStringNoUrl = &quot;Some String&quot;;<br />        /// &lt;summary&gt;<br />        /// The is int.<br />        /// &lt;/summary&gt;<br />        private const int isInt = 123;<br />        /// &lt;summary&gt;<br />        /// The is string int.<br />        /// &lt;/summary&gt;<br />        private const string isStringInt = &quot;521&quot;;<br /><br />        /// &lt;summary&gt;<br />        /// Gets or sets the component loader.<br />        /// &lt;/summary&gt;<br />        /// &lt;value&gt;The component loader.&lt;/value&gt;<br />        private static ComponentLoader ComponentLoader { get; set; }<br /><br />        /// &lt;summary&gt;<br />        /// Gets the check utils.<br />        /// &lt;/summary&gt;<br />        /// &lt;value&gt;The check utils.&lt;/value&gt;<br />        private static IDynamicClassInfo CheckUtils<br />        {<br />            get<br />            {<br />                return ComponentLoader.ComponentRegistry.SingleOrDefault(str =&gt; str.Key.Class.EndsWith(&quot;CheckUtils&quot;)).Value;<br />            }<br />        }<br /><br />        /// &lt;summary&gt;<br />        /// Initializes a new instance of the &lt;see cref=&quot;CheckUtilsTest.CheckUtilsTestClass&quot;/&gt; class.<br />        /// &lt;/summary&gt;<br />        public CheckUtilsTestClass()<br />        {<br />            log.DebugFormat(&quot;Create a new instance of Type: {0}&quot;, this.GetType().ToString());<br />            ComponentLoader = ComponentLoader.Instance;<br />        }<br /><br />        /// &lt;summary&gt;<br />        /// Determines whether this instance is check utils test the specified logVerbose.<br />        /// &lt;/summary&gt;<br />        /// &lt;returns&gt;&lt;c&gt;true&lt;/c&gt; if this instance is check utils test the specified logVerbose; otherwise, &lt;c&gt;false&lt;/c&gt;.&lt;/returns&gt;<br />        /// &lt;param name=&quot;logVerbose&quot;&gt;If set to &lt;c&gt;true&lt;/c&gt; log verbose.&lt;/param&gt;<br />        public bool IsCheckUtilsTest(bool logVerbose)<br />        {<br />            bool isCheckUtilsTest = false;<br /><br />            isCheckUtilsTest = IsStringIntTest1();<br />            isCheckUtilsTest = IsStringIntTest2();<br />            isCheckUtilsTest = IsStringIntTest3();<br />            isCheckUtilsTest = IsStringIntTest4();<br /><br />            return isCheckUtilsTest;<br />        }<br />    }<br />}</pre>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="row clearfix">
+                <div class="col-md-12 column">
+                    <div>
+
+
+
+                        <div class='abstract'>CheckUtilsTestClass.Int.cs</div>
+
+
+
+
+
+
+                        <pre>//<br />// CheckUtilsTestClass.Int.cs<br />//<br />// Author: responsive kaysta &lt;me@responsive-kaysta.ch&gt;<br />//<br />// Copyright (c) 2017 responsive kaysta<br />//<br />// Permission is hereby granted, free of charge, to any person obtaining a copy<br />// of this software and associated documentation files (the &quot;Software&quot;), to deal<br />// in the Software without restriction, including without limitation the rights<br />// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell<br />// copies of the Software, and to permit persons to whom the Software is<br />// furnished to do so, subject to the following conditions:<br />//<br />// The above copyright notice and this permission notice shall be included in<br />// all copies or substantial portions of the Software.<br />//<br />// THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR<br />// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,<br />// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE<br />// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER<br />// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,<br />// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN<br />// THE SOFTWARE.<br /><br />using System;<br />using InMemoryLoaderBase;<br />using System.Globalization;<br /><br />namespace CheckUtilsTest<br />{<br />    /// &lt;summary&gt;<br />    /// Check utils test class.<br />    /// &lt;/summary&gt;<br />    public partial class CheckUtilsTestClass : AbstractPowerUpComponent<br />    {<br />        /// &lt;summary&gt;<br />        /// Determines if is string int test1.<br />        /// &lt;/summary&gt;<br />        /// &lt;returns&gt;&lt;c&gt;true&lt;/c&gt; if is string int test1; otherwise, &lt;c&gt;false&lt;/c&gt;.&lt;/returns&gt;<br />        private static bool IsStringIntTest1()<br />        {<br />            try<br />            {<br />                object[] paramArg = { isInt };<br />                var result = ComponentLoader.InvokeMethod(CheckUtils, &quot;IsStringInt&quot;, paramArg);<br />                log.DebugFormat(&quot;IsStringIntTest1 (true) = {0}&quot;, result);<br />                return result;<br />            }<br />            catch (Exception ex)<br />            {<br />                throw ex;<br />            }<br />        }<br />        /// &lt;summary&gt;<br />        /// Determines if is string int test2.<br />        /// &lt;/summary&gt;<br />        /// &lt;returns&gt;&lt;c&gt;true&lt;/c&gt; if is string int test2; otherwise, &lt;c&gt;false&lt;/c&gt;.&lt;/returns&gt;<br />        private static bool IsStringIntTest2()<br />        {<br />            try<br />            {<br />                object[] paramArg = { isStringInt };<br />                var result = ComponentLoader.InvokeMethod(CheckUtils, &quot;IsStringInt&quot;, paramArg);<br />                log.DebugFormat(&quot;IsStringIntTest2 (true) = {0}&quot;, result);<br />                return result;<br />            }<br />            catch (Exception ex)<br />            {<br />                throw ex;<br />            }<br />        }<br />        /// &lt;summary&gt;<br />        /// Determines if is string int test3.<br />        /// &lt;/summary&gt;<br />        /// &lt;returns&gt;&lt;c&gt;true&lt;/c&gt; if is string int test3; otherwise, &lt;c&gt;false&lt;/c&gt;.&lt;/returns&gt;<br />        private static bool IsStringIntTest3()<br />        {<br />            try<br />            {<br />                object[] paramArg = { isStringInt, CultureInfo.CurrentCulture };<br />                var result = ComponentLoader.InvokeMethod(CheckUtils, &quot;IsStringInt&quot;, paramArg);<br />                log.DebugFormat(&quot;IsStringIntTest3 (true) = {0}&quot;, result);<br />                return result;<br />            }<br />            catch (Exception ex)<br />            {<br />                throw ex;<br />            }<br />        }<br />        /// &lt;summary&gt;<br />        /// Determines if is string int test4.<br />        /// &lt;/summary&gt;<br />        /// &lt;returns&gt;&lt;c&gt;true&lt;/c&gt; if is string int test4; otherwise, &lt;c&gt;false&lt;/c&gt;.&lt;/returns&gt;<br />        private static bool IsStringIntTest4()<br />        {<br />            try<br />            {<br />                object[] paramArg = { isString, CultureInfo.CurrentCulture };<br />                var result = ComponentLoader.InvokeMethod(CheckUtils, &quot;IsStringInt&quot;, paramArg);<br />                log.DebugFormat(&quot;IsStringIntTest4 (false) = {0}&quot;, result);<br />                return result == false;<br />            }<br />            catch (Exception ex)<br />            {<br />                throw ex;<br />            }<br />        }<br />    }<br />}</pre>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row clearfix">
+    <div class="col-md-12 column">
+        <hr />
+        <p>Autor: responsive kaysta</p>
+        <p>Published/Updated: 11/16/2017 10:55:56 PM</p>
+        <hr />
+    </div>
+</div>
