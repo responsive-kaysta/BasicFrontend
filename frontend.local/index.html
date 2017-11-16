@@ -13,13 +13,17 @@
     <meta name="keywords" content=".NET, C#, Development, Entwicklung, Datenbank, Oracle, MSSQL, MYSQL, Mobile, CMS, Content, Management, System, Mobile, Responsive">
     <meta name="author" content="responsive kaysta">
 
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="pragma" content="no-cache">
+
     <link rel="icon" href="">
 
     <title>BasicFrontend | responsive kaysta | mobile first!</title>
 
-    <!-- Fonts -->
+    <!-- Fonts    
     <link href="//fonts.googleapis.com/css?family=Merriweather:400,700,300,900" rel="stylesheet" type="text/css">
     <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet" type="text/css">
+    -->
 
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="/Content/bundle.min.css">
@@ -36,7 +40,43 @@
 <body>
 
     <!-- Header include -->
-    <header class="" id="header"></header>
+    <header class="" id="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-8 col-sm-12 col-md-4">
+                    <a class="navbar-brand" href="/" style="background-image: url('/Media/technics-q-g-410-130-8.jpg')">
+                        <span class="navbar-invisible"> </span>
+                    </a>
+                </div>
+                <div class="col-sm-12 col-md-8">
+                    <nav>
+                        <ul class="level-2">
+                            <li class="has-child">
+                                <span>About</span>
+                                <ul class="sublevel level-3">
+                                    <li>
+                                        <a href="?module=aboutme">Me</a>
+                                    </li>
+                                    <li>
+                                        <a href="?module=about">My Laws</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="?module=blogoverview">Blog</a>
+                            </li>
+                            <li>
+                                <a href="?module=disclaimer">Disclaimer</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div id="toggle" class="toggle">
+            <a href="#" class="cross"><span></span></a>
+        </div>
+    </header>
 
     <main class="container main-content" role="main">
     </main>
@@ -60,13 +100,59 @@
     </div>
 
     <!-- Footer includer -->
-    <footer class="" id="footer"></footer>
+    <footer class="" id="footer">
+        <div class="container">
+            <div class="col-sm-12 col-md-4">
+                <div class="footer-menu-heading">Page Menu</div>
+                <ul>
+                    <li class="">
+                        <a href="/">Home</a>
+                    </li>
+                    <li class="">
+                        <a href="?module=aboutoverview">About</a>
+                    </li>
+                    <li>
+                        <a href="?module=blogoverview">Blog</a>
+                    </li>
+                    <li>
+                        <a href="?module=disclaimer">Disclaimer</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <div class="footer-menu-heading">Find me</div>
+                <ul>
+                    <li>
+                        <a href="https://github.com/responsive-kaysta" target="_blank">on github</a>
+                    </li>
+                    <li>
+                        <a href="https://www.nuget.org/profiles/kaysta" target="_blank">on nuget</a>
+                    </li>
+                    <li>
+                        <a href="http://www.emailmeform.com/builder/form/V3T8fYHIP47tbhOb" target="_blank">on emailmeform.com</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <div class="footer-menu-heading">Find Umbraco</div>
+                <ul>
+                    <li>
+                        <a href="https://twitter.com/umbracoproject" target="_blank">on Twitter</a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/Umbraco" target="_blank">on Facebook</a>
+                    </li>
+                    <li>
+                        <a href="http://umbraco.com/?utm_source=core&utm_medium=starterkit&utm_content=topic-link&utm_campaign=fanoe" target="_blank">on Umbraco.com</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-xs-12 footer-brand">2017 &copy; responsive kaysta | mobile first!</div>
+        </div>
+    </footer>
 
     <script type="text/javascript" src="/Scripts/app.min.js"></script>
 
-    <script type="text/javascript" src="/Scripts/Modules/System/include.js"></script>
-    <script type="text/javascript" src="/Scripts/Modules/System/colourscheme.js"></script>
-    <script type="text/javascript" src="/Scripts/Modules/System/moduleloader.js"></script>
 
 </body>
 </html>
