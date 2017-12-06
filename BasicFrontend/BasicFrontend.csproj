@@ -412,10 +412,10 @@
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="bundleconfig.json" />
-    <None Include="compilerconfig.json" />
+    <Content Include="_bundleconfig.json" />
+    <None Include="_compilerconfig.json" />
     <None Include="compilerconfig.json.defaults">
-      <DependentUpon>compilerconfig.json</DependentUpon>
+      <DependentUpon>_compilerconfig.json</DependentUpon>
     </None>
     <Content Include="Css\Colours\blue.less" />
     <Content Include="Css\Colours\colours.less" />
