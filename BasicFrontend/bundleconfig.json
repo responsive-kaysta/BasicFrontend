@@ -52,43 +52,20 @@
   {
     "outputFileName": "Scripts/app.js",
     "inputFiles": [
-      "Js/Plugins/Tooltipster/tooltipster.bundle.es5.js",
-      "Js/global.es5.js",
-      "Js/Modules/colourswitch.es5.js",
-      "Js/Modules/navigation.es5.js",
-      "Js/Modules/equalheight.es5.js",
-      "Js/Modules/loadmore.es5.js",
-      "Js/Modules/searchbox.es5.js",
-      "Js/Plugins/Tooltipster/tooltipster.es5.js"
+      "Js/Plugins/Tooltipster/tooltipster.bundle.js",
+      "Js/global.js",
+      "Js/Modules/colourswitch.js",
+      "Js/Modules/navigation.js",
+      "Js/Modules/equalheight.js",
+      "Js/Modules/loadmore.js",
+      "Js/Modules/searchbox.js",
+      "Js/Plugins/Tooltipster/tooltipster.js"
     ]
   },
   {
-    "outputFileName": "Scripts/bootstrap.min.js",
+    "outputFileName": "Content/bundle.min.css",
     "inputFiles": [
-      "Scripts/bootstrap.js"
-    ]
-  },
-  {
-    "outputFileName": "Scripts/bundle.js",
-    "inputFiles": [
-      "Scripts/bootstrap.js",
-      "Scripts/jquery-3.3.1.intellisense.js",
-      "Scripts/jquery-3.3.1.js",
-      "Scripts/jquery.validate-vsdoc.js",
-      "Scripts/jquery.validate.js",
-      "Scripts/jquery.validate.unobtrusive.js"
-    ]
-  },
-  {
-    "outputFileName": "Js/Modules/equalheight.min.js",
-    "inputFiles": [
-      "Js/Modules/equalheight.js"
-    ]
-  },
-  {
-    "outputFileName": "Js/Modules/colourswitch.min.js",
-    "inputFiles": [
-      "Js/Modules/colourswitch.js"
+      "Content/bundle.css"
     ]
   }
 ]
