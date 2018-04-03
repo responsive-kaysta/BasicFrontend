@@ -1,10 +1,6 @@
-﻿/* light.less */
+/* light.less */
 .light {
   background: #fff;
-}
-.light nav > ul li {
-  background: #fff;
-  background-color: #fff;
 }
 .light * {
   color: #000;

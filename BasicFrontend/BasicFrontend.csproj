@@ -51,18 +51,12 @@
     <Reference Include="Antlr3.Runtime, Version=3.5.0.2, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
       <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
     </Reference>
-    <Reference Include="dotnet-bundle, Version=2.6.362.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\BundlerMinifier.Core.2.6.362\lib\net452\dotnet-bundle.exe</HintPath>
-    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.8.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="NUglify, Version=1.5.9.0, Culture=neutral, PublicKeyToken=15bc7810aec21b5e, processorArchitecture=MSIL">
-      <HintPath>..\packages\NUglify.1.5.9\lib\net40\NUglify.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -186,6 +180,14 @@
     <Content Include="Css\ie10-viewport-bug-workaround.min.css">
       <DependentUpon>ie10-viewport-bug-workaround.css</DependentUpon>
     </Content>
+    <Content Include="Css\Ie\backgroundsize.min.htc" />
+    <Content Include="Css\Ie\html5shiv.js" />
+    <Content Include="Css\Ie\v8.css" />
+    <Content Include="Css\Ie\v9.css" />
+    <Content Include="Css\images\arrow.svg" />
+    <Content Include="Css\images\bars.svg" />
+    <Content Include="Css\images\close.svg" />
+    <Content Include="Css\images\Internet-of-Things-1920xx.png" />
     <Content Include="Css\Modules\abstract.css">
       <DependentUpon>abstract.less</DependentUpon>
     </Content>
@@ -354,6 +356,7 @@
     <Content Include="Css\Plugins\Effects\loadmore.min.css">
       <DependentUpon>loadmore.css</DependentUpon>
     </Content>
+    <Content Include="Css\Plugins\fontawesome-all.css" />
     <Content Include="Css\Plugins\Tooltipster\Themes\tooltipster-sideTip-borderless.min.css" />
     <Content Include="Css\Plugins\Tooltipster\Themes\tooltipster-sideTip-light.min.css" />
     <Content Include="Css\Plugins\Tooltipster\Themes\tooltipster-sideTip-noir.min.css" />
@@ -365,6 +368,10 @@
     <Content Include="Content\bootstrap-reboot.css.map" />
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
+    <Content Include="Css\Plugins\fontawesome-all.less" />
+    <Content Include="bundleconfig.json.bindings">
+      <DependentUpon>bundleconfig.json</DependentUpon>
+    </Content>
     <None Include="Css\Plugins\Tooltipster\tooltipster.bundle.less" />
     <None Include="Css\Plugins\Tooltipster\tooltipster.main.less" />
     <Content Include="Css\Plugins\Tooltipster\tooltipster.bundle.css">
@@ -391,19 +398,16 @@
     <Content Include="Css\reset.min.css">
       <DependentUpon>reset.css</DependentUpon>
     </Content>
-    <Content Include="Css\style.css">
-      <DependentUpon>style.less</DependentUpon>
-    </Content>
+    <Content Include="Css\style.css" />
     <Content Include="Css\style.min.css">
       <DependentUpon>style.css</DependentUpon>
     </Content>
+    <Content Include="Css\webfonts\fa-brands-400.svg" />
+    <Content Include="Css\webfonts\fa-regular-400.svg" />
+    <Content Include="Css\webfonts\fa-solid-900.svg" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="bundleconfig.json" />
-    <None Include="compilerconfig.json" />
-    <None Include="compilerconfig.json.defaults">
-      <DependentUpon>compilerconfig.json</DependentUpon>
-    </None>
     <Content Include="Css\Colours\blue.less" />
     <Content Include="Css\Colours\colours.less" />
     <Content Include="Css\Colours\dark.less" />
@@ -464,6 +468,9 @@
     <Content Include="Js\Modules\equalheight.min.js">
       <DependentUpon>equalheight.js</DependentUpon>
     </Content>
+    <Content Include="Js\Modules\init.js" />
+    <Content Include="Js\Modules\jquery.scrollex.min.js" />
+    <Content Include="Js\Modules\jquery.scrolly.min.js" />
     <Content Include="Js\Modules\loadmore.es5.js">
       <DependentUpon>loadmore.js</DependentUpon>
     </Content>
@@ -485,6 +492,7 @@
       <DependentUpon>searchbox.es5.js</DependentUpon>
     </Content>
     <Content Include="Js\Modules\searchbox.js" />
+    <Content Include="Js\Modules\skel.min.js" />
     <Content Include="Js\Plugins\Tooltipster\tooltipster-SVG.es5.js">
       <DependentUpon>tooltipster-SVG.js</DependentUpon>
     </Content>
@@ -514,29 +522,19 @@
     </Content>
     <Content Include="Js\Plugins\Tooltipster\tooltipster.main.js" />
     <Content Include="Media\Web.config" />
+    <Content Include="Css\webfonts\fa-brands-400.eot" />
+    <Content Include="Css\webfonts\fa-brands-400.ttf" />
+    <Content Include="Css\webfonts\fa-brands-400.woff" />
+    <Content Include="Css\webfonts\fa-brands-400.woff2" />
+    <Content Include="Css\webfonts\fa-regular-400.eot" />
+    <Content Include="Css\webfonts\fa-regular-400.ttf" />
+    <Content Include="Css\webfonts\fa-regular-400.woff" />
+    <Content Include="Css\webfonts\fa-regular-400.woff2" />
+    <Content Include="Css\webfonts\fa-solid-900.eot" />
+    <Content Include="Css\webfonts\fa-solid-900.ttf" />
+    <Content Include="Css\webfonts\fa-solid-900.woff" />
+    <Content Include="Css\webfonts\fa-solid-900.woff2" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
-    <Content Include="Media\1001\photo-1482062364825-616fd23b8fc1.jpg" />
-    <Content Include="Media\1002\photo-1485856407642-7f9ba0268b51.jpg" />
-    <Content Include="Media\1003\programming_blog.jpeg" />
-    <Content Include="Media\1004\technics-q-g-410-130-8.jpg" />
-    <Content Include="Media\1005\w600_1233b38aa07790c27799d7a3b9d31906.png" />
-    <Content Include="Media\1006\analytics-programming.png" />
-    <Content Include="Media\1007\archive-bg.jpg" />
-    <Content Include="Media\1008\code-820275_960_720.jpg" />
-    <Content Include="Media\1009\coding-924920_960_720.jpg" />
-    <Content Include="Media\1010\w600_1233b38aa07790c27799d7a3b9d31906.png" />
-    <Content Include="Media\1011\archive-bg.jpg" />
-    <Content Include="Media\1012\code4.png" />
-    <Content Include="Media\1013\kentico-cms_1.png" />
-    <Content Include="Media\1014\memory.jpg" />
-    <Content Include="Media\1015\memory_2.jpg" />
-    <Content Include="Media\1016\programming_blog.jpeg" />
-    <Content Include="Media\1017\monodevelop_1.png" />
-    <Content Include="Media\1018\solution_setup_1.png" />
-    <Content Include="Media\1019\monodevelop_1.png" />
-    <Content Include="Media\1020\nuget_1.png" />
-    <Content Include="Media\1021\solution_options_1.png" />
-    <Content Include="Media\1032\monodevelop_1.png" />
     <Content Include="Scripts\app.js" />
     <Content Include="Scripts\app.min.js">
       <DependentUpon>app.js</DependentUpon>
@@ -660,8 +658,8 @@
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
-    <Error Condition="!Exists('..\packages\BuildBundlerMinifier.2.6.362\build\BuildBundlerMinifier.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\BuildBundlerMinifier.2.6.362\build\BuildBundlerMinifier.targets'))" />
     <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.2.7.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.2.7.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\BuildBundlerMinifier.2.6.362\build\BuildBundlerMinifier.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\BuildBundlerMinifier.2.6.362\build\BuildBundlerMinifier.targets'))" />
   </Target>
   <Import Project="..\packages\BuildBundlerMinifier.2.6.362\build\BuildBundlerMinifier.targets" Condition="Exists('..\packages\BuildBundlerMinifier.2.6.362\build\BuildBundlerMinifier.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

@@ -1,4 +1,4 @@
-﻿/* triangle.less  */
+/* triangle.less  */
 @media (min-width: 992px) {
   .triangle + .dark:before {
     border-color: transparent transparent transparent #1c1c1e;

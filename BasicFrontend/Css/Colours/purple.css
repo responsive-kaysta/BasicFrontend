@@ -1,10 +1,6 @@
-﻿/* purple.less */
+/* purple.less */
 .purple {
   background: #C2357B;
-}
-.purple nav > ul li {
-  background: #C2357B;
-  background-color: #C2357B;
 }
 .purple * {
   color: #fff;

@@ -3,46 +3,14 @@
     "outputFileName": "Content/bundle.css",
     "inputFiles": [
       "Css/reset.css",
-      "Css/global.css",
-      "Css/Modules/navbar.css",
-      "Css/Modules/header.css",
-      "Css/Modules/footer.css",
-      "Css/Modules/equal.css",
-      "Css/Modules/hr.css",
-      "Css/Modules/list.css",
-      "Css/Modules/toggle.css",
-      "Css/Modules/triangle.css",
-      "Css/Modules/abstract.css",
-      "Css/Modules/banner.css",
-      "Css/Modules/blockquote.css",
-      "Css/Modules/blogarchive.css",
-      "Css/Modules/blockquote.css",
-      "Css/Modules/box.css",
-      "Css/Modules/breadcrumb.css",
-      "Css/Modules/button.css",
-      "Css/Modules/code.css",
-      "Css/Modules/container.css",
-      "Css/Modules/full.css",
-      "Css/Modules/gallery.css",
-      "Css/Modules/image.css",
-      "Css/Modules/jumbotron.css",
-      "Css/Modules/panel.css",
-      "Css/Modules/page-header.css",
-      "Css/Modules/seperator.css",
-      "Css/Modules/text-center.css",
-      "Css/Modules/text.css",
-      "Css/Modules/video-wrapper.css",
-      "Css/Colours/dark.css",
-      "Css/Colours/light.css",
-      "Css/Colours/blue.css",
-      "Css/Colours/yellow.css",
-      "Css/Colours/purple.css",
-      "Css/Colours/colours.css",
-      "Css/style.css",
+
       "Css/Plugins/Tooltipster/tooltipster.bundle.css",
       "Css/Plugins/Tooltipster/Themes/tooltipster-sideTip-punk.min.css",
       "Css/Plugins/Tooltipster/tooltipster.css",
-      "Css/ie10-viewport-bug-workaround.css"
+      "Css/ie10-viewport-bug-workaround.css",
+      "Css/Plugins/fontawesome-all.css",
+
+      "Css/style.css"
     ],
     "minify": {
       "enabled": true,
@@ -53,19 +21,31 @@
     "outputFileName": "Scripts/app.js",
     "inputFiles": [
       "Js/Plugins/Tooltipster/tooltipster.bundle.js",
-      "Js/global.js",
-      "Js/Modules/colourswitch.js",
-      "Js/Modules/navigation.js",
-      "Js/Modules/equalheight.js",
-      "Js/Modules/loadmore.js",
-      "Js/Modules/searchbox.js",
-      "Js/Plugins/Tooltipster/tooltipster.js"
+      "Js/Plugins/Tooltipster/tooltipster.js",
+
+      "Js/Modules/jquery.scrollex.min.js",
+      "Js/Modules/jquery.scrolly.min.js",
+      "Js/Modules/skel.min.js",
+      "Js/Modules/init.js"
+
     ]
   },
   {
     "outputFileName": "Content/bundle.min.css",
     "inputFiles": [
       "Content/bundle.css"
+    ]
+  },
+  {
+    "outputFileName": "Css/style.min.css",
+    "inputFiles": [
+      "Css/style.css"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/app.min.js",
+    "inputFiles": [
+      "Scripts/app.js"
     ]
   }
 ]
