@@ -1,7 +1,8 @@
 ﻿[
+  
   {
-    "outputFile": "Scripts/jquery-3.2.1.es5.js",
-    "inputFile": "Scripts/jquery-3.2.1.js"
+    "outputFile": "Scripts/jquery-3.3.1.es5.js",
+    "inputFile": "Scripts/jquery-3.3.1.js"
   },
   {
     "outputFile": "Scripts/jquery.validate.es5.js",
@@ -12,13 +13,14 @@
     "inputFile": "Scripts/jquery.validate.unobtrusive.js"
   },
   {
-    "outputFile": "Scripts/jquery-3.2.1.intellisense.es5.js",
-    "inputFile": "Scripts/jquery-3.2.1.intellisense.js"
+    "outputFile": "Scripts/jquery-3.3.1.intellisense.es5.js",
+    "inputFile": "Scripts/jquery-3.3.1.intellisense.js"
   },
   {
     "outputFile": "Scripts/bootstrap.es5.js",
     "inputFile": "Scripts/bootstrap.js"
   },
+  
   {
     "outputFile": "Js/Plugins/Tooltipster/tooltipster.bundle.es5.js",
     "inputFile": "Js/Plugins/Tooltipster/tooltipster.bundle.js"

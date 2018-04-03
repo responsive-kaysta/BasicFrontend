@@ -8,15 +8,15 @@
         var currentTallest = 0,
             currentRowStart = 0,
             rowDivs = new Array(),
-            $el,
-            topPosition = 0;
+            $el;
 
         $(container).find('.equal').each(function () {
 
             $el = $(this);
-            $($el).height('auto')
-            topPostion = $el.position().top;
+            $($el).height('auto');
+            var topPostion = $el.position().top;
 
+            var currentDiv;
             if (currentRowStart != topPostion) {
                 for (currentDiv = 0; currentDiv < rowDivs.length; currentDiv++) {
                     rowDivs[currentDiv].height(currentTallest);
