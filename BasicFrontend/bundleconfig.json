@@ -19,13 +19,14 @@
   {
     "outputFileName": "Scripts/app.js",
     "inputFiles": [
-      "Js/Plugins/Tooltipster/tooltipster.bundle.js",
-      "Js/Plugins/Tooltipster/tooltipster.js",
 
       "Js/Modules/jquery.scrollex.min.js",
       "Js/Modules/jquery.scrolly.min.js",
       "Js/Modules/skel.min.js",
-      "Js/Modules/init.js"
+      "Js/Modules/init.js",
+
+      "Js/Plugins/Tooltipster/tooltipster.bundle.js",
+      "Js/Plugins/Tooltipster/tooltipster.js"
 
     ]
   },

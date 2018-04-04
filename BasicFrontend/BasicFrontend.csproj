@@ -168,6 +168,7 @@
     <Content Include="Css\Colours\yellow.min.css">
       <DependentUpon>yellow.css</DependentUpon>
     </Content>
+    <Content Include="Css\fontawesome-all.css" />
     <Content Include="Css\global.css">
       <DependentUpon>global.less</DependentUpon>
     </Content>
@@ -266,12 +267,6 @@
     <Content Include="Css\Modules\gallery.min.css">
       <DependentUpon>gallery.css</DependentUpon>
     </Content>
-    <Content Include="Css\Modules\header.css">
-      <DependentUpon>header.less</DependentUpon>
-    </Content>
-    <Content Include="Css\Modules\header.min.css">
-      <DependentUpon>header.css</DependentUpon>
-    </Content>
     <Content Include="Css\Modules\hr.css">
       <DependentUpon>hr.less</DependentUpon>
     </Content>
@@ -295,18 +290,6 @@
     </Content>
     <Content Include="Css\Modules\list.min.css">
       <DependentUpon>list.css</DependentUpon>
-    </Content>
-    <Content Include="Css\Modules\navbar.css">
-      <DependentUpon>navbar.less</DependentUpon>
-    </Content>
-    <Content Include="Css\Modules\navbar.min.css">
-      <DependentUpon>navbar.css</DependentUpon>
-    </Content>
-    <Content Include="Css\Modules\page-header.css">
-      <DependentUpon>page-header.less</DependentUpon>
-    </Content>
-    <Content Include="Css\Modules\page-header.min.css">
-      <DependentUpon>page-header.css</DependentUpon>
     </Content>
     <Content Include="Css\Modules\panel.css">
       <DependentUpon>panel.less</DependentUpon>
@@ -372,6 +355,7 @@
     <Content Include="bundleconfig.json.bindings">
       <DependentUpon>bundleconfig.json</DependentUpon>
     </Content>
+    <Content Include="Css\fontawesome-all.less" />
     <None Include="Css\Plugins\Tooltipster\tooltipster.bundle.less" />
     <None Include="Css\Plugins\Tooltipster\tooltipster.main.less" />
     <Content Include="Css\Plugins\Tooltipster\tooltipster.bundle.css">
@@ -402,9 +386,9 @@
     <Content Include="Css\style.min.css">
       <DependentUpon>style.css</DependentUpon>
     </Content>
-    <Content Include="Css\webfonts\fa-brands-400.svg" />
-    <Content Include="Css\webfonts\fa-regular-400.svg" />
-    <Content Include="Css\webfonts\fa-solid-900.svg" />
+    <Content Include="webfonts\fa-brands-400.svg" />
+    <Content Include="webfonts\fa-regular-400.svg" />
+    <Content Include="webfonts\fa-solid-900.svg" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="bundleconfig.json" />
@@ -429,13 +413,10 @@
     <Content Include="Css\Modules\footer.less" />
     <Content Include="Css\Modules\full.less" />
     <Content Include="Css\Modules\gallery.less" />
-    <Content Include="Css\Modules\header.less" />
     <Content Include="Css\Modules\hr.less" />
     <Content Include="Css\Modules\image.less" />
     <Content Include="Css\Modules\jumbotron.less" />
     <Content Include="Css\Modules\list.less" />
-    <Content Include="Css\Modules\navbar.less" />
-    <Content Include="Css\Modules\page-header.less" />
     <Content Include="Css\Modules\panel.less" />
     <Content Include="Css\Modules\seperator.less" />
     <Content Include="Css\Modules\text-center.less" />
@@ -521,19 +502,31 @@
       <DependentUpon>tooltipster.main.es5.js</DependentUpon>
     </Content>
     <Content Include="Js\Plugins\Tooltipster\tooltipster.main.js" />
+    <Content Include="Media\1003\1.jpg" />
+    <Content Include="Media\1003\1_thumb.jpg" />
+    <Content Include="Media\1004\2.jpg" />
+    <Content Include="Media\1004\2_thumb.jpg" />
+    <Content Include="Media\1005\3.jpg" />
+    <Content Include="Media\1005\3_thumb.jpg" />
+    <Content Include="Media\1006\1.jpg" />
+    <Content Include="Media\1006\1_thumb.jpg" />
+    <Content Include="Media\1007\2.jpg" />
+    <Content Include="Media\1007\2_thumb.jpg" />
+    <Content Include="Media\1008\3.jpg" />
+    <Content Include="Media\1008\3_thumb.jpg" />
     <Content Include="Media\Web.config" />
-    <Content Include="Css\webfonts\fa-brands-400.eot" />
-    <Content Include="Css\webfonts\fa-brands-400.ttf" />
-    <Content Include="Css\webfonts\fa-brands-400.woff" />
-    <Content Include="Css\webfonts\fa-brands-400.woff2" />
-    <Content Include="Css\webfonts\fa-regular-400.eot" />
-    <Content Include="Css\webfonts\fa-regular-400.ttf" />
-    <Content Include="Css\webfonts\fa-regular-400.woff" />
-    <Content Include="Css\webfonts\fa-regular-400.woff2" />
-    <Content Include="Css\webfonts\fa-solid-900.eot" />
-    <Content Include="Css\webfonts\fa-solid-900.ttf" />
-    <Content Include="Css\webfonts\fa-solid-900.woff" />
-    <Content Include="Css\webfonts\fa-solid-900.woff2" />
+    <Content Include="webfonts\fa-brands-400.eot" />
+    <Content Include="webfonts\fa-brands-400.ttf" />
+    <Content Include="webfonts\fa-brands-400.woff" />
+    <Content Include="webfonts\fa-brands-400.woff2" />
+    <Content Include="webfonts\fa-regular-400.eot" />
+    <Content Include="webfonts\fa-regular-400.ttf" />
+    <Content Include="webfonts\fa-regular-400.woff" />
+    <Content Include="webfonts\fa-regular-400.woff2" />
+    <Content Include="webfonts\fa-solid-900.eot" />
+    <Content Include="webfonts\fa-solid-900.ttf" />
+    <Content Include="webfonts\fa-solid-900.woff" />
+    <Content Include="webfonts\fa-solid-900.woff2" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <Content Include="Scripts\app.js" />
     <Content Include="Scripts\app.min.js">

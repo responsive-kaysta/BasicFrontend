@@ -1,7 +1,7 @@
 ﻿@using BasicFrontend.Application;
 
 @{
-    AppBase appBase = AppBase.Instance;
+    var appBase = AppBase.Instance;    
 }
 
 <h1><a href="/">responsive kaysta</a></h1>
@@ -13,9 +13,9 @@
             <div id="menu">
                 <ul>
                     <li><a href="/">HOME</a></li>
-                    <li><a href="@appBase.linkAboutMe">About me</a></li>
-                    <li><a href="@appBase.linkAboutLaws">My laws</a></li>
-                    <li><a href="@appBase.linkBlog">Blog</a></li>
+                    <li><a href="@appBase.LinkAboutMe">About me</a></li>
+                    <li><a href="@appBase.LinkAboutLaws">My laws</a></li>
+                    <li><a href="@appBase.LinkBlog">Blog</a></li>
                 </ul>
             </div>
         </li>

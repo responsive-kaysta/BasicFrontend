@@ -1,7 +1,7 @@
 ﻿//
 // HomeController.cs
 //
-// Author: Kay Stuckenschmidt <mailto.kaysta@gmail.com>
+// Author: Kay Stuckenschmidt
 //
 // Copyright (c) 2017 responsive kaysta
 //
@@ -23,68 +23,63 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-using System;
-
 namespace BasicFrontend.Application
 {
     public sealed class AppBase
     {
         /// <summary>
-        /// The instance.
+        ///     The instance.
         /// </summary>
-        private static volatile AppBase instance;
+        private static volatile AppBase _instance;
 
         /// <summary>
-        /// The sync root.
+        ///     The sync root.
         /// </summary>
-        private static object syncRoot = new Object();
+        private static readonly object SyncRoot = new object();
+
+        public string LinkAbout = "/Home/About";
+        public string LinkAboutLaws = "/Home/Laws";
+        public string LinkAboutMe = "/Home/Me";
+
+        public string LinkBlog = "/Blog/Index";
+        public string LinkBlog1 = "/Blog/Blog1";
+        public string LinkBlog2 = "/Blog/Blog2";
+        public string LinkBlog3 = "/Blog/Blog3";
+        public string LinkBlog4 = "/Blog/Blog4";
+        public string LinkBlog5 = "/Blog/Blog5";
+        public string LinkBlog6 = "/Blog/Blog6";
+        public string LinkBlog7 = "/Blog/Blog7";
+
+        public string LinkDisclaimer = "/Home/Disclaimer";
+
+        public string LinkHome = "/";
+        public string LinkIndex = "/Home/Index";
+
+        public string LinkMasterArchive = "/Home/MasterArchive";
 
         /// <summary>
-        /// Gets the instance.
+        ///     Initializes a new instance of the <see cref="T:MasterArchive.DataBaseClient.ApplicationBase" /> class.
+        /// </summary>
+        private AppBase()
+        {
+        }
+
+        /// <summary>
+        ///     Gets the instance.
         /// </summary>
         /// <value>The instance.</value>
         public static AppBase Instance
         {
             get
             {
-                if (instance == null)
+                if (_instance != null) return _instance;
+                lock (SyncRoot)
                 {
-                    lock (syncRoot)
-                    {
-                        if (instance == null)
-                        {
-                            instance = new AppBase();
-                        }
-                    }
+                    if (_instance == null) _instance = new AppBase();
                 }
-                return instance;
+
+                return _instance;
             }
         }
-
-        /// <summary>
-        /// Initializes a new instance of the <see cref="T:MasterArchive.DataBaseClient.ApplicationBase"/> class.
-        /// </summary>
-        private AppBase() {}
-
-        public string linkHome = "/";
-        public string linkIndex = "/Home/Index";
-
-        public string linkAbout = "/Home/About";
-        public string linkAboutMe = "/Home/Me";
-        public string linkAboutLaws = "/Home/Laws";
-
-        public string linkDisclaimer = "/Home/Disclaimer";
-
-        public string linkMasterArchive = "/Home/MasterArchive";
-
-        public string linkBlog = "/Blog/Index";
-        public string linkBlog1 = "/Blog/Blog1";
-        public string linkBlog2 = "/Blog/Blog2";
-        public string linkBlog3 = "/Blog/Blog3";
-        public string linkBlog4 = "/Blog/Blog4";
-        public string linkBlog5 = "/Blog/Blog5";
-        public string linkBlog6 = "/Blog/Blog6";
-        public string linkBlog7 = "/Blog/Blog7";
-
     }
 }

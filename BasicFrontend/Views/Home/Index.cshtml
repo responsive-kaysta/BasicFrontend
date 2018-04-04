@@ -1,21 +1,102 @@
 ﻿@using BasicFrontend.Application;
 
 @{
-    AppBase appBase = AppBase.Instance;
+    var appBase = AppBase.Instance;
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<section id="banner">
-    <div class="inner">
-        <h2>responsive kaysta</h2>
-        <p>
-            Technologien unterstützen die<br />
-            Effizienz und den Komfort einer<br />
-            Lösung...
-        </p>
-        <ul class="actions">								
-            <li><a href="/" class="button special">Über mich...</a></li>
-        </ul>
+<div class="umb-grid">
+    <div class="grid-section">
+
+        <!-- Banner -->
+        <section id="banner">
+            <div class="inner">
+                <h2>responsive it</h2>
+                <p>
+                    Lorem ipsum dolor sit amet<br />
+                    consetetur sadipscing elitr, <br />
+                    sed diam nonumy eirmod...
+                </p>
+                <ul class="actions">
+                    <li><a href="/" class="button special">buttonText</a></li>
+                </ul>
+            </div>
+            <a href="#one" class="more scrolly">learnMore</a>
+        </section>
+
+        <!-- One -->
+        <section id="one" class="wrapper style1 special">
+            <div class="inner">
+                <header class="major">
+                    <h2>Lorem ipsum dolor sit amet</h2>
+                    <p>
+                        consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+                        dolore magna aliquyam erat, sed diam voluptua.
+                    </p>
+                </header>
+            </div>
+        </section>
+
+        <!-- Two -->
+        <section id="two" class="wrapper alt style2">
+            <section class="spotlight">
+                <div class="image"><img src="/Media/1003/1.jpg" alt="" /></div><div class="content">
+                    <h2>Lorem ipsum dolor sit amet</h2>
+                    <p>
+                        consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+                        dolore magna aliquyam erat, sed diam voluptua.
+                    </p>
+                </div>
+            </section>
+            <section class="spotlight">
+                <div class="image"><img src="/Media/1004/2.jpg" alt="" /></div><div class="content">
+                    <h2>Lorem ipsum dolor sit amet</h2>
+                    <p>
+                        consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+                        dolore magna aliquyam erat, sed diam voluptua.
+                    </p>
+                </div>
+            </section>
+            <section class="spotlight">
+                <div class="image"><img src="/Media/1005/3.jpg" alt="" /></div><div class="content">
+                    <h2>Lorem ipsum dolor sit amet</h2>
+                    <p>
+                        consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+                        dolore magna aliquyam erat, sed diam voluptua.
+                    </p>
+                </div>
+            </section>
+        </section>
+
+        <!-- Three -->
+        <section id="three" class="wrapper style3 special">
+            <div class="inner">
+                <header class="major">
+                    <h2>Lorem ipsum dolor sit amet</h2>
+                    <p>
+                        consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+                        dolore magna aliquyam erat, sed diam voluptua.
+                    </p>
+                </header>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section id="cta" class="wrapper style4">
+            <div class="inner">
+                <header>
+                    <h2>Lorem ipsum dolor sit amet</h2>
+                    <p>
+                        consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+                        dolore magna aliquyam erat, sed diam voluptua.
+                    </p>
+                </header>
+                <ul class="actions vertical">
+                    <li><a href="/" class="button fit special">buttonText1</a></li>
+                    <li><a href="/" class="button fit">buttonText2</a></li>
+                </ul>
+            </div>
+        </section>
+
     </div>
-    <a href="#one" class="more scrolly">Weiter lesen...</a>
-</section>
+</div>
