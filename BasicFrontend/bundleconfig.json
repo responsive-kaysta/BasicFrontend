@@ -2,14 +2,12 @@
   {
     "outputFileName": "Content/bundle.css",
     "inputFiles": [
-      "Css/reset.css",
+      "Frontend/Css/reset.css",
 
-      "Css/Plugins/Tooltipster/tooltipster.bundle.css",
-      "Css/Plugins/Tooltipster/Themes/tooltipster-sideTip-punk.min.css",
-      "Css/Plugins/Tooltipster/tooltipster.css",
-      "Css/ie10-viewport-bug-workaround.css",
+      "Frontend/Css/ie10-viewport-bug-workaround.css",
 
-      "Css/style.css"
+      "Frontend/Css/style.css"
+
     ],
     "minify": {
       "enabled": true,
@@ -20,13 +18,12 @@
     "outputFileName": "Scripts/app.js",
     "inputFiles": [
 
-      "Js/Modules/jquery.scrollex.min.js",
-      "Js/Modules/jquery.scrolly.min.js",
-      "Js/Modules/skel.min.js",
-      "Js/Modules/init.js",
-
-      "Js/Plugins/Tooltipster/tooltipster.bundle.js",
-      "Js/Plugins/Tooltipster/tooltipster.js"
+      "Frontend/Js/Modules/jquery.scrollex.min.js",
+      "Frontend/Js/Modules/jquery.scrolly.min.js",
+      "Frontend/Js/Modules/skel.min.js",
+      "Frontend/Js/Modules/skel-viewport.js",
+      "Frontend/Js/Modules/skel-layout.min.js",
+      "Frontend/Js/Modules/init.js"
 
     ]
   },
@@ -34,12 +31,6 @@
     "outputFileName": "Content/bundle.min.css",
     "inputFiles": [
       "Content/bundle.css"
-    ]
-  },
-  {
-    "outputFileName": "Css/style.min.css",
-    "inputFiles": [
-      "Css/style.css"
     ]
   },
   {
