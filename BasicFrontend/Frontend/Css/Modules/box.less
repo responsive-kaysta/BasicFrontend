@@ -1,31 +1,20 @@
 ﻿/* box.less */
 
 .box {
-    //padding-bottom: 0;
-    //padding-top: 1.0rem;
+    border-radius: 3px;
+    border: solid 2px #fff;
+    margin-bottom: 2em;
+    padding: 1.5em;
 }
 
-    .box > .lead {
-        //padding: 0;
-        //padding-bottom: 0.25rem;
-       // margin: 0;
+    .box > :last-child,
+    .box > :last-child > :last-child,
+    .box > :last-child > :last-child > :last-child {
+        margin-bottom: 0;
     }
 
-    .box > p {
-        //padding-bottom: 0.5rem;
-        //padding-top: 0;
-    }
-
-    .box > .h1 {
-        text-align: center;
-        font-size: 2.0rem;
-        font-weight: 900;
-        //padding-bottom: 0.5rem;
-    }
-
-    .box > .h2 {
-        text-align: center;
-        font-size: 1.6rem;
-        font-weight: 700;
-        //padding-bottom: 0.5rem;
+    .box.alt {
+        border: 0;
+        border-radius: 0;
+        padding: 0;
     }

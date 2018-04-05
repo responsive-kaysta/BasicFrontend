@@ -23,6 +23,7 @@
             $banner = $('#banner'),
             $header = $('#header');
 
+        /*
         // Disable animations/transitions until the page has loaded.
         $body.addClass('is-loading');
 
@@ -31,7 +32,8 @@
                 $body.removeClass('is-loading');
             }, 250);
         });
-
+        */
+       
         // Mobile?
         if (skel.vars.isMobile)
             $body.addClass('is-mobile');

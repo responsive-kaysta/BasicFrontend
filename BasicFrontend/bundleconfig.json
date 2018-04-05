@@ -3,10 +3,18 @@
     "outputFileName": "Content/bundle.css",
     "inputFiles": [
       "Frontend/Css/reset.css",
-
+      "Frontend/Css/global.css",
       "Frontend/Css/ie10-viewport-bug-workaround.css",
 
-      "Frontend/Css/style.css"
+      "Frontend/Css/style.css",
+
+      "Frontend/Css/Modules/box.css",
+      "Frontend/Css/Modules/image.css",
+      "Frontend/Css/Modules/row.css",
+
+      "Frontend/Css/Styles/style-green.css",
+      "Frontend/Css/Styles/style-white.css",
+      "Frontend/Css/Styles/style-purple.css"
 
     ],
     "minify": {

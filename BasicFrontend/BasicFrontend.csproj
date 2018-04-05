@@ -168,6 +168,10 @@
     <Content Include="Frontend\Css\Colours\yellow.min.css">
       <DependentUpon>yellow.css</DependentUpon>
     </Content>
+    <Content Include="Frontend\Css\Modules\row.css" />
+    <Content Include="Frontend\Css\Styles\style-green.css" />
+    <Content Include="Frontend\Css\Styles\style-purple.css" />
+    <Content Include="Frontend\Css\Styles\style-white.css" />
     <Content Include="Frontend\fontawesome-all.css" />
     <Content Include="Frontend\Css\global.css">
       <DependentUpon>global.less</DependentUpon>
@@ -249,12 +253,6 @@
     <Content Include="Frontend\Css\Modules\equal.min.css">
       <DependentUpon>equal.css</DependentUpon>
     </Content>
-    <Content Include="Frontend\Css\Modules\footer.css">
-      <DependentUpon>footer.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Modules\footer.min.css">
-      <DependentUpon>footer.css</DependentUpon>
-    </Content>
     <Content Include="Frontend\Css\Modules\full.css">
       <DependentUpon>full.less</DependentUpon>
     </Content>
@@ -303,35 +301,17 @@
     <Content Include="Frontend\Css\Modules\seperator.min.css">
       <DependentUpon>seperator.css</DependentUpon>
     </Content>
-    <Content Include="Frontend\Css\Modules\text-center.css">
-      <DependentUpon>text-center.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Modules\text-center.min.css">
-      <DependentUpon>text-center.css</DependentUpon>
-    </Content>
     <Content Include="Frontend\Css\Modules\text.css">
       <DependentUpon>text.less</DependentUpon>
     </Content>
     <Content Include="Frontend\Css\Modules\text.min.css">
       <DependentUpon>text.css</DependentUpon>
     </Content>
-    <Content Include="Frontend\Css\Modules\toggle.css">
-      <DependentUpon>toggle.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Modules\toggle.min.css">
-      <DependentUpon>toggle.css</DependentUpon>
-    </Content>
     <Content Include="Frontend\Css\Modules\triangle.css">
       <DependentUpon>triangle.less</DependentUpon>
     </Content>
     <Content Include="Frontend\Css\Modules\triangle.min.css">
       <DependentUpon>triangle.css</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Modules\video-wrapper.css">
-      <DependentUpon>video-wrapper.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Modules\video-wrapper.min.css">
-      <DependentUpon>video-wrapper.css</DependentUpon>
     </Content>
     <Content Include="Frontend\Css\Plugins\Effects\loadmore.css">
       <DependentUpon>loadmore.less</DependentUpon>
@@ -356,6 +336,7 @@
       <DependentUpon>bundleconfig.json</DependentUpon>
     </Content>
     <Content Include="Frontend\fontawesome-all.less" />
+    <Content Include="Frontend\Css\Modules\row.less" />
     <None Include="Frontend\Css\Plugins\Tooltipster\tooltipster.bundle.less" />
     <None Include="Frontend\Css\Plugins\Tooltipster\tooltipster.main.less" />
     <Content Include="Frontend\Css\Plugins\Tooltipster\tooltipster.bundle.css">
@@ -428,7 +409,6 @@
     <Content Include="Frontend\Css\Modules\code.less" />
     <Content Include="Frontend\Css\Modules\container.less" />
     <Content Include="Frontend\Css\Modules\equal.less" />
-    <Content Include="Frontend\Css\Modules\footer.less" />
     <Content Include="Frontend\Css\Modules\full.less" />
     <Content Include="Frontend\Css\Modules\gallery.less" />
     <Content Include="Frontend\Css\Modules\hr.less" />
@@ -437,11 +417,8 @@
     <Content Include="Frontend\Css\Modules\list.less" />
     <Content Include="Frontend\Css\Modules\panel.less" />
     <Content Include="Frontend\Css\Modules\seperator.less" />
-    <Content Include="Frontend\Css\Modules\text-center.less" />
     <Content Include="Frontend\Css\Modules\text.less" />
-    <Content Include="Frontend\Css\Modules\toggle.less" />
     <Content Include="Frontend\Css\Modules\triangle.less" />
-    <Content Include="Frontend\Css\Modules\video-wrapper.less" />
     <Content Include="Frontend\Css\reset.less" />
     <Content Include="Frontend\Css\style.less" />
     <Content Include="Frontend\Css\Plugins\Effects\loadmore.less" />
@@ -545,6 +522,9 @@
     <Content Include="webfonts\fa-solid-900.ttf" />
     <Content Include="webfonts\fa-solid-900.woff" />
     <Content Include="webfonts\fa-solid-900.woff2" />
+    <Content Include="Frontend\Css\Styles\style-green.less" />
+    <Content Include="Frontend\Css\Styles\style-purple.less" />
+    <Content Include="Frontend\Css\Styles\style-white.less" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
@@ -579,7 +559,6 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\Footer.cshtml" />
     <Content Include="Views\Shared\Header.cshtml" />
     <Content Include="Views\Shared\Colourswitch.cshtml" />
@@ -605,6 +584,7 @@
     <Content Include="Scripts\popper.js.map" />
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
+    <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
