@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.Net.Compilers.2.6.1\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.2.6.1\build\Microsoft.Net.Compilers.props')" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
-  <Import Project="..\packages\Microsoft.Net.Compilers.2.7.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.2.7.0\build\Microsoft.Net.Compilers.props')" />
   <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -138,12 +138,6 @@
     <Content Include="Frontend\Css\Colours\blue.min.css">
       <DependentUpon>blue.css</DependentUpon>
     </Content>
-    <Content Include="Frontend\Css\Colours\colours.css">
-      <DependentUpon>colours.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Colours\colours.min.css">
-      <DependentUpon>colours.css</DependentUpon>
-    </Content>
     <Content Include="Frontend\Css\Colours\dark.css">
       <DependentUpon>dark.less</DependentUpon>
     </Content>
@@ -168,7 +162,10 @@
     <Content Include="Frontend\Css\Colours\yellow.min.css">
       <DependentUpon>yellow.css</DependentUpon>
     </Content>
+    <Content Include="Frontend\Css\images\technics-q-g-410-130-8.jpg" />
     <Content Include="Frontend\Css\Modules\row.css" />
+    <Content Include="Frontend\Css\Modules\spotlight.css" />
+    <Content Include="Frontend\Css\Modules\wrapper.css" />
     <Content Include="Frontend\Css\Styles\style-green.css" />
     <Content Include="Frontend\Css\Styles\style-purple.css" />
     <Content Include="Frontend\Css\Styles\style-white.css" />
@@ -319,7 +316,6 @@
     <Content Include="Frontend\Css\Plugins\Effects\loadmore.min.css">
       <DependentUpon>loadmore.css</DependentUpon>
     </Content>
-    <Content Include="Frontend\Css\Plugins\fontawesome-all.css" />
     <Content Include="Frontend\Css\Plugins\Tooltipster\Themes\tooltipster-sideTip-borderless.min.css" />
     <Content Include="Frontend\Css\Plugins\Tooltipster\Themes\tooltipster-sideTip-light.min.css" />
     <Content Include="Frontend\Css\Plugins\Tooltipster\Themes\tooltipster-sideTip-noir.min.css" />
@@ -331,12 +327,14 @@
     <Content Include="Content\bootstrap-reboot.css.map" />
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
-    <Content Include="Frontend\Css\Plugins\fontawesome-all.less" />
     <Content Include="bundleconfig.json.bindings">
       <DependentUpon>bundleconfig.json</DependentUpon>
     </Content>
     <Content Include="Frontend\fontawesome-all.less" />
     <Content Include="Frontend\Css\Modules\row.less" />
+    <Content Include="Frontend\Css\Modules\spotlight.less" />
+    <Content Include="Frontend\Css\Modules\wrapper.less" />
+    <Content Include="compilerconfig.json" />
     <None Include="Frontend\Css\Plugins\Tooltipster\tooltipster.bundle.less" />
     <None Include="Frontend\Css\Plugins\Tooltipster\tooltipster.main.less" />
     <Content Include="Frontend\Css\Plugins\Tooltipster\tooltipster.bundle.css">
@@ -367,8 +365,6 @@
     <Content Include="Frontend\Css\style.min.css">
       <DependentUpon>style.css</DependentUpon>
     </Content>
-    <Content Include="Frontend\Js\Modules\skel-layout.min.js" />
-    <Content Include="Frontend\Js\Modules\skel-viewport.js" />
     <Content Include="Frontend\Js\skel\init.js" />
     <Content Include="Frontend\Js\skel\jquery.scrollex.min.js" />
     <Content Include="Frontend\Js\skel\jquery.scrolly.min.js" />
@@ -376,9 +372,9 @@
     <Content Include="Frontend\Js\skel\skel-viewport.js" />
     <Content Include="Frontend\Js\skel\skel.min.js" />
     <Content Include="Scripts\app.js" />
-    <Content Include="Scripts\app.min.js">
-      <DependentUpon>app.js</DependentUpon>
-    </Content>
+    <Content Include="Scripts\app.min.js" />
+    <Content Include="Scripts\bootstrap.bundle.js" />
+    <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\esm\popper-utils.js" />
     <Content Include="Scripts\esm\popper-utils.min.js" />
     <Content Include="Scripts\esm\popper.js" />
@@ -398,7 +394,6 @@
     <Content Include="Global.asax" />
     <Content Include="bundleconfig.json" />
     <Content Include="Frontend\Css\Colours\blue.less" />
-    <Content Include="Frontend\Css\Colours\colours.less" />
     <Content Include="Frontend\Css\Colours\dark.less" />
     <Content Include="Frontend\Css\Colours\light.less" />
     <Content Include="Frontend\Css\Colours\purple.less" />
@@ -429,79 +424,15 @@
     <Content Include="Frontend\Css\style.less" />
     <Content Include="Frontend\Css\Plugins\Effects\loadmore.less" />
     <Content Include="Frontend\Css\Plugins\Tooltipster\tooltipster.less" />
-    <Content Include="Frontend\Js\global.es5.js">
-      <DependentUpon>global.js</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Js\global.es5.min.js">
-      <DependentUpon>global.es5.js</DependentUpon>
-    </Content>
     <Content Include="Frontend\Js\global.js" />
-    <Content Include="Frontend\Js\Modules\colourswitch.es5.js">
-      <DependentUpon>colourswitch.js</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Js\Modules\colourswitch.es5.min.js">
-      <DependentUpon>colourswitch.es5.js</DependentUpon>
-    </Content>
     <Content Include="Frontend\Js\Modules\colourswitch.js" />
-    <Content Include="Frontend\Js\Modules\colourswitch.min.js">
-      <DependentUpon>colourswitch.js</DependentUpon>
-    </Content>
     <Content Include="Frontend\Js\Modules\equalheight.js" />
-    <Content Include="Frontend\Js\Modules\equalheight.min.js">
-      <DependentUpon>equalheight.js</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Js\Modules\init.js" />
-    <Content Include="Frontend\Js\Modules\jquery.scrollex.min.js" />
-    <Content Include="Frontend\Js\Modules\jquery.scrolly.min.js" />
-    <Content Include="Frontend\Js\Modules\loadmore.es5.js">
-      <DependentUpon>loadmore.js</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Js\Modules\loadmore.es5.min.js">
-      <DependentUpon>loadmore.es5.js</DependentUpon>
-    </Content>
     <Content Include="Frontend\Js\Modules\loadmore.js" />
-    <Content Include="Frontend\Js\Modules\navigation.es5.js">
-      <DependentUpon>navigation.js</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Js\Modules\navigation.es5.min.js">
-      <DependentUpon>navigation.es5.js</DependentUpon>
-    </Content>
     <Content Include="Frontend\Js\Modules\navigation.js" />
-    <Content Include="Frontend\Js\Modules\searchbox.es5.js">
-      <DependentUpon>searchbox.js</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Js\Modules\searchbox.es5.min.js">
-      <DependentUpon>searchbox.es5.js</DependentUpon>
-    </Content>
     <Content Include="Frontend\Js\Modules\searchbox.js" />
-    <Content Include="Frontend\Js\Modules\skel.min.js" />
-    <Content Include="Frontend\Js\Plugins\Tooltipster\tooltipster-SVG.es5.js">
-      <DependentUpon>tooltipster-SVG.js</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Js\Plugins\Tooltipster\tooltipster-SVG.es5.min.js">
-      <DependentUpon>tooltipster-SVG.es5.js</DependentUpon>
-    </Content>
     <Content Include="Frontend\Js\Plugins\Tooltipster\tooltipster-SVG.js" />
-    <Content Include="Frontend\Js\Plugins\Tooltipster\tooltipster.bundle.es5.js">
-      <DependentUpon>tooltipster.bundle.js</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Js\Plugins\Tooltipster\tooltipster.bundle.es5.min.js">
-      <DependentUpon>tooltipster.bundle.es5.js</DependentUpon>
-    </Content>
     <Content Include="Frontend\Js\Plugins\Tooltipster\tooltipster.bundle.js" />
-    <Content Include="Frontend\Js\Plugins\Tooltipster\tooltipster.es5.js">
-      <DependentUpon>tooltipster.js</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Js\Plugins\Tooltipster\tooltipster.es5.min.js">
-      <DependentUpon>tooltipster.es5.js</DependentUpon>
-    </Content>
     <Content Include="Frontend\Js\Plugins\Tooltipster\tooltipster.js" />
-    <Content Include="Frontend\Js\Plugins\Tooltipster\tooltipster.main.es5.js">
-      <DependentUpon>tooltipster.main.js</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Js\Plugins\Tooltipster\tooltipster.main.es5.min.js">
-      <DependentUpon>tooltipster.main.es5.js</DependentUpon>
-    </Content>
     <Content Include="Frontend\Js\Plugins\Tooltipster\tooltipster.main.js" />
     <Content Include="Media\1003\1.jpg" />
     <Content Include="Media\1003\1_thumb.jpg" />
@@ -532,7 +463,6 @@
     <Content Include="Frontend\Css\Styles\style-purple.less" />
     <Content Include="Frontend\Css\Styles\style-white.less" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
-    <None Include="Scripts\jquery-3.2.1.intellisense.js" />
     <Content Include="Media\1001\photo-1482062364825-616fd23b8fc1.jpg" />
     <Content Include="Media\1002\photo-1485856407642-7f9ba0268b51.jpg" />
     <Content Include="Media\1003\programming_blog.jpeg" />
@@ -555,16 +485,6 @@
     <Content Include="Media\1020\nuget_1.png" />
     <Content Include="Media\1021\solution_options_1.png" />
     <Content Include="Media\1032\monodevelop_1.png" />
-    <Content Include="Scripts\app.js" />
-    <Content Include="Scripts\app.min.js">
-      <DependentUpon>app.js</DependentUpon>
-    </Content>
-    <Content Include="Scripts\bootstrap.es5.js">
-      <DependentUpon>bootstrap.js</DependentUpon>
-    </Content>
-    <Content Include="Scripts\bootstrap.es5.min.js">
-      <DependentUpon>bootstrap.es5.js</DependentUpon>
-    </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\bootstrap.min.js.map" />
@@ -670,8 +590,8 @@
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
-    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.2.7.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.2.7.0\build\Microsoft.Net.Compilers.props'))" />
     <Error Condition="!Exists('..\packages\BuildBundlerMinifier.2.6.362\build\BuildBundlerMinifier.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\BuildBundlerMinifier.2.6.362\build\BuildBundlerMinifier.targets'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.2.6.1\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.2.6.1\build\Microsoft.Net.Compilers.props'))" />
     <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.2.6.1\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.2.6.1\build\Microsoft.Net.Compilers.props'))" />
   </Target>
   <Import Project="..\packages\BuildBundlerMinifier.2.6.362\build\BuildBundlerMinifier.targets" Condition="Exists('..\packages\BuildBundlerMinifier.2.6.362\build\BuildBundlerMinifier.targets')" />
