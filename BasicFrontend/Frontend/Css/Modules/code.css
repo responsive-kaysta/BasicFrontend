@@ -1,0 +1,22 @@
+/* code.less */
+code,
+pre {
+  overflow: auto;
+  border-radius: 10px;
+  background-color: lightgray;
+  font-size: .9rem;
+  font-family: "Courier 10 Pitch", Courier, monospace;
+}
+code {
+  overflow: auto;
+  padding: 0;
+  margin: 0;
+  border-radius: 10px;
+  background-color: lightgray;
+  font-size: 0.75rem;
+  font-family: "Courier 10 Pitch", Courier, monospace;
+}
+pre {
+  padding: 20px;
+  margin-bottom: 30px;
+}

@@ -1,0 +1,20 @@
+/* blue.less */
+.blue {
+  background: #51c1f5;
+}
+.blue * {
+  color: #000;
+}
+.blue p {
+  color: black;
+}
+.blue h2 {
+  color: black;
+}
+.blue a {
+  color: black;
+  width: 100%;
+}
+.blue .date {
+  text-align: right;
+}

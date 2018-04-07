@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="..\packages\Microsoft.Net.Compilers.2.6.1\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.2.6.1\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.2.7.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.2.7.0\build\Microsoft.Net.Compilers.props')" />
   <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -26,6 +27,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <TypeScriptToolsVersion>2.6</TypeScriptToolsVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -49,18 +51,12 @@
     <Reference Include="Antlr3.Runtime, Version=3.5.0.2, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
       <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
     </Reference>
-    <Reference Include="dotnet-bundle, Version=2.6.362.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\BundlerMinifier.Core.2.6.362\lib\net452\dotnet-bundle.exe</HintPath>
-    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.8.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="NUglify, Version=1.5.8.0, Culture=neutral, PublicKeyToken=15bc7810aec21b5e, processorArchitecture=MSIL">
-      <HintPath>..\packages\NUglify.1.5.8\lib\net40\NUglify.dll</HintPath>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -71,6 +67,24 @@
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.4.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.4\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.4\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Extensions" />
@@ -88,32 +102,8 @@
     </Reference>
     <Reference Include="System.Net.Http.WebRequest">
     </Reference>
-    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <Private>True</Private>
-      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <Private>True</Private>
-      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
-    </Reference>
     <Reference Include="System.Web.Optimization">
       <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <Private>True</Private>
-      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <Private>True</Private>
-      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <Private>True</Private>
-      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <Private>True</Private>
-      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
     </Reference>
     <Reference Include="WebGrease, Version=1.6.5135.21930, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
@@ -132,406 +122,416 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\bootstrap-theme.css" />
-    <Content Include="Content\bootstrap-theme.css.map">
-      <DependentUpon>bootstrap-theme.css</DependentUpon>
-    </Content>
-    <Content Include="Content\bootstrap-theme.min.css" />
-    <Content Include="Content\bootstrap-theme.min.css.map">
-      <DependentUpon>bootstrap-theme.min.css</DependentUpon>
-    </Content>
+    <Content Include="Content\bootstrap-grid.css" />
+    <Content Include="Content\bootstrap-grid.min.css" />
+    <Content Include="Content\bootstrap-reboot.css" />
+    <Content Include="Content\bootstrap-reboot.min.css" />
     <Content Include="Content\bootstrap.css" />
-    <Content Include="Content\bootstrap.css.map">
-      <DependentUpon>bootstrap.css</DependentUpon>
-    </Content>
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\bootstrap.min.css.map">
-      <DependentUpon>bootstrap.min.css</DependentUpon>
-    </Content>
     <Content Include="Content\bundle.css" />
     <Content Include="Content\bundle.min.css">
       <DependentUpon>bundle.css</DependentUpon>
     </Content>
-    <Content Include="Css\Colours\blue.css">
+    <Content Include="Frontend\Css\Colours\blue.css">
       <DependentUpon>blue.less</DependentUpon>
     </Content>
-    <Content Include="Css\Colours\blue.min.css">
+    <Content Include="Frontend\Css\Colours\blue.min.css">
       <DependentUpon>blue.css</DependentUpon>
     </Content>
-    <Content Include="Css\Colours\colours.css">
+    <Content Include="Frontend\Css\Colours\colours.css">
       <DependentUpon>colours.less</DependentUpon>
     </Content>
-    <Content Include="Css\Colours\colours.min.css">
+    <Content Include="Frontend\Css\Colours\colours.min.css">
       <DependentUpon>colours.css</DependentUpon>
     </Content>
-    <Content Include="Css\Colours\dark.css">
+    <Content Include="Frontend\Css\Colours\dark.css">
       <DependentUpon>dark.less</DependentUpon>
     </Content>
-    <Content Include="Css\Colours\dark.min.css">
+    <Content Include="Frontend\Css\Colours\dark.min.css">
       <DependentUpon>dark.css</DependentUpon>
     </Content>
-    <Content Include="Css\Colours\light.css">
+    <Content Include="Frontend\Css\Colours\light.css">
       <DependentUpon>light.less</DependentUpon>
     </Content>
-    <Content Include="Css\Colours\light.min.css">
+    <Content Include="Frontend\Css\Colours\light.min.css">
       <DependentUpon>light.css</DependentUpon>
     </Content>
-    <Content Include="Css\Colours\purple.css">
+    <Content Include="Frontend\Css\Colours\purple.css">
       <DependentUpon>purple.less</DependentUpon>
     </Content>
-    <Content Include="Css\Colours\purple.min.css">
+    <Content Include="Frontend\Css\Colours\purple.min.css">
       <DependentUpon>purple.css</DependentUpon>
     </Content>
-    <Content Include="Css\Colours\yellow.css">
+    <Content Include="Frontend\Css\Colours\yellow.css">
       <DependentUpon>yellow.less</DependentUpon>
     </Content>
-    <Content Include="Css\Colours\yellow.min.css">
+    <Content Include="Frontend\Css\Colours\yellow.min.css">
       <DependentUpon>yellow.css</DependentUpon>
     </Content>
-    <Content Include="Css\global.css">
+    <Content Include="Frontend\Css\Modules\row.css" />
+    <Content Include="Frontend\Css\Styles\style-green.css" />
+    <Content Include="Frontend\Css\Styles\style-purple.css" />
+    <Content Include="Frontend\Css\Styles\style-white.css" />
+    <Content Include="Frontend\fontawesome-all.css" />
+    <Content Include="Frontend\Css\global.css">
       <DependentUpon>global.less</DependentUpon>
     </Content>
-    <Content Include="Css\global.min.css">
+    <Content Include="Frontend\Css\global.min.css">
       <DependentUpon>global.css</DependentUpon>
     </Content>
-    <Content Include="Css\ie10-viewport-bug-workaround.css">
+    <Content Include="Frontend\Css\ie10-viewport-bug-workaround.css">
       <DependentUpon>ie10-viewport-bug-workaround.less</DependentUpon>
     </Content>
-    <Content Include="Css\ie10-viewport-bug-workaround.min.css">
+    <Content Include="Frontend\Css\ie10-viewport-bug-workaround.min.css">
       <DependentUpon>ie10-viewport-bug-workaround.css</DependentUpon>
     </Content>
-    <Content Include="Css\Modules\abstract.css">
+    <Content Include="Frontend\Css\Ie\backgroundsize.min.htc" />
+    <Content Include="Frontend\Css\Ie\html5shiv.js" />
+    <Content Include="Frontend\Css\Ie\v8.css" />
+    <Content Include="Frontend\Css\Ie\v9.css" />
+    <Content Include="Frontend\Css\images\arrow.svg" />
+    <Content Include="Frontend\Css\images\bars.svg" />
+    <Content Include="Frontend\Css\images\close.svg" />
+    <Content Include="Frontend\Css\images\Internet-of-Things-1920xx.png" />
+    <Content Include="Frontend\Css\Modules\abstract.css">
       <DependentUpon>abstract.less</DependentUpon>
     </Content>
-    <Content Include="Css\Modules\abstract.min.css">
+    <Content Include="Frontend\Css\Modules\abstract.min.css">
       <DependentUpon>abstract.css</DependentUpon>
     </Content>
-    <Content Include="Css\Modules\banner.css">
+    <Content Include="Frontend\Css\Modules\banner.css">
       <DependentUpon>banner.less</DependentUpon>
     </Content>
-    <Content Include="Css\Modules\banner.min.css">
+    <Content Include="Frontend\Css\Modules\banner.min.css">
       <DependentUpon>banner.css</DependentUpon>
     </Content>
-    <Content Include="Css\Modules\blockquote.css">
+    <Content Include="Frontend\Css\Modules\blockquote.css">
       <DependentUpon>blockquote.less</DependentUpon>
     </Content>
-    <Content Include="Css\Modules\blockquote.min.css">
+    <Content Include="Frontend\Css\Modules\blockquote.min.css">
       <DependentUpon>blockquote.css</DependentUpon>
     </Content>
-    <Content Include="Css\Modules\blogarchive.css">
+    <Content Include="Frontend\Css\Modules\blogarchive.css">
       <DependentUpon>blogarchive.less</DependentUpon>
     </Content>
-    <Content Include="Css\Modules\blogarchive.min.css">
+    <Content Include="Frontend\Css\Modules\blogarchive.min.css">
       <DependentUpon>blogarchive.css</DependentUpon>
     </Content>
-    <Content Include="Css\Modules\box.css">
+    <Content Include="Frontend\Css\Modules\box.css">
       <DependentUpon>box.less</DependentUpon>
     </Content>
-    <Content Include="Css\Modules\box.min.css">
+    <Content Include="Frontend\Css\Modules\box.min.css">
       <DependentUpon>box.css</DependentUpon>
     </Content>
-    <Content Include="Css\Modules\breadcrumb.css">
+    <Content Include="Frontend\Css\Modules\breadcrumb.css">
       <DependentUpon>breadcrumb.less</DependentUpon>
     </Content>
-    <Content Include="Css\Modules\breadcrumb.min.css">
+    <Content Include="Frontend\Css\Modules\breadcrumb.min.css">
       <DependentUpon>breadcrumb.css</DependentUpon>
     </Content>
-    <Content Include="Css\Modules\button.css">
+    <Content Include="Frontend\Css\Modules\button.css">
       <DependentUpon>button.less</DependentUpon>
     </Content>
-    <Content Include="Css\Modules\button.min.css">
+    <Content Include="Frontend\Css\Modules\button.min.css">
       <DependentUpon>button.css</DependentUpon>
     </Content>
-    <Content Include="Css\Modules\code.css">
+    <Content Include="Frontend\Css\Modules\code.css">
       <DependentUpon>code.less</DependentUpon>
     </Content>
-    <Content Include="Css\Modules\code.min.css">
+    <Content Include="Frontend\Css\Modules\code.min.css">
       <DependentUpon>code.css</DependentUpon>
     </Content>
-    <Content Include="Css\Modules\container.css">
+    <Content Include="Frontend\Css\Modules\container.css">
       <DependentUpon>container.less</DependentUpon>
     </Content>
-    <Content Include="Css\Modules\container.min.css">
+    <Content Include="Frontend\Css\Modules\container.min.css">
       <DependentUpon>container.css</DependentUpon>
     </Content>
-    <Content Include="Css\Modules\equal.css">
+    <Content Include="Frontend\Css\Modules\equal.css">
       <DependentUpon>equal.less</DependentUpon>
     </Content>
-    <Content Include="Css\Modules\equal.min.css">
+    <Content Include="Frontend\Css\Modules\equal.min.css">
       <DependentUpon>equal.css</DependentUpon>
     </Content>
-    <Content Include="Css\Modules\footer.css">
-      <DependentUpon>footer.less</DependentUpon>
-    </Content>
-    <Content Include="Css\Modules\footer.min.css">
-      <DependentUpon>footer.css</DependentUpon>
-    </Content>
-    <Content Include="Css\Modules\full.css">
+    <Content Include="Frontend\Css\Modules\full.css">
       <DependentUpon>full.less</DependentUpon>
     </Content>
-    <Content Include="Css\Modules\full.min.css">
+    <Content Include="Frontend\Css\Modules\full.min.css">
       <DependentUpon>full.css</DependentUpon>
     </Content>
-    <Content Include="Css\Modules\gallery.css">
+    <Content Include="Frontend\Css\Modules\gallery.css">
       <DependentUpon>gallery.less</DependentUpon>
     </Content>
-    <Content Include="Css\Modules\gallery.min.css">
+    <Content Include="Frontend\Css\Modules\gallery.min.css">
       <DependentUpon>gallery.css</DependentUpon>
     </Content>
-    <Content Include="Css\Modules\header.css">
-      <DependentUpon>header.less</DependentUpon>
-    </Content>
-    <Content Include="Css\Modules\header.min.css">
-      <DependentUpon>header.css</DependentUpon>
-    </Content>
-    <Content Include="Css\Modules\hr.css">
+    <Content Include="Frontend\Css\Modules\hr.css">
       <DependentUpon>hr.less</DependentUpon>
     </Content>
-    <Content Include="Css\Modules\hr.min.css">
+    <Content Include="Frontend\Css\Modules\hr.min.css">
       <DependentUpon>hr.css</DependentUpon>
     </Content>
-    <Content Include="Css\Modules\image.css">
+    <Content Include="Frontend\Css\Modules\image.css">
       <DependentUpon>image.less</DependentUpon>
     </Content>
-    <Content Include="Css\Modules\image.min.css">
+    <Content Include="Frontend\Css\Modules\image.min.css">
       <DependentUpon>image.css</DependentUpon>
     </Content>
-    <Content Include="Css\Modules\jumbotron.css">
+    <Content Include="Frontend\Css\Modules\jumbotron.css">
       <DependentUpon>jumbotron.less</DependentUpon>
     </Content>
-    <Content Include="Css\Modules\jumbotron.min.css">
+    <Content Include="Frontend\Css\Modules\jumbotron.min.css">
       <DependentUpon>jumbotron.css</DependentUpon>
     </Content>
-    <Content Include="Css\Modules\list.css">
+    <Content Include="Frontend\Css\Modules\list.css">
       <DependentUpon>list.less</DependentUpon>
     </Content>
-    <Content Include="Css\Modules\list.min.css">
+    <Content Include="Frontend\Css\Modules\list.min.css">
       <DependentUpon>list.css</DependentUpon>
     </Content>
-    <Content Include="Css\Modules\navbar.css">
-      <DependentUpon>navbar.less</DependentUpon>
-    </Content>
-    <Content Include="Css\Modules\navbar.min.css">
-      <DependentUpon>navbar.css</DependentUpon>
-    </Content>
-    <Content Include="Css\Modules\page-header.css">
-      <DependentUpon>page-header.less</DependentUpon>
-    </Content>
-    <Content Include="Css\Modules\page-header.min.css">
-      <DependentUpon>page-header.css</DependentUpon>
-    </Content>
-    <Content Include="Css\Modules\panel.css">
+    <Content Include="Frontend\Css\Modules\panel.css">
       <DependentUpon>panel.less</DependentUpon>
     </Content>
-    <Content Include="Css\Modules\panel.min.css">
+    <Content Include="Frontend\Css\Modules\panel.min.css">
       <DependentUpon>panel.css</DependentUpon>
     </Content>
-    <Content Include="Css\Modules\seperator.css">
+    <Content Include="Frontend\Css\Modules\seperator.css">
       <DependentUpon>seperator.less</DependentUpon>
     </Content>
-    <Content Include="Css\Modules\seperator.min.css">
+    <Content Include="Frontend\Css\Modules\seperator.min.css">
       <DependentUpon>seperator.css</DependentUpon>
     </Content>
-    <Content Include="Css\Modules\text-center.css">
-      <DependentUpon>text-center.less</DependentUpon>
-    </Content>
-    <Content Include="Css\Modules\text-center.min.css">
-      <DependentUpon>text-center.css</DependentUpon>
-    </Content>
-    <Content Include="Css\Modules\text.css">
+    <Content Include="Frontend\Css\Modules\text.css">
       <DependentUpon>text.less</DependentUpon>
     </Content>
-    <Content Include="Css\Modules\text.min.css">
+    <Content Include="Frontend\Css\Modules\text.min.css">
       <DependentUpon>text.css</DependentUpon>
     </Content>
-    <Content Include="Css\Modules\toggle.css">
-      <DependentUpon>toggle.less</DependentUpon>
-    </Content>
-    <Content Include="Css\Modules\toggle.min.css">
-      <DependentUpon>toggle.css</DependentUpon>
-    </Content>
-    <Content Include="Css\Modules\triangle.css">
+    <Content Include="Frontend\Css\Modules\triangle.css">
       <DependentUpon>triangle.less</DependentUpon>
     </Content>
-    <Content Include="Css\Modules\triangle.min.css">
+    <Content Include="Frontend\Css\Modules\triangle.min.css">
       <DependentUpon>triangle.css</DependentUpon>
     </Content>
-    <Content Include="Css\Modules\video-wrapper.css">
-      <DependentUpon>video-wrapper.less</DependentUpon>
-    </Content>
-    <Content Include="Css\Modules\video-wrapper.min.css">
-      <DependentUpon>video-wrapper.css</DependentUpon>
-    </Content>
-    <Content Include="Css\Plugins\Effects\loadmore.css">
+    <Content Include="Frontend\Css\Plugins\Effects\loadmore.css">
       <DependentUpon>loadmore.less</DependentUpon>
     </Content>
-    <Content Include="Css\Plugins\Effects\loadmore.min.css">
+    <Content Include="Frontend\Css\Plugins\Effects\loadmore.min.css">
       <DependentUpon>loadmore.css</DependentUpon>
     </Content>
-    <Content Include="Css\Plugins\Tooltipster\Themes\tooltipster-sideTip-borderless.min.css" />
-    <Content Include="Css\Plugins\Tooltipster\Themes\tooltipster-sideTip-light.min.css" />
-    <Content Include="Css\Plugins\Tooltipster\Themes\tooltipster-sideTip-noir.min.css" />
-    <Content Include="Css\Plugins\Tooltipster\Themes\tooltipster-sideTip-punk.min.css" />
-    <Content Include="Css\Plugins\Tooltipster\Themes\tooltipster-sideTip-shadow.min.css" />
-    <None Include="Css\Plugins\Tooltipster\tooltipster.bundle.less" />
-    <None Include="Css\Plugins\Tooltipster\tooltipster.main.less" />
-    <Content Include="Css\Plugins\Tooltipster\tooltipster.bundle.css">
+    <Content Include="Frontend\Css\Plugins\fontawesome-all.css" />
+    <Content Include="Frontend\Css\Plugins\Tooltipster\Themes\tooltipster-sideTip-borderless.min.css" />
+    <Content Include="Frontend\Css\Plugins\Tooltipster\Themes\tooltipster-sideTip-light.min.css" />
+    <Content Include="Frontend\Css\Plugins\Tooltipster\Themes\tooltipster-sideTip-noir.min.css" />
+    <Content Include="Frontend\Css\Plugins\Tooltipster\Themes\tooltipster-sideTip-punk.min.css" />
+    <Content Include="Frontend\Css\Plugins\Tooltipster\Themes\tooltipster-sideTip-shadow.min.css" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-reboot.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.css.map" />
+    <Content Include="Content\bootstrap-grid.min.css.map" />
+    <Content Include="Content\bootstrap-grid.css.map" />
+    <Content Include="Frontend\Css\Plugins\fontawesome-all.less" />
+    <Content Include="bundleconfig.json.bindings">
+      <DependentUpon>bundleconfig.json</DependentUpon>
+    </Content>
+    <Content Include="Frontend\fontawesome-all.less" />
+    <Content Include="Frontend\Css\Modules\row.less" />
+    <None Include="Frontend\Css\Plugins\Tooltipster\tooltipster.bundle.less" />
+    <None Include="Frontend\Css\Plugins\Tooltipster\tooltipster.main.less" />
+    <Content Include="Frontend\Css\Plugins\Tooltipster\tooltipster.bundle.css">
       <DependentUpon>tooltipster.bundle.less</DependentUpon>
     </Content>
-    <Content Include="Css\Plugins\Tooltipster\tooltipster.bundle.min.css">
+    <Content Include="Frontend\Css\Plugins\Tooltipster\tooltipster.bundle.min.css">
       <DependentUpon>tooltipster.bundle.css</DependentUpon>
     </Content>
-    <Content Include="Css\Plugins\Tooltipster\tooltipster.css">
+    <Content Include="Frontend\Css\Plugins\Tooltipster\tooltipster.css">
       <DependentUpon>tooltipster.less</DependentUpon>
     </Content>
-    <Content Include="Css\Plugins\Tooltipster\tooltipster.main.css">
+    <Content Include="Frontend\Css\Plugins\Tooltipster\tooltipster.main.css">
       <DependentUpon>tooltipster.main.less</DependentUpon>
     </Content>
-    <Content Include="Css\Plugins\Tooltipster\tooltipster.main.min.css">
+    <Content Include="Frontend\Css\Plugins\Tooltipster\tooltipster.main.min.css">
       <DependentUpon>tooltipster.main.css</DependentUpon>
     </Content>
-    <Content Include="Css\Plugins\Tooltipster\tooltipster.min.css">
+    <Content Include="Frontend\Css\Plugins\Tooltipster\tooltipster.min.css">
       <DependentUpon>tooltipster.css</DependentUpon>
     </Content>
-    <Content Include="Css\reset.css">
+    <Content Include="Frontend\Css\reset.css">
       <DependentUpon>reset.less</DependentUpon>
     </Content>
-    <Content Include="Css\reset.min.css">
+    <Content Include="Frontend\Css\reset.min.css">
       <DependentUpon>reset.css</DependentUpon>
     </Content>
-    <Content Include="Css\style.css">
-      <DependentUpon>style.less</DependentUpon>
-    </Content>
-    <Content Include="Css\style.min.css">
+    <Content Include="Frontend\Css\style.css" />
+    <Content Include="Frontend\Css\style.min.css">
       <DependentUpon>style.css</DependentUpon>
     </Content>
+    <Content Include="Frontend\Js\Modules\skel-layout.min.js" />
+    <Content Include="Frontend\Js\Modules\skel-viewport.js" />
+    <Content Include="Frontend\Js\skel\init.js" />
+    <Content Include="Frontend\Js\skel\jquery.scrollex.min.js" />
+    <Content Include="Frontend\Js\skel\jquery.scrolly.min.js" />
+    <Content Include="Frontend\Js\skel\skel-layout.min.js" />
+    <Content Include="Frontend\Js\skel\skel-viewport.js" />
+    <Content Include="Frontend\Js\skel\skel.min.js" />
+    <Content Include="Scripts\app.js" />
+    <Content Include="Scripts\app.min.js">
+      <DependentUpon>app.js</DependentUpon>
+    </Content>
+    <Content Include="Scripts\esm\popper-utils.js" />
+    <Content Include="Scripts\esm\popper-utils.min.js" />
+    <Content Include="Scripts\esm\popper.js" />
+    <Content Include="Scripts\esm\popper.min.js" />
+    <Content Include="Scripts\popper-utils.js" />
+    <Content Include="Scripts\popper-utils.min.js" />
+    <Content Include="Scripts\popper.js" />
+    <Content Include="Scripts\popper.min.js" />
+    <Content Include="Scripts\umd\popper-utils.js" />
+    <Content Include="Scripts\umd\popper-utils.min.js" />
+    <Content Include="Scripts\umd\popper.js" />
+    <Content Include="Scripts\umd\popper.min.js" />
+    <Content Include="webfonts\fa-brands-400.svg" />
+    <Content Include="webfonts\fa-regular-400.svg" />
+    <Content Include="webfonts\fa-solid-900.svg" />
     <Content Include="favicon.ico" />
-    <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
-    <Content Include="fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="bundleconfig.json" />
-    <None Include="compilerconfig.json" />
-    <None Include="compilerconfig.json.defaults">
-      <DependentUpon>compilerconfig.json</DependentUpon>
-    </None>
-    <Content Include="Css\Colours\blue.less" />
-    <Content Include="Css\Colours\colours.less" />
-    <Content Include="Css\Colours\dark.less" />
-    <Content Include="Css\Colours\light.less" />
-    <Content Include="Css\Colours\purple.less" />
-    <Content Include="Css\Colours\yellow.less" />
-    <Content Include="Css\global.less" />
-    <Content Include="Css\ie10-viewport-bug-workaround.less" />
-    <Content Include="Css\Modules\abstract.less" />
-    <Content Include="Css\Modules\banner.less" />
-    <Content Include="Css\Modules\blockquote.less" />
-    <Content Include="Css\Modules\blogarchive.less" />
-    <Content Include="Css\Modules\box.less" />
-    <Content Include="Css\Modules\breadcrumb.less" />
-    <Content Include="Css\Modules\button.less" />
-    <Content Include="Css\Modules\code.less" />
-    <Content Include="Css\Modules\container.less" />
-    <Content Include="Css\Modules\equal.less" />
-    <Content Include="Css\Modules\footer.less" />
-    <Content Include="Css\Modules\full.less" />
-    <Content Include="Css\Modules\gallery.less" />
-    <Content Include="Css\Modules\header.less" />
-    <Content Include="Css\Modules\hr.less" />
-    <Content Include="Css\Modules\image.less" />
-    <Content Include="Css\Modules\jumbotron.less" />
-    <Content Include="Css\Modules\list.less" />
-    <Content Include="Css\Modules\navbar.less" />
-    <Content Include="Css\Modules\page-header.less" />
-    <Content Include="Css\Modules\panel.less" />
-    <Content Include="Css\Modules\seperator.less" />
-    <Content Include="Css\Modules\text-center.less" />
-    <Content Include="Css\Modules\text.less" />
-    <Content Include="Css\Modules\toggle.less" />
-    <Content Include="Css\Modules\triangle.less" />
-    <Content Include="Css\Modules\video-wrapper.less" />
-    <Content Include="Css\reset.less" />
-    <Content Include="Css\style.less" />
-    <Content Include="Css\Plugins\Effects\loadmore.less" />
-    <Content Include="Css\Plugins\Tooltipster\tooltipster.less" />
-    <Content Include="Js\global.es5.js">
+    <Content Include="Frontend\Css\Colours\blue.less" />
+    <Content Include="Frontend\Css\Colours\colours.less" />
+    <Content Include="Frontend\Css\Colours\dark.less" />
+    <Content Include="Frontend\Css\Colours\light.less" />
+    <Content Include="Frontend\Css\Colours\purple.less" />
+    <Content Include="Frontend\Css\Colours\yellow.less" />
+    <Content Include="Frontend\Css\global.less" />
+    <Content Include="Frontend\Css\ie10-viewport-bug-workaround.less" />
+    <Content Include="Frontend\Css\Modules\abstract.less" />
+    <Content Include="Frontend\Css\Modules\banner.less" />
+    <Content Include="Frontend\Css\Modules\blockquote.less" />
+    <Content Include="Frontend\Css\Modules\blogarchive.less" />
+    <Content Include="Frontend\Css\Modules\box.less" />
+    <Content Include="Frontend\Css\Modules\breadcrumb.less" />
+    <Content Include="Frontend\Css\Modules\button.less" />
+    <Content Include="Frontend\Css\Modules\code.less" />
+    <Content Include="Frontend\Css\Modules\container.less" />
+    <Content Include="Frontend\Css\Modules\equal.less" />
+    <Content Include="Frontend\Css\Modules\full.less" />
+    <Content Include="Frontend\Css\Modules\gallery.less" />
+    <Content Include="Frontend\Css\Modules\hr.less" />
+    <Content Include="Frontend\Css\Modules\image.less" />
+    <Content Include="Frontend\Css\Modules\jumbotron.less" />
+    <Content Include="Frontend\Css\Modules\list.less" />
+    <Content Include="Frontend\Css\Modules\panel.less" />
+    <Content Include="Frontend\Css\Modules\seperator.less" />
+    <Content Include="Frontend\Css\Modules\text.less" />
+    <Content Include="Frontend\Css\Modules\triangle.less" />
+    <Content Include="Frontend\Css\reset.less" />
+    <Content Include="Frontend\Css\style.less" />
+    <Content Include="Frontend\Css\Plugins\Effects\loadmore.less" />
+    <Content Include="Frontend\Css\Plugins\Tooltipster\tooltipster.less" />
+    <Content Include="Frontend\Js\global.es5.js">
       <DependentUpon>global.js</DependentUpon>
     </Content>
-    <Content Include="Js\global.es5.min.js">
+    <Content Include="Frontend\Js\global.es5.min.js">
       <DependentUpon>global.es5.js</DependentUpon>
     </Content>
-    <Content Include="Js\global.js" />
-    <Content Include="Js\Modules\colourswitch.es5.js">
+    <Content Include="Frontend\Js\global.js" />
+    <Content Include="Frontend\Js\Modules\colourswitch.es5.js">
       <DependentUpon>colourswitch.js</DependentUpon>
     </Content>
-    <Content Include="Js\Modules\colourswitch.es5.min.js">
+    <Content Include="Frontend\Js\Modules\colourswitch.es5.min.js">
       <DependentUpon>colourswitch.es5.js</DependentUpon>
     </Content>
-    <Content Include="Js\Modules\colourswitch.js" />
-    <Content Include="Js\Modules\colourswitch.min.js">
+    <Content Include="Frontend\Js\Modules\colourswitch.js" />
+    <Content Include="Frontend\Js\Modules\colourswitch.min.js">
       <DependentUpon>colourswitch.js</DependentUpon>
     </Content>
-    <Content Include="Js\Modules\equalheight.es5.js">
+    <Content Include="Frontend\Js\Modules\equalheight.js" />
+    <Content Include="Frontend\Js\Modules\equalheight.min.js">
       <DependentUpon>equalheight.js</DependentUpon>
     </Content>
-    <Content Include="Js\Modules\equalheight.es5.min.js">
-      <DependentUpon>equalheight.es5.js</DependentUpon>
-    </Content>
-    <Content Include="Js\Modules\equalheight.js" />
-    <Content Include="Js\Modules\loadmore.es5.js">
+    <Content Include="Frontend\Js\Modules\init.js" />
+    <Content Include="Frontend\Js\Modules\jquery.scrollex.min.js" />
+    <Content Include="Frontend\Js\Modules\jquery.scrolly.min.js" />
+    <Content Include="Frontend\Js\Modules\loadmore.es5.js">
       <DependentUpon>loadmore.js</DependentUpon>
     </Content>
-    <Content Include="Js\Modules\loadmore.es5.min.js">
+    <Content Include="Frontend\Js\Modules\loadmore.es5.min.js">
       <DependentUpon>loadmore.es5.js</DependentUpon>
     </Content>
-    <Content Include="Js\Modules\loadmore.js" />
-    <Content Include="Js\Modules\navigation.es5.js">
+    <Content Include="Frontend\Js\Modules\loadmore.js" />
+    <Content Include="Frontend\Js\Modules\navigation.es5.js">
       <DependentUpon>navigation.js</DependentUpon>
     </Content>
-    <Content Include="Js\Modules\navigation.es5.min.js">
+    <Content Include="Frontend\Js\Modules\navigation.es5.min.js">
       <DependentUpon>navigation.es5.js</DependentUpon>
     </Content>
-    <Content Include="Js\Modules\navigation.js" />
-    <Content Include="Js\Modules\searchbox.es5.js">
+    <Content Include="Frontend\Js\Modules\navigation.js" />
+    <Content Include="Frontend\Js\Modules\searchbox.es5.js">
       <DependentUpon>searchbox.js</DependentUpon>
     </Content>
-    <Content Include="Js\Modules\searchbox.es5.min.js">
+    <Content Include="Frontend\Js\Modules\searchbox.es5.min.js">
       <DependentUpon>searchbox.es5.js</DependentUpon>
     </Content>
-    <Content Include="Js\Modules\searchbox.js" />
-    <Content Include="Js\Plugins\Tooltipster\tooltipster-SVG.es5.js">
+    <Content Include="Frontend\Js\Modules\searchbox.js" />
+    <Content Include="Frontend\Js\Modules\skel.min.js" />
+    <Content Include="Frontend\Js\Plugins\Tooltipster\tooltipster-SVG.es5.js">
       <DependentUpon>tooltipster-SVG.js</DependentUpon>
     </Content>
-    <Content Include="Js\Plugins\Tooltipster\tooltipster-SVG.es5.min.js">
+    <Content Include="Frontend\Js\Plugins\Tooltipster\tooltipster-SVG.es5.min.js">
       <DependentUpon>tooltipster-SVG.es5.js</DependentUpon>
     </Content>
-    <Content Include="Js\Plugins\Tooltipster\tooltipster-SVG.js" />
-    <Content Include="Js\Plugins\Tooltipster\tooltipster.bundle.es5.js">
+    <Content Include="Frontend\Js\Plugins\Tooltipster\tooltipster-SVG.js" />
+    <Content Include="Frontend\Js\Plugins\Tooltipster\tooltipster.bundle.es5.js">
       <DependentUpon>tooltipster.bundle.js</DependentUpon>
     </Content>
-    <Content Include="Js\Plugins\Tooltipster\tooltipster.bundle.es5.min.js">
+    <Content Include="Frontend\Js\Plugins\Tooltipster\tooltipster.bundle.es5.min.js">
       <DependentUpon>tooltipster.bundle.es5.js</DependentUpon>
     </Content>
-    <Content Include="Js\Plugins\Tooltipster\tooltipster.bundle.js" />
-    <Content Include="Js\Plugins\Tooltipster\tooltipster.es5.js">
+    <Content Include="Frontend\Js\Plugins\Tooltipster\tooltipster.bundle.js" />
+    <Content Include="Frontend\Js\Plugins\Tooltipster\tooltipster.es5.js">
       <DependentUpon>tooltipster.js</DependentUpon>
     </Content>
-    <Content Include="Js\Plugins\Tooltipster\tooltipster.es5.min.js">
+    <Content Include="Frontend\Js\Plugins\Tooltipster\tooltipster.es5.min.js">
       <DependentUpon>tooltipster.es5.js</DependentUpon>
     </Content>
-    <Content Include="Js\Plugins\Tooltipster\tooltipster.js" />
-    <Content Include="Js\Plugins\Tooltipster\tooltipster.main.es5.js">
+    <Content Include="Frontend\Js\Plugins\Tooltipster\tooltipster.js" />
+    <Content Include="Frontend\Js\Plugins\Tooltipster\tooltipster.main.es5.js">
       <DependentUpon>tooltipster.main.js</DependentUpon>
     </Content>
-    <Content Include="Js\Plugins\Tooltipster\tooltipster.main.es5.min.js">
+    <Content Include="Frontend\Js\Plugins\Tooltipster\tooltipster.main.es5.min.js">
       <DependentUpon>tooltipster.main.es5.js</DependentUpon>
     </Content>
-    <Content Include="Js\Plugins\Tooltipster\tooltipster.main.js" />
+    <Content Include="Frontend\Js\Plugins\Tooltipster\tooltipster.main.js" />
+    <Content Include="Media\1003\1.jpg" />
+    <Content Include="Media\1003\1_thumb.jpg" />
+    <Content Include="Media\1004\2.jpg" />
+    <Content Include="Media\1004\2_thumb.jpg" />
+    <Content Include="Media\1005\3.jpg" />
+    <Content Include="Media\1005\3_thumb.jpg" />
+    <Content Include="Media\1006\1.jpg" />
+    <Content Include="Media\1006\1_thumb.jpg" />
+    <Content Include="Media\1007\2.jpg" />
+    <Content Include="Media\1007\2_thumb.jpg" />
+    <Content Include="Media\1008\3.jpg" />
+    <Content Include="Media\1008\3_thumb.jpg" />
     <Content Include="Media\Web.config" />
+    <Content Include="webfonts\fa-brands-400.eot" />
+    <Content Include="webfonts\fa-brands-400.ttf" />
+    <Content Include="webfonts\fa-brands-400.woff" />
+    <Content Include="webfonts\fa-brands-400.woff2" />
+    <Content Include="webfonts\fa-regular-400.eot" />
+    <Content Include="webfonts\fa-regular-400.ttf" />
+    <Content Include="webfonts\fa-regular-400.woff" />
+    <Content Include="webfonts\fa-regular-400.woff2" />
+    <Content Include="webfonts\fa-solid-900.eot" />
+    <Content Include="webfonts\fa-solid-900.ttf" />
+    <Content Include="webfonts\fa-solid-900.woff" />
+    <Content Include="webfonts\fa-solid-900.woff2" />
+    <Content Include="Frontend\Css\Styles\style-green.less" />
+    <Content Include="Frontend\Css\Styles\style-purple.less" />
+    <Content Include="Frontend\Css\Styles\style-white.less" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
-    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Scripts\jquery-3.2.1.intellisense.js" />
     <Content Include="Media\1001\photo-1482062364825-616fd23b8fc1.jpg" />
     <Content Include="Media\1002\photo-1485856407642-7f9ba0268b51.jpg" />
@@ -566,50 +566,25 @@
       <DependentUpon>bootstrap.es5.js</DependentUpon>
     </Content>
     <Content Include="Scripts\bootstrap.js" />
-    <Content Include="Scripts\jquery-3.2.1.es5.js">
-      <DependentUpon>jquery-3.2.1.js</DependentUpon>
-    </Content>
-    <Content Include="Scripts\jquery-3.2.1.es5.min.js">
-      <DependentUpon>jquery-3.2.1.es5.js</DependentUpon>
-    </Content>
-    <Content Include="Scripts\jquery-3.2.1.intellisense.es5.js">
-      <DependentUpon>jquery-3.2.1.intellisense.js</DependentUpon>
-    </Content>
-    <Content Include="Scripts\jquery-3.2.1.intellisense.es5.min.js">
-      <DependentUpon>jquery-3.2.1.intellisense.es5.js</DependentUpon>
-    </Content>
-    <Content Include="Scripts\jquery-3.2.1.js" />
-    <Content Include="Scripts\jquery-3.2.1.min.js" />
-    <Content Include="Scripts\jquery-3.2.1.min.map">
-      <DependentUpon>jquery-3.2.1.min.js</DependentUpon>
-    </Content>
-    <Content Include="Scripts\jquery-3.2.1.slim.js" />
-    <Content Include="Scripts\jquery-3.2.1.slim.min.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\bootstrap.min.js.map" />
+    <Content Include="Scripts\bootstrap.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.min.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.js.map" />
+    <Content Include="Scripts\esm\popper.min.js.map" />
+    <Content Include="Scripts\esm\popper.js.map" />
+    <Content Include="Scripts\esm\popper-utils.min.js.map" />
+    <Content Include="Scripts\esm\popper-utils.js.map" />
+    <None Include="Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.3.1.js" />
+    <Content Include="Scripts\jquery-3.3.1.min.js" />
+    <Content Include="Scripts\jquery-3.3.1.slim.js" />
+    <Content Include="Scripts\jquery-3.3.1.slim.min.js" />
+    <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.3.1.min.map" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
-    <Content Include="Scripts\jquery-3.2.1.slim.min.map">
-      <DependentUpon>jquery-3.2.1.slim.min.js</DependentUpon>
-    </Content>
-    <Content Include="Scripts\jquery.validate.es5.js">
-      <DependentUpon>jquery.validate.js</DependentUpon>
-    </Content>
-    <Content Include="Scripts\jquery.validate.es5.min.js">
-      <DependentUpon>jquery.validate.es5.js</DependentUpon>
-    </Content>
     <Content Include="Scripts\jquery.validate.js" />
-    <Content Include="Scripts\jquery.validate.unobtrusive.es5.js">
-      <DependentUpon>jquery.validate.unobtrusive.js</DependentUpon>
-    </Content>
-    <Content Include="Scripts\jquery.validate.unobtrusive.es5.min.js">
-      <DependentUpon>jquery.validate.unobtrusive.es5.js</DependentUpon>
-    </Content>
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
-    <Content Include="Scripts\modernizr-2.8.3.js" />
-    <Content Include="Scripts\respond.js" />
-    <Content Include="Scripts\respond.matchmedia.addListener.js" />
-    <Content Include="Scripts\respond.matchmedia.addListener.min.js">
-      <DependentUpon>respond.matchmedia.addListener.js</DependentUpon>
-    </Content>
-    <Content Include="Scripts\respond.min.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -621,7 +596,6 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\Footer.cshtml" />
     <Content Include="Views\Shared\Header.cshtml" />
     <Content Include="Views\Shared\Colourswitch.cshtml" />
@@ -638,6 +612,16 @@
     <Content Include="Views\Home\MasterArchive.cshtml" />
     <Content Include="Views\Blog\Blog6.cshtml" />
     <Content Include="Views\Blog\Blog7.cshtml" />
+    <Content Include="Scripts\umd\popper.min.js.map" />
+    <Content Include="Scripts\umd\popper.js.map" />
+    <Content Include="Scripts\umd\popper-utils.min.js.map" />
+    <Content Include="Scripts\umd\popper-utils.js.map" />
+    <Content Include="Scripts\README.md" />
+    <Content Include="Scripts\popper.min.js.map" />
+    <Content Include="Scripts\popper.js.map" />
+    <Content Include="Scripts\popper-utils.min.js.map" />
+    <Content Include="Scripts\popper-utils.js.map" />
+    <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -646,11 +630,18 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="Scripts\index.d.ts" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
   </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
   <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
@@ -660,7 +651,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>56051</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
@@ -679,6 +670,7 @@
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.2.7.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.2.7.0\build\Microsoft.Net.Compilers.props'))" />
     <Error Condition="!Exists('..\packages\BuildBundlerMinifier.2.6.362\build\BuildBundlerMinifier.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\BuildBundlerMinifier.2.6.362\build\BuildBundlerMinifier.targets'))" />
     <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.2.6.1\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.2.6.1\build\Microsoft.Net.Compilers.props'))" />
   </Target>

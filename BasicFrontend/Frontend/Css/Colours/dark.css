@@ -1,0 +1,21 @@
+/* dark.less */
+.dark {
+  background: #333333;
+}
+.dark * {
+  color: #fff;
+}
+.dark p {
+  color: #fff;
+}
+.dark h2 {
+  color: #fff;
+}
+.dark a {
+  color: #fff;
+  width: 100%;
+}
+.dark .date {
+  text-align: right;
+  color: #fff;
+}

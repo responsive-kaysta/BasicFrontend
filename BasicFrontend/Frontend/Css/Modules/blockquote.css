@@ -1,0 +1,41 @@
+/* blockquote.less */
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+blockquote {
+  font-size: 1rem;
+  line-height: 1.6;
+  letter-spacing: 0.2px;
+}
+blockquote {
+  color: #4d4d4d;
+  font-weight: 400;
+}
+blockquote {
+  color: #2c2c2c;
+  font-size: 1.2rem;
+}
+blockquote:before,
+blockquote:after {
+  display: inline-block;
+  padding: 0 2px;
+  font-size: 1.4rem;
+  content: '"';
+}
+blockquote {
+  padding: 10px;
+  text-align: center;
+  position: relative;
+  font-size: 1.3rem;
+}
+blockquote + * {
+  padding: 30px 10px;
+}

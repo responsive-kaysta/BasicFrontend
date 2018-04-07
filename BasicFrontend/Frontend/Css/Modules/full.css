@@ -1,0 +1,18 @@
+/* full.less */
+.full {
+  margin: 0;
+  padding: 0 !important;
+  overflow: hidden;
+}
+.full * {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 0;
+}
+.full .wide {
+  width: 100%;
+  height: auto;
+}

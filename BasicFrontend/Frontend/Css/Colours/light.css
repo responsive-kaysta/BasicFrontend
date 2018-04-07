@@ -1,0 +1,20 @@
+/* light.less */
+.light {
+  background: white;
+}
+.light * {
+  color: black;
+}
+.light p {
+  color: black;
+}
+.light h2 {
+  color: black;
+}
+.light a {
+  color: black;
+  width: 100%;
+}
+.light .date {
+  text-align: right;
+}

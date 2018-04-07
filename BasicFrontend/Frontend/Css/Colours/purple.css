@@ -1,0 +1,20 @@
+/* purple.less */
+.purple {
+  background: #C2357B;
+}
+.purple * {
+  color: #000;
+}
+.purple p {
+  color: black;
+}
+.purple h2 {
+  color: black;
+}
+.purple a {
+  color: black;
+  width: 100%;
+}
+.purple .date {
+  text-align: right;
+}

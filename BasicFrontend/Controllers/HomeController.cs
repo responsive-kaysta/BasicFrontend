@@ -1,7 +1,7 @@
 ﻿//
 // HomeController.cs
 //
-// Author: Kay Stuckenschmidt <mailto.kaysta@gmail.com>
+// Author: Kay Stuckenschmidt
 //
 // Copyright (c) 2017 responsive kaysta
 //
@@ -30,10 +30,13 @@ namespace BasicFrontend.Controllers
 {
     public class HomeController : Controller
     {
-        private static readonly AppBase appBase = AppBase.Instance;
+        private static readonly AppBase AppBase = AppBase.Instance;
 
         public ActionResult Index()
         {
+            ViewBag.BodyClass = "landing";
+            ViewBag.HeaderClass = "alt";
+
             return View();
         }
 
@@ -41,6 +44,7 @@ namespace BasicFrontend.Controllers
         {
             return View();
         }
+
         public ActionResult About()
         {
             return View();

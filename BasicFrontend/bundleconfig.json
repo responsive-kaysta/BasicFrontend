@@ -2,75 +2,100 @@
   {
     "outputFileName": "Content/bundle.css",
     "inputFiles": [
-      "Content/bootstrap.css",
-      "Content/bootstrap-theme.css",
-      "Css/reset.css",
-      "Css/global.css",
-      "Css/Modules/navbar.css",
-      "Css/Modules/header.css",
-      "Css/Modules/footer.css",
-      "Css/Modules/equal.css",
-      "Css/Modules/hr.css",
-      "Css/Modules/list.css",
-      "Css/Modules/toggle.css",
-      "Css/Modules/triangle.css",
-      "Css/Modules/abstract.css",
-      "Css/Modules/banner.css",
-      "Css/Modules/blockquote.css",
-      "Css/Modules/blogarchive.css",
-      "Css/Modules/blockquote.css",
-      "Css/Modules/box.css",
-      "Css/Modules/breadcrumb.css",
-      "Css/Modules/button.css",
-      "Css/Modules/code.css",
-      "Css/Modules/container.css",
-      "Css/Modules/full.css",
-      "Css/Modules/gallery.css",
-      "Css/Modules/image.css",
-      "Css/Modules/jumbotron.css",
-      "Css/Modules/panel.css",
-      "Css/Modules/page-header.css",
-      "Css/Modules/seperator.css",
-      "Css/Modules/text-center.css",
-      "Css/Modules/text.css",
-      "Css/Modules/video-wrapper.css",
+      "Frontend/Css/reset.css",
+      "Frontend/Css/global.css",
+      "Frontend/Css/ie10-viewport-bug-workaround.css",
 
-      "Css/Colours/dark.css",
-      "Css/Colours/light.css",
-      "Css/Colours/blue.css",
-      "Css/Colours/yellow.css",
-      "Css/Colours/purple.css",
-      "Css/Colours/colours.css",
-      "Css/style.css",
+      "Frontend/fontawesome-all.css",
 
-      "Css/Plugins/Tooltipster/tooltipster.bundle.css",
-      "Css/Plugins/Tooltipster/Themes/tooltipster-sideTip-punk.min.css",
-      "Css/Plugins/Tooltipster/tooltipster.css",
+      "Frontend/Css/Modules/box.css",
+      "Frontend/Css/Modules/image.css",
+      "Frontend/Css/Modules/row.css",
 
-      "Css/ie10-viewport-bug-workaround.css"
+      "Frontend/Css/Modules/abstract.css",
+      "Frontend/Css/Modules/banner.css",
+      "Frontend/Css/Modules/blockquote.css",
+      "Frontend/Css/Modules/blogarchive.css",
+      "Frontend/Css/Modules/breadcrumb.css",
+      "Frontend/Css/Modules/button.css",
+      "Frontend/Css/Modules/code.css",
+      "Frontend/Css/Modules/container.css",
+      "Frontend/Css/Modules/equal.css",
+      "Frontend/Css/Modules/full.css",
+      "Frontend/Css/Modules/gallery.css",
+      "Frontend/Css/Modules/hr.css",
+      "Frontend/Css/Modules/image.css",
+      "Frontend/Css/Modules/jumbotron.css",
+      "Frontend/Css/Modules/list.css",
+      "Frontend/Css/Modules/panel.css",
+      "Frontend/Css/Modules/seperator.css",
+      "Frontend/Css/Modules/text.css",
+      "Frontend/Css/Modules/triangle.css",
+
+      "Frontend/Css/Styles/style-green.css",
+      "Frontend/Css/Styles/style-white.css",
+      "Frontend/Css/Styles/style-purple.css",
+
+      "Frontend/Css/Colours/blue.css",
+      "Frontend/Css/Colours/light.css",
+      "Frontend/Css/Colours/purple.css",
+      "Frontend/Css/Colours/yellow.css",
+      "Frontend/Css/Colours/dark.css",
+
+      "Frontend/Css/style.css",
+
+      "Frontend/Css/Modules/wrapper.css",
+      "Frontend/Css/Modules/spotlight.css",
+
+      "Frontend/Css/Plugins/Effects/loadmore.css",
+
+      "Frontend/Css/Plugins/Tooltipster/tooltipster.css",
+      "Frontend/Css/Plugins/Tooltipster/Themes/tooltipster-sideTip-punk.min.css"
+
 
     ],
     "minify": {
       "enabled": true,
       "commentMode": "none"
-    }
+    },
+    "sourceMap": true
   },
   {
     "outputFileName": "Scripts/app.js",
     "inputFiles": [
-      "Scripts/jquery-3.2.1.es5.js",
-      "Scripts/jquery.validate.es5.js",
-      "Scripts/jquery.validate.unobtrusive.es5.js",
-      "Scripts/bootstrap.es5.js",
-      "Js/Plugins/Tooltipster/tooltipster.bundle.es5.js",
-      "Js/global.es5.js",
-      "Js/Modules/colourswitch.es5.js",
-      "Js/Modules/navigation.es5.js",
-      "Js/Modules/equalheight.es5.js",
-      "Js/Modules/loadmore.es5.js",
-      "Js/Modules/searchbox.es5.js",
-      "Js/Plugins/Tooltipster/tooltipster.es5.js"
 
+      "Frontend/Js/Plugins/Tooltipster/tooltipster.bundle.js",
+      "Frontend/Js/Plugins/Tooltipster/tooltipster.js",
+
+      "Frontend/Js/skel/jquery.scrollex.min.js",
+      "Frontend/Js/skel/jquery.scrolly.min.js",
+
+      "Frontend/Js/skel/skel.min.js",
+      "Frontend/Js/skel/skel-viewport.js",
+      "Frontend/Js/skel/skel-layout.min.js",
+      "Frontend/Js/skel/init.js",
+
+      "Frontend/Js/global.js",
+
+      "Frontend/Js/Modules/colourswitch.js",
+      "Frontend/Js/Modules/equalheight.js",
+      "Frontend/Js/Modules/loadmore.js",
+      "Frontend/Js/Modules/searchbox.js",
+
+      "Frontend/Js/Modules/searchbox.js"
+
+    ]
+  },
+  {
+    "outputFileName": "Content/bundle.min.css",
+    "inputFiles": [
+      "Content/bundle.css"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/app.min.js",
+    "inputFiles": [
+      "Scripts/app.js"
     ]
   }
 ]
