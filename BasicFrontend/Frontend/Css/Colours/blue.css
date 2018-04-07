@@ -1,69 +1,20 @@
 /* blue.less */
 .blue {
   background: #51c1f5;
-  background-color: #51c1f5;
 }
 .blue * {
-  color: #fff;
+  color: #000;
 }
-.blue a,
-.blue a:visited {
-  text-decoration: underline;
+.blue p {
+  color: black;
 }
-.blue a:hover,
-.blue a:visited:hover {
-  text-decoration: none;
+.blue h2 {
+  color: black;
 }
-.blue a.button {
-  border: 1px solid #fff;
-  background: rgba(255, 255, 255, 0);
-  text-decoration: none;
+.blue a {
+  color: black;
+  width: 100%;
 }
-.blue a.button:hover {
-  background: #fff;
-  color: #51c1f5;
-}
-.blue a.button.fill {
-  background: #fff;
-  color: #51c1f5;
-}
-.blue a.button.fill:hover {
-  background: rgba(255, 255, 255, 0.5);
-  color: #fff;
-}
-.blue + .triangle:before {
-  border-color: transparent transparent transparent #51c1f5;
-}
-/* blogarchive blue */
-section.blogarchive .blue h2 {
-  font-size: 1.2rem;
-  font-weight: 500;
-  line-height: 1.6;
-  font-family: "Lato", sans-serif;
-  color: #51c1f5;
-}
-section.blogarchive .blue p {
-  font-size: 1.0rem;
-  font-family: "Lato", sans-serif;
-  color: #51c1f5;
-}
-section.blogarchive .blue p .lead {
-  font-size: 1.1rem;
-  font-family: "Lato", sans-serif;
-  color: #51c1f5;
-}
-section.blogarchive .blue p .small {
-  font-size: .85rem;
-  font-family: "Lato", sans-serif;
-  color: #51c1f5;
-}
-section.blogarchive .blue .date {
-  font-size: .9rem;
+.blue .date {
   text-align: right;
-  color: #51c1f5;
-}
-section.blogarchive > div.col-md-6 > div.content {
-  border: 1px solid #333;
-  color: #51c1f5;
-  background: #000;
 }

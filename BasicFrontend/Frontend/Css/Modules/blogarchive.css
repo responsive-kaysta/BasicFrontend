@@ -1,6 +1,8 @@
 /* blogarchive.less */
 .blogarchive div[class^="col-"] {
   margin-bottom: 20px !important;
+  margin-top: 20px;
+  float: left;
 }
 .blogarchive a {
   white-space: normal;
@@ -15,7 +17,7 @@
   text-decoration: underline;
 }
 @media (min-width: 768px) {
-  section.blogarchive > div > div > a:hover,
+  section.blogarchive a:hover,
   a:visited:hover {
     -moz-transform: scale(1.01);
     -webkit-transform: scale(1.01);

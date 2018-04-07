@@ -3,66 +3,18 @@
   background: #C2357B;
 }
 .purple * {
-  color: #fff;
+  color: #000;
 }
-.purple a,
-.purple a:visited {
-  text-decoration: underline;
+.purple p {
+  color: black;
 }
-.purple a:hover,
-.purple a:visited:hover {
-  text-decoration: none;
+.purple h2 {
+  color: black;
 }
-.purple a.button {
-  border: 1px solid #fff;
-  background: rgba(255, 255, 255, 0);
-  text-decoration: none;
+.purple a {
+  color: black;
+  width: 100%;
 }
-.purple a.button:hover {
-  background: #fff;
-  color: #C2357B;
-}
-.purple a.button.fill {
-  background: #fff;
-  color: #C2357B;
-}
-.purple a.button.fill:hover {
-  background: rgba(255, 255, 255, 0.5);
-  color: #fff;
-}
-.purple + .triangle:before {
-  border-color: transparent transparent transparent #C2357B;
-}
-/* blogarchive purple */
-section.blogarchive .purple h2 {
-  font-size: 1.2rem;
-  font-weight: 500;
-  line-height: 1.6;
-  font-family: "Lato", sans-serif;
-  color: #C2357B;
-}
-section.blogarchive .purple p {
-  font-size: 1.0rem;
-  font-family: "Lato", sans-serif;
-  color: #C2357B;
-}
-section.blogarchive .purple p .lead {
-  font-size: 1.1rem;
-  font-family: "Lato", sans-serif;
-  color: #C2357B;
-}
-section.blogarchive .purple p .small {
-  font-size: .85rem;
-  font-family: "Lato", sans-serif;
-  color: #C2357B;
-}
-section.blogarchive .purple .date {
-  font-size: .9rem;
+.purple .date {
   text-align: right;
-  color: #C2357B;
-}
-section.blogarchive > div.col-md-6 > div.content {
-  border: 1px solid #333;
-  color: #C2357B;
-  background: #000;
 }

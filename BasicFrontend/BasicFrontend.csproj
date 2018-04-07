@@ -369,6 +369,12 @@
     </Content>
     <Content Include="Frontend\Js\Modules\skel-layout.min.js" />
     <Content Include="Frontend\Js\Modules\skel-viewport.js" />
+    <Content Include="Frontend\Js\skel\init.js" />
+    <Content Include="Frontend\Js\skel\jquery.scrollex.min.js" />
+    <Content Include="Frontend\Js\skel\jquery.scrolly.min.js" />
+    <Content Include="Frontend\Js\skel\skel-layout.min.js" />
+    <Content Include="Frontend\Js\skel\skel-viewport.js" />
+    <Content Include="Frontend\Js\skel\skel.min.js" />
     <Content Include="Scripts\app.js" />
     <Content Include="Scripts\app.min.js">
       <DependentUpon>app.js</DependentUpon>

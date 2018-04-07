@@ -33,7 +33,7 @@
             }, 250);
         });
         */
-       
+
         // Mobile?
         if (skel.vars.isMobile)
             $body.addClass('is-mobile');

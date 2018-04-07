@@ -324,6 +324,8 @@ pre code {
 section.special,
 article.special {
   text-align: center;
+  padding-top: 2em;
+  padding-bottom: 0.1em;
 }
 header p {
   color: rgba(255, 255, 255, 0.5);
@@ -339,7 +341,7 @@ header h6 + p {
   font-size: 0.9em;
 }
 header.major {
-  margin: 0 0 3.5em 0;
+  margin: 0 1em 3.5em 1em;
 }
 header.major h2,
 header.major h3,
@@ -1007,141 +1009,6 @@ button:disabled,
     border-top: 0;
   }
 }
-/* Spotlight */
-.spotlight {
-  -moz-align-items: center;
-  -webkit-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
-  display: -moz-flex;
-  display: -webkit-flex;
-  display: -ms-flex;
-  display: flex;
-}
-.spotlight .image {
-  -moz-order: 1;
-  -webkit-order: 1;
-  -ms-order: 1;
-  order: 1;
-  border-radius: 0;
-  width: 40%;
-}
-.spotlight .image img {
-  border-radius: 0;
-  width: 100%;
-}
-.spotlight .content {
-  padding: 2em 4em 0.1em 4em;
-  -moz-order: 2;
-  -webkit-order: 2;
-  -ms-order: 2;
-  order: 2;
-  max-width: 48em;
-  width: 60%;
-}
-.spotlight:nth-child(2n) {
-  -moz-flex-direction: row-reverse;
-  -webkit-flex-direction: row-reverse;
-  -ms-flex-direction: row-reverse;
-  flex-direction: row-reverse;
-}
-.spotlight:nth-child(1) {
-  background-color: rgba(0, 0, 0, 0.075);
-}
-.spotlight:nth-child(2) {
-  background-color: rgba(0, 0, 0, 0.15);
-}
-.spotlight:nth-child(3) {
-  background-color: rgba(0, 0, 0, 0.225);
-}
-.spotlight:nth-child(4) {
-  background-color: rgba(0, 0, 0, 0.3);
-}
-.spotlight:nth-child(5) {
-  background-color: rgba(0, 0, 0, 0.375);
-}
-.spotlight:nth-child(6) {
-  background-color: rgba(0, 0, 0, 0.45);
-}
-.spotlight:nth-child(7) {
-  background-color: rgba(0, 0, 0, 0.525);
-}
-.spotlight:nth-child(8) {
-  background-color: rgba(0, 0, 0, 0.6);
-}
-.spotlight:nth-child(9) {
-  background-color: rgba(0, 0, 0, 0.675);
-}
-.spotlight:nth-child(10) {
-  background-color: rgba(0, 0, 0, 0.75);
-}
-@media screen and (max-width: 1280px) {
-  .spotlight .image {
-    width: 45%;
-  }
-  .spotlight .content {
-    width: 55%;
-  }
-}
-@media screen and (max-width: 980px) {
-  .spotlight {
-    display: block;
-  }
-  .spotlight br {
-    display: none;
-  }
-  .spotlight .image {
-    width: 100%;
-  }
-  .spotlight .content {
-    padding: 4em 3em 2em 3em;
-    max-width: none;
-    text-align: center;
-    width: 100%;
-  }
-}
-@media screen and (max-width: 736px) {
-  .spotlight .content {
-    padding: 3em 2em 1em 2em;
-  }
-}
-/* Wrapper */
-.wrapper {
-  padding: 6em 0 4em 0;
-}
-.wrapper > .inner {
-  width: 60em;
-  margin: 0 auto;
-}
-@media screen and (max-width: 1280px) {
-  .wrapper > .inner {
-    width: 90%;
-  }
-}
-@media screen and (max-width: 980px) {
-  .wrapper > .inner {
-    width: 100%;
-  }
-}
-.wrapper.alt {
-  padding: 0;
-}
-.wrapper.style2 {
-  background-color: #2e3842;
-}
-.wrapper.style4 {
-  background-color: transparent;
-}
-@media screen and (max-width: 980px) {
-  .wrapper {
-    padding: 4em 3em 2em 3em;
-  }
-}
-@media screen and (max-width: 736px) {
-  .wrapper {
-    padding: 3em 2em 1em 2em;
-  }
-}
 /* Page Wrapper + Menu */
 #page-wrapper {
   -moz-transition: opacity 0.5s ease;
@@ -1369,6 +1236,11 @@ body.is-menu-visible #menu {
   position: relative;
   text-align: center;
 }
+#banner .inner {
+  padding-left: 0.25em;
+  padding-right: 0.25em;
+  margin: 0;
+}
 #banner h2 {
   -moz-transform: scale(1);
   -webkit-transform: scale(1);
@@ -1413,6 +1285,10 @@ body.is-menu-visible #menu {
 #banner p {
   letter-spacing: 0.225em;
   text-transform: uppercase;
+}
+#banner div {
+  padding-left: 10em;
+  padding-right: 10em;
 }
 #banner p a {
   color: inherit;
@@ -1527,7 +1403,7 @@ body.is-loading #banner:after {
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
-  max-width: 45em;
+  max-width: 60em;
 }
 #cta .inner header {
   -moz-order: 1;
@@ -1570,7 +1446,7 @@ body.is-loading #banner:after {
 }
 /* Main */
 #main > header {
-  padding: 12em 0 10em 0;
+  padding: 12em 20em 10em 20em;
   background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Css/images/Internet-of-Things-1920xx.png");
   background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Css/images/Internet-of-Things-1920xx.png");
   background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Css/images/Internet-of-Things-1920xx.png");
@@ -1596,12 +1472,12 @@ body.is-loading #banner:after {
 }
 @media screen and (max-width: 1680px) {
   #main > header {
-    padding: 10em 0 8em 0;
+    padding: 10em 20em 8em 20em;
   }
 }
 @media screen and (max-width: 1280px) {
   #main > header {
-    padding: 8em 3em 6em 3em;
+    padding: 8em 10em 6em 10em;
   }
 }
 @media screen and (max-width: 980px) {

@@ -6,32 +6,83 @@
       "Frontend/Css/global.css",
       "Frontend/Css/ie10-viewport-bug-workaround.css",
 
-      "Frontend/Css/style.css",
+      "Frontend/fontawesome-all.css",
 
       "Frontend/Css/Modules/box.css",
       "Frontend/Css/Modules/image.css",
       "Frontend/Css/Modules/row.css",
 
+      "Frontend/Css/Modules/abstract.css",
+      "Frontend/Css/Modules/banner.css",
+      "Frontend/Css/Modules/blockquote.css",
+      "Frontend/Css/Modules/blogarchive.css",
+      "Frontend/Css/Modules/breadcrumb.css",
+      "Frontend/Css/Modules/button.css",
+      "Frontend/Css/Modules/code.css",
+      "Frontend/Css/Modules/container.css",
+      "Frontend/Css/Modules/equal.css",
+      "Frontend/Css/Modules/full.css",
+      "Frontend/Css/Modules/gallery.css",
+      "Frontend/Css/Modules/hr.css",
+      "Frontend/Css/Modules/image.css",
+      "Frontend/Css/Modules/jumbotron.css",
+      "Frontend/Css/Modules/list.css",
+      "Frontend/Css/Modules/panel.css",
+      "Frontend/Css/Modules/seperator.css",
+      "Frontend/Css/Modules/text.css",
+      "Frontend/Css/Modules/triangle.css",
+
       "Frontend/Css/Styles/style-green.css",
       "Frontend/Css/Styles/style-white.css",
-      "Frontend/Css/Styles/style-purple.css"
+      "Frontend/Css/Styles/style-purple.css",
+
+      "Frontend/Css/Colours/blue.css",
+      "Frontend/Css/Colours/light.css",
+      "Frontend/Css/Colours/purple.css",
+      "Frontend/Css/Colours/yellow.css",
+      "Frontend/Css/Colours/dark.css",
+
+      "Frontend/Css/style.css",
+
+      "Frontend/Css/Modules/wrapper.css",
+      "Frontend/Css/Modules/spotlight.css",
+
+      "Frontend/Css/Plugins/Effects/loadmore.css",
+
+      "Frontend/Css/Plugins/Tooltipster/tooltipster.css",
+      "Frontend/Css/Plugins/Tooltipster/Themes/tooltipster-sideTip-punk.min.css"
+
 
     ],
     "minify": {
       "enabled": true,
       "commentMode": "none"
-    }
+    },
+    "sourceMap": true
   },
   {
     "outputFileName": "Scripts/app.js",
     "inputFiles": [
 
-      "Frontend/Js/Modules/jquery.scrollex.min.js",
-      "Frontend/Js/Modules/jquery.scrolly.min.js",
-      "Frontend/Js/Modules/skel.min.js",
-      "Frontend/Js/Modules/skel-viewport.js",
-      "Frontend/Js/Modules/skel-layout.min.js",
-      "Frontend/Js/Modules/init.js"
+      "Frontend/Js/Plugins/Tooltipster/tooltipster.bundle.js",
+      "Frontend/Js/Plugins/Tooltipster/tooltipster.js",
+
+      "Frontend/Js/skel/jquery.scrollex.min.js",
+      "Frontend/Js/skel/jquery.scrolly.min.js",
+
+      "Frontend/Js/skel/skel.min.js",
+      "Frontend/Js/skel/skel-viewport.js",
+      "Frontend/Js/skel/skel-layout.min.js",
+      "Frontend/Js/skel/init.js",
+
+      "Frontend/Js/global.js",
+
+      "Frontend/Js/Modules/colourswitch.js",
+      "Frontend/Js/Modules/equalheight.js",
+      "Frontend/Js/Modules/loadmore.js",
+      "Frontend/Js/Modules/searchbox.js",
+
+      "Frontend/Js/Modules/searchbox.js"
 
     ]
   },
