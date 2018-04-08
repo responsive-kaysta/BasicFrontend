@@ -58,7 +58,7 @@
       "enabled": true,
       "commentMode": "none"
     },
-    "sourceMap": true
+    "sourceMap": false
   },
   {
     "outputFileName": "Scripts/app.js",

@@ -4337,6 +4337,7 @@ pre {
   padding-top: 0;
   margin-right: auto;
   margin-left: auto;
+  padding: 1em;
 }
 @media screen and (max-width: 736px) {
   .container {
@@ -6616,10 +6617,10 @@ body.is-loading #banner:after {
 /* Main */
 #main > header {
   padding: 12em 20em 10em 20em;
-  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/Frontend/Css/images/Internet-of-Things-1920xx.png");
-  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/Frontend/Css/images/Internet-of-Things-1920xx.png");
-  background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/Frontend/Css/images/Internet-of-Things-1920xx.png");
-  background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/Frontend/Css/images/Internet-of-Things-1920xx.png");
+  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Frontend/Css/images/Internet-of-Things-1920xx.png");
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Frontend/Css/images/Internet-of-Things-1920xx.png");
+  background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Frontend/Css/images/Internet-of-Things-1920xx.png");
+  background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Frontend/Css/images/Internet-of-Things-1920xx.png");
   background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
@@ -6728,10 +6729,10 @@ body.is-mobile #main > header {
 }
 /* Landing */
 body.landing #page-wrapper {
-  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/Frontend/Css/images/Internet-of-Things-1920xx.png");
-  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/Frontend/Css/images/Internet-of-Things-1920xx.png");
-  background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/Frontend/Css/images/Internet-of-Things-1920xx.png");
-  background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/Frontend/Css/images/Internet-of-Things-1920xx.png");
+  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Frontend/Css/images/Internet-of-Things-1920xx.png");
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Frontend/Css/images/Internet-of-Things-1920xx.png");
+  background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Frontend/Css/images/Internet-of-Things-1920xx.png");
+  background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Frontend/Css/images/Internet-of-Things-1920xx.png");
   background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
@@ -6746,10 +6747,10 @@ body.is-mobile.landing #page-wrapper {
 }
 body.is-mobile.landing #banner,
 body.is-mobile.landing .wrapper.style4 {
-  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/Frontend/Css/images/Internet-of-Things-1920xx.png");
-  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/Frontend/Css/images/Internet-of-Things-1920xx.png");
-  background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/Frontend/Css/images/Internet-of-Things-1920xx.png");
-  background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/Frontend/Css/images/Internet-of-Things-1920xx.png");
+  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Frontend/Css/images/Internet-of-Things-1920xx.png");
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Frontend/Css/images/Internet-of-Things-1920xx.png");
+  background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Frontend/Css/images/Internet-of-Things-1920xx.png");
+  background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Frontend/Css/images/Internet-of-Things-1920xx.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -6766,13 +6767,6 @@ body.is-mobile.landing #footer {
 .wrapper .inner {
   padding: 0;
   margin: 0;
-}
-.wrapper .inner .col-md-12 {
-  padding-left: 1em;
-  padding-right: auto;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  margin: 0px;
 }
 @media screen and (max-width: 1920px) {
   .wrapper > .inner {
