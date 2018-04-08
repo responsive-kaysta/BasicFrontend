@@ -78,111 +78,10 @@ video {
 }
 
 /* global.less */
-*[role="content"] {
-  position: relative;
-  min-height: calc(-386vh);
-}
-html,
-body {
-  width: 100%;
-  overflow-x: hidden;
-}
-body {
-  background: transparent;
-  min-height: 100%;
-  min-width: 100%;
-}
 body {
   line-height: 1.4;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Lato', Arial, sans-serif;
   text-transform: lowercase;
-}
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-a {
-  margin: 0;
-  padding: 0;
-  background: transparent;
-  vertical-align: baseline;
-  font-size: 100%;
-}
-a,
-a:visited {
-  text-decoration: none;
-  width: auto;
-  white-space: nowrap;
-}
-ins {
-  background-color: #ff9;
-  color: #000;
-  text-decoration: none;
-}
-mark {
-  background-color: #ff9;
-  color: #000;
-  font-weight: bold;
-  font-style: italic;
-}
-del {
-  text-decoration: line-through;
-}
-abbr[title],
-dfn[title] {
-  border-bottom: 1px dotted;
-  cursor: help;
-}
-table {
-  border-spacing: 0;
-  border-collapse: collapse;
-}
-hr {
-  display: block;
-  margin: 1em 0;
-  padding: 0;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #cccccc;
-}
-input,
-select {
-  vertical-align: middle;
-}
-html {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
-.main-content {
-  margin-top: 2.25rem;
-}
-.round {
-  border-radius: 50%;
-}
-.center,
-.center img {
-  display: block;
-  margin: 0 auto;
-  text-align: center;
-}
-.vcenter {
-  display: inline-block;
-  vertical-align: middle;
-  float: none;
 }
 
 /*!
@@ -4697,6 +4596,14 @@ p {
   font-size: 40px;
   margin-bottom: 1.0rem;
 }
+div.page-header {
+  width: 100%;
+  border-bottom: gray solid thin;
+}
+div.page-header > h1 {
+  font-size: 62px;
+  margin-bottom: 1.0rem;
+}
 strong {
   font-weight: 900;
 }
@@ -6860,8 +6767,12 @@ body.is-mobile.landing #footer {
   padding: 0;
   margin: 0;
 }
-.wrapper > .inner .col-md-12 {
-  padding: 20px;
+.wrapper .inner .col-md-12 {
+  padding-left: 1em;
+  padding-right: auto;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin: 0px;
 }
 @media screen and (max-width: 1920px) {
   .wrapper > .inner {

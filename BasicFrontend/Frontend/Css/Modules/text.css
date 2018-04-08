@@ -69,6 +69,14 @@ p {
   font-size: 40px;
   margin-bottom: 1.0rem;
 }
+div.page-header {
+  width: 100%;
+  border-bottom: gray solid thin;
+}
+div.page-header > h1 {
+  font-size: 62px;
+  margin-bottom: 1.0rem;
+}
 strong {
   font-weight: 900;
 }
