@@ -3,6 +3,11 @@
   width: device-width;
 }
 /* Skel */
+body {
+  line-height: 1.4;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Lato', Arial, sans-serif;
+  text-transform: lowercase;
+}
 html,
 body,
 div,

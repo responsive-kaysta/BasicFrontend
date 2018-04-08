@@ -4337,7 +4337,7 @@ pre {
   padding-top: 0;
   margin-right: auto;
   margin-left: auto;
-  padding: 1em;
+  padding: 2em;
 }
 @media screen and (max-width: 736px) {
   .container {
@@ -4600,10 +4600,11 @@ p {
 div.page-header {
   width: 100%;
   border-bottom: gray solid thin;
+  margin-bottom: 1.5em;
 }
 div.page-header > h1 {
-  font-size: 62px;
-  margin-bottom: 1.0rem;
+  font-size: 1em;
+  margin-bottom: 1.0em;
 }
 strong {
   font-weight: 900;
@@ -5067,20 +5068,27 @@ strong {
   background: #51c1f5;
 }
 .blue * {
-  color: #000;
+  color: darkgray;
 }
 .blue p {
-  color: black;
+  color: darkgray;
 }
 .blue h2 {
-  color: black;
+  color: darkgray;
 }
 .blue a {
-  color: black;
+  color: darkgray;
   width: 100%;
 }
 .blue .date {
   text-align: right;
+}
+div.page-header {
+  width: 100%;
+  border-bottom: darkgray solid thin;
+}
+.blue div.page-header > h1 {
+  color: darkgray;
 }
 
 /* light.less */
@@ -5103,26 +5111,40 @@ strong {
 .light .date {
   text-align: right;
 }
+div.page-header {
+  width: 100%;
+  border-bottom: black solid thin;
+}
+.light div.page-header > h1 {
+  color: black;
+}
 
 /* purple.less */
 .purple {
   background: #C2357B;
 }
 .purple * {
-  color: #000;
+  color: whitesmoke;
 }
 .purple p {
-  color: black;
+  color: whitesmoke;
 }
 .purple h2 {
-  color: black;
+  color: whitesmoke;
 }
 .purple a {
-  color: black;
+  color: whitesmoke;
   width: 100%;
 }
 .purple .date {
   text-align: right;
+}
+div.page-header {
+  width: 100%;
+  border-bottom: whitesmoke solid thin;
+}
+.purple div.page-header > h1 {
+  color: whitesmoke;
 }
 
 /* yellow.less */
@@ -5145,27 +5167,41 @@ strong {
 .yellow .date {
   text-align: right;
 }
+div.page-header {
+  width: 100%;
+  border-bottom: whitesmoke solid thin;
+}
+.purple div.page-header > h1 {
+  color: whitesmoke;
+}
 
 /* dark.less */
 .dark {
   background: #333333;
 }
 .dark * {
-  color: #fff;
+  color: #ccc;
 }
 .dark p {
-  color: #fff;
+  color: #ccc;
 }
 .dark h2 {
-  color: #fff;
+  color: #ccc;
 }
 .dark a {
-  color: #fff;
+  color: #ccc;
   width: 100%;
 }
 .dark .date {
   text-align: right;
-  color: #fff;
+  color: #ccc;
+}
+div.page-header {
+  width: 100%;
+  border-bottom: #ccc solid thin;
+}
+.dark div.page-header > h1 {
+  color: #ccc;
 }
 
 /* IE Viewport Fix */
@@ -5173,6 +5209,11 @@ strong {
   width: device-width;
 }
 /* Skel */
+body {
+  line-height: 1.4;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Lato', Arial, sans-serif;
+  text-transform: lowercase;
+}
 html,
 body,
 div,

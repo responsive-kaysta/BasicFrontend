@@ -372,7 +372,9 @@
     <Content Include="Frontend\Js\skel\skel-viewport.js" />
     <Content Include="Frontend\Js\skel\skel.min.js" />
     <Content Include="Scripts\app.js" />
-    <Content Include="Scripts\app.min.js" />
+    <Content Include="Scripts\app.min.js">
+      <DependentUpon>app.js</DependentUpon>
+    </Content>
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\esm\popper-utils.js" />

@@ -3,18 +3,25 @@
   background: #C2357B;
 }
 .purple * {
-  color: #000;
+  color: whitesmoke;
 }
 .purple p {
-  color: black;
+  color: whitesmoke;
 }
 .purple h2 {
-  color: black;
+  color: whitesmoke;
 }
 .purple a {
-  color: black;
+  color: whitesmoke;
   width: 100%;
 }
 .purple .date {
   text-align: right;
+}
+div.page-header {
+  width: 100%;
+  border-bottom: whitesmoke solid thin;
+}
+.purple div.page-header > h1 {
+  color: whitesmoke;
 }

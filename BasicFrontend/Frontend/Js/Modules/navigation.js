@@ -1,5 +1,9 @@
 ﻿/* navigation.js */
 
+/*
+
+Alternative...???
+
 (function ($) {
 
     // Navigation
@@ -21,3 +25,4 @@
     });
 
 })(jQuery);
+*/
