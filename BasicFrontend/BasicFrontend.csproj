@@ -1,8 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
-  <Import Project="..\packages\Microsoft.Net.Compilers.2.7.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.2.7.0\build\Microsoft.Net.Compilers.props')" />
-  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -50,9 +48,6 @@
   <ItemGroup>
     <Reference Include="Antlr3.Runtime, Version=3.5.0.2, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
       <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.8.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
@@ -367,8 +362,6 @@
     <Content Include="Frontend\Css\style.min.css">
       <DependentUpon>style.css</DependentUpon>
     </Content>
-    <Content Include="Frontend\Js\Modules\skel-layout.min.js" />
-    <Content Include="Frontend\Js\Modules\skel-viewport.js" />
     <Content Include="Frontend\Js\skel\init.js" />
     <Content Include="Frontend\Js\skel\jquery.scrollex.min.js" />
     <Content Include="Frontend\Js\skel\jquery.scrolly.min.js" />
@@ -429,79 +422,15 @@
     <Content Include="Frontend\Css\style.less" />
     <Content Include="Frontend\Css\Plugins\Effects\loadmore.less" />
     <Content Include="Frontend\Css\Plugins\Tooltipster\tooltipster.less" />
-    <Content Include="Frontend\Js\global.es5.js">
-      <DependentUpon>global.js</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Js\global.es5.min.js">
-      <DependentUpon>global.es5.js</DependentUpon>
-    </Content>
     <Content Include="Frontend\Js\global.js" />
-    <Content Include="Frontend\Js\Modules\colourswitch.es5.js">
-      <DependentUpon>colourswitch.js</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Js\Modules\colourswitch.es5.min.js">
-      <DependentUpon>colourswitch.es5.js</DependentUpon>
-    </Content>
     <Content Include="Frontend\Js\Modules\colourswitch.js" />
-    <Content Include="Frontend\Js\Modules\colourswitch.min.js">
-      <DependentUpon>colourswitch.js</DependentUpon>
-    </Content>
     <Content Include="Frontend\Js\Modules\equalheight.js" />
-    <Content Include="Frontend\Js\Modules\equalheight.min.js">
-      <DependentUpon>equalheight.js</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Js\Modules\init.js" />
-    <Content Include="Frontend\Js\Modules\jquery.scrollex.min.js" />
-    <Content Include="Frontend\Js\Modules\jquery.scrolly.min.js" />
-    <Content Include="Frontend\Js\Modules\loadmore.es5.js">
-      <DependentUpon>loadmore.js</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Js\Modules\loadmore.es5.min.js">
-      <DependentUpon>loadmore.es5.js</DependentUpon>
-    </Content>
     <Content Include="Frontend\Js\Modules\loadmore.js" />
-    <Content Include="Frontend\Js\Modules\navigation.es5.js">
-      <DependentUpon>navigation.js</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Js\Modules\navigation.es5.min.js">
-      <DependentUpon>navigation.es5.js</DependentUpon>
-    </Content>
     <Content Include="Frontend\Js\Modules\navigation.js" />
-    <Content Include="Frontend\Js\Modules\searchbox.es5.js">
-      <DependentUpon>searchbox.js</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Js\Modules\searchbox.es5.min.js">
-      <DependentUpon>searchbox.es5.js</DependentUpon>
-    </Content>
     <Content Include="Frontend\Js\Modules\searchbox.js" />
-    <Content Include="Frontend\Js\Modules\skel.min.js" />
-    <Content Include="Frontend\Js\Plugins\Tooltipster\tooltipster-SVG.es5.js">
-      <DependentUpon>tooltipster-SVG.js</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Js\Plugins\Tooltipster\tooltipster-SVG.es5.min.js">
-      <DependentUpon>tooltipster-SVG.es5.js</DependentUpon>
-    </Content>
     <Content Include="Frontend\Js\Plugins\Tooltipster\tooltipster-SVG.js" />
-    <Content Include="Frontend\Js\Plugins\Tooltipster\tooltipster.bundle.es5.js">
-      <DependentUpon>tooltipster.bundle.js</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Js\Plugins\Tooltipster\tooltipster.bundle.es5.min.js">
-      <DependentUpon>tooltipster.bundle.es5.js</DependentUpon>
-    </Content>
     <Content Include="Frontend\Js\Plugins\Tooltipster\tooltipster.bundle.js" />
-    <Content Include="Frontend\Js\Plugins\Tooltipster\tooltipster.es5.js">
-      <DependentUpon>tooltipster.js</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Js\Plugins\Tooltipster\tooltipster.es5.min.js">
-      <DependentUpon>tooltipster.es5.js</DependentUpon>
-    </Content>
     <Content Include="Frontend\Js\Plugins\Tooltipster\tooltipster.js" />
-    <Content Include="Frontend\Js\Plugins\Tooltipster\tooltipster.main.es5.js">
-      <DependentUpon>tooltipster.main.js</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Js\Plugins\Tooltipster\tooltipster.main.es5.min.js">
-      <DependentUpon>tooltipster.main.es5.js</DependentUpon>
-    </Content>
     <Content Include="Frontend\Js\Plugins\Tooltipster\tooltipster.main.js" />
     <Content Include="Media\1003\1.jpg" />
     <Content Include="Media\1003\1_thumb.jpg" />
@@ -638,8 +567,6 @@
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
-    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.2.7.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.2.7.0\build\Microsoft.Net.Compilers.props'))" />
     <Error Condition="!Exists('..\packages\BuildBundlerMinifier.2.6.362\build\BuildBundlerMinifier.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\BuildBundlerMinifier.2.6.362\build\BuildBundlerMinifier.targets'))" />
   </Target>
   <Import Project="..\packages\BuildBundlerMinifier.2.6.362\build\BuildBundlerMinifier.targets" Condition="Exists('..\packages\BuildBundlerMinifier.2.6.362\build\BuildBundlerMinifier.targets')" />
