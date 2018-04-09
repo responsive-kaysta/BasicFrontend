@@ -6,8 +6,6 @@
       "Frontend/Css/global.css",
       "Frontend/Css/ie10-viewport-bug-workaround.css",
 
-      "Frontend/fontawesome-all.css",
-
       "Frontend/Css/Modules/box.css",
       "Frontend/Css/Modules/image.css",
       "Frontend/Css/Modules/row.css",
@@ -44,8 +42,15 @@
 
       "Frontend/Css/style.css",
 
-      "Frontend/Css/Modules/wrapper.css",
+      "Frontend/Css/Modules/banner.css",
+      "Frontend/Css/Modules/cta.css",
+      "Frontend/Css/Modules/footer.css",
+      "Frontend/Css/Modules/features.css",
+      "Frontend/Css/Modules/header.css",
+      "Frontend/Css/Modules/landing.css",
+      "Frontend/Css/Modules/main.css",
       "Frontend/Css/Modules/spotlight.css",
+      "Frontend/Css/Modules/wrapper.css",
 
       "Frontend/Css/Plugins/Effects/loadmore.css",
 
