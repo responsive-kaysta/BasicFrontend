@@ -1,0 +1,33 @@
+﻿[
+  {
+    "outputFileName": "Content/bundle.css",
+    "inputFiles": [
+      "Content/bootstrap.css"
+    ],
+
+    "minify": {
+      "enabled": true,
+      "commentMode": "none"
+    },
+    "sourceMap": true
+  },
+
+  {
+    "outputFileName": "Scripts/app.js",
+    "inputFiles": [
+      "Scripts/jquery-3.3.1.js"
+    ]
+  },
+  {
+    "outputFileName": "Content/bundle.min.css",
+    "inputFiles": [
+      "Content/bundle.css"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/app.min.js",
+    "inputFiles": [
+      "Scripts/app.js"
+    ]
+  }
+]
