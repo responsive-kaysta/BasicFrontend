@@ -2065,6 +2065,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\Models\" />
+    <Folder Include="Frontend\" />
     <Folder Include="Views\MacroPartials\" />
   </ItemGroup>
   <PropertyGroup>
