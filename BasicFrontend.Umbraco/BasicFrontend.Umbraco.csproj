@@ -360,6 +360,8 @@
     <Content Include="config\Lang\ru-RU.user.xml" />
     <Content Include="config\Lang\sv-SE.user.xml" />
     <Content Include="config\Lang\zh-CN.user.xml" />
+    <Content Include="config\splashes\booting.aspx" />
+    <Content Include="config\splashes\noNodes.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.css.map">
       <DependentUpon>bootstrap-grid.css</DependentUpon>
@@ -389,6 +391,12 @@
       <DependentUpon>bundle.css</DependentUpon>
     </Content>
     <Content Include="default.aspx" />
+    <Content Include="Frontend\fontawesome-all.css">
+      <DependentUpon>fontawesome-all.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\fontawesome-all.min.css">
+      <DependentUpon>fontawesome-all.css</DependentUpon>
+    </Content>
     <Content Include="Global.asax" />
     <Content Include="Media\Web.config" />
     <Content Include="config\umbracoSettings.config" />
@@ -429,14 +437,21 @@
     <Content Include="App_Plugins\Grid\Editors\Render\quote_with_description.cshtml" />
     <Content Include="App_Plugins\Grid\Editors\Render\spotlight.cshtml" />
     <Content Include="App_Plugins\Grid\package.manifest" />
+    <Content Include="webfonts\fa-brands-400.svg" />
+    <Content Include="webfonts\fa-regular-400.svg" />
+    <Content Include="webfonts\fa-solid-900.svg" />
+    <Content Include="Frontend\fontawesome-all.less" />
     <None Include="packages.config" />
     <Content Include="Scripts\app.js" />
     <Content Include="Scripts\app.min.js">
       <DependentUpon>app.js</DependentUpon>
     </Content>
     <Content Include="Scripts\bootstrap.bundle.js" />
-    <Content Include="Scripts\bootstrap.bundle.js.map">
-      <DependentUpon>bootstrap.bundle.js</DependentUpon>
+    <Content Include="Scripts\bootstrap.bundle.min.es5.js">
+      <DependentUpon>bootstrap.bundle.min.js</DependentUpon>
+    </Content>
+    <Content Include="Scripts\bootstrap.bundle.min.es5.min.js">
+      <DependentUpon>bootstrap.bundle.min.es5.js</DependentUpon>
     </Content>
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js.map">
@@ -467,11 +482,13 @@
     <Content Include="Scripts\esm\popper.min.js.map">
       <DependentUpon>popper.min.js</DependentUpon>
     </Content>
-    <Content Include="Scripts\jquery-3.3.1.es5.js" />
-    <Content Include="Scripts\jquery-3.3.1.es5.min.js">
-      <DependentUpon>jquery-3.3.1.es5.js</DependentUpon>
-    </Content>
     <Content Include="Scripts\jquery-3.3.1.js" />
+    <Content Include="Scripts\jquery-3.3.1.min.es5.js">
+      <DependentUpon>jquery-3.3.1.min.js</DependentUpon>
+    </Content>
+    <Content Include="Scripts\jquery-3.3.1.min.es5.min.js">
+      <DependentUpon>jquery-3.3.1.min.es5.js</DependentUpon>
+    </Content>
     <Content Include="Scripts\jquery-3.3.1.min.js" />
     <Content Include="Scripts\jquery-3.3.1.min.map">
       <DependentUpon>jquery-3.3.1.min.js</DependentUpon>
@@ -483,6 +500,12 @@
     <Content Include="Scripts\jquery-3.3.1.slim.min.map">
       <DependentUpon>jquery-3.3.1.slim.min.js</DependentUpon>
     </Content>
+    <Content Include="Scripts\popper-utils.es5.js">
+      <DependentUpon>popper-utils.js</DependentUpon>
+    </Content>
+    <Content Include="Scripts\popper-utils.es5.min.js">
+      <DependentUpon>popper-utils.es5.js</DependentUpon>
+    </Content>
     <Content Include="Scripts\popper-utils.js" />
     <Content Include="Scripts\popper-utils.js.map">
       <DependentUpon>popper-utils.js</DependentUpon>
@@ -490,6 +513,12 @@
     <Content Include="Scripts\popper-utils.min.js" />
     <Content Include="Scripts\popper-utils.min.js.map">
       <DependentUpon>popper-utils.min.js</DependentUpon>
+    </Content>
+    <Content Include="Scripts\popper.es5.js">
+      <DependentUpon>popper.js</DependentUpon>
+    </Content>
+    <Content Include="Scripts\popper.es5.min.js">
+      <DependentUpon>popper.es5.js</DependentUpon>
     </Content>
     <Content Include="Scripts\popper.js" />
     <Content Include="Scripts\popper.js.map">
@@ -2080,6 +2109,18 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+    <Content Include="webfonts\fa-brands-400.eot" />
+    <Content Include="webfonts\fa-brands-400.ttf" />
+    <Content Include="webfonts\fa-brands-400.woff" />
+    <Content Include="webfonts\fa-brands-400.woff2" />
+    <Content Include="webfonts\fa-regular-400.eot" />
+    <Content Include="webfonts\fa-regular-400.ttf" />
+    <Content Include="webfonts\fa-regular-400.woff" />
+    <Content Include="webfonts\fa-regular-400.woff2" />
+    <Content Include="webfonts\fa-solid-900.eot" />
+    <Content Include="webfonts\fa-solid-900.ttf" />
+    <Content Include="webfonts\fa-solid-900.woff" />
+    <Content Include="webfonts\fa-solid-900.woff2" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Web.config" />
@@ -2111,7 +2152,6 @@
     <TypeScriptCompile Include="Scripts\index.d.ts" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Frontend\" />
     <Folder Include="Views\MacroPartials\" />
   </ItemGroup>
   <PropertyGroup>
@@ -2148,11 +2188,9 @@
     <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.2.8.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.2.8.0\build\Microsoft.Net.Compilers.props'))" />
     <Error Condition="!Exists('..\packages\UmbracoCms.7.10.4\build\UmbracoCms.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\UmbracoCms.7.10.4\build\UmbracoCms.props'))" />
     <Error Condition="!Exists('..\packages\UmbracoCms.7.10.4\build\UmbracoCms.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\UmbracoCms.7.10.4\build\UmbracoCms.targets'))" />
-    <Error Condition="!Exists('..\packages\BuildWebCompiler.1.11.326\build\BuildWebCompiler.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\BuildWebCompiler.1.11.326\build\BuildWebCompiler.targets'))" />
   </Target>
   <Import Project="..\packages\AutoMapper.3.3.1\tools\AutoMapper.targets" Condition="Exists('..\packages\AutoMapper.3.3.1\tools\AutoMapper.targets')" />
   <Import Project="..\packages\UmbracoCms.7.10.4\build\UmbracoCms.targets" Condition="Exists('..\packages\UmbracoCms.7.10.4\build\UmbracoCms.targets')" />
-  <Import Project="..\packages\BuildWebCompiler.1.11.326\build\BuildWebCompiler.targets" Condition="Exists('..\packages\BuildWebCompiler.1.11.326\build\BuildWebCompiler.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

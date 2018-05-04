@@ -1,6 +1,24 @@
 ﻿[
+  /* JavaScript */
   {
     "inputFile": "Scripts/jquery-3.3.1.min.js",
-    "outputFile": "Scripts/jquery-3.3.1.es5.js"
+    "outputFile": "Scripts/jquery-3.3.1.min.es5.js"
+  },
+  {
+    "inputFile": "Scripts/bootstrap.bundle.min.js",
+    "outputFile": "Scripts/bootstrap.bundle.min.es5.js"
+  },
+  {
+    "inputFile": "Scripts/popper.js",
+    "outputFile": "Scripts/popper.es5.js"
+  },
+  {
+    "inputFile": "Scripts/popper-utils.js",
+    "outputFile": "Scripts/popper-utils.es5.js"
+  },
+  /* CSS */
+  {
+    "inputFile": "Frontend/fontawesome-all.less",
+    "outputFile": "Frontend/fontawesome-all.css"
   }
 ]

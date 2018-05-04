@@ -2,7 +2,10 @@
   {
     "outputFileName": "Content/bundle.css",
     "inputFiles": [
-      "Content/bootstrap.css"
+      "Content/bootstrap-reboot.css",
+      "Content/bootstrap.css",
+      "Content/bootstrap-grid.css",
+      "Frontend/fontawesome-all.css"
     ],
 
     "minify": {
@@ -15,7 +18,10 @@
   {
     "outputFileName": "Scripts/app.js",
     "inputFiles": [
-      "Scripts/jquery-3.3.1.js"
+      "Scripts/jquery-3.3.1.min.es5.js",
+      "Scripts/bootstrap.bundle.min.es5.js",
+      "Scripts/popper.es5.js",
+      "Scripts/popper-utils.es5.js"
     ]
   },
   {
