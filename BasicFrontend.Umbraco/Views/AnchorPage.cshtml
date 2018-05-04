@@ -1,0 +1,7 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.AnchorPage>
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@{
+	Layout = "_Layout.cshtml";
+}
+
+@Html.GetGridHtml(Model.Content, "gridLayout", "bootstrap3-fluid")

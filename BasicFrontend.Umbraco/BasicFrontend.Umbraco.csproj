@@ -323,6 +323,17 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\Umbraco.sdf" />
+    <Content Include="App_Plugins\Grid\Config\FanoeConfig.txt" />
+    <Content Include="App_Plugins\Grid\Editors\Views\article.html" />
+    <Content Include="App_Plugins\Grid\Editors\Views\banner.html" />
+    <Content Include="App_Plugins\Grid\Editors\Views\cta.html" />
+    <Content Include="App_Plugins\Grid\Editors\Views\eyecatcher.html" />
+    <Content Include="App_Plugins\Grid\Editors\Views\jumbotron.html" />
+    <Content Include="App_Plugins\Grid\Editors\Views\media_with_description.html" />
+    <Content Include="App_Plugins\Grid\Editors\Views\panel.html" />
+    <Content Include="App_Plugins\Grid\Editors\Views\quote_with_description.html" />
+    <Content Include="App_Plugins\Grid\Editors\Views\spotlight.html" />
+    <Content Include="App_Plugins\Grid\Umbraco.PropertyEditors.Grid.MediaController.js" />
     <Content Include="App_Plugins\ModelsBuilder\modelsbuilder.controller.js" />
     <Content Include="App_Plugins\ModelsBuilder\modelsbuilder.htm" />
     <Content Include="App_Plugins\ModelsBuilder\modelsbuilder.resource.js" />
@@ -403,6 +414,21 @@
     <Content Include="App_Data\umbraco.config" />
     <Content Include="App_Browsers\Form.browser" />
     <Content Include="App_Browsers\w3cvalidator.browser" />
+    <Content Include="App_Data\Models\all.dll.path" />
+    <Content Include="App_Data\Models\models.hash" />
+    <Content Include="App_Plugins\Grid\Editors\Render\article.cshtml" />
+    <Content Include="App_Plugins\Grid\Editors\Render\banner.cshtml" />
+    <Content Include="App_Plugins\Grid\Editors\Render\cta.cshtml" />
+    <Content Include="App_Plugins\Grid\Editors\Render\embed_videowrapper.cshtml" />
+    <Content Include="App_Plugins\Grid\Editors\Render\eyecatcher.cshtml" />
+    <Content Include="App_Plugins\Grid\Editors\Render\jumbotron.cshtml" />
+    <Content Include="App_Plugins\Grid\Editors\Render\media_round.cshtml" />
+    <Content Include="App_Plugins\Grid\Editors\Render\media_text_right.cshtml" />
+    <Content Include="App_Plugins\Grid\Editors\Render\media_wide.cshtml" />
+    <Content Include="App_Plugins\Grid\Editors\Render\panel.cshtml" />
+    <Content Include="App_Plugins\Grid\Editors\Render\quote_with_description.cshtml" />
+    <Content Include="App_Plugins\Grid\Editors\Render\spotlight.cshtml" />
+    <Content Include="App_Plugins\Grid\package.manifest" />
     <None Include="packages.config" />
     <Content Include="Scripts\app.js" />
     <Content Include="Scripts\app.min.js">
@@ -2040,6 +2066,14 @@
     <Content Include="Umbraco\Webservices\TagsAutoCompleteHandler.ashx" />
     <Content Include="Umbraco\Webservices\TreeDataService.ashx" />
     <Content Include="Umbraco\Xslt\Web.config" />
+    <Content Include="Views\AnchorPage.cshtml" />
+    <Content Include="Views\BlogOverview.cshtml" />
+    <Content Include="Views\BlogPost.cshtml" />
+    <Content Include="Views\ContentPage.cshtml" />
+    <Content Include="Views\LandingPage.cshtml" />
+    <Content Include="Views\Partials\Footer.cshtml" />
+    <Content Include="Views\Partials\Header.cshtml" />
+    <Content Include="Views\_Layout.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -2051,6 +2085,19 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Data\Models\AnchorPage.generated.cs" />
+    <Compile Include="App_Data\Models\BlogOverview.generated.cs" />
+    <Compile Include="App_Data\Models\BlogPost.generated.cs" />
+    <Compile Include="App_Data\Models\ContentGrid.generated.cs" />
+    <Compile Include="App_Data\Models\ContentPage.generated.cs" />
+    <Compile Include="App_Data\Models\File.generated.cs" />
+    <Compile Include="App_Data\Models\Folder.generated.cs" />
+    <Compile Include="App_Data\Models\Image.generated.cs" />
+    <Compile Include="App_Data\Models\LandingPage.generated.cs" />
+    <Compile Include="App_Data\Models\Member.generated.cs" />
+    <Compile Include="App_Data\Models\PageDefaults.generated.cs" />
+    <Compile Include="App_Data\Models\SiteGlobal.generated.cs" />
+    <Compile Include="App_Data\Models\SiteStyling.generated.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -2064,7 +2111,6 @@
     <TypeScriptCompile Include="Scripts\index.d.ts" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\Models\" />
     <Folder Include="Frontend\" />
     <Folder Include="Views\MacroPartials\" />
   </ItemGroup>

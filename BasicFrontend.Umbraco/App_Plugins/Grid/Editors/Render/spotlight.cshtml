@@ -1,0 +1,50 @@
+﻿@using umbraco.cms.helpers
+@inherits Umbraco.Web.Mvc.UmbracoViewPage<dynamic>
+
+@*
+    https://our.umbraco.org/forum/umbraco-7/using-umbraco-7/65278-Creating-grid-editor-with-Image-upload-
+*@
+
+@{
+    var url = Model.value.image;
+    if (Model.editor.config != null && Model.editor.config.size != null)
+    {
+        url += "?width=" + Model.editor.config.size.width;
+        url += "&height=" + Model.editor.config.size.height;
+
+        if (Model.value.focalPoint != null)
+        {
+            url += "&center=" + Model.value.focalPoint.top + "," + Model.value.focalPoint.left;
+            url += "&mode=crop";
+        }
+    }
+}
+
+@if (Model.editor.config.markup != null)
+{
+    string markup = Model.editor.config.markup.ToString();
+
+    markup = markup.Replace("#value#", Model.value.ToString());
+    markup = markup.Replace("#style#", Model.editor.config.style.ToString());
+
+    <text>
+        @Html.Raw(markup)
+    </text>
+}
+else
+{
+    <text>
+        <section class="spotlight equal">
+            <div class="image">
+                <img class="wide" src="@url" alt="@Model.value.caption">
+            </div>
+            <div class="content">
+                <h2>@Model.value.headline</h2>
+                <p>@Model.value.paragraph</p>
+                <ul class="actions">
+                    <li><a href="@Model.value.cta_button_url" class="button special">@Model.value.cta_button_text</a></li>
+                </ul>
+            </div>
+        </section>
+    </text>
+}

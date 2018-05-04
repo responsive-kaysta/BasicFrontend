@@ -1,0 +1,25 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@using System.Web.Mvc;
+
+@{
+    var homePage = Model.Content.AncestorOrSelf(1);
+    var configPage = homePage.Descendant<SiteGlobal>();
+}
+
+<ul class="icons">
+
+    <li><a href="/" class="fab fa-twitter"><span class="label"></span></a></li>
+    <li><a href="/" class="fab fa-xing"><span class="label"></span></a></li>
+    <li><a href="/" class="fab fa-facebook"><span class="label"></span></a></li>
+    <li><a href="/" class="fab fa-linkedin"><span class="label"></span></a></li>
+
+</ul>
+
+<ul class="copyright">
+
+    <li>&copy; @DateTime.Now.Year @configPage.SiteAuthor</li>
+    <li>@configPage.SiteTitle</li>
+
+</ul>
