@@ -1,0 +1,24 @@
+﻿/* container.less */
+/* global.less */
+.container {
+  padding-right: 0;
+  padding-left: 0;
+  padding-top: 0;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 2em;
+}
+@media screen and (max-width: 736px) {
+  .container {
+    padding: 2em;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+@media screen and (max-width: 468px) {
+  .container {
+    padding: 2em;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}

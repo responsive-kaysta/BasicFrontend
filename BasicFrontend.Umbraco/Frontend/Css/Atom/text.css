@@ -1,0 +1,65 @@
+﻿/* text.less */
+/* global.less */
+p {
+  font-size: 1.0rem;
+  font-weight: normal;
+  line-height: 1.4;
+  letter-spacing: 0.2px;
+}
+p {
+  color: red;
+}
+p {
+  margin-bottom: 1.0rem;
+}
+strong,
+b {
+  color: red;
+  font-weight: 600;
+}
+em,
+i {
+  font-style: italic;
+}
+sub {
+  font-size: 0.8em;
+  position: relative;
+  top: 0.5em;
+}
+sup {
+  font-size: 0.8em;
+  position: relative;
+  top: -0.5em;
+}
+.lead {
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.6;
+}
+.lead {
+  margin: 0;
+}
+.lead {
+  margin-bottom: 1.0rem;
+}
+.small {
+  font-size: .85rem;
+}
+.headline {
+  font-size: 62px;
+  margin-bottom: 1.0rem;
+}
+.tagline {
+  font-weight: 100;
+  font-size: 40px;
+  margin-bottom: 1.0rem;
+}
+.align-left {
+  text-align: left;
+}
+.align-center {
+  text-align: center;
+}
+.align-right {
+  text-align: right;
+}

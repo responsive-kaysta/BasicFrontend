@@ -3,26 +3,66 @@
   {
     "outputFileName": "Content/bundle.css",
     "inputFiles": [
-      "Content/bootstrap-reboot.css",
+      /* Basics, Libraries */
       "Content/bootstrap.css",
-      "Content/bootstrap-grid.css",
       "Frontend/fontawesome-all.css",
+      "Frontend/Css/reset.css",
+      "Frontend/Css/ie10-viewport-bug-workaround.css",
 
-      "Frontend/Css/reset.less",
-      "Frontend/Css/ie10-viewport-bug-workaround.less",
+      /* Plugins */
+      "Frontend/Css/Plugins/Tooltipster/tooltipster.bundle.css",
+      "Frontend/Css/Plugins/Tooltipster/Themes/tooltipster-sideTip-punk.min.css",
 
-      "Frontend/Css/global.less",
+      /* Custom Styles */
+      "Frontend/Css/style.css",
 
-      "Frontend/Css/style.less"
+      /* Atom */
+      "Frontend/Css/Atom/a.css",
+      "Frontend/Css/Atom/abstract.css",
+      "Frontend/Css/Atom/blockquote.css",
+      "Frontend/Css/Atom/code.css",
+      "Frontend/Css/Atom/h.css",
+      "Frontend/Css/Atom/hr.css",
+      "Frontend/Css/Atom/image.css",
+      "Frontend/Css/Atom/pre.css",
+      "Frontend/Css/Atom/text.css",
+      "Frontend/Css/Atom/triangle.css",
+
+      /* Molekule */
+      "Frontend/Css/Molekule/box.css",
+      "Frontend/Css/Molekule/button.css",
+      "Frontend/Css/Molekule/list.css",
+      "Frontend/Css/Molekule/row.css",
+      "Frontend/Css/Molekule/seperator.css",
+
+      /* Organism */
+      "Frontend/Css/Organism/blogarchive.css",
+      "Frontend/Css/Organism/breadcrumb.css",
+      "Frontend/Css/Organism/container.css",
+      "Frontend/Css/Organism/jumbotron.css",
+      "Frontend/Css/Organism/panel.css",
+      "Frontend/Css/Organism/spotlight.css",
+      "Frontend/Css/Organism/wrapper.css",
+
+      /* Colours */
+      "Frontend/Css/Colours/blue.css",
+      "Frontend/Css/Colours/dark.css",
+      "Frontend/Css/Colours/light.css",
+      "Frontend/Css/Colours/purple.css",
+      "Frontend/Css/Colours/yellow.css",
+
+      /* Template */
+      "Frontend/Css/Template/style-style1.css",
+      "Frontend/Css/Template/style-style3.css",
+      "Frontend/Css/Template/style-style5.css"
+
     ],
-
     "minify": {
       "enabled": true,
       "commentMode": "none"
     },
     "sourceMap": true
   },
-
 
   {
     "outputFileName": "Scripts/app.js",
@@ -44,12 +84,11 @@
 
       "Frontend/JavaScript/global.es5.js"
     ],
-
     "minify": {
       "enabled": true,
       "commentMode": "none"
     },
     "sourceMap": true
-
   }
+
 ]

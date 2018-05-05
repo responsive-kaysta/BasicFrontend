@@ -15,8 +15,7 @@
 
         document.cookie = name + "=" + value + expires + "; path=/";
     }
-
-
+    
     function readCookie(name) {
         var nameEq = name + "=";
         var ca = document.cookie.split(';');
@@ -27,8 +26,7 @@
         }
         return null;
     }
-
-
+    
     function eraseCookie(name) {
         createCookie(name, "", -1);
     }
@@ -68,7 +66,6 @@
         trigger: 'click',
         interactive: true
     });
-
 
     $('ul.tooltip_ul li:even').addClass('even');
 

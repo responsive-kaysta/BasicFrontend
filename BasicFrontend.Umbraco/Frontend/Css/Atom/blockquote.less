@@ -1,0 +1,40 @@
+﻿/* blockquote.less */
+
+@import "../global.less";
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+blockquote {
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.6;
+    letter-spacing: 0.2px;
+}
+
+blockquote {
+    color: @base-color;
+}
+
+blockquote:before, blockquote:after {
+    display: inline-block;
+    padding: 0 2px;
+    font-size: 1.4rem;
+    content: '"';
+}
+
+blockquote {
+    padding: 10px;
+    text-align: center;
+    position: relative;    
+}
+
+blockquote + * {
+    padding: 30px 10px;
+}

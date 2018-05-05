@@ -1,0 +1,22 @@
+﻿/* a.less */
+
+@import "../global.less";
+
+a {
+    -moz-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+    -webkit-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+    -ms-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+    transition: color 0.2s ease, border-bottom-color 0.2s ease;
+    border-bottom: dotted 1px;
+    
+    text-decoration: none;
+
+    font-family: @base-font-family;
+    text-transform: @base-text-transform;
+
+    color: @base-color;
+}
+
+a:hover {
+    border-bottom-color: transparent;
+}

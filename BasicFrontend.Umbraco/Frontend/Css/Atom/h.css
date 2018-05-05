@@ -1,0 +1,60 @@
+﻿/* h.less */
+/* global.less */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: red;
+  font-weight: 800;
+  letter-spacing: 0.225em;
+  line-height: 1em;
+  margin: 0 0 1em 0;
+  text-transform: uppercase;
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: inherit;
+  text-decoration: none;
+}
+h2 {
+  font-size: 1.35em;
+  line-height: 1.75em;
+}
+h4 {
+  font-size: 1em;
+  line-height: 1.5em;
+}
+h5 {
+  font-size: 0.8em;
+  line-height: 1.5em;
+}
+h6 {
+  font-size: 0.7em;
+  line-height: 1.5em;
+}
+@media screen and (max-width: 736px) {
+  h2 {
+    font-size: 1.1em;
+    line-height: 1.65em;
+  }
+  h3 {
+    font-size: 1.15em;
+    line-height: 1.75em;
+  }
+}
+@media screen and (max-width: 736px) {
+  h2 {
+    font-size: 1.1em;
+    line-height: 1.65em;
+  }
+  h3 {
+    font-size: 1.15em;
+    line-height: 1.75em;
+  }
+}
