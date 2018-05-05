@@ -5,22 +5,25 @@
 (function ($) {
 
     function createCookie(name, value, days) {
+        var expires;
         if (days) {
             var date = new Date();
             date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
-            var expires = "; expires=" + date.toGMTString();
-        } else var expires = "";
+            expires = "; expires=" + date.toGMTString();
+        } else {
+            expires = "";
+        }
 
         document.cookie = name + "=" + value + expires + "; path=/";
     }
 
     function readCookie(name) {
-        var nameEQ = name + "=";
+        var nameEq = name + "=";
         var ca = document.cookie.split(';');
         for (var i = 0; i < ca.length; i++) {
             var c = ca[i];
             while (c.charAt(0) == ' ') c = c.substring(1, c.length);
-            if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+            if (c.indexOf(nameEq) == 0) return c.substring(nameEq.length, c.length);
         }
         return null;
     }
@@ -42,6 +45,16 @@
             vars[hash[0]] = hash[1];
         }
     }
+
+    /*
+        // Disable animations/transitions until the page has loaded.
+        $body.addClass('is-loading');
+          $window.on('load', function () {
+            window.setTimeout(function () {
+                $body.removeClass('is-loading');
+            }, 250);
+        });
+    */
 
     $('.tooltipster').tooltipster({
         animation: 'fade',

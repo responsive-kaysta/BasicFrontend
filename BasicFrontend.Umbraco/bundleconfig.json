@@ -6,7 +6,14 @@
       "Content/bootstrap-reboot.css",
       "Content/bootstrap.css",
       "Content/bootstrap-grid.css",
-      "Frontend/fontawesome-all.css"
+      "Frontend/fontawesome-all.css",
+
+      "Frontend/Css/reset.less",
+      "Frontend/Css/ie10-viewport-bug-workaround.less",
+
+      "Frontend/Css/global.less",
+
+      "Frontend/Css/style.less"
     ],
 
     "minify": {
@@ -20,22 +27,19 @@
   {
     "outputFileName": "Scripts/app.js",
     "inputFiles": [
-      "Scripts/jquery-3.3.1.min.es5.js",
-      "Scripts/jquery-3.3.1.intellisense.es5.js",
+      "Scripts/jquery-3.3.1.min.js",
 
-      "Scripts/bootstrap.bundle.min.es5.js",
+      "Scripts/bootstrap.bundle.min.js",
 
-      "Scripts/popper.es5.js",
-      "Scripts/popper-utils.es5.js",
+      "Frontend/JavaScript/Plugins/jQuery/jquery.scrollex.min.js",
+      "Frontend/JavaScript/Plugins/jQuery/jquery.scrolly.min.js",
 
-      "Frontend/JavaScript/Plugins/jQuery/jquery.scrollex.min.es5.js",
-      "Frontend/JavaScript/Plugins/jQuery/jquery.scrolly.min.es5.js",
+      "Frontend/JavaScript/Plugins/Tooltipster/tooltipster.bundle.js",
 
-      "Frontend/JavaScript/Plugins/Tooltipster/tooltipster.bundle.es5.js",
+      "Frontend/JavaScript/Plugins/skel/skel.min.js",
+      "Frontend/JavaScript/Plugins/skel/skel-viewport.js",
+      "Frontend/JavaScript/Plugins/skel/skel-layout.min.js",
 
-      "Frontend/JavaScript/Plugins/skel/skel.min.es5.js",
-      "Frontend/JavaScript/Plugins/skel/skel-viewport.es5.js",
-      "Frontend/JavaScript/Plugins/skel/skel-layout.min.es5.js",
       "Frontend/JavaScript/Plugins/skel/init.es5.js",
 
       "Frontend/JavaScript/global.es5.js"

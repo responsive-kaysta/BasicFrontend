@@ -24,16 +24,6 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
             $banner = $('#banner'),
             $header = $('#header');
 
-        /*
-        // Disable animations/transitions until the page has loaded.
-        $body.addClass('is-loading');
-          $window.on('load', function () {
-            window.setTimeout(function () {
-                $body.removeClass('is-loading');
-            }, 250);
-        });
-        */
-
         // Mobile?
         if (skel.vars.isMobile) $body.addClass('is-mobile');else skel.on('-medium !medium', function () {
             $body.removeClass('is-mobile');
