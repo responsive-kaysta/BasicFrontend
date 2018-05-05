@@ -29,11 +29,13 @@
     "outputFile": "Frontend/Css/global.css"
   },
 
+
   /* Custom CSS */
   {
     "inputFile": "Frontend/Css/style.less",
     "outputFile": "Frontend/Css/style.css"
   },
+
 
   /* Colours */
   {
@@ -57,19 +59,6 @@
     "outputFile": "Frontend/Css/Colours/yellow.css"
   },
 
-  /* Template */
-  {
-    "inputFile": "Frontend/Css/Template/style-style1.less",
-    "outputFile": "Frontend/Css/Template/style-style1.css"
-  },
-  {
-    "inputFile": "Frontend/Css/Template/style-style3.less",
-    "outputFile": "Frontend/Css/Template/style-style3.css"
-  },
-  {
-    "inputFile": "Frontend/Css/Template/style-style5.less",
-    "outputFile": "Frontend/Css/Template/style-style5.css"
-  },
 
   /* Atom */
   {
@@ -113,6 +102,7 @@
     "outputFile": "Frontend/Css/Atom/triangle.css"
   },
 
+
   /* Molekule */
   {
     "inputFile": "Frontend/Css/Molekule/box.less",
@@ -135,7 +125,16 @@
     "outputFile": "Frontend/Css/Molekule/seperator.css"
   },
 
+
   /* Organism */
+  {
+    "inputFile": "Frontend/Css/Organism/article.less",
+    "outputFile": "Frontend/Css/Organism/article.css"
+  },
+  {
+    "inputFile": "Frontend/Css/Organism/banner.less",
+    "outputFile": "Frontend/Css/Organism/banner.css"
+  },
   {
     "inputFile": "Frontend/Css/Organism/blogarchive.less",
     "outputFile": "Frontend/Css/Organism/blogarchive.css"
@@ -149,21 +148,73 @@
     "outputFile": "Frontend/Css/Organism/container.css"
   },
   {
+    "inputFile": "Frontend/Css/Organism/cta.less",
+    "outputFile": "Frontend/Css/Organism/cta.css"
+  },
+  {
+    "inputFile": "Frontend/Css/Organism/features.less",
+    "outputFile": "Frontend/Css/Organism/features.css"
+  },
+  {
+    "inputFile": "Frontend/Css/Organism/footer.less",
+    "outputFile": "Frontend/Css/Organism/footer.css"
+  },
+  {
+    "inputFile": "Frontend/Css/Organism/header.less",
+    "outputFile": "Frontend/Css/Organism/header.css"
+  },
+  {
+    "inputFile": "Frontend/Css/Organism/icon.less",
+    "outputFile": "Frontend/Css/Organism/icon.css"
+  },
+  {
     "inputFile": "Frontend/Css/Organism/jumbotron.less",
     "outputFile": "Frontend/Css/Organism/jumbotron.css"
+  },
+  {
+    "inputFile": "Frontend/Css/Organism/menu.less",
+    "outputFile": "Frontend/Css/Organism/menu.css"
   },
   {
     "inputFile": "Frontend/Css/Organism/panel.less",
     "outputFile": "Frontend/Css/Organism/panel.css"
   },
   {
+    "inputFile": "Frontend/Css/Organism/section.less",
+    "outputFile": "Frontend/Css/Organism/section.css"
+  },
+  {
     "inputFile": "Frontend/Css/Organism/spotlight.less",
     "outputFile": "Frontend/Css/Organism/spotlight.css"
+  },
+  {
+    "inputFile": "Frontend/Css/Organism/table.less",
+    "outputFile": "Frontend/Css/Organism/table.css"
   },
   {
     "inputFile": "Frontend/Css/Organism/wrapper.less",
     "outputFile": "Frontend/Css/Organism/wrapper.css"
   },
+
+
+  /* Template */
+  {
+    "inputFile": "Frontend/Css/Template/form.less",
+    "outputFile": "Frontend/Css/Template/form.css"
+  },
+  {
+    "inputFile": "Frontend/Css/Template/style-style1.less",
+    "outputFile": "Frontend/Css/Template/style-style1.css"
+  },
+  {
+    "inputFile": "Frontend/Css/Template/style-style3.less",
+    "outputFile": "Frontend/Css/Template/style-style3.css"
+  },
+  {
+    "inputFile": "Frontend/Css/Template/style-style5.less",
+    "outputFile": "Frontend/Css/Template/style-style5.css"
+  },
+
 
   /* Plugins */
   {

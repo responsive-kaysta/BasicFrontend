@@ -502,6 +502,18 @@
     <Content Include="Frontend\Css\Molekule\seperator.min.css">
       <DependentUpon>seperator.css</DependentUpon>
     </Content>
+    <Content Include="Frontend\Css\Organism\article.css">
+      <DependentUpon>article.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Organism\article.min.css">
+      <DependentUpon>article.css</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Organism\banner.css">
+      <DependentUpon>banner.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Organism\banner.min.css">
+      <DependentUpon>banner.css</DependentUpon>
+    </Content>
     <Content Include="Frontend\Css\Organism\blogarchive.css">
       <DependentUpon>blogarchive.less</DependentUpon>
     </Content>
@@ -520,6 +532,36 @@
     <Content Include="Frontend\Css\Organism\container.min.css">
       <DependentUpon>container.css</DependentUpon>
     </Content>
+    <Content Include="Frontend\Css\Organism\cta.css">
+      <DependentUpon>cta.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Organism\cta.min.css">
+      <DependentUpon>cta.css</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Organism\features.css">
+      <DependentUpon>features.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Organism\features.min.css">
+      <DependentUpon>features.css</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Organism\footer.css">
+      <DependentUpon>footer.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Organism\footer.min.css">
+      <DependentUpon>footer.css</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Organism\header.css">
+      <DependentUpon>header.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Organism\header.min.css">
+      <DependentUpon>header.css</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Organism\icon.css">
+      <DependentUpon>icon.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Organism\icon.min.css">
+      <DependentUpon>icon.css</DependentUpon>
+    </Content>
     <Content Include="Frontend\Css\Organism\jumbotron.css">
       <DependentUpon>jumbotron.less</DependentUpon>
     </Content>
@@ -528,16 +570,34 @@
     <Content Include="Frontend\Css\Organism\breadcrumb.less" />
     <Content Include="Frontend\Css\Organism\container.less" />
     <Content Include="Frontend\Css\Molekule\list.less" />
+    <Content Include="Frontend\Css\Organism\menu.css">
+      <DependentUpon>menu.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Organism\menu.min.css">
+      <DependentUpon>menu.css</DependentUpon>
+    </Content>
     <Content Include="Frontend\Css\Organism\panel.css">
       <DependentUpon>panel.less</DependentUpon>
     </Content>
     <Content Include="Frontend\Css\Organism\panel.less" />
     <Content Include="Frontend\Css\Molekule\row.less" />
     <Content Include="Frontend\Css\Molekule\seperator.less" />
+    <Content Include="Frontend\Css\Organism\section.css">
+      <DependentUpon>section.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Organism\section.min.css">
+      <DependentUpon>section.css</DependentUpon>
+    </Content>
     <Content Include="Frontend\Css\Organism\spotlight.css">
       <DependentUpon>spotlight.less</DependentUpon>
     </Content>
     <Content Include="Frontend\Css\Organism\spotlight.less" />
+    <Content Include="Frontend\Css\Organism\table.css">
+      <DependentUpon>table.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Organism\table.min.css">
+      <DependentUpon>table.css</DependentUpon>
+    </Content>
     <Content Include="Frontend\Css\Organism\wrapper.css">
       <DependentUpon>wrapper.less</DependentUpon>
     </Content>
@@ -551,6 +611,16 @@
     </Content>
     <Content Include="Frontend\Css\Plugins\Tooltipster\tooltipster.less" />
     <Content Include="Frontend\Css\Plugins\Tooltipster\tooltipster.main.less" />
+    <Content Include="Frontend\Css\Organism\section.less" />
+    <Content Include="Frontend\Css\Organism\article.less" />
+    <Content Include="Frontend\Css\Organism\header.less" />
+    <Content Include="Frontend\Css\Organism\icon.less" />
+    <Content Include="Frontend\Css\Organism\table.less" />
+    <Content Include="Frontend\Css\Organism\features.less" />
+    <Content Include="Frontend\Css\Organism\menu.less" />
+    <Content Include="Frontend\Css\Organism\banner.less" />
+    <Content Include="Frontend\Css\Organism\cta.less" />
+    <Content Include="Frontend\Css\Organism\footer.less" />
     <None Include="Frontend\Css\reset.less" />
     <None Include="Frontend\Css\style.less" />
     <Content Include="Frontend\Css\Atom\a.min.css">
@@ -608,6 +678,12 @@
     </Content>
     <Content Include="Frontend\Css\style.min.css">
       <DependentUpon>style.css</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Template\form.css">
+      <DependentUpon>form.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Template\form.min.css">
+      <DependentUpon>form.css</DependentUpon>
     </Content>
     <Content Include="Frontend\Css\Template\style-style1.css">
       <DependentUpon>style-style1.less</DependentUpon>
@@ -720,6 +796,7 @@
     <Content Include="Frontend\Css\Template\style-style1.less" />
     <Content Include="Frontend\Css\Template\style-style3.less" />
     <Content Include="Frontend\Css\Template\style-style5.less" />
+    <Content Include="Frontend\Css\Template\form.less" />
     <None Include="packages.config" />
     <Content Include="Scripts\app.js" />
     <Content Include="Scripts\bootstrap.bundle.js" />

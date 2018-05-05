@@ -36,12 +36,22 @@
       "Frontend/Css/Molekule/seperator.css",
 
       /* Organism */
+      "Frontend/Css/Organism/article.css",
+      "Frontend/Css/Organism/banner.css",
       "Frontend/Css/Organism/blogarchive.css",
       "Frontend/Css/Organism/breadcrumb.css",
       "Frontend/Css/Organism/container.css",
+      "Frontend/Css/Organism/cta.css",
+      "Frontend/Css/Organism/features.css",
+      "Frontend/Css/Organism/footer.css",
+      "Frontend/Css/Organism/header.css",
+      "Frontend/Css/Organism/icon.css",
       "Frontend/Css/Organism/jumbotron.css",
+      "Frontend/Css/Organism/menu.css",
       "Frontend/Css/Organism/panel.css",
+      "Frontend/Css/Organism/section.css",
       "Frontend/Css/Organism/spotlight.css",
+      "Frontend/Css/Organism/table.css",
       "Frontend/Css/Organism/wrapper.css",
 
       /* Colours */
@@ -52,6 +62,7 @@
       "Frontend/Css/Colours/yellow.css",
 
       /* Template */
+      "Frontend/Css/Template/form.css",
       "Frontend/Css/Template/style-style1.css",
       "Frontend/Css/Template/style-style3.css",
       "Frontend/Css/Template/style-style5.css"
