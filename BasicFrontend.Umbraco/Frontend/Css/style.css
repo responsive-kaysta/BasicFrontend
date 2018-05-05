@@ -5,7 +5,7 @@ body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Lato', Arial, sans-serif;
   text-transform: lowercase;
   background: #2e3842;
-  color: #ffffff;
+  color: #d3d3d3;
 }
 html,
 body,
@@ -112,6 +112,7 @@ section {
 }
 body {
   -webkit-text-size-adjust: none;
+  text-size-adjust: none;
 }
 *,
 *:before,

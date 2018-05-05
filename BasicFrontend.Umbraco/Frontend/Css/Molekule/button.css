@@ -10,16 +10,16 @@ a.button {
 }
 a.button:hover {
   background: black;
-  color: #ffffff;
+  color: #d3d3d3;
   text-decoration: none !important;
 }
 a.button.fill {
   background: black;
-  color: #ffffff;
+  color: #d3d3d3;
 }
 a.button.fill:hover {
   background: rgba(0, 0, 0, 0.5);
-  color: #ffffff;
+  color: #d3d3d3;
   text-decoration: none;
 }
 input[type="submit"],
@@ -39,7 +39,7 @@ button,
   border-radius: 3px;
   border: 0;
   box-shadow: inset 0 0 0 2px white;
-  color: #ffffff;
+  color: #d3d3d3;
   cursor: pointer;
   display: inline-block;
   font-size: 0.8em;
@@ -106,7 +106,7 @@ button.special,
 .button.special {
   background-color: #ed4933;
   box-shadow: none !important;
-  color: #ffffff !important;
+  color: #d3d3d3 !important;
 }
 input[type="submit"].special:hover,
 input[type="reset"].special:hover,
