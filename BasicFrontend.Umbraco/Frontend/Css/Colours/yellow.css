@@ -1,9 +1,10 @@
-﻿/* yellow.less */
+/* yellow.less */
+/* global.less */
 .yellow {
   background: #FFCC01;
 }
 .yellow * {
-  color: #000;
+  color: black;
 }
 .yellow p {
   color: black;
@@ -20,8 +21,8 @@
 }
 div.page-header {
   width: 100%;
-  border-bottom: whitesmoke solid thin;
+  border-bottom: black solid thin;
 }
 .purple div.page-header > h1 {
-  color: whitesmoke;
+  color: black;
 }

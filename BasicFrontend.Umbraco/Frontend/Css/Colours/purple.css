@@ -1,6 +1,7 @@
-﻿/* purple.less */
+/* purple.less */
+/* global.less */
 .purple {
-  background: #C2357B;
+  background: #C23577;
 }
 .purple * {
   color: whitesmoke;

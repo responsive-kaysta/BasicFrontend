@@ -15340,6 +15340,7 @@ table.alt tfoot {
   }
 }
 /* blue.less */
+/* global.less */
 .blue {
   background: #51c1f5;
 }
@@ -15367,34 +15368,37 @@ div.page-header {
   color: darkgray;
 }
 /* dark.less */
+/* global.less */
 .dark {
   background: #333333;
 }
 .dark * {
-  color: #ccc;
+  color: #cccccc;
 }
 .dark p {
-  color: #ccc;
+  color: #cccccc;
 }
 .dark h2 {
-  color: #ccc;
+  color: #cccccc;
 }
 .dark a {
-  color: #ccc;
+  color: #cccccc;
   width: 100%;
 }
 .dark .date {
   text-align: right;
-  color: #ccc;
+  color: #cccccc;
 }
 div.page-header {
   width: 100%;
-  border-bottom: #ccc solid thin;
+  border-bottom: #cccccc solid thin;
 }
 .dark div.page-header > h1 {
-  color: #ccc;
+  color: #cccccc;
 }
+
 /* light.less */
+/* global.less */
 .light {
   background: white;
 }
@@ -15421,9 +15425,11 @@ div.page-header {
 .light div.page-header > h1 {
   color: black;
 }
+
 /* purple.less */
+/* global.less */
 .purple {
-  background: #C2357B;
+  background: #C23577;
 }
 .purple * {
   color: whitesmoke;
@@ -15448,12 +15454,14 @@ div.page-header {
 .purple div.page-header > h1 {
   color: whitesmoke;
 }
+
 /* yellow.less */
+/* global.less */
 .yellow {
   background: #FFCC01;
 }
 .yellow * {
-  color: #000;
+  color: black;
 }
 .yellow p {
   color: black;
@@ -15470,11 +15478,12 @@ div.page-header {
 }
 div.page-header {
   width: 100%;
-  border-bottom: whitesmoke solid thin;
+  border-bottom: black solid thin;
 }
 .purple div.page-header > h1 {
-  color: whitesmoke;
+  color: black;
 }
+
 /* form.less */
 /* global.less */
 form {

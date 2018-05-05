@@ -1,36 +1,38 @@
 ﻿/* dark.less */
 
+@import "../global.less";
+
 .dark {
-    background: #333333;
+    background: @color-dark-bg-color;
 }
 
 .dark * {
-    color:#ccc;
+    color:@color-dark-color;
 }
 
 .dark p {
-    color: #ccc;
+    color: @color-dark-color;
 }
 
 .dark h2 {
-    color: #ccc;
+    color: @color-dark-color;
 }
 
 .dark a {
-    color: #ccc;
+    color: @color-dark-color;
     width: 100%;
 }
 
 .dark .date{
     text-align: right;
-    color: #ccc;
+    color: @color-dark-color;
 }
 
 div.page-header {
     width: 100%;
-    border-bottom: #ccc solid thin;
+    border-bottom: @color-dark-color solid thin;
 }
 
 .dark div.page-header > h1 {
-    color: #ccc;
+    color: @color-dark-color;
 }

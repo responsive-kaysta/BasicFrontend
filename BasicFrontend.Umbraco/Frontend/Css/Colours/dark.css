@@ -1,28 +1,29 @@
-﻿/* dark.less */
+/* dark.less */
+/* global.less */
 .dark {
   background: #333333;
 }
 .dark * {
-  color: #ccc;
+  color: #cccccc;
 }
 .dark p {
-  color: #ccc;
+  color: #cccccc;
 }
 .dark h2 {
-  color: #ccc;
+  color: #cccccc;
 }
 .dark a {
-  color: #ccc;
+  color: #cccccc;
   width: 100%;
 }
 .dark .date {
   text-align: right;
-  color: #ccc;
+  color: #cccccc;
 }
 div.page-header {
   width: 100%;
-  border-bottom: #ccc solid thin;
+  border-bottom: #cccccc solid thin;
 }
 .dark div.page-header > h1 {
-  color: #ccc;
+  color: #cccccc;
 }
