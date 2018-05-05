@@ -639,12 +639,6 @@
     <Content Include="Frontend\Css\Atom\blockquote.min.css">
       <DependentUpon>blockquote.css</DependentUpon>
     </Content>
-    <Content Include="Frontend\Css\global.css">
-      <DependentUpon>global.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\global.min.css">
-      <DependentUpon>global.css</DependentUpon>
-    </Content>
     <Content Include="Frontend\Css\ie10-viewport-bug-workaround.css">
       <DependentUpon>ie10-viewport-bug-workaround.less</DependentUpon>
     </Content>

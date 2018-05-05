@@ -24,11 +24,6 @@
     "inputFile": "Frontend/Css/ie10-viewport-bug-workaround.less",
     "outputFile": "Frontend/Css/ie10-viewport-bug-workaround.css"
   },
-  {
-    "inputFile": "Frontend/Css/global.less",
-    "outputFile": "Frontend/Css/global.css"
-  },
-
 
   /* Custom CSS */
   {
