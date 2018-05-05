@@ -55,6 +55,9 @@ namespace BasicFrontend.Controllers
 
         public ActionResult Me()
         {
+            ViewBag.BodyClass = "landing";
+            ViewBag.HeaderClass = "alt";
+
             return View();
         }
 
