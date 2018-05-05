@@ -1,4 +1,5 @@
 ﻿[
+
   {
     "outputFileName": "Content/bundle.css",
     "inputFiles": [
@@ -15,25 +16,36 @@
     "sourceMap": true
   },
 
+
   {
     "outputFileName": "Scripts/app.js",
     "inputFiles": [
       "Scripts/jquery-3.3.1.min.es5.js",
+      "Scripts/jquery-3.3.1.intellisense.es5.js",
+
       "Scripts/bootstrap.bundle.min.es5.js",
+
       "Scripts/popper.es5.js",
-      "Scripts/popper-utils.es5.js"
-    ]
-  },
-  {
-    "outputFileName": "Content/bundle.min.css",
-    "inputFiles": [
-      "Content/bundle.css"
-    ]
-  },
-  {
-    "outputFileName": "Scripts/app.min.js",
-    "inputFiles": [
-      "Scripts/app.js"
-    ]
+      "Scripts/popper-utils.es5.js",
+
+      "Frontend/JavaScript/Plugins/jQuery/jquery.scrollex.min.es5.js",
+      "Frontend/JavaScript/Plugins/jQuery/jquery.scrolly.min.es5.js",
+
+      "Frontend/JavaScript/Plugins/Tooltipster/tooltipster.bundle.es5.js",
+
+      "Frontend/JavaScript/Plugins/skel/skel.min.es5.js",
+      "Frontend/JavaScript/Plugins/skel/skel-viewport.es5.js",
+      "Frontend/JavaScript/Plugins/skel/skel-layout.min.es5.js",
+      "Frontend/JavaScript/Plugins/skel/init.es5.js",
+
+      "Frontend/JavaScript/global.es5.js"
+    ],
+
+    "minify": {
+      "enabled": true,
+      "commentMode": "none"
+    },
+    "sourceMap": true
+
   }
 ]

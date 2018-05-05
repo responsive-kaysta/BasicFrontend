@@ -397,6 +397,64 @@
     <Content Include="Frontend\fontawesome-all.min.css">
       <DependentUpon>fontawesome-all.css</DependentUpon>
     </Content>
+    <Content Include="Frontend\JavaScript\global.es5.js">
+      <DependentUpon>global.js</DependentUpon>
+    </Content>
+    <Content Include="Frontend\JavaScript\global.es5.min.js">
+      <DependentUpon>global.es5.js</DependentUpon>
+    </Content>
+    <Content Include="Frontend\JavaScript\global.js" />
+    <Content Include="Frontend\JavaScript\Plugins\jQuery\jquery.scrollex.min.es5.js">
+      <DependentUpon>jquery.scrollex.min.js</DependentUpon>
+    </Content>
+    <Content Include="Frontend\JavaScript\Plugins\jQuery\jquery.scrollex.min.es5.min.js">
+      <DependentUpon>jquery.scrollex.min.es5.js</DependentUpon>
+    </Content>
+    <Content Include="Frontend\JavaScript\Plugins\jQuery\jquery.scrolly.min.es5.js">
+      <DependentUpon>jquery.scrolly.min.js</DependentUpon>
+    </Content>
+    <Content Include="Frontend\JavaScript\Plugins\jQuery\jquery.scrolly.min.es5.min.js">
+      <DependentUpon>jquery.scrolly.min.es5.js</DependentUpon>
+    </Content>
+    <Content Include="Frontend\JavaScript\Plugins\skel\init.es5.js">
+      <DependentUpon>init.js</DependentUpon>
+    </Content>
+    <Content Include="Frontend\JavaScript\Plugins\skel\init.es5.min.js">
+      <DependentUpon>init.es5.js</DependentUpon>
+    </Content>
+    <Content Include="Frontend\JavaScript\Plugins\skel\init.js" />
+    <Content Include="Frontend\JavaScript\Plugins\jQuery\jquery.scrollex.min.js" />
+    <Content Include="Frontend\JavaScript\Plugins\jQuery\jquery.scrolly.min.js" />
+    <Content Include="Frontend\JavaScript\Plugins\skel\skel-layout.min.es5.js">
+      <DependentUpon>skel-layout.min.js</DependentUpon>
+    </Content>
+    <Content Include="Frontend\JavaScript\Plugins\skel\skel-layout.min.es5.min.js">
+      <DependentUpon>skel-layout.min.es5.js</DependentUpon>
+    </Content>
+    <Content Include="Frontend\JavaScript\Plugins\skel\skel-layout.min.js" />
+    <Content Include="Frontend\JavaScript\Plugins\skel\skel-viewport.es5.js">
+      <DependentUpon>skel-viewport.js</DependentUpon>
+    </Content>
+    <Content Include="Frontend\JavaScript\Plugins\skel\skel-viewport.es5.min.js">
+      <DependentUpon>skel-viewport.es5.js</DependentUpon>
+    </Content>
+    <Content Include="Frontend\JavaScript\Plugins\skel\skel-viewport.js" />
+    <Content Include="Frontend\JavaScript\Plugins\skel\skel.min.es5.js">
+      <DependentUpon>skel.min.js</DependentUpon>
+    </Content>
+    <Content Include="Frontend\JavaScript\Plugins\skel\skel.min.es5.min.js">
+      <DependentUpon>skel.min.es5.js</DependentUpon>
+    </Content>
+    <Content Include="Frontend\JavaScript\Plugins\skel\skel.min.js" />
+    <Content Include="Frontend\JavaScript\Plugins\Tooltipster\tooltipster-SVG.js" />
+    <Content Include="Frontend\JavaScript\Plugins\Tooltipster\tooltipster.bundle.es5.js">
+      <DependentUpon>tooltipster.bundle.js</DependentUpon>
+    </Content>
+    <Content Include="Frontend\JavaScript\Plugins\Tooltipster\tooltipster.bundle.es5.min.js">
+      <DependentUpon>tooltipster.bundle.es5.js</DependentUpon>
+    </Content>
+    <Content Include="Frontend\JavaScript\Plugins\Tooltipster\tooltipster.bundle.js" />
+    <Content Include="Frontend\JavaScript\Plugins\Tooltipster\tooltipster.main.js" />
     <Content Include="Global.asax" />
     <Content Include="Media\Web.config" />
     <Content Include="config\umbracoSettings.config" />
@@ -437,26 +495,41 @@
     <Content Include="App_Plugins\Grid\Editors\Render\quote_with_description.cshtml" />
     <Content Include="App_Plugins\Grid\Editors\Render\spotlight.cshtml" />
     <Content Include="App_Plugins\Grid\package.manifest" />
-    <Content Include="webfonts\fa-brands-400.svg" />
-    <Content Include="webfonts\fa-regular-400.svg" />
-    <Content Include="webfonts\fa-solid-900.svg" />
-    <Content Include="Frontend\fontawesome-all.less" />
-    <None Include="packages.config" />
-    <Content Include="Scripts\app.js" />
     <Content Include="Scripts\app.min.js">
       <DependentUpon>app.js</DependentUpon>
     </Content>
-    <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.es5.js">
       <DependentUpon>bootstrap.bundle.min.js</DependentUpon>
     </Content>
     <Content Include="Scripts\bootstrap.bundle.min.es5.min.js">
       <DependentUpon>bootstrap.bundle.min.es5.js</DependentUpon>
     </Content>
-    <Content Include="Scripts\bootstrap.bundle.min.js" />
-    <Content Include="Scripts\bootstrap.bundle.min.js.map">
-      <DependentUpon>bootstrap.bundle.min.js</DependentUpon>
+    <Content Include="Scripts\jquery-3.3.1.intellisense.es5.js">
+      <DependentUpon>jquery-3.3.1.intellisense.js</DependentUpon>
     </Content>
+    <Content Include="Scripts\jquery-3.3.1.intellisense.es5.min.js">
+      <DependentUpon>jquery-3.3.1.intellisense.es5.js</DependentUpon>
+    </Content>
+    <Content Include="Scripts\popper-utils.es5.js">
+      <DependentUpon>popper-utils.js</DependentUpon>
+    </Content>
+    <Content Include="Scripts\popper-utils.es5.min.js">
+      <DependentUpon>popper-utils.es5.js</DependentUpon>
+    </Content>
+    <Content Include="Scripts\popper.es5.js">
+      <DependentUpon>popper.js</DependentUpon>
+    </Content>
+    <Content Include="Scripts\popper.es5.min.js">
+      <DependentUpon>popper.es5.js</DependentUpon>
+    </Content>
+    <Content Include="webfonts\fa-brands-400.svg" />
+    <Content Include="webfonts\fa-regular-400.svg" />
+    <Content Include="webfonts\fa-solid-900.svg" />
+    <Content Include="Frontend\fontawesome-all.less" />
+    <None Include="packages.config" />
+    <Content Include="Scripts\app.js" />
+    <Content Include="Scripts\bootstrap.bundle.js" />
+    <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.js.map">
       <DependentUpon>bootstrap.js</DependentUpon>
@@ -478,6 +551,9 @@
       <DependentUpon>popper.js</DependentUpon>
     </Content>
     <Content Include="Scripts\esm\popper.min.js" />
+    <Content Include="Scripts\app.min.js.map">
+      <DependentUpon>app.min.js</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\esm\popper.min.js.map">
       <DependentUpon>popper.min.js</DependentUpon>
@@ -500,30 +576,12 @@
     <Content Include="Scripts\jquery-3.3.1.slim.min.map">
       <DependentUpon>jquery-3.3.1.slim.min.js</DependentUpon>
     </Content>
-    <Content Include="Scripts\popper-utils.es5.js">
-      <DependentUpon>popper-utils.js</DependentUpon>
-    </Content>
-    <Content Include="Scripts\popper-utils.es5.min.js">
-      <DependentUpon>popper-utils.es5.js</DependentUpon>
-    </Content>
     <Content Include="Scripts\popper-utils.js" />
-    <Content Include="Scripts\popper-utils.js.map">
-      <DependentUpon>popper-utils.js</DependentUpon>
-    </Content>
     <Content Include="Scripts\popper-utils.min.js" />
     <Content Include="Scripts\popper-utils.min.js.map">
       <DependentUpon>popper-utils.min.js</DependentUpon>
     </Content>
-    <Content Include="Scripts\popper.es5.js">
-      <DependentUpon>popper.js</DependentUpon>
-    </Content>
-    <Content Include="Scripts\popper.es5.min.js">
-      <DependentUpon>popper.es5.js</DependentUpon>
-    </Content>
     <Content Include="Scripts\popper.js" />
-    <Content Include="Scripts\popper.js.map">
-      <DependentUpon>popper.js</DependentUpon>
-    </Content>
     <Content Include="Scripts\popper.min.js" />
     <Content Include="Scripts\popper.min.js.map">
       <DependentUpon>popper.min.js</DependentUpon>
@@ -2152,6 +2210,7 @@
     <TypeScriptCompile Include="Scripts\index.d.ts" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Frontend\Css\" />
     <Folder Include="Views\MacroPartials\" />
   </ItemGroup>
   <PropertyGroup>

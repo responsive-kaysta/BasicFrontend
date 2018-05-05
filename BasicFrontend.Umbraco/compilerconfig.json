@@ -1,13 +1,15 @@
 ﻿[
-  /* JavaScript */
+  /* JavaScript libraries */
   {
     "inputFile": "Scripts/jquery-3.3.1.min.js",
     "outputFile": "Scripts/jquery-3.3.1.min.es5.js"
   },
+
   {
     "inputFile": "Scripts/bootstrap.bundle.min.js",
     "outputFile": "Scripts/bootstrap.bundle.min.es5.js"
   },
+
   {
     "inputFile": "Scripts/popper.js",
     "outputFile": "Scripts/popper.es5.js"
@@ -16,9 +18,56 @@
     "inputFile": "Scripts/popper-utils.js",
     "outputFile": "Scripts/popper-utils.es5.js"
   },
-  /* CSS */
+
+  {
+    "inputFile": "Scripts/jquery-3.3.1.intellisense.js",
+    "outputFile": "Scripts/jquery-3.3.1.intellisense.es5.js"
+  },
+
+  {
+    "inputFile": "Frontend/JavaScript/Plugins/Tooltipster/tooltipster.bundle.js",
+    "outputFile": "Frontend/JavaScript/Plugins/Tooltipster/tooltipster.bundle.es5.js"
+  },
+
+  {
+    "inputFile": "Frontend/JavaScript/Plugins/skel/skel.min.js",
+    "outputFile": "Frontend/JavaScript/Plugins/skel/skel.min.es5.js"
+  },
+  {
+    "inputFile": "Frontend/JavaScript/Plugins/skel/skel-viewport.js",
+    "outputFile": "Frontend/JavaScript/Plugins/skel/skel-viewport.es5.js"
+  },
+  {
+    "inputFile": "Frontend/JavaScript/Plugins/skel/skel-layout.min.js",
+    "outputFile": "Frontend/JavaScript/Plugins/skel/skel-layout.min.es5.js"
+  },
+
+  {
+    "inputFile": "Frontend/JavaScript/Plugins/jQuery/jquery.scrollex.min.js",
+    "outputFile": "Frontend/JavaScript/Plugins/jQuery/jquery.scrollex.min.es5.js"
+  },
+  {
+    "inputFile": "Frontend/JavaScript/Plugins/jQuery/jquery.scrolly.min.js",
+    "outputFile": "Frontend/JavaScript/Plugins/jQuery/jquery.scrolly.min.es5.js"
+  },
+
+  /* JavaScript custom */
+  {
+    "inputFile": "Frontend/JavaScript/Plugins/skel/init.js",
+    "outputFile": "Frontend/JavaScript/Plugins/skel/init.es5.js"
+  },
+  {
+    "inputFile": "Frontend/JavaScript/global.js",
+    "outputFile": "Frontend/JavaScript/global.es5.js"
+  },
+
+
+  /* CSS libraries*/
   {
     "inputFile": "Frontend/fontawesome-all.less",
     "outputFile": "Frontend/fontawesome-all.css"
   }
+
+  /* CSS custom */
+
 ]

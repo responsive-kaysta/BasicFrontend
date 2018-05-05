@@ -167,6 +167,12 @@
     <Content Include="Frontend\Css\Modules\row.css" />
     <Content Include="Frontend\Css\Modules\spotlight.css" />
     <Content Include="Frontend\Css\Modules\wrapper.css" />
+    <Content Include="Frontend\Css\style.css">
+      <DependentUpon>style.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\style.min.css">
+      <DependentUpon>style.css</DependentUpon>
+    </Content>
     <Content Include="Frontend\Css\Styles\style-green.css" />
     <Content Include="Frontend\Css\Styles\style-purple.css" />
     <Content Include="Frontend\Css\Styles\style-white.css" />
@@ -361,10 +367,6 @@
     </Content>
     <Content Include="Frontend\Css\reset.min.css">
       <DependentUpon>reset.css</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\style.css" />
-    <Content Include="Frontend\Css\style.min.css">
-      <DependentUpon>style.css</DependentUpon>
     </Content>
     <Content Include="Frontend\Js\skel\init.js" />
     <Content Include="Frontend\Js\skel\jquery.scrollex.min.js" />
