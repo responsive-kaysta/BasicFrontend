@@ -4,7 +4,7 @@ form {
   margin: 0 0 2em 0;
 }
 label {
-  color: red;
+  color: #ffffff;
   display: block;
   font-size: 0.9em;
   font-weight: 600;
@@ -62,7 +62,7 @@ textarea:focus {
   -webkit-pointer-events: none;
   -ms-pointer-events: none;
   pointer-events: none;
-  color: red;
+  color: #ffffff;
   display: block;
   height: 2.75em;
   line-height: 2.75em;
@@ -100,7 +100,7 @@ input[type="radio"] {
 input[type="checkbox"] + label,
 input[type="radio"] + label {
   text-decoration: none;
-  color: red;
+  color: #ffffff;
   cursor: pointer;
   display: inline-block;
   font-size: 1em;
@@ -135,7 +135,7 @@ input[type="radio"] + label:before {
 input[type="checkbox"]:checked + label:before,
 input[type="radio"]:checked + label:before {
   background: #2e3842;
-  color: red;
+  color: #ffffff;
   content: '\f00c';
 }
 input[type="checkbox"]:focus + label:before,

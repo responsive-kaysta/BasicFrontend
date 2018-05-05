@@ -9,7 +9,7 @@ a {
   text-decoration: none;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Lato', Arial, sans-serif;
   text-transform: lowercase;
-  color: red;
+  color: #ffffff;
 }
 a:hover {
   border-bottom-color: transparent;

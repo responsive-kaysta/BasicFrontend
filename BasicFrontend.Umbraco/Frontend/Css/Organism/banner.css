@@ -1,4 +1,5 @@
-/* banner.less */
+﻿/* banner.less */
+/* global.less */
 #banner {
   display: -moz-flex;
   display: -webkit-flex;
@@ -74,7 +75,7 @@
   padding-right: 10em;
 }
 #banner p a {
-  color: inherit;
+  color: #ffffff;
 }
 #banner .more {
   -moz-transition: -moz-transform 0.75s ease, opacity 0.75s ease;

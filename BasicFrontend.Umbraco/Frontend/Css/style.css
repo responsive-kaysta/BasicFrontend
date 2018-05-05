@@ -5,7 +5,7 @@ body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Lato', Arial, sans-serif;
   text-transform: lowercase;
   background: #2e3842;
-  color: red;
+  color: #ffffff;
 }
 html,
 body,
@@ -239,5 +239,5 @@ body.is-mobile.landing .wrapper.style4 {
   background-size: cover;
 }
 body.is-mobile.landing #footer {
-  background-color: #1d242a;
+  background-color: #2e3842;
 }

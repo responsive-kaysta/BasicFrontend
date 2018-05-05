@@ -6,7 +6,7 @@
 }
 .breadcrumb a,
 .breadcrumb a:visited {
-  color: red;
+  color: #ffffff;
   font-size: 1rem;
 }
 .breadcrumb:hover {

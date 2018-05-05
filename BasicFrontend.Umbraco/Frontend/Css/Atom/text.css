@@ -1,4 +1,4 @@
-﻿/* text.less */
+/* text.less */
 /* global.less */
 p {
   font-size: 1.0rem;
@@ -7,14 +7,14 @@ p {
   letter-spacing: 0.2px;
 }
 p {
-  color: red;
+  color: #d3d3d3;
 }
 p {
-  margin-bottom: 1.0rem;
+  margin-bottom: 2em;
 }
 strong,
 b {
-  color: red;
+  color: #d3d3d3;
   font-weight: 600;
 }
 em,
