@@ -41,7 +41,10 @@ namespace BasicFrontend.Application
         public string LinkAboutLaws = "/Home/Laws";
         public string LinkAboutMe = "/Home/Me";
 
+        public string LinkDisclaimer = "/Home/Disclaimer";
+
         public string LinkBlog = "/Blog/Index";
+
         public string LinkBlog1 = "/Blog/Blog1";
         public string LinkBlog2 = "/Blog/Blog2";
         public string LinkBlog3 = "/Blog/Blog3";
@@ -49,9 +52,7 @@ namespace BasicFrontend.Application
         public string LinkBlog5 = "/Blog/Blog5";
         public string LinkBlog6 = "/Blog/Blog6";
         public string LinkBlog7 = "/Blog/Blog7";
-
-        public string LinkDisclaimer = "/Home/Disclaimer";
-
+        
         public string LinkHome = "/";
         public string LinkIndex = "/Home/Index";
 

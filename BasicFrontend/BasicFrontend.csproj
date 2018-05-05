@@ -2,7 +2,7 @@
 <Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="..\packages\Microsoft.Net.Compilers.2.8.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.2.8.0\build\Microsoft.Net.Compilers.props')" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
-  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -50,9 +50,6 @@
   <ItemGroup>
     <Reference Include="Antlr3.Runtime, Version=3.5.0.2, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
       <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.8.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Newtonsoft.Json">
@@ -123,12 +120,21 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bundleconfig.json.bindings">
+      <DependentUpon>bundleconfig.json</DependentUpon>
+    </Content>
     <Content Include="Content\bootstrap-grid.css" />
+    <Content Include="Content\bootstrap-grid.css.map" />
     <Content Include="Content\bootstrap-grid.min.css" />
+    <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-reboot.css" />
+    <Content Include="Content\bootstrap-reboot.css.map" />
     <Content Include="Content\bootstrap-reboot.min.css" />
+    <Content Include="Content\bootstrap-reboot.min.css.map" />
     <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\bootstrap.min.css.map" />
     <Content Include="Content\bundle.css" />
     <Content Include="Content\bundle.min.css">
       <DependentUpon>bundle.css</DependentUpon>
@@ -136,56 +142,50 @@
     <Content Include="Frontend\Css\Colours\blue.css">
       <DependentUpon>blue.less</DependentUpon>
     </Content>
+    <Content Include="Frontend\Css\Colours\blue.less" />
     <Content Include="Frontend\Css\Colours\blue.min.css">
       <DependentUpon>blue.css</DependentUpon>
     </Content>
     <Content Include="Frontend\Css\Colours\dark.css">
       <DependentUpon>dark.less</DependentUpon>
     </Content>
+    <Content Include="Frontend\Css\Colours\dark.less" />
     <Content Include="Frontend\Css\Colours\dark.min.css">
       <DependentUpon>dark.css</DependentUpon>
     </Content>
     <Content Include="Frontend\Css\Colours\light.css">
       <DependentUpon>light.less</DependentUpon>
     </Content>
+    <Content Include="Frontend\Css\Colours\light.less" />
     <Content Include="Frontend\Css\Colours\light.min.css">
       <DependentUpon>light.css</DependentUpon>
     </Content>
     <Content Include="Frontend\Css\Colours\purple.css">
       <DependentUpon>purple.less</DependentUpon>
     </Content>
+    <Content Include="Frontend\Css\Colours\purple.less" />
     <Content Include="Frontend\Css\Colours\purple.min.css">
       <DependentUpon>purple.css</DependentUpon>
     </Content>
     <Content Include="Frontend\Css\Colours\yellow.css">
       <DependentUpon>yellow.less</DependentUpon>
     </Content>
+    <Content Include="Frontend\Css\Colours\yellow.less" />
     <Content Include="Frontend\Css\Colours\yellow.min.css">
       <DependentUpon>yellow.css</DependentUpon>
     </Content>
-    <Content Include="Frontend\Css\images\technics-q-g-410-130-8.jpg" />
-    <Content Include="Frontend\Css\Modules\row.css" />
-    <Content Include="Frontend\Css\Modules\spotlight.css" />
-    <Content Include="Frontend\Css\Modules\wrapper.css" />
-    <Content Include="Frontend\Css\style.css">
-      <DependentUpon>style.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\style.min.css">
-      <DependentUpon>style.css</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Styles\style-green.css" />
-    <Content Include="Frontend\Css\Styles\style-purple.css" />
-    <Content Include="Frontend\Css\Styles\style-white.css" />
-    <Content Include="Frontend\fontawesome-all.css" />
+
     <Content Include="Frontend\Css\global.css">
       <DependentUpon>global.less</DependentUpon>
     </Content>
+    <Content Include="Frontend\Css\global.less" />
     <Content Include="Frontend\Css\global.min.css">
       <DependentUpon>global.css</DependentUpon>
     </Content>
     <Content Include="Frontend\Css\ie10-viewport-bug-workaround.css">
       <DependentUpon>ie10-viewport-bug-workaround.less</DependentUpon>
     </Content>
+    <Content Include="Frontend\Css\ie10-viewport-bug-workaround.less" />
     <Content Include="Frontend\Css\ie10-viewport-bug-workaround.min.css">
       <DependentUpon>ie10-viewport-bug-workaround.css</DependentUpon>
     </Content>
@@ -197,129 +197,157 @@
     <Content Include="Frontend\Css\images\bars.svg" />
     <Content Include="Frontend\Css\images\close.svg" />
     <Content Include="Frontend\Css\images\Internet-of-Things-1920xx.png" />
+    <Content Include="Frontend\Css\images\technics-q-g-410-130-8.jpg" />
     <Content Include="Frontend\Css\Modules\abstract.css">
       <DependentUpon>abstract.less</DependentUpon>
     </Content>
+    <Content Include="Frontend\Css\Modules\abstract.less" />
     <Content Include="Frontend\Css\Modules\abstract.min.css">
       <DependentUpon>abstract.css</DependentUpon>
     </Content>
     <Content Include="Frontend\Css\Modules\banner.css">
       <DependentUpon>banner.less</DependentUpon>
     </Content>
+    <Content Include="Frontend\Css\Modules\banner.less" />
     <Content Include="Frontend\Css\Modules\banner.min.css">
       <DependentUpon>banner.css</DependentUpon>
     </Content>
     <Content Include="Frontend\Css\Modules\blockquote.css">
       <DependentUpon>blockquote.less</DependentUpon>
     </Content>
+    <Content Include="Frontend\Css\Modules\blockquote.less" />
     <Content Include="Frontend\Css\Modules\blockquote.min.css">
       <DependentUpon>blockquote.css</DependentUpon>
     </Content>
     <Content Include="Frontend\Css\Modules\blogarchive.css">
       <DependentUpon>blogarchive.less</DependentUpon>
     </Content>
+    <Content Include="Frontend\Css\Modules\blogarchive.less" />
     <Content Include="Frontend\Css\Modules\blogarchive.min.css">
       <DependentUpon>blogarchive.css</DependentUpon>
     </Content>
     <Content Include="Frontend\Css\Modules\box.css">
       <DependentUpon>box.less</DependentUpon>
     </Content>
+    <Content Include="Frontend\Css\Modules\box.less" />
     <Content Include="Frontend\Css\Modules\box.min.css">
       <DependentUpon>box.css</DependentUpon>
     </Content>
     <Content Include="Frontend\Css\Modules\breadcrumb.css">
       <DependentUpon>breadcrumb.less</DependentUpon>
     </Content>
+    <Content Include="Frontend\Css\Modules\breadcrumb.less" />
     <Content Include="Frontend\Css\Modules\breadcrumb.min.css">
       <DependentUpon>breadcrumb.css</DependentUpon>
     </Content>
     <Content Include="Frontend\Css\Modules\button.css">
       <DependentUpon>button.less</DependentUpon>
     </Content>
+    <Content Include="Frontend\Css\Modules\button.less" />
     <Content Include="Frontend\Css\Modules\button.min.css">
       <DependentUpon>button.css</DependentUpon>
     </Content>
     <Content Include="Frontend\Css\Modules\code.css">
       <DependentUpon>code.less</DependentUpon>
     </Content>
+    <Content Include="Frontend\Css\Modules\code.less" />
     <Content Include="Frontend\Css\Modules\code.min.css">
       <DependentUpon>code.css</DependentUpon>
     </Content>
     <Content Include="Frontend\Css\Modules\container.css">
       <DependentUpon>container.less</DependentUpon>
     </Content>
+    <Content Include="Frontend\Css\Modules\container.less" />
     <Content Include="Frontend\Css\Modules\container.min.css">
       <DependentUpon>container.css</DependentUpon>
     </Content>
+    <Content Include="Frontend\Css\Modules\cta.css" />
     <Content Include="Frontend\Css\Modules\equal.css">
       <DependentUpon>equal.less</DependentUpon>
     </Content>
+    <Content Include="Frontend\Css\Modules\equal.less" />
     <Content Include="Frontend\Css\Modules\equal.min.css">
       <DependentUpon>equal.css</DependentUpon>
     </Content>
     <Content Include="Frontend\Css\Modules\full.css">
       <DependentUpon>full.less</DependentUpon>
     </Content>
+    <Content Include="Frontend\Css\Modules\full.less" />
     <Content Include="Frontend\Css\Modules\full.min.css">
       <DependentUpon>full.css</DependentUpon>
     </Content>
     <Content Include="Frontend\Css\Modules\gallery.css">
       <DependentUpon>gallery.less</DependentUpon>
     </Content>
+    <Content Include="Frontend\Css\Modules\gallery.less" />
     <Content Include="Frontend\Css\Modules\gallery.min.css">
       <DependentUpon>gallery.css</DependentUpon>
     </Content>
     <Content Include="Frontend\Css\Modules\hr.css">
       <DependentUpon>hr.less</DependentUpon>
     </Content>
+    <Content Include="Frontend\Css\Modules\hr.less" />
     <Content Include="Frontend\Css\Modules\hr.min.css">
       <DependentUpon>hr.css</DependentUpon>
     </Content>
     <Content Include="Frontend\Css\Modules\image.css">
       <DependentUpon>image.less</DependentUpon>
     </Content>
+    <Content Include="Frontend\Css\Modules\image.less" />
     <Content Include="Frontend\Css\Modules\image.min.css">
       <DependentUpon>image.css</DependentUpon>
     </Content>
     <Content Include="Frontend\Css\Modules\jumbotron.css">
       <DependentUpon>jumbotron.less</DependentUpon>
     </Content>
+    <Content Include="Frontend\Css\Modules\jumbotron.less" />
     <Content Include="Frontend\Css\Modules\jumbotron.min.css">
       <DependentUpon>jumbotron.css</DependentUpon>
     </Content>
     <Content Include="Frontend\Css\Modules\list.css">
       <DependentUpon>list.less</DependentUpon>
     </Content>
+    <Content Include="Frontend\Css\Modules\list.less" />
     <Content Include="Frontend\Css\Modules\list.min.css">
       <DependentUpon>list.css</DependentUpon>
     </Content>
+    <Content Include="Frontend\Css\Modules\main.css" />
     <Content Include="Frontend\Css\Modules\panel.css">
       <DependentUpon>panel.less</DependentUpon>
     </Content>
+    <Content Include="Frontend\Css\Modules\panel.less" />
     <Content Include="Frontend\Css\Modules\panel.min.css">
       <DependentUpon>panel.css</DependentUpon>
     </Content>
+    <Content Include="Frontend\Css\Modules\row.css" />
+    <Content Include="Frontend\Css\Modules\row.less" />
     <Content Include="Frontend\Css\Modules\seperator.css">
       <DependentUpon>seperator.less</DependentUpon>
     </Content>
+    <Content Include="Frontend\Css\Modules\seperator.less" />
     <Content Include="Frontend\Css\Modules\seperator.min.css">
       <DependentUpon>seperator.css</DependentUpon>
     </Content>
+    <Content Include="Frontend\Css\Modules\spotlight.css" />
     <Content Include="Frontend\Css\Modules\text.css">
       <DependentUpon>text.less</DependentUpon>
     </Content>
+    <Content Include="Frontend\Css\Modules\text.less" />
     <Content Include="Frontend\Css\Modules\text.min.css">
       <DependentUpon>text.css</DependentUpon>
     </Content>
     <Content Include="Frontend\Css\Modules\triangle.css">
       <DependentUpon>triangle.less</DependentUpon>
     </Content>
+    <Content Include="Frontend\Css\Modules\triangle.less" />
     <Content Include="Frontend\Css\Modules\triangle.min.css">
       <DependentUpon>triangle.css</DependentUpon>
     </Content>
+    <Content Include="Frontend\Css\Modules\wrapper.css" />
     <Content Include="Frontend\Css\Plugins\Effects\loadmore.css">
       <DependentUpon>loadmore.less</DependentUpon>
     </Content>
+    <Content Include="Frontend\Css\Plugins\Effects\loadmore.less" />
     <Content Include="Frontend\Css\Plugins\Effects\loadmore.min.css">
       <DependentUpon>loadmore.css</DependentUpon>
     </Content>
@@ -328,22 +356,7 @@
     <Content Include="Frontend\Css\Plugins\Tooltipster\Themes\tooltipster-sideTip-noir.min.css" />
     <Content Include="Frontend\Css\Plugins\Tooltipster\Themes\tooltipster-sideTip-punk.min.css" />
     <Content Include="Frontend\Css\Plugins\Tooltipster\Themes\tooltipster-sideTip-shadow.min.css" />
-    <Content Include="bundleconfig.json.bindings">
-      <DependentUpon>bundleconfig.json</DependentUpon>
-    </Content>
-    <Content Include="Frontend\fontawesome-all.less" />
-    <Content Include="Frontend\Css\Modules\row.less" />
-    <Content Include="Frontend\Css\Modules\spotlight.less" />
-    <Content Include="Frontend\Css\Modules\wrapper.less" />
-    <Content Include="compilerconfig.json" />
-    <Content Include="Content\bootstrap.min.css.map" />
-    <Content Include="Content\bootstrap.css.map" />
-    <Content Include="Content\bootstrap-reboot.min.css.map" />
-    <Content Include="Content\bootstrap-reboot.css.map" />
-    <Content Include="Content\bootstrap-grid.min.css.map" />
-    <Content Include="Content\bootstrap-grid.css.map" />
-    <None Include="Frontend\Css\Plugins\Tooltipster\tooltipster.bundle.less" />
-    <None Include="Frontend\Css\Plugins\Tooltipster\tooltipster.main.less" />
+
     <Content Include="Frontend\Css\Plugins\Tooltipster\tooltipster.bundle.css">
       <DependentUpon>tooltipster.bundle.less</DependentUpon>
     </Content>
@@ -353,6 +366,7 @@
     <Content Include="Frontend\Css\Plugins\Tooltipster\tooltipster.css">
       <DependentUpon>tooltipster.less</DependentUpon>
     </Content>
+    <Content Include="Frontend\Css\Plugins\Tooltipster\tooltipster.less" />
     <Content Include="Frontend\Css\Plugins\Tooltipster\tooltipster.main.css">
       <DependentUpon>tooltipster.main.less</DependentUpon>
     </Content>
@@ -365,82 +379,17 @@
     <Content Include="Frontend\Css\reset.css">
       <DependentUpon>reset.less</DependentUpon>
     </Content>
+    <Content Include="Frontend\Css\reset.less" />
     <Content Include="Frontend\Css\reset.min.css">
       <DependentUpon>reset.css</DependentUpon>
     </Content>
+
     <Content Include="Frontend\Js\skel\init.js" />
     <Content Include="Frontend\Js\skel\jquery.scrollex.min.js" />
     <Content Include="Frontend\Js\skel\jquery.scrolly.min.js" />
     <Content Include="Frontend\Js\skel\skel-layout.min.js" />
     <Content Include="Frontend\Js\skel\skel-viewport.js" />
     <Content Include="Frontend\Js\skel\skel.min.js" />
-    <Content Include="Scripts\app.js" />
-    <Content Include="Scripts\app.min.js">
-      <DependentUpon>app.js</DependentUpon>
-    </Content>
-    <Content Include="Scripts\bootstrap.bundle.js" />
-    <Content Include="Scripts\bootstrap.bundle.min.js" />
-    <Content Include="Scripts\bootstrap.js" />
-    <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="Scripts\esm\popper-utils.js" />
-    <Content Include="Scripts\esm\popper-utils.min.js" />
-    <Content Include="Scripts\esm\popper.js" />
-    <Content Include="Scripts\esm\popper.min.js" />
-    <Content Include="Scripts\popper-utils.js" />
-    <Content Include="Scripts\popper-utils.min.js" />
-    <Content Include="Scripts\popper.js" />
-    <Content Include="Scripts\popper.min.js" />
-    <Content Include="Scripts\umd\popper-utils.js" />
-    <Content Include="Scripts\umd\popper-utils.min.js" />
-    <Content Include="Scripts\umd\popper.js" />
-    <Content Include="Scripts\umd\popper.min.js" />
-    <Content Include="webfonts\fa-brands-400.svg" />
-    <Content Include="webfonts\fa-regular-400.svg" />
-    <Content Include="webfonts\fa-solid-900.svg" />
-    <Content Include="favicon.ico" />
-    <Content Include="Global.asax" />
-    <Content Include="bundleconfig.json" />
-    <Content Include="Frontend\Css\Colours\blue.less" />
-    <Content Include="Frontend\Css\Colours\dark.less" />
-    <Content Include="Frontend\Css\Colours\light.less" />
-    <Content Include="Frontend\Css\Colours\purple.less" />
-    <Content Include="Frontend\Css\Colours\yellow.less" />
-    <Content Include="Frontend\Css\global.less" />
-    <Content Include="Frontend\Css\ie10-viewport-bug-workaround.less" />
-    <Content Include="Frontend\Css\Modules\abstract.less" />
-    <Content Include="Frontend\Css\Modules\banner.less" />
-    <Content Include="Frontend\Css\Modules\blockquote.less" />
-    <Content Include="Frontend\Css\Modules\blogarchive.less" />
-    <Content Include="Frontend\Css\Modules\box.less" />
-    <Content Include="Frontend\Css\Modules\breadcrumb.less" />
-    <Content Include="Frontend\Css\Modules\button.less" />
-    <Content Include="Frontend\Css\Modules\code.less" />
-    <Content Include="Frontend\Css\Modules\container.less" />
-    <Content Include="Frontend\Css\Modules\equal.less" />
-    <Content Include="Frontend\Css\Modules\full.less" />
-    <Content Include="Frontend\Css\Modules\gallery.less" />
-    <Content Include="Frontend\Css\Modules\hr.less" />
-    <Content Include="Frontend\Css\Modules\image.less" />
-    <Content Include="Frontend\Css\Modules\jumbotron.less" />
-    <Content Include="Frontend\Css\Modules\list.less" />
-    <Content Include="Frontend\Css\Modules\panel.less" />
-    <Content Include="Frontend\Css\Modules\seperator.less" />
-    <Content Include="Frontend\Css\Modules\text.less" />
-    <Content Include="Frontend\Css\Modules\triangle.less" />
-    <Content Include="Frontend\Css\reset.less" />
-    <Content Include="Frontend\Css\style.less" />
-    <Content Include="Frontend\Css\Plugins\Effects\loadmore.less" />
-    <Content Include="Frontend\Css\Plugins\Tooltipster\tooltipster.less" />
-    <Content Include="Frontend\Js\global.js" />
-    <Content Include="Frontend\Js\Modules\colourswitch.js" />
-    <Content Include="Frontend\Js\Modules\equalheight.js" />
-    <Content Include="Frontend\Js\Modules\loadmore.js" />
-    <Content Include="Frontend\Js\Modules\navigation.js" />
-    <Content Include="Frontend\Js\Modules\searchbox.js" />
-    <Content Include="Frontend\Js\Plugins\Tooltipster\tooltipster-SVG.js" />
-    <Content Include="Frontend\Js\Plugins\Tooltipster\tooltipster.bundle.js" />
-    <Content Include="Frontend\Js\Plugins\Tooltipster\tooltipster.js" />
-    <Content Include="Frontend\Js\Plugins\Tooltipster\tooltipster.main.js" />
     <Content Include="Media\1003\1.jpg" />
     <Content Include="Media\1003\1_thumb.jpg" />
     <Content Include="Media\1004\2.jpg" />
@@ -451,25 +400,82 @@
     <Content Include="Media\1006\1_thumb.jpg" />
     <Content Include="Media\1007\2.jpg" />
     <Content Include="Media\1007\2_thumb.jpg" />
+    <Content Include="Media\1007\high-tech-picture-hd.jpg" />
     <Content Include="Media\1008\3.jpg" />
     <Content Include="Media\1008\3_thumb.jpg" />
+    <Content Include="Media\1008\mainboard-1174219.jpg" />
+    <Content Include="Media\1009\mobappvsweb-blogcontent.png" />
+    <Content Include="Media\1010\pcb-background-loopable-animation-footage-021546325_prevstill.jpg" />
+    <Content Include="Media\1011\analytics-programming.png" />
+    <Content Include="Media\1012\photo-1485856407642-7f9ba0268b51.jpg" />
     <Content Include="Media\Web.config" />
-    <Content Include="webfonts\fa-brands-400.eot" />
-    <Content Include="webfonts\fa-brands-400.ttf" />
-    <Content Include="webfonts\fa-brands-400.woff" />
-    <Content Include="webfonts\fa-brands-400.woff2" />
-    <Content Include="webfonts\fa-regular-400.eot" />
-    <Content Include="webfonts\fa-regular-400.ttf" />
-    <Content Include="webfonts\fa-regular-400.woff" />
-    <Content Include="webfonts\fa-regular-400.woff2" />
-    <Content Include="webfonts\fa-solid-900.eot" />
-    <Content Include="webfonts\fa-solid-900.ttf" />
-    <Content Include="webfonts\fa-solid-900.woff" />
-    <Content Include="webfonts\fa-solid-900.woff2" />
-    <Content Include="Frontend\Css\Styles\style-green.less" />
-    <Content Include="Frontend\Css\Styles\style-purple.less" />
-    <Content Include="Frontend\Css\Styles\style-white.less" />
-    <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
+    <Content Include="Scripts\app.js" />
+    <Content Include="Scripts\app.min.js">
+      <DependentUpon>app.js</DependentUpon>
+    </Content>
+    <Content Include="Scripts\bootstrap.bundle.js" />
+
+    <Content Include="Scripts\esm\popper-utils.js" />
+    <Content Include="Scripts\esm\popper-utils.js.map" />
+    <Content Include="Scripts\esm\popper-utils.min.js" />
+    <Content Include="Scripts\esm\popper-utils.min.js.map" />
+    <Content Include="Scripts\esm\popper.js" />
+    <Content Include="Scripts\esm\popper.js.map" />
+    <Content Include="Scripts\esm\popper.min.js" />
+    <Content Include="Scripts\esm\popper.min.js.map" />
+    <Content Include="Scripts\jquery-3.3.1.js" />
+    <Content Include="Scripts\jquery-3.3.1.min.js" />
+    <Content Include="Scripts\jquery-3.3.1.min.map" />
+    <Content Include="Scripts\jquery-3.3.1.slim.js" />
+    <Content Include="Scripts\jquery-3.3.1.slim.min.js" />
+    <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\popper-utils.js" />
+    <Content Include="Scripts\popper-utils.js.map" />
+    <Content Include="Scripts\popper-utils.min.js" />
+    <Content Include="Scripts\popper-utils.min.js.map" />
+    <Content Include="Scripts\popper.js" />
+    <Content Include="Scripts\popper.js.map" />
+    <Content Include="Scripts\popper.min.js" />
+    <Content Include="Scripts\popper.min.js.map" />
+    <Content Include="Scripts\README.md" />
+    <Content Include="Scripts\umd\popper-utils.js" />
+    <Content Include="Scripts\umd\popper-utils.js.map" />
+    <Content Include="Scripts\umd\popper-utils.min.js" />
+    <Content Include="Scripts\umd\popper-utils.min.js.map" />
+    <Content Include="Scripts\umd\popper.js" />
+    <Content Include="Scripts\umd\popper.js.map" />
+    <Content Include="Scripts\umd\popper.min.js" />
+    <Content Include="Scripts\umd\popper.min.js.map" />
+    <Content Include="Views\Blog\Blog1.cshtml" />
+    <Content Include="Views\Blog\Blog2.cshtml" />
+    <Content Include="Views\Blog\Blog3.cshtml" />
+    <Content Include="Views\Blog\Blog4.cshtml" />
+    <Content Include="Views\Blog\Blog5.cshtml" />
+    <Content Include="Views\Blog\Blog6.cshtml" />
+    <Content Include="Views\Blog\Blog7.cshtml" />
+    <Content Include="Views\Blog\Index.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Disclaimer.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\Laws.cshtml" />
+    <Content Include="Views\Home\MasterArchive.cshtml" />
+    <Content Include="Views\Home\Me.cshtml" />
+    <Content Include="Views\Shared\Colourswitch.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\Footer.cshtml" />
+    <Content Include="Views\Shared\Header.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="webfonts\fa-brands-400.svg" />
+    <Content Include="webfonts\fa-regular-400.svg" />
+    <Content Include="webfonts\fa-solid-900.svg" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="bundleconfig.json" />
+
     <Content Include="Media\1001\photo-1482062364825-616fd23b8fc1.jpg" />
     <Content Include="Media\1002\photo-1485856407642-7f9ba0268b51.jpg" />
     <Content Include="Media\1003\programming_blog.jpeg" />
@@ -510,6 +516,7 @@
     <None Include="Scripts\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -517,36 +524,8 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
-    <Content Include="Views\Web.config" />
-    <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Views\Shared\Error.cshtml" />
-    <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Shared\Footer.cshtml" />
-    <Content Include="Views\Shared\Header.cshtml" />
-    <Content Include="Views\Shared\Colourswitch.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Me.cshtml" />
-    <Content Include="Views\Home\Laws.cshtml" />
-    <Content Include="Views\Home\Disclaimer.cshtml" />
-    <Content Include="Views\Blog\Index.cshtml" />
-    <Content Include="Views\Blog\Blog1.cshtml" />
-    <Content Include="Views\Blog\Blog2.cshtml" />
-    <Content Include="Views\Blog\Blog3.cshtml" />
-    <Content Include="Views\Blog\Blog4.cshtml" />
-    <Content Include="Views\Blog\Blog5.cshtml" />
-    <Content Include="Views\Home\MasterArchive.cshtml" />
-    <Content Include="Views\Blog\Blog6.cshtml" />
-    <Content Include="Views\Blog\Blog7.cshtml" />
-    <Content Include="Scripts\umd\popper.min.js.map" />
-    <Content Include="Scripts\umd\popper.js.map" />
-    <Content Include="Scripts\umd\popper-utils.min.js.map" />
-    <Content Include="Scripts\umd\popper-utils.js.map" />
-    <Content Include="Scripts\README.md" />
-    <Content Include="Scripts\popper.min.js.map" />
-    <Content Include="Scripts\popper.js.map" />
-    <Content Include="Scripts\popper-utils.min.js.map" />
-    <Content Include="Scripts\popper-utils.js.map" />
-    <Content Include="Views\Home\Index.cshtml" />
+    <None Include="Scripts\jquery-3.3.1.intellisense.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -594,8 +573,7 @@
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
-    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.2.8.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.2.8.0\build\Microsoft.Net.Compilers.props'))" />
+
   </Target>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
