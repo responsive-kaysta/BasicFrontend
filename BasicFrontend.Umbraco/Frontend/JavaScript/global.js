@@ -55,7 +55,7 @@
         }, 250);
     });
     */
-
+    
 
     $('.tooltipster').tooltipster({
         animation: 'fade',

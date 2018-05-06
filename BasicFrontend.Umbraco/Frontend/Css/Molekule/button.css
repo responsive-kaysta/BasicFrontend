@@ -1,4 +1,4 @@
-﻿/* button.less */
+/* button.less */
 /* global.less */
 a.button {
   border-radius: 3px;
@@ -50,7 +50,7 @@ button,
   padding: 0 2.75em;
   text-align: center;
   text-decoration: none;
-  text-transform: uppercase;
+  text-transform: lowercase;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;

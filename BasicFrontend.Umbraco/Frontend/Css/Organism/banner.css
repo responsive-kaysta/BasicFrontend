@@ -68,7 +68,7 @@
 }
 #banner p {
   letter-spacing: 0.225em;
-  text-transform: uppercase;
+  text-transform: lowercase;
 }
 #banner div {
   padding-left: 10em;
@@ -103,7 +103,7 @@
   padding-left: 0.225em;
   position: absolute;
   text-align: center;
-  text-transform: uppercase;
+  text-transform: lowercase;
   width: 16em;
   z-index: 1;
 }

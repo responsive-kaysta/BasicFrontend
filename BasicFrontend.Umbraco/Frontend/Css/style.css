@@ -1,4 +1,4 @@
-﻿/* style.less */
+/* style.less */
 /* global.less */
 body {
   line-height: 1.4;
@@ -178,7 +178,7 @@ body.is-loading *:after {
 #main > header p {
   color: inherit;
   letter-spacing: 0.225em;
-  text-transform: uppercase;
+  text-transform: lowercase;
   top: 0;
 }
 #main > header p a {
