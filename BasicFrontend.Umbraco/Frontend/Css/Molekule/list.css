@@ -1,5 +1,14 @@
 ﻿/* list.less */
 /* global.less */
+/* base styles and definitions */
+/* menu */
+/* colours */
+/* style1 */
+/* light -> obsolete: style5 */
+/* button */
+/* code */
+/* banner */
+/* footer */
 li,
 a {
   font-size: 1rem;
@@ -7,7 +16,7 @@ a {
   letter-spacing: 0.2px;
 }
 li {
-  color: #4d4d4d;
+  color: whitesmoke;
   font-weight: 400;
 }
 ul {
@@ -46,7 +55,7 @@ ul.alt {
   padding-left: 0;
 }
 ul.alt li {
-  border-top: solid 1px #fff;
+  border-top: solid 1px whitesmoke;
   padding: 0.5em 0;
 }
 ul.alt li:first-child {

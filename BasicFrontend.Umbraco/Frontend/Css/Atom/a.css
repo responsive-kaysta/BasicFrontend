@@ -1,5 +1,14 @@
 ﻿/* a.less */
 /* global.less */
+/* base styles and definitions */
+/* menu */
+/* colours */
+/* style1 */
+/* light -> obsolete: style5 */
+/* button */
+/* code */
+/* banner */
+/* footer */
 a {
   -moz-transition: color 0.2s ease, border-bottom-color 0.2s ease;
   -webkit-transition: color 0.2s ease, border-bottom-color 0.2s ease;
@@ -9,7 +18,7 @@ a {
   text-decoration: none;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Lato', Arial, sans-serif;
   text-transform: lowercase;
-  color: #d3d3d3;
+  color: whitesmoke;
 }
 a:hover {
   border-bottom-color: transparent;

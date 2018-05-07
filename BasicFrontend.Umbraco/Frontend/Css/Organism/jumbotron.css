@@ -1,5 +1,14 @@
 ﻿/* jumbotron.less */
 /* global.less */
+/* base styles and definitions */
+/* menu */
+/* colours */
+/* style1 */
+/* light -> obsolete: style5 */
+/* button */
+/* code */
+/* banner */
+/* footer */
 .jumbotron {
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);

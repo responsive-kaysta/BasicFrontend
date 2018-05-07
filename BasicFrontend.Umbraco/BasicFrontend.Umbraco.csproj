@@ -368,8 +368,12 @@
     <Content Include="Content\bootstrap-reboot.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\bundle.css" />
-    <Content Include="Content\bundle.min.css">
+    <Content Include="Frontend\app.js" />
+    <Content Include="Frontend\app.min.js">
+      <DependentUpon>app.js</DependentUpon>
+    </Content>
+    <Content Include="Frontend\bundle.css" />
+    <Content Include="Frontend\bundle.min.css">
       <DependentUpon>bundle.css</DependentUpon>
     </Content>
     <Content Include="Frontend\Css\Atom\code.css">
@@ -444,6 +448,9 @@
     <Content Include="Frontend\Css\Colours\yellow.min.css">
       <DependentUpon>yellow.css</DependentUpon>
     </Content>
+    <Content Include="Frontend\Css\global.css">
+      <DependentUpon>global.less</DependentUpon>
+    </Content>
     <Content Include="Frontend\Css\Images\arrow.svg" />
     <Content Include="Frontend\Css\Images\bars.svg" />
     <Content Include="Frontend\Css\Images\close.svg" />
@@ -480,6 +487,9 @@
     </Content>
     <Content Include="bundleconfig.json.bindings">
       <DependentUpon>bundleconfig.json</DependentUpon>
+    </Content>
+    <Content Include="Frontend\app.min.js.map">
+      <DependentUpon>app.min.js</DependentUpon>
     </Content>
     <None Include="Frontend\Css\global.less" />
     <None Include="Frontend\Css\ie10-viewport-bug-workaround.less" />
@@ -686,23 +696,47 @@
     <Content Include="Frontend\Css\Template\form.min.css">
       <DependentUpon>form.css</DependentUpon>
     </Content>
+    <Content Include="Frontend\Css\Template\style-light.css">
+      <DependentUpon>style-light.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Template\style-light.min.css">
+      <DependentUpon>style-light.css</DependentUpon>
+    </Content>
     <Content Include="Frontend\Css\Template\style-style1.css">
-      <DependentUpon>style-style1.less</DependentUpon>
+      <DependentUpon>style1.less</DependentUpon>
     </Content>
     <Content Include="Frontend\Css\Template\style-style1.min.css">
       <DependentUpon>style-style1.css</DependentUpon>
     </Content>
     <Content Include="Frontend\Css\Template\style-style3.css">
-      <DependentUpon>style-style3.less</DependentUpon>
+      <DependentUpon>style3.less</DependentUpon>
     </Content>
     <Content Include="Frontend\Css\Template\style-style3.min.css">
       <DependentUpon>style-style3.css</DependentUpon>
     </Content>
-    <Content Include="Frontend\Css\Template\style-style5.css">
-      <DependentUpon>style-style5.less</DependentUpon>
+    <Content Include="Frontend\Css\Template\style-transparent.css">
+      <DependentUpon>style-transparent.less</DependentUpon>
     </Content>
-    <Content Include="Frontend\Css\Template\style-style5.min.css">
-      <DependentUpon>style-style5.css</DependentUpon>
+    <Content Include="Frontend\Css\Template\style-transparent.min.css">
+      <DependentUpon>style-transparent.css</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Template\style1.css">
+      <DependentUpon>style1.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Template\style1.min.css">
+      <DependentUpon>style1.css</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Template\style2.css">
+      <DependentUpon>style2.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Template\style2.min.css">
+      <DependentUpon>style2.css</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Template\style3.css">
+      <DependentUpon>style3.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Template\style3.min.css">
+      <DependentUpon>style3.css</DependentUpon>
     </Content>
     <Content Include="Frontend\fontawesome-all.css">
       <DependentUpon>fontawesome-all.less</DependentUpon>
@@ -770,6 +804,13 @@
     <Content Include="Media\1025\website-design-background.png" />
     <Content Include="Media\1026\ygr9ng0.jpg" />
     <Content Include="Media\1027\zenmate.jpg" />
+    <Content Include="Media\1028\jquery.png" />
+    <Content Include="Media\1029\bootstrap.png" />
+    <Content Include="Media\1030\popper.png" />
+    <Content Include="Media\1031\tooltipster.png" />
+    <Content Include="Media\1032\tooltipster.png" />
+    <Content Include="Media\1033\skelio.png" />
+    <Content Include="Media\1034\html5up.png" />
     <Content Include="Media\Web.config" />
     <Content Include="config\umbracoSettings.config" />
     <Content Include="config\trees.config" />
@@ -809,19 +850,17 @@
     <Content Include="App_Plugins\Grid\Editors\Render\quote_with_description.cshtml" />
     <Content Include="App_Plugins\Grid\Editors\Render\spotlight.cshtml" />
     <Content Include="App_Plugins\Grid\package.manifest" />
-    <Content Include="Scripts\app.min.js">
-      <DependentUpon>app.js</DependentUpon>
-    </Content>
     <Content Include="webfonts\fa-brands-400.svg" />
     <Content Include="webfonts\fa-regular-400.svg" />
     <Content Include="webfonts\fa-solid-900.svg" />
     <Content Include="Frontend\fontawesome-all.less" />
-    <Content Include="Frontend\Css\Template\style-style1.less" />
-    <Content Include="Frontend\Css\Template\style-style3.less" />
-    <Content Include="Frontend\Css\Template\style-style5.less" />
+    <Content Include="Frontend\Css\Template\style1.less" />
+    <Content Include="Frontend\Css\Template\style3.less" />
+    <Content Include="Frontend\Css\Template\style-light.less" />
     <Content Include="Frontend\Css\Template\form.less" />
+    <Content Include="Frontend\Css\Template\style2.less" />
+    <Content Include="Frontend\Css\Template\style-transparent.less" />
     <None Include="packages.config" />
-    <Content Include="Scripts\app.js" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -839,9 +878,6 @@
       <DependentUpon>popper.js</DependentUpon>
     </Content>
     <Content Include="Scripts\esm\popper.min.js" />
-    <Content Include="Scripts\app.min.js.map">
-      <DependentUpon>app.min.js</DependentUpon>
-    </Content>
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\esm\popper.min.js.map">

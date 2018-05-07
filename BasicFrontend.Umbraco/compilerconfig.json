@@ -42,10 +42,6 @@
     "outputFile": "Frontend/Css/Colours/dark.css"
   },
   {
-    "inputFile": "Frontend/Css/Colours/light.less",
-    "outputFile": "Frontend/Css/Colours/light.css"
-  },
-  {
     "inputFile": "Frontend/Css/Colours/purple.less",
     "outputFile": "Frontend/Css/Colours/purple.css"
   },
@@ -198,16 +194,24 @@
     "outputFile": "Frontend/Css/Template/form.css"
   },
   {
-    "inputFile": "Frontend/Css/Template/style-style1.less",
-    "outputFile": "Frontend/Css/Template/style-style1.css"
+    "inputFile": "Frontend/Css/Template/style1.less",
+    "outputFile": "Frontend/Css/Template/style1.css"
   },
   {
-    "inputFile": "Frontend/Css/Template/style-style3.less",
-    "outputFile": "Frontend/Css/Template/style-style3.css"
+    "inputFile": "Frontend/Css/Template/style2.less",
+    "outputFile": "Frontend/Css/Template/style2.css"
   },
   {
-    "inputFile": "Frontend/Css/Template/style-style5.less",
-    "outputFile": "Frontend/Css/Template/style-style5.css"
+    "inputFile": "Frontend/Css/Template/style3.less",
+    "outputFile": "Frontend/Css/Template/style3.css"
+  },
+  {
+    "inputFile": "Frontend/Css/Template/style-transparent.less",
+    "outputFile": "Frontend/Css/Template/style-transparent.css"
+  },
+  {
+    "inputFile": "Frontend/Css/Template/style-light.less",
+    "outputFile": "Frontend/Css/Template/style-light.css"
   },
 
 

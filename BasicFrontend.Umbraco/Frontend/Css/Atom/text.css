@@ -1,20 +1,27 @@
 ﻿/* text.less */
 /* global.less */
+/* base styles and definitions */
+/* menu */
+/* colours */
+/* style1 */
+/* light -> obsolete: style5 */
+/* button */
+/* code */
+/* banner */
+/* footer */
 p {
   font-size: 1.0rem;
   font-weight: normal;
   line-height: 1.4;
   letter-spacing: 0.2px;
-}
-p {
-  color: #d3d3d3;
+  color: whitesmoke;
 }
 p {
   margin-bottom: 2em;
 }
 strong,
 b {
-  color: #d3d3d3;
+  color: whitesmoke;
   font-weight: 600;
 }
 em,
@@ -46,13 +53,18 @@ sup {
   font-size: .85rem;
 }
 .headline {
-  font-size: 62px;
+  font-size: 1.6em;
   margin-bottom: 1.0rem;
 }
 .tagline {
   font-weight: 100;
-  font-size: 40px;
+  font-size: 1.4em;
   margin-bottom: 1.0rem;
+}
+.paragraph {
+  -webkit-columns: 100px 2;
+  -moz-columns: 100px 2;
+  columns: 100px 2;
 }
 .align-left {
   text-align: left;

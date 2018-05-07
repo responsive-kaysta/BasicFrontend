@@ -14,12 +14,12 @@
 else
 {
     <text>
-        <article id="main">
+        <article id="main @Model.value.style">
             <header>
                 <h2>@Model.value.headline</h2>
                 <p>@Model.value.description</p>
             </header>
-            <section class="wrapper style5">
+            <section class="wrapper">
                 <div class="inner">
                     @Html.Raw(Model.value.content)
                 </div>

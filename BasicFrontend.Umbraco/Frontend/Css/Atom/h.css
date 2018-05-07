@@ -1,12 +1,21 @@
-/* h.less */
+﻿/* h.less */
 /* global.less */
+/* base styles and definitions */
+/* menu */
+/* colours */
+/* style1 */
+/* light -> obsolete: style5 */
+/* button */
+/* code */
+/* banner */
+/* footer */
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  color: #d3d3d3;
+  color: whitesmoke;
   font-weight: 800;
   letter-spacing: 0.225em;
   line-height: 1em;
@@ -21,6 +30,10 @@ h5 a,
 h6 a {
   color: inherit;
   text-decoration: none;
+}
+h2 {
+  font-size: 1.5em;
+  line-height: 1.75em;
 }
 h2 {
   font-size: 1.35em;

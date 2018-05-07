@@ -1,0 +1,167 @@
+/* style-white.less */
+/* global.less */
+/* base styles and definitions */
+/* menu */
+/* colours */
+/* style1 */
+/* light -> obsolete: style5 */
+/* transparent -> obsolete: style4 */
+/* button */
+/* code */
+/* banner */
+/* footer */
+.transparent {
+  background: transparent;
+}
+.transparent * {
+  color: whitesmoke;
+}
+.transparent p {
+  color: whitesmoke;
+}
+.transparent h2 {
+  color: whitesmoke;
+}
+.transparent a {
+  color: whitesmoke;
+  width: 100%;
+}
+.transparent .date {
+  text-align: right;
+}
+div.page-header {
+  width: 100%;
+  border-bottom: lightgray solid thin;
+}
+.transparent div.page-header > h1 {
+  color: whitesmoke;
+}
+.wrapper.transparent {
+  background-color: transparent;
+  color: whitesmoke;
+}
+.wrapper.transparent strong,
+.wrapper.transparent b {
+  color: whitesmoke;
+}
+.wrapper.transparent h2,
+.wrapper.transparent h3,
+.wrapper.transparent h4,
+.wrapper.transparent h5,
+.wrapper.transparent h6 {
+  color: whitesmoke;
+}
+.wrapper.transparent hr {
+  border-color: transparent;
+}
+.wrapper.transparent blockquote {
+  border-color: transparent;
+}
+.wrapper.transparent code {
+  background: rgba(0, 0, 0, 0.0375);
+}
+.wrapper.transparent header p {
+  color: whitesmoke;
+}
+.wrapper.transparent header.major h2,
+.wrapper.transparent header.major h3,
+.wrapper.transparent header.major h4,
+.wrapper.transparent header.major h5,
+.wrapper.transparent header.major h6 {
+  border-color: transparent;
+}
+.wrapper.transparent header.major p {
+  color: whitesmoke;
+}
+.wrapper.transparent label {
+  color: whitesmoke;
+}
+.wrapper.transparent input[type="text"],
+.wrapper.transparent input[type="password"],
+.wrapper.transparent input[type="email"],
+.wrapper.transparent select,
+.wrapper.transparent textarea {
+  background: rgba(0, 0, 0, 0.0375);
+}
+.wrapper.transparent .select-wrapper:before {
+  color: whitesmoke;
+}
+.wrapper.transparent input[type="checkbox"] + label,
+.wrapper.transparent input[type="radio"] + label {
+  color: whitesmoke;
+}
+.wrapper.transparent input[type="checkbox"] + label:before,
+.wrapper.transparent input[type="radio"] + label:before {
+  background: rgba(0, 0, 0, 0.0375);
+}
+.wrapper.transparent input[type="checkbox"]:checked + label:before,
+.wrapper.transparent input[type="radio"]:checked + label:before {
+  background: #2E3842;
+  color: whitesmoke;
+}
+.wrapper.transparent ::-webkit-input-placeholder {
+  color: #8E8892 !important;
+}
+.wrapper.transparent :-moz-placeholder {
+  color: #8E8892 !important;
+}
+.wrapper.transparent ::-moz-placeholder {
+  color: #8E8892 !important;
+}
+.wrapper.transparent :-ms-input-placeholder {
+  color: #8E8892 !important;
+}
+.wrapper.transparent .formerize-placeholder {
+  color: #8E8892 !important;
+}
+.wrapper.transparent .icon.major {
+  border-color: whitesmoke;
+}
+.wrapper.transparent ul.alt li {
+  border-color: whitesmoke;
+}
+.wrapper.transparent table tbody tr {
+  border-color: lightgray;
+}
+.wrapper.transparent table tbody tr:nth-child(2n + 1) {
+  background-color: rgba(0, 0, 0, 0.0375);
+}
+.wrapper.transparent table th {
+  color: whitesmoke;
+}
+.wrapper.transparent table thead {
+  border-color: lightgray;
+}
+.wrapper.transparent table tfoot {
+  border-color: lightgray;
+}
+.wrapper.transparent table.alt tbody tr td {
+  border-color: lightgray;
+}
+.wrapper.transparent input[type="submit"],
+.wrapper.transparent input[type="reset"],
+.wrapper.transparent input[type="button"],
+.wrapper.transparent button,
+.wrapper.transparent .button {
+  box-shadow: inset 0 0 0 2px #dfdfdf;
+  color: #2E3842;
+}
+.wrapper.transparent input[type="submit"]:hover,
+.wrapper.transparent input[type="reset"]:hover,
+.wrapper.transparent input[type="button"]:hover,
+.wrapper.transparent button:hover,
+.wrapper.transparent .button:hover {
+  background-color: rgba(0, 0, 0, 0.0375);
+}
+.wrapper.transparent input[type="submit"]:active,
+.wrapper.transparent input[type="reset"]:active,
+.wrapper.transparent input[type="button"]:active,
+.wrapper.transparent button:active,
+.wrapper.transparent .button:active {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+@media screen and (max-width: 736px) {
+  .wrapper.transparent .features li {
+    border-top-color: lightgray;
+  }
+}

@@ -1,4 +1,14 @@
 ﻿/* icon.less */
+/* global.less */
+/* base styles and definitions */
+/* menu */
+/* colours */
+/* style1 */
+/* light -> obsolete: style5 */
+/* button */
+/* code */
+/* banner */
+/* footer */
 .icon {
   text-decoration: none;
   border-bottom: none;
@@ -21,7 +31,7 @@
   -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
   border-radius: 3px;
-  border: solid 2px #fff;
+  border: solid 2px whitesmoke;
   display: inline-block;
   font-size: 1.35em;
   height: calc(5em);
@@ -43,11 +53,17 @@
   }
 }
 .icon.style1 {
-  color: #00ffcc;
+  color: whitesmoke;
 }
 .icon.style2 {
   color: #00f0ff;
 }
 .icon.style3 {
   color: #76ddff;
+}
+.icon.style4 {
+  color: #2bcaff;
+}
+.icon.light {
+  color: #4E4852;
 }

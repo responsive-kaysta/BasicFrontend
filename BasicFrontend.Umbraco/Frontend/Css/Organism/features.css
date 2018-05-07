@@ -1,5 +1,14 @@
 ﻿/* features.less */
 /* global.less */
+/* base styles and definitions */
+/* menu */
+/* colours */
+/* style1 */
+/* light -> obsolete: style5 */
+/* button */
+/* code */
+/* banner */
+/* footer */
 .features {
   display: -moz-flex;
   display: -webkit-flex;
@@ -90,7 +99,7 @@
   .features li {
     padding: 3em 0 1em 0;
     background-color: transparent !important;
-    border-top: solid 2px #fff;
+    border-top: solid 2px whitesmoke;
     width: 100%;
   }
   .features li:first-child {

@@ -85,7 +85,7 @@
         "icon": "icon-font",
         "config": {
             "style": "font-size: 16px; line-height: 20px; font-weight: light;",
-            "markup": "<p>#value#</p>"
+            "markup": "<p class='paragraph'>#value#</p>"
         }
     },
 

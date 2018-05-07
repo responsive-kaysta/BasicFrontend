@@ -1,12 +1,21 @@
 ﻿/* breadcrumb.less */
 /* global.less */
+/* base styles and definitions */
+/* menu */
+/* colours */
+/* style1 */
+/* light -> obsolete: style5 */
+/* button */
+/* code */
+/* banner */
+/* footer */
 .breadcrumb {
   background: rgba(0, 0, 0, 0.6);
   transition: all 200ms ease-in-out;
 }
 .breadcrumb a,
 .breadcrumb a:visited {
-  color: #d3d3d3;
+  color: whitesmoke;
   font-size: 1rem;
 }
 .breadcrumb:hover {

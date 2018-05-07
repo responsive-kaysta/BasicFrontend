@@ -1,5 +1,14 @@
 ﻿/* menu.less */
 /* global.less */
+/* base styles and definitions */
+/* menu */
+/* colours */
+/* style1 */
+/* light -> obsolete: style5 */
+/* button */
+/* code */
+/* banner */
+/* footer */
 #menu {
   -moz-transform: translateX(20em);
   -webkit-transform: translateX(20em);
@@ -11,7 +20,7 @@
   transition: transform 0.5s ease;
   -webkit-overflow-scrolling: touch;
   background: #1a867d;
-  color: #d3d3d3;
+  color: whitesmoke;
   height: 100%;
   max-width: 80%;
   overflow-y: auto;
@@ -30,7 +39,7 @@
   border-top: solid 1px rgba(0, 0, 0, 0.125);
   margin: 0.5em 0 0 0;
   padding: 0.5em 0 0 0;
-  color: #d3d3d3;
+  color: whitesmoke;
 }
 #menu ul > li:first-child {
   border-top: 0 !important;
@@ -39,7 +48,7 @@
 }
 #menu ul > li > a {
   border: 0;
-  color: #d3d3d3;
+  color: whitesmoke;
   display: block;
   font-size: 0.8em;
   letter-spacing: 0.225em;

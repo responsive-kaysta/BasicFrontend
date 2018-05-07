@@ -1,5 +1,14 @@
-/* button.less */
+﻿/* button.less */
 /* global.less */
+/* base styles and definitions */
+/* menu */
+/* colours */
+/* style1 */
+/* light -> obsolete: style5 */
+/* button */
+/* code */
+/* banner */
+/* footer */
 a.button {
   border-radius: 3px;
   margin-top: 20px;
@@ -10,16 +19,16 @@ a.button {
 }
 a.button:hover {
   background: black;
-  color: #d3d3d3;
+  color: whitesmoke;
   text-decoration: none !important;
 }
 a.button.fill {
   background: black;
-  color: #d3d3d3;
+  color: whitesmoke;
 }
 a.button.fill:hover {
   background: rgba(0, 0, 0, 0.5);
-  color: #d3d3d3;
+  color: whitesmoke;
   text-decoration: none;
 }
 input[type="submit"],
@@ -38,8 +47,8 @@ button,
   background-color: transparent;
   border-radius: 3px;
   border: 0;
-  box-shadow: inset 0 0 0 2px white;
-  color: #d3d3d3;
+  box-shadow: inset 0 0 0 2px whitesmoke;
+  color: whitesmoke;
   cursor: pointer;
   display: inline-block;
   font-size: 0.8em;
@@ -106,7 +115,7 @@ button.special,
 .button.special {
   background-color: #ed4933;
   box-shadow: none !important;
-  color: #d3d3d3 !important;
+  color: whitesmoke !important;
 }
 input[type="submit"].special:hover,
 input[type="reset"].special:hover,

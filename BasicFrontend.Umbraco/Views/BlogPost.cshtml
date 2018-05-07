@@ -11,7 +11,7 @@
     </header>
     @{
         var style = @Umbraco.Field("colourScheme");
-        <section class="wrapper">
+        <section class="wrapper @style">
             <div class="inner">
                 <div class="container">
                     @Html.GetGridHtml(Model.Content, "gridLayout", "bootstrap3-fluid")

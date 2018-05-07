@@ -1,5 +1,7 @@
 ﻿/* icon.less */
 
+@import "../global.less";
+
 .icon {
     text-decoration: none;
     border-bottom: none;
@@ -25,7 +27,7 @@
     -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
     border-radius: 3px;
-    border: solid 2px #fff;
+    border: solid 2px @base-border-color;
     display: inline-block;
     font-size: 1.35em;
     height: calc(3em + 2px);
@@ -50,7 +52,7 @@
 }
 
 .icon.style1 {
-    color: #00ffcc;
+    color: @style1-color;
 }
 
 .icon.style2 {
@@ -59,4 +61,12 @@
 
 .icon.style3 {
     color: #76ddff;
+}
+
+.icon.style4 {
+    color: #2bcaff;
+}
+
+.icon.light {
+    color: @style-light-color;
 }

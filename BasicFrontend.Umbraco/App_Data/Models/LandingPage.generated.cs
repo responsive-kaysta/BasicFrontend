@@ -82,15 +82,6 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 
 		///<summary>
-		/// Link
-		///</summary>
-		[ImplementPropertyType("link")]
-		public Umbraco.Web.Models.RelatedLinks Link
-		{
-			get { return this.GetPropertyValue<Umbraco.Web.Models.RelatedLinks>("link"); }
-		}
-
-		///<summary>
 		/// Page Style
 		///</summary>
 		[ImplementPropertyType("pageStyle")]

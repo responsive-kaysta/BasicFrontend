@@ -1,5 +1,14 @@
 ﻿/* header.less */
 /* global.less */
+/* base styles and definitions */
+/* menu */
+/* colours */
+/* style1 */
+/* light -> obsolete: style5 */
+/* button */
+/* code */
+/* banner */
+/* footer */
 #header {
   -moz-transition: background-color 0.2s ease;
   -webkit-transition: background-color 0.2s ease;
@@ -31,6 +40,12 @@
   height: inherit;
   line-height: inherit;
 }
+.page-header {
+  margin-bottom: 1em;
+}
+.page-header h1 {
+  font-size: 1.5em;
+}
 @media screen and (max-width: 736px) {
   #header h1 a {
     font-size: 0.8em;
@@ -55,7 +70,7 @@
 }
 #header nav > ul > li > a {
   border: 0;
-  color: #d3d3d3;
+  color: whitesmoke;
   display: block;
   font-size: 0.8em;
   letter-spacing: 0.225em;
@@ -138,7 +153,7 @@ header.major h6:after {
   height: 1px;
 }
 header.major p {
-  color: #d3d3d3;
+  color: whitesmoke;
   top: 0;
 }
 @media screen and (max-width: 736px) {
@@ -150,7 +165,4 @@ header.major p {
   header br {
     display: none;
   }
-}
-.page-header {
-  margin-bottom: 1em;
 }
