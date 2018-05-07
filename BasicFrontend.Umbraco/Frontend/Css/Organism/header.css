@@ -3,8 +3,9 @@
 /* base styles and definitions */
 /* menu */
 /* colours */
-/* style1 */
+/* green -> obsolete style1 */
 /* light -> obsolete: style5 */
+/* transparent -> obsolete: style4 */
 /* button */
 /* code */
 /* banner */
@@ -14,7 +15,6 @@
   -webkit-transition: background-color 0.2s ease;
   -ms-transition: background-color 0.2s ease;
   transition: background-color 0.2s ease;
-  background: #2e3842;
   height: 3em;
   left: 0;
   line-height: 3em;
@@ -41,6 +41,7 @@
   line-height: inherit;
 }
 .page-header {
+  padding-bottom: 1em;
   margin-bottom: 1em;
 }
 .page-header h1 {
@@ -70,7 +71,6 @@
 }
 #header nav > ul > li > a {
   border: 0;
-  color: whitesmoke;
   display: block;
   font-size: 0.8em;
   letter-spacing: 0.225em;
@@ -138,7 +138,6 @@ header.major h3,
 header.major h4,
 header.major h5,
 header.major h6 {
-  border-bottom: solid 2px #fff;
   display: inline-block;
   padding-bottom: 1em;
   position: relative;
@@ -153,7 +152,6 @@ header.major h6:after {
   height: 1px;
 }
 header.major p {
-  color: whitesmoke;
   top: 0;
 }
 @media screen and (max-width: 736px) {

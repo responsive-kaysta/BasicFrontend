@@ -4,22 +4,20 @@
 
 .light {
     background: @style-light-bg-color;
+    color: @style-light-color;
 }
 
 .light * {
+    background: @style-light-bg-color;
     color: @style-light-color;
 }
 
-.light p {
-    color: @style-light-color;
-}
-
-.light h2 {
+div.light * {
+    background: @style-light-bg-color;
     color: @style-light-color;
 }
 
 .light a {
-    color: @style-light-color;
     width: 100%;
 }
 
@@ -27,54 +25,35 @@
     text-align: right;
 }
 
-div.page-header {
+.light .page-header {
     width: 100%;
     border-bottom: @style-light-border-color solid thin;
 }
 
-.light div.page-header > h1 {
-    color: @style-light-color;
-}
-
 .wrapper.light {
-    background-color: @style-light-bg-color;
+    background: @style-light-bg-color;
     color: @style-light-color;
 }
 
-    .wrapper.light strong, .wrapper.light b {
+    .wrapper.light * {
+        background: @style-light-bg-color;
         color: @style-light-color;
     }
-
-    .wrapper.light h2, .wrapper.light h3, .wrapper.light h4, .wrapper.light h5, .wrapper.light h6 {
-        color: @style-light-color;
-    }
-
+       
     .wrapper.light hr {
+        background: @style-light-bg-color;
+        color: @style-light-color;
         border-color: @style-light-bg-color;
     }
 
     .wrapper.light blockquote {
+        background: @style-light-bg-color;
+        color: @style-light-color;
         border-color: @style-light-bg-color;
     }
 
     .wrapper.light code {
         background: rgba(0, 0, 0, 0.0375);
-    }
-
-    .wrapper.light header p {
-        color: @style-light-color;
-    }
-
-    .wrapper.light header.major h2, .wrapper.light header.major h3, .wrapper.light header.major h4, .wrapper.light header.major h5, .wrapper.light header.major h6 {
-        border-color: @style-light-bg-color;
-    }
-
-    .wrapper.light header.major p {
-        color: @style-light-color;
-    }
-
-    .wrapper.light label {
-        color: @style-light-color;
     }
 
     .wrapper.light input[type="text"],
@@ -181,9 +160,3 @@ div.page-header {
         .wrapper.light .button:active {
             background-color: rgba(0, 0, 0, 0.1);
         }
-
-    @media screen and (max-width: 736px) {
-        .wrapper.light .features li {
-            border-top-color: @style-light-border-color;
-        }
-    }

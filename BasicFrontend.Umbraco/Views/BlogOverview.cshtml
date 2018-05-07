@@ -6,8 +6,6 @@
     Layout = "_Layout.cshtml";
 
     var selection = CurrentPage.Children.Where("Visible");
-    var homePage = Model.Content.AncestorOrSelf(1);
-    var configPage = homePage.Descendant<SiteGlobal>();
 }
 
 <article id="main">
@@ -16,8 +14,8 @@
         <p>@Umbraco.Field("introduction")</p>
     </header>
     @{
-        var style = @Umbraco.Field("colourScheme");
-        <section class="wrapper @style">
+        var pageStyle = @Umbraco.Field("pageStyle");
+        <section class="wrapper @pageStyle">
             <div class="inner">
                 @if (selection.Any())
                 {
@@ -29,10 +27,10 @@
                                 var introduction = item.GetPropertyValue("introduction").ToString();
                                 var gbId = Umbraco.Media(item.GetPropertyValue("teaserImage").ToString());
                                 var gbImage = gbId.Url;
-                                var colourScheme = item.GetPropertyValue("colourScheme").ToString();
+                                var blogStyle = item.GetPropertyValue("pageStyle").ToString();
 
                                 <div class="col-sm-12 col-md-6 equal">
-                                    <div class="@colourScheme">
+                                    <div class="@blogStyle">
                                         <a href="@item.Url" style="background-image: url('@gbImage'); background-position: center; background-repeat: no-repeat; background-size: cover;">
                                             <div class="date">@item.CreateDate.ToLongDateString()</div>
                                             <h2>@item.GetPropertyValue("title")</h2>

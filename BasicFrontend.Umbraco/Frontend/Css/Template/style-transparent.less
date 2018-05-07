@@ -4,22 +4,20 @@
 
 .transparent {
     background: @style-transparent-bg-color;
+    color: @style-transparent-color;
 }
 
 .transparent * {
+    background: @style-transparent-bg-color;
     color: @style-transparent-color;
 }
 
-.transparent p {
-    color: @style-transparent-color;
-}
-
-.transparent h2 {
+div.transparent * {
+    background: @style-transparent-bg-color;
     color: @style-transparent-color;
 }
 
 .transparent a {
-    color: @style-transparent-color;
     width: 100%;
 }
 
@@ -27,54 +25,35 @@
     text-align: right;
 }
 
-div.page-header {
+.transparent .page-header {
     width: 100%;
     border-bottom: @style-transparent-border-color solid thin;
 }
 
-.transparent div.page-header > h1 {
-    color: @style-transparent-color;
-}
-
 .wrapper.transparent {
-    background-color: @style-transparent-bg-color;
+    background: @style-transparent-bg-color;
     color: @style-transparent-color;
 }
 
-    .wrapper.transparent strong, .wrapper.transparent b {
+    .wrapper.transparent * {
+        background: @style-transparent-bg-color;
         color: @style-transparent-color;
     }
-
-    .wrapper.transparent h2, .wrapper.transparent h3, .wrapper.transparent h4, .wrapper.transparent h5, .wrapper.transparent h6 {
-        color: @style-transparent-color;
-    }
-
+       
     .wrapper.transparent hr {
+        background: @style-transparent-bg-color;
+        color: @style-transparent-color;
         border-color: @style-transparent-bg-color;
     }
 
     .wrapper.transparent blockquote {
+        background: @style-transparent-bg-color;
+        color: @style-transparent-color;
         border-color: @style-transparent-bg-color;
     }
 
     .wrapper.transparent code {
         background: rgba(0, 0, 0, 0.0375);
-    }
-
-    .wrapper.transparent header p {
-        color: @style-transparent-color;
-    }
-
-    .wrapper.transparent header.major h2, .wrapper.transparent header.major h3, .wrapper.transparent header.major h4, .wrapper.transparent header.major h5, .wrapper.transparent header.major h6 {
-        border-color: @style-transparent-bg-color;
-    }
-
-    .wrapper.transparent header.major p {
-        color: @style-transparent-color;
-    }
-
-    .wrapper.transparent label {
-        color: @style-transparent-color;
     }
 
     .wrapper.transparent input[type="text"],
@@ -181,9 +160,3 @@ div.page-header {
         .wrapper.transparent .button:active {
             background-color: rgba(0, 0, 0, 0.1);
         }
-
-    @media screen and (max-width: 736px) {
-        .wrapper.transparent .features li {
-            border-top-color: @style-transparent-border-color;
-        }
-    }

@@ -194,8 +194,8 @@
     "outputFile": "Frontend/Css/Template/form.css"
   },
   {
-    "inputFile": "Frontend/Css/Template/style1.less",
-    "outputFile": "Frontend/Css/Template/style1.css"
+    "inputFile": "Frontend/Css/Template/style-green.less",
+    "outputFile": "Frontend/Css/Template/style-green.css"
   },
   {
     "inputFile": "Frontend/Css/Template/style2.less",

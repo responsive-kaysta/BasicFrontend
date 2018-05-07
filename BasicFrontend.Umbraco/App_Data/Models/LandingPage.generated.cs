@@ -82,30 +82,12 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 
 		///<summary>
-		/// Page Style
-		///</summary>
-		[ImplementPropertyType("pageStyle")]
-		public object PageStyle
-		{
-			get { return this.GetPropertyValue("pageStyle"); }
-		}
-
-		///<summary>
 		/// Grid Layout
 		///</summary>
 		[ImplementPropertyType("gridLayout")]
 		public Newtonsoft.Json.Linq.JToken GridLayout
 		{
 			get { return Umbraco.Web.PublishedContentModels.ContentGrid.GetGridLayout(this); }
-		}
-
-		///<summary>
-		/// Colour Scheme
-		///</summary>
-		[ImplementPropertyType("colourScheme")]
-		public object ColourScheme
-		{
-			get { return Umbraco.Web.PublishedContentModels.PageDefaults.GetColourScheme(this); }
 		}
 
 		///<summary>
@@ -133,6 +115,15 @@ namespace Umbraco.Web.PublishedContentModels
 		public string Introduction
 		{
 			get { return Umbraco.Web.PublishedContentModels.PageDefaults.GetIntroduction(this); }
+		}
+
+		///<summary>
+		/// Page Style
+		///</summary>
+		[ImplementPropertyType("pageStyle")]
+		public object PageStyle
+		{
+			get { return Umbraco.Web.PublishedContentModels.PageDefaults.GetPageStyle(this); }
 		}
 
 		///<summary>

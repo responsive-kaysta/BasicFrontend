@@ -3,8 +3,9 @@
 /* base styles and definitions */
 /* menu */
 /* colours */
-/* style1 */
+/* green -> obsolete style1 */
 /* light -> obsolete: style5 */
+/* transparent -> obsolete: style4 */
 /* button */
 /* code */
 /* banner */
@@ -16,9 +17,11 @@ a.button {
   font-size: 1rem;
   background: transparent;
   transition: all 0.2s ease-in-out;
+  background: black;
+  color: whitesmoke;
 }
 a.button:hover {
-  background: black;
+  background: rgba(0, 0, 0, 0.5);
   color: whitesmoke;
   text-decoration: none !important;
 }
@@ -28,6 +31,26 @@ a.button.fill {
 }
 a.button.fill:hover {
   background: rgba(0, 0, 0, 0.5);
+  color: whitesmoke;
+  text-decoration: none;
+}
+a.button.special {
+  border-radius: 3px;
+  margin-top: 20px;
+  font-family: "Lato", sans-serif !important;
+  font-size: 1rem;
+  background: transparent;
+  transition: all 0.2s ease-in-out;
+  background: #ed4933;
+  color: whitesmoke;
+}
+a.button.special:hover {
+  background: #ef5e4a;
+  color: whitesmoke;
+  text-decoration: none !important;
+}
+a.button.fill:active {
+  background: #eb341c;
   color: whitesmoke;
   text-decoration: none;
 }
@@ -76,7 +99,7 @@ input[type="reset"]:active,
 input[type="button"]:active,
 button:active,
 .button:active {
-  background-color: rgba(144, 144, 144, 0.5);
+  background-color: rgba(0, 0, 0, 0.75);
 }
 input[type="submit"].icon:before,
 input[type="reset"].icon:before,

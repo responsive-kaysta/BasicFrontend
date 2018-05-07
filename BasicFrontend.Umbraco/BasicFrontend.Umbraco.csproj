@@ -696,17 +696,17 @@
     <Content Include="Frontend\Css\Template\form.min.css">
       <DependentUpon>form.css</DependentUpon>
     </Content>
+    <Content Include="Frontend\Css\Template\style-green.css">
+      <DependentUpon>style-green.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Template\style-green.min.css">
+      <DependentUpon>style-green.css</DependentUpon>
+    </Content>
     <Content Include="Frontend\Css\Template\style-light.css">
       <DependentUpon>style-light.less</DependentUpon>
     </Content>
     <Content Include="Frontend\Css\Template\style-light.min.css">
       <DependentUpon>style-light.css</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Template\style-style1.css">
-      <DependentUpon>style1.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Template\style-style1.min.css">
-      <DependentUpon>style-style1.css</DependentUpon>
     </Content>
     <Content Include="Frontend\Css\Template\style-style3.css">
       <DependentUpon>style3.less</DependentUpon>
@@ -719,12 +719,6 @@
     </Content>
     <Content Include="Frontend\Css\Template\style-transparent.min.css">
       <DependentUpon>style-transparent.css</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Template\style1.css">
-      <DependentUpon>style1.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Template\style1.min.css">
-      <DependentUpon>style1.css</DependentUpon>
     </Content>
     <Content Include="Frontend\Css\Template\style2.css">
       <DependentUpon>style2.less</DependentUpon>
@@ -854,7 +848,7 @@
     <Content Include="webfonts\fa-regular-400.svg" />
     <Content Include="webfonts\fa-solid-900.svg" />
     <Content Include="Frontend\fontawesome-all.less" />
-    <Content Include="Frontend\Css\Template\style1.less" />
+    <Content Include="Frontend\Css\Template\style-green.less" />
     <Content Include="Frontend\Css\Template\style3.less" />
     <Content Include="Frontend\Css\Template\style-light.less" />
     <Content Include="Frontend\Css\Template\form.less" />
@@ -2453,7 +2447,6 @@
     <Content Include="Umbraco\Views\Preview\Slider.cshtml" />
     <Content Include="Umbraco\Webservices\TagsAutoCompleteHandler.ashx" />
     <Content Include="Umbraco\Webservices\TreeDataService.ashx" />
-    <Content Include="Views\AnchorPage.cshtml" />
     <Content Include="Views\BlogOverview.cshtml" />
     <Content Include="Views\BlogPost.cshtml" />
     <Content Include="Views\ContentPage.cshtml" />
@@ -2484,7 +2477,6 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="App_Data\Models\AnchorPage.generated.cs" />
     <Compile Include="App_Data\Models\BlogOverview.generated.cs" />
     <Compile Include="App_Data\Models\BlogPost.generated.cs" />
     <Compile Include="App_Data\Models\ContentGrid.generated.cs" />
@@ -2496,7 +2488,6 @@
     <Compile Include="App_Data\Models\Member.generated.cs" />
     <Compile Include="App_Data\Models\PageDefaults.generated.cs" />
     <Compile Include="App_Data\Models\SiteGlobal.generated.cs" />
-    <Compile Include="App_Data\Models\SiteStyling.generated.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

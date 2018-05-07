@@ -24,9 +24,6 @@ namespace Umbraco.Web.PublishedContentModels
 	/// <summary>Page Defaults</summary>
 	public partial interface IPageDefaults : IPublishedContent
 	{
-		/// <summary>Colour Scheme</summary>
-		object ColourScheme { get; }
-
 		/// <summary>Header Type</summary>
 		object HeaderType { get; }
 
@@ -35,6 +32,9 @@ namespace Umbraco.Web.PublishedContentModels
 
 		/// <summary>Introduction</summary>
 		string Introduction { get; }
+
+		/// <summary>Page Style</summary>
+		object PageStyle { get; }
 
 		/// <summary>Page Type</summary>
 		object PageType { get; }
@@ -72,18 +72,6 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 
 		///<summary>
-		/// Colour Scheme
-		///</summary>
-		[ImplementPropertyType("colourScheme")]
-		public object ColourScheme
-		{
-			get { return GetColourScheme(this); }
-		}
-
-		/// <summary>Static getter for Colour Scheme</summary>
-		public static object GetColourScheme(IPageDefaults that) { return that.GetPropertyValue("colourScheme"); }
-
-		///<summary>
 		/// Header Type
 		///</summary>
 		[ImplementPropertyType("headerType")]
@@ -118,6 +106,18 @@ namespace Umbraco.Web.PublishedContentModels
 
 		/// <summary>Static getter for Introduction</summary>
 		public static string GetIntroduction(IPageDefaults that) { return that.GetPropertyValue<string>("introduction"); }
+
+		///<summary>
+		/// Page Style
+		///</summary>
+		[ImplementPropertyType("pageStyle")]
+		public object PageStyle
+		{
+			get { return GetPageStyle(this); }
+		}
+
+		/// <summary>Static getter for Page Style</summary>
+		public static object GetPageStyle(IPageDefaults that) { return that.GetPropertyValue("pageStyle"); }
 
 		///<summary>
 		/// Page Type

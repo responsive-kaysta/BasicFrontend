@@ -55,15 +55,6 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 
 		///<summary>
-		/// Colour Scheme
-		///</summary>
-		[ImplementPropertyType("colourScheme")]
-		public object ColourScheme
-		{
-			get { return Umbraco.Web.PublishedContentModels.PageDefaults.GetColourScheme(this); }
-		}
-
-		///<summary>
 		/// Header Type
 		///</summary>
 		[ImplementPropertyType("headerType")]
@@ -88,6 +79,15 @@ namespace Umbraco.Web.PublishedContentModels
 		public string Introduction
 		{
 			get { return Umbraco.Web.PublishedContentModels.PageDefaults.GetIntroduction(this); }
+		}
+
+		///<summary>
+		/// Page Style
+		///</summary>
+		[ImplementPropertyType("pageStyle")]
+		public object PageStyle
+		{
+			get { return Umbraco.Web.PublishedContentModels.PageDefaults.GetPageStyle(this); }
 		}
 
 		///<summary>

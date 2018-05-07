@@ -3,8 +3,9 @@
 /* base styles and definitions */
 /* menu */
 /* colours */
-/* style1 */
+/* green -> obsolete style1 */
 /* light -> obsolete: style5 */
+/* transparent -> obsolete: style4 */
 /* button */
 /* code */
 /* banner */
@@ -52,7 +53,7 @@
     font-size: 1em;
   }
 }
-.icon.style1 {
+.icon.green {
   color: whitesmoke;
 }
 .icon.style2 {
@@ -61,9 +62,9 @@
 .icon.style3 {
   color: #76ddff;
 }
-.icon.style4 {
-  color: #2bcaff;
+.icon.transparent {
+  color: whitesmoke;
 }
 .icon.light {
-  color: #4E4852;
+  color: #5e5e5e;
 }

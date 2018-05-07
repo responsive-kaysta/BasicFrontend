@@ -3,8 +3,9 @@
 /* base styles and definitions */
 /* menu */
 /* colours */
-/* style1 */
+/* green -> obsolete style1 */
 /* light -> obsolete: style5 */
+/* transparent -> obsolete: style4 */
 /* button */
 /* code */
 /* banner */
@@ -33,13 +34,17 @@
   max-height: 300px;
 }
 .spotlight .content {
-  padding: 2em 4em 0.1em 4em;
   -moz-order: 2;
   -webkit-order: 2;
   -ms-order: 2;
   order: 2;
-  max-width: 48em;
   width: 60%;
+}
+.spotlight .content {
+  padding-bottom: 1em;
+  padding-top: 1em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
 }
 @media screen and (max-width: 736px) {
   .spotlight {

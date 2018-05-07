@@ -24,8 +24,8 @@
 </section>
 
 @{
-    var style = @Umbraco.Field("pageStyle");
-    <div class="wrapper alt @style">
+    var pageStyle = @Umbraco.Field("pageStyle");
+    <div class="wrapper alt @pageStyle">
         @Html.GetGridHtml(Model.Content, "gridLayout", "bootstrap3-fluid")
     </div>
 }

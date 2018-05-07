@@ -10,8 +10,8 @@
         <p>@Html.Raw(Umbraco.Field("introduction"))</p>
     </header>
     @{
-        var style = @Umbraco.Field("colourScheme");
-        <section class="wrapper @style">
+        var pageStyle = @Umbraco.Field("pageStyle");
+        <section class="wrapper @pageStyle">
             <div class="inner">
                 <div class="container">
                     @Html.GetGridHtml(Model.Content, "gridLayout", "bootstrap3-fluid")

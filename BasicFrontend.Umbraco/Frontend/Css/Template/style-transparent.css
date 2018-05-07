@@ -1,9 +1,9 @@
-/* style-white.less */
+﻿/* style-white.less */
 /* global.less */
 /* base styles and definitions */
 /* menu */
 /* colours */
-/* style1 */
+/* green -> obsolete style1 */
 /* light -> obsolete: style5 */
 /* transparent -> obsolete: style4 */
 /* button */
@@ -12,69 +12,46 @@
 /* footer */
 .transparent {
   background: transparent;
+  color: whitesmoke;
 }
 .transparent * {
+  background: transparent;
   color: whitesmoke;
 }
-.transparent p {
-  color: whitesmoke;
-}
-.transparent h2 {
+div.transparent * {
+  background: transparent;
   color: whitesmoke;
 }
 .transparent a {
-  color: whitesmoke;
   width: 100%;
 }
 .transparent .date {
   text-align: right;
 }
-div.page-header {
+.transparent .page-header {
   width: 100%;
   border-bottom: lightgray solid thin;
 }
-.transparent div.page-header > h1 {
-  color: whitesmoke;
-}
 .wrapper.transparent {
-  background-color: transparent;
+  background: transparent;
   color: whitesmoke;
 }
-.wrapper.transparent strong,
-.wrapper.transparent b {
-  color: whitesmoke;
-}
-.wrapper.transparent h2,
-.wrapper.transparent h3,
-.wrapper.transparent h4,
-.wrapper.transparent h5,
-.wrapper.transparent h6 {
+.wrapper.transparent * {
+  background: transparent;
   color: whitesmoke;
 }
 .wrapper.transparent hr {
+  background: transparent;
+  color: whitesmoke;
   border-color: transparent;
 }
 .wrapper.transparent blockquote {
+  background: transparent;
+  color: whitesmoke;
   border-color: transparent;
 }
 .wrapper.transparent code {
   background: rgba(0, 0, 0, 0.0375);
-}
-.wrapper.transparent header p {
-  color: whitesmoke;
-}
-.wrapper.transparent header.major h2,
-.wrapper.transparent header.major h3,
-.wrapper.transparent header.major h4,
-.wrapper.transparent header.major h5,
-.wrapper.transparent header.major h6 {
-  border-color: transparent;
-}
-.wrapper.transparent header.major p {
-  color: whitesmoke;
-}
-.wrapper.transparent label {
-  color: whitesmoke;
 }
 .wrapper.transparent input[type="text"],
 .wrapper.transparent input[type="password"],
@@ -159,9 +136,4 @@ div.page-header {
 .wrapper.transparent button:active,
 .wrapper.transparent .button:active {
   background-color: rgba(0, 0, 0, 0.1);
-}
-@media screen and (max-width: 736px) {
-  .wrapper.transparent .features li {
-    border-top-color: lightgray;
-  }
 }

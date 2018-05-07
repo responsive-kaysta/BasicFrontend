@@ -9,22 +9,49 @@ a.button {
     font-size: 1rem;
     background: transparent;
     transition: all .2s ease-in-out;
+    
+    background: @a-button-bg;
+    color: @a-button-color;
 }
 
-a.button:hover {
-    background: @a-button-bg;
-    color: @base-color;
+a.button:hover {    
+    background: @a-button-bg-hover;
+    color: @a-button-color;
     text-decoration: none !important;
 }
 
 a.button.fill {
     background: @a-button-bg;
-    color: @base-color;
+    color: @a-button-color;
 }
 
 a.button.fill:hover {
     background: @a-button-bg-hover;
-    color: @base-color;
+    color: @a-button-color;
+    text-decoration: none;
+}
+
+a.button.special {
+    border-radius: 3px;
+    margin-top: 20px;
+    font-family: "Lato", sans-serif !important;
+    font-size: 1rem;
+    background: transparent;
+    transition: all .2s ease-in-out;
+    
+    background: @a-button-special-bg;
+    color: @a-button-special-color;
+}
+
+a.button.special:hover {    
+    background: @a-button-special-bg-hover;
+    color: @a-button-special-color;
+    text-decoration: none !important;
+}
+
+a.button.fill:active {
+    background: @a-button-special-bg-active;
+    color: @a-button-special-color;
     text-decoration: none;
 }
 
@@ -68,7 +95,7 @@ input[type="reset"]:hover,
 input[type="button"]:hover,
 button:hover,
 .button:hover {
-    background-color: @button-bg-hover;
+    background-color: @a-button-bg-hover;
 }
 
 input[type="submit"]:active,
@@ -76,7 +103,7 @@ input[type="reset"]:active,
 input[type="button"]:active,
 button:active,
 .button:active {
-    background-color: @button-bg-active;
+    background-color: @a-button-bg-active;
 }
 
 input[type="submit"].icon:before,
@@ -118,7 +145,7 @@ input[type="reset"].special,
 input[type="button"].special,
 button.special,
 .button.special {
-    background-color: @button-special-bg;
+    background-color: @a-button-special-bg;
     box-shadow: none !important;
     color: @base-color !important;
 }
@@ -128,7 +155,7 @@ input[type="reset"].special:hover,
 input[type="button"].special:hover,
 button.special:hover,
 .button.special:hover {
-    background-color: @button-special-bg-hover !important;
+    background-color: @a-button-special-bg-hover !important;
 }
 
 input[type="submit"].special:active,
@@ -136,7 +163,7 @@ input[type="reset"].special:active,
 input[type="button"].special:active,
 button.special:active,
 .button.special:active {
-    background-color: @button-special-bg-active !important;
+    background-color: @a-button-special-bg-active !important;
 }
 
 input[type="submit"].disabled, input[type="submit"]:disabled,

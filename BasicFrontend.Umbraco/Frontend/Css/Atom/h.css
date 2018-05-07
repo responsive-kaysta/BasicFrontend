@@ -3,8 +3,9 @@
 /* base styles and definitions */
 /* menu */
 /* colours */
-/* style1 */
+/* green -> obsolete style1 */
 /* light -> obsolete: style5 */
+/* transparent -> obsolete: style4 */
 /* button */
 /* code */
 /* banner */
@@ -19,7 +20,6 @@ h6 {
   font-weight: 800;
   letter-spacing: 0.225em;
   line-height: 1em;
-  margin: 0 0 1em 0;
   text-transform: lowercase;
 }
 h1 a,
