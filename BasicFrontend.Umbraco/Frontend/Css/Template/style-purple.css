@@ -1,8 +1,7 @@
-/* style-white.less */
+/* style-purple.less */
 /* global.less */
 /* base styles and definitions */
 /* menu */
-/* colours */
 /* green -> obsolete style1 */
 /* gray -> obsolete style2 */
 /* purple -> obsolete style3 */
@@ -20,10 +19,6 @@
   background: #505393;
   color: #d3d4e4;
 }
-div.purple * {
-  background: #505393;
-  color: #d3d4e4;
-}
 .purple a {
   width: 100%;
 }
@@ -32,7 +27,10 @@ div.purple * {
 }
 .purple .page-header {
   width: 100%;
-  border-bottom: #505393 solid thin;
+  border-bottom: #d3d4e4 solid thin !important;
+}
+header.major h2 {
+  border-bottom: #d3d4e4 solid thin !important;
 }
 .wrapper.purple {
   background: #505393;
@@ -71,11 +69,11 @@ div.purple * {
 }
 .wrapper.purple input[type="checkbox"] + label:before,
 .wrapper.purple input[type="radio"] + label:before {
-  background: rgba(0, 0, 0, 0.0375);
+  background: rgba(0, 0, 0, 0.0375) !important;
 }
 .wrapper.purple input[type="checkbox"]:checked + label:before,
 .wrapper.purple input[type="radio"]:checked + label:before {
-  background: #2E3842;
+  background: #2E3842 !important;
   color: #d3d4e4;
 }
 .wrapper.purple ::-webkit-input-placeholder {
@@ -100,22 +98,22 @@ div.purple * {
   border-color: #d3d4e4;
 }
 .wrapper.purple table tbody tr {
-  border-color: #505393;
+  border-color: #d3d4e4;
 }
 .wrapper.purple table tbody tr:nth-child(2n + 1) {
-  background-color: rgba(0, 0, 0, 0.0375);
+  background-color: rgba(0, 0, 0, 0.0375) !important;
 }
 .wrapper.purple table th {
   color: #d3d4e4;
 }
 .wrapper.purple table thead {
-  border-color: #505393;
+  border-color: #d3d4e4;
 }
 .wrapper.purple table tfoot {
-  border-color: #505393;
+  border-color: #d3d4e4;
 }
 .wrapper.purple table.alt tbody tr td {
-  border-color: #505393;
+  border-color: #d3d4e4;
 }
 .wrapper.purple input[type="submit"],
 .wrapper.purple input[type="reset"],

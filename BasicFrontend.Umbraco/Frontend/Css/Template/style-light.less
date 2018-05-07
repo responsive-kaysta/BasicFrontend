@@ -1,4 +1,4 @@
-/* style-white.less */
+/* style-light.less */
 
 @import "../global.less";
 
@@ -8,11 +8,6 @@
 }
 
 .light * {
-    background: @style-light-bg-color;
-    color: @style-light-color;
-}
-
-div.light * {
     background: @style-light-bg-color;
     color: @style-light-color;
 }
@@ -27,7 +22,11 @@ div.light * {
 
 .light .page-header {
     width: 100%;
-    border-bottom: @style-light-border-color solid thin;
+    border-bottom: @style-light-border-color solid thin !important;
+}
+
+header.major h2 {
+    border-bottom: @style-light-border-color solid thin !important;
 }
 
 .wrapper.light {
@@ -75,12 +74,12 @@ div.light * {
 
         .wrapper.light input[type="checkbox"] + label:before,
         .wrapper.light input[type="radio"] + label:before {
-            background: rgba(0, 0, 0, 0.0375);
+            background: rgba(0, 0, 0, 0.0375) !important;
         }
 
     .wrapper.light input[type="checkbox"]:checked + label:before,
     .wrapper.light input[type="radio"]:checked + label:before {
-        background: #2E3842;
+        background: #2E3842 !important;
         color: @style-light-color;
     }
 
@@ -117,7 +116,7 @@ div.light * {
     }
 
         .wrapper.light table tbody tr:nth-child(2n + 1) {
-            background-color: rgba(0, 0, 0, 0.0375);
+            background-color: rgba(0, 0, 0, 0.0375) !important;
         }
 
     .wrapper.light table th {

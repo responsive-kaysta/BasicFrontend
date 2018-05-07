@@ -1,11 +1,10 @@
-﻿/* text.less */
+/* text.less */
 /* global.less */
 /* base styles and definitions */
 /* menu */
-/* colours */
 /* green -> obsolete style1 */
 /* gray -> obsolete style2 */
-/* purple -> obsolete style2 */
+/* purple -> obsolete style3 */
 /* transparent -> obsolete: style4 */
 /* light -> obsolete: style5 */
 /* button */
@@ -17,14 +16,12 @@ p {
   font-weight: normal;
   line-height: 1.4;
   letter-spacing: 0.2px;
-  color: whitesmoke;
 }
 p {
   margin-bottom: 2em;
 }
 strong,
 b {
-  color: whitesmoke;
   font-weight: 600;
 }
 em,
@@ -65,9 +62,30 @@ sup {
   margin-bottom: 1.0rem;
 }
 .paragraph {
-  -webkit-columns: 100px 2;
-  -moz-columns: 100px 2;
-  columns: 100px 2;
+  color: inherit;
+}
+.paragraph-2col {
+  color: inherit;
+}
+.paragraph-3col {
+  color: inherit;
+}
+@media screen and (min-width: 768px) {
+  .paragraph {
+    -webkit-columns: 300px 1;
+    -moz-columns: 300px 1;
+    columns: 300px 1;
+  }
+  .paragraph-2col {
+    -webkit-columns: 200px 2;
+    -moz-columns: 200px 2;
+    columns: 200px 2;
+  }
+  .paragraph-3col {
+    -webkit-columns: 100px 3;
+    -moz-columns: 100px 3;
+    columns: 100px 3;
+  }
 }
 .align-left {
   text-align: left;

@@ -4,7 +4,6 @@
 
 #footer {
     padding: 6em 0 4em 0;
-    background-color: @base-bg-color;
     text-align: center;
 }
 
@@ -17,11 +16,12 @@
 }
 
 #footer .icons {
-    color: @base-color;
+    text-transform: @base-text-transform !important;
+    border-bottom-color: transparent;
 }
 
 #footer a:hover {
-    color: @footer-hover-color;
+    border-bottom-color: transparent;
 }
 
 #footer .copyright {
@@ -52,7 +52,7 @@
 }
 
 #footer .copyright li a:hover {
-    color: @footer-hover-color;
+    color: @base-hover-color;
 }
 
 @media screen and (max-width: 480px) {

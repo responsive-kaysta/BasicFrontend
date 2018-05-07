@@ -1,11 +1,10 @@
-﻿/* footer.less */
+/* footer.less */
 /* global.less */
 /* base styles and definitions */
 /* menu */
-/* colours */
 /* green -> obsolete style1 */
 /* gray -> obsolete style2 */
-/* purple -> obsolete style2 */
+/* purple -> obsolete style3 */
 /* transparent -> obsolete: style4 */
 /* light -> obsolete: style5 */
 /* button */
@@ -14,7 +13,6 @@
 /* footer */
 #footer {
   padding: 6em 0 4em 0;
-  background-color: #2e3842;
   text-align: center;
 }
 #footer .icons {
@@ -24,10 +22,11 @@
   color: rgba(255, 255, 255, 0.5);
 }
 #footer .icons {
-  color: whitesmoke;
+  text-transform: lowercase !important;
+  border-bottom-color: transparent;
 }
 #footer a:hover {
-  color: red;
+  border-bottom-color: transparent;
 }
 #footer .copyright {
   color: rgba(255, 255, 255, 0.5);

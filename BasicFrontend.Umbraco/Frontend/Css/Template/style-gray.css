@@ -27,7 +27,10 @@
 }
 .gray .page-header {
   width: 100%;
-  border-bottom: whitesmoke solid thin;
+  border-bottom: whitesmoke solid thin !important;
+}
+header.major h2 {
+  border-bottom: whitesmoke solid thin !important;
 }
 .wrapper.gray {
   background: darkgray;
@@ -66,11 +69,11 @@
 }
 .wrapper.gray input[type="checkbox"] + label:before,
 .wrapper.gray input[type="radio"] + label:before {
-  background: rgba(0, 0, 0, 0.0375);
+  background: rgba(0, 0, 0, 0.0375) !important;
 }
 .wrapper.gray input[type="checkbox"]:checked + label:before,
 .wrapper.gray input[type="radio"]:checked + label:before {
-  background: #2E3842;
+  background: #2E3842 !important;
   color: whitesmoke;
 }
 .wrapper.gray ::-webkit-input-placeholder {
@@ -98,7 +101,7 @@
   border-color: whitesmoke;
 }
 .wrapper.gray table tbody tr:nth-child(2n + 1) {
-  background-color: rgba(0, 0, 0, 0.0375);
+  background-color: rgba(0, 0, 0, 0.0375) !important;
 }
 .wrapper.gray table th {
   color: whitesmoke;

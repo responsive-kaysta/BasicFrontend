@@ -1,11 +1,10 @@
-﻿/* wrapper.less */
+/* wrapper.less */
 /* global.less */
 /* base styles and definitions */
 /* menu */
-/* colours */
 /* green -> obsolete style1 */
 /* gray -> obsolete style2 */
-/* purple -> obsolete style2 */
+/* purple -> obsolete style3 */
 /* transparent -> obsolete: style4 */
 /* light -> obsolete: style5 */
 /* button */
@@ -22,12 +21,6 @@
 }
 .wrapper.alt {
   padding: 0;
-}
-.wrapper.style2 {
-  background-color: #2e3842;
-}
-.wrapper.style4 {
-  background-color: transparent;
 }
 #page-wrapper {
   -moz-transition: opacity 0.5s ease;

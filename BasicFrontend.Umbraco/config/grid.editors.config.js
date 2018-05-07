@@ -90,6 +90,28 @@
     },
 
     {
+        "name": "Paragraph 2 col",
+        "alias": "paragraph2col",
+        "view": "textstring",
+        "icon": "icon-font",
+        "config": {
+            "style": "font-size: 16px; line-height: 20px; font-weight: light;",
+            "markup": "<p class='paragraph-2col'>#value#</p>"
+        }
+    },
+
+    {
+        "name": "Paragraph 3 col",
+        "alias": "paragraph3col",
+        "view": "textstring",
+        "icon": "icon-font",
+        "config": {
+            "style": "font-size: 16px; line-height: 20px; font-weight: light;",
+            "markup": "<p class='paragraph-3col'>#value#</p>"
+        }
+    },
+
+    {
         "name": "Leadtext",
         "alias": "lead_text",
         "view": "textstring",

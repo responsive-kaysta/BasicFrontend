@@ -1,4 +1,4 @@
-/* style-white.less */
+/* style-purple.less */
 
 @import "../global.less";
 
@@ -8,11 +8,6 @@
 }
 
 .purple * {
-    background: @style-purple-bg-color;
-    color: @style-purple-color;
-}
-
-div.purple * {
     background: @style-purple-bg-color;
     color: @style-purple-color;
 }
@@ -27,7 +22,11 @@ div.purple * {
 
 .purple .page-header {
     width: 100%;
-    border-bottom: @style-purple-border-color solid thin;
+    border-bottom: @style-purple-border-color solid thin !important;
+}
+
+header.major h2 {
+    border-bottom: @style-purple-border-color solid thin !important;
 }
 
 .wrapper.purple {
@@ -75,12 +74,12 @@ div.purple * {
 
         .wrapper.purple input[type="checkbox"] + label:before,
         .wrapper.purple input[type="radio"] + label:before {
-            background: rgba(0, 0, 0, 0.0375);
+            background: rgba(0, 0, 0, 0.0375) !important;
         }
 
     .wrapper.purple input[type="checkbox"]:checked + label:before,
     .wrapper.purple input[type="radio"]:checked + label:before {
-        background: #2E3842;
+        background: #2E3842 !important;
         color: @style-purple-color;
     }
 
@@ -117,7 +116,7 @@ div.purple * {
     }
 
         .wrapper.purple table tbody tr:nth-child(2n + 1) {
-            background-color: rgba(0, 0, 0, 0.0375);
+            background-color: rgba(0, 0, 0, 0.0375) !important;
         }
 
     .wrapper.purple table th {

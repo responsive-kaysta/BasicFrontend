@@ -7,16 +7,13 @@ p {
     font-weight: normal;
     line-height: 1.4;
     letter-spacing: 0.2px;
-    color:  @base-color;
 }
 
 p {
     margin-bottom: 2em;
 }
 
-
 strong, b {
-    color:  @base-color;
     font-weight: 600;
 }
 
@@ -66,11 +63,36 @@ sup {
 }
 
 .paragraph {
-    -webkit-columns: 100px 2;
-    -moz-columns: 100px 2;
-    columns: 100px 2;
+    color: inherit;
 }
 
+.paragraph-2col {
+    color: inherit;
+}
+
+.paragraph-3col {
+    color: inherit;
+}
+
+@media screen and (min-width: 768px) {
+    .paragraph {
+        -webkit-columns: 300px 1;
+        -moz-columns: 300px 1;
+        columns: 300px 1;
+    }
+    
+    .paragraph-2col {
+        -webkit-columns: 200px 2;
+        -moz-columns: 200px 2;
+        columns: 200px 2;
+    }
+    
+    .paragraph-3col {
+        -webkit-columns: 100px 3;
+        -moz-columns: 100px 3;
+        columns: 100px 3;
+    }
+}
 
 .align-left {
     text-align: left;
