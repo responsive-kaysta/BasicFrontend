@@ -32,25 +32,6 @@
   },
 
 
-  /* Colours */
-  {
-    "inputFile": "Frontend/Css/Colours/blue.less",
-    "outputFile": "Frontend/Css/Colours/blue.css"
-  },
-  {
-    "inputFile": "Frontend/Css/Colours/dark.less",
-    "outputFile": "Frontend/Css/Colours/dark.css"
-  },
-  {
-    "inputFile": "Frontend/Css/Colours/purple.less",
-    "outputFile": "Frontend/Css/Colours/purple.css"
-  },
-  {
-    "inputFile": "Frontend/Css/Colours/yellow.less",
-    "outputFile": "Frontend/Css/Colours/yellow.css"
-  },
-
-
   /* Atom */
   {
     "inputFile": "Frontend/Css/Atom/a.less",
@@ -198,12 +179,12 @@
     "outputFile": "Frontend/Css/Template/style-green.css"
   },
   {
-    "inputFile": "Frontend/Css/Template/style2.less",
-    "outputFile": "Frontend/Css/Template/style2.css"
+    "inputFile": "Frontend/Css/Template/style-gray.less",
+    "outputFile": "Frontend/Css/Template/style-gray.css"
   },
   {
-    "inputFile": "Frontend/Css/Template/style3.less",
-    "outputFile": "Frontend/Css/Template/style3.css"
+    "inputFile": "Frontend/Css/Template/style-purple.less",
+    "outputFile": "Frontend/Css/Template/style-purple.css"
   },
   {
     "inputFile": "Frontend/Css/Template/style-transparent.less",

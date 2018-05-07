@@ -1,0 +1,157 @@
+﻿/* style-gray.less */
+
+@import "../global.less";
+
+.gray {
+    background: @style-gray-bg-color;
+    color: @style-gray-color;
+}
+
+.gray * {
+    background: @style-gray-bg-color;
+    color: @style-gray-color;
+}
+
+.gray a {
+    width: 100%;
+}
+
+.gray .date{
+    text-align: right;
+}
+
+.gray .page-header {
+    width: 100%;
+    border-bottom: @style-gray-border-color solid thin;
+}
+
+.wrapper.gray {
+    background: @style-gray-bg-color;
+    color: @style-gray-color;
+}
+
+    .wrapper.gray * {
+        background: @style-gray-bg-color;
+        color: @style-gray-color;
+    }
+       
+    .wrapper.gray hr {
+        background: @style-gray-bg-color;
+        color: @style-gray-color;
+        border-color: @style-gray-bg-color;
+    }
+
+    .wrapper.gray blockquote {
+        background: @style-gray-bg-color;
+        color: @style-gray-color;
+        border-color: @style-gray-bg-color;
+    }
+
+    .wrapper.gray code {
+        background: rgba(0, 0, 0, 0.0375);
+    }
+
+    .wrapper.gray input[type="text"],
+    .wrapper.gray input[type="password"],
+    .wrapper.gray input[type="email"],
+    .wrapper.gray select,
+    .wrapper.gray textarea {
+        background: rgba(0, 0, 0, 0.0375);
+    }
+
+    .wrapper.gray .select-wrapper:before {
+        color: @style-gray-color;
+    }
+
+    .wrapper.gray input[type="checkbox"] + label,
+    .wrapper.gray input[type="radio"] + label {
+        color: @style-gray-color;
+    }
+
+        .wrapper.gray input[type="checkbox"] + label:before,
+        .wrapper.gray input[type="radio"] + label:before {
+            background: rgba(0, 0, 0, 0.0375);
+        }
+
+    .wrapper.gray input[type="checkbox"]:checked + label:before,
+    .wrapper.gray input[type="radio"]:checked + label:before {
+        background: #2E3842;
+        color: @style-gray-color;
+    }
+
+    .wrapper.gray ::-webkit-input-placeholder {
+        color: #8E8892 !important;
+    }
+
+    .wrapper.gray :-moz-placeholder {
+        color: #8E8892 !important;
+    }
+
+    .wrapper.gray ::-moz-placeholder {
+        color: #8E8892 !important;
+    }
+
+    .wrapper.gray :-ms-input-placeholder {
+        color: #8E8892 !important;
+    }
+
+    .wrapper.gray .formerize-placeholder {
+        color: #8E8892 !important;
+    }
+
+    .wrapper.gray .icon.major {
+        border-color: @style-gray-color;
+    }
+
+    .wrapper.gray ul.alt li {
+        border-color: @style-gray-color;
+    }
+
+    .wrapper.gray table tbody tr {
+        border-color: @style-gray-border-color;
+    }
+
+        .wrapper.gray table tbody tr:nth-child(2n + 1) {
+            background-color: rgba(0, 0, 0, 0.0375);
+        }
+
+    .wrapper.gray table th {
+        color: @style-gray-color;
+    }
+
+    .wrapper.gray table thead {
+        border-color: @style-gray-border-color;
+    }
+
+    .wrapper.gray table tfoot {
+        border-color: @style-gray-border-color;
+    }
+
+    .wrapper.gray table.alt tbody tr td {
+        border-color: @style-gray-border-color;
+    }
+
+    .wrapper.gray input[type="submit"],
+    .wrapper.gray input[type="reset"],
+    .wrapper.gray input[type="button"],
+    .wrapper.gray button,
+    .wrapper.gray .button {
+        box-shadow: inset 0 0 0 2px #dfdfdf;
+        color: #2E3842;
+    }
+
+        .wrapper.gray input[type="submit"]:hover,
+        .wrapper.gray input[type="reset"]:hover,
+        .wrapper.gray input[type="button"]:hover,
+        .wrapper.gray button:hover,
+        .wrapper.gray .button:hover {
+            background-color: rgba(0, 0, 0, 0.0375);
+        }
+
+        .wrapper.gray input[type="submit"]:active,
+        .wrapper.gray input[type="reset"]:active,
+        .wrapper.gray input[type="button"]:active,
+        .wrapper.gray button:active,
+        .wrapper.gray .button:active {
+            background-color: rgba(0, 0, 0, 0.1);
+        }

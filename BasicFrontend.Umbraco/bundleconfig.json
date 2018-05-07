@@ -54,17 +54,11 @@
       "Frontend/Css/Organism/table.css",
       "Frontend/Css/Organism/wrapper.css",
 
-      /* Colours */
-      "Frontend/Css/Colours/blue.css",
-      "Frontend/Css/Colours/dark.css",
-      "Frontend/Css/Colours/purple.css",
-      "Frontend/Css/Colours/yellow.css",
-
       /* Template */
       "Frontend/Css/Template/form.css",
       "Frontend/Css/Template/style-green.css",
-      "Frontend/Css/Template/style2.css",
-      "Frontend/Css/Template/style3.css",
+      "Frontend/Css/Template/style-gray.css",
+      "Frontend/Css/Template/style-purple.css",
       "Frontend/Css/Template/style-transparent.css",
       "Frontend/Css/Template/style-light.css"
 

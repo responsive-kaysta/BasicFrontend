@@ -1,11 +1,12 @@
-﻿/* header.less */
+/* header.less */
 /* global.less */
 /* base styles and definitions */
 /* menu */
-/* colours */
 /* green -> obsolete style1 */
-/* light -> obsolete: style5 */
+/* gray -> obsolete style2 */
+/* purple -> obsolete style3 */
 /* transparent -> obsolete: style4 */
+/* light -> obsolete: style5 */
 /* button */
 /* code */
 /* banner */
@@ -133,6 +134,12 @@ header h6 + p {
 header.major {
   margin: 0 1em 3.5em 1em;
 }
+header.major p {
+  top: 0;
+  padding: 2em;
+  margin-right: auto;
+  margin-left: auto;
+}
 header.major h2,
 header.major h3,
 header.major h4,
@@ -150,9 +157,6 @@ header.major h6:after {
   content: '';
   display: block;
   height: 1px;
-}
-header.major p {
-  top: 0;
 }
 @media screen and (max-width: 736px) {
   header.major {

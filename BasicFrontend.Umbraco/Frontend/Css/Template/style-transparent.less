@@ -1,4 +1,4 @@
-﻿/* style-white.less */
+﻿/* style-transparent.less */
 
 @import "../global.less";
 
@@ -8,11 +8,6 @@
 }
 
 .transparent * {
-    background: @style-transparent-bg-color;
-    color: @style-transparent-color;
-}
-
-div.transparent * {
     background: @style-transparent-bg-color;
     color: @style-transparent-color;
 }
@@ -27,7 +22,11 @@ div.transparent * {
 
 .transparent .page-header {
     width: 100%;
-    border-bottom: @style-transparent-border-color solid thin;
+    border-bottom: @style-transparent-border-color solid thin !important;
+}
+
+header.major h2 {
+    border-bottom: @style-transparent-border-color solid thin !important;
 }
 
 .wrapper.transparent {
@@ -75,12 +74,12 @@ div.transparent * {
 
         .wrapper.transparent input[type="checkbox"] + label:before,
         .wrapper.transparent input[type="radio"] + label:before {
-            background: rgba(0, 0, 0, 0.0375);
+            background: rgba(0, 0, 0, 0.0375) !important;
         }
 
     .wrapper.transparent input[type="checkbox"]:checked + label:before,
     .wrapper.transparent input[type="radio"]:checked + label:before {
-        background: #2E3842;
+        background: #2E3842 !important;
         color: @style-transparent-color;
     }
 
@@ -117,7 +116,7 @@ div.transparent * {
     }
 
         .wrapper.transparent table tbody tr:nth-child(2n + 1) {
-            background-color: rgba(0, 0, 0, 0.0375);
+            background-color: rgba(0, 0, 0, 0.0375) !important;
         }
 
     .wrapper.transparent table th {

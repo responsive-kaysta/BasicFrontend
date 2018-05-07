@@ -1,11 +1,12 @@
-﻿/* button.less */
+/* button.less */
 /* global.less */
 /* base styles and definitions */
 /* menu */
-/* colours */
 /* green -> obsolete style1 */
-/* light -> obsolete: style5 */
+/* gray -> obsolete style2 */
+/* purple -> obsolete style3 */
 /* transparent -> obsolete: style4 */
+/* light -> obsolete: style5 */
 /* button */
 /* code */
 /* banner */
@@ -17,42 +18,31 @@ a.button {
   font-size: 1rem;
   background: transparent;
   transition: all 0.2s ease-in-out;
-  background: black;
-  color: whitesmoke;
-}
-a.button:hover {
-  background: rgba(0, 0, 0, 0.5);
-  color: whitesmoke;
+  color: whitesmoke !important;
+  background: black !important;
+  background-color: black !important;
+  text-transform: lowercase !important;
   text-decoration: none !important;
 }
-a.button.fill {
-  background: black;
-  color: whitesmoke;
-}
-a.button.fill:hover {
-  background: rgba(0, 0, 0, 0.5);
-  color: whitesmoke;
-  text-decoration: none;
+a.button:hover {
+  background: rgba(0, 0, 0, 0.5) !important;
+  background-color: rgba(0, 0, 0, 0.5) !important;
 }
 a.button.special {
   border-radius: 3px;
   margin-top: 20px;
   font-family: "Lato", sans-serif !important;
   font-size: 1rem;
-  background: transparent;
   transition: all 0.2s ease-in-out;
-  background: #ed4933;
-  color: whitesmoke;
-}
-a.button.special:hover {
-  background: #ef5e4a;
-  color: whitesmoke;
+  color: whitesmoke !important;
+  background: #ed4933 !important;
+  background-color: #ed4933 !important;
+  text-transform: lowercase !important;
   text-decoration: none !important;
 }
-a.button.fill:active {
-  background: #eb341c;
-  color: whitesmoke;
-  text-decoration: none;
+a.button.special:hover {
+  background: #ef5e4a !important;
+  background-color: #ef5e4a !important;
 }
 input[type="submit"],
 input[type="reset"],
@@ -67,11 +57,8 @@ button,
   -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
   -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-  background-color: transparent;
   border-radius: 3px;
   border: 0;
-  box-shadow: inset 0 0 0 2px whitesmoke;
-  color: whitesmoke;
   cursor: pointer;
   display: inline-block;
   font-size: 0.8em;
@@ -81,25 +68,10 @@ button,
   line-height: 3.125em;
   padding: 0 2.75em;
   text-align: center;
-  text-decoration: none;
-  text-transform: lowercase;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-}
-input[type="submit"]:hover,
-input[type="reset"]:hover,
-input[type="button"]:hover,
-button:hover,
-.button:hover {
-  background-color: rgba(0, 0, 0, 0.5);
-}
-input[type="submit"]:active,
-input[type="reset"]:active,
-input[type="button"]:active,
-button:active,
-.button:active {
-  background-color: rgba(0, 0, 0, 0.75);
+  box-shadow: inset 0 0 0 2px whitesmoke;
 }
 input[type="submit"].icon:before,
 input[type="reset"].icon:before,
@@ -130,29 +102,6 @@ input[type="button"].big,
 button.big,
 .button.big {
   font-size: 1.35em;
-}
-input[type="submit"].special,
-input[type="reset"].special,
-input[type="button"].special,
-button.special,
-.button.special {
-  background-color: #ed4933;
-  box-shadow: none !important;
-  color: whitesmoke !important;
-}
-input[type="submit"].special:hover,
-input[type="reset"].special:hover,
-input[type="button"].special:hover,
-button.special:hover,
-.button.special:hover {
-  background-color: #ef5e4a !important;
-}
-input[type="submit"].special:active,
-input[type="reset"].special:active,
-input[type="button"].special:active,
-button.special:active,
-.button.special:active {
-  background-color: #eb341c !important;
 }
 input[type="submit"].disabled,
 input[type="submit"]:disabled,

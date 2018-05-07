@@ -1,26 +1,23 @@
-﻿/* style-white.less */
+/* style-green.less */
 /* global.less */
 /* base styles and definitions */
 /* menu */
-/* colours */
 /* green -> obsolete style1 */
-/* light -> obsolete: style5 */
+/* gray -> obsolete style2 */
+/* purple -> obsolete style3 */
 /* transparent -> obsolete: style4 */
+/* light -> obsolete: style5 */
 /* button */
 /* code */
 /* banner */
 /* footer */
 .green {
-  background: #1a867d;
-  color: whitesmoke;
+  background: #1a867d !important;
+  color: whitesmoke !important;
 }
 .green * {
-  background: #1a867d;
-  color: whitesmoke;
-}
-div.green * {
-  background: #1a867d;
-  color: whitesmoke;
+  background: #1a867d !important;
+  color: whitesmoke !important;
 }
 .green a {
   width: 100%;
@@ -30,51 +27,54 @@ div.green * {
 }
 .green .page-header {
   width: 100%;
-  border-bottom: #1a867d solid thin;
+  border-bottom: whitesmoke solid thin !important;
+}
+header.major h2 {
+  border-bottom: whitesmoke solid thin !important;
 }
 .wrapper.green {
-  background: #1a867d;
-  color: whitesmoke;
+  background: #1a867d !important;
+  color: whitesmoke !important;
 }
 .wrapper.green * {
-  background: #1a867d;
-  color: whitesmoke;
+  background: #1a867d !important;
+  color: whitesmoke !important;
 }
 .wrapper.green hr {
-  background: #1a867d;
-  color: whitesmoke;
-  border-color: #1a867d;
+  background: #1a867d !important;
+  color: whitesmoke !important;
+  border-color: #1a867d !important;
 }
 .wrapper.green blockquote {
-  background: #1a867d;
-  color: whitesmoke;
-  border-color: #1a867d;
+  background: #1a867d !important;
+  color: whitesmoke !important;
+  border-color: #1a867d !important;
 }
 .wrapper.green code {
-  background: rgba(0, 0, 0, 0.0375);
+  background: rgba(0, 0, 0, 0.0375) !important;
 }
 .wrapper.green input[type="text"],
 .wrapper.green input[type="password"],
 .wrapper.green input[type="email"],
 .wrapper.green select,
 .wrapper.green textarea {
-  background: rgba(0, 0, 0, 0.0375);
+  background: rgba(0, 0, 0, 0.0375) !important;
 }
 .wrapper.green .select-wrapper:before {
-  color: whitesmoke;
+  color: whitesmoke !important;
 }
 .wrapper.green input[type="checkbox"] + label,
 .wrapper.green input[type="radio"] + label {
-  color: whitesmoke;
+  color: whitesmoke !important;
 }
 .wrapper.green input[type="checkbox"] + label:before,
 .wrapper.green input[type="radio"] + label:before {
-  background: rgba(0, 0, 0, 0.0375);
+  background: rgba(0, 0, 0, 0.0375) !important;
 }
 .wrapper.green input[type="checkbox"]:checked + label:before,
 .wrapper.green input[type="radio"]:checked + label:before {
-  background: #2E3842;
-  color: whitesmoke;
+  background: #2E3842 !important;
+  color: whitesmoke !important;
 }
 .wrapper.green ::-webkit-input-placeholder {
   color: #8E8892 !important;
@@ -92,48 +92,48 @@ div.green * {
   color: #8E8892 !important;
 }
 .wrapper.green .icon.major {
-  border-color: whitesmoke;
+  border-color: whitesmoke !important;
 }
 .wrapper.green ul.alt li {
-  border-color: whitesmoke;
+  border-color: whitesmoke !important;
 }
 .wrapper.green table tbody tr {
-  border-color: #1a867d;
+  border-color: whitesmoke !important;
 }
 .wrapper.green table tbody tr:nth-child(2n + 1) {
-  background-color: rgba(0, 0, 0, 0.0375);
+  background-color: rgba(0, 0, 0, 0.0375) !important;
 }
 .wrapper.green table th {
-  color: whitesmoke;
+  color: whitesmoke !important;
 }
 .wrapper.green table thead {
-  border-color: #1a867d;
+  border-color: whitesmoke !important;
 }
 .wrapper.green table tfoot {
-  border-color: #1a867d;
+  border-color: whitesmoke !important;
 }
 .wrapper.green table.alt tbody tr td {
-  border-color: #1a867d;
+  border-color: whitesmoke !important;
 }
 .wrapper.green input[type="submit"],
 .wrapper.green input[type="reset"],
 .wrapper.green input[type="button"],
 .wrapper.green button,
 .wrapper.green .button {
-  box-shadow: inset 0 0 0 2px #dfdfdf;
-  color: #2E3842;
+  box-shadow: inset 0 0 0 2px #dfdfdf !important;
+  color: #2E3842 !important;
 }
 .wrapper.green input[type="submit"]:hover,
 .wrapper.green input[type="reset"]:hover,
 .wrapper.green input[type="button"]:hover,
 .wrapper.green button:hover,
 .wrapper.green .button:hover {
-  background-color: rgba(0, 0, 0, 0.0375);
+  background-color: rgba(0, 0, 0, 0.0375) !important;
 }
 .wrapper.green input[type="submit"]:active,
 .wrapper.green input[type="reset"]:active,
 .wrapper.green input[type="button"]:active,
 .wrapper.green button:active,
 .wrapper.green .button:active {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.1) !important;
 }

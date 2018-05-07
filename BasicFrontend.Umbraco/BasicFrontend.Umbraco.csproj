@@ -322,7 +322,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\Umbraco.sdf" />
     <Content Include="App_Plugins\Grid\Config\FanoeConfig.txt" />
     <Content Include="App_Plugins\Grid\Editors\Views\article.html" />
     <Content Include="App_Plugins\Grid\Editors\Views\banner.html" />
@@ -708,29 +707,11 @@
     <Content Include="Frontend\Css\Template\style-light.min.css">
       <DependentUpon>style-light.css</DependentUpon>
     </Content>
-    <Content Include="Frontend\Css\Template\style-style3.css">
-      <DependentUpon>style3.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Template\style-style3.min.css">
-      <DependentUpon>style-style3.css</DependentUpon>
-    </Content>
     <Content Include="Frontend\Css\Template\style-transparent.css">
       <DependentUpon>style-transparent.less</DependentUpon>
     </Content>
     <Content Include="Frontend\Css\Template\style-transparent.min.css">
       <DependentUpon>style-transparent.css</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Template\style2.css">
-      <DependentUpon>style2.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Template\style2.min.css">
-      <DependentUpon>style2.css</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Template\style3.css">
-      <DependentUpon>style3.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Template\style3.min.css">
-      <DependentUpon>style3.css</DependentUpon>
     </Content>
     <Content Include="Frontend\fontawesome-all.css">
       <DependentUpon>fontawesome-all.less</DependentUpon>
@@ -849,10 +830,10 @@
     <Content Include="webfonts\fa-solid-900.svg" />
     <Content Include="Frontend\fontawesome-all.less" />
     <Content Include="Frontend\Css\Template\style-green.less" />
-    <Content Include="Frontend\Css\Template\style3.less" />
+    <Content Include="Frontend\Css\Template\style-purple.less" />
     <Content Include="Frontend\Css\Template\style-light.less" />
     <Content Include="Frontend\Css\Template\form.less" />
-    <Content Include="Frontend\Css\Template\style2.less" />
+    <Content Include="Frontend\Css\Template\style-gray.less" />
     <Content Include="Frontend\Css\Template\style-transparent.less" />
     <None Include="packages.config" />
     <Content Include="Scripts\bootstrap.bundle.js" />

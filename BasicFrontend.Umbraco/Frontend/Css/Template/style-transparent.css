@@ -1,11 +1,12 @@
-﻿/* style-white.less */
+/* style-transparent.less */
 /* global.less */
 /* base styles and definitions */
 /* menu */
-/* colours */
 /* green -> obsolete style1 */
-/* light -> obsolete: style5 */
+/* gray -> obsolete style2 */
+/* purple -> obsolete style3 */
 /* transparent -> obsolete: style4 */
+/* light -> obsolete: style5 */
 /* button */
 /* code */
 /* banner */
@@ -18,10 +19,6 @@
   background: transparent;
   color: whitesmoke;
 }
-div.transparent * {
-  background: transparent;
-  color: whitesmoke;
-}
 .transparent a {
   width: 100%;
 }
@@ -30,7 +27,10 @@ div.transparent * {
 }
 .transparent .page-header {
   width: 100%;
-  border-bottom: lightgray solid thin;
+  border-bottom: lightgray solid thin !important;
+}
+header.major h2 {
+  border-bottom: lightgray solid thin !important;
 }
 .wrapper.transparent {
   background: transparent;
@@ -69,11 +69,11 @@ div.transparent * {
 }
 .wrapper.transparent input[type="checkbox"] + label:before,
 .wrapper.transparent input[type="radio"] + label:before {
-  background: rgba(0, 0, 0, 0.0375);
+  background: rgba(0, 0, 0, 0.0375) !important;
 }
 .wrapper.transparent input[type="checkbox"]:checked + label:before,
 .wrapper.transparent input[type="radio"]:checked + label:before {
-  background: #2E3842;
+  background: #2E3842 !important;
   color: whitesmoke;
 }
 .wrapper.transparent ::-webkit-input-placeholder {
@@ -101,7 +101,7 @@ div.transparent * {
   border-color: lightgray;
 }
 .wrapper.transparent table tbody tr:nth-child(2n + 1) {
-  background-color: rgba(0, 0, 0, 0.0375);
+  background-color: rgba(0, 0, 0, 0.0375) !important;
 }
 .wrapper.transparent table th {
   color: whitesmoke;
