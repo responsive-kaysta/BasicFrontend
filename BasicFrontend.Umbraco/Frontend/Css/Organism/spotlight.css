@@ -47,6 +47,9 @@
   padding-left: 2em;
   padding-right: 2em;
 }
+.spotlight:last-child {
+  padding-bottom: 1em;
+}
 @media screen and (max-width: 736px) {
   .spotlight {
     display: block;

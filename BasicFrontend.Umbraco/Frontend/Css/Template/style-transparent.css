@@ -1,4 +1,4 @@
-﻿/* style-transparent.less */
+/* style-transparent.less */
 /* global.less */
 /* base styles and definitions */
 /* menu */
@@ -11,6 +11,11 @@
 /* code */
 /* banner */
 /* footer */
+.light .page-header {
+  width: 100%;
+  border-bottom: lightgray solid thin !important;
+}
 .wrapper.transparent {
+  color: whitesmoke;
   background-color: transparent;
 }
