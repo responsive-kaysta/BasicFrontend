@@ -12509,9 +12509,6 @@ body.landing #page-wrapper {
 body.landing #footer {
   background-color: rgba(29, 36, 42, 0.9);
 }
-body.landing #header {
-  background-color: rgba(29, 36, 42, 0.9);
-}
 body.is-mobile.landing #page-wrapper {
   background: none;
 }
@@ -12526,10 +12523,7 @@ body.is-mobile.landing .wrapper.transparent {
   background-size: cover;
 }
 body.is-mobile.landing #footer {
-  background-color: #2e3842;
-}
-body.is-mobile.landing #header {
-  background-color: #2e3842;
+  background-color: #1d242a;
 }
 
 /* a.less */
