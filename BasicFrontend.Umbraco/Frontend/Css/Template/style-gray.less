@@ -2,57 +2,50 @@
 
 @import "../global.less";
 
-.gray {
-    background: @style-gray-bg-color;
-    color: @style-gray-color;
-}
-
-.gray * {
-    background: @style-gray-bg-color;
-    color: @style-gray-color;
-}
-
-.gray a {
-    width: 100%;
-}
-
-.gray .date{
-    text-align: right;
-}
-
 .gray .page-header {
     width: 100%;
     border-bottom: @style-gray-border-color solid thin !important;
 }
 
-header.major h2 {
-    border-bottom: @style-gray-border-color solid thin !important;
-}
-
 .wrapper.gray {
-    background: @style-gray-bg-color;
+    background-color: @style-gray-bg-color;
     color: @style-gray-color;
 }
 
-    .wrapper.gray * {
-        background: @style-gray-bg-color;
+    .wrapper.gray strong, .wrapper.gray b {
         color: @style-gray-color;
     }
-       
-    .wrapper.gray hr {
-        background: @style-gray-bg-color;
+
+    .wrapper.gray h2, .wrapper.gray h3, .wrapper.gray h4, .wrapper.gray h5, .wrapper.gray h6 {
         color: @style-gray-color;
-        border-color: @style-gray-bg-color;
+    }
+
+    .wrapper.gray hr {
+        border-color: rgba(0, 0, 0, 0.125);
     }
 
     .wrapper.gray blockquote {
-        background: @style-gray-bg-color;
-        color: @style-gray-color;
-        border-color: @style-gray-bg-color;
+        border-color: rgba(0, 0, 0, 0.125);
     }
 
     .wrapper.gray code {
-        background: rgba(0, 0, 0, 0.0375);
+        background: rgba(255, 255, 255, 0.075);
+    }
+
+    .wrapper.gray header p {
+        color: @style-gray-color;
+    }
+
+    .wrapper.gray header.major h2, .wrapper.gray header.major h3, .wrapper.gray header.major h4, .wrapper.gray header.major h5, .wrapper.gray header.major h6 {
+        border-color: rgba(0, 0, 0, 0.125);
+    }
+
+    .wrapper.gray header.major p {
+        color: @style-gray-color;
+    }
+
+    .wrapper.gray label {
+        color: @style-gray-color;
     }
 
     .wrapper.gray input[type="text"],
@@ -60,11 +53,11 @@ header.major h2 {
     .wrapper.gray input[type="email"],
     .wrapper.gray select,
     .wrapper.gray textarea {
-        background: rgba(0, 0, 0, 0.0375);
+        background: rgba(255, 255, 255, 0.075);
     }
 
     .wrapper.gray .select-wrapper:before {
-        color: @style-gray-color;
+        color: rgba(0, 0, 0, 0.125);
     }
 
     .wrapper.gray input[type="checkbox"] + label,
@@ -74,49 +67,49 @@ header.major h2 {
 
         .wrapper.gray input[type="checkbox"] + label:before,
         .wrapper.gray input[type="radio"] + label:before {
-            background: rgba(0, 0, 0, 0.0375) !important;
+            background: rgba(255, 255, 255, 0.075);
         }
 
     .wrapper.gray input[type="checkbox"]:checked + label:before,
     .wrapper.gray input[type="radio"]:checked + label:before {
-        background: #2E3842 !important;
-        color: @style-gray-color;
+        background: #ffffff;
+        color: #21b2a6;
     }
 
     .wrapper.gray ::-webkit-input-placeholder {
-        color: #8E8892 !important;
+        color: @style-gray-color !important;
     }
 
     .wrapper.gray :-moz-placeholder {
-        color: #8E8892 !important;
+        color: @style-gray-color !important;
     }
 
     .wrapper.gray ::-moz-placeholder {
-        color: #8E8892 !important;
+        color: @style-gray-color !important;
     }
 
     .wrapper.gray :-ms-input-placeholder {
-        color: #8E8892 !important;
+        color: @style-gray-color !important;
     }
 
     .wrapper.gray .formerize-placeholder {
-        color: #8E8892 !important;
+        color: @style-gray-color !important;
     }
 
     .wrapper.gray .icon.major {
-        border-color: @style-gray-color;
+        border-color: rgba(0, 0, 0, 0.125);
     }
 
     .wrapper.gray ul.alt li {
-        border-color: @style-gray-color;
+        border-color: rgba(0, 0, 0, 0.125);
     }
 
     .wrapper.gray table tbody tr {
-        border-color: @style-gray-border-color;
+        border-color: rgba(0, 0, 0, 0.125);
     }
 
         .wrapper.gray table tbody tr:nth-child(2n + 1) {
-            background-color: rgba(0, 0, 0, 0.0375) !important;
+            background-color: rgba(255, 255, 255, 0.075);
         }
 
     .wrapper.gray table th {
@@ -124,15 +117,15 @@ header.major h2 {
     }
 
     .wrapper.gray table thead {
-        border-color: @style-gray-border-color;
+        border-color: rgba(0, 0, 0, 0.125);
     }
 
     .wrapper.gray table tfoot {
-        border-color: @style-gray-border-color;
+        border-color: rgba(0, 0, 0, 0.125);
     }
 
     .wrapper.gray table.alt tbody tr td {
-        border-color: @style-gray-border-color;
+        border-color: rgba(0, 0, 0, 0.125);
     }
 
     .wrapper.gray input[type="submit"],
@@ -140,8 +133,8 @@ header.major h2 {
     .wrapper.gray input[type="button"],
     .wrapper.gray button,
     .wrapper.gray .button {
-        box-shadow: inset 0 0 0 2px #dfdfdf;
-        color: #2E3842;
+        box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.125);
+        color: @style-gray-color;
     }
 
         .wrapper.gray input[type="submit"]:hover,
@@ -149,7 +142,7 @@ header.major h2 {
         .wrapper.gray input[type="button"]:hover,
         .wrapper.gray button:hover,
         .wrapper.gray .button:hover {
-            background-color: rgba(0, 0, 0, 0.0375);
+            background-color: rgba(255, 255, 255, 0.075);
         }
 
         .wrapper.gray input[type="submit"]:active,
@@ -157,5 +150,13 @@ header.major h2 {
         .wrapper.gray input[type="button"]:active,
         .wrapper.gray button:active,
         .wrapper.gray .button:active {
-            background-color: rgba(0, 0, 0, 0.1);
+            background-color: rgba(255, 255, 255, 0.2);
         }
+
+    @media screen and (max-width: 736px) {
+
+        .wrapper.gray .features li {
+            border-top-color: rgba(0, 0, 0, 0.125);
+        }
+
+    }

@@ -69,6 +69,11 @@ body.is-loading *, body.is-loading *:before, body.is-loading *:after {
     }
 }
 
+.page-header {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
 
 /* Main */
 
@@ -135,7 +140,6 @@ body.is-mobile #main > header {
 }
 
 
-
 /* Landing */
 
 body.landing #page-wrapper {
@@ -154,12 +158,16 @@ body.landing #footer {
     background-color: rgba(29, 36, 42, 0.9);
 }
 
+body.landing #header {
+    background-color: rgba(29, 36, 42, 0.9);
+}
+
 body.is-mobile.landing #page-wrapper {
     background: none;
 }
 
 body.is-mobile.landing #banner,
-body.is-mobile.landing .wrapper.style4 {
+body.is-mobile.landing .wrapper.transparent {
     background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(@banner-bg-image);
     background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(@banner-bg-image);
     background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(@banner-bg-image);
@@ -170,5 +178,9 @@ body.is-mobile.landing .wrapper.style4 {
 }
 
 body.is-mobile.landing #footer {
+    background-color: @base-bg-color;
+}
+
+body.is-mobile.landing #header {
     background-color: @base-bg-color;
 }

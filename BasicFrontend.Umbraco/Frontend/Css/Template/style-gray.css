@@ -11,57 +11,59 @@
 /* code */
 /* banner */
 /* footer */
-.gray {
-  background: darkgray;
-  color: whitesmoke;
-}
-.gray * {
-  background: darkgray;
-  color: whitesmoke;
-}
-.gray a {
-  width: 100%;
-}
-.gray .date {
-  text-align: right;
-}
 .gray .page-header {
   width: 100%;
   border-bottom: whitesmoke solid thin !important;
 }
-header.major h2 {
-  border-bottom: whitesmoke solid thin !important;
-}
 .wrapper.gray {
-  background: darkgray;
+  background-color: darkgray;
   color: whitesmoke;
 }
-.wrapper.gray * {
-  background: darkgray;
+.wrapper.gray strong,
+.wrapper.gray b {
+  color: whitesmoke;
+}
+.wrapper.gray h2,
+.wrapper.gray h3,
+.wrapper.gray h4,
+.wrapper.gray h5,
+.wrapper.gray h6 {
   color: whitesmoke;
 }
 .wrapper.gray hr {
-  background: darkgray;
-  color: whitesmoke;
-  border-color: darkgray;
+  border-color: rgba(0, 0, 0, 0.125);
 }
 .wrapper.gray blockquote {
-  background: darkgray;
-  color: whitesmoke;
-  border-color: darkgray;
+  border-color: rgba(0, 0, 0, 0.125);
 }
 .wrapper.gray code {
-  background: rgba(0, 0, 0, 0.0375);
+  background: rgba(255, 255, 255, 0.075);
+}
+.wrapper.gray header p {
+  color: whitesmoke;
+}
+.wrapper.gray header.major h2,
+.wrapper.gray header.major h3,
+.wrapper.gray header.major h4,
+.wrapper.gray header.major h5,
+.wrapper.gray header.major h6 {
+  border-color: rgba(0, 0, 0, 0.125);
+}
+.wrapper.gray header.major p {
+  color: whitesmoke;
+}
+.wrapper.gray label {
+  color: whitesmoke;
 }
 .wrapper.gray input[type="text"],
 .wrapper.gray input[type="password"],
 .wrapper.gray input[type="email"],
 .wrapper.gray select,
 .wrapper.gray textarea {
-  background: rgba(0, 0, 0, 0.0375);
+  background: rgba(255, 255, 255, 0.075);
 }
 .wrapper.gray .select-wrapper:before {
-  color: whitesmoke;
+  color: rgba(0, 0, 0, 0.125);
 }
 .wrapper.gray input[type="checkbox"] + label,
 .wrapper.gray input[type="radio"] + label {
@@ -69,71 +71,76 @@ header.major h2 {
 }
 .wrapper.gray input[type="checkbox"] + label:before,
 .wrapper.gray input[type="radio"] + label:before {
-  background: rgba(0, 0, 0, 0.0375) !important;
+  background: rgba(255, 255, 255, 0.075);
 }
 .wrapper.gray input[type="checkbox"]:checked + label:before,
 .wrapper.gray input[type="radio"]:checked + label:before {
-  background: #2E3842 !important;
-  color: whitesmoke;
+  background: #ffffff;
+  color: #21b2a6;
 }
 .wrapper.gray ::-webkit-input-placeholder {
-  color: #8E8892 !important;
+  color: whitesmoke !important;
 }
 .wrapper.gray :-moz-placeholder {
-  color: #8E8892 !important;
+  color: whitesmoke !important;
 }
 .wrapper.gray ::-moz-placeholder {
-  color: #8E8892 !important;
+  color: whitesmoke !important;
 }
 .wrapper.gray :-ms-input-placeholder {
-  color: #8E8892 !important;
+  color: whitesmoke !important;
 }
 .wrapper.gray .formerize-placeholder {
-  color: #8E8892 !important;
+  color: whitesmoke !important;
 }
 .wrapper.gray .icon.major {
-  border-color: whitesmoke;
+  border-color: rgba(0, 0, 0, 0.125);
 }
 .wrapper.gray ul.alt li {
-  border-color: whitesmoke;
+  border-color: rgba(0, 0, 0, 0.125);
 }
 .wrapper.gray table tbody tr {
-  border-color: whitesmoke;
+  border-color: rgba(0, 0, 0, 0.125);
 }
 .wrapper.gray table tbody tr:nth-child(2n + 1) {
-  background-color: rgba(0, 0, 0, 0.0375) !important;
+  background-color: rgba(255, 255, 255, 0.075);
 }
 .wrapper.gray table th {
   color: whitesmoke;
 }
 .wrapper.gray table thead {
-  border-color: whitesmoke;
+  border-color: rgba(0, 0, 0, 0.125);
 }
 .wrapper.gray table tfoot {
-  border-color: whitesmoke;
+  border-color: rgba(0, 0, 0, 0.125);
 }
 .wrapper.gray table.alt tbody tr td {
-  border-color: whitesmoke;
+  border-color: rgba(0, 0, 0, 0.125);
 }
 .wrapper.gray input[type="submit"],
 .wrapper.gray input[type="reset"],
 .wrapper.gray input[type="button"],
 .wrapper.gray button,
 .wrapper.gray .button {
-  box-shadow: inset 0 0 0 2px #dfdfdf;
-  color: #2E3842;
+  box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.125);
+  color: whitesmoke;
 }
 .wrapper.gray input[type="submit"]:hover,
 .wrapper.gray input[type="reset"]:hover,
 .wrapper.gray input[type="button"]:hover,
 .wrapper.gray button:hover,
 .wrapper.gray .button:hover {
-  background-color: rgba(0, 0, 0, 0.0375);
+  background-color: rgba(255, 255, 255, 0.075);
 }
 .wrapper.gray input[type="submit"]:active,
 .wrapper.gray input[type="reset"]:active,
 .wrapper.gray input[type="button"]:active,
 .wrapper.gray button:active,
 .wrapper.gray .button:active {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+@media screen and (max-width: 736px) {
+  .wrapper.gray .features li {
+    border-top-color: rgba(0, 0, 0, 0.125);
+  }
 }

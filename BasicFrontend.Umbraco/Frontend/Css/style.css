@@ -1,4 +1,4 @@
-﻿/* style.less */
+/* style.less */
 /* global.less */
 /* base styles and definitions */
 /* menu */
@@ -169,6 +169,11 @@ body.is-loading *:after {
     letter-spacing: 0.0375em;
   }
 }
+.page-header {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+}
 /* Main */
 #main > header {
   padding: 12em 20em 10em 20em;
@@ -237,11 +242,14 @@ body.landing #page-wrapper {
 body.landing #footer {
   background-color: rgba(29, 36, 42, 0.9);
 }
+body.landing #header {
+  background-color: rgba(29, 36, 42, 0.9);
+}
 body.is-mobile.landing #page-wrapper {
   background: none;
 }
 body.is-mobile.landing #banner,
-body.is-mobile.landing .wrapper.style4 {
+body.is-mobile.landing .wrapper.transparent {
   background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/pcb-background.jpeg");
   background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/pcb-background.jpeg");
   background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/pcb-background.jpeg");
@@ -251,5 +259,8 @@ body.is-mobile.landing .wrapper.style4 {
   background-size: cover;
 }
 body.is-mobile.landing #footer {
+  background-color: #2e3842;
+}
+body.is-mobile.landing #header {
   background-color: #2e3842;
 }
