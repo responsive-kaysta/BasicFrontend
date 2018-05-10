@@ -6286,7 +6286,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
     /*
     // Disable animations/transitions until the page has loaded.
     $body.addClass('is-loading');
-      $window.on('load', function () {
+     $window.on('load', function () {
         window.setTimeout(function () {
             $body.removeClass('is-loading');
         }, 250);

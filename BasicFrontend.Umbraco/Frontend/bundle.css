@@ -12525,7 +12525,6 @@ body.is-mobile.landing .wrapper.transparent {
 body.is-mobile.landing #footer {
   background-color: #1d242a;
 }
-
 /* a.less */
 /* global.less */
 /* base styles and definitions */
@@ -14964,7 +14963,7 @@ body.is-loading #banner:after {
 /* banner */
 /* footer */
 #footer {
-  padding: 6em 0 4em 0;
+  padding: 3em 0 2em 0;
   text-align: center;
 }
 #footer .icons {
@@ -14973,11 +14972,8 @@ body.is-loading #banner:after {
 #footer .icons a {
   color: rgba(255, 255, 255, 0.5);
 }
-#footer .icons {
+#footer * {
   text-transform: lowercase !important;
-  border-bottom-color: transparent;
-}
-#footer a:hover {
   border-bottom-color: transparent;
 }
 #footer .copyright {
@@ -14986,7 +14982,6 @@ body.is-loading #banner:after {
   letter-spacing: 0.225em;
   list-style: none;
   padding: 0;
-  text-transform: lowercase;
 }
 #footer .copyright li {
   border-left: solid 1px rgba(255, 255, 255, 0.5);
@@ -14999,12 +14994,6 @@ body.is-loading #banner:after {
   border-left: 0;
   margin-left: 0;
   padding-left: 0;
-}
-#footer .copyright li a {
-  color: inherit;
-}
-#footer .copyright li a:hover {
-  color: red;
 }
 @media screen and (max-width: 480px) {
   #footer .copyright li {
@@ -15025,6 +15014,7 @@ body.is-loading #banner:after {
     padding: 3em 2em 1em 2em;
   }
 }
+
 /* header.less */
 /* global.less */
 /* base styles and definitions */
@@ -15190,7 +15180,6 @@ header.major p {
   pointer-events: none;
   opacity: 0;
 }
-
 /* icon.less */
 /* global.less */
 /* base styles and definitions */
@@ -15666,7 +15655,6 @@ table.alt tfoot {
     padding: 1em 2em 1em 2em ;
   }
 }
-
 /* form.less */
 /* global.less */
 /* base styles and definitions */
@@ -15994,7 +15982,6 @@ input[type="radio"] + label:before {
     border-top-color: rgba(0, 0, 0, 0.125);
   }
 }
-
 /* style-gray.less */
 /* global.less */
 /* base styles and definitions */
@@ -16141,7 +16128,6 @@ input[type="radio"] + label:before {
     border-top-color: rgba(0, 0, 0, 0.125);
   }
 }
-
 /* style-purple.less */
 /* global.less */
 /* base styles and definitions */
@@ -16288,7 +16274,6 @@ input[type="radio"] + label:before {
     border-top-color: rgba(0, 0, 0, 0.125);
   }
 }
-
 /* style-transparent.less */
 /* global.less */
 /* base styles and definitions */
@@ -16305,7 +16290,6 @@ input[type="radio"] + label:before {
 .wrapper.transparent {
   background-color: transparent;
 }
-
 /* style-light.less */
 /* global.less */
 /* base styles and definitions */
