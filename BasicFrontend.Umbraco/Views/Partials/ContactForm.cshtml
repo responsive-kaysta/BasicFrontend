@@ -1,0 +1,38 @@
+﻿@using BasicFrontend.Umbraco.Controllers
+
+@model BasicFrontend.Umbraco.Models.ContactViewModel
+
+@using (Html.BeginUmbracoForm<ContactSurfaceController>("CreateContactMessage"))
+{
+
+    if (!ViewData.ModelState.IsValid)
+    {
+        @Html.ValidationSummary(true, "Houston, we have a problem. Check things over and try again.")
+    }
+
+    <div class="row">
+        @Html.LabelFor(x => x.Name)<span class="required">*</span>
+        @Html.TextBoxFor(x => x.Name)
+        <small class="error">Your name is required.</small>
+        @Html.ValidationMessageFor(x => x.Name)
+    </div>
+
+    <div class="row">
+        @Html.LabelFor(x => x.EmailAddress)<span class="required">*</span>
+        @Html.TextBoxFor(x => x.EmailAddress)
+        <small class="error">A valid email address is required.</small>
+        @Html.ValidationMessageFor(x => x.EmailAddress)
+    </div>
+
+    <div class="row">
+        @Html.LabelFor(x => x.Message)<span class="required">*</span>
+        @Html.TextAreaFor(x => x.Message)
+        <small class="error">Don't forget to enter a message.</small>
+        @Html.ValidationMessageFor(x => x.Message)
+    </div>
+
+    <div class="row">
+        <input type="submit" class="button" value="Submit" />
+    </div>
+
+}

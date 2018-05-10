@@ -1,0 +1,55 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<Umbraco.Web.PublishedContentModels.ContactPage>
+
+@using BasicFrontend.Umbraco.Models
+
+@{
+    Layout = "_Layout.cshtml";
+}
+
+<article id="main">
+    <header>
+        <h2>@Umbraco.Field("headline")</h2>
+        <p>@Html.Raw(Umbraco.Field("paragraph"))</p>
+    </header>
+
+    @if (ViewBag.Contact != null)
+    {
+        var viewModel = (ContactViewModel)ViewBag.Contact;
+
+        var pageStyle = @Umbraco.Field("pageStyle");
+        <section class="wrapper @pageStyle">
+            <div class="inner">
+                <div class="container">
+
+
+                    <h2>
+                        Thanks for the message
+                    </h2>
+                    <div class="contact-confirmation">
+                        <p>
+                            @Html.Raw(viewModel.Message)
+                        </p>
+                        <p>
+                            @viewModel.Name (@viewModel.EmailAddress)
+                        </p>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+    }
+    else
+    {
+        var pageStyle = @Umbraco.Field("pageStyle");
+        <section class="wrapper @pageStyle">
+            <div class="inner">
+                <div class="container">
+                    @Html.Partial("ContactForm", new ContactViewModel())
+                </div>
+            </div>
+        </section>
+    }
+
+</article>

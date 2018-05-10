@@ -2402,6 +2402,8 @@
     <Content Include="Views\Partials\Footer.cshtml" />
     <Content Include="Views\Partials\Header.cshtml" />
     <Content Include="Views\_Layout.cshtml" />
+    <Content Include="Views\Partials\ContactForm.cshtml" />
+    <Content Include="Views\ContactPage.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -2427,6 +2429,7 @@
   <ItemGroup>
     <Compile Include="App_Data\Models\BlogOverview.generated.cs" />
     <Compile Include="App_Data\Models\BlogPost.generated.cs" />
+    <Compile Include="App_Data\Models\ContactPage.generated.cs" />
     <Compile Include="App_Data\Models\ContentGrid.generated.cs" />
     <Compile Include="App_Data\Models\ContentPage.generated.cs" />
     <Compile Include="App_Data\Models\File.generated.cs" />
@@ -2436,6 +2439,8 @@
     <Compile Include="App_Data\Models\Member.generated.cs" />
     <Compile Include="App_Data\Models\PageDefaults.generated.cs" />
     <Compile Include="App_Data\Models\SiteGlobal.generated.cs" />
+    <Compile Include="Controllers\ContactSurfaceController.cs" />
+    <Compile Include="Models\ContactViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
