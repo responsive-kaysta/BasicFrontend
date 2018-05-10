@@ -14345,8 +14345,8 @@ section.special {
 .spotlight .content {
   padding-bottom: 1em;
   padding-top: 1em;
-  padding-left: 1.5em;
-  padding-right: 1.5em;
+  padding-left: 2em;
+  padding-right: 2em;
 }
 @media screen and (max-width: 736px) {
   .spotlight {
@@ -14412,6 +14412,7 @@ section.special {
 .spotlight:nth-child(10) {
   background-color: rgba(0, 0, 0, 0.75);
 }
+
 /* table.less */
 /* global.less */
 /* base styles and definitions */
