@@ -1,10 +1,9 @@
-﻿using System.Net;
+﻿using BasicFrontend.Umbraco.Models;
+using System.Net;
 using System.Net.Mail;
 using System.Text;
-using System.Threading.Tasks;
 using System.Web.Configuration;
 using System.Web.Mvc;
-using BasicFrontend.Umbraco.Models;
 using Umbraco.Web.Mvc;
 
 namespace BasicFrontend.Umbraco.Controllers
@@ -30,20 +29,20 @@ namespace BasicFrontend.Umbraco.Controllers
             var emailUsername = WebConfigurationManager.AppSettings["emailUsername"];
             var emailPassword = WebConfigurationManager.AppSettings["emailPassword"];
 
-            var smtp = new SmtpClient(emailHost, 587);
+            var smtp = new SmtpClient(emailHost, 25);
             var creds = new NetworkCredential(emailUsername, emailPassword);
 
             smtp.UseDefaultCredentials = false;
             smtp.Credentials = creds;
-            smtp.EnableSsl = true;
+            smtp.EnableSsl = false;
 
             var to = new MailAddress(destEmailAddress);
             var from = new MailAddress(fromEmailAddress, "Your Contractor Connection");
 
             var body = new StringBuilder();
-            body.Append(contactMessage.Name);
-            body.Append(contactMessage.EmailAddress);
-            body.Append(contactMessage.Message);
+            body.AppendLine(contactMessage.Name);
+            body.AppendLine(contactMessage.EmailAddress);
+            body.AppendLine(contactMessage.Message);
 
             var msg = new MailMessage();
             msg.To.Add(to);
