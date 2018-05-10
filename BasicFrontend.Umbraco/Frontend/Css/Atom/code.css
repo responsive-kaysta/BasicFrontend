@@ -1,0 +1,23 @@
+﻿/* code.less */
+/* global.less */
+/* base styles and definitions */
+/* menu */
+/* green -> obsolete style1 */
+/* gray -> obsolete style2 */
+/* purple -> obsolete style3 */
+/* transparent -> obsolete: style4 */
+/* light -> obsolete: style5 */
+/* button */
+/* code */
+/* banner */
+/* footer */
+code {
+  overflow: auto;
+  border-radius: 10px;
+  background-color: lightgray;
+}
+code {
+  background-color: lightgray;
+  font-size: 0.75rem;
+  font-family: "Courier 10 Pitch", Courier, monospace;
+}

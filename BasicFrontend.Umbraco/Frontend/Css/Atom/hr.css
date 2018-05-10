@@ -1,0 +1,21 @@
+﻿/* hr.less */
+/* global.less */
+/* base styles and definitions */
+/* menu */
+/* green -> obsolete style1 */
+/* gray -> obsolete style2 */
+/* purple -> obsolete style3 */
+/* transparent -> obsolete: style4 */
+/* light -> obsolete: style5 */
+/* button */
+/* code */
+/* banner */
+/* footer */
+hr {
+  border: 0;
+  border-bottom: solid 2px whitesmoke;
+  margin: 3em 0;
+}
+hr.major {
+  margin: 4.5em 0;
+}

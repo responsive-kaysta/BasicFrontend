@@ -8,8 +8,8 @@
 
 <article id="main">
     <header>
-        <h2>@Umbraco.Field("headline")</h2>
-        <p>@Html.Raw(Umbraco.Field("paragraph"))</p>
+        <h2>@Umbraco.Field("title")</h2>
+        <p>@Html.Raw(Umbraco.Field("introduction"))</p>
     </header>
 
     @if (ViewBag.Contact != null)
