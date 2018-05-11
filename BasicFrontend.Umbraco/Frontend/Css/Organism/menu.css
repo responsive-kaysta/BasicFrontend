@@ -1,4 +1,4 @@
-﻿/* menu.less */
+/* menu.less */
 /* global.less */
 /* base styles and definitions */
 /* menu */
@@ -74,7 +74,6 @@
   position: absolute;
   right: 0;
   top: 0;
-  vertical-align: middle;
   width: 7em;
 }
 @media screen and (max-width: 736px) {

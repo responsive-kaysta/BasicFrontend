@@ -1,4 +1,4 @@
-﻿/* h.less */
+/* h.less */
 /* global.less */
 /* base styles and definitions */
 /* menu */
@@ -17,10 +17,10 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 800;
-  letter-spacing: 0.225em;
-  line-height: 1em;
-  text-transform: lowercase;
+  font-weight: 800 !important;
+  letter-spacing: 0.225em !important;
+  line-height: 1em !important;
+  text-transform: lowercase !important;
 }
 h1 a,
 h2 a,
@@ -28,27 +28,27 @@ h3 a,
 h4 a,
 h5 a,
 h6 a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 h2 {
-  font-size: 1.5em;
-  line-height: 1.75em;
+  font-size: 1.5em !important;
+  line-height: 1.75em !important;
 }
 h2 {
-  font-size: 1.35em;
-  line-height: 1.75em;
+  font-size: 1.35em !important;
+  line-height: 1.75em !important;
 }
 h4 {
-  font-size: 1em;
-  line-height: 1.5em;
+  font-size: 1em !important;
+  line-height: 1.5em !important;
 }
 h5 {
-  font-size: 0.8em;
-  line-height: 1.5em;
+  font-size: 0.8em !important;
+  line-height: 1.5em !important;
 }
 h6 {
-  font-size: 0.7em;
-  line-height: 1.5em;
+  font-size: 0.7em !important;
+  line-height: 1.5em !important;
 }
 @media screen and (max-width: 736px) {
   h2 {

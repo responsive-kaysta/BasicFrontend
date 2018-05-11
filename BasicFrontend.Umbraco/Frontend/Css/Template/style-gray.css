@@ -1,4 +1,4 @@
-﻿/* style-gray.less */
+/* style-gray.less */
 /* global.less */
 /* base styles and definitions */
 /* menu */
@@ -77,21 +77,6 @@
 .wrapper.gray input[type="radio"]:checked + label:before {
   background: #ffffff;
   color: #21b2a6;
-}
-.wrapper.gray ::-webkit-input-placeholder {
-  color: whitesmoke !important;
-}
-.wrapper.gray :-moz-placeholder {
-  color: whitesmoke !important;
-}
-.wrapper.gray ::-moz-placeholder {
-  color: whitesmoke !important;
-}
-.wrapper.gray :-ms-input-placeholder {
-  color: whitesmoke !important;
-}
-.wrapper.gray .formerize-placeholder {
-  color: whitesmoke !important;
 }
 .wrapper.gray .icon.major {
   border-color: rgba(0, 0, 0, 0.125);

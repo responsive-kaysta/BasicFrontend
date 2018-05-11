@@ -1,4 +1,4 @@
-﻿/* style.less */
+/* style.less */
 /* global.less */
 /* base styles and definitions */
 /* menu */
@@ -123,7 +123,6 @@ section {
 }
 body {
   -webkit-text-size-adjust: none;
-  text-size-adjust: none;
 }
 *,
 *:before,
@@ -169,11 +168,6 @@ body.is-loading *:after {
     letter-spacing: 0.0375em;
   }
 }
-.page-header {
-  padding-top: 1em;
-  padding-bottom: 1em;
-  margin-bottom: 1em;
-}
 /* Main */
 #main > header {
   padding: 12em 0 10em 0 ;
@@ -194,7 +188,6 @@ body.is-loading *:after {
 #main > header p {
   color: inherit;
   letter-spacing: 0.225em;
-  text-transform: uppercase;
   top: 0;
 }
 #main > header p a {

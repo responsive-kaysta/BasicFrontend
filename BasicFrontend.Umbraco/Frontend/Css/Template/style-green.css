@@ -1,4 +1,4 @@
-﻿/* style-green.less */
+/* style-green.less */
 /* global.less */
 /* base styles and definitions */
 /* menu */
@@ -77,21 +77,6 @@
 .wrapper.green input[type="radio"]:checked + label:before {
   background: #ffffff;
   color: #21b2a6;
-}
-.wrapper.green ::-webkit-input-placeholder {
-  color: whitesmoke !important;
-}
-.wrapper.green :-moz-placeholder {
-  color: whitesmoke !important;
-}
-.wrapper.green ::-moz-placeholder {
-  color: whitesmoke !important;
-}
-.wrapper.green :-ms-input-placeholder {
-  color: whitesmoke !important;
-}
-.wrapper.green .formerize-placeholder {
-  color: whitesmoke !important;
 }
 .wrapper.green .icon.major {
   border-color: rgba(0, 0, 0, 0.125);

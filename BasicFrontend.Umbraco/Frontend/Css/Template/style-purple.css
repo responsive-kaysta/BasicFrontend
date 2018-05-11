@@ -1,4 +1,4 @@
-﻿/* style-purple.less */
+/* style-purple.less */
 /* global.less */
 /* base styles and definitions */
 /* menu */
@@ -77,21 +77,6 @@
 .wrapper.purple input[type="radio"]:checked + label:before {
   background: #ffffff;
   color: #21b2a6;
-}
-.wrapper.purple ::-webkit-input-placeholder {
-  color: #d3d4e4 !important;
-}
-.wrapper.purple :-moz-placeholder {
-  color: #d3d4e4 !important;
-}
-.wrapper.purple ::-moz-placeholder {
-  color: #d3d4e4 !important;
-}
-.wrapper.purple :-ms-input-placeholder {
-  color: #d3d4e4 !important;
-}
-.wrapper.purple .formerize-placeholder {
-  color: #d3d4e4 !important;
 }
 .wrapper.purple .icon.major {
   border-color: rgba(0, 0, 0, 0.125);
