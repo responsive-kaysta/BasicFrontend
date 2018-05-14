@@ -30,8 +30,7 @@
     function eraseCookie(name) {
         createCookie(name, "", -1);
     }
-
-
+    
     // read value from querystring
     var vars = [], hash;
 
@@ -44,18 +43,6 @@
             vars[hash[0]] = hash[1];
         }
     }
-
-    /*
-    // Disable animations/transitions until the page has loaded.
-    $body.addClass('is-loading');
-
-    $window.on('load', function () {
-        window.setTimeout(function () {
-            $body.removeClass('is-loading');
-        }, 250);
-    });
-    */
-    
 
     $('.tooltipster').tooltipster({
         animation: 'fade',

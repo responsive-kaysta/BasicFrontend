@@ -1,4 +1,4 @@
-/* spotlight.less */
+﻿/* spotlight.less */
 /* global.less */
 /* base styles and definitions */
 /* menu */
@@ -42,8 +42,8 @@
   width: 60%;
 }
 .spotlight .content {
-  padding-bottom: 1em;
-  padding-top: 1em;
+  padding-bottom: 0em;
+  padding-top: 0em;
   padding-left: 2em;
   padding-right: 2em;
 }
