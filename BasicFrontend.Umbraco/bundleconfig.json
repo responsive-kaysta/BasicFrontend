@@ -33,7 +33,6 @@
       "Frontend/Css/Molekule/box.css",
       "Frontend/Css/Molekule/button.css",
       "Frontend/Css/Molekule/list.css",
-      // "Frontend/Css/Molekule/row.css",
       "Frontend/Css/Molekule/seperator.css",
 
 
@@ -58,7 +57,6 @@
 
 
       /* Template */
-      "Frontend/Css/Template/form.css",
       "Frontend/Css/Template/style-green.css",
       "Frontend/Css/Template/style-gray.css",
       "Frontend/Css/Template/style-purple.css",

@@ -15,12 +15,11 @@
     @if (ViewBag.Contact != null)
     {
         var viewModel = (ContactViewModel)ViewBag.Contact;
-
         var pageStyle = @Umbraco.Field("pageStyle");
+
         <section class="wrapper @pageStyle">
             <div class="inner">
                 <div class="container">
-
 
                     <h2>
                         Thanks for the message
@@ -34,7 +33,6 @@
                         </p>
                     </div>
 
-
                 </div>
             </div>
         </section>
@@ -42,6 +40,7 @@
     }
     else
     {
+
         var pageStyle = @Umbraco.Field("pageStyle");
         <section class="wrapper @pageStyle">
             <div class="inner">
@@ -50,6 +49,7 @@
                 </div>
             </div>
         </section>
+
     }
 
 </article>
