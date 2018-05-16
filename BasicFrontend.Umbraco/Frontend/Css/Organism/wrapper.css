@@ -14,6 +14,9 @@
 .wrapper {
   padding: 1em 0 1em 0 ;
 }
+.wrapper.alt {
+  padding: 0;
+}
 .wrapper > .inner {
   width: 60em;
   margin: 0 auto;
@@ -27,9 +30,6 @@
   .wrapper > .inner {
     width: 100%;
   }
-}
-.wrapper.alt {
-  padding: 0;
 }
 @media screen and (max-width: 980px) {
   .wrapper {

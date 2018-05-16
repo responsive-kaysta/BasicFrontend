@@ -89,10 +89,6 @@
     "outputFile": "Frontend/Css/Molekule/list.css"
   },
   {
-    "inputFile": "Frontend/Css/Molekule/row.less",
-    "outputFile": "Frontend/Css/Molekule/row.css"
-  },
-  {
     "inputFile": "Frontend/Css/Molekule/seperator.less",
     "outputFile": "Frontend/Css/Molekule/seperator.css"
   },
@@ -170,10 +166,6 @@
 
 
   /* Template */
-  {
-    "inputFile": "Frontend/Css/Template/form.less",
-    "outputFile": "Frontend/Css/Template/form.css"
-  },
   {
     "inputFile": "Frontend/Css/Template/style-green.less",
     "outputFile": "Frontend/Css/Template/style-green.css"

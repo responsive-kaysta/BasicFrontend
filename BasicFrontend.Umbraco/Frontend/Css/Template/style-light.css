@@ -75,8 +75,23 @@
 }
 .wrapper.light input[type="checkbox"]:checked + label:before,
 .wrapper.light input[type="radio"]:checked + label:before {
-  background: #ffffff;
-  color: #21b2a6;
+  background: whitesmoke;
+  color: #5e5e5e;
+}
+.wrapper.light ::-webkit-input-placeholder {
+  color: #5e5e5e !important;
+}
+.wrapper.light :-moz-placeholder {
+  color: #5e5e5e !important;
+}
+.wrapper.light ::-moz-placeholder {
+  color: #5e5e5e !important;
+}
+.wrapper.light :-ms-input-placeholder {
+  color: #5e5e5e !important;
+}
+.wrapper.light .formerize-placeholder {
+  color: #5e5e5e !important;
 }
 .wrapper.light .icon.major {
   border-color: rgba(0, 0, 0, 0.125);

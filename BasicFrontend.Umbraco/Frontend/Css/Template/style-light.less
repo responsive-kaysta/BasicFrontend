@@ -72,8 +72,28 @@
 
     .wrapper.light input[type="checkbox"]:checked + label:before,
     .wrapper.light input[type="radio"]:checked + label:before {
-        background: #ffffff;
-        color: #21b2a6;
+        background: @style-light-bg-color;
+        color: @style-light-color;
+    }
+
+    .wrapper.light ::-webkit-input-placeholder {
+        color: @style-light-color !important;
+    }
+
+    .wrapper.light :-moz-placeholder {
+        color: @style-light-color !important;
+    }
+
+    .wrapper.light ::-moz-placeholder {
+        color: @style-light-color !important;
+    }
+
+    .wrapper.light :-ms-input-placeholder {
+        color: @style-light-color !important;
+    }
+
+    .wrapper.light .formerize-placeholder {
+        color: @style-light-color !important;
     }
 
     .wrapper.light .icon.major {
