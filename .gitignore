@@ -6,6 +6,8 @@
 App_Data/Logs/**.*
 TEMP/PluginCache/**.*
 
+*.min.css
+
 *.suo
 *.user
 *.userosscache
