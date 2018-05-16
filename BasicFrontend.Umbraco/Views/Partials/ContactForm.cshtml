@@ -10,55 +10,44 @@
         @Html.ValidationSummary(true, "Houston, we have a problem. Check things over and try again.")
     }
 
-    <div class="form-group">
-
-        <label for="Name">Name</label>
-
-        <input type="text"
-               class="form-control"
-               id="Name"
-               aria-describedby="Name"
-               placeholder="Enter Name" required>
-
-        <div class="invalid-tooltip" id="Name">
-            Name is required
+    <fieldset>
+        <div class="row">
+            <div class="large-12 columns">
+            </div>
         </div>
 
-    </div>
-
-    <div class="form-group">
-
-        <label for="EmailAddress">EmailAddress</label>
-
-        <input type="email"
-               class="form-control"
-               id="EmailAddress"
-               aria-describedby="EmailAddress"
-               placeholder="Enter EmailAddress" required>
-
-        <div class="invalid-tooltip" id="EmailAddress">
-            EmailAddress is required
+        <div class="row">
+            <div class="">
+                @Html.LabelFor(x => x.Name)<span class="required">*</span>
+                @Html.TextBoxFor(x => x.Name, new Dictionary<string, Object> { { "required", "" } })
+                <small class="error">Your name is required.</small>
+                @Html.ValidationMessageFor(x => x.Name)
+            </div>
         </div>
 
-    </div>
-
-    <div class="form-group">
-
-        <label for="Message">Message</label>
-
-        <textarea class="form-control"
-                      id="Message"
-                      aria-describedby="Message"
-                      placeholder="Enter Message" required></textarea>
-
-        <div class="invalid-tooltip" id="Message">
-            Message is required
+        <div class="row">
+            <div class="">
+                @Html.LabelFor(x => x.EmailAddress)<span class="required">*</span>
+                @Html.TextBoxFor(x => x.EmailAddress, new Dictionary<string, Object> { { "required", "" }, { "pattern", "email" } })
+                <small class="error">A valid email address is required.</small>
+                @Html.ValidationMessageFor(x => x.EmailAddress)
+            </div>
         </div>
 
-    </div>
+        <div class="row">
+            <div class="">
+                @Html.LabelFor(x => x.Message)<span class="required">*</span>
+                @Html.TextAreaFor(x => x.Message, new Dictionary<string, Object> { { "required", "" }, { "rows", "5" } })
+                <small class="error">Don't forget to enter a message.</small>
+                @Html.ValidationMessageFor(x => x.Message)
+            </div>
+        </div>
+    </fieldset>
 
-    <div class="form-group">
-        <button type="submit" class="btn btn-light btn-sm">Submit</button>
+    <div class="row">
+        <div class="large-12 columns">
+            <input type="submit" class="button" value="Submit" />
+        </div>
     </div>
 
 }

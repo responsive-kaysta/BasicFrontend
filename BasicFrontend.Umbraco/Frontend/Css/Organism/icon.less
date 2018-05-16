@@ -2,12 +2,6 @@
 
 @import "../global.less";
 
-.icon {
-    text-decoration: none;
-    border-bottom: none;
-    position: relative;
-}
-
 .icon:before {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
@@ -15,6 +9,14 @@
     font-style: normal;
     font-weight: normal;
     text-transform: none !important;
+}
+
+.icon {
+    font-size: 1.25em;
+}
+
+.icon a {
+    color: rgba(255, 255, 255, 0.5);
 }
 
 .icon > .label {
@@ -51,22 +53,42 @@
     }
 }
 
-.icon.green {
+.icon.green * {
     color: @style-green-color;
 }
 
-.icon.style2 {
-    color: #00f0ff;
+.icon.green a:hover {
+    color: @base-hover-color;
 }
 
-.icon.style3 {
-    color: #76ddff;
+.icon.gray * {
+    color: @style-gray-color;
 }
 
-.icon.transparent {
+.icon.gray a:hover {
+    color: @base-hover-color;
+}
+
+.icon.purple * {
+    color: @style-purple-color;
+}
+
+.icon.purple a:hover {
+    color: @base-hover-color;
+}
+
+.icon.transparent * {
     color: @style-transparent-color;
 }
 
-.icon.light {
+.icon.transparent a:hover {
+    color: @base-hover-color;
+}
+
+.icon.light * {
     color: @style-light-color;
+}
+
+.icon.light a:hover {
+    color: @base-hover-color;
 }

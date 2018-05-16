@@ -21,10 +21,10 @@
             <div class="inner">
                 <div class="container">
 
-                    <h2>
-                        Thanks for the message
-                    </h2>
-                    <div class="contact-confirmation">
+                    <div class="row">
+                        <h2>
+                            Thanks for the message
+                        </h2>
                         <p>
                             @Html.Raw(viewModel.Message)
                         </p>
@@ -33,14 +33,39 @@
                         </p>
                     </div>
 
+                    <div class="row">
+
+                        <ul>
+                            <li class="icon @pageStyle">
+                                <a href="https://www.xing.com/profile/Kay_Stuckenschmidt/cv?sc_o=mxb_p" class="fab fa-xing-square fa-2x" target="_blank">
+                                    <span class="label"></span>
+                                </a>
+                            </li>
+                            <li class="icon @pageStyle">
+                                <a href="https://www.linkedin.com/in/responsivekaysta/" class="fab fa-linkedin fa-2x" target="_blank">
+                                    <span class="label"></span>
+                                </a>
+                            </li>
+                            <li class="icon @pageStyle">
+                                <a href="https://github.com/responsive-kaysta" class="fab fa-github-square fa-2x" target="_blank">
+                                    <span class="label"></span>
+                                </a>
+                            </li>
+                            <li class="icon @pageStyle">
+                                <a href="https://www.nuget.org/profiles/kaysta" class="fas fa-archive fa-2x" target="_blank">
+                                    <span class="label"></span>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+
                 </div>
             </div>
         </section>
-
     }
     else
     {
-
         var pageStyle = @Umbraco.Field("pageStyle");
         <section class="wrapper @pageStyle">
             <div class="inner">
@@ -49,7 +74,6 @@
                 </div>
             </div>
         </section>
-
     }
 
 </article>

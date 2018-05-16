@@ -11,11 +11,6 @@
 /* code */
 /* banner */
 /* footer */
-.icon {
-  text-decoration: none;
-  border-bottom: none;
-  position: relative;
-}
 .icon:before {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -23,6 +18,12 @@
   font-style: normal;
   font-weight: normal;
   text-transform: none !important;
+}
+.icon {
+  font-size: 1.25em;
+}
+.icon a {
+  color: rgba(255, 255, 255, 0.5);
 }
 .icon > .label {
   display: none;
@@ -54,18 +55,33 @@
     font-size: 1em;
   }
 }
-.icon.green {
+.icon.green * {
   color: whitesmoke;
 }
-.icon.style2 {
-  color: #00f0ff;
+.icon.green a:hover {
+  color: red;
 }
-.icon.style3 {
-  color: #76ddff;
-}
-.icon.transparent {
+.icon.gray * {
   color: whitesmoke;
 }
-.icon.light {
+.icon.gray a:hover {
+  color: red;
+}
+.icon.purple * {
+  color: #d3d4e4;
+}
+.icon.purple a:hover {
+  color: red;
+}
+.icon.transparent * {
+  color: whitesmoke;
+}
+.icon.transparent a:hover {
+  color: red;
+}
+.icon.light * {
   color: #5e5e5e;
+}
+.icon.light a:hover {
+  color: red;
 }

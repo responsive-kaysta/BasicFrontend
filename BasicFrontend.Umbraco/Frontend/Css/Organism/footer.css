@@ -21,6 +21,9 @@
 #footer .icons a {
   color: rgba(255, 255, 255, 0.5);
 }
+#footer .icons a:hover {
+  color: red;
+}
 #footer * {
   text-transform: lowercase !important;
   border-bottom-color: transparent;
