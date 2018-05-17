@@ -1,4 +1,4 @@
-﻿/* banner.less */
+/* banner.less */
 /* global.less */
 /* base styles and definitions */
 /* menu */
@@ -88,6 +88,9 @@
 }
 #banner p a {
   color: whitesmoke;
+}
+#banner .actions {
+  padding-top: 0.75em;
 }
 #banner .more {
   -moz-transition: -moz-transform 0.75s ease, opacity 0.75s ease;

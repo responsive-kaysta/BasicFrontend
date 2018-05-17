@@ -1,4 +1,4 @@
-﻿/* style-green.less */
+/* style-green.less */
 /* global.less */
 /* base styles and definitions */
 /* menu */
@@ -31,13 +31,13 @@
   color: whitesmoke;
 }
 .wrapper.green hr {
-  border-color: rgba(0, 0, 0, 0.125);
+  border-color: whitesmoke;
 }
 .wrapper.green blockquote {
-  border-color: rgba(0, 0, 0, 0.125);
+  border-color: whitesmoke;
 }
 .wrapper.green code {
-  background: rgba(255, 255, 255, 0.075);
+  background: whitesmoke;
 }
 .wrapper.green header p {
   color: whitesmoke;
@@ -47,7 +47,7 @@
 .wrapper.green header.major h4,
 .wrapper.green header.major h5,
 .wrapper.green header.major h6 {
-  border-color: rgba(0, 0, 0, 0.125);
+  border-color: whitesmoke;
 }
 .wrapper.green header.major p {
   color: whitesmoke;
@@ -79,13 +79,13 @@
   color: #21b2a6;
 }
 .wrapper.green .icon.major {
-  border-color: rgba(0, 0, 0, 0.125);
+  border-color: whitesmoke;
 }
 .wrapper.green ul.alt li {
-  border-color: rgba(0, 0, 0, 0.125);
+  border-color: whitesmoke;
 }
 .wrapper.green table tbody tr {
-  border-color: rgba(0, 0, 0, 0.125);
+  border-color: whitesmoke;
 }
 .wrapper.green table tbody tr:nth-child(2n + 1) {
   background-color: rgba(255, 255, 255, 0.075);
@@ -94,13 +94,13 @@
   color: whitesmoke;
 }
 .wrapper.green table thead {
-  border-color: rgba(0, 0, 0, 0.125);
+  border-color: whitesmoke;
 }
 .wrapper.green table tfoot {
-  border-color: rgba(0, 0, 0, 0.125);
+  border-color: whitesmoke;
 }
 .wrapper.green table.alt tbody tr td {
-  border-color: rgba(0, 0, 0, 0.125);
+  border-color: whitesmoke;
 }
 .wrapper.green input[type="submit"],
 .wrapper.green input[type="reset"],
@@ -126,6 +126,6 @@
 }
 @media screen and (max-width: 736px) {
   .wrapper.green .features li {
-    border-top-color: rgba(0, 0, 0, 0.125);
+    border-top-color: whitesmoke;
   }
 }

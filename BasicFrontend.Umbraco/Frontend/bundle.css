@@ -13196,6 +13196,9 @@ article.special {
 #banner p a {
   color: whitesmoke;
 }
+#banner .actions {
+  padding-top: 0.75em;
+}
 #banner .more {
   -moz-transition: -moz-transform 0.75s ease, opacity 0.75s ease;
   -webkit-transition: -webkit-transform 0.75s ease, opacity 0.75s ease;
@@ -13300,6 +13303,7 @@ body.is-loading #banner .more {
 body.is-loading #banner:after {
   opacity: 1;
 }
+
 /* blogarchive.less */
 /* global.less */
 /* base styles and definitions */
@@ -14072,9 +14076,10 @@ body.is-menu-visible #menu {
 /* footer */
 section.special {
   text-align: center;
-  padding-top: 2em;
-  padding-bottom: 0.1em;
+  padding-top: 2.75em;
+  padding-bottom: 0.5em;
 }
+
 /* spotlight.less */
 /* global.less */
 /* base styles and definitions */
@@ -14332,13 +14337,13 @@ table.alt tfoot {
   color: whitesmoke;
 }
 .wrapper.green hr {
-  border-color: rgba(0, 0, 0, 0.125);
+  border-color: whitesmoke;
 }
 .wrapper.green blockquote {
-  border-color: rgba(0, 0, 0, 0.125);
+  border-color: whitesmoke;
 }
 .wrapper.green code {
-  background: rgba(255, 255, 255, 0.075);
+  background: whitesmoke;
 }
 .wrapper.green header p {
   color: whitesmoke;
@@ -14348,7 +14353,7 @@ table.alt tfoot {
 .wrapper.green header.major h4,
 .wrapper.green header.major h5,
 .wrapper.green header.major h6 {
-  border-color: rgba(0, 0, 0, 0.125);
+  border-color: whitesmoke;
 }
 .wrapper.green header.major p {
   color: whitesmoke;
@@ -14380,13 +14385,13 @@ table.alt tfoot {
   color: #21b2a6;
 }
 .wrapper.green .icon.major {
-  border-color: rgba(0, 0, 0, 0.125);
+  border-color: whitesmoke;
 }
 .wrapper.green ul.alt li {
-  border-color: rgba(0, 0, 0, 0.125);
+  border-color: whitesmoke;
 }
 .wrapper.green table tbody tr {
-  border-color: rgba(0, 0, 0, 0.125);
+  border-color: whitesmoke;
 }
 .wrapper.green table tbody tr:nth-child(2n + 1) {
   background-color: rgba(255, 255, 255, 0.075);
@@ -14395,13 +14400,13 @@ table.alt tfoot {
   color: whitesmoke;
 }
 .wrapper.green table thead {
-  border-color: rgba(0, 0, 0, 0.125);
+  border-color: whitesmoke;
 }
 .wrapper.green table tfoot {
-  border-color: rgba(0, 0, 0, 0.125);
+  border-color: whitesmoke;
 }
 .wrapper.green table.alt tbody tr td {
-  border-color: rgba(0, 0, 0, 0.125);
+  border-color: whitesmoke;
 }
 .wrapper.green input[type="submit"],
 .wrapper.green input[type="reset"],
@@ -14427,9 +14432,10 @@ table.alt tfoot {
 }
 @media screen and (max-width: 736px) {
   .wrapper.green .features li {
-    border-top-color: rgba(0, 0, 0, 0.125);
+    border-top-color: whitesmoke;
   }
 }
+
 /* style-gray.less */
 /* global.less */
 /* base styles and definitions */
