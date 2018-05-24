@@ -5,7 +5,8 @@ namespace BasicFrontend.Umbraco.Models
     public class ContactViewModel
     {
         [Required]
-        [StringLength(200, MinimumLength = 2)]
+        [StringLength(200, MinimumLength = 6)]
+        [Display(Name = "Name")]
         public string Name { get; set; }
 
         [Required]
@@ -15,8 +16,9 @@ namespace BasicFrontend.Umbraco.Models
         public string EmailAddress { get; set; }
 
         [Required]
-        [StringLength(2500, MinimumLength = 10)]
+        [StringLength(1024, MinimumLength = 10)]
         [DataType(DataType.MultilineText)]
+        [Display(Name = "Message")]
         public string Message { get; set; }
     }
 }

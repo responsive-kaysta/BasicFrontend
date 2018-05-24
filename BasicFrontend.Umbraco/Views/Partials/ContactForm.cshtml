@@ -7,32 +7,35 @@
 
     if (!ViewData.ModelState.IsValid)
     {
-        @Html.ValidationSummary(true, "Houston, we have a problem. Check things over and try again.")
+        @Html.ValidationSummary(true, "Houston, we have a problem. Check things over and try again.", new { @class = "col-sm-12 alert alert-warning align-center" })
     }
 
-    <div class="row">
-        @Html.LabelFor(x => x.Name)<span class="required">*</span>
-        @Html.TextBoxFor(x => x.Name)
-        <small class="error">Your name is required.</small>
-        @Html.ValidationMessageFor(x => x.Name)
+    <div class="form-group row">
+        @Html.LabelFor(x => x.Name, new { @class = "col-sm-4 col-form-label" })
+        @Html.TextBoxFor(x => x.Name, new { @class = "col-sm-8 form-control" })
+        <div class="col-sm-12 align-right">
+            @Html.ValidationMessageFor(x => x.Name)
+        </div>
     </div>
 
-    <div class="row">
-        @Html.LabelFor(x => x.EmailAddress)<span class="required">*</span>
-        @Html.TextBoxFor(x => x.EmailAddress)
-        <small class="error">A valid email address is required.</small>
-        @Html.ValidationMessageFor(x => x.EmailAddress)
+    <div class="form-group row">
+        @Html.LabelFor(x => x.EmailAddress, new { @class = "col-sm-4 col-form-label" })
+        @Html.TextBoxFor(x => x.EmailAddress, new { @class = "col-sm-8 form-control" })
+        <div class="col-sm-12 align-right">
+            @Html.ValidationMessageFor(x => x.EmailAddress)
+        </div>
     </div>
 
-    <div class="row">
-        @Html.LabelFor(x => x.Message)<span class="required">*</span>
-        @Html.TextAreaFor(x => x.Message)
-        <small class="error">Don't forget to enter a message.</small>
-        @Html.ValidationMessageFor(x => x.Message)
+    <div class="form-group row">
+        @Html.LabelFor(x => x.Message, new { @class = "col-sm-4 col-form-label" })
+        @Html.TextAreaFor(x => x.Message, new { @class = "col-sm-8 form-control" })
+        <div class="col-sm-12 align-right">
+            @Html.ValidationMessageFor(x => x.Message)
+        </div>
     </div>
 
-    <div class="row">
-        <input type="submit" class="button" value="Submit" />
+    <div class="form-group row">
+        <input type="submit" class="button small" value="Submit" />
     </div>
 
 }
