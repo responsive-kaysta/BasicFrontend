@@ -700,6 +700,9 @@
     <Content Include="Frontend\Css\Template\form.min.css">
       <DependentUpon>form.css</DependentUpon>
     </Content>
+    <Content Include="Frontend\Css\Template\style-gray.css">
+      <DependentUpon>style-gray.less</DependentUpon>
+    </Content>
     <Content Include="Frontend\Css\Template\style-green.css">
       <DependentUpon>style-green.less</DependentUpon>
     </Content>
@@ -711,6 +714,9 @@
     </Content>
     <Content Include="Frontend\Css\Template\style-light.min.css">
       <DependentUpon>style-light.css</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Template\style-purple.css">
+      <DependentUpon>style-purple.less</DependentUpon>
     </Content>
     <Content Include="Frontend\Css\Template\style-transparent.css">
       <DependentUpon>style-transparent.less</DependentUpon>

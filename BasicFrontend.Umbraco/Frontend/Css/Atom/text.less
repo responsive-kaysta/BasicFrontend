@@ -99,27 +99,28 @@ sup {
     text-align: right;
 }
 
-form * {
-    text-decoration: @base-text-decoration !important;
-    text-transform: @base-text-transform !important;
+error {
+    display: block;
+    font-size: 0.75em;
+    color: @base-error-color;
 }
 
-    @media screen and (min-width: 768px) {
-        .paragraph {
-            -webkit-columns: 300px 1;
-            -moz-columns: 300px 1;
-            columns: 300px 1;
-        }
-        
-        .paragraph-2col {
-            -webkit-columns: 200px 2;
-            -moz-columns: 200px 2;
-            columns: 200px 2;
-        }
-        
-        .paragraph-3col {
-            -webkit-columns: 100px 3;
-            -moz-columns: 100px 3;
-            columns: 100px 3;
-        }
+@media screen and (min-width: 768px) {
+    .paragraph {
+        -webkit-columns: 300px 1;
+        -moz-columns: 300px 1;
+        columns: 300px 1;
     }
+    
+    .paragraph-2col {
+        -webkit-columns: 200px 2;
+        -moz-columns: 200px 2;
+        columns: 200px 2;
+    }
+    
+    .paragraph-3col {
+        -webkit-columns: 100px 3;
+        -moz-columns: 100px 3;
+        columns: 100px 3;
+    }
+}
