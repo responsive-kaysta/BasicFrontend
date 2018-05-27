@@ -296,3 +296,5 @@ __pycache__/
 BasicFrontend\.Umbraco/App_Data/Logs/
 
 BasicFrontend\.Umbraco/App_Data/TEMP/PluginCache/
+
+*.css
