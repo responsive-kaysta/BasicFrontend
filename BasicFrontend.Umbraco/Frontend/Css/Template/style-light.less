@@ -21,15 +21,15 @@
     }
 
     .wrapper.light hr {
-        border-color: rgba(0, 0, 0, 0.125);
+        border-color: @style-light-border-color;
     }
 
     .wrapper.light blockquote {
-        border-color: rgba(0, 0, 0, 0.125);
+        border-color: @style-light-border-color;
     }
 
     .wrapper.light code {
-        background: rgba(255, 255, 255, 0.075);
+        background: @style-light-border-color;
     }
 
     .wrapper.light header p {
@@ -37,7 +37,7 @@
     }
 
     .wrapper.light header.major h2, .wrapper.light header.major h3, .wrapper.light header.major h4, .wrapper.light header.major h5, .wrapper.light header.major h6 {
-        border-color: rgba(0, 0, 0, 0.125);
+        border-color: @style-light-border-color;
     }
 
     .wrapper.light header.major p {
@@ -72,40 +72,20 @@
 
     .wrapper.light input[type="checkbox"]:checked + label:before,
     .wrapper.light input[type="radio"]:checked + label:before {
-        background: @style-light-bg-color;
-        color: @style-light-color;
-    }
-
-    .wrapper.light ::-webkit-input-placeholder {
-        color: @style-light-color !important;
-    }
-
-    .wrapper.light :-moz-placeholder {
-        color: @style-light-color !important;
-    }
-
-    .wrapper.light ::-moz-placeholder {
-        color: @style-light-color !important;
-    }
-
-    .wrapper.light :-ms-input-placeholder {
-        color: @style-light-color !important;
-    }
-
-    .wrapper.light .formerize-placeholder {
-        color: @style-light-color !important;
+        background: #ffffff;
+        color: #21b2a6;
     }
 
     .wrapper.light .icon.major {
-        border-color: rgba(0, 0, 0, 0.125);
+        border-color: @style-light-border-color;
     }
 
     .wrapper.light ul.alt li {
-        border-color: rgba(0, 0, 0, 0.125);
+        border-color: @style-light-border-color;
     }
 
     .wrapper.light table tbody tr {
-        border-color: rgba(0, 0, 0, 0.125);
+        border-color: @style-light-border-color;
     }
 
         .wrapper.light table tbody tr:nth-child(2n + 1) {
@@ -117,15 +97,15 @@
     }
 
     .wrapper.light table thead {
-        border-color: rgba(0, 0, 0, 0.125);
+        border-color: @style-light-border-color;
     }
 
     .wrapper.light table tfoot {
-        border-color: rgba(0, 0, 0, 0.125);
+        border-color: @style-light-border-color;
     }
 
     .wrapper.light table.alt tbody tr td {
-        border-color: rgba(0, 0, 0, 0.125);
+        border-color: @style-light-border-color;
     }
 
     .wrapper.light input[type="submit"],
@@ -156,7 +136,7 @@
     @media screen and (max-width: 736px) {
 
         .wrapper.light .features li {
-            border-top-color: rgba(0, 0, 0, 0.125);
+            border-top-color: @style-light-border-color;
         }
 
     }
