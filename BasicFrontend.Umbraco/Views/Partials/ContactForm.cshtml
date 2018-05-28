@@ -9,15 +9,15 @@
     if (!ViewData.ModelState.IsValid)
     {
         @Html.ValidationSummary(true, "Houston, we have a problem. Check things over and try again.", new { @class = "col-sm-12 alert alert-warning align-center" })
-        <error>
+        <div class="error">
             @Html.ValidationMessageFor(x => x.Name)
-        </error>
-        <error>
+        </div>
+        <div class="error">
             @Html.ValidationMessageFor(x => x.EmailAddress)
-        </error>
-        <error>
+        </div>
+        <div class="error">
             @Html.ValidationMessageFor(x => x.Message)
-        </error>
+        </div>
     }
 
     <div class="row">
