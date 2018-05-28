@@ -46,6 +46,69 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 
 		///<summary>
+		/// Email Destination Address
+		///</summary>
+		[ImplementPropertyType("emailDestinationAddress")]
+		public string EmailDestinationAddress
+		{
+			get { return this.GetPropertyValue<string>("emailDestinationAddress"); }
+		}
+
+		///<summary>
+		/// Email Display Text
+		///</summary>
+		[ImplementPropertyType("emailDisplayText")]
+		public string EmailDisplayText
+		{
+			get { return this.GetPropertyValue<string>("emailDisplayText"); }
+		}
+
+		///<summary>
+		/// Email From Address
+		///</summary>
+		[ImplementPropertyType("emailFromAddress")]
+		public string EmailFromAddress
+		{
+			get { return this.GetPropertyValue<string>("emailFromAddress"); }
+		}
+
+		///<summary>
+		/// Email Host
+		///</summary>
+		[ImplementPropertyType("emailHost")]
+		public string EmailHost
+		{
+			get { return this.GetPropertyValue<string>("emailHost"); }
+		}
+
+		///<summary>
+		/// Email Password
+		///</summary>
+		[ImplementPropertyType("emailPassword")]
+		public string EmailPassword
+		{
+			get { return this.GetPropertyValue<string>("emailPassword"); }
+		}
+
+		///<summary>
+		/// Email Subject
+		///</summary>
+		[ImplementPropertyType("emailSubject")]
+		public string EmailSubject
+		{
+			get { return this.GetPropertyValue<string>("emailSubject"); }
+		}
+
+		///<summary>
+		/// Email Username
+		///</summary>
+		[ImplementPropertyType("emailUsername")]
+		public string EmailUsername
+		{
+			get { return this.GetPropertyValue<string>("emailUsername"); }
+		}
+
+		///<summary>
 		/// Meta Description
 		///</summary>
 		[ImplementPropertyType("metaDescription")]

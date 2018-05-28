@@ -5,6 +5,7 @@ using System.Text;
 using System.Web.Configuration;
 using System.Web.Mvc;
 using Umbraco.Web.Mvc;
+using Umbraco.Web.PublishedContentModels;
 
 namespace BasicFrontend.Umbraco.Controllers
 {
@@ -18,16 +19,16 @@ namespace BasicFrontend.Umbraco.Controllers
                 return CurrentUmbracoPage();
             }
 
+            var settings = (SiteGlobal)Umbraco.TypedContent(WebConfigurationManager.AppSettings["settingsPageId"]);
+
             ViewBag.Contact = contactMessage;
             
-            var emailSubject = WebConfigurationManager.AppSettings["emailSubject"];
-
-            var fromEmailAddress = WebConfigurationManager.AppSettings["fromEmailAddress"];
-            var destEmailAddress = WebConfigurationManager.AppSettings["destEmailAddress"];
-
-            var emailHost = WebConfigurationManager.AppSettings["emailHost"];
-            var emailUsername = WebConfigurationManager.AppSettings["emailUsername"];
-            var emailPassword = WebConfigurationManager.AppSettings["emailPassword"];
+            var emailSubject = settings.EmailSubject;
+            var fromEmailAddress = settings.EmailFromAddress;
+            var destEmailAddress = settings.EmailDestinationAddress;
+            var emailHost = settings.EmailHost;
+            var emailUsername = settings.EmailUsername;
+            var emailPassword = settings.EmailPassword;
 
             var smtp = new SmtpClient(emailHost, 25);
             var creds = new NetworkCredential(emailUsername, emailPassword);
@@ -37,7 +38,7 @@ namespace BasicFrontend.Umbraco.Controllers
             smtp.EnableSsl = false;
 
             var to = new MailAddress(destEmailAddress);
-            var from = new MailAddress(fromEmailAddress, "Your Contractor Connection");
+            var from = new MailAddress(fromEmailAddress, settings.EmailDisplayText);
 
             var body = new StringBuilder();
             body.AppendLine(contactMessage.Name);
@@ -56,6 +57,6 @@ namespace BasicFrontend.Umbraco.Controllers
             return CurrentUmbracoPage();
         }
 
-
     }
+
 }

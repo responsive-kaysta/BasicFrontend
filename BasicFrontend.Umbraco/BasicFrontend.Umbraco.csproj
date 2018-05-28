@@ -327,6 +327,34 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\Umbraco.sdf" />
+    <Content Include="App_Plugins\GodMode\BackOffice\Css\godMode.css" />
+    <Content Include="App_Plugins\GodMode\BackOffice\GodModeTree\contentBrowser.html" />
+    <Content Include="App_Plugins\GodMode\BackOffice\GodModeTree\dataTypeBrowser.html" />
+    <Content Include="App_Plugins\GodMode\BackOffice\GodModeTree\diagnosticBrowser.html" />
+    <Content Include="App_Plugins\GodMode\BackOffice\GodModeTree\docTypeBrowser.html" />
+    <Content Include="App_Plugins\GodMode\BackOffice\GodModeTree\godModeHeader.html" />
+    <Content Include="App_Plugins\GodMode\BackOffice\GodModeTree\mediaBrowser.html" />
+    <Content Include="App_Plugins\GodMode\BackOffice\GodModeTree\memberBrowser.html" />
+    <Content Include="App_Plugins\GodMode\BackOffice\GodModeTree\partialBrowser.html" />
+    <Content Include="App_Plugins\GodMode\BackOffice\GodModeTree\reflectionBrowser.html" />
+    <Content Include="App_Plugins\GodMode\BackOffice\GodModeTree\templateBrowser.html" />
+    <Content Include="App_Plugins\GodMode\BackOffice\GodModeTree\typeBrowser.html" />
+    <Content Include="App_Plugins\GodMode\BackOffice\GodModeTree\usageBrowser.html" />
+    <Content Include="App_Plugins\GodMode\BackOffice\GodModeTree\utilityBrowser.html" />
+    <Content Include="App_Plugins\GodMode\BackOffice\Scripts\GodMode.Config.js" />
+    <Content Include="App_Plugins\GodMode\BackOffice\Scripts\GodMode.ContentBrowser.Controller.js" />
+    <Content Include="App_Plugins\GodMode\BackOffice\Scripts\GodMode.DataTypeBrowser.Controller.js" />
+    <Content Include="App_Plugins\GodMode\BackOffice\Scripts\GodMode.DiagnosticBrowser.Controller.js" />
+    <Content Include="App_Plugins\GodMode\BackOffice\Scripts\GodMode.DocTypeBrowser.Controller.js" />
+    <Content Include="App_Plugins\GodMode\BackOffice\Scripts\GodMode.MediaBrowser.Controller.js" />
+    <Content Include="App_Plugins\GodMode\BackOffice\Scripts\GodMode.MemberBrowser.Controller.js" />
+    <Content Include="App_Plugins\GodMode\BackOffice\Scripts\GodMode.PartialBrowser.Controller.js" />
+    <Content Include="App_Plugins\GodMode\BackOffice\Scripts\GodMode.ReflectionBrowser.Controller.js" />
+    <Content Include="App_Plugins\GodMode\BackOffice\Scripts\GodMode.Resources.js" />
+    <Content Include="App_Plugins\GodMode\BackOffice\Scripts\GodMode.TemplateBrowser.Controller.js" />
+    <Content Include="App_Plugins\GodMode\BackOffice\Scripts\GodMode.TypeBrowser.Controller.js" />
+    <Content Include="App_Plugins\GodMode\BackOffice\Scripts\GodMode.UsageBrowser.Controller.js" />
+    <Content Include="App_Plugins\GodMode\BackOffice\Scripts\GodMode.UtilityBrowser.Controller.js" />
     <Content Include="App_Plugins\Grid\Config\FanoeConfig.txt" />
     <Content Include="App_Plugins\Grid\Editors\Views\article.html" />
     <Content Include="App_Plugins\Grid\Editors\Views\banner.html" />
@@ -495,6 +523,7 @@
     <Content Include="Frontend\app.min.js.map">
       <DependentUpon>app.min.js</DependentUpon>
     </Content>
+    <Content Include="App_Plugins\GodMode\package.manifest" />
     <None Include="Frontend\Css\global.less" />
     <None Include="Frontend\Css\ie10-viewport-bug-workaround.less" />
     <Content Include="Frontend\Css\Molekule\box.css">
