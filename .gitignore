@@ -298,3 +298,11 @@ BasicFrontend\.Umbraco/App_Data/Logs/
 BasicFrontend\.Umbraco/App_Data/TEMP/PluginCache/
 
 *.css
+
+BasicFrontend\.Umbraco/App_Data/TEMP/DistCache/
+
+BasicFrontend\.Umbraco/App_Data/TEMP/ExamineIndexes/External/Index/
+
+BasicFrontend\.Umbraco/App_Data/TEMP/ExamineIndexes/Internal/Index/
+
+BasicFrontend\.Umbraco/App_Data/TEMP/ExamineIndexes/InternalMember/Index/
