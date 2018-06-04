@@ -4,15 +4,16 @@
 
 @{
     Layout = "_Layout.cshtml";
-
     var selection = CurrentPage.Children.Where("Visible");
 }
 
 <article id="main">
+
     <header>
         <h2>@Umbraco.Field("title")</h2>
         <p>@Umbraco.Field("introduction")</p>
     </header>
+
     @{
         var pageStyle = @Umbraco.Field("pageStyle");
         <section class="wrapper @pageStyle">
@@ -24,6 +25,7 @@
 
                             @foreach (var item in selection.OrderBy("CreateDate desc"))
                             {
+
                                 var introduction = item.GetPropertyValue("introduction").ToString();
                                 var title = item.GetPropertyValue("title").ToString();
                                 var gbId = Umbraco.Media(item.GetPropertyValue("teaserImage").ToString());
@@ -40,7 +42,9 @@
                                         </a>
                                     </div>
                                 </div>
+
                             }
+
                         </section>
                     </div>
                     <div class="clearfix"></div>
