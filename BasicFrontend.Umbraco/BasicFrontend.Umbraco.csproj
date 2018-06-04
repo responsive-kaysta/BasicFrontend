@@ -369,6 +369,7 @@
     <Content Include="App_Plugins\ModelsBuilder\modelsbuilder.controller.js" />
     <Content Include="App_Plugins\ModelsBuilder\modelsbuilder.htm" />
     <Content Include="App_Plugins\ModelsBuilder\modelsbuilder.resource.js" />
+    <Content Include="config\grid.editors.config.bak.js" />
     <Content Include="config\grid.editors.config.js" />
     <Content Include="config\imageprocessor\security.config" />
     <Content Include="config\imageprocessor\processing.config" />
@@ -732,6 +733,9 @@
     <Content Include="Frontend\Css\Template\style-gray.css">
       <DependentUpon>style-gray.less</DependentUpon>
     </Content>
+    <Content Include="Frontend\Css\Template\style-gray.min.css">
+      <DependentUpon>style-gray.css</DependentUpon>
+    </Content>
     <Content Include="Frontend\Css\Template\style-green.css">
       <DependentUpon>style-green.less</DependentUpon>
     </Content>
@@ -746,6 +750,9 @@
     </Content>
     <Content Include="Frontend\Css\Template\style-purple.css">
       <DependentUpon>style-purple.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Template\style-purple.min.css">
+      <DependentUpon>style-purple.css</DependentUpon>
     </Content>
     <Content Include="Frontend\Css\Template\style-transparent.css">
       <DependentUpon>style-transparent.less</DependentUpon>
@@ -771,6 +778,12 @@
     </Content>
     <Content Include="Frontend\JavaScript\global.js" />
     <Content Include="Frontend\JavaScript\Modules\colourswitch.js" />
+    <Content Include="Frontend\JavaScript\Modules\equalheight.es5.js">
+      <DependentUpon>equalheight.js</DependentUpon>
+    </Content>
+    <Content Include="Frontend\JavaScript\Modules\equalheight.es5.min.js">
+      <DependentUpon>equalheight.es5.js</DependentUpon>
+    </Content>
     <Content Include="Frontend\JavaScript\Modules\equalheight.js" />
     <Content Include="Frontend\JavaScript\Modules\loadmore.js" />
     <Content Include="Frontend\JavaScript\Modules\navigation.js" />

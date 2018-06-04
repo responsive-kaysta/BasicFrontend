@@ -25,6 +25,7 @@
                             @foreach (var item in selection.OrderBy("CreateDate desc"))
                             {
                                 var introduction = item.GetPropertyValue("introduction").ToString();
+                                var title = item.GetPropertyValue("title").ToString();
                                 var gbId = Umbraco.Media(item.GetPropertyValue("teaserImage").ToString());
                                 var gbImage = gbId.Url;
                                 var blogStyle = item.GetPropertyValue("pageStyle").ToString();
@@ -33,7 +34,7 @@
                                     <div class="@blogStyle">
                                         <a href="@item.Url" style="background-image: url('@gbImage'); background-position: center; background-repeat: no-repeat; background-size: cover;">
                                             <div class="date">@item.CreateDate.ToLongDateString()</div>
-                                            <h2>@item.GetPropertyValue("title")</h2>
+                                            <h2>@Umbraco.Truncate(title, 16, true)</h2>
                                             <p class="lead">@Umbraco.Truncate(introduction, 90, true)</p>
                                             <p class="small">@item.CreatorName</p>
                                         </a>
