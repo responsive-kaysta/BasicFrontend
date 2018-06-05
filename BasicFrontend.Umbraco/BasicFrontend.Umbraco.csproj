@@ -450,36 +450,6 @@
     <Content Include="Frontend\Css\Atom\triangle.min.css">
       <DependentUpon>triangle.css</DependentUpon>
     </Content>
-    <Content Include="Frontend\Css\Colours\blue.css">
-      <DependentUpon>blue.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Colours\blue.min.css">
-      <DependentUpon>blue.css</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Colours\dark.css">
-      <DependentUpon>dark.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Colours\dark.min.css">
-      <DependentUpon>dark.css</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Colours\light.css">
-      <DependentUpon>light.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Colours\light.min.css">
-      <DependentUpon>light.css</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Colours\purple.css">
-      <DependentUpon>purple.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Colours\purple.min.css">
-      <DependentUpon>purple.css</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Colours\yellow.css">
-      <DependentUpon>yellow.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Colours\yellow.min.css">
-      <DependentUpon>yellow.css</DependentUpon>
-    </Content>
     <Content Include="Frontend\Css\global.css">
       <DependentUpon>global.less</DependentUpon>
     </Content>
@@ -509,11 +479,6 @@
     <Content Include="Frontend\Css\Atom\image.less" />
     <Content Include="Frontend\Css\Atom\text.less" />
     <Content Include="Frontend\Css\Atom\triangle.less" />
-    <Content Include="Frontend\Css\Colours\blue.less" />
-    <Content Include="Frontend\Css\Colours\dark.less" />
-    <Content Include="Frontend\Css\Colours\light.less" />
-    <Content Include="Frontend\Css\Colours\purple.less" />
-    <Content Include="Frontend\Css\Colours\yellow.less" />
     <Content Include="compilerconfig.json.bindings">
       <DependentUpon>compilerconfig.json</DependentUpon>
     </Content>
@@ -723,14 +688,11 @@
     <Content Include="Frontend\Css\style.min.css">
       <DependentUpon>style.css</DependentUpon>
     </Content>
-    <Content Include="Frontend\Css\Template\form.css">
-      <DependentUpon>form.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Template\form.min.css">
-      <DependentUpon>form.css</DependentUpon>
-    </Content>
     <Content Include="Frontend\Css\Template\style-gray.css">
       <DependentUpon>style-gray.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Template\style-gray.min.css">
+      <DependentUpon>style-gray.css</DependentUpon>
     </Content>
     <Content Include="Frontend\Css\Template\style-green.css">
       <DependentUpon>style-green.less</DependentUpon>
@@ -746,6 +708,9 @@
     </Content>
     <Content Include="Frontend\Css\Template\style-purple.css">
       <DependentUpon>style-purple.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Template\style-purple.min.css">
+      <DependentUpon>style-purple.css</DependentUpon>
     </Content>
     <Content Include="Frontend\Css\Template\style-transparent.css">
       <DependentUpon>style-transparent.less</DependentUpon>
@@ -841,7 +806,6 @@
     <Content Include="Frontend\Css\Template\style-green.less" />
     <Content Include="Frontend\Css\Template\style-purple.less" />
     <Content Include="Frontend\Css\Template\style-light.less" />
-    <Content Include="Frontend\Css\Template\form.less" />
     <Content Include="Frontend\Css\Template\style-gray.less" />
     <Content Include="Frontend\Css\Template\style-transparent.less" />
     <None Include="packages.config" />
