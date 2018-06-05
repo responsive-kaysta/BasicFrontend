@@ -369,6 +369,7 @@
     <Content Include="App_Plugins\ModelsBuilder\modelsbuilder.controller.js" />
     <Content Include="App_Plugins\ModelsBuilder\modelsbuilder.htm" />
     <Content Include="App_Plugins\ModelsBuilder\modelsbuilder.resource.js" />
+    <Content Include="config\grid.editors.config.bak.js" />
     <Content Include="config\grid.editors.config.js" />
     <Content Include="config\imageprocessor\security.config" />
     <Content Include="config\imageprocessor\processing.config" />
@@ -736,6 +737,12 @@
     </Content>
     <Content Include="Frontend\JavaScript\global.js" />
     <Content Include="Frontend\JavaScript\Modules\colourswitch.js" />
+    <Content Include="Frontend\JavaScript\Modules\equalheight.es5.js">
+      <DependentUpon>equalheight.js</DependentUpon>
+    </Content>
+    <Content Include="Frontend\JavaScript\Modules\equalheight.es5.min.js">
+      <DependentUpon>equalheight.es5.js</DependentUpon>
+    </Content>
     <Content Include="Frontend\JavaScript\Modules\equalheight.js" />
     <Content Include="Frontend\JavaScript\Modules\loadmore.js" />
     <Content Include="Frontend\JavaScript\Modules\navigation.js" />

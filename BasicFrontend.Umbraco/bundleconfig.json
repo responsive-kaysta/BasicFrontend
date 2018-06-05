@@ -79,18 +79,25 @@
   {
     "outputFileName": "Frontend/app.js",
     "inputFiles": [
+
       "Scripts/jquery-3.3.1.min.js",
+
       "Scripts/bootstrap.bundle.min.js",
+
       "Frontend/JavaScript/Plugins/jQuery/jquery.scrollex.min.js",
       "Frontend/JavaScript/Plugins/jQuery/jquery.scrolly.min.js",
+
       "Frontend/JavaScript/Plugins/Tooltipster/tooltipster.bundle.js",
+
       "Frontend/JavaScript/Plugins/skel/skel.min.js",
       "Frontend/JavaScript/Plugins/skel/skel-viewport.js",
       "Frontend/JavaScript/Plugins/skel/skel-layout.min.js",
 
       "Frontend/JavaScript/Plugins/skel/init.es5.js",
 
-      "Frontend/JavaScript/global.es5.js"
+      "Frontend/JavaScript/global.es5.js",
+
+      "Frontend/JavaScript/Modules/equalheight.es5.js"
     ],
     "minify": {
       "enabled": true,

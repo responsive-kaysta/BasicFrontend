@@ -8,6 +8,10 @@
     "inputFile": "Frontend/JavaScript/global.js",
     "outputFile": "Frontend/JavaScript/global.es5.js"
   },
+  {
+    "inputFile": "Frontend/JavaScript/Modules/equalheight.js",
+    "outputFile": "Frontend/JavaScript/Modules/equalheight.es5.js"
+  },
 
 
   /* CSS libraries*/
@@ -196,6 +200,10 @@
   {
     "inputFile": "Frontend/Css/Plugins/Tooltipster/tooltipster.bundle.less",
     "outputFile": "Frontend/Css/Plugins/Tooltipster/tooltipster.bundle.css"
+  },
+  {
+    "inputFile": "Frontend/Css/Plugins/Tooltipster/Themes/tooltipster-sideTip-punk.less",
+    "outputFile": "Frontend/Css/Plugins/Tooltipster/Themes/tooltipster-sideTip-punk.css"
   }
 
 ]
