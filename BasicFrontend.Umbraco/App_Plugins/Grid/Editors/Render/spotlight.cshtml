@@ -34,6 +34,13 @@
 else
 {
     <text>
+        @{
+            var target = string.Empty;
+            if (Model.value.cta_button_url.ToString().Contains("http"))
+            {
+                target = "target='_blank'";
+            }
+        }
         <section class="spotlight equal">
             <div class="image">
                 <img class="wide" src="@url" alt="@Model.value.caption">
@@ -42,7 +49,7 @@ else
                 <h2>@Model.value.headline</h2>
                 <p>@Model.value.paragraph</p>
                 <ul class="actions">
-                    <li><a href="@Model.value.cta_button_url" class="button special">@Model.value.cta_button_text</a></li>
+                    <li><a href="@Model.value.cta_button_url" @target class="button special">@Model.value.cta_button_text</a></li>
                 </ul>
             </div>
         </section>
