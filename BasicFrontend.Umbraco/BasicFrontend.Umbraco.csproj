@@ -490,6 +490,12 @@
       <DependentUpon>app.min.js</DependentUpon>
     </Content>
     <Content Include="App_Plugins\GodMode\package.manifest" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-reboot.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.css.map" />
+    <Content Include="Content\bootstrap-grid.min.css.map" />
+    <Content Include="Content\bootstrap-grid.css.map" />
     <None Include="Frontend\Css\global.less" />
     <None Include="Frontend\Css\ie10-viewport-bug-workaround.less" />
     <Content Include="Frontend\Css\Molekule\box.css">
@@ -764,9 +770,9 @@
     <Content Include="Frontend\JavaScript\Plugins\Tooltipster\tooltipster.main.js" />
     <Content Include="Global.asax" />
     <Content Include="icon.jpg" />
-    <Content Include="Media\1007\archive-bg_250.jpg" />
-    <Content Include="Media\1008\memory_275.jpg" />
-    <Content Include="Media\1009\photo-1485856407642-7f9ba0268b51_250.jpg" />
+    <Content Include="Media\1010\spotlight_1.png" />
+    <Content Include="Media\1011\spotlight_2.png" />
+    <Content Include="Media\1012\spotlight_3.png" />
     <Content Include="Media\Web.config" />
     <Content Include="config\umbracoSettings.config" />
     <Content Include="config\trees.config" />
@@ -806,6 +812,10 @@
     <Content Include="App_Plugins\Grid\Editors\Render\quote_with_description.cshtml" />
     <Content Include="App_Plugins\Grid\Editors\Render\spotlight.cshtml" />
     <Content Include="App_Plugins\Grid\package.manifest" />
+    <Content Include="Scripts\bootstrap.bundle.js" />
+    <Content Include="Scripts\bootstrap.bundle.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="webfonts\fa-brands-400.svg" />
     <Content Include="webfonts\fa-regular-400.svg" />
     <Content Include="webfonts\fa-solid-900.svg" />
@@ -815,11 +825,9 @@
     <Content Include="Frontend\Css\Template\style-light.less" />
     <Content Include="Frontend\Css\Template\style-gray.less" />
     <Content Include="Frontend\Css\Template\style-transparent.less" />
+    <Content Include="Media\created-packages\responsive.kaysta.Frontend_0.9.15.zip" />
+    <Content Include="Media\created-packages\responsive.kaysta.Frontend_0.9.16.zip" />
     <None Include="packages.config" />
-    <Content Include="Scripts\bootstrap.bundle.js" />
-    <Content Include="Scripts\bootstrap.bundle.min.js" />
-    <Content Include="Scripts\bootstrap.js" />
-    <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\esm\popper-utils.js" />
     <Content Include="Scripts\esm\popper-utils.js.map">
       <DependentUpon>popper-utils.js</DependentUpon>
@@ -834,6 +842,10 @@
     </Content>
     <Content Include="Scripts\esm\popper.min.js" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
+    <Content Include="Scripts\bootstrap.min.js.map" />
+    <Content Include="Scripts\bootstrap.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.min.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.js.map" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\esm\popper.min.js.map">
       <DependentUpon>popper.min.js</DependentUpon>

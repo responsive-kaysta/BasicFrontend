@@ -293,11 +293,27 @@ __pycache__/
 *.odx.cs
 *.xsd.cs
 
-BasicFrontend\.Umbraco/App_Data/Logs/
+App_Data/Logs/
 
-BasicFrontend\.Umbraco/App_Data/TEMP/PluginCache/
+App_Data/TEMP/
 
-*.css
+App_Data/TEMP/PluginCache/
+
+App_Data/TEMP/DistCache/
+
+App_Data/TEMP/ExamineIndexes/External/Index/
+
+App_Data/TEMP/ExamineIndexes/Internal/Index/
+
+App_Data/TEMP/ExamineIndexes/InternalMember/Index/
+
+App_Data/preview/
+
+BasicFrontend\.Umbraco/App_Data/cache/3/5/9/6/4/a/
+
+BasicFrontend\.Umbraco/App_Data/cache/6/6/1/b/3/c/
+
+BasicFrontend\.Umbraco/App_Data/cache/c/9/0/6/2/f/
 
 BasicFrontend\.Umbraco/App_Data/TEMP/DistCache/
 
@@ -306,5 +322,3 @@ BasicFrontend\.Umbraco/App_Data/TEMP/ExamineIndexes/External/Index/
 BasicFrontend\.Umbraco/App_Data/TEMP/ExamineIndexes/Internal/Index/
 
 BasicFrontend\.Umbraco/App_Data/TEMP/ExamineIndexes/InternalMember/Index/
-
-BasicFrontend\.Umbraco/App_Data/preview/

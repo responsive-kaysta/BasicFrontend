@@ -1,0 +1,31 @@
+﻿/* container.less */
+/* global.less */
+/* base styles and definitions */
+/* menu */
+/* green -> obsolete style1 */
+/* gray -> obsolete style2 */
+/* purple -> obsolete style3 */
+/* transparent -> obsolete: style4 */
+/* light -> obsolete: style5 */
+/* button */
+/* code */
+/* banner */
+.container {
+  padding: 2rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media screen and (max-width: 736px) {
+  .container {
+    padding: 2rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+@media screen and (max-width: 468px) {
+  .container {
+    padding: 2rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}

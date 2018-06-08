@@ -1,0 +1,45 @@
+﻿/* panel.less */
+/* global.less */
+/* base styles and definitions */
+/* menu */
+/* green -> obsolete style1 */
+/* gray -> obsolete style2 */
+/* purple -> obsolete style3 */
+/* transparent -> obsolete: style4 */
+/* light -> obsolete: style5 */
+/* button */
+/* code */
+/* banner */
+.panel {
+  margin-top: 1.0rem;
+  margin-bottom: 1.75rem;
+  min-height: 200px;
+}
+@media (min-width: 360px) {
+  .panel {
+    margin-top: 1.0rem;
+    margin-bottom: 1.75rem;
+    min-height: 100px;
+  }
+}
+@media (min-width: 768px) {
+  .panel {
+    margin-top: 1.0rem;
+    margin-bottom: 1.75rem;
+    min-height: 100px;
+  }
+}
+@media (max-width: 1024px) {
+  .panel {
+    margin-top: 1.0rem;
+    margin-bottom: 1.75rem;
+    min-height: 240px;
+  }
+}
+@media (min-width: 1025px) {
+  .panel {
+    margin-top: 1.0rem;
+    margin-bottom: 1.75rem;
+    min-height: 200px;
+  }
+}
