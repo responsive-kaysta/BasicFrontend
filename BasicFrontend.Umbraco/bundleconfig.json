@@ -8,12 +8,6 @@
       "Content/bootstrap.css",
       "Frontend/fontawesome-all.css",
       "Frontend/Css/reset.css",
-      "Frontend/Css/ie10-viewport-bug-workaround.css",
-
-
-      /* Plugins */
-      "Frontend/Css/Plugins/Tooltipster/tooltipster.bundle.css",
-      "Frontend/Css/Plugins/Tooltipster/Themes/tooltipster-sideTip-punk.min.css",
 
 
       /* Atom */
@@ -64,9 +58,17 @@
       "Frontend/Css/Template/style-transparent.css",
       "Frontend/Css/Template/style-light.css",
 
+      
+
+      /* Plugins */
+      "Frontend/Css/Plugins/Tooltipster/tooltipster.bundle.css",
+      "Frontend/Css/Plugins/Tooltipster/Themes/tooltipster-sideTip-punk.min.css",
+
 
       /* Custom Styles */
-      "Frontend/Css/style.css"
+      "Frontend/Css/style.css",
+        
+      "Frontend/Css/ie10-viewport-bug-workaround.css"
 
     ],
     "minify": {
@@ -87,11 +89,11 @@
       "Frontend/JavaScript/Plugins/jQuery/jquery.scrollex.min.js",
       "Frontend/JavaScript/Plugins/jQuery/jquery.scrolly.min.js",
 
-      "Frontend/JavaScript/Plugins/Tooltipster/tooltipster.bundle.js",
-
       "Frontend/JavaScript/Plugins/skel/skel.min.js",
       "Frontend/JavaScript/Plugins/skel/skel-viewport.js",
       "Frontend/JavaScript/Plugins/skel/skel-layout.min.js",
+
+      "Frontend/JavaScript/Plugins/Tooltipster/tooltipster.bundle.js",
 
       "Frontend/JavaScript/Plugins/skel/init.es5.js",
 
