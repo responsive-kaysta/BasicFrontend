@@ -1,4 +1,3 @@
-/* style-transparent.less */
 /* global.less */
 /* base styles and definitions */
 /* menu */
@@ -10,10 +9,3 @@
 /* button */
 /* code */
 /* banner */
-.transparent .page-header {
-  width: 100%;
-  border-bottom: whitesmoke solid thin !important;
-}
-.wrapper.transparent {
-  background-color: transparent;
-}

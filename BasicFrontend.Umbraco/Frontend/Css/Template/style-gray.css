@@ -1,4 +1,4 @@
-﻿/* style-gray.less */
+/* style-gray.less */
 /* global.less */
 /* base styles and definitions */
 /* menu */
@@ -14,6 +14,9 @@
   width: 100%;
   border-bottom: whitesmoke solid thin !important;
 }
+.wrapper .container .blogarchive div.gray {
+  background: darkgray;
+}
 .wrapper.gray {
   background-color: darkgray;
   color: whitesmoke;
@@ -26,6 +29,15 @@
 }
 .wrapper.gray code {
   background: whitesmoke;
+}
+.wrapper.gray ul li {
+  color: whitesmoke;
+}
+.wrapper.gray ul li a {
+  color: whitesmoke;
+}
+.wrapper.gray ul li a:hover {
+  color: red;
 }
 .wrapper.gray header.major h2,
 .wrapper.gray header.major h3,

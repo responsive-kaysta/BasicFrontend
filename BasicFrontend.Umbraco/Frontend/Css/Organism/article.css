@@ -1,4 +1,4 @@
-﻿/* article.less */
+/* article.less */
 /* global.less */
 /* base styles and definitions */
 /* menu */
@@ -15,8 +15,11 @@ article.special {
   padding-top: 2rem;
   padding-bottom: 0.1rem;
 }
+/*
 article#main header {
-  padding-left: 20%;
-  padding-right: 20%;
-  margin: 0;
+    padding-top: 8rem;
+    padding-bottom: 6rem;
+    margin-right: auto;
+    margin-left: auto;
 }
+*/

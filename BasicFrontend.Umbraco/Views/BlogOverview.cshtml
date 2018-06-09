@@ -35,9 +35,9 @@
                                 <div class="col-sm-12 col-md-6 equal">
                                     <div class="@blogStyle">
                                         <a href="@item.Url" style="background-image: url('@gbImage'); background-position: center; background-repeat: no-repeat; background-size: cover;">
-                                            <div class="date">@item.CreateDate.ToLongDateString()</div>
-                                            <h2>@Umbraco.Truncate(title, 16, true)</h2>
-                                            <p class="lead">@Umbraco.Truncate(introduction, 90, true)</p>
+                                            <div class="small date">@item.CreateDate.ToLongDateString()</div>
+                                            <h3>@Umbraco.Truncate(title, 24, true)</h3>
+                                            <p class="paragraph">@Umbraco.Truncate(introduction, 90, true)</p>
                                             <p class="small">@item.CreatorName</p>
                                         </a>
                                     </div>

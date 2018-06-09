@@ -50,6 +50,8 @@ sup {
 }
 .small {
   font-size: .85rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 .headline {
   font-size: 1.6rem;

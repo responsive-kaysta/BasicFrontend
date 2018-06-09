@@ -170,7 +170,7 @@ body.is-loading *:after {
 }
 /* Main */
 #main > header {
-  padding: 12em 0 10em 0 ;
+  padding: 12em 0 10em 0;
   background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/Website-Design-Background.png");
   background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/Website-Design-Background.png");
   background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/Website-Design-Background.png");
@@ -183,7 +183,7 @@ body.is-loading *:after {
 }
 #main > header h2 {
   font-size: 1.75rem;
-  margin: 0 0 0.5rem 0;
+  margin: 0 0 1rem 0;
 }
 #main > header p {
   color: inherit;
@@ -193,24 +193,29 @@ body.is-loading *:after {
 #main > header p a {
   color: inherit;
 }
+@media screen and (max-width: 1920px) {
+  #main > header {
+    padding: 10rem 25.375% 8rem 25.375%;
+  }
+}
 @media screen and (max-width: 1680px) {
   #main > header {
-    padding: 10rem 0 8rem 0 ;
+    padding: 10rem 17.25% 8rem 17.25%;
   }
 }
 @media screen and (max-width: 1280px) {
   #main > header {
-    padding: 8rem 3rem 6rem 3rem ;
+    padding: 8rem 10% 6rem 10%;
   }
 }
 @media screen and (max-width: 980px) {
   #main > header {
-    padding: 10rem 3rem 8rem 3rem ;
+    padding: 10rem 15% 8rem 15%;
   }
 }
 @media screen and (max-width: 736px) {
   #main > header {
-    padding: 5rem 3rem 3rem 3rem ;
+    padding: 5rem 15% 3rem 15%;
   }
   #main > header h2 {
     font-size: 1.25rem;

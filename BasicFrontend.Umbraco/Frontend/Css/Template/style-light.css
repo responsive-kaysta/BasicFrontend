@@ -14,6 +14,10 @@
   width: 100%;
   border-bottom: #5e5e5e solid thin !important;
 }
+.wrapper .container .blogarchive div.light {
+  background: whitesmoke;
+  color: #5e5e5e !important;
+}
 .wrapper.light {
   background-color: whitesmoke;
   color: #5e5e5e;
@@ -26,6 +30,15 @@
 }
 .wrapper.light code {
   background: #5e5e5e;
+}
+.wrapper.light ul li {
+  color: #5e5e5e;
+}
+.wrapper.light ul li a {
+  color: #5e5e5e;
+}
+.wrapper.light ul li a:hover {
+  color: red;
 }
 .wrapper.light header.major h2,
 .wrapper.light header.major h3,

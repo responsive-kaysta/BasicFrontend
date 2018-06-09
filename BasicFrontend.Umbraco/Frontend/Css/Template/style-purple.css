@@ -1,4 +1,4 @@
-﻿/* style-purple.less */
+/* style-purple.less */
 /* global.less */
 /* base styles and definitions */
 /* menu */
@@ -14,6 +14,9 @@
   width: 100%;
   border-bottom: #d3d4e4 solid thin !important;
 }
+.wrapper .container .blogarchive div.purple {
+  background: #505393;
+}
 .wrapper.purple {
   background-color: #505393;
   color: #d3d4e4;
@@ -26,6 +29,15 @@
 }
 .wrapper.purple code {
   background: #d3d4e4;
+}
+.wrapper.purple ul li {
+  color: #d3d4e4;
+}
+.wrapper.purple ul li a {
+  color: #d3d4e4;
+}
+.wrapper.purple ul li a:hover {
+  color: red;
 }
 .wrapper.purple header.major h2,
 .wrapper.purple header.major h3,
