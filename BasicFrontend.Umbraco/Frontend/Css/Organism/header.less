@@ -1,9 +1,7 @@
-﻿/* header.less */
-
-@import "../global.vars.less";
+﻿@import "../global.vars.less";
 
 header p {
-    color: rgba(255, 255, 255, 0.5);
+    //color: rgba(255, 255, 255, 0.5);
     position: relative;
     top: -0.25rem;
 }
@@ -22,37 +20,6 @@ header h6 + p {
     font-size: 0.9rem;
 }
 
-header.major {
-    margin: 0 0 3.5rem 0;
-}
-
-    header.major h2, header.major h3, header.major h4, header.major h5, header.major h6 {
-        border-bottom: solid 2px #fff;
-        display: inline-block;
-        padding-bottom: 0.75rem;
-        position: relative;
-    }
-
-        header.major h2:after, header.major h3:after, header.major h4:after, header.major h5:after, header.major h6:after {
-            content: '';
-            display: block;
-            height: 1px;
-        }
-
-    header.major p {
-        color: #fff;
-        top: 0;
-        padding-top: 1rem;
-    }
-
-    @media screen and (max-width: 736px) {
-
-        header.major {
-            margin: 0 0 2rem 0;
-        }
-
-    }
-
 @media screen and (max-width: 980px) {
 
     header br {
@@ -61,6 +28,21 @@ header.major {
 
 }
 
+        #main > header h2 {
+            color: inherit;
+            font-size: 1.75rem;
+            margin: 0 0 1rem 0;
+        }
+
+        #main > header p {
+            color: inherit;
+            letter-spacing: 0.225rem;
+            top: 0;
+        }
+
+        #main > header p a {
+            color: inherit;
+        }
 
 #header {
     -moz-transition: background-color 0.2s ease;

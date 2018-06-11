@@ -1,5 +1,4 @@
-﻿/* global.less */
-/* base styles and definitions */
+﻿/* base styles and definitions */
 /* menu */
 /* green -> obsolete style1 */
 /* gray -> obsolete style2 */
@@ -9,6 +8,11 @@
 /* button */
 /* code */
 /* banner */
-.wrapper.transparent {
+.transparent {
+  color: whitesmoke;
+  background-color: transparent;
+}
+section.transparent {
+  color: whitesmoke;
   background-color: transparent;
 }

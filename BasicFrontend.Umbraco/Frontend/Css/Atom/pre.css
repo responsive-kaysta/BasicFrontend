@@ -1,6 +1,4 @@
-﻿/* preless */
-/* global.less */
-/* base styles and definitions */
+﻿/* base styles and definitions */
 /* menu */
 /* green -> obsolete style1 */
 /* gray -> obsolete style2 */
@@ -13,11 +11,6 @@
 pre {
   overflow: auto;
   border-radius: 10px;
-  background-color: lightgray;
-}
-pre {
-  padding: 20px;
-  margin-bottom: 30px;
 }
 pre {
   -webkit-overflow-scrolling: touch;

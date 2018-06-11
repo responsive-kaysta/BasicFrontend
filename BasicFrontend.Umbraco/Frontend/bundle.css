@@ -11922,8 +11922,6 @@ video {
   vertical-align: baseline;
   font-size: 100%;
 }
-/* a.less */
-/* global.less */
 /* base styles and definitions */
 /* menu */
 /* green -> obsolete style1 */
@@ -11943,16 +11941,18 @@ a {
   text-decoration: none;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Lato', Arial, sans-serif;
   text-transform: lowercase;
-  color: whitesmoke;
 }
 a:hover {
-  color: red;
   text-transform: lowercase !important;
   text-decoration: none !important;
   border-bottom-color: transparent;
 }
-/* abstract.less */
-/* global.less */
+a {
+  color: whitesmoke;
+}
+a:hover {
+  color: red;
+}
 /* base styles and definitions */
 /* menu */
 /* green -> obsolete style1 */
@@ -11972,8 +11972,6 @@ a:hover {
 .abstract {
   margin-bottom: 0.75rem;
 }
-/* blockquote.less */
-/* global.less */
 /* base styles and definitions */
 /* menu */
 /* green -> obsolete style1 */
@@ -12001,9 +11999,6 @@ blockquote {
   line-height: 1.6;
   letter-spacing: 0.2px;
 }
-blockquote {
-  color: whitesmoke;
-}
 blockquote:before,
 blockquote:after {
   display: inline-block;
@@ -12019,8 +12014,6 @@ blockquote {
 blockquote + * {
   padding: 3rem 1rem;
 }
-/* code.less */
-/* global.less */
 /* base styles and definitions */
 /* menu */
 /* green -> obsolete style1 */
@@ -12037,12 +12030,10 @@ code {
   background-color: lightgray;
 }
 code {
-  background-color: lightgray;
+  color: #5e5e5e;
   font-size: 0.75rem;
   font-family: "Courier 10 Pitch", Courier, monospace;
 }
-/* h.less */
-/* global.less */
 /* base styles and definitions */
 /* menu */
 /* green -> obsolete style1 */
@@ -12112,8 +12103,6 @@ h6 {
     line-height: 1.75rem;
   }
 }
-/* hr.less */
-/* global.less */
 /* base styles and definitions */
 /* menu */
 /* green -> obsolete style1 */
@@ -12129,11 +12118,6 @@ hr {
   border-bottom: solid 2px whitesmoke;
   margin: 1rem 0;
 }
-hr.major {
-  margin: 4.5rem 0;
-}
-/* image.less */
-/* global.less */
 /* base styles and definitions */
 /* menu */
 /* green -> obsolete style1 */
@@ -12184,8 +12168,6 @@ img {
 .image.fit img {
   width: 100%;
 }
-/* preless */
-/* global.less */
 /* base styles and definitions */
 /* menu */
 /* green -> obsolete style1 */
@@ -12199,11 +12181,6 @@ img {
 pre {
   overflow: auto;
   border-radius: 10px;
-  background-color: lightgray;
-}
-pre {
-  padding: 20px;
-  margin-bottom: 30px;
 }
 pre {
   -webkit-overflow-scrolling: touch;
@@ -12217,8 +12194,6 @@ pre code {
   padding: 1em 1.5rem;
   overflow-x: auto;
 }
-/* text.less */
-/* global.less */
 /* base styles and definitions */
 /* menu */
 /* green -> obsolete style1 */
@@ -12291,14 +12266,15 @@ sup {
   line-height: 1.35rem !important;
 }
 .paragraph {
-  color: inherit;
+  font-size: 1.0rem;
+  font-weight: normal;
+  line-height: 1.4;
+  letter-spacing: 0.2px;
 }
 .paragraph-2col {
-  color: inherit;
   padding-bottom: 0.75rem;
 }
 .paragraph-3col {
-  color: inherit;
   padding-bottom: 0.75rem;
 }
 .align-left {
@@ -12333,8 +12309,6 @@ sup {
     columns: 100px 3;
   }
 }
-/* triangle.less  */
-/* global.less */
 /* base styles and definitions */
 /* menu */
 /* green -> obsolete style1 */
@@ -12403,8 +12377,6 @@ sup {
     top: -150px;
   }
 }
-/* box.less */
-/* global.less */
 /* base styles and definitions */
 /* menu */
 /* green -> obsolete style1 */
@@ -12431,8 +12403,6 @@ sup {
   border-radius: 0;
   padding: 0;
 }
-/* button.less */
-/* global.less */
 /* base styles and definitions */
 /* menu */
 /* green -> obsolete style1 */
@@ -12561,8 +12531,6 @@ button:disabled,
     line-height: 3.75rem;
   }
 }
-/* list.less */
-/* global.less */
 /* base styles and definitions */
 /* menu */
 /* green -> obsolete style1 */
@@ -12728,7 +12696,6 @@ ul.actions.fit.small li {
     padding-top: 0;
   }
 }
-/* seperator.less */
 .seperator {
   margin-right: auto;
   margin-left: auto;
@@ -12736,15 +12703,12 @@ ul.actions.fit.small li {
 .seperator-spacing {
   margin-bottom: 0.5rem;
 }
-/* row.less */
 .row {
   padding-bottom: 0rem;
 }
 form .row {
   padding-bottom: 1rem;
 }
-/* article.less */
-/* global.less */
 /* base styles and definitions */
 /* menu */
 /* green -> obsolete style1 */
@@ -12760,16 +12724,6 @@ article.special {
   padding-top: 2rem;
   padding-bottom: 0.1rem;
 }
-/*
-article#main header {
-    padding-top: 8rem;
-    padding-bottom: 6rem;
-    margin-right: auto;
-    margin-left: auto;
-}
-*/
-/* banner.less */
-/* global.less */
 /* base styles and definitions */
 /* menu */
 /* green -> obsolete style1 */
@@ -12850,13 +12804,6 @@ article#main header {
   padding-top: 1.5rem;
   letter-spacing: 0.225rem;
   text-transform: lowercase;
-}
-#banner div {
-  padding-left: 10rem;
-  padding-right: 10rem;
-}
-#banner p a {
-  color: whitesmoke;
 }
 #banner .actions {
   padding-top: 0.75rem;
@@ -12965,8 +12912,6 @@ body.is-loading #banner .more {
 body.is-loading #banner:after {
   opacity: 1;
 }
-/* blogarchive.less */
-/* global.less */
 /* base styles and definitions */
 /* menu */
 /* green -> obsolete style1 */
@@ -13010,8 +12955,6 @@ body.is-loading #banner:after {
     }
 }
 */
-/* breadcrumb.less */
-/* global.less */
 /* base styles and definitions */
 /* menu */
 /* green -> obsolete style1 */
@@ -13052,8 +12995,6 @@ body.is-loading #banner:after {
     background: black;
   }
 }
-/* container.less */
-/* global.less */
 /* base styles and definitions */
 /* menu */
 /* green -> obsolete style1 */
@@ -13083,7 +13024,16 @@ body.is-loading #banner:after {
     margin-left: auto;
   }
 }
-/* cta.less */
+/* base styles and definitions */
+/* menu */
+/* green -> obsolete style1 */
+/* gray -> obsolete style2 */
+/* purple -> obsolete style3 */
+/* transparent -> obsolete: style4 */
+/* light -> obsolete: style5 */
+/* button */
+/* code */
+/* banner */
 #cta .inner {
   display: -moz-flex;
   display: -webkit-flex;
@@ -13133,8 +13083,6 @@ body.is-loading #banner:after {
     max-width: none;
   }
 }
-/* features.less */
-/* global.less */
 /* base styles and definitions */
 /* menu */
 /* green -> obsolete style1 */
@@ -13242,8 +13190,6 @@ body.is-loading #banner:after {
     border-top: 0;
   }
 }
-/* footer.less */
-/* global.less */
 /* base styles and definitions */
 /* menu */
 /* green -> obsolete style1 */
@@ -13290,6 +13236,12 @@ body.is-loading #banner:after {
   margin-left: 0;
   padding-left: 0;
 }
+body.landing #footer {
+  background-color: rgba(29, 36, 42, 0.9);
+}
+body.is-mobile.landing #footer {
+  background-color: #2e3842;
+}
 @media screen and (max-width: 480px) {
   #footer .copyright li {
     border: 0;
@@ -13309,8 +13261,6 @@ body.is-loading #banner:after {
     padding: 3rem 2rem 1rem 2rem;
   }
 }
-/* header.less */
-/* global.less */
 /* base styles and definitions */
 /* menu */
 /* green -> obsolete style1 */
@@ -13322,7 +13272,6 @@ body.is-loading #banner:after {
 /* code */
 /* banner */
 header p {
-  color: rgba(255, 255, 255, 0.5);
   position: relative;
   top: -0.25rem;
 }
@@ -13337,42 +13286,23 @@ header h5 + p,
 header h6 + p {
   font-size: 0.9rem;
 }
-header.major {
-  margin: 0 0 3.5rem 0;
-}
-header.major h2,
-header.major h3,
-header.major h4,
-header.major h5,
-header.major h6 {
-  border-bottom: solid 2px #fff;
-  display: inline-block;
-  padding-bottom: 0.75rem;
-  position: relative;
-}
-header.major h2:after,
-header.major h3:after,
-header.major h4:after,
-header.major h5:after,
-header.major h6:after {
-  content: '';
-  display: block;
-  height: 1px;
-}
-header.major p {
-  color: #fff;
-  top: 0;
-  padding-top: 1rem;
-}
-@media screen and (max-width: 736px) {
-  header.major {
-    margin: 0 0 2rem 0;
-  }
-}
 @media screen and (max-width: 980px) {
   header br {
     display: none;
   }
+}
+#main > header h2 {
+  color: inherit;
+  font-size: 1.75rem;
+  margin: 0 0 1rem 0;
+}
+#main > header p {
+  color: inherit;
+  letter-spacing: 0.225rem;
+  top: 0;
+}
+#main > header p a {
+  color: inherit;
 }
 #header {
   -moz-transition: background-color 0.2s ease;
@@ -13476,8 +13406,6 @@ header.major p {
   pointer-events: none;
   opacity: 0;
 }
-/* icon.less */
-/* global.less */
 /* base styles and definitions */
 /* menu */
 /* green -> obsolete style1 */
@@ -13562,8 +13490,6 @@ header.major p {
 .icon.light a:hover {
   color: red;
 }
-/* jumbotron.less */
-/* global.less */
 /* base styles and definitions */
 /* menu */
 /* green -> obsolete style1 */
@@ -13584,8 +13510,6 @@ header.major p {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff5f5f5', endColorstr='#ffe8e8e8', GradientType=0);
   background-repeat: repeat-x;
 }
-/* menu.less */
-/* global.less */
 /* base styles and definitions */
 /* menu */
 /* green -> obsolete style1 */
@@ -13678,8 +13602,6 @@ body.is-menu-visible #menu {
   -ms-transform: translateX(0);
   transform: translateX(0);
 }
-/* panel.less */
-/* global.less */
 /* base styles and definitions */
 /* menu */
 /* green -> obsolete style1 */
@@ -13723,8 +13645,6 @@ body.is-menu-visible #menu {
     min-height: 200px;
   }
 }
-/* section.less */
-/* global.less */
 /* base styles and definitions */
 /* menu */
 /* green -> obsolete style1 */
@@ -13740,8 +13660,6 @@ section.special {
   padding-top: 2.75rem;
   padding-bottom: 0.5rem;
 }
-/* spotlight.less */
-/* global.less */
 /* base styles and definitions */
 /* menu */
 /* green -> obsolete style1 */
@@ -13858,8 +13776,6 @@ section.special {
 .spotlight:nth-child(10) {
   background-color: rgba(0, 0, 0, 0.75);
 }
-/* table.less */
-/* global.less */
 /* base styles and definitions */
 /* menu */
 /* green -> obsolete style1 */
@@ -13922,50 +13838,6 @@ table.alt thead {
 table.alt tfoot {
   border-top: 0;
 }
-/* wrapper.less */
-/* global.less */
-/* base styles and definitions */
-/* menu */
-/* green -> obsolete style1 */
-/* gray -> obsolete style2 */
-/* purple -> obsolete style3 */
-/* transparent -> obsolete: style4 */
-/* light -> obsolete: style5 */
-/* button */
-/* code */
-/* banner */
-.wrapper {
-  padding: 1rem 0 1rem 0 ;
-}
-.wrapper.alt {
-  padding: 0;
-}
-.wrapper > .inner {
-  width: 60rem;
-  margin: 0 auto;
-}
-@media screen and (max-width: 1280px) {
-  .wrapper > .inner {
-    width: 90%;
-  }
-}
-@media screen and (max-width: 980px) {
-  .wrapper > .inner {
-    width: 100%;
-  }
-}
-@media screen and (max-width: 980px) {
-  .wrapper {
-    padding: 1rem 3rem 1rem 3rem ;
-  }
-}
-@media screen and (max-width: 736px) {
-  .wrapper {
-    padding: 1rem 2rem 1rem 2rem ;
-  }
-}
-/* style-green.less */
-/* global.less */
 /* base styles and definitions */
 /* menu */
 /* green -> obsolete style1 */
@@ -14086,8 +13958,6 @@ table.alt tfoot {
     border-top-color: whitesmoke;
   }
 }
-/* style-gray.less */
-/* global.less */
 /* base styles and definitions */
 /* menu */
 /* green -> obsolete style1 */
@@ -14208,8 +14078,6 @@ table.alt tfoot {
     border-top-color: whitesmoke;
   }
 }
-/* style-purple.less */
-/* global.less */
 /* base styles and definitions */
 /* menu */
 /* green -> obsolete style1 */
@@ -14330,22 +14198,6 @@ table.alt tfoot {
     border-top-color: #d3d4e4;
   }
 }
-/* global.less */
-/* base styles and definitions */
-/* menu */
-/* green -> obsolete style1 */
-/* gray -> obsolete style2 */
-/* purple -> obsolete style3 */
-/* transparent -> obsolete: style4 */
-/* light -> obsolete: style5 */
-/* button */
-/* code */
-/* banner */
-.wrapper.transparent {
-  background-color: transparent;
-}
-/* style-light.less */
-/* global.less */
 /* base styles and definitions */
 /* menu */
 /* green -> obsolete style1 */
@@ -14466,6 +14318,24 @@ table.alt tfoot {
   .wrapper.light .features li {
     border-top-color: #5e5e5e;
   }
+}
+/* base styles and definitions */
+/* menu */
+/* green -> obsolete style1 */
+/* gray -> obsolete style2 */
+/* purple -> obsolete style3 */
+/* transparent -> obsolete: style4 */
+/* light -> obsolete: style5 */
+/* button */
+/* code */
+/* banner */
+.transparent {
+  color: whitesmoke;
+  background-color: transparent;
+}
+section.transparent {
+  color: whitesmoke;
+  background-color: transparent;
 }
 /* This is the core CSS of Tooltipster */
 /* GENERAL STRUCTURE RULES (do not edit this section) */
@@ -14792,7 +14662,6 @@ corresponds to the arrow we want to display */
   left: -10px;
 }
 .tooltipster-sidetip.tooltipster-punk .tooltipster-box{border-radius:5px;border:none;border-bottom:3px solid #f71169;background:#2a2a2a}.tooltipster-sidetip.tooltipster-punk.tooltipster-top .tooltipster-box{margin-bottom:7px}.tooltipster-sidetip.tooltipster-punk .tooltipster-content{color:#fff;padding:8px 16px}.tooltipster-sidetip.tooltipster-punk .tooltipster-arrow-background{display:none}.tooltipster-sidetip.tooltipster-punk.tooltipster-bottom .tooltipster-arrow-border{border-bottom-color:#2a2a2a}.tooltipster-sidetip.tooltipster-punk.tooltipster-left .tooltipster-arrow-border{border-left-color:#2a2a2a}.tooltipster-sidetip.tooltipster-punk.tooltipster-right .tooltipster-arrow-border{border-right-color:#2a2a2a}.tooltipster-sidetip.tooltipster-punk.tooltipster-top .tooltipster-arrow-border{border-top-color:#f71169}
-/* global.less */
 /* base styles and definitions */
 /* menu */
 /* green -> obsolete style1 */
@@ -14807,6 +14676,7 @@ body {
   line-height: 1.4;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Lato', Arial, sans-serif;
   text-transform: lowercase;
+  background-color: transparent;
 }
 html,
 body,
@@ -14897,6 +14767,7 @@ video {
   border: 0;
   font-size: 100%;
   vertical-align: baseline;
+  background-color: transparent;
 }
 article,
 aside,
@@ -14934,7 +14805,6 @@ body.is-loading *:after {
   -ms-transition: none !important;
   transition: none !important;
 }
-/* global.less */
 /* base styles and definitions */
 /* menu */
 /* green -> obsolete style1 */
@@ -14945,7 +14815,6 @@ body.is-loading *:after {
 /* button */
 /* code */
 /* banner */
-/* Main */
 @media screen and (min-width: 1680px) {
   body,
   input,
@@ -14979,30 +14848,6 @@ body.is-loading *:after {
     letter-spacing: 0.0375rem;
   }
 }
-#main > header {
-  padding: 12em 0 10em 0;
-  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Css/images/Website-Design-Background.png");
-  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Css/images/Website-Design-Background.png");
-  background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Css/images/Website-Design-Background.png");
-  background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Css/images/Website-Design-Background.png");
-  background-attachment: fixed;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  text-align: center;
-}
-#main > header h2 {
-  font-size: 1.75rem;
-  margin: 0 0 1rem 0;
-}
-#main > header p {
-  color: inherit;
-  letter-spacing: 0.225rem;
-  top: 0;
-}
-#main > header p a {
-  color: inherit;
-}
 @media screen and (min-width: 1680px) {
   #main > header {
     padding: 10rem 25.375% 8rem 25.375%;
@@ -15035,7 +14880,18 @@ body.is-loading *:after {
 body.is-mobile #main > header {
   background-attachment: scroll;
 }
-/* Landing */
+#main > header {
+  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Css/images/Website-Design-Background.png");
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Css/images/Website-Design-Background.png");
+  background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Css/images/Website-Design-Background.png");
+  background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Css/images/Website-Design-Background.png");
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  background-color: transparent;
+}
 body.landing #page-wrapper {
   background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Css/images/Website-Design-Background.png");
   background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Css/images/Website-Design-Background.png");
@@ -15046,12 +14902,11 @@ body.landing #page-wrapper {
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 0;
-}
-body.landing #footer {
-  background-color: rgba(29, 36, 42, 0.9);
+  background-color: transparent;
 }
 body.is-mobile.landing #page-wrapper {
   background: none;
+  background-color: transparent;
 }
 body.is-mobile.landing #banner,
 body.is-mobile.landing .wrapper.transparent {
@@ -15062,9 +14917,7 @@ body.is-mobile.landing .wrapper.transparent {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-body.is-mobile.landing #footer {
-  background-color: #2e3842;
+  background-color: transparent;
 }
 /*!
  * IE10 viewport hack for Surface/desktop Windows 8 bug

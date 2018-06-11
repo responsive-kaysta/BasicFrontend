@@ -8,7 +8,7 @@
       "Content/bootstrap.css",
       "Frontend/fontawesome-all.css",
       "Frontend/Css/reset.css",
-
+      
       /* Atom */
       "Frontend/Css/Atom/a.css",
       "Frontend/Css/Atom/abstract.css",
@@ -45,14 +45,13 @@
       "Frontend/Css/Organism/section.css",
       "Frontend/Css/Organism/spotlight.css",
       "Frontend/Css/Organism/table.css",
-      "Frontend/Css/Organism/wrapper.css",
 
       /* Template */
       "Frontend/Css/Template/style-green.css",
       "Frontend/Css/Template/style-gray.css",
       "Frontend/Css/Template/style-purple.css",
-      "Frontend/Css/Template/style-transparent.css",
       "Frontend/Css/Template/style-light.css",
+      "Frontend/Css/Template/style-transparent.css",
 
       /* Plugins */
       "Frontend/Css/Plugins/Tooltipster/tooltipster.bundle.css",

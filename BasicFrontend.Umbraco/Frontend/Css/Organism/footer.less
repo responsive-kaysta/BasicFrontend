@@ -1,6 +1,4 @@
-﻿/* footer.less */
-
-@import "../global.vars.less";
+﻿@import "../global.vars.less";
 
 #footer {
     padding: 3rem 0 2rem 0;
@@ -46,6 +44,16 @@
     margin-left: 0;
     padding-left: 0;
 }
+
+body.landing #footer {
+    background-color: rgba(29, 36, 42, 0.9);
+}
+
+
+body.is-mobile.landing #footer {
+    background-color: @base-bg-color;
+}
+
 
 @media screen and (max-width: 480px) {
 

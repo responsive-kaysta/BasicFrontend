@@ -1,7 +1,5 @@
 ﻿@import "../Css/global.vars.less";
 
-/* Main */
-
 @media screen and (min-width: 1680px) {
     body, input, select, textarea {
         font-size: 15pt;
@@ -26,35 +24,6 @@
         letter-spacing: 0.0375rem;
     }
 }
-
-#main > header {
-    padding: 12em 0 10em 0;
-    background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(@banner-bg-image);
-    background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(@banner-bg-image);
-    background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(@banner-bg-image);
-    background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(@banner-bg-image);
-    background-attachment: fixed;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    text-align: center;
-}
-
-#main > header h2 {
-    font-size: 1.75rem;
-    margin: 0 0 1rem 0;
-}
-
-#main > header p {
-    color: inherit;
-    letter-spacing: 0.225rem;
-    top: 0;
-}
-
-#main > header p a {
-    color: inherit;
-}
-
 
 @media screen and (min-width: 1680px) { // 1920 plus
 
@@ -100,8 +69,18 @@ body.is-mobile #main > header {
     background-attachment: scroll;
 }
 
-
-/* Landing */
+#main > header {
+    background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(@banner-bg-image);
+    background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(@banner-bg-image);
+    background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(@banner-bg-image);
+    background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(@banner-bg-image);
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    background-color: transparent;
+}
 
 body.landing #page-wrapper {
     background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(@banner-bg-image);
@@ -113,14 +92,12 @@ body.landing #page-wrapper {
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 0;
-}
-
-body.landing #footer {
-    background-color: rgba(29, 36, 42, 0.9);
+    background-color: transparent;
 }
 
 body.is-mobile.landing #page-wrapper {
     background: none;
+    background-color: transparent;
 }
 
 body.is-mobile.landing #banner,
@@ -132,8 +109,6 @@ body.is-mobile.landing .wrapper.transparent {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: transparent;
 }
 
-body.is-mobile.landing #footer {
-    background-color: @base-bg-color;
-}

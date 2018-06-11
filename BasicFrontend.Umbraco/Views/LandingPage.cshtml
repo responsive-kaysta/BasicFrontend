@@ -4,10 +4,11 @@
 
 @{
     Layout = "_Layout.cshtml";
+    var pageStyle = @Umbraco.Field("pageStyle");
 }
 
 <section id="banner">
-    <div class="inner">
+    <div class="inner @pageStyle">
         <h2>@Umbraco.Field("bannerHeadline")</h2>
         <p>@Html.Raw(Umbraco.Field("bannerParagraph"))</p>
         @{
@@ -24,7 +25,6 @@
 </section>
 
 @{
-    var pageStyle = @Umbraco.Field("pageStyle");
     <div class="wrapper alt @pageStyle">
         @Html.GetGridHtml(Model.Content, "gridLayout", "bootstrap3-fluid")
     </div>

@@ -1,6 +1,4 @@
-﻿/* code.less */
-/* global.less */
-/* base styles and definitions */
+﻿/* base styles and definitions */
 /* menu */
 /* green -> obsolete style1 */
 /* gray -> obsolete style2 */
@@ -16,7 +14,7 @@ code {
   background-color: lightgray;
 }
 code {
-  background-color: lightgray;
+  color: #5e5e5e;
   font-size: 0.75rem;
   font-family: "Courier 10 Pitch", Courier, monospace;
 }

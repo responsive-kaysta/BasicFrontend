@@ -1,6 +1,4 @@
-﻿/* a.less */
-/* global.less */
-/* base styles and definitions */
+﻿/* base styles and definitions */
 /* menu */
 /* green -> obsolete style1 */
 /* gray -> obsolete style2 */
@@ -19,11 +17,15 @@ a {
   text-decoration: none;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Lato', Arial, sans-serif;
   text-transform: lowercase;
+}
+a:hover {
+  text-transform: lowercase !important;
+  text-decoration: none !important;
+  border-bottom-color: transparent;
+}
+a {
   color: whitesmoke;
 }
 a:hover {
   color: red;
-  text-transform: lowercase !important;
-  text-decoration: none !important;
-  border-bottom-color: transparent;
 }

@@ -1,6 +1,4 @@
-﻿/* banner.less */
-/* global.less */
-/* base styles and definitions */
+﻿/* base styles and definitions */
 /* menu */
 /* green -> obsolete style1 */
 /* gray -> obsolete style2 */
@@ -80,13 +78,6 @@
   padding-top: 1.5rem;
   letter-spacing: 0.225rem;
   text-transform: lowercase;
-}
-#banner div {
-  padding-left: 10rem;
-  padding-right: 10rem;
-}
-#banner p a {
-  color: whitesmoke;
 }
 #banner .actions {
   padding-top: 0.75rem;

@@ -1,6 +1,4 @@
-﻿/* a.less */
-
-@import "../global.vars.less";
+﻿@import "../global.vars.less";
 
 a {
     -moz-transition: color 0.2s ease, border-bottom-color 0.2s ease;
@@ -11,12 +9,18 @@ a {
     text-decoration: @base-text-decoration;
     font-family: @base-font-family;
     text-transform: @base-text-transform;
+}
+
+a:hover {
+    text-transform: @base-text-transform !important;
+    text-decoration: @base-text-decoration !important;
+    border-bottom-color: transparent;
+}
+
+a {
     color: @base-color;
 }
 
 a:hover {
     color: @base-hover-color;
-    text-transform: @base-text-transform !important;
-    text-decoration: @base-text-decoration !important;
-    border-bottom-color: transparent;
 }

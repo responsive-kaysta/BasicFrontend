@@ -1,5 +1,4 @@
-﻿/* global.less */
-/* base styles and definitions */
+﻿/* base styles and definitions */
 /* menu */
 /* green -> obsolete style1 */
 /* gray -> obsolete style2 */
@@ -13,6 +12,7 @@ body {
   line-height: 1.4;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Lato', Arial, sans-serif;
   text-transform: lowercase;
+  background-color: transparent;
 }
 html,
 body,
@@ -103,6 +103,7 @@ video {
   border: 0;
   font-size: 100%;
   vertical-align: baseline;
+  background-color: transparent;
 }
 article,
 aside,

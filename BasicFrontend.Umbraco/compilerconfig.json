@@ -171,10 +171,6 @@
     "inputFile": "Frontend/Css/Organism/table.less",
     "outputFile": "Frontend/Css/Organism/table.css"
   },
-  {
-    "inputFile": "Frontend/Css/Organism/wrapper.less",
-    "outputFile": "Frontend/Css/Organism/wrapper.css"
-  },
 
 
   /* Template */

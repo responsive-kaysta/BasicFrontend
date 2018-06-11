@@ -1,6 +1,4 @@
-﻿/* blockquote.less */
-/* global.less */
-/* base styles and definitions */
+﻿/* base styles and definitions */
 /* menu */
 /* green -> obsolete style1 */
 /* gray -> obsolete style2 */
@@ -26,9 +24,6 @@ blockquote {
   font-weight: 400;
   line-height: 1.6;
   letter-spacing: 0.2px;
-}
-blockquote {
-  color: whitesmoke;
 }
 blockquote:before,
 blockquote:after {

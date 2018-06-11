@@ -1,6 +1,4 @@
-﻿/* footer.less */
-/* global.less */
-/* base styles and definitions */
+﻿/* base styles and definitions */
 /* menu */
 /* green -> obsolete style1 */
 /* gray -> obsolete style2 */
@@ -45,6 +43,12 @@
   border-left: 0;
   margin-left: 0;
   padding-left: 0;
+}
+body.landing #footer {
+  background-color: rgba(29, 36, 42, 0.9);
+}
+body.is-mobile.landing #footer {
+  background-color: #2e3842;
 }
 @media screen and (max-width: 480px) {
   #footer .copyright li {

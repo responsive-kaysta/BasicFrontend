@@ -1,6 +1,4 @@
-﻿/* text.less */
-/* global.less */
-/* base styles and definitions */
+﻿/* base styles and definitions */
 /* menu */
 /* green -> obsolete style1 */
 /* gray -> obsolete style2 */
@@ -72,14 +70,15 @@ sup {
   line-height: 1.35rem !important;
 }
 .paragraph {
-  color: inherit;
+  font-size: 1.0rem;
+  font-weight: normal;
+  line-height: 1.4;
+  letter-spacing: 0.2px;
 }
 .paragraph-2col {
-  color: inherit;
   padding-bottom: 0.75rem;
 }
 .paragraph-3col {
-  color: inherit;
   padding-bottom: 0.75rem;
 }
 .align-left {

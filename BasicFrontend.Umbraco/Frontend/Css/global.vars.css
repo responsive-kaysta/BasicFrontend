@@ -1,4 +1,4 @@
-﻿/* base styles and definitions */
+/* base styles and definitions */
 /* menu */
 /* green -> obsolete style1 */
 /* gray -> obsolete style2 */
@@ -8,8 +8,3 @@
 /* button */
 /* code */
 /* banner */
-article.special {
-  text-align: center;
-  padding-top: 2rem;
-  padding-bottom: 0.1rem;
-}
