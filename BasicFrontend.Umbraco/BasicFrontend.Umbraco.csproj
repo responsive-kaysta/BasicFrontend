@@ -451,8 +451,14 @@
     <Content Include="Frontend\Css\Atom\triangle.min.css">
       <DependentUpon>triangle.css</DependentUpon>
     </Content>
+    <Content Include="Frontend\Css\body.css">
+      <DependentUpon>body.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\body.min.css">
+      <DependentUpon>body.css</DependentUpon>
+    </Content>
     <Content Include="Frontend\Css\global.css">
-      <DependentUpon>global.less</DependentUpon>
+      <DependentUpon>global.vars.less</DependentUpon>
     </Content>
     <Content Include="Frontend\Css\Images\arrow.svg" />
     <Content Include="Frontend\Css\Images\bars.svg" />
@@ -496,7 +502,8 @@
     <Content Include="Content\bootstrap-reboot.css.map" />
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
-    <None Include="Frontend\Css\global.less" />
+    <Content Include="Frontend\Css\body.less" />
+    <None Include="Frontend\Css\global.vars.less" />
     <None Include="Frontend\Css\ie10-viewport-bug-workaround.less" />
     <Content Include="Frontend\Css\Molekule\box.css">
       <DependentUpon>box.less</DependentUpon>

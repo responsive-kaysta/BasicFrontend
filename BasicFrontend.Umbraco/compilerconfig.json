@@ -34,6 +34,10 @@
     "inputFile": "Frontend/Css/style.less",
     "outputFile": "Frontend/Css/style.css"
   },
+  {
+    "inputFile": "Frontend/Css/body.less",
+    "outputFile": "Frontend/Css/body.css"
+  },
 
 
   /* Atom */

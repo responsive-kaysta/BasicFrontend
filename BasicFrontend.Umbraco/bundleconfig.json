@@ -9,7 +9,6 @@
       "Frontend/fontawesome-all.css",
       "Frontend/Css/reset.css",
 
-
       /* Atom */
       "Frontend/Css/Atom/a.css",
       "Frontend/Css/Atom/abstract.css",
@@ -22,14 +21,12 @@
       "Frontend/Css/Atom/text.css",
       "Frontend/Css/Atom/triangle.css",
 
-
       /* Molekule */
       "Frontend/Css/Molekule/box.css",
       "Frontend/Css/Molekule/button.css",
       "Frontend/Css/Molekule/list.css",
       "Frontend/Css/Molekule/seperator.css",
       "Frontend/Css/Molekule/row.css",
-
 
       /* Organism */
       "Frontend/Css/Organism/article.css",
@@ -50,7 +47,6 @@
       "Frontend/Css/Organism/table.css",
       "Frontend/Css/Organism/wrapper.css",
 
-
       /* Template */
       "Frontend/Css/Template/style-green.css",
       "Frontend/Css/Template/style-gray.css",
@@ -58,16 +54,14 @@
       "Frontend/Css/Template/style-transparent.css",
       "Frontend/Css/Template/style-light.css",
 
-      
-
       /* Plugins */
       "Frontend/Css/Plugins/Tooltipster/tooltipster.bundle.css",
       "Frontend/Css/Plugins/Tooltipster/Themes/tooltipster-sideTip-punk.min.css",
 
-
       /* Custom Styles */
+      "Frontend/Css/body.css",
       "Frontend/Css/style.css",
-        
+
       "Frontend/Css/ie10-viewport-bug-workaround.css"
 
     ],
@@ -96,10 +90,10 @@
       "Frontend/JavaScript/Plugins/Tooltipster/tooltipster.bundle.js",
 
       "Frontend/JavaScript/Plugins/skel/init.es5.js",
-
       "Frontend/JavaScript/global.es5.js",
-
       "Frontend/JavaScript/Modules/equalheight.es5.js"
+
+
     ],
     "minify": {
       "enabled": true,

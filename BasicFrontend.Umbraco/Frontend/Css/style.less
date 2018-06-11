@@ -1,50 +1,11 @@
-﻿/* style.less */
+﻿@import "../Css/global.vars.less";
 
-@import "global.less";
+/* Main */
 
-body {
-    line-height: 1.4;
-    font-family: @base-font-family;
-    text-transform: @base-text-transform;
-    background: @base-bg-color;
-    color: @base-color;
-}
-
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-    line-height: 1.4;
-    font-family: @base-font-family;
-    text-transform: @base-text-transform;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-}
-
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-    display: block;
-}
-
-body {
-    -webkit-text-size-adjust: none;
-    text-size-adjust: none;
-}
-
-*, *:before, *:after {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-body.is-loading *, body.is-loading *:before, body.is-loading *:after {
-    -moz-animation: none !important;
-    -webkit-animation: none !important;
-    -ms-animation: none !important;
-    animation: none !important;
-    -moz-transition: none !important;
-    -webkit-transition: none !important;
-    -ms-transition: none !important;
-    transition: none !important;
+@media screen and (min-width: 1680px) {
+    body, input, select, textarea {
+        font-size: 15pt;
+    }
 }
 
 @media screen and (max-width: 1680px) {
@@ -65,8 +26,6 @@ body.is-loading *, body.is-loading *:before, body.is-loading *:after {
         letter-spacing: 0.0375rem;
     }
 }
-
-/* Main */
 
 #main > header {
     padding: 12em 0 10em 0;
@@ -97,7 +56,7 @@ body.is-loading *, body.is-loading *:before, body.is-loading *:after {
 }
 
 
-@media screen and (max-width: 1920px) {
+@media screen and (min-width: 1680px) { // 1920 plus
 
     #main > header {
         padding: 10rem 25.375% 8rem 25.375%;

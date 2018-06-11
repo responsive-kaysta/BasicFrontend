@@ -12112,7 +12112,6 @@ h6 {
     line-height: 1.75rem;
   }
 }
-
 /* hr.less */
 /* global.less */
 /* base styles and definitions */
@@ -12729,7 +12728,6 @@ ul.actions.fit.small li {
     padding-top: 0;
   }
 }
-
 /* seperator.less */
 .seperator {
   margin-right: auto;
@@ -12770,7 +12768,6 @@ article#main header {
     margin-left: auto;
 }
 */
-
 /* banner.less */
 /* global.less */
 /* base styles and definitions */
@@ -12968,7 +12965,6 @@ body.is-loading #banner .more {
 body.is-loading #banner:after {
   opacity: 1;
 }
-
 /* blogarchive.less */
 /* global.less */
 /* base styles and definitions */
@@ -13480,7 +13476,6 @@ header.major p {
   pointer-events: none;
   opacity: 0;
 }
-
 /* icon.less */
 /* global.less */
 /* base styles and definitions */
@@ -14091,7 +14086,6 @@ table.alt tfoot {
     border-top-color: whitesmoke;
   }
 }
-
 /* style-gray.less */
 /* global.less */
 /* base styles and definitions */
@@ -14214,7 +14208,6 @@ table.alt tfoot {
     border-top-color: whitesmoke;
   }
 }
-
 /* style-purple.less */
 /* global.less */
 /* base styles and definitions */
@@ -14337,8 +14330,6 @@ table.alt tfoot {
     border-top-color: #d3d4e4;
   }
 }
-
-/* style-transparent.less */
 /* global.less */
 /* base styles and definitions */
 /* menu */
@@ -14350,14 +14341,9 @@ table.alt tfoot {
 /* button */
 /* code */
 /* banner */
-.transparent .page-header {
-  width: 100%;
-  border-bottom: whitesmoke solid thin !important;
-}
 .wrapper.transparent {
   background-color: transparent;
 }
-
 /* style-light.less */
 /* global.less */
 /* base styles and definitions */
@@ -14394,7 +14380,7 @@ table.alt tfoot {
 .wrapper.light ul li {
   color: #5e5e5e;
 }
-.wrapper.light ul li a {
+.wrapper.light ul li a * {
   color: #5e5e5e;
 }
 .wrapper.light ul li a:hover {
@@ -14806,7 +14792,6 @@ corresponds to the arrow we want to display */
   left: -10px;
 }
 .tooltipster-sidetip.tooltipster-punk .tooltipster-box{border-radius:5px;border:none;border-bottom:3px solid #f71169;background:#2a2a2a}.tooltipster-sidetip.tooltipster-punk.tooltipster-top .tooltipster-box{margin-bottom:7px}.tooltipster-sidetip.tooltipster-punk .tooltipster-content{color:#fff;padding:8px 16px}.tooltipster-sidetip.tooltipster-punk .tooltipster-arrow-background{display:none}.tooltipster-sidetip.tooltipster-punk.tooltipster-bottom .tooltipster-arrow-border{border-bottom-color:#2a2a2a}.tooltipster-sidetip.tooltipster-punk.tooltipster-left .tooltipster-arrow-border{border-left-color:#2a2a2a}.tooltipster-sidetip.tooltipster-punk.tooltipster-right .tooltipster-arrow-border{border-right-color:#2a2a2a}.tooltipster-sidetip.tooltipster-punk.tooltipster-top .tooltipster-arrow-border{border-top-color:#f71169}
-/* style.less */
 /* global.less */
 /* base styles and definitions */
 /* menu */
@@ -14822,8 +14807,6 @@ body {
   line-height: 1.4;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Lato', Arial, sans-serif;
   text-transform: lowercase;
-  background: #2e3842;
-  color: whitesmoke;
 }
 html,
 body,
@@ -14951,6 +14934,26 @@ body.is-loading *:after {
   -ms-transition: none !important;
   transition: none !important;
 }
+/* global.less */
+/* base styles and definitions */
+/* menu */
+/* green -> obsolete style1 */
+/* gray -> obsolete style2 */
+/* purple -> obsolete style3 */
+/* transparent -> obsolete: style4 */
+/* light -> obsolete: style5 */
+/* button */
+/* code */
+/* banner */
+/* Main */
+@media screen and (min-width: 1680px) {
+  body,
+  input,
+  select,
+  textarea {
+    font-size: 15pt;
+  }
+}
 @media screen and (max-width: 1680px) {
   body,
   input,
@@ -14976,7 +14979,6 @@ body.is-loading *:after {
     letter-spacing: 0.0375rem;
   }
 }
-/* Main */
 #main > header {
   padding: 12em 0 10em 0;
   background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Css/images/Website-Design-Background.png");
@@ -15001,7 +15003,7 @@ body.is-loading *:after {
 #main > header p a {
   color: inherit;
 }
-@media screen and (max-width: 1920px) {
+@media screen and (min-width: 1680px) {
   #main > header {
     padding: 10rem 25.375% 8rem 25.375%;
   }
