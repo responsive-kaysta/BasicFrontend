@@ -70,11 +70,11 @@
 
     var input = new CodeMirror.inputStyles[options.inputStyle](this);
     var display = this.display = new Display(place, doc, input);
-    display.wrapper.CodeMirror = this;
+    display.CodeMirror = this;
     updateGutters(this);
     themeChanged(this);
     if (options.lineWrapping)
-      this.display.wrapper.className += " CodeMirror-wrap";
+      this.display.className += " CodeMirror-wrap";
     if (options.autofocus && !mobile) display.input.focus();
     initScrollbars(this);
 
@@ -169,15 +169,15 @@
     d.scroller = elt("div", [d.sizer, d.heightForcer, d.gutters], "CodeMirror-scroll");
     d.scroller.setAttribute("tabIndex", "-1");
     // The element in which the editor lives.
-    d.wrapper = elt("div", [d.scrollbarFiller, d.gutterFiller, d.scroller], "CodeMirror");
+    d = elt("div", [d.scrollbarFiller, d.gutterFiller, d.scroller], "CodeMirror");
 
     // Work around IE7 z-index bug (not perfect, hence IE7 not really being supported)
     if (ie && ie_version < 8) { d.gutters.style.zIndex = -1; d.scroller.style.paddingRight = 0; }
     if (!webkit && !(gecko && mobile)) d.scroller.draggable = true;
 
     if (place) {
-      if (place.appendChild) place.appendChild(d.wrapper);
-      else place(d.wrapper);
+      if (place.appendChild) place.appendChild(d);
+      else place(d);
     }
 
     // Current rendered range (may be bigger than the view window).
@@ -250,11 +250,11 @@
 
   function wrappingChanged(cm) {
     if (cm.options.lineWrapping) {
-      addClass(cm.display.wrapper, "CodeMirror-wrap");
+      addClass(cm.display, "CodeMirror-wrap");
       cm.display.sizer.style.minWidth = "";
       cm.display.sizerWidth = null;
     } else {
-      rmClass(cm.display.wrapper, "CodeMirror-wrap");
+      rmClass(cm.display, "CodeMirror-wrap");
       findMaxLine(cm);
     }
     estimateLineHeights(cm);
@@ -293,7 +293,7 @@
   }
 
   function themeChanged(cm) {
-    cm.display.wrapper.className = cm.display.wrapper.className.replace(/\s*cm-s-\S+/g, "") +
+    cm.display.className = cm.display.className.replace(/\s*cm-s-\S+/g, "") +
       cm.options.theme.replace(/(^|\s)\s*/g, " cm-s-");
     clearCaches(cm);
   }
@@ -383,9 +383,9 @@
     var docH = Math.round(cm.doc.height + paddingVert(cm.display));
     return {
       clientHeight: d.scroller.clientHeight,
-      viewHeight: d.wrapper.clientHeight,
+      viewHeight: d.clientHeight,
       scrollWidth: d.scroller.scrollWidth, clientWidth: d.scroller.clientWidth,
-      viewWidth: d.wrapper.clientWidth,
+      viewWidth: d.clientWidth,
       barLeft: cm.options.fixedGutter ? gutterW : 0,
       docHeight: docH,
       scrollHeight: docH + scrollGap(cm) + d.barHeight,
@@ -488,11 +488,11 @@
     if (cm.display.scrollbars) {
       cm.display.scrollbars.clear();
       if (cm.display.scrollbars.addClass)
-        rmClass(cm.display.wrapper, cm.display.scrollbars.addClass);
+        rmClass(cm.display, cm.display.scrollbars.addClass);
     }
 
     cm.display.scrollbars = new CodeMirror.scrollbarModel[cm.options.scrollbarStyle](function(node) {
-      cm.display.wrapper.insertBefore(node, cm.display.scrollbarFiller);
+      cm.display.insertBefore(node, cm.display.scrollbarFiller);
       // Prevent clicks in the scrollbars from killing focus
       on(node, "mousedown", function() {
         if (cm.state.focused) setTimeout(function() { cm.display.input.focus(); }, 0);
@@ -503,7 +503,7 @@
       else setScrollTop(cm, pos);
     }, cm);
     if (cm.display.scrollbars.addClass)
-      addClass(cm.display.wrapper, cm.display.scrollbars.addClass);
+      addClass(cm.display, cm.display.scrollbars.addClass);
   }
 
   function updateScrollbars(cm, measure) {
@@ -545,7 +545,7 @@
   function visibleLines(display, doc, viewport) {
     var top = viewport && viewport.top != null ? Math.max(0, viewport.top) : display.scroller.scrollTop;
     top = Math.floor(top - paddingTop(display));
-    var bottom = viewport && viewport.bottom != null ? viewport.bottom : top + display.wrapper.clientHeight;
+    var bottom = viewport && viewport.bottom != null ? viewport.bottom : top + display.clientHeight;
 
     var from = lineAtHeight(doc, top), to = lineAtHeight(doc, bottom);
     // Ensure is a {from: {line, ch}, to: {line, ch}} object, and
@@ -554,9 +554,9 @@
       var ensureFrom = viewport.ensure.from.line, ensureTo = viewport.ensure.to.line;
       if (ensureFrom < from) {
         from = ensureFrom;
-        to = lineAtHeight(doc, heightAtLine(getLine(doc, ensureFrom)) + display.wrapper.clientHeight);
+        to = lineAtHeight(doc, heightAtLine(getLine(doc, ensureFrom)) + display.clientHeight);
       } else if (Math.min(ensureTo, doc.lastLine()) >= to) {
-        from = lineAtHeight(doc, heightAtLine(getLine(doc, ensureTo)) - display.wrapper.clientHeight);
+        from = lineAtHeight(doc, heightAtLine(getLine(doc, ensureTo)) - display.clientHeight);
         to = ensureTo;
       }
     }
@@ -623,9 +623,9 @@
     this.viewport = viewport;
     // Store some values that we'll need later (but don't want to force a relayout for)
     this.visible = visibleLines(display, cm.doc, viewport);
-    this.editorIsHidden = !display.wrapper.offsetWidth;
-    this.wrapperHeight = display.wrapper.clientHeight;
-    this.wrapperWidth = display.wrapper.clientWidth;
+    this.editorIsHidden = !display.offsetWidth;
+    thisHeight = display.clientHeight;
+    thisWidth = display.clientWidth;
     this.oldDisplayWidth = displayWidth(cm);
     this.force = force;
     this.dims = getDimensions(cm);
@@ -687,7 +687,7 @@
     }
 
     var different = from != display.viewFrom || to != display.viewTo ||
-      display.lastWrapHeight != update.wrapperHeight || display.lastWrapWidth != update.wrapperWidth;
+      display.lastWrapHeight != updateHeight || display.lastWrapWidth != updateWidth;
     adjustView(cm, from, to);
 
     display.viewOffset = heightAtLine(getLine(cm.doc, display.viewFrom));
@@ -717,8 +717,8 @@
     display.gutters.style.height = 0;
 
     if (different) {
-      display.lastWrapHeight = update.wrapperHeight;
-      display.lastWrapWidth = update.wrapperWidth;
+      display.lastWrapHeight = updateHeight;
+      display.lastWrapWidth = updateWidth;
       startWorker(cm, 400);
     }
 
@@ -822,7 +822,7 @@
             gutterTotalWidth: d.gutters.offsetWidth,
             gutterLeft: left,
             gutterWidth: width,
-            wrapperWidth: d.wrapper.clientWidth};
+            wrapperWidth: d.clientWidth};
   }
 
   // Sync the actual display DOM structure with display.view, removing
@@ -1030,7 +1030,7 @@
   function positionLineWidget(widget, node, lineView, dims) {
     if (widget.noHScroll) {
       (lineView.alignable || (lineView.alignable = [])).push(node);
-      var width = dims.wrapperWidth;
+      var width = dimsWidth;
       node.style.left = dims.fixedPos + "px";
       if (!widget.coverGutter) {
         width -= dims.gutterTotalWidth;
@@ -1197,11 +1197,11 @@
       var input = this, cm = this.cm;
 
       // Wraps and hides input textarea
-      var div = this.wrapper = hiddenTextarea();
+      var div = this = hiddenTextarea();
       // The semihidden textarea that is focused when the editor is
       // focused, and receives input.
       var te = this.textarea = div.firstChild;
-      display.wrapper.insertBefore(div, display.wrapper.firstChild);
+      display.insertBefore(div, display.firstChild);
 
       // Needed to hide big blue blinking cursor on Mobile Safari (doesn't seem to work in iOS 8 anymore)
       if (ios) te.style.width = "0px";
@@ -1292,10 +1292,10 @@
       // Move the hidden textarea near the cursor to prevent scrolling artifacts
       if (cm.options.moveInputWithCursor) {
         var headPos = cursorCoords(cm, doc.sel.primary().head, "div");
-        var wrapOff = display.wrapper.getBoundingClientRect(), lineOff = display.lineDiv.getBoundingClientRect();
-        result.teTop = Math.max(0, Math.min(display.wrapper.clientHeight - 10,
+        var wrapOff = display.getBoundingClientRect(), lineOff = display.lineDiv.getBoundingClientRect();
+        result.teTop = Math.max(0, Math.min(display.clientHeight - 10,
                                             headPos.top + lineOff.top - wrapOff.top));
-        result.teLeft = Math.max(0, Math.min(display.wrapper.clientWidth - 10,
+        result.teLeft = Math.max(0, Math.min(display.clientWidth - 10,
                                              headPos.left + lineOff.left - wrapOff.left));
       }
 
@@ -1307,8 +1307,8 @@
       removeChildrenAndAdd(display.cursorDiv, drawn.cursors);
       removeChildrenAndAdd(display.selectionDiv, drawn.selection);
       if (drawn.teTop != null) {
-        this.wrapper.style.top = drawn.teTop + "px";
-        this.wrapper.style.left = drawn.teLeft + "px";
+        this.style.top = drawn.teTop + "px";
+        this.style.left = drawn.teLeft + "px";
       }
     },
 
@@ -1347,7 +1347,7 @@
     blur: function() { this.textarea.blur(); },
 
     resetPosition: function() {
-      this.wrapper.style.top = this.wrapper.style.left = 0;
+      this.style.top = this.style.left = 0;
     },
 
     receivedFocus: function() { this.slowPoll(); },
@@ -1457,7 +1457,7 @@
         operation(cm, setSelection)(cm.doc, simpleSelection(pos), sel_dontScroll);
 
       var oldCSS = te.style.cssText;
-      input.wrapper.style.position = "absolute";
+      input.style.position = "absolute";
       te.style.cssText = "position: fixed; width: 30px; height: 30px; top: " + (e.clientY - 5) +
         "px; left: " + (e.clientX - 5) + "px; z-index: 1000; background: " +
         (ie ? "rgba(255, 255, 255, .05)" : "transparent") +
@@ -1490,7 +1490,7 @@
       }
       function rehide() {
         input.contextMenuPending = false;
-        input.wrapper.style.position = "relative";
+        input.style.position = "relative";
         te.style.cssText = oldCSS;
         if (ie && ie_version < 9) display.scrollbars.setScrollTop(display.scroller.scrollTop = scrollPos);
 
@@ -2856,7 +2856,7 @@
 
   function coordsCharInner(cm, lineObj, lineNo, x, y) {
     var innerOff = y - heightAtLine(lineObj);
-    var wrongLine = false, adjust = 2 * cm.display.wrapper.clientWidth;
+    var wrongLine = false, adjust = 2 * cm.display.clientWidth;
     var preparedMeasure = prepareMeasureForLine(cm, lineObj);
 
     function getX(ch) {
@@ -3110,7 +3110,7 @@
     if (unhidden) for (var i = 0; i < unhidden.length; ++i)
       if (unhidden[i].lines.length) signal(unhidden[i], "unhide");
 
-    if (display.wrapper.offsetHeight)
+    if (display.offsetHeight)
       doc.scrollTop = cm.display.scroller.scrollTop;
 
     // Fire change events, and delayed event handlers
@@ -3434,7 +3434,7 @@
     on(d.scroller, "DOMMouseScroll", function(e){onScrollWheel(cm, e);});
 
     // Prevent wrapper from ever scrolling
-    on(d.wrapper, "scroll", function() { d.wrapper.scrollTop = d.wrapper.scrollLeft = 0; });
+    on(d, "scroll", function() { d.scrollTop = d.scrollLeft = 0; });
 
     d.dragFunctions = {
       simple: function(e) {if (!signalDOMEvent(cm, e)) e_stop(e);},
@@ -3465,7 +3465,7 @@
   // Called when the window resizes
   function onResize(cm) {
     var d = cm.display;
-    if (d.lastWrapHeight == d.wrapper.clientHeight && d.lastWrapWidth == d.wrapper.clientWidth)
+    if (d.lastWrapHeight == d.clientHeight && d.lastWrapWidth == d.clientWidth)
       return;
     // Might be a text scaling operation, clear size caches.
     d.cachedCharWidth = d.cachedTextHeight = d.cachedPaddingH = null;
@@ -3477,7 +3477,7 @@
 
   // Return true when the given mouse event happened in a widget
   function eventInWidget(display, e) {
-    for (var n = e_target(e); n != display.wrapper; n = n.parentNode) {
+    for (var n = e_target(e); n != display; n = n.parentNode) {
       if (!n || (n.nodeType == 1 && n.getAttribute("cm-ignore-events") == "true") ||
           (n.parentNode == display.sizer && n != display.mover))
         return true;
@@ -3699,7 +3699,7 @@
       }
     }
 
-    var editorSize = display.wrapper.getBoundingClientRect();
+    var editorSize = display.getBoundingClientRect();
     // Used to ensure timeout re-tries don't fire when another extend
     // happened in the meantime (clearTimeout isn't reliable -- at
     // least on Chrome, the timeouts still happen even when cleared,
@@ -3840,7 +3840,7 @@
       img.src = "data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==";
       if (presto) {
         img.width = img.height = 1;
-        cm.display.wrapper.appendChild(img);
+        cm.display.appendChild(img);
         // Force a relayout, or Opera won't use our image for some obscure reason
         img._top = img.offsetTop;
       }
@@ -3950,7 +3950,7 @@
     // scrolled into view (if we know enough to estimate it).
     if (dy && wheelPixelsPerUnit != null) {
       var pixels = dy * wheelPixelsPerUnit;
-      var top = cm.doc.scrollTop, bot = top + display.wrapper.clientHeight;
+      var top = cm.doc.scrollTop, bot = top + display.clientHeight;
       if (pixels < 0) top = Math.max(0, top + pixels - 50);
       else bot = Math.min(cm.doc.height, bot + pixels + 50);
       updateDisplaySimple(cm, {top: top, bottom: bot});
@@ -4138,7 +4138,7 @@
     if (!cm.state.focused) {
       signal(cm, "focus", cm);
       cm.state.focused = true;
-      addClass(cm.display.wrapper, "CodeMirror-focused");
+      addClass(cm.display, "CodeMirror-focused");
       // This test prevents this from firing when a context
       // menu is closed (since the input reset would kill the
       // select-all detection hack)
@@ -4156,7 +4156,7 @@
     if (cm.state.focused) {
       signal(cm, "blur", cm);
       cm.state.focused = false;
-      rmClass(cm.display.wrapper, "CodeMirror-focused");
+      rmClass(cm.display, "CodeMirror-focused");
     }
     clearInterval(cm.display.blinker);
     setTimeout(function() {if (!cm.state.focused) cm.display.shift = false;}, 150);
@@ -4773,7 +4773,7 @@
   function findPosV(cm, pos, dir, unit) {
     var doc = cm.doc, x = pos.left, y;
     if (unit == "page") {
-      var pageSize = Math.min(cm.display.wrapper.clientHeight, window.innerHeight || document.documentElement.clientHeight);
+      var pageSize = Math.min(cm.display.clientHeight, window.innerHeight || document.documentElement.clientHeight);
       y = pos.top + dir * (pageSize - (dir < 0 ? 1.5 : .5) * textHeight(cm.display));
     } else if (unit == "line") {
       y = dir > 0 ? pos.bottom + 3 : pos.top - 3;
@@ -5025,7 +5025,7 @@
       if (vert == "over") {
         top = pos.top;
       } else if (vert == "above" || vert == "near") {
-        var vspace = Math.max(display.wrapper.clientHeight, this.doc.height),
+        var vspace = Math.max(display.clientHeight, this.doc.height),
         hspace = Math.max(display.sizer.clientWidth, display.lineSpace.clientWidth);
         // Default to positioning above (if specified and possible); otherwise default to positioning below
         if ((vert == 'above' || pos.bottom + node.offsetHeight > vspace) && pos.top > node.offsetHeight)
@@ -5193,8 +5193,8 @@
       function interpret(val) {
         return typeof val == "number" || /^\d+$/.test(String(val)) ? val + "px" : val;
       }
-      if (width != null) cm.display.wrapper.style.width = interpret(width);
-      if (height != null) cm.display.wrapper.style.height = interpret(height);
+      if (width != null) cm.display.style.width = interpret(width);
+      if (height != null) cm.display.style.height = interpret(height);
       if (cm.options.lineWrapping) clearLineMeasurementCache(this);
       var lineNo = cm.display.viewFrom;
       cm.doc.iter(lineNo, cm.display.viewTo, function(line) {
@@ -5233,7 +5233,7 @@
     }),
 
     getInputField: function(){return this.display.input.getField();},
-    getWrapperElement: function(){return this.display.wrapper;},
+    getWrapperElement: function(){return this.display;},
     getScrollerElement: function(){return this.display.scroller;},
     getGutterElement: function(){return this.display.gutters;}
   };
@@ -6565,7 +6565,7 @@
       if (widget.coverGutter)
         parentStyle += "margin-left: -" + cm.display.gutters.offsetWidth + "px;";
       if (widget.noHScroll)
-        parentStyle += "width: " + cm.display.wrapper.clientWidth + "px;";
+        parentStyle += "width: " + cm.display.clientWidth + "px;";
       removeChildrenAndAdd(cm.display.measure, elt("div", [widget.node], null, parentStyle));
     }
     return widget.height = widget.node.offsetHeight;

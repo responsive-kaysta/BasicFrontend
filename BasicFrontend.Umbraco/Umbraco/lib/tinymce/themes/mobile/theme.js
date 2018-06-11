@@ -12336,7 +12336,7 @@ var mobile = (function () {
     var switchToEdit = $_cohovf15jjfuvj2oa.makeEditSwitch(webapp);
     var socket = $_cohovf15jjfuvj2oa.makeSocket();
     var dropup = build$2($_bnaakxwwjfuvj0v2.noop, scrollIntoView);
-    alloy.add(toolbar.wrapper());
+    alloy.add(toolbar());
     alloy.add(socket);
     alloy.add(dropup.component());
     var setToolbarGroups = function (rawGroups) {
@@ -13489,7 +13489,7 @@ var mobile = (function () {
         w.refreshStructure();
       });
     }, scrollIntoView);
-    alloy.add(toolbar.wrapper());
+    alloy.add(toolbar());
     alloy.add(socket);
     alloy.add(dropup.component());
     var setToolbarGroups = function (rawGroups) {

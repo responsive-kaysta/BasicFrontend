@@ -13,11 +13,9 @@
         <p>@Html.Raw(Umbraco.Field("paragraph"))</p>
     </header>
     @{
-        <section class="@pageStyle">
-            <div class="inner">
-                <div class="container">
-                    @Html.GetGridHtml(Model.Content, "gridLayout", "bootstrap3-fluid")
-                </div>
+        <section class="@pageStyle"S>
+            <div class="container">
+                @Html.GetGridHtml(Model.Content, "gridLayout", "bootstrap3-fluid")
             </div>
         </section>
     }

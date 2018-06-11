@@ -53,12 +53,12 @@
             var self = this;
 
             // Init vars
-            self.wrapperId = 'fu-fileUploader-' + self.uploaderId;
-            self.wrapper = '<div id="' + self.wrapperId + '" class="fu-fileUploader"><div class="fu-formContainer"></div><div class="fu-itemContainer"></div></div>';
+            selfId = 'fu-fileUploader-' + self.uploaderId;
+            self = '<div id="' + selfId + '" class="fu-fileUploader"><div class="fu-formContainer"></div><div class="fu-itemContainer"></div></div>';
 
-            self.wrapperSelector = '#' + self.wrapperId;
-            self.formContainerSelector = self.wrapperSelector + " .fu-formContainer";
-            self.itemContainerSelector = self.wrapperSelector + " .fu-itemContainer";
+            selfSelector = '#' + selfId;
+            self.formContainerSelector = selfSelector + " .fu-formContainer";
+            self.itemContainerSelector = selfSelector + " .fu-itemContainer";
 
             self.itemCount = 0;
 
@@ -67,7 +67,7 @@
             self.inProgressItemId = 0;
 
             //prepend wrapper markup
-            self.form.before(self.wrapper);
+            self.form.before(self);
 
             //clear all form data
             $(":file", self.form).each(function () {
@@ -81,7 +81,7 @@
             self._createNewForm();
 
             // Hookup drag and drop support
-            $(self.opts.dropTarget !== null ? self.opts.dropTarget : self.wrapperSelector).bind('dragenter dragover', false).bind('drop', function (e) {
+            $(self.opts.dropTarget !== null ? self.opts.dropTarget : selfSelector).bind('dragenter dragover', false).bind('drop', function (e) {
                 e.stopPropagation();
                 e.preventDefault();
                 self._addFileHtml5(e.dataTransfer);

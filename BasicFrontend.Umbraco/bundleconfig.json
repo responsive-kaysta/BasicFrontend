@@ -7,8 +7,17 @@
       /* Basics, Libraries */
       "Content/bootstrap.css",
       "Frontend/fontawesome-all.css",
+
+      /* reset stuff */
       "Frontend/Css/reset.css",
-      
+
+      /* styling */
+      "Frontend/Css/Template/style-transparent.css",
+      "Frontend/Css/Template/style-green.css",
+      "Frontend/Css/Template/style-gray.css",
+      "Frontend/Css/Template/style-purple.css",
+      "Frontend/Css/Template/style-light.css",
+
       /* Atom */
       "Frontend/Css/Atom/a.css",
       "Frontend/Css/Atom/abstract.css",
@@ -46,20 +55,13 @@
       "Frontend/Css/Organism/spotlight.css",
       "Frontend/Css/Organism/table.css",
 
-      /* Template */
-      "Frontend/Css/Template/style-green.css",
-      "Frontend/Css/Template/style-gray.css",
-      "Frontend/Css/Template/style-purple.css",
-      "Frontend/Css/Template/style-light.css",
-      "Frontend/Css/Template/style-transparent.css",
+      /* Custom Styles */
+      "Frontend/Css/body.css",
+      "Frontend/Css/style.css",
 
       /* Plugins */
       "Frontend/Css/Plugins/Tooltipster/tooltipster.bundle.css",
       "Frontend/Css/Plugins/Tooltipster/Themes/tooltipster-sideTip-punk.min.css",
-
-      /* Custom Styles */
-      "Frontend/Css/body.css",
-      "Frontend/Css/style.css",
 
       "Frontend/Css/ie10-viewport-bug-workaround.css"
 

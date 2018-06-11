@@ -95,20 +95,16 @@ body.landing #page-wrapper {
     background-color: transparent;
 }
 
-body.is-mobile.landing #page-wrapper {
-    background: none;
-    background-color: transparent;
-}
 
-body.is-mobile.landing #banner,
-body.is-mobile.landing .wrapper.transparent {
+body.regular #page-wrapper {
     background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(@banner-bg-image);
     background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(@banner-bg-image);
     background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(@banner-bg-image);
     background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(@banner-bg-image);
+    background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding-top: 0;
     background-color: transparent;
 }
-

@@ -12,7 +12,26 @@
   color: whitesmoke;
   background-color: transparent;
 }
-section.transparent {
+.transparent a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+span,
+ul,
+li,
+ol {
   color: whitesmoke;
-  background-color: transparent;
+}
+.transparent a:hover {
+  color: darkgray;
+}
+.transparent .page-header {
+  width: 100%;
+  color: whitesmoke;
+  border-bottom: whitesmoke solid thin !important;
 }
