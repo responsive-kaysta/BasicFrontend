@@ -12368,7 +12368,7 @@ p {
   font-size: 1.0rem;
   font-weight: normal;
   line-height: 1.4;
-  letter-spacing: 0.2px;
+  letter-spacing: 0.1rem;
 }
 p {
   margin-bottom: 2rem;
@@ -12429,7 +12429,9 @@ sup {
   font-size: 1.0rem;
   font-weight: normal;
   line-height: 1.4;
-  letter-spacing: 0.2px;
+  letter-spacing: 0.1rem;
+}
+.paragraph {
   padding-bottom: 0.75rem;
 }
 .paragraph-2col {
@@ -14238,10 +14240,10 @@ body.is-mobile #main > header {
   background-attachment: scroll;
 }
 #main > header {
-  background: -moz-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)), url("Css/images/pcb-background.jpeg");
-  background: -webkit-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)), url("Css/images/pcb-background.jpeg");
-  background-image: -ms-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)), url("Css/images/pcb-background.jpeg");
-  background: linear-gradient(to bottom, #0b3536 0%, rgba(125, 185, 232, 0)), url("Css/images/pcb-background.jpeg");
+  background: -moz-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)), url("Css/images/Internet-of-Things-1920xx.png");
+  background: -webkit-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)), url("Css/images/Internet-of-Things-1920xx.png");
+  background-image: -ms-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)), url("Css/images/Internet-of-Things-1920xx.png");
+  background: linear-gradient(to bottom, #0b3536 0%, rgba(125, 185, 232, 0)), url("Css/images/Internet-of-Things-1920xx.png");
   background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
@@ -14250,10 +14252,10 @@ body.is-mobile #main > header {
   background-color: transparent;
 }
 body.landing #page-wrapper {
-  background: -moz-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)), url("Css/images/pcb-background.jpeg");
-  background: -webkit-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)), url("Css/images/pcb-background.jpeg");
-  background-image: -ms-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)), url("Css/images/pcb-background.jpeg");
-  background: linear-gradient(to bottom, #0b3536 0%, rgba(125, 185, 232, 0)), url("Css/images/pcb-background.jpeg");
+  background: -moz-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)), url("Css/images/Internet-of-Things-1920xx.png");
+  background: -webkit-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)), url("Css/images/Internet-of-Things-1920xx.png");
+  background-image: -ms-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)), url("Css/images/Internet-of-Things-1920xx.png");
+  background: linear-gradient(to bottom, #0b3536 0%, rgba(125, 185, 232, 0)), url("Css/images/Internet-of-Things-1920xx.png");
   background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
@@ -14262,10 +14264,10 @@ body.landing #page-wrapper {
   background-color: transparent;
 }
 body.regular #page-wrapper {
-  background: -moz-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)), url("Css/images/pcb-background.jpeg");
-  background: -webkit-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)), url("Css/images/pcb-background.jpeg");
-  background-image: -ms-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)), url("Css/images/pcb-background.jpeg");
-  background: linear-gradient(to bottom, #0b3536 0%, rgba(125, 185, 232, 0)), url("Css/images/pcb-background.jpeg");
+  background: -moz-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)), url("Css/images/Internet-of-Things-1920xx.png");
+  background: -webkit-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)), url("Css/images/Internet-of-Things-1920xx.png");
+  background-image: -ms-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)), url("Css/images/Internet-of-Things-1920xx.png");
+  background: linear-gradient(to bottom, #0b3536 0%, rgba(125, 185, 232, 0)), url("Css/images/Internet-of-Things-1920xx.png");
   background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;

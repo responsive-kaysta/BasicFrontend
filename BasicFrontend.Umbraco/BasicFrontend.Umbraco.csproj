@@ -460,11 +460,13 @@
     <Content Include="Frontend\Css\global.css">
       <DependentUpon>global.vars.less</DependentUpon>
     </Content>
+    <Content Include="Frontend\Css\Images\1d940749740655.560867a146b61.png" />
     <Content Include="Frontend\Css\Images\arrow.svg" />
     <Content Include="Frontend\Css\Images\bars.svg" />
     <Content Include="Frontend\Css\Images\close.svg" />
     <Content Include="Frontend\Css\Images\Internet-of-Things-1920xx.png" />
     <Content Include="Frontend\Css\Images\pcb-background.jpeg" />
+    <Content Include="Frontend\Css\Images\pe1gtJx.jpg" />
     <Content Include="Frontend\Css\Images\technics-q-g-410-130-8.jpg" />
     <Content Include="default.aspx" />
     <Content Include="Frontend\Css\Atom\a.css">
@@ -505,6 +507,7 @@
     <Content Include="Frontend\Css\body.less" />
     <None Include="Frontend\Css\global.vars.less" />
     <None Include="Frontend\Css\ie10-viewport-bug-workaround.less" />
+    <Content Include="Frontend\Css\Images\Website-Design-Background.png" />
     <Content Include="Frontend\Css\Molekule\box.css">
       <DependentUpon>box.less</DependentUpon>
     </Content>
