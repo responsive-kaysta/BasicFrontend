@@ -25,7 +25,7 @@ header h6 + p {
 }
 header.major h2 {
   margin-bottom: 1.5rem;
-  padding-bottom: 0.75rem;
+  padding-bottom: 1.0rem;
   border-bottom: whitesmoke solid thin;
 }
 header.major p {

@@ -774,6 +774,7 @@
     <Content Include="Media\1002\spotlight_2.png" />
     <Content Include="Media\1003\spotlight_3.png" />
     <Content Include="Media\1004\spotlight_4.png" />
+    <Content Include="Media\1005\internet-of-things-1920xx.png" />
     <Content Include="Media\Web.config" />
     <Content Include="config\umbracoSettings.config" />
     <Content Include="config\trees.config" />
