@@ -831,6 +831,7 @@
     <Content Include="Frontend\Css\Template\style-transparent.less" />
     <Content Include="Media\created-packages\responsive.kaysta.Frontend_0.9.15.zip" />
     <Content Include="Media\created-packages\responsive.kaysta.Frontend_0.9.16.zip" />
+    <Content Include="Media\created-packages\responsive.kaysta.Frontend_0.9.17.zip" />
     <None Include="packages.config" />
     <Content Include="Scripts\esm\popper-utils.js" />
     <Content Include="Scripts\esm\popper-utils.js.map">
