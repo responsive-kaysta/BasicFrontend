@@ -627,10 +627,6 @@
     <Content Include="Frontend\Css\Organism\table.min.css">
       <DependentUpon>table.css</DependentUpon>
     </Content>
-    <Content Include="Frontend\Css\Organism\wrapper.css">
-      <DependentUpon>wrapper.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Organism\wrapper.less" />
     <Content Include="Frontend\Css\Plugins\Tooltipster\tooltipster.bundle.css">
       <DependentUpon>tooltipster.bundle.less</DependentUpon>
     </Content>
@@ -681,9 +677,6 @@
     </Content>
     <Content Include="Frontend\Css\Organism\spotlight.min.css">
       <DependentUpon>spotlight.css</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Organism\wrapper.min.css">
-      <DependentUpon>wrapper.css</DependentUpon>
     </Content>
     <Content Include="Frontend\Css\Plugins\Tooltipster\Themes\tooltipster-sideTip-borderless.min.css" />
     <Content Include="Frontend\Css\Plugins\Tooltipster\Themes\tooltipster-sideTip-light.min.css" />
@@ -777,6 +770,10 @@
     <Content Include="Frontend\JavaScript\Plugins\Tooltipster\tooltipster.main.js" />
     <Content Include="Global.asax" />
     <Content Include="icon.png" />
+    <Content Include="Media\1001\spotlight_1.png" />
+    <Content Include="Media\1002\spotlight_2.png" />
+    <Content Include="Media\1003\spotlight_3.png" />
+    <Content Include="Media\1004\spotlight_4.png" />
     <Content Include="Media\Web.config" />
     <Content Include="config\umbracoSettings.config" />
     <Content Include="config\trees.config" />

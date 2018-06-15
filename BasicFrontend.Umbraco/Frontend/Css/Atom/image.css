@@ -11,6 +11,7 @@
 img {
   max-width: 100%;
   height: auto;
+  display: block;
 }
 .image {
   border-radius: 3px;
