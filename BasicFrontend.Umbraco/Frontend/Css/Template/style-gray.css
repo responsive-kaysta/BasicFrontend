@@ -8,113 +8,25 @@
 /* button */
 /* code */
 /* banner */
-.gray .page-header {
-  width: 100%;
-  border-bottom: whitesmoke solid thin !important;
-}
- .container .blogarchive div.gray {
-  background: darkgray;
-}
 .gray {
+  color: whitesmoke;
   background-color: darkgray;
-  color: whitesmoke;
 }
-.gray hr {
-  border-color: whitesmoke;
-}
-.gray blockquote {
-  border-color: whitesmoke;
-}
-.gray code {
-  background: whitesmoke;
-}
-.gray ul li {
-  color: whitesmoke;
-}
-.gray ul li a {
-  color: whitesmoke;
-}
-.gray ul li a:hover {
+.gray a:hover {
   color: red;
 }
-.gray header.major h2,
-.gray header.major h3,
-.gray header.major h4,
-.gray header.major h5,
-.gray header.major h6 {
-  border-color: whitesmoke;
-}
-.gray input[type="text"],
-.gray input[type="password"],
-.gray input[type="email"],
-.gray select,
-.gray textarea {
-  background: rgba(255, 255, 255, 0.075);
-}
-.gray .select-wrapper:before {
-  color: rgba(0, 0, 0, 0.125);
-}
-.gray input[type="checkbox"] + label,
-.gray input[type="radio"] + label {
+.gray .page-header {
+  width: 100%;
   color: whitesmoke;
+  border-bottom: whitesmoke solid thin !important;
 }
-.gray input[type="checkbox"] + label:before,
-.gray input[type="radio"] + label:before {
-  background: rgba(255, 255, 255, 0.075);
-}
-.gray input[type="checkbox"]:checked + label:before,
-.gray input[type="radio"]:checked + label:before {
-  background: #ffffff;
-  color: #21b2a6;
-}
-.gray .icon.major {
-  border-color: whitesmoke;
-}
-.gray ul.alt li {
-  border-color: whitesmoke;
-}
-.gray table tbody tr {
-  border-color: whitesmoke;
-}
-.gray table tbody tr:nth-child(2n + 1) {
-  background-color: rgba(255, 255, 255, 0.075);
-}
-.gray table th {
+header.gray,
+header.gray h2,
+header.gray p {
   color: whitesmoke;
+  background-color: transparent;
 }
-.gray table thead {
-  border-color: whitesmoke;
-}
-.gray table tfoot {
-  border-color: whitesmoke;
-}
-.gray table.alt tbody tr td {
-  border-color: whitesmoke;
-}
-.gray input[type="submit"],
-.gray input[type="reset"],
-.gray input[type="button"],
-.gray button,
-.gray .button {
-  box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.125);
+section.gray * {
   color: whitesmoke;
-}
-.gray input[type="submit"]:hover,
-.gray input[type="reset"]:hover,
-.gray input[type="button"]:hover,
-.gray button:hover,
-.gray .button:hover {
-  background-color: rgba(255, 255, 255, 0.075);
-}
-.gray input[type="submit"]:active,
-.gray input[type="reset"]:active,
-.gray input[type="button"]:active,
-.gray button:active,
-.gray .button:active {
-  background-color: rgba(255, 255, 255, 0.2);
-}
-@media screen and (max-width: 736px) {
-  .gray .features li {
-    border-top-color: whitesmoke;
-  }
+  background-color: darkgray;
 }

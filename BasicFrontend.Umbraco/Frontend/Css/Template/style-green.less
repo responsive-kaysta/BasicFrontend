@@ -1,135 +1,28 @@
 @import "../global.vars.less";
 
+.green {
+    color: @style-green-color;
+    background-color: @style-green-bg-color;
+}
+
+.green a:hover {
+    color: @style-green-hover-color;
+}
+
 .green .page-header {
     width: 100%;
+    color: @style-green-color;
     border-bottom: @style-green-border-color solid thin !important;
 }
 
- .container .blogarchive div.green{
-    background: @style-green-bg-color;
+header.green,
+header.green h2, 
+header.green p {
+    color: @base-color;
+    background-color: @style-transparent-bg-color;
 }
 
-.green {
+section.green * {
+    color: @style-green-color;
     background-color: @style-green-bg-color;
-    color: @style-green-color;
-}
-.green hr {
-    border-color: @style-green-border-color;
-}
-
-.green blockquote {
-    border-color: @style-green-border-color;
-}
-
-.green code {
-    background: @style-green-border-color;
-}
-
-.green ul li {
-    color: @style-gray-color;
-}
-
-.green ul li a {
-    color: @style-green-color;
-}
-
-.green ul li a:hover {
-    color: @base-hover-color;
-}
-
-.green header.major h2, .green header.major h3, .green header.major h4, .green header.major h5, .green header.major h6 {
-    border-color: @style-green-border-color;
-}
-
-.green input[type="text"],
-.green input[type="password"],
-.green input[type="email"],
-.green select,
-.green textarea {
-    background: rgba(255, 255, 255, 0.075);
-}
-
-.green .select-wrapper:before {
-color: rgba(0, 0, 0, 0.125);
-}
-
-.green input[type="checkbox"] + label,
-.green input[type="radio"] + label {
-    color: @style-green-color;
-}
-
-.green input[type="checkbox"] + label:before,
-.green input[type="radio"] + label:before {
-    background: rgba(255, 255, 255, 0.075);
-}
-
-.green input[type="checkbox"]:checked + label:before,
-.green input[type="radio"]:checked + label:before {
-    background: #ffffff;
-    color: #21b2a6;
-}
-
-.green .icon.major {
-    border-color: @style-green-border-color;
-}
-
-.green ul.alt li {
-    border-color: @style-green-border-color;
-}
-
-.green table tbody tr {
-    border-color: @style-green-border-color;
-}
-
-.green table tbody tr:nth-child(2n + 1) {
-    background-color: rgba(255, 255, 255, 0.075);
-}
-
-.green table th {
-    color: @style-green-color;
-}
-
-.green table thead {
-    border-color: @style-green-border-color;
-}
-
-.green table tfoot {
-    border-color: @style-green-border-color;
-}
-
-.green table.alt tbody tr td {
-    border-color: @style-green-border-color;
-}
-
-.green input[type="submit"],
-.green input[type="reset"],
-.green input[type="button"],
-.green button,
-.green .button {
-    box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.125);
-    color: @style-green-color;
-}
-
-.green input[type="submit"]:hover,
-.green input[type="reset"]:hover,
-.green input[type="button"]:hover,
-.green button:hover,
-.green .button:hover {
-    background-color: rgba(255, 255, 255, 0.075);
-}
-
-.green input[type="submit"]:active,
-.green input[type="reset"]:active,
-.green input[type="button"]:active,
-.green button:active,
-.green .button:active {
-    background-color: rgba(255, 255, 255, 0.2);
-}
-
-@media screen and (max-width: 736px) {
-
-    .green .features li {
-        border-top-color: @style-green-border-color;
-    }
-
 }

@@ -8,113 +8,25 @@
 /* button */
 /* code */
 /* banner */
-.green .page-header {
-  width: 100%;
-  border-bottom: whitesmoke solid thin !important;
-}
- .container .blogarchive div.green {
-  background: #1a867d;
-}
 .green {
+  color: whitesmoke;
   background-color: #1a867d;
-  color: whitesmoke;
 }
-.green hr {
-  border-color: whitesmoke;
-}
-.green blockquote {
-  border-color: whitesmoke;
-}
-.green code {
-  background: whitesmoke;
-}
-.green ul li {
-  color: whitesmoke;
-}
-.green ul li a {
-  color: whitesmoke;
-}
-.green ul li a:hover {
+.green a:hover {
   color: red;
 }
-.green header.major h2,
-.green header.major h3,
-.green header.major h4,
-.green header.major h5,
-.green header.major h6 {
-  border-color: whitesmoke;
-}
-.green input[type="text"],
-.green input[type="password"],
-.green input[type="email"],
-.green select,
-.green textarea {
-  background: rgba(255, 255, 255, 0.075);
-}
-.green .select-wrapper:before {
-  color: rgba(0, 0, 0, 0.125);
-}
-.green input[type="checkbox"] + label,
-.green input[type="radio"] + label {
+.green .page-header {
+  width: 100%;
   color: whitesmoke;
+  border-bottom: whitesmoke solid thin !important;
 }
-.green input[type="checkbox"] + label:before,
-.green input[type="radio"] + label:before {
-  background: rgba(255, 255, 255, 0.075);
-}
-.green input[type="checkbox"]:checked + label:before,
-.green input[type="radio"]:checked + label:before {
-  background: #ffffff;
-  color: #21b2a6;
-}
-.green .icon.major {
-  border-color: whitesmoke;
-}
-.green ul.alt li {
-  border-color: whitesmoke;
-}
-.green table tbody tr {
-  border-color: whitesmoke;
-}
-.green table tbody tr:nth-child(2n + 1) {
-  background-color: rgba(255, 255, 255, 0.075);
-}
-.green table th {
+header.green,
+header.green h2,
+header.green p {
   color: whitesmoke;
+  background-color: transparent;
 }
-.green table thead {
-  border-color: whitesmoke;
-}
-.green table tfoot {
-  border-color: whitesmoke;
-}
-.green table.alt tbody tr td {
-  border-color: whitesmoke;
-}
-.green input[type="submit"],
-.green input[type="reset"],
-.green input[type="button"],
-.green button,
-.green .button {
-  box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.125);
+section.green * {
   color: whitesmoke;
-}
-.green input[type="submit"]:hover,
-.green input[type="reset"]:hover,
-.green input[type="button"]:hover,
-.green button:hover,
-.green .button:hover {
-  background-color: rgba(255, 255, 255, 0.075);
-}
-.green input[type="submit"]:active,
-.green input[type="reset"]:active,
-.green input[type="button"]:active,
-.green button:active,
-.green .button:active {
-  background-color: rgba(255, 255, 255, 0.2);
-}
-@media screen and (max-width: 736px) {
-  .green .features li {
-    border-top-color: whitesmoke;
-  }
+  background-color: #1a867d;
 }

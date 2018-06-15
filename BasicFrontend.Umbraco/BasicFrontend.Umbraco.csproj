@@ -777,9 +777,6 @@
     <Content Include="Frontend\JavaScript\Plugins\Tooltipster\tooltipster.main.js" />
     <Content Include="Global.asax" />
     <Content Include="icon.png" />
-    <Content Include="Media\1010\spotlight_1.png" />
-    <Content Include="Media\1011\spotlight_2.png" />
-    <Content Include="Media\1012\spotlight_3.png" />
     <Content Include="Media\Web.config" />
     <Content Include="config\umbracoSettings.config" />
     <Content Include="config\trees.config" />

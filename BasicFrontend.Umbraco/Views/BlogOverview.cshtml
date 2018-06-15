@@ -5,24 +5,21 @@
 @{
     Layout = "_Layout.cshtml";
     var selection = CurrentPage.Children.Where("Visible");
+    var pageStyle = @Umbraco.Field("pageStyle");
 }
 
 <article id="main">
-
-    <header>
+    <header class="@pageStyle">
         <h2>@Umbraco.Field("title")</h2>
         <p>@Umbraco.Field("introduction")</p>
     </header>
-
     @{
-        var pageStyle = @Umbraco.Field("pageStyle");
-        <section class="wrapper @pageStyle">
+        <section class="@pageStyle">
             <div class="inner">
                 @if (selection.Any())
                 {
                     <div class="container">
                         <section class="blogarchive equalizer">
-
                             @foreach (var item in selection.OrderBy("CreateDate desc"))
                             {
 
@@ -42,9 +39,7 @@
                                         </a>
                                     </div>
                                 </div>
-
                             }
-
                         </section>
                     </div>
                     <div class="clearfix"></div>

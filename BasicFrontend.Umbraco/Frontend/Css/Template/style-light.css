@@ -12,21 +12,6 @@
   color: #5e5e5e;
   background-color: whitesmoke;
 }
-.light a,
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-div,
-span,
-ul,
-li,
-ol {
-  color: #5e5e5e;
-}
 .light a:hover {
   color: red;
 }
@@ -34,4 +19,14 @@ ol {
   width: 100%;
   color: #5e5e5e;
   border-bottom: #5e5e5e solid thin !important;
+}
+header.light,
+header.light h2,
+header.light p {
+  color: whitesmoke;
+  background-color: transparent;
+}
+section.light * {
+  color: #5e5e5e;
+  background-color: whitesmoke;
 }

@@ -5,11 +5,6 @@
     background-color: @style-light-bg-color;
 }
 
-.light a, p, h1, h2, h3, h4, h5, h6, div, span, ul, li, ol{
-    color: @style-light-color;
-
-}
-
 .light a:hover {
     color: @style-light-hover-color;
 }
@@ -18,4 +13,16 @@
     width: 100%;
     color: @style-light-color;
     border-bottom: @style-light-border-color solid thin !important;
+}
+
+header.light,
+header.light h2, 
+header.light p {
+    color: @base-color;
+    background-color: @style-transparent-bg-color;
+}
+
+section.light * {
+    color: @style-light-color;
+    background-color: @style-light-bg-color;
 }

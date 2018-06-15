@@ -23,23 +23,26 @@ header h5 + p,
 header h6 + p {
   font-size: 0.9rem;
 }
+header.major h2 {
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: whitesmoke solid thin;
+}
+header.major p {
+  padding-bottom: 1.5rem;
+}
 @media screen and (max-width: 980px) {
   header br {
     display: none;
   }
 }
 #main > header h2 {
-  color: inherit;
   font-size: 1.75rem;
   margin: 0 0 1rem 0;
 }
 #main > header p {
-  color: inherit;
   letter-spacing: 0.225rem;
   top: 0;
-}
-#main > header p a {
-  color: inherit;
 }
 #header {
   -moz-transition: background-color 0.2s ease;

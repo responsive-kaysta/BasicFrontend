@@ -45,20 +45,32 @@
   #main > header {
     padding: 10rem 25.375% 8rem 25.375%;
   }
+  header.major {
+    padding: 0 25.375% 0 25.375%;
+  }
 }
 @media screen and (max-width: 1680px) {
   #main > header {
     padding: 10rem 17.25% 8rem 17.25%;
+  }
+  header.major {
+    padding: 0 17.25% 0 17.25%;
   }
 }
 @media screen and (max-width: 1280px) {
   #main > header {
     padding: 8rem 10% 6rem 10%;
   }
+  header.major {
+    padding: 0 10% 0 10%;
+  }
 }
 @media screen and (max-width: 980px) {
   #main > header {
     padding: 10rem 15% 8rem 15%;
+  }
+  header.major {
+    padding: 0 15% 0 15%;
   }
 }
 @media screen and (max-width: 736px) {
@@ -69,15 +81,18 @@
     font-size: 1.25rem;
     margin: 0 0 1rem 0;
   }
+  header.major {
+    padding: 0 5% 0 5%;
+  }
 }
 body.is-mobile #main > header {
   background-attachment: scroll;
 }
 #main > header {
-  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/Website-Design-Background.png");
-  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/Website-Design-Background.png");
-  background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/Website-Design-Background.png");
-  background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/Website-Design-Background.png");
+  background: -moz-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)), url("images/pcb-background.jpeg");
+  background: -webkit-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)), url("images/pcb-background.jpeg");
+  background-image: -ms-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)), url("images/pcb-background.jpeg");
+  background: linear-gradient(to bottom, #0b3536 0%, rgba(125, 185, 232, 0)), url("images/pcb-background.jpeg");
   background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
@@ -86,10 +101,10 @@ body.is-mobile #main > header {
   background-color: transparent;
 }
 body.landing #page-wrapper {
-  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/Website-Design-Background.png");
-  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/Website-Design-Background.png");
-  background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/Website-Design-Background.png");
-  background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/Website-Design-Background.png");
+  background: -moz-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)), url("images/pcb-background.jpeg");
+  background: -webkit-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)), url("images/pcb-background.jpeg");
+  background-image: -ms-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)), url("images/pcb-background.jpeg");
+  background: linear-gradient(to bottom, #0b3536 0%, rgba(125, 185, 232, 0)), url("images/pcb-background.jpeg");
   background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
@@ -98,10 +113,10 @@ body.landing #page-wrapper {
   background-color: transparent;
 }
 body.regular #page-wrapper {
-  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/Website-Design-Background.png");
-  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/Website-Design-Background.png");
-  background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/Website-Design-Background.png");
-  background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/Website-Design-Background.png");
+  background: -moz-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)), url("images/pcb-background.jpeg");
+  background: -webkit-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)), url("images/pcb-background.jpeg");
+  background-image: -ms-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)), url("images/pcb-background.jpeg");
+  background: linear-gradient(to bottom, #0b3536 0%, rgba(125, 185, 232, 0)), url("images/pcb-background.jpeg");
   background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;

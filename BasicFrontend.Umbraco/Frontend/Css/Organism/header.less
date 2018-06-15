@@ -20,6 +20,16 @@ header h6 + p {
     font-size: 0.9rem;
 }
 
+header.major h2 {
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;;
+    border-bottom: @base-color solid thin;
+}
+
+header.major p {
+    padding-bottom: 1.5rem;
+}
+
 @media screen and (max-width: 980px) {
 
     header br {
@@ -29,19 +39,17 @@ header h6 + p {
 }
 
         #main > header h2 {
-            color: inherit;
             font-size: 1.75rem;
             margin: 0 0 1rem 0;
         }
 
         #main > header p {
-            color: inherit;
             letter-spacing: 0.225rem;
             top: 0;
         }
 
         #main > header p a {
-            color: inherit;
+            // todo:
         }
 
 #header {

@@ -2,20 +2,19 @@
 @using ContentModels = Umbraco.Web.PublishedContentModels;
 @{
     Layout = "_Layout.cshtml";
+    var pageStyle = @Umbraco.Field("pageStyle");
 }
 
 <article id="main">
-    <header>
+    <header class="@pageStyle">
         <h2>@Umbraco.Field("title")</h2>
         <p>@Html.Raw(Umbraco.Field("introduction"))</p>
     </header>
     @{
-        var pageStyle = @Umbraco.Field("pageStyle");
-        <section class="wrapper @pageStyle">
+        <section class="@pageStyle">
             <div class="inner">
                 <div class="container">
                     @Html.GetGridHtml(Model.Content, "gridLayout", "bootstrap3-fluid")
-
                     <div class="row clearfix">
                         <div class="col-md-12 column">
                             <hr />

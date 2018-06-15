@@ -1,135 +1,28 @@
 @import "../global.vars.less";
 
+.purple {
+    color: @style-purple-color;
+    background-color: @style-purple-bg-color;
+}
+
+.purple a:hover {
+    color: @style-purple-hover-color;
+}
+
 .purple .page-header {
     width: 100%;
+    color: @style-purple-color;
     border-bottom: @style-purple-border-color solid thin !important;
 }
 
- .container .blogarchive div.purple{
-    background: @style-purple-bg-color;
+header.purple,
+header.purple h2, 
+header.purple p {
+    color: @base-color;
+    background-color: @style-transparent-bg-color;
 }
 
-.purple {
+section.purple * {
+    color: @style-purple-color;
     background-color: @style-purple-bg-color;
-    color: @style-purple-color;
-}
-.purple hr {
-    border-color: @style-purple-border-color;
-}
-
-.purple blockquote {
-    border-color: @style-purple-border-color;
-}
-
-.purple code {
-    background: @style-purple-border-color;
-}
-
-.purple ul li {
-    color: @style-purple-color;
-}
-
-.purple ul li a {
-    color: @style-purple-color;
-}
-
-.purple ul li a:hover {
-    color: @base-hover-color;
-}
-
-.purple header.major h2, .purple header.major h3, .purple header.major h4, .purple header.major h5, .purple header.major h6 {
-    border-color: @style-purple-border-color;
-}
-
-.purple input[type="text"],
-.purple input[type="password"],
-.purple input[type="email"],
-.purple select,
-.purple textarea {
-    background: rgba(255, 255, 255, 0.075);
-}
-
-.purple .select-wrapper:before {
-color: rgba(0, 0, 0, 0.125);
-}
-
-.purple input[type="checkbox"] + label,
-.purple input[type="radio"] + label {
-    color: @style-purple-color;
-}
-
-.purple input[type="checkbox"] + label:before,
-.purple input[type="radio"] + label:before {
-    background: rgba(255, 255, 255, 0.075);
-}
-
-.purple input[type="checkbox"]:checked + label:before,
-.purple input[type="radio"]:checked + label:before {
-    background: #ffffff;
-    color: #21b2a6;
-}
-
-.purple .icon.major {
-    border-color: @style-purple-border-color;
-}
-
-.purple ul.alt li {
-    border-color: @style-purple-border-color;
-}
-
-.purple table tbody tr {
-    border-color: @style-purple-border-color;
-}
-
-.purple table tbody tr:nth-child(2n + 1) {
-    background-color: rgba(255, 255, 255, 0.075);
-}
-
-.purple table th {
-    color: @style-purple-color;
-}
-
-.purple table thead {
-    border-color: @style-purple-border-color;
-}
-
-.purple table tfoot {
-    border-color: @style-purple-border-color;
-}
-
-.purple table.alt tbody tr td {
-    border-color: @style-purple-border-color;
-}
-
-.purple input[type="submit"],
-.purple input[type="reset"],
-.purple input[type="button"],
-.purple button,
-.purple .button {
-    box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.125);
-    color: @style-purple-color;
-}
-
-.purple input[type="submit"]:hover,
-.purple input[type="reset"]:hover,
-.purple input[type="button"]:hover,
-.purple button:hover,
-.purple .button:hover {
-    background-color: rgba(255, 255, 255, 0.075);
-}
-
-.purple input[type="submit"]:active,
-.purple input[type="reset"]:active,
-.purple input[type="button"]:active,
-.purple button:active,
-.purple .button:active {
-    background-color: rgba(255, 255, 255, 0.2);
-}
-
-@media screen and (max-width: 736px) {
-
-    .purple .features li {
-        border-top-color: @style-purple-border-color;
-    }
-
 }

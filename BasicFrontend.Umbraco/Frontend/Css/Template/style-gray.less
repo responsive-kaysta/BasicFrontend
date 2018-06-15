@@ -1,135 +1,28 @@
 ﻿@import "../global.vars.less";
 
+.gray {
+    color: @style-gray-color;
+    background-color: @style-gray-bg-color;
+}
+
+.gray a:hover {
+    color: @style-gray-hover-color;
+}
+
 .gray .page-header {
     width: 100%;
+    color: @style-gray-color;
     border-bottom: @style-gray-border-color solid thin !important;
 }
 
- .container .blogarchive div.gray{
-    background: @style-gray-bg-color;
+header.gray,
+header.gray h2, 
+header.gray p {
+    color: @base-color;
+    background-color: @style-transparent-bg-color;
 }
 
-.gray {
+section.gray * {
+    color: @style-gray-color;
     background-color: @style-gray-bg-color;
-    color: @style-gray-color;
-}
-.gray hr {
-    border-color: @style-gray-border-color;
-}
-
-.gray blockquote {
-    border-color: @style-gray-border-color;
-}
-
-.gray code {
-    background: @style-gray-border-color;
-}
-
-.gray ul li {
-    color: @style-gray-color;
-}
-
-.gray ul li a {
-    color: @style-gray-color;
-}
-
-.gray ul li a:hover {
-    color: @base-hover-color;
-}
-
-.gray header.major h2, .gray header.major h3, .gray header.major h4, .gray header.major h5, .gray header.major h6 {
-    border-color: @style-gray-border-color;
-}
-
-.gray input[type="text"],
-.gray input[type="password"],
-.gray input[type="email"],
-.gray select,
-.gray textarea {
-    background: rgba(255, 255, 255, 0.075);
-}
-
-.gray .select-wrapper:before {
-color: rgba(0, 0, 0, 0.125);
-}
-
-.gray input[type="checkbox"] + label,
-.gray input[type="radio"] + label {
-    color: @style-gray-color;
-}
-
-.gray input[type="checkbox"] + label:before,
-.gray input[type="radio"] + label:before {
-    background: rgba(255, 255, 255, 0.075);
-}
-
-.gray input[type="checkbox"]:checked + label:before,
-.gray input[type="radio"]:checked + label:before {
-    background: #ffffff;
-    color: #21b2a6;
-}
-
-.gray .icon.major {
-    border-color: @style-gray-border-color;
-}
-
-.gray ul.alt li {
-    border-color: @style-gray-border-color;
-}
-
-.gray table tbody tr {
-    border-color: @style-gray-border-color;
-}
-
-.gray table tbody tr:nth-child(2n + 1) {
-    background-color: rgba(255, 255, 255, 0.075);
-}
-
-.gray table th {
-    color: @style-gray-color;
-}
-
-.gray table thead {
-    border-color: @style-gray-border-color;
-}
-
-.gray table tfoot {
-    border-color: @style-gray-border-color;
-}
-
-.gray table.alt tbody tr td {
-    border-color: @style-gray-border-color;
-}
-
-.gray input[type="submit"],
-.gray input[type="reset"],
-.gray input[type="button"],
-.gray button,
-.gray .button {
-    box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.125);
-    color: @style-gray-color;
-}
-
-.gray input[type="submit"]:hover,
-.gray input[type="reset"]:hover,
-.gray input[type="button"]:hover,
-.gray button:hover,
-.gray .button:hover {
-    background-color: rgba(255, 255, 255, 0.075);
-}
-
-.gray input[type="submit"]:active,
-.gray input[type="reset"]:active,
-.gray input[type="button"]:active,
-.gray button:active,
-.gray .button:active {
-    background-color: rgba(255, 255, 255, 0.2);
-}
-
-@media screen and (max-width: 736px) {
-
-    .gray .features li {
-        border-top-color: @style-gray-border-color;
-    }
-
 }

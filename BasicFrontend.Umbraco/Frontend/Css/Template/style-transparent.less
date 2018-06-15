@@ -5,11 +5,6 @@
     background-color: @style-transparent-bg-color;
 }
 
-.transparent a, p, h1, h2, h3, h4, h5, h6, div, span, ul, li, ol{
-    color: @style-transparent-color;
-
-}
-
 .transparent a:hover {
     color: @style-transparent-hover-color;
 }
@@ -18,4 +13,16 @@
     width: 100%;
     color: @style-transparent-color;
     border-bottom: @style-transparent-border-color solid thin !important;
+}
+
+header.transparent,
+header.transparent h2, 
+header.transparent p {
+    color: @style-transparent-color;
+    background-color: @style-transparent-bg-color;
+}
+
+section.transparent * {
+    color: @style-transparent-color;
+    background-color: @style-transparent-bg-color;
 }

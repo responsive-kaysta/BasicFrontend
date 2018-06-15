@@ -4,10 +4,11 @@
 
 @{
     Layout = "_Layout.cshtml";
+    var pageStyle = @Umbraco.Field("pageStyle");
 }
 
 <article id="main">
-    <header>
+    <header class="@pageStyle">
         <h2>@Umbraco.Field("title")</h2>
         <p>@Html.Raw(Umbraco.Field("introduction"))</p>
     </header>
@@ -15,9 +16,8 @@
     @if (ViewBag.Contact != null)
     {
         var viewModel = (ContactViewModel)ViewBag.Contact;
-        var pageStyle = @Umbraco.Field("pageStyle");
 
-        <section class="wrapper @pageStyle">
+        <section class="@pageStyle">
             <div class="inner">
                 <div class="container">
                     <div class="row">
@@ -55,8 +55,7 @@
     }
     else
     {
-        var pageStyle = @Umbraco.Field("pageStyle");
-        <section class="wrapper @pageStyle">
+        <section class="@pageStyle">
             <div class="inner">
                 <div class="container">
                     @Html.Partial("ContactForm", new ContactViewModel())
