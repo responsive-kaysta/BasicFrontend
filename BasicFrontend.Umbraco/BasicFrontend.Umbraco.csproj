@@ -857,6 +857,7 @@
     <Content Include="Frontend\Css\Template\style-light.less" />
     <Content Include="Frontend\Css\Template\style-gray.less" />
     <Content Include="Frontend\Css\Template\style-transparent.less" />
+    <Content Include="ImageGen.ashx" />
     <None Include="packages.config" />
     <Content Include="Scripts\esm\popper-utils.js" />
     <Content Include="Scripts\esm\popper-utils.js.map">
