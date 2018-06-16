@@ -15,14 +15,24 @@
     border-bottom: @style-light-border-color solid thin !important;
 }
 
+section.light, 
+div.light {
+    color: @style-light-color;
+    background-color: @style-light-bg-color;
+}
+
+section.light *,
+div.light * {
+    color: @style-light-color;
+}
+
+div.light a:hover {
+    color: @style-light-hover-color !important;
+}
+
 header.light,
 header.light h2, 
 header.light p {
     color: @base-color;
     background-color: @style-transparent-bg-color;
-}
-
-section.light * {
-    color: @style-light-color;
-    background-color: @style-light-bg-color;
 }

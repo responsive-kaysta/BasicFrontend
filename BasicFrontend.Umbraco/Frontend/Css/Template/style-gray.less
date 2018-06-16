@@ -15,14 +15,24 @@
     border-bottom: @style-gray-border-color solid thin !important;
 }
 
+section.gray, 
+div.gray {
+    color: @style-gray-color;
+    background-color: @style-gray-bg-color;
+}
+
+section.gray *,
+div.gray * {
+    color: @style-gray-color;
+}
+
+div.gray a:hover {
+    color: @style-gray-hover-color !important;
+}
+
 header.gray,
 header.gray h2, 
 header.gray p {
     color: @base-color;
     background-color: @style-transparent-bg-color;
-}
-
-section.gray * {
-    color: @style-gray-color;
-    background-color: @style-gray-bg-color;
 }

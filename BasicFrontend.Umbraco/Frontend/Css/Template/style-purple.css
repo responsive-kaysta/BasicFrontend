@@ -1,4 +1,4 @@
-﻿/* base styles and definitions */
+/* base styles and definitions */
 /* menu */
 /* green -> obsolete style1 */
 /* gray -> obsolete style2 */
@@ -20,13 +20,21 @@
   color: #d3d4e4;
   border-bottom: #d3d4e4 solid thin !important;
 }
+section.purple,
+div.purple {
+  color: #d3d4e4;
+  background-color: #505393;
+}
+section.purple *,
+div.purple * {
+  color: #d3d4e4;
+}
+div.purple a:hover {
+  color: red !important;
+}
 header.purple,
 header.purple h2,
 header.purple p {
   color: whitesmoke;
   background-color: transparent;
-}
-section.purple * {
-  color: #d3d4e4;
-  background-color: #505393;
 }

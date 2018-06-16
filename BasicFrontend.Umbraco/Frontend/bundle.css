@@ -11943,16 +11943,25 @@ video {
   color: whitesmoke;
   border-bottom: whitesmoke solid thin !important;
 }
+section.transparent,
+div.transparent {
+  color: whitesmoke;
+  background-color: transparent;
+}
+section.transparent *,
+div.transparent * {
+  color: whitesmoke;
+}
+div.transparent a:hover {
+  color: darkgray !important;
+}
 header.transparent,
 header.transparent h2,
 header.transparent p {
   color: whitesmoke;
   background-color: transparent;
 }
-section.transparent * {
-  color: whitesmoke;
-  background-color: transparent;
-}
+
 /* base styles and definitions */
 /* menu */
 /* green -> obsolete style1 */
@@ -11975,16 +11984,25 @@ section.transparent * {
   color: whitesmoke;
   border-bottom: whitesmoke solid thin !important;
 }
+section.green,
+div.green {
+  color: whitesmoke;
+  background-color: #1a867d;
+}
+section.green *,
+div.green * {
+  color: whitesmoke;
+}
+div.green a:hover {
+  color: red !important;
+}
 header.green,
 header.green h2,
 header.green p {
   color: whitesmoke;
   background-color: transparent;
 }
-section.green * {
-  color: whitesmoke;
-  background-color: #1a867d;
-}
+
 /* base styles and definitions */
 /* menu */
 /* green -> obsolete style1 */
@@ -12007,16 +12025,25 @@ section.green * {
   color: whitesmoke;
   border-bottom: whitesmoke solid thin !important;
 }
+section.gray,
+div.gray {
+  color: whitesmoke;
+  background-color: darkgray;
+}
+section.gray *,
+div.gray * {
+  color: whitesmoke;
+}
+div.gray a:hover {
+  color: red !important;
+}
 header.gray,
 header.gray h2,
 header.gray p {
   color: whitesmoke;
   background-color: transparent;
 }
-section.gray * {
-  color: whitesmoke;
-  background-color: darkgray;
-}
+
 /* base styles and definitions */
 /* menu */
 /* green -> obsolete style1 */
@@ -12039,16 +12066,25 @@ section.gray * {
   color: #d3d4e4;
   border-bottom: #d3d4e4 solid thin !important;
 }
+section.purple,
+div.purple {
+  color: #d3d4e4;
+  background-color: #505393;
+}
+section.purple *,
+div.purple * {
+  color: #d3d4e4;
+}
+div.purple a:hover {
+  color: red !important;
+}
 header.purple,
 header.purple h2,
 header.purple p {
   color: whitesmoke;
   background-color: transparent;
 }
-section.purple * {
-  color: #d3d4e4;
-  background-color: #505393;
-}
+
 /* base styles and definitions */
 /* menu */
 /* green -> obsolete style1 */
@@ -12071,16 +12107,25 @@ section.purple * {
   color: #5e5e5e;
   border-bottom: #5e5e5e solid thin !important;
 }
+section.light,
+div.light {
+  color: #5e5e5e;
+  background-color: whitesmoke;
+}
+section.light *,
+div.light * {
+  color: #5e5e5e;
+}
+div.light a:hover {
+  color: red !important;
+}
 header.light,
 header.light h2,
 header.light p {
   color: whitesmoke;
   background-color: transparent;
 }
-section.light * {
-  color: #5e5e5e;
-  background-color: whitesmoke;
-}
+
 /* base styles and definitions */
 /* menu */
 /* green -> obsolete style1 */

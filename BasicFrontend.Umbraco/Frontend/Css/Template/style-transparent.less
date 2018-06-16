@@ -15,14 +15,24 @@
     border-bottom: @style-transparent-border-color solid thin !important;
 }
 
-header.transparent,
-header.transparent h2, 
-header.transparent p {
+section.transparent, 
+div.transparent {
     color: @style-transparent-color;
     background-color: @style-transparent-bg-color;
 }
 
-section.transparent * {
+section.transparent *,
+div.transparent * {
     color: @style-transparent-color;
+}
+
+div.transparent a:hover {
+    color: @style-transparent-hover-color !important;
+}
+
+header.transparent,
+header.transparent h2, 
+header.transparent p {
+    color: @base-color;
     background-color: @style-transparent-bg-color;
 }

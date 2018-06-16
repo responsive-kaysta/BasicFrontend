@@ -15,14 +15,24 @@
     border-bottom: @style-purple-border-color solid thin !important;
 }
 
+section.purple, 
+div.purple {
+    color: @style-purple-color;
+    background-color: @style-purple-bg-color;
+}
+
+section.purple *,
+div.purple * {
+    color: @style-purple-color;
+}
+
+div.purple a:hover {
+    color: @style-purple-hover-color !important;
+}
+
 header.purple,
 header.purple h2, 
 header.purple p {
     color: @base-color;
     background-color: @style-transparent-bg-color;
-}
-
-section.purple * {
-    color: @style-purple-color;
-    background-color: @style-purple-bg-color;
 }

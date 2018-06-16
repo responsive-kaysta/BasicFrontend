@@ -1,4 +1,4 @@
-﻿/* base styles and definitions */
+/* base styles and definitions */
 /* menu */
 /* green -> obsolete style1 */
 /* gray -> obsolete style2 */
@@ -20,13 +20,21 @@
   color: #5e5e5e;
   border-bottom: #5e5e5e solid thin !important;
 }
+section.light,
+div.light {
+  color: #5e5e5e;
+  background-color: whitesmoke;
+}
+section.light *,
+div.light * {
+  color: #5e5e5e;
+}
+div.light a:hover {
+  color: red !important;
+}
 header.light,
 header.light h2,
 header.light p {
   color: whitesmoke;
   background-color: transparent;
-}
-section.light * {
-  color: #5e5e5e;
-  background-color: whitesmoke;
 }
