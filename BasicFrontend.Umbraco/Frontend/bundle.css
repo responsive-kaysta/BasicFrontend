@@ -12862,6 +12862,7 @@ ul.actions.fit.small li {
 .seperator {
   margin-right: auto;
   margin-left: auto;
+  border: 0;
 }
 .seperator-spacing {
   margin-bottom: 0.5rem;
