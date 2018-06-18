@@ -1,4 +1,4 @@
-﻿/* base styles and definitions */
+/* base styles and definitions */
 /* menu */
 /* green -> obsolete style1 */
 /* gray -> obsolete style2 */
@@ -89,10 +89,12 @@ body.is-mobile #main > header {
   background-attachment: scroll;
 }
 #main > header {
-  background: -moz-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)), url("images/Internet-of-Things-1920xx.png");
-  background: -webkit-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)), url("images/Internet-of-Things-1920xx.png");
-  background-image: -ms-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)), url("images/Internet-of-Things-1920xx.png");
-  background: linear-gradient(to bottom, #0b3536 0%, rgba(125, 185, 232, 0)), url("images/Internet-of-Things-1920xx.png");
+  /*
+    background: -moz-linear-gradient(top, rgb(11, 53, 54) 0%, rgba(125,185,232,0)), url(@banner-bg-image);
+    background: -webkit-linear-gradient(top, rgb(11, 53, 54) 0%,rgba(125,185,232,0)), url(@banner-bg-image);
+    background-image: -ms-linear-gradient(top, rgb(11, 53, 54) 0%, rgba(125,185,232,0)), url(@banner-bg-image);
+    background: linear-gradient(to bottom, rgb(11, 53, 54) 0%,rgba(125,185,232,0)), url(@banner-bg-image);
+    */
   background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
@@ -123,4 +125,16 @@ body.regular #page-wrapper {
   background-size: cover;
   padding-top: 0;
   background-color: transparent;
+}
+section#banner > div {
+  color: whitesmoke !important;
+  background-color: transparent !important;
+}
+section#banner > div h2 {
+  color: whitesmoke !important;
+  background-color: transparent !important;
+}
+section#banner > div p {
+  color: whitesmoke !important;
+  background-color: transparent !important;
 }

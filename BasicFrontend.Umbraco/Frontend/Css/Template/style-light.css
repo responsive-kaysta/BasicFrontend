@@ -20,17 +20,27 @@
   color: #5e5e5e;
   border-bottom: #5e5e5e solid thin !important;
 }
-section.light,
-div.light {
+section.light a,
+section.light p,
+section.light ul,
+section.light li,
+section.light h2,
+section.light h3,
+section.light h4,
+section.light h5,
+section.light h6 {
   color: #5e5e5e;
-  background-color: whitesmoke;
 }
-section.light *,
-div.light * {
+div.light a,
+div.light p,
+div.light ul,
+div.light li,
+div.light h2,
+div.light h3,
+div.light h4,
+div.light h5,
+div.light h6 {
   color: #5e5e5e;
-}
-div.light a:hover {
-  color: red !important;
 }
 header.light,
 header.light h2,

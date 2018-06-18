@@ -11943,17 +11943,27 @@ video {
   color: whitesmoke;
   border-bottom: whitesmoke solid thin !important;
 }
-section.transparent,
-div.transparent {
+section.transparent a,
+section.transparent p,
+section.transparent ul,
+section.transparent li,
+section.transparent h2,
+section.transparent h3,
+section.transparent h4,
+section.transparent h5,
+section.transparent h6 {
   color: whitesmoke;
-  background-color: transparent;
 }
-section.transparent *,
-div.transparent * {
+div.transparent a,
+div.transparent p,
+div.transparent ul,
+div.transparent li,
+div.transparent h2,
+div.transparent h3,
+div.transparent h4,
+div.transparent h5,
+div.transparent h6 {
   color: whitesmoke;
-}
-div.transparent a:hover {
-  color: darkgray !important;
 }
 header.transparent,
 header.transparent h2,
@@ -11984,17 +11994,27 @@ header.transparent p {
   color: whitesmoke;
   border-bottom: whitesmoke solid thin !important;
 }
-section.green,
-div.green {
+section.green a,
+section.green p,
+section.green ul,
+section.green li,
+section.green h2,
+section.green h3,
+section.green h4,
+section.green h5,
+section.green h6 {
   color: whitesmoke;
-  background-color: #1a867d;
 }
-section.green *,
-div.green * {
+div.green a,
+div.green p,
+div.green ul,
+div.green li,
+div.green h2,
+div.green h3,
+div.green h4,
+div.green h5,
+div.green h6 {
   color: whitesmoke;
-}
-div.green a:hover {
-  color: red !important;
 }
 header.green,
 header.green h2,
@@ -12025,17 +12045,27 @@ header.green p {
   color: whitesmoke;
   border-bottom: whitesmoke solid thin !important;
 }
-section.gray,
-div.gray {
+section.gray a,
+section.gray p,
+section.gray ul,
+section.gray li,
+section.gray h2,
+section.gray h3,
+section.gray h4,
+section.gray h5,
+section.gray h6 {
   color: whitesmoke;
-  background-color: darkgray;
 }
-section.gray *,
-div.gray * {
+div.gray a,
+div.gray p,
+div.gray ul,
+div.gray li,
+div.gray h2,
+div.gray h3,
+div.gray h4,
+div.gray h5,
+div.gray h6 {
   color: whitesmoke;
-}
-div.gray a:hover {
-  color: red !important;
 }
 header.gray,
 header.gray h2,
@@ -12066,17 +12096,27 @@ header.gray p {
   color: #d3d4e4;
   border-bottom: #d3d4e4 solid thin !important;
 }
-section.purple,
-div.purple {
+section.purple a,
+section.purple p,
+section.purple ul,
+section.purple li,
+section.purple h2,
+section.purple h3,
+section.purple h4,
+section.purple h5,
+section.purple h6 {
   color: #d3d4e4;
-  background-color: #505393;
 }
-section.purple *,
-div.purple * {
+div.purple a,
+div.purple p,
+div.purple ul,
+div.purple li,
+div.purple h2,
+div.purple h3,
+div.purple h4,
+div.purple h5,
+div.purple h6 {
   color: #d3d4e4;
-}
-div.purple a:hover {
-  color: red !important;
 }
 header.purple,
 header.purple h2,
@@ -12107,17 +12147,27 @@ header.purple p {
   color: #5e5e5e;
   border-bottom: #5e5e5e solid thin !important;
 }
-section.light,
-div.light {
+section.light a,
+section.light p,
+section.light ul,
+section.light li,
+section.light h2,
+section.light h3,
+section.light h4,
+section.light h5,
+section.light h6 {
   color: #5e5e5e;
-  background-color: whitesmoke;
 }
-section.light *,
-div.light * {
+div.light a,
+div.light p,
+div.light ul,
+div.light li,
+div.light h2,
+div.light h3,
+div.light h4,
+div.light h5,
+div.light h6 {
   color: #5e5e5e;
-}
-div.light a:hover {
-  color: red !important;
 }
 header.light,
 header.light h2,
@@ -12498,7 +12548,7 @@ sup {
   display: block;
   font-size: 1.0rem;
   font-weight: bold;
-  color: red;
+  color: red !important;
 }
 @media screen and (min-width: 768px) {
   .paragraph {
@@ -12517,6 +12567,7 @@ sup {
     columns: 100px 3;
   }
 }
+
 /* base styles and definitions */
 /* menu */
 /* green -> obsolete style1 */
@@ -13147,11 +13198,13 @@ a.more.scrolly {
   padding: 0.75rem 0.75rem 0.75rem 0.75rem;
   display: block;
 }
-.blogarchive a:hover {
+.blogarchive a:hover * {
   text-decoration: none;
+  color: red !important;
 }
 .blogarchive a:hover p {
   text-decoration: underline;
+  color: red !important;
 }
 .blogarchive .date {
   text-align: right;
@@ -13166,6 +13219,7 @@ a.more.scrolly {
     }
 }
 */
+
 /* base styles and definitions */
 /* menu */
 /* green -> obsolete style1 */
@@ -13876,6 +13930,7 @@ section.special {
   padding-top: 2.75rem;
   padding-bottom: 0.5rem;
 }
+
 /* base styles and definitions */
 /* menu */
 /* green -> obsolete style1 */
@@ -14286,10 +14341,12 @@ body.is-mobile #main > header {
   background-attachment: scroll;
 }
 #main > header {
-  background: -moz-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)), url("Css/images/Internet-of-Things-1920xx.png");
-  background: -webkit-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)), url("Css/images/Internet-of-Things-1920xx.png");
-  background-image: -ms-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)), url("Css/images/Internet-of-Things-1920xx.png");
-  background: linear-gradient(to bottom, #0b3536 0%, rgba(125, 185, 232, 0)), url("Css/images/Internet-of-Things-1920xx.png");
+  /*
+    background: -moz-linear-gradient(top, rgb(11, 53, 54) 0%, rgba(125,185,232,0)), url(Css/@banner-bg-image);
+    background: -webkit-linear-gradient(top, rgb(11, 53, 54) 0%,rgba(125,185,232,0)), url(Css/@banner-bg-image);
+    background-image: -ms-linear-gradient(top, rgb(11, 53, 54) 0%, rgba(125,185,232,0)), url(Css/@banner-bg-image);
+    background: linear-gradient(to bottom, rgb(11, 53, 54) 0%,rgba(125,185,232,0)), url(Css/@banner-bg-image);
+    */
   background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
@@ -14321,6 +14378,19 @@ body.regular #page-wrapper {
   padding-top: 0;
   background-color: transparent;
 }
+section#banner > div {
+  color: whitesmoke !important;
+  background-color: transparent !important;
+}
+section#banner > div h2 {
+  color: whitesmoke !important;
+  background-color: transparent !important;
+}
+section#banner > div p {
+  color: whitesmoke !important;
+  background-color: transparent !important;
+}
+
 /* This is the core CSS of Tooltipster */
 /* GENERAL STRUCTURE RULES (do not edit this section) */
 .tooltipster-base {

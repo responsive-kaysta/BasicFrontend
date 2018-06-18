@@ -20,17 +20,27 @@
   color: #d3d4e4;
   border-bottom: #d3d4e4 solid thin !important;
 }
-section.purple,
-div.purple {
+section.purple a,
+section.purple p,
+section.purple ul,
+section.purple li,
+section.purple h2,
+section.purple h3,
+section.purple h4,
+section.purple h5,
+section.purple h6 {
   color: #d3d4e4;
-  background-color: #505393;
 }
-section.purple *,
-div.purple * {
+div.purple a,
+div.purple p,
+div.purple ul,
+div.purple li,
+div.purple h2,
+div.purple h3,
+div.purple h4,
+div.purple h5,
+div.purple h6 {
   color: #d3d4e4;
-}
-div.purple a:hover {
-  color: red !important;
 }
 header.purple,
 header.purple h2,

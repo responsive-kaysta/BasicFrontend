@@ -20,17 +20,27 @@
   color: whitesmoke;
   border-bottom: whitesmoke solid thin !important;
 }
-section.transparent,
-div.transparent {
+section.transparent a,
+section.transparent p,
+section.transparent ul,
+section.transparent li,
+section.transparent h2,
+section.transparent h3,
+section.transparent h4,
+section.transparent h5,
+section.transparent h6 {
   color: whitesmoke;
-  background-color: transparent;
 }
-section.transparent *,
-div.transparent * {
+div.transparent a,
+div.transparent p,
+div.transparent ul,
+div.transparent li,
+div.transparent h2,
+div.transparent h3,
+div.transparent h4,
+div.transparent h5,
+div.transparent h6 {
   color: whitesmoke;
-}
-div.transparent a:hover {
-  color: darkgray !important;
 }
 header.transparent,
 header.transparent h2,

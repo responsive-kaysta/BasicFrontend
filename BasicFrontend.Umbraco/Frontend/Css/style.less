@@ -90,12 +90,12 @@ body.is-mobile #main > header {
 }
 
 #main > header {
-    
+    /*
     background: -moz-linear-gradient(top, rgb(11, 53, 54) 0%, rgba(125,185,232,0)), url(@banner-bg-image);
     background: -webkit-linear-gradient(top, rgb(11, 53, 54) 0%,rgba(125,185,232,0)), url(@banner-bg-image);
     background-image: -ms-linear-gradient(top, rgb(11, 53, 54) 0%, rgba(125,185,232,0)), url(@banner-bg-image);
     background: linear-gradient(to bottom, rgb(11, 53, 54) 0%,rgba(125,185,232,0)), url(@banner-bg-image);
-    
+    */
     background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;
@@ -119,7 +119,6 @@ body.landing #page-wrapper {
     background-color: transparent;
 }
 
-
 body.regular #page-wrapper {
    
     background: -moz-linear-gradient(top, rgb(11, 53, 54) 0%, rgba(125,185,232,0)), url(@banner-bg-image);
@@ -133,4 +132,19 @@ body.regular #page-wrapper {
     background-size: cover;
     padding-top: 0;
     background-color: transparent;
+}
+
+section#banner > div {
+    color: @base-color !important;
+    background-color: transparent !important;
+}
+
+section#banner > div h2 {
+    color: @base-color !important;
+    background-color: transparent !important;
+}
+
+section#banner > div p {
+    color: @base-color !important;
+    background-color: transparent !important;
 }
