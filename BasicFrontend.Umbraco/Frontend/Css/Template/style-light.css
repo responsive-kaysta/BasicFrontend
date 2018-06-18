@@ -42,6 +42,10 @@ div.light h5,
 div.light h6 {
   color: #5e5e5e;
 }
+section.light header.major h2,
+section.light header.major p {
+  color: #5e5e5e;
+}
 header.light,
 header.light h2,
 header.light p {

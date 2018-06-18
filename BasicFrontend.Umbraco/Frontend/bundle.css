@@ -11965,6 +11965,10 @@ div.transparent h5,
 div.transparent h6 {
   color: whitesmoke;
 }
+section.transparent header.major h2,
+section.transparent header.major p {
+  color: whitesmoke;
+}
 header.transparent,
 header.transparent h2,
 header.transparent p {
@@ -11994,6 +11998,17 @@ header.transparent p {
   color: whitesmoke;
   border-bottom: whitesmoke solid thin !important;
 }
+div.green a,
+div.green p,
+div.green ul,
+div.green li,
+div.green h2,
+div.green h3,
+div.green h4,
+div.green h5,
+div.green h6 {
+  color: whitesmoke;
+}
 section.green a,
 section.green p,
 section.green ul,
@@ -12005,15 +12020,8 @@ section.green h5,
 section.green h6 {
   color: whitesmoke;
 }
-div.green a,
-div.green p,
-div.green ul,
-div.green li,
-div.green h2,
-div.green h3,
-div.green h4,
-div.green h5,
-div.green h6 {
+section.green header.major h2,
+section.green header.major p {
   color: whitesmoke;
 }
 header.green,
@@ -12067,6 +12075,10 @@ div.gray h5,
 div.gray h6 {
   color: whitesmoke;
 }
+section.gray header.major h2,
+section.gray header.major p {
+  color: whitesmoke;
+}
 header.gray,
 header.gray h2,
 header.gray p {
@@ -12118,6 +12130,10 @@ div.purple h5,
 div.purple h6 {
   color: #d3d4e4;
 }
+section.purple header.major h2,
+section.purple header.major p {
+  color: #d3d4e4;
+}
 header.purple,
 header.purple h2,
 header.purple p {
@@ -12167,6 +12183,10 @@ div.light h3,
 div.light h4,
 div.light h5,
 div.light h6 {
+  color: #5e5e5e;
+}
+section.light header.major h2,
+section.light header.major p {
   color: #5e5e5e;
 }
 header.light,

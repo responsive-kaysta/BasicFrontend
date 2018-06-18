@@ -20,6 +20,17 @@
   color: whitesmoke;
   border-bottom: whitesmoke solid thin !important;
 }
+div.green a,
+div.green p,
+div.green ul,
+div.green li,
+div.green h2,
+div.green h3,
+div.green h4,
+div.green h5,
+div.green h6 {
+  color: whitesmoke;
+}
 section.green a,
 section.green p,
 section.green ul,
@@ -31,15 +42,8 @@ section.green h5,
 section.green h6 {
   color: whitesmoke;
 }
-div.green a,
-div.green p,
-div.green ul,
-div.green li,
-div.green h2,
-div.green h3,
-div.green h4,
-div.green h5,
-div.green h6 {
+section.green header.major h2,
+section.green header.major p {
   color: whitesmoke;
 }
 header.green,

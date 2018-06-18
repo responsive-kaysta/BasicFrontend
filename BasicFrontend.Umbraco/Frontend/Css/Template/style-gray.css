@@ -42,6 +42,10 @@ div.gray h5,
 div.gray h6 {
   color: whitesmoke;
 }
+section.gray header.major h2,
+section.gray header.major p {
+  color: whitesmoke;
+}
 header.gray,
 header.gray h2,
 header.gray p {

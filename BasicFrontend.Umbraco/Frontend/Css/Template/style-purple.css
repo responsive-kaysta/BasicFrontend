@@ -42,6 +42,10 @@ div.purple h5,
 div.purple h6 {
   color: #d3d4e4;
 }
+section.purple header.major h2,
+section.purple header.major p {
+  color: #d3d4e4;
+}
 header.purple,
 header.purple h2,
 header.purple p {

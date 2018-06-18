@@ -42,6 +42,10 @@ div.transparent h5,
 div.transparent h6 {
   color: whitesmoke;
 }
+section.transparent header.major h2,
+section.transparent header.major p {
+  color: whitesmoke;
+}
 header.transparent,
 header.transparent h2,
 header.transparent p {
