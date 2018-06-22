@@ -29,7 +29,7 @@ header.major h2 {
   border-bottom: whitesmoke solid thin;
 }
 header.major p {
-  padding-bottom: 2.0rem;
+  padding-bottom: 2.75rem;
 }
 @media screen and (max-width: 980px) {
   header br {
