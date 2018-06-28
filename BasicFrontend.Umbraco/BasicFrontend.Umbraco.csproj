@@ -743,6 +743,12 @@
     <Content Include="Frontend\Css\Template\style-transparent.min.css">
       <DependentUpon>style-transparent.css</DependentUpon>
     </Content>
+    <Content Include="Frontend\custom.css">
+      <DependentUpon>custom.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\custom.min.css">
+      <DependentUpon>custom.css</DependentUpon>
+    </Content>
     <Content Include="Frontend\fontawesome-all.css">
       <DependentUpon>fontawesome-all.less</DependentUpon>
     </Content>
@@ -863,6 +869,7 @@
     <Content Include="Frontend\Css\Template\style-transparent.less" />
     <Content Include="ImageGen.ashx" />
     <Content Include="Media\Web.config" />
+    <Content Include="Frontend\custom.less" />
     <None Include="packages.config" />
     <Content Include="Scripts\esm\popper-utils.js" />
     <Content Include="Scripts\esm\popper-utils.js.map">
@@ -2465,6 +2472,7 @@
     <Content Include="Views\Partials\Grid\Bootstrap3-Fluid.cshtml" />
     <Content Include="Views\Partials\Grid\Bootstrap2.cshtml" />
     <Content Include="Views\Partials\Grid\Bootstrap2-Fluid.cshtml" />
+    <Content Include="Views\ArchiveList.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -2490,6 +2498,7 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Data\Models\ArchiveList.generated.cs" />
     <Compile Include="App_Data\Models\BlogOverview.generated.cs" />
     <Compile Include="App_Data\Models\BlogPost.generated.cs" />
     <Compile Include="App_Data\Models\ContactPage.generated.cs" />

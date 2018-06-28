@@ -63,7 +63,10 @@
       "Frontend/Css/Plugins/Tooltipster/tooltipster.bundle.css",
       "Frontend/Css/Plugins/Tooltipster/Themes/tooltipster-sideTip-punk.min.css",
 
-      "Frontend/Css/ie10-viewport-bug-workaround.css"
+      "Frontend/Css/ie10-viewport-bug-workaround.css",
+
+      /* custom */
+      "Frontend/custom.css"
 
     ],
     "minify": {

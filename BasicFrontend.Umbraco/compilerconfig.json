@@ -204,6 +204,11 @@
   {
     "inputFile": "Frontend/Css/Plugins/Tooltipster/Themes/tooltipster-sideTip-punk.less",
     "outputFile": "Frontend/Css/Plugins/Tooltipster/Themes/tooltipster-sideTip-punk.css"
-  }
+  },
 
+  /* custom */
+  {
+    "inputFile": "Frontend/custom.less",
+    "outputFile": "Frontend/custom.css"
+  }
 ]
