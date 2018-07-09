@@ -12998,7 +12998,10 @@ ul.actions.fit.small li {
   margin-bottom: 0.5rem;
 }
 .row {
-  padding-bottom: 0rem;
+  margin: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
 }
 form .row {
   padding-bottom: 1rem;
@@ -13609,7 +13612,7 @@ header.major h2 {
   border-bottom: whitesmoke solid thin;
 }
 header.major p {
-  padding-bottom: 2.0rem;
+  padding-bottom: 2.75rem;
 }
 @media screen and (max-width: 980px) {
   header br {
@@ -14801,4 +14804,61 @@ corresponds to the arrow we want to display */
 }
 @viewport {
   width: device-width;
+}
+/* custom styling */
+#admin-header {
+  margin: 0;
+  padding: 0;
+}
+#main-content {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 2rem;
+}
+#admin-footer {
+  margin: 0;
+  padding: 0;
+}
+.tooltip_templates {
+  display: none;
+}
+.tooltip_top {
+  display: block;
+}
+.tooltip_inner {
+  display: block;
+}
+.tooltipster {
+  display: block;
+}
+.rowconfig {
+  display: block;
+  padding: 0.5rem;
+}
+.odd {
+  background-color: lightgray;
+}
+.even {
+  background-color: whitesmoke;
+}
+#footer {
+  padding: 1rem 0 1rem 0;
+  text-align: center;
+  color: #f5f5f5;
+  background-color: #0b3536;
+}
+#footer .copyright span {
+  padding: 0;
+}
+.col-md-12 {
+  padding-left: 0;
+  padding-right: 0;
+}
+footer#footer {
+  /*
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    */
 }
