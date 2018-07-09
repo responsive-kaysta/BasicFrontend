@@ -786,7 +786,7 @@
 				<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'> 
 			</head> 
 			<body class='' style='font-family: sans-serif; -webkit-font-smoothing: antialiased; font-size: 14px; color: #392F54; line-height: 22px; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; background: #1d1333; margin: 0; padding: 0;' bgcolor='#1d1333'> 
-				<style type='text/css'> @media only screen and (max-width: 620px) {table[class=body] h1 {font-size: 28px !important; margin-bottom: 10px !important; } table[class=body]  {padding: 32px !important; } table[class=body] .article {padding: 32px !important; } table[class=body] .content {padding: 24px !important; } table[class=body] .container {padding: 0 !important; width: 100% !important; } table[class=body] .main {border-left-width: 0 !important; border-radius: 0 !important; border-right-width: 0 !important; } table[class=body] .btn table {width: 100% !important; } table[class=body] .btn a {width: 100% !important; } table[class=body] .img-responsive {height: auto !important; max-width: 100% !important; width: auto !important; } } .btn-primary table td:hover {background-color: #34495e !important; } .btn-primary a:hover {background-color: #34495e !important; border-color: #34495e !important; } .btn  a:visited {color:#FFFFFF;} </style> 
+				<style type='text/css'> @media only screen and (max-width: 620px) {table[class=body] h1 {font-size: 28px !important; margin-bottom: 10px !important; } table[class=body] .wrapper {padding: 32px !important; } table[class=body] .article {padding: 32px !important; } table[class=body] .content {padding: 24px !important; } table[class=body] .container {padding: 0 !important; width: 100% !important; } table[class=body] .main {border-left-width: 0 !important; border-radius: 0 !important; border-right-width: 0 !important; } table[class=body] .btn table {width: 100% !important; } table[class=body] .btn a {width: 100% !important; } table[class=body] .img-responsive {height: auto !important; max-width: 100% !important; width: auto !important; } } .btn-primary table td:hover {background-color: #34495e !important; } .btn-primary a:hover {background-color: #34495e !important; border-color: #34495e !important; } .btn  a:visited {color:#FFFFFF;} </style> 
 				<table border="0" cellpadding="0" cellspacing="0" class="body" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%; background: #1d1333;" bgcolor="#1d1333">
 					<tr> 
 						<td style="font-family: sans-serif; font-size: 14px; vertical-align: top; padding: 24px;" valign="top"> 
@@ -1649,7 +1649,7 @@
 				<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'> 
 			</head> 
 			<body class='' style='font-family: sans-serif; -webkit-font-smoothing: antialiased; font-size: 14px; color: #392F54; line-height: 22px; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; background: #1d1333; margin: 0; padding: 0;' bgcolor='#1d1333'> 
-				<style type='text/css'> @media only screen and (max-width: 620px) {table[class=body] h1 {font-size: 28px !important; margin-bottom: 10px !important; } table[class=body]  {padding: 32px !important; } table[class=body] .article {padding: 32px !important; } table[class=body] .content {padding: 24px !important; } table[class=body] .container {padding: 0 !important; width: 100% !important; } table[class=body] .main {border-left-width: 0 !important; border-radius: 0 !important; border-right-width: 0 !important; } table[class=body] .btn table {width: 100% !important; } table[class=body] .btn a {width: 100% !important; } table[class=body] .img-responsive {height: auto !important; max-width: 100% !important; width: auto !important; } } .btn-primary table td:hover {background-color: #34495e !important; } .btn-primary a:hover {background-color: #34495e !important; border-color: #34495e !important; } .btn  a:visited {color:#FFFFFF;} </style> 
+				<style type='text/css'> @media only screen and (max-width: 620px) {table[class=body] h1 {font-size: 28px !important; margin-bottom: 10px !important; } table[class=body] .wrapper {padding: 32px !important; } table[class=body] .article {padding: 32px !important; } table[class=body] .content {padding: 24px !important; } table[class=body] .container {padding: 0 !important; width: 100% !important; } table[class=body] .main {border-left-width: 0 !important; border-radius: 0 !important; border-right-width: 0 !important; } table[class=body] .btn table {width: 100% !important; } table[class=body] .btn a {width: 100% !important; } table[class=body] .img-responsive {height: auto !important; max-width: 100% !important; width: auto !important; } } .btn-primary table td:hover {background-color: #34495e !important; } .btn-primary a:hover {background-color: #34495e !important; border-color: #34495e !important; } .btn  a:visited {color:#FFFFFF;} </style> 
 				<table border="0" cellpadding="0" cellspacing="0" class="body" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%; background: #1d1333;" bgcolor="#1d1333">
 					<tr> 
 						<td style="font-family: sans-serif; font-size: 14px; vertical-align: top; padding: 24px;" valign="top"> 
@@ -1798,7 +1798,7 @@
         <key alias="httpsCheckInvalidCertificate">Error validando certificado: '%0%'</key>
         <key alias="httpsCheckExpiredCertificate">El ceriticado SSL de tu sitio ha caducado.</key>
         <key alias="httpsCheckExpiringCertificate">El ceriticado SSL de tu sitio caducará en %0% días.</key>
-        <key alias="httpsCheckInvalidUrl">Error pinging la URL %0% - '%1%'</key>
+        <key alias="healthCheckInvalidUrl">Error pinging la URL %0% - '%1%'</key>
         <key alias="httpsCheckIsCurrentSchemeHttps">Actualmente estás %0% viendo el sitio usando el esquema HTTPS.</key>
         <key alias="httpsCheckConfigurationRectifyNotPossible">El appSetting 'umbracoUseSSL' está configurado como 'false' en tu archivo web.config. Una vez que accedes al sitio usando HTTPS, debería ser configuraio como 'true'.</key>
         <key alias="httpsCheckConfigurationCheckResult">Ele appSetting 'umbracoUseSSL' está configurado como '%0%' en tu archivo your web.config, tus cookies son %1% marcadas como seguras.</key>
@@ -1838,10 +1838,10 @@
 
         <key alias="clickJackingCheckHeaderFound"><![CDATA[El header or meta-tag <strong>X-Frame-Options</strong> usado para controlar si un sitio puede ser IFRAMEd por otra fue encontrado.]]></key>
         <key alias="clickJackingCheckHeaderNotFound"><![CDATA[El header or meta-tag <strong>X-Frame-Options</strong> usado para controlar si un sitio puede ser IFRAMEd por otra no se ha encontrado.]]></key>
-        <key alias="clickJackingSetHeaderInConfig">Establecer Header en Config</key>
+        <key alias="setHeaderInConfig">Establecer Header en Config</key>
         <key alias="clickJackingSetHeaderInConfigDescription">Adds a value to the httpProtocol/customHeaders section of web.config to prevent the site being IFRAMEd by other websites.</key>
         <key alias="clickJackingSetHeaderInConfigSuccess">A setting to create a header preventing IFRAMEing of the site by other websites has been added to your web.config file.</key>
-        <key alias="clickJackingSetHeaderInConfigError">Could not update web.config file. Error: %0%</key>
+        <key alias="setHeaderInConfigError">Could not update web.config file. Error: %0%</key>
 
         <!-- The following key get these tokens passed in:
 	    0: Comma delimitted list of headers found

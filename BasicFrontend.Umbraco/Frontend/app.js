@@ -6280,7 +6280,9 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
             vars[hash[0]] = hash[1];
         }
     }
+})(jQuery);
 
+(function ($) {
     $('.tooltipster').tooltipster({
         animation: 'fade',
         delay: 200,
@@ -6290,11 +6292,24 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
         trigger: 'click',
         interactive: true
     });
-
-    $('ul.tooltip_ul li:even').addClass('even');
-
-    $('ul.tooltip_ul li:odd').addClass('odd');
 })(jQuery);
+
+(function ($) {
+    $("div div.rowconfig:nth-child(odd)").addClass("odd");
+    $("div div.rowconfig:nth-child(even)").addClass("even");
+})(jQuery);
+
+$(document).ready(function ($) {
+    $("#searchQuerySubmit").prop('disabled', true);
+});
+
+$('input#searchQuery').keyup(function ($) {
+    if ($('#searchQuery').val().length >= 3) {
+        $("#searchQuerySubmit").prop('disabled', false);
+    } else {
+        $("#searchQuerySubmit").prop('disabled', true);
+    }
+});
 
 
 'use strict';
