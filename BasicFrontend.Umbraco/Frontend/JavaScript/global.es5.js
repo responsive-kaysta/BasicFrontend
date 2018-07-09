@@ -1,6 +1,4 @@
-﻿/* global.js */
-
-"use strict";
+﻿"use strict";
 
 (function ($) {
 
@@ -51,7 +49,7 @@
         delay: 200,
         theme: 'tooltipster-punk',
         contentAsHTML: true,
-        maxWidth: 560,
+        maxWidth: 716,
         trigger: 'click',
         interactive: true
     });

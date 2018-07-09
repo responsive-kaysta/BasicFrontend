@@ -6235,8 +6235,6 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 })(jQuery);
 
 
-/* global.js */
-
 "use strict";
 
 (function ($) {
@@ -6288,7 +6286,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
         delay: 200,
         theme: 'tooltipster-punk',
         contentAsHTML: true,
-        maxWidth: 560,
+        maxWidth: 716,
         trigger: 'click',
         interactive: true
     });
@@ -6298,8 +6296,6 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
     $('ul.tooltip_ul li:odd').addClass('odd');
 })(jQuery);
 
-
-/* equalheight.js */
 
 'use strict';
 

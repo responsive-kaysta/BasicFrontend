@@ -64,7 +64,7 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 
 		///<summary>
-		/// Grid Layout
+		/// Grid Layout: Fluid Grid brought by bootstrap
 		///</summary>
 		[ImplementPropertyType("gridLayout")]
 		public Newtonsoft.Json.Linq.JToken GridLayout
@@ -73,7 +73,7 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 
 		///<summary>
-		/// Header Type
+		/// Header Type: alt (combination with Page Type landing), remove (combination with regular)
 		///</summary>
 		[ImplementPropertyType("headerType")]
 		public object HeaderType
@@ -82,7 +82,7 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 
 		///<summary>
-		/// Hide in Menu
+		/// Hide in Menu: not in use at the moment
 		///</summary>
 		[ImplementPropertyType("hideInMenu")]
 		public bool HideInMenu
@@ -91,7 +91,7 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 
 		///<summary>
-		/// Introduction
+		/// Introduction: Page introduction, Meta relevant
 		///</summary>
 		[ImplementPropertyType("introduction")]
 		public string Introduction
@@ -100,7 +100,7 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 
 		///<summary>
-		/// Page Style
+		/// Page Style: Colorscheme
 		///</summary>
 		[ImplementPropertyType("pageStyle")]
 		public object PageStyle
@@ -109,7 +109,7 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 
 		///<summary>
-		/// Page Type
+		/// Page Type: landing (alt Header Type) and regular (remove Header Type)
 		///</summary>
 		[ImplementPropertyType("pageType")]
 		public object PageType
@@ -118,7 +118,7 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 
 		///<summary>
-		/// Teaser Image
+		/// Teaser Image: Could be usefull
 		///</summary>
 		[ImplementPropertyType("teaserImage")]
 		public IPublishedContent TeaserImage
@@ -127,7 +127,7 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 
 		///<summary>
-		/// Title
+		/// Title: Pagetitle
 		///</summary>
 		[ImplementPropertyType("title")]
 		public string Title

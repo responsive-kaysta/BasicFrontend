@@ -1,5 +1,4 @@
-﻿/* global.js */
-
+﻿
 (function ($) {
 
     function createCookie(name, value, days) {
@@ -49,7 +48,7 @@
         delay: 200,
         theme: 'tooltipster-punk',
         contentAsHTML: true,
-        maxWidth: 560,
+        maxWidth: 716,
         trigger: 'click',
         interactive: true
     });

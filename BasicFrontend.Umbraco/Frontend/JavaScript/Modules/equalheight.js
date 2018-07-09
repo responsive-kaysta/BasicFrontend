@@ -1,5 +1,4 @@
-﻿/* equalheight.js */
-
+﻿
 (function ($) {
 
     // Making elements equal height

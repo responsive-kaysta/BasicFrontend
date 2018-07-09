@@ -207,6 +207,17 @@
     },
 
     {
+        "name": "Seperator",
+        "alias": "seperator",
+        "view": "textstring",
+        "icon": "icon-coin",
+        "config": {
+            "style": "font-size: 16px; line-height: 20px; font-weight: bold;",
+            "markup": "<hr class='seperator seperator-spacing' />"
+        }
+    },
+
+    {
         "name": "Code",
         "alias": "code",
         "view": "textstring",

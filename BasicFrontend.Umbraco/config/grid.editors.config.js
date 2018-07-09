@@ -1,5 +1,24 @@
 [
     {
+        "name": "Abstract Header",
+        "alias": "abstract",
+        "view": "textstring",
+        "icon": "icon-coin",
+        "config": {
+            "style": "font-size: 16px; line-height: 20px; font-weight: bold;",
+            "markup": "<div class='abstract'>#value#</div>"
+        }
+    },
+
+    {
+        "name": "Banner",
+        "alias": "Banner",
+        "view": "/App_Plugins/Grid/Editors/Views/banner.html",
+        "render": "/App_Plugins/Grid/Editors/Render/banner.cshtml",
+        "icon": "icon-movie-alt"
+    },
+    
+    {
         "name": "Rich text editor",
         "alias": "rte",
         "view": "rte",
@@ -11,18 +30,7 @@
         "view": "media",
         "icon": "icon-picture"
     },
-    {
-        "name": "Macro",
-        "alias": "macro",
-        "view": "macro",
-        "icon": "icon-settings-alt"
-    },
-    {
-        "name": "Embed",
-        "alias": "embed",
-        "view": "embed",
-        "icon": "icon-movie-alt"
-    },
+    
     {
         "name": "Headline",
         "alias": "headline",
@@ -68,13 +76,13 @@
     },
 
     {
-        "name": "Abstract",
-        "alias": "abstract",
+        "name": "Leadtext",
+        "alias": "lead_text",
         "view": "textstring",
-        "icon": "icon-coin",
+        "icon": "icon-font",
         "config": {
-            "style": "font-size: 16px; line-height: 20px; font-weight: bold;",
-            "markup": "<div class='abstract'>#value#</div>"
+            "style": "font-size: 16px; line-height: 20px; font-weight: light;",
+            "markup": "<p class='lead'>#value#</p>"
         }
     },
 
@@ -110,18 +118,7 @@
             "markup": "<p class='paragraph-3col'>#value#</p>"
         }
     },
-
-    {
-        "name": "Leadtext",
-        "alias": "lead_text",
-        "view": "textstring",
-        "icon": "icon-font",
-        "config": {
-            "style": "font-size: 16px; line-height: 20px; font-weight: light;",
-            "markup": "<p class='lead'>#value#</p>"
-        }
-    },
-
+    
     {
         "name": "Quote",
         "alias": "quote",
@@ -132,13 +129,16 @@
             "markup": "<blockquote>#value#</blockquote>"
         }
     },
-
+    
     {
-        "name": "Banner",
-        "alias": "Banner",
-        "view": "/App_Plugins/Grid/Editors/Views/banner.html",
-        "render": "/App_Plugins/Grid/Editors/Render/banner.cshtml",
-        "icon": "icon-movie-alt"
+        "name": "Quote with description",
+        "alias": "quote_D",
+        "view": "/App_Plugins/Grid/Editors/Views/quote_with_description.html",
+        "render": "/App_Plugins/Grid/Editors/Render/quote_with_description.cshtml",
+        "icon": "icon-quote",
+        "config": {
+            "style": "border-left: 3px solid #ccc; padding: 10px; color: #ccc; font-family: serif; font-variant: italic; font-size: 18px"
+        }
     },
 
     {
@@ -156,18 +156,7 @@
         "render": "/App_Plugins/Grid/Editors/Render/eyecatcher.cshtml",
         "icon": "icon-movie-alt"
     },
-
-    {
-        "name": "Quote with description",
-        "alias": "quote_D",
-        "view": "/App_Plugins/Grid/Editors/Views/quote_with_description.html",
-        "render": "/App_Plugins/Grid/Editors/Render/quote_with_description.cshtml",
-        "icon": "icon-quote",
-        "config": {
-            "style": "border-left: 3px solid #ccc; padding: 10px; color: #ccc; font-family: serif; font-variant: italic; font-size: 18px"
-        }
-    },
-
+    
     {
         "name": "Panel",
         "alias": "panel",
@@ -226,6 +215,19 @@
             "style": "overflow: auto;padding: 6px 10px;border: 1px solid #ddd;border-radius: 3px;background-color: #f8f8f8;font-size: .9rem;font-family: 'Courier 10 Pitch', Courier, monospace;line-height: 19px;",
             "markup": "<pre>#value#</pre>"
         }
-    }
+    },
 
+    {
+        "name": "Macro",
+        "alias": "macro",
+        "view": "macro",
+        "icon": "icon-settings-alt"
+    },
+    {
+        "name": "Embed",
+        "alias": "embed",
+        "view": "embed",
+        "icon": "icon-movie-alt"
+    },
+    
 ]

@@ -1,6 +1,4 @@
-﻿/* equalheight.js */
-
-'use strict';
+﻿'use strict';
 
 (function ($) {
 

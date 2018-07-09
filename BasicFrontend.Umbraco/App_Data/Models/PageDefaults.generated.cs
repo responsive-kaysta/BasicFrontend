@@ -72,7 +72,7 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 
 		///<summary>
-		/// Header Type
+		/// Header Type: alt (combination with Page Type landing), remove (combination with regular)
 		///</summary>
 		[ImplementPropertyType("headerType")]
 		public object HeaderType
@@ -84,7 +84,7 @@ namespace Umbraco.Web.PublishedContentModels
 		public static object GetHeaderType(IPageDefaults that) { return that.GetPropertyValue("headerType"); }
 
 		///<summary>
-		/// Hide in Menu
+		/// Hide in Menu: not in use at the moment
 		///</summary>
 		[ImplementPropertyType("hideInMenu")]
 		public bool HideInMenu
@@ -96,7 +96,7 @@ namespace Umbraco.Web.PublishedContentModels
 		public static bool GetHideInMenu(IPageDefaults that) { return that.GetPropertyValue<bool>("hideInMenu"); }
 
 		///<summary>
-		/// Introduction
+		/// Introduction: Page introduction, Meta relevant
 		///</summary>
 		[ImplementPropertyType("introduction")]
 		public string Introduction
@@ -108,7 +108,7 @@ namespace Umbraco.Web.PublishedContentModels
 		public static string GetIntroduction(IPageDefaults that) { return that.GetPropertyValue<string>("introduction"); }
 
 		///<summary>
-		/// Page Style
+		/// Page Style: Colorscheme
 		///</summary>
 		[ImplementPropertyType("pageStyle")]
 		public object PageStyle
@@ -120,7 +120,7 @@ namespace Umbraco.Web.PublishedContentModels
 		public static object GetPageStyle(IPageDefaults that) { return that.GetPropertyValue("pageStyle"); }
 
 		///<summary>
-		/// Page Type
+		/// Page Type: landing (alt Header Type) and regular (remove Header Type)
 		///</summary>
 		[ImplementPropertyType("pageType")]
 		public object PageType
@@ -132,7 +132,7 @@ namespace Umbraco.Web.PublishedContentModels
 		public static object GetPageType(IPageDefaults that) { return that.GetPropertyValue("pageType"); }
 
 		///<summary>
-		/// Teaser Image
+		/// Teaser Image: Could be usefull
 		///</summary>
 		[ImplementPropertyType("teaserImage")]
 		public IPublishedContent TeaserImage
@@ -144,7 +144,7 @@ namespace Umbraco.Web.PublishedContentModels
 		public static IPublishedContent GetTeaserImage(IPageDefaults that) { return that.GetPropertyValue<IPublishedContent>("teaserImage"); }
 
 		///<summary>
-		/// Title
+		/// Title: Pagetitle
 		///</summary>
 		[ImplementPropertyType("title")]
 		public string Title

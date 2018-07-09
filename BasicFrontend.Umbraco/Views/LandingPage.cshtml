@@ -21,7 +21,13 @@
             }
         }
     </div>
-    <a href="#one" class="more scrolly">weiter</a>
+    @{
+        var idToCall = Umbraco.Field("idToCall").ToString();
+        if (!string.IsNullOrEmpty(idToCall))
+        {
+            <a href="#@idToCall" class="more scrolly">weiter</a>
+        }
+    }
 </section>
 
 @{

@@ -23,8 +23,6 @@
             $banner = $('#banner'),
             $header = $('#header');
 
-        
-
         // Mobile?
         if (skel.vars.isMobile)
             $body.addClass('is-mobile');

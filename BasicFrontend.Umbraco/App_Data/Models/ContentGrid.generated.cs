@@ -54,7 +54,7 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 
 		///<summary>
-		/// Grid Layout
+		/// Grid Layout: Fluid Grid brought by bootstrap
 		///</summary>
 		[ImplementPropertyType("gridLayout")]
 		public Newtonsoft.Json.Linq.JToken GridLayout

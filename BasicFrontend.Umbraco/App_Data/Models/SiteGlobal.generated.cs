@@ -127,7 +127,7 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 
 		///<summary>
-		/// Site Author
+		/// Site Author: Overall author, like Brand
 		///</summary>
 		[ImplementPropertyType("siteAuthor")]
 		public string SiteAuthor
@@ -136,7 +136,7 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 
 		///<summary>
-		/// Site Title
+		/// Site Title: Overall title
 		///</summary>
 		[ImplementPropertyType("siteTitle")]
 		public string SiteTitle

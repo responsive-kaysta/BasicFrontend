@@ -11936,6 +11936,10 @@ video {
   background-color: transparent;
 }
 .transparent a:hover {
+  -moz-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+  -webkit-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+  -ms-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+  transition: color 0.2s ease, border-bottom-color 0.2s ease;
   color: darkgray;
 }
 .transparent .page-header {
@@ -11975,7 +11979,6 @@ header.transparent p {
   color: whitesmoke;
   background-color: transparent;
 }
-
 /* base styles and definitions */
 /* menu */
 /* green -> obsolete style1 */
@@ -11991,6 +11994,10 @@ header.transparent p {
   background-color: #1a867d;
 }
 .green a:hover {
+  -moz-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+  -webkit-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+  -ms-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+  transition: color 0.2s ease, border-bottom-color 0.2s ease;
   color: red;
 }
 .green .page-header {
@@ -12030,7 +12037,6 @@ header.green p {
   color: whitesmoke;
   background-color: transparent;
 }
-
 /* base styles and definitions */
 /* menu */
 /* green -> obsolete style1 */
@@ -12046,6 +12052,10 @@ header.green p {
   background-color: darkgray;
 }
 .gray a:hover {
+  -moz-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+  -webkit-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+  -ms-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+  transition: color 0.2s ease, border-bottom-color 0.2s ease;
   color: red;
 }
 .gray .page-header {
@@ -12085,7 +12095,6 @@ header.gray p {
   color: whitesmoke;
   background-color: transparent;
 }
-
 /* base styles and definitions */
 /* menu */
 /* green -> obsolete style1 */
@@ -12101,6 +12110,10 @@ header.gray p {
   background-color: #505393;
 }
 .purple a:hover {
+  -moz-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+  -webkit-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+  -ms-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+  transition: color 0.2s ease, border-bottom-color 0.2s ease;
   color: red;
 }
 .purple .page-header {
@@ -12140,7 +12153,6 @@ header.purple p {
   color: whitesmoke;
   background-color: transparent;
 }
-
 /* base styles and definitions */
 /* menu */
 /* green -> obsolete style1 */
@@ -12156,6 +12168,10 @@ header.purple p {
   background-color: whitesmoke;
 }
 .light a:hover {
+  -moz-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+  -webkit-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+  -ms-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+  transition: color 0.2s ease, border-bottom-color 0.2s ease;
   color: red;
 }
 .light .page-header {
@@ -12195,7 +12211,6 @@ header.light p {
   color: whitesmoke;
   background-color: transparent;
 }
-
 /* base styles and definitions */
 /* menu */
 /* green -> obsolete style1 */
@@ -12587,7 +12602,6 @@ sup {
     columns: 100px 3;
   }
 }
-
 /* base styles and definitions */
 /* menu */
 /* green -> obsolete style1 */
@@ -13219,10 +13233,18 @@ a.more.scrolly {
   display: block;
 }
 .blogarchive a:hover * {
+  -moz-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+  -webkit-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+  -ms-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+  transition: color 0.2s ease, border-bottom-color 0.2s ease;
   text-decoration: none;
   color: red !important;
 }
 .blogarchive a:hover p {
+  -moz-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+  -webkit-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+  -ms-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+  transition: color 0.2s ease, border-bottom-color 0.2s ease;
   text-decoration: underline;
   color: red !important;
 }
@@ -13239,7 +13261,6 @@ a.more.scrolly {
     }
 }
 */
-
 /* base styles and definitions */
 /* menu */
 /* green -> obsolete style1 */
@@ -13309,6 +13330,7 @@ a.more.scrolly {
     margin-left: auto;
   }
 }
+
 /* base styles and definitions */
 /* menu */
 /* green -> obsolete style1 */
@@ -13495,9 +13517,17 @@ a.more.scrolly {
   font-size: 1.25rem;
 }
 #footer .icons a {
+  -moz-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+  -webkit-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+  -ms-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+  transition: color 0.2s ease, border-bottom-color 0.2s ease;
   color: rgba(255, 255, 255, 0.5);
 }
 #footer .icons a:hover {
+  -moz-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+  -webkit-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+  -ms-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+  transition: color 0.2s ease, border-bottom-color 0.2s ease;
   color: red;
 }
 #footer * {
@@ -13754,30 +13784,50 @@ header.major p {
   color: whitesmoke;
 }
 .icon.green a:hover {
+  -moz-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+  -webkit-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+  -ms-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+  transition: color 0.2s ease, border-bottom-color 0.2s ease;
   color: red;
 }
 .icon.gray * {
   color: whitesmoke;
 }
 .icon.gray a:hover {
+  -moz-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+  -webkit-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+  -ms-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+  transition: color 0.2s ease, border-bottom-color 0.2s ease;
   color: red;
 }
 .icon.purple * {
   color: #d3d4e4;
 }
 .icon.purple a:hover {
+  -moz-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+  -webkit-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+  -ms-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+  transition: color 0.2s ease, border-bottom-color 0.2s ease;
   color: red;
 }
 .icon.transparent * {
   color: whitesmoke;
 }
 .icon.transparent a:hover {
+  -moz-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+  -webkit-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+  -ms-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+  transition: color 0.2s ease, border-bottom-color 0.2s ease;
   color: red;
 }
 .icon.light * {
   color: #5e5e5e;
 }
 .icon.light a:hover {
+  -moz-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+  -webkit-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+  -ms-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+  transition: color 0.2s ease, border-bottom-color 0.2s ease;
   color: red;
 }
 /* base styles and definitions */
@@ -13950,7 +14000,18 @@ section.special {
   padding-top: 2.75rem;
   padding-bottom: 0.5rem;
 }
-
+section#banner > div {
+  color: whitesmoke !important;
+  background-color: transparent !important;
+}
+section#banner > div h2 {
+  color: whitesmoke !important;
+  background-color: transparent !important;
+}
+section#banner > div p {
+  color: whitesmoke !important;
+  background-color: transparent !important;
+}
 /* base styles and definitions */
 /* menu */
 /* green -> obsolete style1 */
@@ -14315,7 +14376,7 @@ body.is-loading *:after {
 }
 @media screen and (min-width: 1680px) {
   #main > header {
-    padding: 10rem 25.375% 8rem 25.375%;
+    padding: 5rem 25.375% 4rem 25.375%;
   }
   header.major {
     padding: 0 25.375% 0 25.375%;
@@ -14323,7 +14384,7 @@ body.is-loading *:after {
 }
 @media screen and (max-width: 1680px) {
   #main > header {
-    padding: 10rem 17.25% 8rem 17.25%;
+    padding: 5rem 17.25% 4rem 17.25%;
   }
   header.major {
     padding: 0 17.25% 0 17.25%;
@@ -14331,7 +14392,7 @@ body.is-loading *:after {
 }
 @media screen and (max-width: 1280px) {
   #main > header {
-    padding: 8rem 10% 6rem 10%;
+    padding: 5rem 10% 4rem 10%;
   }
   header.major {
     padding: 0 10% 0 10%;
@@ -14339,7 +14400,7 @@ body.is-loading *:after {
 }
 @media screen and (max-width: 980px) {
   #main > header {
-    padding: 10rem 15% 8rem 15%;
+    padding: 4rem 15% 3rem 15%;
   }
   header.major {
     padding: 0 15% 0 15%;
@@ -14347,7 +14408,7 @@ body.is-loading *:after {
 }
 @media screen and (max-width: 736px) {
   #main > header {
-    padding: 5rem 15% 3rem 15%;
+    padding: 2rem 15% 1rem 15%;
   }
   #main > header h2 {
     font-size: 1.25rem;
@@ -14398,19 +14459,6 @@ body.regular #page-wrapper {
   padding-top: 0;
   background-color: transparent;
 }
-section#banner > div {
-  color: whitesmoke !important;
-  background-color: transparent !important;
-}
-section#banner > div h2 {
-  color: whitesmoke !important;
-  background-color: transparent !important;
-}
-section#banner > div p {
-  color: whitesmoke !important;
-  background-color: transparent !important;
-}
-
 /* This is the core CSS of Tooltipster */
 /* GENERAL STRUCTURE RULES (do not edit this section) */
 .tooltipster-base {
