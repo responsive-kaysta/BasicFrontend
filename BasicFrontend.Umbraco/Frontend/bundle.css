@@ -13333,7 +13333,6 @@ a.more.scrolly {
     margin-left: auto;
   }
 }
-
 /* base styles and definitions */
 /* menu */
 /* green -> obsolete style1 */
@@ -14384,6 +14383,9 @@ body.is-loading *:after {
   header.major {
     padding: 0 25.375% 0 25.375%;
   }
+  .container {
+    max-width: 1024px;
+  }
 }
 @media screen and (max-width: 1680px) {
   #main > header {
@@ -14391,6 +14393,9 @@ body.is-loading *:after {
   }
   header.major {
     padding: 0 17.25% 0 17.25%;
+  }
+  .container {
+    max-width: 1024px;
   }
 }
 @media screen and (max-width: 1280px) {
@@ -14400,6 +14405,9 @@ body.is-loading *:after {
   header.major {
     padding: 0 10% 0 10%;
   }
+  .container {
+    max-width: 1024px;
+  }
 }
 @media screen and (max-width: 980px) {
   #main > header {
@@ -14407,6 +14415,9 @@ body.is-loading *:after {
   }
   header.major {
     padding: 0 15% 0 15%;
+  }
+  .container {
+    max-width: 768px;
   }
 }
 @media screen and (max-width: 736px) {
@@ -14419,6 +14430,9 @@ body.is-loading *:after {
   }
   header.major {
     padding: 0 5% 0 5%;
+  }
+  .container {
+    max-width: 468px;
   }
 }
 body.is-mobile #main > header {

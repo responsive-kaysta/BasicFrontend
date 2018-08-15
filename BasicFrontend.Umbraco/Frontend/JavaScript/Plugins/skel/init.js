@@ -6,8 +6,7 @@
 
 (function ($) {
 
-    skel
-        .breakpoints({
+    skel.breakpoints({
             xlarge: '(max-width: 1680px)',
             large: '(max-width: 1280px)',
             medium: '(max-width: 980px)',
@@ -36,8 +35,7 @@
                 });
 
         // Scrolly.
-        $('.scrolly')
-            .scrolly({
+        $('.scrolly').scrolly({
                 speed: 1500,
                 offset: $header.outerHeight()
             });
@@ -48,12 +46,10 @@
             $menuToggle = $('.menuToggle');
 
         // Move to end of body.
-        $menu
-            .appendTo($body);
+        $menu.appendTo($body);
 
         // Close.
-        $menuClose
-            .on('click touchend', function (event) {
+        $menuClose.on('click touchend', function (event) {
 
                 event.preventDefault();
                 event.stopPropagation();
@@ -63,8 +59,7 @@
             });
 
         // Toggle.
-        $menuToggle
-            .on('click touchend', function (event) {
+        $menuToggle.on('click touchend', function (event) {
 
                 event.preventDefault();
                 event.stopPropagation();
@@ -74,8 +69,7 @@
             });
 
         // Wrapper.
-        $wrapper
-            .on('click touchend', function (event) {
+        $wrapper.on('click touchend', function (event) {
 
                 if ($body.hasClass('is-menu-visible')) {
 

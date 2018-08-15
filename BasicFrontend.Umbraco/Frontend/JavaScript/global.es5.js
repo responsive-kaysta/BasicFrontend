@@ -45,32 +45,3 @@
     }
 })(jQuery);
 
-(function ($) {
-    $('.tooltipster').tooltipster({
-        animation: 'fade',
-        delay: 200,
-        theme: 'tooltipster-punk',
-        contentAsHTML: true,
-        maxWidth: 716,
-        trigger: 'click',
-        interactive: true
-    });
-})(jQuery);
-
-(function ($) {
-    $("div div.rowconfig:nth-child(odd)").addClass("odd");
-    $("div div.rowconfig:nth-child(even)").addClass("even");
-})(jQuery);
-
-$(document).ready(function ($) {
-    $("#searchQuerySubmit").prop('disabled', true);
-});
-
-$('input#searchQuery').keyup(function ($) {
-    if ($('#searchQuery').val().length >= 3) {
-        $("#searchQuerySubmit").prop('disabled', false);
-    } else {
-        $("#searchQuerySubmit").prop('disabled', true);
-    }
-});
-
