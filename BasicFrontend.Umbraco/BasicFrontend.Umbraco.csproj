@@ -520,6 +520,8 @@
     <Content Include="config\BackOfficeTours\getting-started.json" />
     <Content Include="config\applications.config" />
     <Content Include="config\404handlers.config" />
+    <Content Include="App_Data\TEMP\PluginCache\umbraco-plugins.LAPTOP-H8OG52DV.hash" />
+    <Content Include="App_Data\TEMP\PluginCache\umbraco-plugins.LAPTOP-H8OG52DV.list" />
     <None Include="Frontend\Css\global.vars.less" />
     <None Include="Frontend\Css\ie10-viewport-bug-workaround.less" />
     <Content Include="Frontend\Css\Images\Website-Design-Background.png" />
@@ -850,6 +852,10 @@
     <Content Include="Media\1030\w600_1233b38aa07790c27799d7a3b9d31906.png" />
     <Content Include="Media\1031\spotlight_5.jpg" />
     <Content Include="Media\1032\spotlight_6.jpg" />
+    <Content Include="Media\1033\spotlight_1.png" />
+    <Content Include="Media\1034\spotlight_2.png" />
+    <Content Include="Media\1035\spotlight_3.png" />
+    <Content Include="Media\1036\spotlight_4.png" />
     <Content Include="Media\created-packages\responsive.kaysta.Frontend_0.9.15.zip" />
     <Content Include="Media\created-packages\responsive.kaysta.Frontend_0.9.16.zip" />
     <Content Include="Media\created-packages\responsive.kaysta.Frontend_0.9.17.zip" />
@@ -870,6 +876,9 @@
     <Content Include="ImageGen.ashx" />
     <Content Include="Media\Web.config" />
     <Content Include="Frontend\custom.less" />
+    <Content Include="Media\created-packages\responsive.kaysta.Frontend_0.9.18.zip" />
+    <Content Include="Media\created-packages\responsive.kaysta.Frontend_0.9.20.zip" />
+    <Content Include="Media\created-packages\responsive.kaysta.Frontend_0.9.21.zip" />
     <None Include="packages.config" />
     <Content Include="Scripts\esm\popper-utils.js" />
     <Content Include="Scripts\esm\popper-utils.js.map">

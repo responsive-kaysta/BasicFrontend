@@ -1,0 +1,14 @@
+﻿ 2018-07-10 00:01:12,917 [P1360/D11/T84] INFO  Umbraco.Core.MainDom - Stopping...
+ 2018-07-10 00:01:12,918 [P1360/D11/T84] INFO  Umbraco.Web.ExamineStartup - Examine shutting down
+ 2018-07-10 00:01:12,921 [P1360/D11/T84] INFO  Umbraco.Web.ExamineStartup - Complete (took 3ms)
+ 2018-07-10 00:01:12,922 [P1360/D11/T84] INFO  Umbraco.Core.MainDom - Released MainDom.
+ 2018-07-10 00:01:42,959 [P1360/D11/T84] INFO  Umbraco.Core.UmbracoApplicationBase - Application shutdown. Details: HostingEnvironment
+
+_shutDownMessage=HostingEnvironment initiated shutdown
+HostingEnvironment caused shutdown
+
+_shutDownStack=   at System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   at System.Environment.get_StackTrace()
+   at System.Web.Hosting.HostingEnvironment.InitiateShutdownInternal()
+   at System.Web.Hosting.HostingEnvironment.InitiateShutdownWithoutDemand()
+   at System.Web.Hosting.PipelineRuntime.StopProcessing()
