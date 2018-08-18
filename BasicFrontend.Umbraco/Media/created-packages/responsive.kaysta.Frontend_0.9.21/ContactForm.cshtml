@@ -1,0 +1,42 @@
+﻿@using BasicFrontend.Umbraco.Controllers
+@using System.Web.Mvc
+
+@model BasicFrontend.Umbraco.Models.ContactViewModel
+
+@using (Html.BeginUmbracoForm<ContactSurfaceController>("CreateContactMessage"))
+{
+
+    if (!ViewData.ModelState.IsValid)
+    {
+        @Html.ValidationSummary(true, "Houston, we have a problem. Check things over and try again.", new { @class = "col-sm-12 alert alert-warning align-center" })
+        <div class="error">
+            @Html.ValidationMessageFor(x => x.Name)
+        </div>
+        <div class="error">
+            @Html.ValidationMessageFor(x => x.EmailAddress)
+        </div>
+        <div class="error">
+            @Html.ValidationMessageFor(x => x.Message)
+        </div>
+    }
+
+    <div class="row">
+        @Html.LabelFor(x => x.Name, new { @class = "col-sm-4 col-form-label" })
+        @Html.TextBoxFor(x => x.Name, new { @class = "col-sm-8 form-control" })
+    </div>
+
+    <div class="row">
+        @Html.LabelFor(x => x.EmailAddress, new { @class = "col-sm-4 col-form-label" })
+        @Html.TextBoxFor(x => x.EmailAddress, new { @class = "col-sm-8 form-control" })
+    </div>
+
+    <div class="row">
+        @Html.LabelFor(x => x.Message, new { @class = "col-sm-4 col-form-label" })
+        @Html.TextAreaFor(x => x.Message, new { @class = "col-sm-8 form-control" })
+    </div>
+
+    <div class="align-right">
+        <input type="submit" class="btn btn-default" value="Submit" />
+    </div>
+
+}
