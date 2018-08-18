@@ -1,0 +1,31 @@
+@inherits Umbraco.Web.Mvc.UmbracoViewPage<dynamic>
+@if (Model.editor.config.markup != null)
+{
+    string markup = Model.editor.config.markup.ToString();
+
+    markup = markup.Replace("#value#", Model.value.ToString());
+    markup = markup.Replace("#style#", Model.editor.config.style.ToString());
+
+    <text>
+        @Html.Raw(markup)
+    </text>
+}
+else
+{
+    <text>
+        <div class="container">
+            <section id="cta" class="wrapper">
+                <div class="inner">
+                    <header>
+                        <h2>@Model.value.headline</h2>
+                        <p>@Model.value.description</p>
+                    </header>
+                    <ul class="actions vertical">
+                        <li><a href="@Model.value.button1_url" class="button fit special">@Model.value.button1_text</a></li>
+                        <li><a href="@Model.value.button2_url" class="button fit">@Model.value.button2_text</a></li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </text>
+}

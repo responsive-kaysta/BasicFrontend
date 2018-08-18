@@ -1,0 +1,195 @@
+﻿@import "../global.vars.less";
+
+li, a {
+    font-size: 1rem;
+    line-height: 1.6;
+    letter-spacing: 0.15rem;
+}
+
+li {
+    color: @base-color;
+    font-weight: 400;
+}
+
+ul {
+    margin-left: 0.2rem;
+}
+
+* + ul {
+    margin-bottom: 0.3rem;
+}
+
+ol {
+    margin-left: 0.25rem;
+}
+
+* + ol {
+    margin-bottom: 0.3rem;
+}
+
+ol {
+    list-style: decimal;
+    margin: 0 0 2rem 0;
+    padding-left: 1.25rem;
+}
+
+ol li {
+    padding-left: 0.25rem;
+}
+
+dl {
+    margin: 0 0 2rem 0;
+}
+
+ul {
+    list-style: disc;
+    margin: 0 0 2rem 0;
+    padding-left: 1rem;
+}
+
+ul li {
+    list-style-position: inside;
+    padding-left: 0.5rem;
+}
+
+ul.alt {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul.alt li {
+    border-top: solid 1px @base-border-color;
+    padding: 0.5rem 0;
+}
+
+ul.alt li:first-child {
+    border-top: 0;
+    padding-top: 0;
+}
+
+ul.icons {
+    cursor: default;
+    list-style: none;
+    padding-left: 0;
+}
+
+ul.icons li {
+    display: inline-block;
+    padding: 0 1rem 0 0;
+}
+
+ul.icons li:last-child {
+    padding-right: 0 !important;
+}
+
+ul.icons.major {
+    padding: 1rem 0;
+}
+
+ul.icons.major li {
+    padding-right: 3.5rem;
+}
+
+@media screen and (max-width: 736px) {
+    ul.icons.major li {
+        padding: 0 1rem !important;
+    }
+}
+
+ul.actions {
+    cursor: default;
+    list-style: none;
+    padding-left: 0;
+}
+
+ul.actions li {
+    display: inline-block;
+    padding: 0 1.5rem 0 0;
+    vertical-align: middle;
+}
+
+ul.actions li:last-child {
+    padding-right: 0;
+}
+
+ul.actions.small li {
+    padding: 0 0.75rem 0 0;
+}
+
+ul.actions.vertical li {
+    display: block;
+    padding: 1.5rem 0 0 0;
+}
+
+ul.actions.vertical li:first-child {
+    padding-top: 0;
+}
+
+ul.actions.vertical li > * {
+    margin-bottom: 0;
+}
+
+ul.actions.vertical.small li {
+    padding: 0.75rem 0 0 0;
+}
+
+ul.actions.vertical.small li:first-child {
+    padding-top: 0;
+}
+
+ul.actions.fit {
+    display: table;
+    margin-left: -1.5rem;
+    padding: 0;
+    table-layout: fixed;
+    width: calc(100% + 1.5rem);
+}
+
+ul.actions.fit li {
+    display: table-cell;
+    padding: 0 0 0 1.5rem;
+}
+
+ul.actions.fit li > * {
+    margin-bottom: 0;
+}
+
+ul.actions.fit.small {
+    margin-left: -0.75rem;
+    width: calc(100% + 0.75rem);
+}
+
+ul.actions.fit.small li {
+    padding: 0 0 0 0.75rem;
+}
+
+@media screen and (max-width: 736px) {
+    ul.actions li {
+        display: block;
+        padding: 1rem 0 0 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    ul.actions li:first-child {
+        padding-top: 0;
+    }
+
+    ul.actions li > * {
+        margin: 0 auto !important;
+        max-width: 30rem;
+        width: 100%;
+    }
+
+    ul.actions li > *.icon:before {
+        margin-left: -1rem;
+    }
+
+    ul.actions.small li {
+        padding: 0.5rem 0 0 0;
+    }
+
+    ul.actions.small li:first-child {
+        padding-top: 0;
+    }
+}

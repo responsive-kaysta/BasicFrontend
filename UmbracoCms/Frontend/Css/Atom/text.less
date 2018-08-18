@@ -1,0 +1,132 @@
+﻿@import "../global.vars.less";
+
+p {
+    font-size: 1.0rem;
+    font-weight: normal;
+    line-height: 1.4;
+    letter-spacing: 0.1rem;
+}
+
+p {
+    margin-bottom: 2rem;
+}
+
+strong, b {
+    font-weight: 600;
+}
+
+em, i {
+    font-style: italic;
+}
+
+sub {
+    font-size: 0.8rem;
+    position: relative;
+    top: 0.5em;
+}
+
+sup {
+    font-size: 0.8rem;
+    position: relative;
+    top: -0.5rem;
+}
+
+.lead {
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+.lead {
+    margin: 0;
+}
+
+.lead {
+    margin-bottom: 1.0rem;
+}
+
+.small {
+    font-size: .85rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.headline {
+    font-size: 1.6rem;
+    margin-bottom: 1.0rem;
+}
+
+.tagline {
+    font-weight: 100;
+    font-size: 1.4rem;
+    margin-bottom: 1.0rem;
+}
+
+.page-header {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+.page-header > h1 {
+    font-size: 1.35rem !important;
+    line-height: 1.35rem !important;
+}
+
+.paragraph {
+    font-size: 1.0rem;
+    font-weight: normal;
+    line-height: 1.4;
+    letter-spacing: 0.1rem;
+}
+
+.paragraph {
+    padding-bottom: 0.75rem;
+}
+
+.paragraph-2col {
+    padding-bottom: 0.75rem;
+}
+
+.paragraph-3col {
+    padding-bottom: 0.75rem;
+}
+
+.align-left {
+    text-align: left;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.error {
+    display: block;
+    font-size: 1.0rem;
+    font-weight: bold;
+    color: @base-error-color !important;
+}
+
+@media screen and (min-width: 768px) {
+    .paragraph {
+        -webkit-columns: 300px 1;
+        -moz-columns: 300px 1;
+        columns: 300px 1;
+    }
+
+    .paragraph-2col {
+        -webkit-columns: 200px 2;
+        -moz-columns: 200px 2;
+        columns: 200px 2;
+    }
+
+    .paragraph-3col {
+        -webkit-columns: 100px 3;
+        -moz-columns: 100px 3;
+        columns: 100px 3;
+    }
+}
