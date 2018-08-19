@@ -1,0 +1,66 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<Umbraco.Web.PublishedContentModels.ContactPage>
+
+@using BasicFrontend.Umbraco.Models
+
+@{
+    Layout = "_Layout.cshtml";
+    var pageStyle = @Umbraco.Field("pageStyle");
+}
+
+<article id="main">
+    <header class="@pageStyle">
+        <h2>@Umbraco.Field("title")</h2>
+        <p>@Html.Raw(Umbraco.Field("introduction"))</p>
+    </header>
+
+    @if (ViewBag.Contact != null)
+    {
+        var viewModel = (ContactViewModel)ViewBag.Contact;
+
+        <section class="@pageStyle">
+            <div class="inner">
+                <div class="container">
+                    <div class="row">
+                        <h2>
+                            Thanks for the message
+                        </h2>
+                    </div>
+                    <div class="row">
+                        <ul class="icons">
+                            <li class="icon @pageStyle">
+                                <a href="https://www.xing.com/profile/Kay_Stuckenschmidt/cv?sc_o=mxb_p" class="fab fa-xing-square fa-2x" target="_blank">
+                                    <span class="label"></span>
+                                </a>
+                            </li>
+                            <li class="icon @pageStyle">
+                                <a href="https://www.linkedin.com/in/responsivekaysta/" class="fab fa-linkedin fa-2x" target="_blank">
+                                    <span class="label"></span>
+                                </a>
+                            </li>
+                            <li class="icon @pageStyle">
+                                <a href="https://github.com/responsive-kaysta" class="fab fa-github-square fa-2x" target="_blank">
+                                    <span class="label"></span>
+                                </a>
+                            </li>
+                            <li class="icon @pageStyle">
+                                <a href="https://www.nuget.org/profiles/kaysta" class="fas fa-archive fa-2x" target="_blank">
+                                    <span class="label"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    }
+    else
+    {
+        <section class="@pageStyle">
+            <div class="inner">
+                <div class="container">
+                    @Html.Partial("ContactForm", new ContactViewModel())
+                </div>
+            </div>
+        </section>
+    }
+</article>
