@@ -1,8 +1,17 @@
 ﻿*.lock
+*. gen
 
-\.vs/BasicFrontend/v15/
+/.vs/BasicFrontend/v15
 
-BasicFrontend\.dev/App_Data/cache/
-BasicFrontend\.dev/App_Data/Logs/
-BasicFrontend\.dev/App_Data/preview/
-BasicFrontend\.dev/App_Data/TEMP/
+/BasicFrontend.dev/bin
+/BasicFrontend.dev/obj
+/BasicFrontend.dev/obj/Debug
+/BasicFrontend.dev/obj/Release
+
+/BasicFrontend.dev/App_Data/TEMP/ClientDependency
+/BasicFrontend.dev/App_Data/TEMP/DistCache
+/BasicFrontend.dev/App_Data/preview
+/BasicFrontend.dev/App_Data/Logs
+/BasicFrontend.dev/App_Data/TEMP/ExamineIndexes/External/Index
+/BasicFrontend.dev/App_Data/TEMP/ExamineIndexes/Internal/Index
+

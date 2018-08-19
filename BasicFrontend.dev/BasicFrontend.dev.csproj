@@ -337,6 +337,34 @@
     <Content Include="App_Data\NuGetBackup\20180819-171814\Config\Lang\sv-SE.user.xml" />
     <Content Include="App_Data\NuGetBackup\20180819-171814\Config\Lang\zh-CN.user.xml" />
     <Content Include="App_Data\Umbraco.sdf" />
+    <Content Include="App_Plugins\GodMode\BackOffice\Css\godMode.css" />
+    <Content Include="App_Plugins\GodMode\BackOffice\GodModeTree\contentBrowser.html" />
+    <Content Include="App_Plugins\GodMode\BackOffice\GodModeTree\dataTypeBrowser.html" />
+    <Content Include="App_Plugins\GodMode\BackOffice\GodModeTree\diagnosticBrowser.html" />
+    <Content Include="App_Plugins\GodMode\BackOffice\GodModeTree\docTypeBrowser.html" />
+    <Content Include="App_Plugins\GodMode\BackOffice\GodModeTree\godModeHeader.html" />
+    <Content Include="App_Plugins\GodMode\BackOffice\GodModeTree\mediaBrowser.html" />
+    <Content Include="App_Plugins\GodMode\BackOffice\GodModeTree\memberBrowser.html" />
+    <Content Include="App_Plugins\GodMode\BackOffice\GodModeTree\partialBrowser.html" />
+    <Content Include="App_Plugins\GodMode\BackOffice\GodModeTree\reflectionBrowser.html" />
+    <Content Include="App_Plugins\GodMode\BackOffice\GodModeTree\templateBrowser.html" />
+    <Content Include="App_Plugins\GodMode\BackOffice\GodModeTree\typeBrowser.html" />
+    <Content Include="App_Plugins\GodMode\BackOffice\GodModeTree\usageBrowser.html" />
+    <Content Include="App_Plugins\GodMode\BackOffice\GodModeTree\utilityBrowser.html" />
+    <Content Include="App_Plugins\GodMode\BackOffice\Scripts\GodMode.Config.js" />
+    <Content Include="App_Plugins\GodMode\BackOffice\Scripts\GodMode.ContentBrowser.Controller.js" />
+    <Content Include="App_Plugins\GodMode\BackOffice\Scripts\GodMode.DataTypeBrowser.Controller.js" />
+    <Content Include="App_Plugins\GodMode\BackOffice\Scripts\GodMode.DiagnosticBrowser.Controller.js" />
+    <Content Include="App_Plugins\GodMode\BackOffice\Scripts\GodMode.DocTypeBrowser.Controller.js" />
+    <Content Include="App_Plugins\GodMode\BackOffice\Scripts\GodMode.MediaBrowser.Controller.js" />
+    <Content Include="App_Plugins\GodMode\BackOffice\Scripts\GodMode.MemberBrowser.Controller.js" />
+    <Content Include="App_Plugins\GodMode\BackOffice\Scripts\GodMode.PartialBrowser.Controller.js" />
+    <Content Include="App_Plugins\GodMode\BackOffice\Scripts\GodMode.ReflectionBrowser.Controller.js" />
+    <Content Include="App_Plugins\GodMode\BackOffice\Scripts\GodMode.Resources.js" />
+    <Content Include="App_Plugins\GodMode\BackOffice\Scripts\GodMode.TemplateBrowser.Controller.js" />
+    <Content Include="App_Plugins\GodMode\BackOffice\Scripts\GodMode.TypeBrowser.Controller.js" />
+    <Content Include="App_Plugins\GodMode\BackOffice\Scripts\GodMode.UsageBrowser.Controller.js" />
+    <Content Include="App_Plugins\GodMode\BackOffice\Scripts\GodMode.UtilityBrowser.Controller.js" />
     <Content Include="App_Plugins\Grid\Config\FanoeConfig.txt" />
     <Content Include="App_Plugins\Grid\Editors\Views\article.html" />
     <Content Include="App_Plugins\Grid\Editors\Views\banner.html" />
@@ -412,91 +440,261 @@
     <Content Include="Frontend\bundle.min.css">
       <DependentUpon>bundle.css</DependentUpon>
     </Content>
-    <Content Include="Frontend\Css\Atom\a.css" />
-    <Content Include="Frontend\Css\Atom\a.min.css" />
-    <Content Include="Frontend\Css\Atom\abstract.css" />
-    <Content Include="Frontend\Css\Atom\abstract.min.css" />
-    <Content Include="Frontend\Css\Atom\blockquote.css" />
-    <Content Include="Frontend\Css\Atom\blockquote.min.css" />
-    <Content Include="Frontend\Css\Atom\code.css" />
-    <Content Include="Frontend\Css\Atom\code.min.css" />
-    <Content Include="Frontend\Css\Atom\h.css" />
-    <Content Include="Frontend\Css\Atom\h.min.css" />
-    <Content Include="Frontend\Css\Atom\hr.css" />
-    <Content Include="Frontend\Css\Atom\hr.min.css" />
-    <Content Include="Frontend\Css\Atom\image.css" />
-    <Content Include="Frontend\Css\Atom\image.min.css" />
-    <Content Include="Frontend\Css\Atom\pre.css" />
-    <Content Include="Frontend\Css\Atom\pre.min.css" />
-    <Content Include="Frontend\Css\Atom\text.css" />
-    <Content Include="Frontend\Css\Atom\text.min.css" />
-    <Content Include="Frontend\Css\Atom\triangle.css" />
-    <Content Include="Frontend\Css\Atom\triangle.min.css" />
-    <Content Include="Frontend\Css\body.css" />
-    <Content Include="Frontend\Css\body.min.css" />
-    <Content Include="Frontend\Css\global.vars.css" />
-    <Content Include="Frontend\Css\ie10-viewport-bug-workaround.css" />
-    <Content Include="Frontend\Css\ie10-viewport-bug-workaround.min.css" />
-    <Content Include="Frontend\Css\Molekule\box.css" />
-    <Content Include="Frontend\Css\Molekule\box.min.css" />
-    <Content Include="Frontend\Css\Molekule\button.css" />
-    <Content Include="Frontend\Css\Molekule\button.min.css" />
-    <Content Include="Frontend\Css\Molekule\list.css" />
-    <Content Include="Frontend\Css\Molekule\list.min.css" />
-    <Content Include="Frontend\Css\Molekule\row.css" />
-    <Content Include="Frontend\Css\Molekule\row.min.css" />
-    <Content Include="Frontend\Css\Molekule\seperator.css" />
-    <Content Include="Frontend\Css\Molekule\seperator.min.css" />
-    <Content Include="Frontend\Css\Organism\article.css" />
-    <Content Include="Frontend\Css\Organism\article.min.css" />
-    <Content Include="Frontend\Css\Organism\banner.css" />
-    <Content Include="Frontend\Css\Organism\banner.min.css" />
-    <Content Include="Frontend\Css\Organism\blogarchive.css" />
-    <Content Include="Frontend\Css\Organism\blogarchive.min.css" />
-    <Content Include="Frontend\Css\Organism\breadcrumb.css" />
-    <Content Include="Frontend\Css\Organism\breadcrumb.min.css" />
-    <Content Include="Frontend\Css\Organism\container.css" />
-    <Content Include="Frontend\Css\Organism\container.min.css" />
-    <Content Include="Frontend\Css\Organism\cta.css" />
-    <Content Include="Frontend\Css\Organism\cta.min.css" />
-    <Content Include="Frontend\Css\Organism\features.css" />
-    <Content Include="Frontend\Css\Organism\features.min.css" />
-    <Content Include="Frontend\Css\Organism\footer.css" />
-    <Content Include="Frontend\Css\Organism\footer.min.css" />
-    <Content Include="Frontend\Css\Organism\header.css" />
-    <Content Include="Frontend\Css\Organism\header.min.css" />
-    <Content Include="Frontend\Css\Organism\icon.css" />
-    <Content Include="Frontend\Css\Organism\icon.min.css" />
-    <Content Include="Frontend\Css\Organism\jumbotron.css" />
-    <Content Include="Frontend\Css\Organism\jumbotron.min.css" />
-    <Content Include="Frontend\Css\Organism\menu.css" />
-    <Content Include="Frontend\Css\Organism\menu.min.css" />
-    <Content Include="Frontend\Css\Organism\panel.css" />
-    <Content Include="Frontend\Css\Organism\panel.min.css" />
-    <Content Include="Frontend\Css\Organism\section.css" />
-    <Content Include="Frontend\Css\Organism\section.min.css" />
-    <Content Include="Frontend\Css\Organism\spotlight.css" />
-    <Content Include="Frontend\Css\Organism\spotlight.min.css" />
-    <Content Include="Frontend\Css\Organism\table.css" />
-    <Content Include="Frontend\Css\Organism\table.min.css" />
-    <Content Include="Frontend\Css\Plugins\Tooltipster\Themes\tooltipster-sideTip-punk.css" />
-    <Content Include="Frontend\Css\Plugins\Tooltipster\Themes\tooltipster-sideTip-punk.min.css" />
-    <Content Include="Frontend\Css\Plugins\Tooltipster\tooltipster.bundle.css" />
-    <Content Include="Frontend\Css\Plugins\Tooltipster\tooltipster.bundle.min.css" />
-    <Content Include="Frontend\Css\reset.css" />
-    <Content Include="Frontend\Css\reset.min.css" />
-    <Content Include="Frontend\Css\style.css" />
-    <Content Include="Frontend\Css\style.min.css" />
-    <Content Include="Frontend\Css\Template\style-gray.css" />
-    <Content Include="Frontend\Css\Template\style-gray.min.css" />
-    <Content Include="Frontend\Css\Template\style-green.css" />
-    <Content Include="Frontend\Css\Template\style-green.min.css" />
-    <Content Include="Frontend\Css\Template\style-light.css" />
-    <Content Include="Frontend\Css\Template\style-light.min.css" />
-    <Content Include="Frontend\Css\Template\style-purple.css" />
-    <Content Include="Frontend\Css\Template\style-purple.min.css" />
-    <Content Include="Frontend\Css\Template\style-transparent.css" />
-    <Content Include="Frontend\Css\Template\style-transparent.min.css" />
+    <Content Include="Frontend\Css\Atom\a.css">
+      <DependentUpon>a.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Atom\a.min.css">
+      <DependentUpon>a.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Atom\abstract.css">
+      <DependentUpon>abstract.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Atom\abstract.min.css">
+      <DependentUpon>abstract.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Atom\blockquote.css">
+      <DependentUpon>blockquote.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Atom\blockquote.min.css">
+      <DependentUpon>blockquote.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Atom\code.css">
+      <DependentUpon>code.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Atom\code.min.css">
+      <DependentUpon>code.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Atom\h.css">
+      <DependentUpon>h.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Atom\h.min.css">
+      <DependentUpon>h.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Atom\hr.css">
+      <DependentUpon>hr.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Atom\hr.min.css">
+      <DependentUpon>hr.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Atom\image.css">
+      <DependentUpon>image.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Atom\image.min.css">
+      <DependentUpon>image.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Atom\pre.css">
+      <DependentUpon>pre.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Atom\pre.min.css">
+      <DependentUpon>pre.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Atom\text.css">
+      <DependentUpon>text.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Atom\text.min.css">
+      <DependentUpon>text.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Atom\triangle.css">
+      <DependentUpon>triangle.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Atom\triangle.min.css">
+      <DependentUpon>triangle.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\body.css">
+      <DependentUpon>body.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\body.min.css">
+      <DependentUpon>body.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\global.vars.css">
+      <DependentUpon>global.vars.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\ie10-viewport-bug-workaround.css">
+      <DependentUpon>ie10-viewport-bug-workaround.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\ie10-viewport-bug-workaround.min.css">
+      <DependentUpon>ie10-viewport-bug-workaround.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Molekule\box.css">
+      <DependentUpon>box.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Molekule\box.min.css">
+      <DependentUpon>box.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Molekule\button.css">
+      <DependentUpon>button.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Molekule\button.min.css">
+      <DependentUpon>button.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Molekule\list.css">
+      <DependentUpon>list.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Molekule\list.min.css">
+      <DependentUpon>list.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Molekule\row.css">
+      <DependentUpon>row.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Molekule\row.min.css">
+      <DependentUpon>row.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Molekule\seperator.css">
+      <DependentUpon>seperator.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Molekule\seperator.min.css">
+      <DependentUpon>seperator.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Organism\article.css">
+      <DependentUpon>article.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Organism\article.min.css">
+      <DependentUpon>article.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Organism\banner.css">
+      <DependentUpon>banner.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Organism\banner.min.css">
+      <DependentUpon>banner.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Organism\blogarchive.css">
+      <DependentUpon>blogarchive.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Organism\blogarchive.min.css">
+      <DependentUpon>blogarchive.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Organism\breadcrumb.css">
+      <DependentUpon>breadcrumb.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Organism\breadcrumb.min.css">
+      <DependentUpon>breadcrumb.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Organism\container.css">
+      <DependentUpon>container.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Organism\container.min.css">
+      <DependentUpon>container.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Organism\cta.css">
+      <DependentUpon>cta.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Organism\cta.min.css">
+      <DependentUpon>cta.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Organism\features.css">
+      <DependentUpon>features.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Organism\features.min.css">
+      <DependentUpon>features.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Organism\footer.css">
+      <DependentUpon>footer.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Organism\footer.min.css">
+      <DependentUpon>footer.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Organism\header.css">
+      <DependentUpon>header.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Organism\header.min.css">
+      <DependentUpon>header.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Organism\icon.css">
+      <DependentUpon>icon.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Organism\icon.min.css">
+      <DependentUpon>icon.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Organism\jumbotron.css">
+      <DependentUpon>jumbotron.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Organism\jumbotron.min.css">
+      <DependentUpon>jumbotron.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Organism\menu.css">
+      <DependentUpon>menu.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Organism\menu.min.css">
+      <DependentUpon>menu.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Organism\panel.css">
+      <DependentUpon>panel.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Organism\panel.min.css">
+      <DependentUpon>panel.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Organism\section.css">
+      <DependentUpon>section.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Organism\section.min.css">
+      <DependentUpon>section.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Organism\spotlight.css">
+      <DependentUpon>spotlight.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Organism\spotlight.min.css">
+      <DependentUpon>spotlight.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Organism\table.css">
+      <DependentUpon>table.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Organism\table.min.css">
+      <DependentUpon>table.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Plugins\Tooltipster\Themes\tooltipster-sideTip-punk.css">
+      <DependentUpon>tooltipster-sideTip-punk.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Plugins\Tooltipster\Themes\tooltipster-sideTip-punk.min.css">
+      <DependentUpon>tooltipster-sideTip-punk.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Plugins\Tooltipster\tooltipster.bundle.css">
+      <DependentUpon>tooltipster.bundle.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Plugins\Tooltipster\tooltipster.bundle.min.css">
+      <DependentUpon>tooltipster.bundle.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\reset.css">
+      <DependentUpon>reset.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\reset.min.css">
+      <DependentUpon>reset.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\style.css">
+      <DependentUpon>style.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\style.min.css">
+      <DependentUpon>style.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Template\style-gray.css">
+      <DependentUpon>style-gray.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Template\style-gray.min.css">
+      <DependentUpon>style-gray.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Template\style-green.css">
+      <DependentUpon>style-green.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Template\style-green.min.css">
+      <DependentUpon>style-green.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Template\style-light.css">
+      <DependentUpon>style-light.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Template\style-light.min.css">
+      <DependentUpon>style-light.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Template\style-purple.css">
+      <DependentUpon>style-purple.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Template\style-purple.min.css">
+      <DependentUpon>style-purple.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Template\style-transparent.css">
+      <DependentUpon>style-transparent.less</DependentUpon>
+    </Content>
+    <Content Include="Frontend\Css\Template\style-transparent.min.css">
+      <DependentUpon>style-transparent.less</DependentUpon>
+    </Content>
     <Content Include="Frontend\custom.css">
       <DependentUpon>custom.less</DependentUpon>
     </Content>
@@ -513,29 +711,35 @@
     <Content Include="Frontend\Ie\html5shiv.js" />
     <Content Include="Frontend\Ie\v8.css" />
     <Content Include="Frontend\Ie\v9.css" />
-    <Content Include="Frontend\Images\1d940749740655.560867a146b61.png" />
     <Content Include="Frontend\Images\arrow.svg" />
     <Content Include="Frontend\Images\bars.svg" />
     <Content Include="Frontend\Images\close.svg" />
-    <Content Include="Frontend\Images\Internet-of-Things-1920xx.png" />
-    <Content Include="Frontend\Images\pcb-background.jpeg" />
-    <Content Include="Frontend\Images\pe1gtJx.jpg" />
-    <Content Include="Frontend\Images\technics-q-g-410-130-8.jpg" />
-    <Content Include="Frontend\Images\Website-Design-Background.png" />
-    <Content Include="Frontend\JavaScript\global.es5.js" />
-    <Content Include="Frontend\JavaScript\global.es5.min.js" />
+    <Content Include="Frontend\JavaScript\global.es5.js">
+      <DependentUpon>global.js</DependentUpon>
+    </Content>
+    <Content Include="Frontend\JavaScript\global.es5.min.js">
+      <DependentUpon>global.js</DependentUpon>
+    </Content>
     <Content Include="Frontend\JavaScript\global.js" />
     <Content Include="Frontend\JavaScript\Modules\colourswitch.js" />
-    <Content Include="Frontend\JavaScript\Modules\equalheight.es5.js" />
-    <Content Include="Frontend\JavaScript\Modules\equalheight.es5.min.js" />
+    <Content Include="Frontend\JavaScript\Modules\equalheight.es5.js">
+      <DependentUpon>equalheight.js</DependentUpon>
+    </Content>
+    <Content Include="Frontend\JavaScript\Modules\equalheight.es5.min.js">
+      <DependentUpon>equalheight.js</DependentUpon>
+    </Content>
     <Content Include="Frontend\JavaScript\Modules\equalheight.js" />
     <Content Include="Frontend\JavaScript\Modules\loadmore.js" />
     <Content Include="Frontend\JavaScript\Modules\navigation.js" />
     <Content Include="Frontend\JavaScript\Modules\searchbox.js" />
     <Content Include="Frontend\JavaScript\Plugins\jQuery\jquery.scrollex.min.js" />
     <Content Include="Frontend\JavaScript\Plugins\jQuery\jquery.scrolly.min.js" />
-    <Content Include="Frontend\JavaScript\Plugins\skel\init.es5.js" />
-    <Content Include="Frontend\JavaScript\Plugins\skel\init.es5.min.js" />
+    <Content Include="Frontend\JavaScript\Plugins\skel\init.es5.js">
+      <DependentUpon>init.js</DependentUpon>
+    </Content>
+    <Content Include="Frontend\JavaScript\Plugins\skel\init.es5.min.js">
+      <DependentUpon>init.js</DependentUpon>
+    </Content>
     <Content Include="Frontend\JavaScript\Plugins\skel\init.js" />
     <Content Include="Frontend\JavaScript\Plugins\skel\skel-layout.min.js" />
     <Content Include="Frontend\JavaScript\Plugins\skel\skel-viewport.js" />
@@ -581,6 +785,7 @@
     <Content Include="Content\bootstrap-reboot.css.map" />
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
+    <Content Include="App_Plugins\GodMode\package.manifest" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
