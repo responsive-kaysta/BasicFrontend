@@ -109,6 +109,24 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 
 		///<summary>
+		/// Meta Audience
+		///</summary>
+		[ImplementPropertyType("metaAudience")]
+		public string MetaAudience
+		{
+			get { return this.GetPropertyValue<string>("metaAudience"); }
+		}
+
+		///<summary>
+		/// Meta Cache
+		///</summary>
+		[ImplementPropertyType("metaCache")]
+		public string MetaCache
+		{
+			get { return this.GetPropertyValue<string>("metaCache"); }
+		}
+
+		///<summary>
 		/// Meta Description
 		///</summary>
 		[ImplementPropertyType("metaDescription")]
@@ -124,6 +142,42 @@ namespace Umbraco.Web.PublishedContentModels
 		public string MetaKeywords
 		{
 			get { return this.GetPropertyValue<string>("metaKeywords"); }
+		}
+
+		///<summary>
+		/// Meta Page-Topic
+		///</summary>
+		[ImplementPropertyType("metaPageTopic")]
+		public string MetaPageTopic
+		{
+			get { return this.GetPropertyValue<string>("metaPageTopic"); }
+		}
+
+		///<summary>
+		/// Meta Pragma
+		///</summary>
+		[ImplementPropertyType("metaPragma")]
+		public string MetaPragma
+		{
+			get { return this.GetPropertyValue<string>("metaPragma"); }
+		}
+
+		///<summary>
+		/// Meta Revisit-After
+		///</summary>
+		[ImplementPropertyType("metaRevisitAfter")]
+		public string MetaRevisitAfter
+		{
+			get { return this.GetPropertyValue<string>("metaRevisitAfter"); }
+		}
+
+		///<summary>
+		/// Meta Robots
+		///</summary>
+		[ImplementPropertyType("metaRobots")]
+		public string MetaRobots
+		{
+			get { return this.GetPropertyValue<string>("metaRobots"); }
 		}
 
 		///<summary>
