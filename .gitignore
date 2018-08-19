@@ -1,1 +1,8 @@
 ﻿*.lock
+
+\.vs/BasicFrontend/v15/
+
+BasicFrontend\.dev/App_Data/cache/
+BasicFrontend\.dev/App_Data/Logs/
+BasicFrontend\.dev/App_Data/preview/
+BasicFrontend\.dev/App_Data/TEMP/
