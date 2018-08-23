@@ -798,6 +798,7 @@
     <Content Include="config\uSyncCore.Config" />
     <Content Include="config\uSyncCore.Config.install.xdt" />
     <Content Include="config\uSyncCore.Config.uninstall.xdt" />
+    <Content Include="Media\created-packages\responsive.kaysta.Frontend_0.9.22.zip" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
