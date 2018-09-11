@@ -1,0 +1,225 @@
+﻿[
+  /* Custom JavaScript */
+  {
+    "inputFile": "Frontend/JavaScript/Plugins/skel/init.js",
+    "outputFile": "Frontend/JavaScript/Plugins/skel/init.es5.js"
+  },
+  {
+    "inputFile": "Frontend/JavaScript/global.js",
+    "outputFile": "Frontend/JavaScript/global.es5.js"
+  },
+
+
+  /* CSS libraries*/
+  {
+    "inputFile": "Frontend/fontawesome-all.less",
+    "outputFile": "Frontend/fontawesome-all.css"
+  },
+
+  {
+    "inputFile": "Frontend/Css/reset.less",
+    "outputFile": "Frontend/Css/reset.css"
+  },
+  {
+    "inputFile": "Frontend/Css/ie10-viewport-bug-workaround.less",
+    "outputFile": "Frontend/Css/ie10-viewport-bug-workaround.css"
+  },
+  {
+    "inputFile": "Frontend/Css/global.less",
+    "outputFile": "Frontend/Css/global.css"
+  },
+
+
+  /* Custom CSS */
+  {
+    "inputFile": "Frontend/Css/style.less",
+    "outputFile": "Frontend/Css/style.css"
+  },
+
+
+  /* Colours */
+  {
+    "inputFile": "Frontend/Css/Colours/blue.less",
+    "outputFile": "Frontend/Css/Colours/blue.css"
+  },
+  {
+    "inputFile": "Frontend/Css/Colours/dark.less",
+    "outputFile": "Frontend/Css/Colours/dark.css"
+  },
+  {
+    "inputFile": "Frontend/Css/Colours/light.less",
+    "outputFile": "Frontend/Css/Colours/light.css"
+  },
+  {
+    "inputFile": "Frontend/Css/Colours/purple.less",
+    "outputFile": "Frontend/Css/Colours/purple.css"
+  },
+  {
+    "inputFile": "Frontend/Css/Colours/yellow.less",
+    "outputFile": "Frontend/Css/Colours/yellow.css"
+  },
+
+
+  /* Atom */
+  {
+    "inputFile": "Frontend/Css/Atom/a.less",
+    "outputFile": "Frontend/Css/Atom/a.css"
+  },
+  {
+    "inputFile": "Frontend/Css/Atom/abstract.less",
+    "outputFile": "Frontend/Css/Atom/abstract.css"
+  },
+  {
+    "inputFile": "Frontend/Css/Atom/blockquote.less",
+    "outputFile": "Frontend/Css/Atom/blockquote.css"
+  },
+  {
+    "inputFile": "Frontend/Css/Atom/code.less",
+    "outputFile": "Frontend/Css/Atom/code.css"
+  },
+  {
+    "inputFile": "Frontend/Css/Atom/h.less",
+    "outputFile": "Frontend/Css/Atom/h.css"
+  },
+  {
+    "inputFile": "Frontend/Css/Atom/hr.less",
+    "outputFile": "Frontend/Css/Atom/hr.css"
+  },
+  {
+    "inputFile": "Frontend/Css/Atom/image.less",
+    "outputFile": "Frontend/Css/Atom/image.css"
+  },
+  {
+    "inputFile": "Frontend/Css/Atom/pre.less",
+    "outputFile": "Frontend/Css/Atom/pre.css"
+  },
+  {
+    "inputFile": "Frontend/Css/Atom/text.less",
+    "outputFile": "Frontend/Css/Atom/text.css"
+  },
+  {
+    "inputFile": "Frontend/Css/Atom/triangle.less",
+    "outputFile": "Frontend/Css/Atom/triangle.css"
+  },
+
+
+  /* Molekule */
+  {
+    "inputFile": "Frontend/Css/Molekule/box.less",
+    "outputFile": "Frontend/Css/Molekule/box.css"
+  },
+  {
+    "inputFile": "Frontend/Css/Molekule/button.less",
+    "outputFile": "Frontend/Css/Molekule/button.css"
+  },
+  {
+    "inputFile": "Frontend/Css/Molekule/list.less",
+    "outputFile": "Frontend/Css/Molekule/list.css"
+  },
+  {
+    "inputFile": "Frontend/Css/Molekule/row.less",
+    "outputFile": "Frontend/Css/Molekule/row.css"
+  },
+  {
+    "inputFile": "Frontend/Css/Molekule/seperator.less",
+    "outputFile": "Frontend/Css/Molekule/seperator.css"
+  },
+
+
+  /* Organism */
+  {
+    "inputFile": "Frontend/Css/Organism/article.less",
+    "outputFile": "Frontend/Css/Organism/article.css"
+  },
+  {
+    "inputFile": "Frontend/Css/Organism/banner.less",
+    "outputFile": "Frontend/Css/Organism/banner.css"
+  },
+  {
+    "inputFile": "Frontend/Css/Organism/blogarchive.less",
+    "outputFile": "Frontend/Css/Organism/blogarchive.css"
+  },
+  {
+    "inputFile": "Frontend/Css/Organism/breadcrumb.less",
+    "outputFile": "Frontend/Css/Organism/breadcrumb.css"
+  },
+  {
+    "inputFile": "Frontend/Css/Organism/container.less",
+    "outputFile": "Frontend/Css/Organism/container.css"
+  },
+  {
+    "inputFile": "Frontend/Css/Organism/cta.less",
+    "outputFile": "Frontend/Css/Organism/cta.css"
+  },
+  {
+    "inputFile": "Frontend/Css/Organism/features.less",
+    "outputFile": "Frontend/Css/Organism/features.css"
+  },
+  {
+    "inputFile": "Frontend/Css/Organism/footer.less",
+    "outputFile": "Frontend/Css/Organism/footer.css"
+  },
+  {
+    "inputFile": "Frontend/Css/Organism/header.less",
+    "outputFile": "Frontend/Css/Organism/header.css"
+  },
+  {
+    "inputFile": "Frontend/Css/Organism/icon.less",
+    "outputFile": "Frontend/Css/Organism/icon.css"
+  },
+  {
+    "inputFile": "Frontend/Css/Organism/jumbotron.less",
+    "outputFile": "Frontend/Css/Organism/jumbotron.css"
+  },
+  {
+    "inputFile": "Frontend/Css/Organism/menu.less",
+    "outputFile": "Frontend/Css/Organism/menu.css"
+  },
+  {
+    "inputFile": "Frontend/Css/Organism/panel.less",
+    "outputFile": "Frontend/Css/Organism/panel.css"
+  },
+  {
+    "inputFile": "Frontend/Css/Organism/section.less",
+    "outputFile": "Frontend/Css/Organism/section.css"
+  },
+  {
+    "inputFile": "Frontend/Css/Organism/spotlight.less",
+    "outputFile": "Frontend/Css/Organism/spotlight.css"
+  },
+  {
+    "inputFile": "Frontend/Css/Organism/table.less",
+    "outputFile": "Frontend/Css/Organism/table.css"
+  },
+  {
+    "inputFile": "Frontend/Css/Organism/wrapper.less",
+    "outputFile": "Frontend/Css/Organism/wrapper.css"
+  },
+
+
+  /* Template */
+  {
+    "inputFile": "Frontend/Css/Template/form.less",
+    "outputFile": "Frontend/Css/Template/form.css"
+  },
+  {
+    "inputFile": "Frontend/Css/Template/style-style1.less",
+    "outputFile": "Frontend/Css/Template/style-style1.css"
+  },
+  {
+    "inputFile": "Frontend/Css/Template/style-style3.less",
+    "outputFile": "Frontend/Css/Template/style-style3.css"
+  },
+  {
+    "inputFile": "Frontend/Css/Template/style-style5.less",
+    "outputFile": "Frontend/Css/Template/style-style5.css"
+  },
+
+
+  /* Plugins */
+  {
+    "inputFile": "Frontend/Css/Plugins/Tooltipster/tooltipster.bundle.less",
+    "outputFile": "Frontend/Css/Plugins/Tooltipster/tooltipster.bundle.css"
+  }
+
+]

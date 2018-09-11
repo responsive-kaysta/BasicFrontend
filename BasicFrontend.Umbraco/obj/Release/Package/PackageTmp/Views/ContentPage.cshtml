@@ -1,0 +1,25 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.ContentPage>
+
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+
+@{
+    Layout = "_Layout.cshtml";
+}
+
+<article id="main">
+    <header>
+        <h2>@Umbraco.Field("headline")</h2>
+        <p>@Html.Raw(Umbraco.Field("paragraph"))</p>
+    </header>
+    @{
+        var style = @Umbraco.Field("style");
+        var colourScheme = @Umbraco.Field("colourScheme");
+        <section class="wrapper @style">
+            <div class="inner">
+                <div class="container @colourScheme">
+                    @Html.GetGridHtml(Model.Content, "gridLayout", "bootstrap3-fluid")
+                </div>
+            </div>
+        </section>
+    }
+</article>
