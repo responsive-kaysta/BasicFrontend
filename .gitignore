@@ -1,27 +1,19 @@
-﻿*.lock
-*.gen
+﻿*.gen
 *.hash
 *.cache
-*.pdb
 *.log
 *.manifest
-*.dll
 *.user
 *.suo
 *.lock
 *.ide
 
-\.vs/BasicFrontend/v15/Server/sqlite3/
-\.vs/frontend\.local/DesignTimeBuild/
+*.dll
+*.pdb
 
-BasicFrontend\.dev/App_Data/TEMP/ClientDependency/
-BasicFrontend\.dev/App_Data/TEMP/DistCache/
-BasicFrontend\.dev/App_Data/TEMP/ExamineIndexes/External/Index/
-BasicFrontend\.dev/App_Data/TEMP/ExamineIndexes/Internal/Index/
-BasicFrontend\.dev/App_Data/TEMP/ExamineIndexes/InternalMember/Index/
-BasicFrontend\.dev/App_Data/Logs/
-BasicFrontend\.Umbraco/App_Data/NuGetBackup/
-BasicFrontend\.dev/App_Data/TEMP/PluginCache/
-BasicFrontend\.dev/obj/
-BasicFrontend\.dev/obj/Debug/
-BasicFrontend\.dev/obj/Release/
+*.*.dll
+*.*.pdb
+
+/BasicFrontend.dev/App_Data/TEMP
+/BasicFrontend.dev/App_Data/Logs
+/BasicFrontend.dev/obj/Debug
