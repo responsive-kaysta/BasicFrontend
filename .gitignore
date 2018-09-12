@@ -14,6 +14,18 @@
 *.*.dll
 *.*.pdb
 
-/BasicFrontend.dev/App_Data/TEMP
+
 /BasicFrontend.dev/App_Data/Logs
 /BasicFrontend.dev/obj/Debug
+/BasicFrontend.dev/obj/Release
+
+
+/BasicFrontend.prod/App_Data/Logs
+/BasicFrontend.prod/obj/Debug
+/BasicFrontend.prod/obj/Release
+/BasicFrontend.dev/App_Data/TEMP/PluginCache
+/BasicFrontend.dev/App_Data/TEMP/ExamineIndexes
+/BasicFrontend.dev/App_Data/TEMP/DistCache
+/BasicFrontend.dev/App_Data/TEMP/ClientDependency
+/BasicFrontend.prod/App_Data/TEMP/ClientDependency
+/BasicFrontend.prod/App_Data/TEMP/PluginCache

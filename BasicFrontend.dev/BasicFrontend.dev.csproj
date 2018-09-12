@@ -380,8 +380,10 @@
     <Content Include="App_Plugins\ModelsBuilder\modelsbuilder.htm" />
     <Content Include="App_Plugins\ModelsBuilder\modelsbuilder.resource.js" />
     <Content Include="App_Plugins\ModelsBuilder\package.manifest" />
+    <Content Include="App_Plugins\uSync.Content\package.manifest" />
     <Content Include="App_Plugins\uSync.Content\uSyncDashboardContent.html" />
     <Content Include="App_Plugins\uSync.Content\uSyncDashboardContentController.js" />
+    <Content Include="App_Plugins\uSync\package.manifest" />
     <Content Include="App_Plugins\uSync\uSyncDashboard.css" />
     <Content Include="App_Plugins\uSync\uSyncDashboard.html" />
     <Content Include="App_Plugins\uSync\uSyncDashboardController.js" />
@@ -792,14 +794,14 @@
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
     <Content Include="App_Plugins\GodMode\package.manifest" />
-    <Content Include="App_Plugins\uSync.Content\package.manifest" />
-    <Content Include="App_Plugins\uSync\package.manifest" />
     <Content Include="config\uSyncBackOffice.config" />
     <Content Include="config\uSyncCore.Config" />
     <Content Include="config\uSyncCore.Config.install.xdt" />
     <Content Include="config\uSyncCore.Config.uninstall.xdt" />
     <Content Include="Media\created-packages\responsive.kaysta.Frontend_0.9.22.zip" />
     <Content Include="App_Data\packages\created\createdPackages.config" />
+    <Content Include="App_Data\TEMP\uSync\20180822_133046_Startup.config" />
+    <Content Include="App_Data\TEMP\uSync\20180912_135501_Export.config" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -2202,6 +2204,7 @@
     <Content Include="Umbraco_Client\Ui\json2.js" />
     <Content Include="Umbraco_Client\Ui\knockout.js" />
     <Content Include="Umbraco_Client\Ui\knockout.mapping.js" />
+    <Content Include="uSync\data\Content\home\content.config" />
     <Content Include="uSync\data\DataType\approved-color\ApprovedColor.config" />
     <Content Include="uSync\data\DataType\checkbox-list\CheckboxList.config" />
     <Content Include="uSync\data\DataType\checkbox\Checkbox.config" />
@@ -2250,6 +2253,8 @@
     <Content Include="uSync\data\MediaType\file\def.config" />
     <Content Include="uSync\data\MediaType\folder\def.config" />
     <Content Include="uSync\data\MediaType\image\def.config" />
+    <Content Include="uSync\data\Media\site\media.config" />
+    <Content Include="uSync\data\Media\spotlight\media.config" />
     <Content Include="uSync\data\Template\anchorpage\AnchorPage.config" />
     <Content Include="uSync\data\Template\blogoverview\BlogOverview.config" />
     <Content Include="uSync\data\Template\blogpost\BlogPost.config" />
@@ -2566,9 +2571,26 @@
     <Content Include="Views\_Layout.cshtml" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
-    <Content Include="uSync\data\Content\home\content.config" />
-    <Content Include="uSync\data\Media\site\media.config" />
-    <Content Include="uSync\data\Media\spotlight\media.config" />
+    <Content Include="uSync\data\Content\home\about\content.config" />
+    <Content Include="uSync\data\Content\home\contact\content.config" />
+    <Content Include="uSync\data\Content\home\disclaimer\content.config" />
+    <Content Include="uSync\data\Content\home\examples\basic-text-page-style-light\content.config" />
+    <Content Include="uSync\data\Content\home\examples\content.config" />
+    <Content Include="uSync\data\Content\home\site-global\content.config" />
+    <Content Include="uSync\data\Media\site\1d940749740655560867a146b61.png\media.config" />
+    <Content Include="uSync\data\Media\site\287309.jpg\media.config" />
+    <Content Include="uSync\data\Media\site\56929080_thumbnail.jpg\media.config" />
+    <Content Include="uSync\data\Media\site\cool-high-tech-wallpaper-30878-31608-hd-wallpapers.jpg\media.config" />
+    <Content Include="uSync\data\Media\site\high-tech-wallpaper-hd-3438-3647-hd-wallpapers.jpg\media.config" />
+    <Content Include="uSync\data\Media\site\internet-of-things-1920xx.png\media.config" />
+    <Content Include="uSync\data\Media\site\website-design-background.png\media.config" />
+    <Content Include="uSync\data\Media\site\xbx9a0o.jpg\media.config" />
+    <Content Include="uSync\data\Media\spotlight\spotlight_1.png\media.config" />
+    <Content Include="uSync\data\Media\spotlight\spotlight_2.png\media.config" />
+    <Content Include="uSync\data\Media\spotlight\spotlight_3.png\media.config" />
+    <Content Include="uSync\data\Media\spotlight\spotlight_4.png\media.config" />
+    <Content Include="uSync\data\Media\spotlight\spotlight_5.png\media.config" />
+    <Content Include="uSync\data\MemberType\member\def.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
