@@ -707,7 +707,7 @@
       <DependentUpon>custom.less</DependentUpon>
     </Content>
     <Content Include="Frontend\custom.min.css">
-      <DependentUpon>custom.less</DependentUpon>
+      <DependentUpon>custom.css</DependentUpon>
     </Content>
     <Content Include="Frontend\fontawesome-all.css">
       <DependentUpon>fontawesome-all.less</DependentUpon>
@@ -757,19 +757,18 @@
     <Content Include="Frontend\JavaScript\Plugins\Tooltipster\tooltipster.main.js" />
     <Content Include="Global.asax" />
     <Content Include="icon.png" />
-    <Content Include="Media\1001\1d940749740655560867a146b61.png" />
-    <Content Include="Media\1002\287309.jpg" />
-    <Content Include="Media\1003\56929080_thumbnail.jpg" />
-    <Content Include="Media\1004\cool-high-tech-wallpaper-30878-31608-hd-wallpapers.jpg" />
-    <Content Include="Media\1005\high-tech-wallpaper-hd-3438-3647-hd-wallpapers.jpg" />
-    <Content Include="Media\1006\internet-of-things-1920xx.png" />
-    <Content Include="Media\1007\website-design-background.png" />
-    <Content Include="Media\1008\xbx9a0o.jpg" />
-    <Content Include="Media\1009\spotlight_1.png" />
-    <Content Include="Media\1010\spotlight_2.png" />
-    <Content Include="Media\1011\spotlight_3.png" />
-    <Content Include="Media\1012\spotlight_4.png" />
-    <Content Include="Media\1013\spotlight_5.png" />
+    <Content Include="Media\1001\bootstrap_snip.png" />
+    <Content Include="Media\1002\jquery_snip.png" />
+    <Content Include="Media\1003\umbraco_snip.png" />
+    <Content Include="Media\1004\xbx9a0o.jpg" />
+    <Content Include="Media\1005\1d940749740655560867a146b61.png" />
+    <Content Include="Media\1006\287309.jpg" />
+    <Content Include="Media\1007\56929080_thumbnail.jpg" />
+    <Content Include="Media\1008\cool-high-tech-wallpaper-30878-31608-hd-wallpapers.jpg" />
+    <Content Include="Media\1009\high-tech-wallpaper-hd-3438-3647-hd-wallpapers.jpg" />
+    <Content Include="Media\1010\internet-of-things-1920xx.png" />
+    <Content Include="Media\1011\website-design-background.png" />
+    <Content Include="Media\created-packages\responsive.kaysta.Frontend_0.9.22.zip" />
     <Content Include="Media\Web.config" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
@@ -798,7 +797,6 @@
     <Content Include="config\uSyncCore.Config" />
     <Content Include="config\uSyncCore.Config.install.xdt" />
     <Content Include="config\uSyncCore.Config.uninstall.xdt" />
-    <Content Include="Media\created-packages\responsive.kaysta.Frontend_0.9.22.zip" />
     <Content Include="App_Data\packages\created\createdPackages.config" />
     <Content Include="App_Data\TEMP\uSync\20180822_133046_Startup.config" />
     <Content Include="App_Data\TEMP\uSync\20180912_135501_Export.config" />

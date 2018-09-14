@@ -14063,6 +14063,9 @@ section#banner > div p {
   color: whitesmoke !important;
   background-color: transparent !important;
 }
+.fullwidth {
+  width: 100% !important;
+}
 /* base styles and definitions */
 /* menu */
 /* green -> obsolete style1 */
@@ -14502,10 +14505,10 @@ body.is-mobile #main > header {
   background-color: transparent;
 }
 body.landing #page-wrapper {
-  background: -moz-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)), url("/Media/1007/Website-Design-Background.png");
-  background: -webkit-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)), url("/Media/1007/Website-Design-Background.png");
-  background-image: -ms-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)), url("/Media/1007/Website-Design-Background.png");
-  background: linear-gradient(to bottom, #0b3536 0%, rgba(125, 185, 232, 0)), url("/Media/1007/Website-Design-Background.png");
+  background: -moz-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)), url("/Media/1011/Website-Design-Background.png");
+  background: -webkit-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)), url("/Media/1011/Website-Design-Background.png");
+  background-image: -ms-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)), url("/Media/1011/Website-Design-Background.png");
+  background: linear-gradient(to bottom, #0b3536 0%, rgba(125, 185, 232, 0)), url("/Media/1011/Website-Design-Background.png");
   background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
@@ -14514,10 +14517,10 @@ body.landing #page-wrapper {
   background-color: transparent;
 }
 body.regular #page-wrapper {
-  background: -moz-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)), url("/Media/1007/Website-Design-Background.png");
-  background: -webkit-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)), url("/Media/1007/Website-Design-Background.png");
-  background-image: -ms-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)), url("/Media/1007/Website-Design-Background.png");
-  background: linear-gradient(to bottom, #0b3536 0%, rgba(125, 185, 232, 0)), url("/Media/1007/Website-Design-Background.png");
+  background: -moz-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)), url("/Media/1011/Website-Design-Background.png");
+  background: -webkit-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)), url("/Media/1011/Website-Design-Background.png");
+  background-image: -ms-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)), url("/Media/1011/Website-Design-Background.png");
+  background: linear-gradient(to bottom, #0b3536 0%, rgba(125, 185, 232, 0)), url("/Media/1011/Website-Design-Background.png");
   background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
@@ -14867,133 +14870,4 @@ corresponds to the arrow we want to display */
 }
 @viewport {
   width: device-width;
-}
-/* base styles and definitions */
-/* menu */
-/* green -> obsolete style1 */
-/* gray -> obsolete style2 */
-/* purple -> obsolete style3 */
-/* transparent -> obsolete: style4 */
-/* light -> obsolete: style5 */
-/* button */
-/* code */
-/* banner */
-#footer {
-  padding: 1rem 0 1rem 0;
-  text-align: center;
-  color: #f5f5f5;
-  background-color: #0b3536;
-}
-#footer .copyright span {
-  padding: 0;
-}
-.col-md-12 {
-  padding-left: 0;
-  padding-right: 0;
-}
-footer#footer {
-  /* position: fixed;
-    bottom: 0;
-    width: 100%;
-    text-align: center; */
-}
-article {
-  min-height: 65vh;
-}
-section {
-  /* min-height: 65vh; */
-}
-@media screen and (min-width: 1680px) {
-  #main > header {
-    padding: 5.5rem 25.375% 4rem 25.375%;
-  }
-  header.major {
-    padding: 0 25.375% 0 25.375%;
-  }
-  .container {
-    max-width: 1024px;
-  }
-}
-@media screen and (max-width: 1680px) {
-  #main > header {
-    padding: 5.5rem 17.25% 4rem 17.25%;
-  }
-  header.major {
-    padding: 0 17.25% 0 17.25%;
-  }
-  .container {
-    max-width: 1024px;
-  }
-}
-@media screen and (max-width: 1280px) {
-  #main > header {
-    padding: 5.5rem 10% 3rem 10%;
-  }
-  header.major {
-    padding: 0 10% 0 10%;
-  }
-  .container {
-    max-width: 1024px;
-  }
-}
-@media screen and (max-width: 980px) {
-  #main > header {
-    padding: 3.5rem 15% 2.5rem 15%;
-  }
-  header.major {
-    padding: 0 15% 0 15%;
-  }
-  .container {
-    max-width: 768px;
-  }
-}
-@media screen and (max-width: 736px) {
-  #main > header {
-    padding: 4rem 15% 1.5rem 15%;
-  }
-  #main > header h2 {
-    font-size: 1.25rem;
-    margin: 0 0 1rem 0;
-  }
-  header.major {
-    padding: 0 5% 0 5%;
-  }
-  .container {
-    max-width: 468px;
-  }
-}
-body.is-mobile #main > header {
-  background-attachment: scroll;
-}
-#main > header {
-  background-attachment: fixed;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  text-align: center;
-  background-color: transparent;
-}
-body.landing #page-wrapper {
-  background: -moz-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)), url("/Media/1007/Website-Design-Background.png");
-  background: -webkit-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)), url("/Media/1007/Website-Design-Background.png");
-  background-image: -ms-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)), url("/Media/1007/Website-Design-Background.png");
-  background: linear-gradient(to bottom, #0b3536 0%, rgba(125, 185, 232, 0)), url("/Media/1007/Website-Design-Background.png");
-  background-attachment: fixed;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-top: 0;
-  background-color: transparent;
-}
-body.regular #page-wrapper {
-  background: -moz-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)), url("/Media/1007/Website-Design-Background.png");
-  background: -webkit-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)), url("/Media/1007/Website-Design-Background.png");
-  background-image: -ms-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)), url("/Media/1007/Website-Design-Background.png");
-  background: linear-gradient(to bottom, #0b3536 0%, rgba(125, 185, 232, 0)), url("/Media/1007/Website-Design-Background.png");
-  background-attachment: fixed;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-top: 0;
-  background-color: transparent;
 }

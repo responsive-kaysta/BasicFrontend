@@ -63,7 +63,7 @@
         "icon": "icon-coin",
         "config": {
             "style": "font-size: 30px; line-height: 45px; font-weight: bold; text-align:center;",
-            "markup": "<h1 style='text-align:center;'>#value#</h1>"
+            "markup": "<h1 class='headline align-center'>#value#</h1>"
         }
     },
 
