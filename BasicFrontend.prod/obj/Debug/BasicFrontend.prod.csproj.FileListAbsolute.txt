@@ -1,4 +1,4 @@
-C:\Dev\GitHub\BasicFrontend\BasicFrontend.prod\bin\AutoMapper.Net4.dll
+C:\Dev\GitHub\BasicFrontend\BasicFrontend.prod\bin\App_Data\NuGetBackup\20180819-171915\bin\AutoMapper.Net4.dll
 C:\Dev\GitHub\BasicFrontend\BasicFrontend.prod\bin\BasicFrontend.prod.dll.config
 C:\Dev\GitHub\BasicFrontend\BasicFrontend.prod\bin\BasicFrontend.prod.dll
 C:\Dev\GitHub\BasicFrontend\BasicFrontend.prod\bin\BasicFrontend.prod.pdb
@@ -49,6 +49,7 @@ C:\Dev\GitHub\BasicFrontend\BasicFrontend.prod\bin\roslyn\vbc.rsp
 C:\Dev\GitHub\BasicFrontend\BasicFrontend.prod\bin\roslyn\VBCSCompiler.exe
 C:\Dev\GitHub\BasicFrontend\BasicFrontend.prod\bin\roslyn\VBCSCompiler.exe.config
 C:\Dev\GitHub\BasicFrontend\BasicFrontend.prod\bin\AutoMapper.dll
+C:\Dev\GitHub\BasicFrontend\BasicFrontend.prod\bin\AutoMapper.Net4.dll
 C:\Dev\GitHub\BasicFrontend\BasicFrontend.prod\bin\businesslogic.dll
 C:\Dev\GitHub\BasicFrontend\BasicFrontend.prod\bin\ClientDependency.Core.dll
 C:\Dev\GitHub\BasicFrontend\BasicFrontend.prod\bin\ClientDependency.Core.Mvc.dll
@@ -109,8 +110,8 @@ C:\Dev\GitHub\BasicFrontend\BasicFrontend.prod\bin\umbraco.providers.dll
 C:\Dev\GitHub\BasicFrontend\BasicFrontend.prod\bin\Umbraco.Web.UI.dll
 C:\Dev\GitHub\BasicFrontend\BasicFrontend.prod\bin\UmbracoExamine.dll
 C:\Dev\GitHub\BasicFrontend\BasicFrontend.prod\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Dev\GitHub\BasicFrontend\BasicFrontend.prod\obj\Debug\BasicFrontend.prod.csprojAssemblyReference.cache
 C:\Dev\GitHub\BasicFrontend\BasicFrontend.prod\obj\Debug\BasicFrontend.prod.csproj.CoreCompileInputs.cache
 C:\Dev\GitHub\BasicFrontend\BasicFrontend.prod\obj\Debug\BasicFrontend.prod.csproj.CopyComplete
 C:\Dev\GitHub\BasicFrontend\BasicFrontend.prod\obj\Debug\BasicFrontend.prod.dll
 C:\Dev\GitHub\BasicFrontend\BasicFrontend.prod\obj\Debug\BasicFrontend.prod.pdb
-C:\Dev\GitHub\BasicFrontend\BasicFrontend.prod\bin\App_Data\NuGetBackup\20180819-171915\bin\AutoMapper.Net4.dll

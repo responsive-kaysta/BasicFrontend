@@ -1,0 +1,42 @@
+﻿/* base styles and definitions */
+/* menu */
+/* green -> obsolete style1 */
+/* gray -> obsolete style2 */
+/* purple -> obsolete style3 */
+/* transparent -> obsolete: style4 */
+/* light -> obsolete: style5 */
+/* button */
+/* code */
+/* banner */
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+blockquote {
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0.2px;
+}
+blockquote:before,
+blockquote:after {
+  display: inline-block;
+  padding: 0 2px;
+  font-size: 1.4rem;
+  content: '"';
+}
+blockquote {
+  padding: 1rem;
+  text-align: center;
+  position: relative;
+}
+blockquote + * {
+  padding: 3rem 1rem;
+}

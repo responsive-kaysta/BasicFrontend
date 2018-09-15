@@ -1,0 +1,56 @@
+﻿@import "../global.vars.less";
+
+.transparent {
+    color: @style-transparent-color;
+    background-color: @style-transparent-bg-color;
+}
+
+.transparent a:hover {
+    -moz-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+    -webkit-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+    -ms-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+    transition: color 0.2s ease, border-bottom-color 0.2s ease;
+    color: @style-transparent-hover-color;
+}
+
+.transparent .page-header {
+    width: 100%;
+    color: @style-transparent-color;
+    border-bottom: @style-transparent-border-color solid thin !important;
+}
+
+section.transparent a, 
+section.transparent p,
+section.transparent ul,
+section.transparent li,
+section.transparent h2,
+section.transparent h3,
+section.transparent h4,
+section.transparent h5, 
+section.transparent h6 {
+    color: @style-transparent-color;
+}
+
+div.transparent a, 
+div.transparent p,
+div.transparent ul,
+div.transparent li,
+div.transparent h2,
+div.transparent h3,
+div.transparent h4,
+div.transparent h5, 
+div.transparent h6 {
+    color: @style-transparent-color;
+}
+
+section.transparent header.major h2,
+section.transparent header.major p {
+    color: @style-transparent-color;
+}
+
+header.transparent,
+header.transparent h2, 
+header.transparent p {
+    color: @base-color;
+    background-color: @style-transparent-bg-color;
+}

@@ -1,0 +1,58 @@
+﻿/* base styles and definitions */
+/* menu */
+/* green -> obsolete style1 */
+/* gray -> obsolete style2 */
+/* purple -> obsolete style3 */
+/* transparent -> obsolete: style4 */
+/* light -> obsolete: style5 */
+/* button */
+/* code */
+/* banner */
+.transparent {
+  color: whitesmoke;
+  background-color: transparent;
+}
+.transparent a:hover {
+  -moz-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+  -webkit-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+  -ms-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+  transition: color 0.2s ease, border-bottom-color 0.2s ease;
+  color: darkgray;
+}
+.transparent .page-header {
+  width: 100%;
+  color: whitesmoke;
+  border-bottom: whitesmoke solid thin !important;
+}
+section.transparent a,
+section.transparent p,
+section.transparent ul,
+section.transparent li,
+section.transparent h2,
+section.transparent h3,
+section.transparent h4,
+section.transparent h5,
+section.transparent h6 {
+  color: whitesmoke;
+}
+div.transparent a,
+div.transparent p,
+div.transparent ul,
+div.transparent li,
+div.transparent h2,
+div.transparent h3,
+div.transparent h4,
+div.transparent h5,
+div.transparent h6 {
+  color: whitesmoke;
+}
+section.transparent header.major h2,
+section.transparent header.major p {
+  color: whitesmoke;
+}
+header.transparent,
+header.transparent h2,
+header.transparent p {
+  color: whitesmoke;
+  background-color: transparent;
+}

@@ -722,13 +722,7 @@
     <Content Include="Frontend\Images\arrow.svg" />
     <Content Include="Frontend\Images\bars.svg" />
     <Content Include="Frontend\Images\close.svg" />
-    <Content Include="Frontend\JavaScript\global.es5.js">
-      <DependentUpon>global.js</DependentUpon>
-    </Content>
-    <Content Include="Frontend\JavaScript\global.es5.min.js">
-      <DependentUpon>global.js</DependentUpon>
-    </Content>
-    <Content Include="Frontend\JavaScript\global.js" />
+    <Content Include="Frontend\JavaScript\___global.js" />
     <Content Include="Frontend\JavaScript\Modules\colourswitch.js" />
     <Content Include="Frontend\JavaScript\Modules\equalheight.es5.js">
       <DependentUpon>equalheight.js</DependentUpon>

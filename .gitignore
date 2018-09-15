@@ -30,3 +30,8 @@
 /BasicFrontend.prod/App_Data/TEMP/ExamineIndexes
 /BasicFrontend.prod/App_Data/TEMP/DistCache
 /BasicFrontend.prod/App_Data/TEMP/ClientDependency
+
+\.vs/BasicFrontend/v15/Server/sqlite3/
+
+\.vs/
+/packages

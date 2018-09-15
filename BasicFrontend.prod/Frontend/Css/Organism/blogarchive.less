@@ -1,0 +1,51 @@
+﻿@import "../global.vars.less";
+
+.blogarchive div[class^="col-"] {
+    margin-bottom: 0.75rem !important;
+    margin-top: 0.75rem;
+    float: left;
+}
+
+.blogarchive h3 {
+    padding-bottom: 0.75rem;
+}
+
+.blogarchive a {
+    white-space: normal;
+    transition: all 200ms ease;
+    padding: 0.75rem 0.75rem 0.75rem 0.75rem;
+    display: block;
+}
+
+.blogarchive a:hover * {
+    -moz-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+    -webkit-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+    -ms-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+    transition: color 0.2s ease, border-bottom-color 0.2s ease;
+    text-decoration: none;
+    color: @base-hover-color !important;
+}
+
+.blogarchive a:hover p {
+    -moz-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+    -webkit-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+    -ms-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+    transition: color 0.2s ease, border-bottom-color 0.2s ease;
+    text-decoration: underline;
+    color: @base-hover-color !important;
+}
+
+.blogarchive .date {
+    text-align: right;
+}
+
+/*
+@media (min-width: 768px) {
+
+    section.blogarchive a:hover, a:visited:hover {
+        -moz-transform: scale(1.01);
+        -webkit-transform: scale(1.01);
+        transform: scale(1.01);
+    }
+}
+*/

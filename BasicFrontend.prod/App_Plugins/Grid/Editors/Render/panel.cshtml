@@ -1,0 +1,29 @@
+@inherits Umbraco.Web.Mvc.UmbracoViewPage<dynamic>
+
+@if (Model.editor.config.markup != null)
+{
+    string markup = Model.editor.config.markup.ToString();
+
+    markup = markup.Replace("#value#", Model.value.ToString());
+    markup = markup.Replace("#style#", Model.editor.config.style.ToString());
+
+    <text>
+        @Html.Raw(markup)
+    </text>
+}
+else
+{
+    <text>
+
+        <div class="panel panel-default" style="min-height: 210px;">
+            <div class="panel-heading">
+                <h3 class="panel-title">@Model.value.headline</h3>
+            </div>
+            <div class="panel-body">
+                <p>@Model.value.description</p>
+                <div><a href="@Model.value.link">weiter...</a></div>
+            </div>
+        </div>
+
+    </text>
+}
