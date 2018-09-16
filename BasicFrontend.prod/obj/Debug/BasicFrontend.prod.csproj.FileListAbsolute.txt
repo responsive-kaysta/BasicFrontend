@@ -110,7 +110,6 @@ C:\Dev\GitHub\BasicFrontend\BasicFrontend.prod\bin\umbraco.providers.dll
 C:\Dev\GitHub\BasicFrontend\BasicFrontend.prod\bin\Umbraco.Web.UI.dll
 C:\Dev\GitHub\BasicFrontend\BasicFrontend.prod\bin\UmbracoExamine.dll
 C:\Dev\GitHub\BasicFrontend\BasicFrontend.prod\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Dev\GitHub\BasicFrontend\BasicFrontend.prod\obj\Debug\BasicFrontend.prod.csprojAssemblyReference.cache
 C:\Dev\GitHub\BasicFrontend\BasicFrontend.prod\obj\Debug\BasicFrontend.prod.csproj.CoreCompileInputs.cache
 C:\Dev\GitHub\BasicFrontend\BasicFrontend.prod\obj\Debug\BasicFrontend.prod.csproj.CopyComplete
 C:\Dev\GitHub\BasicFrontend\BasicFrontend.prod\obj\Debug\BasicFrontend.prod.dll
