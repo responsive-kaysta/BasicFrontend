@@ -17,6 +17,9 @@ a {
 a.button {
   transition: all 0.25s ease-in-out;
 }
+a.button.special {
+  transition: all 0.25s ease-in-out;
+}
 input[type="submit"],
 input[type="reset"],
 input[type="button"],

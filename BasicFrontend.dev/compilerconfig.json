@@ -31,6 +31,10 @@
     "outputFile": "Content/style.transitions.css"
   },
   {
+    "inputFile": "Frontend/Css/style.mediaqueries.less",
+    "outputFile": "Content/style.mediaqueries.css"
+  },
+  {
     "inputFile": "Frontend/Css/body.less",
     "outputFile": "Content/body.css"
   },
