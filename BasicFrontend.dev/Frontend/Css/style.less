@@ -1,31 +1,10 @@
 ﻿@import "global.vars.less";
 
-@media screen and (min-width: 1680px) {
+@media screen and (min-width: 1680px) { // 1920 plus
+
     body, input, select, textarea {
         font-size: 15pt;
     }
-}
-
-@media screen and (max-width: 1680px) {
-    body, input, select, textarea {
-        font-size: 14pt;
-    }
-}
-
-@media screen and (max-width: 1280px) {
-    body, input, select, textarea {
-        font-size: 13pt;
-    }
-}
-
-@media screen and (max-width: 736px) {
-    body, input, select, textarea {
-        font-size: 12pt;
-        letter-spacing: 0.0375rem;
-    }
-}
-
-@media screen and (min-width: 1680px) { // 1920 plus
 
     #main > header {
         padding: 5.5rem 25.375% 4rem 25.375%;
@@ -42,6 +21,10 @@
 
 @media screen and (max-width: 1680px) {
 
+    body, input, select, textarea {
+        font-size: 15pt;
+    }
+
     #main > header {
         padding: 5.5rem 17.25% 4rem 17.25%;
     }
@@ -56,6 +39,10 @@
 }
 
 @media screen and (max-width: 1280px) {
+
+    body, input, select, textarea {
+        font-size: 14pt;
+    }
 
     #main > header {
         padding: 5.5rem 10% 3rem 10%;
@@ -102,6 +89,10 @@
 
 @media screen and (max-width: 980px) {
 
+    body, input, select, textarea {
+        font-size: 13pt;
+    }
+
     #main > header {
         padding: 3.5rem 15% 2.5rem 15%;
     }
@@ -147,44 +138,13 @@
         text-align: center;
     }
 
-    h2 {
-        font-size: 1.25rem !important;
-        line-height: 1.5rem !important;
-    }
-
-    h3 {
-        font-size: 1.05rem !important;
-        line-height: 1.5rem !important;
-    }
-
-    h4 {
-        font-size: 0.9rem !important;
-        line-height: 1rem !important;
-    }
-
-    h5 {
-        font-size: 0.7rem !important;
-        line-height: 1rem !important;
-    }
-
-    h6 {
-        font-size: 0.5rem !important;
-        line-height: 1rem !important;
-    }
-
-    p.lead {
-        font-size: 0.9rem !important;
-        line-height: 1rem !important;
-    }
-
-    p {
-        font-size: 0.75rem !important;
-        line-height: 1rem !important;
-    }
-
 }
 
 @media screen and (max-width: 736px) {
+
+    body, input, select, textarea {
+        font-size: 12pt;
+    }
 
     #main > header {
         padding: 4rem 15% 1.5rem 15%;
@@ -238,54 +198,13 @@
         text-align: center;
     }
 
-    h2 {
-        font-size: 1.25rem !important;
-        line-height: 1.5rem !important;
-    }
-
-    h3 {
-        font-size: 1.05rem !important;
-        line-height: 1.5rem !important;
-    }
-
-    h4 {
-        font-size: 0.9rem !important;
-        line-height: 1rem !important;
-    }
-
-    h5 {
-        font-size: 0.7rem !important;
-        line-height: 1rem !important;
-    }
-
-    h6 {
-        font-size: 0.5rem !important;
-        line-height: 1rem !important;
-    }
-
-    p.lead {
-        font-size: 0.9rem !important;
-        line-height: 1rem !important;
-    }
-
-    p {
-        font-size: 0.75rem !important;
-        line-height: 1rem !important;
-    }
-
 }
 
 body.is-mobile #main > header {
     background-attachment: scroll;
 }
 
-#main > header {
-    /*
-    background: -moz-linear-gradient(top, rgb(11, 53, 54) 0%, rgba(125,185,232,0)), url(@banner-bg-image);
-    background: -webkit-linear-gradient(top, rgb(11, 53, 54) 0%,rgba(125,185,232,0)), url(@banner-bg-image);
-    background-image: -ms-linear-gradient(top, rgb(11, 53, 54) 0%, rgba(125,185,232,0)), url(@banner-bg-image);
-    background: linear-gradient(to bottom, rgb(11, 53, 54) 0%,rgba(125,185,232,0)), url(@banner-bg-image);
-    */
+#main > header {    
     background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;

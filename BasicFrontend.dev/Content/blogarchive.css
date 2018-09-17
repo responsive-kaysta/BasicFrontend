@@ -17,9 +17,9 @@
   padding-bottom: 0.75rem;
 }
 .blogarchive a {
+  border-radius: 8px;
   white-space: normal;
-  transition: all 200ms ease;
-  padding: 0.75rem 0.75rem 0.75rem 0.75rem;
+  padding: 1.25rem;
   display: block;
 }
 .blogarchive a:hover * {
@@ -33,13 +33,3 @@
 .blogarchive .date {
   text-align: right;
 }
-/*
-@media (min-width: 768px) {
-
-    section.blogarchive a:hover, a:visited:hover {
-        -moz-transform: scale(1.01);
-        -webkit-transform: scale(1.01);
-        transform: scale(1.01);
-    }
-}
-*/

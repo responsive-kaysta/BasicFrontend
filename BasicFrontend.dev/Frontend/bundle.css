@@ -12441,6 +12441,9 @@ sup {
   border-radius: 0;
   padding: 0;
 }
+.round-corner {
+  border-radius: 8px;
+}
 /* base styles and definitions */
 /* menu */
 /* green -> obsolete style1 */
@@ -12457,7 +12460,6 @@ a.button {
   font-family: "Lato", sans-serif !important;
   font-size: 1rem;
   background: transparent;
-  transition: all 0.2s ease-in-out;
   color: whitesmoke !important;
   background: black !important;
   background-color: black !important;
@@ -12939,9 +12941,9 @@ a.more.scrolly {
   padding-bottom: 0.75rem;
 }
 .blogarchive a {
+  border-radius: 8px;
   white-space: normal;
-  transition: all 200ms ease;
-  padding: 0.75rem 0.75rem 0.75rem 0.75rem;
+  padding: 1.25rem;
   display: block;
 }
 .blogarchive a:hover * {
@@ -12955,16 +12957,6 @@ a.more.scrolly {
 .blogarchive .date {
   text-align: right;
 }
-/*
-@media (min-width: 768px) {
-
-    section.blogarchive a:hover, a:visited:hover {
-        -moz-transform: scale(1.01);
-        -webkit-transform: scale(1.01);
-        transform: scale(1.01);
-    }
-}
-*/
 /* base styles and definitions */
 /* menu */
 /* green -> obsolete style1 */
@@ -14631,33 +14623,6 @@ header.light p {
   textarea {
     font-size: 15pt;
   }
-}
-@media screen and (max-width: 1680px) {
-  body,
-  input,
-  select,
-  textarea {
-    font-size: 14pt;
-  }
-}
-@media screen and (max-width: 1280px) {
-  body,
-  input,
-  select,
-  textarea {
-    font-size: 13pt;
-  }
-}
-@media screen and (max-width: 736px) {
-  body,
-  input,
-  select,
-  textarea {
-    font-size: 12pt;
-    letter-spacing: 0.0375rem;
-  }
-}
-@media screen and (min-width: 1680px) {
   #main > header {
     padding: 5.5rem 25.375% 4rem 25.375%;
   }
@@ -14669,6 +14634,12 @@ header.light p {
   }
 }
 @media screen and (max-width: 1680px) {
+  body,
+  input,
+  select,
+  textarea {
+    font-size: 15pt;
+  }
   #main > header {
     padding: 5.5rem 17.25% 4rem 17.25%;
   }
@@ -14680,6 +14651,12 @@ header.light p {
   }
 }
 @media screen and (max-width: 1280px) {
+  body,
+  input,
+  select,
+  textarea {
+    font-size: 14pt;
+  }
   #main > header {
     padding: 5.5rem 10% 3rem 10%;
   }
@@ -14718,6 +14695,12 @@ header.light p {
   }
 }
 @media screen and (max-width: 980px) {
+  body,
+  input,
+  select,
+  textarea {
+    font-size: 13pt;
+  }
   #main > header {
     padding: 3.5rem 15% 2.5rem 15%;
   }
@@ -14757,36 +14740,14 @@ header.light p {
     padding: 0.7rem;
     text-align: center;
   }
-  h2 {
-    font-size: 1.25rem !important;
-    line-height: 1.5rem !important;
-  }
-  h3 {
-    font-size: 1.05rem !important;
-    line-height: 1.5rem !important;
-  }
-  h4 {
-    font-size: 0.9rem !important;
-    line-height: 1rem !important;
-  }
-  h5 {
-    font-size: 0.7rem !important;
-    line-height: 1rem !important;
-  }
-  h6 {
-    font-size: 0.5rem !important;
-    line-height: 1rem !important;
-  }
-  p.lead {
-    font-size: 0.9rem !important;
-    line-height: 1rem !important;
-  }
-  p {
-    font-size: 0.75rem !important;
-    line-height: 1rem !important;
-  }
 }
 @media screen and (max-width: 736px) {
+  body,
+  input,
+  select,
+  textarea {
+    font-size: 12pt;
+  }
   #main > header {
     padding: 4rem 15% 1.5rem 15%;
   }
@@ -14832,45 +14793,11 @@ header.light p {
     padding: 0.7rem;
     text-align: center;
   }
-  h2 {
-    font-size: 1.25rem !important;
-    line-height: 1.5rem !important;
-  }
-  h3 {
-    font-size: 1.05rem !important;
-    line-height: 1.5rem !important;
-  }
-  h4 {
-    font-size: 0.9rem !important;
-    line-height: 1rem !important;
-  }
-  h5 {
-    font-size: 0.7rem !important;
-    line-height: 1rem !important;
-  }
-  h6 {
-    font-size: 0.5rem !important;
-    line-height: 1rem !important;
-  }
-  p.lead {
-    font-size: 0.9rem !important;
-    line-height: 1rem !important;
-  }
-  p {
-    font-size: 0.75rem !important;
-    line-height: 1rem !important;
-  }
 }
 body.is-mobile #main > header {
   background-attachment: scroll;
 }
 #main > header {
-  /*
-    background: -moz-linear-gradient(top, rgb(11, 53, 54) 0%, rgba(125,185,232,0)), url(Css/@banner-bg-image);
-    background: -webkit-linear-gradient(top, rgb(11, 53, 54) 0%,rgba(125,185,232,0)), url(Css/@banner-bg-image);
-    background-image: -ms-linear-gradient(top, rgb(11, 53, 54) 0%, rgba(125,185,232,0)), url(Css/@banner-bg-image);
-    background: linear-gradient(to bottom, rgb(11, 53, 54) 0%,rgba(125,185,232,0)), url(Css/@banner-bg-image);
-    */
   background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
@@ -14917,6 +14844,9 @@ a {
   -webkit-transition: color 0.25s ease, border-bottom-color 0.25s ease;
   -ms-transition: color 0.25s ease, border-bottom-color 0.25s ease;
   transition: color 0.25s ease, border-bottom-color 0.25s ease;
+}
+a.button {
+  transition: all 0.25s ease-in-out;
 }
 input[type="submit"],
 input[type="reset"],
@@ -14968,6 +14898,9 @@ button,
   -webkit-transition-delay: 1s;
   -ms-transition-delay: 1s;
   transition-delay: 1s;
+}
+.blogarchive a {
+  transition: all 0.25s ease;
 }
 .blogarchive a:hover * {
   -moz-transition: color 0.25s ease, border-bottom-color 0.25s ease;

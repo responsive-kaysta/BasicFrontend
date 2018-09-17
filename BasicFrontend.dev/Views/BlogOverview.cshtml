@@ -22,7 +22,6 @@
                         <section class="blogarchive equalizer">
                             @foreach (var item in selection.OrderBy("CreateDate desc"))
                             {
-
                                 var introduction = item.GetPropertyValue("introduction").ToString();
                                 var title = item.GetPropertyValue("title").ToString();
                                 var gbId = Umbraco.Media(item.GetPropertyValue("teaserImage").ToString());
@@ -30,7 +29,7 @@
                                 var blogStyle = item.GetPropertyValue("pageStyle").ToString();
 
                                 <div class="col-sm-12 col-md-6 equal">
-                                    <div class="@blogStyle">
+                                    <div class="@blogStyle round-corner">
                                         <a href="@item.Url" style="background-image: url('@gbImage'); background-position: center; background-repeat: no-repeat; background-size: cover;">
                                             <div class="small date">@item.CreateDate.ToLongDateString()</div>
                                             <h3>@Umbraco.Truncate(title, 24, true)</h3>
