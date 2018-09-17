@@ -366,6 +366,10 @@
     <Content Include="Content\button.min.css">
       <DependentUpon>button.css</DependentUpon>
     </Content>
+    <Content Include="Content\spotlight.css" />
+    <Content Include="Content\spotlight.min.css">
+      <DependentUpon>spotlight.css</DependentUpon>
+    </Content>
     <Content Include="Content\style.mediaqueries.css" />
     <Content Include="Content\style.mediaqueries.min.css">
       <DependentUpon>style.mediaqueries.css</DependentUpon>
