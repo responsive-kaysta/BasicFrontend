@@ -63,9 +63,8 @@
       "Content/style-purple.css",
       "Content/style-light.css",
 
-      "Content/style.transitions.css",
-      "Content/style.css"
-
+      "Content/style.css",
+      "Content/style.transitions.css"
     ],
     "minify": {
       "enabled": true,

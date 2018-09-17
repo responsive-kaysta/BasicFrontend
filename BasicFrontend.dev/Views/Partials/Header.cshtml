@@ -18,7 +18,7 @@
 
                     @foreach (var childPage in selection)
                     {
-                        if (childPage.DocumentTypeAlias != "siteGlobal")
+                        if (childPage.DocumentTypeAlias != "siteGlobal" && !childPage.hideInMenu)
                         {
                             <li><a href="@childPage.Url">@childPage.Name</a></li>
                         }

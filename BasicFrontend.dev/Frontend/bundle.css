@@ -14313,6 +14313,7 @@ corresponds to the arrow we want to display */
 .tooltipster-sidetip.tooltipster-right .tooltipster-arrow-uncropped {
   left: -10px;
 }
+.tooltipster-sidetip.tooltipster-punk .tooltipster-box{border-radius:5px;border:none;border-bottom:3px solid #f71169;background:#2a2a2a}.tooltipster-sidetip.tooltipster-punk.tooltipster-top .tooltipster-box{margin-bottom:7px}.tooltipster-sidetip.tooltipster-punk .tooltipster-content{color:#fff;padding:8px 16px}.tooltipster-sidetip.tooltipster-punk .tooltipster-arrow-background{display:none}.tooltipster-sidetip.tooltipster-punk.tooltipster-bottom .tooltipster-arrow-border{border-bottom-color:#2a2a2a}.tooltipster-sidetip.tooltipster-punk.tooltipster-left .tooltipster-arrow-border{border-left-color:#2a2a2a}.tooltipster-sidetip.tooltipster-punk.tooltipster-right .tooltipster-arrow-border{border-right-color:#2a2a2a}.tooltipster-sidetip.tooltipster-punk.tooltipster-top .tooltipster-arrow-border{border-top-color:#f71169}
 /* base styles and definitions */
 /* menu */
 /* green -> obsolete style1 */
@@ -14623,169 +14624,6 @@ header.light p {
 /* button */
 /* code */
 /* banner */
-a {
-  -moz-transition: color 0.25s ease, border-bottom-color 0.25s ease;
-  -webkit-transition: color 0.25s ease, border-bottom-color 0.25s ease;
-  -ms-transition: color 0.25s ease, border-bottom-color 0.25s ease;
-  transition: color 0.25s ease, border-bottom-color 0.25s ease;
-}
-input[type="submit"],
-input[type="reset"],
-input[type="button"],
-button,
-.button {
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  -ms-appearance: none;
-  appearance: none;
-  -moz-transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
-  -webkit-transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
-  -ms-transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
-  transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
-}
-#banner h2 {
-  -moz-transition: -moz-transform 1s ease, opacity 1s ease;
-  -webkit-transition: -webkit-transform 1s ease, opacity 1s ease;
-  -ms-transition: -ms-transform 1s ease, opacity 1s ease;
-  transition: transform 1s ease, opacity 1s ease;
-}
-#banner h2:before,
-#banner h2:after {
-  -moz-transition: width 1s ease;
-  -webkit-transition: width 1s ease;
-  -ms-transition: width 1s ease;
-  transition: width 1s ease;
-  -moz-transition-delay: 0.25s;
-  -webkit-transition-delay: 0.25s;
-  -ms-transition-delay: 0.25s;
-  transition-delay: 0.25s;
-}
-#banner .more {
-  -moz-transition: -moz-transform 1s ease, opacity 1s ease;
-  -webkit-transition: -webkit-transform 1s ease, opacity 1s ease;
-  -ms-transition: -ms-transform 1s ease, opacity 1s ease;
-  transition: transform 1s ease, opacity 1s ease;
-  -moz-transition-delay: 3s;
-  -webkit-transition-delay: 3s;
-  -ms-transition-delay: 3s;
-  transition-delay: 3s;
-}
-#banner:after {
-  -moz-transition: opacity 3s ease-in-out;
-  -webkit-transition: opacity 3s ease-in-out;
-  -ms-transition: opacity 3s ease-in-out;
-  transition: opacity 3s ease-in-out;
-  -moz-transition-delay: 1s;
-  -webkit-transition-delay: 1s;
-  -ms-transition-delay: 1s;
-  transition-delay: 1s;
-}
-.blogarchive a:hover * {
-  -moz-transition: color 0.25s ease, border-bottom-color 0.25s ease;
-  -webkit-transition: color 0.25s ease, border-bottom-color 0.25s ease;
-  -ms-transition: color 0.25s ease, border-bottom-color 0.25s ease;
-  transition: color 0.25s ease, border-bottom-color 0.25s ease;
-}
-.blogarchive a:hover p {
-  -moz-transition: color 0.25s ease, border-bottom-color 0.25s ease;
-  -webkit-transition: color 0.25s ease, border-bottom-color 0.25s ease;
-  -ms-transition: color 0.25s ease, border-bottom-color 0.25s ease;
-  transition: color 0.25s ease, border-bottom-color 0.25s ease;
-}
-#footer .icons a {
-  -moz-transition: color 0.25s ease, border-bottom-color 0.25s ease;
-  -webkit-transition: color 0.25s ease, border-bottom-color 0.25s ease;
-  -ms-transition: color 0.25s ease, border-bottom-color 0.25s ease;
-  transition: color 0.25s ease, border-bottom-color 0.25s ease;
-}
-#footer .icons a:hover {
-  -moz-transition: color 0.25s ease, border-bottom-color 0.25s ease;
-  -webkit-transition: color 0.25s ease, border-bottom-color 0.25s ease;
-  -ms-transition: color 0.25s ease, border-bottom-color 0.25s ease;
-  transition: color 0.25s ease, border-bottom-color 0.25s ease;
-}
-#header {
-  -moz-transition: background-color 0.25s ease;
-  -webkit-transition: background-color 0.25s ease;
-  -ms-transition: background-color 0.25s ease;
-  transition: background-color 0.25s ease;
-}
-#header h1 {
-  -moz-transition: opacity 0.25s ease;
-  -webkit-transition: opacity 0.25s ease;
-  -ms-transition: opacity 0.25s ease;
-  transition: opacity 0.25s ease;
-}
-.gray a:hover {
-  -moz-transition: color 0.25s ease, border-bottom-color 0.25s ease;
-  -webkit-transition: color 0.25s ease, border-bottom-color 0.25s ease;
-  -ms-transition: color 0.25s ease, border-bottom-color 0.25s ease;
-  transition: color 0.25s ease, border-bottom-color 0.25s ease;
-}
-.icon.gray a:hover {
-  -moz-transition: color 0.25s ease, border-bottom-color 0.25s ease;
-  -webkit-transition: color 0.25s ease, border-bottom-color 0.25s ease;
-  -ms-transition: color 0.25s ease, border-bottom-color 0.25s ease;
-  transition: color 0.25s ease, border-bottom-color 0.25s ease;
-}
-.green a:hover {
-  -moz-transition: color 0.25s ease, border-bottom-color 0.25s ease;
-  -webkit-transition: color 0.25s ease, border-bottom-color 0.25s ease;
-  -ms-transition: color 0.25s ease, border-bottom-color 0.25s ease;
-  transition: color 0.25s ease, border-bottom-color 0.25s ease;
-}
-.icon.green a:hover {
-  -moz-transition: color 0.25s ease, border-bottom-color 0.25s ease;
-  -webkit-transition: color 0.25s ease, border-bottom-color 0.25s ease;
-  -ms-transition: color 0.25s ease, border-bottom-color 0.25s ease;
-  transition: color 0.25s ease, border-bottom-color 0.25s ease;
-}
-.light a:hover {
-  -moz-transition: color 0.25s ease, border-bottom-color 0.25s ease;
-  -webkit-transition: color 0.25s ease, border-bottom-color 0.25s ease;
-  -ms-transition: color 0.25s ease, border-bottom-color 0.25s ease;
-  transition: color 0.25s ease, border-bottom-color 0.25s ease;
-}
-.icon.light a:hover {
-  -moz-transition: color 0.25s ease, border-bottom-color 0.25s ease;
-  -webkit-transition: color 0.25s ease, border-bottom-color 0.25s ease;
-  -ms-transition: color 0.25s ease, border-bottom-color 0.25s ease;
-  transition: color 0.25s ease, border-bottom-color 0.25s ease;
-}
-.purple a:hover {
-  -moz-transition: color 0.25s ease, border-bottom-color 0.25s ease;
-  -webkit-transition: color 0.25s ease, border-bottom-color 0.25s ease;
-  -ms-transition: color 0.25s ease, border-bottom-color 0.25s ease;
-  transition: color 0.25s ease, border-bottom-color 0.25s ease;
-}
-.icon.purple a:hover {
-  -moz-transition: color 0.25s ease, border-bottom-color 0.25s ease;
-  -webkit-transition: color 0.25s ease, border-bottom-color 0.25s ease;
-  -ms-transition: color 0.25s ease, border-bottom-color 0.25s ease;
-  transition: color 0.25s ease, border-bottom-color 0.25s ease;
-}
-.transparent a:hover {
-  -moz-transition: color 0.25s ease, border-bottom-color 0.25s ease;
-  -webkit-transition: color 0.25s ease, border-bottom-color 0.25s ease;
-  -ms-transition: color 0.25s ease, border-bottom-color 0.25s ease;
-  transition: color 0.25s ease, border-bottom-color 0.25s ease;
-}
-.icon.transparent a:hover {
-  -moz-transition: color 0.25s ease, border-bottom-color 0.25s ease;
-  -webkit-transition: color 0.25s ease, border-bottom-color 0.25s ease;
-  -ms-transition: color 0.25s ease, border-bottom-color 0.25s ease;
-  transition: color 0.25s ease, border-bottom-color 0.25s ease;
-}
-/* base styles and definitions */
-/* menu */
-/* green -> obsolete style1 */
-/* gray -> obsolete style2 */
-/* purple -> obsolete style3 */
-/* transparent -> obsolete: style4 */
-/* light -> obsolete: style5 */
-/* button */
-/* code */
-/* banner */
 @media screen and (min-width: 1680px) {
   body,
   input,
@@ -15063,4 +14901,167 @@ body.regular #page-wrapper {
   background-size: cover;
   padding-top: 0;
   background-color: transparent;
+}
+/* base styles and definitions */
+/* menu */
+/* green -> obsolete style1 */
+/* gray -> obsolete style2 */
+/* purple -> obsolete style3 */
+/* transparent -> obsolete: style4 */
+/* light -> obsolete: style5 */
+/* button */
+/* code */
+/* banner */
+a {
+  -moz-transition: color 0.25s ease, border-bottom-color 0.25s ease;
+  -webkit-transition: color 0.25s ease, border-bottom-color 0.25s ease;
+  -ms-transition: color 0.25s ease, border-bottom-color 0.25s ease;
+  transition: color 0.25s ease, border-bottom-color 0.25s ease;
+}
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button,
+.button {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  -moz-transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
+  -webkit-transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
+  -ms-transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
+  transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
+}
+#banner h2 {
+  -moz-transition: -moz-transform 1s ease, opacity 1s ease;
+  -webkit-transition: -webkit-transform 1s ease, opacity 1s ease;
+  -ms-transition: -ms-transform 1s ease, opacity 1s ease;
+  transition: transform 1s ease, opacity 1s ease;
+}
+#banner h2:before,
+#banner h2:after {
+  -moz-transition: width 1s ease;
+  -webkit-transition: width 1s ease;
+  -ms-transition: width 1s ease;
+  transition: width 1s ease;
+  -moz-transition-delay: 0.25s;
+  -webkit-transition-delay: 0.25s;
+  -ms-transition-delay: 0.25s;
+  transition-delay: 0.25s;
+}
+#banner .more {
+  -moz-transition: -moz-transform 1s ease, opacity 1s ease;
+  -webkit-transition: -webkit-transform 1s ease, opacity 1s ease;
+  -ms-transition: -ms-transform 1s ease, opacity 1s ease;
+  transition: transform 1s ease, opacity 1s ease;
+  -moz-transition-delay: 3s;
+  -webkit-transition-delay: 3s;
+  -ms-transition-delay: 3s;
+  transition-delay: 3s;
+}
+#banner:after {
+  -moz-transition: opacity 3s ease-in-out;
+  -webkit-transition: opacity 3s ease-in-out;
+  -ms-transition: opacity 3s ease-in-out;
+  transition: opacity 3s ease-in-out;
+  -moz-transition-delay: 1s;
+  -webkit-transition-delay: 1s;
+  -ms-transition-delay: 1s;
+  transition-delay: 1s;
+}
+.blogarchive a:hover * {
+  -moz-transition: color 0.25s ease, border-bottom-color 0.25s ease;
+  -webkit-transition: color 0.25s ease, border-bottom-color 0.25s ease;
+  -ms-transition: color 0.25s ease, border-bottom-color 0.25s ease;
+  transition: color 0.25s ease, border-bottom-color 0.25s ease;
+}
+.blogarchive a:hover p {
+  -moz-transition: color 0.25s ease, border-bottom-color 0.25s ease;
+  -webkit-transition: color 0.25s ease, border-bottom-color 0.25s ease;
+  -ms-transition: color 0.25s ease, border-bottom-color 0.25s ease;
+  transition: color 0.25s ease, border-bottom-color 0.25s ease;
+}
+#footer .icons a {
+  -moz-transition: color 0.25s ease, border-bottom-color 0.25s ease;
+  -webkit-transition: color 0.25s ease, border-bottom-color 0.25s ease;
+  -ms-transition: color 0.25s ease, border-bottom-color 0.25s ease;
+  transition: color 0.25s ease, border-bottom-color 0.25s ease;
+}
+#footer .icons a:hover {
+  -moz-transition: color 0.25s ease, border-bottom-color 0.25s ease;
+  -webkit-transition: color 0.25s ease, border-bottom-color 0.25s ease;
+  -ms-transition: color 0.25s ease, border-bottom-color 0.25s ease;
+  transition: color 0.25s ease, border-bottom-color 0.25s ease;
+}
+#header {
+  -moz-transition: background-color 0.25s ease;
+  -webkit-transition: background-color 0.25s ease;
+  -ms-transition: background-color 0.25s ease;
+  transition: background-color 0.25s ease;
+}
+#header h1 {
+  -moz-transition: opacity 0.25s ease;
+  -webkit-transition: opacity 0.25s ease;
+  -ms-transition: opacity 0.25s ease;
+  transition: opacity 0.25s ease;
+}
+.gray a:hover {
+  -moz-transition: color 0.25s ease, border-bottom-color 0.25s ease;
+  -webkit-transition: color 0.25s ease, border-bottom-color 0.25s ease;
+  -ms-transition: color 0.25s ease, border-bottom-color 0.25s ease;
+  transition: color 0.25s ease, border-bottom-color 0.25s ease;
+}
+.icon.gray a:hover {
+  -moz-transition: color 0.25s ease, border-bottom-color 0.25s ease;
+  -webkit-transition: color 0.25s ease, border-bottom-color 0.25s ease;
+  -ms-transition: color 0.25s ease, border-bottom-color 0.25s ease;
+  transition: color 0.25s ease, border-bottom-color 0.25s ease;
+}
+.green a:hover {
+  -moz-transition: color 0.25s ease, border-bottom-color 0.25s ease;
+  -webkit-transition: color 0.25s ease, border-bottom-color 0.25s ease;
+  -ms-transition: color 0.25s ease, border-bottom-color 0.25s ease;
+  transition: color 0.25s ease, border-bottom-color 0.25s ease;
+}
+.icon.green a:hover {
+  -moz-transition: color 0.25s ease, border-bottom-color 0.25s ease;
+  -webkit-transition: color 0.25s ease, border-bottom-color 0.25s ease;
+  -ms-transition: color 0.25s ease, border-bottom-color 0.25s ease;
+  transition: color 0.25s ease, border-bottom-color 0.25s ease;
+}
+.light a:hover {
+  -moz-transition: color 0.25s ease, border-bottom-color 0.25s ease;
+  -webkit-transition: color 0.25s ease, border-bottom-color 0.25s ease;
+  -ms-transition: color 0.25s ease, border-bottom-color 0.25s ease;
+  transition: color 0.25s ease, border-bottom-color 0.25s ease;
+}
+.icon.light a:hover {
+  -moz-transition: color 0.25s ease, border-bottom-color 0.25s ease;
+  -webkit-transition: color 0.25s ease, border-bottom-color 0.25s ease;
+  -ms-transition: color 0.25s ease, border-bottom-color 0.25s ease;
+  transition: color 0.25s ease, border-bottom-color 0.25s ease;
+}
+.purple a:hover {
+  -moz-transition: color 0.25s ease, border-bottom-color 0.25s ease;
+  -webkit-transition: color 0.25s ease, border-bottom-color 0.25s ease;
+  -ms-transition: color 0.25s ease, border-bottom-color 0.25s ease;
+  transition: color 0.25s ease, border-bottom-color 0.25s ease;
+}
+.icon.purple a:hover {
+  -moz-transition: color 0.25s ease, border-bottom-color 0.25s ease;
+  -webkit-transition: color 0.25s ease, border-bottom-color 0.25s ease;
+  -ms-transition: color 0.25s ease, border-bottom-color 0.25s ease;
+  transition: color 0.25s ease, border-bottom-color 0.25s ease;
+}
+.transparent a:hover {
+  -moz-transition: color 0.25s ease, border-bottom-color 0.25s ease;
+  -webkit-transition: color 0.25s ease, border-bottom-color 0.25s ease;
+  -ms-transition: color 0.25s ease, border-bottom-color 0.25s ease;
+  transition: color 0.25s ease, border-bottom-color 0.25s ease;
+}
+.icon.transparent a:hover {
+  -moz-transition: color 0.25s ease, border-bottom-color 0.25s ease;
+  -webkit-transition: color 0.25s ease, border-bottom-color 0.25s ease;
+  -ms-transition: color 0.25s ease, border-bottom-color 0.25s ease;
+  transition: color 0.25s ease, border-bottom-color 0.25s ease;
 }
