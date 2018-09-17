@@ -38,7 +38,9 @@ else
     <text>
         @{
             var target = string.Empty;
-            if (Model.value.cta_button_url.ToString().Contains("http"))
+            var isButtonSet = !Model.value.cta_button_url.ToString().Equals("none");
+            var isButtonSetExternal = Model.value.cta_button_url.ToString().Contains("http");
+            if (isButtonSetExternal)
             {
                 target = "target='_blank'";
             }
@@ -50,9 +52,13 @@ else
             <div class="content">
                 <h2>@Model.value.headline</h2>
                 <p>@Model.value.paragraph</p>
-                <ul class="actions">
-                    <li><a href="@Model.value.cta_button_url" @target class="button special">@Model.value.cta_button_text</a></li>
-                </ul>
+                @if(isButtonSet)
+                {
+                    <ul class="actions">
+                        <li><a href="@Model.value.cta_button_url" @target class="button special">@Model.value.cta_button_text</a></li>
+                    </ul>
+                }
+                
             </div>
         </section>
     </text>

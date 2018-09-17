@@ -35,3 +35,7 @@
 
 \.vs/
 /packages
+/BasicFrontend.dev/App_Data/preview/0_295da055-0e05-4459-89e1-d6b35c9bd9e0.config
+/BasicFrontend.dev/App_Data/preview/0_9d2237fd-961a-4fce-ac38-74edc8ec66c5.config
+/BasicFrontend.dev/Scripts/init.es5.min.js
+/BasicFrontend.dev/Scripts/init.es5.js

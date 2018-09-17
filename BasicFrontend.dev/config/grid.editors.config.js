@@ -41,7 +41,7 @@
         "icon": "icon-coin",
         "config": {
             "style": "font-size: 36px; line-height: 45px; font-weight: bold;",
-            "markup": "<div class='page-header'><h1>#value#</h1></div>"
+            "markup": "<div class='page-header'><h2>#value#</h2></div>"
         }
     },
 

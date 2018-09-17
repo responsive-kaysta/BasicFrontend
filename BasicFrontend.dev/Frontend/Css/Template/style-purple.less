@@ -6,10 +6,6 @@
 }
 
 .purple a:hover {
-    -moz-transition: color 0.2s ease, border-bottom-color 0.2s ease;
-    -webkit-transition: color 0.2s ease, border-bottom-color 0.2s ease;
-    -ms-transition: color 0.2s ease, border-bottom-color 0.2s ease;
-    transition: color 0.2s ease, border-bottom-color 0.2s ease;
     color: @style-purple-hover-color;
 }
 
@@ -53,4 +49,12 @@ header.purple h2,
 header.purple p {
     color: @base-color;
     background-color: @style-transparent-bg-color;
+}
+
+.icon.purple * {
+    color: @style-purple-color;
+}
+
+.icon.purple a:hover {
+    color: @base-hover-color;
 }

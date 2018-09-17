@@ -366,272 +366,11 @@
     <Content Include="Frontend\bundle.min.css">
       <DependentUpon>bundle.css</DependentUpon>
     </Content>
-    <Content Include="Frontend\Css\Atom\a.css">
-      <DependentUpon>a.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Atom\a.min.css">
-      <DependentUpon>a.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Atom\abstract.css">
-      <DependentUpon>abstract.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Atom\abstract.min.css">
-      <DependentUpon>abstract.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Atom\blockquote.css">
-      <DependentUpon>blockquote.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Atom\blockquote.min.css">
-      <DependentUpon>blockquote.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Atom\code.css">
-      <DependentUpon>code.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Atom\code.min.css">
-      <DependentUpon>code.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Atom\h.css">
-      <DependentUpon>h.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Atom\h.min.css">
-      <DependentUpon>h.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Atom\hr.css">
-      <DependentUpon>hr.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Atom\hr.min.css">
-      <DependentUpon>hr.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Atom\image.css">
-      <DependentUpon>image.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Atom\image.min.css">
-      <DependentUpon>image.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Atom\pre.css">
-      <DependentUpon>pre.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Atom\pre.min.css">
-      <DependentUpon>pre.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Atom\text.css">
-      <DependentUpon>text.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Atom\text.min.css">
-      <DependentUpon>text.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Atom\triangle.css">
-      <DependentUpon>triangle.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Atom\triangle.min.css">
-      <DependentUpon>triangle.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\body.css">
-      <DependentUpon>body.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\body.min.css">
-      <DependentUpon>body.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\global.vars.css">
-      <DependentUpon>global.vars.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\ie10-viewport-bug-workaround.css">
-      <DependentUpon>ie10-viewport-bug-workaround.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\ie10-viewport-bug-workaround.min.css">
-      <DependentUpon>ie10-viewport-bug-workaround.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Molekule\box.css">
-      <DependentUpon>box.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Molekule\box.min.css">
-      <DependentUpon>box.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Molekule\button.css">
-      <DependentUpon>button.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Molekule\button.min.css">
-      <DependentUpon>button.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Molekule\list.css">
-      <DependentUpon>list.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Molekule\list.min.css">
-      <DependentUpon>list.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Molekule\row.css">
-      <DependentUpon>row.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Molekule\row.min.css">
-      <DependentUpon>row.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Molekule\seperator.css">
-      <DependentUpon>seperator.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Molekule\seperator.min.css">
-      <DependentUpon>seperator.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Organism\article.css">
-      <DependentUpon>article.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Organism\article.min.css">
-      <DependentUpon>article.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Organism\banner.css">
-      <DependentUpon>banner.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Organism\banner.min.css">
-      <DependentUpon>banner.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Organism\blogarchive.css">
-      <DependentUpon>blogarchive.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Organism\blogarchive.min.css">
-      <DependentUpon>blogarchive.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Organism\breadcrumb.css">
-      <DependentUpon>breadcrumb.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Organism\breadcrumb.min.css">
-      <DependentUpon>breadcrumb.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Organism\container.css">
-      <DependentUpon>container.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Organism\container.min.css">
-      <DependentUpon>container.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Organism\cta.css">
-      <DependentUpon>cta.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Organism\cta.min.css">
-      <DependentUpon>cta.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Organism\features.css">
-      <DependentUpon>features.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Organism\features.min.css">
-      <DependentUpon>features.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Organism\footer.css">
-      <DependentUpon>footer.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Organism\footer.min.css">
-      <DependentUpon>footer.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Organism\header.css">
-      <DependentUpon>header.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Organism\header.min.css">
-      <DependentUpon>header.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Organism\icon.css">
-      <DependentUpon>icon.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Organism\icon.min.css">
-      <DependentUpon>icon.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Organism\jumbotron.css">
-      <DependentUpon>jumbotron.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Organism\jumbotron.min.css">
-      <DependentUpon>jumbotron.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Organism\menu.css">
-      <DependentUpon>menu.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Organism\menu.min.css">
-      <DependentUpon>menu.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Organism\panel.css">
-      <DependentUpon>panel.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Organism\panel.min.css">
-      <DependentUpon>panel.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Organism\section.css">
-      <DependentUpon>section.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Organism\section.min.css">
-      <DependentUpon>section.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Organism\spotlight.css">
-      <DependentUpon>spotlight.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Organism\spotlight.min.css">
-      <DependentUpon>spotlight.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Organism\table.css">
-      <DependentUpon>table.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Organism\table.min.css">
-      <DependentUpon>table.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Plugins\Tooltipster\Themes\tooltipster-sideTip-punk.css">
-      <DependentUpon>tooltipster-sideTip-punk.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Plugins\Tooltipster\Themes\tooltipster-sideTip-punk.min.css">
-      <DependentUpon>tooltipster-sideTip-punk.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Plugins\Tooltipster\tooltipster.bundle.css">
-      <DependentUpon>tooltipster.bundle.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Plugins\Tooltipster\tooltipster.bundle.min.css">
-      <DependentUpon>tooltipster.bundle.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\reset.css">
-      <DependentUpon>reset.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\reset.min.css">
-      <DependentUpon>reset.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\style.css">
-      <DependentUpon>style.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\style.min.css">
-      <DependentUpon>style.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Template\style-gray.css">
-      <DependentUpon>style-gray.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Template\style-gray.min.css">
-      <DependentUpon>style-gray.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Template\style-green.css">
-      <DependentUpon>style-green.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Template\style-green.min.css">
-      <DependentUpon>style-green.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Template\style-light.css">
-      <DependentUpon>style-light.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Template\style-light.min.css">
-      <DependentUpon>style-light.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Template\style-purple.css">
-      <DependentUpon>style-purple.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Template\style-purple.min.css">
-      <DependentUpon>style-purple.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Template\style-transparent.css">
-      <DependentUpon>style-transparent.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Template\style-transparent.min.css">
-      <DependentUpon>style-transparent.less</DependentUpon>
-    </Content>
     <Content Include="Frontend\custom.css">
       <DependentUpon>custom.less</DependentUpon>
     </Content>
     <Content Include="Frontend\custom.min.css">
       <DependentUpon>custom.css</DependentUpon>
-    </Content>
-    <Content Include="Frontend\fontawesome-all.css">
-      <DependentUpon>fontawesome-all.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\fontawesome-all.min.css">
-      <DependentUpon>fontawesome-all.less</DependentUpon>
     </Content>
     <Content Include="Frontend\Ie\backgroundsize.min.htc" />
     <Content Include="Frontend\Ie\html5shiv.js" />
@@ -640,27 +379,14 @@
     <Content Include="Frontend\Images\arrow.svg" />
     <Content Include="Frontend\Images\bars.svg" />
     <Content Include="Frontend\Images\close.svg" />
-    <Content Include="Frontend\JavaScript\___global.js" />
+    <Content Include="Frontend\JavaScript\init.js" />
     <Content Include="Frontend\JavaScript\Modules\colourswitch.js" />
-    <Content Include="Frontend\JavaScript\Modules\equalheight.es5.js">
-      <DependentUpon>equalheight.js</DependentUpon>
-    </Content>
-    <Content Include="Frontend\JavaScript\Modules\equalheight.es5.min.js">
-      <DependentUpon>equalheight.js</DependentUpon>
-    </Content>
     <Content Include="Frontend\JavaScript\Modules\equalheight.js" />
     <Content Include="Frontend\JavaScript\Modules\loadmore.js" />
     <Content Include="Frontend\JavaScript\Modules\navigation.js" />
     <Content Include="Frontend\JavaScript\Modules\searchbox.js" />
     <Content Include="Frontend\JavaScript\Plugins\jQuery\jquery.scrollex.min.js" />
     <Content Include="Frontend\JavaScript\Plugins\jQuery\jquery.scrolly.min.js" />
-    <Content Include="Frontend\JavaScript\Plugins\skel\init.es5.js">
-      <DependentUpon>init.js</DependentUpon>
-    </Content>
-    <Content Include="Frontend\JavaScript\Plugins\skel\init.es5.min.js">
-      <DependentUpon>init.js</DependentUpon>
-    </Content>
-    <Content Include="Frontend\JavaScript\Plugins\skel\init.js" />
     <Content Include="Frontend\JavaScript\Plugins\skel\skel-layout.min.js" />
     <Content Include="Frontend\JavaScript\Plugins\skel\skel-viewport.js" />
     <Content Include="Frontend\JavaScript\Plugins\skel\skel.min.js" />
@@ -713,6 +439,7 @@
     <Content Include="App_Data\TEMP\uSync\20180822_133046_Startup.config" />
     <Content Include="App_Data\TEMP\uSync\20180912_135501_Export.config" />
     <Content Include="App_Data\TEMP\uSync\20180916_171009_Export.config" />
+    <Content Include="Frontend\Css\style.transitions.less" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />

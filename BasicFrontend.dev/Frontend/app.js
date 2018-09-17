@@ -6144,6 +6144,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 (function ($) {
 
     skel.breakpoints({
+        xxlarge: '(min-width: 1680px)',
         xlarge: '(max-width: 1680px)',
         large: '(max-width: 1280px)',
         medium: '(max-width: 980px)',
@@ -6231,76 +6232,70 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
                 }
             });
         }
-    });
-})(jQuery);
 
+        // Initialize equal height script
+        var heightIsSet;
 
-'use strict';
+        // Make elements equal
+        var equalheight = function equalheight(container) {
 
-(function ($) {
+            var currentTallest = 0,
+                currentRowStart = 0,
+                rowDivs = new Array(),
+                $el;
 
-    // Making elements equal height
-    var equalheight = function equalheight(container) {
+            $(container).find('.equal').each(function () {
 
-        var currentTallest = 0,
-            currentRowStart = 0,
-            rowDivs = new Array(),
-            $el;
+                $el = $(this);
+                $($el).height('auto');
+                var topPostion = $el.position().top;
 
-        $(container).find('.equal').each(function () {
-
-            $el = $(this);
-            $($el).height('auto');
-            var topPostion = $el.position().top;
-
-            var currentDiv;
-            if (currentRowStart != topPostion) {
+                var currentDiv;
+                if (currentRowStart != topPostion) {
+                    for (currentDiv = 0; currentDiv < rowDivs.length; currentDiv++) {
+                        rowDivs[currentDiv].height(currentTallest);
+                    }
+                    rowDivs.length = 0; // empty the array
+                    currentRowStart = topPostion;
+                    currentTallest = $el.height();
+                    rowDivs.push($el);
+                } else {
+                    rowDivs.push($el);
+                    currentTallest = currentTallest < $el.height() ? $el.height() : currentTallest;
+                }
                 for (currentDiv = 0; currentDiv < rowDivs.length; currentDiv++) {
                     rowDivs[currentDiv].height(currentTallest);
                 }
-                rowDivs.length = 0; // empty the array
-                currentRowStart = topPostion;
-                currentTallest = $el.height();
-                rowDivs.push($el);
-            } else {
-                rowDivs.push($el);
-                currentTallest = currentTallest < $el.height() ? $el.height() : currentTallest;
-            }
-            for (currentDiv = 0; currentDiv < rowDivs.length; currentDiv++) {
-                rowDivs[currentDiv].height(currentTallest);
-            }
-        });
-    };
+            });
+        };
 
-    // Check for window width before resizing
-    function equalHeightChecker() {
-        if (window.innerWidth > 767 && !heightIsSet) {
-            $('.equalizer').each(function () {
-                $(this).find('.equal').each(function () {
-                    this.style.height = 'auto';
+        // Check for window width before resizing
+        function equalHeightChecker() {
+            if (window.innerWidth > 767 && !heightIsSet) {
+                $('.equalizer').each(function () {
+                    $(this).find('.equal').each(function () {
+                        this.style.height = 'auto';
+                    });
+                    heightIsSet = false;
                 });
-                heightIsSet = false;
-            });
-        } else if (window.innerWidth < 768 && heightIsSet) {
-            $('.equalizer').each(function () {
-                $(this).find('.equal').each(function () {
-                    this.style.height = 'auto';
+            } else if (window.innerWidth < 768 && heightIsSet) {
+                $('.equalizer').each(function () {
+                    $(this).find('.equal').each(function () {
+                        this.style.height = 'auto';
+                    });
+                    heightIsSet = false;
                 });
-                heightIsSet = false;
-            });
+            }
         }
-    }
 
-    // Initialize equal height script
-    var heightIsSet;
+        // On load
+        $window.ready(function () {
+            equalHeightChecker();
+        });
 
-    // On load
-    $(window).ready(function () {
-        equalHeightChecker();
-    });
-
-    // and on resize
-    $(window).resize(function () {
-        equalHeightChecker();
+        // and on resize
+        $window.resize(function () {
+            equalHeightChecker();
+        });
     });
 })(jQuery);

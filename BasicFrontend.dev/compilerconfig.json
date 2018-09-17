@@ -1,205 +1,205 @@
 ﻿[
   /* Custom JavaScript */
   {
-    "inputFile": "Frontend/JavaScript/Plugins/skel/init.js",
-    "outputFile": "Frontend/JavaScript/Plugins/skel/init.es5.js"
-  },
-  {
-    "inputFile": "Frontend/JavaScript/Modules/equalheight.js",
-    "outputFile": "Frontend/JavaScript/Modules/equalheight.es5.js"
+    "inputFile": "Frontend/JavaScript/init.js",
+    "outputFile": "Scripts/init.es5.js"
   },
 
 
   /* CSS libraries*/
   {
     "inputFile": "Frontend/fontawesome-all.less",
-    "outputFile": "Frontend/fontawesome-all.css"
+    "outputFile": "Content/fontawesome-all.css"
   },
 
   {
     "inputFile": "Frontend/Css/reset.less",
-    "outputFile": "Frontend/Css/reset.css"
+    "outputFile": "Content/reset.css"
   },
   {
     "inputFile": "Frontend/Css/ie10-viewport-bug-workaround.less",
-    "outputFile": "Frontend/Css/ie10-viewport-bug-workaround.css"
+    "outputFile": "Content/ie10-viewport-bug-workaround.css"
   },
 
   /* Custom CSS */
   {
     "inputFile": "Frontend/Css/style.less",
-    "outputFile": "Frontend/Css/style.css"
+    "outputFile": "Content/style.css"
+  },
+  {
+    "inputFile": "Frontend/Css/style.transitions.less",
+    "outputFile": "Content/style.transitions.css"
   },
   {
     "inputFile": "Frontend/Css/body.less",
-    "outputFile": "Frontend/Css/body.css"
+    "outputFile": "Content/body.css"
   },
 
 
   /* Atom */
   {
     "inputFile": "Frontend/Css/Atom/a.less",
-    "outputFile": "Frontend/Css/Atom/a.css"
+    "outputFile": "Content/a.css"
   },
   {
     "inputFile": "Frontend/Css/Atom/abstract.less",
-    "outputFile": "Frontend/Css/Atom/abstract.css"
+    "outputFile": "Content/abstract.css"
   },
   {
     "inputFile": "Frontend/Css/Atom/blockquote.less",
-    "outputFile": "Frontend/Css/Atom/blockquote.css"
+    "outputFile": "Content/blockquote.css"
   },
   {
     "inputFile": "Frontend/Css/Atom/code.less",
-    "outputFile": "Frontend/Css/Atom/code.css"
+    "outputFile": "Content/code.css"
   },
   {
     "inputFile": "Frontend/Css/Atom/h.less",
-    "outputFile": "Frontend/Css/Atom/h.css"
+    "outputFile": "Content/h.css"
   },
   {
     "inputFile": "Frontend/Css/Atom/hr.less",
-    "outputFile": "Frontend/Css/Atom/hr.css"
+    "outputFile": "Content/hr.css"
   },
   {
     "inputFile": "Frontend/Css/Atom/image.less",
-    "outputFile": "Frontend/Css/Atom/image.css"
+    "outputFile": "Content/image.css"
   },
   {
     "inputFile": "Frontend/Css/Atom/pre.less",
-    "outputFile": "Frontend/Css/Atom/pre.css"
+    "outputFile": "Content/pre.css"
   },
   {
     "inputFile": "Frontend/Css/Atom/text.less",
-    "outputFile": "Frontend/Css/Atom/text.css"
+    "outputFile": "Content/text.css"
   },
   {
     "inputFile": "Frontend/Css/Atom/triangle.less",
-    "outputFile": "Frontend/Css/Atom/triangle.css"
+    "outputFile": "Content/triangle.css"
   },
 
 
   /* Molekule */
   {
     "inputFile": "Frontend/Css/Molekule/box.less",
-    "outputFile": "Frontend/Css/Molekule/box.css"
+    "outputFile": "Content/box.css"
   },
   {
     "inputFile": "Frontend/Css/Molekule/button.less",
-    "outputFile": "Frontend/Css/Molekule/button.css"
+    "outputFile": "Content/button.css"
   },
   {
     "inputFile": "Frontend/Css/Molekule/list.less",
-    "outputFile": "Frontend/Css/Molekule/list.css"
+    "outputFile": "Content/list.css"
   },
   {
     "inputFile": "Frontend/Css/Molekule/seperator.less",
-    "outputFile": "Frontend/Css/Molekule/seperator.css"
+    "outputFile": "Content/seperator.css"
   },
   {
     "inputFile": "Frontend/Css/Molekule/row.less",
-    "outputFile": "Frontend/Css/Molekule/row.css"
+    "outputFile": "Content/row.css"
   },
 
 
   /* Organism */
   {
     "inputFile": "Frontend/Css/Organism/article.less",
-    "outputFile": "Frontend/Css/Organism/article.css"
+    "outputFile": "Content/article.css"
   },
   {
     "inputFile": "Frontend/Css/Organism/banner.less",
-    "outputFile": "Frontend/Css/Organism/banner.css"
+    "outputFile": "Content/banner.css"
   },
   {
     "inputFile": "Frontend/Css/Organism/blogarchive.less",
-    "outputFile": "Frontend/Css/Organism/blogarchive.css"
+    "outputFile": "Content/blogarchive.css"
   },
   {
     "inputFile": "Frontend/Css/Organism/breadcrumb.less",
-    "outputFile": "Frontend/Css/Organism/breadcrumb.css"
+    "outputFile": "Content/breadcrumb.css"
   },
   {
     "inputFile": "Frontend/Css/Organism/container.less",
-    "outputFile": "Frontend/Css/Organism/container.css"
+    "outputFile": "Content/container.css"
   },
   {
     "inputFile": "Frontend/Css/Organism/cta.less",
-    "outputFile": "Frontend/Css/Organism/cta.css"
+    "outputFile": "Content/cta.css"
   },
   {
     "inputFile": "Frontend/Css/Organism/features.less",
-    "outputFile": "Frontend/Css/Organism/features.css"
+    "outputFile": "Content/features.css"
   },
   {
     "inputFile": "Frontend/Css/Organism/footer.less",
-    "outputFile": "Frontend/Css/Organism/footer.css"
+    "outputFile": "Content/footer.css"
   },
   {
     "inputFile": "Frontend/Css/Organism/header.less",
-    "outputFile": "Frontend/Css/Organism/header.css"
+    "outputFile": "Content/header.css"
   },
   {
     "inputFile": "Frontend/Css/Organism/icon.less",
-    "outputFile": "Frontend/Css/Organism/icon.css"
+    "outputFile": "Content/icon.css"
   },
   {
     "inputFile": "Frontend/Css/Organism/jumbotron.less",
-    "outputFile": "Frontend/Css/Organism/jumbotron.css"
+    "outputFile": "Content/jumbotron.css"
   },
   {
     "inputFile": "Frontend/Css/Organism/menu.less",
-    "outputFile": "Frontend/Css/Organism/menu.css"
+    "outputFile": "Content/menu.css"
   },
   {
     "inputFile": "Frontend/Css/Organism/panel.less",
-    "outputFile": "Frontend/Css/Organism/panel.css"
+    "outputFile": "Content/panel.css"
   },
   {
     "inputFile": "Frontend/Css/Organism/section.less",
-    "outputFile": "Frontend/Css/Organism/section.css"
+    "outputFile": "Content/section.css"
   },
   {
     "inputFile": "Frontend/Css/Organism/spotlight.less",
-    "outputFile": "Frontend/Css/Organism/spotlight.css"
+    "outputFile": "Content/spotlight.css"
   },
   {
     "inputFile": "Frontend/Css/Organism/table.less",
-    "outputFile": "Frontend/Css/Organism/table.css"
+    "outputFile": "Content/table.css"
   },
 
 
   /* Template */
   {
     "inputFile": "Frontend/Css/Template/style-green.less",
-    "outputFile": "Frontend/Css/Template/style-green.css"
+    "outputFile": "Content/style-green.css"
   },
   {
     "inputFile": "Frontend/Css/Template/style-gray.less",
-    "outputFile": "Frontend/Css/Template/style-gray.css"
+    "outputFile": "Content/style-gray.css"
   },
   {
     "inputFile": "Frontend/Css/Template/style-purple.less",
-    "outputFile": "Frontend/Css/Template/style-purple.css"
+    "outputFile": "Content/style-purple.css"
   },
   {
     "inputFile": "Frontend/Css/Template/style-transparent.less",
-    "outputFile": "Frontend/Css/Template/style-transparent.css"
+    "outputFile": "Content/style-transparent.css"
   },
   {
     "inputFile": "Frontend/Css/Template/style-light.less",
-    "outputFile": "Frontend/Css/Template/style-light.css"
+    "outputFile": "Content/style-light.css"
   },
 
 
   /* Plugins */
   {
     "inputFile": "Frontend/Css/Plugins/Tooltipster/tooltipster.bundle.less",
-    "outputFile": "Frontend/Css/Plugins/Tooltipster/tooltipster.bundle.css"
+    "outputFile": "Content/tooltipster.bundle.css"
   },
   {
     "inputFile": "Frontend/Css/Plugins/Tooltipster/Themes/tooltipster-sideTip-punk.less",
-    "outputFile": "Frontend/Css/Plugins/Tooltipster/Themes/tooltipster-sideTip-punk.css"
+    "outputFile": "Content/tooltipster-sideTip-punk.css"
   },
 
   /* custom */
