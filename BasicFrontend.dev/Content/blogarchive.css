@@ -33,3 +33,6 @@
 .blogarchive .date {
   text-align: right;
 }
+.blogarchive p.paragraph {
+  min-height: 60px;
+}

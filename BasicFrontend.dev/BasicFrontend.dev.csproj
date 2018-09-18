@@ -348,36 +348,12 @@
     <Content Include="config\tinyMceConfig.config" />
     <Content Include="config\trees.config" />
     <Content Include="config\umbracoSettings.config" />
-    <Content Include="Content\blogarchive.css" />
-    <Content Include="Content\blogarchive.min.css">
-      <DependentUpon>blogarchive.css</DependentUpon>
-    </Content>
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-reboot.css" />
     <Content Include="Content\bootstrap-reboot.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\box.css" />
-    <Content Include="Content\box.min.css">
-      <DependentUpon>box.css</DependentUpon>
-    </Content>
-    <Content Include="Content\button.css" />
-    <Content Include="Content\button.min.css">
-      <DependentUpon>button.css</DependentUpon>
-    </Content>
-    <Content Include="Content\spotlight.css" />
-    <Content Include="Content\spotlight.min.css">
-      <DependentUpon>spotlight.css</DependentUpon>
-    </Content>
-    <Content Include="Content\style.mediaqueries.css" />
-    <Content Include="Content\style.mediaqueries.min.css">
-      <DependentUpon>style.mediaqueries.css</DependentUpon>
-    </Content>
-    <Content Include="Content\style.transitions.css" />
-    <Content Include="Content\style.transitions.min.css">
-      <DependentUpon>style.transitions.css</DependentUpon>
-    </Content>
     <Content Include="default.aspx" />
     <Content Include="Frontend\app.js" />
     <Content Include="Frontend\app.min.js">
@@ -463,6 +439,7 @@
     <Content Include="Media\1042\capture_example_overview_page_1.png" />
     <Content Include="Media\1043\capture_example_overview_page_1_h320.png" />
     <Content Include="Media\1044\capture_examples_pagedefault_landingpage.png" />
+    <Content Include="Media\1045\capture_example_landing_page_1_h468.png" />
     <Content Include="Media\created-packages\responsive.kaysta.Frontend_0.9.22.zip" />
     <Content Include="Media\Web.config" />
     <Content Include="Scripts\bootstrap.bundle.js" />
@@ -499,6 +476,7 @@
     <Content Include="Frontend\Css\style.transitions.less" />
     <Content Include="Media\created-packages\responsive.kaysta.Frontend_0.9.23.zip" />
     <Content Include="Media\created-packages\responsive.kaysta.Frontend_0.9.24.zip" />
+    <Content Include="Frontend\Css\style.mediaqueries.less" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />

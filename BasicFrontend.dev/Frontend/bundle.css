@@ -12296,18 +12296,13 @@ sup {
   padding-bottom: 1rem;
   margin-bottom: 1rem;
 }
-.page-header > h1 {
+.page-header h2 {
   font-size: 1.35rem !important;
   line-height: 1.35rem !important;
 }
 .paragraph {
-  font-size: 1.0rem;
-  font-weight: normal;
-  line-height: 1.4;
-  letter-spacing: 0.1rem;
-}
-.paragraph {
-  padding-bottom: 0.75rem;
+  margin: 0;
+  margin-bottom: 0.5rem;
 }
 .paragraph-2col {
   padding-bottom: 0.75rem;
@@ -12330,7 +12325,7 @@ sup {
   font-weight: bold;
   color: red !important;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 980px) {
   .paragraph {
     -webkit-columns: 300px 1;
     -moz-columns: 300px 1;
@@ -12955,6 +12950,9 @@ a.more.scrolly {
 }
 .blogarchive .date {
   text-align: right;
+}
+.blogarchive p.paragraph {
+  min-height: 60px;
 }
 /* base styles and definitions */
 /* menu */
@@ -13692,6 +13690,20 @@ section#banner > div p {
 }
 .spotlight .content h2 {
   padding-bottom: 1.0rem;
+}
+.spotlight .content {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+.spotlight .content h2 {
+  font-size: 1.5rem !important;
+  padding-top: 1rem;
+}
+.spotlight .content p {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  letter-spacing: 0.1rem;
 }
 .spotlight:last-child {
   padding-bottom: 0rem;
@@ -14727,27 +14739,6 @@ body.regular #page-wrapper {
   }
   .container {
     max-width: 90%;
-  }
-  .spotlight .content {
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-  }
-  .spotlight .content h2 {
-    font-size: 1.5rem !important;
-    padding-top: 1rem;
-  }
-  .spotlight .content p {
-    font-size: 1rem !important;
-    padding-bottom: 1.25rem;
-  }
-  .page-header h2 {
-    font-size: 1.5rem !important;
-    line-height: 1.5rem !important;
-  }
-  .lead {
-    font-size: 1.25rem;
-    font-weight: 500;
-    line-height: 1.25rem;
   }
 }
 @media screen and (max-width: 736px) {

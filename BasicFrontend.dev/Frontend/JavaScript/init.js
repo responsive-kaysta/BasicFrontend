@@ -98,74 +98,29 @@
             });
 
         }
-
         
-        // Initialize equal height script
-        var heightIsSet;
-
-        // Make elements equal
-        var equalheight = function (container) {
-
-            var currentTallest = 0,
-                currentRowStart = 0,
-                rowDivs = new Array(),
-                $el;
-
-            $(container).find('.equal').each(function () {
-
-                $el = $(this);
-                $($el).height('auto');
-                var topPostion = $el.position().top;
-
-                var currentDiv;
-                if (currentRowStart != topPostion) {
-                    for (currentDiv = 0; currentDiv < rowDivs.length; currentDiv++) {
-                        rowDivs[currentDiv].height(currentTallest);
-                    }
-                    rowDivs.length = 0; // empty the array
-                    currentRowStart = topPostion;
-                    currentTallest = $el.height();
-                    rowDivs.push($el);
-                } else {
-                    rowDivs.push($el);
-                    currentTallest = (currentTallest < $el.height()) ? ($el.height()) : (currentTallest);
-                }
-                for (currentDiv = 0; currentDiv < rowDivs.length; currentDiv++) {
-                    rowDivs[currentDiv].height(currentTallest);
+        // Equal height checker
+        function equalHeight(group) {
+            var tallest = 0;
+            group.each(function() {
+                var thisHeight = $(this).height();
+                if(thisHeight > tallest) {
+                    tallest = thisHeight;
                 }
             });
-        };
-
-        // Check for window width before resizing
-        function equalHeightChecker() {
-            if (window.innerWidth > 767 && !heightIsSet) {
-                $('.equalizer')
-                    .each(function () {
-                        $(this).find('.equal').each(function () {
-                            this.style.height = 'auto';
-                        });
-                        heightIsSet = false;
-                    });
-            }
-            else if (window.innerWidth < 768 && heightIsSet) {
-                $('.equalizer')
-                    .each(function () {
-                        $(this).find('.equal').each(function () {
-                            this.style.height = 'auto';
-                        });
-                        heightIsSet = false;
-                    });
-            }
+            group.height(tallest);
         }
         
         // On load
         $window.ready(function () {
-            equalHeightChecker();
+            equalHeight($(".equal"));
+            console.log('[window] - ready ...');
         });
-
+        
         // and on resize
         $window.resize(function () {
-            equalHeightChecker();
+            equalHeight($(".equal"));
+            console.log('[window] - resize ...');
         });
 
     });
