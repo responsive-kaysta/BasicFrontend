@@ -4,6 +4,10 @@
     "inputFile": "Frontend/JavaScript/init.js",
     "outputFile": "Scripts/init.es5.js"
   },
+  {
+    "inputFile": "Frontend/JavaScript/Functions/utility.js",
+    "outputFile": "Scripts/utility.es5.js"
+  },
 
 
   /* CSS libraries*/

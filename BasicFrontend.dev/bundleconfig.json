@@ -66,6 +66,7 @@
       "Content/style.css",
       "Content/style.mediaqueries.css",
       "Content/style.transitions.css"
+
     ],
     "minify": {
       "enabled": true,
@@ -91,6 +92,7 @@
 
       "Frontend/JavaScript/Plugins/Tooltipster/tooltipster.bundle.js",
 
+      "Scripts/utility.es5.js",
       "Scripts/init.es5.js"
 
     ],

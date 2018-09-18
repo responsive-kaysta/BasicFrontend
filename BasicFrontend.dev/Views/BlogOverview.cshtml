@@ -18,8 +18,7 @@
             <div class="inner">
                 @if (selection.Any())
                 {
-                    <div class="container">
-                        <section class="blogarchive">
+                        <section id="equalizer" class="blogarchive">
                             @foreach (var item in selection.OrderBy("CreateDate desc"))
                             {
                                 var introduction = item.GetPropertyValue("introduction").ToString();
@@ -40,7 +39,6 @@
                                 </div>
                             }
                         </section>
-                    </div>
                     <div class="clearfix"></div>
                 }
             </div>
