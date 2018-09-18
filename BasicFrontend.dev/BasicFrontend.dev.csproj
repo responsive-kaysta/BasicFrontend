@@ -357,6 +357,8 @@
     <Content Include="Content\bootstrap-reboot.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Compiled\custom.css" />
+    <Content Include="Content\Compiled\custom.min.css" />
     <Content Include="Content\Compiled\style.css" />
     <Content Include="Content\Compiled\style.min.css">
       <DependentUpon>style.css</DependentUpon>
@@ -365,9 +367,6 @@
     <Content Include="Frontend\app.js" />
     <Content Include="Frontend\app.min.js">
       <DependentUpon>app.js</DependentUpon>
-    </Content>
-    <Content Include="Frontend\app.min.js.map">
-      <DependentUpon>app.min.js</DependentUpon>
     </Content>
     <Content Include="Frontend\bundle.css" />
     <Content Include="Frontend\bundle.min.css">
@@ -531,6 +530,9 @@
     <Content Include="Media\Web.config" />
     <Content Include="__bundleconfig.json" />
     <Content Include="__compilerconfig.json" />
+    <Content Include="Frontend\app.min.js.map">
+      <DependentUpon>app.min.js</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />

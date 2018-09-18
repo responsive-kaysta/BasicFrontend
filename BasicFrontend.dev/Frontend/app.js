@@ -6207,25 +6207,20 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 
         // Close.
         $menuClose.on('click touchend', function (event) {
-
             event.preventDefault();
             event.stopPropagation();
-
             $body.removeClass('is-menu-visible');
         });
 
         // Toggle.
         $menuToggle.on('click touchend', function (event) {
-
             event.preventDefault();
             event.stopPropagation();
-
             $body.toggleClass('is-menu-visible');
         });
 
         // Wrapper.
         $wrapper.on('click touchend', function (event) {
-
             if ($body.hasClass('is-menu-visible')) {
                 event.preventDefault();
                 event.stopPropagation();
@@ -6260,16 +6255,22 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
             getElementEqualHeight($(".equal"));
         }
 
-        // on ready
-        skel.ready(function () {
+        $window.ready(function () {
 
+            if (skel.breakpoint("small").active) {
+                /* do something specific for small displays */
+            }
+            if (skel.vars.touch) {
+                /* enable feature for devices with a touchscreen */
+            }
+            if (skel.vars.IEVersion < 9) {
+                /* apply workaround for IE<9 */
+            }
             console.log('[window] - ready ...');
         });
 
-        // and on resize
-        skel.resize(function () {
+        $window.resize(function () {
 
-            // get equal height for blogarchive elements
             if ($equalizer.length > 0 && $equalizer.hasClass('blogarchive')) {
                 getElementEqualHeight($(".equal"));
             }
@@ -6278,3 +6279,4 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
         });
     });
 })(jQuery);
+/* skel.js v3.0.2-dev | (c) skel.io | MIT licensed */

@@ -54,33 +54,25 @@
 
         // Close.
         $menuClose.on('click touchend', function (event) {
-
             event.preventDefault();
             event.stopPropagation();
-
             $body.removeClass('is-menu-visible');
-
         });
 
         // Toggle.
         $menuToggle.on('click touchend', function (event) {
-
             event.preventDefault();
             event.stopPropagation();
-
             $body.toggleClass('is-menu-visible');
-
         });
 
         // Wrapper.
         $wrapper.on('click touchend', function (event) {
-
             if ($body.hasClass('is-menu-visible')) {
                 event.preventDefault();
                 event.stopPropagation();
                 $body.removeClass('is-menu-visible');
             }
-
         });
 
         // Header.
@@ -103,21 +95,29 @@
             getElementEqualHeight($(".equal"));
         }
 
-        // on ready
-        skel.ready(function () {
+        $window.ready(function() {
 
+            if (skel.breakpoint("small").active) {
+                /* do something specific for small displays */
+            }
+            if (skel.vars.touch) {
+                /* enable feature for devices with a touchscreen */
+            }
+            if (skel.vars.IEVersion < 9) {
+                /* apply workaround for IE<9 */
+            }
             console.log('[window] - ready ...');
-        });
-        
-        // and on resize
-        skel.resize(function () {
 
-            // get equal height for blogarchive elements
+        });
+
+        $window.resize(function() {
+
             if ($equalizer.length > 0 && $equalizer.hasClass('blogarchive')) {
                 getElementEqualHeight($(".equal"));
             }
 
             console.log('[window] - resize ...');
+
         });
 
     });
