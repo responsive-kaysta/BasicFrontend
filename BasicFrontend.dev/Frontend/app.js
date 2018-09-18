@@ -6133,6 +6133,35 @@ return $;
 
 }));
 
+
+// https://wp-mix.com/jquery-truncate-text/
+
+'use strict';
+
+function getElementEqualHeight(group) {
+    var tallest = 0;
+    group.each(function () {
+        var thisHeight = $(this).height();
+        if (thisHeight > tallest) {
+            tallest = thisHeight;
+        }
+    });
+    group.height(tallest);
+}
+
+function getTruncateString(group) {
+    if (group('#page-wrapper').width() < 1280) {
+        group('.target').each(function (index, value) {
+            $(this).html($(this).html().substring(0, 24));
+        });
+    } else {
+        group('.target').each(function (index, value) {
+            $(this).html($(this).html().substring(0, 48));
+        });
+    }
+}
+
+
 /*
 Spectral by HTML5 UP
 html5up.net | @n33co
@@ -6144,6 +6173,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 (function ($) {
 
     skel.breakpoints({
+        xxlarge: '(min-width: 1680px)',
         xlarge: '(max-width: 1680px)',
         large: '(max-width: 1280px)',
         medium: '(max-width: 980px)',
@@ -6157,6 +6187,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
             $body = $('body'),
             $wrapper = $('#page-wrapper'),
             $banner = $('#banner'),
+            $equalizer = $('#equalizer'),
             $header = $('#header');
 
         // Mobile?
@@ -6202,10 +6233,8 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
         $wrapper.on('click touchend', function (event) {
 
             if ($body.hasClass('is-menu-visible')) {
-
                 event.preventDefault();
                 event.stopPropagation();
-
                 $body.removeClass('is-menu-visible');
             }
         });
@@ -6231,76 +6260,27 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
                 }
             });
         }
-    });
-})(jQuery);
 
+        // on ready
+        skel.ready(function () {
 
-'use strict';
-
-(function ($) {
-
-    // Making elements equal height
-    var equalheight = function equalheight(container) {
-
-        var currentTallest = 0,
-            currentRowStart = 0,
-            rowDivs = new Array(),
-            $el;
-
-        $(container).find('.equal').each(function () {
-
-            $el = $(this);
-            $($el).height('auto');
-            var topPostion = $el.position().top;
-
-            var currentDiv;
-            if (currentRowStart != topPostion) {
-                for (currentDiv = 0; currentDiv < rowDivs.length; currentDiv++) {
-                    rowDivs[currentDiv].height(currentTallest);
-                }
-                rowDivs.length = 0; // empty the array
-                currentRowStart = topPostion;
-                currentTallest = $el.height();
-                rowDivs.push($el);
-            } else {
-                rowDivs.push($el);
-                currentTallest = currentTallest < $el.height() ? $el.height() : currentTallest;
+            // get equal height for blogarchive elements
+            if ($equalizer.length > 0 && $equalizer.hasClass('blogarchive')) {
+                getElementEqualHeight($(".equal"));
             }
-            for (currentDiv = 0; currentDiv < rowDivs.length; currentDiv++) {
-                rowDivs[currentDiv].height(currentTallest);
-            }
+
+            console.log('[window] - ready ...');
         });
-    };
 
-    // Check for window width before resizing
-    function equalHeightChecker() {
-        if (window.innerWidth > 767 && !heightIsSet) {
-            $('.equalizer').each(function () {
-                $(this).find('.equal').each(function () {
-                    this.style.height = 'auto';
-                });
-                heightIsSet = false;
-            });
-        } else if (window.innerWidth < 768 && heightIsSet) {
-            $('.equalizer').each(function () {
-                $(this).find('.equal').each(function () {
-                    this.style.height = 'auto';
-                });
-                heightIsSet = false;
-            });
-        }
-    }
+        // and on resize
+        skel.resize(function () {
 
-    // Initialize equal height script
-    var heightIsSet;
+            // get equal height for blogarchive elements
+            if ($equalizer.length > 0 && $equalizer.hasClass('blogarchive')) {
+                getElementEqualHeight($(".equal"));
+            }
 
-    // On load
-    $(window).ready(function () {
-        equalHeightChecker();
-    });
-
-    // and on resize
-    $(window).resize(function () {
-        equalHeightChecker();
+            console.log('[window] - resize ...');
+        });
     });
 })(jQuery);

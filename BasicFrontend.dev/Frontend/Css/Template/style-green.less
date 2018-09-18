@@ -6,10 +6,6 @@
 }
 
 .green a:hover {
-    -moz-transition: color 0.2s ease, border-bottom-color 0.2s ease;
-    -webkit-transition: color 0.2s ease, border-bottom-color 0.2s ease;
-    -ms-transition: color 0.2s ease, border-bottom-color 0.2s ease;
-    transition: color 0.2s ease, border-bottom-color 0.2s ease;
     color: @style-green-hover-color;
 }
 
@@ -53,4 +49,12 @@ header.green h2,
 header.green p {
     color: @base-color;
     background-color: @style-transparent-bg-color;
+}
+
+.icon.green * {
+    color: @style-green-color;
+}
+
+.icon.green a:hover {
+    color: @base-hover-color;
 }

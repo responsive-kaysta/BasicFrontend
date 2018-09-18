@@ -254,88 +254,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\NuGetBackup\20180819-171807\bin\AutoMapper.dll" />
-    <Content Include="App_Data\NuGetBackup\20180819-171807\bin\AutoMapper.Net4.dll" />
-    <Content Include="App_Data\NuGetBackup\20180819-171807\bin\businesslogic.dll" />
-    <Content Include="App_Data\NuGetBackup\20180819-171807\bin\ClientDependency.Core.dll" />
-    <Content Include="App_Data\NuGetBackup\20180819-171807\bin\ClientDependency.Core.Mvc.dll" />
-    <Content Include="App_Data\NuGetBackup\20180819-171807\bin\cms.dll" />
-    <Content Include="App_Data\NuGetBackup\20180819-171807\bin\controls.dll" />
-    <Content Include="App_Data\NuGetBackup\20180819-171807\bin\Examine.dll" />
-    <Content Include="App_Data\NuGetBackup\20180819-171807\bin\HtmlAgilityPack.dll" />
-    <Content Include="App_Data\NuGetBackup\20180819-171807\bin\ICSharpCode.SharpZipLib.dll" />
-    <Content Include="App_Data\NuGetBackup\20180819-171807\bin\ImageProcessor.dll" />
-    <Content Include="App_Data\NuGetBackup\20180819-171807\bin\ImageProcessor.Web.dll" />
-    <Content Include="App_Data\NuGetBackup\20180819-171807\bin\interfaces.dll" />
-    <Content Include="App_Data\NuGetBackup\20180819-171807\bin\Log4Net.Async.dll" />
-    <Content Include="App_Data\NuGetBackup\20180819-171807\bin\log4net.dll" />
-    <Content Include="App_Data\NuGetBackup\20180819-171807\bin\Lucene.Net.dll" />
-    <Content Include="App_Data\NuGetBackup\20180819-171807\bin\MarkdownSharp.dll" />
-    <Content Include="App_Data\NuGetBackup\20180819-171807\bin\Microsoft.ApplicationBlocks.Data.dll" />
-    <Content Include="App_Data\NuGetBackup\20180819-171807\bin\Microsoft.AspNet.Identity.Core.dll" />
-    <Content Include="App_Data\NuGetBackup\20180819-171807\bin\Microsoft.AspNet.Identity.Owin.dll" />
-    <Content Include="App_Data\NuGetBackup\20180819-171807\bin\Microsoft.AspNet.SignalR.Core.dll" />
-    <Content Include="App_Data\NuGetBackup\20180819-171807\bin\Microsoft.CodeAnalysis.CSharp.dll" />
-    <Content Include="App_Data\NuGetBackup\20180819-171807\bin\Microsoft.CodeAnalysis.dll" />
-    <Content Include="App_Data\NuGetBackup\20180819-171807\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
-    <Content Include="App_Data\NuGetBackup\20180819-171807\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml" />
-    <Content Include="App_Data\NuGetBackup\20180819-171807\bin\Microsoft.IO.RecyclableMemoryStream.dll" />
-    <Content Include="App_Data\NuGetBackup\20180819-171807\bin\Microsoft.Owin.dll" />
-    <Content Include="App_Data\NuGetBackup\20180819-171807\bin\Microsoft.Owin.Host.SystemWeb.dll" />
-    <Content Include="App_Data\NuGetBackup\20180819-171807\bin\Microsoft.Owin.Security.Cookies.dll" />
-    <Content Include="App_Data\NuGetBackup\20180819-171807\bin\Microsoft.Owin.Security.dll" />
-    <Content Include="App_Data\NuGetBackup\20180819-171807\bin\Microsoft.Owin.Security.OAuth.dll" />
-    <Content Include="App_Data\NuGetBackup\20180819-171807\bin\Microsoft.Web.Infrastructure.dll" />
-    <Content Include="App_Data\NuGetBackup\20180819-171807\bin\MiniProfiler.dll" />
-    <Content Include="App_Data\NuGetBackup\20180819-171807\bin\MySql.Data.dll" />
-    <Content Include="App_Data\NuGetBackup\20180819-171807\bin\Newtonsoft.Json.dll" />
-    <Content Include="App_Data\NuGetBackup\20180819-171807\bin\Owin.dll" />
-    <Content Include="App_Data\NuGetBackup\20180819-171807\bin\Semver.dll" />
-    <Content Include="App_Data\NuGetBackup\20180819-171807\bin\SQLCE4Umbraco.dll" />
-    <Content Include="App_Data\NuGetBackup\20180819-171807\bin\System.Collections.Immutable.dll" />
-    <Content Include="App_Data\NuGetBackup\20180819-171807\bin\System.Data.SqlServerCe.dll" />
-    <Content Include="App_Data\NuGetBackup\20180819-171807\bin\System.Data.SqlServerCe.Entity.dll" />
-    <Content Include="App_Data\NuGetBackup\20180819-171807\bin\System.Net.Http.Formatting.dll" />
-    <Content Include="App_Data\NuGetBackup\20180819-171807\bin\System.Reflection.Metadata.dll" />
-    <Content Include="App_Data\NuGetBackup\20180819-171807\bin\System.Threading.Tasks.Dataflow.dll" />
-    <Content Include="App_Data\NuGetBackup\20180819-171807\bin\System.ValueTuple.dll" />
-    <Content Include="App_Data\NuGetBackup\20180819-171807\bin\System.Web.Helpers.dll" />
-    <Content Include="App_Data\NuGetBackup\20180819-171807\bin\System.Web.Http.dll" />
-    <Content Include="App_Data\NuGetBackup\20180819-171807\bin\System.Web.Http.WebHost.dll" />
-    <Content Include="App_Data\NuGetBackup\20180819-171807\bin\System.Web.Mvc.dll" />
-    <Content Include="App_Data\NuGetBackup\20180819-171807\bin\System.Web.Razor.dll" />
-    <Content Include="App_Data\NuGetBackup\20180819-171807\bin\System.Web.WebPages.Deployment.dll" />
-    <Content Include="App_Data\NuGetBackup\20180819-171807\bin\System.Web.WebPages.dll" />
-    <Content Include="App_Data\NuGetBackup\20180819-171807\bin\System.Web.WebPages.Razor.dll" />
-    <Content Include="App_Data\NuGetBackup\20180819-171807\bin\TidyNet.dll" />
-    <Content Include="App_Data\NuGetBackup\20180819-171807\bin\Umbraco.Core.dll" />
-    <Content Include="App_Data\NuGetBackup\20180819-171807\bin\umbraco.DataLayer.dll" />
-    <Content Include="App_Data\NuGetBackup\20180819-171807\bin\umbraco.dll" />
-    <Content Include="App_Data\NuGetBackup\20180819-171807\bin\umbraco.editorControls.dll" />
-    <Content Include="App_Data\NuGetBackup\20180819-171807\bin\umbraco.MacroEngines.dll" />
-    <Content Include="App_Data\NuGetBackup\20180819-171807\bin\Umbraco.ModelsBuilder.dll" />
-    <Content Include="App_Data\NuGetBackup\20180819-171807\bin\umbraco.providers.dll" />
-    <Content Include="App_Data\NuGetBackup\20180819-171807\bin\Umbraco.Web.UI.dll" />
-    <Content Include="App_Data\NuGetBackup\20180819-171807\bin\UmbracoExamine.dll" />
-    <Content Include="App_Data\NuGetBackup\20180819-171814\Config\grid.editors.config.js" />
-    <Content Include="App_Data\NuGetBackup\20180819-171814\Config\Lang\cs-CZ.user.xml" />
-    <Content Include="App_Data\NuGetBackup\20180819-171814\Config\Lang\da-DK.user.xml" />
-    <Content Include="App_Data\NuGetBackup\20180819-171814\Config\Lang\de-DE.user.xml" />
-    <Content Include="App_Data\NuGetBackup\20180819-171814\Config\Lang\en-GB.user.xml" />
-    <Content Include="App_Data\NuGetBackup\20180819-171814\Config\Lang\en-US.user.xml" />
-    <Content Include="App_Data\NuGetBackup\20180819-171814\Config\Lang\es-ES.user.xml" />
-    <Content Include="App_Data\NuGetBackup\20180819-171814\Config\Lang\fr-FR.user.xml" />
-    <Content Include="App_Data\NuGetBackup\20180819-171814\Config\Lang\he-IL.user.xml" />
-    <Content Include="App_Data\NuGetBackup\20180819-171814\Config\Lang\it-IT.user.xml" />
-    <Content Include="App_Data\NuGetBackup\20180819-171814\Config\Lang\ja-JP.user.xml" />
-    <Content Include="App_Data\NuGetBackup\20180819-171814\Config\Lang\ko-KR.user.xml" />
-    <Content Include="App_Data\NuGetBackup\20180819-171814\Config\Lang\nb-NO.user.xml" />
-    <Content Include="App_Data\NuGetBackup\20180819-171814\Config\Lang\nl-NL.user.xml" />
-    <Content Include="App_Data\NuGetBackup\20180819-171814\Config\Lang\pl-PL.user.xml" />
-    <Content Include="App_Data\NuGetBackup\20180819-171814\Config\Lang\pt-BR.user.xml" />
-    <Content Include="App_Data\NuGetBackup\20180819-171814\Config\Lang\ru-RU.user.xml" />
-    <Content Include="App_Data\NuGetBackup\20180819-171814\Config\Lang\sv-SE.user.xml" />
-    <Content Include="App_Data\NuGetBackup\20180819-171814\Config\Lang\zh-CN.user.xml" />
+    <Content Include="App_Data\TEMP\uSync\20180822_133046_Startup.config" />
+    <Content Include="App_Data\TEMP\uSync\20180912_135501_Export.config" />
+    <Content Include="App_Data\TEMP\uSync\20180916_171009_Export.config" />
     <Content Include="App_Data\Umbraco.sdf" />
     <Content Include="App_Plugins\GodMode\BackOffice\Css\godMode.css" />
     <Content Include="App_Plugins\GodMode\BackOffice\GodModeTree\contentBrowser.html" />
@@ -437,333 +358,8 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="default.aspx" />
-    <Content Include="Frontend\app.js" />
-    <Content Include="Frontend\app.min.js">
-      <DependentUpon>app.js</DependentUpon>
-    </Content>
-    <Content Include="Frontend\app.min.js.map">
-      <DependentUpon>app.js</DependentUpon>
-    </Content>
-    <Content Include="Frontend\bundle.css" />
-    <Content Include="Frontend\bundle.min.css">
-      <DependentUpon>bundle.css</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Atom\a.css">
-      <DependentUpon>a.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Atom\a.min.css">
-      <DependentUpon>a.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Atom\abstract.css">
-      <DependentUpon>abstract.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Atom\abstract.min.css">
-      <DependentUpon>abstract.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Atom\blockquote.css">
-      <DependentUpon>blockquote.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Atom\blockquote.min.css">
-      <DependentUpon>blockquote.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Atom\code.css">
-      <DependentUpon>code.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Atom\code.min.css">
-      <DependentUpon>code.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Atom\h.css">
-      <DependentUpon>h.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Atom\h.min.css">
-      <DependentUpon>h.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Atom\hr.css">
-      <DependentUpon>hr.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Atom\hr.min.css">
-      <DependentUpon>hr.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Atom\image.css">
-      <DependentUpon>image.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Atom\image.min.css">
-      <DependentUpon>image.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Atom\pre.css">
-      <DependentUpon>pre.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Atom\pre.min.css">
-      <DependentUpon>pre.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Atom\text.css">
-      <DependentUpon>text.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Atom\text.min.css">
-      <DependentUpon>text.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Atom\triangle.css">
-      <DependentUpon>triangle.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Atom\triangle.min.css">
-      <DependentUpon>triangle.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\body.css">
-      <DependentUpon>body.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\body.min.css">
-      <DependentUpon>body.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\global.vars.css">
-      <DependentUpon>global.vars.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\ie10-viewport-bug-workaround.css">
-      <DependentUpon>ie10-viewport-bug-workaround.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\ie10-viewport-bug-workaround.min.css">
-      <DependentUpon>ie10-viewport-bug-workaround.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Molekule\box.css">
-      <DependentUpon>box.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Molekule\box.min.css">
-      <DependentUpon>box.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Molekule\button.css">
-      <DependentUpon>button.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Molekule\button.min.css">
-      <DependentUpon>button.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Molekule\list.css">
-      <DependentUpon>list.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Molekule\list.min.css">
-      <DependentUpon>list.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Molekule\row.css">
-      <DependentUpon>row.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Molekule\row.min.css">
-      <DependentUpon>row.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Molekule\seperator.css">
-      <DependentUpon>seperator.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Molekule\seperator.min.css">
-      <DependentUpon>seperator.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Organism\article.css">
-      <DependentUpon>article.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Organism\article.min.css">
-      <DependentUpon>article.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Organism\banner.css">
-      <DependentUpon>banner.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Organism\banner.min.css">
-      <DependentUpon>banner.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Organism\blogarchive.css">
-      <DependentUpon>blogarchive.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Organism\blogarchive.min.css">
-      <DependentUpon>blogarchive.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Organism\breadcrumb.css">
-      <DependentUpon>breadcrumb.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Organism\breadcrumb.min.css">
-      <DependentUpon>breadcrumb.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Organism\container.css">
-      <DependentUpon>container.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Organism\container.min.css">
-      <DependentUpon>container.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Organism\cta.css">
-      <DependentUpon>cta.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Organism\cta.min.css">
-      <DependentUpon>cta.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Organism\features.css">
-      <DependentUpon>features.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Organism\features.min.css">
-      <DependentUpon>features.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Organism\footer.css">
-      <DependentUpon>footer.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Organism\footer.min.css">
-      <DependentUpon>footer.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Organism\header.css">
-      <DependentUpon>header.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Organism\header.min.css">
-      <DependentUpon>header.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Organism\icon.css">
-      <DependentUpon>icon.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Organism\icon.min.css">
-      <DependentUpon>icon.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Organism\jumbotron.css">
-      <DependentUpon>jumbotron.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Organism\jumbotron.min.css">
-      <DependentUpon>jumbotron.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Organism\menu.css">
-      <DependentUpon>menu.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Organism\menu.min.css">
-      <DependentUpon>menu.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Organism\panel.css">
-      <DependentUpon>panel.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Organism\panel.min.css">
-      <DependentUpon>panel.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Organism\section.css">
-      <DependentUpon>section.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Organism\section.min.css">
-      <DependentUpon>section.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Organism\spotlight.css">
-      <DependentUpon>spotlight.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Organism\spotlight.min.css">
-      <DependentUpon>spotlight.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Organism\table.css">
-      <DependentUpon>table.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Organism\table.min.css">
-      <DependentUpon>table.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Plugins\Tooltipster\Themes\tooltipster-sideTip-punk.css">
-      <DependentUpon>tooltipster-sideTip-punk.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Plugins\Tooltipster\Themes\tooltipster-sideTip-punk.min.css">
-      <DependentUpon>tooltipster-sideTip-punk.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Plugins\Tooltipster\tooltipster.bundle.css">
-      <DependentUpon>tooltipster.bundle.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Plugins\Tooltipster\tooltipster.bundle.min.css">
-      <DependentUpon>tooltipster.bundle.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\reset.css">
-      <DependentUpon>reset.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\reset.min.css">
-      <DependentUpon>reset.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\style.css">
-      <DependentUpon>style.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\style.min.css">
-      <DependentUpon>style.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Template\style-gray.css">
-      <DependentUpon>style-gray.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Template\style-gray.min.css">
-      <DependentUpon>style-gray.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Template\style-green.css">
-      <DependentUpon>style-green.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Template\style-green.min.css">
-      <DependentUpon>style-green.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Template\style-light.css">
-      <DependentUpon>style-light.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Template\style-light.min.css">
-      <DependentUpon>style-light.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Template\style-purple.css">
-      <DependentUpon>style-purple.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Template\style-purple.min.css">
-      <DependentUpon>style-purple.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Template\style-transparent.css">
-      <DependentUpon>style-transparent.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Css\Template\style-transparent.min.css">
-      <DependentUpon>style-transparent.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\custom.css">
-      <DependentUpon>custom.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\custom.min.css">
-      <DependentUpon>custom.css</DependentUpon>
-    </Content>
-    <Content Include="Frontend\fontawesome-all.css">
-      <DependentUpon>fontawesome-all.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\fontawesome-all.min.css">
-      <DependentUpon>fontawesome-all.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\Ie\backgroundsize.min.htc" />
-    <Content Include="Frontend\Ie\html5shiv.js" />
-    <Content Include="Frontend\Ie\v8.css" />
-    <Content Include="Frontend\Ie\v9.css" />
-    <Content Include="Frontend\Images\arrow.svg" />
-    <Content Include="Frontend\Images\bars.svg" />
-    <Content Include="Frontend\Images\close.svg" />
-    <Content Include="Frontend\JavaScript\___global.js" />
-    <Content Include="Frontend\JavaScript\Modules\colourswitch.js" />
-    <Content Include="Frontend\JavaScript\Modules\equalheight.es5.js">
-      <DependentUpon>equalheight.js</DependentUpon>
-    </Content>
-    <Content Include="Frontend\JavaScript\Modules\equalheight.es5.min.js">
-      <DependentUpon>equalheight.js</DependentUpon>
-    </Content>
-    <Content Include="Frontend\JavaScript\Modules\equalheight.js" />
-    <Content Include="Frontend\JavaScript\Modules\loadmore.js" />
-    <Content Include="Frontend\JavaScript\Modules\navigation.js" />
-    <Content Include="Frontend\JavaScript\Modules\searchbox.js" />
-    <Content Include="Frontend\JavaScript\Plugins\jQuery\jquery.scrollex.min.js" />
-    <Content Include="Frontend\JavaScript\Plugins\jQuery\jquery.scrolly.min.js" />
-    <Content Include="Frontend\JavaScript\Plugins\skel\init.es5.js">
-      <DependentUpon>init.js</DependentUpon>
-    </Content>
-    <Content Include="Frontend\JavaScript\Plugins\skel\init.es5.min.js">
-      <DependentUpon>init.js</DependentUpon>
-    </Content>
-    <Content Include="Frontend\JavaScript\Plugins\skel\init.js" />
-    <Content Include="Frontend\JavaScript\Plugins\skel\skel-layout.min.js" />
-    <Content Include="Frontend\JavaScript\Plugins\skel\skel-viewport.js" />
-    <Content Include="Frontend\JavaScript\Plugins\skel\skel.min.js" />
-    <Content Include="Frontend\JavaScript\Plugins\Tooltipster\tooltipster-SVG.js" />
-    <Content Include="Frontend\JavaScript\Plugins\Tooltipster\tooltipster.bundle.js" />
-    <Content Include="Frontend\JavaScript\Plugins\Tooltipster\tooltipster.main.js" />
     <Content Include="Global.asax" />
     <Content Include="icon.png" />
-    <Content Include="Media\1001\bootstrap_snip.png" />
-    <Content Include="Media\1002\jquery_snip.png" />
-    <Content Include="Media\1003\umbraco_snip.png" />
-    <Content Include="Media\1004\xbx9a0o.jpg" />
-    <Content Include="Media\1005\1d940749740655560867a146b61.png" />
-    <Content Include="Media\1006\287309.jpg" />
-    <Content Include="Media\1007\56929080_thumbnail.jpg" />
-    <Content Include="Media\1008\cool-high-tech-wallpaper-30878-31608-hd-wallpapers.jpg" />
-    <Content Include="Media\1009\high-tech-wallpaper-hd-3438-3647-hd-wallpapers.jpg" />
-    <Content Include="Media\1010\internet-of-things-1920xx.png" />
-    <Content Include="Media\1011\website-design-background.png" />
-    <Content Include="Media\created-packages\responsive.kaysta.Frontend_0.9.22.zip" />
-    <Content Include="Media\Web.config" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -792,8 +388,8 @@
     <Content Include="config\uSyncCore.Config.install.xdt" />
     <Content Include="config\uSyncCore.Config.uninstall.xdt" />
     <Content Include="App_Data\packages\created\createdPackages.config" />
-    <Content Include="App_Data\TEMP\uSync\20180822_133046_Startup.config" />
-    <Content Include="App_Data\TEMP\uSync\20180912_135501_Export.config" />
+    <Content Include="App_Data\TEMP\uSync\20180916_173944_Export.config" />
+    <Content Include="App_Data\TEMP\uSync\20180918_112143_Export.config" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -815,9 +411,51 @@
     <Content Include="Umbraco\assets\css\installer.css" />
     <Content Include="Umbraco\assets\css\nonodes.style.min.css" />
     <Content Include="Umbraco\assets\css\umbraco.css" />
+    <Content Include="Umbraco\assets\fonts\helveticons\helveticons.eot" />
     <Content Include="Umbraco\assets\fonts\helveticons\helveticons.svg" />
+    <Content Include="Umbraco\assets\fonts\helveticons\helveticons.ttf" />
+    <Content Include="Umbraco\assets\fonts\helveticons\helveticons.woff" />
+    <Content Include="Umbraco\assets\fonts\lato\LatoLatin-Black.eot" />
+    <Content Include="Umbraco\assets\fonts\lato\LatoLatin-Black.ttf" />
+    <Content Include="Umbraco\assets\fonts\lato\LatoLatin-Black.woff" />
+    <Content Include="Umbraco\assets\fonts\lato\LatoLatin-Black.woff2" />
+    <Content Include="Umbraco\assets\fonts\lato\LatoLatin-BlackItalic.eot" />
+    <Content Include="Umbraco\assets\fonts\lato\LatoLatin-BlackItalic.ttf" />
+    <Content Include="Umbraco\assets\fonts\lato\LatoLatin-BlackItalic.woff" />
+    <Content Include="Umbraco\assets\fonts\lato\LatoLatin-BlackItalic.woff2" />
+    <Content Include="Umbraco\assets\fonts\lato\LatoLatin-Bold.eot" />
+    <Content Include="Umbraco\assets\fonts\lato\LatoLatin-Bold.ttf" />
+    <Content Include="Umbraco\assets\fonts\lato\LatoLatin-Bold.woff" />
+    <Content Include="Umbraco\assets\fonts\lato\LatoLatin-Bold.woff2" />
+    <Content Include="Umbraco\assets\fonts\lato\LatoLatin-BoldItalic.eot" />
+    <Content Include="Umbraco\assets\fonts\lato\LatoLatin-BoldItalic.ttf" />
+    <Content Include="Umbraco\assets\fonts\lato\LatoLatin-BoldItalic.woff" />
+    <Content Include="Umbraco\assets\fonts\lato\LatoLatin-BoldItalic.woff2" />
+    <Content Include="Umbraco\assets\fonts\lato\LatoLatin-Italic.eot" />
+    <Content Include="Umbraco\assets\fonts\lato\LatoLatin-Italic.ttf" />
+    <Content Include="Umbraco\assets\fonts\lato\LatoLatin-Italic.woff" />
+    <Content Include="Umbraco\assets\fonts\lato\LatoLatin-Italic.woff2" />
+    <Content Include="Umbraco\assets\fonts\lato\LatoLatin-Light.eot" />
+    <Content Include="Umbraco\assets\fonts\lato\LatoLatin-Light.ttf" />
+    <Content Include="Umbraco\assets\fonts\lato\LatoLatin-Light.woff" />
+    <Content Include="Umbraco\assets\fonts\lato\LatoLatin-Light.woff2" />
+    <Content Include="Umbraco\assets\fonts\lato\LatoLatin-LightItalic.eot" />
+    <Content Include="Umbraco\assets\fonts\lato\LatoLatin-LightItalic.ttf" />
+    <Content Include="Umbraco\assets\fonts\lato\LatoLatin-LightItalic.woff" />
+    <Content Include="Umbraco\assets\fonts\lato\LatoLatin-LightItalic.woff2" />
+    <Content Include="Umbraco\assets\fonts\lato\LatoLatin-Regular.eot" />
+    <Content Include="Umbraco\assets\fonts\lato\LatoLatin-Regular.ttf" />
+    <Content Include="Umbraco\assets\fonts\lato\LatoLatin-Regular.woff" />
+    <Content Include="Umbraco\assets\fonts\lato\LatoLatin-Regular.woff2" />
+    <Content Include="Umbraco\assets\fonts\opensans\OpenSans-Regular-webfont.eot" />
     <Content Include="Umbraco\assets\fonts\opensans\OpenSans-Regular-webfont.svg" />
+    <Content Include="Umbraco\assets\fonts\opensans\OpenSans-Regular-webfont.ttf" />
+    <Content Include="Umbraco\assets\fonts\opensans\OpenSans-Regular-webfont.woff" />
+    <Content Include="Umbraco\assets\fonts\opensans\OpenSans-Regular.ttf" />
+    <Content Include="Umbraco\assets\fonts\opensans\OpenSans-Semibold-webfont.eot" />
     <Content Include="Umbraco\assets\fonts\opensans\OpenSans-Semibold-webfont.svg" />
+    <Content Include="Umbraco\assets\fonts\opensans\OpenSans-Semibold-webfont.ttf" />
+    <Content Include="Umbraco\assets\fonts\opensans\OpenSans-Semibold-webfont.woff" />
     <Content Include="Umbraco\assets\img\applicationIcons\content.png" />
     <Content Include="Umbraco\assets\img\applicationIcons\default.png" />
     <Content Include="Umbraco\assets\img\applicationIcons\developer.png" />
@@ -844,6 +482,17 @@
     <Content Include="Umbraco\assets\img\transparent.png" />
     <Content Include="Umbraco\assets\img\uploader\upload-illustration.png" />
     <Content Include="Umbraco\assets\img\uploader\upload-illustration.svg" />
+    <Content Include="Umbraco\assets\less\background.less" />
+    <Content Include="Umbraco\assets\less\border.less" />
+    <Content Include="Umbraco\assets\less\color.less" />
+    <Content Include="Umbraco\assets\less\googlefontpicker.less" />
+    <Content Include="Umbraco\assets\less\gridRow.less" />
+    <Content Include="Umbraco\assets\less\layout.less" />
+    <Content Include="Umbraco\assets\less\margin.less" />
+    <Content Include="Umbraco\assets\less\padding.less" />
+    <Content Include="Umbraco\assets\less\radius.less" />
+    <Content Include="Umbraco\assets\less\shadow.less" />
+    <Content Include="Umbraco\assets\less\slider.less" />
     <Content Include="Umbraco\ClientRedirect.aspx" />
     <Content Include="Umbraco\Config\Create\UI.xml" />
     <Content Include="Umbraco\Config\Lang\cs.xml" />
@@ -913,6 +562,8 @@
     <Content Include="Umbraco\Dialogs\umbracoField.aspx" />
     <Content Include="Umbraco\Dialogs\viewAuditTrail.aspx" />
     <Content Include="Umbraco\endPreview.aspx" />
+    <Content Include="Umbraco\Install\Views\Index.cshtml" />
+    <Content Include="Umbraco\Install\Views\Web.config" />
     <Content Include="Umbraco\Js\app.dev.js" />
     <Content Include="Umbraco\Js\app.js" />
     <Content Include="Umbraco\Js\canvasdesigner.loader.js" />
@@ -936,6 +587,7 @@
     <Content Include="Umbraco\Js\UmbracoSpeechBubbleBackEnd.js" />
     <Content Include="Umbraco\Js\UmbracoSpeechBubbleInit.js" />
     <Content Include="Umbraco\Js\umbracoUpgradeChecker.js" />
+    <Content Include="Umbraco\Js\web.config" />
     <Content Include="Umbraco\Js\xmlextras.js" />
     <Content Include="Umbraco\Js\xmlRequest.js" />
     <Content Include="Umbraco\lib\ace-builds\src-min-noconflict\ace.js" />
@@ -951,7 +603,9 @@
     <Content Include="Umbraco\lib\ace-razor-mode\theme\razor_chrome.css" />
     <Content Include="Umbraco\lib\angular-bootstrap\ui-bootstrap-tpls-0.10.0.min.js" />
     <Content Include="Umbraco\lib\angular-dynamic-locale\tmhDynamicLocale.min.js" />
+    <Content Include="Umbraco\lib\angular-dynamic-locale\tmhDynamicLocale.min.js.map" />
     <Content Include="Umbraco\lib\angular-local-storage\angular-local-storage.min.js" />
+    <Content Include="Umbraco\lib\angular-local-storage\angular-local-storage.min.js.map" />
     <Content Include="Umbraco\lib\angular\1.1.5\angular-cookies.js" />
     <Content Include="Umbraco\lib\angular\1.1.5\angular-cookies.min.js" />
     <Content Include="Umbraco\lib\angular\1.1.5\angular-loader.js" />
@@ -1256,6 +910,7 @@
     <Content Include="Umbraco\lib\angular\angular-ui-sortable.js" />
     <Content Include="Umbraco\lib\bootstrap-social\bootstrap-social.css" />
     <Content Include="Umbraco\lib\bootstrap-tabdrop\bootstrap-tabdrop.js" />
+    <Content Include="Umbraco\lib\bootstrap-tabdrop\README.md" />
     <Content Include="Umbraco\lib\bootstrap\css\bootstrap-responsive.css" />
     <Content Include="Umbraco\lib\bootstrap\css\bootstrap-responsive.min.css" />
     <Content Include="Umbraco\lib\bootstrap\css\bootstrap.cosmo.min.css" />
@@ -1267,6 +922,41 @@
     <Content Include="Umbraco\lib\bootstrap\img\glyphicons-halflings.png" />
     <Content Include="Umbraco\lib\bootstrap\js\bootstrap.2.3.2.js" />
     <Content Include="Umbraco\lib\bootstrap\js\bootstrap.2.3.2.min.js" />
+    <Content Include="Umbraco\lib\bootstrap\less\accordion.less" />
+    <Content Include="Umbraco\lib\bootstrap\less\alerts.less" />
+    <Content Include="Umbraco\lib\bootstrap\less\bootstrap.less" />
+    <Content Include="Umbraco\lib\bootstrap\less\breadcrumbs.less" />
+    <Content Include="Umbraco\lib\bootstrap\less\button-groups.less" />
+    <Content Include="Umbraco\lib\bootstrap\less\buttons.less" />
+    <Content Include="Umbraco\lib\bootstrap\less\carousel.less" />
+    <Content Include="Umbraco\lib\bootstrap\less\close.less" />
+    <Content Include="Umbraco\lib\bootstrap\less\code.less" />
+    <Content Include="Umbraco\lib\bootstrap\less\component-animations.less" />
+    <Content Include="Umbraco\lib\bootstrap\less\dropdowns.less" />
+    <Content Include="Umbraco\lib\bootstrap\less\forms.less" />
+    <Content Include="Umbraco\lib\bootstrap\less\grid.less" />
+    <Content Include="Umbraco\lib\bootstrap\less\hero-unit.less" />
+    <Content Include="Umbraco\lib\bootstrap\less\labels-badges.less" />
+    <Content Include="Umbraco\lib\bootstrap\less\layouts.less" />
+    <Content Include="Umbraco\lib\bootstrap\less\media.less" />
+    <Content Include="Umbraco\lib\bootstrap\less\mixins.less" />
+    <Content Include="Umbraco\lib\bootstrap\less\modals.less" />
+    <Content Include="Umbraco\lib\bootstrap\less\navbar.less" />
+    <Content Include="Umbraco\lib\bootstrap\less\navs.less" />
+    <Content Include="Umbraco\lib\bootstrap\less\pager.less" />
+    <Content Include="Umbraco\lib\bootstrap\less\pagination.less" />
+    <Content Include="Umbraco\lib\bootstrap\less\popovers.less" />
+    <Content Include="Umbraco\lib\bootstrap\less\progress-bars.less" />
+    <Content Include="Umbraco\lib\bootstrap\less\reset.less" />
+    <Content Include="Umbraco\lib\bootstrap\less\responsive-1200px-min.less" />
+    <Content Include="Umbraco\lib\bootstrap\less\responsive-767px-max.less" />
+    <Content Include="Umbraco\lib\bootstrap\less\responsive-768px-979px.less" />
+    <Content Include="Umbraco\lib\bootstrap\less\responsive-navbar.less" />
+    <Content Include="Umbraco\lib\bootstrap\less\responsive-utilities.less" />
+    <Content Include="Umbraco\lib\bootstrap\less\responsive.less" />
+    <Content Include="Umbraco\lib\bootstrap\less\scaffolding.less" />
+    <Content Include="Umbraco\lib\bootstrap\less\sprites.less" />
+    <Content Include="Umbraco\lib\bootstrap\less\tables.less" />
     <Content Include="Umbraco\lib\bootstrap\less\tests\buttons.html" />
     <Content Include="Umbraco\lib\bootstrap\less\tests\css-tests.css" />
     <Content Include="Umbraco\lib\bootstrap\less\tests\css-tests.html" />
@@ -1275,6 +965,12 @@
     <Content Include="Umbraco\lib\bootstrap\less\tests\navbar-fixed-top.html" />
     <Content Include="Umbraco\lib\bootstrap\less\tests\navbar-static-top.html" />
     <Content Include="Umbraco\lib\bootstrap\less\tests\navbar.html" />
+    <Content Include="Umbraco\lib\bootstrap\less\thumbnails.less" />
+    <Content Include="Umbraco\lib\bootstrap\less\tooltip.less" />
+    <Content Include="Umbraco\lib\bootstrap\less\type.less" />
+    <Content Include="Umbraco\lib\bootstrap\less\utilities.less" />
+    <Content Include="Umbraco\lib\bootstrap\less\variables.less" />
+    <Content Include="Umbraco\lib\bootstrap\less\wells.less" />
     <Content Include="Umbraco\lib\clipboard\clipboard.min.js" />
     <Content Include="Umbraco\lib\codemirror\addon\dialog\dialog.css" />
     <Content Include="Umbraco\lib\codemirror\addon\dialog\dialog.js" />
@@ -1298,18 +994,24 @@
     <Content Include="Umbraco\lib\codemirror\mode\htmlmixed\htmlmixed.js" />
     <Content Include="Umbraco\lib\codemirror\mode\javascript\javascript.js" />
     <Content Include="Umbraco\lib\codemirror\mode\razor\index.html" />
+    <Content Include="Umbraco\lib\codemirror\mode\razor\LICENSE" />
     <Content Include="Umbraco\lib\codemirror\mode\razor\razor.js" />
     <Content Include="Umbraco\lib\codemirror\mode\xml\xml.js" />
     <Content Include="Umbraco\lib\cssparser\cssparser.js" />
     <Content Include="Umbraco\lib\datetimepicker\bootstrap-datetimepicker.js" />
     <Content Include="Umbraco\lib\datetimepicker\bootstrap-datetimepicker.min.css" />
     <Content Include="Umbraco\lib\font-awesome\css\font-awesome.min.css" />
+    <Content Include="Umbraco\lib\font-awesome\fonts\fontawesome-webfont.eot" />
     <Content Include="Umbraco\lib\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="Umbraco\lib\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Umbraco\lib\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="Umbraco\lib\font-awesome\fonts\FontAwesome.otf" />
     <Content Include="Umbraco\lib\jquery-migrate\jquery-migrate.min.js" />
     <Content Include="Umbraco\lib\jquery-ui-touch-punch\jquery.ui.touch-punch.js" />
     <Content Include="Umbraco\lib\jquery-ui\jquery-ui-1.10.4.custom.min.css" />
     <Content Include="Umbraco\lib\jquery-ui\jquery-ui.min.js" />
     <Content Include="Umbraco\lib\jquery\jquery.min.js" />
+    <Content Include="Umbraco\lib\jquery\jquery.min.map" />
     <Content Include="Umbraco\lib\less\less-1.7.0.min.js" />
     <Content Include="Umbraco\lib\markdown\markdown.converter.js" />
     <Content Include="Umbraco\lib\markdown\markdown.css" />
@@ -1594,8 +1296,15 @@
     <Content Include="Umbraco\lib\tinymce\plugins\wordcount\plugin.js" />
     <Content Include="Umbraco\lib\tinymce\plugins\wordcount\plugin.min.js" />
     <Content Include="Umbraco\lib\tinymce\skins\umbraco\content.min.css" />
+    <Content Include="Umbraco\lib\tinymce\skins\umbraco\fonts\readme.md" />
+    <Content Include="Umbraco\lib\tinymce\skins\umbraco\fonts\tinymce-small.eot" />
     <Content Include="Umbraco\lib\tinymce\skins\umbraco\fonts\tinymce-small.svg" />
+    <Content Include="Umbraco\lib\tinymce\skins\umbraco\fonts\tinymce-small.ttf" />
+    <Content Include="Umbraco\lib\tinymce\skins\umbraco\fonts\tinymce-small.woff" />
+    <Content Include="Umbraco\lib\tinymce\skins\umbraco\fonts\tinymce.eot" />
     <Content Include="Umbraco\lib\tinymce\skins\umbraco\fonts\tinymce.svg" />
+    <Content Include="Umbraco\lib\tinymce\skins\umbraco\fonts\tinymce.ttf" />
+    <Content Include="Umbraco\lib\tinymce\skins\umbraco\fonts\tinymce.woff" />
     <Content Include="Umbraco\lib\tinymce\skins\umbraco\img\anchor.gif" />
     <Content Include="Umbraco\lib\tinymce\skins\umbraco\img\loader.gif" />
     <Content Include="Umbraco\lib\tinymce\skins\umbraco\img\object.gif" />
@@ -1622,17 +1331,42 @@
     <Content Include="Umbraco\lib\umbraco\LegacyUmbClientMgr.js" />
     <Content Include="Umbraco\lib\umbraco\NamespaceManager.js" />
     <Content Include="Umbraco\lib\underscore\underscore-min.js" />
+    <Content Include="Umbraco\lib\underscore\underscore-min.map" />
     <Content Include="Umbraco\Logout.aspx" />
     <Content Include="Umbraco\macroResultWrapper.aspx" />
+    <Content Include="Umbraco\Masterpages\default.Master" />
+    <Content Include="Umbraco\Masterpages\umbracoDialog.Master" />
+    <Content Include="Umbraco\Masterpages\umbracoPage.Master" />
     <Content Include="Umbraco\Members\EditMemberGroup.aspx" />
     <Content Include="Umbraco\Members\MemberSearch.ascx" />
     <Content Include="Umbraco\Members\search.aspx" />
     <Content Include="Umbraco\Members\ViewMembers.aspx" />
+    <Content Include="Umbraco\PartialViewMacros\Templates\Breadcrumb.cshtml" />
+    <Content Include="Umbraco\PartialViewMacros\Templates\EditProfile.cshtml" />
+    <Content Include="Umbraco\PartialViewMacros\Templates\Empty %28ForUseWithCustomViews%29.cshtml" />
+    <Content Include="Umbraco\PartialViewMacros\Templates\Empty.cshtml" />
+    <Content Include="Umbraco\PartialViewMacros\Templates\Gallery.cshtml" />
+    <Content Include="Umbraco\PartialViewMacros\Templates\ListAncestorsFromCurrentPage.cshtml" />
+    <Content Include="Umbraco\PartialViewMacros\Templates\ListChildPagesFromChangeableSource.cshtml" />
+    <Content Include="Umbraco\PartialViewMacros\Templates\ListChildPagesFromCurrentPage.cshtml" />
+    <Content Include="Umbraco\PartialViewMacros\Templates\ListChildPagesOrderedByDate.cshtml" />
+    <Content Include="Umbraco\PartialViewMacros\Templates\ListChildPagesOrderedByName.cshtml" />
+    <Content Include="Umbraco\PartialViewMacros\Templates\ListChildPagesOrderedByProperty.cshtml" />
+    <Content Include="Umbraco\PartialViewMacros\Templates\ListChildPagesWithDoctype.cshtml" />
+    <Content Include="Umbraco\PartialViewMacros\Templates\ListDescendantsFromCurrentPage.cshtml" />
+    <Content Include="Umbraco\PartialViewMacros\Templates\ListImagesFromMediaFolder.cshtml" />
+    <Content Include="Umbraco\PartialViewMacros\Templates\Login.cshtml" />
+    <Content Include="Umbraco\PartialViewMacros\Templates\LoginStatus.cshtml" />
+    <Content Include="Umbraco\PartialViewMacros\Templates\MultinodeTree-picker.cshtml" />
+    <Content Include="Umbraco\PartialViewMacros\Templates\Navigation.cshtml" />
+    <Content Include="Umbraco\PartialViewMacros\Templates\RegisterMember.cshtml" />
+    <Content Include="Umbraco\PartialViewMacros\Templates\SiteMap.cshtml" />
     <Content Include="Umbraco\ping.aspx" />
     <Content Include="Umbraco\Plugins\Tinymce3\tinymce3tinymceCompress.aspx" />
     <Content Include="Umbraco\publishStatus.aspx" />
     <Content Include="Umbraco\Search\QuickSearch.ascx" />
     <Content Include="Umbraco\Search\quickSearch.js" />
+    <Content Include="Umbraco\Search\QuickSearchHandler.ashx" />
     <Content Include="Umbraco\Settings\DictionaryItemList.aspx" />
     <Content Include="Umbraco\Settings\EditDictionaryItem.aspx" />
     <Content Include="Umbraco\Settings\editLanguage.aspx" />
@@ -1642,10 +1376,12 @@
     <Content Include="Umbraco\Translation\default.aspx" />
     <Content Include="Umbraco\Translation\details.aspx" />
     <Content Include="Umbraco\Translation\preview.aspx" />
+    <Content Include="Umbraco\Translation\translationTasks.dtd" />
     <Content Include="Umbraco\Translation\xml.aspx" />
     <Content Include="Umbraco\tree.aspx" />
     <Content Include="Umbraco\treeInit.aspx" />
     <Content Include="Umbraco\umbraco.aspx" />
+    <Content Include="Umbraco\Views\AuthorizeUpgrade.cshtml" />
     <Content Include="Umbraco\Views\common\dashboard.html" />
     <Content Include="Umbraco\Views\common\dialogs\approvedcolorpicker.html" />
     <Content Include="Umbraco\Views\common\dialogs\content\edit.html" />
@@ -1839,6 +1575,7 @@
     <Content Include="Umbraco\Views\datatypes\edit.html" />
     <Content Include="Umbraco\Views\datatypes\move.html" />
     <Content Include="Umbraco\Views\datatypes\rename.html" />
+    <Content Include="Umbraco\Views\Default.cshtml" />
     <Content Include="Umbraco\Views\dictionary\create.html" />
     <Content Include="Umbraco\Views\dictionary\delete.html" />
     <Content Include="Umbraco\Views\dictionary\edit.html" />
@@ -1925,6 +1662,19 @@
     <Content Include="Umbraco\Views\prevalueeditors\treepicker.html" />
     <Content Include="Umbraco\Views\prevalueeditors\treesource.html" />
     <Content Include="Umbraco\Views\prevalueeditors\valuetype.html" />
+    <Content Include="Umbraco\Views\Preview\Background.cshtml" />
+    <Content Include="Umbraco\Views\Preview\Border.cshtml" />
+    <Content Include="Umbraco\Views\Preview\Color.cshtml" />
+    <Content Include="Umbraco\Views\Preview\Googlefontpicker.cshtml" />
+    <Content Include="Umbraco\Views\Preview\GridRow.cshtml" />
+    <Content Include="Umbraco\Views\Preview\Index.cshtml" />
+    <Content Include="Umbraco\Views\Preview\Layout.cshtml" />
+    <Content Include="Umbraco\Views\Preview\Margin.cshtml" />
+    <Content Include="Umbraco\Views\Preview\Padding.cshtml" />
+    <Content Include="Umbraco\Views\Preview\Radius.cshtml" />
+    <Content Include="Umbraco\Views\Preview\Shadow.cshtml" />
+    <Content Include="Umbraco\Views\Preview\Slider.cshtml" />
+    <Content Include="Umbraco\Views\Preview\web.config" />
     <Content Include="Umbraco\Views\propertyeditors\boolean\boolean.html" />
     <Content Include="Umbraco\Views\propertyeditors\changepassword\changepassword.html" />
     <Content Include="Umbraco\Views\propertyeditors\checkboxlist\checkboxlist.html" />
@@ -2017,7 +1767,9 @@
     <Content Include="Umbraco\Webservices\nodeSorter.asmx" />
     <Content Include="Umbraco\Webservices\progressStatus.asmx" />
     <Content Include="Umbraco\Webservices\publication.asmx" />
+    <Content Include="Umbraco\Webservices\TagsAutoCompleteHandler.ashx" />
     <Content Include="Umbraco\Webservices\TreeClientService.asmx" />
+    <Content Include="Umbraco\Webservices\TreeDataService.ashx" />
     <Content Include="Umbraco\Webservices\wsdl.xslt" />
     <Content Include="Umbraco\Xslt\macroGetCurrent.xsl" />
     <Content Include="Umbraco\Xslt\macroGetSubs.xsl" />
@@ -2053,6 +1805,7 @@
     <Content Include="Umbraco\Xslt\Templates\Schema2\TablePrototype.xslt" />
     <Content Include="Umbraco\Xslt\Templates\Sitemap.xslt" />
     <Content Include="Umbraco\Xslt\Templates\TablePrototype.xslt" />
+    <Content Include="Umbraco\Xslt\Web.config" />
     <Content Include="Umbraco_Client\Application\Extensions.js" />
     <Content Include="Umbraco_Client\Application\HistoryManager.js" />
     <Content Include="Umbraco_Client\Application\JQuery\jquery-fieldselection.js" />
@@ -2196,64 +1949,6 @@
     <Content Include="Umbraco_Client\Ui\json2.js" />
     <Content Include="Umbraco_Client\Ui\knockout.js" />
     <Content Include="Umbraco_Client\Ui\knockout.mapping.js" />
-    <Content Include="uSync\data\Content\home\content.config" />
-    <Content Include="uSync\data\DataType\approved-color\ApprovedColor.config" />
-    <Content Include="uSync\data\DataType\checkbox-list\CheckboxList.config" />
-    <Content Include="uSync\data\DataType\checkbox\Checkbox.config" />
-    <Content Include="uSync\data\DataType\content-picker\ContentPicker.config" />
-    <Content Include="uSync\data\DataType\date-picker-with-time\DatePickerWithTime.config" />
-    <Content Include="uSync\data\DataType\date-picker\DatePicker.config" />
-    <Content Include="uSync\data\DataType\dropdown-multiple\DropdownMultiple.config" />
-    <Content Include="uSync\data\DataType\dropdown\Dropdown.config" />
-    <Content Include="uSync\data\DataType\grid-layout\GridLayout.config" />
-    <Content Include="uSync\data\DataType\header-type-dropdown\HeaderTypeDropdown.config" />
-    <Content Include="uSync\data\DataType\hide-in-menu-truefalse\HideInMenuTrueFalse.config" />
-    <Content Include="uSync\data\DataType\image-cropper\ImageCropper.config" />
-    <Content Include="uSync\data\DataType\introduction-textarea\IntroductionTextarea.config" />
-    <Content Include="uSync\data\DataType\label\Label.config" />
-    <Content Include="uSync\data\DataType\list-view-content\ListViewContent.config" />
-    <Content Include="uSync\data\DataType\list-view-media\ListViewMedia.config" />
-    <Content Include="uSync\data\DataType\list-view-members\ListViewMembers.config" />
-    <Content Include="uSync\data\DataType\media-picker\MediaPicker.config" />
-    <Content Include="uSync\data\DataType\member-picker\MemberPicker.config" />
-    <Content Include="uSync\data\DataType\meta-description-textarea\MetaDescriptionTextarea.config" />
-    <Content Include="uSync\data\DataType\meta-keywords-textbox\MetaKeywordsTextbox.config" />
-    <Content Include="uSync\data\DataType\multiple-media-picker\MultipleMediaPicker.config" />
-    <Content Include="uSync\data\DataType\numeric\Numeric.config" />
-    <Content Include="uSync\data\DataType\page-style-dropdown\PageStyleDropdown.config" />
-    <Content Include="uSync\data\DataType\page-type-dropdown\PageTypeDropdown.config" />
-    <Content Include="uSync\data\DataType\radiobox\Radiobox.config" />
-    <Content Include="uSync\data\DataType\related-links\RelatedLinks.config" />
-    <Content Include="uSync\data\DataType\richtext-editor\RichtextEditor.config" />
-    <Content Include="uSync\data\DataType\site-author-textbox\SiteAuthorTextbox.config" />
-    <Content Include="uSync\data\DataType\site-logo-media-picker\SiteLogoMediaPicker.config" />
-    <Content Include="uSync\data\DataType\site-title-textbox\SiteTitleTextbox.config" />
-    <Content Include="uSync\data\DataType\tags\Tags.config" />
-    <Content Include="uSync\data\DataType\textarea\Textarea.config" />
-    <Content Include="uSync\data\DataType\textstring\Textstring.config" />
-    <Content Include="uSync\data\DataType\title-textbox\TitleTextbox.config" />
-    <Content Include="uSync\data\DataType\upload\Upload.config" />
-    <Content Include="uSync\data\DocumentType\compositions\content-grid\def.config" />
-    <Content Include="uSync\data\DocumentType\compositions\page-defaults\def.config" />
-    <Content Include="uSync\data\DocumentType\compositions\site-global\def.config" />
-    <Content Include="uSync\data\DocumentType\page-templates\blog-overview\def.config" />
-    <Content Include="uSync\data\DocumentType\page-templates\blog-post\def.config" />
-    <Content Include="uSync\data\DocumentType\page-templates\contact-page\def.config" />
-    <Content Include="uSync\data\DocumentType\page-templates\content-page\def.config" />
-    <Content Include="uSync\data\DocumentType\page-templates\landing-page\def.config" />
-    <Content Include="uSync\data\Languages\enUS.config" />
-    <Content Include="uSync\data\MediaType\file\def.config" />
-    <Content Include="uSync\data\MediaType\folder\def.config" />
-    <Content Include="uSync\data\MediaType\image\def.config" />
-    <Content Include="uSync\data\Media\site\media.config" />
-    <Content Include="uSync\data\Media\spotlight\media.config" />
-    <Content Include="uSync\data\Template\anchorpage\AnchorPage.config" />
-    <Content Include="uSync\data\Template\blogoverview\BlogOverview.config" />
-    <Content Include="uSync\data\Template\blogpost\BlogPost.config" />
-    <Content Include="uSync\data\Template\contactpage\ContactPage.config" />
-    <Content Include="uSync\data\Template\contentpage\ContentPage.config" />
-    <Content Include="uSync\data\Template\landingpage\LandingPage.config" />
-    <Content Include="uSync\data\Template\_layout\Layout.config" />
     <Content Include="Views\Partials\Grid\Bootstrap2-Fluid.cshtml" />
     <Content Include="Views\Partials\Grid\Bootstrap2.cshtml" />
     <Content Include="Views\Partials\Grid\Bootstrap3-Fluid.cshtml" />
@@ -2301,34 +1996,6 @@
   <ItemGroup>
     <Content Include="App_Browsers\Form.browser" />
     <Content Include="App_Browsers\w3cvalidator.browser" />
-    <Content Include="App_Data\NuGetBackup\20180819-171807\CopyLogs\UmbracoBinBackup.log" />
-    <Content Include="App_Data\NuGetBackup\20180819-171814\Config\404handlers.config" />
-    <Content Include="App_Data\NuGetBackup\20180819-171814\Config\applications.config" />
-    <Content Include="App_Data\NuGetBackup\20180819-171814\Config\BackOfficeTours\getting-started.json" />
-    <Content Include="App_Data\NuGetBackup\20180819-171814\Config\BaseRestExtensions.config" />
-    <Content Include="App_Data\NuGetBackup\20180819-171814\Config\ClientDependency.config" />
-    <Content Include="App_Data\NuGetBackup\20180819-171814\Config\Dashboard.config" />
-    <Content Include="App_Data\NuGetBackup\20180819-171814\Config\EmbeddedMedia.config" />
-    <Content Include="App_Data\NuGetBackup\20180819-171814\Config\ExamineIndex.config" />
-    <Content Include="App_Data\NuGetBackup\20180819-171814\Config\ExamineSettings.config" />
-    <Content Include="App_Data\NuGetBackup\20180819-171814\Config\feedProxy.config" />
-    <Content Include="App_Data\NuGetBackup\20180819-171814\Config\FileSystemProviders.config" />
-    <Content Include="App_Data\NuGetBackup\20180819-171814\Config\HealthChecks.config" />
-    <Content Include="App_Data\NuGetBackup\20180819-171814\Config\imageprocessor\cache.config" />
-    <Content Include="App_Data\NuGetBackup\20180819-171814\Config\imageprocessor\processing.config" />
-    <Content Include="App_Data\NuGetBackup\20180819-171814\Config\imageprocessor\security.config" />
-    <Content Include="App_Data\NuGetBackup\20180819-171814\Config\log4net.config" />
-    <Content Include="App_Data\NuGetBackup\20180819-171814\Config\metablogConfig.config" />
-    <Content Include="App_Data\NuGetBackup\20180819-171814\Config\scripting.config" />
-    <Content Include="App_Data\NuGetBackup\20180819-171814\Config\tinyMceConfig.config" />
-    <Content Include="App_Data\NuGetBackup\20180819-171814\Config\trees.config" />
-    <Content Include="App_Data\NuGetBackup\20180819-171814\Config\umbracoSettings.config" />
-    <Content Include="App_Data\NuGetBackup\20180819-171814\CopyLogs\ConfigBackup.log" />
-    <Content Include="App_Data\NuGetBackup\20180819-171814\CopyLogs\UmbracoBackup.log" />
-    <Content Include="App_Data\NuGetBackup\20180819-171814\CopyLogs\UmbracoClientBackup.log" />
-    <Content Include="App_Data\NuGetBackup\20180819-171814\CopyLogs\UmbracoClientCopy.log" />
-    <Content Include="App_Data\NuGetBackup\20180819-171814\CopyLogs\UmbracoCopy.log" />
-    <Content Include="App_Data\NuGetBackup\20180819-171814\Web.config" />
     <Content Include="App_Data\packages\installed\installedPackages.config" />
     <Content Include="App_Data\umbraco.config" />
     <Content Include="App_Plugins\Grid\Editors\Render\article.cshtml" />
@@ -2346,211 +2013,7 @@
     <Content Include="App_Plugins\Grid\package.manifest" />
     <Content Include="bundleconfig.json" />
     <Content Include="compilerconfig.json" />
-    <Content Include="Frontend\Css\Atom\a.less" />
-    <Content Include="Frontend\Css\Atom\abstract.less" />
-    <Content Include="Frontend\Css\Atom\blockquote.less" />
-    <Content Include="Frontend\Css\Atom\code.less" />
-    <Content Include="Frontend\Css\Atom\h.less" />
-    <Content Include="Frontend\Css\Atom\hr.less" />
-    <Content Include="Frontend\Css\Atom\image.less" />
-    <Content Include="Frontend\Css\Atom\pre.less" />
-    <Content Include="Frontend\Css\Atom\text.less" />
-    <Content Include="Frontend\Css\Atom\triangle.less" />
-    <Content Include="Frontend\Css\body.less" />
-    <Content Include="Frontend\Css\global.vars.less" />
-    <Content Include="Frontend\Css\ie10-viewport-bug-workaround.less" />
-    <Content Include="Frontend\Css\Molekule\box.less" />
-    <Content Include="Frontend\Css\Molekule\button.less" />
-    <Content Include="Frontend\Css\Molekule\list.less" />
-    <Content Include="Frontend\Css\Molekule\row.less" />
-    <Content Include="Frontend\Css\Molekule\seperator.less" />
-    <Content Include="Frontend\Css\Organism\article.less" />
-    <Content Include="Frontend\Css\Organism\banner.less" />
-    <Content Include="Frontend\Css\Organism\blogarchive.less" />
-    <Content Include="Frontend\Css\Organism\breadcrumb.less" />
-    <Content Include="Frontend\Css\Organism\container.less" />
-    <Content Include="Frontend\Css\Organism\cta.less" />
-    <Content Include="Frontend\Css\Organism\features.less" />
-    <Content Include="Frontend\Css\Organism\footer.less" />
-    <Content Include="Frontend\Css\Organism\header.less" />
-    <Content Include="Frontend\Css\Organism\icon.less" />
-    <Content Include="Frontend\Css\Organism\jumbotron.less" />
-    <Content Include="Frontend\Css\Organism\menu.less" />
-    <Content Include="Frontend\Css\Organism\panel.less" />
-    <Content Include="Frontend\Css\Organism\section.less" />
-    <Content Include="Frontend\Css\Organism\spotlight.less" />
-    <Content Include="Frontend\Css\Organism\table.less" />
-    <Content Include="Frontend\Css\Plugins\Tooltipster\Themes\tooltipster-sideTip-punk.less" />
-    <Content Include="Frontend\Css\Plugins\Tooltipster\tooltipster.bundle.less" />
-    <Content Include="Frontend\Css\Plugins\Tooltipster\tooltipster.less" />
-    <Content Include="Frontend\Css\Plugins\Tooltipster\tooltipster.main.less" />
-    <Content Include="Frontend\Css\reset.less" />
-    <Content Include="Frontend\Css\style.less" />
-    <Content Include="Frontend\Css\Template\style-gray.less" />
-    <Content Include="Frontend\Css\Template\style-green.less" />
-    <Content Include="Frontend\Css\Template\style-light.less" />
-    <Content Include="Frontend\Css\Template\style-purple.less" />
-    <Content Include="Frontend\Css\Template\style-transparent.less" />
-    <Content Include="Frontend\custom.less" />
-    <Content Include="Frontend\fontawesome-all.less" />
     <None Include="packages.config" />
-    <Content Include="Umbraco\assets\fonts\helveticons\helveticons.eot" />
-    <Content Include="Umbraco\assets\fonts\helveticons\helveticons.ttf" />
-    <Content Include="Umbraco\assets\fonts\helveticons\helveticons.woff" />
-    <Content Include="Umbraco\assets\fonts\lato\LatoLatin-Black.eot" />
-    <Content Include="Umbraco\assets\fonts\lato\LatoLatin-Black.ttf" />
-    <Content Include="Umbraco\assets\fonts\lato\LatoLatin-Black.woff" />
-    <Content Include="Umbraco\assets\fonts\lato\LatoLatin-Black.woff2" />
-    <Content Include="Umbraco\assets\fonts\lato\LatoLatin-BlackItalic.eot" />
-    <Content Include="Umbraco\assets\fonts\lato\LatoLatin-BlackItalic.ttf" />
-    <Content Include="Umbraco\assets\fonts\lato\LatoLatin-BlackItalic.woff" />
-    <Content Include="Umbraco\assets\fonts\lato\LatoLatin-BlackItalic.woff2" />
-    <Content Include="Umbraco\assets\fonts\lato\LatoLatin-Bold.eot" />
-    <Content Include="Umbraco\assets\fonts\lato\LatoLatin-Bold.ttf" />
-    <Content Include="Umbraco\assets\fonts\lato\LatoLatin-Bold.woff" />
-    <Content Include="Umbraco\assets\fonts\lato\LatoLatin-Bold.woff2" />
-    <Content Include="Umbraco\assets\fonts\lato\LatoLatin-BoldItalic.eot" />
-    <Content Include="Umbraco\assets\fonts\lato\LatoLatin-BoldItalic.ttf" />
-    <Content Include="Umbraco\assets\fonts\lato\LatoLatin-BoldItalic.woff" />
-    <Content Include="Umbraco\assets\fonts\lato\LatoLatin-BoldItalic.woff2" />
-    <Content Include="Umbraco\assets\fonts\lato\LatoLatin-Italic.eot" />
-    <Content Include="Umbraco\assets\fonts\lato\LatoLatin-Italic.ttf" />
-    <Content Include="Umbraco\assets\fonts\lato\LatoLatin-Italic.woff" />
-    <Content Include="Umbraco\assets\fonts\lato\LatoLatin-Italic.woff2" />
-    <Content Include="Umbraco\assets\fonts\lato\LatoLatin-Light.eot" />
-    <Content Include="Umbraco\assets\fonts\lato\LatoLatin-Light.ttf" />
-    <Content Include="Umbraco\assets\fonts\lato\LatoLatin-Light.woff" />
-    <Content Include="Umbraco\assets\fonts\lato\LatoLatin-Light.woff2" />
-    <Content Include="Umbraco\assets\fonts\lato\LatoLatin-LightItalic.eot" />
-    <Content Include="Umbraco\assets\fonts\lato\LatoLatin-LightItalic.ttf" />
-    <Content Include="Umbraco\assets\fonts\lato\LatoLatin-LightItalic.woff" />
-    <Content Include="Umbraco\assets\fonts\lato\LatoLatin-LightItalic.woff2" />
-    <Content Include="Umbraco\assets\fonts\lato\LatoLatin-Regular.eot" />
-    <Content Include="Umbraco\assets\fonts\lato\LatoLatin-Regular.ttf" />
-    <Content Include="Umbraco\assets\fonts\lato\LatoLatin-Regular.woff" />
-    <Content Include="Umbraco\assets\fonts\lato\LatoLatin-Regular.woff2" />
-    <Content Include="Umbraco\assets\fonts\opensans\OpenSans-Regular-webfont.eot" />
-    <Content Include="Umbraco\assets\fonts\opensans\OpenSans-Regular-webfont.ttf" />
-    <Content Include="Umbraco\assets\fonts\opensans\OpenSans-Regular-webfont.woff" />
-    <Content Include="Umbraco\assets\fonts\opensans\OpenSans-Regular.ttf" />
-    <Content Include="Umbraco\assets\fonts\opensans\OpenSans-Semibold-webfont.eot" />
-    <Content Include="Umbraco\assets\fonts\opensans\OpenSans-Semibold-webfont.ttf" />
-    <Content Include="Umbraco\assets\fonts\opensans\OpenSans-Semibold-webfont.woff" />
-    <Content Include="Umbraco\assets\less\background.less" />
-    <Content Include="Umbraco\assets\less\border.less" />
-    <Content Include="Umbraco\assets\less\color.less" />
-    <Content Include="Umbraco\assets\less\googlefontpicker.less" />
-    <Content Include="Umbraco\assets\less\gridRow.less" />
-    <Content Include="Umbraco\assets\less\layout.less" />
-    <Content Include="Umbraco\assets\less\margin.less" />
-    <Content Include="Umbraco\assets\less\padding.less" />
-    <Content Include="Umbraco\assets\less\radius.less" />
-    <Content Include="Umbraco\assets\less\shadow.less" />
-    <Content Include="Umbraco\assets\less\slider.less" />
-    <Content Include="Umbraco\Install\Views\Index.cshtml" />
-    <Content Include="Umbraco\Install\Views\Web.config" />
-    <Content Include="Umbraco\Js\web.config" />
-    <Content Include="Umbraco\lib\angular-dynamic-locale\tmhDynamicLocale.min.js.map" />
-    <Content Include="Umbraco\lib\angular-local-storage\angular-local-storage.min.js.map" />
-    <Content Include="Umbraco\lib\bootstrap-tabdrop\README.md" />
-    <Content Include="Umbraco\lib\bootstrap\less\accordion.less" />
-    <Content Include="Umbraco\lib\bootstrap\less\alerts.less" />
-    <Content Include="Umbraco\lib\bootstrap\less\bootstrap.less" />
-    <Content Include="Umbraco\lib\bootstrap\less\breadcrumbs.less" />
-    <Content Include="Umbraco\lib\bootstrap\less\button-groups.less" />
-    <Content Include="Umbraco\lib\bootstrap\less\buttons.less" />
-    <Content Include="Umbraco\lib\bootstrap\less\carousel.less" />
-    <Content Include="Umbraco\lib\bootstrap\less\close.less" />
-    <Content Include="Umbraco\lib\bootstrap\less\code.less" />
-    <Content Include="Umbraco\lib\bootstrap\less\component-animations.less" />
-    <Content Include="Umbraco\lib\bootstrap\less\dropdowns.less" />
-    <Content Include="Umbraco\lib\bootstrap\less\forms.less" />
-    <Content Include="Umbraco\lib\bootstrap\less\grid.less" />
-    <Content Include="Umbraco\lib\bootstrap\less\hero-unit.less" />
-    <Content Include="Umbraco\lib\bootstrap\less\labels-badges.less" />
-    <Content Include="Umbraco\lib\bootstrap\less\layouts.less" />
-    <Content Include="Umbraco\lib\bootstrap\less\media.less" />
-    <Content Include="Umbraco\lib\bootstrap\less\mixins.less" />
-    <Content Include="Umbraco\lib\bootstrap\less\modals.less" />
-    <Content Include="Umbraco\lib\bootstrap\less\navbar.less" />
-    <Content Include="Umbraco\lib\bootstrap\less\navs.less" />
-    <Content Include="Umbraco\lib\bootstrap\less\pager.less" />
-    <Content Include="Umbraco\lib\bootstrap\less\pagination.less" />
-    <Content Include="Umbraco\lib\bootstrap\less\popovers.less" />
-    <Content Include="Umbraco\lib\bootstrap\less\progress-bars.less" />
-    <Content Include="Umbraco\lib\bootstrap\less\reset.less" />
-    <Content Include="Umbraco\lib\bootstrap\less\responsive-1200px-min.less" />
-    <Content Include="Umbraco\lib\bootstrap\less\responsive-767px-max.less" />
-    <Content Include="Umbraco\lib\bootstrap\less\responsive-768px-979px.less" />
-    <Content Include="Umbraco\lib\bootstrap\less\responsive-navbar.less" />
-    <Content Include="Umbraco\lib\bootstrap\less\responsive-utilities.less" />
-    <Content Include="Umbraco\lib\bootstrap\less\responsive.less" />
-    <Content Include="Umbraco\lib\bootstrap\less\scaffolding.less" />
-    <Content Include="Umbraco\lib\bootstrap\less\sprites.less" />
-    <Content Include="Umbraco\lib\bootstrap\less\tables.less" />
-    <Content Include="Umbraco\lib\bootstrap\less\thumbnails.less" />
-    <Content Include="Umbraco\lib\bootstrap\less\tooltip.less" />
-    <Content Include="Umbraco\lib\bootstrap\less\type.less" />
-    <Content Include="Umbraco\lib\bootstrap\less\utilities.less" />
-    <Content Include="Umbraco\lib\bootstrap\less\variables.less" />
-    <Content Include="Umbraco\lib\bootstrap\less\wells.less" />
-    <Content Include="Umbraco\lib\codemirror\mode\razor\LICENSE" />
-    <Content Include="Umbraco\lib\font-awesome\fonts\fontawesome-webfont.eot" />
-    <Content Include="Umbraco\lib\font-awesome\fonts\fontawesome-webfont.ttf" />
-    <Content Include="Umbraco\lib\font-awesome\fonts\fontawesome-webfont.woff" />
-    <Content Include="Umbraco\lib\font-awesome\fonts\FontAwesome.otf" />
-    <Content Include="Umbraco\lib\jquery\jquery.min.map" />
-    <Content Include="Umbraco\lib\tinymce\skins\umbraco\fonts\readme.md" />
-    <Content Include="Umbraco\lib\tinymce\skins\umbraco\fonts\tinymce-small.eot" />
-    <Content Include="Umbraco\lib\tinymce\skins\umbraco\fonts\tinymce-small.ttf" />
-    <Content Include="Umbraco\lib\tinymce\skins\umbraco\fonts\tinymce-small.woff" />
-    <Content Include="Umbraco\lib\tinymce\skins\umbraco\fonts\tinymce.eot" />
-    <Content Include="Umbraco\lib\tinymce\skins\umbraco\fonts\tinymce.ttf" />
-    <Content Include="Umbraco\lib\tinymce\skins\umbraco\fonts\tinymce.woff" />
-    <Content Include="Umbraco\lib\underscore\underscore-min.map" />
-    <Content Include="Umbraco\Masterpages\default.Master" />
-    <Content Include="Umbraco\Masterpages\umbracoDialog.Master" />
-    <Content Include="Umbraco\Masterpages\umbracoPage.Master" />
-    <Content Include="Umbraco\PartialViewMacros\Templates\Breadcrumb.cshtml" />
-    <Content Include="Umbraco\PartialViewMacros\Templates\EditProfile.cshtml" />
-    <Content Include="Umbraco\PartialViewMacros\Templates\Empty %28ForUseWithCustomViews%29.cshtml" />
-    <Content Include="Umbraco\PartialViewMacros\Templates\Empty.cshtml" />
-    <Content Include="Umbraco\PartialViewMacros\Templates\Gallery.cshtml" />
-    <Content Include="Umbraco\PartialViewMacros\Templates\ListAncestorsFromCurrentPage.cshtml" />
-    <Content Include="Umbraco\PartialViewMacros\Templates\ListChildPagesFromChangeableSource.cshtml" />
-    <Content Include="Umbraco\PartialViewMacros\Templates\ListChildPagesFromCurrentPage.cshtml" />
-    <Content Include="Umbraco\PartialViewMacros\Templates\ListChildPagesOrderedByDate.cshtml" />
-    <Content Include="Umbraco\PartialViewMacros\Templates\ListChildPagesOrderedByName.cshtml" />
-    <Content Include="Umbraco\PartialViewMacros\Templates\ListChildPagesOrderedByProperty.cshtml" />
-    <Content Include="Umbraco\PartialViewMacros\Templates\ListChildPagesWithDoctype.cshtml" />
-    <Content Include="Umbraco\PartialViewMacros\Templates\ListDescendantsFromCurrentPage.cshtml" />
-    <Content Include="Umbraco\PartialViewMacros\Templates\ListImagesFromMediaFolder.cshtml" />
-    <Content Include="Umbraco\PartialViewMacros\Templates\Login.cshtml" />
-    <Content Include="Umbraco\PartialViewMacros\Templates\LoginStatus.cshtml" />
-    <Content Include="Umbraco\PartialViewMacros\Templates\MultinodeTree-picker.cshtml" />
-    <Content Include="Umbraco\PartialViewMacros\Templates\Navigation.cshtml" />
-    <Content Include="Umbraco\PartialViewMacros\Templates\RegisterMember.cshtml" />
-    <Content Include="Umbraco\PartialViewMacros\Templates\SiteMap.cshtml" />
-    <Content Include="Umbraco\Search\QuickSearchHandler.ashx" />
-    <Content Include="Umbraco\Translation\translationTasks.dtd" />
-    <Content Include="Umbraco\Views\AuthorizeUpgrade.cshtml" />
-    <Content Include="Umbraco\Views\Default.cshtml" />
-    <Content Include="Umbraco\Views\Preview\Background.cshtml" />
-    <Content Include="Umbraco\Views\Preview\Border.cshtml" />
-    <Content Include="Umbraco\Views\Preview\Color.cshtml" />
-    <Content Include="Umbraco\Views\Preview\Googlefontpicker.cshtml" />
-    <Content Include="Umbraco\Views\Preview\GridRow.cshtml" />
-    <Content Include="Umbraco\Views\Preview\Index.cshtml" />
-    <Content Include="Umbraco\Views\Preview\Layout.cshtml" />
-    <Content Include="Umbraco\Views\Preview\Margin.cshtml" />
-    <Content Include="Umbraco\Views\Preview\Padding.cshtml" />
-    <Content Include="Umbraco\Views\Preview\Radius.cshtml" />
-    <Content Include="Umbraco\Views\Preview\Shadow.cshtml" />
-    <Content Include="Umbraco\Views\Preview\Slider.cshtml" />
-    <Content Include="Umbraco\Views\Preview\web.config" />
-    <Content Include="Umbraco\Webservices\TagsAutoCompleteHandler.ashx" />
-    <Content Include="Umbraco\Webservices\TreeDataService.ashx" />
-    <Content Include="Umbraco\Xslt\Web.config" />
     <Content Include="Views\AnchorPage.cshtml" />
     <Content Include="Views\BlogOverview.cshtml" />
     <Content Include="Views\BlogPost.cshtml" />
@@ -2563,26 +2026,6 @@
     <Content Include="Views\_Layout.cshtml" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
-    <Content Include="uSync\data\Content\home\about\content.config" />
-    <Content Include="uSync\data\Content\home\contact\content.config" />
-    <Content Include="uSync\data\Content\home\disclaimer\content.config" />
-    <Content Include="uSync\data\Content\home\examples\basic-text-page-style-light\content.config" />
-    <Content Include="uSync\data\Content\home\examples\content.config" />
-    <Content Include="uSync\data\Content\home\site-global\content.config" />
-    <Content Include="uSync\data\Media\site\1d940749740655560867a146b61.png\media.config" />
-    <Content Include="uSync\data\Media\site\287309.jpg\media.config" />
-    <Content Include="uSync\data\Media\site\56929080_thumbnail.jpg\media.config" />
-    <Content Include="uSync\data\Media\site\cool-high-tech-wallpaper-30878-31608-hd-wallpapers.jpg\media.config" />
-    <Content Include="uSync\data\Media\site\high-tech-wallpaper-hd-3438-3647-hd-wallpapers.jpg\media.config" />
-    <Content Include="uSync\data\Media\site\internet-of-things-1920xx.png\media.config" />
-    <Content Include="uSync\data\Media\site\website-design-background.png\media.config" />
-    <Content Include="uSync\data\Media\site\xbx9a0o.jpg\media.config" />
-    <Content Include="uSync\data\Media\spotlight\spotlight_1.png\media.config" />
-    <Content Include="uSync\data\Media\spotlight\spotlight_2.png\media.config" />
-    <Content Include="uSync\data\Media\spotlight\spotlight_3.png\media.config" />
-    <Content Include="uSync\data\Media\spotlight\spotlight_4.png\media.config" />
-    <Content Include="uSync\data\Media\spotlight\spotlight_5.png\media.config" />
-    <Content Include="uSync\data\MemberType\member\def.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -2607,8 +2050,6 @@
     <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.1.0.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.CSharp.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\NuGetBackup\20180819-171814\Umbraco\" />
-    <Folder Include="App_Data\NuGetBackup\20180819-171814\Umbraco_Client\" />
     <Folder Include="Views\MacroPartials\" />
   </ItemGroup>
   <ItemGroup>

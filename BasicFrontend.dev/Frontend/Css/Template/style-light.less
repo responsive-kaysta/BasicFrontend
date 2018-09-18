@@ -6,10 +6,6 @@
 }
 
 .light a:hover {
-    -moz-transition: color 0.2s ease, border-bottom-color 0.2s ease;
-    -webkit-transition: color 0.2s ease, border-bottom-color 0.2s ease;
-    -ms-transition: color 0.2s ease, border-bottom-color 0.2s ease;
-    transition: color 0.2s ease, border-bottom-color 0.2s ease;
     color: @style-light-hover-color;
 }
 
@@ -53,4 +49,12 @@ header.light h2,
 header.light p {
     color: @base-color;
     background-color: @style-transparent-bg-color;
+}
+
+.icon.light * {
+    color: @style-light-color;
+}
+
+.icon.light a:hover {
+    color: @base-hover-color;
 }
