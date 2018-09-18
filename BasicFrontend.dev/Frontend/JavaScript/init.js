@@ -4,6 +4,8 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+/* skel.js v3.0.2-dev | (c) skel.io | MIT licensed */
+
 (function ($) {
 
     skel.breakpoints({
@@ -96,13 +98,13 @@
             });
         }
 
+        // get equal height for blogarchive elements
+        if ($equalizer.length > 0 && $equalizer.hasClass('blogarchive')) {
+            getElementEqualHeight($(".equal"));
+        }
+
         // on ready
         skel.ready(function () {
-
-            // get equal height for blogarchive elements
-            if ($equalizer.length > 0 && $equalizer.hasClass('blogarchive')) {
-                getElementEqualHeight($(".equal"));
-            }
 
             console.log('[window] - ready ...');
         });

@@ -1,152 +1,150 @@
-﻿/* skel-viewport.js v3.0.1 | (c) skel.io | MIT licensed */
+﻿/* skel-viewport.js v3.0.2-dev | (c) skel.io | MIT licensed */
 
-(function (_) {
-    "use strict"; var __ = {
+(function(_) { "use strict"; var __ = {
 
-        /******************************/
-        /* Properties                 */
-        /******************************/
+	/******************************/
+	/* Properties                 */
+	/******************************/
 
 		/**
 		 * Default config.
 		 * @type {object}
 		 */
-        config: {
+		config: {
 
-            // Width.
-            width: 'device-width',
+			// Width.
+				width: 'device-width',
 
-            // Height.
-            height: '',
+			// Height.
+				height: '',
 
-            // Scalable?
-            scalable: true,
+			// Scalable?
+				scalable: true,
 
-            // Breakpoints.
-            breakpoints: {}
+			// Breakpoints.
+				breakpoints: {}
 
-        },
+		},
 
-        /******************************/
-        /* Methods                    */
-        /******************************/
+	/******************************/
+	/* Methods                    */
+	/******************************/
 
 		/**
 		 * Initializes Viewport module.
 		 * @param {object} config Config.
 		 */
-        init: function (config) {
+		init: function(config) {
 
-            // Extend with user config.
-            _.extend(__.config, config);
+			// Extend with user config.
+				_.extend(__.config, config);
 
-            // Add state handler.
-            _.addStateHandler('viewport', __.stateHandler);
+			// Add state handler.
+				_.addStateHandler('viewport', __.stateHandler);
 
-            // Add initial <meta> element.
-            _.attach(_.newAttachment(
-                'mv',
-                __.newViewportMeta('initial-scale=1'),
-                1,
-                true
-            ));
+			// Add initial <meta> element.
+				_.attach(_.newAttachment(
+					'mv',
+					__.newViewportMeta('initial-scale=1'),
+					1,
+					true
+				));
 
-            // Hack: IE viewport fix.
-            if (_.vars.browser == 'ie'
-                && _.vars.IEVersion >= 10) {
+			// Hack: IE viewport fix.
+				if (_.vars.browser == 'ie'
+				&&	_.vars.IEVersion >= 10) {
 
-                // Add <style> element for -ms-viewport.
-                _.attach(_.newAttachment(
-                    'mVie',
-                    _.newStyle('@-ms-viewport{width:device-width}'),
-                    1,
-                    true
-                ));
+					// Add <style> element for -ms-viewport.
+						_.attach(_.newAttachment(
+							'mVie',
+							_.newStyle('@-ms-viewport{width:device-width}'),
+							1,
+							true
+						));
 
-                // Force browser to accept new viewport.
-                window.setTimeout(function () {
+					// Force browser to accept new viewport.
+						window.setTimeout(function() {
 
-                    var body = document.getElementsByTagName('body')[0],
-                        h = body.style.height;
+							var body = document.getElementsByTagName('body')[0],
+								h = body.style.height;
 
-                    body.style.height = '10000px';
+							body.style.height = '10000px';
 
-                    window.setTimeout(function () {
-                        body.style.height = h;
-                    }, 250);
+							window.setTimeout(function() {
+								body.style.height = h;
+							}, 250);
 
-                }, 250);
+						}, 250);
 
-            }
+				}
 
-            return _;
+			return _;
 
-        },
+		},
 
 		/**
 		 * Creates a new viewport <meta> element.
 		 * @param {string} content Content.
 		 * @return {DOMElement} Viewport <meta> element.
 		 */
-        newViewportMeta: function (content) {
+		newViewportMeta: function(content) {
 
-            var e = document.createElement('meta');
-            e.name = 'viewport';
-            e.content = content;
+			var e = document.createElement('meta');
+				e.name = 'viewport';
+				e.content = content;
 
-            return e;
+			return e;
 
-        },
+		},
 
 		/**
 		 * State handler.
 		 * @return {array} Attachments.
 		 */
-        stateHandler: function () {
+		stateHandler: function() {
 
-            var attachment, config,
-                a;
+			var attachment, config,
+				a;
 
-            // Generate state config.
-            config = _.generateStateConfig(
-                {
-                    width: __.config.width,
-                    height: __.config.height,
-                    scalable: __.config.scalable
-                },
-                __.config.breakpoints
-            );
+			// Generate state config.
+				config = _.generateStateConfig(
+					{
+						width: __.config.width,
+						height: __.config.height,
+						scalable: __.config.scalable
+					},
+					__.config.breakpoints
+				);
 
-            // Create <meta> element attachment.
+			// Create <meta> element attachment.
 
-            // Content.
-            a = [];
+				// Content.
+					a = [];
 
-            // Scalable.
-            a.push('user-scalable=' + (config.scalable ? 'yes' : 'no'));
+					// Scalable.
+						a.push('user-scalable=' + (config.scalable ? 'yes' : 'no'));
 
-            // Width.
-            if (config.width)
-                a.push('width=' + config.width);
+					// Width.
+						if (config.width)
+							a.push('width=' + config.width);
 
-            // Height.
-            if (config.height)
-                a.push('height=' + config.height);
+					// Height.
+						if (config.height)
+							a.push('height=' + config.height);
 
-            // Set initial scale if we're using device-width.
-            if (config.width == 'device-width')
-                a.push('initial-scale=1');
+					// Set initial scale if we're using device-width.
+						if (config.width == 'device-width')
+							a.push('initial-scale=1');
 
-            // Attachment.
-            attachment = _.newAttachment(
-                'mv-' + _.stateId,
-                __.newViewportMeta(a.join(',')),
-                1
-            );
+				// Attachment.
+					attachment = _.newAttachment(
+						'mv-' + _.stateId,
+						__.newViewportMeta(a.join(',')),
+						1
+					);
 
-            return [attachment];
+			return [attachment];
 
-        }
+		}
 
-    }; _.viewport = __.init;
-})(skel);
+}; _.viewport = __.init; })(skel);

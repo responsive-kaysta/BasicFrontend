@@ -28,10 +28,10 @@ body.is-mobile #main > header {
 }
 #main > header {
   /*
-    background: -moz-linear-gradient(top, rgb(11, 53, 54) 0%, rgba(125,185,232,0)), url(@banner-bg-image);
-    background: -webkit-linear-gradient(top, rgb(11, 53, 54) 0%,rgba(125,185,232,0)), url(@banner-bg-image);
-    background-image: -ms-linear-gradient(top, rgb(11, 53, 54) 0%, rgba(125,185,232,0)), url(@banner-bg-image);
-    background: linear-gradient(to bottom, rgb(11, 53, 54) 0%,rgba(125,185,232,0)), url(@banner-bg-image);
+    background: -moz-linear-gradient(top, rgb(11, 53, 54) 0%, rgba(125,185,232,0)), url(../../Frontend/@banner-bg-image);
+    background: -webkit-linear-gradient(top, rgb(11, 53, 54) 0%,rgba(125,185,232,0)), url(../../Frontend/@banner-bg-image);
+    background-image: -ms-linear-gradient(top, rgb(11, 53, 54) 0%, rgba(125,185,232,0)), url(../../Frontend/@banner-bg-image);
+    background: linear-gradient(to bottom, rgb(11, 53, 54) 0%,rgba(125,185,232,0)), url(../../Frontend/@banner-bg-image);
     */
   background-attachment: fixed;
   background-position: center center;

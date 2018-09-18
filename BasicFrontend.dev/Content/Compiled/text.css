@@ -1,0 +1,113 @@
+﻿/* base styles and definitions */
+/* menu */
+/* green -> obsolete style1 */
+/* gray -> obsolete style2 */
+/* purple -> obsolete style3 */
+/* transparent -> obsolete: style4 */
+/* light -> obsolete: style5 */
+/* button */
+/* code */
+/* banner */
+p {
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.25rem;
+  letter-spacing: 0.1rem;
+}
+p {
+  margin: 0;
+  margin-bottom: 2rem;
+}
+strong,
+b {
+  font-weight: 600;
+}
+em,
+i {
+  font-style: italic;
+}
+sub {
+  font-size: 0.8rem;
+  position: relative;
+  top: 0.5em;
+}
+sup {
+  font-size: 0.8rem;
+  position: relative;
+  top: -0.5rem;
+}
+.lead {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  letter-spacing: 0.1rem;
+}
+.lead {
+  margin: 0;
+  margin-bottom: 1.0rem;
+}
+.small {
+  font-size: .85rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.headline {
+  font-size: 1.6rem;
+  margin-bottom: 1.0rem;
+}
+.tagline {
+  font-weight: 100;
+  font-size: 1.4rem;
+  margin-bottom: 1.0rem;
+}
+.page-header {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+.page-header h2 {
+  font-size: 1.35rem !important;
+  line-height: 1.35rem !important;
+}
+.paragraph {
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+.paragraph-2col {
+  padding-bottom: 0.75rem;
+}
+.paragraph-3col {
+  padding-bottom: 0.75rem;
+}
+.align-left {
+  text-align: left;
+}
+.align-center {
+  text-align: center;
+}
+.align-right {
+  text-align: right;
+}
+.error {
+  display: block;
+  font-size: 1.0rem;
+  font-weight: bold;
+  color: red !important;
+}
+@media screen and (min-width: 980px) {
+  .paragraph {
+    -webkit-columns: 300px 1;
+    -moz-columns: 300px 1;
+    columns: 300px 1;
+  }
+  .paragraph-2col {
+    -webkit-columns: 200px 2;
+    -moz-columns: 200px 2;
+    columns: 200px 2;
+  }
+  .paragraph-3col {
+    -webkit-columns: 100px 3;
+    -moz-columns: 100px 3;
+    columns: 100px 3;
+  }
+}

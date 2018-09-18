@@ -1,0 +1,15 @@
+﻿[
+  /* Custom JavaScript 
+    {
+      "inputFile": "Frontend/some.js",
+      "outputFile": "Scripts/Compiled/some.js"
+    },
+  */
+
+  /* Custom CSS */
+  {
+    "inputFile": "Frontend/custom.less",
+    "outputFile": "Content/Compiled/custom.css"
+  }
+
+]

@@ -1,0 +1,38 @@
+﻿/* base styles and definitions */
+/* menu */
+/* green -> obsolete style1 */
+/* gray -> obsolete style2 */
+/* purple -> obsolete style3 */
+/* transparent -> obsolete: style4 */
+/* light -> obsolete: style5 */
+/* button */
+/* code */
+/* banner */
+.blogarchive div[class^="col-"] {
+  margin-bottom: 0.75rem !important;
+  margin-top: 0.75rem;
+  float: left;
+}
+.blogarchive h3 {
+  padding-bottom: 0.75rem;
+}
+.blogarchive a {
+  border-radius: 8px;
+  white-space: normal;
+  padding: 1.25rem;
+  display: block;
+}
+.blogarchive a:hover * {
+  text-decoration: none;
+  color: red !important;
+}
+.blogarchive a:hover p {
+  text-decoration: underline;
+  color: red !important;
+}
+.blogarchive .date {
+  text-align: right;
+}
+.blogarchive p.paragraph {
+  min-height: 60px;
+}

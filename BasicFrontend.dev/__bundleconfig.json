@@ -1,0 +1,32 @@
+﻿[
+
+  {
+    "outputFileName": "Frontend/custom.bundle.css",
+    "inputFiles": [
+
+      "Frontend/bundle.css",
+      "Content/Compiled/custom.css"
+
+    ],
+    "minify": {
+      "enabled": true,
+      "commentMode": "none"
+    },
+    "sourceMap": true
+  },
+
+  {
+    "outputFileName": "Frontend/custom.app.js",
+    "inputFiles": [
+
+      "Frontend/app.js"
+
+    ],
+    "minify": {
+      "enabled": true,
+      "commentMode": "none"
+    },
+    "sourceMap": true
+  }
+
+]
