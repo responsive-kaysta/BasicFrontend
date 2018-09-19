@@ -31,6 +31,8 @@
             $equalizer = $('#equalizer'),
             $header = $('#header');
 
+        var isDebug = true;
+
         // Mobile?
         if (skel.vars.isMobile)
             $body.addClass('is-mobile');
@@ -38,9 +40,13 @@
             skel
                 .on('-medium !medium', function () {
                     $body.removeClass('is-mobile');
+                    if (isDebug)
+                        writeLogMessage('[skel] - -medium !medium ...');
                 })
                 .on('+medium', function () {
                     $body.addClass('is-mobile');
+                    if (isDebug)
+                        writeLogMessage('[skel] - +medium ...');
                 });
 
         // Scrolly.
@@ -62,6 +68,8 @@
             event.preventDefault();
             event.stopPropagation();
             $body.removeClass('is-menu-visible');
+            if (isDebug)
+                writeLogMessage('[menuClose] - click touchend ...');
         });
 
         // Toggle.
@@ -69,6 +77,8 @@
             event.preventDefault();
             event.stopPropagation();
             $body.toggleClass('is-menu-visible');
+            if (isDebug)
+                writeLogMessage('[menuToggle] - click touchend ...');
         });
 
         // Wrapper.
@@ -77,6 +87,8 @@
                 event.preventDefault();
                 event.stopPropagation();
                 $body.removeClass('is-menu-visible');
+                if (isDebug)
+                    writeLogMessage('[wrapper] - click touchend ...');
             }
         });
 
@@ -100,6 +112,7 @@
             getElementEqualHeight($(".equal"));
         }
 
+        // fire window ready
 
         $window.ready(function() {
 
@@ -107,45 +120,52 @@
                 /* do something specific for small displays */
 
 
-                console.log('[window] - skel.breakpoint("small").active ...');
+                if (isDebug)
+                        writeLogMessage('[breakpoint] - small active ...');
             }
             if (skel.breakpoint("medium").active) {
 
 
-                console.log('[window] - skel.breakpoint("medium").active ...');
+                if (isDebug)
+                        writeLogMessage('[breakpoint] - medium active ...');
             }
             if (skel.breakpoint("large").active) {
 
 
-                console.log('[window] - skel.breakpoint("large").active ...');
+                if (isDebug)
+                        writeLogMessage('[breakpoint] - large active ...');
             }
             if (skel.breakpoint("xlarge").active) {
 
 
-                console.log('[window] - skel.breakpoint("xlarge").active ...');
+                if (isDebug)
+                        writeLogMessage('[breakpoint] - xlarge active ...');
             }
             if (skel.breakpoint("xxlarge").active) {
 
 
-                console.log('[window] - skel.breakpoint("xxlarge").active ...');
+                if (isDebug)
+                        writeLogMessage('[breakpoint] - xxlarge active ...');
             }
             if (skel.vars.touch) {
                 /* enable feature for devices with a touchscreen */
 
 
-                console.log('[window] - skel.vars.touch ...');
+                if (isDebug)
+                    writeLogMessage('[breakpoint] - touch active ...');
             }
             if (skel.vars.IEVersion < 9) {
                 /* apply workaround for IE<9 */
 
 
-                console.log('[window] - skel.vars.IEVersion < 9 ...');
+                if (isDebug)
+                        writeLogMessage('[breakpoint] - IEVersion < 9 active ...');
             }
 
             console.log('[window] - ready ...');
         });
 
-        // fire to recalculate site settings only
+        // fire event on ...
 
         skel.on("resize", function() {
 

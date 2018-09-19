@@ -4320,6 +4320,11 @@ function getTruncateString(group) {
     }
 }
 
+function writeLogMessage(eventMessage) {
+    var eventFired = eventMessage;
+    console.log(eventMessage);
+}
+
 
 /*
 Spectral by HTML5 UP
@@ -4342,7 +4347,6 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 
     skel.on("load", function () {
         // resize, orientationChange, ready, load
-
         console.log('[skel] - load ...');
     });
 
@@ -4355,11 +4359,15 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
             $equalizer = $('#equalizer'),
             $header = $('#header');
 
+        var isDebug = true;
+
         // Mobile?
         if (skel.vars.isMobile) $body.addClass('is-mobile');else skel.on('-medium !medium', function () {
             $body.removeClass('is-mobile');
+            if (isDebug) writeLogMessage('[skel] - -medium !medium ...');
         }).on('+medium', function () {
             $body.addClass('is-mobile');
+            if (isDebug) writeLogMessage('[skel] - +medium ...');
         });
 
         // Scrolly.
@@ -4381,6 +4389,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
             event.preventDefault();
             event.stopPropagation();
             $body.removeClass('is-menu-visible');
+            if (isDebug) writeLogMessage('[menuClose] - click touchend ...');
         });
 
         // Toggle.
@@ -4388,6 +4397,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
             event.preventDefault();
             event.stopPropagation();
             $body.toggleClass('is-menu-visible');
+            if (isDebug) writeLogMessage('[menuToggle] - click touchend ...');
         });
 
         // Wrapper.
@@ -4396,6 +4406,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
                 event.preventDefault();
                 event.stopPropagation();
                 $body.removeClass('is-menu-visible');
+                if (isDebug) writeLogMessage('[wrapper] - click touchend ...');
             }
         });
 
@@ -4426,54 +4437,49 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
             getElementEqualHeight($(".equal"));
         }
 
+        // fire window ready
+
         $window.ready(function () {
 
             if (skel.breakpoint("small").active) {
                 /* do something specific for small displays */
 
-                console.log('[window] - skel.breakpoint("small").active ...');
+                if (isDebug) writeLogMessage('[breakpoint] - small active ...');
             }
             if (skel.breakpoint("medium").active) {
 
-                console.log('[window] - skel.breakpoint("medium").active ...');
+                if (isDebug) writeLogMessage('[breakpoint] - medium active ...');
             }
             if (skel.breakpoint("large").active) {
 
-                console.log('[window] - skel.breakpoint("large").active ...');
+                if (isDebug) writeLogMessage('[breakpoint] - large active ...');
             }
             if (skel.breakpoint("xlarge").active) {
 
-                console.log('[window] - skel.breakpoint("xlarge").active ...');
+                if (isDebug) writeLogMessage('[breakpoint] - xlarge active ...');
             }
             if (skel.breakpoint("xxlarge").active) {
 
-                console.log('[window] - skel.breakpoint("xxlarge").active ...');
+                if (isDebug) writeLogMessage('[breakpoint] - xxlarge active ...');
             }
             if (skel.vars.touch) {
                 /* enable feature for devices with a touchscreen */
 
-                console.log('[window] - skel.vars.touch ...');
+                if (isDebug) writeLogMessage('[breakpoint] - touch active ...');
             }
             if (skel.vars.IEVersion < 9) {
                 /* apply workaround for IE<9 */
 
-                console.log('[window] - skel.vars.IEVersion < 9 ...');
+                if (isDebug) writeLogMessage('[breakpoint] - IEVersion < 9 active ...');
             }
 
             console.log('[window] - ready ...');
         });
 
-        skel.on("ready", function () {
-            // resize, orientationChange, ready, load
-            if ($equalizer.length > 0 && $equalizer.hasClass('blogarchive')) {
-                getElementEqualHeight($(".equal"));
-            }
-
-            console.log('[skel] - ready ...');
-        });
+        // fire event on ...
 
         skel.on("resize", function () {
-            // resize, orientationChange, ready, load
+
             if ($equalizer.length > 0 && $equalizer.hasClass('blogarchive')) {
                 getElementEqualHeight($(".equal"));
             }
@@ -4482,7 +4488,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
         });
 
         skel.on("orientationChange", function () {
-            // resize, orientationChange, ready, load
+
             if ($equalizer.length > 0 && $equalizer.hasClass('blogarchive')) {
                 getElementEqualHeight($(".equal"));
             }
