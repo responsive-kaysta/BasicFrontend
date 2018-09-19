@@ -17,6 +17,12 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
         xsmall: '(max-width: 480px)'
     });
 
+    skel.on("load", function () {
+        // resize, orientationChange, ready, load
+
+        console.log('[skel] - load ...');
+    });
+
     $(function () {
 
         var $window = $(window),
@@ -101,23 +107,64 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 
             if (skel.breakpoint("small").active) {
                 /* do something specific for small displays */
+
+                console.log('[window] - skel.breakpoint("small").active ...');
+            }
+            if (skel.breakpoint("medium").active) {
+
+                console.log('[window] - skel.breakpoint("medium").active ...');
+            }
+            if (skel.breakpoint("large").active) {
+
+                console.log('[window] - skel.breakpoint("large").active ...');
+            }
+            if (skel.breakpoint("xlarge").active) {
+
+                console.log('[window] - skel.breakpoint("xlarge").active ...');
+            }
+            if (skel.breakpoint("xxlarge").active) {
+
+                console.log('[window] - skel.breakpoint("xxlarge").active ...');
             }
             if (skel.vars.touch) {
                 /* enable feature for devices with a touchscreen */
+
+                console.log('[window] - skel.vars.touch ...');
             }
             if (skel.vars.IEVersion < 9) {
                 /* apply workaround for IE<9 */
+
+                console.log('[window] - skel.vars.IEVersion < 9 ...');
             }
+
             console.log('[window] - ready ...');
         });
 
-        $window.resize(function () {
-
+        skel.on("ready", function () {
+            // resize, orientationChange, ready, load
             if ($equalizer.length > 0 && $equalizer.hasClass('blogarchive')) {
                 getElementEqualHeight($(".equal"));
             }
 
-            console.log('[window] - resize ...');
+            console.log('[skel] - ready ...');
+        });
+
+        skel.on("resize", function () {
+            // resize, orientationChange, ready, load
+            if ($equalizer.length > 0 && $equalizer.hasClass('blogarchive')) {
+                getElementEqualHeight($(".equal"));
+            }
+
+            console.log('[skel] - resize ...');
+        });
+
+        skel.on("orientationChange", function () {
+            // resize, orientationChange, ready, load
+            if ($equalizer.length > 0 && $equalizer.hasClass('blogarchive')) {
+                getElementEqualHeight($(".equal"));
+            }
+
+            console.log('[skel] - orientationChange ...');
         });
     });
 })(jQuery);

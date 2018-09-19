@@ -5,7 +5,7 @@
     "inputFiles": [
 
       /* Basics, Libraries */
-      "Content/Compiled/bootstrap.css",
+      "Content/bootstrap.css",
       "Content/Compiled/fontawesome-all.css",
 
       /* reset stuff */
