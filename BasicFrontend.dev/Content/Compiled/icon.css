@@ -34,10 +34,10 @@
   border: solid 2px whitesmoke;
   display: inline-block;
   font-size: 1.35rem;
-  height: calc(5rem);
+  height: calc(3rem + 2px);
   line-height: 3rem;
   text-align: center;
-  width: calc(5rem);
+  width: calc(3rem + 2px);
 }
 .icon.major:before {
   -moz-transform: rotate(45deg);

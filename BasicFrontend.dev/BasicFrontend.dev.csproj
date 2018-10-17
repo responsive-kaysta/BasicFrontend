@@ -357,12 +357,29 @@
     <Content Include="Content\bootstrap-reboot.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Compiled\cta.css" />
     <Content Include="Content\Compiled\custom.css" />
     <Content Include="Content\Compiled\custom.min.css" />
+    <Content Include="Content\Compiled\header.css" />
+    <Content Include="Content\Compiled\icon.css" />
+    <Content Include="Content\Compiled\icon.min.css">
+      <DependentUpon>icon.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Compiled\list.css" />
+    <Content Include="Content\Compiled\list.min.css">
+      <DependentUpon>list.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Compiled\panel.css" />
+    <Content Include="Content\Compiled\spotlight.css" />
     <Content Include="Content\Compiled\style.css" />
     <Content Include="Content\Compiled\style.min.css">
       <DependentUpon>style.css</DependentUpon>
     </Content>
+    <Content Include="Content\Compiled\style.transitions.css" />
+    <Content Include="Content\Compiled\style.transitions.min.css">
+      <DependentUpon>style.transitions.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Compiled\text.css" />
     <Content Include="default.aspx" />
     <Content Include="Frontend\app.js" />
     <Content Include="Frontend\app.min.js">
