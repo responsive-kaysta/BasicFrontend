@@ -1,0 +1,30 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+
+@{
+    var selection = CurrentPage.Site().Children.Where("Visible");
+    var homePage = Model.Content.AncestorOrSelf(1);
+    var configPage = homePage.Descendant<SiteGlobal>();
+}
+
+<h1><a href="/">@configPage.SiteTitle</a></h1>
+
+<nav id="nav">
+    <ul>
+        <li class="special">
+            <a href="#" class="menuToggle"><span>Menu</span></a>
+            <div id="menu">
+                <ul>
+                    <li><a href="/">Home</a></li>
+
+                    @foreach (var childPage in selection)
+                    {
+                        if (childPage.DocumentTypeAlias != "siteGlobal" && !childPage.hideInMenu)
+                        {
+                            <li><a href="@childPage.Url">@childPage.Name</a></li>
+                        }
+                    }
+                </ul>
+            </div>
+        </li>
+    </ul>
+</nav>

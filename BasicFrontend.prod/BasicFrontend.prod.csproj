@@ -377,6 +377,190 @@
     <Content Include="Content\bootstrap-reboot.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Compiled\a.css" />
+    <Content Include="Content\Compiled\a.min.css">
+      <DependentUpon>a.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Compiled\abstract.css" />
+    <Content Include="Content\Compiled\abstract.min.css">
+      <DependentUpon>abstract.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Compiled\article.css" />
+    <Content Include="Content\Compiled\article.min.css">
+      <DependentUpon>article.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Compiled\banner.css" />
+    <Content Include="Content\Compiled\banner.min.css">
+      <DependentUpon>banner.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Compiled\blockquote.css" />
+    <Content Include="Content\Compiled\blockquote.min.css">
+      <DependentUpon>blockquote.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Compiled\blogarchive.css" />
+    <Content Include="Content\Compiled\blogarchive.min.css">
+      <DependentUpon>blogarchive.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Compiled\body.css" />
+    <Content Include="Content\Compiled\body.min.css">
+      <DependentUpon>body.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Compiled\box.css" />
+    <Content Include="Content\Compiled\box.min.css">
+      <DependentUpon>box.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Compiled\breadcrumb.css" />
+    <Content Include="Content\Compiled\breadcrumb.min.css">
+      <DependentUpon>breadcrumb.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Compiled\button.css" />
+    <Content Include="Content\Compiled\button.min.css">
+      <DependentUpon>button.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Compiled\code.css" />
+    <Content Include="Content\Compiled\code.min.css">
+      <DependentUpon>code.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Compiled\container.css" />
+    <Content Include="Content\Compiled\container.min.css">
+      <DependentUpon>container.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Compiled\cta.css" />
+    <Content Include="Content\Compiled\cta.min.css">
+      <DependentUpon>cta.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Compiled\custom.css" />
+    <Content Include="Content\Compiled\custom.min.css">
+      <DependentUpon>custom.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Compiled\features.css" />
+    <Content Include="Content\Compiled\features.min.css">
+      <DependentUpon>features.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Compiled\fontawesome-all.css" />
+    <Content Include="Content\Compiled\fontawesome-all.min.css">
+      <DependentUpon>fontawesome-all.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Compiled\footer.css" />
+    <Content Include="Content\Compiled\footer.min.css">
+      <DependentUpon>footer.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Compiled\h.css" />
+    <Content Include="Content\Compiled\h.min.css">
+      <DependentUpon>h.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Compiled\header.css" />
+    <Content Include="Content\Compiled\header.min.css">
+      <DependentUpon>header.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Compiled\hr.css" />
+    <Content Include="Content\Compiled\hr.min.css">
+      <DependentUpon>hr.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Compiled\icon.css" />
+    <Content Include="Content\Compiled\icon.min.css">
+      <DependentUpon>icon.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Compiled\ie10-viewport-bug-workaround.css" />
+    <Content Include="Content\Compiled\ie10-viewport-bug-workaround.min.css">
+      <DependentUpon>ie10-viewport-bug-workaround.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Compiled\image.css" />
+    <Content Include="Content\Compiled\image.min.css">
+      <DependentUpon>image.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Compiled\jumbotron.css" />
+    <Content Include="Content\Compiled\jumbotron.min.css">
+      <DependentUpon>jumbotron.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Compiled\list.css" />
+    <Content Include="Content\Compiled\list.min.css">
+      <DependentUpon>list.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Compiled\menu.css" />
+    <Content Include="Content\Compiled\menu.min.css">
+      <DependentUpon>menu.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Compiled\panel.css" />
+    <Content Include="Content\Compiled\panel.min.css">
+      <DependentUpon>panel.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Compiled\pre.css" />
+    <Content Include="Content\Compiled\pre.min.css">
+      <DependentUpon>pre.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Compiled\reset.css" />
+    <Content Include="Content\Compiled\reset.min.css">
+      <DependentUpon>reset.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Compiled\row.css" />
+    <Content Include="Content\Compiled\row.min.css">
+      <DependentUpon>row.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Compiled\section.css" />
+    <Content Include="Content\Compiled\section.min.css">
+      <DependentUpon>section.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Compiled\seperator.css" />
+    <Content Include="Content\Compiled\seperator.min.css">
+      <DependentUpon>seperator.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Compiled\spotlight.css" />
+    <Content Include="Content\Compiled\spotlight.min.css">
+      <DependentUpon>spotlight.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Compiled\style-gray.css" />
+    <Content Include="Content\Compiled\style-gray.min.css">
+      <DependentUpon>style-gray.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Compiled\style-green.css" />
+    <Content Include="Content\Compiled\style-green.min.css">
+      <DependentUpon>style-green.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Compiled\style-light.css" />
+    <Content Include="Content\Compiled\style-light.min.css">
+      <DependentUpon>style-light.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Compiled\style-purple.css" />
+    <Content Include="Content\Compiled\style-purple.min.css">
+      <DependentUpon>style-purple.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Compiled\style-transparent.css" />
+    <Content Include="Content\Compiled\style-transparent.min.css">
+      <DependentUpon>style-transparent.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Compiled\style.css" />
+    <Content Include="Content\Compiled\style.mediaqueries.css" />
+    <Content Include="Content\Compiled\style.mediaqueries.min.css">
+      <DependentUpon>style.mediaqueries.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Compiled\style.min.css">
+      <DependentUpon>style.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Compiled\style.transitions.css" />
+    <Content Include="Content\Compiled\style.transitions.min.css">
+      <DependentUpon>style.transitions.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Compiled\table.css" />
+    <Content Include="Content\Compiled\table.min.css">
+      <DependentUpon>table.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Compiled\text.css" />
+    <Content Include="Content\Compiled\text.min.css">
+      <DependentUpon>text.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Compiled\tooltipster-sideTip-punk.css" />
+    <Content Include="Content\Compiled\tooltipster-sideTip-punk.min.css">
+      <DependentUpon>tooltipster-sideTip-punk.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Compiled\tooltipster.bundle.css" />
+    <Content Include="Content\Compiled\tooltipster.bundle.min.css">
+      <DependentUpon>tooltipster.bundle.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Compiled\triangle.css" />
+    <Content Include="Content\Compiled\triangle.min.css">
+      <DependentUpon>triangle.css</DependentUpon>
+    </Content>
     <Content Include="default.aspx" />
     <Content Include="Frontend\app.js" />
     <Content Include="Frontend\app.min.js">
@@ -386,98 +570,6 @@
     <Content Include="Frontend\bundle.min.css">
       <DependentUpon>bundle.css</DependentUpon>
     </Content>
-    <Content Include="Frontend\Css\Atom\a.css" />
-    <Content Include="Frontend\Css\Atom\a.min.css" />
-    <Content Include="Frontend\Css\Atom\abstract.css" />
-    <Content Include="Frontend\Css\Atom\abstract.min.css" />
-    <Content Include="Frontend\Css\Atom\blockquote.css" />
-    <Content Include="Frontend\Css\Atom\blockquote.min.css" />
-    <Content Include="Frontend\Css\Atom\code.css" />
-    <Content Include="Frontend\Css\Atom\code.min.css" />
-    <Content Include="Frontend\Css\Atom\h.css" />
-    <Content Include="Frontend\Css\Atom\h.min.css" />
-    <Content Include="Frontend\Css\Atom\hr.css" />
-    <Content Include="Frontend\Css\Atom\hr.min.css" />
-    <Content Include="Frontend\Css\Atom\image.css" />
-    <Content Include="Frontend\Css\Atom\image.min.css" />
-    <Content Include="Frontend\Css\Atom\pre.css" />
-    <Content Include="Frontend\Css\Atom\pre.min.css" />
-    <Content Include="Frontend\Css\Atom\text.css" />
-    <Content Include="Frontend\Css\Atom\text.min.css" />
-    <Content Include="Frontend\Css\Atom\triangle.css" />
-    <Content Include="Frontend\Css\Atom\triangle.min.css" />
-    <Content Include="Frontend\Css\body.css" />
-    <Content Include="Frontend\Css\body.min.css" />
-    <Content Include="Frontend\Css\global.vars.css" />
-    <Content Include="Frontend\Css\ie10-viewport-bug-workaround.css" />
-    <Content Include="Frontend\Css\ie10-viewport-bug-workaround.min.css" />
-    <Content Include="Frontend\Css\Molekule\box.css" />
-    <Content Include="Frontend\Css\Molekule\box.min.css" />
-    <Content Include="Frontend\Css\Molekule\button.css" />
-    <Content Include="Frontend\Css\Molekule\button.min.css" />
-    <Content Include="Frontend\Css\Molekule\list.css" />
-    <Content Include="Frontend\Css\Molekule\list.min.css" />
-    <Content Include="Frontend\Css\Molekule\row.css" />
-    <Content Include="Frontend\Css\Molekule\row.min.css" />
-    <Content Include="Frontend\Css\Molekule\seperator.css" />
-    <Content Include="Frontend\Css\Molekule\seperator.min.css" />
-    <Content Include="Frontend\Css\Organism\article.css" />
-    <Content Include="Frontend\Css\Organism\article.min.css" />
-    <Content Include="Frontend\Css\Organism\banner.css" />
-    <Content Include="Frontend\Css\Organism\banner.min.css" />
-    <Content Include="Frontend\Css\Organism\blogarchive.css" />
-    <Content Include="Frontend\Css\Organism\blogarchive.min.css" />
-    <Content Include="Frontend\Css\Organism\breadcrumb.css" />
-    <Content Include="Frontend\Css\Organism\breadcrumb.min.css" />
-    <Content Include="Frontend\Css\Organism\container.css" />
-    <Content Include="Frontend\Css\Organism\container.min.css" />
-    <Content Include="Frontend\Css\Organism\cta.css" />
-    <Content Include="Frontend\Css\Organism\cta.min.css" />
-    <Content Include="Frontend\Css\Organism\features.css" />
-    <Content Include="Frontend\Css\Organism\features.min.css" />
-    <Content Include="Frontend\Css\Organism\footer.css" />
-    <Content Include="Frontend\Css\Organism\footer.min.css" />
-    <Content Include="Frontend\Css\Organism\header.css" />
-    <Content Include="Frontend\Css\Organism\header.min.css" />
-    <Content Include="Frontend\Css\Organism\icon.css" />
-    <Content Include="Frontend\Css\Organism\icon.min.css" />
-    <Content Include="Frontend\Css\Organism\jumbotron.css" />
-    <Content Include="Frontend\Css\Organism\jumbotron.min.css" />
-    <Content Include="Frontend\Css\Organism\menu.css" />
-    <Content Include="Frontend\Css\Organism\menu.min.css" />
-    <Content Include="Frontend\Css\Organism\panel.css" />
-    <Content Include="Frontend\Css\Organism\panel.min.css" />
-    <Content Include="Frontend\Css\Organism\section.css" />
-    <Content Include="Frontend\Css\Organism\section.min.css" />
-    <Content Include="Frontend\Css\Organism\spotlight.css" />
-    <Content Include="Frontend\Css\Organism\spotlight.min.css" />
-    <Content Include="Frontend\Css\Organism\table.css" />
-    <Content Include="Frontend\Css\Organism\table.min.css" />
-    <Content Include="Frontend\Css\Plugins\Tooltipster\Themes\tooltipster-sideTip-punk.css" />
-    <Content Include="Frontend\Css\Plugins\Tooltipster\Themes\tooltipster-sideTip-punk.min.css" />
-    <Content Include="Frontend\Css\Plugins\Tooltipster\tooltipster.bundle.css" />
-    <Content Include="Frontend\Css\Plugins\Tooltipster\tooltipster.bundle.min.css" />
-    <Content Include="Frontend\Css\reset.css" />
-    <Content Include="Frontend\Css\reset.min.css" />
-    <Content Include="Frontend\Css\style.css" />
-    <Content Include="Frontend\Css\style.min.css" />
-    <Content Include="Frontend\Css\Template\style-gray.css" />
-    <Content Include="Frontend\Css\Template\style-gray.min.css" />
-    <Content Include="Frontend\Css\Template\style-green.css" />
-    <Content Include="Frontend\Css\Template\style-green.min.css" />
-    <Content Include="Frontend\Css\Template\style-light.css" />
-    <Content Include="Frontend\Css\Template\style-light.min.css" />
-    <Content Include="Frontend\Css\Template\style-purple.css" />
-    <Content Include="Frontend\Css\Template\style-purple.min.css" />
-    <Content Include="Frontend\Css\Template\style-transparent.css" />
-    <Content Include="Frontend\Css\Template\style-transparent.min.css" />
-    <Content Include="Frontend\custom.css">
-      <DependentUpon>custom.less</DependentUpon>
-    </Content>
-    <Content Include="Frontend\custom.min.css">
-      <DependentUpon>custom.css</DependentUpon>
-    </Content>
-    <Content Include="Frontend\fontawesome-all.min.css" />
     <Content Include="Frontend\Ie\backgroundsize.min.htc" />
     <Content Include="Frontend\Ie\html5shiv.js" />
     <Content Include="Frontend\Ie\v8.css" />
@@ -485,25 +577,21 @@
     <Content Include="Frontend\Images\arrow.svg" />
     <Content Include="Frontend\Images\bars.svg" />
     <Content Include="Frontend\Images\close.svg" />
+    <Content Include="Frontend\JavaScript\Functions\utility.js" />
+    <Content Include="Frontend\JavaScript\init.js" />
     <Content Include="Frontend\JavaScript\Modules\colourswitch.js" />
-    <Content Include="Frontend\JavaScript\Modules\equalheight.es5.js" />
-    <Content Include="Frontend\JavaScript\Modules\equalheight.es5.min.js" />
     <Content Include="Frontend\JavaScript\Modules\equalheight.js" />
     <Content Include="Frontend\JavaScript\Modules\loadmore.js" />
     <Content Include="Frontend\JavaScript\Modules\navigation.js" />
     <Content Include="Frontend\JavaScript\Modules\searchbox.js" />
     <Content Include="Frontend\JavaScript\Plugins\jQuery\jquery.scrollex.min.js" />
     <Content Include="Frontend\JavaScript\Plugins\jQuery\jquery.scrolly.min.js" />
-    <Content Include="Frontend\JavaScript\Plugins\skel\init.es5.js" />
-    <Content Include="Frontend\JavaScript\Plugins\skel\init.es5.min.js" />
-    <Content Include="Frontend\JavaScript\Plugins\skel\init.js" />
     <Content Include="Frontend\JavaScript\Plugins\skel\skel-layout.min.js" />
     <Content Include="Frontend\JavaScript\Plugins\skel\skel-viewport.js" />
     <Content Include="Frontend\JavaScript\Plugins\skel\skel.min.js" />
     <Content Include="Frontend\JavaScript\Plugins\Tooltipster\tooltipster-SVG.js" />
     <Content Include="Frontend\JavaScript\Plugins\Tooltipster\tooltipster.bundle.js" />
     <Content Include="Frontend\JavaScript\Plugins\Tooltipster\tooltipster.main.js" />
-    <Content Include="Frontend\JavaScript\___global.js" />
     <Content Include="Global.asax" />
     <Content Include="icon.png" />
     <Content Include="Media\1001\bootstrap_snip.png" />
@@ -556,6 +644,14 @@
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\Compiled\init.es5.js" />
+    <Content Include="Scripts\Compiled\init.es5.min.js">
+      <DependentUpon>init.es5.js</DependentUpon>
+    </Content>
+    <Content Include="Scripts\Compiled\utility.es5.js" />
+    <Content Include="Scripts\Compiled\utility.es5.min.js">
+      <DependentUpon>utility.es5.js</DependentUpon>
+    </Content>
     <Content Include="Scripts\esm\popper-utils.js" />
     <Content Include="Scripts\esm\popper-utils.min.js" />
     <Content Include="Scripts\esm\popper.js" />
@@ -670,7 +766,9 @@
     <Content Include="App_Plugins\Grid\Editors\Render\panel.cshtml" />
     <Content Include="App_Plugins\Grid\Editors\Render\quote_with_description.cshtml" />
     <Content Include="App_Plugins\Grid\Editors\Render\spotlight.cshtml" />
-    <Content Include="Frontend\app.min.js.map" />
+    <Content Include="Frontend\app.min.js.map">
+      <DependentUpon>app.min.js</DependentUpon>
+    </Content>
     <Content Include="config\uSyncBackOffice.config" />
     <Content Include="config\uSyncCore.Config" />
     <Content Include="config\uSyncCore.Config.install.xdt" />
@@ -678,6 +776,8 @@
     <Content Include="Media\created-packages\responsive.kaysta.Frontend_0.9.22.zip" />
     <Content Include="Media\created-packages\responsive.kaysta.Frontend_0.9.23.zip" />
     <Content Include="Media\created-packages\responsive.kaysta.Frontend_0.9.24.zip" />
+    <Content Include="Frontend\Css\style.mediaqueries.less" />
+    <Content Include="Frontend\Css\style.transitions.less" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
@@ -2113,6 +2213,8 @@
     <Content Include="webfonts\fa-solid-900.ttf" />
     <Content Include="webfonts\fa-solid-900.woff" />
     <Content Include="webfonts\fa-solid-900.woff2" />
+    <Content Include="__compilerconfig.json" />
+    <Content Include="__bundleconfig.json" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Data\Models\BlogOverview.generated.cs" />

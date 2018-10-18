@@ -24,3 +24,8 @@
             });
         }
     }
+
+    function writeLogMessage(eventMessage) {
+        var eventFired = eventMessage;
+        console.log(eventMessage);        
+    }
