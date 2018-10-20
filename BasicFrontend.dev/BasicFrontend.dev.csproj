@@ -320,6 +320,7 @@
     <Content Include="config\ExamineSettings.config" />
     <Content Include="config\feedProxy.config" />
     <Content Include="config\FileSystemProviders.config" />
+    <Content Include="config\grid.editors.config - Copy.js" />
     <Content Include="config\grid.editors.config.js" />
     <Content Include="config\HealthChecks.config" />
     <Content Include="config\imageprocessor\cache.config" />

@@ -14766,165 +14766,192 @@ body.regular #page-wrapper {
 /* button */
 /* code */
 /* banner */
+/*
+
 a {
-  -moz-transition: color 0.45s ease, border-bottom-color 0.45s ease;
-  -webkit-transition: color 0.45s ease, border-bottom-color 0.45s ease;
-  -ms-transition: color 0.45s ease, border-bottom-color 0.45s ease;
-  transition: color 0.45s ease, border-bottom-color 0.45s ease;
+    -moz-transition: color @set-default-on-transition ease, border-bottom-color @set-default-on-transition ease;
+    -webkit-transition: color @set-default-on-transition ease, border-bottom-color @set-default-on-transition ease;
+    -ms-transition: color @set-default-on-transition ease, border-bottom-color @set-default-on-transition ease;
+    transition: color @set-default-on-transition ease, border-bottom-color @set-default-on-transition ease;
 }
+
 a.button {
-  transition: all 0.45s ease-in-out;
+    transition: all @set-default-on-transition ease-in-out;
 }
+
 a.button.special {
-  transition: all 0.45s ease-in-out;
+    transition: all @set-default-on-transition ease-in-out;
 }
+
 input[type="submit"],
 input[type="reset"],
 input[type="button"],
-button,
-.button {
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  -ms-appearance: none;
-  appearance: none;
-  -moz-transition: background-color 0.45s ease-in-out, color 0.45s ease-in-out;
-  -webkit-transition: background-color 0.45s ease-in-out, color 0.45s ease-in-out;
-  -ms-transition: background-color 0.45s ease-in-out, color 0.45s ease-in-out;
-  transition: background-color 0.45s ease-in-out, color 0.45s ease-in-out;
+button, .button {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    -moz-transition: background-color @set-default-on-transition ease-in-out, color @set-default-on-transition ease-in-out;
+    -webkit-transition: background-color @set-default-on-transition ease-in-out, color @set-default-on-transition ease-in-out;
+    -ms-transition: background-color @set-default-on-transition ease-in-out, color @set-default-on-transition ease-in-out;
+    transition: background-color @set-default-on-transition ease-in-out, color @set-default-on-transition ease-in-out;
 }
+
 #banner h2 {
-  -moz-transition: -moz-transform 1s ease, opacity 1s ease;
-  -webkit-transition: -webkit-transform 1s ease, opacity 1s ease;
-  -ms-transition: -ms-transform 1s ease, opacity 1s ease;
-  transition: transform 1s ease, opacity 1s ease;
+    -moz-transition: -moz-transform @set-1sec-on-transition ease, opacity @set-1sec-on-transition ease;
+    -webkit-transition: -webkit-transform @set-1sec-on-transition ease, opacity @set-1sec-on-transition ease;
+    -ms-transition: -ms-transform @set-1sec-on-transition ease, opacity @set-1sec-on-transition ease;
+    transition: transform @set-1sec-on-transition ease, opacity @set-1sec-on-transition ease;
 }
-#banner h2:before,
-#banner h2:after {
-  -moz-transition: width 1s ease;
-  -webkit-transition: width 1s ease;
-  -ms-transition: width 1s ease;
-  transition: width 1s ease;
-  -moz-transition-delay: 0.45s;
-  -webkit-transition-delay: 0.45s;
-  -ms-transition-delay: 0.45s;
-  transition-delay: 0.45s;
+
+#banner h2:before, #banner h2:after {
+    -moz-transition: width @set-1sec-on-transition ease;
+    -webkit-transition: width @set-1sec-on-transition ease;
+    -ms-transition: width @set-1sec-on-transition ease;
+    transition: width @set-1sec-on-transition ease;
+    -moz-transition-delay: @set-default-on-transition;
+    -webkit-transition-delay: @set-default-on-transition;
+    -ms-transition-delay: @set-default-on-transition;
+    transition-delay: @set-default-on-transition;
 }
+
 #banner .more {
-  -moz-transition: -moz-transform 1s ease, opacity 1s ease;
-  -webkit-transition: -webkit-transform 1s ease, opacity 1s ease;
-  -ms-transition: -ms-transform 1s ease, opacity 1s ease;
-  transition: transform 1s ease, opacity 1s ease;
-  -moz-transition-delay: 3s;
-  -webkit-transition-delay: 3s;
-  -ms-transition-delay: 3s;
-  transition-delay: 3s;
+    -moz-transition: -moz-transform @set-1sec-on-transition ease, opacity @set-1sec-on-transition ease;
+    -webkit-transition: -webkit-transform @set-1sec-on-transition ease, opacity @set-1sec-on-transition ease;
+    -ms-transition: -ms-transform @set-1sec-on-transition ease, opacity @set-1sec-on-transition ease;
+    transition: transform @set-1sec-on-transition ease, opacity @set-1sec-on-transition ease;
+    -moz-transition-delay: @set-3sec-on-transition;
+    -webkit-transition-delay: @set-3sec-on-transition;
+    -ms-transition-delay: @set-3sec-on-transition;
+    transition-delay: @set-3sec-on-transition;
 }
+
 #banner:after {
-  -moz-transition: opacity 3s ease-in-out;
-  -webkit-transition: opacity 3s ease-in-out;
-  -ms-transition: opacity 3s ease-in-out;
-  transition: opacity 3s ease-in-out;
-  -moz-transition-delay: 1s;
-  -webkit-transition-delay: 1s;
-  -ms-transition-delay: 1s;
-  transition-delay: 1s;
+    -moz-transition: opacity @set-3sec-on-transition ease-in-out;
+    -webkit-transition: opacity @set-3sec-on-transition ease-in-out;
+    -ms-transition: opacity @set-3sec-on-transition ease-in-out;
+    transition: opacity @set-3sec-on-transition ease-in-out;
+    -moz-transition-delay: @set-1sec-on-transition;
+    -webkit-transition-delay: @set-1sec-on-transition;
+    -ms-transition-delay: @set-1sec-on-transition;
+    transition-delay: @set-1sec-on-transition;
 }
+
 .blogarchive a {
-  transition: all 0.45s ease;
+    transition: all @set-default-on-transition ease;
 }
+
 .blogarchive a:hover * {
-  -moz-transition: color 0.45s ease, border-bottom-color 0.45s ease;
-  -webkit-transition: color 0.45s ease, border-bottom-color 0.45s ease;
-  -ms-transition: color 0.45s ease, border-bottom-color 0.45s ease;
-  transition: color 0.45s ease, border-bottom-color 0.45s ease;
+    -moz-transition: color @set-default-on-transition ease, border-bottom-color @set-default-on-transition ease;
+    -webkit-transition: color @set-default-on-transition ease, border-bottom-color @set-default-on-transition ease;
+    -ms-transition: color @set-default-on-transition ease, border-bottom-color @set-default-on-transition ease;
+    transition: color @set-default-on-transition ease, border-bottom-color @set-default-on-transition ease;
 }
+
 .blogarchive a:hover p {
-  -moz-transition: color 0.45s ease, border-bottom-color 0.45s ease;
-  -webkit-transition: color 0.45s ease, border-bottom-color 0.45s ease;
-  -ms-transition: color 0.45s ease, border-bottom-color 0.45s ease;
-  transition: color 0.45s ease, border-bottom-color 0.45s ease;
+    -moz-transition: color @set-default-on-transition ease, border-bottom-color @set-default-on-transition ease;
+    -webkit-transition: color @set-default-on-transition ease, border-bottom-color @set-default-on-transition ease;
+    -ms-transition: color @set-default-on-transition ease, border-bottom-color @set-default-on-transition ease;
+    transition: color @set-default-on-transition ease, border-bottom-color @set-default-on-transition ease;
 }
+
 #footer .icons a {
-  -moz-transition: color 0.45s ease, border-bottom-color 0.45s ease;
-  -webkit-transition: color 0.45s ease, border-bottom-color 0.45s ease;
-  -ms-transition: color 0.45s ease, border-bottom-color 0.45s ease;
-  transition: color 0.45s ease, border-bottom-color 0.45s ease;
+    -moz-transition: color @set-default-on-transition ease, border-bottom-color @set-default-on-transition ease;
+    -webkit-transition: color @set-default-on-transition ease, border-bottom-color @set-default-on-transition ease;
+    -ms-transition: color @set-default-on-transition ease, border-bottom-color @set-default-on-transition ease;
+    transition: color @set-default-on-transition ease, border-bottom-color @set-default-on-transition ease;
 }
+
 #footer .icons a:hover {
-  -moz-transition: color 0.45s ease, border-bottom-color 0.45s ease;
-  -webkit-transition: color 0.45s ease, border-bottom-color 0.45s ease;
-  -ms-transition: color 0.45s ease, border-bottom-color 0.45s ease;
-  transition: color 0.45s ease, border-bottom-color 0.45s ease;
+    -moz-transition: color @set-default-on-transition ease, border-bottom-color @set-default-on-transition ease;
+    -webkit-transition: color @set-default-on-transition ease, border-bottom-color @set-default-on-transition ease;
+    -ms-transition: color @set-default-on-transition ease, border-bottom-color @set-default-on-transition ease;
+    transition: color @set-default-on-transition ease, border-bottom-color @set-default-on-transition ease;
 }
+
 #header {
-  -moz-transition: background-color 0.45s ease;
-  -webkit-transition: background-color 0.45s ease;
-  -ms-transition: background-color 0.45s ease;
-  transition: background-color 0.45s ease;
+    -moz-transition: background-color @set-default-on-transition ease;
+    -webkit-transition: background-color @set-default-on-transition ease;
+    -ms-transition: background-color @set-default-on-transition ease;
+    transition: background-color @set-default-on-transition ease;
 }
+
 #header h1 {
-  -moz-transition: opacity 0.45s ease;
-  -webkit-transition: opacity 0.45s ease;
-  -ms-transition: opacity 0.45s ease;
-  transition: opacity 0.45s ease;
+    -moz-transition: opacity @set-default-on-transition ease;
+    -webkit-transition: opacity @set-default-on-transition ease;
+    -ms-transition: opacity @set-default-on-transition ease;
+    transition: opacity @set-default-on-transition ease;
 }
+
 .gray a:hover {
-  -moz-transition: color 0.45s ease, border-bottom-color 0.45s ease;
-  -webkit-transition: color 0.45s ease, border-bottom-color 0.45s ease;
-  -ms-transition: color 0.45s ease, border-bottom-color 0.45s ease;
-  transition: color 0.45s ease, border-bottom-color 0.45s ease;
+    -moz-transition: color @set-default-on-transition ease, border-bottom-color @set-default-on-transition ease;
+    -webkit-transition: color @set-default-on-transition ease, border-bottom-color @set-default-on-transition ease;
+    -ms-transition: color @set-default-on-transition ease, border-bottom-color @set-default-on-transition ease;
+    transition: color @set-default-on-transition ease, border-bottom-color @set-default-on-transition ease;
 }
+
 .icon.gray a:hover {
-  -moz-transition: color 0.45s ease, border-bottom-color 0.45s ease;
-  -webkit-transition: color 0.45s ease, border-bottom-color 0.45s ease;
-  -ms-transition: color 0.45s ease, border-bottom-color 0.45s ease;
-  transition: color 0.45s ease, border-bottom-color 0.45s ease;
+    -moz-transition: color @set-default-on-transition ease, border-bottom-color @set-default-on-transition ease;
+    -webkit-transition: color @set-default-on-transition ease, border-bottom-color @set-default-on-transition ease;
+    -ms-transition: color @set-default-on-transition ease, border-bottom-color @set-default-on-transition ease;
+    transition: color @set-default-on-transition ease, border-bottom-color @set-default-on-transition ease;
 }
+
 .green a:hover {
-  -moz-transition: color 0.45s ease, border-bottom-color 0.45s ease;
-  -webkit-transition: color 0.45s ease, border-bottom-color 0.45s ease;
-  -ms-transition: color 0.45s ease, border-bottom-color 0.45s ease;
-  transition: color 0.45s ease, border-bottom-color 0.45s ease;
+    -moz-transition: color @set-default-on-transition ease, border-bottom-color @set-default-on-transition ease;
+    -webkit-transition: color @set-default-on-transition ease, border-bottom-color @set-default-on-transition ease;
+    -ms-transition: color @set-default-on-transition ease, border-bottom-color @set-default-on-transition ease;
+    transition: color @set-default-on-transition ease, border-bottom-color @set-default-on-transition ease;
 }
+
 .icon.green a:hover {
-  -moz-transition: color 0.45s ease, border-bottom-color 0.45s ease;
-  -webkit-transition: color 0.45s ease, border-bottom-color 0.45s ease;
-  -ms-transition: color 0.45s ease, border-bottom-color 0.45s ease;
-  transition: color 0.45s ease, border-bottom-color 0.45s ease;
+    -moz-transition: color @set-default-on-transition ease, border-bottom-color @set-default-on-transition ease;
+    -webkit-transition: color @set-default-on-transition ease, border-bottom-color @set-default-on-transition ease;
+    -ms-transition: color @set-default-on-transition ease, border-bottom-color @set-default-on-transition ease;
+    transition: color @set-default-on-transition ease, border-bottom-color @set-default-on-transition ease;
 }
+
 .light a:hover {
-  -moz-transition: color 0.45s ease, border-bottom-color 0.45s ease;
-  -webkit-transition: color 0.45s ease, border-bottom-color 0.45s ease;
-  -ms-transition: color 0.45s ease, border-bottom-color 0.45s ease;
-  transition: color 0.45s ease, border-bottom-color 0.45s ease;
+    -moz-transition: color @set-default-on-transition ease, border-bottom-color @set-default-on-transition ease;
+    -webkit-transition: color @set-default-on-transition ease, border-bottom-color @set-default-on-transition ease;
+    -ms-transition: color @set-default-on-transition ease, border-bottom-color @set-default-on-transition ease;
+    transition: color @set-default-on-transition ease, border-bottom-color @set-default-on-transition ease;
 }
+
 .icon.light a:hover {
-  -moz-transition: color 0.45s ease, border-bottom-color 0.45s ease;
-  -webkit-transition: color 0.45s ease, border-bottom-color 0.45s ease;
-  -ms-transition: color 0.45s ease, border-bottom-color 0.45s ease;
-  transition: color 0.45s ease, border-bottom-color 0.45s ease;
+    -moz-transition: color @set-default-on-transition ease, border-bottom-color @set-default-on-transition ease;
+    -webkit-transition: color @set-default-on-transition ease, border-bottom-color @set-default-on-transition ease;
+    -ms-transition: color @set-default-on-transition ease, border-bottom-color @set-default-on-transition ease;
+    transition: color @set-default-on-transition ease, border-bottom-color @set-default-on-transition ease;
 }
+
 .purple a:hover {
-  -moz-transition: color 0.45s ease, border-bottom-color 0.45s ease;
-  -webkit-transition: color 0.45s ease, border-bottom-color 0.45s ease;
-  -ms-transition: color 0.45s ease, border-bottom-color 0.45s ease;
-  transition: color 0.45s ease, border-bottom-color 0.45s ease;
+    -moz-transition: color @set-default-on-transition ease, border-bottom-color @set-default-on-transition ease;
+    -webkit-transition: color @set-default-on-transition ease, border-bottom-color @set-default-on-transition ease;
+    -ms-transition: color @set-default-on-transition ease, border-bottom-color @set-default-on-transition ease;
+    transition: color @set-default-on-transition ease, border-bottom-color @set-default-on-transition ease;
 }
+
 .icon.purple a:hover {
-  -moz-transition: color 0.45s ease, border-bottom-color 0.45s ease;
-  -webkit-transition: color 0.45s ease, border-bottom-color 0.45s ease;
-  -ms-transition: color 0.45s ease, border-bottom-color 0.45s ease;
-  transition: color 0.45s ease, border-bottom-color 0.45s ease;
+    -moz-transition: color @set-default-on-transition ease, border-bottom-color @set-default-on-transition ease;
+    -webkit-transition: color @set-default-on-transition ease, border-bottom-color @set-default-on-transition ease;
+    -ms-transition: color @set-default-on-transition ease, border-bottom-color @set-default-on-transition ease;
+    transition: color @set-default-on-transition ease, border-bottom-color @set-default-on-transition ease;
 }
+
 .transparent a:hover {
-  -moz-transition: color 0.45s ease, border-bottom-color 0.45s ease;
-  -webkit-transition: color 0.45s ease, border-bottom-color 0.45s ease;
-  -ms-transition: color 0.45s ease, border-bottom-color 0.45s ease;
-  transition: color 0.45s ease, border-bottom-color 0.45s ease;
+    -moz-transition: color @set-default-on-transition ease, border-bottom-color @set-default-on-transition ease;
+    -webkit-transition: color @set-default-on-transition ease, border-bottom-color @set-default-on-transition ease;
+    -ms-transition: color @set-default-on-transition ease, border-bottom-color @set-default-on-transition ease;
+    transition: color @set-default-on-transition ease, border-bottom-color @set-default-on-transition ease;
 }
+
 .icon.transparent a:hover {
-  -moz-transition: color 0.45s ease, border-bottom-color 0.45s ease;
-  -webkit-transition: color 0.45s ease, border-bottom-color 0.45s ease;
-  -ms-transition: color 0.45s ease, border-bottom-color 0.45s ease;
-  transition: color 0.45s ease, border-bottom-color 0.45s ease;
+    -moz-transition: color @set-default-on-transition ease, border-bottom-color @set-default-on-transition ease;
+    -webkit-transition: color @set-default-on-transition ease, border-bottom-color @set-default-on-transition ease;
+    -ms-transition: color @set-default-on-transition ease, border-bottom-color @set-default-on-transition ease;
+    transition: color @set-default-on-transition ease, border-bottom-color @set-default-on-transition ease;
 }
+
+
+*/

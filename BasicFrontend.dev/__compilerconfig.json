@@ -1,15 +1,218 @@
 ﻿[
-  /* Custom JavaScript 
-    {
-      "inputFile": "Frontend/some.js",
-      "outputFile": "Scripts/Compiled/some.js"
-    },
-  */
+  /* Custom JavaScript */
+  {
+    "inputFile": "Frontend/JavaScript/init.js",
+    "outputFile": "Scripts/Compiled/init.es5.js"
+  },
+  {
+    "inputFile": "Frontend/JavaScript/Functions/utility.js",
+    "outputFile": "Scripts/Compiled/utility.es5.js"
+  },
+
+
+  /* CSS libraries*/
+  {
+    "inputFile": "Frontend/fontawesome-all.less",
+    "outputFile": "Content/Compiled/fontawesome-all.css"
+  },
+
+  {
+    "inputFile": "Frontend/Css/reset.less",
+    "outputFile": "Content/Compiled/reset.css"
+  },
+  {
+    "inputFile": "Frontend/Css/ie10-viewport-bug-workaround.less",
+    "outputFile": "Content/Compiled/ie10-viewport-bug-workaround.css"
+  },
 
   /* Custom CSS */
+  {
+    "inputFile": "Frontend/Css/style.less",
+    "outputFile": "Content/Compiled/style.css"
+  },
+  {
+    "inputFile": "Frontend/Css/style.transitions.less",
+    "outputFile": "Content/Compiled/style.transitions.css"
+  },
+  {
+    "inputFile": "Frontend/Css/style.mediaqueries.less",
+    "outputFile": "Content/Compiled/style.mediaqueries.css"
+  },
+  {
+    "inputFile": "Frontend/Css/body.less",
+    "outputFile": "Content/Compiled/body.css"
+  },
+
+
+  /* Atom */
+  {
+    "inputFile": "Frontend/Css/Atom/a.less",
+    "outputFile": "Content/Compiled/a.css"
+  },
+  {
+    "inputFile": "Frontend/Css/Atom/abstract.less",
+    "outputFile": "Content/Compiled/abstract.css"
+  },
+  {
+    "inputFile": "Frontend/Css/Atom/blockquote.less",
+    "outputFile": "Content/Compiled/blockquote.css"
+  },
+  {
+    "inputFile": "Frontend/Css/Atom/code.less",
+    "outputFile": "Content/Compiled/code.css"
+  },
+  {
+    "inputFile": "Frontend/Css/Atom/h.less",
+    "outputFile": "Content/Compiled/h.css"
+  },
+  {
+    "inputFile": "Frontend/Css/Atom/hr.less",
+    "outputFile": "Content/Compiled/hr.css"
+  },
+  {
+    "inputFile": "Frontend/Css/Atom/image.less",
+    "outputFile": "Content/Compiled/image.css"
+  },
+  {
+    "inputFile": "Frontend/Css/Atom/pre.less",
+    "outputFile": "Content/Compiled/pre.css"
+  },
+  {
+    "inputFile": "Frontend/Css/Atom/text.less",
+    "outputFile": "Content/Compiled/text.css"
+  },
+  {
+    "inputFile": "Frontend/Css/Atom/triangle.less",
+    "outputFile": "Content/Compiled/triangle.css"
+  },
+
+
+  /* Molekule */
+  {
+    "inputFile": "Frontend/Css/Molekule/box.less",
+    "outputFile": "Content/Compiled/box.css"
+  },
+  {
+    "inputFile": "Frontend/Css/Molekule/button.less",
+    "outputFile": "Content/Compiled/button.css"
+  },
+  {
+    "inputFile": "Frontend/Css/Molekule/list.less",
+    "outputFile": "Content/Compiled/list.css"
+  },
+  {
+    "inputFile": "Frontend/Css/Molekule/seperator.less",
+    "outputFile": "Content/Compiled/seperator.css"
+  },
+  {
+    "inputFile": "Frontend/Css/Molekule/row.less",
+    "outputFile": "Content/Compiled/row.css"
+  },
+
+
+  /* Organism */
+  {
+    "inputFile": "Frontend/Css/Organism/article.less",
+    "outputFile": "Content/Compiled/article.css"
+  },
+  {
+    "inputFile": "Frontend/Css/Organism/banner.less",
+    "outputFile": "Content/Compiled/banner.css"
+  },
+  {
+    "inputFile": "Frontend/Css/Organism/blogarchive.less",
+    "outputFile": "Content/Compiled/blogarchive.css"
+  },
+  {
+    "inputFile": "Frontend/Css/Organism/breadcrumb.less",
+    "outputFile": "Content/Compiled/breadcrumb.css"
+  },
+  {
+    "inputFile": "Frontend/Css/Organism/container.less",
+    "outputFile": "Content/Compiled/container.css"
+  },
+  {
+    "inputFile": "Frontend/Css/Organism/cta.less",
+    "outputFile": "Content/Compiled/cta.css"
+  },
+  {
+    "inputFile": "Frontend/Css/Organism/features.less",
+    "outputFile": "Content/Compiled/features.css"
+  },
+  {
+    "inputFile": "Frontend/Css/Organism/footer.less",
+    "outputFile": "Content/Compiled/footer.css"
+  },
+  {
+    "inputFile": "Frontend/Css/Organism/header.less",
+    "outputFile": "Content/Compiled/header.css"
+  },
+  {
+    "inputFile": "Frontend/Css/Organism/icon.less",
+    "outputFile": "Content/Compiled/icon.css"
+  },
+  {
+    "inputFile": "Frontend/Css/Organism/jumbotron.less",
+    "outputFile": "Content/Compiled/jumbotron.css"
+  },
+  {
+    "inputFile": "Frontend/Css/Organism/menu.less",
+    "outputFile": "Content/Compiled/menu.css"
+  },
+  {
+    "inputFile": "Frontend/Css/Organism/panel.less",
+    "outputFile": "Content/Compiled/panel.css"
+  },
+  {
+    "inputFile": "Frontend/Css/Organism/section.less",
+    "outputFile": "Content/Compiled/section.css"
+  },
+  {
+    "inputFile": "Frontend/Css/Organism/spotlight.less",
+    "outputFile": "Content/Compiled/spotlight.css"
+  },
+  {
+    "inputFile": "Frontend/Css/Organism/table.less",
+    "outputFile": "Content/Compiled/table.css"
+  },
+
+
+  /* Template */
+  {
+    "inputFile": "Frontend/Css/Template/style-green.less",
+    "outputFile": "Content/Compiled/style-green.css"
+  },
+  {
+    "inputFile": "Frontend/Css/Template/style-gray.less",
+    "outputFile": "Content/Compiled/style-gray.css"
+  },
+  {
+    "inputFile": "Frontend/Css/Template/style-purple.less",
+    "outputFile": "Content/Compiled/style-purple.css"
+  },
+  {
+    "inputFile": "Frontend/Css/Template/style-transparent.less",
+    "outputFile": "Content/Compiled/style-transparent.css"
+  },
+  {
+    "inputFile": "Frontend/Css/Template/style-light.less",
+    "outputFile": "Content/Compiled/style-light.css"
+  },
+
+
+  /* Plugins */
+  {
+    "inputFile": "Frontend/Css/Plugins/Tooltipster/tooltipster.bundle.less",
+    "outputFile": "Content/Compiled/tooltipster.bundle.css"
+  },
+  {
+    "inputFile": "Frontend/Css/Plugins/Tooltipster/Themes/tooltipster-sideTip-punk.less",
+    "outputFile": "Content/Compiled/tooltipster-sideTip-punk.css"
+  },
+
+  /* custom */
   {
     "inputFile": "Frontend/custom.less",
     "outputFile": "Content/Compiled/custom.css"
   }
-
 ]
