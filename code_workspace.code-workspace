@@ -4,5 +4,13 @@
 			"path": "BasicFrontend.React"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"easycompile.compile": {
+			"less": true,
+			"sass": false,
+			"minifyCssOnSave": false,
+			"minifyJsOnSave": false
+		},
+		"easycompile.less": {}
+	}
 }
