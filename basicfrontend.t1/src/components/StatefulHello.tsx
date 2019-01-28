@@ -28,7 +28,7 @@ class Hello extends React.Component<IProps, IState> {
         return (
             <div className="hello">
                 <div className="greeting">
-                    Hello {name + getExclamationMarks(this.state.currentEnthusiasm)}
+                    StatefulHello {name + getExclamationMarks(this.state.currentEnthusiasm)}
                 </div>
                 <button onClick={this.onDecrement}>-</button>
                 <button onClick={this.onIncrement}>+</button>
