@@ -4,6 +4,8 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+/* skel.js v3.0.2-dev | (c) skel.io | MIT licensed */
+
 (function ($) {
 
     skel.breakpoints({
@@ -15,6 +17,11 @@
         xsmall: '(max-width: 480px)'
     });
 
+    skel.on("load", function() { // resize, orientationChange, ready, load
+        console.log('[skel] - load ...');
+    });
+
+
     $(function () {
 
         var $window = $(window),
@@ -24,6 +31,8 @@
             $equalizer = $('#equalizer'),
             $header = $('#header');
 
+        var isDebug = true;
+
         // Mobile?
         if (skel.vars.isMobile)
             $body.addClass('is-mobile');
@@ -31,9 +40,13 @@
             skel
                 .on('-medium !medium', function () {
                     $body.removeClass('is-mobile');
+                    if (isDebug)
+                        writeLogMessage('[skel] - -medium !medium ...');
                 })
                 .on('+medium', function () {
                     $body.addClass('is-mobile');
+                    if (isDebug)
+                        writeLogMessage('[skel] - +medium ...');
                 });
 
         // Scrolly.
@@ -52,33 +65,31 @@
 
         // Close.
         $menuClose.on('click touchend', function (event) {
-
             event.preventDefault();
             event.stopPropagation();
-
             $body.removeClass('is-menu-visible');
-
+            if (isDebug)
+                writeLogMessage('[menuClose] - click touchend ...');
         });
 
         // Toggle.
         $menuToggle.on('click touchend', function (event) {
-
             event.preventDefault();
             event.stopPropagation();
-
             $body.toggleClass('is-menu-visible');
-
+            if (isDebug)
+                writeLogMessage('[menuToggle] - click touchend ...');
         });
 
         // Wrapper.
         $wrapper.on('click touchend', function (event) {
-
             if ($body.hasClass('is-menu-visible')) {
                 event.preventDefault();
                 event.stopPropagation();
                 $body.removeClass('is-menu-visible');
+                if (isDebug)
+                    writeLogMessage('[wrapper] - click touchend ...');
             }
-
         });
 
         // Header.
@@ -95,29 +106,85 @@
                 leave: function () { $header.removeClass('alt'); }
             });
         }
+        
+        // get equal height for blogarchive elements
+        if ($equalizer.length > 0 && $equalizer.hasClass('blogarchive')) {
+            getElementEqualHeight($(".equal"));
+        }
 
-        // on ready
-        skel.ready(function () {
+        // fire window ready
 
-            // get equal height for blogarchive elements
-            if ($equalizer.length > 0 && $equalizer.hasClass('blogarchive')) {
-                getElementEqualHeight($(".equal"));
+        $window.ready(function() {
+
+            if (skel.breakpoint("small").active) {
+                /* do something specific for small displays */
+
+
+                if (isDebug)
+                        writeLogMessage('[breakpoint] - small active ...');
+            }
+            if (skel.breakpoint("medium").active) {
+
+
+                if (isDebug)
+                        writeLogMessage('[breakpoint] - medium active ...');
+            }
+            if (skel.breakpoint("large").active) {
+
+
+                if (isDebug)
+                        writeLogMessage('[breakpoint] - large active ...');
+            }
+            if (skel.breakpoint("xlarge").active) {
+
+
+                if (isDebug)
+                        writeLogMessage('[breakpoint] - xlarge active ...');
+            }
+            if (skel.breakpoint("xxlarge").active) {
+
+
+                if (isDebug)
+                        writeLogMessage('[breakpoint] - xxlarge active ...');
+            }
+            if (skel.vars.touch) {
+                /* enable feature for devices with a touchscreen */
+
+
+                if (isDebug)
+                    writeLogMessage('[breakpoint] - touch active ...');
+            }
+            if (skel.vars.IEVersion < 9) {
+                /* apply workaround for IE<9 */
+
+
+                if (isDebug)
+                        writeLogMessage('[breakpoint] - IEVersion < 9 active ...');
             }
 
             console.log('[window] - ready ...');
         });
-        
-        // and on resize
-        skel.resize(function () {
 
-            // get equal height for blogarchive elements
+        // fire event on ...
+
+        skel.on("resize", function() {
+
             if ($equalizer.length > 0 && $equalizer.hasClass('blogarchive')) {
                 getElementEqualHeight($(".equal"));
             }
 
-            console.log('[window] - resize ...');
+            console.log('[skel] - resize ...');
         });
 
+        skel.on("orientationChange", function() {
+
+            if ($equalizer.length > 0 && $equalizer.hasClass('blogarchive')) {
+                getElementEqualHeight($(".equal"));
+            }
+
+            console.log('[skel] - orientationChange ...');
+        });
+        
     });
 
 })(jQuery);
