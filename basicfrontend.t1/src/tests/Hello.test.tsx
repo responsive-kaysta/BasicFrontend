@@ -1,7 +1,8 @@
 // src/tests/Hello.test.tsx
 
-import * as React from 'react';
 import * as enzyme from 'enzyme';
+import * as React from 'react';
+
 import Hello from '../components/Hello';
 
 it('renders the correct text when no enthusiasm level is given (default 1)', () => {
