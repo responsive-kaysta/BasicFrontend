@@ -1,7 +1,23 @@
 // out: false
 
+@import "../global.less";
+
 a {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    border-bottom: @global-border-bottom;    
+    text-decoration: @global-text-decoration;
+    font-family: @global-font-family;
+    text-transform: @global-text-transform;
+}
+
+a:hover {
+    text-transform: @global-text-transform;
+    text-decoration: @global-text-decoration;
+}
+
+a {
+    color: @global-link-color;
+}
+
+a:hover {
+    color: @global-link-hover-color;
 }
