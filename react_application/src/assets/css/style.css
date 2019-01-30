@@ -173,6 +173,43 @@ h6 {
   font-weight: 700;
   color: darkslategrey;
 }
+blockquote,
+q {
+  quotes: none;
+  margin: 0;
+  padding: 0;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+blockquote {
+  text-decoration: none;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Lato', Arial, sans-serif;
+  text-transform: lowercase;
+}
+blockquote {
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0.2rem !important;
+}
+blockquote:before,
+blockquote:after {
+  display: inline-block;
+  content: '"';
+}
+blockquote {
+  padding: 1rem;
+  text-align: center;
+  position: relative;
+}
+blockquote + * {
+  padding: 3rem 1rem;
+}
 /*
 ---------------------------------------------------------------------------------------------------
 leave because of reasons
