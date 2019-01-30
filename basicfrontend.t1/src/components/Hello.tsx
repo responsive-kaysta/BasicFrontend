@@ -29,8 +29,6 @@ function Hello({ name, enthusiasmLevel = 1, onIncrement, onDecrement }: IProps) 
 
 export default Hello;
 
-// helpers
-
 function getExclamationMarks(numChars: number) {
     return Array(numChars + 1).join('!');
 }
