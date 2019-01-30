@@ -9,7 +9,6 @@ h1, h2, h3, h4, h5, h6 {
 h1, h2, h3, h4, h5, h6 {
   font-weight: 800 !important;
   letter-spacing: 0.225rem !important;
-  line-height: 1rem !important;  
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -18,17 +17,24 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   text-transform: @global-text-transform;
 }
 
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  font-weight: 800 !important;
+  letter-spacing: 0.225rem !important;
+}
 
-
+h1 {
+  font-size: 1.6rem !important;
+  line-height: 1.6rem !important;
+}
 
 h2 {
   font-size: 1.5rem !important;
-  line-height: 1.75rem !important;
+  line-height: 1.5rem !important;
 }
 
 h3 {
-  font-size: 1.35rem !important;
-  line-height: 1.75rem !important;
+  font-size: 1.4rem !important;
+  line-height: 1.5rem !important;
 }
 
 h4 {
@@ -37,25 +43,11 @@ h4 {
 }
 
 h5 {
-  font-size: 0.8rem !important;
+  font-size: 0.9rem !important;
   line-height: 1.5rem !important;
 }
 
 h6 {
-  font-size: 0.7rem !important;
+  font-size: 0.8rem !important;
   line-height: 1.5rem !important;
-}
-
-@media screen and (max-width: 736px) {
-  
-  h2 {
-      font-size: 1.1rem;
-      line-height: 1.65rem;
-  }
-
-  h3 {
-      font-size: 1.15rem;
-      line-height: 1.75rem;
-  }
-
 }

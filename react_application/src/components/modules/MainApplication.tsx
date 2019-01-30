@@ -13,6 +13,7 @@ class MainApplication extends React.Component {
       <HashRouter>
         <div>
           <h1><NavLink to="/">Simple Page</NavLink></h1>
+          <h2><NavLink to="/">Simple Page</NavLink></h2>
           <ul className="header">
             <li><NavLink to="/">Home</NavLink></li>
             <li><NavLink to="/stuff">Stuff</NavLink></li>
