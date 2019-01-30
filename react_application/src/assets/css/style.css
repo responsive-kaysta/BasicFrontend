@@ -1,0 +1,168 @@
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  background: transparent;
+  vertical-align: baseline;
+  font-size: 100%;
+}
+/* base styles and definitions */
+/* green */
+/* gray */
+/* purple */
+/* transparent */
+/* light  */
+a {
+  border-bottom: dotted 1px;
+  text-decoration: none;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Lato', Arial, sans-serif;
+  text-transform: lowercase;
+}
+a:hover {
+  text-transform: lowercase;
+  text-decoration: none;
+}
+a {
+  color: blue;
+}
+a:hover {
+  color: red;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-decoration: none;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Lato', Arial, sans-serif;
+  text-transform: lowercase;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 800 !important;
+  letter-spacing: 0.225rem !important;
+  line-height: 1rem !important;
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  text-decoration: none;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Lato', Arial, sans-serif;
+  text-transform: lowercase;
+}
+h2 {
+  font-size: 1.5rem !important;
+  line-height: 1.75rem !important;
+}
+h3 {
+  font-size: 1.35rem !important;
+  line-height: 1.75rem !important;
+}
+h4 {
+  font-size: 1rem !important;
+  line-height: 1.5rem !important;
+}
+h5 {
+  font-size: 0.8rem !important;
+  line-height: 1.5rem !important;
+}
+h6 {
+  font-size: 0.7rem !important;
+  line-height: 1.5rem !important;
+}
+@media screen and (max-width: 736px) {
+  h2 {
+    font-size: 1.1rem;
+    line-height: 1.65rem;
+  }
+  h3 {
+    font-size: 1.15rem;
+    line-height: 1.75rem;
+  }
+}
+/*
+---------------------------------------------------------------------------------------------------
+leave because of reasons
+---------------------------------------------------------------------------------------------------
+@keyframes App-logo-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  */
