@@ -88,6 +88,14 @@ video {
 ---------------------------------------------------------------------------------------------------
 */
 /* 
+    box
+---------------------------------------------------------------------------------------------------
+*/
+/* 
+    button
+---------------------------------------------------------------------------------------------------
+*/
+/* 
     green
 ---------------------------------------------------------------------------------------------------
 */
@@ -355,6 +363,373 @@ sup {
   molecules
 ---------------------------------------------------------------------------------------------------
 */
+.box {
+  border-radius: 5px;
+  border: solid 2px black;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+}
+.box > :last-child,
+.box > :last-child > :last-child,
+.box > :last-child > :last-child > :last-child {
+  margin-bottom: 0;
+}
+.box.alt {
+  border: 0;
+  border-radius: 0;
+  padding: 0;
+}
+/* 
+    a.button
+---------------------------------------------------------------------------------------------------
+*/
+a.button {
+  border-radius: 3px;
+  margin-top: 20px;
+  font-family: "Lato", sans-serif !important;
+  font-size: 1rem;
+  background: transparent;
+  color: whitesmoke !important;
+  background: black !important;
+  background-color: black !important;
+  text-transform: lowercase !important;
+  text-decoration: none !important;
+}
+a.button:hover {
+  background: rgba(0, 0, 0, 0.5) !important;
+  background-color: rgba(0, 0, 0, 0.5) !important;
+}
+/* 
+    a.button.special
+---------------------------------------------------------------------------------------------------
+*/
+a.button.special {
+  border-radius: 3px;
+  margin-top: 20px;
+  font-family: "Lato", sans-serif !important;
+  font-size: 1rem;
+  color: whitesmoke !important;
+  background: #ed4933 !important;
+  background-color: #ed4933 !important;
+  text-transform: lowercase !important;
+  text-decoration: none !important;
+}
+a.button.special:hover {
+  background: #ef5e4a !important;
+  background-color: #ef5e4a !important;
+}
+/* 
+    selectors
+---------------------------------------------------------------------------------------------------
+*/
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button,
+.button {
+  border-radius: 3px;
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  height: 3.125rem;
+  letter-spacing: 0.225rem;
+  line-height: 3.125rem;
+  padding: 0 2.75rem;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  box-shadow: inset 0 0 0 2px whitesmoke;
+}
+input[type="submit"].icon:before,
+input[type="reset"].icon:before,
+input[type="button"].icon:before,
+button.icon:before,
+.button.icon:before {
+  margin-right: 0.5rem;
+}
+input[type="submit"].fit,
+input[type="reset"].fit,
+input[type="button"].fit,
+button.fit,
+.button.fit {
+  display: block;
+  margin: 0 0 1rem 0;
+  width: 100%;
+}
+input[type="submit"].small,
+input[type="reset"].small,
+input[type="button"].small,
+button.small,
+.button.small {
+  font-size: 0.8rem;
+}
+input[type="submit"].big,
+input[type="reset"].big,
+input[type="button"].big,
+button.big,
+.button.big {
+  font-size: 1.35rem;
+}
+input[type="submit"].disabled,
+input[type="submit"]:disabled,
+input[type="reset"].disabled,
+input[type="reset"]:disabled,
+input[type="button"].disabled,
+input[type="button"]:disabled,
+button.disabled,
+button:disabled,
+.button.disabled,
+.button:disabled {
+  -moz-pointer-events: none;
+  -webkit-pointer-events: none;
+  -ms-pointer-events: none;
+  pointer-events: none;
+  opacity: 0.25;
+}
+/* 
+    media queries
+---------------------------------------------------------------------------------------------------
+*/
+@media screen and (max-width: 736px) {
+  input[type="submit"],
+  input[type="reset"],
+  input[type="button"],
+  button,
+  .button {
+    height: 3.75rem;
+    line-height: 3.75rem;
+  }
+}
+/* 
+    li
+---------------------------------------------------------------------------------------------------
+*/
+li {
+  font-size: 1rem;
+  line-height: 1.6;
+  letter-spacing: 0.15rem;
+}
+li {
+  color: darkslategrey;
+  font-weight: 400;
+}
+/* 
+    ul
+---------------------------------------------------------------------------------------------------
+*/
+ul {
+  margin-left: 0.2rem;
+}
+* + ul {
+  margin-bottom: 0.3rem;
+}
+ul {
+  list-style: disc;
+  margin: 0 0 2rem 0;
+  padding-left: 1rem;
+}
+ul li {
+  list-style-position: inside;
+  padding-left: 0.5rem;
+}
+/* 
+    ol
+---------------------------------------------------------------------------------------------------
+*/
+ol {
+  margin-left: 0.25rem;
+}
+* + ol {
+  margin-bottom: 0.3rem;
+}
+ol {
+  list-style: decimal;
+  margin: 0 0 2rem 0;
+  padding-left: 1.25rem;
+}
+ol li {
+  padding-left: 0.25rem;
+}
+/* 
+    dl
+---------------------------------------------------------------------------------------------------
+*/
+dl {
+  margin: 0 0 2rem 0;
+}
+/* 
+    ul.alt
+---------------------------------------------------------------------------------------------------
+*/
+ul.alt {
+  list-style: none;
+  padding-left: 0;
+}
+ul.alt li {
+  border-top: solid 1px darkgray;
+  padding: 0.5rem 0;
+}
+ul.alt li:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+/* 
+    ul.icons
+---------------------------------------------------------------------------------------------------
+*/
+ul.icons {
+  cursor: default;
+  list-style: none;
+  padding-left: 0;
+}
+ul.icons li {
+  display: inline-block;
+  padding: 0 1rem 0 0;
+}
+ul.icons li:last-child {
+  padding-right: 0 !important;
+}
+/* 
+    ul.icons.major
+---------------------------------------------------------------------------------------------------
+*/
+ul.icons.major {
+  padding: 1rem 0;
+}
+ul.icons.major li {
+  padding-right: 3.5rem;
+}
+/* 
+    ul.actions
+---------------------------------------------------------------------------------------------------
+*/
+ul.actions {
+  cursor: default;
+  list-style: none;
+  padding-left: 0;
+}
+ul.actions li {
+  display: inline-block;
+  padding: 0 1.5rem 0 0;
+  vertical-align: middle;
+}
+ul.actions li:last-child {
+  padding-right: 0;
+}
+/* 
+    ul.actions.small
+---------------------------------------------------------------------------------------------------
+*/
+ul.actions.small li {
+  padding: 0 0.75rem 0 0;
+}
+/* 
+    ul.actions.vertical
+---------------------------------------------------------------------------------------------------
+*/
+ul.actions.vertical li {
+  display: block;
+  padding: 1.5rem 0 0 0;
+}
+ul.actions.vertical li:first-child {
+  padding-top: 0;
+}
+ul.actions.vertical li > * {
+  margin-bottom: 0;
+}
+/* 
+    ul.actions.vertical.small
+---------------------------------------------------------------------------------------------------
+*/
+ul.actions.vertical.small li {
+  padding: 0.75rem 0 0 0;
+}
+ul.actions.vertical.small li:first-child {
+  padding-top: 0;
+}
+/* 
+    ul.actions.fit
+---------------------------------------------------------------------------------------------------
+*/
+ul.actions.fit {
+  display: table;
+  margin-left: -1.5rem;
+  padding: 0;
+  table-layout: fixed;
+  width: calc(101.5%);
+}
+ul.actions.fit li {
+  display: table-cell;
+  padding: 0 0 0 1.5rem;
+}
+ul.actions.fit li > * {
+  margin-bottom: 0;
+}
+/* 
+    ul.actions.fit.small
+---------------------------------------------------------------------------------------------------
+*/
+ul.actions.fit.small {
+  margin-left: -0.75rem;
+  width: calc(100.75%);
+}
+ul.actions.fit.small li {
+  padding: 0 0 0 0.75rem;
+}
+/* 
+    media queries
+---------------------------------------------------------------------------------------------------
+*/
+@media screen and (max-width: 736px) {
+  ul.icons.major li {
+    padding: 0 1rem !important;
+  }
+}
+@media screen and (max-width: 736px) {
+  ul.actions li {
+    display: block;
+    padding: 1rem 0 0 0;
+    text-align: center;
+    width: 100%;
+  }
+  ul.actions li:first-child {
+    padding-top: 0;
+  }
+  ul.actions li > * {
+    margin: 0 auto !important;
+    max-width: 15rem;
+    width: 100%;
+  }
+  ul.actions li > *.icon:before {
+    margin-left: -1rem;
+  }
+  ul.actions.small li {
+    padding: 0.5rem 0 0 0;
+  }
+  ul.actions.small li:first-child {
+    padding-top: 0;
+  }
+}
+.row {
+  margin: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+}
+form .row {
+  padding-bottom: 1rem;
+}
+.separator {
+  margin-right: auto;
+  margin-left: auto;
+  border: 0;
+}
+.separator-spacing {
+  margin-bottom: 0.5rem;
+}
 /* 
     lead
 ---------------------------------------------------------------------------------------------------
