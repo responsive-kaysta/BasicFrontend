@@ -1,3 +1,7 @@
+/* 
+  atoms
+---------------------------------------------------------------------------------------------------
+*/
 html,
 body,
 div,
@@ -75,12 +79,34 @@ video {
   vertical-align: baseline;
   font-size: 100%;
 }
-/* base styles and definitions */
-/* green */
-/* gray */
-/* purple */
-/* transparent */
-/* light  */
+/* 
+    base styles and definitions
+---------------------------------------------------------------------------------------------------
+*/
+/* 
+    code
+---------------------------------------------------------------------------------------------------
+*/
+/* 
+    green
+---------------------------------------------------------------------------------------------------
+*/
+/* 
+    gray
+---------------------------------------------------------------------------------------------------
+*/
+/* 
+    purple
+---------------------------------------------------------------------------------------------------
+*/
+/* 
+    transparent
+---------------------------------------------------------------------------------------------------
+*/
+/* 
+    light
+---------------------------------------------------------------------------------------------------
+*/
 a {
   border-bottom: dotted 1px;
   text-decoration: none;
@@ -194,7 +220,7 @@ blockquote {
 blockquote {
   font-size: 1.3rem;
   font-weight: 400;
-  line-height: 1.6;
+  line-height: 1.6rem !important;
   letter-spacing: 0.2rem !important;
 }
 blockquote:before,
@@ -209,6 +235,271 @@ blockquote {
 }
 blockquote + * {
   padding: 3rem 1rem;
+}
+code {
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+}
+code {
+  font-family: 'Courier New', Courier, monospace;
+  text-decoration: none;
+  text-transform: lowercase;
+}
+code {
+  color: darkgray;
+  background-color: gray;
+}
+code {
+  overflow: auto;
+  font-size: 0.75rem;
+  border-radius: 10px;
+}
+hr {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+hr {
+  border: 0;
+  border-bottom: solid 2px darkgray;
+  margin: 1rem 0;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.image {
+  border-radius: 3px;
+  border: 0;
+  display: inline-block;
+  position: relative;
+}
+.image img {
+  border-radius: 3px;
+  display: block;
+}
+.image.left {
+  float: left;
+  margin: 0 2rem 2rem 0;
+  top: 0.25em;
+}
+.image.right {
+  float: right;
+  margin: 0 0 2rem 2rem;
+  top: 0.25rem;
+}
+.image.left,
+.image.right {
+  max-width: 40%;
+}
+.image.left img,
+.image.right img {
+  width: 100%;
+}
+.image.fit {
+  display: block;
+  margin: 0 0 2rem 0;
+  width: 100%;
+}
+.image.fit img {
+  width: 100%;
+}
+pre {
+  overflow: auto;
+  border-radius: 10px;
+}
+pre {
+  -webkit-overflow-scrolling: touch;
+  font-family: "Courier New", monospace;
+  font-size: 0.9rem;
+  margin: 0 0 2rem 0;
+}
+pre code {
+  display: block;
+  line-height: 1.75rem;
+  padding: 1em 1.5rem;
+  overflow-x: auto;
+}
+p {
+  text-decoration: none;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Lato', Arial, sans-serif;
+  text-transform: lowercase;
+}
+p {
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.25rem;
+  letter-spacing: 0.1rem;
+}
+strong,
+b {
+  font-weight: 600;
+}
+em,
+i {
+  font-style: italic;
+}
+sub {
+  font-size: 0.8rem;
+  position: relative;
+  top: 0.5em;
+}
+sup {
+  font-size: 0.8rem;
+  position: relative;
+  top: -0.5rem;
+}
+/* 
+  molecules
+---------------------------------------------------------------------------------------------------
+*/
+/* 
+    lead
+---------------------------------------------------------------------------------------------------
+*/
+.lead {
+  text-decoration: none;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Lato', Arial, sans-serif;
+  text-transform: lowercase;
+}
+.lead {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  letter-spacing: 0.1rem;
+}
+.lead {
+  margin: 0;
+  margin-bottom: 1.0rem;
+}
+/* 
+    small
+---------------------------------------------------------------------------------------------------
+*/
+.small {
+  text-decoration: none;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Lato', Arial, sans-serif;
+  text-transform: lowercase;
+}
+.small {
+  font-size: .85rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+/* 
+    headline
+---------------------------------------------------------------------------------------------------
+*/
+.headline {
+  text-decoration: none;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Lato', Arial, sans-serif;
+  text-transform: lowercase;
+}
+.headline {
+  font-size: 1.6rem;
+  margin-bottom: 1.0rem;
+}
+/* 
+    tagline
+---------------------------------------------------------------------------------------------------
+*/
+.tagline {
+  text-decoration: none;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Lato', Arial, sans-serif;
+  text-transform: lowercase;
+}
+.tagline {
+  font-weight: 100;
+  font-size: 1.4rem;
+  margin-bottom: 1.0rem;
+}
+/* 
+    paragraph
+---------------------------------------------------------------------------------------------------
+*/
+.paragraph {
+  text-decoration: none;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Lato', Arial, sans-serif;
+  text-transform: lowercase;
+}
+.paragraph {
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+/* 
+    paragraph-2col
+---------------------------------------------------------------------------------------------------
+*/
+.paragraph-2col {
+  text-decoration: none;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Lato', Arial, sans-serif;
+  text-transform: lowercase;
+}
+.paragraph-2col {
+  padding-bottom: 0.75rem;
+}
+/* 
+    paragraph-3col
+---------------------------------------------------------------------------------------------------
+*/
+.paragraph-3col {
+  text-decoration: none;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Lato', Arial, sans-serif;
+  text-transform: lowercase;
+}
+.paragraph-3col {
+  padding-bottom: 0.75rem;
+}
+/* 
+    align
+---------------------------------------------------------------------------------------------------
+*/
+.align-left {
+  text-align: left;
+}
+.align-center {
+  text-align: center;
+}
+.align-right {
+  text-align: right;
+}
+/* 
+    error
+---------------------------------------------------------------------------------------------------
+*/
+.error {
+  text-decoration: none;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Lato', Arial, sans-serif;
+  text-transform: lowercase;
+  color: darkred !important;
+}
+.error {
+  display: block;
+  font-size: 1.0rem;
+  font-weight: bold;
+}
+/* 
+    media queries
+---------------------------------------------------------------------------------------------------
+*/
+@media screen and (min-width: 980px) {
+  .paragraph {
+    -webkit-columns: 300px 1;
+    -moz-columns: 300px 1;
+    columns: 300px 1;
+  }
+  .paragraph-2col {
+    -webkit-columns: 200px 2;
+    -moz-columns: 200px 2;
+    columns: 200px 2;
+  }
+  .paragraph-3col {
+    -webkit-columns: 100px 3;
+    -moz-columns: 100px 3;
+    columns: 100px 3;
+  }
 }
 /*
 ---------------------------------------------------------------------------------------------------
