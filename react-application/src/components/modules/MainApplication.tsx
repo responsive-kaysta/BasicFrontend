@@ -3,8 +3,8 @@ import * as React from 'react';
 import { HashRouter, NavLink, Route } from "react-router-dom";
 
 import Contact from "../../components/modules/contact/Contact";
-import Stuff from "../../components/modules/contact/Contact";
 import Home from "../../components/modules/home/Home";
+import Stuff from "../../components/modules/stuff/Stuff";
 
 
 class MainApplication extends React.Component {
