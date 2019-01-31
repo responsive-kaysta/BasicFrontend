@@ -1,0 +1,36 @@
+// out: false
+
+@import "../global.less";
+
+p {
+    text-decoration: @global-text-decoration;
+    font-family: @global-font-family;
+    text-transform: @global-text-transform;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 1.25rem;
+    letter-spacing: 0.1rem;
+}
+
+strong, b {
+    font-weight: 600;
+}
+
+em, i {
+    font-style: italic;
+}
+
+sub {
+    font-size: 0.8rem;
+    position: relative;
+    top: 0.5em;
+}
+
+sup {
+    font-size: 0.8rem;
+    position: relative;
+    top: -0.5rem;
+}
