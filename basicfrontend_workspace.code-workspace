@@ -17,6 +17,13 @@
 				"sourceMap": true,
 				"out": false
 			}
+		},
+		"easycompile.less": {
+			"less.compile": {
+				"autoprefixer": "> 5%, last 2 Chrome versions, not ie 6-9",
+				"sourceMap": true,
+				"out": false
+			}
 		}
 	}
 }

@@ -1,16 +1,134 @@
-// out: ../assets/css/application.css
+// out: ../assets/css/style.css
 
+
+/* 
+  plugins & globals
+---------------------------------------------------------------------------------------------------
+*/
+@import "reset.less";
+@import "fontawesome-all.less";
+
+
+/* 
+  atom
+---------------------------------------------------------------------------------------------------
+*/
+@import "global.less";
 @import "atom/a.less";
 @import "atom/h.less";
+@import "atom/abstract.less";
+@import "atom/blockquote.less";
+@import "atom/code.less";
+@import "atom/hr.less";
+@import "atom/image.less";
+@import "atom/pre.less";
+@import "atom/text_selector.less";
+
+
+/* 
+  molecule
+---------------------------------------------------------------------------------------------------
+*/
+@import "molecule/box.less";
+@import "molecule/button.less";
+@import "molecule/list.less";
+@import "molecule/row.less";
+@import "molecule/separator.less";
+@import "molecule/text_class.less";
+
+
+/* 
+  organism
+---------------------------------------------------------------------------------------------------
+*/
+@import "organism/article.less";
+@import "organism/banner.less";
+@import "organism/blogarchive.less";
+@import "organism/breadcrumb.less";
+@import "organism/container.less";
+@import "organism/cta.less";
+@import "organism/feature.less";
+@import "organism/icon.less";
+@import "organism/panel.less";
+@import "organism/section.less";
+@import "organism/spotlight.less";
+@import "organism/table.less";
+
+
+/* 
+  page
+---------------------------------------------------------------------------------------------------
+*/
+@import "page/footer.less";
+@import "page/header.less";
+@import "page/menu.less";
+
+
+/* 
+  template
+---------------------------------------------------------------------------------------------------
+*/
+@import "template/template-gray.less";
+@import "template/template-green.less";
+@import "template/template-light.less";
+@import "template/template-purple.less";
+@import "template/template-transparent.less";
+
+/* 
+  page styles
+---------------------------------------------------------------------------------------------------
+*/
+body.is-mobile #main > header {
+  background-attachment: scroll;
+}
+
+#main > header {    
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  background-color: transparent;
+}
+
+body.landing #page-wrapper {
+  
+  background: -moz-linear-gradient(top, rgb(11, 53, 54) 0%, rgba(125,185,232,0)), url(@global-bg-image);
+  background: -webkit-linear-gradient(top, rgb(11, 53, 54) 0%,rgba(125,185,232,0)), url(@global-bg-image);
+  background-image: -ms-linear-gradient(top, rgb(11, 53, 54) 0%, rgba(125,185,232,0)), url(@global-bg-image);
+  background: linear-gradient(to bottom, rgb(11, 53, 54) 0%,rgba(125,185,232,0)), url(@global-bg-image);
+  
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 0;
+  background-color: transparent;
+}
+
+body.regular #page-wrapper {
+ 
+  background: -moz-linear-gradient(top, rgb(11, 53, 54) 0%, rgba(125,185,232,0)), url(@global-bg-image);
+  background: -webkit-linear-gradient(top, rgb(11, 53, 54) 0%,rgba(125,185,232,0)), url(@global-bg-image);
+  background-image: -ms-linear-gradient(top, rgb(11, 53, 54) 0%, rgba(125,185,232,0)), url(@global-bg-image);
+  background: linear-gradient(to bottom, rgb(11, 53, 54) 0%,rgba(125,185,232,0)), url(@global-bg-image);
+  
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 0;
+  background-color: transparent;
+}
 
 
 
-
-
-
-
-
+/*
+---------------------------------------------------------------------------------------------------
+leave because of reasons
+---------------------------------------------------------------------------------------------------
 @keyframes App-logo-spin {
     from { transform: rotate(0deg); }
     to { transform: rotate(360deg); }
   }
+  */
