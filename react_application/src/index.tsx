@@ -4,7 +4,8 @@ import * as ReactDOM from 'react-dom';
 import App from './components/modules/MainApplication';
 import registerServiceWorker from './registerServiceWorker';
 
-import './assets/css/style.css';
+import './assets/css/fontawesome-all.css';
+import './assets/css/styles.css';
 
 ReactDOM.render(
   <App />,
