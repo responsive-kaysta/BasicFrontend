@@ -5,14 +5,17 @@
   plugins & globals
 ---------------------------------------------------------------------------------------------------
 */
+
 @import "reset.less";
-@import "fontawesome-all.less";
+/* @import "fontawesome-all.less"; */
+
 
 
 /* 
   atom
 ---------------------------------------------------------------------------------------------------
 */
+
 @import "global.less";
 @import "atom/a.less";
 @import "atom/h.less";
@@ -25,10 +28,12 @@
 @import "atom/text_selector.less";
 
 
+
 /* 
   molecule
 ---------------------------------------------------------------------------------------------------
 */
+
 @import "molecule/box.less";
 @import "molecule/button.less";
 @import "molecule/list.less";
@@ -37,10 +42,12 @@
 @import "molecule/text_class.less";
 
 
+
 /* 
   organism
 ---------------------------------------------------------------------------------------------------
 */
+
 @import "organism/article.less";
 @import "organism/banner.less";
 @import "organism/blogarchive.less";
@@ -55,19 +62,23 @@
 @import "organism/table.less";
 
 
+
 /* 
   page
 ---------------------------------------------------------------------------------------------------
 */
+
 @import "page/footer.less";
 @import "page/header.less";
 @import "page/menu.less";
+
 
 
 /* 
   template
 ---------------------------------------------------------------------------------------------------
 */
+
 @import "template/template-gray.less";
 @import "template/template-green.less";
 @import "template/template-light.less";
@@ -75,13 +86,16 @@
 @import "template/template-transparent.less";
 
 
+
 /* 
   page styles
 ---------------------------------------------------------------------------------------------------
 */
+
 body.is-mobile #main > header {
   background-attachment: scroll;
 }
+
 
 #main > header {    
   background-attachment: fixed;
@@ -91,6 +105,7 @@ body.is-mobile #main > header {
   text-align: center;
   background-color: transparent;
 }
+
 
 body.landing #page-wrapper {
   
@@ -106,6 +121,7 @@ body.landing #page-wrapper {
   padding-top: 0;
   background-color: transparent;
 }
+
 
 body.regular #page-wrapper {
  
@@ -123,7 +139,6 @@ body.regular #page-wrapper {
 }
 
 
-
 /*
 ---------------------------------------------------------------------------------------------------
 leave because of reasons
@@ -132,6 +147,4 @@ leave because of reasons
     from { transform: rotate(0deg); }
     to { transform: rotate(360deg); }
   }
-  */
-
-  
+  */ 
