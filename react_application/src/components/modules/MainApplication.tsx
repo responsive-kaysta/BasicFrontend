@@ -12,10 +12,10 @@ class MainApplication extends React.Component {
     return (
       <HashRouter>
         <div>
+
           <header id="header" className="remove">
             <h1><NavLink to="/">Simple Page</NavLink></h1>
-            <h2><NavLink to="/">Simple Page</NavLink></h2>
-            <ul className="header">
+            <ul>
               <li><NavLink to="/">Home</NavLink></li>
               <li><NavLink to="/stuff">Stuff</NavLink></li>
               <li><NavLink to="/contact">Contact</NavLink></li>
@@ -53,7 +53,7 @@ class MainApplication extends React.Component {
             </ul>
 
             <div className="copyright">
-              <span>&copy; @DateTime.Now.Year @configPage.SiteAuthor</span>
+              <span>&copy; 2019 author</span>
             </div>
           </footer>
 
