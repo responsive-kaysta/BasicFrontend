@@ -12,18 +12,51 @@ class MainApplication extends React.Component {
     return (
       <HashRouter>
         <div>
-          <h1><NavLink to="/">Simple Page</NavLink></h1>
-          <h2><NavLink to="/">Simple Page</NavLink></h2>
-          <ul className="header">
-            <li><NavLink to="/">Home</NavLink></li>
-            <li><NavLink to="/stuff">Stuff</NavLink></li>
-            <li><NavLink to="/contact">Contact</NavLink></li>
-          </ul>
+          <header id="header" className="remove">
+            <h1><NavLink to="/">Simple Page</NavLink></h1>
+            <h2><NavLink to="/">Simple Page</NavLink></h2>
+            <ul className="header">
+              <li><NavLink to="/">Home</NavLink></li>
+              <li><NavLink to="/stuff">Stuff</NavLink></li>
+              <li><NavLink to="/contact">Contact</NavLink></li>
+            </ul>
+          </header>
+
           <div className="content">
             <Route exact={true} path="/" component={Home} />
             <Route path="/stuff" component={Stuff} />
             <Route path="/contact" component={Contact} />
           </div>
+
+          <footer id="footer">
+            <ul className="icons">
+              <li>
+                <a href="https://www.xing.com/profile/Kay_Stuckenschmidt/cv?sc_o=mxb_p" className="fab fa-xing" target="_blank">
+                  <span className="label">&nbsp;</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/responsivekaysta/" className="fab fa-linkedin" target="_blank">
+                  <span className="label">&nbsp;</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/responsive-kaysta" className="fab fa-github" target="_blank">
+                  <span className="label">&nbsp;</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.nuget.org/profiles/kaysta" className="fas fa-archive" target="_blank">
+                  <span className="label">&nbsp;</span>
+                </a>
+              </li>
+            </ul>
+
+            <div className="copyright">
+              <span>&copy; @DateTime.Now.Year @configPage.SiteAuthor</span>
+            </div>
+          </footer>
+
         </div>
       </HashRouter>
     );
