@@ -2,10 +2,9 @@ import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
 import App from './components/modules/MainApplication';
+import registerServiceWorker from './registerServiceWorker';
 
 import './assets/css/style.css';
-
-import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render(
   <App />,
