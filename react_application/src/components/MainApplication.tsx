@@ -10,7 +10,7 @@ class MainApplication extends React.Component {
   public render() {
     return (
       <HashRouter>
-        <div className="closure">
+        <div>
           <header id="header" className="remove">
             <h1><NavLink to="/">basic frontend</NavLink></h1>
             <nav>
