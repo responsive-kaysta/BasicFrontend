@@ -9,6 +9,6 @@ import './assets/css/styles.css';
 
 ReactDOM.render(
   <App />,
-  document.getElementById('root') as HTMLElement
+  document.getElementById('page-wrapper') as HTMLElement
 );
 registerServiceWorker();

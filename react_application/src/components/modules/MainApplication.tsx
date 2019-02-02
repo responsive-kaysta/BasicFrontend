@@ -15,18 +15,20 @@ class MainApplication extends React.Component {
 
           <header id="header" className="remove">
             <h1><NavLink to="/">Simple Page</NavLink></h1>
-            <ul>
-              <li><NavLink to="/">Home</NavLink></li>
-              <li><NavLink to="/stuff">Stuff</NavLink></li>
-              <li><NavLink to="/contact">Contact</NavLink></li>
-            </ul>
+            <nav>
+              <ul>
+                <li><NavLink to="/">Home</NavLink></li>
+                <li><NavLink to="/stuff">Stuff</NavLink></li>
+                <li><NavLink to="/contact">Contact</NavLink></li>
+              </ul>
+            </nav>
           </header>
 
-          <div className="content">
+          <article id="main">
             <Route exact={true} path="/" component={Home} />
             <Route path="/stuff" component={Stuff} />
             <Route path="/contact" component={Contact} />
-          </div>
+          </article>
 
           <footer id="footer">
             <ul className="icons">
