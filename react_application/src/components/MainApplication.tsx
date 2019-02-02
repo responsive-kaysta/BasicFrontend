@@ -21,11 +21,13 @@ class MainApplication extends React.Component {
               </ul>
             </nav>
           </header>
+
           <article id="main">
             <Route exact={true} path="/" component={Home} />
             <Route path="/stuff" component={Stuff} />
             <Route path="/contact" component={Contact} />
           </article>
+
           <footer id="footer">
             <ul className="icons">
               <li>

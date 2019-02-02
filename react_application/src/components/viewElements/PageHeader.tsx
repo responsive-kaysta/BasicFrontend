@@ -4,7 +4,6 @@ import * as React from 'react';
 import IPageHeader from '../../application/interfaces/IPageHeader';
 
 function PageHeader({ headerText, headerParagraph, enthusiasmLevel = 1 }: IPageHeader) {
-
     return (
         <div>
             <header className="transparent">
@@ -13,7 +12,6 @@ function PageHeader({ headerText, headerParagraph, enthusiasmLevel = 1 }: IPageH
             </header>
         </div>
     );
-
 }
 
 export default PageHeader;
