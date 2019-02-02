@@ -1,14 +1,17 @@
 
 import * as React from 'react';
 
-class Contact extends React.Component {
+import PageHeader from '../../viewElements/PageHeader';
+
+class Stuff extends React.Component {
     public render() {
         return (
             <div>
-                <header className="light">
-                    <h2>Contact</h2>
-                    <p>Dynamisch, Zeug halt ...</p>
-                </header>
+                <PageHeader
+                    headerText="some stuff text"
+                    headerParagraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                    enthusiasmLevel={3} />
+
                 <section className="light">
                     <div className="grid-section">
                         <div className="container">
@@ -32,4 +35,4 @@ class Contact extends React.Component {
     }
 }
 
-export default Contact;
+export default Stuff;

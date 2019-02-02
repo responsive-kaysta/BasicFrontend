@@ -1,22 +1,25 @@
 
 import * as React from 'react';
 
-class Stuff extends React.Component {
+import PageHeader from '../../viewElements/PageHeader';
+
+class Home extends React.Component {
     public render() {
         return (
             <div>
-                <header className="light">
-                    <h2>Stuff</h2>
-                    <p>So ein Zeug halt ...</p>
-                </header>
-                <section className="light">
+                <PageHeader
+                    headerText="some welcome text"
+                    headerParagraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                    enthusiasmLevel={3} />
+
+                <section className="transparent">
                     <div className="grid-section">
                         <div className="container">
                             <div className="pahe-header">
                                 <h2>some page-header welcome</h2>
                             </div>
                             <p className="lead">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque placerat commodo libero, ut tincidunt lacus volutpat vel. Phasellus nec porta sem. Donec a nisi tincidunt, ornare ligula in, pharetra purus. Nulla cursus mauris id dolor luctus eleifend. Etiam non justo eleifend, sagittis ligula non, faucibus tellus. Fusce sagittis imperdiet magna a ornare. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam erat volutpat.
+                                Pellentesque placerat commodo libero, ut tincidunt lacus volutpat vel. Phasellus nec porta sem. Donec a nisi tincidunt, ornare ligula in, pharetra purus. Nulla cursus mauris id dolor luctus eleifend. Etiam non justo eleifend, sagittis ligula non, faucibus tellus. Fusce sagittis imperdiet magna a ornare. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam erat volutpat.
                             </p>
                             <p className="paragraph">
                                 Duis eget lorem faucibus, ultrices enim eget, imperdiet lorem. Nam a rutrum odio. Donec commodo eros vel congue dapibus. Quisque pharetra justo leo, nec convallis leo suscipit vel. Fusce auctor sapien at nunc fringilla lacinia. Suspendisse id erat vel lorem mattis malesuada. Sed quam eros, ultrices id vestibulum rhoncus, tempor laoreet est. Phasellus orci nibh, consectetur in ante sit amet, maximus euismod sem.
@@ -32,4 +35,4 @@ class Stuff extends React.Component {
     }
 }
 
-export default Stuff;
+export default Home;
