@@ -1,7 +1,7 @@
 
 import * as React from 'react';
 
-import PageHeader from '../../viewElements/PageHeader';
+import PageHeader from '../../functions/PageHeader';
 
 class Stuff extends React.Component {
     public render() {
