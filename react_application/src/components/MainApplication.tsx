@@ -2,10 +2,9 @@ import * as React from 'react';
 
 import { HashRouter, NavLink, Route } from "react-router-dom";
 
-import Contact from "../../components/modules/contact/Contact";
-import Home from "../../components/modules/home/Home";
-import Stuff from "../../components/modules/stuff/Stuff";
-
+import Contact from "./views/contact/Contact";
+import Home from "./views/home/Home";
+import Stuff from "./views/stuff/Stuff";
 
 class MainApplication extends React.Component {
   public render() {

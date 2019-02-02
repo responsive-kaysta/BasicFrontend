@@ -1,14 +1,17 @@
 
 import * as React from 'react';
 
-class Home extends React.Component {
+import PageHeader from '../../viewElements/PageHeader';
+
+class Contact extends React.Component {
     public render() {
         return (
             <div>
-                <header className="light">
-                    <h2>HOME</h2>
-                    <p>Startseite, some home welcome ...</p>
-                </header>
+                <PageHeader
+                    headerText="some contact text"
+                    headerParagraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                    enthusiasmLevel={3} />
+
                 <section className="light">
                     <div className="grid-section">
                         <div className="container">
@@ -32,4 +35,4 @@ class Home extends React.Component {
     }
 }
 
-export default Home;
+export default Contact;
