@@ -14,7 +14,7 @@ class MainApplication extends React.Component {
         <div>
 
           <header id="header" className="remove">
-            <h1><NavLink to="/">Simple Page</NavLink></h1>
+            <h1><NavLink to="/">basic frontend</NavLink></h1>
             <nav>
               <ul>
                 <li><NavLink to="/">Home</NavLink></li>
@@ -34,28 +34,28 @@ class MainApplication extends React.Component {
             <ul className="icons">
               <li>
                 <a href="https://www.xing.com/profile/Kay_Stuckenschmidt/cv?sc_o=mxb_p" className="fab fa-xing" target="_blank">
-                  <span className="label">&nbsp;</span>
+                  <span className="label">xing</span>
                 </a>
               </li>
               <li>
                 <a href="https://www.linkedin.com/in/responsivekaysta/" className="fab fa-linkedin" target="_blank">
-                  <span className="label">&nbsp;</span>
+                  <span className="label">linkedin</span>
                 </a>
               </li>
               <li>
                 <a href="https://github.com/responsive-kaysta" className="fab fa-github" target="_blank">
-                  <span className="label">&nbsp;</span>
+                  <span className="label">github</span>
                 </a>
               </li>
               <li>
                 <a href="https://www.nuget.org/profiles/kaysta" className="fas fa-archive" target="_blank">
-                  <span className="label">&nbsp;</span>
+                  <span className="label">archive</span>
                 </a>
               </li>
             </ul>
 
             <div className="copyright">
-              <span>&copy; 2019 author</span>
+              <span>&copy; 2019 responsive kaysta</span>
             </div>
           </footer>
 
