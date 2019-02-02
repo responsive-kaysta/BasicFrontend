@@ -2,13 +2,13 @@ import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
 import App from './components/modules/MainApplication';
-
-import './assets/css/style.css';
-
 import registerServiceWorker from './registerServiceWorker';
+
+import './assets/css/fontawesome-all.css';
+import './assets/css/styles.css';
 
 ReactDOM.render(
   <App />,
-  document.getElementById('root') as HTMLElement
+  document.getElementById('page-wrapper') as HTMLElement
 );
 registerServiceWorker();

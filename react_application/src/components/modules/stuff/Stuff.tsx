@@ -6,15 +6,17 @@ class Stuff extends React.Component {
     public render() {
         return (
             <div>
-                <h2>STUFF</h2>
-                <p>Mauris sem velit, vehicula eget sodales vitae, rhoncus eget sapien:</p>
-                <ol>
-                    <li>Nulla pulvinar diam</li>
-                    <li>Facilisis bibendum</li>
-                    <li>Vestibulum vulputate</li>
-                    <li>Eget erat</li>
-                    <li>Id porttitor</li>
-                </ol>
+                <header className="light">
+                    <h2>STUFF</h2>
+                    <p>Für uns ist die Kreativität des Ungeplanten von zentraler Bedeutung</p>
+                </header>
+                <section className="light">
+                    <div className="grid-section">
+                        <div className="container">
+                            bla
+                </div>
+                    </div>
+                </section>
             </div>
         );
     }
