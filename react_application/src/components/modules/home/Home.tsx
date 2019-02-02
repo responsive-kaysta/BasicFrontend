@@ -12,8 +12,16 @@ class Home extends React.Component {
                 <section className="light">
                     <div className="grid-section">
                         <div className="container">
-                            bla
-                </div>
+
+                            <div className="row clearfix">
+                                <div className="col-md-12 column">
+                                    <hr />
+                                    <p>Autor: @Umbraco.Field("creatorName")</p>
+                                    <p>Published/Updated: @Umbraco.Field("updateDate")</p>
+                                    <hr />
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </section>
             </div>
