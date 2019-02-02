@@ -21,10 +21,10 @@
   vertical-align: -0.0667em;
 }
 .fa-xs {
-  font-size: .75em;
+  font-size: 0.75em;
 }
 .fa-sm {
-  font-size: .875em;
+  font-size: 0.875em;
 }
 .fa-1x {
   font-size: 1em;
@@ -77,8 +77,8 @@
 }
 .fa-border {
   border: solid 0.08em #eee;
-  border-radius: .1em;
-  padding: .2em .25em .15em;
+  border-radius: 0.1em;
+  padding: 0.2em 0.25em 0.15em;
 }
 .fa-pull-left {
   float: left;
@@ -91,14 +91,14 @@
 .far.fa-pull-left,
 .fal.fa-pull-left,
 .fab.fa-pull-left {
-  margin-right: .3em;
+  margin-right: 0.3em;
 }
 .fa.fa-pull-right,
 .fas.fa-pull-right,
 .far.fa-pull-right,
 .fal.fa-pull-right,
 .fab.fa-pull-right {
-  margin-left: .3em;
+  margin-left: 0.3em;
 }
 .fa-spin {
   -webkit-animation: fa-spin 2s infinite linear;
@@ -2828,8 +2828,8 @@
   font-family: 'Font Awesome 5 Brands';
   font-style: normal;
   font-weight: normal;
-  src: url("/assets/webfonts/fa-brands-400.eot");
-  src: url("/assets/webfonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("/assets/webfonts/fa-brands-400.woff2") format("woff2"), url("/assets/webfonts/fa-brands-400.woff") format("woff"), url("/assets/webfonts/fa-brands-400.ttf") format("truetype"), url("/assets/webfonts/fa-brands-400.svg#fontawesome") format("svg");
+  src: url("/webfonts/fa-brands-400.eot");
+  src: url("/webfonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("/webfonts/fa-brands-400.woff2") format("woff2"), url("/webfonts/fa-brands-400.woff") format("woff"), url("/webfonts/fa-brands-400.ttf") format("truetype"), url("/webfonts/fa-brands-400.svg#fontawesome") format("svg");
 }
 .fab {
   font-family: 'Font Awesome 5 Brands';
@@ -2838,8 +2838,8 @@
   font-family: 'Font Awesome 5 Free';
   font-style: normal;
   font-weight: 400;
-  src: url("/assets/webfonts/fa-regular-400.eot");
-  src: url("/assets/webfonts/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("/assets/webfonts/fa-regular-400.woff2") format("woff2"), url("/assets/webfonts/fa-regular-400.woff") format("woff"), url("/assets/webfonts/fa-regular-400.ttf") format("truetype"), url("/assets/webfonts/fa-regular-400.svg#fontawesome") format("svg");
+  src: url("/webfonts/fa-regular-400.eot");
+  src: url("/webfonts/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("/webfonts/fa-regular-400.woff2") format("woff2"), url("/webfonts/fa-regular-400.woff") format("woff"), url("/webfonts/fa-regular-400.ttf") format("truetype"), url("/webfonts/fa-regular-400.svg#fontawesome") format("svg");
 }
 .far {
   font-family: 'Font Awesome 5 Free';
@@ -2849,8 +2849,8 @@
   font-family: 'Font Awesome 5 Free';
   font-style: normal;
   font-weight: 900;
-  src: url("/assets/webfonts/fa-solid-900.eot");
-  src: url("/assets/webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("/assets/webfonts/fa-solid-900.woff2") format("woff2"), url("/assets/webfonts/fa-solid-900.woff") format("woff"), url("/assets/webfonts/fa-solid-900.ttf") format("truetype"), url("/assets/webfonts/fa-solid-900.svg#fontawesome") format("svg");
+  src: url("/webfonts/fa-solid-900.eot");
+  src: url("/webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("/webfonts/fa-solid-900.woff2") format("woff2"), url("/webfonts/fa-solid-900.woff") format("woff"), url("/webfonts/fa-solid-900.ttf") format("truetype"), url("/webfonts/fa-solid-900.svg#fontawesome") format("svg");
 }
 .fa,
 .fas {
