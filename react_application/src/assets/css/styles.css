@@ -1737,7 +1737,8 @@ header.major p {
 }
 #main header h2 {
   font-size: 1.75rem;
-  margin: 0 0 1rem 0;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
 }
 #main header p {
   letter-spacing: 0.225rem;
@@ -2214,13 +2215,7 @@ section {
 body.is-mobile #main > header {
   background-attachment: scroll;
 }
-#main > header {
-  /*
-  background: -moz-linear-gradient(top, rgb(11, 53, 54) 0%, rgba(125,185,232,0)), url(@banner-bg-image);
-  background: -webkit-linear-gradient(top, rgb(11, 53, 54) 0%,rgba(125,185,232,0)), url(@banner-bg-image);
-  background-image: -ms-linear-gradient(top, rgb(11, 53, 54) 0%, rgba(125,185,232,0)), url(@banner-bg-image);
-  background: linear-gradient(to bottom, rgb(11, 53, 54) 0%,rgba(125,185,232,0)), url(@banner-bg-image);
-  */
+#main header {
   background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
