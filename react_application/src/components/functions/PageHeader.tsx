@@ -1,7 +1,7 @@
 
 import * as React from 'react';
 
-import IPageHeader from '../../application/interfaces/IPageHeader';
+import IPageHeader from '../../application/interfaces/functions/IPageHeader';
 
 function PageHeader({ headerText, headerParagraph, enthusiasmLevel = 1 }: IPageHeader) {
     return (
