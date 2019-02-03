@@ -23,11 +23,12 @@ class Home extends React.Component {
                     </div>
                 </section>
 
-                <section className="transparent">
+                <section className="light">
                     <div className="grid-section">
                         <div className="container">
                             <div className="row clearfix">
                                 <div className="col-md-12">
+
                                     <div className="pahe-header">
                                         <h2>some page-header welcome</h2>
                                     </div>
@@ -40,11 +41,13 @@ class Home extends React.Component {
                                     <p className="paragraph">
                                         Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc commodo laoreet turpis a ultrices. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed scelerisque nisi consequat nunc porttitor sagittis. Proin tempor venenatis quam non vehicula. Praesent interdum pulvinar dapibus. Nunc malesuada augue fermentum nunc auctor dapibus.
                                     </p>
+
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
+
             </div>
         );
     }
