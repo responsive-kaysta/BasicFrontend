@@ -10,7 +10,7 @@ class Contact extends React.Component {
             <div>
 
                 <PageHeader
-                    headerText="some welcome text"
+                    headerText="some contact text"
                     headerParagraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
                     enthusiasmLevel={3} />
 
@@ -21,8 +21,8 @@ class Contact extends React.Component {
                             <img className="wide" src="/assets/images/spotlight_planing.png" alt="Brains and engineering" />
                         </div>
                         <div className="content">
-                            <h2>Gestern, Heute, Morgen</h2>
-                            <p>Bereits seit 2002 bieten wir innovative Leistungen rund um Informatik an.</p>
+                            <h2>contact</h2>
+                            <p>Bereits seit 2002 bieten wir contact an.</p>
                         </div>
                     </section>
 

@@ -10,7 +10,7 @@ class Stuff extends React.Component {
             <div>
 
                 <PageHeader
-                    headerText="some welcome text"
+                    headerText="some stuff text"
                     headerParagraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
                     enthusiasmLevel={3} />
 
@@ -21,8 +21,8 @@ class Stuff extends React.Component {
                             <img className="wide" src="/assets/images/spotlight_planing.png" alt="Brains and engineering" />
                         </div>
                         <div className="content">
-                            <h2>Gestern, Heute, Morgen</h2>
-                            <p>Bereits seit 2002 bieten wir innovative Leistungen rund um Informatik an.</p>
+                            <h2>stuff</h2>
+                            <p>Bereits seit 2002 bieten wir innovative stuff an.</p>
                         </div>
                     </section>
 
@@ -33,7 +33,7 @@ class Stuff extends React.Component {
                                     <div className="col-md-12">
 
                                         <div className="pahe-header">
-                                            <h2>some page-header welcome</h2>
+                                            <h2>some page-header stuff</h2>
                                         </div>
                                         <p className="lead">
                                             Pellentesque placerat commodo libero, ut tincidunt lacus volutpat vel. Phasellus nec porta sem. Donec a nisi tincidunt, ornare ligula in, pharetra purus. Nulla cursus mauris id dolor luctus eleifend. Etiam non justo eleifend, sagittis ligula non, faucibus tellus. Fusce sagittis imperdiet magna a ornare. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam erat volutpat.
