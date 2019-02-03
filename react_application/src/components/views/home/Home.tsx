@@ -15,7 +15,7 @@ class Home extends React.Component {
 
                 <section className="spotlight equal light">
                     <div className="image">
-                        <img className="wide" src="https://responsive-it.biz/media/1105/spotlight_planing.png" alt="Brains and engineering" />
+                        <img className="wide" src="/assets/images/spotlight_planing.png" alt="Brains and engineering" />
                     </div>
                     <div className="content">
                         <h2>Gestern, Heute, Morgen</h2>
