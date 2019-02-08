@@ -1,4 +1,27 @@
-﻿*.gen
+﻿# See https://help.github.com/ignore-files/ for more about ignoring files.
+
+# dependencies
+react_application/node_modules
+*node_modules*
+# testing
+/coverage
+
+# production
+react_application/build
+*build*
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+
+*.gen
 *.hash
 *.cache
 *.log
@@ -14,33 +37,6 @@
 *.*.dll
 *.*.pdb
 
-
-/BasicFrontend.dev/App_Data/Logs
-/BasicFrontend.dev/obj/Debug
-/BasicFrontend.dev/obj/Release
-/BasicFrontend.dev/App_Data/TEMP/PluginCache
-/BasicFrontend.dev/App_Data/TEMP/ExamineIndexes
-/BasicFrontend.dev/App_Data/TEMP/DistCache
-/BasicFrontend.dev/App_Data/TEMP/ClientDependency
-
-/BasicFrontend.prod/App_Data/Logs
-/BasicFrontend.prod/obj/Debug
-/BasicFrontend.prod/obj/Release
-/BasicFrontend.prod/App_Data/TEMP/PluginCache
-/BasicFrontend.prod/App_Data/TEMP/ExamineIndexes
-/BasicFrontend.prod/App_Data/TEMP/DistCache
-/BasicFrontend.prod/App_Data/TEMP/ClientDependency
-
-\.vs/BasicFrontend/v15/Server/sqlite3/
-
-\.vs/
-/packages
-/BasicFrontend.dev/App_Data/preview/0_295da055-0e05-4459-89e1-d6b35c9bd9e0.config
-/BasicFrontend.dev/App_Data/preview/0_9d2237fd-961a-4fce-ac38-74edc8ec66c5.config
-/BasicFrontend.dev/Scripts/init.es5.min.js
-/BasicFrontend.dev/Scripts/init.es5.js
-/BasicFrontend.dev/App_Data/cache
-/BasicFrontend.dev/App_Data/preview
 
 
 react_application/src/assets/css/styles\.css
