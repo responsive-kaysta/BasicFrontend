@@ -1,7 +1,9 @@
 
 import * as React from 'react';
 
+
 import PageHeader from '../../functions/PageHeader';
+import StateFullHello from '../../modules/StateFullHello';
 
 class Home extends React.Component {
 
@@ -12,8 +14,7 @@ class Home extends React.Component {
 
                 <PageHeader
                     headerText="some welcome text"
-                    headerParagraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-                    enthusiasmLevel={3} />
+                    headerParagraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit." />
 
                 <div className="light">
 
@@ -22,8 +23,9 @@ class Home extends React.Component {
                             <img className="wide" src="/assets/images/spotlight_planing.png" alt="Brains and engineering" />
                         </div>
                         <div className="content">
-                            <h2>Gestern, Heute, Morgen</h2>
-                            <p>Bereits seit 2002 bieten wir innovative Leistungen rund um Informatik an.</p>
+                            
+                            <StateFullHello languageName="Some TypeScript" enthusiasmLevel={3} />
+
                         </div>
                     </section>
 
