@@ -2,6 +2,7 @@
 import * as React from 'react';
 
 import PageHeader from '../../functions/PageHeader';
+import StateFullHello from '../../modules/StateFullHello';
 
 class Stuff extends React.Component {
     public render() {
@@ -21,8 +22,9 @@ class Stuff extends React.Component {
                             <img className="wide" src="/assets/images/spotlight_planing.png" alt="Brains and engineering" />
                         </div>
                         <div className="content">
-                            <h2>stuff</h2>
-                            <p>Bereits seit 2002 bieten wir innovative stuff an.</p>
+                            
+                        <StateFullHello languageName="Some TypeScript" enthusiasmLevel={3} />
+
                         </div>
                     </section>
 
