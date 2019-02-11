@@ -35,7 +35,7 @@ class StateFullHello extends React.Component<IStoreState, ICurrentState> {
     }
 
   }
-  
+    
   export default StateFullHello;
   
   
