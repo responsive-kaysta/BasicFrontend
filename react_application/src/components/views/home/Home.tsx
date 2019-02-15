@@ -11,7 +11,6 @@ class Home extends React.Component {
         return (
 
             <div>
-
                 <PageHeader
                     headerText="some welcome text"
                     headerParagraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit." />
