@@ -12,7 +12,7 @@ class Stuff extends React.Component {
 
                 <ContentHeader
                     header="some stuff text"
-                    paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit."  />
+                    paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit." />
 
                 <div className="light">
 
@@ -21,8 +21,8 @@ class Stuff extends React.Component {
                             <img className="wide" src="/assets/images/spotlight_planing.png" alt="Brains and engineering" />
                         </div>
                         <div className="content">
-                            
-                        <StateFullHello languageName="Some TypeScript" enthusiasmLevel={3} />
+
+                            <StateFullHello languageName="Some TypeScript" enthusiasmLevel={3} />
 
                         </div>
                     </section>

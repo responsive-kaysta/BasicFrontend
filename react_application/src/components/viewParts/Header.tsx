@@ -3,7 +3,7 @@ import * as React from 'react';
 
 import { NavLink } from "react-router-dom";
 
-class Footer extends React.Component {
+class Header extends React.Component {
     
     public render() {
         return (
@@ -24,4 +24,4 @@ class Footer extends React.Component {
 
 }
 
-export default Footer;
+export default Header;

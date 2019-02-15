@@ -10,7 +10,7 @@ class Contact extends React.Component {
 
             <div>
                 <ContentHeader
-                    header="some stuff text"
+                    header="some contact text"
                     paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit." />
 
                 <div className="light">
