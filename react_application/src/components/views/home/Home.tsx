@@ -2,29 +2,18 @@
 import * as React from 'react';
 
 import ContentHeader from '../../viewContentParts/ContentHeader';
-import StateFullHello from '../../viewParts/StateFullHello';
+import SectionSpotlight from "../../viewContentParts/SectionSpotlight";
 
 class Home extends React.Component {
 
     public render() {
         return (
             <div>
-                <ContentHeader
-                    header="some welcome text"
-                    paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit." />
+                <ContentHeader header="some welcome text" paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit." />
 
                 <div className="light">
 
-                    <section className="spotlight equal">
-                        <div className="image">
-                            <img className="wide" src="/assets/images/spotlight_planing.png" alt="Brains and engineering" />
-                        </div>
-                        <div className="content">
-
-                            <StateFullHello languageName="Some TypeScript" enthusiasmLevel={3} />
-
-                        </div>
-                    </section>
+                    <SectionSpotlight />
 
                     <section>
                         <div className="container">
