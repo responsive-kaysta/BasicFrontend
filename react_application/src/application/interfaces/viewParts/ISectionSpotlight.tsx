@@ -1,8 +1,8 @@
 
-export interface ISpotlight {
+export interface ISectionSpotlight {
     image: string;
     header: string;
     paragraph: string;
 }
 
-export default ISpotlight;
+export default ISectionSpotlight;
