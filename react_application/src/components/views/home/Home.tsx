@@ -2,8 +2,8 @@
 import * as React from 'react';
 
 
-import PageHeader from '../../functions/PageHeader';
-import StateFullHello from '../../modules/StateFullHello';
+import PageHeader from '../../viewContentParts/PageHeader';
+import StateFullHello from '../../viewParts/StateFullHello';
 
 class Home extends React.Component {
 
