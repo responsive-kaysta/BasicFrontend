@@ -1,20 +1,19 @@
+
 import * as React from 'react';
 
 import { HashRouter, NavLink, Route } from "react-router-dom";
 
-import Contact from "../../components/modules/contact/Contact";
-import Home from "../../components/modules/home/Home";
-import Stuff from "../../components/modules/stuff/Stuff";
-
+import Contact from "./views/contact/Contact";
+import Home from "./views/home/Home";
+import Stuff from "./views/stuff/Stuff";
 
 class MainApplication extends React.Component {
   public render() {
     return (
       <HashRouter>
-        <div>
-
+          <>
           <header id="header" className="remove">
-            <h1><NavLink to="/">Simple Page</NavLink></h1>
+            <h1><NavLink to="/">basic frontend</NavLink></h1>
             <nav>
               <ul>
                 <li><NavLink to="/">Home</NavLink></li>
@@ -53,13 +52,11 @@ class MainApplication extends React.Component {
                 </a>
               </li>
             </ul>
-
             <div className="copyright">
-              <span>&copy; 2019 author</span>
+              <span>&copy; 2019 responsive kaysta</span>
             </div>
           </footer>
-
-        </div>
+          </>
       </HashRouter>
     );
   }
