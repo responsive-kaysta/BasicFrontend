@@ -1,7 +1,9 @@
 
 import * as React from 'react';
 
-import { HashRouter, NavLink, Route } from "react-router-dom";
+import { HashRouter, Route } from "react-router-dom";
+
+import Header from "./viewParts/Header"
 
 import Contact from "./views/contact/Contact";
 import Home from "./views/home/Home";
@@ -12,17 +14,8 @@ class MainApplication extends React.Component {
     return (
       <HashRouter>
           <>
-          <header id="header" className="remove">
-            <h1><NavLink to="/">basic frontend</NavLink></h1>
-            <nav>
-              <ul>
-                <li><NavLink to="/">Home</NavLink></li>
-                <li><NavLink to="/stuff">Stuff</NavLink></li>
-                <li><NavLink to="/contact">Contact</NavLink></li>
-              </ul>
-            </nav>
-          </header>
-
+          <Header />
+          
           <article id="main">
             <Route exact={true} path="/" component={Home} />
             <Route path="/stuff" component={Stuff} />
