@@ -1,19 +1,17 @@
 
 import * as React from 'react';
 
-
-import PageHeader from '../../viewContentParts/PageHeader';
+import ContentHeader from '../../viewContentParts/ContentHeader';
 import StateFullHello from '../../viewParts/StateFullHello';
 
 class Home extends React.Component {
 
     public render() {
         return (
-
             <div>
-                <PageHeader
-                    headerText="some welcome text"
-                    headerParagraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit." />
+                <ContentHeader
+                    header="some stuff text"
+                    paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit." />
 
                 <div className="light">
 

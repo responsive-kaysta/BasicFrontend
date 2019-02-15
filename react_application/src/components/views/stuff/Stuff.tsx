@@ -1,7 +1,7 @@
 
 import * as React from 'react';
 
-import PageHeader from '../../viewContentParts/PageHeader';
+import ContentHeader from '../../viewContentParts/ContentHeader';
 import StateFullHello from '../../viewParts/StateFullHello';
 
 class Stuff extends React.Component {
@@ -10,10 +10,9 @@ class Stuff extends React.Component {
 
             <div>
 
-                <PageHeader
-                    headerText="some stuff text"
-                    headerParagraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-                    enthusiasmLevel={3} />
+                <ContentHeader
+                    header="some stuff text"
+                    paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit."  />
 
                 <div className="light">
 
