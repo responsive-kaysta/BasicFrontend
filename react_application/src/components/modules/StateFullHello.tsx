@@ -18,12 +18,12 @@ class StateFullHello extends React.Component<IStoreState, ICurrentState> {
       }
   
       return (
-                <div>
+                <>
                     <h2>Hello {languageName + getExclamationMarks(this.state.currentEnthusiasm)}</h2>
                     <p>Bereits seit 2002 bieten wir innovative Leistungen rund um Informatik an.</p>
                     <button onClick={this.onDecrement}>-</button>
                     <button onClick={this.onIncrement}>+</button>
-                </div>
+                </>
       );
     }
   

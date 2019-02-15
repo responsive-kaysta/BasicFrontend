@@ -11,7 +11,7 @@ class MainApplication extends React.Component {
   public render() {
     return (
       <HashRouter>
-        <div>
+          <>
           <header id="header" className="remove">
             <h1><NavLink to="/">basic frontend</NavLink></h1>
             <nav>
@@ -56,7 +56,7 @@ class MainApplication extends React.Component {
               <span>&copy; 2019 responsive kaysta</span>
             </div>
           </footer>
-        </div>
+          </>
       </HashRouter>
     );
   }
