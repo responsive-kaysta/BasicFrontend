@@ -1,15 +1,19 @@
 
 import * as React from 'react';
+import { Suspense } from "react";
 
-import ArticleBanner from '../../viewContentParts/ArticleBanner';
+// import ArticleBanner from '../../viewContentParts/ArticleBanner';
 import SectionSpotlight from "../../viewContentParts/SectionSpotlight";
+const ArticleBanner = React.lazy(() => import('../../viewContentParts/ArticleBanner'));
 
 class Home extends React.Component {
 
     public render() {
         return (
             <>
-                <ArticleBanner header="some welcome text" paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit." cssStyle="transparent" />
+                <Suspense fallback={<div>Loading...</div>}>
+                    <ArticleBanner header="some welcome text" paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit." cssStyle="transparent" />
+                </Suspense>
                 <SectionSpotlight />
                 <section>
                     <div className="container">
