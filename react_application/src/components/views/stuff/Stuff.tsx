@@ -1,7 +1,7 @@
 
 import * as React from 'react';
 
-import ContentHeader from '../../viewContentParts/ContentHeader';
+import ContentHeader from '../../viewContentParts/ArticleBanner';
 import StateFullHello from '../../viewParts/StateFullHello';
 
 class Stuff extends React.Component {
