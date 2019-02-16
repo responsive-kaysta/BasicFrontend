@@ -12,7 +12,7 @@ class Home extends React.Component {
         return (
             <>
                 <Suspense fallback={<div>Loading...</div>}>
-                    <ArticleBanner header="some welcome text" paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit." cssStyle="transparent" />
+                    <ArticleBanner header="some welcome text" paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit." cssStyle="gray" />
                 </Suspense>
                 <SectionSpotlight />
                 <section>
