@@ -2,7 +2,6 @@
 import * as React from 'react';
 import { Suspense } from "react";
 
-// import ArticleBanner from '../../viewContentParts/ArticleBanner';
 import SectionSpotlight from "../../viewContentParts/SectionSpotlight";
 const ArticleBanner = React.lazy(() => import('../../viewContentParts/ArticleBanner'));
 
