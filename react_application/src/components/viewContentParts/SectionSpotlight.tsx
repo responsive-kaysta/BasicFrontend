@@ -1,24 +1,23 @@
 
 import * as React from 'react';
 
-class SectionSpotlight extends React.Component {
+import ISectionSpotlight from '../../application/interfaces/viewContentParts/ISectionSpotlight';
 
-    public render() {
-        return (
-            <>
-                <section className="spotlight equal">
+function SectionSpotlight({ header, paragraph, cssStyle = "transparent", image = ""}: ISectionSpotlight) {
+    const style = "spotlight equal " + cssStyle;
+    return (
+        <>
+             <section className={style}>
                     <div className="image">
-                        <img className="wide" src="/assets/images/spotlight_planing.png" alt="Brains and engineering" />
+                        <img className="wide" src={image} alt="Brains and engineering" />
                     </div>
                     <div className="content">
-                        <h2>SectionSpotlight</h2>
-                        <p>Bereits seit 2002 bieten wir innovative Leistungen rund um Informatik an.</p>
+                        <h2>{header}</h2>
+                        <p>{paragraph}</p>
                     </div>
                 </section>
-            </>
-
-        );
-    }
+        </>
+    );
 }
 
 export default SectionSpotlight;

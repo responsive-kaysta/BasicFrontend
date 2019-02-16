@@ -2,7 +2,7 @@
 import * as React from 'react';
 import { Suspense } from "react";
 
-import SectionSpotlight from "../../viewContentParts/SectionSpotlight";
+const SectionSpotlight = React.lazy(() => import('../../viewContentParts/SectionSpotlight'));
 const ArticleBanner = React.lazy(() => import('../../viewContentParts/ArticleBanner'));
 
 class Home extends React.Component {
@@ -11,9 +11,9 @@ class Home extends React.Component {
         return (
             <>
                 <Suspense fallback={<div>Loading...</div>}>
-                    <ArticleBanner header="some welcome text" paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit." cssStyle="gray" />
-                </Suspense>
-                <SectionSpotlight />
+                    <ArticleBanner header="welcome text" paragraph="welcome Lorem ipsum dolor sit amet, consectetur adipiscing elit." cssStyle="gray" />
+                    <SectionSpotlight header="spotlight" paragraph="spotlight Lorem ipsum dolor sit amet, consectetur adipiscing elit." cssStyle="light" image="/assets/images/spotlight_planing.png" />
+                </Suspense>               
                 <section>
                     <div className="container">
                         <div className="row clearfix">
