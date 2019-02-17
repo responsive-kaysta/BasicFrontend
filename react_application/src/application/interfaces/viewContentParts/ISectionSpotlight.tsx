@@ -1,5 +1,5 @@
 
-export interface ISectionSpotlight {    
+export interface ISectionSpotlight {
     header: string;
     paragraph: string;
     cssStyle?: string;
