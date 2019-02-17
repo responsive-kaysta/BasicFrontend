@@ -1,8 +1,8 @@
 
 import * as React from 'react';
 
-const SectionSpotlight = React.lazy(() => import('../../ViewContentParts/SectionSpotlight'));
-const ArticleBanner = React.lazy(() => import('../../ViewContentParts/ArticleBanner'));
+const SectionSpotlight = React.lazy(() => import('../../viewContentParts/SectionSpotlight'));
+const ArticleBanner = React.lazy(() => import('../../viewContentParts/ArticleBanner'));
 
 class Home extends React.Component {
 
