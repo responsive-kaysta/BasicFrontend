@@ -36,9 +36,7 @@ class StateFullHello extends React.Component<IStoreState, ICurrentState> {
 
 }
 
-
 export default StateFullHello;
-
 
 function getExclamationMarks(numChars: number) {
   return Array(numChars + 1).join('!');
