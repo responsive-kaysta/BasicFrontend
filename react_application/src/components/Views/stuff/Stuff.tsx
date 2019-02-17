@@ -1,37 +1,22 @@
 
 import * as React from 'react';
 
+const SectionSpotlight = React.lazy(() => import('../../ViewContentParts/SectionSpotlight'));
+const ArticleBanner = React.lazy(() => import('../../ViewContentParts/ArticleBanner'));
 
-import PageHeader from '../../functions/PageHeader';
-import StateFullHello from '../../modules/StateFullHello';
-
-class Home extends React.Component {
+class Stuff extends React.Component {
 
     public render() {
         return (
+            <>
+                <React.Suspense fallback={<div>Loading...</div>}>
 
-            <div>
-                <PageHeader
-                    headerText="some welcome text"
-                    headerParagraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit." />
+                    <ArticleBanner header="Stuff text" paragraph="Stuff Lorem ipsum dolor sit amet, consectetur adipiscing elit." cssStyle="gray" />
+                    <SectionSpotlight header="spotlight" paragraph="spotlight Lorem ipsum dolor sit amet, consectetur adipiscing elit." cssStyle="light" image="/assets/images/spotlight_planing.png" />
 
-                <div className="light">
-
-                    <section className="spotlight equal">
-                        <div className="image">
-                            <img className="wide" src="/assets/images/spotlight_planing.png" alt="Brains and engineering" />
-                        </div>
-                        <div className="content">
-
-                            <StateFullHello languageName="Some TypeScript" enthusiasmLevel={3} />
-
-                        </div>
-                    </section>
-
-                    <section>
+                    <section className="light">
                         <div className="container">
                             <div className="row clearfix">
-
                                 <div className="pahe-header">
                                     <h2>some page-header welcome</h2>
                                 </div>
@@ -44,18 +29,14 @@ class Home extends React.Component {
                                 <p className="paragraph">
                                     Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc commodo laoreet turpis a ultrices. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed scelerisque nisi consequat nunc porttitor sagittis. Proin tempor venenatis quam non vehicula. Praesent interdum pulvinar dapibus. Nunc malesuada augue fermentum nunc auctor dapibus.
                                     </p>
-
                             </div>
-
                         </div>
                     </section>
 
-                </div>
-
-            </div>
-
+                </React.Suspense>
+            </>
         );
     }
 }
 
-export default Home;
+export default Stuff;
