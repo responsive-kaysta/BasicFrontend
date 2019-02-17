@@ -1,7 +1,7 @@
 
 import * as React from 'react';
 
-import IArticleBanner from '../../application/interfaces/viewContentParts/IArticleBanner';
+import IArticleBanner from '../../application/interfaces/ViewContentParts/IArticleBanner';
 
 class ArticleBanner extends React.Component<IArticleBanner> {
     constructor(props: IArticleBanner) {

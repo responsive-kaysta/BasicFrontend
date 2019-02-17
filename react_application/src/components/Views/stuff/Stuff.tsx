@@ -1,17 +1,17 @@
 
 import * as React from 'react';
-import { Suspense } from "react";
 
-const SectionSpotlight = React.lazy(() => import('../../viewContentParts/SectionSpotlight'));
-const ArticleBanner = React.lazy(() => import('../../viewContentParts/ArticleBanner'));
+const SectionSpotlight = React.lazy(() => import('../../ViewContentParts/SectionSpotlight'));
+const ArticleBanner = React.lazy(() => import('../../ViewContentParts/ArticleBanner'));
 
 class Stuff extends React.Component {
+
     public render() {
         return (
             <>
-                <Suspense fallback={<div>Loading...</div>}>
+                <React.Suspense fallback={<div>Loading...</div>}>
 
-                    <ArticleBanner header="stuff text" paragraph="stuff Lorem ipsum dolor sit amet, consectetur adipiscing elit." cssStyle="gray" />
+                    <ArticleBanner header="Stuff text" paragraph="Stuff Lorem ipsum dolor sit amet, consectetur adipiscing elit." cssStyle="gray" />
                     <SectionSpotlight header="spotlight" paragraph="spotlight Lorem ipsum dolor sit amet, consectetur adipiscing elit." cssStyle="light" image="/assets/images/spotlight_planing.png" />
 
                     <section className="light">
@@ -33,7 +33,7 @@ class Stuff extends React.Component {
                         </div>
                     </section>
 
-                </Suspense>
+                </React.Suspense>
             </>
         );
     }

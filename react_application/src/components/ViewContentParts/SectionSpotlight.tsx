@@ -1,7 +1,7 @@
 
 import * as React from 'react';
 
-import ISectionSpotlight from '../../application/interfaces/viewContentParts/ISectionSpotlight';
+import ISectionSpotlight from '../../application/interfaces/ViewContentParts/ISectionSpotlight';
 
 class SectionSpotlight extends React.Component<ISectionSpotlight> {
     constructor(props: ISectionSpotlight) {

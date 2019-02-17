@@ -1,17 +1,17 @@
 
 import * as React from 'react';
-import { Suspense } from "react";
 
-const SectionSpotlight = React.lazy(() => import('../../viewContentParts/SectionSpotlight'));
-const ArticleBanner = React.lazy(() => import('../../viewContentParts/ArticleBanner'));
+const SectionSpotlight = React.lazy(() => import('../../ViewContentParts/SectionSpotlight'));
+const ArticleBanner = React.lazy(() => import('../../ViewContentParts/ArticleBanner'));
 
-class Contact extends React.Component {
+class Home extends React.Component {
+
     public render() {
         return (
             <>
-                <Suspense fallback={<div>Loading...</div>}>
+                <React.Suspense fallback={<div>Loading...</div>}>
 
-                    <ArticleBanner header="contact text" paragraph="contact Lorem ipsum dolor sit amet, consectetur adipiscing elit." cssStyle="gray" />
+                    <ArticleBanner header="welcome text" paragraph="welcome Lorem ipsum dolor sit amet, consectetur adipiscing elit." cssStyle="gray" />
                     <SectionSpotlight header="spotlight" paragraph="spotlight Lorem ipsum dolor sit amet, consectetur adipiscing elit." cssStyle="light" image="/assets/images/spotlight_planing.png" />
 
                     <section className="light">
@@ -33,10 +33,10 @@ class Contact extends React.Component {
                         </div>
                     </section>
 
-                </Suspense>
+                </React.Suspense>
             </>
         );
     }
 }
 
-export default Contact;
+export default Home;
