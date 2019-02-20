@@ -1,9 +1,10 @@
 
+import axios from 'axios';
 import * as React from 'react';
-
 import ISectionSpotlight from '../../application/interfaces/viewContentParts/ISectionSpotlight';
 
 class SectionSpotlight extends React.Component<ISectionSpotlight> {
+
     constructor(props: ISectionSpotlight) {
         super(props);
     }
@@ -25,9 +26,18 @@ class SectionSpotlight extends React.Component<ISectionSpotlight> {
                         <h2>{header}</h2>
                         <p>{paragraph}</p>
                     </div>
+
                 </section>
             </>
         );
+    }
+
+    public componentDidMount() {
+        axios.get("http://localhost:8080/api/beers/index")
+            .then(res => {
+                const posts = res.data.data.children.map((obj: { data: any; }) => obj.data);
+                return posts;
+            });
     }
 
 }
