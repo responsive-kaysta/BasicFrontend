@@ -1,14 +1,17 @@
 
 import * as React from 'react';
+import { RouteProps } from 'react-router';
 
 const SectionSpotlight = React.lazy(() => import('../../viewContentParts/SectionSpotlight'));
 const ArticleBanner = React.lazy(() => import('../../viewContentParts/ArticleBanner'));
 
 class Home extends React.Component {
-    constructor(props: Readonly<{}>) {
+    constructor(props: RouteProps) {
         super(props);
         this.state = { data: null, };
     }
+
+
 
     public render() {
 
