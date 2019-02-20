@@ -3,12 +3,12 @@ import * as React from 'react';
 
 import { BrowserRouter, Route } from "react-router-dom";
 
-import Footer from "./ViewParts/Footer";
-import Header from "./ViewParts/Header";
+import Footer from "./viewParts/Footer";
+import Header from "./viewParts/Header";
 
-import Contact from "./Views/contact/Contact";
-import Home from "./Views/home/Home";
-import Stuff from "./Views/stuff/Stuff";
+import Contact from "./views/contact/Contact";
+import Home from "./views/home/Home";
+import Stuff from "./views/stuff/Stuff";
 
 class MainApplication extends React.Component {
   public render() {

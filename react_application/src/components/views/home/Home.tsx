@@ -1,12 +1,17 @@
 
 import * as React from 'react';
 
-const SectionSpotlight = React.lazy(() => import('../../ViewContentParts/SectionSpotlight'));
-const ArticleBanner = React.lazy(() => import('../../ViewContentParts/ArticleBanner'));
+const SectionSpotlight = React.lazy(() => import('../../viewContentParts/SectionSpotlight'));
+const ArticleBanner = React.lazy(() => import('../../viewContentParts/ArticleBanner'));
 
 class Home extends React.Component {
+    constructor(props: Readonly<{}>) {
+        super(props);
+        this.state = { data: null, };
+    }
 
     public render() {
+
         return (
             <>
                 <React.Suspense fallback={<div>Loading...</div>}>
@@ -36,6 +41,12 @@ class Home extends React.Component {
                 </React.Suspense>
             </>
         );
+    }
+
+    public componentDidMount() {
+        fetch('https://api.mydomain.com')
+            .then(response => response.json())
+            .then(data => this.setState({ data }));
     }
 }
 

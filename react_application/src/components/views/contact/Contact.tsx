@@ -1,17 +1,17 @@
 
 import * as React from 'react';
 
-const SectionSpotlight = React.lazy(() => import('../../ViewContentParts/SectionSpotlight'));
-const ArticleBanner = React.lazy(() => import('../../ViewContentParts/ArticleBanner'));
+const SectionSpotlight = React.lazy(() => import('../../viewContentParts/SectionSpotlight'));
+const ArticleBanner = React.lazy(() => import('../../viewContentParts/ArticleBanner'));
 
-class Stuff extends React.Component {
+class Contact extends React.Component {
 
     public render() {
         return (
             <>
                 <React.Suspense fallback={<div>Loading...</div>}>
 
-                    <ArticleBanner header="Stuff text" paragraph="Stuff Lorem ipsum dolor sit amet, consectetur adipiscing elit." cssStyle="gray" />
+                    <ArticleBanner header="Contact text" paragraph="Contact Lorem ipsum dolor sit amet, consectetur adipiscing elit." cssStyle="gray" />
                     <SectionSpotlight header="spotlight" paragraph="spotlight Lorem ipsum dolor sit amet, consectetur adipiscing elit." cssStyle="light" image="/assets/images/spotlight_planing.png" />
 
                     <section className="light">
@@ -39,4 +39,4 @@ class Stuff extends React.Component {
     }
 }
 
-export default Stuff;
+export default Contact;
