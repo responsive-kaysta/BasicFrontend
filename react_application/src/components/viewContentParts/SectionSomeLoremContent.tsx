@@ -1,17 +1,19 @@
 
 import * as React from 'react';
 
-import IStoreState from '../../application/interfaces/core/IStoreState';
+import IStoreState from 'src/application/interfaces/core/IStoreState';
+import IViewState from 'src/application/interfaces/core/IViewState';
 
-class SectionSomeLoremContent extends React.Component<object, IStoreState> {
+class SectionSomeLoremContent extends React.Component<IViewState, IStoreState> {
     
-    constructor(props: object, state: IStoreState) {
+    constructor(props: IViewState, state: IStoreState) {
         super(props, state);
+        this.state = { storeContext: this.props.viewContext, storeContainer: this.props.viewContainer };
     }
 
     public render() {
 
-        const currentContext = 'not realy';
+        const currentContext = this.state.storeContext;
 
         return (
             <>

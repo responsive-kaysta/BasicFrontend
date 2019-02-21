@@ -5,18 +5,19 @@ import API from '../../application/core/axios.api';
 
 import IArchiveSource from 'src/application/interfaces/Archive/IArchiveSource';
 import IStoreState from 'src/application/interfaces/core/IStoreState';
+import IViewState from 'src/application/interfaces/core/IViewState';
 import TodoItem from "./TodoItem";
 
-class TodoList extends React.Component<object, IStoreState> {
+class TodoList extends React.Component<IViewState, IStoreState> {
 
-    constructor(props: object) {
+    constructor(props: IViewState) {
         super(props);
-        this.state = { dataContainer: [] };
+        this.state = { storeContext: this.props.viewContext, storeContainer: this.props.viewContainer || [] };
     }
 
     public render() {
 
-        const mappedTodos = this.state.dataContainer.map((todo: IArchiveSource) => {
+        const mappedTodos = this.state.storeContainer.map((todo: IArchiveSource) => {
             return (
                 <div key={todo.Id}>
                     <TodoItem archiveSource={todo} />
@@ -31,8 +32,8 @@ class TodoList extends React.Component<object, IStoreState> {
 
         const response = await API.get('service/selectOnlineArchiveSources')
             .then(res => {
-                const dataContainer = res.data;
-                this.setState({ dataContainer });
+                const storeContainer = res.data;
+                this.setState({ storeContainer });
             })
         return response;
     }

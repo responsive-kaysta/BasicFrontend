@@ -1,6 +1,7 @@
 
 export interface IStoreState {
-    dataContainer?: any;
+    storeContext?: any;
+    storeContainer?: any;
 }
 
 export default IStoreState;
