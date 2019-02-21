@@ -1,7 +1,6 @@
 
 export interface IStoreState {
-    languageName: string;
-    enthusiasmLevel: number;
+    currentTitle: string;
 }
 
 export default IStoreState;

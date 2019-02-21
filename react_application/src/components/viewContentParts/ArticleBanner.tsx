@@ -1,11 +1,13 @@
 
 import * as React from 'react';
 
+import IStoreState from '../../application/interfaces/core/IStoreState';
 import IArticleBanner from '../../application/interfaces/viewContentParts/IArticleBanner';
 
-class ArticleBanner extends React.Component<IArticleBanner> {
+class ArticleBanner extends React.Component<IArticleBanner, IStoreState> {
     constructor(props: IArticleBanner) {
         super(props);
+        this.state = { currentTitle: props.header || "zero zorro ArticleBanner!" };
     }
 
     public render() {

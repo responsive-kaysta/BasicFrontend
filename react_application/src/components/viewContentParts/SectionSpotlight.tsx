@@ -1,12 +1,14 @@
 
-import axios from 'axios';
 import * as React from 'react';
+
+import IStoreState from 'src/application/interfaces/core/IStoreState';
 import ISectionSpotlight from '../../application/interfaces/viewContentParts/ISectionSpotlight';
 
-class SectionSpotlight extends React.Component<ISectionSpotlight> {
+class SectionSpotlight extends React.Component<ISectionSpotlight, IStoreState> {
 
     constructor(props: ISectionSpotlight) {
         super(props);
+        this.state = { currentTitle: props.header || "zero zorro SectionSpotlight!" };
     }
 
     public render() {
@@ -30,14 +32,6 @@ class SectionSpotlight extends React.Component<ISectionSpotlight> {
                 </section>
             </>
         );
-    }
-
-    public componentDidMount() {
-        axios.get("http://localhost:8080/api/beers/index")
-            .then(res => {
-                const posts = res.data.data.children.map((obj: { data: any; }) => obj.data);
-                return posts;
-            });
     }
 
 }
