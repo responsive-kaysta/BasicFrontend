@@ -1,6 +1,6 @@
 
 export interface IStoreState {
-    storeContext?: any;
+    storeContext?: string;
     storeContainer?: any;
 }
 
