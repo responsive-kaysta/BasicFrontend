@@ -14,21 +14,21 @@ class TodoList extends React.Component<object, IStoreState> {
 
     public render() {
 
-        axios.get("http://localhost:8080/api/service/selectOnlineArchiveSources").then((response) => {
-            this.setState(() => {
-                return {
-                    todos: response.data
-                }
-            })
-        })
-
         const mappedTodos = this.state.todos.map((todo: any) => {
-            return <TodoComponent id={todo.id} title={todo.title} description={todo.description} link={todo.link} key={todo.id} />
+            return <TodoComponent id={todo.Id} title={todo.SourceName} description={todo.SourceDescription} link={todo.SourceLink} key={todo.Id} />
         })
 
         return mappedTodos;
 
     }
+
+    public componentDidMount() {
+        axios.get('http://10.0.2.15:8080/api/service/selectOnlineArchiveSources')
+          .then(res => {
+            const todos = res.data;
+            this.setState({ todos });
+          })
+      }
 
 }
 

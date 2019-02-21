@@ -4,8 +4,8 @@ function TodoComponent(props: { id: string, title: string; description: string; 
     return (
         <>
             <h1 key={props.id}>{props.title}</h1>
-            <h2>{props.description}</h2>
-            <p>{props.link}</p>
+            <h2 key={props.id}>{props.description}</h2>
+            <p key={props.id}>{props.link}</p>
         </>
     )
 }
