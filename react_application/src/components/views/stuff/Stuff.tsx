@@ -22,8 +22,16 @@ class Stuff extends React.Component<IViewState, IStoreState> {
             <>
                 <React.Suspense fallback={<div>Loading...</div>}>
 
-                    <ArticleBanner header="Stuff text" paragraph="Stuff Lorem ipsum dolor sit amet, consectetur adipiscing elit." cssStyle="gray" />
-                    <SectionSpotlight header="spotlight" paragraph="spotlight Lorem ipsum dolor sit amet, consectetur adipiscing elit." cssStyle="light" image="/assets/images/spotlight_planing.png" />
+                    <ArticleBanner
+                        header="stuff text"
+                        paragraph="welcome Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                        cssStyle="gray" />
+
+                    <SectionSpotlight
+                        header="spotlight"
+                        paragraph="spotlight Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                        cssStyle="light"
+                        image="/assets/images/spotlight_planing.png" />
 
                     <SectionSomeLoremContent viewContainer={this.state.storeContainer} viewContext={this.state.storeContext} />
 
