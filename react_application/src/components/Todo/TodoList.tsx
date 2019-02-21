@@ -11,12 +11,12 @@ class TodoList extends React.Component<object, IStoreState> {
 
     constructor(props: object) {
         super(props);
-        this.state = { currentTitle: "TodoList", todos: [] };
+        this.state = { dataContainer: [] };
     }
 
     public render() {
 
-        const mappedTodos = this.state.todos.map((todo: IArchiveSource) => {
+        const mappedTodos = this.state.dataContainer.map((todo: IArchiveSource) => {
             return (
                 <div key={todo.Id}>
                     <TodoItem archiveSource={todo} />
@@ -31,8 +31,8 @@ class TodoList extends React.Component<object, IStoreState> {
 
         const response = await API.get('service/selectOnlineArchiveSources')
             .then(res => {
-                const todos = res.data;
-                this.setState({ todos });
+                const dataContainer = res.data;
+                this.setState({ dataContainer });
             })
         return response;
     }

@@ -4,13 +4,14 @@ import * as React from 'react';
 import IStoreState from '../../application/interfaces/core/IStoreState';
 
 class SectionSomeLoremContent extends React.Component<object, IStoreState> {
-
-    constructor(props: ObjectConstructor) {
-        super(props);
-        this.state = { currentTitle: "zero zorro SectionSpotlight!" };
+    
+    constructor(props: object, state: IStoreState) {
+        super(props, state);
     }
 
     public render() {
+
+        const currentContext = 'not realy';
 
         return (
             <>
@@ -18,7 +19,7 @@ class SectionSomeLoremContent extends React.Component<object, IStoreState> {
                         <div className="container">
                             <div className="row clearfix">
                                 <div className="pahe-header">
-                                    <h2>{this.state.currentTitle}</h2>
+                                    <h2>{currentContext}</h2>
                                 </div>
                                 <p className="lead">
                                     Pellentesque placerat commodo libero, ut tincidunt lacus volutpat vel. Phasellus nec porta sem. Donec a nisi tincidunt, ornare ligula in, pharetra purus. Nulla cursus mauris id dolor luctus eleifend. Etiam non justo eleifend, sagittis ligula non, faucibus tellus. Fusce sagittis imperdiet magna a ornare. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam erat volutpat.

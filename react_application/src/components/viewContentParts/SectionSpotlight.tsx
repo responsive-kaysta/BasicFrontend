@@ -6,9 +6,8 @@ import ISectionSpotlight from '../../application/interfaces/viewContentParts/ISe
 
 class SectionSpotlight extends React.Component<ISectionSpotlight, IStoreState> {
 
-    constructor(props: ISectionSpotlight) {
-        super(props);
-        this.state = { currentTitle: props.header || "zero zorro SectionSpotlight!" };
+    constructor(props: ISectionSpotlight, state: IStoreState) {
+        super(props, state);
     }
 
     public render() {

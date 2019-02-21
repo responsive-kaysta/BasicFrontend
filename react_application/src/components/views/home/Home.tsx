@@ -1,6 +1,8 @@
 
 import * as React from 'react';
 
+import IStoreState from 'src/application/interfaces/core/IStoreState';
+
 const SectionSpotlight = React.lazy(() => import('../../viewContentParts/SectionSpotlight'));
 const ArticleBanner = React.lazy(() => import('../../viewContentParts/ArticleBanner'));
 const SectionSomeLoremContent = React.lazy(() => import('../../viewContentParts/SectionSomeLoremContent'));
@@ -10,7 +12,11 @@ const TodoList = React.lazy(() => import('../../Todo/TodoList'));
 // https://coursework.vschool.io/class-based-components-and-axios-in-react/
 // 
 
-class Home extends React.Component {
+class Home extends React.Component<object, IStoreState> {
+
+    constructor(props: object) {
+        super(props);
+    }
 
     public render() {
 
@@ -26,7 +32,7 @@ class Home extends React.Component {
 
                     <section className="light">
                         <div className="container">
-                            <div className="row clearfix">
+                            <div className="row clearfix"> 
                                 <TodoList />
                             </div>
                         </div>

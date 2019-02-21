@@ -1,9 +1,6 @@
 
 export interface IStoreState {
-    currentTitle: string;
-    todos?: any;
-    offlineArchiveSources?: any;
-    onlineArchiveSources?: any;
+    dataContainer?: any;
 }
 
 export default IStoreState;
