@@ -24,12 +24,14 @@ class TodoList extends React.Component<object, IStoreState> {
 
     }
 
-    public componentDidMount() {
-        API.get('service/selectOnlineArchiveSources')
+    public async componentDidMount() {
+
+        const response = await API.get('service/selectOnlineArchiveSources')
             .then(res => {
                 const todos = res.data;
                 this.setState({ todos });
             })
+        return response;
     }
 
 }
