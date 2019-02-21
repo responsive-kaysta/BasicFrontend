@@ -4,11 +4,11 @@ import * as React from 'react';
 import IStoreState from 'src/application/interfaces/core/IStoreState';
 import IViewState from 'src/application/interfaces/core/IViewState';
 
-const SectionSpotlight = React.lazy(() => import('../../viewContentParts/SectionSpotlight'));
-const ArticleBanner = React.lazy(() => import('../../viewContentParts/ArticleBanner'));
-const SectionSomeLoremContent = React.lazy(() => import('../../viewContentParts/SectionSomeLoremContent'));
+const SectionSpotlight = React.lazy(() => import('src/components/viewContentParts/SectionSpotlight'));
+const ArticleBanner = React.lazy(() => import('src/components/viewContentParts/ArticleBanner'));
+const SectionSomeLoremContent = React.lazy(() => import('src/components/viewContentParts/SectionSomeLoremContent'));
 
-const TodoList = React.lazy(() => import('../../Todo/TodoList'));
+const TodoList = React.lazy(() => import('src/components/Todo/TodoList'));
 
 class Stuff extends React.Component<IViewState, IStoreState> {
 

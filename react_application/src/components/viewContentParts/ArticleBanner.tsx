@@ -1,8 +1,8 @@
 
 import * as React from 'react';
 
-import IStoreState from '../../application/interfaces/core/IStoreState';
-import IArticleBanner from '../../application/interfaces/viewContentParts/IArticleBanner';
+import IStoreState from 'src/application/interfaces/core/IStoreState';
+import IArticleBanner from 'src/application/interfaces/viewContentParts/IArticleBanner';
 
 class ArticleBanner extends React.Component<IArticleBanner, IStoreState> {
 

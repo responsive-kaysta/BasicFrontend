@@ -2,7 +2,7 @@
 import * as React from 'react';
 
 import IStoreState from 'src/application/interfaces/core/IStoreState';
-import ISectionSpotlight from '../../application/interfaces/viewContentParts/ISectionSpotlight';
+import ISectionSpotlight from 'src/application/interfaces/viewContentParts/ISectionSpotlight';
 
 class SectionSpotlight extends React.Component<ISectionSpotlight, IStoreState> {
 

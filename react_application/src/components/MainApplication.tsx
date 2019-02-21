@@ -5,11 +5,11 @@ import { BrowserRouter, Route } from "react-router-dom";
 import IStoreState from 'src/application/interfaces/core/IStoreState';
 import IViewState from 'src/application/interfaces/core/IViewState';
 
-const Footer = React.lazy(() => import("./viewParts/Footer"));
-const Header = React.lazy(() => import("./viewParts/Header"));
-const Contact = React.lazy(() => import("./views/contact/Contact"));
-const Home = React.lazy(() => import("./views/home/Home"));
-const Stuff = React.lazy(() => import("./views/stuff/Stuff"));
+import Footer from "src/components/viewParts/Footer";
+import Header from "src/components/viewParts/Header";
+import Contact from "src/components/views/Contact";
+import Home from "src/components/views/Home";
+import Stuff from "src/components/views/Stuff";
 
 class MainApplication extends React.Component<IViewState, IStoreState>  {
 
@@ -21,9 +21,8 @@ class MainApplication extends React.Component<IViewState, IStoreState>  {
   public render() {
 
     return (
-      <React.Suspense fallback={<div>Loading...</div>}>
         <BrowserRouter>
-          <>          
+          <>
             <Header />
             <article id="main">
 
@@ -46,7 +45,6 @@ class MainApplication extends React.Component<IViewState, IStoreState>  {
             <Footer />
           </>
         </BrowserRouter>
-      </React.Suspense>
     );
   }
 }

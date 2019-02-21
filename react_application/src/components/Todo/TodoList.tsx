@@ -1,14 +1,15 @@
 
 import * as React from 'react';
 // Omitted
-import API from '../../application/core/axios.api';
+import API from 'src/application/core/axios.api';
 
 import IArchiveSource from 'src/application/interfaces/Archive/IArchiveSource';
 import IStoreState from 'src/application/interfaces/core/IStoreState';
 import IViewState from 'src/application/interfaces/core/IViewState';
-import TodoItem from "./TodoItem";
 
 class TodoList extends React.Component<IViewState, IStoreState> {
+
+    private TodoItem = React.lazy(() => import('./TodoItem'));
 
     constructor(props: IViewState) {
         super(props);
@@ -19,9 +20,11 @@ class TodoList extends React.Component<IViewState, IStoreState> {
 
         const mappedTodos = this.state.storeContainer.map((todo: IArchiveSource) => {
             return (
-                <div key={todo.Id}>
-                    <TodoItem archiveSource={todo} />
-                </div>
+                <React.Suspense fallback={<div>Loading...</div>} key={todo.Id}>
+                    <div>
+                        <this.TodoItem archiveSource={todo} />
+                    </div>
+                </React.Suspense>
             )
         })
 
