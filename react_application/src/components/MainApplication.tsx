@@ -26,8 +26,9 @@ class MainApplication extends React.Component<IViewState, IStoreState>  {
       <BrowserRouter>
         <>
           <Header />
+
           <article id="main">
-          
+
             <Route exact={true} path="/" render={() => (
               // tslint:disable-next-line: jsx-no-lambda
               <Home viewContainer={this.state.storeContainer} viewContext={this.state.storeContext} />
@@ -44,6 +45,7 @@ class MainApplication extends React.Component<IViewState, IStoreState>  {
             )} />
 
           </article>
+
           <Footer />
         </>
       </BrowserRouter>
