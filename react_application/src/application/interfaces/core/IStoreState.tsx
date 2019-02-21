@@ -1,7 +1,7 @@
 
 export interface IStoreState {
     currentTitle: string;
-    todos: [];
+    todos?: any;
 }
 
 export default IStoreState;

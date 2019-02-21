@@ -8,7 +8,7 @@ class SectionSpotlight extends React.Component<ISectionSpotlight, IStoreState> {
 
     constructor(props: ISectionSpotlight) {
         super(props);
-        this.state = { currentTitle: props.header || "zero zorro SectionSpotlight!", todos: [] };
+        this.state = { currentTitle: props.header || "zero zorro SectionSpotlight!" };
     }
 
     public render() {

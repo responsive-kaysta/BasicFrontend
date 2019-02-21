@@ -35,7 +35,13 @@ class Home extends React.Component {
                                 <p className="paragraph">
                                     Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc commodo laoreet turpis a ultrices. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed scelerisque nisi consequat nunc porttitor sagittis. Proin tempor venenatis quam non vehicula. Praesent interdum pulvinar dapibus. Nunc malesuada augue fermentum nunc auctor dapibus.
                                     </p>
-                                <hr />
+                            </div>
+                        </div>
+                    </section>
+
+                    <section className="light">
+                        <div className="container">
+                            <div className="row clearfix">
 
                                 <TodoList />
 

@@ -21,7 +21,6 @@ class TodoList extends React.Component<object, IStoreState> {
         })
 
         return mappedTodos;
-
     }
 
     public async componentDidMount() {

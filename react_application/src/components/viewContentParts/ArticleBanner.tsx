@@ -8,7 +8,7 @@ class ArticleBanner extends React.Component<IArticleBanner, IStoreState> {
 
     constructor(props: IArticleBanner) {
         super(props);
-        this.state = { currentTitle: props.header || "zero zorro ArticleBanner!", todos: [] };
+        this.state = { currentTitle: props.header || "zero zorro ArticleBanner!" };
     }
 
     public render() {
