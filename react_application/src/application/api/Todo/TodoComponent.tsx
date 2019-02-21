@@ -1,12 +1,15 @@
+
 import * as React from 'react';
 
-function TodoComponent(props: { id: string, title: string; description: string; link: string; }) {
+import IArchiveSource from 'src/application/interfaces/core/IArchiveSource';
+
+function TodoComponent(props: { archiveSource: IArchiveSource; }) {
     return (
-        <>
-            <h1 key={props.id}>{props.title}</h1>
-            <h2 key={props.id}>{props.description}</h2>
-            <p key={props.id}>{props.link}</p>
-        </>
+        <div>
+            <h1>{props.archiveSource.Id}</h1>
+            <h2>{props.archiveSource.SourceName}</h2>
+            <p>{props.archiveSource.SourceLink}</p>
+        </div>
     )
 }
 

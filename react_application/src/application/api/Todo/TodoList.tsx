@@ -3,6 +3,7 @@ import * as React from 'react';
 import axios from "axios";
 import TodoComponent from "./TodoComponent";
 
+import IArchiveSource from 'src/application/interfaces/core/IArchiveSource';
 import IStoreState from 'src/application/interfaces/core/IStoreState';
 
 class TodoList extends React.Component<object, IStoreState> {
@@ -14,8 +15,8 @@ class TodoList extends React.Component<object, IStoreState> {
 
     public render() {
 
-        const mappedTodos = this.state.todos.map((todo: any) => {
-            return <TodoComponent id={todo.Id} title={todo.SourceName} description={todo.SourceDescription} link={todo.SourceLink} key={todo.Id} />
+        const mappedTodos = this.state.todos.map((todo: IArchiveSource) => {
+            return <TodoComponent archiveSource={todo} key={todo.Id} />
         })
 
         return mappedTodos;
@@ -24,11 +25,11 @@ class TodoList extends React.Component<object, IStoreState> {
 
     public componentDidMount() {
         axios.get('http://10.0.2.15:8080/api/service/selectOnlineArchiveSources')
-          .then(res => {
-            const todos = res.data;
-            this.setState({ todos });
-          })
-      }
+            .then(res => {
+                const todos = res.data;
+                this.setState({ todos });
+            })
+    }
 
 }
 
