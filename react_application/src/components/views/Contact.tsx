@@ -4,11 +4,11 @@ import * as React from 'react';
 import IStoreState from 'src/application/interfaces/core/IStoreState';
 import IViewState from 'src/application/interfaces/core/IViewState';
 
-class Contact extends React.Component<IViewState, IStoreState> {
+const SectionSpotlight = React.lazy(() => import('src/components/viewContentParts/SectionSpotlight'));
+const ArticleBanner = React.lazy(() => import('src/components/viewContentParts/ArticleBanner'));
+const SectionSomeLoremContent = React.lazy(() => import('src/components/viewContentParts/SectionSomeLoremContent'));
 
-    private SectionSpotlight = React.lazy(() => import('src/components/viewContentParts/SectionSpotlight'));
-    private ArticleBanner = React.lazy(() => import('src/components/viewContentParts/ArticleBanner'));
-    private SectionSomeLoremContent = React.lazy(() => import('src/components/viewContentParts/SectionSomeLoremContent'));
+class Contact extends React.Component<IViewState, IStoreState> {
 
     constructor(props: IViewState, state: IStoreState) {
         super(props, state);
@@ -20,18 +20,18 @@ class Contact extends React.Component<IViewState, IStoreState> {
             <>
                 <React.Suspense fallback={<>Loading...</>}>
 
-                    <this.ArticleBanner
+                    <ArticleBanner
                         header="contact text"
                         paragraph="welcome Lorem ipsum dolor sit amet, consectetur adipiscing elit."
                         cssStyle="gray" />
 
-                    <this.SectionSpotlight
+                    <SectionSpotlight
                         header="spotlight"
                         paragraph="spotlight Lorem ipsum dolor sit amet, consectetur adipiscing elit."
                         cssStyle="light"
                         image="/assets/images/spotlight_planing.png" />
 
-                    <this.SectionSomeLoremContent viewContainer={this.state.storeContainer} viewContext={this.state.storeContext} />
+                    <SectionSomeLoremContent viewContainer={this.state.storeContainer} viewContext={this.state.storeContext} />
 
                 </React.Suspense>
             </>

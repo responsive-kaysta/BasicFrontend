@@ -8,11 +8,11 @@ import IViewState from 'src/application/interfaces/core/IViewState';
 import Footer from "src/components/viewParts/Footer";
 import Header from "src/components/viewParts/Header";
 
-class MainApplication extends React.Component<IViewState, IStoreState>  {
+const Contact = React.lazy(() => import("src/components/views/Contact"));
+const Home = React.lazy(() => import("src/components/views/Home"));
+const Stuff = React.lazy(() => import("src/components/views/Stuff"));
 
-  private Contact = React.lazy(() => import("src/components/views/Contact"));
-  private Home = React.lazy(() => import("src/components/views/Home"));
-  private Stuff = React.lazy(() => import("src/components/views/Stuff"));
+class MainApplication extends React.Component<IViewState, IStoreState>  {
 
   constructor(props: IViewState, state: IStoreState) {
     super(props, state);
@@ -29,17 +29,17 @@ class MainApplication extends React.Component<IViewState, IStoreState>  {
 
               <Route exact={true} path="/" render={() => (
                 // tslint:disable-next-line: jsx-no-lambda
-                <this.Home viewContainer={this.state.storeContainer} viewContext={this.state.storeContext} />
+                <Home viewContainer={this.state.storeContainer} viewContext={this.state.storeContext} />
               )} />
 
               <Route path="/stuff" render={() => (
                 // tslint:disable-next-line: jsx-no-lambda
-                <this.Stuff viewContainer={this.state.storeContainer} viewContext={this.state.storeContext} />
+                <Stuff viewContainer={this.state.storeContainer} viewContext={this.state.storeContext} />
               )} />
 
               <Route path="/contact" render={() => (
                 // tslint:disable-next-line: jsx-no-lambda
-                <this.Contact viewContainer={this.state.storeContainer} viewContext={this.state.storeContext} />
+                <Contact viewContainer={this.state.storeContainer} viewContext={this.state.storeContext} />
               )} />
 
             </React.Suspense>
