@@ -7,43 +7,46 @@ import IViewState from 'src/application/interfaces/core/IViewState';
 
 import Footer from "src/components/viewParts/Footer";
 import Header from "src/components/viewParts/Header";
-import Contact from "src/components/views/Contact";
-import Home from "src/components/views/Home";
-import Stuff from "src/components/views/Stuff";
 
 class MainApplication extends React.Component<IViewState, IStoreState>  {
 
+  private Contact = React.lazy(() => import("src/components/views/Contact"));
+  private Home = React.lazy(() => import("src/components/views/Home"));
+  private Stuff = React.lazy(() => import("src/components/views/Stuff"));
+
   constructor(props: IViewState, state: IStoreState) {
     super(props, state);
-    this.state = { storeContext: this.props.viewContext || "MainApplicationContext", storeContainer: this.props.viewContainer || [] };
+    this.state = { storeContext: this.props.viewContext || "SomeFancyKeyContext", storeContainer: this.props.viewContainer || [] };
   }
 
   public render() {
     return (
-        <BrowserRouter>
-          <>
-            <Header />
-            <article id="main">
+      <BrowserRouter>
+        <>
+          <Header />
+          <article id="main">
+            <React.Suspense fallback={<>Loading...</>}>
 
               <Route exact={true} path="/" render={() => (
                 // tslint:disable-next-line: jsx-no-lambda
-                <Home viewContainer={this.state.storeContainer} viewContext={this.state.storeContext} />
+                <this.Home viewContainer={this.state.storeContainer} viewContext={this.state.storeContext} />
               )} />
 
               <Route path="/stuff" render={() => (
                 // tslint:disable-next-line: jsx-no-lambda
-                <Stuff viewContainer={this.state.storeContainer} viewContext={this.state.storeContext} />
+                <this.Stuff viewContainer={this.state.storeContainer} viewContext={this.state.storeContext} />
               )} />
 
               <Route path="/contact" render={() => (
                 // tslint:disable-next-line: jsx-no-lambda
-                <Contact viewContainer={this.state.storeContainer} viewContext={this.state.storeContext} />
+                <this.Contact viewContainer={this.state.storeContainer} viewContext={this.state.storeContext} />
               )} />
 
-            </article>
-            <Footer />
-          </>
-        </BrowserRouter>
+            </React.Suspense>
+          </article>
+          <Footer />
+        </>
+      </BrowserRouter>
     );
   }
 }

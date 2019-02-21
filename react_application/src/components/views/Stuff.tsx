@@ -32,12 +32,12 @@ class Stuff extends React.Component<IViewState, IStoreState> {
                         cssStyle="light"
                         image="/assets/images/spotlight_planing.png" />
 
-                    <this.SectionSomeLoremContent viewContainer={this.state.storeContainer} viewContext={this.state.storeContext} />
+                    <this.SectionSomeLoremContent viewContext={this.state.storeContext} />
 
                     <section className="light">
                         <div className="container">
                             <div className="row clearfix">
-                                <this.TodoList viewContainer={this.state.storeContainer} viewContext={this.state.storeContext} />
+                                <this.TodoList viewContext={this.state.storeContext} />
                             </div>
                         </div>
                     </section>

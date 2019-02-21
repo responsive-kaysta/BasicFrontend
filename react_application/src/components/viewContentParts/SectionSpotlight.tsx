@@ -8,6 +8,7 @@ class SectionSpotlight extends React.Component<ISectionSpotlight, IStoreState> {
 
     constructor(props: ISectionSpotlight, state: IStoreState) {
         super(props, state);
+        this.state = { storeContext: "", storeContainer: [] };
     }
 
     public render() {
