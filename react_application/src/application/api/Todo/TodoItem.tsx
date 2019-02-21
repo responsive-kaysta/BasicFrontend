@@ -3,7 +3,7 @@ import * as React from 'react';
 
 import IArchiveSource from 'src/application/interfaces/core/IArchiveSource';
 
-function TodoComponent(props: { archiveSource: IArchiveSource; }) {
+function TodoItem(props: { archiveSource: IArchiveSource; }) {
     return (
         <div>
             <h1>{props.archiveSource.Id}</h1>
@@ -13,4 +13,4 @@ function TodoComponent(props: { archiveSource: IArchiveSource; }) {
     )
 }
 
-export default TodoComponent;
+export default TodoItem;

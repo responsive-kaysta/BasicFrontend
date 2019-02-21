@@ -1,10 +1,11 @@
-import * as React from 'react';
 
-import axios from "axios";
-import TodoComponent from "./TodoComponent";
+import * as React from 'react';
+// Omitted
+import API from '../../core/axios.api';
 
 import IArchiveSource from 'src/application/interfaces/core/IArchiveSource';
 import IStoreState from 'src/application/interfaces/core/IStoreState';
+import TodoItem from "./TodoItem";
 
 class TodoList extends React.Component<object, IStoreState> {
 
@@ -16,7 +17,7 @@ class TodoList extends React.Component<object, IStoreState> {
     public render() {
 
         const mappedTodos = this.state.todos.map((todo: IArchiveSource) => {
-            return <TodoComponent archiveSource={todo} key={todo.Id} />
+            return <TodoItem archiveSource={todo} key={todo.Id} />
         })
 
         return mappedTodos;
@@ -24,7 +25,7 @@ class TodoList extends React.Component<object, IStoreState> {
     }
 
     public componentDidMount() {
-        axios.get('http://10.0.2.15:8080/api/service/selectOnlineArchiveSources')
+        API.get('service/selectOnlineArchiveSources')
             .then(res => {
                 const todos = res.data;
                 this.setState({ todos });
