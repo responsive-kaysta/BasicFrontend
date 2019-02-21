@@ -3,6 +3,7 @@ import * as React from 'react';
 
 const SectionSpotlight = React.lazy(() => import('../../viewContentParts/SectionSpotlight'));
 const ArticleBanner = React.lazy(() => import('../../viewContentParts/ArticleBanner'));
+const TodoList = React.lazy(() => import('../../../application/api/Todo/TodoList'));
 
 // axios tutorial
 // https://coursework.vschool.io/class-based-components-and-axios-in-react/
@@ -35,6 +36,8 @@ class Home extends React.Component {
                                     Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc commodo laoreet turpis a ultrices. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed scelerisque nisi consequat nunc porttitor sagittis. Proin tempor venenatis quam non vehicula. Praesent interdum pulvinar dapibus. Nunc malesuada augue fermentum nunc auctor dapibus.
                                     </p>
                                 <hr />
+
+                                <TodoList />
 
                             </div>
                         </div>
