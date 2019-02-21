@@ -19,7 +19,6 @@ class MainApplication extends React.Component<IViewState, IStoreState>  {
   }
 
   public render() {
-
     return (
         <BrowserRouter>
           <>

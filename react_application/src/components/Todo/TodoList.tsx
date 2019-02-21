@@ -9,7 +9,7 @@ import IViewState from 'src/application/interfaces/core/IViewState';
 
 class TodoList extends React.Component<IViewState, IStoreState> {
 
-    private TodoItem = React.lazy(() => import('./TodoItem'));
+    private TodoItem = React.lazy(() => import('src/components/Todo/TodoItem'));
 
     constructor(props: IViewState) {
         super(props);
@@ -17,7 +17,6 @@ class TodoList extends React.Component<IViewState, IStoreState> {
     }
 
     public render() {
-
         const mappedTodos = this.state.storeContainer.map((todo: IArchiveSource) => {
             return (
                 <React.Suspense fallback={<div>Loading...</div>} key={todo.Id}>
@@ -27,12 +26,10 @@ class TodoList extends React.Component<IViewState, IStoreState> {
                 </React.Suspense>
             )
         })
-
         return mappedTodos;
     }
 
     public async componentDidMount() {
-
         const response = await API.get('service/selectOnlineArchiveSources')
             .then(res => {
                 const storeContainer = res.data;
