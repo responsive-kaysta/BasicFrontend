@@ -12,7 +12,7 @@ class TodoList extends React.Component<IViewState, IStoreState> {
 
     constructor(props: IViewState) {
         super(props);
-        this.state = { storeContext: this.props.viewContext, storeContainer: this.props.viewContainer || [] };
+        this.state = { storeContext: this.props.viewContext, storeContainer: this.props.viewContainer };
     }
 
     public render() {
