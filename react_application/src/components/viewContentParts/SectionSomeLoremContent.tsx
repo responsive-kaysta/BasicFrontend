@@ -12,7 +12,7 @@ class SectionSomeLoremContent extends React.Component<IViewState, IStoreState> {
     }
 
     public render() {
-
+        
         const currentContext = 'SectionSomeLoremContent - ' + this.state.storeContext;
 
         return (

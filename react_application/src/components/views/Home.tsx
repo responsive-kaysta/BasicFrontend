@@ -16,10 +16,9 @@ class Home extends React.Component<IViewState, IStoreState> {
     }
 
     public render() {
-
         return (
             <>
-                <React.Suspense fallback={<div>Loading...</div>}>
+                <React.Suspense fallback={<>Loading...</>}>
 
                     <this.ArticleBanner
                         header="welcome text"
