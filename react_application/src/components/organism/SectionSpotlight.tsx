@@ -1,11 +1,14 @@
 
 import * as React from 'react';
 
-import ISectionSpotlight from '../../application/interfaces/viewContentParts/ISectionSpotlight';
+import IStoreState from 'src/application/interfaces/core/IStoreState';
+import ISectionSpotlight from 'src/application/interfaces/viewContentParts/ISectionSpotlight';
 
-class SectionSpotlight extends React.Component<ISectionSpotlight> {
-    constructor(props: ISectionSpotlight) {
-        super(props);
+class SectionSpotlight extends React.Component<ISectionSpotlight, IStoreState> {
+
+    constructor(props: ISectionSpotlight, state: IStoreState) {
+        super(props, state);
+        this.state = { storeContext: "", storeContainer: [] };
     }
 
     public render() {
@@ -25,6 +28,7 @@ class SectionSpotlight extends React.Component<ISectionSpotlight> {
                         <h2>{header}</h2>
                         <p>{paragraph}</p>
                     </div>
+
                 </section>
             </>
         );

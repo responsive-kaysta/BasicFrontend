@@ -1,11 +1,13 @@
 
 import * as React from 'react';
 
-import IArticleBanner from '../../application/interfaces/viewContentParts/IArticleBanner';
+import IStoreState from 'src/application/interfaces/core/IStoreState';
+import IArticleBanner from 'src/application/interfaces/viewContentParts/IArticleBanner';
 
-class ArticleBanner extends React.Component<IArticleBanner> {
-    constructor(props: IArticleBanner) {
-        super(props);
+class ArticleBanner extends React.Component<IArticleBanner, IStoreState> {
+
+    constructor(props: IArticleBanner, state: IStoreState) {
+        super(props, state);
     }
 
     public render() {
