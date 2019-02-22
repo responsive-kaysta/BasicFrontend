@@ -8,7 +8,6 @@ class ArticleBanner extends React.Component<IArticleBanner, IStoreState> {
 
     constructor(props: IArticleBanner, state: IStoreState) {
         super(props, state);
-        this.state = { storeContext: "", storeContainer: [] };
     }
 
     public render() {
