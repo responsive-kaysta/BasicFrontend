@@ -5,12 +5,12 @@ import { BrowserRouter, Route } from "react-router-dom";
 import IStoreState from 'src/application/interfaces/core/IStoreState';
 import IViewState from 'src/application/interfaces/core/IViewState';
 
-import Footer from "src/components/viewParts/Footer";
-import Header from "src/components/viewParts/Header";
+import Footer from "src/components/page/Footer";
+import Header from "src/components/page/Header";
 
-const Contact = React.lazy(() => import("src/components/views/Contact"));
-const Home = React.lazy(() => import("src/components/views/Home"));
-const Stuff = React.lazy(() => import("src/components/views/Stuff"));
+const Contact = React.lazy(() => import("src/components/template/Contact"));
+const Home = React.lazy(() => import("src/components/template/Home"));
+const Stuff = React.lazy(() => import("src/components/template/Stuff"));
 
 class MainApplication extends React.Component<IViewState, IStoreState>  {
 
