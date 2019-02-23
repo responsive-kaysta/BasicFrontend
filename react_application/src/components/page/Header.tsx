@@ -8,7 +8,7 @@ class Header extends React.Component {
     public render() {
         return (
             <>
-                <header id="header" className="remove">
+                <header id="header">
                     <h1><NavLink to="/">basic frontend</NavLink></h1>
                     <nav id="nav">
                         <ToggleMenu />
