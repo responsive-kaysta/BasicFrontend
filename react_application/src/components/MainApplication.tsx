@@ -14,7 +14,7 @@ class MainApplication extends React.Component<IViewState, IStoreState>  {
 
   constructor(props: IViewState, state: IStoreState) {
     super(props, state);
-    this.state = { storeContext: this.props.viewContext || "SomeFancyKeyContext", storeContainer: this.props.viewContainer || [] };
+    this.state = { storeContext: this.props.viewContext || "MainPageContext", storeContainer: this.props.viewContainer || [] };
   }
 
   public async componentWillMount() {
@@ -41,12 +41,12 @@ class MainApplication extends React.Component<IViewState, IStoreState>  {
 
               <Route exact={true} path="/" render={() => (
                 // tslint:disable-next-line: jsx-no-lambda
-                <MainPage viewContext="PageHome" />
+                <MainPage viewContext="PageHomeContext" />
               )} />
 
               <Route path="/stuff" render={() => (
                 // tslint:disable-next-line: jsx-no-lambda
-                <MainPage viewContainer={this.state.storeContainer} />
+                <MainPage viewContext="PageStuffContext" />
               )} />
 
               <Route path="/contact" render={() => (

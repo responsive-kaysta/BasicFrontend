@@ -5,6 +5,7 @@ import IStoreState from 'src/application/interfaces/core/IStoreState';
 import IViewState from 'src/application/interfaces/core/IViewState';
 
 const PageHome = React.lazy(() => import('src/components/composition/PageHome'));
+const PageStuff = React.lazy(() => import('src/components/composition/PageStuff'));
 
 class MainPage extends React.Component<IViewState, IStoreState> {
 
@@ -17,18 +18,20 @@ class MainPage extends React.Component<IViewState, IStoreState> {
 
     public async componentWillMount() {
 
-        if (this.state.storeContext === "PageHome") {
+        if (this.state.storeContext === "PageHomeContext") {
             this.component = <PageHome viewContext={this.state.storeContext} />;
         }
-        
+        else if(this.state.storeContext === "PageStuffContext")
+        {
+            this.component = <PageStuff viewContext={this.state.storeContext} />;
+        }
+
         // tslint:disable-next-line: no-console
         console.log("MainPage: componentWillMount");
         return true;
     }
 
     public async componentDidMount() {
-
-
 
         // tslint:disable-next-line: no-console
         console.log("MainPage: componentDidMount");
