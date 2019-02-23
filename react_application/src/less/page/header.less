@@ -2,9 +2,9 @@
 
 @import "../global.less";
 
-
+/*
 header p {
-    //color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.5);
     position: relative;
     top: -0.25rem;
 }
@@ -12,6 +12,7 @@ header p {
 header#header h1 {
     padding-top: 0.9rem;
 }
+
 
 header h3 + p {
     font-size: 1.1rem;
@@ -22,6 +23,7 @@ header h5 + p,
 header h6 + p {
     font-size: 0.9rem;
 }
+*/
 
 header.major h2 {
     margin-bottom: 1.5rem;
@@ -33,17 +35,9 @@ header.major p {
     padding-bottom: 2.75rem;
 }
 
-@media screen and (max-width: 980px) {
-
-    header br {
-        display: none;
-    }
-
-}
-
 #header {
     background: #2e3842;
-    height: 3rem;
+    // height: 3rem;
     left: 0;
     line-height: 3rem;
     position: fixed;
@@ -66,14 +60,6 @@ header.major p {
             height: inherit;
             line-height: inherit;
         }
-
-            @media screen and (max-width: 736px) {
-
-                #header h1 a {
-                    font-size: 0.8rem;
-                }
-
-            }
 
     #header nav {
         height: inherit;
@@ -120,26 +106,6 @@ header.major p {
                             vertical-align: middle;
                             width: 2rem;
                         }
-
-                        @media screen and (max-width: 736px) {
-
-                            #header nav > ul > li > a.menuToggle {
-                                padding: 0 1.5rem;
-                            }
-
-                                #header nav > ul > li > a.menuToggle span {
-                                    display: none;
-                                }
-
-                        }
-
-                    @media screen and (max-width: 736px) {
-
-                        #header nav > ul > li > a {
-                            padding: 0 0 0 1.5rem;
-                        }
-
-                    }
 
                 #header nav > ul > li:first-child {
                     margin-left: 0;
