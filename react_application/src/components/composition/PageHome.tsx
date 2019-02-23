@@ -6,8 +6,8 @@ import IViewState from 'src/application/interfaces/core/IViewState';
 
 const ArticleBanner = React.lazy(() => import('src/components/organism/ArticleBanner'));
 const EyeCatcher = React.lazy(() => import('src/components/organism/EyeCatcher'));
-const SomeLoremContent =React.lazy(() => import('src/components/organism/SectionSomeLoremContent'));
-const TopSpotlight =React.lazy(() => import('src/components/organism/SectionSpotlight'));
+const SomeLoremContent = React.lazy(() => import('src/components/organism/SectionSomeLoremContent'));
+const TopSpotlight = React.lazy(() => import('src/components/organism/SectionSpotlight'));
 
 class PageHome extends React.Component<IViewState, IStoreState> {
 
@@ -34,22 +34,22 @@ class PageHome extends React.Component<IViewState, IStoreState> {
         return (
             <>
                 <React.Suspense fallback={<>Loading...</>}>
-                    
-                    <ArticleBanner header="welcome home" 
-                                   paragraph="some fancy text describing this page" 
-                                   cssStyle="transparent" />
-                    
-                    <TopSpotlight header="Spotlight" 
-                                  paragraph="Allways use some fancy effects" 
-                                  image="/assets/images/spotlight_planing.png" 
-                                  cssStyle="light" />
+
+                    <ArticleBanner header="welcome home"
+                        paragraph="some fancy text describing this page"
+                        cssStyle="transparent" />
+
+                    <TopSpotlight header="Spotlight"
+                        paragraph="Allways use some fancy effects"
+                        image="/assets/images/spotlight_planing.png"
+                        cssStyle="light" />
 
                     <SomeLoremContent viewContext={this.state.storeContext} />
 
                     <EyeCatcher header="Eye-Catcher" paragraph="some fancy eye-catcher" cssStyle="green" />
 
                     <SomeLoremContent viewContext={this.state.storeContext} />
-                
+
 
                 </React.Suspense>
             </>
