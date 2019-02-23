@@ -1,7 +1,7 @@
 
 export interface ISectionSpotlight {
     header: string;
-    paragraph: string;
+    paragraph?: string;
     cssStyle?: string;
     image?: string;
 }

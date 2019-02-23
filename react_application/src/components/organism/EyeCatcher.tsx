@@ -11,22 +11,20 @@ class EyeCatcher extends React.Component<IEyeCatcher, IStoreState> {
     }
 
     public render() {
-        
-        const style = this.props.cssStyle + " special";
+
+        const style = "special " + this.props.cssStyle;
         const header = this.props.header;
         const paragraph = this.props.paragraph;
-        
+
         return (
-            <div>
-                <section id="one" className={style}>
-                    <div className="inner">
-                        <header className="major">
-                            <h2>{header}</h2>
-                            <p>{paragraph}</p>
-                        </header>
-                    </div>
+            <>
+                <section className={style}>
+                    <header className="major">
+                        <h2>{header}</h2>
+                        <p>{paragraph}</p>
+                    </header>
                 </section>
-            </div>
+            </>
         );
     }
 

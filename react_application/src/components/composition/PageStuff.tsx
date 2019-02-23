@@ -5,9 +5,8 @@ import IStoreState from 'src/application/interfaces/core/IStoreState';
 import IViewState from 'src/application/interfaces/core/IViewState';
 
 const ArticleBanner = React.lazy(() => import('src/components/organism/ArticleBanner'));
-const EyeCatcher = React.lazy(() => import('src/components/organism/EyeCatcher'));
-const SomeLoremContent = React.lazy(() => import('src/components/organism/SectionSomeLoremContent'));
 const TopSpotlight = React.lazy(() => import('src/components/organism/SectionSpotlight'));
+const TodoList = React.lazy(() => import('src/components/Todo/TodoList'));
 
 class PageStuff extends React.Component<IViewState, IStoreState> {
 
@@ -39,17 +38,14 @@ class PageStuff extends React.Component<IViewState, IStoreState> {
                         paragraph="some fancy text describing this page"
                         cssStyle="transparent" />
 
-                    <TopSpotlight header="Spotlight"
-                        paragraph="Allways use some fancy effects"
-                        image="/assets/images/spotlight_planing.png"
-                        cssStyle="light" />
+                    <div>
+                        <TopSpotlight header="Spotlight"
+                            paragraph="Allways use some fancy effects"
+                            image="/assets/images/spotlight_planing.png"
+                            cssStyle="light" />
+                    </div>
 
-                    <SomeLoremContent viewContext={this.state.storeContext} />
-
-                    <EyeCatcher header="PageStuff" paragraph="some fancy eye-catcher" cssStyle="purple" />
-
-                    <SomeLoremContent viewContext={this.state.storeContext} />
-
+                    <TodoList viewContext="light" />
 
                 </React.Suspense>
             </>

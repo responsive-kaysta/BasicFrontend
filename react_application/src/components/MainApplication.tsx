@@ -8,9 +8,9 @@ import IViewState from 'src/application/interfaces/core/IViewState';
 import Footer from "src/components/page/Footer";
 import Header from "src/components/page/Header";
 
-const MainPage = React.lazy(() => import("src/components/template/MainPage"));
-
 class MainApplication extends React.Component<IViewState, IStoreState>  {
+
+  private MainPage = React.lazy(() => import("src/components/template/MainPage"));
 
   constructor(props: IViewState, state: IStoreState) {
     super(props, state);
@@ -33,32 +33,32 @@ class MainApplication extends React.Component<IViewState, IStoreState>  {
 
   public render() {
     return (
-      <BrowserRouter>
-        <>
-          <Header />
-          <article id="main">
-            <React.Suspense fallback={<>Loading...</>}>
+      <React.Suspense fallback={<>Loading...</>}>
+        <BrowserRouter>
+          <>
+            <Header />
+            <article id="main">
 
               <Route exact={true} path="/" render={() => (
                 // tslint:disable-next-line: jsx-no-lambda
-                <MainPage viewContext="PageHomeContext" />
+                <this.MainPage viewContext="PageHomeContext" />
               )} />
 
               <Route path="/stuff" render={() => (
                 // tslint:disable-next-line: jsx-no-lambda
-                <MainPage viewContext="PageStuffContext" />
+                <this.MainPage viewContext="PageStuffContext" />
               )} />
 
               <Route path="/contact" render={() => (
                 // tslint:disable-next-line: jsx-no-lambda
-                <MainPage viewContainer={this.state.storeContainer} />
+                <this.MainPage viewContainer={this.state.storeContainer} />
               )} />
 
-            </React.Suspense>
-          </article>
-          <Footer />
-        </>
-      </BrowserRouter>
+            </article>
+            <Footer />
+          </>
+        </BrowserRouter>
+      </React.Suspense>
     );
   }
 }

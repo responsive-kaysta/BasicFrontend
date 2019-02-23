@@ -13,11 +13,11 @@ class SectionSpotlight extends React.Component<ISectionSpotlight, IStoreState> {
 
     public render() {
 
-        const style = "spotlight equal " + this.props.cssStyle;
+        const style = "spotlight " + this.props.cssStyle;
         const image = this.props.image;
         const header = this.props.header;
         const paragraph = this.props.paragraph;
-
+        
         return (
             <>
                 <section className={style}>

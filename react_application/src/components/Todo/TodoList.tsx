@@ -12,13 +12,16 @@ class TodoList extends React.Component<IViewState, IStoreState> {
 
     constructor(props: IViewState, state: IStoreState) {
         super(props, state);
-        this.state = { storeContext: this.props.viewContext, storeContainer: this.props.viewContainer };
+        this.state = { storeContext: this.props.viewContext, storeContainer: [] };
     }
 
     public render() {
+
+        const style = this.state.storeContext;
+
         const mappedTodos = this.state.storeContainer.map((todo: IArchiveSource) => {
             return (
-                <div key={todo.Id}>
+                <div key={todo.Id} className={style}>
                     <TodoItem archiveSource={todo} />
                 </div>
             )
