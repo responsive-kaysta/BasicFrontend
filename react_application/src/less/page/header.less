@@ -37,7 +37,7 @@ header.major p {
 }
 
 #header {
-    background: #2e3842;
+    background-color: @global-bg-color;
     // height: 3rem;
     left: 0;
     line-height: 3rem;
@@ -53,6 +53,7 @@ header.major p {
         line-height: inherit;
         position: absolute;
         top: 0;
+        padding-top: 1rem;
     }
 
         #header h1 a {
@@ -66,8 +67,12 @@ header.major p {
         height: inherit;
         line-height: inherit;
         position: absolute;
+        margin: 0;
+        padding: 0;
         right: 0;
         top: 0;
+        color: @global-text-color;
+        background-color: @global-bg-color;  
     }
 
         #header nav > ul {

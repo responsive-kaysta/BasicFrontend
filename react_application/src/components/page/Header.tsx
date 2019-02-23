@@ -10,12 +10,13 @@ class Header extends React.Component {
             <>
                 <header id="header" className="remove">
                     <h1><NavLink to="/">basic frontend</NavLink></h1>
-                    <nav>
-                        <ul>
+                    <nav id="nav">
+                        <ul><li className="none"><a href="#" className="menuToggle"><span>Menu</span></a></li></ul>
+                        {/* <ul>
                             <li><NavLink to="/">Home</NavLink></li>
                             <li><NavLink to="/stuff">Stuff</NavLink></li>
                             <li><NavLink to="/contact">Contact</NavLink></li>
-                        </ul>
+                        </ul> */}
                     </nav>
                 </header>
             </>
