@@ -15,8 +15,7 @@ class ToggleMenu extends React.Component<any, IToggleMenuState> {
     public showRight = () => {
         this.setState({ isRight: !this.state.isRight })
     }
-
-
+    
     public render() {
         return (
             <>
