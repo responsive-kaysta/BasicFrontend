@@ -24,7 +24,6 @@ class MainApplication extends React.Component<IViewState, IStoreState>  {
     return true;
   }
 
-  
   public async componentDidMount() {
 
     // tslint:disable-next-line: no-console
