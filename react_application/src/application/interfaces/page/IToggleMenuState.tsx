@@ -1,3 +1,4 @@
+
 export interface IToggleMenuState {
     isRight: boolean;
 }

@@ -19,8 +19,10 @@ class ToggleMenu extends React.Component<any, IToggleMenuState> {
     public render() {
         return (
             <>
-                <button onClick={this.showRight}>Show Right Menu!</button>
-                <ul className={this.state.isRight ? "displayBlock" : "displayNone"} ref={right => right = right} >
+                <a className={this.state.isRight ? "menuClose" : "menuToggle"} onClick={this.showRight}>
+                    menu
+                </a>
+                <ul className={this.state.isRight ? "displayBlock" : "displayNone"}>
                     <li><NavLink to="/">Home</NavLink></li>
                     <li><NavLink to="/stuff">Stuff</NavLink></li>
                     <li><NavLink to="/contact">Contact</NavLink></li>
