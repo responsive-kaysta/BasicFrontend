@@ -39,17 +39,18 @@ class PageStuff extends React.Component<IViewState, IStoreState> {
                         paragraph="some fancy text describing this page"
                         cssStyle="transparent" />
 
-                    <TopSpotlight header="Spotlight"
-                        paragraph="Allways use some fancy effects"
-                        image="/assets/images/spotlight_planing.png"
-                        cssStyle="light" />
+                    <div>
+                        <TopSpotlight header="Spotlight"
+                            paragraph="Allways use some fancy effects"
+                            image="/assets/images/spotlight_planing.png"
+                            cssStyle="light" />
+                    </div>
 
-                    <SomeLoremContent viewContext={this.state.storeContext} />
+                    <SomeLoremContent header="Lorem Content 1" cssStyle="light" />
 
-                    <EyeCatcher header="PageStuff" paragraph="some fancy eye-catcher" cssStyle="purple" />
+                    <EyeCatcher header="Eye-Catcher" paragraph="some fancy eye-catcher" cssStyle="purple" />
 
-                    <SomeLoremContent viewContext={this.state.storeContext} />
-
+                    <SomeLoremContent header="Lorem Content 2" cssStyle="light" />
 
                 </React.Suspense>
             </>

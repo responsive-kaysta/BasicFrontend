@@ -46,11 +46,11 @@ class PageHome extends React.Component<IViewState, IStoreState> {
                             cssStyle="light" />
                     </div>
 
-                    <SomeLoremContent viewContext={this.state.storeContext} />
+                    <SomeLoremContent header="Lorem Content 1" cssStyle="light" />
 
                     <EyeCatcher header="Eye-Catcher" paragraph="some fancy eye-catcher" cssStyle="green" />
 
-                    <SomeLoremContent viewContext={this.state.storeContext} />
+                    <SomeLoremContent header="Lorem Content 2" cssStyle="light" />
 
                 </React.Suspense>
             </>

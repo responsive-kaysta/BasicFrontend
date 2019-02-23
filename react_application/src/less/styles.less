@@ -48,6 +48,7 @@
 @import "organism/breadcrumb.less";
 @import "organism/container.less";
 @import "organism/cta.less";
+@import "organism/eyecatcher.less";
 @import "organism/feature.less";
 @import "organism/icon.less";
 @import "organism/panel.less";
@@ -103,28 +104,6 @@ body.is-mobile #main > header {
   background-attachment: scroll;
 }
 
-article#main header {
-  background-attachment: fixed;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  text-align: center;
-  background-color: transparent;
-
-  padding-top: 4.75rem;
-  padding-bottom: 3rem;
-}
-
-article#main header h2 {
-  font-size: 1.75rem;
-  padding-bottom: 0.75rem;  
-}
-
-article#main header p {
-  letter-spacing: 0.225rem;
-  top: 0;
-}
-
 body.landing #page-wrapper {
   background: -moz-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)), url(@global-bg-image);
   background: -webkit-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)), url(@global-bg-image);
@@ -170,7 +149,6 @@ body.regular #page-wrapper {
 @media screen and (max-width: 736px) {
     
 }
-
 
 /*
 ---------------------------------------------------------------------------------------------------
