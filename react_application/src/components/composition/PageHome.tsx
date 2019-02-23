@@ -38,7 +38,7 @@ class PageHome extends React.Component<IViewState, IStoreState> {
                     <ArticleBanner header="welcome home"
                         paragraph="some fancy text describing this page"
                         cssStyle="transparent" />
-                        
+
                     <div>
                         <TopSpotlight header="Spotlight"
                             paragraph="Allways use some fancy effects"
@@ -51,7 +51,6 @@ class PageHome extends React.Component<IViewState, IStoreState> {
                     <EyeCatcher header="Eye-Catcher" paragraph="some fancy eye-catcher" cssStyle="green" />
 
                     <SomeLoremContent viewContext={this.state.storeContext} />
-
 
                 </React.Suspense>
             </>
