@@ -38,11 +38,13 @@ class PageHome extends React.Component<IViewState, IStoreState> {
                     <ArticleBanner header="welcome home"
                         paragraph="some fancy text describing this page"
                         cssStyle="transparent" />
-
-                    <TopSpotlight header="Spotlight"
-                        paragraph="Allways use some fancy effects"
-                        image="/assets/images/spotlight_planing.png"
-                        cssStyle="light" />
+                        
+                    <div>
+                        <TopSpotlight header="Spotlight"
+                            paragraph="Allways use some fancy effects"
+                            image="/assets/images/spotlight_planing.png"
+                            cssStyle="light" />
+                    </div>
 
                     <SomeLoremContent viewContext={this.state.storeContext} />
 
