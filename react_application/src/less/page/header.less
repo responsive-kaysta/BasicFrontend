@@ -63,68 +63,14 @@ header.major p {
         line-height: inherit;
     }
 
-    #header nav {
-        height: inherit;
-        line-height: inherit;
-        position: absolute;
-        margin: 0;
-        padding: 0;
-        right: 0;
-        top: 0;
-        color: @global-text-color;
-        background-color: @global-bg-color;  
-    }
+#header.alt {
+    background: transparent;
+}
 
-        #header nav > ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            white-space: nowrap;
-        }
-
-        #header nav > ul > li {
-            display: inline-block;
-            padding: 0;
-        }
-
-        #header nav > ul > li > a {
-            border: 0;
-            color: #fff;
-            display: block;
-            font-size: 0.8rem;
-            letter-spacing: 0.225rem;
-            padding: 0 1.5rem;
-            text-transform: uppercase;
-        }
-
-    #header nav > ul > li > a.menuToggle {
-        outline: 0;
-        position: relative;
-    }
-
-    #header nav > ul > li > a.menuToggle:after {
-        background-image: url(@global-bars-image);
-        background-position: right center;
-        background-repeat: no-repeat;
-        content: '';
-        display: inline-block;
-        height: 3.75rem;
-        vertical-align: middle;
-        width: 2rem;
-    }
-
-    #header nav > ul > li:first-child {
-        margin-left: 0;
-    }
-
-    #header.alt {
-        background: transparent;
-    }
-
-    #header.alt h1 {
-        -moz-pointer-events: none;
-        -webkit-pointer-events: none;
-        -ms-pointer-events: none;
-        pointer-events: none;
-        opacity: 0;
-    }
+#header.alt h1 {
+    -moz-pointer-events: none;
+    -webkit-pointer-events: none;
+    -ms-pointer-events: none;
+    pointer-events: none;
+    opacity: 0;
+}
