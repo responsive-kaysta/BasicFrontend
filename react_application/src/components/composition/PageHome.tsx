@@ -45,7 +45,7 @@ class PageHome extends React.Component<IViewState, IStoreState> {
                             image="/assets/images/spotlight_planing.png"
                             cssStyle="light" />
                     </div>
-
+                    
                     <SomeLoremContent header="Lorem Content 1" cssStyle="light" />
 
                     <EyeCatcher header="Eye-Catcher" paragraph="some fancy eye-catcher" cssStyle="green" />
