@@ -8,9 +8,9 @@ import IViewState from 'src/application/interfaces/core/IViewState';
 import Footer from "src/components/page/Footer";
 import Header from "src/components/page/Header";
 
-class MainApplication extends React.Component<IViewState, IStoreState>  {
+const MainPage = React.lazy(() => import("src/components/template/MainPage"));
 
-  private MainPage = React.lazy(() => import("src/components/template/MainPage"));
+class MainApplication extends React.Component<IViewState, IStoreState>  {
 
   constructor(props: IViewState, state: IStoreState) {
     super(props, state);
@@ -41,17 +41,17 @@ class MainApplication extends React.Component<IViewState, IStoreState>  {
 
               <Route exact={true} path="/" render={() => (
                 // tslint:disable-next-line: jsx-no-lambda
-                <this.MainPage viewContext="PageHomeContext" />
+                <MainPage viewContext="PageHomeContext" />
               )} />
 
               <Route path="/stuff" render={() => (
                 // tslint:disable-next-line: jsx-no-lambda
-                <this.MainPage viewContext="PageStuffContext" />
+                <MainPage viewContext="PageStuffContext" />
               )} />
 
               <Route path="/contact" render={() => (
                 // tslint:disable-next-line: jsx-no-lambda
-                <this.MainPage viewContainer={this.state.storeContainer} />
+                <MainPage viewContainer={this.state.storeContainer} />
               )} />
 
             </article>
