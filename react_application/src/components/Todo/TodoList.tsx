@@ -30,12 +30,22 @@ class TodoList extends React.Component<IViewState, IStoreState> {
     }
 
     public async componentDidMount() {
+        this.sleep(50);
         const response = await API.get('service/selectOnlineArchiveSources')
             .then(res => {
                 const storeContainer = res.data;
                 this.setState({ storeContainer });
             })
         return response;
+    }
+
+    public sleep(milliseconds: number) {
+        const start = new Date().getTime();
+        for (let i = 0; i < 1e7; i++) {
+            if ((new Date().getTime() - start) > milliseconds) {
+                break;
+            }
+        }
     }
 
 }
