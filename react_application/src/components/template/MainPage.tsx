@@ -29,8 +29,7 @@ class MainPage extends React.Component<IViewState, IStoreState> {
     }
 
     public async componentDidMount() {
-
-        return true;
+        // some things to do
     }
 
     public render() {
