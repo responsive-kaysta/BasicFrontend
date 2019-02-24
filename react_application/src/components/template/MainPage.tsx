@@ -3,9 +3,10 @@ import * as React from 'react';
 
 import IStoreState from 'src/application/interfaces/core/IStoreState';
 import IViewState from 'src/application/interfaces/core/IViewState';
+import Callback from 'src/components/core/Callback';
 
-import PageHome from 'src/components/composition/PageHome';
-import PageStuff from 'src/components/composition/PageStuff';
+const PageHome = React.lazy(() => import('src/components/composition/PageHome'));
+const PageStuff = React.lazy(() => import('src/components/composition/PageStuff'));
 
 class MainPage extends React.Component<IViewState, IStoreState> {
 
@@ -35,7 +36,9 @@ class MainPage extends React.Component<IViewState, IStoreState> {
     public render() {
         return (
             <>
-                {this.component}
+                <React.Suspense fallback={<Callback />}>
+                    {this.component}
+                </React.Suspense>
             </>
         );
     }

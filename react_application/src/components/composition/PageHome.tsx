@@ -18,7 +18,7 @@ class PageHome extends React.Component<IViewState, IStoreState> {
     constructor(props: IViewState, state: IStoreState) {
         super(props, state);
         this.state = { storeContext: this.props.viewContext, storeContainer: [] };
-        this.milliseconds = 5;
+        this.milliseconds = 1500;
     }
 
     public render() {
@@ -43,7 +43,7 @@ class PageHome extends React.Component<IViewState, IStoreState> {
 
                     <SomeLoremContent header="Lorem Content 2" cssStyle="light" />
 
-                    {Sleep(this.milliseconds)}
+
 
                 </React.Suspense>
             </>
