@@ -24,10 +24,10 @@ class ToggleMenu extends React.Component<any, IToggleMenuState> {
                 </a>
 
                 <div className={this.state.isRight ? "menu displayBlock" : "displayNone"}>
-                    <ul>
-                        <li><NavLink to="/" onClick={this.showRight}>Home</NavLink></li>
-                        <li><NavLink to="/stuff" onClick={this.showRight}>Stuff</NavLink></li>
-                        <li><NavLink to="/contact" onClick={this.showRight}>Contact</NavLink></li>
+                    <ul onClick={this.showRight}>
+                        <li><NavLink to="/">Home</NavLink></li>
+                        <li><NavLink to="/stuff">Stuff</NavLink></li>
+                        <li><NavLink to="/contact">Contact</NavLink></li>
                     </ul>
                 </div>
 
