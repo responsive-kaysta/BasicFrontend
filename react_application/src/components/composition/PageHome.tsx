@@ -24,7 +24,7 @@ class PageHome extends React.Component<IViewState, IStoreState> {
     public render() {
         return (
             <>
-                <React.Suspense fallback={<><Callback /></>}>
+                <React.Suspense fallback={<Callback />}>
 
                     <ArticleBanner header="welcome home"
                         paragraph="some fancy text describing this page"

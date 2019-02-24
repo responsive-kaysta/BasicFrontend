@@ -19,7 +19,7 @@ class PageStuff extends React.Component<IViewState, IStoreState> {
     public render() {
         return (
             <>
-                <React.Suspense fallback={<><Callback /></>}>
+                <React.Suspense fallback={<Callback />}>
 
                     <ArticleBanner header="PageStuff"
                         paragraph="some fancy text describing this page"
