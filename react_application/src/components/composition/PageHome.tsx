@@ -1,6 +1,7 @@
 
 import * as React from 'react';
 
+import Sleep from 'src/application/core/Sleep';
 import IStoreState from 'src/application/interfaces/core/IStoreState';
 import IViewState from 'src/application/interfaces/core/IViewState';
 import Callback from 'src/components/core/Callback';
@@ -12,9 +13,12 @@ const SectionSpotlight = React.lazy(() => import('src/components/organism/Sectio
 
 class PageHome extends React.Component<IViewState, IStoreState> {
 
+    private milliseconds: number;
+
     constructor(props: IViewState, state: IStoreState) {
         super(props, state);
         this.state = { storeContext: this.props.viewContext, storeContainer: [] };
+        this.milliseconds = 5;
     }
 
     public render() {
@@ -38,6 +42,8 @@ class PageHome extends React.Component<IViewState, IStoreState> {
                     <EyeCatcher header="Eye-Catcher" paragraph="some fancy eye-catcher" cssStyle="green" />
 
                     <SomeLoremContent header="Lorem Content 2" cssStyle="light" />
+
+                    {Sleep(this.milliseconds)}
 
                 </React.Suspense>
             </>
