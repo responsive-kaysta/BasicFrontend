@@ -26,15 +26,11 @@ class MainPage extends React.Component<IViewState, IStoreState> {
             this.component = <PageStuff viewContext={this.state.storeContext} />;
         }
 
-        // tslint:disable-next-line: no-console
-        console.log("MainPage: componentWillMount");
         return true;
     }
 
     public async componentDidMount() {
-
-        // tslint:disable-next-line: no-console
-        console.log("MainPage: componentDidMount");
+        
         return true;
     }
 

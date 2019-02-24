@@ -7,8 +7,7 @@ import IViewState from 'src/application/interfaces/core/IViewState';
 
 import Footer from "src/components/page/Footer";
 import Header from "src/components/page/Header";
-
-const MainPage = React.lazy(() => import("src/components/template/MainPage"));
+import MainPage from "src/components/template/MainPage";
 
 class MainApplication extends React.Component<IViewState, IStoreState>  {
 
@@ -17,23 +16,8 @@ class MainApplication extends React.Component<IViewState, IStoreState>  {
     this.state = { storeContext: this.props.viewContext || "MainPageContext", storeContainer: this.props.viewContainer || [] };
   }
 
-  public async componentWillMount() {
-
-    // tslint:disable-next-line: no-console
-    console.log("MainApplication: componentWillMount");
-    return true;
-  }
-
-  public async componentDidMount() {
-
-    // tslint:disable-next-line: no-console
-    console.log("MainApplication: componentDidMount");
-    return true;
-  }
-
   public render() {
     return (
-      <React.Suspense fallback={<>Loading...</>}>
         <BrowserRouter>
           <>
             <Header />
@@ -58,7 +42,6 @@ class MainApplication extends React.Component<IViewState, IStoreState>  {
             <Footer />
           </>
         </BrowserRouter>
-      </React.Suspense>
     );
   }
 }
