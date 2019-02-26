@@ -4,7 +4,6 @@ import * as React from 'react';
 // import Sleep from 'src/application/core/Sleep';
 import IStoreState from 'src/application/interfaces/core/IStoreState';
 import IViewState from 'src/application/interfaces/core/IViewState';
-import Callback from 'src/components/core/Callback';
 
 const ArticleBanner = React.lazy(() => import('src/components/organism/ArticleBanner'));
 const EyeCatcher = React.lazy(() => import('src/components/organism/EyeCatcher'));
@@ -24,7 +23,7 @@ class PageHome extends React.Component<IViewState, IStoreState> {
     public render() {
         return (
             <>
-                <React.Suspense fallback={<Callback />}>
+                <React.Suspense key={this.props.viewContext} fallback={<>Loading...</>}>
 
                     <ArticleBanner header="welcome home"
                         paragraph="some fancy text describing this page"

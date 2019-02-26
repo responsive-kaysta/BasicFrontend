@@ -9,6 +9,12 @@ import Footer from "src/components/page/Footer";
 import Header from "src/components/page/Header";
 import MainPage from "src/components/template/MainPage";
 
+
+/*
+    https://blog.logrocket.com/async-rendering-in-react-with-suspense-5d0eaac886c8
+
+*/
+
 class MainApplication extends React.Component<IViewState, IStoreState>  {
 
   constructor(props: IViewState, state: IStoreState) {
@@ -18,6 +24,7 @@ class MainApplication extends React.Component<IViewState, IStoreState>  {
 
   public render() {
     return (
+      <React.Suspense key={this.props.viewContext} fallback={<>Loading...</>}>
         <BrowserRouter>
           <>
             <Header />
@@ -42,6 +49,7 @@ class MainApplication extends React.Component<IViewState, IStoreState>  {
             <Footer />
           </>
         </BrowserRouter>
+      </React.Suspense>
     );
   }
 }
