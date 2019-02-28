@@ -5,10 +5,11 @@ import { BrowserRouter, Route } from "react-router-dom";
 import IStoreState from 'src/application/interfaces/core/IStoreState';
 import IViewState from 'src/application/interfaces/core/IViewState';
 
+import Callback from "src/components/core/Callback";
 import Footer from "src/components/page/Footer";
 import Header from "src/components/page/Header";
-import MainPage from "src/components/template/MainPage";
 
+const MainPage = React.lazy(() => import('src/components/template/MainPage'));
 
 /*
     https://blog.logrocket.com/async-rendering-in-react-with-suspense-5d0eaac886c8
@@ -24,7 +25,7 @@ class MainApplication extends React.Component<IViewState, IStoreState>  {
 
   public render() {
     return (
-      <React.Suspense key={this.props.viewContext} fallback={<>Loading...</>}>
+      <React.Suspense key={this.props.viewContext} fallback={<Callback />}>
         <BrowserRouter>
           <>
             <Header />

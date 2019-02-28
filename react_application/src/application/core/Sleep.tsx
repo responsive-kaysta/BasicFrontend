@@ -1,20 +1,12 @@
 
-import * as React from 'react';
-
-function Sleep(props: { Milliseconds: number; }) {
+function Sleep(props: number) {
 
     const start = new Date().getTime();
     for (let i = 0; i < 1e7; i++) {
-        if ((new Date().getTime() - start) > props.Milliseconds) {
+        if ((new Date().getTime() - start) > props) {
             break;
         }
     }
-
-    return (
-        <>
-            Sleep for {props.Milliseconds} (ms)
-        </>
-    )
 }
 
 export default Sleep;

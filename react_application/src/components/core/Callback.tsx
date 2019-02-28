@@ -1,5 +1,5 @@
 import * as React from 'react';
-
+// import Sleep from 'src/application/core/Sleep';
 import loading from 'src/assets/images/loading.png';
 
 /* 
@@ -8,12 +8,15 @@ import loading from 'src/assets/images/loading.png';
 
 class Callback extends React.Component {
   
-  public render() {
-    const style = "App-logo";
+  private style = "App-logo";
+  // private sleep: number = 5000;
 
+  public render() {
+    
     return (
       <>
-        <img className={style} src={loading} alt="loading"/>
+        <img className={this.style} src={loading} alt="loading"/>
+        {/* Sleep for {this.sleep} (ms) {Sleep(this.sleep)} */}
       </>
     );
   }
