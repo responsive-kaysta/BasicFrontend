@@ -17,7 +17,7 @@ class PageHome extends React.Component<IViewState, IStoreState> {
     constructor(props: IViewState, state: IStoreState) {
         super(props, state);
         this.state = { storeContext: this.props.viewContext, storeContainer: [] };
-        // this.milliseconds = 1500;
+        // this.milliseconds = 1500;        
     }
 
     public render() {
