@@ -1,14 +1,13 @@
 
 import * as React from 'react';
 
-import IArchiveSource from 'src/application/interfaces/Archive/IArchiveSource';
+import IArchiveContent from 'src/application/interfaces/Archive/IArchiveContent';
 
-function TodoItem(props: { archiveSource: IArchiveSource; }) {
+function TodoItem(props: { archiveContent: IArchiveContent; }) {
     return (
         <>
-            <h1>{props.archiveSource.Id}</h1>
-            <h2>{props.archiveSource.SourceName}</h2>
-            <p>{props.archiveSource.SourceLink}</p>
+            <h1>{props.archiveContent.Id}</h1>
+            <h2>{props.archiveContent.ContentTitle}</h2>
         </>
     )
 }
