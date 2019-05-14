@@ -30,7 +30,7 @@ class TodoList extends React.Component<IViewState, IStoreState> {
     }
 
     public async componentDidMount() {
-        const response = await API.get('Service/SelectLatestArchiveContentToList')
+        const response = await API.get('service/selectLatestArchiveContentToList')
             .then(res => {
                 const storeContainer = res.data;
                 this.setState({ storeContainer });
