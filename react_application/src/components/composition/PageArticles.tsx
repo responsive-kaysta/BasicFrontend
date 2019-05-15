@@ -7,7 +7,7 @@ import Callback from "src/components/core/Callback";
 
 const ArticleBanner = React.lazy(() => import('src/components/organism/ArticleBanner'));
 const SectionSpotlight = React.lazy(() => import('src/components/organism/SectionSpotlight'));
-const TodoList = React.lazy(() => import('src/components/Todo/TodoList'));
+const ArchiveContentList = React.lazy(() => import('src/components/ArchiveContent/ArchiveContentList'));
 
 class PageArticles extends React.Component<IViewState, IStoreState> {
 
@@ -22,10 +22,10 @@ class PageArticles extends React.Component<IViewState, IStoreState> {
 
                 <React.Suspense key={this.props.viewContext} fallback={<Callback />}>
 
-                    <ArticleBanner header="PageArticles"
+                    <ArticleBanner header="The latest news"
                         paragraph="some fancy text describing this page"
                         cssStyle="transparent" />
-
+                        
                     <div>
                         <SectionSpotlight header="Spotlight"
                             paragraph="Allways use some fancy effects"
@@ -33,7 +33,7 @@ class PageArticles extends React.Component<IViewState, IStoreState> {
                             cssStyle="light" />
                     </div>
 
-                    <TodoList viewContext="light" />
+                    <ArchiveContentList viewContext="light" />
 
                 </React.Suspense>
             </>
