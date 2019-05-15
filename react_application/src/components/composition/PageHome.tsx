@@ -12,12 +12,9 @@ const SectionSpotlight = React.lazy(() => import('src/components/organism/Sectio
 
 class PageHome extends React.Component<IViewState, IStoreState> {
 
-    // private milliseconds: number;
-
     constructor(props: IViewState, state: IStoreState) {
         super(props, state);
-        this.state = { storeContext: this.props.viewContext, storeContainer: [] };
-        // this.milliseconds = 1500;        
+        this.state = { storeContext: this.props.viewContext, storeContainer: [] };  
     }
 
     public render() {
@@ -37,9 +34,7 @@ class PageHome extends React.Component<IViewState, IStoreState> {
                     </div>
 
                     <SomeLoremContent header="Lorem Content 1" cssStyle="light" />
-
-                    <EyeCatcher header="Eye-Catcher" paragraph="some fancy eye-catcher" cssStyle="green" />
-
+                    <EyeCatcher header="Eye-Catcher" paragraph="a fancy eye-catcher" cssStyle="green" />
                     <SomeLoremContent header="Lorem Content 2" cssStyle="light" />
                     
                 </React.Suspense>
