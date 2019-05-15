@@ -7,6 +7,7 @@ import Callback from 'src/components/core/Callback';
 
 const PageHome = React.lazy(() => import('src/components/composition/PageHome'));
 const PageStuff = React.lazy(() => import('src/components/composition/PageStuff'));
+const PageArticles = React.lazy(() => import('src/components/composition/PageArticles'));
 
 class MainPage extends React.Component<IViewState, IStoreState> {
 
@@ -25,7 +26,10 @@ class MainPage extends React.Component<IViewState, IStoreState> {
         else if (this.state.storeContext === "PageStuffContext") {
             this.component = <PageStuff viewContext={this.state.storeContext} />;
         }
-
+        else if (this.state.storeContext === "PageArticlesContext") {
+            this.component = <PageArticles viewContext={this.state.storeContext} />;
+        }
+        
         return true;
     }
 

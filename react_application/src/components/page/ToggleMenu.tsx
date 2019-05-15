@@ -27,6 +27,7 @@ class ToggleMenu extends React.Component<any, IToggleMenuState> {
                     <ul onClick={this.showRight}>
                         <li><NavLink to="/">Home</NavLink></li>
                         <li><NavLink to="/stuff">Stuff</NavLink></li>
+                        <li><NavLink to="/stuff/latestarticles">Latest Articles</NavLink></li>
                         <li><NavLink to="/contact">Contact</NavLink></li>
                     </ul>
                 </div>

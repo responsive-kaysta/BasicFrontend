@@ -41,6 +41,11 @@ class MainApplication extends React.Component<IViewState, IStoreState>  {
                 <MainPage viewContext="PageStuffContext" />
               )} />
 
+              <Route path="/stuff/latestarticles" render={() => (
+                // tslint:disable-next-line: jsx-no-lambda
+                <MainPage viewContext="PageArticlesContext" />
+              )} />
+
               <Route path="/contact" render={() => (
                 // tslint:disable-next-line: jsx-no-lambda
                 <MainPage viewContainer={this.state.storeContainer} />
