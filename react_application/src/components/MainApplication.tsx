@@ -1,63 +1,61 @@
 
 import * as React from 'react';
+import { BrowserRouter, Route } from "react-router-dom";
 
-import { HashRouter, NavLink, Route } from "react-router-dom";
+import IStoreState from 'src/application/interfaces/core/IStoreState';
+import IViewState from 'src/application/interfaces/core/IViewState';
 
-import Contact from "./views/contact/Contact";
-import Home from "./views/home/Home";
-import Stuff from "./views/stuff/Stuff";
+import Callback from "src/components/core/Callback";
+import Footer from "src/components/page/Footer";
+import Header from "src/components/page/Header";
 
-class MainApplication extends React.Component {
+const MainPage = React.lazy(() => import('src/components/template/MainPage'));
+
+/*
+    https://blog.logrocket.com/async-rendering-in-react-with-suspense-5d0eaac886c8
+
+*/
+
+class MainApplication extends React.Component<IViewState, IStoreState>  {
+
+  constructor(props: IViewState, state: IStoreState) {
+    super(props, state);
+    this.state = { storeContext: this.props.viewContext || "MainPageContext", storeContainer: this.props.viewContainer || [] };
+  }
+
   public render() {
     return (
-      <HashRouter>
+      <React.Suspense key={this.props.viewContext} fallback={<Callback />}>
+        <BrowserRouter>
           <>
-          <header id="header" className="remove">
-            <h1><NavLink to="/">basic frontend</NavLink></h1>
-            <nav>
-              <ul>
-                <li><NavLink to="/">Home</NavLink></li>
-                <li><NavLink to="/stuff">Stuff</NavLink></li>
-                <li><NavLink to="/contact">Contact</NavLink></li>
-              </ul>
-            </nav>
-          </header>
+            <Header />
+            <article id="main">
 
-          <article id="main">
-            <Route exact={true} path="/" component={Home} />
-            <Route path="/stuff" component={Stuff} />
-            <Route path="/contact" component={Contact} />
-          </article>
+              <Route exact={true} path="/" render={() => (
+                // tslint:disable-next-line: jsx-no-lambda
+                <MainPage viewContext="PageHomeContext" />
+              )} />
 
-          <footer id="footer">
-            <ul className="icons">
-              <li>
-                <a href="https://www.xing.com/profile/Kay_Stuckenschmidt/cv?sc_o=mxb_p" className="fab fa-xing" target="_blank">
-                  <span className="label">&nbsp;</span>
-                </a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/in/responsivekaysta/" className="fab fa-linkedin" target="_blank">
-                  <span className="label">&nbsp;</span>
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/responsive-kaysta" className="fab fa-github" target="_blank">
-                  <span className="label">&nbsp;</span>
-                </a>
-              </li>
-              <li>
-                <a href="https://www.nuget.org/profiles/kaysta" className="fas fa-archive" target="_blank">
-                  <span className="label">&nbsp;</span>
-                </a>
-              </li>
-            </ul>
-            <div className="copyright">
-              <span>&copy; 2019 responsive kaysta</span>
-            </div>
-          </footer>
+              <Route path="/stuff" render={() => (
+                // tslint:disable-next-line: jsx-no-lambda
+                <MainPage viewContext="PageStuffContext" />
+              )} />
+
+              <Route path="/latestarticles" render={() => (
+                // tslint:disable-next-line: jsx-no-lambda
+                <MainPage viewContext="PageArticlesContext" />
+              )} />
+
+              <Route path="/contact" render={() => (
+                // tslint:disable-next-line: jsx-no-lambda
+                <MainPage viewContainer={this.state.storeContainer} />
+              )} />
+
+            </article>
+            <Footer />
           </>
-      </HashRouter>
+        </BrowserRouter>
+      </React.Suspense>
     );
   }
 }

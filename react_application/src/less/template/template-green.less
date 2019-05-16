@@ -2,9 +2,13 @@
 
 @import "../global.less";
 
+.container.green > ul li {
+    color: @style-green-color;
+}
+
 .green {
     color: @style-green-color;
-    background-color: @style-green-bg-color;
+    background-color: @style-green-bg-color !important;
 }
 
 .green a:hover {
@@ -15,48 +19,4 @@
     width: 100%;
     color: @style-green-color;
     border-bottom: @style-green-border-color solid thin !important;
-}
-
-div.green a, 
-div.green p,
-div.green ul,
-div.green li,
-div.green h2,
-div.green h3,
-div.green h4,
-div.green h5, 
-div.green h6 {
-    color: @style-green-color;
-}
-
-section.green a, 
-section.green p,
-section.green ul,
-section.green li,
-section.green h2,
-section.green h3,
-section.green h4,
-section.green h5, 
-section.green h6 {
-    color: @style-green-color;
-}
-
-section.green header.major h2,
-section.green header.major p {
-    color: @style-green-color;
-}
-
-header.green,
-header.green h2, 
-header.green p {
-    color: @global-text-color;
-    background-color: @style-transparent-bg-color;
-}
-
-.icon.green * {
-    color: @style-green-color;
-}
-
-.icon.green a:hover {
-    color: @global-link-hover-color;
 }
