@@ -3,7 +3,7 @@ import * as React from 'react';
 
 import IStoreState from 'src/application/interfaces/core/IStoreState';
 import IViewState from 'src/application/interfaces/core/IViewState';
-import Callback from "src/components/core/Callback";
+import Spinner from "src/components/core/Spinner";
 
 const ArticleBanner = React.lazy(() => import('src/components/organism/ArticleBanner'));
 const EyeCatcher = React.lazy(() => import('src/components/organism/EyeCatcher'));
@@ -14,13 +14,13 @@ class PageHome extends React.Component<IViewState, IStoreState> {
 
     constructor(props: IViewState, state: IStoreState) {
         super(props, state);
-        this.state = { storeContext: this.props.viewContext, storeContainer: [] };  
+        this.state = { storeContext: this.props.viewContext, storeContainer: [] };
     }
 
     public render() {
         return (
             <>
-                <React.Suspense key={this.props.viewContext} fallback={<Callback />}>
+                <React.Suspense key={this.props.viewContext} fallback={<Spinner />}>
 
                     <ArticleBanner header="welcome home"
                         paragraph="some fancy text describing this page"
@@ -36,7 +36,7 @@ class PageHome extends React.Component<IViewState, IStoreState> {
                     <SomeLoremContent header="Lorem Content 1" cssStyle="light" />
                     <EyeCatcher header="Eye-Catcher" paragraph="a fancy eye-catcher" cssStyle="green" />
                     <SomeLoremContent header="Lorem Content 2" cssStyle="light" />
-                    
+
                 </React.Suspense>
             </>
         );

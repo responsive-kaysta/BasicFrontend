@@ -3,7 +3,7 @@ import * as React from 'react';
 
 import IStoreState from 'src/application/interfaces/core/IStoreState';
 import IViewState from 'src/application/interfaces/core/IViewState';
-import Callback from 'src/components/core/Callback';
+import Spinner from 'src/components/core/Spinner';
 
 const PageHome = React.lazy(() => import('src/components/composition/PageHome'));
 const PageStuff = React.lazy(() => import('src/components/composition/PageStuff'));
@@ -29,7 +29,7 @@ class MainPage extends React.Component<IViewState, IStoreState> {
         else if (this.state.storeContext === "PageArticlesContext") {
             this.component = <PageArticles viewContext={this.state.storeContext} />;
         }
-        
+
         return true;
     }
 
@@ -40,7 +40,7 @@ class MainPage extends React.Component<IViewState, IStoreState> {
     public render() {
         return (
             <>
-                <React.Suspense fallback={<Callback />}>
+                <React.Suspense fallback={<Spinner />}>
                     {this.component}
                 </React.Suspense>
             </>

@@ -5,7 +5,7 @@ import { BrowserRouter, Route } from "react-router-dom";
 import IStoreState from 'src/application/interfaces/core/IStoreState';
 import IViewState from 'src/application/interfaces/core/IViewState';
 
-import Callback from "src/components/core/Callback";
+import Spinner from "src/components/core/Spinner";
 import Footer from "src/components/page/Footer";
 import Header from "src/components/page/Header";
 
@@ -25,7 +25,7 @@ class MainApplication extends React.Component<IViewState, IStoreState>  {
 
   public render() {
     return (
-      <React.Suspense key={this.props.viewContext} fallback={<Callback />}>
+      <React.Suspense key={this.props.viewContext} fallback={<Spinner />}>
         <BrowserRouter>
           <>
             <Header />
