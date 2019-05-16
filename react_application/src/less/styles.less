@@ -1,5 +1,6 @@
 // out: ../assets/css/styles.css
 
+
 /* 
   plugins & globals
 ---------------------------------------------------------------------------------------------------
@@ -79,53 +80,25 @@
 @import "template/template-purple.less";
 @import "template/template-transparent.less";
 
-
 /* 
   custom styles
 ---------------------------------------------------------------------------------------------------
 */
 
-.menu {
-  margin: 0;
-  padding: 0;
-  background-color: @global-menu-bg-color;
-  color: @global-text-color;
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
 }
 
-.menu ul li {
-  margin: 0.75rem !important;
-}
-
-#header nav {
-  margin: 0;
-  padding: 0;
-  width: 20%;
-  text-align: right;
-}
-
-#header nav a.menuToggle {
-  text-align: right;
-  padding-right: 1rem;
-}
-
-#header nav a.menuClose {
-  text-align: right;
-  padding-right: 1rem;
-}
-
-#nav div > ul {
-  list-style: none;
-  text-align: left;
-}
-
-#nav div ul > li {
-  list-style: none;
-  text-align: left;
+@keyframes App-logo-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
 }
 
 .displayBlock {
   display: block;
-  opacity: 0.75;
+  opacity: 0.85;
 }
 
 .displayNone { 
@@ -214,12 +187,3 @@ body.regular #page-wrapper {
 
 }
 
-/*
----------------------------------------------------------------------------------------------------
-leave because of reasons
----------------------------------------------------------------------------------------------------
-@keyframes App-logo-spin {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
-  }
-*/ 

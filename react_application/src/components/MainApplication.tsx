@@ -5,10 +5,16 @@ import { BrowserRouter, Route } from "react-router-dom";
 import IStoreState from 'src/application/interfaces/core/IStoreState';
 import IViewState from 'src/application/interfaces/core/IViewState';
 
+import Callback from "src/components/core/Callback";
 import Footer from "src/components/page/Footer";
 import Header from "src/components/page/Header";
 
-const MainPage = React.lazy(() => import("src/components/template/MainPage"));
+const MainPage = React.lazy(() => import('src/components/template/MainPage'));
+
+/*
+    https://blog.logrocket.com/async-rendering-in-react-with-suspense-5d0eaac886c8
+
+*/
 
 class MainApplication extends React.Component<IViewState, IStoreState>  {
 
@@ -17,23 +23,9 @@ class MainApplication extends React.Component<IViewState, IStoreState>  {
     this.state = { storeContext: this.props.viewContext || "MainPageContext", storeContainer: this.props.viewContainer || [] };
   }
 
-  public async componentWillMount() {
-
-    // tslint:disable-next-line: no-console
-    console.log("MainApplication: componentWillMount");
-    return true;
-  }
-
-  public async componentDidMount() {
-
-    // tslint:disable-next-line: no-console
-    console.log("MainApplication: componentDidMount");
-    return true;
-  }
-
   public render() {
     return (
-      <React.Suspense fallback={<>Loading...</>}>
+      <React.Suspense key={this.props.viewContext} fallback={<Callback />}>
         <BrowserRouter>
           <>
             <Header />
@@ -47,6 +39,11 @@ class MainApplication extends React.Component<IViewState, IStoreState>  {
               <Route path="/stuff" render={() => (
                 // tslint:disable-next-line: jsx-no-lambda
                 <MainPage viewContext="PageStuffContext" />
+              )} />
+
+              <Route path="/latestarticles" render={() => (
+                // tslint:disable-next-line: jsx-no-lambda
+                <MainPage viewContext="PageArticlesContext" />
               )} />
 
               <Route path="/contact" render={() => (

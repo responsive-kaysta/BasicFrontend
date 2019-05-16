@@ -6,11 +6,10 @@ import IViewState from 'src/application/interfaces/core/IViewState';
 import Callback from "src/components/core/Callback";
 
 const ArticleBanner = React.lazy(() => import('src/components/organism/ArticleBanner'));
-const EyeCatcher = React.lazy(() => import('src/components/organism/EyeCatcher'));
-const SomeLoremContent = React.lazy(() => import('src/components/organism/SectionSomeLoremContent'));
 const SectionSpotlight = React.lazy(() => import('src/components/organism/SectionSpotlight'));
+const TodoList = React.lazy(() => import('src/components/Todo/TodoList'));
 
-class PageStuff extends React.Component<IViewState, IStoreState> {
+class PageSources extends React.Component<IViewState, IStoreState> {
 
     constructor(props: IViewState, state: IStoreState) {
         super(props, state);
@@ -23,7 +22,7 @@ class PageStuff extends React.Component<IViewState, IStoreState> {
 
                 <React.Suspense key={this.props.viewContext} fallback={<Callback />}>
 
-                    <ArticleBanner header="PageStuff"
+                    <ArticleBanner header="PageSources"
                         paragraph="some fancy text describing this page"
                         cssStyle="transparent" />
 
@@ -34,9 +33,7 @@ class PageStuff extends React.Component<IViewState, IStoreState> {
                             cssStyle="light" />
                     </div>
 
-                    <SomeLoremContent header="Lorem Content 1" cssStyle="light" />
-                    <EyeCatcher header="Eye-Catcher" paragraph="a fancy eye-catcher" cssStyle="green" />
-                    <SomeLoremContent header="Lorem Content 2" cssStyle="light" />
+                    <TodoList viewContext="light" />
 
                 </React.Suspense>
             </>
@@ -45,4 +42,4 @@ class PageStuff extends React.Component<IViewState, IStoreState> {
 
 }
 
-export default PageStuff;
+export default PageSources;
