@@ -17,9 +17,6 @@
     margin: 0;
     padding: 0;
     position: absolute;
-  }
-
-  #menu {
     background-color: @global-menu-bg-color;
     color: @global-text-color;
   }
@@ -34,16 +31,16 @@
   }
 
   .menu a {
-    color: whitesmoke;    
+    color: @global-text-color;    
   }
 
   .menu a:hover {
-    color: red;    
+    color: @global-link-hover-color;    
   }
 
   .menu li {
-    color: whitesmoke;
-    border-bottom: thin solid whitesmoke;
+    color: @global-text-color;
+    border-bottom: @global-border;
     padding-bottom: 0.5rem;
     padding-top: 1rem;
   }
