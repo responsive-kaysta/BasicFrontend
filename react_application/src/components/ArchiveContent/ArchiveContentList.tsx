@@ -24,7 +24,6 @@ class ArchiveContentList extends React.Component<IViewState, IStoreState> {
                 <ArchiveContentListItem archiveContent={article} key={article.Id} />
             )
         })
-
         return this.ListContainer(mappedTodos, cssStyle);
     }
 
