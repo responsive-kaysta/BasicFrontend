@@ -33,9 +33,9 @@ class PageHome extends React.Component<IViewState, IStoreState> {
                             cssStyle="light" />
                     </div>
 
-                    <SomeLoremContent header="Lorem Content 1" cssStyle="light" />
+                    <SomeLoremContent header="Lorem Content 1" cssStyle="transparent" />
                     <EyeCatcher header="Eye-Catcher" paragraph="a fancy eye-catcher" cssStyle="green" />
-                    <SomeLoremContent header="Lorem Content 2" cssStyle="light" />
+                    <SomeLoremContent header="Lorem Content 2" cssStyle="transparent" />
 
                 </React.Suspense>
             </>
