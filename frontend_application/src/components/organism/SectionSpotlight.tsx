@@ -1,8 +1,8 @@
 
 import * as React from 'react';
 
-import IStoreState from 'src/application/interfaces/core/IStoreState';
-import ISectionSpotlight from 'src/application/interfaces/organism/ISectionSpotlight';
+import IStoreState from '../../application/interfaces/core/IStoreState';
+import ISectionSpotlight from '../../application/interfaces/organism/ISectionSpotlight';
 
 class SectionSpotlight extends React.Component<ISectionSpotlight, IStoreState> {
 
@@ -17,7 +17,7 @@ class SectionSpotlight extends React.Component<ISectionSpotlight, IStoreState> {
         const image = this.props.image;
         const header = this.props.header;
         const paragraph = this.props.paragraph;
-        
+
         return (
             <>
                 <section className={style}>

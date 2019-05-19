@@ -1,12 +1,12 @@
 
 import * as React from 'react';
 // Omitted
-import API from 'src/application/core/axios.api';
+import API from '../../application/core/axios.api';
 
-import IArchiveContent from 'src/application/interfaces/Archive/IArchiveContent';
-import IStoreState from 'src/application/interfaces/core/IStoreState';
-import IViewState from 'src/application/interfaces/core/IViewState';
-import TodoItem from 'src/components/Todo/TodoItem';
+import IArchiveContent from '../../application/interfaces/Archive/IArchiveContent';
+import IStoreState from '../../application/interfaces/core/IStoreState';
+import IViewState from '../../application/interfaces/core/IViewState';
+import TodoItem from '../../components/Todo/TodoItem';
 
 class TodoList extends React.Component<IViewState, IStoreState> {
 

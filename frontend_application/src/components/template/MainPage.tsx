@@ -1,14 +1,14 @@
 
 import * as React from 'react';
 
-import IStoreState from 'src/application/interfaces/core/IStoreState';
-import IViewState from 'src/application/interfaces/core/IViewState';
-import Spinner from 'src/components/core/Spinner';
+import IStoreState from '../../application/interfaces/core/IStoreState';
+import IViewState from '../../application/interfaces/core/IViewState';
+import Spinner from '../../components/core/Spinner';
 
-const PageHome = React.lazy(() => import('src/components/composition/PageHome'));
-const PageStuff = React.lazy(() => import('src/components/composition/PageStuff'));
-const PageArticles = React.lazy(() => import('src/components/composition/PageArticles'));
-const PageContact = React.lazy(() => import('src/components/composition/PageContact'));
+const PageHome = React.lazy(() => import('../../components/composition/PageHome'));
+const PageStuff = React.lazy(() => import('../../components/composition/PageStuff'));
+const PageArticles = React.lazy(() => import('../../components/composition/PageArticles'));
+const PageContact = React.lazy(() => import('../../components/composition/PageContact'));
 
 class MainPage extends React.Component<IViewState, IStoreState> {
 

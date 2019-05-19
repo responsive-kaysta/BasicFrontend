@@ -1,13 +1,10 @@
 
 import * as React from 'react';
 import { BrowserRouter, Route } from "react-router-dom";
-
-import IStoreState from 'src/application/interfaces/core/IStoreState';
-import IViewState from 'src/application/interfaces/core/IViewState';
-
-import Spinner from "src/components/core/Spinner";
-
-const MainPage = React.lazy(() => import('src/components/template/MainPage'));
+import IStoreState from '../application/interfaces/core/IStoreState';
+import IViewState from '../application/interfaces/core/IViewState';
+import Spinner from "../components/core/Spinner";
+const MainPage = React.lazy(() => import('../components/template/MainPage'));
 
 /*
     https://blog.logrocket.com/async-rendering-in-react-with-suspense-5d0eaac886c8

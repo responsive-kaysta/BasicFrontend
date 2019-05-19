@@ -1,8 +1,8 @@
 
 import * as React from 'react';
 
-import IStoreState from 'src/application/interfaces/core/IStoreState';
-import ISectionSpotlight from 'src/application/interfaces/organism/ISectionSpotlight';
+import IStoreState from '../../application/interfaces/core/IStoreState';
+import ISectionSpotlight from '../../application/interfaces/organism/ISectionSpotlight';
 
 class SectionSomeLoremContent extends React.Component<ISectionSpotlight, IStoreState> {
 

@@ -1,7 +1,6 @@
 
 import * as React from 'react';
-
-import IArchiveContent from 'src/application/interfaces/Archive/IArchiveContent';
+import IArchiveContent from '../../application/interfaces/Archive/IArchiveContent';
 
 function ArchiveContentListItem(props: { archiveContent: IArchiveContent; }) {
     return (

@@ -1,7 +1,7 @@
 
 import * as React from 'react';
 import { NavLink } from "react-router-dom";
-import ToggleMenu from "src/components/page/ToggleMenu";
+import ToggleMenu from "../../components/page/ToggleMenu";
 
 class Header extends React.Component {
 

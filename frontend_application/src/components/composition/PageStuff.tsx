@@ -1,16 +1,16 @@
 
 import * as React from 'react';
 
-import IStoreState from 'src/application/interfaces/core/IStoreState';
-import IViewState from 'src/application/interfaces/core/IViewState';
-import Spinner from "src/components/core/Spinner";
-import Footer from "src/components/page/Footer";
-import Header from "src/components/page/Header";
+import IStoreState from '../../application/interfaces/core/IStoreState';
+import IViewState from '../../application/interfaces/core/IViewState';
+import Spinner from "../../components/core/Spinner";
+import Footer from "../../components/page/Footer";
+import Header from "../../components/page/Header";
 
-const ArticleBanner = React.lazy(() => import('src/components/organism/ArticleBanner'));
-const EyeCatcher = React.lazy(() => import('src/components/organism/EyeCatcher'));
-const SomeLoremContent = React.lazy(() => import('src/components/organism/SectionSomeLoremContent'));
-const SectionSpotlight = React.lazy(() => import('src/components/organism/SectionSpotlight'));
+const ArticleBanner = React.lazy(() => import('../../components/organism/ArticleBanner'));
+const EyeCatcher = React.lazy(() => import('../../components/organism/EyeCatcher'));
+const SomeLoremContent = React.lazy(() => import('../../components/organism/SectionSomeLoremContent'));
+const SectionSpotlight = React.lazy(() => import('../../components/organism/SectionSpotlight'));
 
 class PageStuff extends React.Component<IViewState, IStoreState> {
 

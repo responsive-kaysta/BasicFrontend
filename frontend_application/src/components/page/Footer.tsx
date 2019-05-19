@@ -30,7 +30,7 @@ class Footer extends React.Component {
                         </li>
                     </ul>
                     <div className="copyright">
-                        <span>&copy; 2019 responsive kaysta</span>
+                        <span>&copy; 2019 responsive IT - mobile first!</span>
                     </div>
                 </footer>
             </>

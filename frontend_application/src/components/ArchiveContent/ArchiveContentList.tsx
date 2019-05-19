@@ -1,12 +1,11 @@
 
 import * as React from 'react';
 // Omitted
-import API from 'src/application/core/axios.api';
-
-import IArchiveContent from 'src/application/interfaces/Archive/IArchiveContent';
-import IStoreState from 'src/application/interfaces/core/IStoreState';
-import IViewState from 'src/application/interfaces/core/IViewState';
-import ArchiveContentListItem from 'src/components/ArchiveContent/ArchiveContentListItem';
+import API from '../../application/core/axios.api';
+import IArchiveContent from '../../application/interfaces/Archive/IArchiveContent';
+import IStoreState from '../../application/interfaces/core/IStoreState';
+import IViewState from '../../application/interfaces/core/IViewState';
+import ArchiveContentListItem from '../../components/ArchiveContent/ArchiveContentListItem';
 
 class ArchiveContentList extends React.Component<IViewState, IStoreState> {
     constructor(props: IViewState, state: IStoreState) {

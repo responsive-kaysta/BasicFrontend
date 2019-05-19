@@ -2,7 +2,7 @@
 import * as React from 'react';
 import { NavLink } from "react-router-dom";
 
-import IToggleMenuState from 'src/application/interfaces/page/IToggleMenuState';
+import IToggleMenuState from '../../application/interfaces/page/IToggleMenuState';
 
 class ToggleMenu extends React.Component<any, IToggleMenuState> {
 

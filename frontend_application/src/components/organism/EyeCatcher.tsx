@@ -1,8 +1,8 @@
 
 import * as React from 'react';
 
-import IStoreState from 'src/application/interfaces/core/IStoreState';
-import IEyeCatcher from 'src/application/interfaces/organism/IEyeCatcher';
+import IStoreState from '../../application/interfaces/core/IStoreState';
+import IEyeCatcher from '../../application/interfaces/organism/IEyeCatcher';
 
 class EyeCatcher extends React.Component<IEyeCatcher, IStoreState> {
 
