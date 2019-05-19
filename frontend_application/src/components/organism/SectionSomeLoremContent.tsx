@@ -1,6 +1,6 @@
 
 import * as React from 'react';
-import { animateScroll as scroll, Link } from 'react-scroll';
+import { Link } from 'react-scroll';
 import IStoreState from '../../application/interfaces/core/IStoreState';
 import ISectionSpotlight from '../../application/interfaces/organism/ISectionSpotlight';
 
