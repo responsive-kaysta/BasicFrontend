@@ -26,14 +26,30 @@ class PageHome extends React.Component<IViewState, IStoreState> {
 
                     <PageBanner
                         header='responsive IT'
-                        paragraph='IT &amp; Software Architecture, Engineering &amp; Consulting'
+                        paragraph='finest - reactive &amp; responsive - frontend'
                         cssStyle='light' />
 
                     <article id="main">
 
-                        <SomeLoremContent header="Lorem Content 1" cssStyle="transparent" />
-                        <EyeCatcher header="Eye-Catcher" paragraph="a fancy eye-catcher" cssStyle="green" elId="one" />
-                        <SomeLoremContent header="Lorem Content 2" cssStyle="transparent" />
+                        <EyeCatcher
+                            header="Eye-Catcher"
+                            paragraph="a fancy eye-catcher"
+                            cssStyle="green"
+                            elId="one" />
+
+                        <SomeLoremContent
+                            header="Lorem Content 1"
+                            cssStyle="light" />
+
+                        <EyeCatcher
+                            header="Eye-Catcher"
+                            paragraph="a fancy eye-catcher"
+                            cssStyle="purple"
+                            elId="two" />
+
+                        <SomeLoremContent
+                            header="Lorem Content 2"
+                            cssStyle="light" />
 
                     </article>
 
