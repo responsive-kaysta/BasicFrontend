@@ -26,7 +26,7 @@ class PageBanner extends React.Component<IPageBanner, IStoreState> {
                         <h2>{header}</h2>
                         <p>{paragraph}</p>
                     </div>
-                    <Link className="more" to="one" spy={true} smooth={true} duration={1000}>
+                    <Link className="more" to="one" spy={true} smooth={true} duration={1000} offset={-50}>
                         weiter
                     </Link>
 

@@ -5,7 +5,6 @@ import IViewState from '../../application/interfaces/core/IViewState';
 import Spinner from "../../components/core/Spinner";
 import Footer from "../../components/page/Footer";
 import Header from "../../components/page/Header";
-import { animateScroll as scroll } from 'react-scroll';
 
 const PageBanner = React.lazy(() => import('../../components/organism/PageBanner'));
 const EyeCatcher = React.lazy(() => import('../../components/organism/EyeCatcher'));
@@ -42,8 +41,6 @@ class PageHome extends React.Component<IViewState, IStoreState> {
                             header="Lorem Content 1"
                             cssStyle="light" />
 
-                        <a onClick={this.scrollToTop} href='#top'>To the top!</a>
-
                         <EyeCatcher
                             header="Eye-Catcher"
                             paragraph="a fancy eye-catcher"
@@ -53,8 +50,6 @@ class PageHome extends React.Component<IViewState, IStoreState> {
                         <SomeLoremContent
                             header="Lorem Content 2"
                             cssStyle="light" />
-
-                        <a onClick={this.scrollToTop} href='#top'>To the top!</a>
 
                     </article>
 
@@ -70,10 +65,6 @@ class PageHome extends React.Component<IViewState, IStoreState> {
         if (element != null) {
             element.setAttribute('class', 'landing');
         }
-    }
-
-    private scrollToTop() {
-        scroll.scrollToTop();
     }
 
 }
