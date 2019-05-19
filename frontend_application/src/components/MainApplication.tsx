@@ -41,7 +41,7 @@ class MainApplication extends React.Component<IViewState, IStoreState>  {
 
             <Route path="/contact" render={() => (
               // tslint:disable-next-line: jsx-no-lambda
-              <MainPage viewContainer='PageContactContext' />
+              <MainPage viewContext='PageContactContext' />
             )} />
 
           </>
