@@ -7,7 +7,7 @@ import Spinner from "../../components/core/Spinner";
 import Footer from "../../components/page/Footer";
 import Header from "../../components/page/Header";
 
-const ArticleBanner = React.lazy(() => import('../../components/organism/ArticleBanner'));
+const PageBanner = React.lazy(() => import('../../components/organism/PageBanner'));
 const EyeCatcher = React.lazy(() => import('../../components/organism/EyeCatcher'));
 const SomeLoremContent = React.lazy(() => import('../../components/organism/SectionSomeLoremContent'));
 const SectionSpotlight = React.lazy(() => import('../../components/organism/SectionSpotlight'));
@@ -25,23 +25,22 @@ class PageHome extends React.Component<IViewState, IStoreState> {
                 <React.Suspense key={this.props.viewContext} fallback={<Spinner />}>
 
                     <Header />
-                    <article id="main">
-                        <ArticleBanner header="welcome home"
-                            paragraph="some fancy text describing this page"
-                            cssStyle="transparent" />
 
-                        <div>
-                            <SectionSpotlight header="Spotlight"
-                                paragraph="Allways use some fancy effects"
-                                image="/assets/images/spotlight_planing.png"
-                                cssStyle="light" />
-                        </div>
+                    <PageBanner
+                        header='responsive IT'
+                        paragraph='IT &amp; Software Architecture, Engineering &amp; Consulting'
+                        cssStyle='light' />
+
+                    <article id="main">
 
                         <SomeLoremContent header="Lorem Content 1" cssStyle="transparent" />
                         <EyeCatcher header="Eye-Catcher" paragraph="a fancy eye-catcher" cssStyle="green" />
                         <SomeLoremContent header="Lorem Content 2" cssStyle="transparent" />
+
                     </article>
+
                     <Footer />
+
                 </React.Suspense>
             </>
         );
@@ -50,7 +49,7 @@ class PageHome extends React.Component<IViewState, IStoreState> {
     public async componentWillMount() {
         const element = document.getElementById("body");
         if (element != null) {
-            element.setAttribute('class', 'landing is-mobile');
+            element.setAttribute('class', 'landing');
         }
     }
 
