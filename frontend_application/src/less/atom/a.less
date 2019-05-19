@@ -1,0 +1,23 @@
+// out: false
+
+@import "../global.less";
+
+a {
+    border-bottom: @global-border-bottom;    
+    text-decoration: @global-text-decoration;
+    font-family: @global-font-family;
+    text-transform: @global-text-transform;
+}
+
+a:hover {
+    text-transform: @global-text-transform;
+    text-decoration: @global-text-decoration;
+}
+
+a {
+    color: @global-link-color;
+}
+
+a:hover {
+    color: @global-link-hover-color;
+}
