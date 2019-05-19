@@ -8,7 +8,7 @@ import Spinner from "../components/core/Spinner";
 const MainPage = React.lazy(() => import('../components/template/MainPage'));
 
 /*
-    https://blog.logrocket.com/async-rendering-in-react-with-suspense-5d0eaac886c8
+  credits: https://blog.logrocket.com/async-rendering-in-react-with-suspense-5d0eaac886c8
 
 */
 

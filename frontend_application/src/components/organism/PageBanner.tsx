@@ -2,6 +2,12 @@
 import * as React from 'react';
 import IStoreState from '../../application/interfaces/core/IStoreState';
 import IPageBanner from '../../application/interfaces/organism/IPageBanner';
+import * as Scroll from 'react-scroll';
+
+/*
+    credits: https://github.com/fisshy/react-scroll
+
+*/
 
 class PageBanner extends React.Component<IPageBanner, IStoreState> {
 
@@ -11,6 +17,8 @@ class PageBanner extends React.Component<IPageBanner, IStoreState> {
         const header = this.props.header;
         const paragraph = this.props.paragraph;
 
+        let Link = Scroll.Link;
+
         return (
             <>
                 <section id="banner">
@@ -18,7 +26,10 @@ class PageBanner extends React.Component<IPageBanner, IStoreState> {
                         <h2>{header}</h2>
                         <p>{paragraph}</p>
                     </div>
-                    <a href="#one" className="more scrolly">weiter</a>
+                    <Link className="more" to="one" spy={true} smooth={true} duration={1000}>
+                        weiter
+                    </Link>
+
                 </section>
             </>
         );
