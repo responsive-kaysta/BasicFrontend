@@ -1,6 +1,5 @@
 
 import * as React from 'react';
-
 import IStoreState from '../../application/interfaces/core/IStoreState';
 import IViewState from '../../application/interfaces/core/IViewState';
 import Spinner from '../../components/core/Spinner';

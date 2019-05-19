@@ -1,6 +1,5 @@
 
 import * as React from 'react';
-
 import IStoreState from '../../application/interfaces/core/IStoreState';
 import IEyeCatcher from '../../application/interfaces/organism/IEyeCatcher';
 

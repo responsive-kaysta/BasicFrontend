@@ -1,6 +1,5 @@
 
 import * as React from 'react';
-
 import IStoreState from '../../application/interfaces/core/IStoreState';
 import IPageBanner from '../../application/interfaces/organism/IPageBanner';
 
