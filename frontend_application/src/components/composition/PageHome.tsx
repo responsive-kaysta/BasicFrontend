@@ -10,7 +10,6 @@ import Header from "../../components/page/Header";
 const PageBanner = React.lazy(() => import('../../components/organism/PageBanner'));
 const EyeCatcher = React.lazy(() => import('../../components/organism/EyeCatcher'));
 const SomeLoremContent = React.lazy(() => import('../../components/organism/SectionSomeLoremContent'));
-const SectionSpotlight = React.lazy(() => import('../../components/organism/SectionSpotlight'));
 
 class PageHome extends React.Component<IViewState, IStoreState> {
 
@@ -34,7 +33,7 @@ class PageHome extends React.Component<IViewState, IStoreState> {
                     <article id="main">
 
                         <SomeLoremContent header="Lorem Content 1" cssStyle="transparent" />
-                        <EyeCatcher header="Eye-Catcher" paragraph="a fancy eye-catcher" cssStyle="green" />
+                        <EyeCatcher header="Eye-Catcher" paragraph="a fancy eye-catcher" cssStyle="green" elId="one" />
                         <SomeLoremContent header="Lorem Content 2" cssStyle="transparent" />
 
                     </article>
