@@ -6,10 +6,6 @@ import IArticleBanner from '../../application/interfaces/organism/IArticleBanner
 
 class ArticleBanner extends React.Component<IArticleBanner, IStoreState> {
 
-    constructor(props: IArticleBanner, state: IStoreState) {
-        super(props, state);
-    }
-
     public render() {
 
         const style = this.props.cssStyle;

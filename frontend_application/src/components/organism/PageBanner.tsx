@@ -6,10 +6,6 @@ import IPageBanner from '../../application/interfaces/organism/IPageBanner';
 
 class PageBanner extends React.Component<IPageBanner, IStoreState> {
 
-    constructor(props: IPageBanner, state: IStoreState) {
-        super(props, state);
-    }
-
     public render() {
 
         const style = this.props.cssStyle;

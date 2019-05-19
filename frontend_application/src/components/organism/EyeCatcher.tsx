@@ -6,10 +6,6 @@ import IEyeCatcher from '../../application/interfaces/organism/IEyeCatcher';
 
 class EyeCatcher extends React.Component<IEyeCatcher, IStoreState> {
 
-    constructor(props: IEyeCatcher, state: IStoreState) {
-        super(props, state);
-    }
-
     public render() {
 
         const style = "special " + this.props.cssStyle;
