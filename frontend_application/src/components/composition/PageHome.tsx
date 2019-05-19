@@ -72,7 +72,7 @@ class PageHome extends React.Component<IViewState, IStoreState> {
         }
     }
 
-    public scrollToTop() {
+    private scrollToTop() {
         scroll.scrollToTop();
     }
 
