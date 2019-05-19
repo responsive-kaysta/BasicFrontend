@@ -4,6 +4,8 @@ import * as React from 'react';
 import IStoreState from 'src/application/interfaces/core/IStoreState';
 import IViewState from 'src/application/interfaces/core/IViewState';
 import Spinner from "src/components/core/Spinner";
+import Footer from "src/components/page/Footer";
+import Header from "src/components/page/Header";
 
 const ArticleBanner = React.lazy(() => import('src/components/organism/ArticleBanner'));
 const SectionSpotlight = React.lazy(() => import('src/components/organism/SectionSpotlight'));
@@ -21,20 +23,22 @@ class PageArticles extends React.Component<IViewState, IStoreState> {
             <>
 
                 <React.Suspense key={this.props.viewContext} fallback={<Spinner />}>
+                    <Header />
+                    <article id="main">
+                        <ArticleBanner header="The latest news"
+                            paragraph="some fancy text describing this page"
+                            cssStyle="transparent" />
 
-                    <ArticleBanner header="The latest news"
-                        paragraph="some fancy text describing this page"
-                        cssStyle="transparent" />
+                        <div>
+                            <SectionSpotlight header="Spotlight"
+                                paragraph="Allways use some fancy effects"
+                                image="/assets/images/spotlight_planing.png"
+                                cssStyle="light" />
+                        </div>
 
-                    <div>
-                        <SectionSpotlight header="Spotlight"
-                            paragraph="Allways use some fancy effects"
-                            image="/assets/images/spotlight_planing.png"
-                            cssStyle="light" />
-                    </div>
-
-                    <ArchiveContentList viewContext="light" />
-
+                        <ArchiveContentList viewContext="light" />
+                    </article>
+                    <Footer />
                 </React.Suspense>
             </>
         );

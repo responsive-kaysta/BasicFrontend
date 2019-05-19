@@ -4,6 +4,8 @@ import * as React from 'react';
 import IStoreState from 'src/application/interfaces/core/IStoreState';
 import IViewState from 'src/application/interfaces/core/IViewState';
 import Spinner from "src/components/core/Spinner";
+import Footer from "src/components/page/Footer";
+import Header from "src/components/page/Header";
 
 const ArticleBanner = React.lazy(() => import('src/components/organism/ArticleBanner'));
 const EyeCatcher = React.lazy(() => import('src/components/organism/EyeCatcher'));
@@ -22,24 +24,34 @@ class PageHome extends React.Component<IViewState, IStoreState> {
             <>
                 <React.Suspense key={this.props.viewContext} fallback={<Spinner />}>
 
-                    <ArticleBanner header="welcome home"
-                        paragraph="some fancy text describing this page"
-                        cssStyle="transparent" />
+                    <Header />
+                    <article id="main">
+                        <ArticleBanner header="welcome home"
+                            paragraph="some fancy text describing this page"
+                            cssStyle="transparent" />
 
-                    <div>
-                        <SectionSpotlight header="Spotlight"
-                            paragraph="Allways use some fancy effects"
-                            image="/assets/images/spotlight_planing.png"
-                            cssStyle="light" />
-                    </div>
+                        <div>
+                            <SectionSpotlight header="Spotlight"
+                                paragraph="Allways use some fancy effects"
+                                image="/assets/images/spotlight_planing.png"
+                                cssStyle="light" />
+                        </div>
 
-                    <SomeLoremContent header="Lorem Content 1" cssStyle="transparent" />
-                    <EyeCatcher header="Eye-Catcher" paragraph="a fancy eye-catcher" cssStyle="green" />
-                    <SomeLoremContent header="Lorem Content 2" cssStyle="transparent" />
-
+                        <SomeLoremContent header="Lorem Content 1" cssStyle="transparent" />
+                        <EyeCatcher header="Eye-Catcher" paragraph="a fancy eye-catcher" cssStyle="green" />
+                        <SomeLoremContent header="Lorem Content 2" cssStyle="transparent" />
+                    </article>
+                    <Footer />
                 </React.Suspense>
             </>
         );
+    }
+
+    public async componentWillMount() {
+        const element = document.getElementById("body");
+        if (element != null) {
+            element.setAttribute('class', 'landing is-mobile');
+        }
     }
 
 }

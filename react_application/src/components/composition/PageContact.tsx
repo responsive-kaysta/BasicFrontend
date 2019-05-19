@@ -8,10 +8,11 @@ import Footer from "src/components/page/Footer";
 import Header from "src/components/page/Header";
 
 const ArticleBanner = React.lazy(() => import('src/components/organism/ArticleBanner'));
+const EyeCatcher = React.lazy(() => import('src/components/organism/EyeCatcher'));
+const SomeLoremContent = React.lazy(() => import('src/components/organism/SectionSomeLoremContent'));
 const SectionSpotlight = React.lazy(() => import('src/components/organism/SectionSpotlight'));
-const TodoList = React.lazy(() => import('src/components/Todo/TodoList'));
 
-class PageSources extends React.Component<IViewState, IStoreState> {
+class PageContact extends React.Component<IViewState, IStoreState> {
 
     constructor(props: IViewState, state: IStoreState) {
         super(props, state);
@@ -23,9 +24,11 @@ class PageSources extends React.Component<IViewState, IStoreState> {
             <>
 
                 <React.Suspense key={this.props.viewContext} fallback={<Spinner />}>
+
                     <Header />
                     <article id="main">
-                        <ArticleBanner header="PageSources"
+
+                        <ArticleBanner header="PageContact"
                             paragraph="some fancy text describing this page"
                             cssStyle="transparent" />
 
@@ -36,7 +39,10 @@ class PageSources extends React.Component<IViewState, IStoreState> {
                                 cssStyle="light" />
                         </div>
 
-                        <TodoList viewContext="light" />
+                        <SomeLoremContent header="Lorem Content 1" cssStyle="light" />
+                        <EyeCatcher header="Eye-Catcher" paragraph="a fancy eye-catcher" cssStyle="green" />
+                        <SomeLoremContent header="Lorem Content 2" cssStyle="light" />
+
                     </article>
                     <Footer />
                 </React.Suspense>
@@ -46,4 +52,4 @@ class PageSources extends React.Component<IViewState, IStoreState> {
 
 }
 
-export default PageSources;
+export default PageContact;

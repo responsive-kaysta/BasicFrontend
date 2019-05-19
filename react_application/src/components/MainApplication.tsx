@@ -6,8 +6,6 @@ import IStoreState from 'src/application/interfaces/core/IStoreState';
 import IViewState from 'src/application/interfaces/core/IViewState';
 
 import Spinner from "src/components/core/Spinner";
-import Footer from "src/components/page/Footer";
-import Header from "src/components/page/Header";
 
 const MainPage = React.lazy(() => import('src/components/template/MainPage'));
 
@@ -28,31 +26,27 @@ class MainApplication extends React.Component<IViewState, IStoreState>  {
       <React.Suspense key={this.props.viewContext} fallback={<Spinner />}>
         <BrowserRouter>
           <>
-            <Header />
-            <article id="main">
 
-              <Route exact={true} path="/" render={() => (
-                // tslint:disable-next-line: jsx-no-lambda
-                <MainPage viewContext="PageHomeContext" />
-              )} />
+            <Route exact={true} path="/" render={() => (
+              // tslint:disable-next-line: jsx-no-lambda
+              <MainPage viewContext="PageHomeContext" />
+            )} />
 
-              <Route path="/stuff" render={() => (
-                // tslint:disable-next-line: jsx-no-lambda
-                <MainPage viewContext="PageStuffContext" />
-              )} />
+            <Route path="/stuff" render={() => (
+              // tslint:disable-next-line: jsx-no-lambda
+              <MainPage viewContext="PageStuffContext" />
+            )} />
 
-              <Route path="/latestarticles" render={() => (
-                // tslint:disable-next-line: jsx-no-lambda
-                <MainPage viewContext="PageArticlesContext" />
-              )} />
+            <Route path="/latestarticles" render={() => (
+              // tslint:disable-next-line: jsx-no-lambda
+              <MainPage viewContext="PageArticlesContext" />
+            )} />
 
-              <Route path="/contact" render={() => (
-                // tslint:disable-next-line: jsx-no-lambda
-                <MainPage viewContainer={this.state.storeContainer} />
-              )} />
+            <Route path="/contact" render={() => (
+              // tslint:disable-next-line: jsx-no-lambda
+              <MainPage viewContainer='PageContactContext' />
+            )} />
 
-            </article>
-            <Footer />
           </>
         </BrowserRouter>
       </React.Suspense>
