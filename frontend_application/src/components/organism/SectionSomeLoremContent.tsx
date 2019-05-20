@@ -1,8 +1,8 @@
 
 import * as React from 'react';
-import { Link } from 'react-scroll';
 import IStoreState from '../../application/interfaces/core/IStoreState';
 import ISectionSpotlight from '../../application/interfaces/organism/ISectionSpotlight';
+import ToTopButton from '../core/ToTopButton';
 
 class SectionSomeLoremContent extends React.Component<ISectionSpotlight, IStoreState> {
 
@@ -31,9 +31,9 @@ class SectionSomeLoremContent extends React.Component<ISectionSpotlight, IStoreS
                     <p className="paragraph">
                         Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc commodo laoreet turpis a ultrices. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed scelerisque nisi consequat nunc porttitor sagittis. Proin tempor venenatis quam non vehicula. Praesent interdum pulvinar dapibus. Nunc malesuada augue fermentum nunc auctor dapibus.
                                     </p>
-                    <Link className="totop" to='banner' spy={true} smooth={true} duration={1000}>
-                        to top
-                        </Link>
+
+                    <ToTopButton />
+
                 </section>
             </>
         );

@@ -10,6 +10,8 @@ const PageBanner = React.lazy(() => import('../../components/organism/PageBanner
 const EyeCatcher = React.lazy(() => import('../../components/organism/EyeCatcher'));
 const SomeLoremContent = React.lazy(() => import('../../components/organism/SectionSomeLoremContent'));
 
+// credits: https://wiki.ubuntuusers.de/Apache/Virtual_Hosts/
+
 class PageHome extends React.Component<IViewState, IStoreState> {
 
     constructor(props: IViewState, state: IStoreState) {
