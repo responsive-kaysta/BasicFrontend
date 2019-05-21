@@ -15,7 +15,7 @@ class Footer extends React.Component {
                                 className="fab fa-xing"
                                 target="_blank"
                                 rel="noopener noreferer">
-                                <span className="label">&nbsp;</span>""
+                                <span className="label">&nbsp;</span>
                             </a>
                         </li>
                         <li>
