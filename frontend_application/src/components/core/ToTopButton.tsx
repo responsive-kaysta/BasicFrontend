@@ -5,17 +5,16 @@ var scroll = Scroll.animateScroll;
 
 function handleClick(e: { preventDefault: () => void; }) {
     e.preventDefault();
-    console.log('The link was clicked.');
     scroll.scrollToTop();
 }
 
 function ToTopButton() {
     return (
-        <>
-            <button onClick={handleClick}>
-                to top
+        <div className='totop-wrapper'>
+            <button className='totop' onClick={handleClick}>
+                &#x2191;
             </button>
-        </>
+        </div>
     )
 }
 
