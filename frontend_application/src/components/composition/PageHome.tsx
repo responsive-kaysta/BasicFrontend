@@ -27,15 +27,15 @@ class PageHome extends React.Component<IViewState, IStoreState> {
                     <Header />
 
                     <PageBanner
-                        header='responsive IT'
+                        header='Basic Frontend'
                         paragraph='finest - reactive &amp; responsive - frontend'
                         cssStyle='light' />
 
                     <article id="main">
 
                         <EyeCatcher
-                            header="Eye-Catcher"
-                            paragraph="a fancy eye-catcher"
+                            header="Umbraco, reactjs, css"
+                            paragraph="Die Kombination – Umbraco & reactjs & css"
                             cssStyle="green"
                             elId="one" />
 
