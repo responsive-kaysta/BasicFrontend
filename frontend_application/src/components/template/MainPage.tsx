@@ -11,7 +11,7 @@ const PageContact = React.lazy(() => import('../../components/composition/PageCo
 
 class MainPage extends React.Component<IViewState, IStoreState> {
 
-    private component: any;
+    private component: any | undefined;
 
     constructor(props: IViewState, state: IStoreState) {
         super(props, state);

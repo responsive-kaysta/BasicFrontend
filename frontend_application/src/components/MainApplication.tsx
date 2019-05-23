@@ -26,22 +26,18 @@ class MainApplication extends React.Component<IViewState, IStoreState>  {
           <>
 
             <Route exact={true} path="/" render={() => (
-              // tslint:disable-next-line: jsx-no-lambda
               <MainPage viewContext="PageHomeContext" />
             )} />
 
             <Route path="/stuff" render={() => (
-              // tslint:disable-next-line: jsx-no-lambda
               <MainPage viewContext="PageStuffContext" />
             )} />
 
             <Route path="/latestarticles" render={() => (
-              // tslint:disable-next-line: jsx-no-lambda
               <MainPage viewContext="PageArticlesContext" />
             )} />
 
             <Route path="/contact" render={() => (
-              // tslint:disable-next-line: jsx-no-lambda
               <MainPage viewContext='PageContactContext' />
             )} />
 
