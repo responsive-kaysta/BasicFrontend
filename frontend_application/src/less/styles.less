@@ -1,6 +1,5 @@
 // out: ../assets/css/styles.css
 
-
 /* 
   plugins & globals
 ---------------------------------------------------------------------------------------------------
@@ -56,7 +55,6 @@
   page
 ---------------------------------------------------------------------------------------------------
 */
-
 @import "page/body.less";
 @import "page/footer.less";
 @import "page/header.less";
@@ -67,7 +65,6 @@
   template
 ---------------------------------------------------------------------------------------------------
 */
-
 @import "template/template-gray.less";
 @import "template/template-green.less";
 @import "template/template-light.less";
@@ -89,8 +86,12 @@
 }
 
 @keyframes spinner-spin {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .clearfix {
@@ -125,10 +126,14 @@ body.is-mobile #main > header {
 }
 
 body.landing #page-wrapper {
-  background: -moz-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)), url(@global-bg-image);
-  background: -webkit-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)), url(@global-bg-image);
-  background-image: -ms-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)), url(@global-bg-image);
-  background: linear-gradient(to bottom, #0b3536 0%, rgba(125, 185, 232, 0)), url(@global-bg-image);
+  background: -moz-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)),
+    url(@global-bg-image);
+  background: -webkit-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)),
+    url(@global-bg-image);
+  background-image: -ms-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)),
+    url(@global-bg-image);
+  background: linear-gradient(to bottom, #0b3536 0%, rgba(125, 185, 232, 0)),
+    url(@global-bg-image);
   background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
@@ -138,10 +143,14 @@ body.landing #page-wrapper {
 }
 
 body.regular #page-wrapper {
-  background: -moz-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)), url(@global-bg-image);
-  background: -webkit-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)), url(@global-bg-image);
-  background-image: -ms-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)), url(@global-bg-image);
-  background: linear-gradient(to bottom, #0b3536 0%, rgba(125, 185, 232, 0)), url(@global-bg-image);
+  background: -moz-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)),
+    url(@global-bg-image);
+  background: -webkit-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)),
+    url(@global-bg-image);
+  background-image: -ms-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)),
+    url(@global-bg-image);
+  background: linear-gradient(to bottom, #0b3536 0%, rgba(125, 185, 232, 0)),
+    url(@global-bg-image);
   background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
@@ -151,7 +160,6 @@ body.regular #page-wrapper {
 }
 
 @media screen and (min-width: 1680px) {
-
   #menu {
     width: 100%;
   }
@@ -159,11 +167,9 @@ body.regular #page-wrapper {
   #header nav {
     width: 40%;
   }
-
 }
 
-@media screen and (max-width: 1680px) { 
-
+@media screen and (max-width: 1680px) {
   #menu {
     width: 100%;
   }
@@ -171,11 +177,9 @@ body.regular #page-wrapper {
   #header nav {
     width: 40%;
   }
-
 }
 
 @media screen and (max-width: 1280px) {
-
   #menu {
     width: 100%;
   }
@@ -183,11 +187,9 @@ body.regular #page-wrapper {
   #header nav {
     width: 40%;
   }
-
 }
 
 @media screen and (max-width: 980px) {
-
   #menu {
     width: 100%;
   }
@@ -195,11 +197,9 @@ body.regular #page-wrapper {
   #header nav {
     width: 50%;
   }
-
 }
 
 @media screen and (max-width: 736px) {
-
   #menu {
     width: 100%;
   }
@@ -207,6 +207,4 @@ body.regular #page-wrapper {
   #header nav {
     width: 70%;
   }
-
 }
-
