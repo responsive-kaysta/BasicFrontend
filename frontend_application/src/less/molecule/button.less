@@ -7,22 +7,22 @@
 ---------------------------------------------------------------------------------------------------
 */
 a.button {
-    border-radius: 5px;
-    margin-top: 20px;
-    font-family: "Lato", sans-serif !important;
-    font-size: 1rem;
-    background: transparent;
+  border-radius: 5px;
+  margin-top: 20px;
+  font-family: "Lato", sans-serif !important;
+  font-size: 1rem;
+  background: transparent;
 
-    color: @a-button-color !important;
-    background: @a-button-bg !important;
-    background-color: @a-button-bg !important;
-    text-transform: @global-text-transform !important;
-    text-decoration: @global-text-decoration !important;
+  color: @a-button-color !important;
+  background: @a-button-bg !important;
+  background-color: @a-button-bg !important;
+  text-transform: @global-text-transform !important;
+  text-decoration: @global-text-decoration !important;
 }
 
 a.button:hover {
-    background: @a-button-bg-hover !important;
-    background-color: @a-button-bg-hover !important;
+  background: @a-button-bg-hover !important;
+  background-color: @a-button-bg-hover !important;
 }
 
 /* 
@@ -30,21 +30,21 @@ a.button:hover {
 ---------------------------------------------------------------------------------------------------
 */
 a.button.special {
-    border-radius: 3px;
-    margin-top: 20px;
-    font-family: "Lato", sans-serif !important;
-    font-size: 1rem;
+  border-radius: 3px;
+  margin-top: 20px;
+  font-family: "Lato", sans-serif !important;
+  font-size: 1rem;
 
-    color: @a-button-special-color !important;
-    background: @a-button-special-bg !important;
-    background-color: @a-button-special-bg !important;
-    text-transform: @global-text-transform !important;
-    text-decoration: @global-text-decoration !important;
+  color: @a-button-special-color !important;
+  background: @a-button-special-bg !important;
+  background-color: @a-button-special-bg !important;
+  text-transform: @global-text-transform !important;
+  text-decoration: @global-text-decoration !important;
 }
 
-a.button.special:hover{
-    background: @a-button-special-bg-hover !important;
-    background-color: @a-button-special-bg-hover !important;
+a.button.special:hover {
+  background: @a-button-special-bg-hover !important;
+  background-color: @a-button-special-bg-hover !important;
 }
 
 /* 
@@ -55,22 +55,23 @@ a.button.special:hover{
 input[type="submit"],
 input[type="reset"],
 input[type="button"],
-button, .button {   
-    border-radius: 10px;
-    border: 0;    
-    cursor: pointer;
-    display: inline-block;
-    font-size: 0.8rem;
-    font-weight: 600;
-    height: 3.125rem;
-    letter-spacing: 0.225rem;
-    line-height: 3.125rem;
-    padding: 0 2.75rem;
-    text-align: center;    
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    box-shadow: inset 0 0 0 2px @button-box-shadow-color;
+button,
+.button {
+  border-radius: 0.75rem;
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  height: 3.125rem;
+  letter-spacing: 0.225rem;
+  line-height: 3.125rem;
+  padding: 0 2.75rem;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  box-shadow: inset 0 0 0 2px @button-box-shadow-color;
 }
 
 input[type="submit"].icon:before,
@@ -78,7 +79,7 @@ input[type="reset"].icon:before,
 input[type="button"].icon:before,
 button.icon:before,
 .button.icon:before {
-    margin-right: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 input[type="submit"].fit,
@@ -86,9 +87,9 @@ input[type="reset"].fit,
 input[type="button"].fit,
 button.fit,
 .button.fit {
-    display: block;
-    margin: 0 0 1rem 0;
-    width: 100%;
+  display: block;
+  margin: 0 0 1rem 0;
+  width: 100%;
 }
 
 input[type="submit"].small,
@@ -96,7 +97,7 @@ input[type="reset"].small,
 input[type="button"].small,
 button.small,
 .button.small {
-    font-size: 0.8rem;
+  font-size: 0.8rem;
 }
 
 input[type="submit"].big,
@@ -104,10 +105,11 @@ input[type="reset"].big,
 input[type="button"].big,
 button.big,
 .button.big {
-    font-size: 1.35rem;
+  font-size: 1.35rem;
 }
 
-input[type="submit"].disabled, input[type="submit"]:disabled,
+input[type="submit"].disabled,
+input[type="submit"]:disabled,
 input[type="reset"].disabled,
 input[type="reset"]:disabled,
 input[type="button"].disabled,
@@ -116,11 +118,11 @@ button.disabled,
 button:disabled,
 .button.disabled,
 .button:disabled {
-    -moz-pointer-events: none;
-    -webkit-pointer-events: none;
-    -ms-pointer-events: none;
-    pointer-events: none;
-    opacity: 0.25;
+  -moz-pointer-events: none;
+  -webkit-pointer-events: none;
+  -ms-pointer-events: none;
+  pointer-events: none;
+  opacity: 0.25;
 }
 
 /* 
@@ -128,12 +130,12 @@ button:disabled,
 ---------------------------------------------------------------------------------------------------
 */
 @media screen and (max-width: 736px) {
-    input[type="submit"],
-    input[type="reset"],
-    input[type="button"],
-    button,
-    .button {
-        height: 3.75rem;
-        line-height: 3.75rem;
-    }
+  input[type="submit"],
+  input[type="reset"],
+  input[type="button"],
+  button,
+  .button {
+    height: 3.75rem;
+    line-height: 3.75rem;
+  }
 }

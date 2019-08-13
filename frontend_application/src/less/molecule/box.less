@@ -2,21 +2,33 @@
 
 @import "../global.less";
 
+.flex-column-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.flex-row-wrapper {
+  display: flex;
+  flex-flow: column;
+}
+
 .box {
-    border-radius: @box-corner-radius;
-    border: @global-border;
-    margin-bottom: 2rem;
-    padding: 1.5rem;
+  border-radius: @box-corner-radius;
+  border: @global-border;
+  margin: 0.5rem;
+  padding: 0.5rem;
 }
 
 .box > :last-child,
 .box > :last-child > :last-child,
 .box > :last-child > :last-child > :last-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .box.alt {
-    border: 0;
-    border-radius: 0;
-    padding: 0;
+  border: 0;
+  border-radius: 0;
+  padding: 0;
 }
