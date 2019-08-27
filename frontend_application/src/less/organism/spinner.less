@@ -3,22 +3,22 @@
 @import "../global.less";
 
 .spinner {
-  animation: spinner-spin infinite 20s linear;
-  height: 100%;
-  width: 100%;
-  vertical-align: middle;
-  position: relative;
+  animation: spinner-spin infinite 2s linear;
   background-color: transparent;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: auto;
-  margin-bottom: auto;
+  position: fixed;
+  top: 40%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  z-index: 9990;
+  width: 100px;
+  height: 100px;
 }
 
 @keyframes spinner-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
