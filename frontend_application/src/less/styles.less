@@ -51,6 +51,7 @@
 @import "organism/pageheader.less";
 @import "organism/section.less";
 @import "organism/spotlight.less";
+@import "organism/spinner.less";
 @import "organism/table.less";
 
 /* 
@@ -77,28 +78,6 @@
   custom styles
 ---------------------------------------------------------------------------------------------------
 */
-
-.spinner {
-  animation: spinner-spin infinite 20s linear;
-  height: 100%;
-  width: 100%;
-  vertical-align: middle;
-  position: relative;
-  background-color: transparent;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
-@keyframes spinner-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
 .clearfix {
   float: none;
