@@ -2,6 +2,14 @@
 
 @import "../global.less";
 
+select,
+textarea,
+input {
+  text-decoration: @global-text-decoration;
+  font-family: @global-font-family;
+  text-transform: @global-text-transform;
+}
+
 select {
   border-radius: 0.75rem;
   border: 0;
@@ -15,6 +23,17 @@ select {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+textarea {
+  border-radius: 0.75rem;
+  border: 0;
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-weight: 400;
+  letter-spacing: 0.225rem;
+  line-height: 2.125rem;
+  padding: 1rem;
 }
 
 input[type="text"] {
