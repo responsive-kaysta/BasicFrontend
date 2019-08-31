@@ -36,7 +36,9 @@ class PageAdminOverviewBoxes extends React.Component<IViewState, IStoreState> {
                 <a href="/adminlistsources">List Sources</a>
               </div>
               <div className="box box-three-in-row">Search/edit Source</div>
-              <div className="box box-three-in-row">Search/edit Article</div>
+              <div className="box box-three-in-row">
+                <a href="/admineditarticle">Search/edit Article</a>
+              </div>
               <div className="box box-three-in-row">Add new Source</div>
               <div className="box box-three-in-row">Check Source</div>
               <div className="box box-three-in-row">Check Articles</div>
