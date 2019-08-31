@@ -43,11 +43,11 @@ class PageAdminListSources extends React.Component<IViewState, IStoreState> {
                 </thead>
               <tbody>
                 <tr>
-                  <td><a href="#"><i className="fas fa-edit"></i></a></td>
+                  <td><a href="/admineditsource"><i className="fas fa-edit"></i></a></td>
                   <td><a href="#"><i className="far fa-edit"></i></a></td>
                   <td>75</td><td>Tages-Anzeiger Börse</td><td>true</td>
                   </tr>
-                  <tr><td><a href="#"><i className="fas fa-edit"></i></a></td>
+                  <tr><td><a href="/admineditsource"><i className="fas fa-edit"></i></a></td>
                   <td><a href="#"><i className="far fa-edit"></i></a></td>
                   <td>74</td><td>Tagesanzeiger - Front</td><td>true</td>
                   </tr>

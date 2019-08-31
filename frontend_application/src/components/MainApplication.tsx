@@ -59,6 +59,13 @@ class MainApplication extends React.Component<IViewState, IStoreState> {
                 <MainPage viewContext="PageAdminListSourcesContext" />
               )}
             />
+
+            <Route
+              path="/admineditsource"
+              render={() => (
+                <MainPage viewContext="PageAdminEditSourceContext" />
+              )}
+            />
           </>
         </BrowserRouter>
       </React.Suspense>

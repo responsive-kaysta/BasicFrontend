@@ -23,7 +23,7 @@ class PageAdminOverviewBoxes extends React.Component<IViewState, IStoreState> {
           <article id="main">
             <ArticleBanner
               header="Admin Overview with Boxes"
-              paragraph="Example how to style a admin Overview Page"
+              paragraph="Example how to style an admin Overview Page"
               cssStyle="transparent"
             />
           </article>

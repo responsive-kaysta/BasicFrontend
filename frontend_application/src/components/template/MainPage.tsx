@@ -2,6 +2,7 @@ import * as React from "react";
 import IStoreState from "../../application/interfaces/core/IStoreState";
 import IViewState from "../../application/interfaces/core/IViewState";
 import Spinner from "../../components/core/Spinner";
+import PageAdminEditArchiveSource from "../composition/PageAdminEditArchiveSource";
 import PageAdminListSources from "../composition/PageAdminListSources";
 import PageAdminOverviewBoxes from "../composition/PageAdminOverviewBoxes";
 
@@ -45,6 +46,10 @@ class MainPage extends React.Component<IViewState, IStoreState> {
     } else if (this.state.storeContext === "PageAdminListSourcesContext") {
       this.component = (
         <PageAdminListSources viewContext={this.state.storeContext} />
+      );
+    } else if (this.state.storeContext === "PageAdminEditSourceContext") {
+      this.component = (
+        <PageAdminEditArchiveSource viewContext={this.state.storeContext} />
       );
     }
 
