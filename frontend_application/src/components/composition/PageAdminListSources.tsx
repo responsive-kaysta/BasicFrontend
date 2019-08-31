@@ -36,7 +36,8 @@ class PageAdminListSources extends React.Component<IViewState, IStoreState> {
               </a>
             </div>
            <div>
-           <table className="table-wrapper">
+             <div className="table-wrapper">
+             <table>
               <thead>
                 <tr><td>&nbsp;</td><td>&nbsp;</td><td>Source Id</td><td>Source Name</td><td>Source IsOnline</td></tr>
                 </thead>
@@ -82,6 +83,8 @@ class PageAdminListSources extends React.Component<IViewState, IStoreState> {
                 <tr><td><a href="#14"><i className="fas fa-edit"></i></a></td><td><a href="#14"><i className="far fa-edit"></i></a></td><td>14</td><td>Golem.de</td><td>true</td></tr>
                 </tbody>
                 </table>
+             </div>
+           
            </div>
           </section>
           <Footer />
