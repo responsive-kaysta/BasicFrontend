@@ -45,6 +45,13 @@ class MainApplication extends React.Component<IViewState, IStoreState> {
               path="/contact"
               render={() => <MainPage viewContext="PageContactContext" />}
             />
+
+            <Route
+              path="/adminoverviewboxes"
+              render={() => (
+                <MainPage viewContext="PageAdminOverviewBoxesContext" />
+              )}
+            />
           </>
         </BrowserRouter>
       </React.Suspense>
