@@ -27,6 +27,36 @@ class PageAdminOverviewBoxes extends React.Component<IViewState, IStoreState> {
               cssStyle="transparent"
             />
           </article>
+          <section id="container" className="container light">
+            <div className="page-header">
+              <h2>Management</h2>
+            </div>
+            <div className="flex-container">
+              <div className="box box-three-in-row">List Sources</div>
+              <div className="box box-three-in-row">Search/edit Source</div>
+              <div className="box box-three-in-row">Search/edit Article</div>
+              <div className="box box-three-in-row">Add new Source</div>
+              <div className="box box-three-in-row">Check Source</div>
+              <div className="box box-three-in-row">Check Articles</div>
+              <div className="box box-three-in-row">Manage Types</div>
+              <div className="box box-three-in-row">Manage Languages</div>
+              <div className="box box-three-in-row">Manage Sources</div>
+              <div className="box box-three-in-row">Manage Categories</div>
+              <div className="box box-three-in-row">Manage Facettes</div>
+              <div className="box box-three-in-row">Manage Users</div>
+            </div>
+            <div className="page-header">
+              <h2>Statistics</h2>
+            </div>
+            <div className="flex-container">
+              <div className="box box-three-in-row">Source Statistics</div>
+              <div className="box box-three-in-row">Article Statistics</div>
+              <div className="box box-three-in-row">Type Statistics</div>
+              <div className="box box-three-in-row">Language Statistics</div>
+              <div className="box box-three-in-row">Category Statistics</div>
+              <div className="box box-three-in-row">Facette Statistics</div>
+            </div>
+          </section>
           <Footer />
         </React.Suspense>
       </>
