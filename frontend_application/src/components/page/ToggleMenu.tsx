@@ -50,6 +50,11 @@ class ToggleMenu extends React.Component<any, IToggleMenuState> {
               </NavLink>
             </li>
             <li>
+              <NavLink to="/adminlistsources" activeClassName="menu-active">
+                List Sources
+              </NavLink>
+            </li>
+            <li>
               <NavLink to="/contact" activeClassName="menu-active">
                 Contact
               </NavLink>

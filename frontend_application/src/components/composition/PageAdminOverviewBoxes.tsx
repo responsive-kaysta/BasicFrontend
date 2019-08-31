@@ -32,7 +32,9 @@ class PageAdminOverviewBoxes extends React.Component<IViewState, IStoreState> {
               <h2>Management</h2>
             </div>
             <div className="flex-container">
-              <div className="box box-three-in-row">List Sources</div>
+              <div className="box box-three-in-row">
+                <a href="/adminlistsources">List Sources</a>
+              </div>
               <div className="box box-three-in-row">Search/edit Source</div>
               <div className="box box-three-in-row">Search/edit Article</div>
               <div className="box box-three-in-row">Add new Source</div>
