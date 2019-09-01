@@ -98,8 +98,8 @@ class PageAdminEditArchiveSource extends React.Component<
                       href="https://www.tagesanzeiger.ch/stock_market/uebersicht/rss.html"
                       target="_blank"
                     >
-                      <i className="fas fa-external-link-alt" />
-                      Source Link
+                      <i className="fas fa-link" />
+                      &nbsp;Source Link
                     </a>
                   </label>
                   <input

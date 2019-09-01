@@ -62,32 +62,21 @@ class PageAdminEditArchiveArticle extends React.Component<
                     id="articleTitle"
                     name="articleTitle"
                     placeholder="Article Title"
-                    value="Tages-Anzeiger Börse"
+                    value="Der Ständerat berät sich über die Abschaffung der Heiratsstrafe"
                     type="text"
                     readOnly
                   />
                 </div>
 
                 <div className="flex-row-wrapper row">
-                  <label>Source Description Text</label>
-                  <input
-                    id="sourceDescription"
-                    name="sourceDescription"
-                    placeholder="Source Description"
-                    value="Tages-Anzeiger Börse"
-                    type="text"
-                    readOnly
-                  />
-                </div>
-
-                <div className="flex-row-wrapper row">
-                  <label>Source Encoding</label>
-                  <input
-                    id="sourceEncoding"
-                    name="sourceEncoding"
-                    placeholder="Source Encoding"
-                    value="UTF-8"
-                    type="text"
+                  <label>Article Text</label>
+                  <textarea
+                    id="articleText"
+                    name="articleText"
+                    placeholder="Article Text"
+                    value="Um ein Haar wäre die Abschaffung der Heiratsstrafe schon vor der Parlamentsberatung gescheitert. Nun wird im Ständerat um die Details gefeilscht."
+                    cols={36}
+                    rows={5}
                     readOnly
                   />
                 </div>
@@ -95,25 +84,25 @@ class PageAdminEditArchiveArticle extends React.Component<
                 <div className="flex-row-wrapper row">
                   <label>
                     <a
-                      href="https://www.tagesanzeiger.ch/stock_market/uebersicht/rss.html"
+                      href="https://www.nzz.ch/schweiz/heiratsstrafe-bleibt-heiss-umstritten-ld.1505419"
                       target="_blank"
                     >
-                      <i className="fas fa-external-link-alt" />
-                      Source Link
+                      <i className="fas fa-link" />
+                      &nbsp;NZZ News Schweiz
                     </a>
                   </label>
                   <input
-                    id="sourceLink"
-                    name="sourceLink"
-                    placeholder="Source Link"
-                    value="https://www.tagesanzeiger.ch/stock_market/uebersicht/rss.html"
+                    id="articleLink"
+                    name="articleLink"
+                    placeholder="Article Link"
+                    value="https://www.nzz.ch/schweiz/heiratsstrafe-bleibt-heiss-umstritten-ld.1505419"
                     type="text"
                     readOnly
                   />
                 </div>
 
                 <div className="flex-row-wrapper row">
-                  <label>Source Type</label>
+                  <label>Article Type</label>
                   <select>
                     <option value="1">
                       Realy Simple Syndication - Sehr Einfache Syndication
@@ -124,7 +113,7 @@ class PageAdminEditArchiveArticle extends React.Component<
                 </div>
 
                 <div className="flex-row-wrapper row">
-                  <label>Source Language</label>
+                  <label>Article Language</label>
                   <select>
                     <option value="1">Deutsch</option>
                     <option value="2">English</option>
@@ -132,8 +121,25 @@ class PageAdminEditArchiveArticle extends React.Component<
                 </div>
 
                 <div className="flex-container row">
+                  <div className="flex-row-wrapper row">
+                    <label className="italic">Origin Date and Time</label>
+                    <p>30/08/2019 15:23:56</p>
+                  </div>
+
                   <div className="flex-row-wrapper">
-                    <label>Source is online</label>
+                    <label className="italic">Created Date and Time</label>
+                    <p>30/08/2019 15:23:56</p>
+                  </div>
+
+                  <div className="flex-row-wrapper">
+                    <label className="italic">Modified Date and Time</label>
+                    <p>30/08/2019 15:23:56</p>
+                  </div>
+                </div>
+
+                <div className="flex-container row">
+                  <div className="flex-row-wrapper">
+                    <label>Article is archived</label>
                     <select>
                       <option value="true">true</option>
                       <option value="false">false</option>
@@ -141,15 +147,7 @@ class PageAdminEditArchiveArticle extends React.Component<
                   </div>
 
                   <div className="flex-row-wrapper">
-                    <label>Source is archived</label>
-                    <select>
-                      <option value="true">true</option>
-                      <option value="false">false</option>
-                    </select>
-                  </div>
-
-                  <div className="flex-row-wrapper">
-                    <label>Source is deleted</label>
+                    <label>Article is deleted</label>
                     <select>
                       <option value="true">true</option>
                       <option value="false">false</option>

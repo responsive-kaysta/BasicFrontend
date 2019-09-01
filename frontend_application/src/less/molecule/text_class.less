@@ -7,22 +7,22 @@
 ---------------------------------------------------------------------------------------------------
 */
 .lead {
-    text-decoration: @global-text-decoration;
-    font-family: @global-font-family;
-    text-transform: @global-text-transform;
+  text-decoration: @global-text-decoration;
+  font-family: @global-font-family;
+  text-transform: @global-text-transform;
 }
 
 .lead {
-    font-size: 1.25rem;
-    font-weight: 500;
-    line-height: 1.5rem;
-    letter-spacing: 0.1rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  letter-spacing: 0.1rem;
 }
 
 .lead {
-    margin: 0;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+  margin: 0;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 /* 
@@ -30,15 +30,23 @@
 ---------------------------------------------------------------------------------------------------
 */
 .small {
-    text-decoration: @global-text-decoration;
-    font-family: @global-font-family;
-    text-transform: @global-text-transform;
+  text-decoration: @global-text-decoration;
+  font-family: @global-font-family;
+  text-transform: @global-text-transform;
 }
 
 .small {
-    font-size: .85rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+  font-size: 0.85rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+/* 
+    italic
+---------------------------------------------------------------------------------------------------
+*/
+.italic {
+  font-style: italic;
 }
 
 /* 
@@ -46,14 +54,14 @@
 ---------------------------------------------------------------------------------------------------
 */
 .headline {
-    text-decoration: @global-text-decoration;
-    font-family: @global-font-family;
-    text-transform: @global-text-transform;
+  text-decoration: @global-text-decoration;
+  font-family: @global-font-family;
+  text-transform: @global-text-transform;
 }
 
 .headline {
-    font-size: 1.6rem;
-    margin-bottom: 1.0rem;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
 }
 
 /* 
@@ -61,15 +69,15 @@
 ---------------------------------------------------------------------------------------------------
 */
 .tagline {
-    text-decoration: @global-text-decoration;
-    font-family: @global-font-family;
-    text-transform: @global-text-transform;
+  text-decoration: @global-text-decoration;
+  font-family: @global-font-family;
+  text-transform: @global-text-transform;
 }
 
 .tagline {
-    font-weight: 100;
-    font-size: 1.4rem;
-    margin-bottom: 1.0rem;
+  font-weight: 100;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
 }
 
 /* 
@@ -77,15 +85,15 @@
 ---------------------------------------------------------------------------------------------------
 */
 .paragraph {
-    text-decoration: @global-text-decoration;
-    font-family: @global-font-family;
-    text-transform: @global-text-transform;
+  text-decoration: @global-text-decoration;
+  font-family: @global-font-family;
+  text-transform: @global-text-transform;
 }
 
 .paragraph {
-    margin: 0;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+  margin: 0;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 /* 
@@ -93,15 +101,15 @@
 ---------------------------------------------------------------------------------------------------
 */
 .paragraph-2col {
-    text-decoration: @global-text-decoration;
-    font-family: @global-font-family;
-    text-transform: @global-text-transform;
+  text-decoration: @global-text-decoration;
+  font-family: @global-font-family;
+  text-transform: @global-text-transform;
 }
 
 .paragraph-2col {
-    margin: 0;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+  margin: 0;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 /* 
@@ -109,15 +117,15 @@
 ---------------------------------------------------------------------------------------------------
 */
 .paragraph-3col {
-    text-decoration: @global-text-decoration;
-    font-family: @global-font-family;
-    text-transform: @global-text-transform;
+  text-decoration: @global-text-decoration;
+  font-family: @global-font-family;
+  text-transform: @global-text-transform;
 }
 
 .paragraph-3col {
-    margin: 0;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+  margin: 0;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 /* 
@@ -125,15 +133,15 @@
 ---------------------------------------------------------------------------------------------------
 */
 .align-left {
-    text-align: left;
+  text-align: left;
 }
 
 .align-center {
-    text-align: center;
+  text-align: center;
 }
 
 .align-right {
-    text-align: right;
+  text-align: right;
 }
 
 /* 
@@ -141,16 +149,16 @@
 ---------------------------------------------------------------------------------------------------
 */
 .error {
-    text-decoration: @global-text-decoration;
-    font-family: @global-font-family;
-    text-transform: @global-text-transform;
-    color: @global-error-text-color !important;
+  text-decoration: @global-text-decoration;
+  font-family: @global-font-family;
+  text-transform: @global-text-transform;
+  color: @global-error-text-color !important;
 }
 
 .error {
-    display: block;
-    font-size: 1.0rem;
-    font-weight: bold;
+  display: block;
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 /* 
@@ -158,21 +166,21 @@
 ---------------------------------------------------------------------------------------------------
 */
 @media screen and (min-width: 980px) {
-    .paragraph {
-        -webkit-columns: 300px 1;
-        -moz-columns: 300px 1;
-        columns: 300px 1;
-    }
+  .paragraph {
+    -webkit-columns: 300px 1;
+    -moz-columns: 300px 1;
+    columns: 300px 1;
+  }
 
-    .paragraph-2col {
-        -webkit-columns: 200px 2;
-        -moz-columns: 200px 2;
-        columns: 200px 2;
-    }
+  .paragraph-2col {
+    -webkit-columns: 200px 2;
+    -moz-columns: 200px 2;
+    columns: 200px 2;
+  }
 
-    .paragraph-3col {
-        -webkit-columns: 100px 3;
-        -moz-columns: 100px 3;
-        columns: 100px 3;
-    }
+  .paragraph-3col {
+    -webkit-columns: 100px 3;
+    -moz-columns: 100px 3;
+    columns: 100px 3;
+  }
 }
