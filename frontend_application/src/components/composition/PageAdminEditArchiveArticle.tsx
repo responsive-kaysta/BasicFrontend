@@ -32,10 +32,15 @@ class PageAdminEditArchiveArticle extends React.Component<
             <div className="page-header">
               <h2>Edit Archive-Article: 125</h2>
             </div>
-            <div>
-              <a href="/adminoverviewboxes">
+
+            <div className="flex-column-wraper row">
+              <a href="/adminoverviewboxes" className="link-h-padding">
                 <i className="fas fa-arrow-circle-left" />
                 &nbsp; Back
+              </a>
+              <a href="/adminoverviewboxes" className="link-h-padding">
+                <i className="fas fa-check-circle" />
+                &nbsp; Ckeck Articles
               </a>
             </div>
 

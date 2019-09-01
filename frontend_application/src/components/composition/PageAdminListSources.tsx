@@ -29,12 +29,14 @@ class PageAdminListSources extends React.Component<IViewState, IStoreState> {
             <div className="page-header">
               <h2>Alle erfassten Archive-Quellen</h2>
             </div>
-            <div>
-              <a href="/adminoverviewboxes">
+            
+            <div className="flex-column-wraper row">
+              <a href="/adminoverviewboxes" className="link-h-padding">
                 <i className="fas fa-arrow-circle-left" />
                 &nbsp; Back
               </a>
             </div>
+
            <div>
              <div className="table-wrapper">
              <table>
