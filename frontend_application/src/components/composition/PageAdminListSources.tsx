@@ -45,15 +45,15 @@ class PageAdminListSources extends React.Component<IViewState, IStoreState> {
                 </thead>
               <tbody>
                 <tr>
-                  <td><a href="/admineditsource"><i className="fas fa-edit"></i></a></td>
-                  <td><a href="#"><i className="far fa-edit"></i></a></td>
+                  <td><a href="/admineditsource"><i className="far fa-check-circle"></i></a></td>
+                  <td><a href="#"><i className="fas fa-check-circle"></i></a></td>
                   <td>75</td><td>Tages-Anzeiger Börse</td><td>true</td>
                   </tr>
-                  <tr><td><a href="/admineditsource"><i className="fas fa-edit"></i></a></td>
-                  <td><a href="#"><i className="far fa-edit"></i></a></td>
+                  <tr><td><a href="/admineditsource"><i className="far fa-check-circle"></i></a></td>
+                  <td><a href="#"><i className="fas fa-check-circle"></i></a></td>
                   <td>74</td><td>Tagesanzeiger - Front</td><td>true</td>
                   </tr>
-                <tr><td><a href="#"><i className="fas fa-edit"></i></a></td><td><a href="#73"><i className="far fa-edit"></i></a></td><td>73</td><td>c't-Themen</td><td>true</td></tr><tr><td><a href="#72"><i className="fas fa-edit"></i></a></td><td><a href="#72"><i className="far fa-edit"></i></a></td><td>72</td><td>NZZ News Panorama</td><td>true</td></tr>
+                <tr><td><a href="#"><i className="far fa-check-circle"></i></a></td><td><a href="#73"><i className="fas fa-check-circle"></i></a></td><td>73</td><td>c't-Themen</td><td>true</td></tr><tr><td><a href="#72"><i className="fas fa-edit"></i></a></td><td><a href="#72"><i className="far fa-edit"></i></a></td><td>72</td><td>NZZ News Panorama</td><td>true</td></tr>
                 <tr><td><a href="#"><i className="fas fa-edit"></i></a></td><td><a href="#71"><i className="far fa-edit"></i></a></td><td>71</td><td>NZZ News Finanzen</td><td>true</td></tr><tr><td><a href="#70"><i className="fas fa-edit"></i></a></td><td><a href="#70"><i className="far fa-edit"></i></a></td><td>70</td><td>NZZ News Wirtschaft</td><td>true</td></tr>
                 <tr><td><a href="#"><i className="fas fa-edit"></i></a></td><td><a href="#69"><i className="far fa-edit"></i></a></td><td>69</td><td>NZZ News Schweiz</td><td>true</td></tr><tr><td><a href="#68"><i className="fas fa-edit"></i></a></td><td><a href="#68"><i className="far fa-edit"></i></a></td><td>68</td><td>NZZ News International</td><td>true</td></tr>
                 <tr><td><a href="#"><i className="fas fa-edit"></i></a></td><td><a href="#67"><i className="far fa-edit"></i></a></td><td>67</td><td>BBC News - Technology</td><td>true</td></tr><tr><td><a href="#66"><i className="fas fa-edit"></i></a></td><td><a href="#66"><i className="far fa-edit"></i></a></td><td>66</td><td>BBC News - Science &amp; Environment</td><td>true</td></tr>

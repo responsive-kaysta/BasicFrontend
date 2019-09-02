@@ -6,6 +6,7 @@ import PageAdminEditArchiveArticle from "../composition/PageAdminEditArchiveArti
 import PageAdminEditArchiveSource from "../composition/PageAdminEditArchiveSource";
 import PageAdminListSources from "../composition/PageAdminListSources";
 import PageAdminOverviewBoxes from "../composition/PageAdminOverviewBoxes";
+import PageAdminCheckArchiveSource from "../composition/PageAdminCheckArchiveSource";
 
 const PageHome = React.lazy(() =>
   import("../../components/composition/PageHome")
@@ -55,6 +56,12 @@ class MainPage extends React.Component<IViewState, IStoreState> {
     } else if (this.state.storeContext === "PageAdminEditArticleContext") {
       this.component = (
         <PageAdminEditArchiveArticle viewContext={this.state.storeContext} />
+      );
+    } else if (
+      this.state.storeContext === "PageAdminCheckArchiveSourceContext"
+    ) {
+      this.component = (
+        <PageAdminCheckArchiveSource viewContext={this.state.storeContext} />
       );
     }
 
