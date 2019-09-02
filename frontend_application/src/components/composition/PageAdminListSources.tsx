@@ -24,8 +24,8 @@ class PageAdminListSources extends React.Component<IViewState, IStoreState> {
               paragraph="Example how to style a list Sources Page"
               cssStyle="transparent"
             />
-          </article>
-          <section id="container" className="container light">
+
+<section id="container" className="container light">
             <div className="page-header">
               <h2>Alle erfassten Archive-Quellen</h2>
             </div>
@@ -46,11 +46,11 @@ class PageAdminListSources extends React.Component<IViewState, IStoreState> {
               <tbody>
                 <tr>
                   <td><a href="/admineditsource"><i className="far fa-check-circle"></i></a></td>
-                  <td><a href="#"><i className="fas fa-check-circle"></i></a></td>
+                  <td><a href="/adminchecksource"><i className="fas fa-check-circle"></i></a></td>
                   <td>75</td><td>Tages-Anzeiger Börse</td><td>true</td>
                   </tr>
                   <tr><td><a href="/admineditsource"><i className="far fa-check-circle"></i></a></td>
-                  <td><a href="#"><i className="fas fa-check-circle"></i></a></td>
+                  <td><a href="/adminchecksource"><i className="fas fa-check-circle"></i></a></td>
                   <td>74</td><td>Tagesanzeiger - Front</td><td>true</td>
                   </tr>
                 <tr><td><a href="#"><i className="far fa-check-circle"></i></a></td><td><a href="#73"><i className="fas fa-check-circle"></i></a></td><td>73</td><td>c't-Themen</td><td>true</td></tr><tr><td><a href="#72"><i className="fas fa-edit"></i></a></td><td><a href="#72"><i className="far fa-edit"></i></a></td><td>72</td><td>NZZ News Panorama</td><td>true</td></tr>
@@ -86,9 +86,9 @@ class PageAdminListSources extends React.Component<IViewState, IStoreState> {
                 </tbody>
                 </table>
              </div>
-           
            </div>
           </section>
+          </article>
           <Footer />
         </React.Suspense>
       </>

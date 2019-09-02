@@ -27,8 +27,8 @@ class PageAdminEditArchiveSource extends React.Component<
               paragraph="Example how to style the Edit Source Page"
               cssStyle="transparent"
             />
-          </article>
-          <section id="container" className="container light">
+
+<section id="container" className="container light">
             <div className="page-header">
               <h2>Edit Archive-Source: 125</h2>
             </div>
@@ -168,7 +168,7 @@ class PageAdminEditArchiveSource extends React.Component<
               </form>
             </div>
           </section>
-
+          </article>
           <Footer />
         </React.Suspense>
       </>

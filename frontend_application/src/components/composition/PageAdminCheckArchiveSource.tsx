@@ -27,24 +27,35 @@ class PageAdminCheckArchiveSource extends React.Component<
               paragraph="Example how to style an admin Overview Page"
               cssStyle="transparent"
             />
-          </article>
-          <section id="container" className="container light">
-            <div className="page-header">
-              <h2>Check Source - Id: 75 - Tages-Anzeiger Börse</h2>
-            </div>
+            <section id="container" className="container light">
+              <div className="page-header">
+                <h2>Check Source - Id: 75 - Tages-Anzeiger Börse</h2>
+              </div>
 
-            <div className="flex-container">
-              <div className="box box-three-in-row">
-                <a href="#">Source Details</a>
+              <div className="flex-column-wraper row">
+                <a href="/adminoverviewboxes" className="link-h-padding">
+                  <i className="fas fa-arrow-circle-left" />
+                  &nbsp; Back
+                </a>
+                <a href="/admineditsource" className="link-h-padding">
+                  <i className="far fa-check-circle" />
+                  &nbsp; Add a new Source
+                </a>
               </div>
-              <div className="box box-three-in-row">
-                <a href="#">Check Source State</a>
+
+              <div className="flex-container">
+                <div className="box box-three-in-row">
+                  <a href="#">Source Details</a>
+                </div>
+                <div className="box box-three-in-row">
+                  <a href="#">Check Source State</a>
+                </div>
+                <div className="box box-three-in-row">
+                  <a href="#">Test Serializer</a>
+                </div>
               </div>
-              <div className="box box-three-in-row">
-                <a href="#">Test Serializer</a>
-              </div>
-            </div>
-          </section>
+            </section>
+          </article>
           <Footer />
         </React.Suspense>
       </>
