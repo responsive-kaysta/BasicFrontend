@@ -5,10 +5,6 @@ import Footer from "../../components/page/Footer";
 import Header from "../../components/page/Header";
 import ArticleBanner from "../organism/ArticleBanner";
 
-const PageBanner = React.lazy(() =>
-  import("../../components/organism/PageBanner")
-);
-
 class PageAdminOverviewBoxes extends React.Component<IViewState, IStoreState> {
   constructor(props: IViewState, state: IStoreState) {
     super(props, state);

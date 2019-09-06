@@ -15,7 +15,7 @@ class SectionSomeLoremContent extends React.Component<
   public render() {
     const style = "container " + this.props.cssStyle;
     const header = this.props.header;
-    let backgroundStyle: string | undefined = this.props.cssStyle;
+    // let backgroundStyle: string | undefined = this.props.cssStyle;
     return (
       <section className={style}>
         <div className="page-header">

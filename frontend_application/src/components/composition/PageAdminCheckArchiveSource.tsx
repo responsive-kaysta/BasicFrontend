@@ -1,11 +1,9 @@
 import * as React from "react";
 import IStoreState from "../../application/interfaces/core/IStoreState";
 import IViewState from "../../application/interfaces/core/IViewState";
+import ArticleBanner from "../organism/ArticleBanner";
 import Footer from "../page/Footer";
 import Header from "../page/Header";
-import ArticleBanner from "../organism/ArticleBanner";
-
-const PageBanner = React.lazy(() => import("../organism/PageBanner"));
 
 class PageAdminCheckArchiveSource extends React.Component<
   IViewState,
@@ -45,13 +43,13 @@ class PageAdminCheckArchiveSource extends React.Component<
 
               <div className="flex-container">
                 <div className="box box-three-in-row">
-                  <a href="#">Source Details</a>
+                  <a href="/">Source Details</a>
                 </div>
                 <div className="box box-three-in-row">
-                  <a href="#">Check Source State</a>
+                  <a href="/">Check Source State</a>
                 </div>
                 <div className="box box-three-in-row">
-                  <a href="#">Test Serializer</a>
+                  <a href="/">Test Serializer</a>
                 </div>
               </div>
             </section>

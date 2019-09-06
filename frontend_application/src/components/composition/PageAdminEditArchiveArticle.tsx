@@ -1,11 +1,9 @@
 import * as React from "react";
 import IStoreState from "../../application/interfaces/core/IStoreState";
 import IViewState from "../../application/interfaces/core/IViewState";
+import ArticleBanner from "../organism/ArticleBanner";
 import Footer from "../page/Footer";
 import Header from "../page/Header";
-import ArticleBanner from "../organism/ArticleBanner";
-
-const PageBanner = React.lazy(() => import("../organism/PageBanner"));
 
 class PageAdminEditArchiveArticle extends React.Component<
   IViewState,
@@ -88,10 +86,7 @@ class PageAdminEditArchiveArticle extends React.Component<
 
                 <div className="flex-row-wrapper row">
                   <label>
-                    <a
-                      href="https://www.nzz.ch/schweiz/heiratsstrafe-bleibt-heiss-umstritten-ld.1505419"
-                      target="_blank"
-                    >
+                    <a href="https://www.nzz.ch/schweiz/heiratsstrafe-bleibt-heiss-umstritten-ld.1505419">
                       <i className="fas fa-link" />
                       &nbsp;NZZ News Schweiz
                     </a>

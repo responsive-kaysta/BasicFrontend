@@ -2,7 +2,6 @@ import * as React from "react";
 import { BrowserRouter, Route } from "react-router-dom";
 import IStoreState from "../application/interfaces/core/IStoreState";
 import IViewState from "../application/interfaces/core/IViewState";
-import Spinner from "../components/core/Spinner";
 
 const MainPage = React.lazy(() => import("../components/template/MainPage"));
 

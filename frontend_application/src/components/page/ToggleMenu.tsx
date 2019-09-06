@@ -46,7 +46,7 @@ class ToggleMenu extends React.Component<any, IToggleMenuState> {
             </li>
             <li>
               <NavLink to="/adminoverviewboxes" activeClassName="menu-active">
-                Admin Overview with Boxes
+                Management
               </NavLink>
             </li>
             <li>
