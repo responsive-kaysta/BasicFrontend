@@ -53,6 +53,11 @@ class MainApplication extends React.Component<IViewState, IStoreState> {
             />
 
             <Route
+              path="/adminicons"
+              render={() => <MainPage viewContext="PageAdminIconsContext" />}
+            />
+
+            <Route
               path="/adminlistsources"
               render={() => (
                 <MainPage viewContext="PageAdminListSourcesContext" />

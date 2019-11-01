@@ -2,11 +2,12 @@ import * as React from "react";
 import IStoreState from "../../application/interfaces/core/IStoreState";
 import IViewState from "../../application/interfaces/core/IViewState";
 import Spinner from "../../components/core/Spinner";
+import PageAdminCheckArchiveSource from "../composition/PageAdminCheckArchiveSource";
 import PageAdminEditArchiveArticle from "../composition/PageAdminEditArchiveArticle";
 import PageAdminEditArchiveSource from "../composition/PageAdminEditArchiveSource";
+import PageAdminIcons from "../composition/PageAdminIcons";
 import PageAdminListSources from "../composition/PageAdminListSources";
 import PageAdminOverviewBoxes from "../composition/PageAdminOverviewBoxes";
-import PageAdminCheckArchiveSource from "../composition/PageAdminCheckArchiveSource";
 
 const PageHome = React.lazy(() =>
   import("../../components/composition/PageHome")
@@ -63,6 +64,8 @@ class MainPage extends React.Component<IViewState, IStoreState> {
       this.component = (
         <PageAdminCheckArchiveSource viewContext={this.state.storeContext} />
       );
+    } else if (this.state.storeContext === "PageAdminIconsContext") {
+      this.component = <PageAdminIcons viewContext={this.state.storeContext} />;
     }
 
     return true;

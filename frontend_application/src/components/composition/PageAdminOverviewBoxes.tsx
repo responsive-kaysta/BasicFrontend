@@ -45,7 +45,9 @@ class PageAdminOverviewBoxes extends React.Component<IViewState, IStoreState> {
                 <div className="box box-three-in-row">Manage Sources</div>
                 <div className="box box-three-in-row">Manage Categories</div>
                 <div className="box box-three-in-row">Manage Facettes</div>
-                <div className="box box-three-in-row">Manage Users</div>
+                <div className="box box-three-in-row">
+                  <a href="/adminicons">All Icons</a>
+                </div>
               </div>
               <div className="page-header">
                 <h2>Statistics</h2>
