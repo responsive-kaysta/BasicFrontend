@@ -53,9 +53,6 @@ class PageAdminIcons extends React.Component<IViewState, IStoreState> {
                 <i className="far fa-file-alt">
                   <a href="/adminicons">far fa-file-alt</a>
                 </i>
-                <i className="far fa-edit">
-                  <a href="/adminicons">far fa-edit</a>
-                </i>
                 <i className="far fa-plus-square">
                   <a href="/adminicons">far fa-plus-square</a>
                 </i>
@@ -86,9 +83,6 @@ class PageAdminIcons extends React.Component<IViewState, IStoreState> {
                 <i className="fas fa-users-cog">
                   <a href="/adminicons">fas fa-users-cog</a>
                 </i>
-                <i className="fas fa-external-link-alt">
-                  <a href="/adminicons">fas fa-external-link-alt</a>
-                </i>
                 <i className="fas fa-rss-square">
                   <a href="/adminicons">fas fa-rss-square</a>
                 </i>
@@ -110,9 +104,6 @@ class PageAdminIcons extends React.Component<IViewState, IStoreState> {
                 <i className="fas fa-check-circle">
                   <a href="/adminicons">fas fa-check-circle</a>
                 </i>
-                <i className="fas fa-edit">
-                  <a href="/adminicons">fas fa-edit</a>
-                </i>
                 <i className="fas fa-home">
                   <a href="/adminicons">fas fa-home</a>
                 </i>
@@ -127,6 +118,90 @@ class PageAdminIcons extends React.Component<IViewState, IStoreState> {
                 </i>
                 <i className="fas fa-times-circle">
                   <a href="/adminicons">fas fa-times-circle</a>
+                </i>
+                <i className="fas fa-adjust">
+                  <a href="/adminicons">fas fa-adjust</a>
+                </i>
+                <i className="fas fa-archive">
+                  <a href="/adminicons">fas fa-archive</a>
+                </i>
+                <i className="fas fa-ban">
+                  <a href="/adminicons">fas fa-ban</a>
+                </i>
+                <i className="fas fa-bomb">
+                  <a href="/adminicons">fas fa-bomb</a>
+                </i>
+                <i className="fas fa-bolt">
+                  <a href="/adminicons">fas fa-bolt</a>
+                </i>
+                <i className="fas fa-brain">
+                  <a href="/adminicons">fas fa-brain</a>
+                </i>
+                <i className="fas fa-bug">
+                  <a href="/adminicons">fas fa-bug</a>
+                </i>
+                <i className="fas fa-bullseye">
+                  <a href="/adminicons">fas fa-bullseye</a>
+                </i>
+                <i className="fas fa-burn">
+                  <a href="/adminicons">fas fa-burn</a>
+                </i>
+                <i className="fas fa-calculator">
+                  <a href="/adminicons">fas fa-calculator</a>
+                </i>
+                <i className="fas fa-certificate">
+                  <a href="/adminicons">fas fa-certificate</a>
+                </i>
+                <i className="fas fa-chart-pie">
+                  <a href="/adminicons">fas fa-chart-pie</a>
+                </i>
+                <i className="fas fa-check-circle">
+                  <a href="/adminicons">fas fa-check-circle</a>
+                </i>
+                <i className="fas fa-circle">
+                  <a href="/adminicons">fas fa-circle</a>
+                </i>
+                <i className="fas fa-circle-notch">
+                  <a href="/adminicons">fas fa-circle-notch</a>
+                </i>
+                <i className="fas fa-clock">
+                  <a href="/adminicons">fas fa-clock</a>
+                </i>
+                <i className="fas fa-cogs">
+                  <a href="/adminicons">fas fa-cogs</a>
+                </i>
+                <i className="fas fa-cog">
+                  <a href="/adminicons">fas fa-cog</a>
+                </i>
+                <i className="fas fa-copyright">
+                  <a href="/adminicons">fas fa-copyright</a>
+                </i>
+                <i className="fas fa-edit">
+                  <a href="/adminicons">fas fa-edit</a>
+                </i>
+                <i className="fas fa-external-link-alt">
+                  <a href="/adminicons">fas fa-external-link-alt</a>
+                </i>
+                <i className="fas fa-fire">
+                  <a href="/adminicons">fas fa-fire</a>
+                </i>
+                <i className="fas fa-highlighter">
+                  <a href="/adminicons">fas fa-highlighter</a>
+                </i>
+                <i className="fas fa-hourglass-half">
+                  <a href="/adminicons">fas fa-hourglass-half</a>
+                </i>
+                <i className="fas fa-toilet-paper">
+                  <a href="/adminicons">fas fa-toilet-paper</a>
+                </i>
+                <i className="fas fa-toilet">
+                  <a href="/adminicons">fas fa-toilet</a>
+                </i>
+                <i className="fas fa-tags">
+                  <a href="/adminicons">fas fa-tags</a>
+                </i>
+                <i className="fas fa-tag">
+                  <a href="/adminicons">fas fa-tag</a>
                 </i>
               </div>
             </section>
