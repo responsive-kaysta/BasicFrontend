@@ -8,6 +8,7 @@ import PageBanner from "../../compositions/pageBanner/pageBanner";
 import Spotlight from "../../compositions/spotLight/spotLight";
 import Spinner from "../../elements/spinner/spinner";
 import ToTopButton from "../../elements/toTopButton/toTopButton";
+import { ePageStyleTemplates } from "../../less";
 
 class Home extends React.Component {
   public render() {
@@ -15,32 +16,37 @@ class Home extends React.Component {
       <React.Suspense fallback={<Spinner />}>
         <Header />
 
-        <PageBanner header="Header" paragraph="Paragraph" scrollTo="one" />
+        <PageBanner
+          header="Header"
+          paragraph="Paragraph"
+          scrollTo="one"
+          pageStyle={ePageStyleTemplates.transparent}
+        />
 
         <EyeCatcher
           header="EyeCatcher Header"
           paragraph="EyeCatcher Paragrap"
-          cssStyle="light"
+          pageStyle={ePageStyleTemplates.purple}
         />
 
         <article id="main" className="light">
           <ArchiveContentList
             apiController="lastestArchiveContent"
             pageKey="Home"
-            cssStyle="light"
+            pageStyle={ePageStyleTemplates.green}
           />
 
           <ArticleBanner
             header="ArticleBanner Header"
             paragraph="ArticleBanner Paragraph"
             elementId="one"
-            cssStyle="purple"
+            pageStyle={ePageStyleTemplates.purple}
           />
 
           <Spotlight
             header="Spotlight Header"
             paragraph="Spotlight Paragraph"
-            cssStyle="purple"
+            pageStyle={ePageStyleTemplates.green}
             image="/assets/images/spotlight_planing.png"
           />
 

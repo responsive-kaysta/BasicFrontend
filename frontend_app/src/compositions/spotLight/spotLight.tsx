@@ -3,14 +3,14 @@ import { iSpotlightProps } from "./spec";
 
 class Spotlight extends React.Component<iSpotlightProps> {
   public render() {
-    const style = "spotlight " + this.props.cssStyle;
+    const pageStyle = "spotlight " + this.props.pageStyle;
     const image = this.props.image;
     const header = this.props.header;
     const paragraph = this.props.paragraph;
 
     return (
       <>
-        <section className={style}>
+        <section className={pageStyle}>
           <div className="image">
             <img className="wide" src={image} alt="Brains and engineering" />
           </div>

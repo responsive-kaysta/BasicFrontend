@@ -3,14 +3,14 @@ import { iEyeCatcherProps } from "./spec";
 
 class EyeCatcher extends React.Component<iEyeCatcherProps> {
   public render() {
-    const style = "special " + this.props.cssStyle;
+    const pageStyle = "special " + this.props.pageStyle;
     const header = this.props.header;
     const paragraph = this.props.paragraph;
     const elementId = this.props.elementId;
 
     return (
       <>
-        <section className={style} id={elementId}>
+        <section className={pageStyle} id={elementId}>
           <header className="major">
             <h2>{header}</h2>
             <p>{paragraph}</p>

@@ -1,7 +1,9 @@
+import { ePageStyleTemplates } from "../../../less";
+
 export interface iArticleBannerProps {
   header: string;
   paragraph: string;
-  cssStyle?: string;
+  pageStyle?: ePageStyleTemplates;
   elementId?: string;
 }
 

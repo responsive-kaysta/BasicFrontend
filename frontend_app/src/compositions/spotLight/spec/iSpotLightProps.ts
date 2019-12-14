@@ -1,8 +1,10 @@
+import { ePageStyleTemplates } from "../../../less";
+
 export interface iSpotlightProps {
   header: string;
   paragraph: string;
   image: string;
-  cssStyle?: string;
+  pageStyle?: ePageStyleTemplates;
   elementId?: string;
 }
 

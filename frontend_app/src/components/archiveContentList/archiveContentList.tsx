@@ -16,8 +16,8 @@ class ArchiveContentList extends React.Component<
   }
 
   public render() {
-    const styleProp = this.props.cssStyle;
-    const cssStyle = "container " + styleProp;
+    const pageStyle = this.props.pageStyle;
+    const cssStyle = "container " + pageStyle;
 
     const mappedTodos = this.state.storeContainer.map(
       (article: iArchiveContentListItemProps) => {

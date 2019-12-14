@@ -5,6 +5,7 @@ import Footer from "../../compositions/page/footer";
 import Header from "../../compositions/page/header";
 import Spinner from "../../elements/spinner/spinner";
 import ToTopButton from "../../elements/toTopButton/toTopButton";
+import { ePageStyleTemplates } from "../../less";
 
 class About extends React.Component {
   public render() {
@@ -18,12 +19,13 @@ class About extends React.Component {
               header="ArticleBanner Header"
               paragraph="ArticleBanner Paragraph"
               elementId="one"
+              pageStyle={ePageStyleTemplates.purple}
             />
 
             <EyeCatcher
               header="EyeCatcher Header"
               paragraph="EyeCatcher Paragrap"
-              cssStyle="green"
+              pageStyle={ePageStyleTemplates.purple}
             />
 
             <ToTopButton />

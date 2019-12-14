@@ -8,7 +8,7 @@ import { iPageBannerProps } from "./spec";
 
 class PageBanner extends React.Component<iPageBannerProps> {
   public render() {
-    const style = this.props.cssStyle;
+    const pageStyle = this.props.pageStyle;
     const header = this.props.header;
     const paragraph = this.props.paragraph;
     const scrollTo = this.props.scrollTo;
@@ -18,7 +18,7 @@ class PageBanner extends React.Component<iPageBannerProps> {
     return (
       <>
         <section id="banner">
-          <div className={style}>
+          <div className={pageStyle}>
             <h2>{header}</h2>
             <p>{paragraph}</p>
           </div>

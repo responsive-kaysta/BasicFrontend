@@ -1,8 +1,10 @@
+import { ePageStyleTemplates } from "../../../less";
+
 export interface iPageBannerProps {
   header: string;
   paragraph: string;
   scrollTo: string;
-  cssStyle?: string;
+  pageStyle?: ePageStyleTemplates;
   elementId?: string;
 }
 
