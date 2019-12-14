@@ -7,6 +7,7 @@ import Spinner from "../../elements/spinner/spinner";
 import ToTopButton from "../../elements/to-top-button/to-top-button";
 import { ePageStyleTemplates } from "../../less";
 import ArticleContainer from "../../components/article-container/article-container";
+import CallToAction from "../../compositions/call-to-action/call-to-action";
 
 class About extends React.Component {
   public render() {
@@ -29,6 +30,14 @@ class About extends React.Component {
               pageStyle={ePageStyleTemplates.purple}
             />
 
+            <CallToAction
+              header="CallToAction Header"
+              paragraph="CallToAction Paragraph"
+              linkText="CallToAction Link-Text"
+              linkUrl="#"
+              specialText="CallToAction Special-Text"
+              specialUrl="#"
+            />
             <ToTopButton />
           </ArticleContainer>
 
