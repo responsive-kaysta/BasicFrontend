@@ -1669,7 +1669,6 @@ section {
   position: fixed;
   top: 40%;
   left: 45%;
-  transform: translate(-50%, -50%);
   z-index: 9990;
   width: 100px;
   height: 100px;
@@ -1682,6 +1681,29 @@ section {
     transform: rotate(360deg);
   }
 }
+/*
+.spinner {
+  animation: spinner-spin infinite 2s linear;
+  background-color: transparent;
+  position: fixed;
+  top: 40%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  z-index: 9990;
+  width: 100px;
+  height: 100px;
+}
+
+@keyframes spinner-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+*/
 .table-wrapper {
   -webkit-overflow-scrolling: touch;
   overflow-x: auto;
