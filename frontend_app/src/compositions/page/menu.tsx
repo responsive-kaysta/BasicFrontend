@@ -1,7 +1,6 @@
 import * as React from "react";
 import { NavLink } from "react-router-dom";
-import { iMenuState } from "./spec";
-import { iPageProps } from "../spec";
+import { iMenuState, iPageProps } from "./spec";
 
 class Menu extends React.Component<iPageProps, iMenuState> {
   constructor(props: iPageProps, state: iMenuState) {

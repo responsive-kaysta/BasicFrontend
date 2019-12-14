@@ -1,12 +1,12 @@
 import * as React from "react";
-import ArticleBanner from "../../compositions/articleBanner/articleBanner";
-import EyeCatcher from "../../compositions/eyeCatcher/exeCatcher";
+import ArticleBanner from "../../compositions/article-banner/article-banner";
+import EyeCatcher from "../../compositions/eye-catcher/eye-catcher";
 import Footer from "../../compositions/page/footer";
 import Header from "../../compositions/page/header";
 import Spinner from "../../elements/spinner/spinner";
-import ToTopButton from "../../elements/toTopButton/toTopButton";
+import ToTopButton from "../../elements/to-top-button/to-top-button";
 import { ePageStyleTemplates } from "../../less";
-import ArticleContainer from "../../components/articleContainer/articleContainer";
+import ArticleContainer from "../../components/article-container/article-container";
 
 class About extends React.Component {
   public render() {

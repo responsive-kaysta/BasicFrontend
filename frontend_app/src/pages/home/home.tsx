@@ -1,15 +1,19 @@
 import * as React from "react";
-import ArchiveContentList from "../../components/archiveContentList/archiveContentList";
-import ArticleBanner from "../../compositions/articleBanner/articleBanner";
-import EyeCatcher from "../../compositions/eyeCatcher/exeCatcher";
+import ArchiveContentList from "../../components/archive-content-list/archive-content-list";
+import ArticleContainer from "../../components/article-container/article-container";
+import ArticleBanner from "../../compositions/article-banner/article-banner";
+import EyeCatcher from "../../compositions/eye-catcher/eye-catcher";
+import PageBanner from "../../compositions/page-banner/page-banner";
 import Footer from "../../compositions/page/footer";
 import Header from "../../compositions/page/header";
-import PageBanner from "../../compositions/pageBanner/pageBanner";
-import Spotlight from "../../compositions/spotLight/spotLight";
+import {
+  eSpotlightOrientation,
+  eSpotlightPictogram
+} from "../../compositions/spotlight/spec";
+import Spotlight from "../../compositions/spotlight/spotlight";
 import Spinner from "../../elements/spinner/spinner";
-import ToTopButton from "../../elements/toTopButton/toTopButton";
+import ToTopButton from "../../elements/to-top-button/to-top-button";
 import { ePageStyleTemplates } from "../../less";
-import ArticleContainer from "../../components/articleContainer/articleContainer";
 
 class Home extends React.Component {
   public render() {
@@ -48,7 +52,8 @@ class Home extends React.Component {
             header="Spotlight Header"
             paragraph="Spotlight Paragraph"
             pageStyle={ePageStyleTemplates.green}
-            image="/assets/images/spotlight_planing.png"
+            orientation={eSpotlightOrientation.left}
+            pictogram={eSpotlightPictogram.ai_4}
           />
 
           <ToTopButton />
@@ -57,10 +62,24 @@ class Home extends React.Component {
         <Spotlight
           header="Spotlight Header"
           paragraph="Spotlight Paragraph"
-          pageStyle={ePageStyleTemplates.green}
-          image="/assets/images/spotlight_planing.png"
+          pageStyle={ePageStyleTemplates.light}
+          orientation={eSpotlightOrientation.right}
+          pictogram={eSpotlightPictogram.analysis}
         />
-
+        <Spotlight
+          header="Spotlight Header"
+          paragraph="Spotlight Paragraph"
+          pageStyle={ePageStyleTemplates.light}
+          orientation={eSpotlightOrientation.left}
+          pictogram={eSpotlightPictogram.hosting}
+        />
+        <Spotlight
+          header="Spotlight Header"
+          paragraph="Spotlight Paragraph"
+          pageStyle={ePageStyleTemplates.light}
+          orientation={eSpotlightOrientation.right}
+          pictogram={eSpotlightPictogram.settings_gears}
+        />
         <Footer />
       </React.Suspense>
     );
