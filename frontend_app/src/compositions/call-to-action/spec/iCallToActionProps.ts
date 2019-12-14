@@ -7,6 +7,7 @@ export interface iCallToActionProps {
   linkUrl: string;
   specialText: string;
   specialUrl: string;
+  pageStyle?: ePageStyleTemplates;
 }
 
 export default iCallToActionProps;

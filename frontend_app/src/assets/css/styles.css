@@ -1081,7 +1081,7 @@ article#main > header {
   text-align: center;
   background-color: transparent;
   padding-top: 5rem;
-  padding-bottom: 3rem;
+  padding-bottom: 5rem;
 }
 article#main > header h2 {
   font-size: 1.75rem;
@@ -1281,25 +1281,29 @@ a.more.scrolly {
   }
 }
 .container {
-  padding: 0;
-  margin: 0;
   margin-right: auto;
   margin-left: auto;
-  padding-left: 15%;
-  padding-right: 15%;
-  padding-top: 0;
-  padding-bottom: 1rem;
+  padding: 2rem;
 }
-.container {
-  height: auto !important;
-  min-height: 70vh;
+@media screen and (max-width: 980px) {
+  .container {
+    margin-right: auto;
+    margin-left: auto;
+    padding: 1rem;
+  }
+}
+@media screen and (max-width: 736px) {
+  .container {
+    margin-right: auto;
+    margin-left: auto;
+    padding: 1rem;
+  }
 }
 #cta .inner {
   display: -moz-flex;
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
-  max-width: 60rem;
 }
 #cta .inner header {
   -moz-order: 1;
@@ -1310,7 +1314,8 @@ a.more.scrolly {
   width: 70%;
 }
 #cta .inner header h2 {
-  padding-bottom: 1rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 #cta .inner header p {
   color: inherit;
@@ -1347,7 +1352,7 @@ section.special {
   margin: 0;
   padding: 0;
   text-align: center;
-  padding: 3rem !important;
+  padding: 2rem !important;
 }
 section.special header.major h2 {
   padding-bottom: 1rem;
@@ -1571,7 +1576,6 @@ input[type="password"] {
 }
 .page-header {
   padding-top: 1.5rem;
-  padding-bottom: 1rem;
   margin-bottom: 1rem;
 }
 section {
@@ -2025,7 +2029,7 @@ button.totop:hover {
 }
 .light .page-header {
   width: 100%;
-  color: #5e5e5e;
+  color: #5e5e5e !important;
   border-bottom: #5e5e5e solid thin !important;
 }
 .light .abstract {

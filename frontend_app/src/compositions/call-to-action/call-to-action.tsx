@@ -9,9 +9,11 @@ class CallToAction extends React.Component<iCallToActionProps> {
     const linkUrl = this.props.linkUrl;
     const specialText = this.props.specialText;
     const specialUrl = this.props.specialUrl;
+    const pageStyle = this.props.pageStyle;
+    const cssStyle = "container " + pageStyle;
 
     return (
-      <section id="cta" className="wrapper">
+      <section id="cta" className={pageStyle}>
         <div className="inner">
           <header>
             <h2>{header}</h2>
