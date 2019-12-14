@@ -9,6 +9,7 @@ import Spotlight from "../../compositions/spotLight/spotLight";
 import Spinner from "../../elements/spinner/spinner";
 import ToTopButton from "../../elements/toTopButton/toTopButton";
 import { ePageStyleTemplates } from "../../less";
+import ArticleContainer from "../../components/articleContainer/articleContainer";
 
 class Home extends React.Component {
   public render() {
@@ -29,7 +30,7 @@ class Home extends React.Component {
           pageStyle={ePageStyleTemplates.purple}
         />
 
-        <article id="main" className="light">
+        <ArticleContainer pageStyle={ePageStyleTemplates.purple}>
           <ArchiveContentList
             apiController="lastestArchiveContent"
             pageKey="Home"
@@ -51,7 +52,14 @@ class Home extends React.Component {
           />
 
           <ToTopButton />
-        </article>
+        </ArticleContainer>
+
+        <Spotlight
+          header="Spotlight Header"
+          paragraph="Spotlight Paragraph"
+          pageStyle={ePageStyleTemplates.green}
+          image="/assets/images/spotlight_planing.png"
+        />
 
         <Footer />
       </React.Suspense>

@@ -6,6 +6,7 @@ import Header from "../../compositions/page/header";
 import Spinner from "../../elements/spinner/spinner";
 import ToTopButton from "../../elements/toTopButton/toTopButton";
 import { ePageStyleTemplates } from "../../less";
+import ArticleContainer from "../../components/articleContainer/articleContainer";
 
 class About extends React.Component {
   public render() {
@@ -14,7 +15,7 @@ class About extends React.Component {
         <React.Suspense fallback={<Spinner />}>
           <Header />
 
-          <article id="main" className="transparent">
+          <ArticleContainer pageStyle={ePageStyleTemplates.purple}>
             <ArticleBanner
               header="ArticleBanner Header"
               paragraph="ArticleBanner Paragraph"
@@ -29,7 +30,7 @@ class About extends React.Component {
             />
 
             <ToTopButton />
-          </article>
+          </ArticleContainer>
 
           <Footer />
         </React.Suspense>
