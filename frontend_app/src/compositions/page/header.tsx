@@ -8,7 +8,7 @@ class Header extends React.Component {
       <>
         <header id="header">
           <h1>
-            <NavLink to="/">MasterArchive</NavLink>
+            <NavLink to="/">Basic Frontend (beta)</NavLink>
           </h1>
           <nav id="nav">
             <Menu pageKey="main-menu" />

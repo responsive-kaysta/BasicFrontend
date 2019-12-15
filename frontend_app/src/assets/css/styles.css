@@ -110,7 +110,7 @@ video {
 body {
   line-height: 1.4;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", "Lato", Arial, sans-serif;
-  text-transform: normal;
+  text-transform: lowercase;
 }
 html,
 body,
@@ -188,7 +188,7 @@ audio,
 video {
   line-height: 1.4;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", "Lato", Arial, sans-serif;
-  text-transform: normal;
+  text-transform: lowercase;
   margin: 0;
   padding: 0;
   border: 0;
@@ -239,10 +239,10 @@ a {
   border-bottom: 0;
   text-decoration: none;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", "Lato", Arial, sans-serif;
-  text-transform: normal;
+  text-transform: lowercase;
 }
 a:hover {
-  text-transform: normal;
+  text-transform: lowercase;
   text-decoration: none;
 }
 a {
@@ -265,7 +265,7 @@ h5,
 h6 {
   text-decoration: none;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", "Lato", Arial, sans-serif;
-  text-transform: normal;
+  text-transform: lowercase;
 }
 h1,
 h2,
@@ -284,7 +284,7 @@ h5 a,
 h6 a {
   text-decoration: none;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", "Lato", Arial, sans-serif;
-  text-transform: normal;
+  text-transform: lowercase;
 }
 h1 a,
 h2 a,
@@ -326,7 +326,7 @@ h6 {
 .abstract {
   text-decoration: none;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", "Lato", Arial, sans-serif;
-  text-transform: normal;
+  text-transform: lowercase;
 }
 .abstract {
   font-size: 1.3rem;
@@ -348,7 +348,7 @@ q:after {
 blockquote {
   text-decoration: none;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", "Lato", Arial, sans-serif;
-  text-transform: normal;
+  text-transform: lowercase;
 }
 blockquote {
   font-size: 1.3rem;
@@ -377,7 +377,7 @@ code {
 code {
   font-family: "Courier New", Courier, monospace;
   text-decoration: none;
-  text-transform: normal;
+  text-transform: lowercase;
 }
 code {
   color: darkgray;
@@ -458,7 +458,7 @@ pre code {
 p {
   text-decoration: none;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", "Lato", Arial, sans-serif;
-  text-transform: normal;
+  text-transform: lowercase;
 }
 p {
   font-size: 1rem;
@@ -534,7 +534,7 @@ a.button {
   color: whitesmoke !important;
   background: black !important;
   background-color: black !important;
-  text-transform: normal !important;
+  text-transform: lowercase !important;
   text-decoration: none !important;
 }
 a.button:hover {
@@ -553,7 +553,7 @@ a.button.special {
   color: whitesmoke !important;
   background: #ed4933 !important;
   background-color: #ed4933 !important;
-  text-transform: normal !important;
+  text-transform: lowercase !important;
   text-decoration: none !important;
 }
 a.button.special:hover {
@@ -919,7 +919,7 @@ form.row {
 .lead {
   text-decoration: none;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", "Lato", Arial, sans-serif;
-  text-transform: normal;
+  text-transform: lowercase;
 }
 .lead {
   font-size: 1.25rem;
@@ -939,7 +939,7 @@ form.row {
 .small {
   text-decoration: none;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", "Lato", Arial, sans-serif;
-  text-transform: normal;
+  text-transform: lowercase;
 }
 .small {
   font-size: 0.85rem;
@@ -960,7 +960,7 @@ form.row {
 .headline {
   text-decoration: none;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", "Lato", Arial, sans-serif;
-  text-transform: normal;
+  text-transform: lowercase;
 }
 .headline {
   font-size: 1.6rem;
@@ -973,7 +973,7 @@ form.row {
 .tagline {
   text-decoration: none;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", "Lato", Arial, sans-serif;
-  text-transform: normal;
+  text-transform: lowercase;
 }
 .tagline {
   font-weight: 100;
@@ -987,7 +987,7 @@ form.row {
 .paragraph {
   text-decoration: none;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", "Lato", Arial, sans-serif;
-  text-transform: normal;
+  text-transform: lowercase;
 }
 .paragraph {
   margin: 0;
@@ -1001,7 +1001,7 @@ form.row {
 .paragraph-2col {
   text-decoration: none;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", "Lato", Arial, sans-serif;
-  text-transform: normal;
+  text-transform: lowercase;
 }
 .paragraph-2col {
   margin: 0;
@@ -1015,7 +1015,7 @@ form.row {
 .paragraph-3col {
   text-decoration: none;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", "Lato", Arial, sans-serif;
-  text-transform: normal;
+  text-transform: lowercase;
 }
 .paragraph-3col {
   margin: 0;
@@ -1042,7 +1042,7 @@ form.row {
 .error {
   text-decoration: none;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", "Lato", Arial, sans-serif;
-  text-transform: normal;
+  text-transform: lowercase;
   color: darkred !important;
 }
 .error {
@@ -1164,7 +1164,7 @@ section#banner > div p {
 #banner p {
   padding-top: 1.5rem;
   letter-spacing: 0.225rem;
-  text-transform: normal;
+  text-transform: lowercase;
 }
 #banner .actions {
   padding-top: 0.75rem;
@@ -1453,7 +1453,7 @@ textarea,
 input {
   text-decoration: none;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", "Lato", Arial, sans-serif;
-  text-transform: normal;
+  text-transform: lowercase;
 }
 form label {
   display: block;
@@ -1994,7 +1994,7 @@ button.totop {
   color: whitesmoke !important;
   background: #ed4933 !important;
   background-color: #ed4933 !important;
-  text-transform: normal !important;
+  text-transform: lowercase !important;
   text-decoration: none !important;
 }
 button.totop:hover {
@@ -2018,7 +2018,7 @@ button.totop:hover {
   padding-left: 0.225rem;
   position: absolute;
   text-align: center;
-  text-transform: normal;
+  text-transform: lowercase;
   width: 16rem;
   z-index: 1;
 }
@@ -2230,10 +2230,10 @@ body.is-mobile #main > header {
   background-attachment: scroll;
 }
 body.landing #page-wrapper {
-  background: -moz-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)), url("/assets/images/Archives1.jpg");
-  background: -webkit-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)), url("/assets/images/Archives1.jpg");
-  background-image: -ms-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)), url("/assets/images/Archives1.jpg");
-  background: linear-gradient(to bottom, #0b3536 0%, rgba(125, 185, 232, 0)), url("/assets/images/Archives1.jpg");
+  background: -moz-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)), url("/assets/images/Website-Design-Background.png");
+  background: -webkit-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)), url("/assets/images/Website-Design-Background.png");
+  background-image: -ms-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)), url("/assets/images/Website-Design-Background.png");
+  background: linear-gradient(to bottom, #0b3536 0%, rgba(125, 185, 232, 0)), url("/assets/images/Website-Design-Background.png");
   background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
@@ -2242,10 +2242,10 @@ body.landing #page-wrapper {
   background-color: transparent;
 }
 body.regular #page-wrapper {
-  background: -moz-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)), url("/assets/images/Archives1.jpg");
-  background: -webkit-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)), url("/assets/images/Archives1.jpg");
-  background-image: -ms-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)), url("/assets/images/Archives1.jpg");
-  background: linear-gradient(to bottom, #0b3536 0%, rgba(125, 185, 232, 0)), url("/assets/images/Archives1.jpg");
+  background: -moz-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)), url("/assets/images/Website-Design-Background.png");
+  background: -webkit-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)), url("/assets/images/Website-Design-Background.png");
+  background-image: -ms-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)), url("/assets/images/Website-Design-Background.png");
+  background: linear-gradient(to bottom, #0b3536 0%, rgba(125, 185, 232, 0)), url("/assets/images/Website-Design-Background.png");
   background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
