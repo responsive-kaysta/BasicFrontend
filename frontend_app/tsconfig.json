@@ -1,10 +1,14 @@
 {
   "compilerOptions": {
-    "target": "es6",
+    "target": "es5",
     "lib": [
       "dom",
       "dom.iterable",
-      "esnext"
+      "esnext",
+      "DOM",
+      "ES5",
+      "ScriptHost",
+      "es2015"
     ],
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -17,9 +21,21 @@
     "noEmit": true,
     "jsx": "react",
     "allowJs": true,
-    "isolatedModules": true
+    "isolatedModules": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "pretty": true,
+    "removeComments": true
   },
-  "include": [
-    "src"
+  "include": ["src"],
+  "exclude": [
+    "node_modules",
+    "build",
+    "scripts",
+    "acceptance-tests",
+    "webpack",
+    "jest"
   ]
 }
