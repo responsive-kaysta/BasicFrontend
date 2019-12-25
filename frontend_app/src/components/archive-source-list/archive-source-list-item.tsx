@@ -2,12 +2,13 @@ import * as React from "react";
 import { iArchiveSourceListItemProps } from "./spec/iArchiveSourceListItemProps";
 
 function ArchiveSourceListItem(props: {
-  archiveContent: iArchiveSourceListItemProps;
+  archiveSource: iArchiveSourceListItemProps;
 }) {
   return (
     <tr>
-      <td>{props.archiveContent.Id}</td>
-      <td>{props.archiveContent.SourceName}</td>
+      <td>{props.archiveSource.Id}</td>
+      <td>{props.archiveSource.SourceName}</td>
+      <td>{props.archiveSource.ArticleCount}</td>
     </tr>
   );
 }

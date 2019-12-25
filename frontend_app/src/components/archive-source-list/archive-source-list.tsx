@@ -1,52 +1,36 @@
 import * as React from "react";
-import API from "../../application/axios.api";
-import Spinner from "../../elements/spinner/spinner";
 import ArchiveSourceListItem from "./archive-source-list-item";
 import iArchiveSourceListItemProps from "./spec/iArchiveSourceListItemProps";
-import iArchiveSourceProps from "./spec/iArchiveSourceProps";
-import iArchiveSourceState from "./spec/iArchiveSourceState";
+import iArchiveSourceProps from "./spec/iArchiveSourceListProps";
 
-class ArchiveSourceList extends React.Component<
-  iArchiveSourceProps,
-  iArchiveSourceState
-> {
-  constructor(props: iArchiveSourceProps, state: iArchiveSourceState) {
-    super(props, state);
-    this.state = { storeContainer: [] };
-  }
-
+class ArchiveSourceList extends React.Component<iArchiveSourceProps> {
   public render() {
     const pageStyle = this.props.pageStyle
       ? this.props.pageStyle + " table-wrapper"
       : "light table-wrapper";
 
-    const mappedTodos = this.state.storeContainer.map(
-      (article: iArchiveSourceListItemProps) => {
-        return (
-          <ArchiveSourceListItem archiveContent={article} key={article.Id} />
-        );
+    const mappedTodos = this.props.dataContainer.map(
+      (source: iArchiveSourceListItemProps) => {
+        return <ArchiveSourceListItem archiveSource={source} key={source.Id} />;
       }
     );
     return this.ListContainer(mappedTodos, pageStyle);
   }
 
-  public async componentDidMount() {
-    const response = await API.get(this.props.apiController).then(res => {
-      const storeContainer = res.data;
-      this.setState({ storeContainer });
-    });
-    return response;
-  }
-
   private ListContainer(list: any, pageStyle: string) {
     return (
-      <React.Suspense fallback={<Spinner />}>
-        <div className={pageStyle}>
-          <table>
-            <tbody>{list}</tbody>
-          </table>
-        </div>
-      </React.Suspense>
+      <div className={pageStyle}>
+        <table>
+          <thead>
+            <tr>
+              <td>Source Id</td>
+              <td>Source Name</td>
+              <td>ArticleCount</td>
+            </tr>
+          </thead>
+          <tbody>{list}</tbody>
+        </table>
+      </div>
     );
   }
 }

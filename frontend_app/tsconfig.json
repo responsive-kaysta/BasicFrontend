@@ -1,15 +1,7 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext",
-      "DOM",
-      "ES5",
-      "ScriptHost",
-      "es2015"
-    ],
+    "lib": ["es2017", "dom"],
     "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
@@ -27,7 +19,8 @@
     "noImplicitAny": true,
     "strictNullChecks": true,
     "pretty": true,
-    "removeComments": true
+    "removeComments": true,
+    "downlevelIteration": true
   },
   "include": ["src"],
   "exclude": [

@@ -12,7 +12,8 @@ export interface iArchiveSourceListItemProps {
   SourceIsOnline: boolean;
   IsDelete: boolean;
   IsArchive: boolean;
-  ArchiveCategory: number;
+  ArchiveCategory?: number;
+  ArticleCount?: number;
 }
 
 export default iArchiveSourceListItemProps;

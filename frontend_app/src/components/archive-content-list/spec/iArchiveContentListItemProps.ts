@@ -2,19 +2,19 @@ import { iArchiveSourceListItemProps } from "../../archive-source-list/spec";
 
 export interface iArchiveContentListItemProps {
   Id: number;
+  ArchiveContentId: number;
   ContentTitle: string;
   ContentText: string;
-  ContentLang: number;
-  ContentOriginDateTime: Date;
-  ContentCreationDateTime: Date;
-  ContentModifiedTimeStamp: Date;
-  ContentVersion: number;
-  ContentType: number;
-  ContentSource: number;
+  OriginDate: Date;
+  CatName: string;
+  CatNameShort: string;
+  SourceId: number;
+  SourceName: string;
+  LangId: number;
+  LangName: string;
   ContentLink: string;
-  IsDelete: boolean;
-  IsArchive: boolean;
-  ArchiveSource?: iArchiveSourceListItemProps;
+  SourceLink: string;
+  ContentType: string;
 }
 
 export default iArchiveContentListItemProps;

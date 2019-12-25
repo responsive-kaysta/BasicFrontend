@@ -10,8 +10,11 @@ class DateTime extends React.Component<iDateTimeProps> {
       case "Regular":
         dateTimeFormat = `${dateTime.toLocaleDateString()} ${dateTime.toLocaleTimeString()}`;
         break;
+      case "DateOnly":
+        dateTimeFormat = `${dateTime.toLocaleDateString()}`;
+        break;
     }
-    return <>{dateTimeFormat}</>;
+    return dateTimeFormat;
   }
 }
 export default DateTime;
