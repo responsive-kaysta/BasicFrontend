@@ -70,31 +70,10 @@ class Home extends React.Component<any, iHomeState> {
             pageStyle={ePageStyleTemplates.transparent}
           />
 
-          <ColorContainer padded pageStyle={ePageStyleTemplates.transparent}>
-            <div className="page-header flex-container">
-              <span className="abstract">Die letzten Neuigkeiten</span>
-              <form onSubmit={this.handleSubmit}>
-                <select
-                  onChange={this.languageChange}
-                  defaultValue="0"
-                  defaultChecked
-                >
-                  <option value="0">...</option>
-                  <option value="1">Deutsch</option>
-                  <option value="2">English</option>
-                </select>
-                <input type="submit" value="Post" className="small" />
-              </form>
-            </div>
-
-            <ArchiveContentList
-              dataContainer={this.state.storeContainer}
-              pageKey="Home"
-              pageStyle={ePageStyleTemplates.transparent}
-            />
-            {!this.state.loadingState && <ToTopButton />}
-            <Spinner loadingState={this.state.loadingState} />
-          </ColorContainer>
+          <ColorContainer
+            padded
+            pageStyle={ePageStyleTemplates.transparent}
+          ></ColorContainer>
         </ArticleContainer>
 
         <Footer />
