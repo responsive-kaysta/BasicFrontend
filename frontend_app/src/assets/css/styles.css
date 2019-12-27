@@ -1699,7 +1699,7 @@ section {
   margin-left: auto;
   padding-left: 2rem;
   padding-right: 2rem;
-  padding-top: 2rem;
+  padding-top: 3rem;
 }
 .spotlight-right .content {
   -moz-order: 1;
@@ -1712,7 +1712,7 @@ section {
   margin-left: auto;
   padding-left: 2rem;
   padding-right: 2rem;
-  padding-top: 2rem;
+  padding-top: 3rem;
 }
 .spotlight .content h2 {
   font-size: 1.5rem;

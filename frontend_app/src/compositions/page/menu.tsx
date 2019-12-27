@@ -38,6 +38,11 @@ class Menu extends React.Component<iPageProps, iMenuState> {
                 Über
               </NavLink>
             </li>
+            <li>
+              <NavLink to="/technic" activeClassName="menu-active">
+                Technik
+              </NavLink>
+            </li>
           </ul>
         </div>
       </>

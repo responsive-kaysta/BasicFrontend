@@ -10,7 +10,6 @@ class CallToAction extends React.Component<iCallToActionProps> {
     const specialText = this.props.specialText;
     const specialUrl = this.props.specialUrl;
     const pageStyle = this.props.pageStyle;
-    const cssStyle = "container " + pageStyle;
 
     return (
       <section id="cta" className={pageStyle}>

@@ -1,6 +1,7 @@
 import * as React from "react";
 import ArticleContainer from "../../components/article-container/article-container";
 import ColorContainer from "../../components/color-container/color-container";
+import CallToAction from "../../compositions/call-to-action/call-to-action";
 import EyeCatcher from "../../compositions/eye-catcher/eye-catcher";
 import PageBanner from "../../compositions/page-banner/page-banner";
 import PageHeader from "../../compositions/page-header/page-header";
@@ -12,10 +13,9 @@ import Spotlight from "../../compositions/spotlight/spotlight";
 import LinkButtonElement from "../../elements/button-elements/link-button-element";
 import eButtonStyles from "../../elements/button-elements/spec/eButtonStyles";
 import DivElement from "../../elements/text-elements/div-element";
+import ToTopButton from "../../elements/to-top-button/to-top-button";
 import { ePageStyleTemplates } from "../../less";
 import iHomeState from "./spec/iHomeState";
-import CallToAction from "../../compositions/call-to-action/call-to-action";
-import ToTopButton from "../../elements/to-top-button/to-top-button";
 
 class Home extends React.Component<any, iHomeState> {
   public render() {
@@ -42,7 +42,7 @@ class Home extends React.Component<any, iHomeState> {
           pageStyle={ePageStyleTemplates.light}
           pictogram={eSpotlightPictogram.ai_1}
         />
-        <ArticleContainer pageStyle={ePageStyleTemplates.light}>
+        <ArticleContainer>
           <ColorContainer padded pageStyle={ePageStyleTemplates.light}>
             <PageHeader
               header="Die Zeiten ändern sich"
