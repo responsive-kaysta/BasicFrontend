@@ -2232,6 +2232,11 @@ table.alt tbody tr td {
 .clearfix {
   float: none;
 }
+.emailform {
+  margin-left: auto;
+  margin-right: auto;
+  width: 640px;
+}
 #header {
   width: 100%;
   height: 3.25rem;

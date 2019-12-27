@@ -5,8 +5,6 @@ import ArticleBanner from "../../compositions/article-banner/article-banner";
 import CallToAction from "../../compositions/call-to-action/call-to-action";
 import EyeCatcher from "../../compositions/eye-catcher/eye-catcher";
 import PageHeader from "../../compositions/page-header/page-header";
-import Footer from "../../compositions/page/footer";
-import Header from "../../compositions/page/header";
 import eSpotlightOrientation from "../../compositions/spotlight/spec/eSpotlightOrientation";
 import eSpotlightPictogram from "../../compositions/spotlight/spec/eSpotlightPictogram";
 import Spotlight from "../../compositions/spotlight/spotlight";
@@ -20,8 +18,6 @@ class Technic extends React.Component {
   public render() {
     return (
       <>
-        <Header />
-
         <ArticleContainer>
           <ArticleBanner
             header="Informationstechnologie"
@@ -129,15 +125,13 @@ class Technic extends React.Component {
               header="Professionell und ausgereift"
               paragraph="Bei unserer Arbeit verwenden wir professionelle und ausgereifte Produkte, Services und Frameworks. Wir beraten Sie gerne, das Richtige wird sich finden."
               specialText="Kontakt"
-              specialUrl=""
+              specialUrl="/contact"
               linkText="Projekte"
-              linkUrl=""
+              linkUrl="/projects"
             />
             <ToTopButton />
           </ColorContainer>
         </ArticleContainer>
-
-        <Footer />
       </>
     );
   }

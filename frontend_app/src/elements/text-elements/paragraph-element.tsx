@@ -5,7 +5,11 @@ class ParagraphElement extends React.Component<iTextElementProps> {
   public render() {
     const cssClass = this.props.cssClass ? this.props.cssClass : "paragraph";
 
-    return <p className={cssClass}>{this.props.children}</p>;
+    return (
+      <p className={cssClass} id={this.props.elementId}>
+        {this.props.children}
+      </p>
+    );
   }
 }
 

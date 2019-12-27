@@ -4,8 +4,6 @@ import ColorContainer from "../../components/color-container/color-container";
 import ArticleBanner from "../../compositions/article-banner/article-banner";
 import CallToAction from "../../compositions/call-to-action/call-to-action";
 import PageHeader from "../../compositions/page-header/page-header";
-import Footer from "../../compositions/page/footer";
-import Header from "../../compositions/page/header";
 import eSpotlightOrientation from "../../compositions/spotlight/spec/eSpotlightOrientation";
 import eSpotlightPictogram from "../../compositions/spotlight/spec/eSpotlightPictogram";
 import Spotlight from "../../compositions/spotlight/spotlight";
@@ -19,8 +17,6 @@ class About extends React.Component {
   public render() {
     return (
       <>
-        <Header />
-
         <ArticleContainer>
           <ArticleBanner
             header="Über responsive IT"
@@ -30,7 +26,7 @@ class About extends React.Component {
 
           <Spotlight
             header="Gestern, Heute, Morgen"
-            paragraph="Bereits seit 2002 bieten wir innovative Leistungen rund um Informatik an."
+            paragraph="Bereits seit 2002 bieten wir innovative Leistungen rund um Informatik an"
             pictogram={eSpotlightPictogram.ai_1}
             pageStyle={ePageStyleTemplates.light}
             orientation={eSpotlightOrientation.left}
@@ -80,13 +76,11 @@ class About extends React.Component {
               linkText="Impressum"
               linkUrl="/impressum"
               specialText="Projekte"
-              specialUrl=""
+              specialUrl="/projects"
             />
             <ToTopButton />
           </ColorContainer>
         </ArticleContainer>
-
-        <Footer />
       </>
     );
   }

@@ -5,8 +5,6 @@ import CallToAction from "../../compositions/call-to-action/call-to-action";
 import EyeCatcher from "../../compositions/eye-catcher/eye-catcher";
 import PageBanner from "../../compositions/page-banner/page-banner";
 import PageHeader from "../../compositions/page-header/page-header";
-import Footer from "../../compositions/page/footer";
-import Header from "../../compositions/page/header";
 import eSpotlightOrientation from "../../compositions/spotlight/spec/eSpotlightOrientation";
 import eSpotlightPictogram from "../../compositions/spotlight/spec/eSpotlightPictogram";
 import Spotlight from "../../compositions/spotlight/spotlight";
@@ -21,8 +19,6 @@ class Home extends React.Component<any, iHomeState> {
   public render() {
     return (
       <>
-        <Header />
-
         <PageBanner
           header="responsive IT"
           paragraph="IT & Software Architecture, Engineering & Consulting"
@@ -77,15 +73,13 @@ class Home extends React.Component<any, iHomeState> {
               paragraph="Überzeugen Sie sich – folgende Projekte geben Aufschluss über unsere Fähigkeiten."
               pageStyle={ePageStyleTemplates.light}
               linkText="Projekte"
-              linkUrl=""
-              specialText="Kontakt"
-              specialUrl=""
+              linkUrl="/projects"
+              specialText="Technik"
+              specialUrl="/technic"
             />
             <ToTopButton />
           </ColorContainer>
         </ArticleContainer>
-
-        <Footer />
       </>
     );
   }

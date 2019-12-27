@@ -5,7 +5,11 @@ class SpanElement extends React.Component<iTextElementProps> {
   public render() {
     const cssClass = this.props.cssClass ? this.props.cssClass : "paragraph";
 
-    return <span className={cssClass}>{this.props.children}</span>;
+    return (
+      <span className={cssClass} id={this.props.elementId}>
+        {this.props.children}
+      </span>
+    );
   }
 }
 
