@@ -14,6 +14,8 @@ import eButtonStyles from "../../elements/button-elements/spec/eButtonStyles";
 import DivElement from "../../elements/text-elements/div-element";
 import { ePageStyleTemplates } from "../../less";
 import iHomeState from "./spec/iHomeState";
+import CallToAction from "../../compositions/call-to-action/call-to-action";
+import ToTopButton from "../../elements/to-top-button/to-top-button";
 
 class Home extends React.Component<any, iHomeState> {
   public render() {
@@ -47,7 +49,6 @@ class Home extends React.Component<any, iHomeState> {
               paragraph="In Zeiten rasant wachsender Absatzzahlen von mobilen Endgeräten wie Tablets und Smartphones bildet Responsive Design die Möglichkeit der geräteunabhängigen Kommunikation."
               pageStyle={ePageStyleTemplates.light}
             />
-
             <DivElement>
               <LinkButtonElement
                 text="weiter ..."
@@ -55,6 +56,32 @@ class Home extends React.Component<any, iHomeState> {
                 cssClass={eButtonStyles.button_special}
               />
             </DivElement>
+          </ColorContainer>
+        </ArticleContainer>
+        <Spotlight
+          header="Technik ist unsere Leidenschaft"
+          paragraph="Wir beherrschen unser Fach und setzen Technologie ziel führend ein - denn viel hilft eben nicht viel!"
+          orientation={eSpotlightOrientation.left}
+          pageStyle={ePageStyleTemplates.light}
+          pictogram={eSpotlightPictogram.settings}
+        />
+        <ArticleContainer pageStyle={ePageStyleTemplates.light}>
+          <ColorContainer padded pageStyle={ePageStyleTemplates.light}>
+            <PageHeader
+              header="Mit der Zeit weiss man es"
+              paragraph="Technologien unterstützen die Effizienz und den Komfort einer Anwendung oder eines Services - Erfahrung und Knowhow helfen jedoch Schwachstellen zu identifizieren und Lösungen zu finden."
+              pageStyle={ePageStyleTemplates.light}
+            />
+            <CallToAction
+              header="Ihre Anforderung – Unsere Erfahrung"
+              paragraph="Überzeugen Sie sich – folgende Projekte geben Aufschluss über unsere Fähigkeiten."
+              pageStyle={ePageStyleTemplates.light}
+              linkText="Projekte"
+              linkUrl=""
+              specialText="Kontakt"
+              specialUrl=""
+            />
+            <ToTopButton />
           </ColorContainer>
         </ArticleContainer>
 
