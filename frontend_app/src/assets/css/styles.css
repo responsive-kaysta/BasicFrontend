@@ -1224,19 +1224,24 @@ body.is-loading #banner:after {
 a.more.scrolly {
   color: whitesmoke;
 }
-.blogarchive div[class^="col-"] {
-  margin-bottom: 0.75rem !important;
-  margin-top: 0.75rem;
-  float: left;
+.blogarchive {
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.blogarchive div[class^="item-"] {
+  margin: 0.75rem !important;
+  flex-direction: row;
+  width: 30%;
 }
 .blogarchive h3 {
   padding-bottom: 0.75rem;
 }
 .blogarchive a {
-  border-radius: 5px;
-  white-space: normal;
-  padding: 1.25rem;
-  display: block;
+  text-decoration: none;
 }
 .blogarchive a:hover * {
   text-decoration: none;
@@ -2236,6 +2241,12 @@ table.alt tbody tr td {
   margin-left: auto;
   margin-right: auto;
   width: 640px;
+}
+.round-corner {
+  border-radius: 5px;
+  white-space: normal;
+  padding: 1.25rem;
+  display: block;
 }
 #header {
   width: 100%;

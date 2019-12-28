@@ -2,37 +2,43 @@
 
 @import "../global.less";
 
-.blogarchive div[class^="col-"] {
-    margin-bottom: 0.75rem !important;
-    margin-top: 0.75rem;
-    float: left;
+.blogarchive {
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.blogarchive div[class^="item-"] {
+  margin: 0.75rem !important;
+  flex-direction: row;
+  width: 30%;
 }
 
 .blogarchive h3 {
-    padding-bottom: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 .blogarchive a {
-    border-radius: @box-corner-radius;
-    white-space: normal;
-    padding: 1.25rem;
-    display: block;
+  text-decoration: none;
 }
 
 .blogarchive a:hover * {
-    text-decoration: none;
-    color: @global-link-hover-color;
+  text-decoration: none;
+  color: @global-link-hover-color;
 }
 
 .blogarchive a:hover p {
-    text-decoration: underline;
-    color: @global-link-hover-color;    
+  text-decoration: underline;
+  color: @global-link-hover-color;
 }
 
 .blogarchive .date {
-    text-align: right;
+  text-align: right;
 }
 
 .blogarchive p.paragraph {
-    min-height: 60px;
+  min-height: 60px;
 }
