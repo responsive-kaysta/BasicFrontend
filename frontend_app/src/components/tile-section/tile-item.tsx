@@ -4,7 +4,7 @@ import iTileItemProps from "./spec/iTileItemProps";
 class TileItem extends React.Component<iTileItemProps> {
   public render() {
     const pageStyle = this.props.pageStyle ? this.props.pageStyle : "light";
-    const cssClass = `${pageStyle} equal round-corner`;
+    const cssClass = `${pageStyle} box-equal box-round-corner`;
     const itemClass = `item-${this.props.item}`;
     return (
       <div className={itemClass}>

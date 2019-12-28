@@ -65,7 +65,7 @@ class Contact extends React.Component {
               <Iframe
                 url="https://www.emailmeform.com/builder/form/Z9WCJqEPuf51bUzT"
                 width="640px"
-                height="712px"
+                height="767px"
                 id="emailmeform"
               />
             </div>

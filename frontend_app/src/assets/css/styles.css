@@ -521,6 +521,20 @@ sup {
   border-radius: 0;
   padding: 0;
 }
+.box-equal {
+  display: table-cell;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.box-round-corner {
+  border-radius: 5px;
+  white-space: normal;
+  padding: 1.25rem;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
 /* 
     a.button
 ---------------------------------------------------------------------------------------------------
@@ -1235,7 +1249,7 @@ a.more.scrolly {
 .blogarchive div[class^="item-"] {
   margin: 0.75rem !important;
   flex-direction: row;
-  width: 30%;
+  width: 40%;
 }
 .blogarchive h3 {
   padding-bottom: 0.75rem;
@@ -2241,12 +2255,7 @@ table.alt tbody tr td {
   margin-left: auto;
   margin-right: auto;
   width: 640px;
-}
-.round-corner {
-  border-radius: 5px;
-  white-space: normal;
-  padding: 1.25rem;
-  display: block;
+  height: 767px;
 }
 #header {
   width: 100%;
