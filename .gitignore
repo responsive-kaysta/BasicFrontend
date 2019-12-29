@@ -37,8 +37,3 @@ yarn-error.log*
 *.*.dll
 *.*.pdb
 
-
-
-react_application/src/assets/css/styles\.css
-
-frontend_application/src/assets/css/styles\.css
