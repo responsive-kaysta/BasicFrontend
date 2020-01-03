@@ -23,12 +23,5 @@
     "downlevelIteration": true
   },
   "include": ["src"],
-  "exclude": [
-    "node_modules",
-    "build",
-    "scripts",
-    "acceptance-tests",
-    "webpack",
-    "jest"
-  ]
+  "exclude": ["node_modules", "build", "scripts"]
 }

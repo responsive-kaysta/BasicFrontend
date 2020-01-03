@@ -13,8 +13,15 @@ import ParagraphElement from "../../elements/text-elements/paragraph-element";
 import { eTextStyles } from "../../elements/text-elements/spec";
 import ToTopButton from "../../elements/to-top-button/to-top-button";
 import { ePageStyleTemplates } from "../../less";
+import * as Scroll from "react-scroll";
+
+var scroll = Scroll.animateScroll;
 
 class Technic extends React.Component {
+  componentDidMount() {
+    scroll.scrollToTop();
+  }
+
   public render() {
     return (
       <>

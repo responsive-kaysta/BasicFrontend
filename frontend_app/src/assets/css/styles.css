@@ -1271,6 +1271,52 @@ a.more.scrolly {
 .blogarchive p.paragraph {
   min-height: 60px;
 }
+@media screen and (max-width: 980px) {
+  .blogarchive div[class^="item-"] {
+    margin: 0.35rem !important;
+    display: block;
+    width: 80%;
+  }
+  .blogarchive h3 {
+    font-size: 1.1rem !important;
+    line-height: 1.1rem !important;
+    padding-bottom: 0.35rem;
+  }
+  .blogarchive .date {
+    font-size: 0.65rem !important;
+    line-height: 0.75rem !important;
+    padding-bottom: 0.35rem;
+  }
+  .blogarchive p.paragraph {
+    font-size: 0.75rem;
+    font-weight: normal;
+    line-height: 1rem;
+    letter-spacing: 0.1rem;
+  }
+}
+@media screen and (max-width: 736px) {
+  .blogarchive div[class^="item-"] {
+    margin: 0.25rem !important;
+    display: block;
+    width: 80%;
+  }
+  .blogarchive h3 {
+    font-size: 1rem !important;
+    line-height: 1rem !important;
+    padding-bottom: 0.25rem;
+  }
+  .blogarchive .date {
+    font-size: 0.65rem !important;
+    line-height: 0.75rem !important;
+    padding-bottom: 0.35rem;
+  }
+  .blogarchive p.paragraph {
+    font-size: 0.75rem;
+    font-weight: normal;
+    line-height: 1rem;
+    letter-spacing: 0.1rem;
+  }
+}
 .breadcrumb {
   background: rgba(0, 0, 0, 0.6);
   transition: all 200ms ease-in-out;
@@ -1690,8 +1736,8 @@ section {
   -ms-order: 1;
   order: 1;
   border-radius: 0;
-  max-height: 192px !important;
-  max-width: 192px !important;
+  max-height: 160px;
+  max-width: 160px;
 }
 .spotlight-right .image {
   justify-content: flex-end;
@@ -1700,8 +1746,8 @@ section {
   -ms-order: 2;
   order: 2;
   border-radius: 0;
-  height: 192px !important;
-  width: 192px !important;
+  height: 160px;
+  width: 160px;
 }
 .spotlight .image img {
   border-radius: 0;
@@ -1713,7 +1759,7 @@ section {
   -ms-order: 2;
   order: 2;
   width: 100%;
-  height: 192px !important;
+  height: 160px;
   margin-right: auto;
   margin-left: auto;
   padding-left: 2rem;
@@ -1726,7 +1772,7 @@ section {
   -ms-order: 1;
   order: 1;
   width: 100%;
-  height: 192px !important;
+  height: 160px;
   margin-right: auto;
   margin-left: auto;
   padding-left: 2rem;
@@ -1772,6 +1818,56 @@ section {
 }
 .spotlight:nth-child(10) {
   background-color: rgba(0, 0, 0, 0.75);
+}
+@media screen and (max-width: 980px) {
+  .spotlight {
+    display: block;
+  }
+  .spotlight br {
+    display: none;
+  }
+  .spotlight .image {
+    width: 100%;
+  }
+  .spotlight .content {
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 1rem;
+  }
+  .spotlight-left .image {
+    max-height: 128px;
+    max-width: 128px;
+  }
+  .spotlight-right .image {
+    height: 128px;
+    width: 128px;
+  }
+}
+@media screen and (max-width: 736px) {
+  .spotlight {
+    display: block;
+  }
+  .spotlight br {
+    display: none;
+  }
+  .spotlight .image {
+    width: 100%;
+  }
+  .spotlight .content {
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 1rem;
+  }
+  .spotlight-left .image {
+    max-height: 96px;
+    max-width: 96px;
+  }
+  .spotlight-right .image {
+    height: 96px;
+    width: 96px;
+  }
 }
 .spinner {
   animation: spinner-spin infinite 2s linear;
@@ -2347,21 +2443,6 @@ body.regular #page-wrapper {
     padding-right: 10%;
     padding-top: 1rem;
   }
-  .spotlight {
-    display: block;
-  }
-  .spotlight br {
-    display: none;
-  }
-  .spotlight .image {
-    width: 100%;
-  }
-  .spotlight .content {
-    width: 100%;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 1rem;
-  }
 }
 @media screen and (max-width: 736px) {
   #menu {
@@ -2379,21 +2460,6 @@ body.regular #page-wrapper {
   .container {
     margin-right: auto;
     margin-left: auto;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 1rem;
-  }
-  .spotlight {
-    display: block;
-  }
-  .spotlight br {
-    display: none;
-  }
-  .spotlight .image {
-    width: 100%;
-  }
-  .spotlight .content {
-    width: 100%;
     padding-left: 5%;
     padding-right: 5%;
     padding-top: 1rem;

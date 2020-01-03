@@ -6,8 +6,15 @@ import ArticleBanner from "../../compositions/article-banner/article-banner";
 import Spacer from "../../elements/spacer/spacer";
 import ToTopButton from "../../elements/to-top-button/to-top-button";
 import { ePageStyleTemplates } from "../../less";
+import * as Scroll from "react-scroll";
+
+var scroll = Scroll.animateScroll;
 
 class Projects extends React.Component {
+  componentDidMount() {
+    scroll.scrollToTop();
+  }
+
   public render() {
     return (
       <>

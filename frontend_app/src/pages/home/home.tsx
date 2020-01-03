@@ -14,8 +14,15 @@ import DivElement from "../../elements/text-elements/div-element";
 import ToTopButton from "../../elements/to-top-button/to-top-button";
 import { ePageStyleTemplates } from "../../less";
 import iHomeState from "./spec/iHomeState";
+import * as Scroll from "react-scroll";
+
+var scroll = Scroll.animateScroll;
 
 class Home extends React.Component<any, iHomeState> {
+  componentDidMount() {
+    scroll.scrollToTop();
+  }
+
   public render() {
     return (
       <>
