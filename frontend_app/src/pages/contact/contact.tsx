@@ -40,29 +40,29 @@ class Contact extends React.Component {
           />
 
           <ColorContainer pageStyle={ePageStyleTemplates.light} padded>
-            <DivElement cssClass={eTextStyles.align_center} elementId="one">
-              <ParagraphElement cssClass={eTextStyles.lead}>
+            <DivElement textStyles={eTextStyles.align_center} elementId="one">
+              <ParagraphElement textStyles={eTextStyles.lead}>
                 responsive IT
               </ParagraphElement>
             </DivElement>
 
-            <DivElement cssClass={eTextStyles.align_center}>
+            <DivElement textStyles={eTextStyles.align_center}>
               Kay Stuckenschmidt
             </DivElement>
 
-            <DivElement cssClass={eTextStyles.align_center}>
+            <DivElement textStyles={eTextStyles.align_center}>
               IT & Software Architecture, Engineering & Consulting
             </DivElement>
 
-            <DivElement cssClass={eTextStyles.align_center}>
+            <DivElement textStyles={eTextStyles.align_center}>
               Gossauerstrasse 17
             </DivElement>
 
-            <DivElement cssClass={eTextStyles.align_center}>
+            <DivElement textStyles={eTextStyles.align_center}>
               9100 Herisau
             </DivElement>
 
-            <DivElement cssClass={eTextStyles.align_center}>
+            <DivElement textStyles={eTextStyles.align_center}>
               Handelsregisternummer: CHE-460.558.934
             </DivElement>
 

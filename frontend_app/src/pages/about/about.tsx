@@ -46,7 +46,7 @@ class About extends React.Component {
               pageStyle={ePageStyleTemplates.light}
             />
 
-            <ParagraphElement cssClass={eTextStyles.lead}>
+            <ParagraphElement textStyles={eTextStyles.lead}>
               Deshalb kann responsive IT in allen Bereichen der
               Informationstechnologie beraten, realisieren und unterstützen.
             </ParagraphElement>

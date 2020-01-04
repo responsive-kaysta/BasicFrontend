@@ -3,7 +3,9 @@ import iTextElementProps from "./spec/iTextElementProps";
 
 class SpanElement extends React.Component<iTextElementProps> {
   public render() {
-    const cssClass = this.props.cssClass ? this.props.cssClass : "paragraph";
+    const cssClass = this.props.textStyles
+      ? this.props.textStyles
+      : "paragraph";
 
     return (
       <span className={cssClass} id={this.props.elementId}>

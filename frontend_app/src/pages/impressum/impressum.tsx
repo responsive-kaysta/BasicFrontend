@@ -46,19 +46,19 @@ class Impressum extends React.Component {
               paragraph="responsive IT"
               pageStyle={ePageStyleTemplates.light}
             />
-            <ParagraphElement cssClass={eTextStyles.italic}>
+            <ParagraphElement textStyles={eTextStyles.italic}>
               IT & Software Architecture, Engineering & Consulting
             </ParagraphElement>
-            <ParagraphElement cssClass={eTextStyles.italic}>
+            <ParagraphElement textStyles={eTextStyles.italic}>
               Kay Stuckenschmidt
             </ParagraphElement>
-            <ParagraphElement cssClass={eTextStyles.italic}>
+            <ParagraphElement textStyles={eTextStyles.italic}>
               Gossauerstrasse 17
             </ParagraphElement>
-            <ParagraphElement cssClass={eTextStyles.italic}>
+            <ParagraphElement textStyles={eTextStyles.italic}>
               9100 Herisau, Switzerland
             </ParagraphElement>
-            <ParagraphElement cssClass={eTextStyles.italic}>
+            <ParagraphElement textStyles={eTextStyles.italic}>
               Handelsregisternummer: CHE-460.558.934
             </ParagraphElement>
 
@@ -154,7 +154,7 @@ class Impressum extends React.Component {
               pageStyle={ePageStyleTemplates.light}
             />
 
-            <ParagraphElement cssClass={eTextStyles.align_center}>
+            <ParagraphElement textStyles={eTextStyles.align_center}>
               .NET, Development, Entwicklung, Datenbank, Oracle, MSSQL, MYSQL,
               Mobile, CMS, Content, Management, System, Mobile, responsive, web,
               jquery, bootstrap, umbraco, frontend, basic, open source, asp.net,

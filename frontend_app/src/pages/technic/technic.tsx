@@ -47,7 +47,7 @@ class Technic extends React.Component {
               pageStyle={ePageStyleTemplates.light}
             />
 
-            <ParagraphElement cssClass={eTextStyles.lead}>
+            <ParagraphElement textStyles={eTextStyles.lead}>
               Theoretisch müssen Sie damit rechnen, dass Ihre Applikation auf
               200+ verschiedenen Geräten benutzt wird.
             </ParagraphElement>

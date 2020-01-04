@@ -1,7 +1,7 @@
 import eTextStyles from "./eTextStyles";
 
 export interface iTextElementProps {
-  cssClass?: eTextStyles;
+  textStyles?: eTextStyles;
   elementId?: string;
 }
 
