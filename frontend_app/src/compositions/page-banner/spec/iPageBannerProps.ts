@@ -7,5 +7,3 @@ export interface iPageBannerProps {
   pageStyle?: ePageStyleTemplates;
   elementId?: string;
 }
-
-export default iPageBannerProps;

@@ -3,5 +3,3 @@ import { iArchiveContentListItemProps } from "../../../components/archive-conten
 export interface iArchiveContentModalBoxProps {
   articleContent: iArchiveContentListItemProps;
 }
-
-export default iArchiveContentModalBoxProps;

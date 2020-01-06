@@ -1,5 +1,5 @@
 import * as React from "react";
-import iArticleBannerProps from "./spec/iArticleBannerProps";
+import { iArticleBannerProps } from "./spec";
 
 class ArticleBanner extends React.Component<iArticleBannerProps> {
   public render() {

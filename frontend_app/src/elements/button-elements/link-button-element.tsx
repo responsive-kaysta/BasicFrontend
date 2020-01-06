@@ -1,5 +1,5 @@
 import * as React from "react";
-import iButtonElementProps from "./spec/iButtonElementProps";
+import { iButtonElementProps } from "./spec";
 
 class LinkButtonElement extends React.Component<iButtonElementProps> {
   public render() {

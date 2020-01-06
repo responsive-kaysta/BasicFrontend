@@ -1,5 +1,5 @@
 import * as React from "react";
-import iArticleContainerProps from "./spec/iArticleContainerProps";
+import { iArticleContainerProps } from "./spec";
 
 class ArticleContainer extends React.Component<iArticleContainerProps> {
   public render() {

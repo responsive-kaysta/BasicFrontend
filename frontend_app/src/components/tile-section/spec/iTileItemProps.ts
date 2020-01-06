@@ -1,4 +1,4 @@
-import ePageStyleTemplates from "../../../less/page-style-templates";
+import { ePageStyleTemplates } from "../../../less";
 
 export interface iTileItemProps {
   item: number;
@@ -8,5 +8,3 @@ export interface iTileItemProps {
   link: string;
   pageStyle?: ePageStyleTemplates;
 }
-
-export default iTileItemProps;

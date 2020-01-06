@@ -5,5 +5,3 @@ export enum ePageStyleTemplates {
   purple = "purple",
   gray = "gray"
 }
-
-export default ePageStyleTemplates;

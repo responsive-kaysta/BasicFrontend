@@ -1,7 +1,5 @@
-import ePageStyleTemplates from "../../../less/page-style-templates";
+import { ePageStyleTemplates } from "../../../less";
 
 export interface iTileSectionProps {
   pageStyle: ePageStyleTemplates;
 }
-
-export default iTileSectionProps;

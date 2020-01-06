@@ -3,5 +3,3 @@ export interface iModalWindowProps {
   onClose: () => void;
   modalClassName?: string;
 }
-
-export default iModalWindowProps;

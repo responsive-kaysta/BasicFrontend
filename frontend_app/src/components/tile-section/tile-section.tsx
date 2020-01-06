@@ -1,5 +1,5 @@
 import * as React from "react";
-import iTileSectionProps from "./spec/iTileSectionProps";
+import { iTileSectionProps } from "./spec";
 
 class TileSection extends React.Component<iTileSectionProps> {
   public render() {

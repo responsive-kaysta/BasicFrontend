@@ -7,5 +7,3 @@ export enum eButtonStyles {
   button_big = "button big",
   button_disabled = "button disabled"
 }
-
-export default eButtonStyles;

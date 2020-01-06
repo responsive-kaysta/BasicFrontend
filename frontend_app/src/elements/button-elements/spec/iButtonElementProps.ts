@@ -1,4 +1,4 @@
-import eButtonStyles from "./eButtonStyles";
+import { eButtonStyles } from ".";
 
 export interface iButtonElementProps {
   text: string;
@@ -6,5 +6,3 @@ export interface iButtonElementProps {
   action?: () => void;
   cssClass?: eButtonStyles;
 }
-
-export default iButtonElementProps;

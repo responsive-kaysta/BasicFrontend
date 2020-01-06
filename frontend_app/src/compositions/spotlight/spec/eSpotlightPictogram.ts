@@ -31,5 +31,3 @@ export enum eSpotlightPictogram {
   web_design = "/assets/pictogram/web-design.png",
   website = "/assets/pictogram/website.png"
 }
-
-export default eSpotlightPictogram;

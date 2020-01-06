@@ -5,5 +5,3 @@ export interface iFacetSearchListProps {
   dataContainer: [];
   pageStyle?: ePageStyleTemplates;
 }
-
-export default iFacetSearchListProps;

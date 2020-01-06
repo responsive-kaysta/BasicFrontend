@@ -1,5 +1,5 @@
 import * as React from "react";
-import iTextElementProps from "./spec/iTextElementProps";
+import { iTextElementProps } from "./spec";
 
 class SpanElement extends React.Component<iTextElementProps> {
   public render() {

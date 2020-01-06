@@ -13,5 +13,3 @@ export interface iFacetSearchListItemProps {
   HitsPerFacet: number;
   HitCount: number;
 }
-
-export default iFacetSearchListItemProps;

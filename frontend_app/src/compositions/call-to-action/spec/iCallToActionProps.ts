@@ -9,5 +9,3 @@ export interface iCallToActionProps {
   specialUrl: string;
   pageStyle?: ePageStyleTemplates;
 }
-
-export default iCallToActionProps;

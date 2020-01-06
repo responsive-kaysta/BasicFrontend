@@ -5,5 +5,3 @@ export interface iArchiveSourceProps {
   dataContainer: [];
   pageStyle?: ePageStyleTemplates;
 }
-
-export default iArchiveSourceProps;

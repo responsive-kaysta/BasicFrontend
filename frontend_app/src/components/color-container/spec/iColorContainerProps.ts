@@ -4,5 +4,3 @@ export interface iColorContainerProps {
   pageStyle: ePageStyleTemplates;
   padded?: boolean;
 }
-
-export default iColorContainerProps;

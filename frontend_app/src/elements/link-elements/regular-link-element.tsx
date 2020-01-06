@@ -1,5 +1,5 @@
 import * as React from "react";
-import iRegularLinkElementProps from "./spec/iRegularLinkElementProps";
+import { iRegularLinkElementProps } from "./spec";
 
 class RegularLinkElement extends React.Component<iRegularLinkElementProps> {
   openWindow = (url: string) => {

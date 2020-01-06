@@ -1,6 +1,6 @@
 import * as React from "react";
 import ArticleContentModalBox from "../article-content-modal-box/article-content-modal-box";
-import iArchiveContentListItemProps from "./spec/iArchiveContentListItemProps";
+import { iArchiveContentListItemProps } from "./spec";
 
 function ArchiveContentListItem(props: {
   archiveContent: iArchiveContentListItemProps;

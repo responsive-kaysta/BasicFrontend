@@ -6,5 +6,3 @@ export interface iEyeCatcherProps {
   pageStyle: ePageStyleTemplates;
   elementId?: string;
 }
-
-export default iEyeCatcherProps;

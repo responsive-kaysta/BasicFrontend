@@ -1,5 +1,5 @@
 import * as React from "react";
-import iTileItemProps from "./spec/iTileItemProps";
+import { iTileItemProps } from "./spec";
 
 class TileItem extends React.Component<iTileItemProps> {
   public render() {

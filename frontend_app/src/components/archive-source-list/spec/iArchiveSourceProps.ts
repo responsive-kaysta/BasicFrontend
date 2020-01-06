@@ -5,5 +5,3 @@ export interface iArchiveSourceProps {
   apiController: string;
   pageStyle?: ePageStyleTemplates;
 }
-
-export default iArchiveSourceProps;

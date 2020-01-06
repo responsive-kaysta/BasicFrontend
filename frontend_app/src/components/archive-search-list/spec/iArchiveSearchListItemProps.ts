@@ -14,5 +14,3 @@ export interface iArchiveSearchListItemProps {
   SourceLink: string;
   ContentType: string;
 }
-
-export default iArchiveSearchListItemProps;

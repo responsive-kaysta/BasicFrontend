@@ -1,24 +1,25 @@
 import * as React from "react";
+import * as Scroll from "react-scroll";
 import ArticleContainer from "../../components/article-container/article-container";
 import ColorContainer from "../../components/color-container/color-container";
 import CallToAction from "../../compositions/call-to-action/call-to-action";
 import EyeCatcher from "../../compositions/eye-catcher/eye-catcher";
 import PageBanner from "../../compositions/page-banner/page-banner";
 import PageHeader from "../../compositions/page-header/page-header";
-import eSpotlightOrientation from "../../compositions/spotlight/spec/eSpotlightOrientation";
-import eSpotlightPictogram from "../../compositions/spotlight/spec/eSpotlightPictogram";
 import Spotlight from "../../compositions/spotlight/spotlight";
 import LinkButtonElement from "../../elements/button-elements/link-button-element";
-import eButtonStyles from "../../elements/button-elements/spec/eButtonStyles";
 import DivElement from "../../elements/text-elements/div-element";
 import ToTopButton from "../../elements/to-top-button/to-top-button";
 import { ePageStyleTemplates } from "../../less";
-import iHomeState from "./spec/iHomeState";
-import * as Scroll from "react-scroll";
+import {
+  eSpotlightOrientation,
+  eSpotlightPictogram
+} from "../../compositions/spotlight/spec";
+import { eButtonStyles } from "../../elements/button-elements/spec";
 
 var scroll = Scroll.animateScroll;
 
-class Home extends React.Component<any, iHomeState> {
+class Home extends React.Component {
   componentDidMount() {
     scroll.scrollToTop();
   }

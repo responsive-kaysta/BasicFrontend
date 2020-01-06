@@ -15,5 +15,3 @@ export interface iArchiveSourceListItemProps {
   ArchiveCategory?: number;
   ArticleCount?: number;
 }
-
-export default iArchiveSourceListItemProps;

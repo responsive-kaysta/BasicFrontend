@@ -1,8 +1,10 @@
 import React from "react";
 import ModalWindow from "../../components/modal-window/modal-window";
 import DateTime from "../../elements/date-time/date-time";
-import iArchiveContentModalBoxProps from "./spec/iArticleContentModalBoxProps";
-import iArchiveContentModalBoxState from "./spec/iArticleContentModalBoxState";
+import {
+  iArchiveContentModalBoxProps,
+  iArchiveContentModalBoxState
+} from "./spec";
 
 // https://peteris.rocks/blog/modal-window-in-react-from-scratch/
 

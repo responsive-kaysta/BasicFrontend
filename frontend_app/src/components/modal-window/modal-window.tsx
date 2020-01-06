@@ -1,5 +1,5 @@
 import React from "react";
-import iModalWindowProps from "./spec/iModalWindowProps";
+import { iModalWindowProps } from "./spec";
 
 // https://peteris.rocks/blog/modal-window-in-react-from-scratch/
 

@@ -1,7 +1,6 @@
 import * as React from "react";
 import ArchiveSourceListItem from "./archive-source-list-item";
-import iArchiveSourceListItemProps from "./spec/iArchiveSourceListItemProps";
-import iArchiveSourceProps from "./spec/iArchiveSourceListProps";
+import { iArchiveSourceProps, iArchiveSourceListItemProps } from "./spec";
 
 class ArchiveSourceList extends React.Component<iArchiveSourceProps> {
   public render() {

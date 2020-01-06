@@ -1,5 +1,5 @@
 import * as React from "react";
-import iFacetSearchListItemProps from "./spec/iFacetSearchListItemProps";
+import { iFacetSearchListItemProps } from "./spec";
 
 function FacetSearchListItem(props: {
   searchListItem: iFacetSearchListItemProps;

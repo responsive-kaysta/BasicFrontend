@@ -12,5 +12,3 @@ export enum eTextStyles {
   align_right = "align-right",
   error = "error"
 }
-
-export default eTextStyles;

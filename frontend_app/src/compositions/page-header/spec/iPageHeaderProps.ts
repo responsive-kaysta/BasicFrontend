@@ -5,5 +5,3 @@ export interface iPageHeaderProps {
   paragraph?: string;
   pageStyle?: ePageStyleTemplates;
 }
-
-export default iPageHeaderProps;

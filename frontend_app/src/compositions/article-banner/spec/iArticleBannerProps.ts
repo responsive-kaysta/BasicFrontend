@@ -6,5 +6,3 @@ export interface iArticleBannerProps {
   pageStyle?: ePageStyleTemplates;
   elementId?: string;
 }
-
-export default iArticleBannerProps;

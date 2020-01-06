@@ -3,17 +3,19 @@ import ArticleContainer from "../../components/article-container/article-contain
 import ColorContainer from "../../components/color-container/color-container";
 import ArticleBanner from "../../compositions/article-banner/article-banner";
 import PageHeader from "../../compositions/page-header/page-header";
-import eSpotlightOrientation from "../../compositions/spotlight/spec/eSpotlightOrientation";
-import eSpotlightPictogram from "../../compositions/spotlight/spec/eSpotlightPictogram";
 import Spotlight from "../../compositions/spotlight/spotlight";
 import RegularLinkElement from "../../elements/link-elements/regular-link-element";
 import Spacer from "../../elements/spacer/spacer";
 import DivElement from "../../elements/text-elements/div-element";
 import ParagraphElement from "../../elements/text-elements/paragraph-element";
-import eTextStyles from "../../elements/text-elements/spec/eTextStyles";
 import ToTopButton from "../../elements/to-top-button/to-top-button";
 import { ePageStyleTemplates } from "../../less";
 import * as Scroll from "react-scroll";
+import {
+  eSpotlightPictogram,
+  eSpotlightOrientation
+} from "../../compositions/spotlight/spec";
+import { eTextStyles } from "../../elements/text-elements/spec";
 
 var scroll = Scroll.animateScroll;
 

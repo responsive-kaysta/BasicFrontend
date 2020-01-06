@@ -1,8 +1,10 @@
 import * as React from "react";
 import FacetSearchListItem from "./facet-search-list-item";
-import iFacetSearchListItemProps from "./spec/iFacetSearchListItemProps";
-import iFacetSearchListProps from "./spec/iFacetSearchListProps";
-import iFacetSearchListState from "./spec/iFacetSearchListState";
+import {
+  iFacetSearchListProps,
+  iFacetSearchListState,
+  iFacetSearchListItemProps
+} from "./spec";
 
 class FacetSearchList extends React.Component<
   iFacetSearchListProps,

@@ -1,8 +1,6 @@
-import eTextStyles from "./eTextStyles";
+import { eTextStyles } from ".";
 
 export interface iTextElementProps {
   textStyles?: eTextStyles;
   elementId?: string;
 }
-
-export default iTextElementProps;

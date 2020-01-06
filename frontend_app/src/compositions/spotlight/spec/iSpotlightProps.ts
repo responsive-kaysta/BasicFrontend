@@ -9,5 +9,3 @@ export interface iSpotlightProps {
   elementId?: string;
   pageStyle?: ePageStyleTemplates;
 }
-
-export default iSpotlightProps;

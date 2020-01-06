@@ -1,5 +1,5 @@
 import * as React from "react";
-import iColorContainerProps from "./spec/iColorContainerProps";
+import { iColorContainerProps } from "./spec";
 
 class ColorContainer extends React.Component<iColorContainerProps> {
   public render() {
