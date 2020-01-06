@@ -6,16 +6,16 @@ import CallToAction from "../../compositions/call-to-action/call-to-action";
 import EyeCatcher from "../../compositions/eye-catcher/eye-catcher";
 import PageBanner from "../../compositions/page-banner/page-banner";
 import PageHeader from "../../compositions/page-header/page-header";
-import Spotlight from "../../compositions/spotlight/spotlight";
-import LinkButtonElement from "../../elements/button-elements/link-button-element";
-import DivElement from "../../elements/text-elements/div-element";
-import ToTopButton from "../../elements/to-top-button/to-top-button";
-import { ePageStyleTemplates } from "../../less";
 import {
   eSpotlightOrientation,
   eSpotlightPictogram
 } from "../../compositions/spotlight/spec";
+import Spotlight from "../../compositions/spotlight/spotlight";
+import LinkButtonElement from "../../elements/button-elements/link-button-element";
 import { eButtonStyles } from "../../elements/button-elements/spec";
+import DivElement from "../../elements/text-elements/div-element";
+import ToTopButton from "../../elements/to-top-button/to-top-button";
+import { ePageStyleTemplates } from "../../less";
 
 var scroll = Scroll.animateScroll;
 
