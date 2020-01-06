@@ -1,11 +1,11 @@
 import React from "react";
 import { BrowserRouter, Route } from "react-router-dom";
-import Footer from "./compositions/page/footer";
-import Header from "./compositions/page/header";
 import About from "./views/about/about";
 import Contact from "./views/contact/contact";
 import Home from "./views/home/home";
 import Impressum from "./views/impressum/impressum";
+import Footer from "./views/page-includes/footer";
+import Header from "./views/page-includes/header";
 import Projects from "./views/projects/projects";
 import Technic from "./views/technic/technic";
 

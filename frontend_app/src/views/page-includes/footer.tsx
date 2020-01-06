@@ -48,7 +48,10 @@ class Footer extends React.Component {
             </li>
           </ul>
           <div className="copyright">
-            <span>&copy; 2019 Basic Frontend - mobile first!</span>
+            <span>
+              &copy; {new Date().getFullYear().toString()} Basic Frontend -
+              mobile first!
+            </span>
           </div>
         </footer>
       </>
