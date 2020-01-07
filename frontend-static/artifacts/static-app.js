@@ -1228,13 +1228,13 @@ module.exports = require("@babel/runtime/regenerator");
 /* 25 */
 /***/ (function(module, exports) {
 
-module.exports = require("react-static");
+module.exports = require("@babel/runtime/helpers/defineProperty");
 
 /***/ }),
 /* 26 */
 /***/ (function(module, exports) {
 
-module.exports = require("@babel/runtime/helpers/defineProperty");
+module.exports = require("react-static");
 
 /***/ }),
 /* 27 */
@@ -1414,7 +1414,7 @@ var external_react_ = __webpack_require__(0);
 var external_react_default = /*#__PURE__*/__webpack_require__.n(external_react_);
 
 // EXTERNAL MODULE: external "react-static"
-var external_react_static_ = __webpack_require__(25);
+var external_react_static_ = __webpack_require__(26);
 
 // EXTERNAL MODULE: /home/kaysta/Dev/GitHub/BasicFrontend/frontend-static/public/assets/css/fontawesome-all.css
 var fontawesome_all = __webpack_require__(84);
@@ -1422,6 +1422,12 @@ var fontawesome_all = __webpack_require__(84);
 // EXTERNAL MODULE: /home/kaysta/Dev/GitHub/BasicFrontend/frontend-static/public/assets/css/styles.css
 var styles = __webpack_require__(98);
 
+// CONCATENATED MODULE: /home/kaysta/Dev/GitHub/BasicFrontend/frontend-static/src/constants.ts
+var PAGE_NAME = "Basic Frontend";
+var PAGE_AUTHOR = "responsive IT";
+var PAGE_DESCRIPTION = "mobile first!";
+var PAGE_TOPIC = "finest reactive mobile web application";
+var PAGE_KEYWORDS = "reactjs, css3, html5, responsive";
 // EXTERNAL MODULE: external "@babel/runtime/helpers/classCallCheck"
 var classCallCheck_ = __webpack_require__(1);
 var classCallCheck_default = /*#__PURE__*/__webpack_require__.n(classCallCheck_);
@@ -1489,7 +1495,7 @@ var assertThisInitialized_ = __webpack_require__(20);
 var assertThisInitialized_default = /*#__PURE__*/__webpack_require__.n(assertThisInitialized_);
 
 // EXTERNAL MODULE: external "@babel/runtime/helpers/defineProperty"
-var defineProperty_ = __webpack_require__(26);
+var defineProperty_ = __webpack_require__(25);
 var defineProperty_default = /*#__PURE__*/__webpack_require__.n(defineProperty_);
 
 // CONCATENATED MODULE: /home/kaysta/Dev/GitHub/BasicFrontend/frontend-static/src/page-includes/footer.tsx
@@ -1693,25 +1699,19 @@ function App() {
     charSet: "UTF-8"
   }), external_react_default.a.createElement("link", {
     rel: "icon",
-    href: "/favicon.ico"
+    href: "/icon.png"
   }), external_react_default.a.createElement("meta", {
     name: "viewport",
     content: "width=device-width, initial-scale=1"
   }), external_react_default.a.createElement("meta", {
     name: "theme-color",
     content: "#000000"
-  }), external_react_default.a.createElement("meta", {
-    name: "description",
-    content: "MasterArchive (beta) - news, information, archive"
   }), external_react_default.a.createElement("link", {
     rel: "apple-touch-icon",
     href: "/logo192.png"
-  }), external_react_default.a.createElement("link", {
-    rel: "manifest",
-    href: "/manifest.json"
   }), external_react_default.a.createElement("meta", {
     name: "page-topic",
-    content: "news, information, archive"
+    content: PAGE_TOPIC
   }), external_react_default.a.createElement("meta", {
     name: "robots",
     content: "all"
@@ -1723,7 +1723,7 @@ function App() {
     content: "all"
   }), external_react_default.a.createElement("meta", {
     "http-equiv": "expires",
-    content: "-60"
+    content: "1 day"
   }), external_react_default.a.createElement("meta", {
     "http-equiv": "cache-control",
     content: "no-cache"
@@ -1732,13 +1732,13 @@ function App() {
     content: "1D150EFBAA80F83F5DB962EEEC207A71"
   }), external_react_default.a.createElement("meta", {
     name: "description",
-    content: "news, information, archive"
+    content: "".concat(PAGE_NAME, " ").concat(PAGE_DESCRIPTION)
   }), external_react_default.a.createElement("meta", {
     name: "keywords",
-    content: "news, information, archive"
+    content: PAGE_KEYWORDS
   }), external_react_default.a.createElement("meta", {
     name: "author",
-    content: "responsive IT"
+    content: PAGE_AUTHOR
   })), external_react_default.a.createElement(header, null), external_react_default.a.createElement(external_react_default.a.Suspense, {
     fallback: external_react_default.a.createElement(spinner, {
       loadingState: true
@@ -2376,7 +2376,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var react_scroll__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(10);
 /* harmony import */ var react_scroll__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react_scroll__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var react_static__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(25);
+/* harmony import */ var react_static__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(26);
 /* harmony import */ var react_static__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react_static__WEBPACK_IMPORTED_MODULE_7__);
 /* harmony import */ var _components_article_container_article_container__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(14);
 /* harmony import */ var _components_color_container_color_container__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(15);
@@ -2906,7 +2906,7 @@ var assertThisInitialized_ = __webpack_require__(20);
 var assertThisInitialized_default = /*#__PURE__*/__webpack_require__.n(assertThisInitialized_);
 
 // EXTERNAL MODULE: external "@babel/runtime/helpers/defineProperty"
-var defineProperty_ = __webpack_require__(26);
+var defineProperty_ = __webpack_require__(25);
 var defineProperty_default = /*#__PURE__*/__webpack_require__.n(defineProperty_);
 
 // CONCATENATED MODULE: /home/kaysta/Dev/GitHub/BasicFrontend/frontend-static/src/components/modal-window/modal-window.tsx
@@ -4190,7 +4190,7 @@ var assertThisInitialized_ = __webpack_require__(20);
 var assertThisInitialized_default = /*#__PURE__*/__webpack_require__.n(assertThisInitialized_);
 
 // EXTERNAL MODULE: external "@babel/runtime/helpers/defineProperty"
-var defineProperty_ = __webpack_require__(26);
+var defineProperty_ = __webpack_require__(25);
 var defineProperty_default = /*#__PURE__*/__webpack_require__.n(defineProperty_);
 
 // CONCATENATED MODULE: /home/kaysta/Dev/GitHub/BasicFrontend/frontend-static/src/elements/link-elements/regular-link-element.tsx
@@ -4382,7 +4382,7 @@ exports["default"] = void 0;
 
 var _react = _interopRequireDefault(__webpack_require__(0));
 
-var _reactStatic = __webpack_require__(25);
+var _reactStatic = __webpack_require__(26);
 
 var _router = __webpack_require__(21);
 
