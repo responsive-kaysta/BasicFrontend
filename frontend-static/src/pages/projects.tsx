@@ -67,8 +67,8 @@ class Projects extends React.Component {
               item={2}
               header="sauber | sicher | schnell"
               paragraph="Aus Kreativität entstanden, als Prinzip im Einsatz"
-              link="/projects"
-              date="16.01.2019"
+              link="/projects/inmemoryloader"
+              date="Thursday, October 18, 2018"
               backgroundImage={ePictogram.ai_4}
             />
 
@@ -76,8 +76,8 @@ class Projects extends React.Component {
               item={1}
               header="Responsive | Accessible | Umbraco"
               paragraph="Umbraco ist ein Open Source CMS dass sich grosser Beliebtheit erfreut"
-              link="/projects"
-              date="15.01.2019"
+              link="/projects/responsive-accessible-umbraco"
+              date="Thursday, October 18, 2018"
               backgroundImage={ePictogram.website}
             />
           </TileSection>

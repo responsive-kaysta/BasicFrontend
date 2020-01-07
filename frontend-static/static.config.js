@@ -31,6 +31,14 @@ export default {
       {
         path: "sources",
         template: "src/pages/sources.tsx"
+      },
+      {
+        path: "/projects/responsive-accessible-umbraco",
+        template: "src/pages/projects/project-1.tsx"
+      },
+      {
+        path: "/projects/inmemoryloader",
+        template: "src/pages/projects/project-2.tsx"
       }
     ];
   },
