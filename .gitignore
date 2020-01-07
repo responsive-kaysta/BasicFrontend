@@ -4,6 +4,7 @@
 react_application/node_modules
 *node_modules*
 *dist*
+*tmp*
 # testing
 /coverage
 
