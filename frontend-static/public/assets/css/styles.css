@@ -1238,85 +1238,6 @@ body.is-loading #banner:after {
 a.more.scrolly {
   color: whitesmoke;
 }
-.blogarchive {
-  display: -moz-flex;
-  display: -webkit-flex;
-  display: -ms-flex;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-.blogarchive div[class^="item-"] {
-  margin: 0.75rem !important;
-  flex-direction: row;
-  width: 40%;
-}
-.blogarchive h3 {
-  padding-bottom: 0.75rem;
-}
-.blogarchive a {
-  text-decoration: none;
-}
-.blogarchive a:hover * {
-  text-decoration: none;
-  color: red;
-}
-.blogarchive a:hover p {
-  text-decoration: underline;
-  color: red;
-}
-.blogarchive .date {
-  text-align: right;
-}
-.blogarchive p.paragraph {
-  min-height: 60px;
-}
-@media screen and (max-width: 980px) {
-  .blogarchive div[class^="item-"] {
-    margin: 0.35rem !important;
-    display: block;
-    width: 80%;
-  }
-  .blogarchive h3 {
-    font-size: 1.1rem !important;
-    line-height: 1.1rem !important;
-    padding-bottom: 0.35rem;
-  }
-  .blogarchive .date {
-    font-size: 0.65rem !important;
-    line-height: 0.75rem !important;
-    padding-bottom: 0.35rem;
-  }
-  .blogarchive p.paragraph {
-    font-size: 0.75rem;
-    font-weight: normal;
-    line-height: 1rem;
-    letter-spacing: 0.1rem;
-  }
-}
-@media screen and (max-width: 736px) {
-  .blogarchive div[class^="item-"] {
-    margin: 0.25rem !important;
-    display: block;
-    width: 80%;
-  }
-  .blogarchive h3 {
-    font-size: 1rem !important;
-    line-height: 1rem !important;
-    padding-bottom: 0.25rem;
-  }
-  .blogarchive .date {
-    font-size: 0.65rem !important;
-    line-height: 0.75rem !important;
-    padding-bottom: 0.35rem;
-  }
-  .blogarchive p.paragraph {
-    font-size: 0.75rem;
-    font-weight: normal;
-    line-height: 1rem;
-    letter-spacing: 0.1rem;
-  }
-}
 .breadcrumb {
   background: rgba(0, 0, 0, 0.6);
   transition: all 200ms ease-in-out;
@@ -1352,8 +1273,8 @@ a.more.scrolly {
   margin-left: auto;
   padding-left: 20%;
   padding-right: 20%;
-  padding-top: 1.75rem;
-  padding-bottom: 1.75rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 @media screen and (max-width: 980px) {
   .container {
@@ -1371,8 +1292,8 @@ a.more.scrolly {
     margin-left: auto;
     padding-left: 5%;
     padding-right: 5%;
-    padding-top: 1.75rem;
-    padding-bottom: 1.75rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
   }
 }
 #cta .inner {
@@ -1380,6 +1301,7 @@ a.more.scrolly {
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
+  scroll-padding-top: 1.5rem;
 }
 #cta .inner header {
   -moz-order: 1;
@@ -1952,6 +1874,77 @@ table.alt thead {
 }
 table.alt tfoot {
   border-top: 0;
+}
+.tiles {
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.tiles div[class^="item-"] {
+  margin: 0.75rem !important;
+  flex-direction: row;
+  width: 40%;
+}
+.tiles h3 {
+  padding-bottom: 0.75rem;
+}
+.tiles a {
+  text-decoration: none;
+}
+.tiles a:hover * {
+  text-decoration: none;
+  color: red;
+}
+.tiles a:hover p {
+  text-decoration: underline;
+  color: red;
+}
+.tiles .date {
+  text-align: right;
+}
+.tiles p.paragraph {
+  min-height: 60px;
+}
+@media screen and (max-width: 980px) {
+  .tiles div[class^="item-"] {
+    margin: 0.35rem !important;
+    display: block;
+    width: 80%;
+  }
+  .tiles h3 {
+    font-size: 1.125rem;
+    padding-bottom: 0.35rem;
+  }
+  .tiles .date {
+    font-size: 1rem;
+    padding-bottom: 0.35rem;
+  }
+  .tiles p.paragraph {
+    font-size: 1.1rem;
+    font-weight: normal;
+  }
+}
+@media screen and (max-width: 736px) {
+  .tiles div[class^="item-"] {
+    margin: 0.25rem !important;
+    display: block;
+    width: 80%;
+  }
+  .tiles h3 {
+    font-size: 1.125rem;
+    padding-bottom: 0.35rem;
+  }
+  .tiles .date {
+    font-size: 1rem;
+    padding-bottom: 0.35rem;
+  }
+  .tiles p.paragraph {
+    font-size: 1.1rem;
+    font-weight: normal;
+  }
 }
 /* 
   page
