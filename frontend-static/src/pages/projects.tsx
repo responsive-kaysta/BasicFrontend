@@ -7,6 +7,7 @@ import TileSection from "../components/tile-section/tile-section";
 import TileItem from "../components/tile-section/tile-item";
 import Spacer from "../elements/spacer/spacer";
 import ToTopButton from "../elements/to-top-button/to-top-button";
+import { ePictogram } from "../page-types";
 
 var scroll = Scroll.animateScroll;
 
@@ -32,6 +33,7 @@ class Projects extends React.Component {
               paragraph="Digital Layer | Telefonie | Vorgangsverwaltung"
               link="/projects"
               date="19.01.2019"
+              backgroundImage={ePictogram.ai_2}
             />
 
             <TileItem
@@ -40,6 +42,7 @@ class Projects extends React.Component {
               paragraph="Continuous Integration, Continuous Deployment, Continuous Quality"
               link="/projects"
               date="19.01.2019"
+              backgroundImage={ePictogram.engineer}
             />
 
             <TileItem
@@ -48,6 +51,7 @@ class Projects extends React.Component {
               paragraph="Plattformgrenzen überwinden, Information geräteunabhängig zugänglich machen"
               link="/projects"
               date="18.01.2019"
+              backgroundImage={ePictogram.analysis}
             />
 
             <TileItem
@@ -56,6 +60,7 @@ class Projects extends React.Component {
               paragraph="In 10 Monaten die Digitalisierung entwickelt, beschleunigt & verstanden"
               link="/projects"
               date="17.01.2019"
+              backgroundImage={ePictogram.computer}
             />
 
             <TileItem
@@ -64,6 +69,7 @@ class Projects extends React.Component {
               paragraph="Aus Kreativität entstanden, als Prinzip im Einsatz"
               link="/projects"
               date="16.01.2019"
+              backgroundImage={ePictogram.ai_4}
             />
 
             <TileItem
@@ -72,6 +78,7 @@ class Projects extends React.Component {
               paragraph="Umbraco ist ein Open Source CMS dass sich grosser Beliebtheit erfreut"
               link="/projects"
               date="15.01.2019"
+              backgroundImage={ePictogram.website}
             />
           </TileSection>
           <Spacer />

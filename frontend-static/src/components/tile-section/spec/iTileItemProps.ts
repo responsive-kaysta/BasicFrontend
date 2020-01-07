@@ -8,5 +8,5 @@ export interface iTileItemProps {
   paragraph: string;
   link: string;
   pageStyle?: ePageStyleTemplates;
-  backgroundImage?: ePictogram;
+  backgroundImage: ePictogram;
 }
