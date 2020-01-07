@@ -1,5 +1,6 @@
 import * as React from "react";
 import * as Scroll from "react-scroll";
+import { Head } from "react-static";
 import ArticleContainer from "../components/article-container/article-container";
 import ColorContainer from "../components/color-container/color-container";
 import CallToAction from "../compositions/call-to-action/call-to-action";
@@ -26,6 +27,9 @@ class About extends React.Component {
   public render() {
     return (
       <>
+        <Head>
+          <title>About - BasicFrontend</title>
+        </Head>
         <ArticleContainer>
           <ArticleBanner
             header="Über responsive IT"

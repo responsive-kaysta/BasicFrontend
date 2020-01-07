@@ -1228,10 +1228,16 @@ module.exports = require("@babel/runtime/regenerator");
 /* 25 */
 /***/ (function(module, exports) {
 
-module.exports = require("@babel/runtime/helpers/defineProperty");
+module.exports = require("react-static");
 
 /***/ }),
 /* 26 */
+/***/ (function(module, exports) {
+
+module.exports = require("@babel/runtime/helpers/defineProperty");
+
+/***/ }),
+/* 27 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1298,13 +1304,13 @@ function (_React$Component) {
 /* harmony default export */ __webpack_exports__["a"] = (CallToAction);
 
 /***/ }),
-/* 27 */
+/* 28 */
 /***/ (function(module, exports) {
 
 module.exports = require("@babel/runtime/helpers/asyncToGenerator");
 
 /***/ }),
-/* 28 */
+/* 29 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1325,12 +1331,6 @@ var requireById = function requireById(id) {
 };
 
 exports["default"] = requireById;
-
-/***/ }),
-/* 29 */
-/***/ (function(module, exports) {
-
-module.exports = require("react-static");
 
 /***/ }),
 /* 30 */
@@ -1414,7 +1414,7 @@ var external_react_ = __webpack_require__(0);
 var external_react_default = /*#__PURE__*/__webpack_require__.n(external_react_);
 
 // EXTERNAL MODULE: external "react-static"
-var external_react_static_ = __webpack_require__(29);
+var external_react_static_ = __webpack_require__(25);
 
 // EXTERNAL MODULE: /home/kaysta/Dev/GitHub/BasicFrontend/frontend-static/public/assets/css/fontawesome-all.css
 var fontawesome_all = __webpack_require__(84);
@@ -1489,7 +1489,7 @@ var assertThisInitialized_ = __webpack_require__(20);
 var assertThisInitialized_default = /*#__PURE__*/__webpack_require__.n(assertThisInitialized_);
 
 // EXTERNAL MODULE: external "@babel/runtime/helpers/defineProperty"
-var defineProperty_ = __webpack_require__(25);
+var defineProperty_ = __webpack_require__(26);
 var defineProperty_default = /*#__PURE__*/__webpack_require__.n(defineProperty_);
 
 // CONCATENATED MODULE: /home/kaysta/Dev/GitHub/BasicFrontend/frontend-static/src/page-includes/footer.tsx
@@ -1683,12 +1683,63 @@ function (_React$Component) {
 
 
 
+
  // Any routes that start with 'dynamic' will be treated as non-static routes
 
 Object(external_react_static_["addPrefetchExcludes"])(["dynamic"]);
 
 function App() {
-  return external_react_default.a.createElement(external_react_static_["Root"], null, external_react_default.a.createElement(header, null), external_react_default.a.createElement(external_react_default.a.Suspense, {
+  return external_react_default.a.createElement(external_react_static_["Root"], null, external_react_default.a.createElement(external_react_static_["Head"], null, external_react_default.a.createElement("meta", {
+    charSet: "UTF-8"
+  }), external_react_default.a.createElement("link", {
+    rel: "icon",
+    href: "/favicon.ico"
+  }), external_react_default.a.createElement("meta", {
+    name: "viewport",
+    content: "width=device-width, initial-scale=1"
+  }), external_react_default.a.createElement("meta", {
+    name: "theme-color",
+    content: "#000000"
+  }), external_react_default.a.createElement("meta", {
+    name: "description",
+    content: "MasterArchive (beta) - news, information, archive"
+  }), external_react_default.a.createElement("link", {
+    rel: "apple-touch-icon",
+    href: "/logo192.png"
+  }), external_react_default.a.createElement("link", {
+    rel: "manifest",
+    href: "/manifest.json"
+  }), external_react_default.a.createElement("meta", {
+    name: "page-topic",
+    content: "news, information, archive"
+  }), external_react_default.a.createElement("meta", {
+    name: "robots",
+    content: "all"
+  }), external_react_default.a.createElement("meta", {
+    name: "revisit-after",
+    content: "1 day"
+  }), external_react_default.a.createElement("meta", {
+    name: "audience",
+    content: "all"
+  }), external_react_default.a.createElement("meta", {
+    "http-equiv": "expires",
+    content: "-60"
+  }), external_react_default.a.createElement("meta", {
+    "http-equiv": "cache-control",
+    content: "no-cache"
+  }), external_react_default.a.createElement("meta", {
+    name: "msvalidate.01",
+    content: "1D150EFBAA80F83F5DB962EEEC207A71"
+  }), external_react_default.a.createElement("meta", {
+    name: "description",
+    content: "news, information, archive"
+  }), external_react_default.a.createElement("meta", {
+    name: "keywords",
+    content: "news, information, archive"
+  }), external_react_default.a.createElement("meta", {
+    name: "author",
+    content: "responsive IT"
+  })), external_react_default.a.createElement(header, null), external_react_default.a.createElement(external_react_default.a.Suspense, {
     fallback: external_react_default.a.createElement(spinner, {
       loadingState: true
     })
@@ -1772,7 +1823,7 @@ var _react = __webpack_require__(0);
 
 var React = _interopRequireWildcard(_react);
 
-var _requireById = __webpack_require__(28);
+var _requireById = __webpack_require__(29);
 
 var _requireById2 = _interopRequireDefault(_requireById);
 
@@ -2325,18 +2376,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var react_scroll__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(10);
 /* harmony import */ var react_scroll__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react_scroll__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _components_article_container_article_container__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(14);
-/* harmony import */ var _components_color_container_color_container__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(15);
-/* harmony import */ var _compositions_call_to_action_call_to_action__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(26);
-/* harmony import */ var _compositions_page_header_page_header__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(7);
-/* harmony import */ var _compositions_spotlight_spec__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(8);
-/* harmony import */ var _compositions_spotlight_spotlight__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(17);
-/* harmony import */ var _elements_to_top_button_to_top_button__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(16);
-/* harmony import */ var _less__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(6);
-/* harmony import */ var _compositions_article_banner_article_banner__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(18);
-/* harmony import */ var _elements_text_elements_paragraph_element__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(19);
-/* harmony import */ var _elements_text_elements_spec__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(11);
-/* harmony import */ var _elements_spacer_spacer__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(9);
+/* harmony import */ var react_static__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(25);
+/* harmony import */ var react_static__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react_static__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _components_article_container_article_container__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(14);
+/* harmony import */ var _components_color_container_color_container__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(15);
+/* harmony import */ var _compositions_call_to_action_call_to_action__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(27);
+/* harmony import */ var _compositions_page_header_page_header__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(7);
+/* harmony import */ var _compositions_spotlight_spec__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(8);
+/* harmony import */ var _compositions_spotlight_spotlight__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(17);
+/* harmony import */ var _elements_to_top_button_to_top_button__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(16);
+/* harmony import */ var _less__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(6);
+/* harmony import */ var _compositions_article_banner_article_banner__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(18);
+/* harmony import */ var _elements_text_elements_paragraph_element__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(19);
+/* harmony import */ var _elements_text_elements_spec__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(11);
+/* harmony import */ var _elements_spacer_spacer__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(9);
+
 
 
 
@@ -2377,45 +2431,45 @@ function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_5__["createElement"](react__WEBPACK_IMPORTED_MODULE_5__["Fragment"], null, react__WEBPACK_IMPORTED_MODULE_5__["createElement"](_components_article_container_article_container__WEBPACK_IMPORTED_MODULE_7__[/* default */ "a"], null, react__WEBPACK_IMPORTED_MODULE_5__["createElement"](_compositions_article_banner_article_banner__WEBPACK_IMPORTED_MODULE_15__[/* default */ "a"], {
+      return react__WEBPACK_IMPORTED_MODULE_5__["createElement"](react__WEBPACK_IMPORTED_MODULE_5__["Fragment"], null, react__WEBPACK_IMPORTED_MODULE_5__["createElement"](react_static__WEBPACK_IMPORTED_MODULE_7__["Head"], null, react__WEBPACK_IMPORTED_MODULE_5__["createElement"]("title", null, "About - BasicFrontend")), react__WEBPACK_IMPORTED_MODULE_5__["createElement"](_components_article_container_article_container__WEBPACK_IMPORTED_MODULE_8__[/* default */ "a"], null, react__WEBPACK_IMPORTED_MODULE_5__["createElement"](_compositions_article_banner_article_banner__WEBPACK_IMPORTED_MODULE_16__[/* default */ "a"], {
         header: "\xDCber responsive IT",
         paragraph: "F\xFCr uns ist die Kreativit\xE4t des Ungeplanten von zentraler Bedeutung",
-        pageStyle: _less__WEBPACK_IMPORTED_MODULE_14__[/* ePageStyleTemplates */ "a"].transparent
-      }), react__WEBPACK_IMPORTED_MODULE_5__["createElement"](_compositions_spotlight_spotlight__WEBPACK_IMPORTED_MODULE_12__[/* default */ "a"], {
+        pageStyle: _less__WEBPACK_IMPORTED_MODULE_15__[/* ePageStyleTemplates */ "a"].transparent
+      }), react__WEBPACK_IMPORTED_MODULE_5__["createElement"](_compositions_spotlight_spotlight__WEBPACK_IMPORTED_MODULE_13__[/* default */ "a"], {
         header: "Gestern, Heute, Morgen",
         paragraph: "Bereits seit 2002 bieten wir innovative Leistungen rund um Informatik an",
-        pictogram: _compositions_spotlight_spec__WEBPACK_IMPORTED_MODULE_11__["eSpotlightPictogram"].ai_1,
-        pageStyle: _less__WEBPACK_IMPORTED_MODULE_14__[/* ePageStyleTemplates */ "a"].light,
-        orientation: _compositions_spotlight_spec__WEBPACK_IMPORTED_MODULE_11__["eSpotlightOrientation"].left
-      }), react__WEBPACK_IMPORTED_MODULE_5__["createElement"](_components_color_container_color_container__WEBPACK_IMPORTED_MODULE_8__[/* default */ "a"], {
-        pageStyle: _less__WEBPACK_IMPORTED_MODULE_14__[/* ePageStyleTemplates */ "a"].light,
+        pictogram: _compositions_spotlight_spec__WEBPACK_IMPORTED_MODULE_12__["eSpotlightPictogram"].ai_1,
+        pageStyle: _less__WEBPACK_IMPORTED_MODULE_15__[/* ePageStyleTemplates */ "a"].light,
+        orientation: _compositions_spotlight_spec__WEBPACK_IMPORTED_MODULE_12__["eSpotlightOrientation"].left
+      }), react__WEBPACK_IMPORTED_MODULE_5__["createElement"](_components_color_container_color_container__WEBPACK_IMPORTED_MODULE_9__[/* default */ "a"], {
+        pageStyle: _less__WEBPACK_IMPORTED_MODULE_15__[/* ePageStyleTemplates */ "a"].light,
         padded: true
-      }, react__WEBPACK_IMPORTED_MODULE_5__["createElement"](_compositions_page_header_page_header__WEBPACK_IMPORTED_MODULE_10__[/* default */ "a"], {
+      }, react__WEBPACK_IMPORTED_MODULE_5__["createElement"](_compositions_page_header_page_header__WEBPACK_IMPORTED_MODULE_11__[/* default */ "a"], {
         header: "Erfahrung",
         paragraph: "Dank unserer Erfahrung d\xFCrfen wir bei Pionieren und Gr\xF6ssen der Branche lernen, wachsen und spannende Projekte umsetzen.",
-        pageStyle: _less__WEBPACK_IMPORTED_MODULE_14__[/* ePageStyleTemplates */ "a"].light
-      }), react__WEBPACK_IMPORTED_MODULE_5__["createElement"](_elements_text_elements_paragraph_element__WEBPACK_IMPORTED_MODULE_16__[/* default */ "a"], {
-        textStyles: _elements_text_elements_spec__WEBPACK_IMPORTED_MODULE_17__["eTextStyles"].lead
-      }, "Deshalb kann responsive IT in allen Bereichen der Informationstechnologie beraten, realisieren und unterst\xFCtzen."), react__WEBPACK_IMPORTED_MODULE_5__["createElement"](_elements_spacer_spacer__WEBPACK_IMPORTED_MODULE_18__[/* default */ "a"], null), react__WEBPACK_IMPORTED_MODULE_5__["createElement"](_compositions_page_header_page_header__WEBPACK_IMPORTED_MODULE_10__[/* default */ "a"], {
+        pageStyle: _less__WEBPACK_IMPORTED_MODULE_15__[/* ePageStyleTemplates */ "a"].light
+      }), react__WEBPACK_IMPORTED_MODULE_5__["createElement"](_elements_text_elements_paragraph_element__WEBPACK_IMPORTED_MODULE_17__[/* default */ "a"], {
+        textStyles: _elements_text_elements_spec__WEBPACK_IMPORTED_MODULE_18__["eTextStyles"].lead
+      }, "Deshalb kann responsive IT in allen Bereichen der Informationstechnologie beraten, realisieren und unterst\xFCtzen."), react__WEBPACK_IMPORTED_MODULE_5__["createElement"](_elements_spacer_spacer__WEBPACK_IMPORTED_MODULE_19__[/* default */ "a"], null), react__WEBPACK_IMPORTED_MODULE_5__["createElement"](_compositions_page_header_page_header__WEBPACK_IMPORTED_MODULE_11__[/* default */ "a"], {
         header: "Beratung",
         paragraph: "Wir helfen aus dem \u201EDschungel\u201C und stehen partnerschaftlich zur Seite damit eine geeignete L\xF6sung gefunden wird.",
-        pageStyle: _less__WEBPACK_IMPORTED_MODULE_14__[/* ePageStyleTemplates */ "a"].light
-      }), react__WEBPACK_IMPORTED_MODULE_5__["createElement"](_elements_spacer_spacer__WEBPACK_IMPORTED_MODULE_18__[/* default */ "a"], null), react__WEBPACK_IMPORTED_MODULE_5__["createElement"](_compositions_page_header_page_header__WEBPACK_IMPORTED_MODULE_10__[/* default */ "a"], {
+        pageStyle: _less__WEBPACK_IMPORTED_MODULE_15__[/* ePageStyleTemplates */ "a"].light
+      }), react__WEBPACK_IMPORTED_MODULE_5__["createElement"](_elements_spacer_spacer__WEBPACK_IMPORTED_MODULE_19__[/* default */ "a"], null), react__WEBPACK_IMPORTED_MODULE_5__["createElement"](_compositions_page_header_page_header__WEBPACK_IMPORTED_MODULE_11__[/* default */ "a"], {
         header: "Umsetzung",
         paragraph: "Interdisziplin\xE4res Arbeiten ist gleich Vernetzte Kreativit\xE4t. So k\xF6nnen wir durch langj\xE4hrige Erfahrung zum Projekterfolg beitragen.",
-        pageStyle: _less__WEBPACK_IMPORTED_MODULE_14__[/* ePageStyleTemplates */ "a"].light
-      }), react__WEBPACK_IMPORTED_MODULE_5__["createElement"](_elements_spacer_spacer__WEBPACK_IMPORTED_MODULE_18__[/* default */ "a"], null), react__WEBPACK_IMPORTED_MODULE_5__["createElement"](_compositions_page_header_page_header__WEBPACK_IMPORTED_MODULE_10__[/* default */ "a"], {
+        pageStyle: _less__WEBPACK_IMPORTED_MODULE_15__[/* ePageStyleTemplates */ "a"].light
+      }), react__WEBPACK_IMPORTED_MODULE_5__["createElement"](_elements_spacer_spacer__WEBPACK_IMPORTED_MODULE_19__[/* default */ "a"], null), react__WEBPACK_IMPORTED_MODULE_5__["createElement"](_compositions_page_header_page_header__WEBPACK_IMPORTED_MODULE_11__[/* default */ "a"], {
         header: "Engineering & Coding",
         paragraph: "Schnell, hochwertig, komplex, stabil \u2013 nur einige der Anforderungen die wir nicht nur an unseren Code stellen. Qualit\xE4t muss sein, hat aber auch ihren Preis.",
-        pageStyle: _less__WEBPACK_IMPORTED_MODULE_14__[/* ePageStyleTemplates */ "a"].light
-      }), react__WEBPACK_IMPORTED_MODULE_5__["createElement"](_elements_spacer_spacer__WEBPACK_IMPORTED_MODULE_18__[/* default */ "a"], null), react__WEBPACK_IMPORTED_MODULE_5__["createElement"](_compositions_call_to_action_call_to_action__WEBPACK_IMPORTED_MODULE_9__[/* default */ "a"], {
+        pageStyle: _less__WEBPACK_IMPORTED_MODULE_15__[/* ePageStyleTemplates */ "a"].light
+      }), react__WEBPACK_IMPORTED_MODULE_5__["createElement"](_elements_spacer_spacer__WEBPACK_IMPORTED_MODULE_19__[/* default */ "a"], null), react__WEBPACK_IMPORTED_MODULE_5__["createElement"](_compositions_call_to_action_call_to_action__WEBPACK_IMPORTED_MODULE_10__[/* default */ "a"], {
         header: "Interaktiv",
         paragraph: "Nicht nur \xABsehende\xBB Ger\xE4te bedienen, einen Schritt weiter gehen.",
         linkText: "Impressum",
         linkUrl: "/impressum",
         specialText: "Projekte",
         specialUrl: "/projects"
-      }), react__WEBPACK_IMPORTED_MODULE_5__["createElement"](_elements_to_top_button_to_top_button__WEBPACK_IMPORTED_MODULE_13__[/* default */ "a"], null))));
+      }), react__WEBPACK_IMPORTED_MODULE_5__["createElement"](_elements_to_top_button_to_top_button__WEBPACK_IMPORTED_MODULE_14__[/* default */ "a"], null))));
     }
   }]);
 
@@ -2686,7 +2740,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _elements_text_elements_spec__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(11);
 /* harmony import */ var _elements_spacer_spacer__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(9);
 /* harmony import */ var _compositions_eye_catcher_eye_catcher__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(30);
-/* harmony import */ var _compositions_call_to_action_call_to_action__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(26);
+/* harmony import */ var _compositions_call_to_action_call_to_action__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(27);
 /* harmony import */ var _elements_to_top_button_to_top_button__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(16);
 
 
@@ -2820,7 +2874,7 @@ var regenerator_ = __webpack_require__(24);
 var regenerator_default = /*#__PURE__*/__webpack_require__.n(regenerator_);
 
 // EXTERNAL MODULE: external "@babel/runtime/helpers/asyncToGenerator"
-var asyncToGenerator_ = __webpack_require__(27);
+var asyncToGenerator_ = __webpack_require__(28);
 var asyncToGenerator_default = /*#__PURE__*/__webpack_require__.n(asyncToGenerator_);
 
 // EXTERNAL MODULE: external "@babel/runtime/helpers/classCallCheck"
@@ -2852,7 +2906,7 @@ var assertThisInitialized_ = __webpack_require__(20);
 var assertThisInitialized_default = /*#__PURE__*/__webpack_require__.n(assertThisInitialized_);
 
 // EXTERNAL MODULE: external "@babel/runtime/helpers/defineProperty"
-var defineProperty_ = __webpack_require__(25);
+var defineProperty_ = __webpack_require__(26);
 var defineProperty_default = /*#__PURE__*/__webpack_require__.n(defineProperty_);
 
 // CONCATENATED MODULE: /home/kaysta/Dev/GitHub/BasicFrontend/frontend-static/src/components/modal-window/modal-window.tsx
@@ -3350,7 +3404,7 @@ var article_container = __webpack_require__(14);
 var color_container = __webpack_require__(15);
 
 // EXTERNAL MODULE: /home/kaysta/Dev/GitHub/BasicFrontend/frontend-static/src/compositions/call-to-action/call-to-action.tsx
-var call_to_action = __webpack_require__(26);
+var call_to_action = __webpack_require__(27);
 
 // EXTERNAL MODULE: /home/kaysta/Dev/GitHub/BasicFrontend/frontend-static/src/compositions/eye-catcher/eye-catcher.tsx
 var eye_catcher = __webpack_require__(30);
@@ -3785,7 +3839,7 @@ var regenerator_ = __webpack_require__(24);
 var regenerator_default = /*#__PURE__*/__webpack_require__.n(regenerator_);
 
 // EXTERNAL MODULE: external "@babel/runtime/helpers/asyncToGenerator"
-var asyncToGenerator_ = __webpack_require__(27);
+var asyncToGenerator_ = __webpack_require__(28);
 var asyncToGenerator_default = /*#__PURE__*/__webpack_require__.n(asyncToGenerator_);
 
 // EXTERNAL MODULE: external "@babel/runtime/helpers/classCallCheck"
@@ -4136,7 +4190,7 @@ var assertThisInitialized_ = __webpack_require__(20);
 var assertThisInitialized_default = /*#__PURE__*/__webpack_require__.n(assertThisInitialized_);
 
 // EXTERNAL MODULE: external "@babel/runtime/helpers/defineProperty"
-var defineProperty_ = __webpack_require__(25);
+var defineProperty_ = __webpack_require__(26);
 var defineProperty_default = /*#__PURE__*/__webpack_require__.n(defineProperty_);
 
 // CONCATENATED MODULE: /home/kaysta/Dev/GitHub/BasicFrontend/frontend-static/src/elements/link-elements/regular-link-element.tsx
@@ -4328,7 +4382,7 @@ exports["default"] = void 0;
 
 var _react = _interopRequireDefault(__webpack_require__(0));
 
-var _reactStatic = __webpack_require__(29);
+var _reactStatic = __webpack_require__(25);
 
 var _router = __webpack_require__(21);
 
@@ -4754,10 +4808,10 @@ var getConfig = function getConfig(isDynamic, universalConfig, options, props) {
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
-	".": 28,
-	"./": 28,
-	"./index": 28,
-	"./index.js": 28
+	".": 29,
+	"./": 29,
+	"./index": 29,
+	"./index.js": 29
 };
 
 
