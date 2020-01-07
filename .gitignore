@@ -3,6 +3,7 @@
 # dependencies
 react_application/node_modules
 *node_modules*
+*dist*
 # testing
 /coverage
 
