@@ -1,5 +1,5 @@
 import * as React from "react";
-import loading from "../../assets/images/logo.svg";
+import loading from "../../../public/assets/images/logo.svg";
 import { iSpinnerProps } from "./spec";
 
 /* 

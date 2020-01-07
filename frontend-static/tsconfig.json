@@ -17,6 +17,7 @@
     "noEmit": true,
     "baseUrl": ".",
     "paths": {
+      "assets/*": ["src/assets/*"],
       "components/*": ["src/components/*"],
       "compositions/*": ["src/compositions/*"],
       "elements/*": ["elements/*"],
