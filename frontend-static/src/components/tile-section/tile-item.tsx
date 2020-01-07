@@ -6,9 +6,16 @@ class TileItem extends React.Component<iTileItemProps> {
     const pageStyle = this.props.pageStyle ? this.props.pageStyle : "light";
     const cssClass = `${pageStyle} box-equal box-round-corner`;
     const itemClass = `item-${this.props.item}`;
+
+    const styles = {
+      width: "100%",
+      height: "100%",
+      backgroundImage: "url(/assets/pictogram/ai_1.png)"
+    };
+
     return (
       <div className={itemClass}>
-        <div className={cssClass}>
+        <div className={cssClass} style={styles}>
           <a href={this.props.link}>
             <div className="date">{this.props.date}</div>
             <h3>{this.props.header}</h3>

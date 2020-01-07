@@ -4,10 +4,7 @@ import ArticleContainer from "../components/article-container/article-container"
 import ArticleBanner from "../compositions/article-banner/article-banner";
 import { ePageStyleTemplates } from "../less";
 import Spotlight from "../compositions/spotlight/spotlight";
-import {
-  eSpotlightPictogram,
-  eSpotlightOrientation
-} from "../compositions/spotlight/spec";
+import { eSpotlightOrientation } from "../compositions/spotlight/spec";
 import ColorContainer from "../components/color-container/color-container";
 import PageHeader from "../compositions/page-header/page-header";
 import ParagraphElement from "../elements/text-elements/paragraph-element";
@@ -16,6 +13,7 @@ import Spacer from "../elements/spacer/spacer";
 import DivElement from "../elements/text-elements/div-element";
 import RegularLinkElement from "../elements/link-elements/regular-link-element";
 import ToTopButton from "../elements/to-top-button/to-top-button";
+import { ePictogram } from "../page-types";
 
 var scroll = Scroll.animateScroll;
 
@@ -37,7 +35,7 @@ class Impressum extends React.Component {
           <Spotlight
             header="Kommunikation"
             paragraph="Darauf haben wir uns nicht nur im technischen Sinne spezialisiert"
-            pictogram={eSpotlightPictogram.connection_1}
+            pictogram={ePictogram.connection_1}
             pageStyle={ePageStyleTemplates.light}
             orientation={eSpotlightOrientation.left}
           />

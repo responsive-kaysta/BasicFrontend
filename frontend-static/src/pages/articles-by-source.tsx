@@ -5,10 +5,8 @@ import ArticleContainer from "../components/article-container/article-container"
 import ColorContainer from "../components/color-container/color-container";
 import ArticleBanner from "../compositions/article-banner/article-banner";
 import PageHeader from "../compositions/page-header/page-header";
-import {
-  eSpotlightOrientation,
-  eSpotlightPictogram
-} from "../compositions/spotlight/spec";
+import { eSpotlightOrientation } from "../compositions/spotlight/spec";
+import { ePictogram } from "../page-types";
 import Spotlight from "../compositions/spotlight/spotlight";
 import ToTopButton from "../elements/to-top-button/to-top-button";
 import { ePageStyleTemplates } from "../less";
@@ -74,7 +72,7 @@ class ArticlesBySource extends React.Component<any, iArticlesBySourceState> {
           <Spotlight
             header="Gestern, Heute, Morgen"
             paragraph="Bereits seit 2002 bieten wir innovative Leistungen rund um Informatik an"
-            pictogram={eSpotlightPictogram.ai_1}
+            pictogram={ePictogram.ai_1}
             pageStyle={ePageStyleTemplates.light}
             orientation={eSpotlightOrientation.left}
           />

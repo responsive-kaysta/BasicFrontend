@@ -1,21 +1,19 @@
 import * as React from "react";
 import * as Scroll from "react-scroll";
 import ArticleContainer from "../components/article-container/article-container";
-import ArticleBanner from "../compositions/article-banner/article-banner";
-import { ePageStyleTemplates } from "../less";
-import Spotlight from "../compositions/spotlight/spotlight";
-import {
-  eSpotlightPictogram,
-  eSpotlightOrientation
-} from "../compositions/spotlight/spec";
 import ColorContainer from "../components/color-container/color-container";
+import ArticleBanner from "../compositions/article-banner/article-banner";
+import CallToAction from "../compositions/call-to-action/call-to-action";
+import EyeCatcher from "../compositions/eye-catcher/eye-catcher";
 import PageHeader from "../compositions/page-header/page-header";
+import { eSpotlightOrientation } from "../compositions/spotlight/spec";
+import Spotlight from "../compositions/spotlight/spotlight";
+import Spacer from "../elements/spacer/spacer";
 import ParagraphElement from "../elements/text-elements/paragraph-element";
 import { eTextStyles } from "../elements/text-elements/spec";
-import Spacer from "../elements/spacer/spacer";
-import EyeCatcher from "../compositions/eye-catcher/eye-catcher";
-import CallToAction from "../compositions/call-to-action/call-to-action";
 import ToTopButton from "../elements/to-top-button/to-top-button";
+import { ePageStyleTemplates } from "../less";
+import { ePictogram } from "../page-types";
 
 var scroll = Scroll.animateScroll;
 
@@ -37,7 +35,7 @@ class Technic extends React.Component {
           <Spotlight
             header="Warte, ich googel das mal..."
             paragraph="Ein Satz, den man inzwischen überall hört – egal ob unterwegs, im Office oder Privat"
-            pictogram={eSpotlightPictogram.ai_2}
+            pictogram={ePictogram.ai_2}
             pageStyle={ePageStyleTemplates.light}
             orientation={eSpotlightOrientation.left}
           />

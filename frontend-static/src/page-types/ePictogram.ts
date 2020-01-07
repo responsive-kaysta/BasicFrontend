@@ -1,4 +1,4 @@
-export enum eSpotlightPictogram {
+export enum ePictogram {
   ai_1 = "/assets/pictogram/ai_1.png",
   ai_2 = "/assets/pictogram/ai_2.png",
   ai_3 = "/assets/pictogram/ai_3.png",

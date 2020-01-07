@@ -6,16 +6,14 @@ import CallToAction from "../compositions/call-to-action/call-to-action";
 import EyeCatcher from "../compositions/eye-catcher/eye-catcher";
 import PageBanner from "../compositions/page-banner/page-banner";
 import PageHeader from "../compositions/page-header/page-header";
-import {
-  eSpotlightOrientation,
-  eSpotlightPictogram
-} from "../compositions/spotlight/spec";
+import { eSpotlightOrientation } from "../compositions/spotlight/spec";
 import Spotlight from "../compositions/spotlight/spotlight";
 import LinkButtonElement from "../elements/button-elements/link-button-element";
 import { eButtonStyles } from "../elements/button-elements/spec";
 import DivElement from "../elements/text-elements/div-element";
 import ToTopButton from "../elements/to-top-button/to-top-button";
 import { ePageStyleTemplates } from "../less";
+import { ePictogram } from "../page-types";
 
 var scroll = Scroll.animateScroll;
 
@@ -44,7 +42,7 @@ class Index extends React.Component {
           paragraph="Das Informationszeitalter ist unsere Kinderstube und Information ist praktisch immer zugänglich"
           orientation={eSpotlightOrientation.left}
           pageStyle={ePageStyleTemplates.light}
-          pictogram={eSpotlightPictogram.ai_1}
+          pictogram={ePictogram.ai_1}
         />
         <ArticleContainer>
           <ColorContainer padded pageStyle={ePageStyleTemplates.light}>
@@ -67,7 +65,7 @@ class Index extends React.Component {
           paragraph="Wir beherrschen unser Fach und setzen Technologie ziel führend ein - denn viel hilft eben nicht viel!"
           orientation={eSpotlightOrientation.left}
           pageStyle={ePageStyleTemplates.light}
-          pictogram={eSpotlightPictogram.settings}
+          pictogram={ePictogram.settings}
         />
         <ArticleContainer pageStyle={ePageStyleTemplates.light}>
           <ColorContainer padded pageStyle={ePageStyleTemplates.light}>

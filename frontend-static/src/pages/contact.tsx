@@ -5,16 +5,14 @@ import ArticleContainer from "../components/article-container/article-container"
 import ArticleBanner from "../compositions/article-banner/article-banner";
 import { ePageStyleTemplates } from "../less";
 import Spotlight from "../compositions/spotlight/spotlight";
-import {
-  eSpotlightPictogram,
-  eSpotlightOrientation
-} from "../compositions/spotlight/spec";
+import { eSpotlightOrientation } from "../compositions/spotlight/spec";
 import ColorContainer from "../components/color-container/color-container";
 import DivElement from "../elements/text-elements/div-element";
 import { eTextStyles } from "../elements/text-elements/spec";
 import ParagraphElement from "../elements/text-elements/paragraph-element";
 import Spacer from "../elements/spacer/spacer";
 import ToTopButton from "../elements/to-top-button/to-top-button";
+import { ePictogram } from "../page-types";
 
 var scroll = Scroll.animateScroll;
 
@@ -36,7 +34,7 @@ class Contact extends React.Component {
           <Spotlight
             header="Kommunikation"
             paragraph="Das wichtigste bei Kommunikation ist 'Zuhören'"
-            pictogram={eSpotlightPictogram.connection_2}
+            pictogram={ePictogram.connection_2}
             pageStyle={ePageStyleTemplates.light}
             orientation={eSpotlightOrientation.left}
           />
