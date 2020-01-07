@@ -1352,7 +1352,28 @@ a.more.scrolly {
   margin-left: auto;
   padding-left: 20%;
   padding-right: 20%;
-  padding-top: 1.25rem;
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
+}
+@media screen and (max-width: 980px) {
+  .container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
+  }
+}
+@media screen and (max-width: 736px) {
+  .container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
+  }
 }
 #cta .inner {
   display: -moz-flex;
@@ -1407,7 +1428,7 @@ section.special {
   margin: 0;
   padding: 0;
   text-align: center;
-  padding: 2rem !important;
+  padding: 3rem !important;
 }
 section.special header.major h2 {
   padding-bottom: 1rem;
@@ -1764,7 +1785,7 @@ section {
   margin-left: auto;
   padding-left: 2rem;
   padding-right: 2rem;
-  padding-top: 3rem;
+  padding-top: 2.25rem;
 }
 .spotlight-right .content {
   -moz-order: 1;
@@ -1777,7 +1798,7 @@ section {
   margin-left: auto;
   padding-left: 2rem;
   padding-right: 2rem;
-  padding-top: 3rem;
+  padding-top: 2.25rem;
 }
 .spotlight .content h2 {
   font-size: 1.5rem;
@@ -1787,7 +1808,7 @@ section {
   font-size: 1.25rem;
   font-weight: 500;
   line-height: 1.5rem;
-  padding-bottom: 1rem;
+  padding-bottom: 3rem;
 }
 .spotlight:nth-child(1) {
   background-color: rgba(0, 0, 0, 0.075);
@@ -1819,31 +1840,6 @@ section {
 .spotlight:nth-child(10) {
   background-color: rgba(0, 0, 0, 0.75);
 }
-@media screen and (max-width: 980px) {
-  .spotlight {
-    display: block;
-  }
-  .spotlight br {
-    display: none;
-  }
-  .spotlight .image {
-    width: 100%;
-  }
-  .spotlight .content {
-    width: 100%;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 1.35rem;
-  }
-  .spotlight-left .image {
-    max-height: 128px;
-    max-width: 128px;
-  }
-  .spotlight-right .image {
-    height: 128px;
-    width: 128px;
-  }
-}
 @media screen and (max-width: 736px) {
   .spotlight {
     display: block;
@@ -1855,10 +1851,44 @@ section {
     width: 100%;
   }
   .spotlight .content {
+    display: inline-block;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 2rem;
+  }
+  .spotlight-left .image {
+    max-height: 128px;
+    max-width: 128px;
+  }
+  .spotlight-right .image {
+    height: 128px;
+    width: 128px;
+  }
+  .spotlight .content h2 {
+    display: block;
+  }
+  .spotlight .content p {
+    display: block;
+    padding-bottom: 1.75rem;
+  }
+}
+@media screen and (max-width: 468px) {
+  .spotlight {
+    display: block;
+  }
+  .spotlight br {
+    display: none;
+  }
+  .spotlight .image {
+    width: 100%;
+  }
+  .spotlight .content {
+    display: inline-block;
     width: 100%;
     padding-left: 5%;
     padding-right: 5%;
-    padding-top: 1rem;
+    padding-top: 1.5rem;
   }
   .spotlight-left .image {
     max-height: 96px;
@@ -1867,6 +1897,13 @@ section {
   .spotlight-right .image {
     height: 96px;
     width: 96px;
+  }
+  .spotlight .content h2 {
+    display: block;
+  }
+  .spotlight .content p {
+    display: block;
+    padding-bottom: 1rem;
   }
 }
 .spinner {
@@ -2432,13 +2469,6 @@ body #root {
     font-size: 1.1rem !important;
     line-height: 1rem !important;
   }
-  .container {
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 1.5rem;
-  }
 }
 @media screen and (max-width: 736px) {
   #menu {
@@ -2452,12 +2482,5 @@ body #root {
     letter-spacing: 0.125rem !important;
     font-size: 1.1rem !important;
     line-height: 1rem !important;
-  }
-  .container {
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 1rem;
   }
 }

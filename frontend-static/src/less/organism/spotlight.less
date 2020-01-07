@@ -52,7 +52,7 @@
   margin-left: auto;
   padding-left: 2rem;
   padding-right: 2rem;
-  padding-top: 3rem;
+  padding-top: 2.25rem;
 }
 
 .spotlight-right .content {
@@ -66,7 +66,7 @@
   margin-left: auto;
   padding-left: 2rem;
   padding-right: 2rem;
-  padding-top: 3rem;
+  padding-top: 2.25rem;
 }
 
 .spotlight .content h2 {
@@ -78,7 +78,7 @@
   font-size: 1.25rem;
   font-weight: 500;
   line-height: 1.5rem;
-  padding-bottom: 1rem;
+  padding-bottom: 3rem;
 }
 
 .spotlight:nth-child(1) {
@@ -121,37 +121,6 @@
   background-color: rgba(0, 0, 0, 0.75);
 }
 
-@media screen and (max-width: 980px) {
-  .spotlight {
-    display: block;
-  }
-
-  .spotlight br {
-    display: none;
-  }
-
-  .spotlight .image {
-    width: 100%;
-  }
-
-  .spotlight .content {
-    width: 100%;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 1.35rem;
-  }
-
-  .spotlight-left .image {
-    max-height: 128px;
-    max-width: 128px;
-  }
-
-  .spotlight-right .image {
-    height: 128px;
-    width: 128px;
-  }
-}
-
 @media screen and (max-width: 736px) {
   .spotlight {
     display: block;
@@ -166,10 +135,52 @@
   }
 
   .spotlight .content {
+    display: inline-block;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 2rem;
+  }
+
+  .spotlight-left .image {
+    max-height: 128px;
+    max-width: 128px;
+  }
+
+  .spotlight-right .image {
+    height: 128px;
+    width: 128px;
+  }
+
+  .spotlight .content h2 {
+    display: block;
+  }
+
+  .spotlight .content p {
+    display: block;
+    padding-bottom: 1.75rem;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .spotlight {
+    display: block;
+  }
+
+  .spotlight br {
+    display: none;
+  }
+
+  .spotlight .image {
+    width: 100%;
+  }
+
+  .spotlight .content {
+    display: inline-block;
     width: 100%;
     padding-left: 5%;
     padding-right: 5%;
-    padding-top: 1rem;
+    padding-top: 1.5rem;
   }
 
   .spotlight-left .image {
@@ -180,5 +191,14 @@
   .spotlight-right .image {
     height: 96px;
     width: 96px;
+  }
+
+  .spotlight .content h2 {
+    display: block;
+  }
+
+  .spotlight .content p {
+    display: block;
+    padding-bottom: 1rem;
   }
 }

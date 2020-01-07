@@ -1,4 +1,5 @@
 import * as React from "react";
+import { PAGE_AUTHOR, PAGE_DESCRIPTION } from "../constants";
 
 class Footer extends React.Component {
   openWindow = (url: string) => {
@@ -49,8 +50,9 @@ class Footer extends React.Component {
           </ul>
           <div className="copyright">
             <span>
-              &copy; {new Date().getFullYear().toString()} Basic Frontend -
-              mobile first!
+              &copy; {new Date().getFullYear().toString()} -{" "}
+              <a href="https://responsive-it.biz">{PAGE_AUTHOR}</a> -{" "}
+              {PAGE_DESCRIPTION}
             </span>
           </div>
         </footer>

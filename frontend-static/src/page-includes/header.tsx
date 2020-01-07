@@ -1,5 +1,6 @@
 import { Link } from "@reach/router";
 import * as React from "react";
+import { PAGE_NAME } from "../constants";
 import Menu from "./menu";
 
 class Header extends React.Component {
@@ -8,7 +9,7 @@ class Header extends React.Component {
       <>
         <header id="header">
           <h1>
-            <Link to="/">Basic Frontend</Link>
+            <Link to="/">{PAGE_NAME}</Link>
           </h1>
           <nav id="nav">
             <Menu pageKey="main-menu" />
