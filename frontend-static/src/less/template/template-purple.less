@@ -1,0 +1,44 @@
+// out: false
+
+@import "../global.less";
+
+.container.purple ul li {
+  color: @style-purple-color;
+}
+
+.purple {
+  color: @style-purple-color;
+  background-color: @style-purple-bg-color !important;
+}
+
+.purple a:hover {
+  color: @style-purple-hover-color;
+}
+
+.purple .page-header {
+  width: 100%;
+  color: @style-purple-color;
+  border-bottom: @style-purple-border-color solid thin !important;
+}
+
+.purple .abstract {
+  color: @style-purple-color !important;
+}
+
+.container.purple .abstract {
+  color: @style-purple-color !important;
+}
+
+table thead {
+  border-bottom: solid 2px @style-purple-border-color !important;
+}
+
+table tfoot {
+  border-top: solid 2px @style-purple-border-color !important;
+}
+
+table.alt tbody tr td {
+  border: solid 1px @style-purple-border-color !important;
+  border-left-width: 0;
+  border-top-width: 0;
+}

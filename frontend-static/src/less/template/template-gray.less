@@ -1,0 +1,44 @@
+// out: false
+
+@import "../global.less";
+
+.container.gray ul li {
+  color: @style-gray-color;
+}
+
+.gray {
+  color: @style-gray-color;
+  background-color: @style-gray-bg-color !important;
+}
+
+.gray a:hover {
+  color: @style-gray-hover-color;
+}
+
+.gray .page-header {
+  width: 100%;
+  color: @style-gray-color;
+  border-bottom: @style-gray-border-color solid thin !important;
+}
+
+.gray .abstract {
+  color: @style-gray-color !important;
+}
+
+.container.gray .abstract {
+  color: @style-gray-color !important;
+}
+
+table thead {
+  border-bottom: solid 2px @style-gray-border-color !important;
+}
+
+table tfoot {
+  border-top: solid 2px @style-gray-border-color !important;
+}
+
+table.alt tbody tr td {
+  border: solid 1px @style-gray-border-color !important;
+  border-left-width: 0;
+  border-top-width: 0;
+}

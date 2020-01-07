@@ -1,0 +1,42 @@
+// out: false
+
+@import "../global.less";
+
+blockquote, q {
+    quotes: none;
+    margin: 0;
+    padding: 0;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+blockquote {
+    text-decoration: @global-text-decoration;
+    font-family: @global-font-family;
+    text-transform: @global-text-transform;
+}
+
+blockquote {
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.6rem !important;
+    letter-spacing: 0.2rem !important;
+}
+
+blockquote:before, blockquote:after {
+    display: inline-block;
+    content: '"';
+}
+
+blockquote {
+    padding: 1rem;
+    text-align: center;
+    position: relative;    
+}
+
+blockquote + * {
+    padding: 3rem 1rem;
+}
