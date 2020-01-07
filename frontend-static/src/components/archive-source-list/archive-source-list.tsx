@@ -24,7 +24,7 @@ class ArchiveSourceList extends React.Component<iArchiveSourceProps> {
             <tr>
               <td>Source Id</td>
               <td>Source Name</td>
-              <td>ArticleCount</td>
+              <td>Article Count</td>
             </tr>
           </thead>
           <tbody>{list}</tbody>

@@ -8,14 +8,14 @@ class ArchiveContentList extends React.Component<iArchiveContentListProps> {
       ? this.props.pageStyle + " table-wrapper"
       : "light table-wrapper";
 
-    const mappedTodos = this.props.dataContainer.map(
+    const mappedArticles = this.props.dataContainer.map(
       (article: iArchiveContentListItemProps) => {
         return (
           <ArchiveContentListItem archiveContent={article} key={article.Id} />
         );
       }
     );
-    return this.ListContainer(mappedTodos, pageStyle);
+    return this.ListContainer(mappedArticles, pageStyle);
   }
 
   private ListContainer(list: any, pageStyle: string) {

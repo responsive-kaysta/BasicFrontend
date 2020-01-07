@@ -1,6 +1,6 @@
 import * as React from "react";
 import ArchiveSearchListItem from "./archive-search-list-item";
-import { iArchiveSearchListProps, iArchiveSearchListItemProps } from "./spec";
+import { iArchiveSearchListItemProps, iArchiveSearchListProps } from "./spec";
 
 class ArchiveSearchList extends React.Component<iArchiveSearchListProps> {
   public render() {

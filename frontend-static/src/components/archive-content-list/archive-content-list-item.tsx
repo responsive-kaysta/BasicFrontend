@@ -1,12 +1,12 @@
 import * as React from "react";
-import ArticleContentModalBox from "../article-content-modal-box/article-content-modal-box";
 import { iArchiveContentListItemProps } from "./spec";
+import ArticleContentModalBox from "components/article-content-modal-box/article-content-modal-box";
 
 function ArchiveContentListItem(props: {
   archiveContent: iArchiveContentListItemProps;
 }) {
   return (
-    <tr>
+    <tr className="clickable">
       <td>
         <ArticleContentModalBox articleContent={props.archiveContent} />
       </td>

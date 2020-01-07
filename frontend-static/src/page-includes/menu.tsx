@@ -43,6 +43,9 @@ class Menu extends React.Component<iPageProps, iMenuState> {
             <li>
               <Link to="/contact">Kontakt</Link>
             </li>
+            <li>
+              <Link to="/sources">Sources</Link>
+            </li>
           </ul>
         </div>
       </>

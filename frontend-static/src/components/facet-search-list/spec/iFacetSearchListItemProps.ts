@@ -1,15 +1,21 @@
 export interface iFacetSearchListItemProps {
   Id: number;
-  ContentTitle: string;
-  ContentText: string;
-  ContentType: number;
+  ArchiveContentId: number;
+  CatName: string;
+  CatNameShort: string;
   ContentLink: string;
-  ContentLang: number;
-  ContentSource: number;
+  ContentText: string;
+  ContentTitle: string;
+  ContentType: string;
+  LangId: number;
+  LangName: string;
+  OriginDate: Date;
+  SourceId: number;
+  SourceLink: string;
+  SourceName: string;
   Boost: number;
   Score: number;
   FacetName: string;
-  TotalHits: number;
-  HitsPerFacet: number;
-  HitCount: number;
+  HitCountPerGroup: number;
+  TotalHitCount: number;
 }
