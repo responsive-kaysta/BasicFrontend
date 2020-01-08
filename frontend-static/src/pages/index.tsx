@@ -1,5 +1,6 @@
 import * as React from "react";
 import * as Scroll from "react-scroll";
+import { Head } from "react-static";
 import ArticleContainer from "../components/article-container/article-container";
 import ColorContainer from "../components/color-container/color-container";
 import CallToAction from "../compositions/call-to-action/call-to-action";
@@ -8,6 +9,7 @@ import PageBanner from "../compositions/page-banner/page-banner";
 import PageHeader from "../compositions/page-header/page-header";
 import { eSpotlightOrientation } from "../compositions/spotlight/spec";
 import Spotlight from "../compositions/spotlight/spotlight";
+import { PAGE_NAME } from "../constants";
 import LinkButtonElement from "../elements/button-elements/link-button-element";
 import { eButtonStyles } from "../elements/button-elements/spec";
 import DivElement from "../elements/text-elements/div-element";
@@ -25,6 +27,10 @@ class Index extends React.Component {
   public render() {
     return (
       <>
+        <Head>
+          <title>Startseite - {PAGE_NAME}</title>
+        </Head>
+
         <PageBanner
           header="responsive IT"
           paragraph="IT & Software Architecture, Engineering & Consulting"

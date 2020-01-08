@@ -1,18 +1,22 @@
 import * as React from "react";
 import * as Scroll from "react-scroll";
+import { Head } from "react-static";
 import ArticleContainer from "../components/article-container/article-container";
-import ArticleBanner from "../compositions/article-banner/article-banner";
-import { ePageStyleTemplates } from "../less";
-import Spotlight from "../compositions/spotlight/spotlight";
-import { eSpotlightOrientation } from "../compositions/spotlight/spec";
 import ColorContainer from "../components/color-container/color-container";
+import ArticleBanner from "../compositions/article-banner/article-banner";
+import ListContainer from "../compositions/list-container/list-container";
+import { eListContainerTypes } from "../compositions/list-container/spec";
 import PageHeader from "../compositions/page-header/page-header";
+import { eSpotlightOrientation } from "../compositions/spotlight/spec";
+import Spotlight from "../compositions/spotlight/spotlight";
+import { PAGE_NAME } from "../constants";
+import SpanLinkElement from "../elements/link-elements/span-link-element";
+import ListElement from "../elements/list-elements/list-elements";
+import Spacer from "../elements/spacer/spacer";
 import ParagraphElement from "../elements/text-elements/paragraph-element";
 import { eTextStyles } from "../elements/text-elements/spec";
-import Spacer from "../elements/spacer/spacer";
-import DivElement from "../elements/text-elements/div-element";
-import RegularLinkElement from "../elements/link-elements/regular-link-element";
 import ToTopButton from "../elements/to-top-button/to-top-button";
+import { ePageStyleTemplates } from "../less";
 import { ePictogram } from "../page-types";
 
 var scroll = Scroll.animateScroll;
@@ -25,6 +29,10 @@ class Impressum extends React.Component {
   public render() {
     return (
       <>
+        <Head>
+          <title>Impressum - {PAGE_NAME}</title>
+        </Head>
+
         <ArticleContainer>
           <ArticleBanner
             header="Impressum"
@@ -69,82 +77,110 @@ class Impressum extends React.Component {
               paragraph="Unsere Arbeit wäre ohne Open-Source und Hilfsbereitschaft nicht möglich – credits to"
               pageStyle={ePageStyleTemplates.light}
             />
-            <DivElement>
-              <ul>
-                <li>
-                  <RegularLinkElement
-                    text="ServerTown"
-                    link="https://servertown.ch/webhosting-hosting/impressum"
-                  />
-                </li>
-                <li>
-                  <RegularLinkElement
-                    text="Microsoft .NET"
-                    link="https://dotnet.microsoft.com/"
-                  />
-                </li>
-                <li>
-                  <RegularLinkElement
-                    text="Microsoft ASP.NET MVC"
-                    link="https://dotnet.microsoft.com/apps/aspnet/mvc"
-                  />
-                </li>
-                <li>
-                  <RegularLinkElement
-                    text="VisualStudio"
-                    link="https://visualstudio.microsoft.com/"
-                  />
-                </li>
-                <li>
-                  <RegularLinkElement
-                    text="VisualStudio CODE"
-                    link="https://code.visualstudio.com/"
-                  />
-                </li>
-                <li>
-                  <RegularLinkElement
-                    text="AZURE"
-                    link="https://azure.microsoft.com/de-de/"
-                  />
-                </li>
-                <li>
-                  <RegularLinkElement
-                    text="Bootstrap"
-                    link="https://getbootstrap.com/"
-                  />
-                </li>
-                <li>
-                  <RegularLinkElement
-                    text="Reactjs"
-                    link="https://reactjs.org/"
-                  />
-                </li>
-                <li>
-                  <RegularLinkElement
-                    text="html5up"
-                    link="https://html5up.net/"
-                  />
-                </li>
-                <li>
-                  <RegularLinkElement
-                    text="GitHub"
-                    link="https://github.com/"
-                  />
-                </li>
-                <li>
-                  <RegularLinkElement
-                    text="Nuget"
-                    link="https://www.nuget.org/"
-                  />
-                </li>
-                <li>
-                  <RegularLinkElement
-                    text="StackOverflow"
-                    link="https://stackoverflow.com/"
-                  />
-                </li>
-              </ul>
-            </DivElement>
+            <ParagraphElement textStyles={eTextStyles.lead}>
+              Das Projekt, der Hintergrund und weitere Informationen
+            </ParagraphElement>
+
+            <Spacer />
+
+            <ListContainer listContainerType={eListContainerTypes.alt}>
+              <ListElement>
+                <SpanLinkElement
+                  text="ServerTown"
+                  link="https://servertown.ch/webhosting-hosting/impressum"
+                  showLinkIcon
+                  showLinkDivider
+                />
+              </ListElement>
+              <ListElement>
+                <SpanLinkElement
+                  text="Microsoft .NET"
+                  link="https://dotnet.microsoft.com/"
+                  showLinkIcon
+                  showLinkDivider
+                />
+              </ListElement>
+              <ListElement>
+                <SpanLinkElement
+                  text="Microsoft ASP.NET MVC"
+                  link="https://dotnet.microsoft.com/apps/aspnet/mvc"
+                  showLinkIcon
+                  showLinkDivider
+                />
+              </ListElement>
+              <ListElement>
+                <SpanLinkElement
+                  text="VisualStudio"
+                  link="https://visualstudio.microsoft.com/"
+                  showLinkIcon
+                  showLinkDivider
+                />
+              </ListElement>
+              <ListElement>
+                <SpanLinkElement
+                  text="VisualStudio CODE"
+                  link="https://code.visualstudio.com/"
+                  showLinkIcon
+                  showLinkDivider
+                />
+              </ListElement>
+              <ListElement>
+                <SpanLinkElement
+                  text="AZURE"
+                  link="https://azure.microsoft.com/de-de/"
+                  showLinkIcon
+                  showLinkDivider
+                />
+              </ListElement>
+              <ListElement>
+                <SpanLinkElement
+                  text="Bootstrap"
+                  link="https://getbootstrap.com/"
+                  showLinkIcon
+                  showLinkDivider
+                />
+              </ListElement>
+              <ListElement>
+                <SpanLinkElement
+                  text="Reactjs"
+                  link="https://reactjs.org/"
+                  showLinkIcon
+                  showLinkDivider
+                />
+              </ListElement>
+              <ListElement>
+                <SpanLinkElement
+                  text="html5up"
+                  link="https://html5up.net/"
+                  showLinkIcon
+                  showLinkDivider
+                />
+              </ListElement>
+              <ListElement>
+                <SpanLinkElement
+                  text="GitHub"
+                  link="https://github.com/"
+                  showLinkIcon
+                  showLinkDivider
+                />
+              </ListElement>
+              <ListElement>
+                <SpanLinkElement
+                  text="Nuget"
+                  link="https://www.nuget.org/"
+                  showLinkIcon
+                  showLinkDivider
+                />
+              </ListElement>
+              <ListElement>
+                <SpanLinkElement
+                  text="StackOverflow"
+                  link="https://stackoverflow.com/"
+                  showLinkIcon
+                  showLinkDivider
+                />
+              </ListElement>
+            </ListContainer>
 
             <Spacer />
 

@@ -10,7 +10,7 @@ class TileItem extends React.Component<iTileItemProps> {
 
     const styles = {
       backgroundSize: "50%",
-      backgroundPosition: "top right",
+      backgroundPosition: "center right",
       backgroundRepeat: "no-repeat",
       backgroundImage:
         "linear-gradient(270deg, rgba(2,0,36,1) 0%, rgba(255,255,255,0) 100%), url(" +

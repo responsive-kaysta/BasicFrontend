@@ -13,6 +13,7 @@ class SpanLinkElement extends React.Component<iRegularLinkElementProps> {
           onClick={() => this.openWindow(this.props.link)}
           className={this.props.showLinkIcon && "fas fa-link"}
         >
+          {this.props.showLinkDivider && " - "}
           {this.props.text}
         </span>
       </>

@@ -1,17 +1,19 @@
 import * as React from "react";
 import Iframe from "react-iframe";
 import * as Scroll from "react-scroll";
+import { Head } from "react-static";
 import ArticleContainer from "../components/article-container/article-container";
-import ArticleBanner from "../compositions/article-banner/article-banner";
-import { ePageStyleTemplates } from "../less";
-import Spotlight from "../compositions/spotlight/spotlight";
-import { eSpotlightOrientation } from "../compositions/spotlight/spec";
 import ColorContainer from "../components/color-container/color-container";
-import DivElement from "../elements/text-elements/div-element";
-import { eTextStyles } from "../elements/text-elements/spec";
-import ParagraphElement from "../elements/text-elements/paragraph-element";
+import ArticleBanner from "../compositions/article-banner/article-banner";
+import { eSpotlightOrientation } from "../compositions/spotlight/spec";
+import Spotlight from "../compositions/spotlight/spotlight";
+import { PAGE_NAME } from "../constants";
 import Spacer from "../elements/spacer/spacer";
+import DivElement from "../elements/text-elements/div-element";
+import ParagraphElement from "../elements/text-elements/paragraph-element";
+import { eTextStyles } from "../elements/text-elements/spec";
 import ToTopButton from "../elements/to-top-button/to-top-button";
+import { ePageStyleTemplates } from "../less";
 import { ePictogram } from "../page-types";
 
 var scroll = Scroll.animateScroll;
@@ -24,6 +26,10 @@ class Contact extends React.Component {
   public render() {
     return (
       <>
+        <Head>
+          <title>Kontakt - {PAGE_NAME}</title>
+        </Head>
+
         <ArticleContainer>
           <ArticleBanner
             header="Kontakt"
