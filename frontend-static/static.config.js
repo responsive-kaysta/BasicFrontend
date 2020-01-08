@@ -39,6 +39,10 @@ export default {
       {
         path: "/projects/inmemoryloader",
         template: "src/pages/projects/project-2.tsx"
+      },
+      {
+        path: "/projects/industrie-digitalisierung-projekterfolg",
+        template: "src/pages/projects/project-3.tsx"
       }
     ];
   },

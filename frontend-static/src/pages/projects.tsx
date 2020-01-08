@@ -63,8 +63,8 @@ class Projects extends React.Component {
               item={3}
               header="Industrie | Digitalisierung | Projekterfolg"
               paragraph="In 10 Monaten die Digitalisierung entwickelt, beschleunigt & verstanden"
-              link="/projects"
-              date="17.01.2019"
+              link="/projects/industrie-digitalisierung-projekterfolg"
+              date="Friday, October 19, 2018"
               backgroundImage={ePictogram.computer}
             />
 

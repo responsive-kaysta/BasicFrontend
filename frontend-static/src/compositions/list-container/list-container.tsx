@@ -45,7 +45,7 @@ class ListContainer extends React.Component<iListContainerProps> {
 
     return (
       <>
-        {this.props.header && <p className="lead">{this.props.header}</p>}
+        {this.props.header && <p className="paragraph">{this.props.header}</p>}
         {listElements}
       </>
     );
