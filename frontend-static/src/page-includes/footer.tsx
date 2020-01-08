@@ -50,8 +50,7 @@ class Footer extends React.Component {
           </ul>
           <div className="copyright">
             <span>
-              &copy; {new Date().getFullYear().toString()} -{" "}
-              <a href="https://responsive-it.biz">{PAGE_AUTHOR}</a> -{" "}
+              &copy; {new Date().getFullYear().toString()} - {PAGE_AUTHOR} -{" "}
               {PAGE_DESCRIPTION}
             </span>
           </div>

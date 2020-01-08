@@ -6,9 +6,12 @@ import ColorContainer from "../../components/color-container/color-container";
 import ArticleBanner from "../../compositions/article-banner/article-banner";
 import CallToAction from "../../compositions/call-to-action/call-to-action";
 import EyeCatcher from "../../compositions/eye-catcher/eye-catcher";
+import ListContainer from "../../compositions/list-container/list-container";
 import PageHeader from "../../compositions/page-header/page-header";
 import { eSpotlightOrientation } from "../../compositions/spotlight/spec";
 import Spotlight from "../../compositions/spotlight/spotlight";
+import SpanLinkElement from "../../elements/link-elements/span-link-element";
+import ListElements from "../../elements/list-elements/list-elements";
 import Spacer from "../../elements/spacer/spacer";
 import ParagraphElement from "../../elements/text-elements/paragraph-element";
 import { eTextStyles } from "../../elements/text-elements/spec";
@@ -27,7 +30,7 @@ class ProjectTwo extends React.Component {
     return (
       <>
         <Head>
-          <title>About - BasicFrontend</title>
+          <title>sauber | sicher | schnell - BasicFrontend</title>
         </Head>
         <ArticleContainer>
           <ArticleBanner
@@ -79,34 +82,61 @@ class ProjectTwo extends React.Component {
 
           <ColorContainer pageStyle={ePageStyleTemplates.light} padded>
             <PageHeader
-              header="Responsive"
-              paragraph="Wird aktiv umgesetzt, heisst, Umbraco ist explizit für diesen Ansatz ausgelegt und beinhaltet viele hilfreiche Funktionen, modernste Anforderungen zielgerichtet umzusetzen."
+              header="RAM ist schnell"
+              paragraph="Die schnellste und effizienteste Speicher-Komponente in einem Rechner ist der Hauptspeicher «RAM». Dies wurde vom Erfinder wie auch der Gründer dieser Firma erkannt."
               pageStyle={ePageStyleTemplates.light}
             />
             <Spacer />
             <PageHeader
-              header="Accessible – Zugänglich"
-              paragraph="Unsere (Web)Projekte werden auf Zugänglichkeit getrimmt und werden dahingehend geprüft und optimiert. Ein Spagat ist jedoch oft notwendig..."
+              header="Potenzial ausschöpfen"
+              paragraph="Das Potenzial der Hardware wird optimal genutzt da Komponenten als auch die Daten im RAM Ihres Rechners – der die Anwendung betreibt – vorliegen und immer schnell, sicher und skalierbar zur Verfügung stehen."
               pageStyle={ePageStyleTemplates.light}
             />
+            <ListContainer header="Das Projekt, der Hintergrund, weitere Informationen">
+              <ListElements>
+                <SpanLinkElement
+                  text="Die Idee"
+                  link="https://blog.responsive-kaysta.ch/post/inmemoryloader"
+                />
+              </ListElements>
+              <ListElements>
+                <SpanLinkElement
+                  text="Das Repository"
+                  link="https://github.com/inmemoryloader"
+                />
+              </ListElements>
+              <ListElements>
+                <SpanLinkElement
+                  text="Weitere Ideen"
+                  link="https://github.com/orgs/responsive-kaysta/projects/1"
+                />
+              </ListElements>
+              <ListElements>
+                <SpanLinkElement
+                  text="Die Pakete"
+                  link="https://www.nuget.org/profiles/kaysta"
+                />
+              </ListElements>
+              <ListElements>
+                <SpanLinkElement
+                  text="The four myths of InMemory Computing"
+                  link="https://www.gridgain.com/resources/blog/four-myths-of-in-memory-computing"
+                />
+              </ListElements>
+              <ListElements>
+                <SpanLinkElement
+                  text="In-Memory Processing"
+                  link="https://en.wikipedia.org/wiki/In-memory_processing"
+                />
+              </ListElements>
+              <ListElements>
+                <SpanLinkElement
+                  text="Late Binding"
+                  link="https://en.wikipedia.org/wiki/Late_binding"
+                />
+              </ListElements>
+            </ListContainer>
             <Spacer />
-            <PageHeader
-              header="MVC Pattern"
-              paragraph="DIE Wahl bei allen Projekten und Installationen den dieses System ist konzipiert, responsive Applikationen bereitzustellen. Das MVC Pattern – Model, View, Controller – dient als Grundlage, nur so werden Daten, Logik und Darstellung sauber getrennt."
-              pageStyle={ePageStyleTemplates.light}
-            />
-            <Spacer />
-            <PageHeader
-              header=".NET Features"
-              paragraph="Da das System mit .NET MVC aufgebaut wird sind keine Komplikationen seitens Microsoft «Welt» zu erwarten bzw. können komplett ausgeschlossen werden. Die Trennung der «Webschicht» von der «Datenschicht» erlaubt zudem flexibel und trotzdem einheitlich das System zu erweitern."
-              pageStyle={ePageStyleTemplates.light}
-            />
-            <Spacer />
-            <PageHeader
-              header="BasicFrontend"
-              paragraph="Aus Einzelprojekten wurde eine Idee, daraus ein Prototyp, daraus ein Modul. Mit unserem BasicFrontend starten die meisten der eigenen Installationen."
-              pageStyle={ePageStyleTemplates.light}
-            />
 
             <Spacer />
 

@@ -27,7 +27,7 @@ class ProjectOne extends React.Component {
     return (
       <>
         <Head>
-          <title>About - BasicFrontend</title>
+          <title>Responsive | Accessible | Umbraco - BasicFrontend</title>
         </Head>
         <ArticleContainer>
           <ArticleBanner
