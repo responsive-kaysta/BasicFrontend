@@ -74,12 +74,9 @@ class Impressum extends React.Component {
 
             <PageHeader
               header="Credits"
-              paragraph="Unsere Arbeit wäre ohne Open-Source und Hilfsbereitschaft nicht möglich – credits to"
+              paragraph="Unsere Arbeit wäre ohne Schweiss, Bier, Open-Source und Hilfsbereitschaft nicht möglich – credits to"
               pageStyle={ePageStyleTemplates.light}
             />
-            <ParagraphElement textStyles={eTextStyles.lead}>
-              Das Projekt, der Hintergrund und weitere Informationen
-            </ParagraphElement>
 
             <Spacer />
 

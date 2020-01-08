@@ -29,6 +29,10 @@ export default {
         template: "src/pages/technic.tsx"
       },
       {
+        path: "/legal",
+        template: "src/pages/legal.tsx"
+      },
+      {
         path: "sources",
         template: "src/pages/sources.tsx"
       },

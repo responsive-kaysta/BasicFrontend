@@ -87,9 +87,10 @@ class About extends React.Component {
               paragraph="Nicht nur «sehende» Geräte bedienen, einen Schritt weiter gehen."
               linkText="Impressum"
               linkUrl="/impressum"
-              specialText="Projekte"
-              specialUrl="/projects"
+              specialText="Haftungsausschluss"
+              specialUrl="/legal"
             />
+
             <ToTopButton />
           </ColorContainer>
         </ArticleContainer>

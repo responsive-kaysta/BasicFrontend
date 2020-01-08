@@ -9,6 +9,7 @@ export default {
 '/home/kaysta/Dev/GitHub/BasicFrontend/frontend-static/src/pages/contact.tsx': require('/home/kaysta/Dev/GitHub/BasicFrontend/frontend-static/src/pages/contact.tsx').default,
 '/home/kaysta/Dev/GitHub/BasicFrontend/frontend-static/src/pages/impressum.tsx': require('/home/kaysta/Dev/GitHub/BasicFrontend/frontend-static/src/pages/impressum.tsx').default,
 '/home/kaysta/Dev/GitHub/BasicFrontend/frontend-static/src/pages/index.tsx': require('/home/kaysta/Dev/GitHub/BasicFrontend/frontend-static/src/pages/index.tsx').default,
+'/home/kaysta/Dev/GitHub/BasicFrontend/frontend-static/src/pages/legal.tsx': require('/home/kaysta/Dev/GitHub/BasicFrontend/frontend-static/src/pages/legal.tsx').default,
 '/home/kaysta/Dev/GitHub/BasicFrontend/frontend-static/src/pages/projects.tsx': require('/home/kaysta/Dev/GitHub/BasicFrontend/frontend-static/src/pages/projects.tsx').default,
 '/home/kaysta/Dev/GitHub/BasicFrontend/frontend-static/src/pages/projects/project-1.tsx': require('/home/kaysta/Dev/GitHub/BasicFrontend/frontend-static/src/pages/projects/project-1.tsx').default,
 '/home/kaysta/Dev/GitHub/BasicFrontend/frontend-static/src/pages/projects/project-2.tsx': require('/home/kaysta/Dev/GitHub/BasicFrontend/frontend-static/src/pages/projects/project-2.tsx').default,
