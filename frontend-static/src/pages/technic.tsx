@@ -1,5 +1,6 @@
 import * as React from "react";
 import * as Scroll from "react-scroll";
+import { Head } from "react-static";
 import ArticleContainer from "../components/article-container/article-container";
 import ColorContainer from "../components/color-container/color-container";
 import ArticleBanner from "../compositions/article-banner/article-banner";
@@ -8,6 +9,7 @@ import EyeCatcher from "../compositions/eye-catcher/eye-catcher";
 import PageHeader from "../compositions/page-header/page-header";
 import { eSpotlightOrientation } from "../compositions/spotlight/spec";
 import Spotlight from "../compositions/spotlight/spotlight";
+import { PAGE_NAME } from "../constants";
 import Spacer from "../elements/spacer/spacer";
 import ParagraphElement from "../elements/text-elements/paragraph-element";
 import { eTextStyles } from "../elements/text-elements/spec";
@@ -25,6 +27,10 @@ class Technic extends React.Component {
   public render() {
     return (
       <>
+        <Head>
+          <title>Technik - {PAGE_NAME}</title>
+        </Head>
+
         <ArticleContainer>
           <ArticleBanner
             header="Informationstechnologie"

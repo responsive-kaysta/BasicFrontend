@@ -103,6 +103,7 @@ class ProjectTwo extends React.Component {
                   text="Die Idee"
                   link="https://blog.responsive-kaysta.ch/post/inmemoryloader"
                   showLinkIcon
+                  showLinkDivider
                 />
               </ListElement>
               <ListElement>
@@ -110,6 +111,7 @@ class ProjectTwo extends React.Component {
                   text="Das Repository"
                   link="https://github.com/inmemoryloader"
                   showLinkIcon
+                  showLinkDivider
                 />
               </ListElement>
               <ListElement>
@@ -117,6 +119,7 @@ class ProjectTwo extends React.Component {
                   text="Weitere Ideen"
                   link="https://github.com/orgs/responsive-kaysta/projects/1"
                   showLinkIcon
+                  showLinkDivider
                 />
               </ListElement>
               <ListElement>
@@ -124,6 +127,7 @@ class ProjectTwo extends React.Component {
                   text="Die Pakete"
                   link="https://www.nuget.org/profiles/kaysta"
                   showLinkIcon
+                  showLinkDivider
                 />
               </ListElement>
               <ListElement>
@@ -131,6 +135,7 @@ class ProjectTwo extends React.Component {
                   text="The four myths of InMemory Computing"
                   link="https://www.gridgain.com/resources/blog/four-myths-of-in-memory-computing"
                   showLinkIcon
+                  showLinkDivider
                 />
               </ListElement>
               <ListElement>
@@ -138,6 +143,7 @@ class ProjectTwo extends React.Component {
                   text="In-Memory Processing"
                   link="https://en.wikipedia.org/wiki/In-memory_processing"
                   showLinkIcon
+                  showLinkDivider
                 />
               </ListElement>
               <ListElement>
@@ -145,6 +151,7 @@ class ProjectTwo extends React.Component {
                   text="Late Binding"
                   link="https://en.wikipedia.org/wiki/Late_binding"
                   showLinkIcon
+                  showLinkDivider
                 />
               </ListElement>
             </ListContainer>

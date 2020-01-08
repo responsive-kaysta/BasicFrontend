@@ -20,8 +20,10 @@
       "assets/*": ["src/assets/*"],
       "components/*": ["src/components/*"],
       "compositions/*": ["src/compositions/*"],
-      "elements/*": ["elements/*"],
-      "page-includes/*": ["page-includes/*"]
+      "elements/*": ["src/elements/*"],
+      "page-includes/*": ["src/page-includes/*"],
+      "page-types/*": ["src/page-types/*"],
+      "utils/*": ["src/utils/*"]
     },
     "lib": ["dom", "es2015", "es2016"]
   },

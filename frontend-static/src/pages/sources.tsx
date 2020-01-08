@@ -1,12 +1,14 @@
 import ArchiveSourceList from "components/archive-source-list/archive-source-list";
 import * as React from "react";
 import * as Scroll from "react-scroll";
+import { Head } from "react-static";
 import ArticleContainer from "../components/article-container/article-container";
 import ColorContainer from "../components/color-container/color-container";
 import ArticleBanner from "../compositions/article-banner/article-banner";
 import PageHeader from "../compositions/page-header/page-header";
 import { eSpotlightOrientation } from "../compositions/spotlight/spec";
 import Spotlight from "../compositions/spotlight/spotlight";
+import { PAGE_NAME } from "../constants";
 import ToTopButton from "../elements/to-top-button/to-top-button";
 import { ePageStyleTemplates } from "../less";
 import { ePictogram, iSourcesState } from "../page-types";
@@ -52,6 +54,10 @@ class Sources extends React.Component<any, iSourcesState> {
   public render() {
     return (
       <>
+        <Head>
+          <title>Quellen - {PAGE_NAME}</title>
+        </Head>
+
         <ArticleContainer>
           <ArticleBanner
             header="Über responsive IT"
