@@ -404,14 +404,18 @@ img {
   display: block;
 }
 .image {
-  border-radius: 3px;
+  border-radius: 0.5rem;
   border: 0;
   display: inline-block;
   position: relative;
 }
 .image img {
-  border-radius: 3px;
+  border-radius: 0.5rem;
   display: block;
+}
+.img-padding {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
 }
 .image.left {
   float: left;

@@ -102,42 +102,49 @@ class ProjectTwo extends React.Component {
                 <SpanLinkElement
                   text="Die Idee"
                   link="https://blog.responsive-kaysta.ch/post/inmemoryloader"
+                  showLinkIcon
                 />
               </ListElement>
               <ListElement>
                 <SpanLinkElement
                   text="Das Repository"
                   link="https://github.com/inmemoryloader"
+                  showLinkIcon
                 />
               </ListElement>
               <ListElement>
                 <SpanLinkElement
                   text="Weitere Ideen"
                   link="https://github.com/orgs/responsive-kaysta/projects/1"
+                  showLinkIcon
                 />
               </ListElement>
               <ListElement>
                 <SpanLinkElement
                   text="Die Pakete"
                   link="https://www.nuget.org/profiles/kaysta"
+                  showLinkIcon
                 />
               </ListElement>
               <ListElement>
                 <SpanLinkElement
                   text="The four myths of InMemory Computing"
                   link="https://www.gridgain.com/resources/blog/four-myths-of-in-memory-computing"
+                  showLinkIcon
                 />
               </ListElement>
               <ListElement>
                 <SpanLinkElement
                   text="In-Memory Processing"
                   link="https://en.wikipedia.org/wiki/In-memory_processing"
+                  showLinkIcon
                 />
               </ListElement>
               <ListElement>
                 <SpanLinkElement
                   text="Late Binding"
                   link="https://en.wikipedia.org/wiki/Late_binding"
+                  showLinkIcon
                 />
               </ListElement>
             </ListContainer>

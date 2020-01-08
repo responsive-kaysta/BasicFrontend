@@ -129,9 +129,9 @@ class ProjectThree extends React.Component {
               imagePath="/assets/project-images/project-3-material-order_960.png"
               imageAltText="Material Order Overview"
               imageCaptionText="Materialbestellung - Übersicht"
+              imageWrapper
+              imagePadding
             />
-
-            <Spacer />
 
             <PageHeader
               header="Prozesse im Hintergrund"
@@ -153,9 +153,9 @@ class ProjectThree extends React.Component {
               imagePath="/assets/project-images/project-3-devops_dashboard_po_960.png"
               imageAltText="DevOps Dashboard"
               imageCaptionText="DevOps Dashboard"
+              imageWrapper
+              imagePadding
             />
-
-            <Spacer />
 
             <HeaderElements
               headerElementType={eHeaderElementTypes.headLineCenter}

@@ -118,75 +118,65 @@ class ProjectFive extends React.Component {
               pageStyle={ePageStyleTemplates.light}
             />
 
-            <Spacer />
-
             <ImageElement
               imagePath="/assets/project-images/project-5-sprint.png"
               imageAltText="Übersicht Sprint-Planung"
               imageCaptionText="Aufgaben – Tasks & Bugs – via Browser einstellen und verwalten"
+              imageWrapper
+              imagePadding
             />
-
-            <Spacer />
 
             <PageHeader
               header="Übersicht Source-Code Verwaltung"
               pageStyle={ePageStyleTemplates.light}
             />
 
-            <Spacer />
-
             <ImageElement
               imagePath="/assets/project-images/project-5-source-code.png"
               imageAltText="Übersicht Source-Code Verwaltung"
               imageCaptionText="Einsehen, kommentieren, verwalten, korrigieren"
+              imageWrapper
+              imagePadding
             />
-
-            <Spacer />
 
             <PageHeader
               header="Übersicht Build-Management"
               pageStyle={ePageStyleTemplates.light}
             />
 
-            <Spacer />
-
             <ImageElement
               imagePath="/assets/project-images/project-5-build.png"
               imageAltText="Übersicht Build-Management"
               imageCaptionText="Code wird automatisch und kontinuierlich «gebaut», kontrolliert und verteilt"
+              imageWrapper
+              imagePadding
             />
-
-            <Spacer />
 
             <PageHeader
               header="SonarQube Projektreport"
               pageStyle={ePageStyleTemplates.light}
             />
 
-            <Spacer />
-
             <ImageElement
               imagePath="/assets/project-images/project-5-sonaqube.png"
               imageAltText="SonarQube Projektreport"
               imageCaptionText="Alle Auffälligkeiten, Fehler und Tipps übersichtlich dargestellt"
+              imageWrapper
+              imagePadding
             />
-
-            <Spacer />
 
             <PageHeader
               header="SonarQube Fehlerreport"
               pageStyle={ePageStyleTemplates.light}
             />
 
-            <Spacer />
-
             <ImageElement
               imagePath="/assets/project-images/project-5-sonarqube-report.png"
               imageAltText="SonarQube Fehlerreport"
               imageCaptionText="Nichts, wirklich nichts entgeht diesem «Dienst» – automatisch und übersichtlich"
+              imageWrapper
+              imagePadding
             />
-
-            <Spacer />
 
             <HeaderElements
               headerElementType={eHeaderElementTypes.headLineCenter}

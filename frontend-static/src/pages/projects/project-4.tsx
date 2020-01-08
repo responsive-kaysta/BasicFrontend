@@ -118,30 +118,26 @@ class ProjectFour extends React.Component {
               pageStyle={ePageStyleTemplates.light}
             />
 
-            <Spacer />
-
             <ImageElement
               imagePath="/assets/project-images/project-4-search.png"
               imageAltText="Order Dispatching Overview"
               imageCaptionText="Auftrags-Dispatcher – Auftrags-Auslöser – setzen verschiedene Parameter um die gewünschten Einträge anzuzeigen, die Resultate werden in echtzeit agregiert und angezeigt."
+              imageWrapper
+              imagePadding
             />
-
-            <Spacer />
 
             <PageHeader
               header="Alle Details mit einem Klick"
               pageStyle={ePageStyleTemplates.light}
             />
 
-            <Spacer />
-
             <ImageElement
               imagePath="/assets/project-images/project-4-details.png"
               imageAltText="Order Details Overview"
               imageCaptionText="Modale laden alle notwendigen Daten und «überlappen die Seite» - der Kontext geht nicht verloren und die Seite wird nicht neu geladen. Modern und Responsive!"
+              imageWrapper
+              imagePadding
             />
-
-            <Spacer />
 
             <HeaderElements
               headerElementType={eHeaderElementTypes.headLineCenter}

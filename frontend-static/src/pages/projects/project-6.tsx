@@ -104,42 +104,36 @@ class ProjectSix extends React.Component {
               pageStyle={ePageStyleTemplates.light}
             />
 
-            <Spacer />
-
             <ImageElement
               imagePath="/assets/project-images/project-6-enbw_systemlandschaft.png"
               imageAltText="Systemlandschaft"
+              imageWrapper
+              imagePadding
             />
-
-            <Spacer />
 
             <PageHeader
               header="Routingplan – Kommunikation mit Hilfe der Taxonomie und eines Decision Trees im Griff"
               pageStyle={ePageStyleTemplates.light}
             />
 
-            <Spacer />
-
             <ImageElement
               imagePath="/assets/project-images/project-6-dgl_1.png"
               imageAltText="Routingplan"
+              imageWrapper
+              imagePadding
             />
-
-            <Spacer />
 
             <PageHeader
               header="Eine Sequenz um Anrufe korrekt zuzuteilen"
               pageStyle={ePageStyleTemplates.light}
             />
 
-            <Spacer />
-
             <ImageElement
               imagePath="/assets/project-images/project-6-enbw_process_sequenz-sequenz-voice-detail.png"
               imageAltText="Sequenz Diagramm"
+              imageWrapper
+              imagePadding
             />
-
-            <Spacer />
 
             <CallToAction
               header="Referenzen - Vertraulich"
