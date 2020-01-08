@@ -1,6 +1,7 @@
 import * as React from "react";
 import * as Scroll from "react-scroll";
 import { Head } from "react-static";
+import SpanLinkElement from "../../elements/link-elements/span-link-element";
 import ArticleContainer from "../../components/article-container/article-container";
 import ColorContainer from "../../components/color-container/color-container";
 import ArticleBanner from "../../compositions/article-banner/article-banner";
@@ -10,19 +11,22 @@ import ListContainer from "../../compositions/list-container/list-container";
 import PageHeader from "../../compositions/page-header/page-header";
 import { eSpotlightOrientation } from "../../compositions/spotlight/spec";
 import Spotlight from "../../compositions/spotlight/spotlight";
+import HeaderElements from "../../elements/header-elements/header-elements";
+import { eHeaderElementTypes } from "../../elements/header-elements/spec";
 import ImageElement from "../../elements/image-element/image-element";
-import RegularLinkElement from "../../elements/link-elements/regular-link-element";
-import ListElements from "../../elements/list-elements/list-elements";
+import ListElement from "../../elements/list-elements/list-elements";
 import Spacer from "../../elements/spacer/spacer";
+import DivElement from "../../elements/text-elements/div-element";
 import ParagraphElement from "../../elements/text-elements/paragraph-element";
 import { eTextStyles } from "../../elements/text-elements/spec";
 import ToTopButton from "../../elements/to-top-button/to-top-button";
 import { ePageStyleTemplates } from "../../less";
 import { ePictogram } from "../../page-types";
+import { PAGE_NAME } from "../../constants";
 
 var scroll = Scroll.animateScroll;
 
-class ProjectOne extends React.Component {
+class ProjectThree extends React.Component {
   componentDidMount() {
     scroll.scrollToTop();
   }
@@ -32,7 +36,7 @@ class ProjectOne extends React.Component {
       <>
         <Head>
           <title>
-            Industrie | Digitalisierung | Projekterfolg - BasicFrontend
+            Industrie | Digitalisierung | Projekterfolg - {PAGE_NAME}
           </title>
         </Head>
         <ArticleContainer>
@@ -58,25 +62,26 @@ class ProjectOne extends React.Component {
             />
             <ParagraphElement textStyles={eTextStyles.paragraph}>
               Im Auftrag der{" "}
-              <RegularLinkElement
+              <SpanLinkElement
                 text="Solcom"
                 link="https://www.solcom.de/de/kontakt.aspx"
+                showLinkIcon
               />{" "}
               konnten wir über 10 Monate als Subunternehmen in einem 8 Köpfigen
               Scrum-Team mitwirken und mitgestalten.
             </ParagraphElement>
 
             <ListContainer header="Interessant war dieses Projekt aus verschiedenen Gründen, zunächst die technischen Fakten.">
-              <ListElements>Microsoft Azure als Betriebsplatform</ListElements>
-              <ListElements>.NET Core & Standard</ListElements>
-              <ListElements>
+              <ListElement>Microsoft Azure als Betriebsplatform</ListElement>
+              <ListElement>.NET Core & Standard</ListElement>
+              <ListElement>
                 Azure DevOps & IaC (Infrastructure as Code)
-              </ListElements>
-              <ListElements>WebApi</ListElements>
-              <ListElements>SAP Schnittstellen</ListElements>
-              <ListElements>Diverse „Datentöpfe“</ListElements>
-              <ListElements>Authorisierung mit Auth0</ListElements>
-              <ListElements>Dokumentenmanagement</ListElements>
+              </ListElement>
+              <ListElement>WebApi</ListElement>
+              <ListElement>SAP Schnittstellen</ListElement>
+              <ListElement>Diverse „Datentöpfe“</ListElement>
+              <ListElement>Authorisierung mit Auth0</ListElement>
+              <ListElement>Dokumentenmanagement</ListElement>
             </ListContainer>
 
             <Spacer />
@@ -150,6 +155,83 @@ class ProjectOne extends React.Component {
               imageCaptionText="DevOps Dashboard"
             />
 
+            <Spacer />
+
+            <HeaderElements
+              headerElementType={eHeaderElementTypes.headLineCenter}
+            >
+              Technologien, Methoden, Services
+            </HeaderElements>
+            <DivElement textStyles={eTextStyles.align_center}>
+              <SpanLinkElement
+                text="Scrum"
+                link="https://de.wikipedia.org/wiki/Scrum"
+              />
+              {", "}
+              <SpanLinkElement
+                text="Agile"
+                link="https://de.wikipedia.org/wiki/Agile_Softwareentwicklung"
+              />
+              {", "}
+              <SpanLinkElement
+                text="VsTs"
+                link="https://visualstudio.microsoft.com/"
+              />
+              {", "}
+              <SpanLinkElement
+                text="Azure"
+                link="https://azure.microsoft.com/"
+              />
+              {", "}
+              <SpanLinkElement
+                text="MVC"
+                link="https://de.wikipedia.org/wiki/Model_View_Controller"
+              />
+              {", "}
+              <SpanLinkElement
+                text="Swagger"
+                link="https://de.wikipedia.org/wiki/Swagger_(Software)"
+              />
+              {", "}
+              <SpanLinkElement
+                text="CosmosDb"
+                link="https://azure.microsoft.com/de-de/services/cosmos-db/"
+              />
+              {", "}
+              <SpanLinkElement
+                text="Microsoft SQL"
+                link="https://www.microsoft.com/en-us/sql-server/sql-server-2017"
+              />
+              {", "}
+              <SpanLinkElement text="Auth0" link="https://auth0.com/" />{" "}
+              <SpanLinkElement
+                text=".NET Core"
+                link="https://github.com/dotnet/core"
+              />
+              {", "}
+              <SpanLinkElement
+                text=".NET Standard"
+                link="https://docs.microsoft.com/de-de/dotnet/standard/net-standard"
+              />
+              {", "}
+              <SpanLinkElement
+                text="Application Insight"
+                link="https://docs.microsoft.com/en-us/azure/application-insights/app-insights-overview"
+              />
+              {", "}
+              <SpanLinkElement
+                text="Asnychron"
+                link="https://de.wikipedia.org/wiki/Ajax_(Programmierung)"
+              />
+              {", "}
+              <SpanLinkElement
+                text=".NET, Azure Functions"
+                link="https://www.microsoft.com/net"
+              />
+            </DivElement>
+
+            <Spacer />
+
             <CallToAction
               header="Referenzen - Vertraulich"
               paragraph="Unsere Referenzen werden geschützt, wir zeigen unseren Stolz gerne bei einem persönlichen Gespräch."
@@ -166,5 +248,4 @@ class ProjectOne extends React.Component {
     );
   }
 }
-
-export default ProjectOne;
+export default ProjectThree;

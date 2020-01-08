@@ -1,20 +1,20 @@
 import * as React from "react";
 import { iListElementProps, eListElementTypes } from "./spec";
 
-class ListElements extends React.Component<iListElementProps> {
+class ListElement extends React.Component<iListElementProps> {
   public render() {
-    let listElements;
+    let listElement;
     switch (this.props.listElementType) {
       case eListElementTypes.li:
-        listElements = <li>{this.props.children}</li>;
+        listElement = <li>{this.props.children}</li>;
         break;
       default:
-        listElements = <li>{this.props.children}</li>;
+        listElement = <li>{this.props.children}</li>;
         break;
     }
 
-    return <>{listElements}</>;
+    return <>{listElement}</>;
   }
 }
 
-export default ListElements;
+export default ListElement;

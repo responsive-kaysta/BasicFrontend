@@ -15,6 +15,7 @@ import { eTextStyles } from "../../elements/text-elements/spec";
 import ToTopButton from "../../elements/to-top-button/to-top-button";
 import { ePageStyleTemplates } from "../../less";
 import { ePictogram } from "../../page-types";
+import { PAGE_NAME } from "../../constants";
 
 var scroll = Scroll.animateScroll;
 
@@ -27,7 +28,7 @@ class ProjectOne extends React.Component {
     return (
       <>
         <Head>
-          <title>Responsive | Accessible | Umbraco - BasicFrontend</title>
+          <title>Responsive | Accessible | Umbraco - {PAGE_NAME}</title>
         </Head>
         <ArticleContainer>
           <ArticleBanner
@@ -112,5 +113,4 @@ class ProjectOne extends React.Component {
     );
   }
 }
-
 export default ProjectOne;

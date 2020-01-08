@@ -36,8 +36,8 @@ class Projects extends React.Component {
               item={6}
               header="DGL | 4com | Novomind"
               paragraph="Digital Layer | Telefonie | Vorgangsverwaltung"
-              link="/projects"
-              date="19.01.2019"
+              link="/projects/dgl-4com-novomind"
+              date="Sunday, July 7, 2019"
               backgroundImage={ePictogram.ai_2}
             />
 
@@ -45,8 +45,8 @@ class Projects extends React.Component {
               item={5}
               header="CI | CD | CQ"
               paragraph="Continuous Integration, Continuous Deployment, Continuous Quality"
-              link="/projects"
-              date="19.01.2019"
+              link="/projects/ci-cd-cq"
+              date="Friday, December 28, 2018"
               backgroundImage={ePictogram.engineer}
             />
 
@@ -54,8 +54,8 @@ class Projects extends React.Component {
               item={4}
               header="Information | Zugänglich | Innovativ"
               paragraph="Plattformgrenzen überwinden, Information geräteunabhängig zugänglich machen"
-              link="/projects"
-              date="18.01.2019"
+              link="/projects/information-zugaenglich-innovativ"
+              date="Saturday, December 1, 2018"
               backgroundImage={ePictogram.analysis}
             />
 

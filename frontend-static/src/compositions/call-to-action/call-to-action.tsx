@@ -19,16 +19,20 @@ class CallToAction extends React.Component<iCallToActionProps> {
             <p>{paragraph}</p>
           </header>
           <ul className="actions vertical">
-            <li>
-              <a href={specialUrl} className="button fit special">
-                {specialText}
-              </a>
-            </li>
-            <li>
-              <a href={linkUrl} className="button fit">
-                {linkText}
-              </a>
-            </li>
+            {specialText && (
+              <li>
+                <a href={specialUrl} className="button fit special">
+                  {specialText}
+                </a>
+              </li>
+            )}
+            {linkText && (
+              <li>
+                <a href={linkUrl} className="button fit">
+                  {linkText}
+                </a>
+              </li>
+            )}
           </ul>
         </div>
       </section>

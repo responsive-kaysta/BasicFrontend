@@ -1,3 +1,4 @@
+import { eListContainerTypes } from "compositions/list-container/spec";
 import * as React from "react";
 import * as Scroll from "react-scroll";
 import { Head } from "react-static";
@@ -11,13 +12,14 @@ import PageHeader from "../../compositions/page-header/page-header";
 import { eSpotlightOrientation } from "../../compositions/spotlight/spec";
 import Spotlight from "../../compositions/spotlight/spotlight";
 import SpanLinkElement from "../../elements/link-elements/span-link-element";
-import ListElements from "../../elements/list-elements/list-elements";
+import ListElement from "../../elements/list-elements/list-elements";
 import Spacer from "../../elements/spacer/spacer";
 import ParagraphElement from "../../elements/text-elements/paragraph-element";
 import { eTextStyles } from "../../elements/text-elements/spec";
 import ToTopButton from "../../elements/to-top-button/to-top-button";
 import { ePageStyleTemplates } from "../../less";
 import { ePictogram } from "../../page-types";
+import { PAGE_NAME } from "../../constants";
 
 var scroll = Scroll.animateScroll;
 
@@ -30,7 +32,7 @@ class ProjectTwo extends React.Component {
     return (
       <>
         <Head>
-          <title>sauber | sicher | schnell - BasicFrontend</title>
+          <title>sauber | sicher | schnell - {PAGE_NAME}</title>
         </Head>
         <ArticleContainer>
           <ArticleBanner
@@ -92,49 +94,52 @@ class ProjectTwo extends React.Component {
               paragraph="Das Potenzial der Hardware wird optimal genutzt da Komponenten als auch die Daten im RAM Ihres Rechners – der die Anwendung betreibt – vorliegen und immer schnell, sicher und skalierbar zur Verfügung stehen."
               pageStyle={ePageStyleTemplates.light}
             />
-            <ListContainer header="Das Projekt, der Hintergrund, weitere Informationen">
-              <ListElements>
+            <ListContainer
+              header="Das Projekt, der Hintergrund, weitere Informationen"
+              listContainerType={eListContainerTypes.alt}
+            >
+              <ListElement>
                 <SpanLinkElement
                   text="Die Idee"
                   link="https://blog.responsive-kaysta.ch/post/inmemoryloader"
                 />
-              </ListElements>
-              <ListElements>
+              </ListElement>
+              <ListElement>
                 <SpanLinkElement
                   text="Das Repository"
                   link="https://github.com/inmemoryloader"
                 />
-              </ListElements>
-              <ListElements>
+              </ListElement>
+              <ListElement>
                 <SpanLinkElement
                   text="Weitere Ideen"
                   link="https://github.com/orgs/responsive-kaysta/projects/1"
                 />
-              </ListElements>
-              <ListElements>
+              </ListElement>
+              <ListElement>
                 <SpanLinkElement
                   text="Die Pakete"
                   link="https://www.nuget.org/profiles/kaysta"
                 />
-              </ListElements>
-              <ListElements>
+              </ListElement>
+              <ListElement>
                 <SpanLinkElement
                   text="The four myths of InMemory Computing"
                   link="https://www.gridgain.com/resources/blog/four-myths-of-in-memory-computing"
                 />
-              </ListElements>
-              <ListElements>
+              </ListElement>
+              <ListElement>
                 <SpanLinkElement
                   text="In-Memory Processing"
                   link="https://en.wikipedia.org/wiki/In-memory_processing"
                 />
-              </ListElements>
-              <ListElements>
+              </ListElement>
+              <ListElement>
                 <SpanLinkElement
                   text="Late Binding"
                   link="https://en.wikipedia.org/wiki/Late_binding"
                 />
-              </ListElements>
+              </ListElement>
             </ListContainer>
             <Spacer />
 
@@ -156,5 +161,4 @@ class ProjectTwo extends React.Component {
     );
   }
 }
-
 export default ProjectTwo;

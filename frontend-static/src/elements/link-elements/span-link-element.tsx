@@ -9,7 +9,10 @@ class SpanLinkElement extends React.Component<iRegularLinkElementProps> {
   public render() {
     return (
       <>
-        <span onClick={() => this.openWindow(this.props.link)}>
+        <span
+          onClick={() => this.openWindow(this.props.link)}
+          className={this.props.showLinkIcon && "fas fa-link"}
+        >
           {this.props.text}
         </span>
       </>
