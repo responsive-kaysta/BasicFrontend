@@ -3,6 +3,8 @@
 # dependencies
 react_application/node_modules
 *node_modules*
+*dist*
+*tmp*
 # testing
 /coverage
 
@@ -37,6 +39,3 @@ yarn-error.log*
 *.*.dll
 *.*.pdb
 
-
-
-react_application/src/assets/css/styles\.css

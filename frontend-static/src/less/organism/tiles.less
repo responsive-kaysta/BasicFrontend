@@ -1,0 +1,67 @@
+// out: false
+
+@import "../global.less";
+
+.tiles {
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.tiles div[class^="item-"] {
+  margin: 0.75rem !important;
+  flex-direction: row;
+  width: 40%;
+}
+
+.tiles h3 {
+  padding-bottom: 0.75rem;
+}
+
+.tiles a {
+  text-decoration: none;
+}
+
+.tiles a:hover * {
+  text-decoration: none;
+  color: @global-link-hover-color;
+}
+
+.tiles a:hover p {
+  text-decoration: underline;
+  color: @global-link-hover-color;
+}
+
+.tiles .date {
+  text-align: right;
+}
+
+.tiles p.paragraph {
+  min-height: 60px;
+}
+
+@media screen and (max-width: 736px) {
+  .tiles div[class^="item-"] {
+    margin: 0.25rem !important;
+    display: block;
+    width: 80%;
+  }
+
+  .tiles h3 {
+    font-size: 1.125rem;
+    padding-bottom: 0.35rem;
+  }
+
+  .tiles .date {
+    font-size: 1rem;
+    padding-bottom: 0.35rem;
+  }
+
+  .tiles p.paragraph {
+    font-size: 1.1rem;
+    font-weight: normal;
+  }
+}

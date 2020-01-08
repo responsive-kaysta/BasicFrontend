@@ -1,0 +1,37 @@
+{
+  "name": "react-static-example-typescript",
+  "private": true,
+  "scripts": {
+    "start": "react-static start",
+    "stage": "react-static build --staging",
+    "build": "react-static build",
+    "bundle": "react-static bundle",
+    "export": "react-static export",
+    "serve": "serve dist -p 3000 -s"
+  },
+  "dependencies": {
+    "@reach/router": "^1.2.1",
+    "@types/react-scroll": "^1.5.4",
+    "axios": "^0.19.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-iframe": "^1.8.0",
+    "react-scroll": "^1.7.15",
+    "react-static": "^7.2.3",
+    "react-static-plugin-reach-router": "^7.2.3",
+    "react-static-plugin-sitemap": "^7.2.3",
+    "react-static-plugin-source-filesystem": "^7.2.3",
+    "react-static-plugin-typescript": "^7.2.3"
+  },
+  "devDependencies": {
+    "@types/node": "^13.1.4",
+    "@types/reach__router": "^1.2",
+    "@types/react": "^16.9.17",
+    "@types/react-dom": "^16.9.4",
+    "@types/react-hot-loader": "^4.1.1",
+    "@types/webpack-env": "^1.15.0",
+    "react-hot-loader": "^4.12.18",
+    "serve": "^11.3.0",
+    "typescript": "^3.7.4"
+  }
+}

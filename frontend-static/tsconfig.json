@@ -1,0 +1,35 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "jsx": "preserve",
+    "allowJs": false,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "removeComments": false,
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "noEmit": true,
+    "baseUrl": ".",
+    "paths": {
+      "assets/*": ["src/assets/*"],
+      "components/*": ["src/components/*"],
+      "compositions/*": ["src/compositions/*"],
+      "elements/*": ["elements/*"],
+      "page-includes/*": ["page-includes/*"]
+    },
+    "lib": ["dom", "es2015", "es2016"]
+  },
+  "exclude": [
+    "artifacts/**/*",
+    "less/**/*",
+    "dist/**/*",
+    "public/**/*",
+    "node_modules"
+  ]
+}
