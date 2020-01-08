@@ -11,14 +11,10 @@ import PageHeader from "../../compositions/page-header/page-header";
 import { eSpotlightOrientation } from "../../compositions/spotlight/spec";
 import Spotlight from "../../compositions/spotlight/spotlight";
 import { PAGE_NAME } from "../../constants";
-import HeaderElements from "../../elements/header-elements/header-elements";
-import { eHeaderElementTypes } from "../../elements/header-elements/spec";
 import ImageElement from "../../elements/image-element/image-element";
-import SpanLinkElement from "../../elements/link-elements/span-link-element";
 import ListElement from "../../elements/list-elements/list-elements";
 import Spacer from "../../elements/spacer/spacer";
-import DivElement from "../../elements/text-elements/div-element";
-import { eTextStyles } from "../../elements/text-elements/spec";
+import ParagraphElement from "../../elements/text-elements/paragraph-element";
 import ToTopButton from "../../elements/to-top-button/to-top-button";
 import { ePageStyleTemplates } from "../../less";
 import { ePictogram } from "../../page-types";
@@ -53,51 +49,41 @@ class ProjectSix extends React.Component {
 
           <ColorContainer pageStyle={ePageStyleTemplates.light} padded>
             <PageHeader
-              header="Nicht nur Kosten sparen"
-              paragraph="Wir bauen unsere Projekte möglichst mit Open-Source Mitteln auf da wir nicht nur die Idee dahinter verstehen und unterstützen sondern auch die finanziellen Vorteile – keine Lizenzkosten z.B.. Die von uns eingesetzten Tools sind in der Regel kostenfrei und enthalten alle Funktionen die wir benötigen, darüber hinaus sehen wir es als Challenge da Open-Source noch immer als unprofessionell gilt oder Lizenzprobleme befürchtet werden."
+              header="Konzernkommunikation im Griff"
+              paragraph="Im Auftrag Q-PERIOR durften wir der EnBW in Karlsruhe bei der Umsetzung eines Prototypen behilflich sein der die Kommunikation nicht nur modernisiert."
               pageStyle={ePageStyleTemplates.light}
             />
 
-            <Spacer />
+            <ParagraphElement>
+              Als «Arbeitsplatz der Zukunft» wurden Möglichkeiten erarbeitet,
+              wie Fax-, Email-, Brief- und Telefon-Kommunikation vereinfacht und
+              vereinheitlicht werden kann.
+            </ParagraphElement>
 
-            <PageHeader
-              header="Source-Code Verwaltung"
-              paragraph="AZURE DevOps (visualstudio.com) ist aus unserer Sicht ein grosser Wurf aus dem Hause Microsoft. Nicht nur Source-Code Verwaltung – GIT als auch TFS Repositories – werden angeboten, Team Foundation Services bietet diverse zusätzliche Features."
-              pageStyle={ePageStyleTemplates.light}
-            />
+            <ParagraphElement>
+              Die Lösung: durch den Aufbau einer responsiven
+              Web-Service-Architektur konnten die sogenannten Vorgänge in
+              unterschiedlichen Systemen verwaltet und zugeteilt werden.
+            </ParagraphElement>
 
-            <ListContainer>
-              <ListElement>Source-Code Verwaltung</ListElement>
-              <ListElement>Build- und Deploy-Management</ListElement>
-              <ListElement>UnitTests</ListElement>
-              <ListElement>Projekt-Vewaltung (Scrum, Agile, etc.)</ListElement>
-            </ListContainer>
-
-            <Spacer />
-
-            <PageHeader
-              header="Gratis in der Basis-Version"
-              paragraph="Die beschriebenen Dienste können in der Basis-Version gratis genutzt werden und setzen ausser einem Browser eigentlich nichts voraus. (Bei kommerziellen Projekten ist mit gewissem finanziellem Aufwand zu rechen)"
-              pageStyle={ePageStyleTemplates.light}
-            />
-
-            <ListContainer>
-              <ListElement>AZURE DevOps (visualstudio.com)</ListElement>
-              <ListElement>Source-Code Verwaltung</ListElement>
-              <ListElement>Build - Source-Code «bauen»</ListElement>
-              <ListElement>Deployment - «gebauter» Code verteilen</ListElement>
+            <ListContainer header="Unterschiedliche Systeme kommen dabei zum Einsatz">
               <ListElement>
-                Projekt-Management – Scrum, Agile, Wiki, etc.
+                4com -> Telefon-Anlage und Multichannel-Marketing
               </ListElement>
               <ListElement>
-                SonarQube oder SonarCloud (continuous code quality)
+                Novomind -> Schriftliche Vorgänge bearbeiten
+              </ListElement>
+              <ListElement>SAP CRM -> Kundenverwaltung</ListElement>
+              <ListElement>
+                Web-Services um die Informationen den Systemen zur Verfügung zu
+                stellen
               </ListElement>
             </ListContainer>
           </ColorContainer>
 
           <EyeCatcher
-            header="verwalten | überprüfen | verteilen"
-            paragraph="Kontinuierlich und automatisiert Code Qualität sicherstellen und integrieren"
+            header="Empfangen | Verteilen | Bearbeiten"
+            paragraph="Kommunikation über eine Anwendung verwalten und zuteilen"
             pageStyle={ePageStyleTemplates.green}
           />
 
@@ -114,121 +100,44 @@ class ProjectSix extends React.Component {
             <Spacer />
 
             <PageHeader
-              header="Übersicht Sprint-Planung"
+              header="Damit Sie sich ein Bild machen können, anbei die Systemlandschaft in einer high-level Ansicht"
               pageStyle={ePageStyleTemplates.light}
             />
 
             <Spacer />
 
             <ImageElement
-              imagePath="/assets/project-images/project-5-sprint.png"
-              imageAltText="Übersicht Sprint-Planung"
-              imageCaptionText="Aufgaben – Tasks & Bugs – via Browser einstellen und verwalten"
+              imagePath="/assets/project-images/project-6-enbw_systemlandschaft.png"
+              imageAltText="Systemlandschaft"
             />
 
             <Spacer />
 
             <PageHeader
-              header="Übersicht Source-Code Verwaltung"
+              header="Routingplan – Kommunikation mit Hilfe der Taxonomie und eines Decision Trees im Griff"
               pageStyle={ePageStyleTemplates.light}
             />
 
             <Spacer />
 
             <ImageElement
-              imagePath="/assets/project-images/project-5-source-code.png"
-              imageAltText="Übersicht Source-Code Verwaltung"
-              imageCaptionText="Einsehen, kommentieren, verwalten, korrigieren"
+              imagePath="/assets/project-images/project-6-dgl_1.png"
+              imageAltText="Routingplan"
             />
 
             <Spacer />
 
             <PageHeader
-              header="Übersicht Build-Management"
+              header="Eine Sequenz um Anrufe korrekt zuzuteilen"
               pageStyle={ePageStyleTemplates.light}
             />
 
             <Spacer />
 
             <ImageElement
-              imagePath="/assets/project-images/project-5-build.png"
-              imageAltText="Übersicht Build-Management"
-              imageCaptionText="Code wird automatisch und kontinuierlich «gebaut», kontrolliert und verteilt"
+              imagePath="/assets/project-images/project-6-enbw_process_sequenz-sequenz-voice-detail.png"
+              imageAltText="Sequenz Diagramm"
             />
-
-            <Spacer />
-
-            <PageHeader
-              header="SonarQube Projektreport"
-              pageStyle={ePageStyleTemplates.light}
-            />
-
-            <Spacer />
-
-            <ImageElement
-              imagePath="/assets/project-images/project-5-sonaqube.png"
-              imageAltText="SonarQube Projektreport"
-              imageCaptionText="Alle Auffälligkeiten, Fehler und Tipps übersichtlich dargestellt"
-            />
-
-            <Spacer />
-
-            <PageHeader
-              header="SonarQube Fehlerreport"
-              pageStyle={ePageStyleTemplates.light}
-            />
-
-            <Spacer />
-
-            <ImageElement
-              imagePath="/assets/project-images/project-5-sonarqube-report.png"
-              imageAltText="SonarQube Fehlerreport"
-              imageCaptionText="Nichts, wirklich nichts entgeht diesem «Dienst» – automatisch und übersichtlich"
-            />
-
-            <Spacer />
-
-            <HeaderElements
-              headerElementType={eHeaderElementTypes.headLineCenter}
-            >
-              Technologien, Methoden, Services
-            </HeaderElements>
-            <DivElement textStyles={eTextStyles.align_center}>
-              <SpanLinkElement
-                text="AZURE DevOps"
-                link="https://azure.microsoft.com/en-us/solutions/devops/"
-              />
-              {", "}
-              <SpanLinkElement
-                text="VisualStudio"
-                link="https://visualstudio.microsoft.com/"
-              />
-              {", "}
-              <SpanLinkElement
-                text="C# .NET"
-                link="https://docs.microsoft.com/en-us/dotnet/csharp/"
-              />
-              {", "}
-              <SpanLinkElement
-                text="SonarQube"
-                link="https://www.sonarqube.org/"
-              />
-              {", "}
-              <SpanLinkElement
-                text="Scrum"
-                link="https://de.wikipedia.org/wiki/Scrum"
-              />
-              {", "}
-              <SpanLinkElement
-                text="Continous Integration"
-                link="https://de.wikipedia.org/wiki/Kontinuierliche_Integration"
-              />
-              {", "}
-              <SpanLinkElement
-                text="Continous Delivery/Deployment"
-                link="https://www.scrum.de/unterschiede-zwischen-continuous-integration-continuous-delivery-und-continuous-deployment/"
-              />
-            </DivElement>
 
             <Spacer />
 
