@@ -1,15 +1,15 @@
 import * as React from "react";
 import * as Scroll from "react-scroll";
 import { Head } from "react-static";
-import ArticleContainer from "../components/article-container/article-container";
-import TileItem from "../components/tile-section/tile-item";
-import TileSection from "../components/tile-section/tile-section";
-import ArticleBanner from "../compositions/article-banner/article-banner";
 import { PAGE_NAME } from "../constants";
-import Spacer from "../elements/spacer/spacer";
-import ToTopButton from "../elements/to-top-button/to-top-button";
+import { ArticleContainer } from "../components/article-container/article-container";
+import { ArticleBanner } from "../compositions/article-banner/article-banner";
 import { ePageStyleTemplates } from "../less";
-import { ePictogram } from "../page-types";
+import { TileSection } from "../components/tile-section/tile-section";
+import { TileItem } from "../components/tile-section/tile-item";
+import { ePictogram } from "../page-types/";
+import { Spacer } from "../elements/spacer/spacer";
+import { ToTopButton } from "../elements/to-top-button/to-top-button";
 
 var scroll = Scroll.animateScroll;
 

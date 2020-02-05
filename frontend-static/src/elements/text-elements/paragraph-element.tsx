@@ -1,18 +1,23 @@
 import * as React from "react";
-import { iTextElementProps } from "./spec";
+import { eTextStyles } from "page-types/eTextStyles";
+import { FC, ReactNode } from "react";
 
-class ParagraphElement extends React.Component<iTextElementProps> {
-  public render() {
-    const cssClass = this.props.textStyles
-      ? this.props.textStyles
-      : "paragraph";
-
-    return (
-      <p className={cssClass} id={this.props.elementId}>
-        {this.props.children}
-      </p>
-    );
-  }
+interface ParagraphElementProps {
+  children: ReactNode;
+  textStyles?: eTextStyles;
+  elementId?: string;
 }
 
-export default ParagraphElement;
+export const ParagraphElement: FC<ParagraphElementProps> = ({
+  children,
+  textStyles,
+  elementId
+}) => {
+  const cssClass = textStyles ? textStyles : "paragraph";
+
+  return (
+    <p className={cssClass} id={elementId}>
+      {children}
+    </p>
+  );
+};

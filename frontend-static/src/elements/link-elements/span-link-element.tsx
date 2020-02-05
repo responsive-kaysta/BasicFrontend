@@ -1,24 +1,30 @@
 import * as React from "react";
-import { iRegularLinkElementProps } from "./spec";
+import { FC } from "react";
 
-class SpanLinkElement extends React.Component<iRegularLinkElementProps> {
-  openWindow = (url: string) => {
+interface SpanLinkElementProps {
+  text: string;
+  link: string;
+  showLinkIcon?: boolean;
+  showLinkDivider?: boolean;
+}
+
+export const SpanLinkElement: FC<SpanLinkElementProps> = ({
+  text,
+  link,
+  showLinkIcon,
+  showLinkDivider
+}) => {
+  const openWindow = (url: string) => {
     window.open(url);
   };
 
-  public render() {
-    return (
-      <>
-        <span
-          onClick={() => this.openWindow(this.props.link)}
-          className={this.props.showLinkIcon && "fas fa-link"}
-        >
-          {this.props.showLinkDivider && " - "}
-          {this.props.text}
-        </span>
-      </>
-    );
-  }
-}
-
-export default SpanLinkElement;
+  return (
+    <span
+      onClick={() => openWindow(link)}
+      className={showLinkIcon && "fas fa-link clickable"}
+    >
+      {showLinkDivider && " - "}
+      {text}
+    </span>
+  );
+};

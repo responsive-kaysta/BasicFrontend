@@ -1,18 +1,16 @@
 import * as React from "react";
 import * as Scroll from "react-scroll";
 import { Head } from "react-static";
-import ArticleContainer from "../components/article-container/article-container";
-import ColorContainer from "../components/color-container/color-container";
-import ArticleBanner from "../compositions/article-banner/article-banner";
-import { eSpotlightOrientation } from "../compositions/spotlight/spec";
-import Spotlight from "../compositions/spotlight/spotlight";
 import { PAGE_NAME } from "../constants";
-import ToTopButton from "../elements/to-top-button/to-top-button";
+import { ArticleContainer } from "../components/article-container/article-container";
+import { ArticleBanner } from "../compositions/article-banner/article-banner";
 import { ePageStyleTemplates } from "../less";
-import { ePictogram } from "../page-types";
-import ParagraphElement from "../elements/text-elements/paragraph-element";
-import { eTextStyles } from "../elements/text-elements/spec";
-import Spacer from "../elements/spacer/spacer";
+import { Spotlight } from "../compositions/spotlight/spotlight";
+import { ePictogram, eSpotlightOrientation, eTextStyles } from "../page-types/";
+import { ColorContainer } from "../components/color-container/color-container";
+import { ParagraphElement } from "../elements/text-elements/paragraph-element";
+import { Spacer } from "../elements/spacer/spacer";
+import { ToTopButton } from "../elements/to-top-button/to-top-button";
 
 var scroll = Scroll.animateScroll;
 

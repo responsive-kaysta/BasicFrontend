@@ -1,18 +1,14 @@
 import * as React from "react";
-import { iRegularLinkElementProps } from "./spec";
+import { FC } from "react";
 
-class RegularLinkElement extends React.Component<iRegularLinkElementProps> {
-  openWindow = (url: string) => {
-    window.open(url);
-  };
-
-  public render() {
-    return (
-      <>
-        <a href={this.props.link}>{this.props.text}</a>
-      </>
-    );
-  }
+interface RegularLinkElementProps {
+  text: string;
+  link: string;
 }
 
-export default RegularLinkElement;
+export const RegularLinkElement: FC<RegularLinkElementProps> = ({
+  text,
+  link
+}) => {
+  return <a href={link}>{text}</a>;
+};

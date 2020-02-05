@@ -1,27 +1,29 @@
 import * as React from "react";
 import * as Scroll from "react-scroll";
 import { Head } from "react-static";
-import ArticleContainer from "../../components/article-container/article-container";
-import ColorContainer from "../../components/color-container/color-container";
-import ArticleBanner from "../../compositions/article-banner/article-banner";
-import CallToAction from "../../compositions/call-to-action/call-to-action";
-import EyeCatcher from "../../compositions/eye-catcher/eye-catcher";
-import ListContainer from "../../compositions/list-container/list-container";
-import PageHeader from "../../compositions/page-header/page-header";
-import { eSpotlightOrientation } from "../../compositions/spotlight/spec";
-import Spotlight from "../../compositions/spotlight/spotlight";
 import { PAGE_NAME } from "../../constants";
-import HeaderElements from "../../elements/header-elements/header-elements";
-import { eHeaderElementTypes } from "../../elements/header-elements/spec";
-import ImageElement from "../../elements/image-element/image-element";
-import SpanLinkElement from "../../elements/link-elements/span-link-element";
-import ListElement from "../../elements/list-elements/list-elements";
-import Spacer from "../../elements/spacer/spacer";
-import DivElement from "../../elements/text-elements/div-element";
-import { eTextStyles } from "../../elements/text-elements/spec";
-import ToTopButton from "../../elements/to-top-button/to-top-button";
+import { ArticleContainer } from "../../components/article-container/article-container";
+import { ArticleBanner } from "../../compositions/article-banner/article-banner";
 import { ePageStyleTemplates } from "../../less";
-import { ePictogram } from "../../page-types";
+import { Spotlight } from "../../compositions/spotlight/spotlight";
+import {
+  ePictogram,
+  eSpotlightOrientation,
+  eHeaderElementTypes,
+  eTextStyles
+} from "../../page-types/";
+import { ColorContainer } from "../../components/color-container/color-container";
+import { PageHeader } from "../../compositions/page-header/page-header";
+import { Spacer } from "../../elements/spacer/spacer";
+import { ListContainer } from "../../compositions/list-container/list-container";
+import { ListElement } from "../../elements/list-elements/list-elements";
+import { EyeCatcher } from "../../compositions/eye-catcher/eye-catcher";
+import { CallToAction } from "../../compositions/call-to-action/call-to-action";
+import { ImageElement } from "../../elements/image-element/image-element";
+import { HeaderElements } from "../../elements/header-elements/header-elements";
+import { DivElement } from "../../elements/text-elements/div-element";
+import { SpanLinkElement } from "../../elements/link-elements/span-link-element";
+import { ToTopButton } from "../../elements/to-top-button/to-top-button";
 
 var scroll = Scroll.animateScroll;
 

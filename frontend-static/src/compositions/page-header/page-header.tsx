@@ -1,21 +1,24 @@
 import * as React from "react";
-import { iPageHeaderProps } from "./spec";
+import { ePageStyleTemplates } from "../../less";
+import { FC } from "react";
 
-class PageHeader extends React.Component<iPageHeaderProps> {
-  public render() {
-    const header = this.props.header;
-    const paragraph = this.props.paragraph;
-    const pageStyle = this.props.pageStyle;
-
-    return (
-      <div className={pageStyle}>
-        <div className="page-header">
-          <h2>{header}</h2>
-        </div>
-        {paragraph && <p className="lead">{paragraph}</p>}
-      </div>
-    );
-  }
+interface iPageHeaderProps {
+  header: string;
+  paragraph?: string;
+  pageStyle?: ePageStyleTemplates;
 }
 
-export default PageHeader;
+export const PageHeader: FC<iPageHeaderProps> = ({
+  header,
+  paragraph,
+  pageStyle
+}) => {
+  return (
+    <div className={pageStyle}>
+      <div className="page-header">
+        <h2>{header}</h2>
+      </div>
+      {paragraph && <p className="lead">{paragraph}</p>}
+    </div>
+  );
+};

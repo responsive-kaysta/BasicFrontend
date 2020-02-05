@@ -1,8 +1,6 @@
 import * as React from "react";
+import { FC } from "react";
 
-class Spacer extends React.Component {
-  public render() {
-    return <br />;
-  }
-}
-export default Spacer;
+export const Spacer: FC = () => {
+  return <br />;
+};

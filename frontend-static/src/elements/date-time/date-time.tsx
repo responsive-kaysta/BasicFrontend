@@ -1,7 +1,11 @@
 import React from "react";
-import { iDateTimeProps } from "./spec";
 
-class DateTime extends React.Component<iDateTimeProps> {
+interface DateTimeProps {
+  dateTime: Date;
+  dateTimeType?: string;
+}
+
+export class DateTime extends React.Component<DateTimeProps> {
   render() {
     const dateTime = new Date(this.props.dateTime);
     let dateTimeFormat;
@@ -17,4 +21,3 @@ class DateTime extends React.Component<iDateTimeProps> {
     return dateTimeFormat;
   }
 }
-export default DateTime;

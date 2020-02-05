@@ -1,23 +1,25 @@
 import * as React from "react";
 import * as Scroll from "react-scroll";
 import { Head } from "react-static";
-import ArticleContainer from "../components/article-container/article-container";
-import ColorContainer from "../components/color-container/color-container";
-import ArticleBanner from "../compositions/article-banner/article-banner";
-import ListContainer from "../compositions/list-container/list-container";
-import { eListContainerTypes } from "../compositions/list-container/spec";
-import PageHeader from "../compositions/page-header/page-header";
-import { eSpotlightOrientation } from "../compositions/spotlight/spec";
-import Spotlight from "../compositions/spotlight/spotlight";
 import { PAGE_NAME } from "../constants";
-import SpanLinkElement from "../elements/link-elements/span-link-element";
-import ListElement from "../elements/list-elements/list-elements";
-import Spacer from "../elements/spacer/spacer";
-import ParagraphElement from "../elements/text-elements/paragraph-element";
-import { eTextStyles } from "../elements/text-elements/spec";
-import ToTopButton from "../elements/to-top-button/to-top-button";
+import { ArticleContainer } from "../components/article-container/article-container";
+import { ArticleBanner } from "../compositions/article-banner/article-banner";
 import { ePageStyleTemplates } from "../less";
-import { ePictogram } from "../page-types";
+import { Spotlight } from "../compositions/spotlight/spotlight";
+import {
+  ePictogram,
+  eSpotlightOrientation,
+  eTextStyles,
+  eListContainerTypes
+} from "../page-types/";
+import { ColorContainer } from "../components/color-container/color-container";
+import { PageHeader } from "../compositions/page-header/page-header";
+import { ParagraphElement } from "../elements/text-elements/paragraph-element";
+import { Spacer } from "../elements/spacer/spacer";
+import { ListContainer } from "../compositions/list-container/list-container";
+import { ListElement } from "../elements/list-elements/list-elements";
+import { SpanLinkElement } from "../elements/link-elements/span-link-element";
+import { ToTopButton } from "../elements/to-top-button/to-top-button";
 
 var scroll = Scroll.animateScroll;
 

@@ -1,55 +1,56 @@
 import * as React from "react";
-import { iListContainerProps, eListContainerTypes } from "./spec";
+import { FC, ReactNode } from "react";
+import { eListContainerTypes } from "../../page-types/eListContainerTypes";
 
-class ListContainer extends React.Component<iListContainerProps> {
-  public render() {
-    let listElements;
-    switch (this.props.listContainerType) {
-      case eListContainerTypes.actions:
-        listElements = <ul className="actions">{this.props.children}</ul>;
-        break;
-      case eListContainerTypes.actionsFit:
-        listElements = <ul className="actions small">{this.props.children}</ul>;
-        break;
-      case eListContainerTypes.actionsFitSmall:
-        listElements = (
-          <ul className="actions vertical">{this.props.children}</ul>
-        );
-        break;
-      case eListContainerTypes.actionsSmall:
-        listElements = (
-          <ul className="actions vertical small">{this.props.children}</ul>
-        );
-        break;
-      case eListContainerTypes.actionsVertical:
-        listElements = <ul className="actions fit">{this.props.children}</ul>;
-        break;
-      case eListContainerTypes.actionsVerticalSmall:
-        listElements = (
-          <ul className="actions fit small">{this.props.children}</ul>
-        );
-        break;
-      case eListContainerTypes.alt:
-        listElements = <ul className="alt">{this.props.children}</ul>;
-        break;
-      case eListContainerTypes.icons:
-        listElements = <ul className="icons">{this.props.children}</ul>;
-        break;
-      case eListContainerTypes.iconsMajor:
-        listElements = <ul className="icons major">{this.props.children}</ul>;
-        break;
-      default:
-        listElements = <ul>{this.props.children}</ul>;
-        break;
-    }
-
-    return (
-      <>
-        {this.props.header && <p className="paragraph">{this.props.header}</p>}
-        {listElements}
-      </>
-    );
-  }
+interface iListContainerProps {
+  children: ReactNode;
+  header?: string;
+  listContainerType?: eListContainerTypes;
 }
 
-export default ListContainer;
+export const ListContainer: FC<iListContainerProps> = ({
+  children,
+  header,
+  listContainerType
+}) => {
+  let listElements;
+  switch (listContainerType) {
+    case eListContainerTypes.actions:
+      listElements = <ul className="actions">{children}</ul>;
+      break;
+    case eListContainerTypes.actionsFit:
+      listElements = <ul className="actions small">{children}</ul>;
+      break;
+    case eListContainerTypes.actionsFitSmall:
+      listElements = <ul className="actions vertical">{children}</ul>;
+      break;
+    case eListContainerTypes.actionsSmall:
+      listElements = <ul className="actions vertical small">{children}</ul>;
+      break;
+    case eListContainerTypes.actionsVertical:
+      listElements = <ul className="actions fit">{children}</ul>;
+      break;
+    case eListContainerTypes.actionsVerticalSmall:
+      listElements = <ul className="actions fit small">{children}</ul>;
+      break;
+    case eListContainerTypes.alt:
+      listElements = <ul className="alt">{children}</ul>;
+      break;
+    case eListContainerTypes.icons:
+      listElements = <ul className="icons">{children}</ul>;
+      break;
+    case eListContainerTypes.iconsMajor:
+      listElements = <ul className="icons major">{children}</ul>;
+      break;
+    default:
+      listElements = <ul>{children}</ul>;
+      break;
+  }
+
+  return (
+    <>
+      {header && <p className="paragraph">{header}</p>}
+      {listElements}
+    </>
+  );
+};

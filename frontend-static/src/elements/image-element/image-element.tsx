@@ -1,35 +1,42 @@
 import * as React from "react";
-import { iImageProps } from "./spec";
+import { FC } from "react";
 
-class ImageElement extends React.Component<iImageProps> {
-  public render() {
-    const imageElement = (
-      <img src={this.props.imagePath} alt={this.props.imageAltText} />
-    );
-
-    const imageCaptionText = this.props.imageCaptionText && (
-      <p className="caption">{this.props.imageCaptionText}</p>
-    );
-
-    const wrapperClass = this.props.imagePadding
-      ? "image img-padding"
-      : "image";
-
-    return (
-      <>
-        {this.props.imageWrapper ? (
-          <section className={wrapperClass}>
-            {imageElement}
-            {imageCaptionText}
-          </section>
-        ) : (
-          <>
-            {imageElement}
-            {imageCaptionText}
-          </>
-        )}
-      </>
-    );
-  }
+interface ImageElementProps {
+  imagePath: string;
+  imageAltText: string;
+  imageCaptionText?: string;
+  imageWrapper?: boolean;
+  imagePadding?: boolean;
 }
-export default ImageElement;
+
+export const ImageElement: FC<ImageElementProps> = ({
+  imagePath,
+  imageAltText,
+  imageCaptionText,
+  imagePadding,
+  imageWrapper
+}) => {
+  const imageElement = <img src={imagePath} alt={imageAltText} />;
+
+  const captionText = imageCaptionText && (
+    <p className="caption">{imageCaptionText}</p>
+  );
+
+  const wrapperClass = imagePadding ? "image img-padding" : "image";
+
+  return (
+    <>
+      {imageWrapper ? (
+        <section className={wrapperClass}>
+          {imageElement}
+          {captionText}
+        </section>
+      ) : (
+        <>
+          {imageElement}
+          {captionText}
+        </>
+      )}
+    </>
+  );
+};

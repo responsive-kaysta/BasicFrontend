@@ -3,6 +3,7 @@
 @import "../global.less";
 
 a {
+  color: @global-link-color;
   border-bottom: 0;
   text-decoration: @global-text-decoration;
   font-family: @global-font-family;
@@ -10,16 +11,10 @@ a {
 }
 
 a:hover {
+  color: @global-link-hover-color;
   text-transform: @global-text-transform;
   text-decoration: @global-text-decoration;
-}
-
-a {
-  color: @global-link-color;
-}
-
-a:hover {
-  color: @global-link-hover-color;
+  cursor: pointer;
 }
 
 a.link-h-padding:nth-child(1) {

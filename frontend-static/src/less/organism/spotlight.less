@@ -3,10 +3,6 @@
 @import "../global.less";
 
 .spotlight {
-  -moz-align-items: center;
-  -webkit-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
   display: -moz-flex;
   display: -webkit-flex;
   display: -ms-flex;
@@ -48,11 +44,8 @@
   order: 2;
   width: 100%;
   height: 160px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-top: 2.25rem;
+  display: flex;
+  align-items: baseline;
 }
 
 .spotlight-right .content {
@@ -62,23 +55,35 @@
   order: 1;
   width: 100%;
   height: 160px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-top: 2.25rem;
+  display: flex;
+  align-items: baseline;
 }
 
-.spotlight .content h2 {
+.spotlight .content > div {
+  vertical-align: middle;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-left: 3rem;
+}
+
+.spotlight .content > div > h2 {
   font-size: 1.5rem;
-  padding-bottom: 1rem;
+  display: block;
+  -moz-order: 1;
+  -webkit-order: 1;
+  -ms-order: 1;
+  order: 1;
 }
 
-.spotlight .content p {
+.spotlight .content > div > p {
   font-size: 1.25rem;
   font-weight: 500;
   line-height: 1.5rem;
-  padding-bottom: 3rem;
+  display: block;
+  -moz-order: 2;
+  -webkit-order: 2;
+  -ms-order: 2;
+  order: 2;
 }
 
 .spotlight:nth-child(1) {
@@ -119,86 +124,4 @@
 
 .spotlight:nth-child(10) {
   background-color: rgba(0, 0, 0, 0.75);
-}
-
-@media screen and (max-width: 736px) {
-  .spotlight {
-    display: block;
-  }
-
-  .spotlight br {
-    display: none;
-  }
-
-  .spotlight .image {
-    width: 100%;
-  }
-
-  .spotlight .content {
-    display: inline-block;
-    width: 100%;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 2rem;
-  }
-
-  .spotlight-left .image {
-    max-height: 128px;
-    max-width: 128px;
-  }
-
-  .spotlight-right .image {
-    height: 128px;
-    width: 128px;
-  }
-
-  .spotlight .content h2 {
-    display: block;
-  }
-
-  .spotlight .content p {
-    display: block;
-    padding-bottom: 1.75rem;
-  }
-}
-
-@media screen and (max-width: 468px) {
-  .spotlight {
-    display: block;
-  }
-
-  .spotlight br {
-    display: none;
-  }
-
-  .spotlight .image {
-    width: 100%;
-  }
-
-  .spotlight .content {
-    display: inline-block;
-    width: 100%;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 1.5rem;
-  }
-
-  .spotlight-left .image {
-    max-height: 96px;
-    max-width: 96px;
-  }
-
-  .spotlight-right .image {
-    height: 96px;
-    width: 96px;
-  }
-
-  .spotlight .content h2 {
-    display: block;
-  }
-
-  .spotlight .content p {
-    display: block;
-    padding-bottom: 1rem;
-  }
 }

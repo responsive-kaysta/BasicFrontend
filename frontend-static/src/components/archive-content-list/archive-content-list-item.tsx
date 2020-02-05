@@ -1,17 +1,20 @@
 import * as React from "react";
-import { iArchiveContentListItemProps } from "./spec";
-import ArticleContentModalBox from "components/article-content-modal-box/article-content-modal-box";
+import { ArticleContentModalBox } from "../../components/article-content-modal-box/article-content-modal-box";
+import { iViewArchiveContent } from "../../page-types/";
+import { FC } from "react";
 
-function ArchiveContentListItem(props: {
-  archiveContent: iArchiveContentListItemProps;
-}) {
+interface ArchiveContentListItemProps {
+  item: iViewArchiveContent;
+}
+
+export const ArchiveContentListItem: FC<ArchiveContentListItemProps> = ({
+  item
+}) => {
   return (
     <tr className="clickable">
       <td>
-        <ArticleContentModalBox articleContent={props.archiveContent} />
+        <ArticleContentModalBox item={item} truncateTitle maxTitleLength={74} />
       </td>
     </tr>
   );
-}
-
-export default ArchiveContentListItem;
+};

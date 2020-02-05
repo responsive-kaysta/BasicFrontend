@@ -1,18 +1,23 @@
 import * as React from "react";
-import { iTextElementProps } from "./spec";
+import { eTextStyles } from "page-types/eTextStyles";
+import { ReactNode, FC } from "react";
 
-class SpanElement extends React.Component<iTextElementProps> {
-  public render() {
-    const cssClass = this.props.textStyles
-      ? this.props.textStyles
-      : "paragraph";
-
-    return (
-      <span className={cssClass} id={this.props.elementId}>
-        {this.props.children}
-      </span>
-    );
-  }
+interface SpanElementProps {
+  children: ReactNode;
+  textStyles?: eTextStyles;
+  elementId?: string;
 }
 
-export default SpanElement;
+export const SpanElement: FC<SpanElementProps> = ({
+  children,
+  textStyles,
+  elementId
+}) => {
+  const cssClass = textStyles ? textStyles : "paragraph";
+
+  return (
+    <span className={cssClass} id={elementId}>
+      {children}
+    </span>
+  );
+};

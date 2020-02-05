@@ -1,37 +1,41 @@
 import * as React from "react";
-import ArchiveSourceListItem from "./archive-source-list-item";
-import { iArchiveSourceProps, iArchiveSourceListItemProps } from "./spec";
+import { ArchiveSourceListItem } from "./archive-source-list-item";
+import { ePageStyleTemplates } from "../../less";
+import { iViewArchiveSource } from "../../page-types/";
+import { FC } from "react";
 
-class ArchiveSourceList extends React.Component<iArchiveSourceProps> {
-  public render() {
-    const pageStyle = this.props.pageStyle
-      ? this.props.pageStyle + " table-wrapper"
-      : "light table-wrapper";
-
-    const mappedTodos = this.props.dataContainer.map(
-      (source: iArchiveSourceListItemProps) => {
-        return <ArchiveSourceListItem archiveSource={source} key={source.Id} />;
-      }
-    );
-    return this.ListContainer(mappedTodos, pageStyle);
-  }
-
-  private ListContainer(list: any, pageStyle: string) {
-    return (
-      <div className={pageStyle}>
-        <table>
-          <thead>
-            <tr>
-              <td>Source Id</td>
-              <td>Source Name</td>
-              <td>Article Count</td>
-            </tr>
-          </thead>
-          <tbody>{list}</tbody>
-        </table>
-      </div>
-    );
-  }
+interface ArchiveSourceListProps {
+  resultSet: iViewArchiveSource[];
+  pageStyle?: ePageStyleTemplates;
 }
 
-export default ArchiveSourceList;
+export const ArchiveSourceList: FC<ArchiveSourceListProps> = ({
+  resultSet,
+  pageStyle
+}) => {
+  const cssStyle = pageStyle
+    ? pageStyle + " table-wrapper"
+    : "light table-wrapper";
+
+  const mappedItems = resultSet.map((item: iViewArchiveSource) => {
+    return <ArchiveSourceListItem item={item} key={item.Id} />;
+  });
+  return ListContainer(mappedItems, cssStyle);
+};
+
+const ListContainer = (list: any, cssStyle: string) => {
+  return (
+    <div className={cssStyle}>
+      <table>
+        <thead>
+          <tr>
+            <td>Source Id</td>
+            <td>Source Name</td>
+            <td>Article Count</td>
+          </tr>
+        </thead>
+        <tbody>{list}</tbody>
+      </table>
+    </div>
+  );
+};

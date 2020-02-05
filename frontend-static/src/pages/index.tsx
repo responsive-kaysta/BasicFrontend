@@ -1,21 +1,23 @@
 import * as React from "react";
 import * as Scroll from "react-scroll";
 import { Head } from "react-static";
-import ArticleContainer from "../components/article-container/article-container";
-import ColorContainer from "../components/color-container/color-container";
-import CallToAction from "../compositions/call-to-action/call-to-action";
-import EyeCatcher from "../compositions/eye-catcher/eye-catcher";
-import PageBanner from "../compositions/page-banner/page-banner";
-import PageHeader from "../compositions/page-header/page-header";
-import { eSpotlightOrientation } from "../compositions/spotlight/spec";
-import Spotlight from "../compositions/spotlight/spotlight";
-import { PAGE_NAME } from "../constants";
-import LinkButtonElement from "../elements/button-elements/link-button-element";
-import { eButtonStyles } from "../elements/button-elements/spec";
-import DivElement from "../elements/text-elements/div-element";
-import ToTopButton from "../elements/to-top-button/to-top-button";
 import { ePageStyleTemplates } from "../less";
-import { ePictogram } from "../page-types";
+import {
+  ePictogram,
+  eSpotlightOrientation,
+  eButtonStyles
+} from "../page-types";
+import { PAGE_NAME } from "../constants";
+import { PageBanner } from "../compositions/page-banner/page-banner";
+import { EyeCatcher } from "../compositions/eye-catcher/eye-catcher";
+import { Spotlight } from "../compositions/spotlight/spotlight";
+import { ArticleContainer } from "../components/article-container/article-container";
+import { ColorContainer } from "../components/color-container/color-container";
+import { PageHeader } from "../compositions/page-header/page-header";
+import { DivElement } from "../elements/text-elements/div-element";
+import { LinkButtonElement } from "../elements/button-elements/link-button-element";
+import { CallToAction } from "../compositions/call-to-action/call-to-action";
+import { ToTopButton } from "../elements/to-top-button/to-top-button";
 
 var scroll = Scroll.animateScroll;
 

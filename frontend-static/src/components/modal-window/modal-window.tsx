@@ -1,26 +1,32 @@
-import React from "react";
-import { iModalWindowProps } from "./spec";
+import React, { FC, ReactNode } from "react";
 
 // https://peteris.rocks/blog/modal-window-in-react-from-scratch/
 
-class ModalWindow extends React.Component<iModalWindowProps> {
-  close(e: any) {
-    e.preventDefault();
-    if (this.props.onClose) {
-      this.props.onClose();
-    }
-  }
-
-  render() {
-    if (this.props.isOpen === false) return null;
-
-    return (
-      <section className="modal">
-        <div className={this.props.modalClassName}>{this.props.children}</div>
-        <div className="backdrop" onClick={e => this.close(e)} />
-      </section>
-    );
-  }
+interface iModalWindowProps {
+  children: ReactNode;
+  isOpen: boolean;
+  onClose: () => void;
+  modalClassName?: string;
 }
 
-export default ModalWindow;
+export const ModalWindow: FC<iModalWindowProps> = ({
+  children,
+  isOpen,
+  onClose,
+  modalClassName
+}) => {
+  const close = (e: any) => {
+    e.preventDefault();
+    if (onClose) {
+      onClose();
+    }
+  };
+  if (isOpen === false) return null;
+
+  return (
+    <section className="modal">
+      <div className={modalClassName}>{children}</div>
+      <div className="backdrop" onClick={e => close(e)} />
+    </section>
+  );
+};

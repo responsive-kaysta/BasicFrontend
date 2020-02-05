@@ -1,4 +1,7 @@
 import { Router } from "@reach/router";
+import { Spinner } from "elements/spinner/spinner";
+import { Footer } from "page-includes/footer";
+import { Header } from "page-includes/header";
 import React from "react";
 import { addPrefetchExcludes, Head, Root, Routes } from "react-static";
 import "../public/assets/css/fontawesome-all.css";
@@ -10,9 +13,6 @@ import {
   PAGE_NAME,
   PAGE_TOPIC
 } from "./constants";
-import Spinner from "./elements/spinner/spinner";
-import Footer from "./page-includes/footer";
-import Header from "./page-includes/header";
 
 // Any routes that start with 'dynamic' will be treated as non-static routes
 addPrefetchExcludes(["dynamic"]);

@@ -1,24 +1,28 @@
 import * as React from "react";
-import { iEyeCatcherProps } from "./spec";
+import { FC } from "react";
+import { ePageStyleTemplates } from "../../less";
 
-class EyeCatcher extends React.Component<iEyeCatcherProps> {
-  public render() {
-    const pageStyle = "special " + this.props.pageStyle;
-    const header = this.props.header;
-    const paragraph = this.props.paragraph;
-    const elementId = this.props.elementId;
-
-    return (
-      <>
-        <section className={pageStyle} id={elementId}>
-          <header className="major">
-            <h2>{header}</h2>
-            <p>{paragraph}</p>
-          </header>
-        </section>
-      </>
-    );
-  }
+interface iEyeCatcherProps {
+  header: string;
+  paragraph: string;
+  pageStyle: ePageStyleTemplates;
+  elementId?: string;
 }
 
-export default EyeCatcher;
+export const EyeCatcher: FC<iEyeCatcherProps> = ({
+  header,
+  paragraph,
+  pageStyle,
+  elementId
+}) => {
+  const cssStyle = "special " + pageStyle;
+
+  return (
+    <section className={cssStyle} id={elementId}>
+      <header className="major">
+        <h2>{header}</h2>
+        <p>{paragraph}</p>
+      </header>
+    </section>
+  );
+};

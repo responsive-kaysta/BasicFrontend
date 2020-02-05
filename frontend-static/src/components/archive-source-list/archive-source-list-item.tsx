@@ -1,22 +1,23 @@
 import * as React from "react";
-import { iArchiveSourceListItemProps } from "./spec/iArchiveSourceListItemProps";
+import { iViewArchiveSource } from "../../page-types/";
+import { FC } from "react";
 
-function ArchiveSourceListItem(props: {
-  archiveSource: iArchiveSourceListItemProps;
-}) {
-  function handleClick(e: any) {
-    window.location.href = `/articles-by-source?sourceId=${e}`;
-  }
-  return (
-    <tr
-      onClick={() => handleClick(props.archiveSource.SourceId)}
-      className="clickable"
-    >
-      <td>{props.archiveSource.Id}</td>
-      <td>{props.archiveSource.SourceName}</td>
-      <td>{props.archiveSource.SourceCount}</td>
-    </tr>
-  );
+interface ArchiveSourceListItemProps {
+  item: iViewArchiveSource;
 }
 
-export default ArchiveSourceListItem;
+export const ArchiveSourceListItem: FC<ArchiveSourceListItemProps> = ({
+  item
+}) => {
+  const handleClick = (e: any) => {
+    window.sessionStorage["ArchiveContentBySourceId"] = e;
+    document.location.href = `/articles-by-source`;
+  };
+  return (
+    <tr onClick={() => handleClick(item.SourceId)} className="clickable">
+      <td>{item.Id}</td>
+      <td>{item.SourceName}</td>
+      <td>{item.SourceCount}</td>
+    </tr>
+  );
+};

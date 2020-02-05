@@ -1,20 +1,25 @@
+import { eListElementTypes } from "page-types/eListElementTypes";
 import * as React from "react";
-import { iListElementProps, eListElementTypes } from "./spec";
+import { FC, ReactNode } from "react";
 
-class ListElement extends React.Component<iListElementProps> {
-  public render() {
-    let listElement;
-    switch (this.props.listElementType) {
-      case eListElementTypes.li:
-        listElement = <li>{this.props.children}</li>;
-        break;
-      default:
-        listElement = <li>{this.props.children}</li>;
-        break;
-    }
-
-    return <>{listElement}</>;
-  }
+interface ListElementProps {
+  children: ReactNode;
+  listElementType?: eListElementTypes;
 }
 
-export default ListElement;
+export const ListElement: FC<ListElementProps> = ({
+  children,
+  listElementType
+}) => {
+  let listElement;
+  switch (listElementType) {
+    case eListElementTypes.li:
+      listElement = <li>{children}</li>;
+      break;
+    default:
+      listElement = <li>{children}</li>;
+      break;
+  }
+
+  return <>{listElement}</>;
+};

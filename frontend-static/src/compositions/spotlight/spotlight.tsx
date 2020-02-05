@@ -1,34 +1,41 @@
 import * as React from "react";
-import { iSpotlightProps } from "./spec";
-import SpotlightRight from "./spotlight-right";
-import SpotlightLeft from "./spotlight-left";
+import { ePictogram, eSpotlightOrientation } from "../../page-types/";
+import { ePageStyleTemplates } from "src/less";
+import { FC } from "react";
 
-class Spotlight extends React.Component<iSpotlightProps> {
-  public render() {
-    const pageStyleLeft =
-      "spotlight " + this.props.pageStyle + " spotlight-left";
-    const pageStyleRight =
-      "spotlight " + this.props.pageStyle + " spotlight-right";
-    const pictogram = this.props.pictogram;
-    const header = this.props.header;
-    const paragraph = this.props.paragraph;
-
-    return this.props.orientation === "right" ? (
-      <SpotlightRight
-        header={header}
-        paragraph={paragraph}
-        pageStyle={pageStyleRight}
-        pictogram={pictogram}
-      />
-    ) : (
-      <SpotlightLeft
-        header={header}
-        paragraph={paragraph}
-        pageStyle={pageStyleLeft}
-        pictogram={pictogram}
-      />
-    );
-  }
+interface iSpotlightProps {
+  header: string;
+  paragraph: string;
+  pictogram: ePictogram;
+  orientation: eSpotlightOrientation;
+  pageStyle?: ePageStyleTemplates;
 }
 
-export default Spotlight;
+export const Spotlight: FC<iSpotlightProps> = ({
+  header,
+  paragraph,
+  pictogram,
+  orientation,
+  pageStyle
+}) => {
+  let cssStyle = "";
+
+  if (orientation === eSpotlightOrientation.right) {
+    cssStyle = "spotlight " + pageStyle + " spotlight-right";
+  } else {
+    cssStyle = "spotlight " + pageStyle + " spotlight-left";
+  }
+  return (
+    <section className={cssStyle}>
+      <div className="image">
+        <img className="wide" src={pictogram} alt="Brains and engineering" />
+      </div>
+      <div className="content">
+        <div>
+          <h2>{header}</h2>
+          <p>{paragraph}</p>
+        </div>
+      </div>
+    </section>
+  );
+};

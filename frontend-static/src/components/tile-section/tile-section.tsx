@@ -1,14 +1,16 @@
 import * as React from "react";
-import { iTileSectionProps } from "./spec";
+import { ePageStyleTemplates } from "../../less";
+import { FC, ReactNode } from "react";
 
-class TileSection extends React.Component<iTileSectionProps> {
-  public render() {
-    return (
-      <section className={this.props.pageStyle}>
-        <section className="tiles">{this.props.children}</section>
-      </section>
-    );
-  }
+interface iTileSectionProps {
+  children: ReactNode;
+  pageStyle: ePageStyleTemplates;
 }
 
-export default TileSection;
+export const TileSection: FC<iTileSectionProps> = ({ children, pageStyle }) => {
+  return (
+    <section className={pageStyle}>
+      <section className="tiles">{children}</section>
+    </section>
+  );
+};

@@ -1,14 +1,23 @@
 import * as React from "react";
-import { iColorContainerProps } from "./spec";
+import { ePageStyleTemplates } from "../../less";
+import { FC, ReactNode } from "react";
 
-class ColorContainer extends React.Component<iColorContainerProps> {
-  public render() {
-    const pageStyle = this.props.padded
-      ? "container " + this.props.pageStyle
-      : this.props.pageStyle;
-
-    return <div className={pageStyle}>{this.props.children}</div>;
-  }
+interface iColorContainerProps {
+  children: ReactNode;
+  pageStyle: ePageStyleTemplates;
+  padded?: boolean;
+  cssClass?: string;
 }
 
-export default ColorContainer;
+export const ColorContainer: FC<iColorContainerProps> = ({
+  children,
+  pageStyle,
+  padded,
+  cssClass
+}) => {
+  const cssStyle = padded ? "container " + pageStyle : pageStyle;
+
+  const customCssClass = cssClass ? cssStyle + " " + cssClass : cssStyle;
+
+  return <div className={customCssClass}>{children}</div>;
+};

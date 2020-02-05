@@ -1,18 +1,23 @@
 import * as React from "react";
-import { iArticleContainerProps } from "./spec";
+import { ePageStyleTemplates } from "../../less";
+import { FC, ReactNode } from "react";
 
-class ArticleContainer extends React.Component<iArticleContainerProps> {
-  public render() {
-    const pageStyle = "special " + this.props.pageStyle;
-
-    return (
-      <>
-        <article id="main" className={pageStyle}>
-          {this.props.children}
-        </article>
-      </>
-    );
-  }
+interface iArticleContainerProps {
+  children: ReactNode;
+  pageStyle?: ePageStyleTemplates;
 }
 
-export default ArticleContainer;
+export const ArticleContainer: FC<iArticleContainerProps> = ({
+  children,
+  pageStyle
+}) => {
+  const cssStyle = "special " + pageStyle;
+
+  return (
+    <>
+      <article id="main" className={cssStyle}>
+        {children}
+      </article>
+    </>
+  );
+};

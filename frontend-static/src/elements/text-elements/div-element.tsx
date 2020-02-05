@@ -1,18 +1,22 @@
+import { eTextStyles } from "page-types/eTextStyles";
 import * as React from "react";
-import { iTextElementProps } from "./spec";
+import { FC, ReactNode } from "react";
 
-class DivElement extends React.Component<iTextElementProps> {
-  public render() {
-    const cssClass = this.props.textStyles
-      ? this.props.textStyles
-      : "paragraph";
-
-    return (
-      <div className={cssClass} id={this.props.elementId}>
-        {this.props.children}
-      </div>
-    );
-  }
+interface DivElementProps {
+  children: ReactNode;
+  textStyles?: eTextStyles;
+  elementId?: string;
 }
+export const DivElement: FC<DivElementProps> = ({
+  children,
+  textStyles,
+  elementId
+}) => {
+  const cssClass = textStyles ? textStyles : "paragraph";
 
-export default DivElement;
+  return (
+    <div className={cssClass} id={elementId}>
+      {children}
+    </div>
+  );
+};

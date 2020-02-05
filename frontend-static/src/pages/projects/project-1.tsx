@@ -1,21 +1,23 @@
 import * as React from "react";
 import * as Scroll from "react-scroll";
 import { Head } from "react-static";
-import ArticleContainer from "../../components/article-container/article-container";
-import ColorContainer from "../../components/color-container/color-container";
-import ArticleBanner from "../../compositions/article-banner/article-banner";
-import CallToAction from "../../compositions/call-to-action/call-to-action";
-import EyeCatcher from "../../compositions/eye-catcher/eye-catcher";
-import PageHeader from "../../compositions/page-header/page-header";
-import { eSpotlightOrientation } from "../../compositions/spotlight/spec";
-import Spotlight from "../../compositions/spotlight/spotlight";
-import Spacer from "../../elements/spacer/spacer";
-import ParagraphElement from "../../elements/text-elements/paragraph-element";
-import { eTextStyles } from "../../elements/text-elements/spec";
-import ToTopButton from "../../elements/to-top-button/to-top-button";
-import { ePageStyleTemplates } from "../../less";
-import { ePictogram } from "../../page-types";
 import { PAGE_NAME } from "../../constants";
+import { ArticleContainer } from "../../components/article-container/article-container";
+import { ArticleBanner } from "../../compositions/article-banner/article-banner";
+import { ePageStyleTemplates } from "../../less";
+import { Spotlight } from "../../compositions/spotlight/spotlight";
+import {
+  ePictogram,
+  eSpotlightOrientation,
+  eTextStyles
+} from "../../page-types/";
+import { ColorContainer } from "../../components/color-container/color-container";
+import { PageHeader } from "../../compositions/page-header/page-header";
+import { ParagraphElement } from "../../elements/text-elements/paragraph-element";
+import { EyeCatcher } from "../../compositions/eye-catcher/eye-catcher";
+import { Spacer } from "../../elements/spacer/spacer";
+import { CallToAction } from "../../compositions/call-to-action/call-to-action";
+import { ToTopButton } from "../../elements/to-top-button/to-top-button";
 
 var scroll = Scroll.animateScroll;
 

@@ -1,16 +1,23 @@
 import * as React from "react";
-import { iButtonElementProps } from "./spec";
+import { eButtonStyles } from "page-types/eButtonStyles";
+import { FC } from "react";
 
-class LinkButtonElement extends React.Component<iButtonElementProps> {
-  public render() {
-    const cssClass = this.props.cssClass ? this.props.cssClass : "button";
-
-    return (
-      <a href={this.props.link} className={cssClass}>
-        {this.props.text}
-      </a>
-    );
-  }
+interface LinkButtonElementProps {
+  text: string;
+  link?: string;
+  cssClass?: eButtonStyles;
 }
 
-export default LinkButtonElement;
+export const LinkButtonElement: FC<LinkButtonElementProps> = ({
+  text,
+  link,
+  cssClass
+}) => {
+  const cssStyle = cssClass ? cssClass : "button";
+
+  return (
+    <a href={link} className={cssStyle}>
+      {text}
+    </a>
+  );
+};
