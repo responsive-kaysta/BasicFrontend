@@ -20,5 +20,4 @@ export const PRIVATE_SCROLL_LIMIT = 20;
 export const DEFAULT_LIST_ORDER = eArticlesOrder.desc;
 
 // API Endpoint
-// export const API_URL = "https://masterarchive-api.responsive-kaysta.ch/";
 export const API_URL = "http://127.0.0.1:8080/";

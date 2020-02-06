@@ -9,14 +9,13 @@ export const ACCESS_TOKEN_KEY = "access_token";
 export const USER_INFO_KEY = "user_info";
 
 export const SCOPE = "openid profile";
-export const CLIENT_ID = "woNYdthtvVGTgrUmpsy12VOh2AGnxZ0T";
-export const CLIENT_DOMAIN = "masterarchive-dev.eu.auth0.com";
+export const CLIENT_ID = "";
+export const CLIENT_DOMAIN = "";
 
 export const REDIRECT = "http://localhost:3000/callback";
-// export const REDIRECT = "https://masterarchive.responsive-kaysta.ch/callback";
 
-export const AUDIENCE = "https://masterarchive.api.pub.responsive-kaysta.ch/";
-export const USER_INFO_API = "https://masterarchive-dev.eu.auth0.com/userinfo";
+export const AUDIENCE = "";
+export const USER_INFO_API = "";
 
 export type UserInfo = {
   Email: string;
