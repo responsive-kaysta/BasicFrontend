@@ -144,7 +144,7 @@ var ePageStyleTemplates;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _archive_content_type__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(45);
+/* harmony import */ var _archive_content_type__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(46);
 /* harmony import */ var _archive_content_type__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_archive_content_type__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony reexport (checked) */ if(__webpack_require__.o(_archive_content_type__WEBPACK_IMPORTED_MODULE_0__, "eArticlesOrder")) __webpack_require__.d(__webpack_exports__, "eArticlesOrder", function() { return _archive_content_type__WEBPACK_IMPORTED_MODULE_0__["eArticlesOrder"]; });
 
@@ -160,7 +160,7 @@ var ePageStyleTemplates;
 
 /* harmony reexport (checked) */ if(__webpack_require__.o(_archive_content_type__WEBPACK_IMPORTED_MODULE_0__, "eTextStyles")) __webpack_require__.d(__webpack_exports__, "eTextStyles", function() { return _archive_content_type__WEBPACK_IMPORTED_MODULE_0__["eTextStyles"]; });
 
-/* harmony import */ var _archive_source_type__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(46);
+/* harmony import */ var _archive_source_type__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(47);
 /* harmony import */ var _archive_source_type__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_archive_source_type__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony reexport (checked) */ if(__webpack_require__.o(_archive_source_type__WEBPACK_IMPORTED_MODULE_1__, "eArticlesOrder")) __webpack_require__.d(__webpack_exports__, "eArticlesOrder", function() { return _archive_source_type__WEBPACK_IMPORTED_MODULE_1__["eArticlesOrder"]; });
 
@@ -176,10 +176,10 @@ var ePageStyleTemplates;
 
 /* harmony reexport (checked) */ if(__webpack_require__.o(_archive_source_type__WEBPACK_IMPORTED_MODULE_1__, "eTextStyles")) __webpack_require__.d(__webpack_exports__, "eTextStyles", function() { return _archive_source_type__WEBPACK_IMPORTED_MODULE_1__["eTextStyles"]; });
 
-/* harmony import */ var _eArticlesOrder__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(47);
+/* harmony import */ var _eArticlesOrder__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(48);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "eArticlesOrder", function() { return _eArticlesOrder__WEBPACK_IMPORTED_MODULE_2__["a"]; });
 
-/* harmony import */ var _eButtonStyles__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(48);
+/* harmony import */ var _eButtonStyles__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(49);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "eButtonStyles", function() { return _eButtonStyles__WEBPACK_IMPORTED_MODULE_3__["a"]; });
 
 /* harmony import */ var _eHeaderElementTypes__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(31);
@@ -189,20 +189,20 @@ var ePageStyleTemplates;
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "eListContainerTypes", function() { return _eListContainerTypes__WEBPACK_IMPORTED_MODULE_5__["a"]; });
 
 /* harmony import */ var _eListElementTypes__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(34);
-/* harmony import */ var _ePictogram__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(49);
+/* harmony import */ var _ePictogram__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(50);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "ePictogram", function() { return _ePictogram__WEBPACK_IMPORTED_MODULE_7__["a"]; });
 
-/* harmony import */ var _eSpotlightOrientation__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(50);
+/* harmony import */ var _eSpotlightOrientation__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(51);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "eSpotlightOrientation", function() { return _eSpotlightOrientation__WEBPACK_IMPORTED_MODULE_8__["a"]; });
 
-/* harmony import */ var _eTextStyles__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(51);
+/* harmony import */ var _eTextStyles__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(52);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "eTextStyles", function() { return _eTextStyles__WEBPACK_IMPORTED_MODULE_9__["a"]; });
 
-/* harmony import */ var _view_archive_content_type__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(52);
+/* harmony import */ var _view_archive_content_type__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(53);
 /* harmony import */ var _view_archive_content_type__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_view_archive_content_type__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var _view_archive_search_type__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(53);
+/* harmony import */ var _view_archive_search_type__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(54);
 /* harmony import */ var _view_archive_search_type__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_view_archive_search_type__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var _view_archive_source_type__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(54);
+/* harmony import */ var _view_archive_source_type__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(55);
 /* harmony import */ var _view_archive_source_type__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_view_archive_source_type__WEBPACK_IMPORTED_MODULE_12__);
 
 
@@ -680,11 +680,11 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _propTypes = __webpack_require__(43);
+var _propTypes = __webpack_require__(44);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _hoistNonReactStatics = __webpack_require__(44);
+var _hoistNonReactStatics = __webpack_require__(45);
 
 var _hoistNonReactStatics2 = _interopRequireDefault(_hoistNonReactStatics);
 
@@ -1468,7 +1468,11 @@ var fontawesome_all = __webpack_require__(94);
 // EXTERNAL MODULE: /home/kaysta/GitHub/BasicFrontend/frontend-static/public/assets/css/styles.css
 var styles = __webpack_require__(108);
 
+// EXTERNAL MODULE: /home/kaysta/GitHub/BasicFrontend/frontend-static/public/assets/css/custom.css
+var custom = __webpack_require__(109);
+
 // CONCATENATED MODULE: /home/kaysta/GitHub/BasicFrontend/frontend-static/src/App.tsx
+
 
 
 
@@ -1740,12 +1744,103 @@ var cacheProm = exports.cacheProm = function cacheProm(pr, chunkName, props, pro
 
 /***/ }),
 /* 39 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+/*
+  MIT License http://www.opensource.org/licenses/mit-license.php
+  Author Tobias Koppers @sokra
+*/
+// css base code, injected by the css-loader
+
+module.exports = function (useSourceMap) {
+  var list = []; // return the list of modules as css string
+
+  list.toString = function toString() {
+    return this.map(function (item) {
+      var content = cssWithMappingToString(item, useSourceMap);
+
+      if (item[2]) {
+        return '@media ' + item[2] + '{' + content + '}';
+      } else {
+        return content;
+      }
+    }).join('');
+  }; // import a list of modules into the list
+
+
+  list.i = function (modules, mediaQuery) {
+    if (typeof modules === 'string') {
+      modules = [[null, modules, '']];
+    }
+
+    var alreadyImportedModules = {};
+
+    for (var i = 0; i < this.length; i++) {
+      var id = this[i][0];
+
+      if (id != null) {
+        alreadyImportedModules[id] = true;
+      }
+    }
+
+    for (i = 0; i < modules.length; i++) {
+      var item = modules[i]; // skip already imported module
+      // this implementation is not 100% perfect for weird media query combinations
+      // when a module is imported multiple times with different media queries.
+      // I hope this will never occur (Hey this way we have smaller bundles)
+
+      if (item[0] == null || !alreadyImportedModules[item[0]]) {
+        if (mediaQuery && !item[2]) {
+          item[2] = mediaQuery;
+        } else if (mediaQuery) {
+          item[2] = '(' + item[2] + ') and (' + mediaQuery + ')';
+        }
+
+        list.push(item);
+      }
+    }
+  };
+
+  return list;
+};
+
+function cssWithMappingToString(item, useSourceMap) {
+  var content = item[1] || '';
+  var cssMapping = item[3];
+
+  if (!cssMapping) {
+    return content;
+  }
+
+  if (useSourceMap && typeof btoa === 'function') {
+    var sourceMapping = toComment(cssMapping);
+    var sourceURLs = cssMapping.sources.map(function (source) {
+      return '/*# sourceURL=' + cssMapping.sourceRoot + source + ' */';
+    });
+    return [content].concat(sourceURLs).concat([sourceMapping]).join('\n');
+  }
+
+  return [content].join('\n');
+} // Adapted from convert-source-map (MIT)
+
+
+function toComment(sourceMap) {
+  // eslint-disable-next-line no-undef
+  var base64 = btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap))));
+  var data = 'sourceMappingURL=data:application/json;charset=utf-8;base64,' + base64;
+  return '/*# ' + data + ' */';
+}
+
+/***/ }),
+/* 40 */
 /***/ (function(module, exports) {
 
 module.exports = require("react-dom");
 
 /***/ }),
-/* 40 */
+/* 41 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1780,13 +1875,13 @@ var plugins = [{
 /* harmony default export */ __webpack_exports__["default"] = (plugins);
 
 /***/ }),
-/* 41 */
+/* 42 */
 /***/ (function(module, exports) {
 
 module.exports = require("/home/kaysta/GitHub/BasicFrontend/frontend-static/node_modules/react-static/lib/browser");
 
 /***/ }),
-/* 42 */
+/* 43 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2115,22 +2210,16 @@ var notFoundTemplate = "/home/kaysta/GitHub/BasicFrontend/frontend-static/src/pa
 /* WEBPACK VAR INJECTION */}.call(this, "/"))
 
 /***/ }),
-/* 43 */
+/* 44 */
 /***/ (function(module, exports) {
 
 module.exports = require("prop-types");
 
 /***/ }),
-/* 44 */
-/***/ (function(module, exports) {
-
-module.exports = require("hoist-non-react-statics");
-
-/***/ }),
 /* 45 */
 /***/ (function(module, exports) {
 
-
+module.exports = require("hoist-non-react-statics");
 
 /***/ }),
 /* 46 */
@@ -2140,6 +2229,12 @@ module.exports = require("hoist-non-react-statics");
 
 /***/ }),
 /* 47 */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+/* 48 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2152,7 +2247,7 @@ var eArticlesOrder;
 })(eArticlesOrder || (eArticlesOrder = {}));
 
 /***/ }),
-/* 48 */
+/* 49 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2170,7 +2265,7 @@ var eButtonStyles;
 })(eButtonStyles || (eButtonStyles = {}));
 
 /***/ }),
-/* 49 */
+/* 50 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2212,7 +2307,7 @@ var ePictogram;
 })(ePictogram || (ePictogram = {}));
 
 /***/ }),
-/* 50 */
+/* 51 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2225,7 +2320,7 @@ var eSpotlightOrientation;
 })(eSpotlightOrientation || (eSpotlightOrientation = {}));
 
 /***/ }),
-/* 51 */
+/* 52 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2248,12 +2343,6 @@ var eTextStyles;
 })(eTextStyles || (eTextStyles = {}));
 
 /***/ }),
-/* 52 */
-/***/ (function(module, exports) {
-
-
-
-/***/ }),
 /* 53 */
 /***/ (function(module, exports) {
 
@@ -2267,94 +2356,9 @@ var eTextStyles;
 
 /***/ }),
 /* 55 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-/*
-  MIT License http://www.opensource.org/licenses/mit-license.php
-  Author Tobias Koppers @sokra
-*/
-// css base code, injected by the css-loader
-
-module.exports = function (useSourceMap) {
-  var list = []; // return the list of modules as css string
-
-  list.toString = function toString() {
-    return this.map(function (item) {
-      var content = cssWithMappingToString(item, useSourceMap);
-
-      if (item[2]) {
-        return '@media ' + item[2] + '{' + content + '}';
-      } else {
-        return content;
-      }
-    }).join('');
-  }; // import a list of modules into the list
+/***/ (function(module, exports) {
 
 
-  list.i = function (modules, mediaQuery) {
-    if (typeof modules === 'string') {
-      modules = [[null, modules, '']];
-    }
-
-    var alreadyImportedModules = {};
-
-    for (var i = 0; i < this.length; i++) {
-      var id = this[i][0];
-
-      if (id != null) {
-        alreadyImportedModules[id] = true;
-      }
-    }
-
-    for (i = 0; i < modules.length; i++) {
-      var item = modules[i]; // skip already imported module
-      // this implementation is not 100% perfect for weird media query combinations
-      // when a module is imported multiple times with different media queries.
-      // I hope this will never occur (Hey this way we have smaller bundles)
-
-      if (item[0] == null || !alreadyImportedModules[item[0]]) {
-        if (mediaQuery && !item[2]) {
-          item[2] = mediaQuery;
-        } else if (mediaQuery) {
-          item[2] = '(' + item[2] + ') and (' + mediaQuery + ')';
-        }
-
-        list.push(item);
-      }
-    }
-  };
-
-  return list;
-};
-
-function cssWithMappingToString(item, useSourceMap) {
-  var content = item[1] || '';
-  var cssMapping = item[3];
-
-  if (!cssMapping) {
-    return content;
-  }
-
-  if (useSourceMap && typeof btoa === 'function') {
-    var sourceMapping = toComment(cssMapping);
-    var sourceURLs = cssMapping.sources.map(function (source) {
-      return '/*# sourceURL=' + cssMapping.sourceRoot + source + ' */';
-    });
-    return [content].concat(sourceURLs).concat([sourceMapping]).join('\n');
-  }
-
-  return [content].join('\n');
-} // Adapted from convert-source-map (MIT)
-
-
-function toComment(sourceMap) {
-  // eslint-disable-next-line no-undef
-  var base64 = btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap))));
-  var data = 'sourceMappingURL=data:application/json;charset=utf-8;base64,' + base64;
-  return '/*# ' + data + ' */';
-}
 
 /***/ }),
 /* 56 */
@@ -4794,16 +4798,16 @@ module.exports = __webpack_require__(86);
 /* WEBPACK VAR INJECTION */(function(module) {
 /* eslint-disable import/no-dynamic-require */
 
-var plugins = __webpack_require__(40)["default"];
+var plugins = __webpack_require__(41)["default"];
 
-var _require = __webpack_require__(41),
+var _require = __webpack_require__(42),
     registerPlugins = _require.registerPlugins;
 
 registerPlugins(plugins);
 
 if (typeof document !== 'undefined' && module && module.hot) {
   module.hot.accept("/home/kaysta/GitHub/BasicFrontend/frontend-static/artifacts/react-static-browser-plugins.js", function () {
-    registerPlugins(__webpack_require__(40)["default"]);
+    registerPlugins(__webpack_require__(41)["default"]);
   });
 }
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(36)(module)))
@@ -4816,10 +4820,10 @@ if (typeof document !== 'undefined' && module && module.hot) {
 /* WEBPACK VAR INJECTION */(function(module) {
 /* eslint-disable import/no-dynamic-require */
 
-var _require = __webpack_require__(41),
+var _require = __webpack_require__(42),
     registerTemplates = _require.registerTemplates;
 
-var _require2 = __webpack_require__(42),
+var _require2 = __webpack_require__(43),
     templates = _require2["default"],
     notFoundTemplate = _require2.notFoundTemplate;
 
@@ -4827,7 +4831,7 @@ registerTemplates(templates, notFoundTemplate);
 
 if (typeof document !== 'undefined' && module && module.hot) {
   module.hot.accept("/home/kaysta/GitHub/BasicFrontend/frontend-static/artifacts/react-static-templates.js", function () {
-    var _require3 = __webpack_require__(42),
+    var _require3 = __webpack_require__(43),
         templates = _require3["default"],
         notFoundTemplate = _require3.notFoundTemplate;
 
@@ -5113,7 +5117,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _propTypes = __webpack_require__(43);
+var _propTypes = __webpack_require__(44);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
@@ -5205,7 +5209,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.__handleAfter = exports.__update = undefined;
 
-var _hoistNonReactStatics = __webpack_require__(44);
+var _hoistNonReactStatics = __webpack_require__(45);
 
 var _hoistNonReactStatics2 = _interopRequireDefault(_hoistNonReactStatics);
 
@@ -5353,7 +5357,7 @@ module.exports = require("/home/kaysta/GitHub/BasicFrontend/frontend-static/node
 __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(39);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(40);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var react_hot_loader__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(74);
 /* harmony import */ var react_hot_loader__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_hot_loader__WEBPACK_IMPORTED_MODULE_2__);
@@ -5419,7 +5423,7 @@ module.exports = function (originalModule) {
 /* 94 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(55)(false);
+exports = module.exports = __webpack_require__(39)(false);
 // Imports
 var urlEscape = __webpack_require__(95);
 var ___CSS_LOADER_URL___0___ = urlEscape(__webpack_require__(56));
@@ -5548,9 +5552,19 @@ module.exports = __webpack_require__.p + "c2801fb415f03c7b170934769d7b5397.svg";
 /* 108 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(55)(false);
+exports = module.exports = __webpack_require__(39)(false);
 // Module
 exports.push([module.i, "/* \n  plugins & globals\n---------------------------------------------------------------------------------------------------\n*/\nhtml,\nbody,\ndiv,\nspan,\nobject,\niframe,\nh1,\nh2,\nh3,\nh4,\nh5,\nh6,\np,\nblockquote,\npre,\nabbr,\naddress,\ncite,\ncode,\ndel,\ndfn,\nem,\nimg,\nins,\nkbd,\nq,\nsamp,\nsmall,\nstrong,\nsub,\nsup,\nvar,\nb,\ni,\ndl,\ndt,\ndd,\nol,\nul,\nli,\nfieldset,\nform,\nlabel,\nlegend,\ncaption,\narticle,\naside,\ncanvas,\ndetails,\nfigcaption,\nfigure,\nfooter,\nheader,\nhgroup,\nmenu,\nnav,\nsection,\nsummary,\ntime,\nmark,\naudio,\nvideo {\n  margin: 0;\n  padding: 0;\n  outline: 0;\n  border: 0;\n  vertical-align: baseline;\n  font-size: 100%;\n}\n/* \n    base styles and definitions\n---------------------------------------------------------------------------------------------------\n*/\n/* \n    code\n---------------------------------------------------------------------------------------------------\n*/\n/* \n    box / banner\n---------------------------------------------------------------------------------------------------\n*/\n/* \n    button\n---------------------------------------------------------------------------------------------------\n*/\n/* \n    green\n---------------------------------------------------------------------------------------------------\n*/\n/* \n    gray\n---------------------------------------------------------------------------------------------------\n*/\n/* \n    purple\n---------------------------------------------------------------------------------------------------\n*/\n/* \n    transparent\n---------------------------------------------------------------------------------------------------\n*/\n/* \n    light\n---------------------------------------------------------------------------------------------------\n*/\nbody {\n  line-height: 1.4;\n  font-family: \"Trebuchet MS\", \"Lucida Sans Unicode\", \"Lucida Grande\", \"Lucida Sans\", \"Lato\", Arial, sans-serif;\n  text-transform: lowercase;\n}\nhtml,\nbody,\ndiv,\nspan,\napplet,\nobject,\niframe,\nh1,\nh2,\nh3,\nh4,\nh5,\nh6,\np,\nblockquote,\npre,\na,\nabbr,\nacronym,\naddress,\nbig,\ncite,\ncode,\ndel,\ndfn,\nem,\nimg,\nins,\nkbd,\nq,\ns,\nsamp,\nsmall,\nstrike,\nstrong,\nsub,\nsup,\ntt,\nvar,\nb,\nu,\ni,\ncenter,\ndl,\ndt,\ndd,\nol,\nul,\nli,\nfieldset,\nform,\nlabel,\nlegend,\ncaption,\narticle,\naside,\ncanvas,\ndetails,\nembed,\nfigure,\nfigcaption,\nfooter,\nheader,\nhgroup,\nmenu,\nnav,\noutput,\nruby,\nsection,\nsummary,\ntime,\nmark,\naudio,\nvideo {\n  line-height: 1.4;\n  font-family: \"Trebuchet MS\", \"Lucida Sans Unicode\", \"Lucida Grande\", \"Lucida Sans\", \"Lato\", Arial, sans-serif;\n  text-transform: lowercase;\n  margin: 0;\n  padding: 0;\n  border: 0;\n  font-size: 100%;\n  vertical-align: baseline;\n}\narticle,\naside,\ndetails,\nfigcaption,\nfigure,\nfooter,\nheader,\nhgroup,\nmenu,\nnav,\nsection {\n  display: block;\n}\nbody {\n  -webkit-text-size-adjust: none;\n  -moz-text-size-adjust: none;\n   -ms-text-size-adjust: none;\n       text-size-adjust: none;\n}\n*,\n*:before,\n*:after {\n  box-sizing: border-box;\n}\nbody.is-loading *,\nbody.is-loading *:before,\nbody.is-loading *:after {\n  -webkit-animation: none !important;\n  animation: none !important;\n  -webkit-transition: none !important;\n  transition: none !important;\n}\n/* \n  atom\n---------------------------------------------------------------------------------------------------\n*/\na {\n  border-bottom: 0;\n  text-decoration: none;\n  font-family: \"Trebuchet MS\", \"Lucida Sans Unicode\", \"Lucida Grande\", \"Lucida Sans\", \"Lato\", Arial, sans-serif;\n  text-transform: lowercase;\n}\na:hover {\n  text-transform: lowercase;\n  text-decoration: none;\n}\na {\n  color: darkgray;\n}\na:hover {\n  color: red;\n}\na.link-h-padding:nth-child(1) {\n  padding-left: 0;\n}\na.link-h-padding {\n  padding-left: 1.5rem;\n}\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n  text-decoration: none;\n  font-family: \"Trebuchet MS\", \"Lucida Sans Unicode\", \"Lucida Grande\", \"Lucida Sans\", \"Lato\", Arial, sans-serif;\n  text-transform: lowercase;\n}\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n  font-weight: 800 !important;\n  letter-spacing: 0.225rem !important;\n}\nh1 a,\nh2 a,\nh3 a,\nh4 a,\nh5 a,\nh6 a {\n  text-decoration: none;\n  font-family: \"Trebuchet MS\", \"Lucida Sans Unicode\", \"Lucida Grande\", \"Lucida Sans\", \"Lato\", Arial, sans-serif;\n  text-transform: lowercase;\n}\nh1 a,\nh2 a,\nh3 a,\nh4 a,\nh5 a,\nh6 a {\n  font-weight: 800 !important;\n  letter-spacing: 0.225rem !important;\n}\nh1 {\n  font-size: 1.6rem !important;\n  line-height: 1.6rem !important;\n}\nh2 {\n  font-size: 1.5rem !important;\n  line-height: 1.5rem !important;\n}\nh3 {\n  font-size: 1.4rem !important;\n  line-height: 1.5rem !important;\n}\nh4 {\n  font-size: 1rem !important;\n  line-height: 1.5rem !important;\n}\nh5 {\n  font-size: 0.9rem !important;\n  line-height: 1.5rem !important;\n}\nh6 {\n  font-size: 0.8rem !important;\n  line-height: 1.5rem !important;\n}\n.abstract {\n  padding-top: 0.5rem;\n  padding-bottom: 0.5rem;\n}\n.abstract {\n  text-decoration: none;\n  font-family: \"Trebuchet MS\", \"Lucida Sans Unicode\", \"Lucida Grande\", \"Lucida Sans\", \"Lato\", Arial, sans-serif;\n  text-transform: lowercase;\n}\n.abstract {\n  font-size: 1.3rem;\n  font-weight: 700;\n}\nblockquote,\nq {\n  quotes: none;\n  margin: 0;\n  padding: 0;\n}\nblockquote:before,\nblockquote:after,\nq:before,\nq:after {\n  content: '';\n  content: none;\n}\nblockquote {\n  text-decoration: none;\n  font-family: \"Trebuchet MS\", \"Lucida Sans Unicode\", \"Lucida Grande\", \"Lucida Sans\", \"Lato\", Arial, sans-serif;\n  text-transform: lowercase;\n}\nblockquote {\n  font-size: 1.3rem;\n  font-weight: 400;\n  line-height: 1.6rem !important;\n  letter-spacing: 0.2rem !important;\n}\nblockquote:before,\nblockquote:after {\n  display: inline-block;\n  content: '\"';\n}\nblockquote {\n  padding: 1rem;\n  text-align: center;\n  position: relative;\n}\nblockquote + * {\n  padding: 3rem 1rem;\n}\ncode {\n  margin: 0;\n  padding: 0;\n  border-radius: 0;\n}\ncode {\n  font-family: \"Courier New\", Courier, monospace;\n  text-decoration: none;\n  text-transform: lowercase;\n}\ncode {\n  color: darkgray;\n  background-color: gray;\n}\ncode {\n  overflow: auto;\n  font-size: 0.75rem;\n  border-radius: 10px;\n}\nhr {\n  border: 0;\n  margin: 0;\n  padding: 0;\n}\nhr {\n  border: 0;\n  border-bottom: solid 2px darkgray;\n  margin: 1rem 0;\n}\nimg {\n  max-width: 100%;\n  height: auto;\n  display: block;\n}\n.image {\n  border-radius: 0.5rem;\n  border: 0;\n  display: inline-block;\n  position: relative;\n}\n.image img {\n  border-radius: 0.5rem;\n  display: block;\n}\n.img-padding {\n  padding-top: 1rem;\n  padding-bottom: 2rem;\n}\n.image.left {\n  float: left;\n  margin: 0 2rem 2rem 0;\n  top: 0.25em;\n}\n.image.right {\n  float: right;\n  margin: 0 0 2rem 2rem;\n  top: 0.25rem;\n}\n.image.left,\n.image.right {\n  max-width: 40%;\n}\n.image.left img,\n.image.right img {\n  width: 100%;\n}\n.image.fit {\n  display: block;\n  margin: 0 0 2rem 0;\n  width: 100%;\n}\n.image.fit img {\n  width: 100%;\n}\npre {\n  overflow: auto;\n  border-radius: 10px;\n}\npre {\n  -webkit-overflow-scrolling: touch;\n  font-family: \"Courier New\", monospace;\n  font-size: 0.9rem;\n  margin: 0 0 2rem 0;\n}\npre code {\n  display: block;\n  line-height: 1.75rem;\n  padding: 1em 1.5rem;\n  overflow-x: auto;\n}\np {\n  text-decoration: none;\n  font-family: \"Trebuchet MS\", \"Lucida Sans Unicode\", \"Lucida Grande\", \"Lucida Sans\", \"Lato\", Arial, sans-serif;\n  text-transform: lowercase;\n}\np {\n  font-size: 1rem;\n  font-weight: normal;\n  line-height: 1.25rem;\n  letter-spacing: 0.1rem;\n}\nlabel {\n  font-size: 1rem;\n  font-weight: normal;\n  line-height: 1.25rem;\n  letter-spacing: 0.1rem;\n}\nstrong,\nb {\n  font-weight: 600;\n}\nem,\ni {\n  font-style: italic;\n}\ni a {\n  margin: 0.5rem;\n  font-style: italic;\n}\nsub {\n  font-size: 0.8rem;\n  position: relative;\n  top: 0.5em;\n}\nsup {\n  font-size: 0.8rem;\n  position: relative;\n  top: -0.5rem;\n}\n/* \n  molecule\n---------------------------------------------------------------------------------------------------\n*/\n.box {\n  border-radius: 5px;\n  border: thin solid darkgray;\n  margin: 0.5rem;\n  padding: 0.5rem;\n  text-align: center;\n}\n.box-four-in-row {\n  width: 20%;\n}\n.box-three-in-row {\n  width: 30%;\n}\n.box > :last-child,\n.box > :last-child > :last-child,\n.box > :last-child > :last-child > :last-child {\n  margin-bottom: 0;\n}\n.box.alt {\n  border: 0;\n  border-radius: 0;\n  padding: 0;\n}\n.box-equal {\n  display: table-cell;\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n}\n.box-round-corner {\n  border-radius: 5px;\n  white-space: normal;\n  padding: 1.25rem;\n  display: block;\n  width: 100%;\n  height: 100%;\n}\n/* \n    a.button\n---------------------------------------------------------------------------------------------------\n*/\na.button {\n  border-radius: 5px;\n  margin-top: 20px;\n  font-family: \"Lato\", sans-serif !important;\n  font-size: 1rem;\n  background: transparent;\n  color: whitesmoke !important;\n  background: black !important;\n  background-color: black !important;\n  text-transform: lowercase !important;\n  text-decoration: none !important;\n}\na.button:hover {\n  background: rgba(0, 0, 0, 0.5) !important;\n  background-color: rgba(0, 0, 0, 0.5) !important;\n}\n/* \n    a.button.special\n---------------------------------------------------------------------------------------------------\n*/\na.button.special {\n  border-radius: 3px;\n  margin-top: 20px;\n  font-family: \"Lato\", sans-serif !important;\n  font-size: 1rem;\n  color: whitesmoke !important;\n  background: #ed4933 !important;\n  background-color: #ed4933 !important;\n  text-transform: lowercase !important;\n  text-decoration: none !important;\n}\na.button.special:hover {\n  background: #ef5e4a !important;\n  background-color: #ef5e4a !important;\n}\n/* \n    selectors\n---------------------------------------------------------------------------------------------------\n*/\ninput[type=\"submit\"],\ninput[type=\"reset\"],\ninput[type=\"button\"],\nbutton,\n.button {\n  border-radius: 0.75rem;\n  border: 0;\n  cursor: pointer;\n  display: inline-block;\n  font-size: 0.8rem;\n  font-weight: 600;\n  height: 3.125rem;\n  letter-spacing: 0.225rem;\n  line-height: 3.125rem;\n  padding: 0 2.75rem;\n  text-align: center;\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  box-shadow: inset 0 0 0 2px whitesmoke;\n}\ninput[type=\"submit\"].icon:before,\ninput[type=\"reset\"].icon:before,\ninput[type=\"button\"].icon:before,\nbutton.icon:before,\n.button.icon:before {\n  margin-right: 0.5rem;\n}\ninput[type=\"submit\"].fit,\ninput[type=\"reset\"].fit,\ninput[type=\"button\"].fit,\nbutton.fit,\n.button.fit {\n  display: block;\n  margin: 0 0 1rem 0;\n  width: 100%;\n}\ninput[type=\"submit\"].small,\ninput[type=\"reset\"].small,\ninput[type=\"button\"].small,\nbutton.small,\n.button.small {\n  border-radius: 0.35rem;\n  border: 0;\n  cursor: pointer;\n  display: inline-block;\n  font-size: 0.6rem;\n  font-weight: normal;\n  height: 2.125rem;\n  letter-spacing: 0.225rem;\n  line-height: 2.125rem;\n  padding: 0 1.25rem;\n  text-align: center;\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  box-shadow: inset 0 0 0 2px whitesmoke;\n}\ninput[type=\"submit\"].big,\ninput[type=\"reset\"].big,\ninput[type=\"button\"].big,\nbutton.big,\n.button.big {\n  font-size: 1.35rem;\n}\ninput[type=\"submit\"].disabled,\ninput[type=\"submit\"]:disabled,\ninput[type=\"reset\"].disabled,\ninput[type=\"reset\"]:disabled,\ninput[type=\"button\"].disabled,\ninput[type=\"button\"]:disabled,\nbutton.disabled,\nbutton:disabled,\n.button.disabled,\n.button:disabled {\n  -moz-pointer-events: none;\n  -webkit-pointer-events: none;\n  -ms-pointer-events: none;\n  pointer-events: none;\n  opacity: 0.25;\n}\n/* \n    media queries\n---------------------------------------------------------------------------------------------------\n*/\n@media screen and (max-width: 736px) {\n  input[type=\"submit\"],\n  input[type=\"reset\"],\n  input[type=\"button\"],\n  button,\n  .button {\n    height: 3.75rem;\n    line-height: 3.75rem;\n  }\n}\n/* \n    li\n---------------------------------------------------------------------------------------------------\n*/\nli {\n  font-size: 1rem;\n  line-height: 1.6;\n  letter-spacing: 0.15rem;\n}\nli {\n  color: whitesmoke;\n  font-weight: 400;\n}\n/* \n    ul\n---------------------------------------------------------------------------------------------------\n*/\nul {\n  margin-left: 0.2rem;\n}\n* + ul {\n  margin-bottom: 0.3rem;\n}\nul {\n  list-style: disc;\n  margin: 0 0 0.5rem 0;\n  padding-left: 0;\n}\nul li {\n  list-style-position: inside;\n  padding-left: 0.5rem;\n}\n/* \n    ol\n---------------------------------------------------------------------------------------------------\n*/\nol {\n  margin-left: 0.25rem;\n}\n* + ol {\n  margin-bottom: 0.3rem;\n}\nol {\n  list-style: decimal;\n  margin: 0 0 2rem 0;\n  padding-left: 1.25rem;\n}\nol li {\n  padding-left: 0.25rem;\n}\n/* \n    dl\n---------------------------------------------------------------------------------------------------\n*/\ndl {\n  margin: 0 0 2rem 0;\n}\n/* \n    ul.alt\n---------------------------------------------------------------------------------------------------\n*/\nul.alt {\n  list-style: none;\n  padding-left: 0;\n}\nul.alt li {\n  border-top: solid 1px darkgray;\n  padding: 0.5rem 0;\n}\nul.alt li:first-child {\n  border-top: 0;\n  padding-top: 0;\n}\n/* \n    ul.icons\n---------------------------------------------------------------------------------------------------\n*/\nul.icons {\n  cursor: default;\n  list-style: none;\n  padding-left: 0;\n}\nul.icons li {\n  display: inline-block;\n  padding: 0 1rem 0 0;\n}\nul.icons li:last-child {\n  padding-right: 0 !important;\n}\n/* \n    ul.icons.major\n---------------------------------------------------------------------------------------------------\n*/\nul.icons.major {\n  padding: 1rem 0;\n}\nul.icons.major li {\n  padding-right: 3.5rem;\n}\n/* \n    ul.actions\n---------------------------------------------------------------------------------------------------\n*/\nul.actions {\n  cursor: default;\n  list-style: none;\n  padding-left: 0;\n}\nul.actions li {\n  display: inline-block;\n  padding: 0 1.5rem 0 0;\n  vertical-align: middle;\n}\nul.actions li:last-child {\n  padding-right: 0;\n}\n/* \n    ul.actions.small\n---------------------------------------------------------------------------------------------------\n*/\nul.actions.small li {\n  padding: 0 0.75rem 0 0;\n}\n/* \n    ul.actions.vertical\n---------------------------------------------------------------------------------------------------\n*/\nul.actions.vertical li {\n  display: block;\n  padding: 1.5rem 0 0 0;\n}\nul.actions.vertical li:first-child {\n  padding-top: 0;\n}\nul.actions.vertical li > * {\n  margin-bottom: 0;\n}\n/* \n    ul.actions.vertical.small\n---------------------------------------------------------------------------------------------------\n*/\nul.actions.vertical.small li {\n  padding: 0.75rem 0 0 0;\n}\nul.actions.vertical.small li:first-child {\n  padding-top: 0;\n}\n/* \n    ul.actions.fit\n---------------------------------------------------------------------------------------------------\n*/\nul.actions.fit {\n  display: table;\n  margin-left: -1.5rem;\n  padding: 0;\n  table-layout: fixed;\n  width: calc(100% + 1.5rem);\n}\nul.actions.fit li {\n  display: table-cell;\n  padding: 0 0 0 1.5rem;\n}\nul.actions.fit li > * {\n  margin-bottom: 0;\n}\n/* \n    ul.actions.fit.small\n---------------------------------------------------------------------------------------------------\n*/\nul.actions.fit.small {\n  margin-left: -0.75rem;\n  width: calc(100% + 0.75rem);\n}\nul.actions.fit.small li {\n  padding: 0 0 0 0.75rem;\n}\n/* \n    media queries\n---------------------------------------------------------------------------------------------------\n*/\n@media screen and (max-width: 736px) {\n  ul.icons.major li {\n    padding: 0 1rem !important;\n  }\n}\n@media screen and (max-width: 736px) {\n  ul.actions li {\n    display: block;\n    padding: 1rem 0 0 0;\n    text-align: center;\n    width: 100%;\n  }\n  ul.actions li:first-child {\n    padding-top: 0;\n  }\n  ul.actions li > * {\n    margin: 0 auto !important;\n    max-width: 15rem;\n    width: 100%;\n  }\n  ul.actions li > *.icon:before {\n    margin-left: -1rem;\n  }\n  ul.actions.small li {\n    padding: 0.5rem 0 0 0;\n  }\n  ul.actions.small li:first-child {\n    padding-top: 0;\n  }\n}\n.flex-row-wrapper {\n  display: flex;\n  justify-content: flex-start;\n  flex-wrap: wrap;\n  align-items: flex-start;\n}\n.flex-column-wrapper {\n  display: flex;\n  flex-flow: column;\n}\n.flex-container {\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  flex-wrap: wrap;\n}\n.row {\n  margin: 0;\n  padding: 0;\n}\n.row-bottom-padding {\n  padding-bottom: 2rem;\n}\nform.row {\n  padding-bottom: 1rem !important;\n}\n.flex-container.row {\n  padding-bottom: 1rem !important;\n}\n.flex-row-wrapper.row {\n  padding-bottom: 1rem !important;\n}\n.flex-column-wraper.row {\n  padding-bottom: 1rem !important;\n}\n.separator {\n  margin-right: auto;\n  margin-left: auto;\n  border: 0;\n}\n.separator-spacing {\n  margin-bottom: 0.5rem;\n}\n/* \n    lead\n---------------------------------------------------------------------------------------------------\n*/\n.lead {\n  text-decoration: none;\n  font-family: \"Trebuchet MS\", \"Lucida Sans Unicode\", \"Lucida Grande\", \"Lucida Sans\", \"Lato\", Arial, sans-serif;\n  text-transform: lowercase;\n}\n.lead {\n  font-size: 1.25rem;\n  font-weight: 500;\n  line-height: 1.5rem;\n  letter-spacing: 0.1rem;\n}\n.lead {\n  margin: 0;\n  padding-top: 0.5rem;\n  padding-bottom: 0.5rem;\n}\n/* \n    small\n---------------------------------------------------------------------------------------------------\n*/\n.small {\n  text-decoration: none;\n  font-family: \"Trebuchet MS\", \"Lucida Sans Unicode\", \"Lucida Grande\", \"Lucida Sans\", \"Lato\", Arial, sans-serif;\n  text-transform: lowercase;\n}\n.small {\n  font-size: 0.85rem;\n  padding-top: 0.5rem;\n  padding-bottom: 0.5rem;\n}\n/* \n    italic\n---------------------------------------------------------------------------------------------------\n*/\n.italic {\n  font-style: italic;\n}\n/* \n    headline\n---------------------------------------------------------------------------------------------------\n*/\n.headline {\n  text-decoration: none;\n  font-family: \"Trebuchet MS\", \"Lucida Sans Unicode\", \"Lucida Grande\", \"Lucida Sans\", \"Lato\", Arial, sans-serif;\n  text-transform: lowercase;\n}\n.headline {\n  font-size: 1.6rem;\n  margin-bottom: 1rem;\n}\n/* \n    tagline\n---------------------------------------------------------------------------------------------------\n*/\n.tagline {\n  text-decoration: none;\n  font-family: \"Trebuchet MS\", \"Lucida Sans Unicode\", \"Lucida Grande\", \"Lucida Sans\", \"Lato\", Arial, sans-serif;\n  text-transform: lowercase;\n}\n.tagline {\n  font-weight: 100;\n  font-size: 1.4rem;\n  margin-bottom: 1rem;\n}\n/* \n    paragraph\n---------------------------------------------------------------------------------------------------\n*/\n.paragraph {\n  text-decoration: none;\n  font-family: \"Trebuchet MS\", \"Lucida Sans Unicode\", \"Lucida Grande\", \"Lucida Sans\", \"Lato\", Arial, sans-serif;\n  text-transform: lowercase;\n}\n.paragraph {\n  margin: 0;\n  padding-top: 0.5rem;\n  padding-bottom: 0.5rem;\n}\n/* \n    paragraph-2col\n---------------------------------------------------------------------------------------------------\n*/\n.paragraph-2col {\n  text-decoration: none;\n  font-family: \"Trebuchet MS\", \"Lucida Sans Unicode\", \"Lucida Grande\", \"Lucida Sans\", \"Lato\", Arial, sans-serif;\n  text-transform: lowercase;\n}\n.paragraph-2col {\n  margin: 0;\n  padding-top: 0.5rem;\n  padding-bottom: 0.5rem;\n}\n/* \n    paragraph-3col\n---------------------------------------------------------------------------------------------------\n*/\n.paragraph-3col {\n  text-decoration: none;\n  font-family: \"Trebuchet MS\", \"Lucida Sans Unicode\", \"Lucida Grande\", \"Lucida Sans\", \"Lato\", Arial, sans-serif;\n  text-transform: lowercase;\n}\n.paragraph-3col {\n  margin: 0;\n  padding-top: 0.5rem;\n  padding-bottom: 0.5rem;\n}\n/* \n    align\n---------------------------------------------------------------------------------------------------\n*/\n.align-left {\n  text-align: left;\n}\n.align-center {\n  text-align: center;\n}\n.align-right {\n  text-align: right;\n}\n/* \n    error\n---------------------------------------------------------------------------------------------------\n*/\n.error {\n  text-decoration: none;\n  font-family: \"Trebuchet MS\", \"Lucida Sans Unicode\", \"Lucida Grande\", \"Lucida Sans\", \"Lato\", Arial, sans-serif;\n  text-transform: lowercase;\n  color: darkred !important;\n}\n.error {\n  display: block;\n  font-size: 1rem;\n  font-weight: bold;\n}\n/* \n    media queries\n---------------------------------------------------------------------------------------------------\n*/\n@media screen and (min-width: 980px) {\n  .paragraph {\n    -webkit-columns: 300px 1;\n    -moz-columns: 300px 1;\n    columns: 300px 1;\n  }\n  .paragraph-2col {\n    -webkit-columns: 200px 2;\n    -moz-columns: 200px 2;\n    columns: 200px 2;\n  }\n  .paragraph-3col {\n    -webkit-columns: 100px 3;\n    -moz-columns: 100px 3;\n    columns: 100px 3;\n  }\n}\n/* \n  organism\n---------------------------------------------------------------------------------------------------\n*/\narticle#main > header {\n  background-attachment: fixed;\n  background-position: center center;\n  background-repeat: no-repeat;\n  background-size: cover;\n  text-align: center;\n  background-color: transparent;\n  padding-top: 5rem;\n  padding-bottom: 3rem;\n}\narticle#main > header h2 {\n  font-size: 1.75rem;\n  padding-bottom: 0.75rem;\n}\narticle#main > header p {\n  letter-spacing: 0.225rem;\n  top: 0;\n}\nsection#banner > div {\n  color: whitesmoke;\n  background-color: transparent !important;\n}\nsection#banner > div h2 {\n  color: whitesmoke;\n  background-color: transparent !important;\n  width: 70%;\n}\nsection#banner > div p {\n  color: whitesmoke;\n  background-color: transparent !important;\n}\n#banner {\n  display: -moz-flex;\n  display: -ms-flex;\n  display: flex;\n  -moz-flex-direction: column;\n  flex-direction: column;\n  -moz-justify-content: center;\n  -ms-justify-content: center;\n  justify-content: center;\n  cursor: default;\n  height: 100vh;\n  min-height: 35rem;\n  overflow: hidden;\n  position: relative;\n  text-align: center;\n  width: 100%;\n}\n#banner .inner {\n  padding-left: 15%;\n  padding-right: 15%;\n  margin: 0;\n}\n#banner h2 {\n  -webkit-transform: scale(1);\n  transform: scale(1);\n  display: inline-block;\n  font-size: 2.5rem;\n  opacity: 1;\n  padding: 1rem 2rem;\n  position: relative;\n  z-index: 1;\n}\n#banner h2:before,\n#banner h2:after {\n  background: #fff;\n  content: \"\";\n  display: block;\n  height: 2px;\n  position: absolute;\n  width: 100%;\n}\n#banner h2:before {\n  top: 0;\n  left: 0;\n}\n#banner h2:after {\n  bottom: 0;\n  right: 0;\n}\n#banner p {\n  padding-top: 1.5rem;\n  letter-spacing: 0.225rem;\n  text-transform: lowercase;\n}\n#banner .actions {\n  padding-top: 0.75rem;\n}\n#banner:after {\n  -moz-pointer-events: none;\n  -webkit-pointer-events: none;\n  -ms-pointer-events: none;\n  pointer-events: none;\n  content: \"\";\n  background: #2e3842;\n  display: block;\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  left: 0;\n  top: 0;\n  opacity: 0;\n}\n@media screen and (max-width: 736px) {\n  #banner {\n    padding: 7rem 0 5rem 0;\n    height: auto;\n    min-height: 0;\n  }\n  #banner h2 {\n    font-size: 1.25rem;\n  }\n  #banner br {\n    display: none;\n  }\n  #banner .more {\n    display: none;\n  }\n}\nbody.is-loading #banner h2 {\n  -webkit-transform: scale(0.95);\n  transform: scale(0.95);\n  opacity: 0;\n}\nbody.is-loading #banner h2:before,\nbody.is-loading #banner h2:after {\n  width: 0;\n}\nbody.is-loading #banner .more {\n  -webkit-transform: translateY(8.5rem);\n  transform: translateY(8.5rem);\n  opacity: 0;\n}\nbody.is-loading #banner:after {\n  opacity: 1;\n}\na.more.scrolly {\n  color: whitesmoke;\n}\n.breadcrumb {\n  background: rgba(0, 0, 0, 0.6);\n  -webkit-transition: all 200ms ease-in-out;\n  transition: all 200ms ease-in-out;\n}\n.breadcrumb a,\n.breadcrumb a:visited {\n  color: whitesmoke;\n  font-size: 1rem;\n}\n.breadcrumb:hover {\n  background: black;\n}\n@media (min-width: 768px) {\n  .breadcrumb {\n    padding: 4px 8px;\n    position: absolute;\n    left: 40px;\n    top: 40px;\n  }\n  .breadcrumb a {\n    font-size: 1.2rem;\n  }\n}\n@media (max-width: 768px) {\n  .breadcrumb {\n    text-align: center;\n    padding: 20px 0;\n    background: black;\n  }\n}\n.container {\n  margin-right: auto;\n  margin-left: auto;\n  padding-left: 20%;\n  padding-right: 20%;\n  padding-top: 2rem;\n  padding-bottom: 2rem;\n}\n@media screen and (max-width: 980px) {\n  .container {\n    margin-right: auto;\n    margin-left: auto;\n    padding-left: 10%;\n    padding-right: 10%;\n    padding-top: 1.75rem;\n    padding-bottom: 1.75rem;\n  }\n}\n@media screen and (max-width: 736px) {\n  .container {\n    margin-right: auto;\n    margin-left: auto;\n    padding-left: 5%;\n    padding-right: 5%;\n    padding-top: 1.5rem;\n    padding-bottom: 1.5rem;\n  }\n}\n#cta .inner {\n  display: -moz-flex;\n  display: -ms-flex;\n  display: flex;\n  scroll-padding-top: 1.5rem;\n}\n#cta .inner header {\n  -moz-order: 1;\n  -ms-order: 1;\n  order: 1;\n  padding-right: 3rem;\n  width: 70%;\n}\n#cta .inner header h2 {\n  padding-top: 1.5rem;\n  padding-bottom: 1.5rem;\n}\n#cta .inner header p {\n  color: inherit;\n}\n#cta .inner .actions {\n  -moz-order: 2;\n  -ms-order: 2;\n  order: 2;\n  width: 30%;\n}\n@media screen and (max-width: 980px) {\n  #cta .inner {\n    display: block;\n    text-align: center;\n  }\n  #cta .inner header {\n    padding-right: 0;\n    width: 100%;\n  }\n  #cta .inner .actions {\n    margin-left: auto;\n    margin-right: auto;\n    max-width: 20rem;\n    width: 100%;\n  }\n}\n@media screen and (max-width: 736px) {\n  #cta .inner .actions {\n    max-width: none;\n  }\n}\nsection.special {\n  margin: 0;\n  padding: 0;\n  text-align: center;\n  padding: 3rem !important;\n}\nsection.special header.major h2 {\n  padding-bottom: 1rem;\n}\nsection.special header.major p {\n  padding-top: 1.125rem;\n}\n.features {\n  display: -moz-flex;\n  display: -ms-flex;\n  display: flex;\n  flex-wrap: wrap;\n  -moz-justify-content: center;\n  -ms-justify-content: center;\n  justify-content: center;\n  list-style: none;\n  padding: 0;\n  width: 100%;\n}\n.features li {\n  padding: 4rem 4rem 2rem 6rem;\n  display: block;\n  position: relative;\n  text-align: left;\n  width: 50%;\n}\n.features li:nth-child(1) {\n  background-color: rgba(0, 0, 0, 0.035);\n}\n.features li:nth-child(2) {\n  background-color: rgba(0, 0, 0, 0.07);\n}\n.features li:nth-child(3) {\n  background-color: rgba(0, 0, 0, 0.105);\n}\n.features li:nth-child(4) {\n  background-color: rgba(0, 0, 0, 0.14);\n}\n.features li:nth-child(5) {\n  background-color: rgba(0, 0, 0, 0.175);\n}\n.features li:nth-child(6) {\n  background-color: rgba(0, 0, 0, 0.21);\n}\n.features li:nth-child(7) {\n  background-color: rgba(0, 0, 0, 0.245);\n}\n.features li:nth-child(8) {\n  background-color: rgba(0, 0, 0, 0.28);\n}\n.features li:nth-child(9) {\n  background-color: rgba(0, 0, 0, 0.315);\n}\n.features li:nth-child(10) {\n  background-color: rgba(0, 0, 0, 0.35);\n}\n.features li:before {\n  display: block;\n  color: #00ffcc;\n  position: absolute;\n  left: 1.75rem;\n  top: 2.75rem;\n  font-size: 1.5rem;\n}\n.features li:nth-child(1) {\n  border-top-left-radius: 3px;\n}\n.features li:nth-child(2) {\n  border-top-right-radius: 3px;\n}\n.features li:nth-last-child(1) {\n  border-bottom-right-radius: 3px;\n}\n.features li:nth-last-child(2) {\n  border-bottom-left-radius: 3px;\n}\n@media screen and (max-width: 980px) {\n  .features li {\n    padding: 3rem 2rem 1rem 2rem;\n    text-align: center;\n  }\n  .features li:before {\n    left: 0;\n    margin: 0 0 1rem 0;\n    position: relative;\n    top: 0;\n  }\n}\n@media screen and (max-width: 736px) {\n  .features li {\n    padding: 3rem 0 1rem 0;\n    background-color: transparent !important;\n    border-top: solid 2px darkgray;\n    width: 100%;\n  }\n  .features li:first-child {\n    border-top: 0;\n  }\n}\nselect,\ntextarea,\ninput {\n  text-decoration: none;\n  font-family: \"Trebuchet MS\", \"Lucida Sans Unicode\", \"Lucida Grande\", \"Lucida Sans\", \"Lato\", Arial, sans-serif;\n  text-transform: lowercase;\n}\nform label {\n  display: block;\n  padding-bottom: 0.3rem;\n}\nselect {\n  border-radius: 0.75rem;\n  border: 0;\n  cursor: pointer;\n  display: inline-block;\n  font-size: 0.8rem;\n  font-weight: 400;\n  height: 2.125rem;\n  letter-spacing: 0.225rem;\n  line-height: 2.125rem;\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n}\ntextarea {\n  border-radius: 0.75rem;\n  border: 0;\n  cursor: pointer;\n  font-size: 0.8rem;\n  font-weight: 400;\n  letter-spacing: 0.225rem;\n  line-height: 2.125rem;\n  padding: 1rem;\n}\ninput[type=\"text\"] {\n  border-radius: 0.75rem;\n  border: 0;\n  cursor: pointer;\n  display: inline-block;\n  font-size: 0.8rem;\n  font-weight: 400;\n  height: 2.125rem;\n  letter-spacing: 0.225rem;\n  line-height: 2.125rem;\n  padding: 1rem;\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  min-width: 40%;\n}\ninput[type=\"password\"] {\n  border-radius: 0.75rem;\n  border: 0;\n  cursor: pointer;\n  display: inline-block;\n  font-size: 0.8rem;\n  font-weight: 400;\n  height: 2.125rem;\n  letter-spacing: 0.225rem;\n  line-height: 2.125rem;\n  padding: 1rem;\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  min-width: 40%;\n}\n.icon:before {\n  -moz-osx-font-smoothing: grayscale;\n  -webkit-font-smoothing: antialiased;\n  font-family: FontAwesome;\n  font-style: normal;\n  font-weight: normal;\n  text-transform: none !important;\n}\n.icon {\n  font-size: 1.25rem;\n}\n.icon a {\n  color: rgba(255, 255, 255, 0.5);\n}\n.icon > .label {\n  display: none;\n}\n.icon.major {\n  -webkit-transform: rotate(-45deg);\n  transform: rotate(-45deg);\n  border-radius: 3px;\n  border: thin solid darkgray;\n  display: inline-block;\n  font-size: 1.35rem;\n  height: calc(3rem + 2px);\n  line-height: 3rem;\n  text-align: center;\n  width: calc(3rem + 2px);\n}\n.icon.major:before {\n  -webkit-transform: rotate(45deg);\n  transform: rotate(45deg);\n  display: inline-block;\n  font-size: 1.5rem;\n}\n@media screen and (max-width: 736px) {\n  .icon.major {\n    font-size: 1rem;\n  }\n}\n.modal {\n  position: fixed;\n  top: 15%;\n  left: 10%;\n  width: 80%;\n  height: 80%;\n  z-index: 9999;\n  background: transparent;\n}\n.backdrop {\n  position: relative;\n  top: 0px;\n  left: 0px;\n  width: 100%;\n  height: 100%;\n  z-index: 10001;\n}\n.modal-box {\n  border-radius: 1rem;\n  border-color: black;\n  border-style: solid;\n  border: thin;\n  box-shadow: inset 0 0 0 2px darkslategrey;\n  z-index: 7777;\n  height: 100%;\n  overflow-x: auto;\n  scrollbar-base-color: gray lightgray;\n}\n.modal-box::-webkit-scrollbar {\n  width: 0.125rem;\n}\n.modal-box::-webkit-scrollbar-track {\n  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);\n  border-radius: 0.25rem;\n}\n.modal-box::-webkit-scrollbar-thumb {\n  border-radius: 0.25rem;\n  -webkit-box-shadow: inset 0 0 0.75rem rgba(0, 0, 0, 0.5);\n}\n.news-modal-header {\n  border-top-left-radius: 1rem;\n  border-top-right-radius: 1rem;\n  padding: 1rem;\n  background-color: darkslategrey;\n  border-bottom: solid thick darkred;\n}\n.news-modal-header h3 {\n  font-size: 1rem;\n  line-height: 1rem;\n  color: whitesmoke;\n}\n.news-modal-body {\n  padding: 1rem;\n  height: 100%;\n}\n.news-modal-body span {\n  border-bottom: dotted 1px;\n  text-decoration: none;\n  font-family: \"Trebuchet MS\", \"Lucida Sans Unicode\", \"Lucida Grande\", \"Lucida Sans\", \"Lato\", Arial, sans-serif;\n  text-transform: lowercase;\n  color: darkgray;\n}\n.news-modal-body a {\n  border-bottom: dotted 1px;\n  text-decoration: none;\n  font-family: \"Trebuchet MS\", \"Lucida Sans Unicode\", \"Lucida Grande\", \"Lucida Sans\", \"Lato\", Arial, sans-serif;\n  text-transform: lowercase;\n  color: darkgray;\n}\n.news-modal-body a:hover {\n  text-transform: lowercase;\n  text-decoration: none;\n  color: red !important;\n}\n.source-detail-modal-body {\n  padding: 1rem;\n  height: 100%;\n}\n.source-detail-modal-body em {\n  min-width: 40%;\n}\n.panel {\n  margin-top: 1rem;\n  margin-bottom: 1.75rem;\n  min-height: 200px;\n  float: left;\n}\n.page-header {\n  padding: 0;\n  padding-bottom: 0.5rem;\n}\nsection {\n  margin: 0;\n  padding: 0;\n}\n.spotlight {\n  -moz-align-items: center;\n  -ms-align-items: center;\n  align-items: center;\n  display: -moz-flex;\n  display: -ms-flex;\n  display: flex;\n  width: 100%;\n}\n.spotlight-left .image {\n  justify-content: flex-start;\n  -moz-order: 1;\n  -ms-order: 1;\n  order: 1;\n  border-radius: 0;\n  max-height: 160px;\n  max-width: 160px;\n}\n.spotlight-right .image {\n  justify-content: flex-end;\n  -moz-order: 2;\n  -ms-order: 2;\n  order: 2;\n  border-radius: 0;\n  height: 160px;\n  width: 160px;\n}\n.spotlight .image img {\n  border-radius: 0;\n  padding: 1rem;\n}\n.spotlight-left .content {\n  -moz-order: 2;\n  -ms-order: 2;\n  order: 2;\n  width: 100%;\n  height: 160px;\n  margin-right: auto;\n  margin-left: auto;\n  padding-left: 2rem;\n  padding-right: 2rem;\n  padding-top: 2.25rem;\n}\n.spotlight-right .content {\n  -moz-order: 1;\n  -ms-order: 1;\n  order: 1;\n  width: 100%;\n  height: 160px;\n  margin-right: auto;\n  margin-left: auto;\n  padding-left: 2rem;\n  padding-right: 2rem;\n  padding-top: 2.25rem;\n}\n.spotlight .content h2 {\n  font-size: 1.5rem;\n  padding-bottom: 1rem;\n}\n.spotlight .content p {\n  font-size: 1.25rem;\n  font-weight: 500;\n  line-height: 1.5rem;\n  padding-bottom: 3rem;\n}\n.spotlight:nth-child(1) {\n  background-color: rgba(0, 0, 0, 0.075);\n}\n.spotlight:nth-child(2) {\n  background-color: rgba(0, 0, 0, 0.15);\n}\n.spotlight:nth-child(3) {\n  background-color: rgba(0, 0, 0, 0.225);\n}\n.spotlight:nth-child(4) {\n  background-color: rgba(0, 0, 0, 0.3);\n}\n.spotlight:nth-child(5) {\n  background-color: rgba(0, 0, 0, 0.375);\n}\n.spotlight:nth-child(6) {\n  background-color: rgba(0, 0, 0, 0.45);\n}\n.spotlight:nth-child(7) {\n  background-color: rgba(0, 0, 0, 0.525);\n}\n.spotlight:nth-child(8) {\n  background-color: rgba(0, 0, 0, 0.6);\n}\n.spotlight:nth-child(9) {\n  background-color: rgba(0, 0, 0, 0.675);\n}\n.spotlight:nth-child(10) {\n  background-color: rgba(0, 0, 0, 0.75);\n}\n@media screen and (max-width: 736px) {\n  .spotlight {\n    display: block;\n  }\n  .spotlight br {\n    display: none;\n  }\n  .spotlight .image {\n    width: 100%;\n  }\n  .spotlight .content {\n    display: inline-block;\n    width: 100%;\n    padding-left: 10%;\n    padding-right: 10%;\n    padding-top: 2rem;\n  }\n  .spotlight-left .image {\n    max-height: 128px;\n    max-width: 128px;\n  }\n  .spotlight-right .image {\n    height: 128px;\n    width: 128px;\n  }\n  .spotlight .content h2 {\n    display: block;\n  }\n  .spotlight .content p {\n    display: block;\n    padding-bottom: 1.75rem;\n  }\n}\n@media screen and (max-width: 468px) {\n  .spotlight {\n    display: block;\n  }\n  .spotlight br {\n    display: none;\n  }\n  .spotlight .image {\n    width: 100%;\n  }\n  .spotlight .content {\n    display: inline-block;\n    width: 100%;\n    padding-left: 5%;\n    padding-right: 5%;\n    padding-top: 1.5rem;\n  }\n  .spotlight-left .image {\n    max-height: 96px;\n    max-width: 96px;\n  }\n  .spotlight-right .image {\n    height: 96px;\n    width: 96px;\n  }\n  .spotlight .content h2 {\n    display: block;\n  }\n  .spotlight .content p {\n    display: block;\n    padding-bottom: 1rem;\n  }\n}\n.spinner {\n  -webkit-animation: spinner-spin infinite 2s linear;\n          animation: spinner-spin infinite 2s linear;\n  background-color: transparent;\n  position: fixed;\n  top: 40%;\n  left: 45%;\n  z-index: 9990;\n  width: 100px;\n  height: 100px;\n}\n@-webkit-keyframes spinner-spin {\n  from {\n    -webkit-transform: rotate(0deg);\n            transform: rotate(0deg);\n  }\n  to {\n    -webkit-transform: rotate(360deg);\n            transform: rotate(360deg);\n  }\n}\n@keyframes spinner-spin {\n  from {\n    -webkit-transform: rotate(0deg);\n            transform: rotate(0deg);\n  }\n  to {\n    -webkit-transform: rotate(360deg);\n            transform: rotate(360deg);\n  }\n}\n.table-wrapper {\n  -webkit-overflow-scrolling: touch;\n  overflow-x: auto;\n  padding-top: 0.5rem;\n}\ntable {\n  width: 100%;\n}\ntable tbody tr:nth-child(2n + 1) {\n  background-color: rgba(144, 144, 144, 0.35);\n}\ntable td {\n  padding: 0.35rem;\n}\ntable.alt {\n  border-collapse: separate;\n}\ntable.alt tbody tr td:first-child {\n  border-left-width: 1px;\n}\ntable.alt tbody tr:first-child td {\n  border-top-width: 1px;\n}\ntable.alt thead {\n  border-bottom: 0;\n}\ntable.alt tfoot {\n  border-top: 0;\n}\n.tiles {\n  display: -moz-flex;\n  display: -ms-flex;\n  display: flex;\n  justify-content: center;\n  flex-wrap: wrap;\n}\n.tiles div[class^=\"item-\"] {\n  margin: 0.75rem !important;\n  flex-direction: row;\n  width: 40%;\n}\n.tiles h3 {\n  padding-bottom: 0.75rem;\n}\n.tiles a {\n  text-decoration: none;\n}\n.tiles a:hover * {\n  text-decoration: none;\n  color: red;\n}\n.tiles a:hover p {\n  text-decoration: underline;\n  color: red;\n}\n.tiles .date {\n  text-align: right;\n}\n.tiles p.paragraph {\n  min-height: 60px;\n}\n@media screen and (max-width: 736px) {\n  .tiles div[class^=\"item-\"] {\n    margin: 0.25rem !important;\n    display: block;\n    width: 80%;\n  }\n  .tiles h3 {\n    font-size: 1.125rem;\n    padding-bottom: 0.35rem;\n  }\n  .tiles .date {\n    font-size: 1rem;\n    padding-bottom: 0.35rem;\n  }\n  .tiles p.paragraph {\n    font-size: 1.1rem;\n    font-weight: normal;\n  }\n}\n/* \n  page\n---------------------------------------------------------------------------------------------------\n*/\n#footer {\n  padding: 3rem 0 2rem 0;\n  text-align: center;\n  color: whitesmoke;\n}\n#footer .icons {\n  font-size: 1.25rem;\n}\n#footer .icons a {\n  color: rgba(255, 255, 255, 0.5);\n}\n#footer .icons a:hover {\n  color: red;\n}\n#footer * {\n  text-decoration: none;\n  text-transform: lowercase;\n  border-bottom-color: transparent;\n}\n#footer .copyright {\n  color: rgba(255, 255, 255, 0.5);\n  font-size: 0.8rem;\n  letter-spacing: 0.225rem;\n  list-style: none;\n  padding: 0;\n}\n#footer .copyright span {\n  display: inline-block;\n  line-height: 1rem;\n  margin-left: 0;\n  padding-left: 0m;\n  padding-top: 1.5rem;\n}\n#footer .copyright li:first-child {\n  border-left: 0;\n  margin-left: 0;\n  padding-left: 0;\n}\nbody.landing #footer {\n  background-color: rgba(29, 36, 42, 0.9);\n}\nbody.regular #footer {\n  background-color: rgba(29, 36, 42, 0.9);\n}\nbody.is-mobile.landing #footer {\n  background-color: transparent;\n}\n@media screen and (max-width: 480px) {\n  #footer .copyright li {\n    border: 0;\n    display: block;\n    line-height: 1.65rem;\n    margin: 0;\n    padding: 0.5rem 0;\n  }\n}\n@media screen and (max-width: 980px) {\n  #footer {\n    padding: 4rem 3rem 2rem 3rem;\n  }\n}\n@media screen and (max-width: 736px) {\n  #footer {\n    padding: 3rem 2rem 1rem 2rem;\n  }\n}\nheader.major h2 {\n  border-bottom: thin solid darkgray;\n  margin: 0;\n  padding: 0;\n}\nheader.major p {\n  margin: 0;\n  padding: 0;\n}\n#header {\n  background-color: transparent;\n  left: 0;\n  line-height: 3rem;\n  position: fixed;\n  top: 0;\n  width: 100%;\n  z-index: 10000;\n}\n#header h1 {\n  height: inherit;\n  left: 1.25rem;\n  line-height: inherit;\n  position: absolute;\n  top: 0;\n  padding-top: 1rem;\n}\n#header h1 a {\n  border: 0;\n  display: block;\n  height: inherit;\n  line-height: inherit;\n}\n.displayBlock {\n  display: block;\n  opacity: 0.85;\n}\n.displayNone {\n  display: none;\n}\n#menu {\n  top: 0;\n  right: 0;\n  margin: 0;\n  padding: 0;\n  position: absolute;\n  background-color: #1a867d;\n  color: whitesmoke;\n}\n.menu ul {\n  padding-top: 25%;\n  padding-bottom: 65%;\n}\n.menu ul li {\n  margin: 0.5rem !important;\n}\n.menu a {\n  color: whitesmoke;\n}\n.menu a:hover {\n  color: red;\n}\n.menu li {\n  color: whitesmoke;\n  border-bottom: thin solid darkgray;\n  padding-bottom: 0.5rem;\n  padding-top: 1rem;\n}\n.menu li a {\n  padding-right: 2rem;\n}\n.menu-active {\n  font-weight: bold;\n}\n#nav div > ul {\n  list-style: none;\n  text-align: left;\n}\n#nav div ul > li {\n  list-style: none;\n  text-align: left;\n}\n#header nav {\n  margin: 0;\n  padding: 0;\n  width: 40%;\n  text-align: right;\n}\n#header nav span.menuToggle {\n  text-align: right;\n  padding-right: 1rem;\n}\n#header nav span.menuClose {\n  text-align: right;\n  padding-right: 1rem;\n}\n#header nav {\n  height: inherit;\n  line-height: inherit;\n  position: absolute;\n  margin: 0;\n  padding: 0;\n  right: 0;\n  top: 0;\n  color: whitesmoke;\n}\n#header nav span.menuToggle:after {\n  background-image: url(\"/assets/images/bars.svg\");\n  background-position: right center;\n  background-repeat: no-repeat;\n  content: '';\n  display: inline-block;\n  height: 3.75rem;\n  vertical-align: middle;\n  width: 2rem;\n}\n#header nav span.menuClose:after {\n  background-image: url(\"/assets/images/close.svg\");\n  background-position: right center;\n  background-repeat: no-repeat;\n  content: '';\n  display: inline-block;\n  height: 3.75rem;\n  vertical-align: middle;\n  width: 2rem;\n}\n.totop-wrapper {\n  margin-left: auto;\n  margin-right: auto;\n  width: 20%;\n  background-color: inherit;\n}\nbutton.totop {\n  border-radius: 10px;\n  font-family: \"Lato\", sans-serif !important;\n  font-size: 1rem;\n  width: 100%;\n  margin-top: 20px;\n  margin-bottom: 20px;\n  padding-left: 5%;\n  padding-right: 5%;\n  color: whitesmoke !important;\n  background: #ed4933 !important;\n  background-color: #ed4933 !important;\n  text-transform: lowercase !important;\n  text-decoration: none !important;\n}\nbutton.totop:hover {\n  background: #ef5e4a !important;\n  background-color: #ef5e4a !important;\n}\n.more {\n  -webkit-transform: translateY(0);\n  transform: translateY(0);\n  border: none;\n  bottom: 0;\n  font-size: 0.8rem;\n  height: 8.5rem;\n  left: 50%;\n  letter-spacing: 0.225rem;\n  margin-left: -8.5rem;\n  opacity: 1;\n  outline: 0;\n  padding-left: 0.225rem;\n  position: absolute;\n  text-align: center;\n  text-transform: lowercase;\n  width: 16rem;\n  z-index: 1;\n}\n.more:after {\n  background-image: url(\"/assets/images/arrow.svg\");\n  background-position: center;\n  background-repeat: no-repeat;\n  background-size: contain;\n  bottom: 4rem;\n  content: \"\";\n  display: block;\n  height: 1.5rem;\n  left: 50%;\n  margin: 0 0 0 -0.75rem;\n  position: absolute;\n  width: 1.5rem;\n}\n/* \n  template\n---------------------------------------------------------------------------------------------------\n*/\n.container.gray ul li {\n  color: whitesmoke;\n}\n.gray {\n  color: whitesmoke;\n  background-color: darkgray !important;\n}\n.gray a:hover {\n  color: red;\n}\n.gray .page-header {\n  width: 100%;\n  color: whitesmoke;\n  border-bottom: whitesmoke solid thin !important;\n}\n.gray .abstract {\n  color: whitesmoke !important;\n}\n.container.gray .abstract {\n  color: whitesmoke !important;\n}\ntable thead {\n  border-bottom: solid 2px whitesmoke !important;\n}\ntable tfoot {\n  border-top: solid 2px whitesmoke !important;\n}\ntable.alt tbody tr td {\n  border: solid 1px whitesmoke !important;\n  border-left-width: 0;\n  border-top-width: 0;\n}\n.container.green ul li {\n  color: whitesmoke;\n}\n.green {\n  color: whitesmoke;\n  background-color: #1a867d !important;\n}\n.green a:hover {\n  color: red;\n}\n.green .page-header {\n  width: 100%;\n  color: whitesmoke;\n  border-bottom: whitesmoke solid thin !important;\n}\n.green .abstract {\n  color: whitesmoke !important;\n}\n.container.green .abstract {\n  color: whitesmoke !important;\n}\ntable thead {\n  border-bottom: solid 2px whitesmoke !important;\n}\ntable tfoot {\n  border-top: solid 2px whitesmoke !important;\n}\ntable.alt tbody tr td {\n  border: solid 1px whitesmoke !important;\n  border-left-width: 0;\n  border-top-width: 0;\n}\n.container.light ul li {\n  color: #5e5e5e;\n}\n.light {\n  color: #5e5e5e;\n  background-color: whitesmoke !important;\n}\n.light a:hover {\n  color: red;\n}\n.light .page-header {\n  width: 100%;\n  color: #5e5e5e !important;\n  border-bottom: #5e5e5e solid thin !important;\n}\n.light .abstract {\n  color: #5e5e5e !important;\n}\n.container.light .abstract {\n  color: #5e5e5e !important;\n}\n.spotlight .content {\n  background-color: lightgray !important;\n}\n.spotlight .image {\n  background-color: whitesmoke !important;\n}\ntable thead {\n  border-bottom: solid 2px #5e5e5e !important;\n}\ntable tfoot {\n  border-top: solid 2px #5e5e5e !important;\n}\ntable.alt tbody tr td {\n  border: solid 1px #5e5e5e !important;\n  border-left-width: 0;\n  border-top-width: 0;\n}\n.container.purple ul li {\n  color: #d3d4e4;\n}\n.purple {\n  color: #d3d4e4;\n  background-color: #505393 !important;\n}\n.purple a:hover {\n  color: red;\n}\n.purple .page-header {\n  width: 100%;\n  color: #d3d4e4;\n  border-bottom: #d3d4e4 solid thin !important;\n}\n.purple .abstract {\n  color: #d3d4e4 !important;\n}\n.container.purple .abstract {\n  color: #d3d4e4 !important;\n}\ntable thead {\n  border-bottom: solid 2px #d3d4e4 !important;\n}\ntable tfoot {\n  border-top: solid 2px #d3d4e4 !important;\n}\ntable.alt tbody tr td {\n  border: solid 1px #d3d4e4 !important;\n  border-left-width: 0;\n  border-top-width: 0;\n}\n.container.transparent ul li {\n  color: whitesmoke;\n}\n.transparent {\n  color: whitesmoke;\n  background-color: transparent !important;\n}\n.transparent a:hover {\n  color: darkgray;\n}\n.transparent .page-header {\n  width: 100%;\n  color: whitesmoke;\n  border-bottom: whitesmoke solid thin !important;\n}\n.transparent .abstract {\n  color: whitesmoke !important;\n}\n.container.transparent .abstract {\n  color: whitesmoke !important;\n}\ntable thead {\n  border-bottom: solid 2px whitesmoke !important;\n}\ntable tfoot {\n  border-top: solid 2px whitesmoke !important;\n}\ntable.alt tbody tr td {\n  border: solid 1px whitesmoke !important;\n  border-left-width: 0;\n  border-top-width: 0;\n}\n/* \n  custom styles\n---------------------------------------------------------------------------------------------------\n*/\n.clearfix {\n  float: none;\n}\n.emailform {\n  margin-left: auto;\n  margin-right: auto;\n  width: 640px;\n  height: 767px;\n}\n#header {\n  width: 100%;\n  height: 3.25rem;\n  color: #f5f5f5;\n  background-color: #0b3536;\n}\n#header nav {\n  color: #f5f5f5;\n  background-color: #0b3536;\n}\n#footer {\n  padding: 1rem 0 1rem 0;\n  text-align: center;\n  color: #f5f5f5;\n  background-color: #0b3536;\n}\n#footer .copyright span {\n  padding: 0;\n}\nbody.is-mobile #main > header {\n  background-attachment: scroll;\n}\n#body.landing #header {\n  background-color: transparent !important;\n}\n#body.landing #header nav {\n  color: #f5f5f5;\n  background-color: transparent !important;\n}\nbody #root {\n  background: -webkit-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)), url(\"/assets/images/internet-of-things-1920xx.png\");\n  background-image: -ms-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)), url(\"/assets/images/internet-of-things-1920xx.png\");\n  background: -webkit-gradient(linear, left top, left bottom, from(#0b3536), to(rgba(125, 185, 232, 0))), url(\"/assets/images/internet-of-things-1920xx.png\");\n  background: linear-gradient(to bottom, #0b3536 0%, rgba(125, 185, 232, 0)), url(\"/assets/images/internet-of-things-1920xx.png\");\n  background-attachment: fixed;\n  background-position: center center;\n  background-repeat: no-repeat;\n  background-size: cover;\n  padding-top: 0;\n  background-color: transparent;\n}\n@media screen and (min-width: 1680px) {\n  #menu {\n    width: 100%;\n  }\n  #header nav {\n    width: 40%;\n  }\n}\n@media screen and (max-width: 1680px) {\n  #menu {\n    width: 100%;\n  }\n  #header nav {\n    width: 40%;\n  }\n}\n@media screen and (max-width: 1280px) {\n  #menu {\n    width: 100%;\n  }\n  #header nav {\n    width: 40%;\n  }\n}\n@media screen and (max-width: 980px) {\n  #menu {\n    width: 100%;\n  }\n  #header nav {\n    width: 50%;\n  }\n  header#header > h1 > a {\n    font-weight: 500 !important;\n    letter-spacing: 0.125rem !important;\n    font-size: 1.1rem !important;\n    line-height: 1rem !important;\n  }\n}\n@media screen and (max-width: 736px) {\n  #menu {\n    width: 100%;\n  }\n  #header nav {\n    width: 50%;\n  }\n  header#header > h1 > a {\n    font-weight: 500 !important;\n    letter-spacing: 0.125rem !important;\n    font-size: 1.1rem !important;\n    line-height: 1rem !important;\n  }\n}\n", ""]);
+
+
+
+/***/ }),
+/* 109 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(39)(false);
+// Module
+exports.push([module.i, "/* \n    base styles and definitions\n---------------------------------------------------------------------------------------------------\n*/\n/* \n    code\n---------------------------------------------------------------------------------------------------\n*/\n/* \n    box / banner\n---------------------------------------------------------------------------------------------------\n*/\n/* \n    button\n---------------------------------------------------------------------------------------------------\n*/\n/* \n    green\n---------------------------------------------------------------------------------------------------\n*/\n/* \n    gray\n---------------------------------------------------------------------------------------------------\n*/\n/* \n    purple\n---------------------------------------------------------------------------------------------------\n*/\n/* \n    transparent\n---------------------------------------------------------------------------------------------------\n*/\n/* \n    light\n---------------------------------------------------------------------------------------------------\n*/\n.color-container-height {\n  min-height: 65vh;\n}\nbody {\n  background: transparent;\n}\n.form-container {\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  align-items: baseline;\n}\n.button {\n  border-radius: 0.35rem;\n  border: 0;\n  cursor: pointer;\n  display: inline-block;\n  font-size: 0.6rem;\n  font-weight: normal;\n  height: 2.125rem;\n  letter-spacing: 0.225rem;\n  line-height: 2.125rem;\n  padding: 0 1.25rem;\n  text-align: center;\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  box-shadow: inset 0 0 0 2px whitesmoke;\n  color: whitesmoke !important;\n  background: #ed4933 !important;\n  background-color: #ed4933 !important;\n  text-transform: none !important;\n  text-decoration: none !important;\n}\n.button:hover {\n  background: #ef5e4a !important;\n  background-color: #ef5e4a !important;\n}\ntextarea {\n  border-radius: 0.125rem;\n  border: 0;\n  cursor: pointer;\n  font-size: 0.75rem;\n  font-weight: 400;\n  letter-spacing: 0.125rem;\n  line-height: 1.125rem;\n  padding: 0.25rem;\n}\n.clearfix {\n  float: none;\n}\n.emailform {\n  margin-left: auto;\n  margin-right: auto;\n  width: 100%;\n  height: 730px;\n  overflow: hidden;\n  border: none;\n}\n.clickable {\n  cursor: pointer;\n}\n.facet-box {\n  padding: 1rem;\n}\nlabel.facet {\n  border-radius: 0.35rem;\n  border: 0;\n  cursor: pointer;\n  display: inline-block;\n  font-size: 0.6rem;\n  font-weight: normal;\n  height: 2.125rem;\n  letter-spacing: 0.225rem;\n  line-height: 2.125rem;\n  padding: 0 1.25rem;\n  text-align: center;\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  box-shadow: inset 0 0 0 2px whitesmoke;\n}\nlabel.facet:hover {\n  background: rgba(0, 0, 0, 0.25) !important;\n  background-color: rgba(0, 0, 0, 0.25) !important;\n  cursor: pointer;\n}\n.flex-box {\n  display: flex;\n  flex-direction: row;\n  flex-flow: row wrap;\n  justify-content: space-between;\n}\n.box-three-in-row {\n  display: flex;\n  vertical-align: middle;\n  align-items: center;\n  align-content: center;\n}\n#header {\n  width: 100%;\n  height: 3.25rem;\n  color: #f5f5f5;\n  background-color: #0b3536;\n}\n#header nav {\n  color: #f5f5f5;\n  background-color: #0b3536;\n}\n#footer {\n  padding: 1rem 0 1rem 0;\n  text-align: center;\n  color: #f5f5f5;\n  background-color: #0b3536;\n}\n#footer .copyright span {\n  padding: 0;\n}\nbody #root {\n  background: -webkit-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)), url(\"/assets/images/Website-Design-Background.png\");\n  background-image: -ms-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)), url(\"/assets/images/Website-Design-Background.png\");\n  background: -webkit-gradient(linear, left top, left bottom, from(#0b3536), to(rgba(125, 185, 232, 0))), url(\"/assets/images/Website-Design-Background.png\");\n  background: linear-gradient(to bottom, #0b3536 0%, rgba(125, 185, 232, 0)), url(\"/assets/images/Website-Design-Background.png\");\n  background-attachment: fixed;\n  background-position: center center;\n  background-repeat: no-repeat;\n  background-size: cover;\n  padding-top: 0;\n  background-color: transparent;\n}\n@media screen and (min-width: 1680px) {\n  #menu {\n    width: 100%;\n  }\n  #header nav {\n    width: 40%;\n  }\n}\n@media screen and (max-width: 1680px) {\n  #menu {\n    width: 100%;\n  }\n  #header nav {\n    width: 40%;\n  }\n}\n@media screen and (max-width: 1280px) {\n  #menu {\n    width: 100%;\n  }\n  #header nav {\n    width: 40%;\n  }\n}\n@media screen and (max-width: 980px) {\n  #menu {\n    width: 100%;\n  }\n  #header nav {\n    width: 50%;\n  }\n  header#header > h1 > a {\n    font-weight: 500 !important;\n    letter-spacing: 0.125rem !important;\n    font-size: 1.1rem !important;\n    line-height: 1rem !important;\n  }\n}\n@media screen and (max-width: 736px) {\n  #menu {\n    width: 100%;\n  }\n  #header nav {\n    width: 50%;\n  }\n  header#header > h1 > a {\n    font-weight: 500 !important;\n    letter-spacing: 0.125rem !important;\n    font-size: 1.1rem !important;\n    line-height: 1rem !important;\n  }\n}\n", ""]);
 
 
 

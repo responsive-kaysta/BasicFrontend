@@ -7,7 +7,7 @@ import {
   eSpotlightOrientation,
   eButtonStyles
 } from "../page-types";
-import { PAGE_NAME } from "../constants";
+import { PAGE_NAME, PAGE_TOPIC } from "../constants";
 import { PageBanner } from "../compositions/page-banner/page-banner";
 import { EyeCatcher } from "../compositions/eye-catcher/eye-catcher";
 import { Spotlight } from "../compositions/spotlight/spotlight";
@@ -34,8 +34,8 @@ class Index extends React.Component {
         </Head>
 
         <PageBanner
-          header="responsive IT"
-          paragraph="IT & Software Architecture, Engineering & Consulting"
+          header={PAGE_NAME}
+          paragraph={PAGE_TOPIC}
           scrollTo="one"
           pageStyle={ePageStyleTemplates.transparent}
         />

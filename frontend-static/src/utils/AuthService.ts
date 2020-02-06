@@ -1,21 +1,19 @@
 import auth0 from "auth0-js";
 import decode from "jwt-decode";
 import API from "./axios.api";
+import {
+  CLIENT_ID,
+  CLIENT_DOMAIN,
+  REDIRECT,
+  AUDIENCE,
+  SCOPE,
+  ID_TOKEN_KEY,
+  ACCESS_TOKEN_KEY,
+  USER_INFO_KEY,
+  USER_INFO_API
+} from "../constants";
 
 // credits to: https://github.com/auth0-blog/reactjs-authentication-tutorial
-
-export const ID_TOKEN_KEY = "id_token";
-export const ACCESS_TOKEN_KEY = "access_token";
-export const USER_INFO_KEY = "user_info";
-
-export const SCOPE = "openid profile";
-export const CLIENT_ID = "";
-export const CLIENT_DOMAIN = "";
-
-export const REDIRECT = "http://localhost:3000/callback";
-
-export const AUDIENCE = "";
-export const USER_INFO_API = "";
 
 export type UserInfo = {
   Email: string;

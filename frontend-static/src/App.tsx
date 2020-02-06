@@ -6,6 +6,7 @@ import React from "react";
 import { addPrefetchExcludes, Head, Root, Routes } from "react-static";
 import "../public/assets/css/fontawesome-all.css";
 import "../public/assets/css/styles.css";
+import "../public/assets/css/custom.css";
 import {
   PAGE_AUTHOR,
   PAGE_DESCRIPTION,
