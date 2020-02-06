@@ -1,6 +1,10 @@
 {
-  "name": "react-static-example-typescript",
-  "private": true,
+  "name": "basic-frontend",
+  "private": false,
+  "version": "0.10.0-development",
+  "description": "finest, reactive frontend",
+  "author": "me@responsive-kaysta.ch",
+  "license": "MIT",
   "scripts": {
     "start": "react-static start",
     "stage": "react-static build --staging",
@@ -39,5 +43,6 @@
     "react-hot-loader": "^4.12.19",
     "serve": "^11.3.0",
     "typescript": "^3.7.5"
-  }
+  },
+  "main": "static.config.js"
 }
