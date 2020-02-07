@@ -1,5 +1,5 @@
 import * as React from "react";
-import { ePageStyleTemplates } from "../../less";
+import { ePageStyleTemplates } from "../../page-types/";
 import { FC } from "react";
 
 interface iPageHeaderProps {

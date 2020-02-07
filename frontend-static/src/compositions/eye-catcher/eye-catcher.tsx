@@ -1,6 +1,6 @@
 import * as React from "react";
 import { FC } from "react";
-import { ePageStyleTemplates } from "../../less";
+import { ePageStyleTemplates } from "../../page-types/";
 
 interface iEyeCatcherProps {
   header: string;

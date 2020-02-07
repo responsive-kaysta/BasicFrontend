@@ -1,6 +1,6 @@
 import * as React from "react";
-import { ePageStyleTemplates } from "../../less";
 import { FC, ReactNode } from "react";
+import { ePageStyleTemplates } from "../../page-types/";
 
 interface iArticleContainerProps {
   children: ReactNode;

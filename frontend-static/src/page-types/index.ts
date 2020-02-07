@@ -1,5 +1,3 @@
-export * from "./archive-content-type";
-export * from "./archive-source-type";
 export * from "./eArticlesOrder";
 export * from "./eButtonStyles";
 export * from "./eHeaderElementTypes";
@@ -8,6 +6,4 @@ export * from "./eListElementTypes";
 export * from "./ePictogram";
 export * from "./eSpotlightOrientation";
 export * from "./eTextStyles";
-export * from "./view-archive-content-type";
-export * from "./view-archive-search-type";
-export * from "./view-archive-source-type";
+export * from "./ePageStyleTemplates";

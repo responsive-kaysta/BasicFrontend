@@ -7,30 +7,6 @@ export default {
       {
         path: "home",
         template: "src/pages/index.tsx"
-      },
-      {
-        path: "about",
-        template: "src/pages/about.tsx"
-      },
-      {
-        path: "contact",
-        template: "src/pages/contact.tsx"
-      },
-      {
-        path: "impressum",
-        template: "src/pages/impressum.tsx"
-      },
-      {
-        path: "projects",
-        template: "src/pages/projects.tsx"
-      },
-      {
-        path: "technic",
-        template: "src/pages/technic.tsx"
-      },
-      {
-        path: "/legal",
-        template: "src/pages/legal.tsx"
       }
     ];
   },
