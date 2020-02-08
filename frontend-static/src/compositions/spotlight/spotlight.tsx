@@ -5,18 +5,18 @@ import { FC } from "react";
 
 interface iSpotlightProps {
   header: string;
-  paragraph: string;
   pictogram: ePictogram;
   orientation: eSpotlightOrientation;
+  paragraph?: string;
   pageStyle?: ePageStyleTemplates;
 }
 
 export const Spotlight: FC<iSpotlightProps> = ({
   header,
-  paragraph,
   pictogram,
   orientation,
-  pageStyle
+  pageStyle,
+  paragraph
 }) => {
   let cssStyle = "";
 
@@ -33,7 +33,7 @@ export const Spotlight: FC<iSpotlightProps> = ({
       <div className="content">
         <div>
           <h2>{header}</h2>
-          <p>{paragraph}</p>
+          {paragraph && <p>{paragraph}</p>}
         </div>
       </div>
     </section>
