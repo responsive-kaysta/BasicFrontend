@@ -1,6 +1,5 @@
 import * as React from "react";
-import { ePageStyleTemplates } from "../../page-types/";
-import { ePictogram } from "../../page-types/";
+import { ePictogram, ePageStyleTemplates } from "../../page-types/";
 import { FC } from "react";
 
 interface iTileItemProps {

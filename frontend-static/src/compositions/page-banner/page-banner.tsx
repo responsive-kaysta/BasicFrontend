@@ -1,7 +1,7 @@
 import * as React from "react";
 import * as Scroll from "react-scroll";
-import { ePageStyleTemplates } from "../../page-types/";
 import { FC } from "react";
+import { ePageStyleTemplates } from "../../page-types/";
 
 interface iPageBannerProps {
   header: string;

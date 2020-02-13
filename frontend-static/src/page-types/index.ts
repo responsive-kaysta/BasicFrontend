@@ -3,7 +3,7 @@ export * from "./eButtonStyles";
 export * from "./eHeaderElementTypes";
 export * from "./eListContainerTypes";
 export * from "./eListElementTypes";
+export * from "./ePageStyleTemplates";
 export * from "./ePictogram";
 export * from "./eSpotlightOrientation";
 export * from "./eTextStyles";
-export * from "./ePageStyleTemplates";

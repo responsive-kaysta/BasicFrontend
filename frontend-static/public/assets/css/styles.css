@@ -110,7 +110,7 @@ video {
 body {
   line-height: 1.4;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", "Lato", Arial, sans-serif;
-  text-transform: lowercase;
+  text-transform: none;
 }
 html,
 body,
@@ -188,7 +188,7 @@ audio,
 video {
   line-height: 1.4;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", "Lato", Arial, sans-serif;
-  text-transform: lowercase;
+  text-transform: none;
   margin: 0;
   padding: 0;
   border: 0;
@@ -240,11 +240,11 @@ a {
   border-bottom: 0;
   text-decoration: none;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", "Lato", Arial, sans-serif;
-  text-transform: lowercase;
+  text-transform: none;
 }
 a:hover {
   color: red;
-  text-transform: lowercase;
+  text-transform: none;
   text-decoration: none;
   cursor: pointer;
 }
@@ -262,7 +262,7 @@ h5,
 h6 {
   text-decoration: none;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", "Lato", Arial, sans-serif;
-  text-transform: lowercase;
+  text-transform: none;
 }
 h1,
 h2,
@@ -281,7 +281,7 @@ h5 a,
 h6 a {
   text-decoration: none;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", "Lato", Arial, sans-serif;
-  text-transform: lowercase;
+  text-transform: none;
 }
 h1 a,
 h2 a,
@@ -323,7 +323,7 @@ h6 {
 .abstract {
   text-decoration: none;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", "Lato", Arial, sans-serif;
-  text-transform: lowercase;
+  text-transform: none;
 }
 .abstract {
   font-size: 1.3rem;
@@ -345,7 +345,7 @@ q:after {
 blockquote {
   text-decoration: none;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", "Lato", Arial, sans-serif;
-  text-transform: lowercase;
+  text-transform: none;
 }
 blockquote {
   font-size: 1.3rem;
@@ -374,7 +374,7 @@ code {
 code {
   font-family: "Courier New", Courier, monospace;
   text-decoration: none;
-  text-transform: lowercase;
+  text-transform: none;
 }
 code {
   color: darkgray;
@@ -459,7 +459,7 @@ pre code {
 p {
   text-decoration: none;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", "Lato", Arial, sans-serif;
-  text-transform: lowercase;
+  text-transform: none;
 }
 p {
   font-size: 1rem;
@@ -555,7 +555,7 @@ a.button {
   color: whitesmoke !important;
   background: black !important;
   background-color: black !important;
-  text-transform: lowercase !important;
+  text-transform: none !important;
   text-decoration: none !important;
 }
 a.button:hover {
@@ -574,7 +574,7 @@ a.button.special {
   color: whitesmoke !important;
   background: #ed4933 !important;
   background-color: #ed4933 !important;
-  text-transform: lowercase !important;
+  text-transform: none !important;
   text-decoration: none !important;
 }
 a.button.special:hover {
@@ -940,7 +940,7 @@ form.row {
 .lead {
   text-decoration: none;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", "Lato", Arial, sans-serif;
-  text-transform: lowercase;
+  text-transform: none;
 }
 .lead {
   font-size: 1.25rem;
@@ -960,7 +960,7 @@ form.row {
 .small {
   text-decoration: none;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", "Lato", Arial, sans-serif;
-  text-transform: lowercase;
+  text-transform: none;
 }
 .small {
   font-size: 0.85rem;
@@ -981,7 +981,7 @@ form.row {
 .headline {
   text-decoration: none;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", "Lato", Arial, sans-serif;
-  text-transform: lowercase;
+  text-transform: none;
 }
 .headline {
   font-size: 1.6rem;
@@ -994,7 +994,7 @@ form.row {
 .tagline {
   text-decoration: none;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", "Lato", Arial, sans-serif;
-  text-transform: lowercase;
+  text-transform: none;
 }
 .tagline {
   font-weight: 100;
@@ -1008,7 +1008,7 @@ form.row {
 .paragraph {
   text-decoration: none;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", "Lato", Arial, sans-serif;
-  text-transform: lowercase;
+  text-transform: none;
 }
 .paragraph {
   margin: 0;
@@ -1022,7 +1022,7 @@ form.row {
 .paragraph-2col {
   text-decoration: none;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", "Lato", Arial, sans-serif;
-  text-transform: lowercase;
+  text-transform: none;
 }
 .paragraph-2col {
   margin: 0;
@@ -1036,7 +1036,7 @@ form.row {
 .paragraph-3col {
   text-decoration: none;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", "Lato", Arial, sans-serif;
-  text-transform: lowercase;
+  text-transform: none;
 }
 .paragraph-3col {
   margin: 0;
@@ -1063,7 +1063,7 @@ form.row {
 .error {
   text-decoration: none;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", "Lato", Arial, sans-serif;
-  text-transform: lowercase;
+  text-transform: none;
   color: darkred !important;
 }
 .error {
@@ -1113,6 +1113,9 @@ article#main > header h2 {
 article#main > header p {
   letter-spacing: 0.225rem;
   top: 0;
+}
+article#main.top {
+  margin-top: 3rem;
 }
 section#banner > div {
   color: whitesmoke;
@@ -1185,7 +1188,7 @@ section#banner > div p {
 #banner p {
   padding-top: 1.5rem;
   letter-spacing: 0.225rem;
-  text-transform: lowercase;
+  text-transform: none;
 }
 #banner .actions {
   padding-top: 0.75rem;
@@ -1466,7 +1469,7 @@ option {
   font-size: 0.75rem;
   text-decoration: none;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", "Lato", Arial, sans-serif;
-  text-transform: lowercase;
+  text-transform: none;
 }
 select,
 textarea,
@@ -1474,7 +1477,7 @@ input {
   font-size: 0.75rem;
   text-decoration: none;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", "Lato", Arial, sans-serif;
-  text-transform: lowercase;
+  text-transform: none;
 }
 form label {
   display: block;
@@ -1899,7 +1902,7 @@ table.alt tfoot {
 }
 #footer * {
   text-decoration: none;
-  text-transform: lowercase;
+  text-transform: none;
   border-bottom-color: transparent;
 }
 #footer .copyright {
@@ -2091,7 +2094,7 @@ button.totop {
   color: whitesmoke !important;
   background: #ed4933 !important;
   background-color: #ed4933 !important;
-  text-transform: lowercase !important;
+  text-transform: none !important;
   text-decoration: none !important;
 }
 button.totop:hover {
@@ -2115,7 +2118,7 @@ button.totop:hover {
   padding-left: 0.225rem;
   position: absolute;
   text-align: center;
-  text-transform: lowercase;
+  text-transform: none;
   width: 16rem;
   z-index: 1;
 }
@@ -2239,13 +2242,27 @@ table.alt tbody tr td {
   border-left-width: 0;
   border-top-width: 0;
 }
+/*
 select {
-  color: #5e5e5e;
-  background: -moz-linear-gradient(-45deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
-  background: -webkit-linear-gradient(-45deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#a6000000', GradientType=1);
+  color: @style-light-color;
+  background: -moz-linear-gradient(
+    -45deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.65) 100%
+  );
+  background: -webkit-linear-gradient(
+    -45deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.65) 100%
+  );
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.65) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=1 );
 }
+*/
 .container.purple ul li {
   color: #d3d4e4;
 }

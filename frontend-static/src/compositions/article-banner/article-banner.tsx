@@ -1,6 +1,6 @@
 import * as React from "react";
-import { ePageStyleTemplates } from "../../page-types/";
 import { FC } from "react";
+import { ePageStyleTemplates } from "../../page-types/";
 
 interface iArticleBannerProps {
   header: string;

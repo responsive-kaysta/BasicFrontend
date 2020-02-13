@@ -1,7 +1,7 @@
 import * as React from "react";
 import { ePictogram, eSpotlightOrientation } from "../../page-types/";
-import { ePageStyleTemplates } from "../../page-types/";
 import { FC } from "react";
+import { ePageStyleTemplates } from "page-types/ePageStyleTemplates";
 
 interface iSpotlightProps {
   header: string;

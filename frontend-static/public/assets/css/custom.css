@@ -65,7 +65,7 @@ body {
   color: whitesmoke !important;
   background: #ed4933 !important;
   background-color: #ed4933 !important;
-  text-transform: lowercase !important;
+  text-transform: none !important;
   text-decoration: none !important;
 }
 .button:hover {

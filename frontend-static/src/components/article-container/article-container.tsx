@@ -5,13 +5,15 @@ import { ePageStyleTemplates } from "../../page-types/";
 interface iArticleContainerProps {
   children: ReactNode;
   pageStyle?: ePageStyleTemplates;
+  cssClass?: string;
 }
 
 export const ArticleContainer: FC<iArticleContainerProps> = ({
   children,
-  pageStyle
+  pageStyle,
+  cssClass
 }) => {
-  const cssStyle = "special " + pageStyle;
+  const cssStyle = cssClass ? cssClass + " " + pageStyle : pageStyle;
 
   return (
     <>

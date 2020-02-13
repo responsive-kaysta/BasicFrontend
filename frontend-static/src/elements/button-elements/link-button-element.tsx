@@ -1,6 +1,6 @@
 import * as React from "react";
-import { eButtonStyles } from "page-types/eButtonStyles";
 import { FC } from "react";
+import { eButtonStyles } from "../../page-types/";
 
 interface LinkButtonElementProps {
   text: string;
