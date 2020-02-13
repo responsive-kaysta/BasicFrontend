@@ -248,12 +248,6 @@ a:hover {
   text-decoration: none;
   cursor: pointer;
 }
-a.link-h-padding:nth-child(1) {
-  padding-left: 0;
-}
-a.link-h-padding {
-  padding-left: 1.5rem;
-}
 h1,
 h2,
 h3,
@@ -2172,6 +2166,9 @@ table.alt tbody tr td {
   border-left-width: 0;
   border-top-width: 0;
 }
+hr {
+  border-color: whitesmoke;
+}
 .container.green ul li {
   color: whitesmoke;
 }
@@ -2242,27 +2239,6 @@ table.alt tbody tr td {
   border-left-width: 0;
   border-top-width: 0;
 }
-/*
-select {
-  color: @style-light-color;
-  background: -moz-linear-gradient(
-    -45deg,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 0.65) 100%
-  );
-  background: -webkit-linear-gradient(
-    -45deg,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 0.65) 100%
-  );
-  background: linear-gradient(
-    135deg,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 0.65) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=1 );
-}
-*/
 .container.purple ul li {
   color: #d3d4e4;
 }

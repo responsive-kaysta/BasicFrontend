@@ -110,7 +110,7 @@ video {
 body {
   line-height: 1.4;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", "Lato", Arial, sans-serif;
-  text-transform: lowercase;
+  text-transform: none;
 }
 html,
 body,
@@ -188,7 +188,7 @@ audio,
 video {
   line-height: 1.4;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", "Lato", Arial, sans-serif;
-  text-transform: lowercase;
+  text-transform: none;
   margin: 0;
   padding: 0;
   border: 0;
@@ -236,26 +236,17 @@ body.is-loading *:after {
 ---------------------------------------------------------------------------------------------------
 */
 a {
+  color: darkgray;
   border-bottom: 0;
   text-decoration: none;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", "Lato", Arial, sans-serif;
-  text-transform: lowercase;
-}
-a:hover {
-  text-transform: lowercase;
-  text-decoration: none;
-}
-a {
-  color: darkgray;
+  text-transform: none;
 }
 a:hover {
   color: red;
-}
-a.link-h-padding:nth-child(1) {
-  padding-left: 0;
-}
-a.link-h-padding {
-  padding-left: 1.5rem;
+  text-transform: none;
+  text-decoration: none;
+  cursor: pointer;
 }
 h1,
 h2,
@@ -265,7 +256,7 @@ h5,
 h6 {
   text-decoration: none;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", "Lato", Arial, sans-serif;
-  text-transform: lowercase;
+  text-transform: none;
 }
 h1,
 h2,
@@ -284,7 +275,7 @@ h5 a,
 h6 a {
   text-decoration: none;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", "Lato", Arial, sans-serif;
-  text-transform: lowercase;
+  text-transform: none;
 }
 h1 a,
 h2 a,
@@ -326,7 +317,7 @@ h6 {
 .abstract {
   text-decoration: none;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", "Lato", Arial, sans-serif;
-  text-transform: lowercase;
+  text-transform: none;
 }
 .abstract {
   font-size: 1.3rem;
@@ -348,7 +339,7 @@ q:after {
 blockquote {
   text-decoration: none;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", "Lato", Arial, sans-serif;
-  text-transform: lowercase;
+  text-transform: none;
 }
 blockquote {
   font-size: 1.3rem;
@@ -377,7 +368,7 @@ code {
 code {
   font-family: "Courier New", Courier, monospace;
   text-decoration: none;
-  text-transform: lowercase;
+  text-transform: none;
 }
 code {
   color: darkgray;
@@ -462,7 +453,7 @@ pre code {
 p {
   text-decoration: none;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", "Lato", Arial, sans-serif;
-  text-transform: lowercase;
+  text-transform: none;
 }
 p {
   font-size: 1rem;
@@ -510,10 +501,16 @@ sup {
   text-align: center;
 }
 .box-four-in-row {
+  text-align: center;
   width: 20%;
 }
 .box-three-in-row {
+  text-align: center;
   width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 .box > :last-child,
 .box > :last-child > :last-child,
@@ -552,12 +549,12 @@ a.button {
   color: whitesmoke !important;
   background: black !important;
   background-color: black !important;
-  text-transform: lowercase !important;
+  text-transform: none !important;
   text-decoration: none !important;
 }
 a.button:hover {
-  background: rgba(0, 0, 0, 0.5) !important;
-  background-color: rgba(0, 0, 0, 0.5) !important;
+  background: rgba(0, 0, 0, 0.25) !important;
+  background-color: rgba(0, 0, 0, 0.25) !important;
 }
 /* 
     a.button.special
@@ -571,7 +568,7 @@ a.button.special {
   color: whitesmoke !important;
   background: #ed4933 !important;
   background-color: #ed4933 !important;
-  text-transform: lowercase !important;
+  text-transform: none !important;
   text-decoration: none !important;
 }
 a.button.special:hover {
@@ -937,7 +934,7 @@ form.row {
 .lead {
   text-decoration: none;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", "Lato", Arial, sans-serif;
-  text-transform: lowercase;
+  text-transform: none;
 }
 .lead {
   font-size: 1.25rem;
@@ -957,7 +954,7 @@ form.row {
 .small {
   text-decoration: none;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", "Lato", Arial, sans-serif;
-  text-transform: lowercase;
+  text-transform: none;
 }
 .small {
   font-size: 0.85rem;
@@ -978,7 +975,7 @@ form.row {
 .headline {
   text-decoration: none;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", "Lato", Arial, sans-serif;
-  text-transform: lowercase;
+  text-transform: none;
 }
 .headline {
   font-size: 1.6rem;
@@ -991,7 +988,7 @@ form.row {
 .tagline {
   text-decoration: none;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", "Lato", Arial, sans-serif;
-  text-transform: lowercase;
+  text-transform: none;
 }
 .tagline {
   font-weight: 100;
@@ -1005,7 +1002,7 @@ form.row {
 .paragraph {
   text-decoration: none;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", "Lato", Arial, sans-serif;
-  text-transform: lowercase;
+  text-transform: none;
 }
 .paragraph {
   margin: 0;
@@ -1019,7 +1016,7 @@ form.row {
 .paragraph-2col {
   text-decoration: none;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", "Lato", Arial, sans-serif;
-  text-transform: lowercase;
+  text-transform: none;
 }
 .paragraph-2col {
   margin: 0;
@@ -1033,7 +1030,7 @@ form.row {
 .paragraph-3col {
   text-decoration: none;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", "Lato", Arial, sans-serif;
-  text-transform: lowercase;
+  text-transform: none;
 }
 .paragraph-3col {
   margin: 0;
@@ -1060,7 +1057,7 @@ form.row {
 .error {
   text-decoration: none;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", "Lato", Arial, sans-serif;
-  text-transform: lowercase;
+  text-transform: none;
   color: darkred !important;
 }
 .error {
@@ -1110,6 +1107,9 @@ article#main > header h2 {
 article#main > header p {
   letter-spacing: 0.225rem;
   top: 0;
+}
+article#main.top {
+  margin-top: 3rem;
 }
 section#banner > div {
   color: whitesmoke;
@@ -1182,7 +1182,7 @@ section#banner > div p {
 #banner p {
   padding-top: 1.5rem;
   letter-spacing: 0.225rem;
-  text-transform: lowercase;
+  text-transform: none;
 }
 #banner .actions {
   padding-top: 0.75rem;
@@ -1459,12 +1459,19 @@ section.special header.major p {
     border-top: 0;
   }
 }
+option {
+  font-size: 0.75rem;
+  text-decoration: none;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", "Lato", Arial, sans-serif;
+  text-transform: none;
+}
 select,
 textarea,
 input {
+  font-size: 0.75rem;
   text-decoration: none;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", "Lato", Arial, sans-serif;
-  text-transform: lowercase;
+  text-transform: none;
 }
 form label {
   display: block;
@@ -1666,10 +1673,6 @@ section {
   padding: 0;
 }
 .spotlight {
-  -moz-align-items: center;
-  -webkit-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
   display: -moz-flex;
   display: -webkit-flex;
   display: -ms-flex;
@@ -1707,11 +1710,8 @@ section {
   order: 2;
   width: 100%;
   height: 160px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-top: 2.25rem;
+  display: flex;
+  align-items: baseline;
 }
 .spotlight-right .content {
   -moz-order: 1;
@@ -1720,21 +1720,32 @@ section {
   order: 1;
   width: 100%;
   height: 160px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-top: 2.25rem;
+  display: flex;
+  align-items: baseline;
 }
-.spotlight .content h2 {
+.spotlight .content > div {
+  vertical-align: middle;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-left: 3rem;
+}
+.spotlight .content > div > h2 {
   font-size: 1.5rem;
-  padding-bottom: 1rem;
+  display: block;
+  -moz-order: 1;
+  -webkit-order: 1;
+  -ms-order: 1;
+  order: 1;
 }
-.spotlight .content p {
+.spotlight .content > div > p {
   font-size: 1.25rem;
   font-weight: 500;
   line-height: 1.5rem;
-  padding-bottom: 3rem;
+  display: block;
+  -moz-order: 2;
+  -webkit-order: 2;
+  -ms-order: 2;
+  order: 2;
 }
 .spotlight:nth-child(1) {
   background-color: rgba(0, 0, 0, 0.075);
@@ -1765,72 +1776,6 @@ section {
 }
 .spotlight:nth-child(10) {
   background-color: rgba(0, 0, 0, 0.75);
-}
-@media screen and (max-width: 736px) {
-  .spotlight {
-    display: block;
-  }
-  .spotlight br {
-    display: none;
-  }
-  .spotlight .image {
-    width: 100%;
-  }
-  .spotlight .content {
-    display: inline-block;
-    width: 100%;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 2rem;
-  }
-  .spotlight-left .image {
-    max-height: 128px;
-    max-width: 128px;
-  }
-  .spotlight-right .image {
-    height: 128px;
-    width: 128px;
-  }
-  .spotlight .content h2 {
-    display: block;
-  }
-  .spotlight .content p {
-    display: block;
-    padding-bottom: 1.75rem;
-  }
-}
-@media screen and (max-width: 468px) {
-  .spotlight {
-    display: block;
-  }
-  .spotlight br {
-    display: none;
-  }
-  .spotlight .image {
-    width: 100%;
-  }
-  .spotlight .content {
-    display: inline-block;
-    width: 100%;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 1.5rem;
-  }
-  .spotlight-left .image {
-    max-height: 96px;
-    max-width: 96px;
-  }
-  .spotlight-right .image {
-    height: 96px;
-    width: 96px;
-  }
-  .spotlight .content h2 {
-    display: block;
-  }
-  .spotlight .content p {
-    display: block;
-    padding-bottom: 1rem;
-  }
 }
 .spinner {
   animation: spinner-spin infinite 2s linear;
@@ -1951,7 +1896,7 @@ table.alt tfoot {
 }
 #footer * {
   text-decoration: none;
-  text-transform: lowercase;
+  text-transform: none;
   border-bottom-color: transparent;
 }
 #footer .copyright {
@@ -2011,7 +1956,6 @@ header.major p {
   padding: 0;
 }
 #header {
-  background-color: transparent;
   left: 0;
   line-height: 3rem;
   position: fixed;
@@ -2144,7 +2088,7 @@ button.totop {
   color: whitesmoke !important;
   background: #ed4933 !important;
   background-color: #ed4933 !important;
-  text-transform: lowercase !important;
+  text-transform: none !important;
   text-decoration: none !important;
 }
 button.totop:hover {
@@ -2168,7 +2112,7 @@ button.totop:hover {
   padding-left: 0.225rem;
   position: absolute;
   text-align: center;
-  text-transform: lowercase;
+  text-transform: none;
   width: 16rem;
   z-index: 1;
 }
@@ -2292,6 +2236,27 @@ table.alt tbody tr td {
   border-left-width: 0;
   border-top-width: 0;
 }
+/*
+select {
+  color: @style-light-color;
+  background: -moz-linear-gradient(
+    -45deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.65) 100%
+  );
+  background: -webkit-linear-gradient(
+    -45deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.65) 100%
+  );
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.65) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=1 );
+}
+*/
 .container.purple ul li {
   color: #d3d4e4;
 }
@@ -2356,109 +2321,10 @@ table.alt tbody tr td {
   border-left-width: 0;
   border-top-width: 0;
 }
-/* 
-  custom styles
----------------------------------------------------------------------------------------------------
-*/
-.clearfix {
-  float: none;
-}
-.emailform {
-  margin-left: auto;
-  margin-right: auto;
-  width: 640px;
-  height: 767px;
-}
-#header {
-  width: 100%;
-  height: 3.25rem;
-  color: #f5f5f5;
-  background-color: #0b3536;
-}
-#header nav {
-  color: #f5f5f5;
-  background-color: #0b3536;
-}
-#footer {
-  padding: 1rem 0 1rem 0;
-  text-align: center;
-  color: #f5f5f5;
-  background-color: #0b3536;
-}
-#footer .copyright span {
-  padding: 0;
-}
-body.is-mobile #main > header {
-  background-attachment: scroll;
-}
-#body.landing #header {
-  background-color: transparent !important;
-}
-#body.landing #header nav {
-  color: #f5f5f5;
-  background-color: transparent !important;
-}
-body #root {
-  background: -moz-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)), url("/assets/images/internet-of-things-1920xx.png");
-  background: -webkit-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)), url("/assets/images/internet-of-things-1920xx.png");
-  background-image: -ms-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)), url("/assets/images/internet-of-things-1920xx.png");
-  background: linear-gradient(to bottom, #0b3536 0%, rgba(125, 185, 232, 0)), url("/assets/images/internet-of-things-1920xx.png");
-  background-attachment: fixed;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-top: 0;
-  background-color: transparent;
-}
-@media screen and (min-width: 1680px) {
-  #menu {
-    width: 100%;
-  }
-  #header nav {
-    width: 40%;
-  }
-}
-@media screen and (max-width: 1680px) {
-  #menu {
-    width: 100%;
-  }
-  #header nav {
-    width: 40%;
-  }
-}
-@media screen and (max-width: 1280px) {
-  #menu {
-    width: 100%;
-  }
-  #header nav {
-    width: 40%;
-  }
-}
-@media screen and (max-width: 980px) {
-  #menu {
-    width: 100%;
-  }
-  #header nav {
-    width: 50%;
-  }
-  header#header > h1 > a {
-    font-weight: 500 !important;
-    letter-spacing: 0.125rem !important;
-    font-size: 1.1rem !important;
-    line-height: 1rem !important;
-  }
-}
-@media screen and (max-width: 736px) {
-  #menu {
-    width: 100%;
-  }
-  #header nav {
-    width: 50%;
-  }
-  header#header > h1 > a {
-    font-weight: 500 !important;
-    letter-spacing: 0.125rem !important;
-    font-size: 1.1rem !important;
-    line-height: 1rem !important;
-  }
+select {
+  color: whitesmoke;
+  background: -moz-linear-gradient(-45deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
+  background: -webkit-linear-gradient(-45deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#a6000000', GradientType=1);
 }

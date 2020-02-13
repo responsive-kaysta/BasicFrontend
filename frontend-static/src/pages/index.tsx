@@ -21,7 +21,30 @@ class Index extends React.Component {
           />
 
           <ColorContainer padded pageStyle={ePageStyleTemplates.transparent}>
-            <div>Index</div>
+            <div>Text, Heading</div>
+            <div>Link, Button</div>
+            <div>List, Icon</div>
+            {/* */}
+            <div>Container</div>
+            <div>Page Header</div>
+            <div>Box</div>
+            <div>Panel</div>
+            <div>Feature</div>
+            <div>Article</div>
+            <div>Tiles</div>
+            {/* */}
+            <div>Banner</div>
+            <div>Jumbotron</div>
+            <div>Spotlight</div>
+            <div>Eye Catcher</div>
+            <div>Table</div>
+            <div>Call to Action</div>
+            {/* */}
+            <div>Gray</div>
+            <div>Green</div>
+            <div>Light</div>
+            <div>Purple</div>
+            <div>Transparent</div>
           </ColorContainer>
         </ArticleContainer>
       </>
