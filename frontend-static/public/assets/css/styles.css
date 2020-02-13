@@ -378,8 +378,8 @@ code {
   border-radius: 10px;
 }
 hr {
-  border: 0;
-  margin: 1rem 0;
+  padding: 0;
+  margin: 1rem;
 }
 img {
   max-width: 100%;
@@ -2201,7 +2201,7 @@ table.alt tbody tr td {
 }
 .light hr {
   color: #5e5e5e !important;
-  border-color: #5e5e5e !important;
+  border-color: solid 2px #5e5e5e !important;
 }
 .light .abstract,
 .page-header {
