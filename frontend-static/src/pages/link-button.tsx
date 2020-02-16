@@ -1,4 +1,5 @@
 import * as React from "react";
+import * as Scroll from "react-scroll";
 import { Head } from "react-static";
 import { ArticleContainer, ColorContainer } from "../components/";
 import { ArticleBanner } from "../compositions/";
@@ -6,7 +7,12 @@ import { PAGE_MAIN_TOPIC, PAGE_NAME } from "../constants";
 import { ePageStyleTemplates } from "../page-types/";
 import { LinkButtonComposition } from "../custom-compositions/link-button-composition";
 
+var scroll = Scroll.animateScroll;
+
 class LinkButton extends React.Component {
+  componentDidMount() {
+    scroll.scrollToTop();
+  }
   public render() {
     return (
       <>

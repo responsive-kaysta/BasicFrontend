@@ -1,11 +1,17 @@
 import * as React from "react";
+import * as Scroll from "react-scroll";
 import { Head } from "react-static";
 import { ArticleContainer, ColorContainer } from "../components/";
 import { ArticleBanner } from "../compositions/";
 import { PAGE_MAIN_TOPIC, PAGE_NAME } from "../constants";
 import { ePageStyleTemplates } from "../page-types/";
 
+var scroll = Scroll.animateScroll;
+
 class Index extends React.Component {
+  componentDidMount() {
+    scroll.scrollToTop();
+  }
   public render() {
     return (
       <>

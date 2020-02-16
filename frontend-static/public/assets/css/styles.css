@@ -84,10 +84,6 @@ video {
 ---------------------------------------------------------------------------------------------------
 */
 /* 
-    button
----------------------------------------------------------------------------------------------------
-*/
-/* 
     green
 ---------------------------------------------------------------------------------------------------
 */
@@ -523,6 +519,18 @@ sup {
   width: 100%;
   height: 100%;
 }
+.flex-box {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.box-three-in-row {
+  display: flex;
+  vertical-align: middle;
+  align-items: center;
+  align-content: center;
+}
 /* 
     a.button
 ---------------------------------------------------------------------------------------------------
@@ -532,16 +540,8 @@ a.button {
   margin-top: 20px;
   font-family: "Lato", sans-serif !important;
   font-size: 1rem;
-  background: transparent;
-  color: whitesmoke !important;
-  background: black !important;
-  background-color: black !important;
   text-transform: none !important;
   text-decoration: none !important;
-}
-a.button:hover {
-  background: rgba(0, 0, 0, 0.25) !important;
-  background-color: rgba(0, 0, 0, 0.25) !important;
 }
 /* 
     a.button.special
@@ -552,15 +552,8 @@ a.button.special {
   margin-top: 20px;
   font-family: "Lato", sans-serif !important;
   font-size: 1rem;
-  color: whitesmoke !important;
-  background: #ed4933 !important;
-  background-color: #ed4933 !important;
   text-transform: none !important;
   text-decoration: none !important;
-}
-a.button.special:hover {
-  background: #ef5e4a !important;
-  background-color: #ef5e4a !important;
 }
 /* 
     selectors
@@ -585,7 +578,6 @@ button,
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  box-shadow: inset 0 0 0 2px whitesmoke;
 }
 input[type="submit"].icon:before,
 input[type="reset"].icon:before,
@@ -622,7 +614,6 @@ button.small,
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  box-shadow: inset 0 0 0 2px whitesmoke;
 }
 input[type="submit"].big,
 input[type="reset"].big,
@@ -2604,229 +2595,82 @@ button.totop:hover {
   color: #5e5e5e !important;
   background-color: whitesmoke !important;
 }
-.light div {
-  color: #5e5e5e !important;
-}
-.light span {
-  color: #5e5e5e !important;
-}
-.light h1 {
-  color: #5e5e5e !important;
-}
-.light h2 {
-  color: #5e5e5e !important;
-}
-.light h3 {
-  color: #5e5e5e !important;
-}
-.light h4 {
-  color: #5e5e5e !important;
-}
-.light h5 {
-  color: #5e5e5e !important;
-}
-.light h6 {
-  color: #5e5e5e !important;
-}
-.light p {
-  color: #5e5e5e !important;
-}
-.light blockquote {
-  color: #5e5e5e !important;
-}
-.light pre {
-  color: #5e5e5e !important;
-}
-.light abbr {
-  color: #5e5e5e !important;
-}
-.light address {
-  color: #5e5e5e !important;
-}
-.light cite {
-  color: #5e5e5e !important;
-}
-.light code {
-  color: #5e5e5e !important;
-}
-.light del {
-  color: #5e5e5e !important;
-}
-.light dfn {
-  color: #5e5e5e !important;
-}
-.light em {
-  color: #5e5e5e !important;
-}
-.light img {
-  color: #5e5e5e !important;
-}
-.light ins {
-  color: #5e5e5e !important;
-}
-.light kbd {
-  color: #5e5e5e !important;
-}
-.light q {
-  color: #5e5e5e !important;
-}
-.light samp {
-  color: #5e5e5e !important;
-}
-.light small {
-  color: #5e5e5e !important;
-}
-.light strong {
-  color: #5e5e5e !important;
-}
-.light sub {
-  color: #5e5e5e !important;
-}
-.light sup {
-  color: #5e5e5e !important;
-}
-.light var {
-  color: #5e5e5e !important;
-}
-.light b {
-  color: #5e5e5e !important;
-}
-.light i {
-  color: #5e5e5e !important;
-}
-.light dl {
-  color: #5e5e5e !important;
-}
-.light dt {
-  color: #5e5e5e !important;
-}
-.light dd {
-  color: #5e5e5e !important;
-}
-.light ol {
-  color: #5e5e5e !important;
-}
-.light ul {
-  color: #5e5e5e !important;
-}
-.light li {
-  color: #5e5e5e !important;
-}
-.light fieldset {
-  color: #5e5e5e !important;
-}
-.light form {
-  color: #5e5e5e !important;
-}
-.light label {
-  color: #5e5e5e !important;
-}
-.light legend {
-  color: #5e5e5e !important;
-}
-.light caption {
-  color: #5e5e5e !important;
-}
-.light article {
-  color: #5e5e5e !important;
-}
-.light aside {
-  color: #5e5e5e !important;
-}
-.light canvas {
-  color: #5e5e5e !important;
-}
-.light details {
-  color: #5e5e5e !important;
-}
-.light figcaption {
-  color: #5e5e5e !important;
-}
-.light figure {
-  color: #5e5e5e !important;
-}
-.light footer {
-  color: #5e5e5e !important;
-}
-.light header {
-  color: #5e5e5e !important;
-}
-.light hgroup {
-  color: #5e5e5e !important;
-}
-.light section {
-  color: #5e5e5e !important;
-}
-.light summary {
-  color: #5e5e5e !important;
-}
-.light time {
-  color: #5e5e5e !important;
-}
-.light mark {
-  color: #5e5e5e !important;
-}
-.light audio {
-  color: #5e5e5e !important;
-}
-.light video {
-  color: #5e5e5e !important;
-}
-.light table {
-  color: #5e5e5e !important;
-}
-.light thead {
-  color: #5e5e5e !important;
-}
-.light tfoot {
-  color: #5e5e5e !important;
-}
-.light tr {
-  color: #5e5e5e !important;
-}
-.light td {
-  color: #5e5e5e !important;
-}
-.light .abstract {
+.light div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+caption,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+hgroup,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+table,
+thead,
+tfoot,
+tr,
+td,
+.abstract,
+.page-header,
+.lead,
+.small,
+.italic,
+.headline,
+.tagline,
+.paragraph,
+.paragraph-2col,
+.paragraph-3col,
+.align-left,
+.align-center,
+.align-right {
   color: #5e5e5e !important;
 }
 .light .page-header {
   color: #5e5e5e !important;
-}
-.light .lead {
-  color: #5e5e5e !important;
-}
-.light .small {
-  color: #5e5e5e !important;
-}
-.light .italic {
-  color: #5e5e5e !important;
-}
-.light .headline {
-  color: #5e5e5e !important;
-}
-.light .tagline {
-  color: #5e5e5e !important;
-}
-.light .paragraph {
-  color: #5e5e5e !important;
-}
-.light .paragraph-2col {
-  color: #5e5e5e !important;
-}
-.light .paragraph-3col {
-  color: #5e5e5e !important;
-}
-.light .align-left {
-  color: #5e5e5e !important;
-}
-.light .align-center {
-  color: #5e5e5e !important;
-}
-.light .align-right {
-  color: #5e5e5e !important;
-}
-.light .page-header {
   border-bottom: #5e5e5e solid thin !important;
 }
 .light code {
@@ -2839,6 +2683,46 @@ button.totop:hover {
 .light hr {
   color: #5e5e5e !important;
   border-color: solid 2px #5e5e5e !important;
+}
+a.button {
+  color: #5e5e5e !important;
+  background: transparent;
+  background-color: transparent !important;
+}
+a.button:hover {
+  background: rgba(0, 0, 0, 0.25) !important;
+  background-color: rgba(0, 0, 0, 0.25) !important;
+}
+a.button:active {
+  background: rgba(0, 0, 0, 0.75) !important;
+  background-color: rgba(0, 0, 0, 0.75) !important;
+}
+a.button.special {
+  color: whitesmoke !important;
+  background: #ed4933 !important;
+  background-color: #ed4933 !important;
+}
+a.button.special:hover {
+  background: #ef5e4a !important;
+  background-color: #ef5e4a !important;
+}
+a.button.special:active {
+  background: #eb341c !important;
+  background-color: #eb341c !important;
+}
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button,
+.button {
+  box-shadow: inset 0 0 0 2px darkgray;
+}
+input[type="submit"].small,
+input[type="reset"].small,
+input[type="button"].small,
+button.small,
+.button.small {
+  box-shadow: inset 0 0 0 2px darkgray;
 }
 .purple {
   color: #d3d4e4 !important;
