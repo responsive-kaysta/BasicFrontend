@@ -24,17 +24,17 @@ class TextHeading extends React.Component {
           <ColorContainer padded pageStyle={ePageStyleTemplates.light}>
             <TextHeadingComposition text="Texts and Headings -> ePageStyleTemplates.light" />
           </ColorContainer>
-          <ColorContainer padded pageStyle={ePageStyleTemplates.transparent}>
-            <TextHeadingComposition text="Texts and Headings -> ePageStyleTemplates.transparent" />
-          </ColorContainer>
-          <ColorContainer padded pageStyle={ePageStyleTemplates.purple}>
-            <TextHeadingComposition text="Texts and Headings -> ePageStyleTemplates.purple" />
+          <ColorContainer padded pageStyle={ePageStyleTemplates.green}>
+            <TextHeadingComposition text="Texts and Headings -> ePageStyleTemplates.light" />
           </ColorContainer>
           <ColorContainer padded pageStyle={ePageStyleTemplates.gray}>
-            <TextHeadingComposition text="Texts and Headings -> ePageStyleTemplates.gray" />
+            <TextHeadingComposition text="Texts and Headings -> ePageStyleTemplates.light" />
           </ColorContainer>
-          <ColorContainer padded pageStyle={ePageStyleTemplates.green}>
-            <TextHeadingComposition text="Texts and Headings -> ePageStyleTemplates.green" />
+          <ColorContainer padded pageStyle={ePageStyleTemplates.transparent}>
+            <TextHeadingComposition text="Texts and Headings -> ePageStyleTemplates.light" />
+          </ColorContainer>
+          <ColorContainer padded pageStyle={ePageStyleTemplates.purple}>
+            <TextHeadingComposition text="Texts and Headings -> ePageStyleTemplates.light" />
           </ColorContainer>
         </ArticleContainer>
       </>

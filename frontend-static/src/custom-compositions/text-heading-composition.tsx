@@ -108,6 +108,14 @@ export const TextHeadingComposition: FC<TextHeadingCompositionProps> = ({
       <hr />
       <div className="error">Error Text [.error]</div>
       <hr />
+      <div className="abstract">This text is abstract. [.abstract]</div>
+      <hr />
+      <blockquote>This text is a blockquote. [blockquote]</blockquote>
+      <hr />
+      <code>This text contains code. [code]</code>
+      <hr />
+      <pre>This text is preformated. [pre]</pre>
+      <hr />
     </>
   );
 };
