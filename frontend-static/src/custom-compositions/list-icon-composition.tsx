@@ -74,20 +74,6 @@ export const ListIconComposition: FC<ListIconCompositionProps> = ({ text }) => {
         <dl>Four</dl>
       </ul>
       <hr />
-      <ul className="actions fit">
-        <dl>One</dl>
-        <dl>Two</dl>
-        <dl>Three</dl>
-        <dl>Four</dl>
-      </ul>
-      <hr />
-      <ul className="actions fit small">
-        <dl>One</dl>
-        <dl>Two</dl>
-        <dl>Three</dl>
-        <dl>Four</dl>
-      </ul>
-      <hr />
     </>
   );
 };

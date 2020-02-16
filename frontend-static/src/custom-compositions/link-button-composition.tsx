@@ -19,10 +19,11 @@ export const LinkButtonComposition: FC<TextHeadingCompositionProps> = ({
       <hr />
       <a className="button special">Link Button Special [a .button .special]</a>
       <hr />
-      <button>Regular Button</button>
+      <button>Regular Button [button]</button>
       <hr />
-      <input type="submit" value="Regular Input Submit" />{" "}
-      <input type="reset" value="Regular Input Reset" />
+      <input type="submit" value="Regular Input Submit [input]" />
+      <hr />
+      <input type="reset" value="Regular Input Reset  [input type=reset]" />
       <hr />
     </>
   );

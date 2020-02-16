@@ -30,6 +30,18 @@ class ListIcon extends React.Component {
           <ColorContainer padded pageStyle={ePageStyleTemplates.light}>
             <ListIconComposition text="Lists and Icons -> ePageStyleTemplates.light" />
           </ColorContainer>
+          <ColorContainer padded pageStyle={ePageStyleTemplates.transparent}>
+            <ListIconComposition text="Lists and Icons -> ePageStyleTemplates.transparent" />
+          </ColorContainer>
+          <ColorContainer padded pageStyle={ePageStyleTemplates.green}>
+            <ListIconComposition text="Lists and Icons -> ePageStyleTemplates.green" />
+          </ColorContainer>
+          <ColorContainer padded pageStyle={ePageStyleTemplates.gray}>
+            <ListIconComposition text="Lists and Icons -> ePageStyleTemplates.gray" />
+          </ColorContainer>
+          <ColorContainer padded pageStyle={ePageStyleTemplates.purple}>
+            <ListIconComposition text="Lists and Icons -> ePageStyleTemplates.purple" />
+          </ColorContainer>
         </ArticleContainer>
       </>
     );
