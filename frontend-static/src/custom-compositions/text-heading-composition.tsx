@@ -10,8 +10,9 @@ export const TextHeadingComposition: FC<TextHeadingCompositionProps> = ({
 }) => {
   return (
     <>
-      <div>{text}</div>
-      <hr />
+      <div className="page-header">
+        <h2>{text}</h2>
+      </div>
       <p>Simple paragraph [p]</p>
       <hr />
       <label>Simple label [label]</label>

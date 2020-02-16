@@ -653,19 +653,6 @@ button:disabled,
   }
 }
 /* 
-    li
----------------------------------------------------------------------------------------------------
-*/
-li {
-  font-size: 1rem;
-  line-height: 1.6;
-  letter-spacing: 0.15rem;
-}
-li {
-  color: whitesmoke;
-  font-weight: 400;
-}
-/* 
     ul
 ---------------------------------------------------------------------------------------------------
 */
@@ -683,6 +670,18 @@ ul {
 ul li {
   list-style-position: inside;
   padding-left: 0.5rem;
+}
+/* 
+    li
+---------------------------------------------------------------------------------------------------
+*/
+li {
+  font-size: 1rem;
+  line-height: 1.6;
+  letter-spacing: 0.15rem;
+}
+li {
+  font-weight: 400;
 }
 /* 
     ol
@@ -718,7 +717,6 @@ ul.alt {
   padding-left: 0;
 }
 ul.alt li {
-  border-top: solid 1px darkgray;
   padding: 0.5rem 0;
 }
 ul.alt li:first-child {
@@ -1644,7 +1642,8 @@ input[type="password"] {
 }
 .page-header {
   padding: 0;
-  padding-bottom: 0.5rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 section {
   margin: 0;
@@ -2671,7 +2670,7 @@ td,
 }
 .light .page-header {
   color: #5e5e5e !important;
-  border-bottom: #5e5e5e solid thin !important;
+  border-bottom: #5e5e5e solid 2px !important;
 }
 .light code {
   color: #5e5e5e;
@@ -2683,6 +2682,12 @@ td,
 .light hr {
   color: #5e5e5e !important;
   border-color: solid 2px #5e5e5e !important;
+}
+li {
+  color: #5e5e5e;
+}
+ul.alt li {
+  border-top: solid 1px #5e5e5e;
 }
 a.button {
   color: #5e5e5e !important;

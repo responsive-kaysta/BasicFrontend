@@ -29,6 +29,9 @@ export const Menu: FC = () => {
           <li>
             <Link to="/link-button">Link & Button</Link>
           </li>
+          <li>
+            <Link to="/list-icon">Lists & Icons</Link>
+          </li>
         </ul>
       </div>
     </>

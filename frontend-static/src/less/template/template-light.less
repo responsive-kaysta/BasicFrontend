@@ -84,7 +84,7 @@ td,
 
 .light .page-header {
   color: @style-light-color !important;
-  border-bottom: @style-light-border-color solid thin !important;
+  border-bottom: @style-light-border-color solid 2px !important;
 }
 
 .light code {
@@ -99,6 +99,14 @@ td,
 .light hr {
   color: @style-light-color !important;
   border-color: solid 2px @style-light-border-color !important;
+}
+
+li {
+  color: @style-light-color;
+}
+
+ul.alt li {
+  border-top: solid 1px @style-light-border-color;
 }
 
 a.button {

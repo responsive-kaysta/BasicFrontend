@@ -10,8 +10,9 @@ export const LinkButtonComposition: FC<TextHeadingCompositionProps> = ({
 }) => {
   return (
     <>
-      <div>{text}</div>
-      <hr />
+      <div className="page-header">
+        <h2>{text}</h2>
+      </div>
       <a>Regular Link [a]</a>
       <hr />
       <a className="button">Link Button [a .button]</a>
