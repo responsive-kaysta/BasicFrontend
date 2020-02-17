@@ -30,14 +30,14 @@ class Container extends React.Component {
           <ColorContainer padded pageStyle={ePageStyleTemplates.light}>
             <ContainerComposition text="Container - padded, ePageStyleTemplates.light" />
           </ColorContainer>
-          <ColorContainer padded pageStyle={ePageStyleTemplates.transparent}>
-            <ContainerComposition text="Container - padded, ePageStyleTemplates.transparent" />
+          <ColorContainer pageStyle={ePageStyleTemplates.transparent}>
+            <ContainerComposition text="Container - ePageStyleTemplates.transparent" />
           </ColorContainer>
           <ColorContainer padded pageStyle={ePageStyleTemplates.purple}>
             <ContainerComposition text="Container - padded, ePageStyleTemplates.purple" />
           </ColorContainer>
-          <ColorContainer padded pageStyle={ePageStyleTemplates.gray}>
-            <ContainerComposition text="Container - padded, ePageStyleTemplates.gray" />
+          <ColorContainer pageStyle={ePageStyleTemplates.gray}>
+            <ContainerComposition text="Container - ePageStyleTemplates.gray" />
           </ColorContainer>
           <ColorContainer padded pageStyle={ePageStyleTemplates.green}>
             <ContainerComposition text="Container - padded, ePageStyleTemplates.green" />
