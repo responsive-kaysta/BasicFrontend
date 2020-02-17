@@ -84,10 +84,6 @@ video {
 ---------------------------------------------------------------------------------------------------
 */
 /* 
-    button
----------------------------------------------------------------------------------------------------
-*/
-/* 
     green
 ---------------------------------------------------------------------------------------------------
 */
@@ -360,26 +356,22 @@ blockquote + * {
 }
 code {
   margin: 0;
-  padding: 0;
-  border-radius: 0;
+  padding: 0.75rem;
 }
 code {
   font-family: "Courier New", Courier, monospace;
   text-decoration: none;
   text-transform: none;
-}
-code {
-  color: darkgray;
-  background-color: gray;
-}
-code {
   overflow: auto;
   font-size: 0.75rem;
-  border-radius: 10px;
+  border-radius: 0.5rem;
 }
 hr {
   padding: 0;
-  margin: 1rem;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 img {
   max-width: 100%;
@@ -433,13 +425,12 @@ pre {
 pre {
   -webkit-overflow-scrolling: touch;
   font-family: "Courier New", monospace;
-  font-size: 0.9rem;
-  margin: 0 0 2rem 0;
+  font-size: 1rem;
 }
 pre code {
   display: block;
   line-height: 1.75rem;
-  padding: 1em 1.5rem;
+  padding: 1.5rem;
   overflow-x: auto;
 }
 p {
@@ -528,6 +519,18 @@ sup {
   width: 100%;
   height: 100%;
 }
+.flex-box {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.box-three-in-row {
+  display: flex;
+  vertical-align: middle;
+  align-items: center;
+  align-content: center;
+}
 /* 
     a.button
 ---------------------------------------------------------------------------------------------------
@@ -537,16 +540,8 @@ a.button {
   margin-top: 20px;
   font-family: "Lato", sans-serif !important;
   font-size: 1rem;
-  background: transparent;
-  color: whitesmoke !important;
-  background: black !important;
-  background-color: black !important;
   text-transform: none !important;
   text-decoration: none !important;
-}
-a.button:hover {
-  background: rgba(0, 0, 0, 0.25) !important;
-  background-color: rgba(0, 0, 0, 0.25) !important;
 }
 /* 
     a.button.special
@@ -557,15 +552,8 @@ a.button.special {
   margin-top: 20px;
   font-family: "Lato", sans-serif !important;
   font-size: 1rem;
-  color: whitesmoke !important;
-  background: #ed4933 !important;
-  background-color: #ed4933 !important;
   text-transform: none !important;
   text-decoration: none !important;
-}
-a.button.special:hover {
-  background: #ef5e4a !important;
-  background-color: #ef5e4a !important;
 }
 /* 
     selectors
@@ -590,7 +578,6 @@ button,
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  box-shadow: inset 0 0 0 2px whitesmoke;
 }
 input[type="submit"].icon:before,
 input[type="reset"].icon:before,
@@ -627,7 +614,6 @@ button.small,
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  box-shadow: inset 0 0 0 2px whitesmoke;
 }
 input[type="submit"].big,
 input[type="reset"].big,
@@ -667,6 +653,52 @@ button:disabled,
   }
 }
 /* 
+    ul
+---------------------------------------------------------------------------------------------------
+*/
+ul {
+  margin-left: 0.25rem;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+}
+* + ul {
+  margin-left: 0;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+}
+ul {
+  list-style: disc;
+  margin-left: 0;
+  margin-top: 0;
+  margin-right: 0.5rem;
+  margin-bottom: 0;
+  padding-left: 0;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+}
+ul li {
+  list-style-position: inside;
+  margin-left: 0;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  padding-left: 0.5rem;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+}
+/* 
     li
 ---------------------------------------------------------------------------------------------------
 */
@@ -676,52 +708,58 @@ li {
   letter-spacing: 0.15rem;
 }
 li {
-  color: whitesmoke;
   font-weight: 400;
-}
-/* 
-    ul
----------------------------------------------------------------------------------------------------
-*/
-ul {
-  margin-left: 0.2rem;
-}
-* + ul {
-  margin-bottom: 0.3rem;
-}
-ul {
-  list-style: disc;
-  margin: 0 0 0.5rem 0;
-  padding-left: 0;
-}
-ul li {
-  list-style-position: inside;
-  padding-left: 0.5rem;
 }
 /* 
     ol
 ---------------------------------------------------------------------------------------------------
 */
 ol {
-  margin-left: 0.25rem;
+  margin-left: 0;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
 }
 * + ol {
-  margin-bottom: 0.3rem;
+  margin-left: 0;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
 }
 ol {
   list-style: decimal;
-  margin: 0 0 2rem 0;
-  padding-left: 1.25rem;
 }
 ol li {
-  padding-left: 0.25rem;
+  margin-left: 1.5rem;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  padding-left: 0.5rem;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
 }
 /* 
     dl
 ---------------------------------------------------------------------------------------------------
 */
 dl {
-  margin: 0 0 2rem 0;
+  margin-left: 0;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
 }
 /* 
     ul.alt
@@ -729,15 +767,19 @@ dl {
 */
 ul.alt {
   list-style: none;
-  padding-left: 0;
 }
 ul.alt li {
-  border-top: solid 1px darkgray;
-  padding: 0.5rem 0;
+  margin-left: 0;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  padding-left: 0.25rem;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
 }
 ul.alt li:first-child {
   border-top: 0;
-  padding-top: 0;
 }
 /* 
     ul.icons
@@ -746,11 +788,28 @@ ul.alt li:first-child {
 ul.icons {
   cursor: default;
   list-style: none;
+  margin-left: 0;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
   padding-left: 0;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
 }
 ul.icons li {
   display: inline-block;
-  padding: 0 1rem 0 0;
+  margin-left: 0;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  padding-left: 0.35rem;
+  padding-top: 0;
+  padding-right: 0.35rem;
+  padding-bottom: 0;
+}
+ul.icons li:first-child {
+  padding-left: 0 !important;
 }
 ul.icons li:last-child {
   padding-right: 0 !important;
@@ -760,7 +819,14 @@ ul.icons li:last-child {
 ---------------------------------------------------------------------------------------------------
 */
 ul.icons.major {
-  padding: 1rem 0;
+  margin-left: 0;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  padding-left: 1rem;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
 }
 ul.icons.major li {
   padding-right: 3.5rem;
@@ -776,7 +842,6 @@ ul.actions {
 }
 ul.actions li {
   display: inline-block;
-  padding: 0 1.5rem 0 0;
   vertical-align: middle;
 }
 ul.actions li:last-child {
@@ -787,7 +852,14 @@ ul.actions li:last-child {
 ---------------------------------------------------------------------------------------------------
 */
 ul.actions.small li {
-  padding: 0 0.75rem 0 0;
+  margin-left: 0;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  padding-top: 0.75rem;
+  padding-right: 0;
+  padding-bottom: 0;
 }
 /* 
     ul.actions.vertical
@@ -795,7 +867,14 @@ ul.actions.small li {
 */
 ul.actions.vertical li {
   display: block;
-  padding: 1.5rem 0 0 0;
+  margin-left: 0;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  padding-left: 1.5rem;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
 }
 ul.actions.vertical li:first-child {
   padding-top: 0;
@@ -808,39 +887,17 @@ ul.actions.vertical li > * {
 ---------------------------------------------------------------------------------------------------
 */
 ul.actions.vertical.small li {
-  padding: 0.75rem 0 0 0;
+  margin-left: 0;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  padding-left: 0.75rem;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
 }
 ul.actions.vertical.small li:first-child {
   padding-top: 0;
-}
-/* 
-    ul.actions.fit
----------------------------------------------------------------------------------------------------
-*/
-ul.actions.fit {
-  display: table;
-  margin-left: -1.5rem;
-  padding: 0;
-  table-layout: fixed;
-  width: calc(100% + 1.5rem);
-}
-ul.actions.fit li {
-  display: table-cell;
-  padding: 0 0 0 1.5rem;
-}
-ul.actions.fit li > * {
-  margin-bottom: 0;
-}
-/* 
-    ul.actions.fit.small
----------------------------------------------------------------------------------------------------
-*/
-ul.actions.fit.small {
-  margin-left: -0.75rem;
-  width: calc(100% + 0.75rem);
-}
-ul.actions.fit.small li {
-  padding: 0 0 0 0.75rem;
 }
 /* 
     media queries
@@ -1658,7 +1715,8 @@ input[type="password"] {
 }
 .page-header {
   padding: 0;
-  padding-bottom: 0.5rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 section {
   margin: 0;
@@ -2125,76 +2183,572 @@ button.totop:hover {
   template
 ---------------------------------------------------------------------------------------------------
 */
-.container.gray ul li {
-  color: whitesmoke;
-}
 .gray {
-  color: whitesmoke;
+  color: whitesmoke !important;
   background-color: darkgray !important;
 }
-.gray a:hover {
-  color: red;
+.gray div {
+  color: whitesmoke !important;
 }
-.gray .page-header {
-  width: 100%;
-  color: whitesmoke;
-  border-bottom: whitesmoke solid thin !important;
+.gray span {
+  color: whitesmoke !important;
+}
+.gray h1 {
+  color: whitesmoke !important;
+}
+.gray h2 {
+  color: whitesmoke !important;
+}
+.gray h3 {
+  color: whitesmoke !important;
+}
+.gray h4 {
+  color: whitesmoke !important;
+}
+.gray h5 {
+  color: whitesmoke !important;
+}
+.gray h6 {
+  color: whitesmoke !important;
+}
+.gray p {
+  color: whitesmoke !important;
+}
+.gray blockquote {
+  color: whitesmoke !important;
+}
+.gray pre {
+  color: whitesmoke !important;
+}
+.gray abbr {
+  color: whitesmoke !important;
+}
+.gray address {
+  color: whitesmoke !important;
+}
+.gray cite {
+  color: whitesmoke !important;
+}
+.gray code {
+  color: whitesmoke !important;
+}
+.gray del {
+  color: whitesmoke !important;
+}
+.gray dfn {
+  color: whitesmoke !important;
+}
+.gray em {
+  color: whitesmoke !important;
+}
+.gray img {
+  color: whitesmoke !important;
+}
+.gray ins {
+  color: whitesmoke !important;
+}
+.gray kbd {
+  color: whitesmoke !important;
+}
+.gray q {
+  color: whitesmoke !important;
+}
+.gray samp {
+  color: whitesmoke !important;
+}
+.gray small {
+  color: whitesmoke !important;
+}
+.gray strong {
+  color: whitesmoke !important;
+}
+.gray sub {
+  color: whitesmoke !important;
+}
+.gray sup {
+  color: whitesmoke !important;
+}
+.gray var {
+  color: whitesmoke !important;
+}
+.gray b {
+  color: whitesmoke !important;
+}
+.gray i {
+  color: whitesmoke !important;
+}
+.gray dl {
+  color: whitesmoke !important;
+}
+.gray dt {
+  color: whitesmoke !important;
+}
+.gray dd {
+  color: whitesmoke !important;
+}
+.gray ol {
+  color: whitesmoke !important;
+}
+.gray ul {
+  color: whitesmoke !important;
+}
+.gray li {
+  color: whitesmoke !important;
+}
+.gray fieldset {
+  color: whitesmoke !important;
+}
+.gray form {
+  color: whitesmoke !important;
+}
+.gray label {
+  color: whitesmoke !important;
+}
+.gray legend {
+  color: whitesmoke !important;
+}
+.gray caption {
+  color: whitesmoke !important;
+}
+.gray article {
+  color: whitesmoke !important;
+}
+.gray aside {
+  color: whitesmoke !important;
+}
+.gray canvas {
+  color: whitesmoke !important;
+}
+.gray details {
+  color: whitesmoke !important;
+}
+.gray figcaption {
+  color: whitesmoke !important;
+}
+.gray figure {
+  color: whitesmoke !important;
+}
+.gray footer {
+  color: whitesmoke !important;
+}
+.gray header {
+  color: whitesmoke !important;
+}
+.gray hgroup {
+  color: whitesmoke !important;
+}
+.gray section {
+  color: whitesmoke !important;
+}
+.gray summary {
+  color: whitesmoke !important;
+}
+.gray time {
+  color: whitesmoke !important;
+}
+.gray mark {
+  color: whitesmoke !important;
+}
+.gray audio {
+  color: whitesmoke !important;
+}
+.gray video {
+  color: whitesmoke !important;
+}
+.gray table {
+  color: whitesmoke !important;
+}
+.gray thead {
+  color: whitesmoke !important;
+}
+.gray tfoot {
+  color: whitesmoke !important;
+}
+.gray tr {
+  color: whitesmoke !important;
+}
+.gray td {
+  color: whitesmoke !important;
 }
 .gray .abstract {
   color: whitesmoke !important;
 }
-.container.gray .abstract {
+.gray .page-header {
   color: whitesmoke !important;
 }
-table thead {
-  border-bottom: solid 2px whitesmoke !important;
+.gray .lead {
+  color: whitesmoke !important;
 }
-table tfoot {
-  border-top: solid 2px whitesmoke !important;
+.gray .small {
+  color: whitesmoke !important;
 }
-table.alt tbody tr td {
-  border: solid 1px whitesmoke !important;
-  border-left-width: 0;
-  border-top-width: 0;
+.gray .italic {
+  color: whitesmoke !important;
 }
-hr {
-  border-color: whitesmoke;
+.gray .headline {
+  color: whitesmoke !important;
 }
-.container.green ul li {
+.gray .tagline {
+  color: whitesmoke !important;
+}
+.gray .paragraph {
+  color: whitesmoke !important;
+}
+.gray .paragraph-2col {
+  color: whitesmoke !important;
+}
+.gray .paragraph-3col {
+  color: whitesmoke !important;
+}
+.gray .align-left {
+  color: whitesmoke !important;
+}
+.gray .align-center {
+  color: whitesmoke !important;
+}
+.gray .align-right {
+  color: whitesmoke !important;
+}
+.gray .page-header {
+  border-bottom: whitesmoke solid thin !important;
+}
+.gray code {
   color: whitesmoke;
+  background-color: darkgray !important;
+}
+.gray a:hover {
+  color: red !important;
+}
+.gray hr {
+  color: whitesmoke !important;
+  border-color: solid 2px whitesmoke !important;
 }
 .green {
-  color: whitesmoke;
+  color: whitesmoke !important;
   background-color: #1a867d !important;
 }
-.green a:hover {
-  color: red;
+.green div {
+  color: whitesmoke !important;
 }
-.green .page-header {
-  width: 100%;
-  color: whitesmoke;
-  border-bottom: whitesmoke solid thin !important;
+.green span {
+  color: whitesmoke !important;
+}
+.green h1 {
+  color: whitesmoke !important;
+}
+.green h2 {
+  color: whitesmoke !important;
+}
+.green h3 {
+  color: whitesmoke !important;
+}
+.green h4 {
+  color: whitesmoke !important;
+}
+.green h5 {
+  color: whitesmoke !important;
+}
+.green h6 {
+  color: whitesmoke !important;
+}
+.green p {
+  color: whitesmoke !important;
+}
+.green blockquote {
+  color: whitesmoke !important;
+}
+.green pre {
+  color: whitesmoke !important;
+}
+.green abbr {
+  color: whitesmoke !important;
+}
+.green address {
+  color: whitesmoke !important;
+}
+.green cite {
+  color: whitesmoke !important;
+}
+.green code {
+  color: whitesmoke !important;
+}
+.green del {
+  color: whitesmoke !important;
+}
+.green dfn {
+  color: whitesmoke !important;
+}
+.green em {
+  color: whitesmoke !important;
+}
+.green img {
+  color: whitesmoke !important;
+}
+.green ins {
+  color: whitesmoke !important;
+}
+.green kbd {
+  color: whitesmoke !important;
+}
+.green q {
+  color: whitesmoke !important;
+}
+.green samp {
+  color: whitesmoke !important;
+}
+.green small {
+  color: whitesmoke !important;
+}
+.green strong {
+  color: whitesmoke !important;
+}
+.green sub {
+  color: whitesmoke !important;
+}
+.green sup {
+  color: whitesmoke !important;
+}
+.green var {
+  color: whitesmoke !important;
+}
+.green b {
+  color: whitesmoke !important;
+}
+.green i {
+  color: whitesmoke !important;
+}
+.green dl {
+  color: whitesmoke !important;
+}
+.green dt {
+  color: whitesmoke !important;
+}
+.green dd {
+  color: whitesmoke !important;
+}
+.green ol {
+  color: whitesmoke !important;
+}
+.green ul {
+  color: whitesmoke !important;
+}
+.green li {
+  color: whitesmoke !important;
+}
+.green fieldset {
+  color: whitesmoke !important;
+}
+.green form {
+  color: whitesmoke !important;
+}
+.green label {
+  color: whitesmoke !important;
+}
+.green legend {
+  color: whitesmoke !important;
+}
+.green caption {
+  color: whitesmoke !important;
+}
+.green article {
+  color: whitesmoke !important;
+}
+.green aside {
+  color: whitesmoke !important;
+}
+.green canvas {
+  color: whitesmoke !important;
+}
+.green details {
+  color: whitesmoke !important;
+}
+.green figcaption {
+  color: whitesmoke !important;
+}
+.green figure {
+  color: whitesmoke !important;
+}
+.green footer {
+  color: whitesmoke !important;
+}
+.green header {
+  color: whitesmoke !important;
+}
+.green hgroup {
+  color: whitesmoke !important;
+}
+.green section {
+  color: whitesmoke !important;
+}
+.green summary {
+  color: whitesmoke !important;
+}
+.green time {
+  color: whitesmoke !important;
+}
+.green mark {
+  color: whitesmoke !important;
+}
+.green audio {
+  color: whitesmoke !important;
+}
+.green video {
+  color: whitesmoke !important;
+}
+.green table {
+  color: whitesmoke !important;
+}
+.green thead {
+  color: whitesmoke !important;
+}
+.green tfoot {
+  color: whitesmoke !important;
+}
+.green tr {
+  color: whitesmoke !important;
+}
+.green td {
+  color: whitesmoke !important;
 }
 .green .abstract {
   color: whitesmoke !important;
 }
-.container.green .abstract {
+.green .page-header {
   color: whitesmoke !important;
 }
-table thead {
-  border-bottom: solid 2px whitesmoke !important;
+.green .lead {
+  color: whitesmoke !important;
 }
-table tfoot {
-  border-top: solid 2px whitesmoke !important;
+.green .small {
+  color: whitesmoke !important;
 }
-table.alt tbody tr td {
-  border: solid 1px whitesmoke !important;
-  border-left-width: 0;
-  border-top-width: 0;
+.green .italic {
+  color: whitesmoke !important;
+}
+.green .headline {
+  color: whitesmoke !important;
+}
+.green .tagline {
+  color: whitesmoke !important;
+}
+.green .paragraph {
+  color: whitesmoke !important;
+}
+.green .paragraph-2col {
+  color: whitesmoke !important;
+}
+.green .paragraph-3col {
+  color: whitesmoke !important;
+}
+.green .align-left {
+  color: whitesmoke !important;
+}
+.green .align-center {
+  color: whitesmoke !important;
+}
+.green .align-right {
+  color: whitesmoke !important;
+}
+.green .page-header {
+  border-bottom: whitesmoke solid thin !important;
+}
+.green code {
+  color: whitesmoke;
+  background-color: darkgray !important;
+}
+.green a:hover {
+  color: red !important;
+}
+.green hr {
+  color: whitesmoke !important;
+  border-color: solid 2px whitesmoke !important;
 }
 .light {
   color: #5e5e5e !important;
   background-color: whitesmoke !important;
+}
+.light div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+caption,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+hgroup,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+table,
+thead,
+tfoot,
+tr,
+td,
+.abstract,
+.page-header,
+.lead,
+.small,
+.italic,
+.headline,
+.tagline,
+.paragraph,
+.paragraph-2col,
+.paragraph-3col,
+.align-left,
+.align-center,
+.align-right {
+  color: #5e5e5e !important;
+}
+.light .page-header {
+  color: #5e5e5e !important;
+  border-bottom: #5e5e5e solid 2px !important;
+}
+.light code {
+  color: whitesmoke !important;
+  background: darkgray !important;
+  background-color: darkgray !important;
 }
 .light a:hover {
   color: red !important;
@@ -2203,84 +2757,532 @@ table.alt tbody tr td {
   color: #5e5e5e !important;
   border-color: solid 2px #5e5e5e !important;
 }
-.light .abstract,
-.page-header {
+.light ul,
+li,
+dl,
+ol {
+  color: #5e5e5e;
+}
+.light ul.alt li {
+  border-top: solid 1px #5e5e5e;
+}
+a.button {
   color: #5e5e5e !important;
+  background: transparent;
+  background-color: transparent !important;
 }
-.light .page-header {
-  border-bottom: #5e5e5e solid thin !important;
+a.button:hover {
+  background: rgba(0, 0, 0, 0.25) !important;
+  background-color: rgba(0, 0, 0, 0.25) !important;
 }
-#header h1 a {
-  color: whitesmoke;
+a.button:active {
+  background: rgba(0, 0, 0, 0.75) !important;
+  background-color: rgba(0, 0, 0, 0.75) !important;
 }
-.container.purple ul li {
-  color: #d3d4e4;
+a.button.special {
+  color: whitesmoke !important;
+  background: #ed4933 !important;
+  background-color: #ed4933 !important;
+}
+a.button.special:hover {
+  background: #ef5e4a !important;
+  background-color: #ef5e4a !important;
+}
+a.button.special:active {
+  background: #eb341c !important;
+  background-color: #eb341c !important;
+}
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button,
+.button {
+  box-shadow: inset 0 0 0 2px darkgray;
+}
+input[type="submit"].small,
+input[type="reset"].small,
+input[type="button"].small,
+button.small,
+.button.small {
+  box-shadow: inset 0 0 0 2px darkgray;
 }
 .purple {
-  color: #d3d4e4;
+  color: #d3d4e4 !important;
   background-color: #505393 !important;
 }
-.purple a:hover {
-  color: red;
+.purple div {
+  color: #d3d4e4 !important;
 }
-.purple .page-header {
-  width: 100%;
-  color: #d3d4e4;
-  border-bottom: #d3d4e4 solid thin !important;
+.purple span {
+  color: #d3d4e4 !important;
+}
+.purple h1 {
+  color: #d3d4e4 !important;
+}
+.purple h2 {
+  color: #d3d4e4 !important;
+}
+.purple h3 {
+  color: #d3d4e4 !important;
+}
+.purple h4 {
+  color: #d3d4e4 !important;
+}
+.purple h5 {
+  color: #d3d4e4 !important;
+}
+.purple h6 {
+  color: #d3d4e4 !important;
+}
+.purple p {
+  color: #d3d4e4 !important;
+}
+.purple blockquote {
+  color: #d3d4e4 !important;
+}
+.purple pre {
+  color: #d3d4e4 !important;
+}
+.purple abbr {
+  color: #d3d4e4 !important;
+}
+.purple address {
+  color: #d3d4e4 !important;
+}
+.purple cite {
+  color: #d3d4e4 !important;
+}
+.purple code {
+  color: #d3d4e4 !important;
+}
+.purple del {
+  color: #d3d4e4 !important;
+}
+.purple dfn {
+  color: #d3d4e4 !important;
+}
+.purple em {
+  color: #d3d4e4 !important;
+}
+.purple img {
+  color: #d3d4e4 !important;
+}
+.purple ins {
+  color: #d3d4e4 !important;
+}
+.purple kbd {
+  color: #d3d4e4 !important;
+}
+.purple q {
+  color: #d3d4e4 !important;
+}
+.purple samp {
+  color: #d3d4e4 !important;
+}
+.purple small {
+  color: #d3d4e4 !important;
+}
+.purple strong {
+  color: #d3d4e4 !important;
+}
+.purple sub {
+  color: #d3d4e4 !important;
+}
+.purple sup {
+  color: #d3d4e4 !important;
+}
+.purple var {
+  color: #d3d4e4 !important;
+}
+.purple b {
+  color: #d3d4e4 !important;
+}
+.purple i {
+  color: #d3d4e4 !important;
+}
+.purple dl {
+  color: #d3d4e4 !important;
+}
+.purple dt {
+  color: #d3d4e4 !important;
+}
+.purple dd {
+  color: #d3d4e4 !important;
+}
+.purple ol {
+  color: #d3d4e4 !important;
+}
+.purple ul {
+  color: #d3d4e4 !important;
+}
+.purple li {
+  color: #d3d4e4 !important;
+}
+.purple fieldset {
+  color: #d3d4e4 !important;
+}
+.purple form {
+  color: #d3d4e4 !important;
+}
+.purple label {
+  color: #d3d4e4 !important;
+}
+.purple legend {
+  color: #d3d4e4 !important;
+}
+.purple caption {
+  color: #d3d4e4 !important;
+}
+.purple article {
+  color: #d3d4e4 !important;
+}
+.purple aside {
+  color: #d3d4e4 !important;
+}
+.purple canvas {
+  color: #d3d4e4 !important;
+}
+.purple details {
+  color: #d3d4e4 !important;
+}
+.purple figcaption {
+  color: #d3d4e4 !important;
+}
+.purple figure {
+  color: #d3d4e4 !important;
+}
+.purple footer {
+  color: #d3d4e4 !important;
+}
+.purple header {
+  color: #d3d4e4 !important;
+}
+.purple hgroup {
+  color: #d3d4e4 !important;
+}
+.purple section {
+  color: #d3d4e4 !important;
+}
+.purple summary {
+  color: #d3d4e4 !important;
+}
+.purple time {
+  color: #d3d4e4 !important;
+}
+.purple mark {
+  color: #d3d4e4 !important;
+}
+.purple audio {
+  color: #d3d4e4 !important;
+}
+.purple video {
+  color: #d3d4e4 !important;
+}
+.purple table {
+  color: #d3d4e4 !important;
+}
+.purple thead {
+  color: #d3d4e4 !important;
+}
+.purple tfoot {
+  color: #d3d4e4 !important;
+}
+.purple tr {
+  color: #d3d4e4 !important;
+}
+.purple td {
+  color: #d3d4e4 !important;
 }
 .purple .abstract {
   color: #d3d4e4 !important;
 }
-.container.purple .abstract {
+.purple .page-header {
   color: #d3d4e4 !important;
 }
-table thead {
-  border-bottom: solid 2px #d3d4e4 !important;
+.purple .lead {
+  color: #d3d4e4 !important;
 }
-table tfoot {
-  border-top: solid 2px #d3d4e4 !important;
+.purple .small {
+  color: #d3d4e4 !important;
 }
-table.alt tbody tr td {
-  border: solid 1px #d3d4e4 !important;
-  border-left-width: 0;
-  border-top-width: 0;
+.purple .italic {
+  color: #d3d4e4 !important;
 }
-.container.transparent ul li {
-  color: whitesmoke;
+.purple .headline {
+  color: #d3d4e4 !important;
+}
+.purple .tagline {
+  color: #d3d4e4 !important;
+}
+.purple .paragraph {
+  color: #d3d4e4 !important;
+}
+.purple .paragraph-2col {
+  color: #d3d4e4 !important;
+}
+.purple .paragraph-3col {
+  color: #d3d4e4 !important;
+}
+.purple .align-left {
+  color: #d3d4e4 !important;
+}
+.purple .align-center {
+  color: #d3d4e4 !important;
+}
+.purple .align-right {
+  color: #d3d4e4 !important;
+}
+.purple .page-header {
+  border-bottom: #d3d4e4 solid thin !important;
+}
+.purple code {
+  color: #d3d4e4;
+  background-color: darkgray !important;
+}
+.purple a:hover {
+  color: red !important;
+}
+.purple hr {
+  color: #d3d4e4 !important;
+  border-color: solid 2px #d3d4e4 !important;
 }
 .transparent {
-  color: whitesmoke;
+  color: whitesmoke !important;
   background-color: transparent !important;
 }
-.transparent a:hover {
-  color: darkgray;
+.transparent div {
+  color: whitesmoke !important;
 }
-.transparent .page-header {
-  width: 100%;
-  color: whitesmoke;
-  border-bottom: whitesmoke solid thin !important;
+.transparent span {
+  color: whitesmoke !important;
+}
+.transparent h1 {
+  color: whitesmoke !important;
+}
+.transparent h2 {
+  color: whitesmoke !important;
+}
+.transparent h3 {
+  color: whitesmoke !important;
+}
+.transparent h4 {
+  color: whitesmoke !important;
+}
+.transparent h5 {
+  color: whitesmoke !important;
+}
+.transparent h6 {
+  color: whitesmoke !important;
+}
+.transparent p {
+  color: whitesmoke !important;
+}
+.transparent blockquote {
+  color: whitesmoke !important;
+}
+.transparent pre {
+  color: whitesmoke !important;
+}
+.transparent abbr {
+  color: whitesmoke !important;
+}
+.transparent address {
+  color: whitesmoke !important;
+}
+.transparent cite {
+  color: whitesmoke !important;
+}
+.transparent code {
+  color: whitesmoke !important;
+}
+.transparent del {
+  color: whitesmoke !important;
+}
+.transparent dfn {
+  color: whitesmoke !important;
+}
+.transparent em {
+  color: whitesmoke !important;
+}
+.transparent img {
+  color: whitesmoke !important;
+}
+.transparent ins {
+  color: whitesmoke !important;
+}
+.transparent kbd {
+  color: whitesmoke !important;
+}
+.transparent q {
+  color: whitesmoke !important;
+}
+.transparent samp {
+  color: whitesmoke !important;
+}
+.transparent small {
+  color: whitesmoke !important;
+}
+.transparent strong {
+  color: whitesmoke !important;
+}
+.transparent sub {
+  color: whitesmoke !important;
+}
+.transparent sup {
+  color: whitesmoke !important;
+}
+.transparent var {
+  color: whitesmoke !important;
+}
+.transparent b {
+  color: whitesmoke !important;
+}
+.transparent i {
+  color: whitesmoke !important;
+}
+.transparent dl {
+  color: whitesmoke !important;
+}
+.transparent dt {
+  color: whitesmoke !important;
+}
+.transparent dd {
+  color: whitesmoke !important;
+}
+.transparent ol {
+  color: whitesmoke !important;
+}
+.transparent ul {
+  color: whitesmoke !important;
+}
+.transparent li {
+  color: whitesmoke !important;
+}
+.transparent fieldset {
+  color: whitesmoke !important;
+}
+.transparent form {
+  color: whitesmoke !important;
+}
+.transparent label {
+  color: whitesmoke !important;
+}
+.transparent legend {
+  color: whitesmoke !important;
+}
+.transparent caption {
+  color: whitesmoke !important;
+}
+.transparent article {
+  color: whitesmoke !important;
+}
+.transparent aside {
+  color: whitesmoke !important;
+}
+.transparent canvas {
+  color: whitesmoke !important;
+}
+.transparent details {
+  color: whitesmoke !important;
+}
+.transparent figcaption {
+  color: whitesmoke !important;
+}
+.transparent figure {
+  color: whitesmoke !important;
+}
+.transparent footer {
+  color: whitesmoke !important;
+}
+.transparent header {
+  color: whitesmoke !important;
+}
+.transparent hgroup {
+  color: whitesmoke !important;
+}
+.transparent section {
+  color: whitesmoke !important;
+}
+.transparent summary {
+  color: whitesmoke !important;
+}
+.transparent time {
+  color: whitesmoke !important;
+}
+.transparent mark {
+  color: whitesmoke !important;
+}
+.transparent audio {
+  color: whitesmoke !important;
+}
+.transparent video {
+  color: whitesmoke !important;
+}
+.transparent table {
+  color: whitesmoke !important;
+}
+.transparent thead {
+  color: whitesmoke !important;
+}
+.transparent tfoot {
+  color: whitesmoke !important;
+}
+.transparent tr {
+  color: whitesmoke !important;
+}
+.transparent td {
+  color: whitesmoke !important;
 }
 .transparent .abstract {
   color: whitesmoke !important;
 }
-.container.transparent .abstract {
+.transparent .page-header {
   color: whitesmoke !important;
 }
-table thead {
-  border-bottom: solid 2px whitesmoke !important;
+.transparent .lead {
+  color: whitesmoke !important;
 }
-table tfoot {
-  border-top: solid 2px whitesmoke !important;
+.transparent .small {
+  color: whitesmoke !important;
 }
-table.alt tbody tr td {
-  border: solid 1px whitesmoke !important;
-  border-left-width: 0;
-  border-top-width: 0;
+.transparent .italic {
+  color: whitesmoke !important;
 }
-select {
+.transparent .headline {
+  color: whitesmoke !important;
+}
+.transparent .tagline {
+  color: whitesmoke !important;
+}
+.transparent .paragraph {
+  color: whitesmoke !important;
+}
+.transparent .paragraph-2col {
+  color: whitesmoke !important;
+}
+.transparent .paragraph-3col {
+  color: whitesmoke !important;
+}
+.transparent .align-left {
+  color: whitesmoke !important;
+}
+.transparent .align-center {
+  color: whitesmoke !important;
+}
+.transparent .align-right {
+  color: whitesmoke !important;
+}
+.transparent .page-header {
+  border-bottom: whitesmoke solid thin !important;
+}
+.transparent code {
   color: whitesmoke;
-  background: -moz-linear-gradient(-45deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
-  background: -webkit-linear-gradient(-45deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#a6000000', GradientType=1);
+  background-color: darkgray !important;
+}
+.transparent a:hover {
+  color: darkgray !important;
+}
+.transparent hr {
+  color: whitesmoke !important;
+  border-color: solid 2px whitesmoke !important;
 }

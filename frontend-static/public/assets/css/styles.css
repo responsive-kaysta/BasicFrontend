@@ -476,16 +476,35 @@ sup {
   molecule
 ---------------------------------------------------------------------------------------------------
 */
+.box-equal {
+  display: table-cell;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.flex-box {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
 .box {
   border-radius: 5px;
   border: thin solid darkgray;
-  margin: 0.5rem;
-  padding: 0.5rem;
+  white-space: normal;
+  padding: 1.25rem;
+  display: block;
+  width: 100%;
+  height: 100%;
   text-align: center;
 }
 .box-four-in-row {
   text-align: center;
   width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 .box-three-in-row {
   text-align: center;
@@ -504,32 +523,6 @@ sup {
   border: 0;
   border-radius: 0;
   padding: 0;
-}
-.box-equal {
-  display: table-cell;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.box-round-corner {
-  border-radius: 5px;
-  white-space: normal;
-  padding: 1.25rem;
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-.flex-box {
-  display: flex;
-  flex-direction: row;
-  flex-flow: row wrap;
-  justify-content: space-between;
-}
-.box-three-in-row {
-  display: flex;
-  vertical-align: middle;
-  align-items: center;
-  align-content: center;
 }
 /* 
     a.button
@@ -1335,8 +1328,8 @@ a.more.scrolly {
     margin-left: auto;
     padding-left: 10%;
     padding-right: 10%;
-    padding-top: 1.75rem;
-    padding-bottom: 1.75rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
   }
 }
 @media screen and (max-width: 736px) {
@@ -1345,8 +1338,8 @@ a.more.scrolly {
     margin-left: auto;
     padding-left: 5%;
     padding-right: 5%;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 }
 #cta .inner {

@@ -32,7 +32,6 @@ class Index extends React.Component {
             <div>List, Icon</div>
             {/* */}
             <div>Container</div>
-            <div>Page Header</div>
             <div>Box</div>
             <div>Panel</div>
             <div>Feature</div>

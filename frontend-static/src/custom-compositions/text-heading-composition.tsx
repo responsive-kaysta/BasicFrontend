@@ -1,5 +1,6 @@
 import * as React from "react";
 import { FC } from "react";
+import { Spacer } from "../elements/";
 
 interface TextHeadingCompositionProps {
   text: string;
@@ -13,8 +14,11 @@ export const TextHeadingComposition: FC<TextHeadingCompositionProps> = ({
       <div className="page-header">
         <h2>{text}</h2>
       </div>
-      <p>Simple paragraph [p]</p>
-      <hr />
+      <p>Simple paragraph [p] followed by an spacer [spacer]</p>
+      <Spacer />
+      <div className="page-header">
+        <h2>Simple Page-Header [div .page-header h2]</h2>
+      </div>
       <label>Simple label [label]</label>
       <hr />
       <strong>Simple strong [strong]</strong> / <b>Simple bold [b]</b>

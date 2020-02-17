@@ -96,6 +96,8 @@ label.facet:hover {
   text-align: center;
   color: #5e5e5e;
   background-color: #0b3536;
+  width: 100%;
+  bottom: 0;
 }
 #footer .copyright span {
   padding: 0;
