@@ -1689,12 +1689,6 @@ input[type="password"] {
 .source-detail-modal-body em {
   min-width: 40%;
 }
-.panel {
-  margin-top: 1rem;
-  margin-bottom: 1.75rem;
-  min-height: 200px;
-  float: left;
-}
 .page-header {
   padding: 0;
   padding-bottom: 1rem;

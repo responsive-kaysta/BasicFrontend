@@ -1,11 +1,11 @@
 import * as React from "react";
 import * as Scroll from "react-scroll";
 import { Head } from "react-static";
-import { ArticleContainer, ColorContainer } from "../components/";
-import { ArticleBanner } from "../compositions/";
+import { ArticleContainer, ColorContainer } from "../components";
+import { ArticleBanner } from "../compositions";
 import { PAGE_MAIN_TOPIC, PAGE_NAME } from "../constants";
-import { ePageStyleTemplates } from "../page-types/";
-import { BoxComposition } from "../custom-compositions/box-composition";
+import { ePageStyleTemplates } from "../page-types";
+import { BoxPanelComposition } from "../custom-compositions/box-panel-composition";
 
 var scroll = Scroll.animateScroll;
 
@@ -28,19 +28,19 @@ class Box extends React.Component {
           />
 
           <ColorContainer padded pageStyle={ePageStyleTemplates.light}>
-            <BoxComposition text="Box compositions - ePageStyleTemplates.light" />
+            <BoxPanelComposition text="Box compositions - ePageStyleTemplates.light" />
           </ColorContainer>
           <ColorContainer padded pageStyle={ePageStyleTemplates.purple}>
-            <BoxComposition text="Box compositions - ePageStyleTemplates.purple" />
+            <BoxPanelComposition text="Box compositions - ePageStyleTemplates.purple" />
           </ColorContainer>
           <ColorContainer padded pageStyle={ePageStyleTemplates.transparent}>
-            <BoxComposition text="Box compositions - ePageStyleTemplates.transparent" />
+            <BoxPanelComposition text="Box compositions - ePageStyleTemplates.transparent" />
           </ColorContainer>
           <ColorContainer padded pageStyle={ePageStyleTemplates.gray}>
-            <BoxComposition text="Box compositions - ePageStyleTemplates.gray" />
+            <BoxPanelComposition text="Box compositions - ePageStyleTemplates.gray" />
           </ColorContainer>
           <ColorContainer padded pageStyle={ePageStyleTemplates.green}>
-            <BoxComposition text="Box compositions - ePageStyleTemplates.green" />
+            <BoxPanelComposition text="Box compositions - ePageStyleTemplates.green" />
           </ColorContainer>
         </ArticleContainer>
       </>

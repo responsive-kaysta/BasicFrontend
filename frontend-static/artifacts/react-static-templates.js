@@ -5,7 +5,7 @@
 export default {
   '/home/kaysta/Dev/GitHub/BasicFrontend/frontend-static/src/pages/404.tsx': require('/home/kaysta/Dev/GitHub/BasicFrontend/frontend-static/src/pages/404.tsx').default,
 '/home/kaysta/Dev/GitHub/BasicFrontend/frontend-static/src/pages/403.tsx': require('/home/kaysta/Dev/GitHub/BasicFrontend/frontend-static/src/pages/403.tsx').default,
-'/home/kaysta/Dev/GitHub/BasicFrontend/frontend-static/src/pages/box.tsx': require('/home/kaysta/Dev/GitHub/BasicFrontend/frontend-static/src/pages/box.tsx').default,
+'/home/kaysta/Dev/GitHub/BasicFrontend/frontend-static/src/pages/box-panel.tsx': require('/home/kaysta/Dev/GitHub/BasicFrontend/frontend-static/src/pages/box-panel.tsx').default,
 '/home/kaysta/Dev/GitHub/BasicFrontend/frontend-static/src/pages/container.tsx': require('/home/kaysta/Dev/GitHub/BasicFrontend/frontend-static/src/pages/container.tsx').default,
 '/home/kaysta/Dev/GitHub/BasicFrontend/frontend-static/src/pages/index.tsx': require('/home/kaysta/Dev/GitHub/BasicFrontend/frontend-static/src/pages/index.tsx').default,
 '/home/kaysta/Dev/GitHub/BasicFrontend/frontend-static/src/pages/link-button.tsx': require('/home/kaysta/Dev/GitHub/BasicFrontend/frontend-static/src/pages/link-button.tsx').default,

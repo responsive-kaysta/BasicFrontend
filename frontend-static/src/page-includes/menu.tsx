@@ -36,7 +36,7 @@ export const Menu: FC = () => {
             <Link to="/container">Container</Link>
           </li>
           <li>
-            <Link to="/box">Boxes</Link>
+            <Link to="/box-panel">Boxes & Panels</Link>
           </li>
         </ul>
       </div>

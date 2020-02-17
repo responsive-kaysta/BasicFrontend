@@ -1,11 +1,11 @@
 import * as React from "react";
 import { FC } from "react";
 
-interface BoxCompositionProps {
+interface BoxPanelCompositionProps {
   text: string;
 }
 
-export const BoxComposition: FC<BoxCompositionProps> = ({ text }) => {
+export const BoxPanelComposition: FC<BoxPanelCompositionProps> = ({ text }) => {
   return (
     <>
       <div className="page-header">
