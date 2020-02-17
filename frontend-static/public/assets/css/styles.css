@@ -798,35 +798,6 @@ ul.actions.vertical.small li:first-child {
   padding-top: 0;
 }
 /* 
-    ul.actions.fit
----------------------------------------------------------------------------------------------------
-*/
-ul.actions.fit {
-  display: table;
-  margin-left: -1.5rem;
-  padding: 0;
-  table-layout: fixed;
-  width: calc(100% + 1.5rem);
-}
-ul.actions.fit li {
-  display: table-cell;
-  padding: 0 0 0 1.5rem;
-}
-ul.actions.fit li > * {
-  margin-bottom: 0;
-}
-/* 
-    ul.actions.fit.small
----------------------------------------------------------------------------------------------------
-*/
-ul.actions.fit.small {
-  margin-left: -0.75rem;
-  width: calc(100% + 0.75rem);
-}
-ul.actions.fit.small li {
-  padding: 0 0 0 0.75rem;
-}
-/* 
     media queries
 ---------------------------------------------------------------------------------------------------
 */
@@ -2673,7 +2644,8 @@ td,
   border-bottom: #5e5e5e solid 2px !important;
 }
 .light code {
-  color: #5e5e5e;
+  color: whitesmoke !important;
+  background: darkgray !important;
   background-color: darkgray !important;
 }
 .light a:hover {
@@ -2683,10 +2655,17 @@ td,
   color: #5e5e5e !important;
   border-color: solid 2px #5e5e5e !important;
 }
-li {
+.light ul,
+li,
+dl,
+ol {
   color: #5e5e5e;
 }
-ul.alt li {
+.light ul.alt li {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
   border-top: solid 1px #5e5e5e;
 }
 a.button {

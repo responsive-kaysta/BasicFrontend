@@ -88,8 +88,9 @@ td,
 }
 
 .light code {
-  color: @style-light-color;
-  background-color: darkgray !important;
+  color: @code-color !important;
+  background: @code-bg-color !important;
+  background-color: @code-bg-color !important;
 }
 
 .light a:hover {
@@ -101,11 +102,18 @@ td,
   border-color: solid 2px @style-light-border-color !important;
 }
 
-li {
+.light ul,
+li,
+dl,
+ol {
   color: @style-light-color;
 }
 
-ul.alt li {
+.light ul.alt li {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
   border-top: solid 1px @style-light-border-color;
 }
 
