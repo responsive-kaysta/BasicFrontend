@@ -19,13 +19,13 @@ export const ListIconComposition: FC<ListIconCompositionProps> = ({ text }) => {
         <li>Four</li>
       </ul>
       <hr />
-      <div className="lead">Regular/simple [ul ol]</div>
-      <ul>
-        <ol>One</ol>
-        <ol>Two</ol>
-        <ol>Three</ol>
-        <ol>Four</ol>
-      </ul>
+      <div className="lead">Regular/simple [ol li]</div>
+      <ol>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+        <li>Four</li>
+      </ol>
       <hr />
       <div className="lead">Regular/simple [ul dl]</div>
       <ul>
