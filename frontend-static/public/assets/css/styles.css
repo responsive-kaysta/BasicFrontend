@@ -476,53 +476,42 @@ sup {
   molecule
 ---------------------------------------------------------------------------------------------------
 */
-.box-equal {
-  display: table-cell;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
 .flex-box {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  flex-flow: row wrap;
-  justify-content: space-between;
+  overflow: hidden;
 }
 .box {
-  border-radius: 5px;
-  border: thin solid darkgray;
-  white-space: normal;
   padding: 1.25rem;
-  display: block;
+  margin: 0.25rem;
   width: 100%;
-  height: 100%;
   text-align: center;
+  flex: 1;
 }
 .box-four-in-row {
-  text-align: center;
+  padding: 1.25rem;
+  margin: 0.25rem;
   width: 20%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
+  text-align: center;
+  flex: 1;
 }
 .box-three-in-row {
-  text-align: center;
+  padding: 1.25rem;
+  margin: 0.25rem;
   width: 30%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
+  text-align: center;
+  flex: 1;
 }
-.box > :last-child,
-.box > :last-child > :last-child,
-.box > :last-child > :last-child > :last-child {
-  margin-bottom: 0;
+.flex-box > .box:first-child,
+.flex-box > .box-four-in-row:first-child,
+.flex-box > .box-three-in-row:first-child {
+  margin-left: 0;
 }
-.box.alt {
-  border: 0;
-  border-radius: 0;
-  padding: 0;
+.flex-box > .box:last-child,
+.flex-box > .box-four-in-row:last-child,
+.flex-box > .box-three-in-row:last-child {
+  margin-right: 0;
 }
 /* 
     a.button
@@ -2798,6 +2787,18 @@ input[type="button"].small,
 button.small,
 .button.small {
   box-shadow: inset 0 0 0 2px darkgray;
+}
+.box {
+  border-radius: 5px;
+  border: thin solid darkgray;
+}
+.box-four-in-row {
+  border-radius: 5px;
+  border: thin solid darkgray;
+}
+.box-three-in-row {
+  border-radius: 5px;
+  border: thin solid darkgray;
 }
 .purple {
   color: #d3d4e4 !important;

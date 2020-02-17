@@ -30,6 +30,18 @@ class Box extends React.Component {
           <ColorContainer padded pageStyle={ePageStyleTemplates.light}>
             <BoxComposition text="Box compositions - ePageStyleTemplates.light" />
           </ColorContainer>
+          <ColorContainer padded pageStyle={ePageStyleTemplates.purple}>
+            <BoxComposition text="Box compositions - ePageStyleTemplates.purple" />
+          </ColorContainer>
+          <ColorContainer padded pageStyle={ePageStyleTemplates.transparent}>
+            <BoxComposition text="Box compositions - ePageStyleTemplates.transparent" />
+          </ColorContainer>
+          <ColorContainer padded pageStyle={ePageStyleTemplates.gray}>
+            <BoxComposition text="Box compositions - ePageStyleTemplates.gray" />
+          </ColorContainer>
+          <ColorContainer padded pageStyle={ePageStyleTemplates.green}>
+            <BoxComposition text="Box compositions - ePageStyleTemplates.green" />
+          </ColorContainer>
         </ArticleContainer>
       </>
     );
