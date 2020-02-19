@@ -6,7 +6,8 @@ react_application/node_modules
 *dist*
 *tmp*
 # testing
-/coverage
+*coverage*
+*artifacts*
 
 # production
 react_application/build

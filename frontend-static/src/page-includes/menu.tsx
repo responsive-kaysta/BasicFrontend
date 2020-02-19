@@ -38,6 +38,9 @@ export const Menu: FC = () => {
           <li>
             <Link to="/box-panel">Boxes & Panels</Link>
           </li>
+          <li>
+            <Link to="/features">Features</Link>
+          </li>
         </ul>
       </div>
     </>
