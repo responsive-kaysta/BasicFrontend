@@ -6,6 +6,7 @@ import { ArticleBanner } from "../compositions/";
 import { PAGE_MAIN_TOPIC, PAGE_NAME } from "../constants";
 import { ePageStyleTemplates } from "../page-types/";
 import { FeaturesComposition } from "../custom-compositions/features-composition";
+import { ToTopButton } from "../elements/";
 
 var scroll = Scroll.animateScroll;
 
@@ -41,6 +42,7 @@ class Features extends React.Component {
           </ColorContainer>
           <ColorContainer padded pageStyle={ePageStyleTemplates.green}>
             <FeaturesComposition text="Features - ePageStyleTemplates.green" />
+            <ToTopButton />
           </ColorContainer>
         </ArticleContainer>
       </>

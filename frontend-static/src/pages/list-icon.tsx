@@ -6,6 +6,7 @@ import { ArticleBanner } from "../compositions/";
 import { PAGE_MAIN_TOPIC, PAGE_NAME } from "../constants";
 import { ePageStyleTemplates } from "../page-types/";
 import { ListIconComposition } from "../custom-compositions/list-icon-composition";
+import { ToTopButton } from "../elements/";
 
 var scroll = Scroll.animateScroll;
 
@@ -41,6 +42,7 @@ class ListIcon extends React.Component {
           </ColorContainer>
           <ColorContainer padded pageStyle={ePageStyleTemplates.purple}>
             <ListIconComposition text="Lists and Icons -> ePageStyleTemplates.purple" />
+            <ToTopButton />
           </ColorContainer>
         </ArticleContainer>
       </>

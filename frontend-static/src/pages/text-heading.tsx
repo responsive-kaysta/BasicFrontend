@@ -6,6 +6,7 @@ import { ArticleBanner } from "../compositions/";
 import { PAGE_MAIN_TOPIC, PAGE_NAME } from "../constants";
 import { ePageStyleTemplates } from "../page-types/";
 import { TextHeadingComposition } from "../custom-compositions/text-heading-composition";
+import { ToTopButton } from "../elements/";
 
 var scroll = Scroll.animateScroll;
 
@@ -41,6 +42,7 @@ class TextHeading extends React.Component {
           </ColorContainer>
           <ColorContainer padded pageStyle={ePageStyleTemplates.purple}>
             <TextHeadingComposition text="Texts and Headings -> ePageStyleTemplates.purple" />
+            <ToTopButton />
           </ColorContainer>
         </ArticleContainer>
       </>

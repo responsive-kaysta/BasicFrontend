@@ -67,9 +67,10 @@ class Index extends React.Component {
             <div>
               <RegularLinkElement text="Tiles Section" link="tiles-section" />
             </div>
-            <div>Banner</div>
             <div>Jumbotron</div>
-            <div>Spotlight</div>
+            <div>
+              <RegularLinkElement text="Spotlights" link="spotlight" />
+            </div>
             <div>Eye Catcher</div>
             <div>Table</div>
             <div>Call to Action</div>

@@ -6,6 +6,7 @@ import { ArticleBanner } from "../compositions";
 import { PAGE_MAIN_TOPIC, PAGE_NAME } from "../constants";
 import { ePageStyleTemplates } from "../page-types";
 import { BoxPanelComposition } from "../custom-compositions/box-panel-composition";
+import { ToTopButton } from "../elements/";
 
 var scroll = Scroll.animateScroll;
 
@@ -41,6 +42,7 @@ class Box extends React.Component {
           </ColorContainer>
           <ColorContainer padded pageStyle={ePageStyleTemplates.green}>
             <BoxPanelComposition text="Box compositions - ePageStyleTemplates.green" />
+            <ToTopButton />
           </ColorContainer>
         </ArticleContainer>
       </>

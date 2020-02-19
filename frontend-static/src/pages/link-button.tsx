@@ -6,6 +6,7 @@ import { ArticleBanner } from "../compositions/";
 import { PAGE_MAIN_TOPIC, PAGE_NAME } from "../constants";
 import { ePageStyleTemplates } from "../page-types/";
 import { LinkButtonComposition } from "../custom-compositions/link-button-composition";
+import { ToTopButton } from "../elements/";
 
 var scroll = Scroll.animateScroll;
 
@@ -41,6 +42,7 @@ class LinkButton extends React.Component {
           </ColorContainer>
           <ColorContainer padded pageStyle={ePageStyleTemplates.green}>
             <LinkButtonComposition text="Links and Buttons -> ePageStyleTemplates.green" />
+            <ToTopButton />
           </ColorContainer>
         </ArticleContainer>
       </>
