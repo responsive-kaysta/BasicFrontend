@@ -476,60 +476,42 @@ sup {
   molecule
 ---------------------------------------------------------------------------------------------------
 */
+.flex-box {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
 .box {
-  border-radius: 5px;
-  border: thin solid darkgray;
-  margin: 0.5rem;
-  padding: 0.5rem;
+  padding: 1.25rem;
+  margin: 0.25rem;
+  width: 100%;
   text-align: center;
+  flex: 1;
 }
 .box-four-in-row {
-  text-align: center;
-  width: 20%;
-}
-.box-three-in-row {
-  text-align: center;
-  width: 30%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-}
-.box > :last-child,
-.box > :last-child > :last-child,
-.box > :last-child > :last-child > :last-child {
-  margin-bottom: 0;
-}
-.box.alt {
-  border: 0;
-  border-radius: 0;
-  padding: 0;
-}
-.box-equal {
-  display: table-cell;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.box-round-corner {
-  border-radius: 5px;
-  white-space: normal;
   padding: 1.25rem;
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-.flex-box {
-  display: flex;
-  flex-direction: row;
-  flex-flow: row wrap;
-  justify-content: space-between;
+  margin: 0.25rem;
+  width: 20%;
+  text-align: center;
+  flex: 1;
 }
 .box-three-in-row {
-  display: flex;
-  vertical-align: middle;
-  align-items: center;
-  align-content: center;
+  padding: 1.25rem;
+  margin: 0.25rem;
+  width: 30%;
+  text-align: center;
+  flex: 1;
+}
+.flex-box > .box:first-child,
+.flex-box > .box-four-in-row:first-child,
+.flex-box > .box-three-in-row:first-child {
+  margin-left: 0;
+}
+.flex-box > .box:last-child,
+.flex-box > .box-four-in-row:last-child,
+.flex-box > .box-three-in-row:last-child {
+  margin-right: 0;
 }
 /* 
     a.button
@@ -1335,8 +1317,8 @@ a.more.scrolly {
     margin-left: auto;
     padding-left: 10%;
     padding-right: 10%;
-    padding-top: 1.75rem;
-    padding-bottom: 1.75rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
   }
 }
 @media screen and (max-width: 736px) {
@@ -1345,8 +1327,8 @@ a.more.scrolly {
     margin-left: auto;
     padding-left: 5%;
     padding-right: 5%;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 }
 #cta .inner {
@@ -1429,7 +1411,10 @@ section.special header.major p {
   width: 100%;
 }
 .features li {
-  padding: 4rem 4rem 2rem 6rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 4rem;
+  padding-top: 4rem;
   display: block;
   position: relative;
   text-align: left;
@@ -1465,47 +1450,18 @@ section.special header.major p {
 .features li:nth-child(10) {
   background-color: rgba(0, 0, 0, 0.35);
 }
-.features li:before {
-  display: block;
-  color: #00ffcc;
-  position: absolute;
-  left: 1.75rem;
-  top: 2.75rem;
-  font-size: 1.5rem;
-}
 .features li:nth-child(1) {
   border-top-left-radius: 3px;
 }
 .features li:nth-child(2) {
   border-top-right-radius: 3px;
 }
-.features li:nth-last-child(1) {
-  border-bottom-right-radius: 3px;
-}
-.features li:nth-last-child(2) {
-  border-bottom-left-radius: 3px;
-}
 @media screen and (max-width: 980px) {
   .features li {
-    padding: 3rem 2rem 1rem 2rem;
-    text-align: center;
-  }
-  .features li:before {
-    left: 0;
-    margin: 0 0 1rem 0;
-    position: relative;
-    top: 0;
-  }
-}
-@media screen and (max-width: 736px) {
-  .features li {
-    padding: 3rem 0 1rem 0;
-    background-color: transparent !important;
-    border-top: solid 2px darkgray;
-    width: 100%;
-  }
-  .features li:first-child {
-    border-top: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
   }
 }
 option {
@@ -1706,12 +1662,6 @@ input[type="password"] {
 }
 .source-detail-modal-body em {
   min-width: 40%;
-}
-.panel {
-  margin-top: 1rem;
-  margin-bottom: 1.75rem;
-  min-height: 200px;
-  float: left;
 }
 .page-header {
   padding: 0;
@@ -2805,6 +2755,18 @@ input[type="button"].small,
 button.small,
 .button.small {
   box-shadow: inset 0 0 0 2px darkgray;
+}
+.box {
+  border-radius: 5px;
+  border: thin solid darkgray;
+}
+.box-four-in-row {
+  border-radius: 5px;
+  border: thin solid darkgray;
+}
+.box-three-in-row {
+  border-radius: 5px;
+  border: thin solid darkgray;
 }
 .purple {
   color: #d3d4e4 !important;
