@@ -41,6 +41,9 @@ export const Menu: FC = () => {
           <li>
             <Link to="/features">Features</Link>
           </li>
+          <li>
+            <Link to="/tiles-section">Tiles</Link>
+          </li>
         </ul>
       </div>
     </>
