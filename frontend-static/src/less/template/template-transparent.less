@@ -3,99 +3,16 @@
 @import "../global.less";
 
 .transparent {
-  color: @style-transparent-color !important;
-  background-color: @style-transparent-bg-color !important;
+  color: @style-transparent-color;
+  background-color: @style-transparent-bg-color;
 }
 
-.transparent div,
-span,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-a,
-p,
-blockquote,
-pre,
-abbr,
-address,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-samp,
-small,
-strong,
-sub,
-sup,
-var,
-b,
-i,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-caption,
-article,
-aside,
-canvas,
-details,
-figcaption,
-figure,
-hgroup,
-section,
-summary,
-time,
-mark,
-audio,
-video,
-table,
-thead,
-tfoot,
-tr,
-td,
-.abstract,
-.page-header,
-.lead,
-.small,
-.italic,
-.headline,
-.tagline,
-.paragraph,
-.paragraph-2col,
-.paragraph-3col,
-.align-left,
-.align-center,
-.align-right {
-  color: @style-transparent-color !important;
-}
-
-.transparent .page-header {
-  color: @style-transparent-color !important;
-  border-bottom: @style-transparent-border-color solid 2px !important;
-}
-
-.transparent code {
-  color: @code-color !important;
-  background: @code-bg-color !important;
-  background-color: @code-bg-color !important;
+.transparent a {
+  color: @style-transparent-color;
 }
 
 .transparent a:hover {
-  color: @style-transparent-hover-color !important;
+  color: @style-transparent-hover-color;
 }
 
 .transparent hr {
@@ -114,39 +31,39 @@ ol {
   border-top: solid 1px @style-transparent-border-color;
 }
 
-a.button {
+.transparent a.button {
   color: @style-transparent-a-button-color!important;
   background: @style-transparent-a-button-bg;
   background-color: @style-transparent-a-button-bg !important;
 }
 
-a.button:hover {
+.transparent a.button:hover {
   background: @style-transparent-a-button-bg-hover !important;
   background-color: @style-transparent-a-button-bg-hover !important;
 }
 
-a.button:active {
+.transparent a.button:active {
   background: @style-transparent-a-button-bg-active !important;
   background-color: @style-transparent-a-button-bg-active !important;
 }
 
-a.button.special {
+.transparent a.button.special {
   color: @style-transparent-a-button-special-color !important;
   background: @style-transparent-a-button-special-bg !important;
   background-color: @style-transparent-a-button-special-bg !important;
 }
 
-a.button.special:hover {
+.transparent a.button.special:hover {
   background: @style-transparent-a-button-special-bg-hover !important;
   background-color: @style-transparent-a-button-special-bg-hover !important;
 }
 
-a.button.special:active {
+.transparent a.button.special:active {
   background: @style-transparent-a-button-special-bg-active !important;
   background-color: @style-transparent-a-button-special-bg-active !important;
 }
 
-input[type="submit"],
+.transparent input[type="submit"],
 input[type="reset"],
 input[type="button"],
 button,
@@ -154,7 +71,7 @@ button,
   box-shadow: inset 0 0 0 2px @style-transparent-button-box-shadow-color;
 }
 
-input[type="submit"].small,
+.transparent input[type="submit"].small,
 input[type="reset"].small,
 input[type="button"].small,
 button.small,
@@ -162,17 +79,17 @@ button.small,
   box-shadow: inset 0 0 0 2px @style-transparent-button-box-shadow-color;
 }
 
-.box {
+.transparent .box {
   border-radius: @box-corner-radius;
   border: @global-border;
 }
 
-.box-four-in-row {
+.transparent .box-four-in-row {
   border-radius: @box-corner-radius;
   border: @global-border;
 }
 
-.box-three-in-row {
+.transparent .box-three-in-row {
   border-radius: @box-corner-radius;
   border: @global-border;
 }

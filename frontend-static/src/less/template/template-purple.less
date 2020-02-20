@@ -3,99 +3,16 @@
 @import "../global.less";
 
 .purple {
-  color: @style-purple-color !important;
-  background-color: @style-purple-bg-color !important;
+  color: @style-purple-color;
+  background-color: @style-purple-bg-color;
 }
 
-.purple div,
-span,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-a,
-p,
-blockquote,
-pre,
-abbr,
-address,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-samp,
-small,
-strong,
-sub,
-sup,
-var,
-b,
-i,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-caption,
-article,
-aside,
-canvas,
-details,
-figcaption,
-figure,
-hgroup,
-section,
-summary,
-time,
-mark,
-audio,
-video,
-table,
-thead,
-tfoot,
-tr,
-td,
-.abstract,
-.page-header,
-.lead,
-.small,
-.italic,
-.headline,
-.tagline,
-.paragraph,
-.paragraph-2col,
-.paragraph-3col,
-.align-left,
-.align-center,
-.align-right {
-  color: @style-purple-color !important;
-}
-
-.purple .page-header {
-  color: @style-purple-color !important;
-  border-bottom: @style-purple-border-color solid 2px !important;
-}
-
-.purple code {
-  color: @code-color !important;
-  background: @code-bg-color !important;
-  background-color: @code-bg-color !important;
+.purple a {
+  color: @style-purple-color;
 }
 
 .purple a:hover {
-  color: @style-purple-hover-color !important;
+  color: @style-purple-hover-color;
 }
 
 .purple hr {
@@ -114,39 +31,39 @@ ol {
   border-top: solid 1px @style-purple-border-color;
 }
 
-a.button {
+.purple a.button {
   color: @style-purple-a-button-color!important;
   background: @style-purple-a-button-bg;
   background-color: @style-purple-a-button-bg !important;
 }
 
-a.button:hover {
+.purple a.button:hover {
   background: @style-purple-a-button-bg-hover !important;
   background-color: @style-purple-a-button-bg-hover !important;
 }
 
-a.button:active {
+.purple a.button:active {
   background: @style-purple-a-button-bg-active !important;
   background-color: @style-purple-a-button-bg-active !important;
 }
 
-a.button.special {
+.purple a.button.special {
   color: @style-purple-a-button-special-color !important;
   background: @style-purple-a-button-special-bg !important;
   background-color: @style-purple-a-button-special-bg !important;
 }
 
-a.button.special:hover {
+.purple a.button.special:hover {
   background: @style-purple-a-button-special-bg-hover !important;
   background-color: @style-purple-a-button-special-bg-hover !important;
 }
 
-a.button.special:active {
+.purple a.button.special:active {
   background: @style-purple-a-button-special-bg-active !important;
   background-color: @style-purple-a-button-special-bg-active !important;
 }
 
-input[type="submit"],
+.purple input[type="submit"],
 input[type="reset"],
 input[type="button"],
 button,
@@ -154,7 +71,7 @@ button,
   box-shadow: inset 0 0 0 2px @style-purple-button-box-shadow-color;
 }
 
-input[type="submit"].small,
+.purple input[type="submit"].small,
 input[type="reset"].small,
 input[type="button"].small,
 button.small,
@@ -162,17 +79,17 @@ button.small,
   box-shadow: inset 0 0 0 2px @style-purple-button-box-shadow-color;
 }
 
-.box {
+.purple .box {
   border-radius: @box-corner-radius;
   border: @global-border;
 }
 
-.box-four-in-row {
+.purple .box-four-in-row {
   border-radius: @box-corner-radius;
   border: @global-border;
 }
 
-.box-three-in-row {
+.purple .box-three-in-row {
   border-radius: @box-corner-radius;
   border: @global-border;
 }

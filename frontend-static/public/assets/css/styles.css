@@ -366,6 +366,11 @@ code {
   font-size: 0.75rem;
   border-radius: 0.5rem;
 }
+code {
+  color: whitesmoke;
+  background: darkgray;
+  background-color: darkgray;
+}
 hr {
   padding: 0;
   margin-left: 0;
@@ -2138,95 +2143,14 @@ button.totop:hover {
 ---------------------------------------------------------------------------------------------------
 */
 .gray {
-  color: whitesmoke !important;
-  background-color: darkgray !important;
+  color: whitesmoke;
+  background-color: darkgray;
 }
-.gray div,
-span,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-a,
-p,
-blockquote,
-pre,
-abbr,
-address,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-samp,
-small,
-strong,
-sub,
-sup,
-var,
-b,
-i,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-caption,
-article,
-aside,
-canvas,
-details,
-figcaption,
-figure,
-hgroup,
-section,
-summary,
-time,
-mark,
-audio,
-video,
-table,
-thead,
-tfoot,
-tr,
-td,
-.abstract,
-.page-header,
-.lead,
-.small,
-.italic,
-.headline,
-.tagline,
-.paragraph,
-.paragraph-2col,
-.paragraph-3col,
-.align-left,
-.align-center,
-.align-right {
-  color: whitesmoke !important;
-}
-.gray .page-header {
-  color: whitesmoke !important;
-  border-bottom: whitesmoke solid 2px !important;
-}
-.gray code {
-  color: whitesmoke !important;
-  background: darkgray !important;
-  background-color: darkgray !important;
+.gray a {
+  color: whitesmoke;
 }
 .gray a:hover {
-  color: red !important;
+  color: red;
 }
 .gray hr {
   color: whitesmoke !important;
@@ -2241,148 +2165,67 @@ ol {
 .gray ul.alt li {
   border-top: solid 1px whitesmoke;
 }
-a.button {
+.gray a.button {
   color: #5e5e5e !important;
   background: transparent;
   background-color: transparent !important;
 }
-a.button:hover {
+.gray a.button:hover {
   background: rgba(0, 0, 0, 0.25) !important;
   background-color: rgba(0, 0, 0, 0.25) !important;
 }
-a.button:active {
+.gray a.button:active {
   background: rgba(0, 0, 0, 0.75) !important;
   background-color: rgba(0, 0, 0, 0.75) !important;
 }
-a.button.special {
+.gray a.button.special {
   color: whitesmoke !important;
   background: #ed4933 !important;
   background-color: #ed4933 !important;
 }
-a.button.special:hover {
+.gray a.button.special:hover {
   background: #ef5e4a !important;
   background-color: #ef5e4a !important;
 }
-a.button.special:active {
+.gray a.button.special:active {
   background: #eb341c !important;
   background-color: #eb341c !important;
 }
-input[type="submit"],
+.gray input[type="submit"],
 input[type="reset"],
 input[type="button"],
 button,
 .button {
   box-shadow: inset 0 0 0 2px darkgray;
 }
-input[type="submit"].small,
+.gray input[type="submit"].small,
 input[type="reset"].small,
 input[type="button"].small,
 button.small,
 .button.small {
   box-shadow: inset 0 0 0 2px darkgray;
 }
-.box {
+.gray .box {
   border-radius: 5px;
   border: thin solid darkgray;
 }
-.box-four-in-row {
+.gray .box-four-in-row {
   border-radius: 5px;
   border: thin solid darkgray;
 }
-.box-three-in-row {
+.gray .box-three-in-row {
   border-radius: 5px;
   border: thin solid darkgray;
 }
 .green {
-  color: whitesmoke !important;
-  background-color: #1a867d !important;
+  color: whitesmoke;
+  background-color: #1a867d;
 }
-.green div,
-span,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-abbr,
-address,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-a,
-q,
-samp,
-small,
-strong,
-sub,
-sup,
-var,
-b,
-i,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-caption,
-article,
-aside,
-canvas,
-details,
-figcaption,
-figure,
-hgroup,
-section,
-summary,
-time,
-mark,
-audio,
-video,
-table,
-thead,
-tfoot,
-tr,
-td,
-.abstract,
-.page-header,
-.lead,
-.small,
-.italic,
-.headline,
-.tagline,
-.paragraph,
-.paragraph-2col,
-.paragraph-3col,
-.align-left,
-.align-center,
-.align-right {
-  color: whitesmoke !important;
-}
-.green .page-header {
-  color: whitesmoke !important;
-  border-bottom: whitesmoke solid 2px !important;
-}
-.green code {
-  color: whitesmoke !important;
-  background: darkgray !important;
-  background-color: darkgray !important;
+.green a {
+  color: whitesmoke;
 }
 .green a:hover {
-  color: red !important;
+  color: red;
 }
 .green hr {
   color: whitesmoke !important;
@@ -2397,148 +2240,67 @@ ol {
 .green ul.alt li {
   border-top: solid 1px whitesmoke;
 }
-a.button {
+.green a.button {
   color: #5e5e5e !important;
   background: transparent;
   background-color: transparent !important;
 }
-a.button:hover {
+.green a.button:hover {
   background: rgba(0, 0, 0, 0.25) !important;
   background-color: rgba(0, 0, 0, 0.25) !important;
 }
-a.button:active {
+.green a.button:active {
   background: rgba(0, 0, 0, 0.75) !important;
   background-color: rgba(0, 0, 0, 0.75) !important;
 }
-a.button.special {
+.green a.button.special {
   color: whitesmoke !important;
   background: #ed4933 !important;
   background-color: #ed4933 !important;
 }
-a.button.special:hover {
+.green a.button.special:hover {
   background: #ef5e4a !important;
   background-color: #ef5e4a !important;
 }
-a.button.special:active {
+.green a.button.special:active {
   background: #eb341c !important;
   background-color: #eb341c !important;
 }
-input[type="submit"],
+.green input[type="submit"],
 input[type="reset"],
 input[type="button"],
 button,
 .button {
   box-shadow: inset 0 0 0 2px darkgray;
 }
-input[type="submit"].small,
+.green input[type="submit"].small,
 input[type="reset"].small,
 input[type="button"].small,
 button.small,
 .button.small {
   box-shadow: inset 0 0 0 2px darkgray;
 }
-.box {
+.green .box {
   border-radius: 5px;
   border: thin solid darkgray;
 }
-.box-four-in-row {
+.green .box-four-in-row {
   border-radius: 5px;
   border: thin solid darkgray;
 }
-.box-three-in-row {
+.green .box-three-in-row {
   border-radius: 5px;
   border: thin solid darkgray;
 }
 .light {
-  color: #5e5e5e !important;
-  background-color: whitesmoke !important;
+  color: #5e5e5e;
+  background-color: whitesmoke;
 }
-.light div,
-span,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-a,
-p,
-blockquote,
-pre,
-abbr,
-address,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-samp,
-small,
-strong,
-sub,
-sup,
-var,
-b,
-i,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-caption,
-article,
-aside,
-canvas,
-details,
-figcaption,
-figure,
-hgroup,
-section,
-summary,
-time,
-mark,
-audio,
-video,
-table,
-thead,
-tfoot,
-tr,
-td,
-.abstract,
-.page-header,
-.lead,
-.small,
-.italic,
-.headline,
-.tagline,
-.paragraph,
-.paragraph-2col,
-.paragraph-3col,
-.align-left,
-.align-center,
-.align-right {
-  color: #5e5e5e !important;
-}
-.light .page-header {
-  color: #5e5e5e !important;
-  border-bottom: #5e5e5e solid 2px !important;
-}
-.light code {
-  color: whitesmoke !important;
-  background: darkgray !important;
-  background-color: darkgray !important;
+.light a {
+  color: #5e5e5e;
 }
 .light a:hover {
-  color: red !important;
+  color: red;
 }
 .light hr {
   color: #5e5e5e !important;
@@ -2553,148 +2315,67 @@ ol {
 .light ul.alt li {
   border-top: solid 1px #5e5e5e;
 }
-a.button {
+.light a.button {
   color: #5e5e5e !important;
   background: transparent;
   background-color: transparent !important;
 }
-a.button:hover {
+.light a.button:hover {
   background: rgba(0, 0, 0, 0.25) !important;
   background-color: rgba(0, 0, 0, 0.25) !important;
 }
-a.button:active {
+.light a.button:active {
   background: rgba(0, 0, 0, 0.75) !important;
   background-color: rgba(0, 0, 0, 0.75) !important;
 }
-a.button.special {
+.light a.button.special {
   color: whitesmoke !important;
   background: #ed4933 !important;
   background-color: #ed4933 !important;
 }
-a.button.special:hover {
+.light a.button.special:hover {
   background: #ef5e4a !important;
   background-color: #ef5e4a !important;
 }
-a.button.special:active {
+.light a.button.special:active {
   background: #eb341c !important;
   background-color: #eb341c !important;
 }
-input[type="submit"],
+.light input[type="submit"],
 input[type="reset"],
 input[type="button"],
 button,
 .button {
   box-shadow: inset 0 0 0 2px darkgray;
 }
-input[type="submit"].small,
+.light input[type="submit"].small,
 input[type="reset"].small,
 input[type="button"].small,
 button.small,
 .button.small {
   box-shadow: inset 0 0 0 2px darkgray;
 }
-.box {
+.light .box {
   border-radius: 5px;
   border: thin solid darkgray;
 }
-.box-four-in-row {
+.light .box-four-in-row {
   border-radius: 5px;
   border: thin solid darkgray;
 }
-.box-three-in-row {
+.light .box-three-in-row {
   border-radius: 5px;
   border: thin solid darkgray;
 }
 .purple {
-  color: #d3d4e4 !important;
-  background-color: #505393 !important;
+  color: #d3d4e4;
+  background-color: #505393;
 }
-.purple div,
-span,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-a,
-p,
-blockquote,
-pre,
-abbr,
-address,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-samp,
-small,
-strong,
-sub,
-sup,
-var,
-b,
-i,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-caption,
-article,
-aside,
-canvas,
-details,
-figcaption,
-figure,
-hgroup,
-section,
-summary,
-time,
-mark,
-audio,
-video,
-table,
-thead,
-tfoot,
-tr,
-td,
-.abstract,
-.page-header,
-.lead,
-.small,
-.italic,
-.headline,
-.tagline,
-.paragraph,
-.paragraph-2col,
-.paragraph-3col,
-.align-left,
-.align-center,
-.align-right {
-  color: #d3d4e4 !important;
-}
-.purple .page-header {
-  color: #d3d4e4 !important;
-  border-bottom: #d3d4e4 solid 2px !important;
-}
-.purple code {
-  color: whitesmoke !important;
-  background: darkgray !important;
-  background-color: darkgray !important;
+.purple a {
+  color: #d3d4e4;
 }
 .purple a:hover {
-  color: red !important;
+  color: red;
 }
 .purple hr {
   color: #d3d4e4 !important;
@@ -2709,148 +2390,67 @@ ol {
 .purple ul.alt li {
   border-top: solid 1px #d3d4e4;
 }
-a.button {
+.purple a.button {
   color: #5e5e5e !important;
   background: transparent;
   background-color: transparent !important;
 }
-a.button:hover {
+.purple a.button:hover {
   background: rgba(0, 0, 0, 0.25) !important;
   background-color: rgba(0, 0, 0, 0.25) !important;
 }
-a.button:active {
+.purple a.button:active {
   background: rgba(0, 0, 0, 0.75) !important;
   background-color: rgba(0, 0, 0, 0.75) !important;
 }
-a.button.special {
+.purple a.button.special {
   color: whitesmoke !important;
   background: #ed4933 !important;
   background-color: #ed4933 !important;
 }
-a.button.special:hover {
+.purple a.button.special:hover {
   background: #ef5e4a !important;
   background-color: #ef5e4a !important;
 }
-a.button.special:active {
+.purple a.button.special:active {
   background: #eb341c !important;
   background-color: #eb341c !important;
 }
-input[type="submit"],
+.purple input[type="submit"],
 input[type="reset"],
 input[type="button"],
 button,
 .button {
   box-shadow: inset 0 0 0 2px darkgray;
 }
-input[type="submit"].small,
+.purple input[type="submit"].small,
 input[type="reset"].small,
 input[type="button"].small,
 button.small,
 .button.small {
   box-shadow: inset 0 0 0 2px darkgray;
 }
-.box {
+.purple .box {
   border-radius: 5px;
   border: thin solid darkgray;
 }
-.box-four-in-row {
+.purple .box-four-in-row {
   border-radius: 5px;
   border: thin solid darkgray;
 }
-.box-three-in-row {
+.purple .box-three-in-row {
   border-radius: 5px;
   border: thin solid darkgray;
 }
 .transparent {
-  color: whitesmoke !important;
-  background-color: transparent !important;
+  color: whitesmoke;
+  background-color: transparent;
 }
-.transparent div,
-span,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-a,
-p,
-blockquote,
-pre,
-abbr,
-address,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-samp,
-small,
-strong,
-sub,
-sup,
-var,
-b,
-i,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-caption,
-article,
-aside,
-canvas,
-details,
-figcaption,
-figure,
-hgroup,
-section,
-summary,
-time,
-mark,
-audio,
-video,
-table,
-thead,
-tfoot,
-tr,
-td,
-.abstract,
-.page-header,
-.lead,
-.small,
-.italic,
-.headline,
-.tagline,
-.paragraph,
-.paragraph-2col,
-.paragraph-3col,
-.align-left,
-.align-center,
-.align-right {
-  color: whitesmoke !important;
-}
-.transparent .page-header {
-  color: whitesmoke !important;
-  border-bottom: whitesmoke solid 2px !important;
-}
-.transparent code {
-  color: whitesmoke !important;
-  background: darkgray !important;
-  background-color: darkgray !important;
+.transparent a {
+  color: whitesmoke;
 }
 .transparent a:hover {
-  color: darkgray !important;
+  color: darkgray;
 }
 .transparent hr {
   color: whitesmoke !important;
@@ -2865,55 +2465,55 @@ ol {
 .transparent ul.alt li {
   border-top: solid 1px whitesmoke;
 }
-a.button {
+.transparent a.button {
   color: whitesmoke !important;
   background: transparent;
   background-color: transparent !important;
 }
-a.button:hover {
+.transparent a.button:hover {
   background: rgba(0, 0, 0, 0.25) !important;
   background-color: rgba(0, 0, 0, 0.25) !important;
 }
-a.button:active {
+.transparent a.button:active {
   background: rgba(0, 0, 0, 0.75) !important;
   background-color: rgba(0, 0, 0, 0.75) !important;
 }
-a.button.special {
+.transparent a.button.special {
   color: whitesmoke !important;
   background: #ed4933 !important;
   background-color: #ed4933 !important;
 }
-a.button.special:hover {
+.transparent a.button.special:hover {
   background: #ef5e4a !important;
   background-color: #ef5e4a !important;
 }
-a.button.special:active {
+.transparent a.button.special:active {
   background: #eb341c !important;
   background-color: #eb341c !important;
 }
-input[type="submit"],
+.transparent input[type="submit"],
 input[type="reset"],
 input[type="button"],
 button,
 .button {
   box-shadow: inset 0 0 0 2px darkgray;
 }
-input[type="submit"].small,
+.transparent input[type="submit"].small,
 input[type="reset"].small,
 input[type="button"].small,
 button.small,
 .button.small {
   box-shadow: inset 0 0 0 2px darkgray;
 }
-.box {
+.transparent .box {
   border-radius: 5px;
   border: thin solid darkgray;
 }
-.box-four-in-row {
+.transparent .box-four-in-row {
   border-radius: 5px;
   border: thin solid darkgray;
 }
-.box-three-in-row {
+.transparent .box-three-in-row {
   border-radius: 5px;
   border: thin solid darkgray;
 }
