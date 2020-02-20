@@ -1365,6 +1365,9 @@ a.more.scrolly {
   order: 2;
   width: 30%;
 }
+#cta .inner .actions li {
+  margin-bottom: 0.75rem;
+}
 @media screen and (max-width: 980px) {
   #cta .inner {
     display: block;
@@ -2149,6 +2152,9 @@ button.totop:hover {
 .gray a {
   color: whitesmoke;
 }
+.gray a.more {
+  color: whitesmoke;
+}
 .gray a:hover {
   color: red;
 }
@@ -2236,6 +2242,9 @@ button.small,
 .green a:hover {
   color: red;
 }
+.green a.more {
+  color: whitesmoke;
+}
 .green hr {
   color: whitesmoke !important;
   border-color: solid 2px whitesmoke !important;
@@ -2311,6 +2320,12 @@ button.small,
 }
 .light a {
   color: #5e5e5e;
+}
+a.more {
+  color: #5e5e5e;
+}
+a:hover.more {
+  color: red;
 }
 .light a:hover {
   color: red;
@@ -2397,6 +2412,9 @@ button.small,
 .purple a:hover {
   color: red;
 }
+.purple a.more {
+  color: #d3d4e4;
+}
 .purple hr {
   color: #d3d4e4 !important;
   border-color: solid 2px #d3d4e4 !important;
@@ -2475,6 +2493,9 @@ button.small,
 }
 .transparent a:hover {
   color: darkgray;
+}
+.transparent a.more {
+  color: whitesmoke;
 }
 .transparent hr {
   color: whitesmoke !important;

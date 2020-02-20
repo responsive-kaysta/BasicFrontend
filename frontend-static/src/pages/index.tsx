@@ -67,7 +67,6 @@ class Index extends React.Component {
             <div>
               <RegularLinkElement text="Tiles Section" link="tiles-section" />
             </div>
-            <div>Jumbotron</div>
             <div>
               <RegularLinkElement text="Spotlights" link="spotlight" />
             </div>
@@ -79,7 +78,12 @@ class Index extends React.Component {
             <div className="page-header">
               <h2>Pages & Templates</h2>
             </div>
-            <div>Gray</div>
+            <div>
+              <RegularLinkElement
+                text="Gray Page Style"
+                link="/gray-page-style"
+              />
+            </div>
             <div>Green</div>
             <div>Light</div>
             <div>Purple</div>
