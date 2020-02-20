@@ -2156,13 +2156,22 @@ button.totop:hover {
   color: whitesmoke !important;
   border-color: solid 2px whitesmoke !important;
 }
-.gray ul,
+.gray .page-header {
+  color: whitesmoke !important;
+  border-bottom: solid 2px whitesmoke !important;
+}
+.gray code {
+  color: whitesmoke;
+  background: #595959;
+  background-color: #595959;
+}
+.container.gray ul,
 li,
 dl,
 ol {
   color: whitesmoke;
 }
-.gray ul.alt li {
+.container.gray ul.alt li {
   border-top: solid 1px whitesmoke;
 }
 .gray a.button {
@@ -2231,13 +2240,17 @@ button.small,
   color: whitesmoke !important;
   border-color: solid 2px whitesmoke !important;
 }
-.green ul,
+.green .page-header {
+  color: whitesmoke !important;
+  border-bottom: solid 2px whitesmoke !important;
+}
+.container.green ul,
 li,
 dl,
 ol {
   color: whitesmoke;
 }
-.green ul.alt li {
+.container.green ul.alt li {
   border-top: solid 1px whitesmoke;
 }
 .green a.button {
@@ -2306,13 +2319,20 @@ button.small,
   color: #5e5e5e !important;
   border-color: solid 2px #5e5e5e !important;
 }
-.light ul,
-li,
-dl,
-ol {
+.light .page-header {
+  color: #5e5e5e !important;
+  border-bottom: solid 2px #5e5e5e !important;
+}
+.light ul > li {
   color: #5e5e5e;
 }
-.light ul.alt li {
+.light ul > dl {
+  color: #5e5e5e;
+}
+.light ol > li {
+  color: #5e5e5e;
+}
+.container.light > ul.alt li {
   border-top: solid 1px #5e5e5e;
 }
 .light a.button {
@@ -2381,13 +2401,17 @@ button.small,
   color: #d3d4e4 !important;
   border-color: solid 2px #d3d4e4 !important;
 }
-.purple ul,
+.purple .page-header {
+  color: #d3d4e4 !important;
+  border-bottom: solid 2px #d3d4e4 !important;
+}
+.container.purple ul,
 li,
 dl,
 ol {
   color: #d3d4e4;
 }
-.purple ul.alt li {
+.container.purple ul.alt li {
   border-top: solid 1px #d3d4e4;
 }
 .purple a.button {
@@ -2456,13 +2480,17 @@ button.small,
   color: whitesmoke !important;
   border-color: solid 2px whitesmoke !important;
 }
-.transparent ul,
+.transparent .page-header {
+  color: whitesmoke !important;
+  border-bottom: solid 2px whitesmoke !important;
+}
+.container.transparent ul,
 li,
 dl,
 ol {
   color: whitesmoke;
 }
-.transparent ul.alt li {
+.container.transparent ul.alt li {
   border-top: solid 1px whitesmoke;
 }
 .transparent a.button {

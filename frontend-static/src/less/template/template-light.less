@@ -20,14 +20,24 @@
   border-color: solid 2px @style-light-border-color !important;
 }
 
-.light ul,
-li,
-dl,
-ol {
+.light .page-header {
+  color: @style-light-color !important;
+  border-bottom: solid 2px @style-light-border-color !important;
+}
+
+.light ul > li {
   color: @style-light-color;
 }
 
-.light ul.alt li {
+.light ul > dl {
+  color: @style-light-color;
+}
+
+.light ol > li {
+  color: @style-light-color;
+}
+
+.container.light > ul.alt li {
   border-top: solid 1px @style-light-border-color;
 }
 
