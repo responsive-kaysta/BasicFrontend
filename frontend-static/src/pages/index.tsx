@@ -71,9 +71,9 @@ class Index extends React.Component {
             <div>
               <RegularLinkElement text="Spotlights" link="spotlight" />
             </div>
-            <div>Eye Catcher</div>
-            <div>Table</div>
-            <div>Call to Action</div>
+            <div>
+              <RegularLinkElement text="Eye Catcher" link="eye-catcher" />
+            </div>
           </ColorContainer>
           <ColorContainer padded pageStyle={ePageStyleTemplates.transparent}>
             <div className="page-header">

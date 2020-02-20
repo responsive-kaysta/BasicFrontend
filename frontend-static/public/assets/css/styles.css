@@ -1313,8 +1313,8 @@ a.more.scrolly {
   margin-left: auto;
   padding-left: 20%;
   padding-right: 20%;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 @media screen and (max-width: 980px) {
   .container {
@@ -1322,8 +1322,8 @@ a.more.scrolly {
     margin-left: auto;
     padding-left: 10%;
     padding-right: 10%;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
 }
 @media screen and (max-width: 736px) {
@@ -1332,8 +1332,8 @@ a.more.scrolly {
     margin-left: auto;
     padding-left: 5%;
     padding-right: 5%;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 }
 #cta .inner {
