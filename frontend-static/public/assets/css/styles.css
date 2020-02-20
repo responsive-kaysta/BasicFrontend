@@ -2141,233 +2141,88 @@ button.totop:hover {
   color: whitesmoke !important;
   background-color: darkgray !important;
 }
-.gray div {
-  color: whitesmoke !important;
-}
-.gray span {
-  color: whitesmoke !important;
-}
-.gray h1 {
-  color: whitesmoke !important;
-}
-.gray h2 {
-  color: whitesmoke !important;
-}
-.gray h3 {
-  color: whitesmoke !important;
-}
-.gray h4 {
-  color: whitesmoke !important;
-}
-.gray h5 {
-  color: whitesmoke !important;
-}
-.gray h6 {
-  color: whitesmoke !important;
-}
-.gray p {
-  color: whitesmoke !important;
-}
-.gray blockquote {
-  color: whitesmoke !important;
-}
-.gray pre {
-  color: whitesmoke !important;
-}
-.gray abbr {
-  color: whitesmoke !important;
-}
-.gray address {
-  color: whitesmoke !important;
-}
-.gray cite {
-  color: whitesmoke !important;
-}
-.gray code {
-  color: whitesmoke !important;
-}
-.gray del {
-  color: whitesmoke !important;
-}
-.gray dfn {
-  color: whitesmoke !important;
-}
-.gray em {
-  color: whitesmoke !important;
-}
-.gray img {
-  color: whitesmoke !important;
-}
-.gray ins {
-  color: whitesmoke !important;
-}
-.gray kbd {
-  color: whitesmoke !important;
-}
-.gray q {
-  color: whitesmoke !important;
-}
-.gray samp {
-  color: whitesmoke !important;
-}
-.gray small {
-  color: whitesmoke !important;
-}
-.gray strong {
-  color: whitesmoke !important;
-}
-.gray sub {
-  color: whitesmoke !important;
-}
-.gray sup {
-  color: whitesmoke !important;
-}
-.gray var {
-  color: whitesmoke !important;
-}
-.gray b {
-  color: whitesmoke !important;
-}
-.gray i {
-  color: whitesmoke !important;
-}
-.gray dl {
-  color: whitesmoke !important;
-}
-.gray dt {
-  color: whitesmoke !important;
-}
-.gray dd {
-  color: whitesmoke !important;
-}
-.gray ol {
-  color: whitesmoke !important;
-}
-.gray ul {
-  color: whitesmoke !important;
-}
-.gray li {
-  color: whitesmoke !important;
-}
-.gray fieldset {
-  color: whitesmoke !important;
-}
-.gray form {
-  color: whitesmoke !important;
-}
-.gray label {
-  color: whitesmoke !important;
-}
-.gray legend {
-  color: whitesmoke !important;
-}
-.gray caption {
-  color: whitesmoke !important;
-}
-.gray article {
-  color: whitesmoke !important;
-}
-.gray aside {
-  color: whitesmoke !important;
-}
-.gray canvas {
-  color: whitesmoke !important;
-}
-.gray details {
-  color: whitesmoke !important;
-}
-.gray figcaption {
-  color: whitesmoke !important;
-}
-.gray figure {
-  color: whitesmoke !important;
-}
-.gray footer {
-  color: whitesmoke !important;
-}
-.gray header {
-  color: whitesmoke !important;
-}
-.gray hgroup {
-  color: whitesmoke !important;
-}
-.gray section {
-  color: whitesmoke !important;
-}
-.gray summary {
-  color: whitesmoke !important;
-}
-.gray time {
-  color: whitesmoke !important;
-}
-.gray mark {
-  color: whitesmoke !important;
-}
-.gray audio {
-  color: whitesmoke !important;
-}
-.gray video {
-  color: whitesmoke !important;
-}
-.gray table {
-  color: whitesmoke !important;
-}
-.gray thead {
-  color: whitesmoke !important;
-}
-.gray tfoot {
-  color: whitesmoke !important;
-}
-.gray tr {
-  color: whitesmoke !important;
-}
-.gray td {
-  color: whitesmoke !important;
-}
-.gray .abstract {
+.gray div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+caption,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+hgroup,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+table,
+thead,
+tfoot,
+tr,
+td,
+.abstract,
+.page-header,
+.lead,
+.small,
+.italic,
+.headline,
+.tagline,
+.paragraph,
+.paragraph-2col,
+.paragraph-3col,
+.align-left,
+.align-center,
+.align-right {
   color: whitesmoke !important;
 }
 .gray .page-header {
   color: whitesmoke !important;
-}
-.gray .lead {
-  color: whitesmoke !important;
-}
-.gray .small {
-  color: whitesmoke !important;
-}
-.gray .italic {
-  color: whitesmoke !important;
-}
-.gray .headline {
-  color: whitesmoke !important;
-}
-.gray .tagline {
-  color: whitesmoke !important;
-}
-.gray .paragraph {
-  color: whitesmoke !important;
-}
-.gray .paragraph-2col {
-  color: whitesmoke !important;
-}
-.gray .paragraph-3col {
-  color: whitesmoke !important;
-}
-.gray .align-left {
-  color: whitesmoke !important;
-}
-.gray .align-center {
-  color: whitesmoke !important;
-}
-.gray .align-right {
-  color: whitesmoke !important;
-}
-.gray .page-header {
-  border-bottom: whitesmoke solid thin !important;
+  border-bottom: whitesmoke solid 2px !important;
 }
 .gray code {
-  color: whitesmoke;
+  color: whitesmoke !important;
+  background: darkgray !important;
   background-color: darkgray !important;
 }
 .gray a:hover {
@@ -2377,237 +2232,153 @@ button.totop:hover {
   color: whitesmoke !important;
   border-color: solid 2px whitesmoke !important;
 }
+.gray ul,
+li,
+dl,
+ol {
+  color: whitesmoke;
+}
+.gray ul.alt li {
+  border-top: solid 1px whitesmoke;
+}
+a.button {
+  color: #5e5e5e !important;
+  background: transparent;
+  background-color: transparent !important;
+}
+a.button:hover {
+  background: rgba(0, 0, 0, 0.25) !important;
+  background-color: rgba(0, 0, 0, 0.25) !important;
+}
+a.button:active {
+  background: rgba(0, 0, 0, 0.75) !important;
+  background-color: rgba(0, 0, 0, 0.75) !important;
+}
+a.button.special {
+  color: whitesmoke !important;
+  background: #ed4933 !important;
+  background-color: #ed4933 !important;
+}
+a.button.special:hover {
+  background: #ef5e4a !important;
+  background-color: #ef5e4a !important;
+}
+a.button.special:active {
+  background: #eb341c !important;
+  background-color: #eb341c !important;
+}
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button,
+.button {
+  box-shadow: inset 0 0 0 2px darkgray;
+}
+input[type="submit"].small,
+input[type="reset"].small,
+input[type="button"].small,
+button.small,
+.button.small {
+  box-shadow: inset 0 0 0 2px darkgray;
+}
+.box {
+  border-radius: 5px;
+  border: thin solid darkgray;
+}
+.box-four-in-row {
+  border-radius: 5px;
+  border: thin solid darkgray;
+}
+.box-three-in-row {
+  border-radius: 5px;
+  border: thin solid darkgray;
+}
 .green {
   color: whitesmoke !important;
   background-color: #1a867d !important;
 }
-.green div {
-  color: whitesmoke !important;
-}
-.green span {
-  color: whitesmoke !important;
-}
-.green h1 {
-  color: whitesmoke !important;
-}
-.green h2 {
-  color: whitesmoke !important;
-}
-.green h3 {
-  color: whitesmoke !important;
-}
-.green h4 {
-  color: whitesmoke !important;
-}
-.green h5 {
-  color: whitesmoke !important;
-}
-.green h6 {
-  color: whitesmoke !important;
-}
-.green p {
-  color: whitesmoke !important;
-}
-.green blockquote {
-  color: whitesmoke !important;
-}
-.green pre {
-  color: whitesmoke !important;
-}
-.green abbr {
-  color: whitesmoke !important;
-}
-.green address {
-  color: whitesmoke !important;
-}
-.green cite {
-  color: whitesmoke !important;
-}
-.green code {
-  color: whitesmoke !important;
-}
-.green del {
-  color: whitesmoke !important;
-}
-.green dfn {
-  color: whitesmoke !important;
-}
-.green em {
-  color: whitesmoke !important;
-}
-.green img {
-  color: whitesmoke !important;
-}
-.green ins {
-  color: whitesmoke !important;
-}
-.green kbd {
-  color: whitesmoke !important;
-}
-.green q {
-  color: whitesmoke !important;
-}
-.green samp {
-  color: whitesmoke !important;
-}
-.green small {
-  color: whitesmoke !important;
-}
-.green strong {
-  color: whitesmoke !important;
-}
-.green sub {
-  color: whitesmoke !important;
-}
-.green sup {
-  color: whitesmoke !important;
-}
-.green var {
-  color: whitesmoke !important;
-}
-.green b {
-  color: whitesmoke !important;
-}
-.green i {
-  color: whitesmoke !important;
-}
-.green dl {
-  color: whitesmoke !important;
-}
-.green dt {
-  color: whitesmoke !important;
-}
-.green dd {
-  color: whitesmoke !important;
-}
-.green ol {
-  color: whitesmoke !important;
-}
-.green ul {
-  color: whitesmoke !important;
-}
-.green li {
-  color: whitesmoke !important;
-}
-.green fieldset {
-  color: whitesmoke !important;
-}
-.green form {
-  color: whitesmoke !important;
-}
-.green label {
-  color: whitesmoke !important;
-}
-.green legend {
-  color: whitesmoke !important;
-}
-.green caption {
-  color: whitesmoke !important;
-}
-.green article {
-  color: whitesmoke !important;
-}
-.green aside {
-  color: whitesmoke !important;
-}
-.green canvas {
-  color: whitesmoke !important;
-}
-.green details {
-  color: whitesmoke !important;
-}
-.green figcaption {
-  color: whitesmoke !important;
-}
-.green figure {
-  color: whitesmoke !important;
-}
-.green footer {
-  color: whitesmoke !important;
-}
-.green header {
-  color: whitesmoke !important;
-}
-.green hgroup {
-  color: whitesmoke !important;
-}
-.green section {
-  color: whitesmoke !important;
-}
-.green summary {
-  color: whitesmoke !important;
-}
-.green time {
-  color: whitesmoke !important;
-}
-.green mark {
-  color: whitesmoke !important;
-}
-.green audio {
-  color: whitesmoke !important;
-}
-.green video {
-  color: whitesmoke !important;
-}
-.green table {
-  color: whitesmoke !important;
-}
-.green thead {
-  color: whitesmoke !important;
-}
-.green tfoot {
-  color: whitesmoke !important;
-}
-.green tr {
-  color: whitesmoke !important;
-}
-.green td {
-  color: whitesmoke !important;
-}
-.green .abstract {
+.green div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+a,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+caption,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+hgroup,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+table,
+thead,
+tfoot,
+tr,
+td,
+.abstract,
+.page-header,
+.lead,
+.small,
+.italic,
+.headline,
+.tagline,
+.paragraph,
+.paragraph-2col,
+.paragraph-3col,
+.align-left,
+.align-center,
+.align-right {
   color: whitesmoke !important;
 }
 .green .page-header {
   color: whitesmoke !important;
-}
-.green .lead {
-  color: whitesmoke !important;
-}
-.green .small {
-  color: whitesmoke !important;
-}
-.green .italic {
-  color: whitesmoke !important;
-}
-.green .headline {
-  color: whitesmoke !important;
-}
-.green .tagline {
-  color: whitesmoke !important;
-}
-.green .paragraph {
-  color: whitesmoke !important;
-}
-.green .paragraph-2col {
-  color: whitesmoke !important;
-}
-.green .paragraph-3col {
-  color: whitesmoke !important;
-}
-.green .align-left {
-  color: whitesmoke !important;
-}
-.green .align-center {
-  color: whitesmoke !important;
-}
-.green .align-right {
-  color: whitesmoke !important;
-}
-.green .page-header {
-  border-bottom: whitesmoke solid thin !important;
+  border-bottom: whitesmoke solid 2px !important;
 }
 .green code {
-  color: whitesmoke;
+  color: whitesmoke !important;
+  background: darkgray !important;
   background-color: darkgray !important;
 }
 .green a:hover {
@@ -2616,6 +2387,67 @@ button.totop:hover {
 .green hr {
   color: whitesmoke !important;
   border-color: solid 2px whitesmoke !important;
+}
+.green ul,
+li,
+dl,
+ol {
+  color: whitesmoke;
+}
+.green ul.alt li {
+  border-top: solid 1px whitesmoke;
+}
+a.button {
+  color: #5e5e5e !important;
+  background: transparent;
+  background-color: transparent !important;
+}
+a.button:hover {
+  background: rgba(0, 0, 0, 0.25) !important;
+  background-color: rgba(0, 0, 0, 0.25) !important;
+}
+a.button:active {
+  background: rgba(0, 0, 0, 0.75) !important;
+  background-color: rgba(0, 0, 0, 0.75) !important;
+}
+a.button.special {
+  color: whitesmoke !important;
+  background: #ed4933 !important;
+  background-color: #ed4933 !important;
+}
+a.button.special:hover {
+  background: #ef5e4a !important;
+  background-color: #ef5e4a !important;
+}
+a.button.special:active {
+  background: #eb341c !important;
+  background-color: #eb341c !important;
+}
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button,
+.button {
+  box-shadow: inset 0 0 0 2px darkgray;
+}
+input[type="submit"].small,
+input[type="reset"].small,
+input[type="button"].small,
+button.small,
+.button.small {
+  box-shadow: inset 0 0 0 2px darkgray;
+}
+.box {
+  border-radius: 5px;
+  border: thin solid darkgray;
+}
+.box-four-in-row {
+  border-radius: 5px;
+  border: thin solid darkgray;
+}
+.box-three-in-row {
+  border-radius: 5px;
+  border: thin solid darkgray;
 }
 .light {
   color: #5e5e5e !important;
@@ -2629,6 +2461,7 @@ h3,
 h4,
 h5,
 h6,
+a,
 p,
 blockquote,
 pre,
@@ -2776,233 +2609,88 @@ button.small,
   color: #d3d4e4 !important;
   background-color: #505393 !important;
 }
-.purple div {
-  color: #d3d4e4 !important;
-}
-.purple span {
-  color: #d3d4e4 !important;
-}
-.purple h1 {
-  color: #d3d4e4 !important;
-}
-.purple h2 {
-  color: #d3d4e4 !important;
-}
-.purple h3 {
-  color: #d3d4e4 !important;
-}
-.purple h4 {
-  color: #d3d4e4 !important;
-}
-.purple h5 {
-  color: #d3d4e4 !important;
-}
-.purple h6 {
-  color: #d3d4e4 !important;
-}
-.purple p {
-  color: #d3d4e4 !important;
-}
-.purple blockquote {
-  color: #d3d4e4 !important;
-}
-.purple pre {
-  color: #d3d4e4 !important;
-}
-.purple abbr {
-  color: #d3d4e4 !important;
-}
-.purple address {
-  color: #d3d4e4 !important;
-}
-.purple cite {
-  color: #d3d4e4 !important;
-}
-.purple code {
-  color: #d3d4e4 !important;
-}
-.purple del {
-  color: #d3d4e4 !important;
-}
-.purple dfn {
-  color: #d3d4e4 !important;
-}
-.purple em {
-  color: #d3d4e4 !important;
-}
-.purple img {
-  color: #d3d4e4 !important;
-}
-.purple ins {
-  color: #d3d4e4 !important;
-}
-.purple kbd {
-  color: #d3d4e4 !important;
-}
-.purple q {
-  color: #d3d4e4 !important;
-}
-.purple samp {
-  color: #d3d4e4 !important;
-}
-.purple small {
-  color: #d3d4e4 !important;
-}
-.purple strong {
-  color: #d3d4e4 !important;
-}
-.purple sub {
-  color: #d3d4e4 !important;
-}
-.purple sup {
-  color: #d3d4e4 !important;
-}
-.purple var {
-  color: #d3d4e4 !important;
-}
-.purple b {
-  color: #d3d4e4 !important;
-}
-.purple i {
-  color: #d3d4e4 !important;
-}
-.purple dl {
-  color: #d3d4e4 !important;
-}
-.purple dt {
-  color: #d3d4e4 !important;
-}
-.purple dd {
-  color: #d3d4e4 !important;
-}
-.purple ol {
-  color: #d3d4e4 !important;
-}
-.purple ul {
-  color: #d3d4e4 !important;
-}
-.purple li {
-  color: #d3d4e4 !important;
-}
-.purple fieldset {
-  color: #d3d4e4 !important;
-}
-.purple form {
-  color: #d3d4e4 !important;
-}
-.purple label {
-  color: #d3d4e4 !important;
-}
-.purple legend {
-  color: #d3d4e4 !important;
-}
-.purple caption {
-  color: #d3d4e4 !important;
-}
-.purple article {
-  color: #d3d4e4 !important;
-}
-.purple aside {
-  color: #d3d4e4 !important;
-}
-.purple canvas {
-  color: #d3d4e4 !important;
-}
-.purple details {
-  color: #d3d4e4 !important;
-}
-.purple figcaption {
-  color: #d3d4e4 !important;
-}
-.purple figure {
-  color: #d3d4e4 !important;
-}
-.purple footer {
-  color: #d3d4e4 !important;
-}
-.purple header {
-  color: #d3d4e4 !important;
-}
-.purple hgroup {
-  color: #d3d4e4 !important;
-}
-.purple section {
-  color: #d3d4e4 !important;
-}
-.purple summary {
-  color: #d3d4e4 !important;
-}
-.purple time {
-  color: #d3d4e4 !important;
-}
-.purple mark {
-  color: #d3d4e4 !important;
-}
-.purple audio {
-  color: #d3d4e4 !important;
-}
-.purple video {
-  color: #d3d4e4 !important;
-}
-.purple table {
-  color: #d3d4e4 !important;
-}
-.purple thead {
-  color: #d3d4e4 !important;
-}
-.purple tfoot {
-  color: #d3d4e4 !important;
-}
-.purple tr {
-  color: #d3d4e4 !important;
-}
-.purple td {
-  color: #d3d4e4 !important;
-}
-.purple .abstract {
+.purple div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+caption,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+hgroup,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+table,
+thead,
+tfoot,
+tr,
+td,
+.abstract,
+.page-header,
+.lead,
+.small,
+.italic,
+.headline,
+.tagline,
+.paragraph,
+.paragraph-2col,
+.paragraph-3col,
+.align-left,
+.align-center,
+.align-right {
   color: #d3d4e4 !important;
 }
 .purple .page-header {
   color: #d3d4e4 !important;
-}
-.purple .lead {
-  color: #d3d4e4 !important;
-}
-.purple .small {
-  color: #d3d4e4 !important;
-}
-.purple .italic {
-  color: #d3d4e4 !important;
-}
-.purple .headline {
-  color: #d3d4e4 !important;
-}
-.purple .tagline {
-  color: #d3d4e4 !important;
-}
-.purple .paragraph {
-  color: #d3d4e4 !important;
-}
-.purple .paragraph-2col {
-  color: #d3d4e4 !important;
-}
-.purple .paragraph-3col {
-  color: #d3d4e4 !important;
-}
-.purple .align-left {
-  color: #d3d4e4 !important;
-}
-.purple .align-center {
-  color: #d3d4e4 !important;
-}
-.purple .align-right {
-  color: #d3d4e4 !important;
-}
-.purple .page-header {
-  border-bottom: #d3d4e4 solid thin !important;
+  border-bottom: #d3d4e4 solid 2px !important;
 }
 .purple code {
-  color: #d3d4e4;
+  color: whitesmoke !important;
+  background: darkgray !important;
   background-color: darkgray !important;
 }
 .purple a:hover {
@@ -3012,237 +2700,153 @@ button.small,
   color: #d3d4e4 !important;
   border-color: solid 2px #d3d4e4 !important;
 }
+.purple ul,
+li,
+dl,
+ol {
+  color: #d3d4e4;
+}
+.purple ul.alt li {
+  border-top: solid 1px #d3d4e4;
+}
+a.button {
+  color: #5e5e5e !important;
+  background: transparent;
+  background-color: transparent !important;
+}
+a.button:hover {
+  background: rgba(0, 0, 0, 0.25) !important;
+  background-color: rgba(0, 0, 0, 0.25) !important;
+}
+a.button:active {
+  background: rgba(0, 0, 0, 0.75) !important;
+  background-color: rgba(0, 0, 0, 0.75) !important;
+}
+a.button.special {
+  color: whitesmoke !important;
+  background: #ed4933 !important;
+  background-color: #ed4933 !important;
+}
+a.button.special:hover {
+  background: #ef5e4a !important;
+  background-color: #ef5e4a !important;
+}
+a.button.special:active {
+  background: #eb341c !important;
+  background-color: #eb341c !important;
+}
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button,
+.button {
+  box-shadow: inset 0 0 0 2px darkgray;
+}
+input[type="submit"].small,
+input[type="reset"].small,
+input[type="button"].small,
+button.small,
+.button.small {
+  box-shadow: inset 0 0 0 2px darkgray;
+}
+.box {
+  border-radius: 5px;
+  border: thin solid darkgray;
+}
+.box-four-in-row {
+  border-radius: 5px;
+  border: thin solid darkgray;
+}
+.box-three-in-row {
+  border-radius: 5px;
+  border: thin solid darkgray;
+}
 .transparent {
   color: whitesmoke !important;
   background-color: transparent !important;
 }
-.transparent div {
-  color: whitesmoke !important;
-}
-.transparent span {
-  color: whitesmoke !important;
-}
-.transparent h1 {
-  color: whitesmoke !important;
-}
-.transparent h2 {
-  color: whitesmoke !important;
-}
-.transparent h3 {
-  color: whitesmoke !important;
-}
-.transparent h4 {
-  color: whitesmoke !important;
-}
-.transparent h5 {
-  color: whitesmoke !important;
-}
-.transparent h6 {
-  color: whitesmoke !important;
-}
-.transparent p {
-  color: whitesmoke !important;
-}
-.transparent blockquote {
-  color: whitesmoke !important;
-}
-.transparent pre {
-  color: whitesmoke !important;
-}
-.transparent abbr {
-  color: whitesmoke !important;
-}
-.transparent address {
-  color: whitesmoke !important;
-}
-.transparent cite {
-  color: whitesmoke !important;
-}
-.transparent code {
-  color: whitesmoke !important;
-}
-.transparent del {
-  color: whitesmoke !important;
-}
-.transparent dfn {
-  color: whitesmoke !important;
-}
-.transparent em {
-  color: whitesmoke !important;
-}
-.transparent img {
-  color: whitesmoke !important;
-}
-.transparent ins {
-  color: whitesmoke !important;
-}
-.transparent kbd {
-  color: whitesmoke !important;
-}
-.transparent q {
-  color: whitesmoke !important;
-}
-.transparent samp {
-  color: whitesmoke !important;
-}
-.transparent small {
-  color: whitesmoke !important;
-}
-.transparent strong {
-  color: whitesmoke !important;
-}
-.transparent sub {
-  color: whitesmoke !important;
-}
-.transparent sup {
-  color: whitesmoke !important;
-}
-.transparent var {
-  color: whitesmoke !important;
-}
-.transparent b {
-  color: whitesmoke !important;
-}
-.transparent i {
-  color: whitesmoke !important;
-}
-.transparent dl {
-  color: whitesmoke !important;
-}
-.transparent dt {
-  color: whitesmoke !important;
-}
-.transparent dd {
-  color: whitesmoke !important;
-}
-.transparent ol {
-  color: whitesmoke !important;
-}
-.transparent ul {
-  color: whitesmoke !important;
-}
-.transparent li {
-  color: whitesmoke !important;
-}
-.transparent fieldset {
-  color: whitesmoke !important;
-}
-.transparent form {
-  color: whitesmoke !important;
-}
-.transparent label {
-  color: whitesmoke !important;
-}
-.transparent legend {
-  color: whitesmoke !important;
-}
-.transparent caption {
-  color: whitesmoke !important;
-}
-.transparent article {
-  color: whitesmoke !important;
-}
-.transparent aside {
-  color: whitesmoke !important;
-}
-.transparent canvas {
-  color: whitesmoke !important;
-}
-.transparent details {
-  color: whitesmoke !important;
-}
-.transparent figcaption {
-  color: whitesmoke !important;
-}
-.transparent figure {
-  color: whitesmoke !important;
-}
-.transparent footer {
-  color: whitesmoke !important;
-}
-.transparent header {
-  color: whitesmoke !important;
-}
-.transparent hgroup {
-  color: whitesmoke !important;
-}
-.transparent section {
-  color: whitesmoke !important;
-}
-.transparent summary {
-  color: whitesmoke !important;
-}
-.transparent time {
-  color: whitesmoke !important;
-}
-.transparent mark {
-  color: whitesmoke !important;
-}
-.transparent audio {
-  color: whitesmoke !important;
-}
-.transparent video {
-  color: whitesmoke !important;
-}
-.transparent table {
-  color: whitesmoke !important;
-}
-.transparent thead {
-  color: whitesmoke !important;
-}
-.transparent tfoot {
-  color: whitesmoke !important;
-}
-.transparent tr {
-  color: whitesmoke !important;
-}
-.transparent td {
-  color: whitesmoke !important;
-}
-.transparent .abstract {
+.transparent div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+caption,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+hgroup,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+table,
+thead,
+tfoot,
+tr,
+td,
+.abstract,
+.page-header,
+.lead,
+.small,
+.italic,
+.headline,
+.tagline,
+.paragraph,
+.paragraph-2col,
+.paragraph-3col,
+.align-left,
+.align-center,
+.align-right {
   color: whitesmoke !important;
 }
 .transparent .page-header {
   color: whitesmoke !important;
-}
-.transparent .lead {
-  color: whitesmoke !important;
-}
-.transparent .small {
-  color: whitesmoke !important;
-}
-.transparent .italic {
-  color: whitesmoke !important;
-}
-.transparent .headline {
-  color: whitesmoke !important;
-}
-.transparent .tagline {
-  color: whitesmoke !important;
-}
-.transparent .paragraph {
-  color: whitesmoke !important;
-}
-.transparent .paragraph-2col {
-  color: whitesmoke !important;
-}
-.transparent .paragraph-3col {
-  color: whitesmoke !important;
-}
-.transparent .align-left {
-  color: whitesmoke !important;
-}
-.transparent .align-center {
-  color: whitesmoke !important;
-}
-.transparent .align-right {
-  color: whitesmoke !important;
-}
-.transparent .page-header {
-  border-bottom: whitesmoke solid thin !important;
+  border-bottom: whitesmoke solid 2px !important;
 }
 .transparent code {
-  color: whitesmoke;
+  color: whitesmoke !important;
+  background: darkgray !important;
   background-color: darkgray !important;
 }
 .transparent a:hover {
@@ -3251,4 +2855,65 @@ button.small,
 .transparent hr {
   color: whitesmoke !important;
   border-color: solid 2px whitesmoke !important;
+}
+.transparent ul,
+li,
+dl,
+ol {
+  color: whitesmoke;
+}
+.transparent ul.alt li {
+  border-top: solid 1px whitesmoke;
+}
+a.button {
+  color: whitesmoke !important;
+  background: transparent;
+  background-color: transparent !important;
+}
+a.button:hover {
+  background: rgba(0, 0, 0, 0.25) !important;
+  background-color: rgba(0, 0, 0, 0.25) !important;
+}
+a.button:active {
+  background: rgba(0, 0, 0, 0.75) !important;
+  background-color: rgba(0, 0, 0, 0.75) !important;
+}
+a.button.special {
+  color: whitesmoke !important;
+  background: #ed4933 !important;
+  background-color: #ed4933 !important;
+}
+a.button.special:hover {
+  background: #ef5e4a !important;
+  background-color: #ef5e4a !important;
+}
+a.button.special:active {
+  background: #eb341c !important;
+  background-color: #eb341c !important;
+}
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button,
+.button {
+  box-shadow: inset 0 0 0 2px darkgray;
+}
+input[type="submit"].small,
+input[type="reset"].small,
+input[type="button"].small,
+button.small,
+.button.small {
+  box-shadow: inset 0 0 0 2px darkgray;
+}
+.box {
+  border-radius: 5px;
+  border: thin solid darkgray;
+}
+.box-four-in-row {
+  border-radius: 5px;
+  border: thin solid darkgray;
+}
+.box-three-in-row {
+  border-radius: 5px;
+  border: thin solid darkgray;
 }
