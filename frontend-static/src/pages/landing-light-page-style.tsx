@@ -3,19 +3,19 @@ import * as Scroll from "react-scroll";
 import { Head } from "react-static";
 import { ArticleContainer, ColorContainer } from "../components";
 import {
+  CallToAction,
   EyeCatcher,
   ListContainer,
   PageBanner,
-  Spotlight,
-  CallToAction
+  Spotlight
 } from "../compositions";
 import { PAGE_NAME } from "../constants";
 import {
   HeaderElements,
   ListElement,
   ParagraphElement,
-  ToTopButton,
-  Spacer
+  Spacer,
+  ToTopButton
 } from "../elements";
 import {
   eHeaderElementTypes,
@@ -27,7 +27,7 @@ import {
 
 var scroll = Scroll.animateScroll;
 
-class LightPageStyle extends React.Component {
+class LandingLightPageStyle extends React.Component {
   componentDidMount() {
     scroll.scrollToTop();
   }
@@ -39,7 +39,7 @@ class LightPageStyle extends React.Component {
         </Head>
         <PageBanner
           header="Light Style"
-          paragraph="Landing-Page with a Banner and light styled Content"
+          paragraph="Landing-Page with a Page-Banner and light styled Content"
           pageStyle={ePageStyleTemplates.transparent}
           scrollTo="one"
         />
@@ -96,10 +96,10 @@ class LightPageStyle extends React.Component {
             <CallToAction
               header="Call to Action"
               paragraph="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy ..."
-              linkText="Green"
-              linkUrl="/landing-green-page-style"
-              specialText="Transparent"
-              specialUrl="/landing-transparent-page-style"
+              linkText="Text"
+              linkUrl="#"
+              specialText="Special"
+              specialUrl="#"
               pageStyle={ePageStyleTemplates.light}
             />
             <Spacer />
@@ -112,4 +112,4 @@ class LightPageStyle extends React.Component {
   }
 }
 
-export default LightPageStyle;
+export default LandingLightPageStyle;
