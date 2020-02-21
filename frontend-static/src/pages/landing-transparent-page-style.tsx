@@ -1,14 +1,14 @@
 import * as React from "react";
 import * as Scroll from "react-scroll";
 import { Head } from "react-static";
-import { ArticleContainer, ColorContainer } from "../components/";
+import { ArticleContainer, ColorContainer } from "../components";
 import {
   EyeCatcher,
   ListContainer,
   PageBanner,
   Spotlight,
   CallToAction
-} from "../compositions/";
+} from "../compositions";
 import { PAGE_NAME } from "../constants";
 import {
   HeaderElements,
@@ -16,18 +16,18 @@ import {
   ParagraphElement,
   ToTopButton,
   Spacer
-} from "../elements/";
+} from "../elements";
 import {
   eHeaderElementTypes,
   ePageStyleTemplates,
   ePictogram,
   eSpotlightOrientation,
   eTextStyles
-} from "../page-types/";
+} from "../page-types";
 
 var scroll = Scroll.animateScroll;
 
-class LightPageStyle extends React.Component {
+class TransparentPageStyle extends React.Component {
   componentDidMount() {
     scroll.scrollToTop();
   }
@@ -38,8 +38,8 @@ class LightPageStyle extends React.Component {
           <title>Startseite - {PAGE_NAME}</title>
         </Head>
         <PageBanner
-          header="Light Page Style"
-          paragraph="Landing-Page with a Banner and light styled Content"
+          header="Transparent Style"
+          paragraph="Landing-Page with a Banner and transparent styled Content"
           pageStyle={ePageStyleTemplates.transparent}
           scrollTo="one"
         />
@@ -51,7 +51,7 @@ class LightPageStyle extends React.Component {
             elementId="one"
           />
 
-          <ColorContainer padded pageStyle={ePageStyleTemplates.light}>
+          <ColorContainer padded pageStyle={ePageStyleTemplates.transparent}>
             <HeaderElements headerElementType={eHeaderElementTypes.headLine}>
               Headline
             </HeaderElements>
@@ -65,17 +65,17 @@ class LightPageStyle extends React.Component {
             </ParagraphElement>
           </ColorContainer>
 
-          <ColorContainer padded pageStyle={ePageStyleTemplates.light}>
+          <ColorContainer padded pageStyle={ePageStyleTemplates.transparent}>
             <Spotlight
               header="Spotlight Element"
               paragraph="Lorem ipsum dolor sit amet, consetetur sadipscing elitr"
-              pageStyle={ePageStyleTemplates.light}
+              pageStyle={ePageStyleTemplates.transparent}
               pictogram={ePictogram.analysis}
               orientation={eSpotlightOrientation.left}
             />
           </ColorContainer>
 
-          <ColorContainer padded pageStyle={ePageStyleTemplates.light}>
+          <ColorContainer padded pageStyle={ePageStyleTemplates.transparent}>
             <HeaderElements headerElementType={eHeaderElementTypes.headLine}>
               Headline
             </HeaderElements>
@@ -92,15 +92,15 @@ class LightPageStyle extends React.Component {
             </ListContainer>
           </ColorContainer>
 
-          <ColorContainer padded pageStyle={ePageStyleTemplates.light}>
+          <ColorContainer padded pageStyle={ePageStyleTemplates.transparent}>
             <CallToAction
               header="Call to Action"
               paragraph="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy ..."
-              linkText="Link Text"
-              linkUrl="#"
-              specialText="Special Text"
-              specialUrl="#"
-              pageStyle={ePageStyleTemplates.light}
+              linkText="Green"
+              linkUrl="/landing-green-page-style"
+              specialText="Transparent"
+              specialUrl="/landing-transparent-page-style"
+              pageStyle={ePageStyleTemplates.transparent}
             />
             <Spacer />
             <Spacer />
@@ -112,4 +112,4 @@ class LightPageStyle extends React.Component {
   }
 }
 
-export default LightPageStyle;
+export default TransparentPageStyle;

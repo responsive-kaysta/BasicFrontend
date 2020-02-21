@@ -1,14 +1,14 @@
 import * as React from "react";
 import * as Scroll from "react-scroll";
 import { Head } from "react-static";
-import { ArticleContainer, ColorContainer } from "../components/";
+import { ArticleContainer, ColorContainer } from "../components";
 import {
   EyeCatcher,
   ListContainer,
   PageBanner,
   Spotlight,
   CallToAction
-} from "../compositions/";
+} from "../compositions";
 import { PAGE_NAME } from "../constants";
 import {
   HeaderElements,
@@ -16,18 +16,18 @@ import {
   ParagraphElement,
   ToTopButton,
   Spacer
-} from "../elements/";
+} from "../elements";
 import {
   eHeaderElementTypes,
   ePageStyleTemplates,
   ePictogram,
   eSpotlightOrientation,
   eTextStyles
-} from "../page-types/";
+} from "../page-types";
 
 var scroll = Scroll.animateScroll;
 
-class GrayPageStyle extends React.Component {
+class PurplePageStyle extends React.Component {
   componentDidMount() {
     scroll.scrollToTop();
   }
@@ -38,8 +38,8 @@ class GrayPageStyle extends React.Component {
           <title>Startseite - {PAGE_NAME}</title>
         </Head>
         <PageBanner
-          header="Gray Page Style"
-          paragraph="Landing-Page with a Banner and gray styled Content"
+          header="Purple Style"
+          paragraph="Landing-Page with a Banner and transparent styled Content"
           pageStyle={ePageStyleTemplates.transparent}
           scrollTo="one"
         />
@@ -47,11 +47,11 @@ class GrayPageStyle extends React.Component {
           <EyeCatcher
             header="Eye Catcher"
             paragraph="To loosen up the structure and tell something"
-            pageStyle={ePageStyleTemplates.green}
+            pageStyle={ePageStyleTemplates.light}
             elementId="one"
           />
 
-          <ColorContainer padded pageStyle={ePageStyleTemplates.gray}>
+          <ColorContainer padded pageStyle={ePageStyleTemplates.purple}>
             <HeaderElements headerElementType={eHeaderElementTypes.headLine}>
               Headline
             </HeaderElements>
@@ -65,17 +65,17 @@ class GrayPageStyle extends React.Component {
             </ParagraphElement>
           </ColorContainer>
 
-          <ColorContainer padded pageStyle={ePageStyleTemplates.gray}>
+          <ColorContainer padded pageStyle={ePageStyleTemplates.purple}>
             <Spotlight
               header="Spotlight Element"
               paragraph="Lorem ipsum dolor sit amet, consetetur sadipscing elitr"
-              pageStyle={ePageStyleTemplates.gray}
+              pageStyle={ePageStyleTemplates.purple}
               pictogram={ePictogram.analysis}
               orientation={eSpotlightOrientation.left}
             />
           </ColorContainer>
 
-          <ColorContainer padded pageStyle={ePageStyleTemplates.gray}>
+          <ColorContainer padded pageStyle={ePageStyleTemplates.purple}>
             <HeaderElements headerElementType={eHeaderElementTypes.headLine}>
               Headline
             </HeaderElements>
@@ -92,15 +92,15 @@ class GrayPageStyle extends React.Component {
             </ListContainer>
           </ColorContainer>
 
-          <ColorContainer padded pageStyle={ePageStyleTemplates.gray}>
+          <ColorContainer padded pageStyle={ePageStyleTemplates.purple}>
             <CallToAction
               header="Call to Action"
               paragraph="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy ..."
-              linkText="Link Text"
-              linkUrl="#"
-              specialText="Special Text"
-              specialUrl="#"
-              pageStyle={ePageStyleTemplates.gray}
+              linkText="Green"
+              linkUrl="/landing-green-page-style"
+              specialText="Transparent"
+              specialUrl="/landing-transparent-page-style"
+              pageStyle={ePageStyleTemplates.purple}
             />
             <Spacer />
             <Spacer />
@@ -112,4 +112,4 @@ class GrayPageStyle extends React.Component {
   }
 }
 
-export default GrayPageStyle;
+export default PurplePageStyle;

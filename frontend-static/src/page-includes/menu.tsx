@@ -24,10 +24,10 @@ export const Menu: FC = () => {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/light-page-style">Light Page Style</Link>
+            <Link to="/landing-light-page-style">Landing Page Light Style</Link>
           </li>
           <li>
-            <Link to="/gray-page-style">Gray Page Style</Link>
+            <Link to="/landing-gray-page-style">Landing Page Gray Style</Link>
           </li>
         </ul>
       </div>
