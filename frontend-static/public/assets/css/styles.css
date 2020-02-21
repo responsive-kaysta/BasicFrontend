@@ -1238,46 +1238,6 @@ section#banner > div p {
   top: 0;
   opacity: 0;
 }
-@media screen and (max-width: 736px) {
-  #banner {
-    padding: 7rem 0 5rem 0;
-    height: auto;
-    min-height: 0;
-  }
-  #banner h2 {
-    font-size: 1.25rem;
-  }
-  #banner br {
-    display: none;
-  }
-  #banner .more {
-    display: none;
-  }
-}
-body.is-loading #banner h2 {
-  -moz-transform: scale(0.95);
-  -webkit-transform: scale(0.95);
-  -ms-transform: scale(0.95);
-  transform: scale(0.95);
-  opacity: 0;
-}
-body.is-loading #banner h2:before,
-body.is-loading #banner h2:after {
-  width: 0;
-}
-body.is-loading #banner .more {
-  -moz-transform: translateY(8.5rem);
-  -webkit-transform: translateY(8.5rem);
-  -ms-transform: translateY(8.5rem);
-  transform: translateY(8.5rem);
-  opacity: 0;
-}
-body.is-loading #banner:after {
-  opacity: 1;
-}
-a.more.scrolly {
-  color: whitesmoke;
-}
 .breadcrumb {
   background: rgba(0, 0, 0, 0.6);
   transition: all 200ms ease-in-out;
@@ -1988,6 +1948,22 @@ header.major p {
   display: block;
   height: inherit;
   line-height: inherit;
+}
+@media screen and (max-width: 980px) {
+  header#header > h1 > a {
+    font-weight: 500 !important;
+    letter-spacing: 0.125rem !important;
+    font-size: 1.1rem !important;
+    line-height: 1rem !important;
+  }
+}
+@media screen and (max-width: 736px) {
+  header#header > h1 > a {
+    font-weight: 500 !important;
+    letter-spacing: 0.125rem !important;
+    font-size: 1.1rem !important;
+    line-height: 1rem !important;
+  }
 }
 .displayBlock {
   display: block;

@@ -42,7 +42,7 @@
     "@types/webpack-env": "^1.15.1",
     "react-hot-loader": "^4.12.19",
     "serve": "^11.3.0",
-    "typescript": "^3.7.5"
+    "typescript": "^3.8.2"
   },
   "main": "static.config.js"
 }

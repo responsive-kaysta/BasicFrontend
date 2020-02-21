@@ -1,29 +1,29 @@
 // Imports
-import plugin0 from '/home/kaysta/GitHub/BasicFrontend/frontend-static/node_modules/react-static-plugin-reach-router/browser.api.js'
+import plugin0 from 'C:/Users/respo/Source/GitHub/BasicFrontend/frontend-static/node_modules/react-static-plugin-reach-router/browser.api.js'
 
 // Plugins
 const plugins = [{
-        location: "/home/kaysta/GitHub/BasicFrontend/frontend-static/node_modules/react-static-plugin-typescript",
+        location: "C:/Users/respo/Source/GitHub/BasicFrontend/frontend-static/node_modules/react-static-plugin-typescript",
         plugins: [],
         hooks: {}
       },
 {
-        location: "/home/kaysta/GitHub/BasicFrontend/frontend-static/node_modules/react-static-plugin-source-filesystem",
+        location: "C:/Users/respo/Source/GitHub/BasicFrontend/frontend-static/node_modules/react-static-plugin-source-filesystem",
         plugins: [],
         hooks: {}
       },
 {
-        location: "/home/kaysta/GitHub/BasicFrontend/frontend-static/node_modules/react-static-plugin-reach-router",
+        location: "C:/Users/respo/Source/GitHub/BasicFrontend/frontend-static/node_modules/react-static-plugin-reach-router",
         plugins: [],
         hooks: plugin0({})
       },
 {
-        location: "/home/kaysta/GitHub/BasicFrontend/frontend-static/node_modules/react-static-plugin-sitemap/dist",
+        location: "C:/Users/respo/Source/GitHub/BasicFrontend/frontend-static/node_modules/react-static-plugin-sitemap/dist",
         plugins: [],
         hooks: {}
       },
 {
-        location: "/home/kaysta/GitHub/BasicFrontend/frontend-static",
+        location: "C:/Users/respo/Source/GitHub/BasicFrontend/frontend-static",
         plugins: [],
         hooks: {}
       }]
