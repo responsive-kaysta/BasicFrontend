@@ -86,35 +86,35 @@ class Index extends React.Component {
           <ColorContainer padded pageStyle={ePageStyleTemplates.light}>
             <ul className="features">
               <li>
-                <h3>Atome</h3>
+                <h3>Atoms</h3>
                 <p>Text-Elemente, Header, Link</p>
               </li>
               <li>
-                <h3>Moleküle</h3>
+                <h3>Molecules</h3>
                 <p>Links, Buttons</p>
               </li>
               <li>
-                <h3>Moleküle</h3>
+                <h3>Molecules</h3>
                 <p>Listen, Icons</p>
               </li>
               <li>
-                <h3>Organismen</h3>
+                <h3>Organisms</h3>
                 <p>Box-Panel</p>
               </li>
               <li>
-                <h3>Organismen</h3>
+                <h3>Organisms</h3>
                 <p>Features</p>
               </li>
               <li>
-                <h3>Organismen</h3>
+                <h3>Organisms</h3>
                 <p>Container</p>
               </li>
               <li>
-                <h3>Organismen</h3>
+                <h3>Organisms</h3>
                 <p>Spotlight</p>
               </li>
               <li>
-                <h3>Organismen</h3>
+                <h3>Organisms</h3>
                 <p>Tiles</p>
               </li>
               <li>
