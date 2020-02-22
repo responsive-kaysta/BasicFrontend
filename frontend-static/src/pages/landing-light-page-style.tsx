@@ -39,7 +39,7 @@ class LandingLightPageStyle extends React.Component {
         </Head>
         <PageBanner
           header="Light Style"
-          paragraph="Landing-Page with a Page-Banner and light styled Content"
+          paragraph="Landing-Page light styled Content"
           pageStyle={ePageStyleTemplates.transparent}
           scrollTo="one"
         />

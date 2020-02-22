@@ -24,25 +24,10 @@ export const Menu: FC = () => {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/landing-light-page-style">Landing-Page Example</Link>
+            <Link to="/landing-light-page-style">Landing-Page</Link>
           </li>
           <li>
-            <Link to="/regular-light-page-style">Regular-Page Example</Link>
-          </li>
-          <li>
-            <Link to="#">Atomic Objects</Link>
-          </li>
-          <li>
-            <Link to="#">Molecular Objects</Link>
-          </li>
-          <li>
-            <Link to="#">Organisms</Link>
-          </li>
-          <li>
-            <Link to="#">Page Examples</Link>
-          </li>
-          <li>
-            <Link to="#">Color Style Examples</Link>
+            <Link to="/regular-light-page-style">Regular-Page</Link>
           </li>
           <li>
             <Link to="#">Contact</Link>

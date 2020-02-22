@@ -39,7 +39,7 @@ class RegularLightPageStyle extends React.Component {
         <ArticleContainer>
           <ArticleBanner
             header="Light Style"
-            paragraph="Regular-Page with an Article-Banner and light styled Content"
+            paragraph="Regular-Page, light styled Content"
             pageStyle={ePageStyleTemplates.transparent}
           />
 
