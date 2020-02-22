@@ -24,6 +24,7 @@
     "react-iframe": "^1.8.0",
     "react-scroll": "^1.7.16",
     "react-static": "^7.2.3",
+    "react-static-plugin-google-tag-manager": "^1.1.1",
     "react-static-plugin-reach-router": "^7.2.3",
     "react-static-plugin-sitemap": "^7.2.3",
     "react-static-plugin-source-filesystem": "^7.2.3",

@@ -19,6 +19,11 @@ export default {
       }
     ],
     require.resolve("react-static-plugin-reach-router"),
-    require.resolve("react-static-plugin-sitemap")
+    require.resolve("react-static-plugin-sitemap"),
+    "react-static-plugin-google-tag-manager",
+    {
+      id: "GTM-WRGXW24",
+      debug: true
+    }
   ]
 };
