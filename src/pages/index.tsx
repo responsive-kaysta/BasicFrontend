@@ -2,9 +2,14 @@ import * as React from "react";
 import * as Scroll from "react-scroll";
 import { Head } from "react-static";
 import { ArticleContainer, ColorContainer } from "../components/";
-import { EyeCatcher, PageBanner, Spotlight } from "../compositions/";
+import {
+  EyeCatcher,
+  PageBanner,
+  Spotlight,
+  PageHeader
+} from "../compositions/";
 import { PAGE_MAIN_TOPIC, PAGE_NAME } from "../constants";
-import { ToTopButton } from "../elements/";
+import { ToTopButton, RegularLinkElement } from "../elements/";
 import {
   ePageStyleTemplates,
   ePictogram,
@@ -84,46 +89,69 @@ class Index extends React.Component {
           </ColorContainer>
 
           <ColorContainer padded pageStyle={ePageStyleTemplates.light}>
+            <PageHeader header="Atomes & Molecules" />
             <ul className="features">
               <li>
-                <h3>Atoms</h3>
-                <p>Text-Elemente, Header, Link</p>
+                <h3>Text-Elemente, Header, Link</h3>
+                <div>
+                  <RegularLinkElement
+                    text="klick mich ..."
+                    link="/text-heading"
+                  />
+                </div>
               </li>
               <li>
-                <h3>Molecules</h3>
-                <p>Links, Buttons</p>
+                <h3>Links, Buttons</h3>
+                <div>
+                  <RegularLinkElement
+                    text="klick mich ..."
+                    link="/link-button"
+                  />
+                </div>
               </li>
               <li>
-                <h3>Molecules</h3>
-                <p>Listen, Icons</p>
+                <h3>Listen, Icons</h3>
+                <div>
+                  <RegularLinkElement text="klick mich ..." link="/list-icon" />
+                </div>
+              </li>
+            </ul>
+          </ColorContainer>
+          <ColorContainer padded pageStyle={ePageStyleTemplates.light}>
+            <PageHeader header="Organisms" />
+            <ul className="features">
+              <li>
+                <h3>Box</h3>
+                <div>
+                  <RegularLinkElement text="klick mich ..." link="/box-panel" />
+                </div>
               </li>
               <li>
-                <h3>Organisms</h3>
-                <p>Box-Panel</p>
+                <h3>Feature</h3>
+                <div>
+                  <RegularLinkElement text="klick mich ..." link="/features" />
+                </div>
               </li>
               <li>
-                <h3>Organisms</h3>
-                <p>Features</p>
+                <h3>Container</h3>
+                <div>
+                  <RegularLinkElement text="klick mich ..." link="/container" />
+                </div>
               </li>
               <li>
-                <h3>Organisms</h3>
-                <p>Container</p>
+                <h3>Tiles</h3>
+                <div>
+                  <RegularLinkElement
+                    text="klick mich ..."
+                    link="/tiles-section"
+                  />
+                </div>
               </li>
               <li>
-                <h3>Organisms</h3>
-                <p>Spotlight</p>
-              </li>
-              <li>
-                <h3>Organisms</h3>
-                <p>Tiles</p>
-              </li>
-              <li>
-                <h3>Pages</h3>
-                <p>Landing Page</p>
-              </li>
-              <li>
-                <h3>Pages</h3>
-                <p>Regular Page</p>
+                <h3>Spotlight</h3>
+                <div>
+                  <RegularLinkElement text="klick mich ..." link="/spotlight" />
+                </div>
               </li>
             </ul>
           </ColorContainer>
