@@ -30,7 +30,7 @@ export const Menu: FC = () => {
             <Link to="/regular-light-page-style">Regular-Page</Link>
           </li>
           <li>
-            <Link to="#">Contact</Link>
+            <Link to="/contact">Contact</Link>
           </li>
         </ul>
       </div>
