@@ -2,6 +2,8 @@ import path from "path";
 
 export default {
   entry: path.join(__dirname, "src", "index.tsx"),
+  productionSourceMaps: true,
+  silent: true,
   getRoutes: async () => {
     return [
       {
