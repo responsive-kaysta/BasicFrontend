@@ -35,6 +35,10 @@ function App() {
         <meta http-equiv="expires" content="1 day" />
         <meta http-equiv="cache-control" content="no-cache" />
         <meta name="msvalidate.01" content="1D150EFBAA80F83F5DB962EEEC207A71" />
+        <meta
+          name="google-site-verification"
+          content="BssuUU-ydAdC_X5jgGXcGxJuiuDXgum3LFW2vfUxMeM"
+        />
         <meta name="description" content={`${PAGE_NAME} ${PAGE_DESCRIPTION}`} />
         <meta name="keywords" content={PAGE_KEYWORDS} />
         <meta name="author" content={PAGE_AUTHOR} />

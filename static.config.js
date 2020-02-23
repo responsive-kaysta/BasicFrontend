@@ -17,7 +17,7 @@ export default {
     [
       "react-static-plugin-google-tag-manager",
       {
-        id: "GTM-WRGXW24",
+        id: "GTM-KBBLJLS",
         debug: true
       }
     ],
