@@ -13,17 +13,19 @@ export default {
   plugins: [
     "react-static-plugin-typescript",
     [
+      "react-static-plugin-google-tag-manager",
+      {
+        id: "GTM-WRGXW24",
+        debug: true
+      }
+    ],
+    [
       require.resolve("react-static-plugin-source-filesystem"),
       {
         location: path.resolve("./src/pages")
       }
     ],
     require.resolve("react-static-plugin-reach-router"),
-    require.resolve("react-static-plugin-sitemap"),
-    "react-static-plugin-google-tag-manager",
-    {
-      id: "GTM-WRGXW24",
-      debug: true
-    }
+    require.resolve("react-static-plugin-sitemap")
   ]
 };
