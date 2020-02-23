@@ -22,7 +22,7 @@ export const TileItem: FC<iTileItemProps> = ({
   backgroundImage
 }) => {
   const cssStyle = pageStyle ? pageStyle : "light";
-  const cssClass = `${cssStyle} box-equal box-round-corner`;
+  const cssClass = `${cssStyle} box`;
   const itemClass = `item-${item}`;
   const bgImg = backgroundImage ? backgroundImage : "";
 
