@@ -1711,6 +1711,7 @@ section {
   -webkit-order: 1;
   -ms-order: 1;
   order: 1;
+  padding-bottom: 1rem;
 }
 .spotlight .content > div > p {
   font-size: 1.25rem;
@@ -1724,24 +1725,13 @@ section {
 }
 @media screen and (max-width: 980px) {
   .spotlight .image img {
-    display: block;
+    display: none;
   }
   .spotlight-left .image {
-    display: block;
+    display: none;
   }
   .spotlight-right .image {
-    display: block;
-  }
-}
-@media screen and (max-width: 736px) {
-  .spotlight .image img {
-    display: block;
-  }
-  .spotlight-left .image {
-    display: block;
-  }
-  .spotlight-right .image {
-    display: block;
+    display: none;
   }
 }
 .spotlight-container section:nth-child(1) {
@@ -2571,44 +2561,4 @@ button.small,
 .transparent .box-three-in-row {
   border-radius: 5px;
   border: thin solid darkgray;
-}
-@media screen and (min-width: 1680px) {
-  #menu {
-    width: 100%;
-  }
-  #header nav {
-    width: 40%;
-  }
-}
-@media screen and (max-width: 1680px) {
-  #menu {
-    width: 100%;
-  }
-  #header nav {
-    width: 40%;
-  }
-}
-@media screen and (max-width: 1280px) {
-  #menu {
-    width: 100%;
-  }
-  #header nav {
-    width: 40%;
-  }
-}
-@media screen and (max-width: 980px) {
-  #menu {
-    width: 100%;
-  }
-  #header nav {
-    width: 50%;
-  }
-}
-@media screen and (max-width: 736px) {
-  #menu {
-    width: 100%;
-  }
-  #header nav {
-    width: 50%;
-  }
 }
