@@ -1344,10 +1344,16 @@ section#banner > div p {
     width: 100%;
     padding-top: 1.5rem;
   }
+  #cta .inner .actions li {
+    padding-left: 0;
+  }
 }
 @media screen and (max-width: 736px) {
   #cta .inner .actions {
     max-width: none;
+  }
+  #cta .inner .actions li {
+    padding-left: 0;
   }
 }
 section.special {
@@ -1650,7 +1656,7 @@ section {
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
-  width: 100%;
+  flex-grow: 1;
 }
 .spotlight-left .image {
   justify-content: flex-start;
@@ -1659,8 +1665,8 @@ section {
   -ms-order: 1;
   order: 1;
   border-radius: 0;
-  max-height: 160px;
   max-width: 160px;
+  max-height: 160px;
 }
 .spotlight-right .image {
   justify-content: flex-end;
@@ -1669,20 +1675,19 @@ section {
   -ms-order: 2;
   order: 2;
   border-radius: 0;
-  height: 160px;
-  width: 160px;
+  max-width: 160px;
+  max-height: 160px;
 }
 .spotlight .image img {
   border-radius: 0;
-  padding: 1rem;
+  max-width: 160px;
+  max-height: 160px;
 }
 .spotlight-left .content {
   -moz-order: 2;
   -webkit-order: 2;
   -ms-order: 2;
   order: 2;
-  width: 100%;
-  height: 160px;
   display: flex;
   align-items: center;
 }
@@ -1691,8 +1696,6 @@ section {
   -webkit-order: 1;
   -ms-order: 1;
   order: 1;
-  width: 100%;
-  height: 160px;
   display: flex;
   align-items: center;
 }
@@ -1700,7 +1703,6 @@ section {
   vertical-align: middle;
   margin-top: auto;
   margin-bottom: auto;
-  padding-left: 3rem;
 }
 .spotlight .content > div > h2 {
   font-size: 1.5rem;
@@ -1719,6 +1721,28 @@ section {
   -webkit-order: 2;
   -ms-order: 2;
   order: 2;
+}
+@media screen and (max-width: 980px) {
+  .spotlight .image img {
+    display: block;
+  }
+  .spotlight-left .image {
+    display: block;
+  }
+  .spotlight-right .image {
+    display: block;
+  }
+}
+@media screen and (max-width: 736px) {
+  .spotlight .image img {
+    display: block;
+  }
+  .spotlight-left .image {
+    display: block;
+  }
+  .spotlight-right .image {
+    display: block;
+  }
 }
 .spotlight-container section:nth-child(1) {
   background-color: rgba(0, 0, 0, 0.075) !important;
@@ -2547,4 +2571,44 @@ button.small,
 .transparent .box-three-in-row {
   border-radius: 5px;
   border: thin solid darkgray;
+}
+@media screen and (min-width: 1680px) {
+  #menu {
+    width: 100%;
+  }
+  #header nav {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 1680px) {
+  #menu {
+    width: 100%;
+  }
+  #header nav {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 1280px) {
+  #menu {
+    width: 100%;
+  }
+  #header nav {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 980px) {
+  #menu {
+    width: 100%;
+  }
+  #header nav {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 736px) {
+  #menu {
+    width: 100%;
+  }
+  #header nav {
+    width: 50%;
+  }
 }
