@@ -1939,6 +1939,23 @@ header.major p {
   height: inherit;
   line-height: inherit;
 }
+#banner h1:before,
+#banner h1:after {
+  background: #fff;
+  content: "";
+  display: block;
+  height: 2px;
+  position: absolute;
+  width: 100%;
+}
+#banner h1:before {
+  top: 0;
+  left: 0;
+}
+#banner h1:after {
+  bottom: 0;
+  right: 0;
+}
 @media screen and (max-width: 980px) {
   header#header > h1 > a {
     font-weight: 500 !important;
