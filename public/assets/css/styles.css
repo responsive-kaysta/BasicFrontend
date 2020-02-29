@@ -1134,19 +1134,13 @@ article#main > header {
   background-size: cover;
   text-align: center;
   background-color: transparent;
-  padding-top: 5rem;
-  padding-bottom: 3rem;
 }
 article#main > header h2 {
   font-size: 1.75rem;
-  padding-bottom: 0.75rem;
 }
 article#main > header p {
   letter-spacing: 0.225rem;
   top: 0;
-}
-article#main.top {
-  margin-top: 3rem;
 }
 section#banner > div {
   color: whitesmoke;
@@ -2565,6 +2559,14 @@ button.small,
   .error {
     margin-bottom: 1rem;
   }
+  article#main > header {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+  }
   .container {
     margin-right: auto;
     margin-left: auto;
@@ -2653,6 +2655,14 @@ button.small,
   .error {
     margin-bottom: 1rem;
   }
+  article#main > header {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+  }
   .container {
     margin-right: auto;
     margin-left: auto;
@@ -2732,6 +2742,14 @@ button.small,
   .error {
     margin-bottom: 1rem;
   }
+  article#main > header {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+  }
   .container {
     margin-right: auto;
     margin-left: auto;
@@ -2810,6 +2828,14 @@ button.small,
   .align-right,
   .error {
     margin-bottom: 1rem;
+  }
+  article#main > header {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
   }
   .container {
     margin-right: auto;
@@ -2893,6 +2919,14 @@ button.small,
   .error {
     margin-bottom: 1rem;
   }
+  article#main > header {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+  }
   .container {
     margin-right: auto;
     margin-left: auto;
@@ -2923,18 +2957,32 @@ button.small,
     padding-top: 1.125rem;
   }
   .flex-box {
+    margin: 0;
+    padding: 0;
     display: block;
     width: 100%;
   }
   .box {
+    margin: 0;
+    padding: 0;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
     display: block;
     width: 100%;
   }
   .box-four-in-row {
+    margin: 0;
+    padding: 0;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
     display: block;
     width: 100%;
   }
   .box-three-in-row {
+    margin: 0;
+    padding: 0;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
     display: block;
     width: 100%;
   }
