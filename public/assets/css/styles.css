@@ -491,21 +491,21 @@ sup {
 }
 .box {
   padding: 1.25rem;
-  margin: 0.25rem;
+  margin: 0.5rem;
   width: 100%;
   text-align: center;
   flex: 1;
 }
 .box-four-in-row {
   padding: 1.25rem;
-  margin: 0.25rem;
+  margin: 0.5rem;
   width: 20%;
   text-align: center;
   flex: 1;
 }
 .box-three-in-row {
   padding: 1.25rem;
-  margin: 0.25rem;
+  margin: 0.5rem;
   width: 30%;
   text-align: center;
   flex: 1;
