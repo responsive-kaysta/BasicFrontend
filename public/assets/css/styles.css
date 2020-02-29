@@ -375,8 +375,6 @@ hr {
   padding: 0;
   margin-left: 0;
   margin-right: 0;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
 }
 img {
   max-width: 100%;
@@ -971,8 +969,6 @@ form.row {
   text-decoration: none;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", "Lato", Arial, sans-serif;
   text-transform: none;
-}
-.lead {
   font-size: 1.25rem;
   font-weight: 500;
   line-height: 1.5rem;
@@ -980,8 +976,7 @@ form.row {
 }
 .lead {
   margin: 0;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding: 0;
 }
 /* 
     small
@@ -991,11 +986,11 @@ form.row {
   text-decoration: none;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", "Lato", Arial, sans-serif;
   text-transform: none;
+  font-size: 0.85rem;
 }
 .small {
-  font-size: 0.85rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  margin: 0;
+  padding: 0;
 }
 /* 
     italic
@@ -1012,10 +1007,11 @@ form.row {
   text-decoration: none;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", "Lato", Arial, sans-serif;
   text-transform: none;
+  font-size: 1.6rem;
 }
 .headline {
-  font-size: 1.6rem;
-  margin-bottom: 1rem;
+  margin: 0;
+  padding: 0;
 }
 /* 
     tagline
@@ -1025,11 +1021,12 @@ form.row {
   text-decoration: none;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", "Lato", Arial, sans-serif;
   text-transform: none;
-}
-.tagline {
   font-weight: 100;
   font-size: 1.4rem;
-  margin-bottom: 1rem;
+}
+.tagline {
+  margin: 0;
+  padding: 0;
 }
 /* 
     paragraph
@@ -1039,11 +1036,13 @@ form.row {
   text-decoration: none;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", "Lato", Arial, sans-serif;
   text-transform: none;
-}
-.paragraph {
   margin: 0;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+.paragraph {
+  margin: 0;
+  padding: 0;
 }
 /* 
     paragraph-2col
@@ -1056,8 +1055,7 @@ form.row {
 }
 .paragraph-2col {
   margin: 0;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding: 0;
 }
 /* 
     paragraph-3col
@@ -1070,8 +1068,7 @@ form.row {
 }
 .paragraph-3col {
   margin: 0;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding: 0;
 }
 /* 
     align
@@ -1633,9 +1630,8 @@ input[type="password"] {
   min-width: 40%;
 }
 .page-header {
+  margin: 0;
   padding: 0;
-  padding-bottom: 1rem;
-  margin-bottom: 1rem;
 }
 section {
   margin: 0;
@@ -1659,8 +1655,6 @@ section {
   -ms-order: 1;
   order: 1;
   border-radius: 0;
-  max-height: 160px;
-  max-width: 160px;
 }
 .spotlight-right .image {
   justify-content: flex-end;
@@ -1669,38 +1663,32 @@ section {
   -ms-order: 2;
   order: 2;
   border-radius: 0;
-  height: 160px;
-  width: 160px;
 }
 .spotlight .image img {
-  border-radius: 0;
-  padding: 1rem;
+  border-radius: 10;
 }
 .spotlight-left .content {
   -moz-order: 2;
   -webkit-order: 2;
   -ms-order: 2;
   order: 2;
-  width: 100%;
-  height: 160px;
   display: flex;
   align-items: center;
+  flex-grow: 1;
 }
 .spotlight-right .content {
   -moz-order: 1;
   -webkit-order: 1;
   -ms-order: 1;
   order: 1;
-  width: 100%;
-  height: 160px;
   display: flex;
   align-items: center;
+  flex-grow: 1;
 }
 .spotlight .content > div {
   vertical-align: middle;
   margin-top: auto;
   margin-bottom: auto;
-  padding-left: 3rem;
 }
 .spotlight .content > div > h2 {
   font-size: 1.5rem;
