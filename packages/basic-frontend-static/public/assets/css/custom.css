@@ -1,0 +1,108 @@
+/* 
+    base styles and definitions
+---------------------------------------------------------------------------------------------------
+*/
+/* 
+    global margin/padding
+---------------------------------------------------------------------------------------------------
+*/
+/* 
+    code
+---------------------------------------------------------------------------------------------------
+*/
+/* 
+    box / banner
+---------------------------------------------------------------------------------------------------
+*/
+/* 
+    green
+---------------------------------------------------------------------------------------------------
+*/
+/* 
+    gray
+---------------------------------------------------------------------------------------------------
+*/
+/* 
+    purple
+---------------------------------------------------------------------------------------------------
+*/
+/* 
+    transparent
+---------------------------------------------------------------------------------------------------
+*/
+/* 
+    light
+---------------------------------------------------------------------------------------------------
+*/
+body #root {
+  background: -moz-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)), url("/assets/images/Website-Design-Background.png");
+  background: -webkit-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)), url("/assets/images/Website-Design-Background.png");
+  background-image: -ms-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)), url("/assets/images/Website-Design-Background.png");
+  background: linear-gradient(to bottom, #0b3536 0%, rgba(125, 185, 232, 0)), url("/assets/images/Website-Design-Background.png");
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 0;
+  background-color: transparent;
+}
+@media screen and (min-width: 1680px) {
+  .container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 4.25rem;
+    padding-bottom: 3rem;
+    height: auto;
+    min-height: 92vh;
+  }
+}
+@media screen and (max-width: 1680px) {
+  .container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 4.25rem;
+    padding-bottom: 3rem;
+    height: auto;
+    min-height: 92vh;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 4.25rem;
+    padding-bottom: 3rem;
+    height: auto;
+    min-height: 92vh;
+  }
+}
+@media screen and (max-width: 980px) {
+  .container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 1.5rem;
+    padding-bottom: 3rem;
+    height: auto;
+    min-height: 92vh;
+  }
+}
+@media screen and (max-width: 736px) {
+  .container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 1.125rem;
+    padding-bottom: 3rem;
+    height: auto;
+    min-height: 92vh;
+  }
+}
