@@ -12,7 +12,6 @@ import {
   Pictograms,
   Spotlight,
   SpotlightOrientation,
-  LinkTypes,
 } from "responsive-it-common";
 import { PAGE_MAIN_TOPIC, PAGE_NAME } from "../constants";
 import { ToTopButton } from "../elements";

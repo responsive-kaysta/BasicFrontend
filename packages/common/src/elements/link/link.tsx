@@ -19,18 +19,22 @@ export const Link: FC<LinkProps> = ({
   showLinkIcon,
   showLinkDivider,
 }) => {
-  if (type === LinkTypes.regular) {
-    return <RegularLink text={text} link={link} />;
+  switch (type) {
+    case LinkTypes.regular: {
+      return <RegularLink text={text} link={link} />;
+    }
+    case LinkTypes.text: {
+      return (
+        <TextLink
+          text={text}
+          link={link}
+          showLinkIcon={showLinkIcon}
+          showLinkDivider={showLinkDivider}
+        />
+      );
+    }
+    default: {
+      return <RegularLink text={text} link={link} />;
+    }
   }
-  if (type === LinkTypes.text) {
-    return (
-      <TextLink
-        text={text}
-        link={link}
-        showLinkIcon={showLinkIcon}
-        showLinkDivider={showLinkDivider}
-      />
-    );
-  }
-  return <RegularLink text={text} link={link} />;
 };
