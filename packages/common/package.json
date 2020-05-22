@@ -16,15 +16,14 @@
     "dist",
     "assets"
   ],
-  "peerDependencies": {},
   "devDependencies": {
     "@types/auth0-js": "^9.13.1",
     "@types/downloadjs": "^1.4.2",
     "@types/enzyme": "^3.10.5",
+    "@types/jwt-decode": "^2.2.1",
     "@types/qs": "^6.9.3",
     "@types/react": "^16.9.35",
     "@types/react-dom": "^16.9.8",
-    "@types/jwt-decode": "^2.2.1",
     "@types/react-scroll": "^1.5.5",
     "rimraf": "^3.0.2",
     "typescript": "^3.9.3"
@@ -38,7 +37,7 @@
     "qs": "^6.9.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-spring": "^8.0.27",
-    "react-scroll": "^1.7.16"
+    "react-scroll": "^1.7.16",
+    "react-spring": "^8.0.27"
   }
 }
