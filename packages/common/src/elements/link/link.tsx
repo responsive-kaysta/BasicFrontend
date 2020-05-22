@@ -22,12 +22,15 @@ export const Link: FC<LinkProps> = ({
   if (type === LinkTypes.regular) {
     return <RegularLink text={text} link={link} />;
   }
-  return (
-    <TextLink
-      text={text}
-      link={link}
-      showLinkIcon={showLinkIcon}
-      showLinkDivider={showLinkDivider}
-    />
-  );
+  if (type === LinkTypes.text) {
+    return (
+      <TextLink
+        text={text}
+        link={link}
+        showLinkIcon={showLinkIcon}
+        showLinkDivider={showLinkDivider}
+      />
+    );
+  }
+  return <RegularLink text={text} link={link} />;
 };

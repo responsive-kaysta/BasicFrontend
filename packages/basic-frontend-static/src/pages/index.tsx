@@ -95,31 +95,19 @@ class Index extends React.Component {
               <li>
                 <h3>Text-Elemente, Header, Link</h3>
                 <div>
-                  <Link
-                    text="klick mich ..."
-                    link="#"
-                    type={LinkTypes.regular}
-                  />
+                  <Link text="klick mich ..." link="#" />
                 </div>
               </li>
               <li>
                 <h3>Links, Buttons</h3>
                 <div>
-                  <Link
-                    text="klick mich ..."
-                    link="#"
-                    type={LinkTypes.regular}
-                  />
+                  <Link text="klick mich ..." link="#" />
                 </div>
               </li>
               <li>
                 <h3>Listen, Icons</h3>
                 <div>
-                  <Link
-                    text="klick mich ..."
-                    link="#"
-                    type={LinkTypes.regular}
-                  />
+                  <Link text="klick mich ..." link="#" />
                 </div>
               </li>
             </ul>
@@ -130,51 +118,31 @@ class Index extends React.Component {
               <li>
                 <h3>Box</h3>
                 <div>
-                  <Link
-                    text="klick mich ..."
-                    link="#"
-                    type={LinkTypes.regular}
-                  />
+                  <Link text="klick mich ..." link="#" />
                 </div>
               </li>
               <li>
                 <h3>Feature</h3>
                 <div>
-                  <Link
-                    text="klick mich ..."
-                    link="#"
-                    type={LinkTypes.regular}
-                  />
+                  <Link text="klick mich ..." link="#" />
                 </div>
               </li>
               <li>
                 <h3>Container</h3>
                 <div>
-                  <Link
-                    text="klick mich ..."
-                    link="#"
-                    type={LinkTypes.regular}
-                  />
+                  <Link text="klick mich ..." link="#" />
                 </div>
               </li>
               <li>
                 <h3>Tiles</h3>
                 <div>
-                  <Link
-                    text="klick mich ..."
-                    link="#"
-                    type={LinkTypes.regular}
-                  />
+                  <Link text="klick mich ..." link="#" />
                 </div>
               </li>
               <li>
                 <h3>Spotlight</h3>
                 <div>
-                  <Link
-                    text="klick mich ..."
-                    link="#"
-                    type={LinkTypes.regular}
-                  />
+                  <Link text="klick mich ..." link="#" />
                 </div>
               </li>
             </ul>
