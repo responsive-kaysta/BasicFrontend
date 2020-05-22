@@ -12,6 +12,7 @@ import {
   Pictograms,
   Spotlight,
   SpotlightOrientation,
+  LinkTypes,
 } from "responsive-it-common";
 import { PAGE_MAIN_TOPIC, PAGE_NAME } from "../constants";
 import { ToTopButton } from "../elements";
@@ -94,19 +95,31 @@ class Index extends React.Component {
               <li>
                 <h3>Text-Elemente, Header, Link</h3>
                 <div>
-                  <Link text="klick mich ..." link="/text-heading" />
+                  <Link
+                    text="klick mich ..."
+                    link="#"
+                    type={LinkTypes.regular}
+                  />
                 </div>
               </li>
               <li>
                 <h3>Links, Buttons</h3>
                 <div>
-                  <Link text="klick mich ..." link="/link-button" />
+                  <Link
+                    text="klick mich ..."
+                    link="#"
+                    type={LinkTypes.regular}
+                  />
                 </div>
               </li>
               <li>
                 <h3>Listen, Icons</h3>
                 <div>
-                  <Link text="klick mich ..." link="/list-icon" />
+                  <Link
+                    text="klick mich ..."
+                    link="#"
+                    type={LinkTypes.regular}
+                  />
                 </div>
               </li>
             </ul>
@@ -117,31 +130,51 @@ class Index extends React.Component {
               <li>
                 <h3>Box</h3>
                 <div>
-                  <Link text="klick mich ..." link="/box-panel" />
+                  <Link
+                    text="klick mich ..."
+                    link="#"
+                    type={LinkTypes.regular}
+                  />
                 </div>
               </li>
               <li>
                 <h3>Feature</h3>
                 <div>
-                  <Link text="klick mich ..." link="/features" />
+                  <Link
+                    text="klick mich ..."
+                    link="#"
+                    type={LinkTypes.regular}
+                  />
                 </div>
               </li>
               <li>
                 <h3>Container</h3>
                 <div>
-                  <Link text="klick mich ..." link="/container" />
+                  <Link
+                    text="klick mich ..."
+                    link="#"
+                    type={LinkTypes.regular}
+                  />
                 </div>
               </li>
               <li>
                 <h3>Tiles</h3>
                 <div>
-                  <Link text="klick mich ..." link="/tiles-section" />
+                  <Link
+                    text="klick mich ..."
+                    link="#"
+                    type={LinkTypes.regular}
+                  />
                 </div>
               </li>
               <li>
                 <h3>Spotlight</h3>
                 <div>
-                  <Link text="klick mich ..." link="/spotlight" />
+                  <Link
+                    text="klick mich ..."
+                    link="#"
+                    type={LinkTypes.regular}
+                  />
                 </div>
               </li>
             </ul>
