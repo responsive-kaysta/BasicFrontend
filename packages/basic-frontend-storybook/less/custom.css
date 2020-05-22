@@ -34,18 +34,6 @@
     light
 ---------------------------------------------------------------------------------------------------
 */
-body #root {
-  background: -moz-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)), url("/assets/images/Website-Design-Background.png");
-  background: -webkit-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)), url("/assets/images/Website-Design-Background.png");
-  background-image: -ms-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)), url("/assets/images/Website-Design-Background.png");
-  background: linear-gradient(to bottom, #0b3536 0%, rgba(125, 185, 232, 0)), url("/assets/images/Website-Design-Background.png");
-  background-attachment: fixed;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-top: 0;
-  background-color: transparent;
-}
 body {
   background: whitesmoke;
 }
