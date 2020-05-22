@@ -1,0 +1,61 @@
+// out: ../../public/assets/css/custom.css
+
+@import "../../../common/src/less/global.less";
+
+body #root {
+  background: -moz-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)),
+    url("/assets/images/Website-Design-Background.png");
+  background: -webkit-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)),
+    url("/assets/images/Website-Design-Background.png");
+  background-image: -ms-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)),
+    url("/assets/images/Website-Design-Background.png");
+  background: linear-gradient(to bottom, #0b3536 0%, rgba(125, 185, 232, 0)),
+    url("/assets/images/Website-Design-Background.png");
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 0;
+  background-color: transparent;
+}
+
+body {
+  background: whitesmoke;
+}
+
+#header h1 > a {
+  color: #5e5e5e;
+}
+
+#header {
+  width: 100%;
+  height: 3.25rem;
+  color: #5e5e5e;
+  background-color: #0b3536;
+}
+
+#header nav {
+  color: #5e5e5e;
+  background-color: #0b3536;
+}
+
+#footer {
+  padding: 1rem 0 1rem 0;
+  text-align: center;
+  color: #5e5e5e;
+  background-color: #0b3536;
+  width: 100%;
+  bottom: 0;
+}
+
+#footer .copyright span {
+  padding: 0;
+}
+
+#footer .copyright * {
+  color: #5e5e5e;
+}
+
+#footer .copyright a:hover {
+  color: @style-light-hover-color;
+}

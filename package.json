@@ -1,49 +1,17 @@
 {
   "name": "basic-frontend",
-  "private": false,
-  "version": "0.10.2-development",
-  "description": "finest responsive - reactive frontend",
-  "author": "me@responsive-kaysta.ch",
-  "license": "MIT",
-  "scripts": {
-    "start": "react-static start",
-    "stage": "react-static build --staging",
-    "build": "react-static build",
-    "bundle": "react-static bundle",
-    "export": "react-static export",
-    "serve": "serve dist -p 3000 -s"
-  },
-  "dependencies": {
-    "@reach/router": "^1.3.3",
-    "auth0-js": "^9.12.2",
-    "axios": "^0.19.2",
-    "jwt-decode": "^2.2.0",
-    "query-string": "^6.11.0",
-    "react": "^16.13.0",
-    "react-dom": "^16.13.0",
-    "react-iframe": "^1.8.0",
-    "react-scroll": "^1.7.16",
-    "react-static": "^7.2.3",
-    "react-static-plugin-google-tag-manager": "^1.1.1",
-    "react-static-plugin-reach-router": "^7.2.3",
-    "react-static-plugin-sitemap": "^7.2.3",
-    "react-static-plugin-source-filesystem": "^7.2.3",
-    "react-static-plugin-typescript": "^7.2.3"
-  },
+  "private": true,
   "devDependencies": {
-    "@types/jwt-decode": "^2.2.1",
-    "@types/auth0-js": "^9.12.4",
-    "@types/react-router-dom": "^5.1.3",
-    "@types/react-scroll": "^1.5.4",
-    "@types/node": "^13.7.7",
-    "@types/reach__router": "^1.3",
-    "@types/react": "^16.9.23",
-    "@types/react-dom": "^16.9.5",
-    "@types/react-hot-loader": "^4.1.1",
-    "@types/webpack-env": "^1.15.1",
-    "react-hot-loader": "^4.12.19",
-    "serve": "^11.3.0",
-    "typescript": "^3.8.3"
+    "lerna": "^3.20.2"
   },
-  "main": "static.config.js"
+  "scripts": {
+    "start": "lerna run start",
+    "build": "lerna run build --stream",
+    "bootstrap": "npm install && lerna bootstrap --hoist",
+    "develop": "lerna run develop --parallel",
+    "clean": "lerna clean",
+    "lint": "lerna run lint --parallel",
+    "types:check": "lerna run types:check --stream",
+    "version": "lerna version --conventional-commits"
+  }
 }

@@ -1,0 +1,44 @@
+{
+  "name": "responsive-it-common",
+  "version": "0.0.5",
+  "main": "dist/index.js",
+  "description": "This package provides commonly used components for the responsive-it apps.",
+  "scripts": {
+    "develop": "tsc --watch",
+    "prebuild": "rimraf ./build",
+    "build": "tsc",
+    "lint": "npm run lint:ts && npm run lint:prettier",
+    "types:check": "tsc --noEmit"
+  },
+  "author": "responsive-it <dev-guru@responsive-it>",
+  "license": "MIT",
+  "files": [
+    "dist",
+    "assets"
+  ],
+  "peerDependencies": {},
+  "devDependencies": {
+    "@types/auth0-js": "^9.13.1",
+    "@types/downloadjs": "^1.4.2",
+    "@types/enzyme": "^3.10.5",
+    "@types/qs": "^6.9.3",
+    "@types/react": "^16.9.35",
+    "@types/react-dom": "^16.9.8",
+    "@types/jwt-decode": "^2.2.1",
+    "@types/react-scroll": "^1.5.5",
+    "rimraf": "^3.0.2",
+    "typescript": "^3.9.3"
+  },
+  "dependencies": {
+    "auth0-js": "^9.13.2",
+    "date-fns": "^2.14.0",
+    "downloadjs": "^1.4.7",
+    "js-sha256": "^0.9.0",
+    "jwt-decode": "^2.2.0",
+    "qs": "^6.9.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-spring": "^8.0.27",
+    "react-scroll": "^1.7.16"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "name": "static.basic-frontend",
+  "private": false,
+  "version": "0.10.2-development",
+  "description": "finest responsive - reactive news",
+  "author": "dev-guru@responsive-it.biz",
+  "license": "MIT",
+  "scripts": {
+    "start": "react-static start",
+    "stage": "react-static build --staging",
+    "build": "react-static build",
+    "bundle": "react-static bundle",
+    "export": "react-static export",
+    "serve": "serve dist -p 3000 -s"
+  },
+  "dependencies": {
+    "@reach/router": "^1.3.3",
+    "auth0-js": "^9.13.2",
+    "axios": "^0.19.2",
+    "jwt-decode": "^2.2.0",
+    "query-string": "^6.12.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-iframe": "^1.8.0",
+    "react-scroll": "^1.7.16",
+    "react-static": "^7.3.0",
+    "react-static-plugin-google-tag-manager": "^1.2.0",
+    "react-static-plugin-reach-router": "^7.3.0",
+    "react-static-plugin-sitemap": "^7.3.0",
+    "react-static-plugin-source-filesystem": "^7.3.0",
+    "react-static-plugin-typescript": "^7.3.0",
+    "responsive-it-common": "^0.0.5"
+  },
+  "devDependencies": {
+    "@types/auth0-js": "^9.13.1",
+    "@types/jwt-decode": "^2.2.1",
+    "@types/node": "^14.0.4",
+    "@types/reach__router": "^1.3",
+    "@types/react": "^16.9.35",
+    "@types/react-dom": "^16.9.8",
+    "@types/react-hot-loader": "^4.1.1",
+    "@types/react-router-dom": "^5.1.5",
+    "@types/react-scroll": "^1.5.5",
+    "@types/webpack-env": "^1.15.2",
+    "react-hot-loader": "^4.12.21",
+    "serve": "^11.3.0",
+    "typescript": "^3.9.3"
+  },
+  "main": "static.config.js"
+}
