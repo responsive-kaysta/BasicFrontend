@@ -21,7 +21,12 @@
     "esModuleInterop": true,
     "types": ["node"]
   },
-  "include": ["./src/**/*.ts", "./src/**/*.tsx", "/src/assets/*.png"],
+  "include": [
+    "./src/**/*.ts",
+    "./src/**/*.tsx",
+    "/src/assets/**/*.png",
+    "/src/assets/**/*.svg"
+  ],
   "exclude": ["./node_modules", "./dist", "./**/*.test.ts", "./**/*.test.tsx"],
   "plugins": [
     {
