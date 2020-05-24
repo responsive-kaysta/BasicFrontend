@@ -1,12 +1,12 @@
 import { storiesOf } from "@storybook/react";
 import * as React from "react";
-import { OrderListSelector } from "responsive-it-common";
+import { LanguageSelector } from "responsive-it-common";
 
 import "../../../../less/fontawesome-all.css";
 import "../../../../less/styles.css";
 import "../../../../less/custom.css";
 
 storiesOf(
-  "03: Components / 03: Order List Selector",
+  "02: Components / 01: Language Selector",
   module
-).add("Order List Selector", () => <OrderListSelector onChange={() => null} />);
+).add("Language Selector", () => <LanguageSelector onChange={() => null} />);

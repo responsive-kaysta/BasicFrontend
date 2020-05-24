@@ -1,14 +1,12 @@
 import { storiesOf } from "@storybook/react";
 import * as React from "react";
-import { SearchTypeSelector } from "responsive-it-common";
+import { OrderListSelector } from "responsive-it-common";
 
 import "../../../../less/fontawesome-all.css";
 import "../../../../less/styles.css";
 import "../../../../less/custom.css";
 
 storiesOf(
-  "03: Components / 04: Search Type Selector",
+  "02: Components / 03: Order List Selector",
   module
-).add("Search Type Selector", () => (
-  <SearchTypeSelector onChange={() => null} />
-));
+).add("Order List Selector", () => <OrderListSelector onChange={() => null} />);

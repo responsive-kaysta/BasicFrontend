@@ -6,7 +6,7 @@ import "../../../../less/fontawesome-all.css";
 import "../../../../less/styles.css";
 import "../../../../less/custom.css";
 
-storiesOf("03: Components / 02: Limit Reached!", module).add(
+storiesOf("02: Components / 02: Limit Reached!", module).add(
   "Limit Reached!",
   () => (
     <LimitReached

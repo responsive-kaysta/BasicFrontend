@@ -6,6 +6,6 @@ import "../../../../less/fontawesome-all.css";
 import "../../../../less/styles.css";
 import "../../../../less/custom.css";
 
-storiesOf("01: Elements / 02: Button", module)
+storiesOf("04: Elements / 01: Button", module)
   .add("with text", () => <LinkButton text="some link button" />)
   .add("with some emoji", () => <LinkButton text="😀 😎 👍 💯" />);
