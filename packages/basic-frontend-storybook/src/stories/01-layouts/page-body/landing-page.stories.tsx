@@ -13,9 +13,9 @@ import {
   Link,
   ToTopButton,
 } from "responsive-it-common";
-import "../../../../less/custom.css";
-import "../../../../less/fontawesome-all.css";
-import "../../../../less/styles.css";
+import "../../../../public/less/custom.css";
+import "../../../../public/less/fontawesome-all.css";
+import "../../../../public/less/styles.css";
 
 storiesOf("01: Layouts / 01: Landing Page", module).add(
   "with PageBanner",

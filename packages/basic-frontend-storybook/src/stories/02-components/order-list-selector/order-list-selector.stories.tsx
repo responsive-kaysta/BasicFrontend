@@ -2,9 +2,9 @@ import { storiesOf } from "@storybook/react";
 import * as React from "react";
 import { OrderListSelector } from "responsive-it-common";
 
-import "../../../../less/fontawesome-all.css";
-import "../../../../less/styles.css";
-import "../../../../less/custom.css";
+import "../../../../public/less/fontawesome-all.css";
+import "../../../../public/less/styles.css";
+import "../../../../public/less/custom.css";
 
 storiesOf(
   "02: Components / 03: Order List Selector",

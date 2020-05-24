@@ -19,6 +19,6 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start": "start-storybook -p 9001 -c .storybook"
+    "start": "start-storybook -s ./public -p 9001 -c .storybook"
   }
 }
