@@ -6,7 +6,7 @@
   },
   "scripts": {
     "start": "lerna run start",
-    "build": "lerna run build --stream",
+    "build": "npm install && lerna run build --stream",
     "bootstrap": "npm install && lerna bootstrap --hoist",
     "develop": "lerna run develop --parallel",
     "clean": "lerna clean",
