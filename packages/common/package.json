@@ -1,6 +1,6 @@
 {
   "name": "responsive-it-common",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "main": "dist/index.js",
   "description": "This package provides commonly used components for the responsive-it apps.",
   "scripts": {
