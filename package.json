@@ -2,7 +2,7 @@
   "name": "basic-frontend",
   "private": true,
   "devDependencies": {
-    "lerna": "^3.21.0"
+    "lerna": "^3.22.0"
   },
   "scripts": {
     "start": "lerna run start",
