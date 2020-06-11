@@ -3,12 +3,10 @@ import { FC } from "react";
 import styled from "styled-components";
 
 const FlexBox = styled.div`
-  margin: 0;
-  padding: 0;
-
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-between;
 `;
 
 export const BoxContainer: FC = ({ children }) => {

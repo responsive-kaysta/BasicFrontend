@@ -60,6 +60,7 @@ export const spacing = {
     small: 0.75,
     medium: 1.0,
     large: 1.5,
+    xlarge: 1.5,
   },
   borderRadius: {
     small: 5,
@@ -114,7 +115,7 @@ export const pageMargins = css`
   padding-left: 0;
   padding-right: 0;
 
-  @media (min-width: ${breakpoint * 1}px) {
+  @media (min-width: ${breakpoint}px) {
     margin-left: ${pageMargin * 1}%;
     margin-right: ${pageMargin * 1}%;
 

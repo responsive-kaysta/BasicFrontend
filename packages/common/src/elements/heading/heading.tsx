@@ -5,7 +5,7 @@ import { HeadingTypes } from "./heading-types";
 import styled, { css } from "styled-components";
 import { typography } from "../../identity";
 
-export const style = css`
+const style = css`
   font-family: ${typography.type.primary};
   text-transform: ${typography.transform.none};
   text-decoration: ${typography.decoration.none};
