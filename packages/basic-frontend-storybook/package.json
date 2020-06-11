@@ -18,7 +18,10 @@
     "typescript": "^3.9.5",
     "polished": "^3.6.4"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "babel-loader": "^8.1.0",
+    "babel-plugin-styled-components": "^1.10.7"
+  },
   "scripts": {
     "start": "start-storybook -s ./public -p 9001 -c .storybook"
   }
