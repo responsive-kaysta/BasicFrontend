@@ -11,6 +11,7 @@ import {
   Icon,
   Link,
   Pictogram,
+  Spinner,
 } from "responsive-it-common";
 import { Appearance } from "responsive-it-common/dist/elements/button/appearance";
 
@@ -25,5 +26,7 @@ storiesOf("01: Basics / 01: Colors", module).add("color", () => (
     <Link href="https://learnstorybook.com">default</Link>
     <Hr />
     <Pictogram pictogram="kuenstliche_intelligenz" /> Pictogram
+    <Hr />
+    <Spinner />
   </LayoutContainer>
 ));
