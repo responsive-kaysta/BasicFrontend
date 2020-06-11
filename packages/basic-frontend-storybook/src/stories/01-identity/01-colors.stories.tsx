@@ -12,8 +12,10 @@ import {
   Link,
   Pictogram,
   Spinner,
+  Text,
 } from "responsive-it-common";
 import { Appearance } from "responsive-it-common/dist/elements/button/appearance";
+import { TextTypes } from "responsive-it-common/dist/elements/text/text-types";
 
 storiesOf("01: Basics / 01: Colors", module).add("color", () => (
   <LayoutContainer>
@@ -26,6 +28,9 @@ storiesOf("01: Basics / 01: Colors", module).add("color", () => (
     <Link href="https://learnstorybook.com">default</Link>
     <Hr />
     <Pictogram pictogram="kuenstliche_intelligenz" /> Pictogram
+    <Hr />
+    <Text type={TextTypes.LABEL}>Some Text</Text>
+    <Text>Some Paragraph Text</Text>
     <Hr />
     <Spinner />
   </LayoutContainer>
