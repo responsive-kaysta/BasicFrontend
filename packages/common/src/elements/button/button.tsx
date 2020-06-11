@@ -324,7 +324,14 @@ export const Button: FC<ButtonProps> = ({
   console.log("Button");
 
   return (
-    <StyledButton appearance={appearance} {...props}>
+    <StyledButton
+      appearance={appearance}
+      containsIcon={containsIcon}
+      isDisabled={isDisabled}
+      isLink={isLink}
+      isUnclickable={isUnclickable}
+      {...props}
+    >
       <ButtonInner>{children}</ButtonInner>
     </StyledButton>
   );

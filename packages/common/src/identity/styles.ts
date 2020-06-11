@@ -1,13 +1,15 @@
 import { css } from "styled-components";
 
 // Global style variables
-export const background = {
-  app: "#F6F9FC",
-  appInverse: "#7A8997",
-  positive: "#E1FFD4",
-  negative: "#FEDED2",
-  warning: "#FFF5CF",
-};
+export enum background {
+  app = "#F6F9FC",
+  appInverse = "#7A8997",
+  positive = "#E1FFD4",
+  negative = "#FEDED2",
+  warning = "#FFF5CF",
+  transparent = "transparent",
+  whitesmoke = "whitesmoke",
+}
 
 export const color = {
   // Palette
@@ -21,6 +23,9 @@ export const color = {
   seafoam: "#37D5D3",
   purple: "#6F2CAC",
   ultraviolet: "#2A0481",
+
+  darkgreen: "#1a867d",
+  gray: "darkgray",
 
   // Monochrome
   lightest: "#FFFFFF",
@@ -90,17 +95,36 @@ export const breakpoint = 600;
 export const pageMargin = 5.55555;
 
 export const pageMargins = css`
-  padding: 0 ${spacing.padding.medium}px;
   @media (min-width: ${breakpoint * 1}px) {
-    margin: 0 ${pageMargin * 1}%;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: ${pageMargin * 3}%;
+    margin-right: ${pageMargin * 3}%;
+
+    padding: ${spacing.padding.small}px;
   }
   @media (min-width: ${breakpoint * 2}px) {
-    margin: 0 ${pageMargin * 2}%;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: ${pageMargin * 4}%;
+    margin-right: ${pageMargin * 4}%;
+
+    padding: ${spacing.padding.medium}px;
   }
   @media (min-width: ${breakpoint * 3}px) {
-    margin: 0 ${pageMargin * 3}%;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: ${pageMargin * 5}%;
+    margin-right: ${pageMargin * 5}%;
+
+    padding: ${spacing.padding.large}px;
   }
   @media (min-width: ${breakpoint * 4}px) {
-    margin: 0 ${pageMargin * 4}%;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: ${pageMargin * 6}%;
+    margin-right: ${pageMargin * 6}%;
+
+    padding: ${spacing.padding.large}px;
   }
 `;
