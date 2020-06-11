@@ -5,27 +5,27 @@ import { GlobalStyle, pageMargins } from "../../identity";
 import { ContainerProps } from "./container-props";
 
 const StyledMain = styled.main<ContainerProps>`
+  ${(props) =>
+    props.backgoundColor &&
+    `
+    background-color: ${props.backgoundColor};
+    `}
+`;
+
+const StyledArticle = styled.article<ContainerProps>`
   ${(props) => props.padding && pageMargins}
 `;
 
 export const LayoutContainer: FC<ContainerProps> = ({
   children,
   backgoundColor,
-  height,
   padding,
-  width,
 }) => {
   return (
     <>
       <GlobalStyle />
-      <StyledMain
-        id="layout-container"
-        backgoundColor={backgoundColor}
-        height={height}
-        width={width}
-        padding={padding}
-      >
-        {children}
+      <StyledMain id="layout-container" backgoundColor={backgoundColor}>
+        <StyledArticle padding={padding}>{children}</StyledArticle>
       </StyledMain>
     </>
   );

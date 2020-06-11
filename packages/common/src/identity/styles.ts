@@ -7,6 +7,7 @@ export enum background {
   positive = "#E1FFD4",
   negative = "#FEDED2",
   warning = "#FFF5CF",
+  white = "white",
   transparent = "transparent",
   whitesmoke = "whitesmoke",
 }
@@ -48,13 +49,25 @@ export const color = {
 
 export const spacing = {
   padding: {
-    small: 10,
-    medium: 20,
-    large: 30,
+    xsmall: 10,
+    small: 20,
+    medium: 30,
+    large: 40,
+  },
+  margin: {
+    xsmall: 0.5,
+    small: 0.75,
+    medium: 1.0,
+    large: 1.5,
   },
   borderRadius: {
     small: 5,
     default: 10,
+  },
+  borderSize: {
+    small: 1,
+    medium: 3,
+    large: 5,
   },
 };
 
@@ -95,36 +108,40 @@ export const breakpoint = 600;
 export const pageMargin = 5.55555;
 
 export const pageMargins = css`
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+
   @media (min-width: ${breakpoint * 1}px) {
-    margin-top: 0;
-    margin-bottom: 0;
     margin-left: ${pageMargin * 3}%;
     margin-right: ${pageMargin * 3}%;
 
-    padding: ${spacing.padding.small}px;
+    padding-top: ${spacing.padding.small}px;
+    padding-bottom: ${spacing.padding.small}px;
   }
+
   @media (min-width: ${breakpoint * 2}px) {
-    margin-top: 0;
-    margin-bottom: 0;
     margin-left: ${pageMargin * 4}%;
     margin-right: ${pageMargin * 4}%;
 
-    padding: ${spacing.padding.medium}px;
+    padding-top: ${spacing.padding.medium}px;
+    padding-bottom: ${spacing.padding.medium}px;
   }
+
   @media (min-width: ${breakpoint * 3}px) {
-    margin-top: 0;
-    margin-bottom: 0;
     margin-left: ${pageMargin * 5}%;
     margin-right: ${pageMargin * 5}%;
 
-    padding: ${spacing.padding.large}px;
+    padding-top: ${spacing.padding.large}px;
+    padding-bottom: ${spacing.padding.large}px;
   }
+
   @media (min-width: ${breakpoint * 4}px) {
-    margin-top: 0;
-    margin-bottom: 0;
     margin-left: ${pageMargin * 6}%;
     margin-right: ${pageMargin * 6}%;
 
-    padding: ${spacing.padding.large}px;
+    padding-top: ${spacing.padding.large}px;
+    padding-bottom: ${spacing.padding.large}px;
   }
 `;
