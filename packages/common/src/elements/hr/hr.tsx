@@ -24,32 +24,26 @@ const StyledRuler = styled.hr<HrProps>`
 
   @media (min-width: ${breakpoint}px) {
     margin-bottom: ${spacing.margin.small}rem;
-    margin-top: ${spacing.margin.xsmall}rem;
   }
 
   @media (min-width: ${breakpoint * 2}px) {
     margin-bottom: ${spacing.margin.medium}rem;
-    margin-top: ${spacing.margin.small}rem;
   }
 
   @media (min-width: ${breakpoint * 3}px) {
     margin-bottom: ${spacing.margin.medium}rem;
-    margin-top: ${spacing.margin.medium}rem;
   }
 
   @media (min-width: ${breakpoint * 4}px) {
     margin-bottom: ${spacing.margin.large}rem;
-    margin-top: ${spacing.margin.medium}rem;
   }
 
   @media (min-width: ${breakpoint * 5}px) {
     margin-bottom: ${spacing.margin.xlarge}rem;
-    margin-top: ${spacing.margin.large}rem;
   }
 
   @media (min-width: ${breakpoint * 6}px) {
     margin-bottom: ${spacing.margin.xlarge}rem;
-    margin-top: ${spacing.margin.large}rem;
   }
 `;
 

@@ -12,10 +12,10 @@ import {
 
 storiesOf("01: Identity", module).add("Colors", () => (
   <LayoutContainer padding>
-    <Header withRuler rulerColor={color.darkest}>
+    <Header>
       <Heading type={HeadingTypes.h1}>Colors</Heading>
     </Header>
-    <Header>
+    <Header withRuler rulerColor={color.darkest}>
       <Heading type={HeadingTypes.h3}>Background-Colors</Heading>
     </Header>
 
