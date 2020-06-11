@@ -1,10 +1,10 @@
 export enum TextTypes {
-  LABEL,
-  PARAGRAPH,
-  SPAN,
-  PRE,
-  BLOCKQUOTE,
-  CAPTION,
-  SUB,
-  SUP,
+  label,
+  paragraph,
+  span,
+  pre,
+  blockquote,
+  caption,
+  sub,
+  sup,
 }

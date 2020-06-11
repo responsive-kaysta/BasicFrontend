@@ -49,7 +49,7 @@ const linkStyles = css<LinkProps>`
     `};
 
   ${(props) =>
-    props.appearance === Appearance.SECONDARY &&
+    props.appearance === Appearance.secondary &&
     css`
       color: ${color.mediumdark};
 
@@ -63,7 +63,7 @@ const linkStyles = css<LinkProps>`
     `};
 
   ${(props) =>
-    props.appearance === Appearance.TERTIARY &&
+    props.appearance === Appearance.tertiary &&
     css`
       color: ${color.dark};
 
@@ -77,7 +77,7 @@ const linkStyles = css<LinkProps>`
     `};
 
   ${(props) =>
-    props.appearance === Appearance.NOCHROME &&
+    props.appearance === Appearance.nochrome &&
     css`
       color: inherit;
 
@@ -89,7 +89,7 @@ const linkStyles = css<LinkProps>`
     `};
 
   ${(props) =>
-    props.appearance === Appearance.INVERSE &&
+    props.appearance === Appearance.inverse &&
     css`
       color: ${color.lightest};
 

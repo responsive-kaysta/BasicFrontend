@@ -1,7 +1,7 @@
 export enum Appearance {
-  PRIMARY,
-  SECONDARY,
-  TERTIARY,
-  INVERSE,
-  NOCHROME,
+  primary,
+  secondary,
+  tertiary,
+  inverse,
+  nochrome,
 }

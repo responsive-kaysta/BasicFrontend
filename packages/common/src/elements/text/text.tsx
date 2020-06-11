@@ -55,28 +55,28 @@ const Sup = styled.sup`
 
 export const Text: FC<TextProps> = ({ children, type, ...props }) => {
   switch (type) {
-    case TextTypes.BLOCKQUOTE: {
+    case TextTypes.blockquote: {
       return <Blockquote {...props}>{children}</Blockquote>;
     }
-    case TextTypes.CAPTION: {
+    case TextTypes.caption: {
       return <Caption {...props}>{children}</Caption>;
     }
-    case TextTypes.LABEL: {
+    case TextTypes.label: {
       return <Label {...props}>{children}</Label>;
     }
-    case TextTypes.PARAGRAPH: {
+    case TextTypes.paragraph: {
       return <Paragraph {...props}>{children}</Paragraph>;
     }
-    case TextTypes.PRE: {
+    case TextTypes.pre: {
       return <Pre {...props}>{children}</Pre>;
     }
-    case TextTypes.SPAN: {
+    case TextTypes.span: {
       return <Span {...props}>{children}</Span>;
     }
-    case TextTypes.SUB: {
+    case TextTypes.sub: {
       return <Sub {...props}>{children}</Sub>;
     }
-    case TextTypes.SUP: {
+    case TextTypes.sup: {
       return <Sup {...props}>{children}</Sup>;
     }
     default: {

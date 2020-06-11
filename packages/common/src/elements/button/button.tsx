@@ -90,7 +90,7 @@ const StyledButton = styled.button<ButtonProps>`
     `}
 
   ${(props) =>
-    props.appearance === Appearance.PRIMARY &&
+    props.appearance === Appearance.primary &&
     `
       background: ${color.primary};
       color: ${color.lightest};
@@ -111,7 +111,7 @@ const StyledButton = styled.button<ButtonProps>`
     `}
 
   ${(props) =>
-    props.appearance === Appearance.SECONDARY &&
+    props.appearance === Appearance.secondary &&
     `
       background: ${color.secondary};
       color: ${color.lightest};
@@ -132,7 +132,7 @@ const StyledButton = styled.button<ButtonProps>`
     `}
 
   ${(props) =>
-    props.appearance === Appearance.TERTIARY &&
+    props.appearance === Appearance.tertiary &&
     `
       background: ${color.tertiary};
       color: ${color.darkest};
@@ -153,7 +153,7 @@ const StyledButton = styled.button<ButtonProps>`
     `}
 
   ${(props) =>
-    props.appearance === Appearance.OUTLINE &&
+    props.appearance === Appearance.outline &&
     `
       box-shadow: ${opacify(0.05, color.border)} 0 0 0 1px inset;
       color: ${color.dark};
@@ -188,7 +188,7 @@ const StyledButton = styled.button<ButtonProps>`
     `};
 
     ${(props) =>
-      props.appearance === Appearance.PRIMARY_OUTLINE &&
+      props.appearance === Appearance.primary_outline &&
       `
         box-shadow: ${color.primary} 0 0 0 1px inset;
         color: ${color.primary};
@@ -218,7 +218,7 @@ const StyledButton = styled.button<ButtonProps>`
       `};
 
     ${(props) =>
-      props.appearance === Appearance.SECONDARY_OUTLINE &&
+      props.appearance === Appearance.secondary_outline &&
       `
         box-shadow: ${color.secondary} 0 0 0 1px inset;
         color: ${color.secondary};
@@ -244,7 +244,7 @@ const StyledButton = styled.button<ButtonProps>`
       `};
 
       ${(props) =>
-        props.appearance === Appearance.INVERSE_PRIMARY &&
+        props.appearance === Appearance.inverse_primary &&
         `
           background: ${color.lightest};
           color: ${color.primary};
@@ -264,7 +264,7 @@ const StyledButton = styled.button<ButtonProps>`
       `}
 
       ${(props) =>
-        props.appearance === Appearance.INVERSE_SECONDARY &&
+        props.appearance === Appearance.inverse_secondary &&
         `
           background: ${color.lightest};
           color: ${color.secondary};
@@ -284,7 +284,7 @@ const StyledButton = styled.button<ButtonProps>`
       `}
 
       ${(props) =>
-        props.appearance === Appearance.INVERSE_OUTLINE &&
+        props.appearance === Appearance.inverse_outline &&
         `
           box-shadow: ${color.lightest} 0 0 0 1px inset;
           color: ${color.lightest};

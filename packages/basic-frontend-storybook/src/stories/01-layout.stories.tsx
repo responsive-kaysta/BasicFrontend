@@ -19,19 +19,7 @@ import { TextTypes } from "responsive-it-common/dist/elements/text/text-types";
 
 storiesOf("01: Identity", module).add("Layout", () => (
   <LayoutContainer>
-    <Heading type={HeadingTypes.H2}>Some Heading</Heading>
+    <Heading type={HeadingTypes.h2}>Some Heading</Heading>
     <Hr />
-    <Icon icon="facehappy" aria-label="Happy face" /> icon (default)
-    <Hr />
-    <Button appearance={Appearance.SECONDARY}>Appearance.SECONDARY</Button>
-    <Hr />
-    <Link href="https://learnstorybook.com">default</Link>
-    <Hr />
-    <Pictogram pictogram="kuenstliche_intelligenz" /> Pictogram
-    <Hr />
-    <Text type={TextTypes.LABEL}>Some Text</Text>
-    <Text>Some Paragraph Text</Text>
-    <Hr />
-    <Spinner />
   </LayoutContainer>
 ));

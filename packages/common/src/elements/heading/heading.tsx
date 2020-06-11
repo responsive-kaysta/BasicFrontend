@@ -55,22 +55,22 @@ const StyledH6 = styled.h6`
 
 export const Heading: FC<HeadingProps> = ({ children, type, ...props }) => {
   switch (type) {
-    case HeadingTypes.H1: {
+    case HeadingTypes.h1: {
       return <StyledH1 {...props}>{children}</StyledH1>;
     }
-    case HeadingTypes.H2: {
+    case HeadingTypes.h2: {
       return <StyledH2 {...props}>{children}</StyledH2>;
     }
-    case HeadingTypes.H3: {
+    case HeadingTypes.h3: {
       return <StyledH3 {...props}>{children}</StyledH3>;
     }
-    case HeadingTypes.H4: {
+    case HeadingTypes.h4: {
       return <StyledH4 {...props}>{children}</StyledH4>;
     }
-    case HeadingTypes.H5: {
+    case HeadingTypes.h5: {
       return <StyledH5 {...props}>{children}</StyledH5>;
     }
-    case HeadingTypes.H6: {
+    case HeadingTypes.h6: {
       return <StyledH6 {...props}>{children}</StyledH6>;
     }
     default: {
