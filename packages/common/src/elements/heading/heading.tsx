@@ -13,7 +13,7 @@ const style = css`
 
 const StyledH1 = styled.h1`
 ${style}
-  font-size: ${typography.size.l1}px;
+  font-size: ${typography.size.l3}px;
   font-weight: ${typography.weight.extrabold};
 `;
 
@@ -25,13 +25,13 @@ ${style}
 
 const StyledH3 = styled.h3`
 ${style}
-  font-size: ${typography.size.l3}px;
+  font-size: ${typography.size.l1}px;
   font-weight: ${typography.weight.extrabold};
 `;
 
 const StyledH4 = styled.h4`
 ${style}
-  font-size: ${typography.size.m1}px;
+  font-size: ${typography.size.m3}px;
   font-weight: ${typography.weight.extrabold};
 `;
 
@@ -43,7 +43,7 @@ ${style}
 
 const StyledH6 = styled.h6`
 ${style}
-  font-size: ${typography.size.m3}px;
+  font-size: ${typography.size.m1}px;
   font-weight: ${typography.weight.extrabold};
 `;
 

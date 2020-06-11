@@ -6,26 +6,39 @@ import {
   Heading,
   HeadingTypes,
   LayoutContainer,
-  BoxContainer,
-  Box,
-  background,
+  FlexBoxContainer,
+  FlexBoxItem,
 } from "responsive-it-common";
-import { BoxSizes } from "responsive-it-common/dist/compositions/box/box-sizes";
 
 storiesOf("01: Identity", module).add("Colors", () => (
-  <LayoutContainer padding={true}>
-    <Header withRuler={true} rulerColor={color.darkest}>
+  <LayoutContainer padding>
+    <Header withRuler rulerColor={color.darkest}>
       <Heading type={HeadingTypes.h1}>Colors</Heading>
     </Header>
-    <BoxContainer>
-      <Box size={BoxSizes.half} backgroundColor={background.app}>
-        Box 1 half
-      </Box>
-      <Box size={BoxSizes.half}>Box 2 half</Box>
+    <Header>
+      <Heading type={HeadingTypes.h3}>Background-Colors</Heading>
+    </Header>
 
-      <Box size={BoxSizes.third}>Box 3 third</Box>
-      <Box size={BoxSizes.third}>Box 4 third</Box>
-      <Box size={BoxSizes.third}>Box 5 third</Box>
-    </BoxContainer>
+    <FlexBoxContainer
+      flexDirection="row"
+      justifyContent="space-between"
+      flexWrap="nowrap"
+    >
+      <FlexBoxContainer
+        flexDirection="column"
+        width="30%"
+        justifyContent="flex-start"
+      >
+        <FlexBoxItem justifyContent="flex-start">25%</FlexBoxItem>
+      </FlexBoxContainer>
+
+      <FlexBoxContainer
+        flexDirection="column"
+        width="70%"
+        justifyContent="flex-start"
+      >
+        <FlexBoxItem justifyContent="flex-start">75%</FlexBoxItem>
+      </FlexBoxContainer>
+    </FlexBoxContainer>
   </LayoutContainer>
 ));
