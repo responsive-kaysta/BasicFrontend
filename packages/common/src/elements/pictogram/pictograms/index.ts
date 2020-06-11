@@ -1,1 +1,1 @@
-export * from "./KuenstlicheIntelligenz";
+export * from "./kuenstliche-intelligenz";
