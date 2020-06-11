@@ -97,6 +97,7 @@ const StyledButton = styled.button<ButtonProps>`
 
           &:hover {
             background: ${darken(0.05, color.primary)};
+            box-shadow: ${rgba(color.primary, 0.2)} 0 8px 18px 0px;
           }
           &:active {
             box-shadow: rgba(0, 0, 0, 0.1) 0 0 0 3em inset;
@@ -117,6 +118,7 @@ const StyledButton = styled.button<ButtonProps>`
 
           &:hover {
             background: ${darken(0.05, color.secondary)};
+            box-shadow: ${rgba(color.secondary, 0.2)} 0 8px 18px 0px;
           }
           &:active {
             box-shadow: rgba(0, 0, 0, 0.1) 0 0 0 3em inset;
@@ -137,6 +139,7 @@ const StyledButton = styled.button<ButtonProps>`
 
           &:hover {
             background: ${darken(0.05, color.tertiary)};
+            box-shadow: ${rgba(color.darkest, 0.05)} 0 8px 18px 0px;
           }
           &:active {
             box-shadow: rgba(0, 0, 0, 0.1) 0 0 0 3em inset;
