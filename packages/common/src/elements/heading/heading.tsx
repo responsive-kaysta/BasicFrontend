@@ -53,28 +53,28 @@ const StyledH6 = styled.h6`
   font-weight: ${typography.weight.extrabold};
 `;
 
-export const Heading: FC<HeadingProps> = ({ children, type }) => {
+export const Heading: FC<HeadingProps> = ({ children, type, ...props }) => {
   switch (type) {
     case HeadingTypes.H1: {
-      return <StyledH1>{children}</StyledH1>;
+      return <StyledH1 {...props}>{children}</StyledH1>;
     }
     case HeadingTypes.H2: {
-      return <StyledH2>{children}</StyledH2>;
+      return <StyledH2 {...props}>{children}</StyledH2>;
     }
     case HeadingTypes.H3: {
-      return <StyledH3>{children}</StyledH3>;
+      return <StyledH3 {...props}>{children}</StyledH3>;
     }
     case HeadingTypes.H4: {
-      return <StyledH4>{children}</StyledH4>;
+      return <StyledH4 {...props}>{children}</StyledH4>;
     }
     case HeadingTypes.H5: {
-      return <StyledH5>{children}</StyledH5>;
+      return <StyledH5 {...props}>{children}</StyledH5>;
     }
     case HeadingTypes.H6: {
-      return <StyledH6>{children}</StyledH6>;
+      return <StyledH6 {...props}>{children}</StyledH6>;
     }
     default: {
-      return <StyledH1>{children}</StyledH1>;
+      return <StyledH1 {...props}>{children}</StyledH1>;
     }
   }
 };
