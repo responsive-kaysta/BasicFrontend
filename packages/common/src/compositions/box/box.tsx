@@ -8,12 +8,12 @@ import { BoxSizes } from "./box-sizes";
 const boxMargins = css`
   @media (min-width: ${breakpoint}px) {
     margin-bottom: ${spacing.margin.xsmall * 2}rem;
-    padding: ${spacing.padding.xsmall}px;
+    padding: ${spacing.padding.xsmall * 2}px;
   }
 
   @media (min-width: ${breakpoint * 2}px) {
     margin-bottom: ${spacing.margin.xsmall * 2}rem;
-    padding: ${spacing.padding.small}px;
+    padding: ${spacing.padding.small * 2}px;
   }
 
   @media (min-width: ${breakpoint * 3}px) {
@@ -74,6 +74,12 @@ const StyledBox = styled.div<BoxProps>`
 
   border: ${spacing.borderSize.small}px ${color.border} solid;
   border-radius: ${spacing.borderRadius.default}px;
+
+  ${(props) =>
+    props.backgroundColor &&
+    `
+    background-color: ${props.backgroundColor};
+    `}
 
   min-height: ${spacing.margin.xlarge}rem;
 

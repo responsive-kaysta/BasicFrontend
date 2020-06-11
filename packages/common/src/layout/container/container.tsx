@@ -6,9 +6,9 @@ import { ContainerProps } from "./container-props";
 
 const StyledMain = styled.main<ContainerProps>`
   ${(props) =>
-    props.backgoundColor &&
+    props.backgroundColor &&
     `
-    background-color: ${props.backgoundColor};
+    background-color: ${props.backgroundColor};
     `}
 `;
 
@@ -18,13 +18,13 @@ const StyledArticle = styled.article<ContainerProps>`
 
 export const LayoutContainer: FC<ContainerProps> = ({
   children,
-  backgoundColor,
+  backgroundColor,
   padding,
 }) => {
   return (
     <>
       <GlobalStyle />
-      <StyledMain id="layout-container" backgoundColor={backgoundColor}>
+      <StyledMain id="layout-container" backgroundColor={backgroundColor}>
         <StyledArticle padding={padding}>{children}</StyledArticle>
       </StyledMain>
     </>

@@ -8,6 +8,7 @@ import {
   LayoutContainer,
   BoxContainer,
   Box,
+  background,
 } from "responsive-it-common";
 import { BoxSizes } from "responsive-it-common/dist/compositions/box/box-sizes";
 
@@ -17,7 +18,9 @@ storiesOf("01: Identity", module).add("Colors", () => (
       <Heading type={HeadingTypes.h1}>Colors</Heading>
     </Header>
     <BoxContainer>
-      <Box size={BoxSizes.half}>Box 1 half</Box>
+      <Box size={BoxSizes.half} backgroundColor={background.app}>
+        Box 1 half
+      </Box>
       <Box size={BoxSizes.half}>Box 2 half</Box>
 
       <Box size={BoxSizes.third}>Box 3 third</Box>
