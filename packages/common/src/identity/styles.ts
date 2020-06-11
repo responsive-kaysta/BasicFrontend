@@ -78,6 +78,12 @@ export const typography = {
     l3: 48,
     code: 90,
   },
+  transform: {
+    none: "none",
+  },
+  decoration: {
+    none: "none",
+  },
 } as const;
 
 export const breakpoint = 600;

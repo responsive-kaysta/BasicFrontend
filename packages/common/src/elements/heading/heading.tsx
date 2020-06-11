@@ -2,29 +2,79 @@ import * as React from "react";
 import { FC } from "react";
 import { HeadingProps } from "./heading-props";
 import { HeadingTypes } from "./heading-types";
+import styled from "styled-components";
+import { typography } from "../../identity";
+
+const StyledH1 = styled.h1`
+  font-size: ${typography.size.l1};
+  font-family: ${typography.type.primary};
+  text-transform: ${typography.transform.none};
+  text-decoration: ${typography.decoration.none};
+  font-weight: ${typography.weight.extrabold};
+`;
+
+const StyledH2 = styled.h2`
+  font-size: ${typography.size.l2};
+  font-family: ${typography.type.primary};
+  text-transform: ${typography.transform.none};
+  text-decoration: ${typography.decoration.none};
+  font-weight: ${typography.weight.extrabold};
+`;
+
+const StyledH3 = styled.h3`
+  font-size: ${typography.size.l3};
+  font-family: ${typography.type.primary};
+  text-transform: ${typography.transform.none};
+  text-decoration: ${typography.decoration.none};
+  font-weight: ${typography.weight.extrabold};
+`;
+
+const StyledH4 = styled.h4`
+  font-size: ${typography.size.m1};
+  font-family: ${typography.type.primary};
+  text-transform: ${typography.transform.none};
+  text-decoration: ${typography.decoration.none};
+  font-weight: ${typography.weight.extrabold};
+`;
+
+const StyledH5 = styled.h5`
+  font-size: ${typography.size.m2};
+  font-family: ${typography.type.primary};
+  text-transform: ${typography.transform.none};
+  text-decoration: ${typography.decoration.none};
+  font-weight: ${typography.weight.extrabold};
+`;
+
+const StyledH6 = styled.h6`
+  font-size: ${typography.size.m3};
+  font-family: ${typography.type.primary};
+  text-transform: ${typography.transform.none};
+  text-decoration: ${typography.decoration.none};
+  font-weight: ${typography.weight.extrabold};
+`;
 
 export const Heading: FC<HeadingProps> = ({ children, type }) => {
   switch (type) {
     case HeadingTypes.H1: {
-      return <h1>{children}</h1>;
+      return <StyledH1>{children}</StyledH1>;
     }
     case HeadingTypes.H2: {
-      return <h2>{children}</h2>;
+      return <StyledH2>{children}</StyledH2>;
     }
     case HeadingTypes.H3: {
-      return <h3>{children}</h3>;
+      return <StyledH3>{children}</StyledH3>;
     }
     case HeadingTypes.H4: {
-      return <h4>{children}</h4>;
+      return <StyledH4>{children}</StyledH4>;
     }
     case HeadingTypes.H5: {
-      return <h5>{children}</h5>;
+      return <StyledH5>{children}</StyledH5>;
     }
     case HeadingTypes.H6: {
-      return <h6>{children}</h6>;
+      return <StyledH6>{children}</StyledH6>;
     }
     default: {
-      return <h1>{children}</h1>;
+      return <StyledH1>{children}</StyledH1>;
     }
   }
 };
