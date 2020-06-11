@@ -24,6 +24,7 @@ export const bodyStyles = css`
   del,
   dfn,
   em,
+  hr,
   img,
   ins,
   kbd,
@@ -125,13 +126,6 @@ export const bodyStyles = css`
   b,
   em {
     font-weight: ${typography.weight.bold};
-  }
-
-  hr {
-    border: none;
-    border-top: 1px solid ${color.border};
-    clear: both;
-    margin-bottom: 1.25rem;
   }
 
   code,

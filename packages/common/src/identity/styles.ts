@@ -12,47 +12,48 @@ export enum background {
   whitesmoke = "whitesmoke",
 }
 
-export const color = {
+export enum color {
   // Palette
-  primary: "#FF4785", // coral
-  secondary: "#1EA7FD", // ocean
-  tertiary: "#DDDDDD",
+  primary = "#FF4785", // coral
+  secondary = "#1EA7FD", // ocean
+  tertiary = "#DDDDDD",
 
-  orange: "#FC521F",
-  gold: "#FFAE00",
-  green: "#66BF3C",
-  seafoam: "#37D5D3",
-  purple: "#6F2CAC",
-  ultraviolet: "#2A0481",
+  orange = "#FC521F",
+  gold = "#FFAE00",
+  green = "#66BF3C",
+  seafoam = "#37D5D3",
+  purple = "#6F2CAC",
+  ultraviolet = "#2A0481",
 
-  darkgreen: "#1a867d",
-  gray: "darkgray",
+  darkgreen = "#1a867d",
+  gray = "darkgray",
 
   // Monochrome
-  lightest: "#FFFFFF",
-  lighter: "#F8F8F8",
-  light: "#F3F3F3",
-  mediumlight: "#EEEEEE",
-  medium: "#DDDDDD",
-  mediumdark: "#999999",
-  dark: "#666666",
-  darker: "#444444",
-  darkest: "#333333",
+  lightest = "#FFFFFF",
+  lighter = "#F8F8F8",
+  light = "#F3F3F3",
+  mediumlight = "#EEEEEE",
+  medium = "#DDDDDD",
+  mediumdark = "#999999",
+  dark = "#666666",
+  darker = "#444444",
+  darkest = "#333333",
 
-  border: "rgba(0,0,0,.1)",
+  border = "rgba(0,0,0,.1)",
 
   // Status
-  positive: "#66BF3C",
-  negative: "#FF4400",
-  warning: "#E69D00",
-};
+  positive = "#66BF3C",
+  negative = "#FF4400",
+  warning = "#E69D00",
+}
 
 export const spacing = {
   padding: {
-    xsmall: 10,
-    small: 20,
-    medium: 30,
-    large: 40,
+    xsmall: 5,
+    small: 10,
+    medium: 20,
+    large: 30,
+    xlarge: 40,
   },
   margin: {
     xsmall: 0.5,
@@ -104,7 +105,7 @@ export const typography = {
   },
 } as const;
 
-export const breakpoint = 600;
+export const breakpoint = 300;
 export const pageMargin = 5.55555;
 
 export const pageMargins = css`
@@ -114,22 +115,38 @@ export const pageMargins = css`
   padding-right: 0;
 
   @media (min-width: ${breakpoint * 1}px) {
-    margin-left: ${pageMargin * 3}%;
-    margin-right: ${pageMargin * 3}%;
+    margin-left: ${pageMargin * 1}%;
+    margin-right: ${pageMargin * 1}%;
 
     padding-top: ${spacing.padding.small}px;
     padding-bottom: ${spacing.padding.small}px;
   }
 
   @media (min-width: ${breakpoint * 2}px) {
-    margin-left: ${pageMargin * 4}%;
-    margin-right: ${pageMargin * 4}%;
+    margin-left: ${pageMargin * 2}%;
+    margin-right: ${pageMargin * 2}%;
+
+    padding-top: ${spacing.padding.small}px;
+    padding-bottom: ${spacing.padding.small}px;
+  }
+
+  @media (min-width: ${breakpoint * 3}px) {
+    margin-left: ${pageMargin * 3}%;
+    margin-right: ${pageMargin * 3}%;
 
     padding-top: ${spacing.padding.medium}px;
     padding-bottom: ${spacing.padding.medium}px;
   }
 
-  @media (min-width: ${breakpoint * 3}px) {
+  @media (min-width: ${breakpoint * 4}px) {
+    margin-left: ${pageMargin * 4}%;
+    margin-right: ${pageMargin * 4}%;
+
+    padding-top: ${spacing.padding.large}px;
+    padding-bottom: ${spacing.padding.large}px;
+  }
+
+  @media (min-width: ${breakpoint * 5}px) {
     margin-left: ${pageMargin * 5}%;
     margin-right: ${pageMargin * 5}%;
 
@@ -137,11 +154,11 @@ export const pageMargins = css`
     padding-bottom: ${spacing.padding.large}px;
   }
 
-  @media (min-width: ${breakpoint * 4}px) {
+  @media (min-width: ${breakpoint * 6}px) {
     margin-left: ${pageMargin * 6}%;
     margin-right: ${pageMargin * 6}%;
 
-    padding-top: ${spacing.padding.large}px;
-    padding-bottom: ${spacing.padding.large}px;
+    padding-top: ${spacing.padding.xlarge}px;
+    padding-bottom: ${spacing.padding.xlarge}px;
   }
 `;

@@ -2,54 +2,48 @@ import * as React from "react";
 import { FC } from "react";
 import { HeadingProps } from "./heading-props";
 import { HeadingTypes } from "./heading-types";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { typography } from "../../identity";
 
-const StyledH1 = styled.h1`
-  font-size: ${typography.size.l1};
+export const style = css`
   font-family: ${typography.type.primary};
   text-transform: ${typography.transform.none};
   text-decoration: ${typography.decoration.none};
+`;
+
+const StyledH1 = styled.h1`
+${style}
+  font-size: ${typography.size.l1}px;
   font-weight: ${typography.weight.extrabold};
 `;
 
 const StyledH2 = styled.h2`
-  font-size: ${typography.size.l2};
-  font-family: ${typography.type.primary};
-  text-transform: ${typography.transform.none};
-  text-decoration: ${typography.decoration.none};
+${style}
+  font-size: ${typography.size.l2}px;
   font-weight: ${typography.weight.extrabold};
 `;
 
 const StyledH3 = styled.h3`
-  font-size: ${typography.size.l3};
-  font-family: ${typography.type.primary};
-  text-transform: ${typography.transform.none};
-  text-decoration: ${typography.decoration.none};
+${style}
+  font-size: ${typography.size.l3}px;
   font-weight: ${typography.weight.extrabold};
 `;
 
 const StyledH4 = styled.h4`
-  font-size: ${typography.size.m1};
-  font-family: ${typography.type.primary};
-  text-transform: ${typography.transform.none};
-  text-decoration: ${typography.decoration.none};
+${style}
+  font-size: ${typography.size.m1}px;
   font-weight: ${typography.weight.extrabold};
 `;
 
 const StyledH5 = styled.h5`
-  font-size: ${typography.size.m2};
-  font-family: ${typography.type.primary};
-  text-transform: ${typography.transform.none};
-  text-decoration: ${typography.decoration.none};
+${style}
+  font-size: ${typography.size.m2}px;
   font-weight: ${typography.weight.extrabold};
 `;
 
 const StyledH6 = styled.h6`
-  font-size: ${typography.size.m3};
-  font-family: ${typography.type.primary};
-  text-transform: ${typography.transform.none};
-  text-decoration: ${typography.decoration.none};
+${style}
+  font-size: ${typography.size.m3}px;
   font-weight: ${typography.weight.extrabold};
 `;
 
