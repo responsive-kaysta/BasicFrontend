@@ -17,7 +17,7 @@ import {
 import { Appearance } from "responsive-it-common/dist/elements/button/appearance";
 import { TextTypes } from "responsive-it-common/dist/elements/text/text-types";
 
-storiesOf("01: Basics / 01: Colors", module).add("color", () => (
+storiesOf("02: Elements", module).add("Buttons", () => (
   <LayoutContainer>
     <Heading type={HeadingTypes.H2}>Some Heading</Heading>
     <Hr />
