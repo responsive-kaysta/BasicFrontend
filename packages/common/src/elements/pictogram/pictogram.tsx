@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import KuenstlicheIntelligenz from "../../assets/pictograms/KuenstlicheIntelligenz";
+import KuenstlicheIntelligenz from "./pictograms/KuenstlicheIntelligenz";
 import { Pictograms } from "../../identity";
 import { PictogramProps } from "./pictogram-props";
 
