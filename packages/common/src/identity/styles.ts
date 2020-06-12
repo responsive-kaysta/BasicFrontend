@@ -156,8 +156,8 @@ export const pageMargins = css`
   }
 
   @media (min-width: ${breakpoint * 6}px) {
-    margin-left: ${pageMargin * 6}%;
-    margin-right: ${pageMargin * 6}%;
+    margin-left: ${pageMargin * 5}%;
+    margin-right: ${pageMargin * 5}%;
 
     padding-top: ${spacing.padding.xlarge}px;
     padding-bottom: ${spacing.padding.xlarge}px;
