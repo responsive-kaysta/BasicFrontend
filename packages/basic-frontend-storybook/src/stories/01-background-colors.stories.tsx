@@ -21,16 +21,11 @@ storiesOf("01: Identity", module).add(
       <Header withMargin>
         <Heading type={HeadingTypes.h1}>Colors</Heading>
       </Header>
-      <Header withRuler rulerColor={color.darkest} withMargin smallMargin>
+      <Header withRuler rulerColor={color.darkest} withMargin>
         <Heading type={HeadingTypes.h3}>Background-Colors</Heading>
       </Header>
 
-      <FlexBoxContainer
-        flexDirection="row"
-        flexWrap="nowrap"
-        withMargin
-        smallMargin
-      >
+      <FlexBoxContainer flexDirection="row" flexWrap="nowrap" withMargin>
         <FlexBoxContainer flexDirection="column" width="30%">
           <Text bold>Name</Text>
         </FlexBoxContainer>
@@ -42,6 +37,7 @@ storiesOf("01: Identity", module).add(
       {/* ------------------------------------------------------------ */}
 
       <FlexBoxContainer
+        withMargin
         flexDirection="row"
         flexWrap="nowrap"
         alignItems="flex-start"

@@ -12,7 +12,8 @@ const HeaderContainer = styled.header<HeaderProps>`
   justify-content: space-between;
 
   ${(props) =>
-    props.withMargin && props.smallMargin ? contentSmallMargin : contentMargin}
+    props.withMargin &&
+    (props.smallMargin ? contentSmallMargin : contentMargin)}
 `;
 
 export const Header: FC<HeaderProps> = ({

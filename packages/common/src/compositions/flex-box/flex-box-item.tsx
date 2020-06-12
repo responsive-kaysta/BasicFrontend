@@ -7,6 +7,7 @@ const FlexContainer = styled.div<FlexBoxItemProps>`
   display: flex;
   
   ${(props) => props.flexWrap && `flex-wrap:${props.flexWrap};`}
+  ${(props) => props.flexDirection && `flex-direction:${props.flexDirection};`}
   ${(props) =>
     props.justifyContent && `justify-content:${props.justifyContent};`}
   ${(props) => props.alignItems && `align-items:${props.alignItems};`}
@@ -19,6 +20,7 @@ const FlexContainer = styled.div<FlexBoxItemProps>`
 export const FlexBoxItem: FC<FlexBoxItemProps> = ({
   children,
   flexWrap,
+  flexDirection,
   justifyContent,
   alignItems,
   alignContent,
@@ -28,6 +30,7 @@ export const FlexBoxItem: FC<FlexBoxItemProps> = ({
   return (
     <FlexContainer
       flexWrap={flexWrap}
+      flexDirection={flexDirection}
       justifyContent={justifyContent}
       alignItems={alignItems}
       alignContent={alignContent}

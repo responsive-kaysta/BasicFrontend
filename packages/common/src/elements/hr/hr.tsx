@@ -14,7 +14,8 @@ const StyledRuler = styled.hr<HrProps>`
   ${(props) => props.color && `border: 1px solid ${props.color};`}
 
   ${(props) =>
-    props.withMargin && props.smallMargin ? contentSmallMargin : contentMargin}
+    props.withMargin &&
+    (props.smallMargin ? contentSmallMargin : contentMargin)}
 `;
 
 export const Hr: FC<HrProps> = ({ color, withMargin, smallMargin }) => {
