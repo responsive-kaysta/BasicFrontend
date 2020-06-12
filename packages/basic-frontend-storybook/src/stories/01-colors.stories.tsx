@@ -15,10 +15,10 @@ storiesOf("01: Identity", module).add(
   "Colors",
   () => (
     <LayoutContainer padding>
-      <Header>
+      <Header withMargin>
         <Heading type={HeadingTypes.h1}>Colors</Heading>
       </Header>
-      <Header withRuler rulerColor={color.darkest}>
+      <Header withRuler rulerColor={color.darkest} withMargin smallMargin>
         <Heading type={HeadingTypes.h3}>Background-Colors</Heading>
       </Header>
 

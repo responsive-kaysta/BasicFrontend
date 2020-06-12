@@ -163,3 +163,107 @@ export const pageMargins = css`
     padding-bottom: ${spacing.padding.xlarge}px;
   }
 `;
+
+export const contentPadding = css`
+  @media (min-width: ${breakpoint}px) {
+    padding-bottom: ${spacing.padding.small}px;
+  }
+
+  @media (min-width: ${breakpoint * 2}px) {
+    padding-bottom: ${spacing.padding.small}px;
+  }
+
+  @media (min-width: ${breakpoint * 3}px) {
+    padding-bottom: ${spacing.padding.medium}px;
+  }
+
+  @media (min-width: ${breakpoint * 4}px) {
+    padding-bottom: ${spacing.padding.large}px;
+  }
+
+  @media (min-width: ${breakpoint * 5}px) {
+    padding-bottom: ${spacing.padding.large}px;
+  }
+
+  @media (min-width: ${breakpoint * 6}px) {
+    padding-bottom: ${spacing.padding.xlarge}px;
+  }
+`;
+
+export const contentSmallPadding = css`
+  @media (min-width: ${breakpoint}px) {
+    padding-bottom: ${spacing.padding.small / 2}px;
+  }
+
+  @media (min-width: ${breakpoint * 2}px) {
+    padding-bottom: ${spacing.padding.small / 2}px;
+  }
+
+  @media (min-width: ${breakpoint * 3}px) {
+    padding-bottom: ${spacing.padding.medium / 2}px;
+  }
+
+  @media (min-width: ${breakpoint * 4}px) {
+    padding-bottom: ${spacing.padding.large / 2}px;
+  }
+
+  @media (min-width: ${breakpoint * 5}px) {
+    padding-bottom: ${spacing.padding.large / 2}px;
+  }
+
+  @media (min-width: ${breakpoint * 6}px) {
+    padding-bottom: ${spacing.padding.xlarge / 2}px;
+  }
+`;
+
+export const contentMargin = css`
+  @media (min-width: ${breakpoint}px) {
+    margin-bottom: ${spacing.padding.small}px;
+  }
+
+  @media (min-width: ${breakpoint * 2}px) {
+    margin-bottom: ${spacing.padding.small}px;
+  }
+
+  @media (min-width: ${breakpoint * 3}px) {
+    margin-bottom: ${spacing.padding.medium}px;
+  }
+
+  @media (min-width: ${breakpoint * 4}px) {
+    margin-bottom: ${spacing.padding.large}px;
+  }
+
+  @media (min-width: ${breakpoint * 5}px) {
+    margin-bottom: ${spacing.padding.large}px;
+  }
+
+  @media (min-width: ${breakpoint * 6}px) {
+    margin-bottom: ${spacing.padding.xlarge}px;
+  }
+`;
+
+export const contentSmallMargin = css`
+  @media (min-width: ${breakpoint}px) {
+    margin-bottom: ${spacing.padding.small / 2}px;
+  }
+
+  @media (min-width: ${breakpoint * 2}px) {
+    margin-bottom: ${spacing.padding.small / 2}px;
+  }
+
+  @media (min-width: ${breakpoint * 3}px) {
+    margin-bottom: ${spacing.padding.medium / 2}px;
+  }
+
+  @media (min-width: ${breakpoint * 4}px) {
+    margin-bottom: ${spacing.padding.large / 2}px;
+  }
+
+  @media (min-width: ${breakpoint * 5}px) {
+    margin-bottom: ${spacing.padding.large / 2}px;
+  }
+
+  @media (min-width: ${breakpoint * 6}px) {
+    margin-bottom: ${spacing.padding.xlarge / 2}px;
+  }
+`;

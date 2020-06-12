@@ -3,7 +3,7 @@ import { FC } from "react";
 import styled from "styled-components";
 import { FlexBoxContainerProps } from "./flex-box-container-props";
 
-const FlexContainer = styled.div<FlexBoxContainerProps>`
+const FlexContainer = styled.section<FlexBoxContainerProps>`
   display: flex;
 
   ${(props) => props.flexWrap && `flex-wrap:${props.flexWrap};`}
