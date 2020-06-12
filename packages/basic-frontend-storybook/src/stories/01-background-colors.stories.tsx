@@ -18,11 +18,8 @@ storiesOf("01: Identity", module).add(
   "Background-Colors",
   () => (
     <LayoutContainer padding>
-      <Header withMargin>
-        <Heading type={HeadingTypes.h1}>Identity</Heading>
-      </Header>
-      <Header withRuler rulerColor={color.darkest} withMargin>
-        <Heading type={HeadingTypes.h2}>Background-Colors</Heading>
+      <Header withMargin withRuler>
+        <Heading type={HeadingTypes.h1}>Background-Colors</Heading>
       </Header>
 
       <FlexBoxContainer flexDirection="row" flexWrap="nowrap" withMargin>
