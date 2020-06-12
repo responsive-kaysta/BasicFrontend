@@ -24,8 +24,7 @@ export enum color {
   seafoam = "#37D5D3",
   purple = "#6F2CAC",
   ultraviolet = "#2A0481",
-
-  darkgreen = "#1a867d",
+  darkgreen = "#1A867D",
   gray = "darkgray",
 
   // Monochrome

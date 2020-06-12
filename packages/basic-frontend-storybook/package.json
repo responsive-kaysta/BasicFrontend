@@ -46,8 +46,9 @@
     "start": "start-storybook -s ./public -p 9001 -c .storybook",
     "develop": "tsc --watch",
     "prebuild": "rimraf ./build",
-    "build": "tsc",
-    "lint": "npm run lint:ts && npm run lint:prettier",
-    "types:check": "tsc --noEmit"
+    "build": "npm run build:types && npm run build:js",
+    "build:types": "tsc --emitDeclarationOnly",
+    "build:js": "babel src --ignore \"src/**/*.stories.tsx\",\"src/**/*.test.tsx?\" --out-dir build --extensions \".ts,.tsx\" --source-maps",
+    "build:storybook": "build-storybook -c config/storybook"
   }
 }
