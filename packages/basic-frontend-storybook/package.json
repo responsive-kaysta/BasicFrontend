@@ -6,7 +6,6 @@
   "author": "dev-guru@responsive-it.biz",
   "license": "MIT",
   "dependencies": {
-    "@storybook/react": "^5.3.19",
     "awesome-typescript-loader": "^5.2.1",
     "react": "^16.13.1",
     "react-docgen-typescript-loader": "^3.7.2",
@@ -16,12 +15,24 @@
     "styled-components": "^5.1.1",
     "prettier": "^2.0.5",
     "typescript": "^3.9.5",
-    "polished": "^3.6.4",
+    "polished": "^3.6.5",
     "prismjs": "1.20.0"
   },
   "devDependencies": {
     "babel-loader": "^8.1.0",
-    "babel-plugin-styled-components": "^1.10.7"
+    "babel-plugin-styled-components": "^1.10.7",
+    "@storybook/addon-a11y": "6.0.0-beta.20",
+    "@storybook/addon-actions": "6.0.0-beta.20",
+    "@storybook/addon-docs": "6.0.0-beta.20",
+    "@storybook/addon-essentials": "6.0.0-beta.20",
+    "@storybook/addon-storysource": "6.0.0-beta.20",
+    "@storybook/eslint-config-storybook": "^2.4.0",
+    "@storybook/linter-config": "^2.5.0",
+    "@storybook/react": "^5.3.19"
+  },
+  "peerDependencies": {
+    "react": "^15.0.0 || ^16.0.0",
+    "react-dom": "^15.0.0 || ^16.0.0"
   },
   "scripts": {
     "start": "start-storybook -s ./public -p 9001 -c .storybook"
