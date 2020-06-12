@@ -1,7 +1,7 @@
 import * as React from "react";
 import { FC } from "react";
 import styled from "styled-components";
-import { color, contentMargin, contentSmallMargin } from "../../identity";
+import { color, contentMargin } from "../../identity";
 import { HrProps } from "./hr-props";
 
 const StyledRuler = styled.hr<HrProps>`
@@ -13,17 +13,9 @@ const StyledRuler = styled.hr<HrProps>`
 
   ${(props) => props.color && `border: 1px solid ${props.color};`}
 
-  ${(props) =>
-    props.withMargin &&
-    (props.smallMargin ? contentSmallMargin : contentMargin)}
+  ${(props) => props.withMargin && contentMargin}
 `;
 
-export const Hr: FC<HrProps> = ({ color, withMargin, smallMargin }) => {
-  return (
-    <StyledRuler
-      withMargin={withMargin}
-      smallMargin={smallMargin}
-      color={color}
-    />
-  );
+export const Hr: FC<HrProps> = ({ color, withMargin }) => {
+  return <StyledRuler withMargin={withMargin} color={color} />;
 };

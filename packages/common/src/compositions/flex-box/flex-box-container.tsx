@@ -1,7 +1,7 @@
 import * as React from "react";
 import { FC } from "react";
 import styled from "styled-components";
-import { contentMargin, contentSmallMargin } from "../../identity";
+import { contentMargin } from "../../identity";
 import { FlexBoxContainerProps } from "./flex-box-container-props";
 
 const FlexContainer = styled.section<FlexBoxContainerProps>`
@@ -16,9 +16,7 @@ const FlexContainer = styled.section<FlexBoxContainerProps>`
 
   ${(props) => props.width && `width:${props.width};`}
 
-  ${(props) =>
-    props.withMargin &&
-    (props.smallMargin ? contentSmallMargin : contentMargin)}
+  ${(props) => props.withMargin && contentMargin}
 `;
 
 export const FlexBoxContainer: FC<FlexBoxContainerProps> = ({
@@ -29,7 +27,6 @@ export const FlexBoxContainer: FC<FlexBoxContainerProps> = ({
   alignItems,
   alignContent,
   withMargin,
-  smallMargin,
   width,
 }) => {
   return (
@@ -41,7 +38,6 @@ export const FlexBoxContainer: FC<FlexBoxContainerProps> = ({
       alignContent={alignContent}
       width={width}
       withMargin={withMargin}
-      smallMargin={smallMargin}
     >
       {children}
     </FlexContainer>

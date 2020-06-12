@@ -4,7 +4,7 @@ import { addDecorator, addParameters, configure } from "@storybook/react";
 
 addParameters({
   options: {
-    name: "responsive IT - UI Kit",
+    name: "Basic Frontend",
     sortStoriesByKind: true,
   },
 });

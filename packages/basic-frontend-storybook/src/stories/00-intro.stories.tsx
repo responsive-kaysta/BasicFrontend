@@ -19,25 +19,11 @@ storiesOf("00: Application", module).add(
   () => (
     <LayoutContainer padding>
       <Header withMargin>
-        <Heading type={HeadingTypes.h1}>Colors</Heading>
+        <Heading type={HeadingTypes.h1}>Basic Frontend</Heading>
       </Header>
-      <Header withRuler rulerColor={color.darkest} withMargin smallMargin>
-        <Heading type={HeadingTypes.h3}>Background-Colors</Heading>
+      <Header withRuler rulerColor={color.darkest} withMargin>
+        <Heading type={HeadingTypes.h2}>Intro</Heading>
       </Header>
-
-      <FlexBoxContainer
-        flexDirection="row"
-        flexWrap="nowrap"
-        withMargin
-        smallMargin
-      >
-        <FlexBoxContainer flexDirection="column" width="30%">
-          <Text bold>Name</Text>
-        </FlexBoxContainer>
-        <FlexBoxContainer flexDirection="column" width="70%">
-          <Text bold>Swatches</Text>
-        </FlexBoxContainer>
-      </FlexBoxContainer>
     </LayoutContainer>
   ),
   {

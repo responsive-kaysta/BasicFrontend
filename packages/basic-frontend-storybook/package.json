@@ -2,8 +2,9 @@
   "name": "basic-frontend-storybook",
   "private": false,
   "version": "0.0.2-development",
-  "description": "finest responsive - reactive storybook",
-  "author": "dev-guru@responsive-it.biz",
+  "main": "dist/index.js",
+  "description": "This application demonstrates the possibilities of the responsiv IT Basic Frontend / Storybook.",
+  "author": "responsive-it <dev-guru@responsive-it>",
   "license": "MIT",
   "dependencies": {
     "awesome-typescript-loader": "^5.2.1",
@@ -42,6 +43,11 @@
     "react-dom": "^15.0.0 || ^16.0.0"
   },
   "scripts": {
-    "start": "start-storybook -s ./public -p 9001 -c .storybook"
+    "start": "start-storybook -s ./public -p 9001 -c .storybook",
+    "develop": "tsc --watch",
+    "prebuild": "rimraf ./build",
+    "build": "tsc",
+    "lint": "npm run lint:ts && npm run lint:prettier",
+    "types:check": "tsc --noEmit"
   }
 }

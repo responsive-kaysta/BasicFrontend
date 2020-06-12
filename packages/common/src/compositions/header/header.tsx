@@ -2,7 +2,7 @@ import * as React from "react";
 import { FC } from "react";
 import styled from "styled-components";
 import { Hr } from "../../elements";
-import { contentMargin, contentSmallMargin } from "../../identity";
+import { contentMargin } from "../../identity";
 import { HeaderProps } from "./header-props";
 
 const HeaderContainer = styled.header<HeaderProps>`
@@ -11,9 +11,7 @@ const HeaderContainer = styled.header<HeaderProps>`
   flex-wrap: nowrap;
   justify-content: space-between;
 
-  ${(props) =>
-    props.withMargin &&
-    (props.smallMargin ? contentSmallMargin : contentMargin)}
+  ${(props) => props.withMargin && contentMargin}
 `;
 
 export const Header: FC<HeaderProps> = ({
@@ -21,7 +19,6 @@ export const Header: FC<HeaderProps> = ({
   withRuler,
   rulerColor,
   withMargin,
-  smallMargin,
 }) => {
   return (
     <>
@@ -29,11 +26,10 @@ export const Header: FC<HeaderProps> = ({
         withMargin={withMargin}
         withRuler={withRuler}
         rulerColor={rulerColor}
-        smallMargin={smallMargin}
       >
         {children}
       </HeaderContainer>
-      {withRuler && <Hr color={rulerColor} withMargin smallMargin />}
+      {withRuler && <Hr color={rulerColor} withMargin />}
     </>
   );
 };

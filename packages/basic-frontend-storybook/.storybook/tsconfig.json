@@ -1,7 +1,8 @@
 {
   "compilerOptions": {
     "baseUrl": "./",
-    "allowSyntheticDefaultImports": true,
+    "outDir": "./dist",
+    "rootDir": "../",
     "module": "es2015",
     "target": "es5",
     "lib": ["es6", "dom"],
@@ -9,14 +10,13 @@
     "allowJs": false,
     "jsx": "react",
     "moduleResolution": "node",
-    "rootDir": "../",
-    "outDir": "dist",
     "noImplicitReturns": true,
     "noImplicitThis": true,
     "noImplicitAny": true,
     "strictNullChecks": true,
     "declaration": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true
   },
   "include": ["src/**/*"],
   "exclude": [

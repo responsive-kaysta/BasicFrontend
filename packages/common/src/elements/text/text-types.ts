@@ -7,4 +7,6 @@ export enum TextTypes {
   caption,
   sub,
   sup,
+  emphasis,
+  italic,
 }

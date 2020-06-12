@@ -4,5 +4,4 @@ export type HeaderProps = {
   withRuler?: boolean;
   rulerColor?: color;
   withMargin?: boolean;
-  smallMargin?: boolean;
 };

@@ -3,13 +3,6 @@
   "version": "0.1.0",
   "main": "dist/index.js",
   "description": "This package provides commonly used components for the responsive-it apps.",
-  "scripts": {
-    "develop": "tsc --watch",
-    "prebuild": "rimraf ./build",
-    "build": "tsc",
-    "lint": "npm run lint:ts && npm run lint:prettier",
-    "types:check": "tsc --noEmit"
-  },
   "author": "responsive-it <dev-guru@responsive-it>",
   "license": "MIT",
   "files": [
@@ -51,5 +44,12 @@
   "peerDependencies": {
     "react": "^15.0.0 || ^16.0.0",
     "react-dom": "^15.0.0 || ^16.0.0"
+  },
+  "scripts": {
+    "develop": "tsc --watch",
+    "prebuild": "rimraf ./build",
+    "build": "tsc",
+    "lint": "npm run lint:ts && npm run lint:prettier",
+    "types:check": "tsc --noEmit"
   }
 }

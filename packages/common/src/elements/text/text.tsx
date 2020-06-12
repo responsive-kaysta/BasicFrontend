@@ -58,6 +58,8 @@ const Sub = styled.sub<TextProps>`
   text-transform: ${typography.transform.none};
   text-decoration: ${typography.decoration.none};
 
+  top: -0.5rem;
+
   ${(props) => props.bold && `font-weight: ${typography.weight.bold};`}
 `;
 
@@ -65,6 +67,26 @@ const Sup = styled.sup<TextProps>`
   font-family: ${typography.type.primary};
   text-transform: ${typography.transform.none};
   text-decoration: ${typography.decoration.none};
+
+  top: 0.5em;
+
+  ${(props) => props.bold && `font-weight: ${typography.weight.bold};`}
+`;
+
+const Emphasis = styled.em<TextProps>`
+  font-family: ${typography.type.primary};
+  text-transform: ${typography.transform.none};
+  text-decoration: ${typography.decoration.none};
+
+  font-weight: ${typography.weight.bold};
+`;
+
+const Italic = styled.i<TextProps>`
+  font-family: ${typography.type.primary};
+  text-transform: ${typography.transform.none};
+  text-decoration: ${typography.decoration.none};
+
+  font-style: italic;
 
   ${(props) => props.bold && `font-weight: ${typography.weight.bold};`}
 `;
@@ -83,6 +105,20 @@ export const Text: FC<TextProps> = ({ children, type, bold, ...props }) => {
         <Caption bold={bold} {...props}>
           {children}
         </Caption>
+      );
+    }
+    case TextTypes.emphasis: {
+      return (
+        <Emphasis bold={bold} {...props}>
+          {children}
+        </Emphasis>
+      );
+    }
+    case TextTypes.italic: {
+      return (
+        <Italic bold={bold} {...props}>
+          {children}
+        </Italic>
       );
     }
     case TextTypes.label: {

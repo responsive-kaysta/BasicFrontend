@@ -2,7 +2,7 @@ import { css } from "styled-components";
 
 // Global style variables
 export enum background {
-  app = "#F6F9FC",
+  app = "#F6F3FC",
   appInverse = "#7A8997",
   positive = "#E1FFD4",
   negative = "#FEDED2",
@@ -100,9 +100,17 @@ export const typography = {
   },
   transform: {
     none: "none",
+    capitalize: "capitalize",
+    uppercase: "uppercase",
+    lowercase: "lowercase",
+    fullWidth: "full-width",
   },
   decoration: {
     none: "none",
+    underline: "underline",
+    overline: "overline",
+    lineThrough: "line-through",
+    blink: "blink",
   },
 } as const;
 
@@ -166,7 +174,7 @@ export const pageMargins = css`
 
 export const contentPadding = css`
   @media (min-width: ${breakpoint}px) {
-    padding-bottom: ${spacing.padding.small}px;
+    padding-bottom: ${spacing.padding.xsmall}px;
   }
 
   @media (min-width: ${breakpoint * 2}px) {
@@ -190,80 +198,28 @@ export const contentPadding = css`
   }
 `;
 
-export const contentSmallPadding = css`
-  @media (min-width: ${breakpoint}px) {
-    padding-bottom: ${spacing.padding.small / 2}px;
-  }
-
-  @media (min-width: ${breakpoint * 2}px) {
-    padding-bottom: ${spacing.padding.small / 2}px;
-  }
-
-  @media (min-width: ${breakpoint * 3}px) {
-    padding-bottom: ${spacing.padding.medium / 2}px;
-  }
-
-  @media (min-width: ${breakpoint * 4}px) {
-    padding-bottom: ${spacing.padding.large / 2}px;
-  }
-
-  @media (min-width: ${breakpoint * 5}px) {
-    padding-bottom: ${spacing.padding.large / 2}px;
-  }
-
-  @media (min-width: ${breakpoint * 6}px) {
-    padding-bottom: ${spacing.padding.xlarge / 2}px;
-  }
-`;
-
 export const contentMargin = css`
   @media (min-width: ${breakpoint}px) {
-    margin-bottom: ${spacing.padding.small}px;
+    margin-bottom: ${spacing.margin.small}rem;
   }
 
   @media (min-width: ${breakpoint * 2}px) {
-    margin-bottom: ${spacing.padding.small}px;
+    margin-bottom: ${spacing.margin.small}rem;
   }
 
   @media (min-width: ${breakpoint * 3}px) {
-    margin-bottom: ${spacing.padding.medium}px;
+    margin-bottom: ${spacing.margin.medium}rem;
   }
 
   @media (min-width: ${breakpoint * 4}px) {
-    margin-bottom: ${spacing.padding.large}px;
+    margin-bottom: ${spacing.margin.large}rem;
   }
 
   @media (min-width: ${breakpoint * 5}px) {
-    margin-bottom: ${spacing.padding.large}px;
+    margin-bottom: ${spacing.margin.large}rem;
   }
 
   @media (min-width: ${breakpoint * 6}px) {
-    margin-bottom: ${spacing.padding.xlarge}px;
-  }
-`;
-
-export const contentSmallMargin = css`
-  @media (min-width: ${breakpoint}px) {
-    margin-bottom: ${spacing.padding.small / 2}px;
-  }
-
-  @media (min-width: ${breakpoint * 2}px) {
-    margin-bottom: ${spacing.padding.small / 2}px;
-  }
-
-  @media (min-width: ${breakpoint * 3}px) {
-    margin-bottom: ${spacing.padding.medium / 2}px;
-  }
-
-  @media (min-width: ${breakpoint * 4}px) {
-    margin-bottom: ${spacing.padding.large / 2}px;
-  }
-
-  @media (min-width: ${breakpoint * 5}px) {
-    margin-bottom: ${spacing.padding.large / 2}px;
-  }
-
-  @media (min-width: ${breakpoint * 6}px) {
-    margin-bottom: ${spacing.padding.xlarge / 2}px;
+    margin-bottom: ${spacing.margin.xlarge}rem;
   }
 `;
