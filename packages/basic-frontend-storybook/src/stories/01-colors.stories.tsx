@@ -219,6 +219,8 @@ storiesOf("01: Identity", module).add(
           <Text bold>Swatches</Text>
         </FlexBoxContainer>
       </FlexBoxContainer>
+
+      {/* ------------------------------------------------------------ */}
     </LayoutContainer>
   ),
   {

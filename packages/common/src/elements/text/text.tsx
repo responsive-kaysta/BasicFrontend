@@ -58,7 +58,9 @@ const Sub = styled.sub<TextProps>`
   text-transform: ${typography.transform.none};
   text-decoration: ${typography.decoration.none};
 
-  top: -0.5rem;
+  font-size: 0.8rem;
+  position: relative;
+  top: 0.5em;
 
   ${(props) => props.bold && `font-weight: ${typography.weight.bold};`}
 `;
@@ -68,7 +70,9 @@ const Sup = styled.sup<TextProps>`
   text-transform: ${typography.transform.none};
   text-decoration: ${typography.decoration.none};
 
-  top: 0.5em;
+  font-size: 0.8rem;
+  position: relative;
+  top: -0.5rem;
 
   ${(props) => props.bold && `font-weight: ${typography.weight.bold};`}
 `;
