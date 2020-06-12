@@ -8,6 +8,7 @@ import {
   LayoutContainer,
   FlexBoxContainer,
   FlexBoxItem,
+  Text,
 } from "responsive-it-common";
 
 storiesOf("01: Identity", module).add(
@@ -23,24 +24,31 @@ storiesOf("01: Identity", module).add(
 
       <FlexBoxContainer
         flexDirection="row"
-        justifyContent="space-between"
+        justifyContent="flex-start"
         flexWrap="nowrap"
       >
+        {/* left */}
         <FlexBoxContainer
           flexDirection="column"
           width="30%"
           justifyContent="flex-start"
         >
-          <FlexBoxItem justifyContent="flex-start">25%</FlexBoxItem>
+          <FlexBoxItem justifyContent="flex-start">
+            <Text>Desc</Text>
+          </FlexBoxItem>
         </FlexBoxContainer>
 
+        {/* right */}
         <FlexBoxContainer
           flexDirection="column"
           width="70%"
           justifyContent="flex-start"
         >
-          <FlexBoxItem justifyContent="flex-start">75%</FlexBoxItem>
+          <FlexBoxItem alignItems="flex-start">
+            <Text>Desc</Text>
+          </FlexBoxItem>
         </FlexBoxContainer>
+        {/* // */}
       </FlexBoxContainer>
     </LayoutContainer>
   ),

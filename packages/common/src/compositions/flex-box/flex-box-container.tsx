@@ -5,16 +5,20 @@ import { FlexBoxContainerProps } from "./flex-box-container-props";
 
 const FlexContainer = styled.div<FlexBoxContainerProps>`
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
+
+  ${(props) => props.flexWrap && `flex-wrap:${props.flexWrap};`}
+  ${(props) => props.flexDirection && `flex-direction:${props.flexDirection};`}
+  ${(props) =>
+    props.justifyContent && `justify-content:${props.justifyContent};`}
+
+  ${(props) => props.width && `width:${props.width};`}
 `;
 
 export const FlexBoxContainer: FC<FlexBoxContainerProps> = ({
   children,
   flexDirection,
-  justifyContent,
   flexWrap,
+  justifyContent,
   width,
 }) => {
   return (
