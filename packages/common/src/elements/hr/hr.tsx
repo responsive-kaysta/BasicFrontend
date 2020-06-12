@@ -9,18 +9,9 @@ const StyledRuler = styled.hr<HrProps>`
   height: 1px;
   width: 100%;
 
-  ${(props) =>
-    !props.color &&
-    `
-    border: 1px solid ${color.darkest};
-`}
+  ${(props) => !props.color && `border: 1px solid ${color.darkest};`}
 
-  ${(props) =>
-    props.color &&
-    `
-    border: 1px solid ${props.color};
-    
-  `}
+  ${(props) => props.color && `border: 1px solid ${props.color};`}
 
   ${(props) =>
     props.withMargin && props.smallMargin ? contentSmallMargin : contentMargin}

@@ -5,82 +5,134 @@ import { typography } from "../../identity";
 import { TextProps } from "./text-props";
 import { TextTypes } from "./text-types";
 
-const Label = styled.label`
+const Label = styled.label<TextProps>`
   font-family: ${typography.type.primary};
   text-transform: ${typography.transform.none};
   text-decoration: ${typography.decoration.none};
+
+  ${(props) => props.bold && `font-weight: ${typography.weight.bold};`}
 `;
 
-const Paragraph = styled.p`
+const Paragraph = styled.p<TextProps>`
   font-family: ${typography.type.primary};
   text-transform: ${typography.transform.none};
   text-decoration: ${typography.decoration.none};
+
+  ${(props) => props.bold && `font-weight: ${typography.weight.bold};`}
 `;
 
-const Span = styled.span`
+const Span = styled.span<TextProps>`
   font-family: ${typography.type.primary};
   text-transform: ${typography.transform.none};
   text-decoration: ${typography.decoration.none};
+
+  ${(props) => props.bold && `font-weight: ${typography.weight.bold};`}
 `;
 
-const Pre = styled.pre`
+const Pre = styled.pre<TextProps>`
   font-family: ${typography.type.primary};
   text-transform: ${typography.transform.none};
   text-decoration: ${typography.decoration.none};
+
+  ${(props) => props.bold && `font-weight: ${typography.weight.bold};`}
 `;
 
-const Blockquote = styled.blockquote`
+const Blockquote = styled.blockquote<TextProps>`
   font-family: ${typography.type.primary};
   text-transform: ${typography.transform.none};
   text-decoration: ${typography.decoration.none};
+
+  ${(props) => props.bold && `font-weight: ${typography.weight.bold};`}
 `;
 
-const Caption = styled.caption`
+const Caption = styled.caption<TextProps>`
   font-family: ${typography.type.primary};
   text-transform: ${typography.transform.none};
   text-decoration: ${typography.decoration.none};
+
+  ${(props) => props.bold && `font-weight: ${typography.weight.bold};`}
 `;
 
-const Sub = styled.sub`
+const Sub = styled.sub<TextProps>`
   font-family: ${typography.type.primary};
   text-transform: ${typography.transform.none};
   text-decoration: ${typography.decoration.none};
+
+  ${(props) => props.bold && `font-weight: ${typography.weight.bold};`}
 `;
 
-const Sup = styled.sup`
+const Sup = styled.sup<TextProps>`
   font-family: ${typography.type.primary};
   text-transform: ${typography.transform.none};
   text-decoration: ${typography.decoration.none};
+
+  ${(props) => props.bold && `font-weight: ${typography.weight.bold};`}
 `;
 
-export const Text: FC<TextProps> = ({ children, type, ...props }) => {
+export const Text: FC<TextProps> = ({ children, type, bold, ...props }) => {
   switch (type) {
     case TextTypes.blockquote: {
-      return <Blockquote {...props}>{children}</Blockquote>;
+      return (
+        <Blockquote bold={bold} {...props}>
+          {children}
+        </Blockquote>
+      );
     }
     case TextTypes.caption: {
-      return <Caption {...props}>{children}</Caption>;
+      return (
+        <Caption bold={bold} {...props}>
+          {children}
+        </Caption>
+      );
     }
     case TextTypes.label: {
-      return <Label {...props}>{children}</Label>;
+      return (
+        <Label bold={bold} {...props}>
+          {children}
+        </Label>
+      );
     }
     case TextTypes.paragraph: {
-      return <Paragraph {...props}>{children}</Paragraph>;
+      return (
+        <Paragraph bold={bold} {...props}>
+          {children}
+        </Paragraph>
+      );
     }
     case TextTypes.pre: {
-      return <Pre {...props}>{children}</Pre>;
+      return (
+        <Pre bold={bold} {...props}>
+          {children}
+        </Pre>
+      );
     }
     case TextTypes.span: {
-      return <Span {...props}>{children}</Span>;
+      return (
+        <Span bold={bold} {...props}>
+          {children}
+        </Span>
+      );
     }
     case TextTypes.sub: {
-      return <Sub {...props}>{children}</Sub>;
+      return (
+        <Sub bold={bold} {...props}>
+          {children}
+        </Sub>
+      );
     }
     case TextTypes.sup: {
-      return <Sup {...props}>{children}</Sup>;
+      return (
+        <Sup bold={bold} {...props}>
+          {children}
+        </Sup>
+      );
     }
     default: {
-      return <Paragraph {...props}>{children}</Paragraph>;
+      return (
+        <Paragraph bold={bold} {...props}>
+          {children}
+        </Paragraph>
+      );
     }
   }
 };

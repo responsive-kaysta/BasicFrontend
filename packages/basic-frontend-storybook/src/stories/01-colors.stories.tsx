@@ -9,6 +9,7 @@ import {
   FlexBoxContainer,
   FlexBoxItem,
   Text,
+  Box,
 } from "responsive-it-common";
 
 storiesOf("01: Identity", module).add(
@@ -27,29 +28,54 @@ storiesOf("01: Identity", module).add(
         justifyContent="flex-start"
         flexWrap="nowrap"
       >
-        {/* left */}
         <FlexBoxContainer
           flexDirection="column"
           width="30%"
           justifyContent="flex-start"
         >
           <FlexBoxItem justifyContent="flex-start">
-            <Text>Desc</Text>
+            <Text bold>Name</Text>
           </FlexBoxItem>
         </FlexBoxContainer>
-
-        {/* right */}
         <FlexBoxContainer
           flexDirection="column"
           width="70%"
           justifyContent="flex-start"
         >
           <FlexBoxItem alignItems="flex-start">
-            <Text>Desc</Text>
+            <Text bold>Swatches</Text>
           </FlexBoxItem>
         </FlexBoxContainer>
-        {/* // */}
       </FlexBoxContainer>
+
+      {/* ------------------------------------------------------------ */}
+
+      <FlexBoxContainer
+        flexDirection="row"
+        justifyContent="flex-start"
+        flexWrap="nowrap"
+      >
+        <FlexBoxContainer
+          flexDirection="column"
+          width="30%"
+          justifyContent="flex-start"
+        >
+          <FlexBoxItem justifyContent="flex-start">
+            <Text bold>app</Text>
+          </FlexBoxItem>
+        </FlexBoxContainer>
+        <FlexBoxContainer
+          flexDirection="column"
+          width="70%"
+          justifyContent="flex-start"
+        >
+          <FlexBoxItem alignItems="flex-start">
+            <Box />
+          </FlexBoxItem>
+        </FlexBoxContainer>
+      </FlexBoxContainer>
+
+      {/* ------------------------------------------------------------ */}
     </LayoutContainer>
   ),
   {
