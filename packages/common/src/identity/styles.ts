@@ -86,16 +86,16 @@ export const typography = {
     black: "900",
   },
   size: {
-    s1: 12,
-    s2: 14,
-    s3: 16,
-    m1: 20,
-    m2: 24,
-    m3: 28,
-    l1: 32,
-    l2: 40,
-    l3: 48,
-    code: 90,
+    s1: "0.625em",
+    s2: "0.75em",
+    s3: "0.875em",
+    m1: "1em",
+    m2: "1.125em",
+    m3: "1.25em",
+    l1: "1.375em",
+    l2: "1.5em",
+    l3: "1.625em",
+    code: "1.25em",
   },
   transform: {
     none: "none",
@@ -126,8 +126,8 @@ export const pageMargins = css`
     margin-left: ${pageMargin * 1}%;
     margin-right: ${pageMargin * 1}%;
 
-    padding-top: ${spacing.padding.small}px;
-    padding-bottom: ${spacing.padding.small}px;
+    padding-top: ${spacing.padding.xsmall}px;
+    padding-bottom: ${spacing.padding.xsmall}px;
   }
 
   @media (min-width: ${breakpoint * 2}px) {
@@ -158,8 +158,8 @@ export const pageMargins = css`
     margin-left: ${pageMargin * 5}%;
     margin-right: ${pageMargin * 5}%;
 
-    padding-top: ${spacing.padding.large}px;
-    padding-bottom: ${spacing.padding.large}px;
+    padding-top: ${spacing.padding.xlarge}px;
+    padding-bottom: ${spacing.padding.xlarge}px;
   }
 
   @media (min-width: ${breakpoint * 6}px) {

@@ -74,7 +74,7 @@ export const bodyStyles = css`
   }
 
   font-family: ${typography.type.primary};
-  font-size: ${typography.size.s3}px;
+  font-size: ${typography.size.s3};
   color: ${color.darkest};
 
   margin: 0;
@@ -110,48 +110,21 @@ export const bodyStyles = css`
     font-family: ${typography.type.primary};
   }
 
-  sub,
-  sup {
-    font-size: 0.8em;
-  }
-
-  sub {
-    bottom: -0.2em;
-  }
-
-  sup {
-    top: -0.2em;
-  }
-
   b,
   em {
     font-weight: ${typography.weight.bold};
   }
 
-  code,
-  pre {
+  code {
     font-family: ${typography.type.code};
-    font-size: ${typography.size.s2 - 1}px;
+    font-size: ${typography.size.s2};
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-  }
-
-  code {
     display: inline-block;
     padding-left: 2px;
     padding-right: 2px;
     vertical-align: baseline;
     color: ${color.secondary};
-  }
-
-  pre {
-    line-height: 18px;
-    padding: 11px 1rem;
-    white-space: pre-wrap;
-    background: rgba(0, 0, 0, 0.05);
-    color: ${color.darkest};
-    border-radius: 3px;
-    margin: 1rem 0;
   }
 `;
 
