@@ -1,14 +1,12 @@
 import { storiesOf } from "@storybook/react";
 import * as React from "react";
-
 import {
-  color,
-  LayoutContainer,
   Button,
   Heading,
   HeadingTypes,
   Hr,
   Icon,
+  LayoutContainer,
   Link,
   Pictogram,
   Spinner,

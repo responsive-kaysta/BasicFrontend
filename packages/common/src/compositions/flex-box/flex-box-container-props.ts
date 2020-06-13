@@ -6,4 +6,5 @@ export type FlexBoxContainerProps = {
   alignContent?: string;
   width?: string;
   withMargin?: boolean;
+  flexGrow?: number;
 };

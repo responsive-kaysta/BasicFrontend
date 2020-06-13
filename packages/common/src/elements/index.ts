@@ -7,3 +7,4 @@ export * from "./link";
 export * from "./pictogram";
 export * from "./spinner";
 export * from "./text";
+export * from "./square";

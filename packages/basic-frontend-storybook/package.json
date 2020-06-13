@@ -48,7 +48,7 @@
     "prebuild": "rimraf ./build",
     "build": "npm run build:types && npm run build:js",
     "build:types": "tsc --emitDeclarationOnly",
-    "build:js": "babel src --ignore \"src/**/*.stories.tsx\",\"src/**/*.test.tsx?\" --out-dir build --extensions \".ts,.tsx\" --source-maps",
+    "build:js": "babel src --ignore \"src/**/*.test.tsx?\" --out-dir build --extensions \".ts,.tsx\" --source-maps",
     "build:storybook": "build-storybook -c config/storybook"
   }
 }

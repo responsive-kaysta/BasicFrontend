@@ -7,6 +7,8 @@ import { FlexBoxContainerProps } from "./flex-box-container-props";
 const FlexContainer = styled.section<FlexBoxContainerProps>`
   display: flex;
 
+  ${(props) => props.flexGrow && `flex-grow:${props.flexGrow};`}
+
   ${(props) => props.flexWrap && `flex-wrap:${props.flexWrap};`}
   ${(props) => props.flexDirection && `flex-direction:${props.flexDirection};`}
   ${(props) =>
@@ -24,6 +26,7 @@ export const FlexBoxContainer: FC<FlexBoxContainerProps> = ({
   flexDirection,
   justifyContent,
   flexWrap,
+  flexGrow,
   alignItems,
   alignContent,
   withMargin,
@@ -32,6 +35,7 @@ export const FlexBoxContainer: FC<FlexBoxContainerProps> = ({
   return (
     <FlexContainer
       flexDirection={flexDirection}
+      flexGrow={flexGrow}
       justifyContent={justifyContent}
       flexWrap={flexWrap}
       alignItems={alignItems}
