@@ -199,26 +199,26 @@ export const contentPadding = css`
 
 export const contentMargin = css`
   @media (min-width: ${breakpoint}px) {
-    margin-bottom: ${spacing.margin.small}rem;
+    margin-bottom: ${spacing.margin.small}em;
   }
 
   @media (min-width: ${breakpoint * 2}px) {
-    margin-bottom: ${spacing.margin.small}rem;
+    margin-bottom: ${spacing.margin.small}em;
   }
 
   @media (min-width: ${breakpoint * 3}px) {
-    margin-bottom: ${spacing.margin.medium}rem;
+    margin-bottom: ${spacing.margin.medium}em;
   }
 
   @media (min-width: ${breakpoint * 4}px) {
-    margin-bottom: ${spacing.margin.large}rem;
+    margin-bottom: ${spacing.margin.large}em;
   }
 
   @media (min-width: ${breakpoint * 5}px) {
-    margin-bottom: ${spacing.margin.large}rem;
+    margin-bottom: ${spacing.margin.large}em;
   }
 
   @media (min-width: ${breakpoint * 6}px) {
-    margin-bottom: ${spacing.margin.xlarge}rem;
+    margin-bottom: ${spacing.margin.xlarge}em;
   }
 `;
