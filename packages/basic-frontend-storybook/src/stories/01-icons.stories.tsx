@@ -7,6 +7,7 @@ import {
   Icon,
   icons,
   LayoutContainer,
+  Section,
 } from "responsive-it-common";
 import styled from "styled-components";
 
@@ -46,15 +47,16 @@ storiesOf("01: Identity", module).add(
       </Header>
 
       {/* ------------------------------------------------------------ */}
-
-      <List>
-        {Object.keys(icons).map((key) => (
-          <Item key={key}>
-            <Icon icon={key} aria-hidden />
-            <Meta>{key}</Meta>
-          </Item>
-        ))}
-      </List>
+      <Section>
+        <List>
+          {Object.keys(icons).map((key) => (
+            <Item key={key}>
+              <Icon icon={key} aria-hidden />
+              <Meta>{key}</Meta>
+            </Item>
+          ))}
+        </List>
+      </Section>
     </LayoutContainer>
   ),
   {

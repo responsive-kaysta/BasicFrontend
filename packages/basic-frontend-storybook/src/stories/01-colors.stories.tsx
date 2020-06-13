@@ -510,8 +510,6 @@ storiesOf("01: Identity", module).add(
           <Box backgroundColor={color.darkgray} size={BoxSizes.full} />
         </FlexBoxContainer>
       </FlexBoxContainer>
-
-      {/* ------------------------------------------------------------ */}
     </LayoutContainer>
   ),
   {

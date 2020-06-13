@@ -31,8 +31,6 @@ storiesOf("01: Identity", module).add(
         </FlexBoxContainer>
       </FlexBoxContainer>
 
-      {/* ------------------------------------------------------------ */}
-
       <FlexBoxContainer
         withMargin
         flexDirection="row"
@@ -58,8 +56,6 @@ storiesOf("01: Identity", module).add(
           <Box backgroundColor={background.app} size={BoxSizes.full} />
         </FlexBoxContainer>
       </FlexBoxContainer>
-
-      {/* ------------------------------------------------------------ */}
 
       <FlexBoxContainer
         withMargin
@@ -87,8 +83,6 @@ storiesOf("01: Identity", module).add(
         </FlexBoxContainer>
       </FlexBoxContainer>
 
-      {/* ------------------------------------------------------------ */}
-
       <FlexBoxContainer
         withMargin
         flexDirection="row"
@@ -114,8 +108,6 @@ storiesOf("01: Identity", module).add(
           <Box backgroundColor={background.positive} size={BoxSizes.full} />
         </FlexBoxContainer>
       </FlexBoxContainer>
-
-      {/* ------------------------------------------------------------ */}
 
       <FlexBoxContainer
         withMargin
@@ -143,8 +135,6 @@ storiesOf("01: Identity", module).add(
         </FlexBoxContainer>
       </FlexBoxContainer>
 
-      {/* ------------------------------------------------------------ */}
-
       <FlexBoxContainer
         withMargin
         flexDirection="row"
@@ -170,8 +160,6 @@ storiesOf("01: Identity", module).add(
           <Box backgroundColor={background.warning} size={BoxSizes.full} />
         </FlexBoxContainer>
       </FlexBoxContainer>
-
-      {/* ------------------------------------------------------------ */}
 
       <FlexBoxContainer
         withMargin
@@ -199,8 +187,6 @@ storiesOf("01: Identity", module).add(
         </FlexBoxContainer>
       </FlexBoxContainer>
 
-      {/* ------------------------------------------------------------ */}
-
       <FlexBoxContainer
         withMargin
         flexDirection="row"
@@ -227,8 +213,6 @@ storiesOf("01: Identity", module).add(
         </FlexBoxContainer>
       </FlexBoxContainer>
 
-      {/* ------------------------------------------------------------ */}
-
       <FlexBoxContainer
         withMargin
         flexDirection="row"
@@ -254,8 +238,6 @@ storiesOf("01: Identity", module).add(
           <Box backgroundColor={background.whitesmoke} size={BoxSizes.full} />
         </FlexBoxContainer>
       </FlexBoxContainer>
-
-      {/* ------------------------------------------------------------ */}
     </LayoutContainer>
   ),
   {

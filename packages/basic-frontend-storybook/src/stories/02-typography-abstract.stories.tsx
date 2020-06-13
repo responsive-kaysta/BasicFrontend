@@ -2,6 +2,7 @@ import { storiesOf } from "@storybook/react";
 import * as React from "react";
 import {
   Box,
+  BoxSizes,
   color,
   FlexBoxContainer,
   Header,
@@ -11,7 +12,6 @@ import {
   Text,
   TextTypes,
   typography,
-  BoxSizes,
 } from "responsive-it-common";
 
 storiesOf("02: Typography", module).add(

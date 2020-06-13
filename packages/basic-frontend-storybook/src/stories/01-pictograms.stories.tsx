@@ -5,8 +5,9 @@ import {
   Heading,
   HeadingTypes,
   LayoutContainer,
-  Pictograms,
   Pictogram,
+  Pictograms,
+  Section,
 } from "responsive-it-common";
 import styled from "styled-components";
 
@@ -46,15 +47,16 @@ storiesOf("01: Identity", module).add(
       </Header>
 
       {/* ------------------------------------------------------------ */}
-
-      <List>
-        {Object.keys(Pictograms).map((key) => (
-          <Item key={key}>
-            <Pictogram pictogram={key} key={key} aria-hidden />
-            <Meta>{key}</Meta>
-          </Item>
-        ))}
-      </List>
+      <Section>
+        <List>
+          {Object.keys(Pictograms).map((key) => (
+            <Item key={key}>
+              <Pictogram pictogram={key} key={key} aria-hidden />
+              <Meta>{key}</Meta>
+            </Item>
+          ))}
+        </List>
+      </Section>
     </LayoutContainer>
   ),
   {
