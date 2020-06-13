@@ -1,16 +1,14 @@
-import { ColorItem } from "@storybook/addon-docs/blocks";
 import { storiesOf } from "@storybook/react";
 import * as React from "react";
 import {
-  color,
   Header,
   Heading,
   HeadingTypes,
-  LayoutContainer,
-  icons,
   Icon,
+  icons,
+  LayoutContainer,
 } from "responsive-it-common";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 
 const Item = styled.li`
   display: inline-flex;
