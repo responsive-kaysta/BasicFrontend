@@ -1,60 +1,101 @@
 import * as React from "react";
 import { FC } from "react";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { typography } from "../../identity";
 import { TextProps } from "./text-props";
 import { TextTypes } from "./text-types";
 
+const FontWeight = css<TextProps>`
+  ${(props) => !props.weight && `font-weight: ${typography.weight.regular};`}
+
+  ${(props) =>
+    props.weight && props.weight === typography.weight.black
+      ? `font-weight: ${typography.weight.black};`
+      : props.weight === typography.weight.bold
+      ? `font-weight: ${typography.weight.bold};`
+      : props.weight === typography.weight.extrabold
+      ? `font-weight: ${typography.weight.extrabold};`
+      : `font-weight: ${typography.weight.regular};`}
+`;
+
 const Label = styled.label<TextProps>`
-  font-family: ${typography.type.primary};
+  ${(props) =>
+    props.fontType
+      ? `font-family: ${props.fontType};`
+      : `font-family: ${typography.type.primary};`}
+
   text-transform: ${typography.transform.none};
   text-decoration: ${typography.decoration.none};
 
-  ${(props) => props.bold && `font-weight: ${typography.weight.bold};`}
+  ${FontWeight}
 `;
 
 const Paragraph = styled.p<TextProps>`
-  font-family: ${typography.type.primary};
+${(props) =>
+  props.fontType
+    ? `font-family: ${props.fontType};`
+    : `font-family: ${typography.type.primary};`}
+
   text-transform: ${typography.transform.none};
   text-decoration: ${typography.decoration.none};
 
-  ${(props) => props.bold && `font-weight: ${typography.weight.bold};`}
+  ${FontWeight}
 `;
 
 const Span = styled.span<TextProps>`
-  font-family: ${typography.type.primary};
+${(props) =>
+  props.fontType
+    ? `font-family: ${props.fontType};`
+    : `font-family: ${typography.type.primary};`}
+
   text-transform: ${typography.transform.none};
   text-decoration: ${typography.decoration.none};
 
-  ${(props) => props.bold && `font-weight: ${typography.weight.bold};`}
+  ${FontWeight}
 `;
 
 const Pre = styled.pre<TextProps>`
-  font-family: ${typography.type.primary};
+${(props) =>
+  props.fontType
+    ? `font-family: ${props.fontType};`
+    : `font-family: ${typography.type.primary};`}
+
   text-transform: ${typography.transform.none};
   text-decoration: ${typography.decoration.none};
 
-  ${(props) => props.bold && `font-weight: ${typography.weight.bold};`}
+  ${FontWeight}
 `;
 
 const Blockquote = styled.blockquote<TextProps>`
-  font-family: ${typography.type.primary};
+${(props) =>
+  props.fontType
+    ? `font-family: ${props.fontType};`
+    : `font-family: ${typography.type.primary};`}
+
   text-transform: ${typography.transform.none};
   text-decoration: ${typography.decoration.none};
 
-  ${(props) => props.bold && `font-weight: ${typography.weight.bold};`}
+  ${FontWeight}
 `;
 
 const Caption = styled.caption<TextProps>`
-  font-family: ${typography.type.primary};
+${(props) =>
+  props.fontType
+    ? `font-family: ${props.fontType};`
+    : `font-family: ${typography.type.primary};`}
+
   text-transform: ${typography.transform.none};
   text-decoration: ${typography.decoration.none};
 
-  ${(props) => props.bold && `font-weight: ${typography.weight.bold};`}
+  ${FontWeight}
 `;
 
 const Sub = styled.sub<TextProps>`
-  font-family: ${typography.type.primary};
+${(props) =>
+  props.fontType
+    ? `font-family: ${props.fontType};`
+    : `font-family: ${typography.type.primary};`}
+
   text-transform: ${typography.transform.none};
   text-decoration: ${typography.decoration.none};
 
@@ -62,11 +103,15 @@ const Sub = styled.sub<TextProps>`
   position: relative;
   top: 0.5em;
 
-  ${(props) => props.bold && `font-weight: ${typography.weight.bold};`}
+  ${FontWeight}
 `;
 
 const Sup = styled.sup<TextProps>`
-  font-family: ${typography.type.primary};
+${(props) =>
+  props.fontType
+    ? `font-family: ${props.fontType};`
+    : `font-family: ${typography.type.primary};`}
+
   text-transform: ${typography.transform.none};
   text-decoration: ${typography.decoration.none};
 
@@ -74,11 +119,15 @@ const Sup = styled.sup<TextProps>`
   position: relative;
   top: -0.5rem;
 
-  ${(props) => props.bold && `font-weight: ${typography.weight.bold};`}
+  ${FontWeight}
 `;
 
 const Emphasis = styled.em<TextProps>`
-  font-family: ${typography.type.primary};
+${(props) =>
+  props.fontType
+    ? `font-family: ${props.fontType};`
+    : `font-family: ${typography.type.primary};`}
+
   text-transform: ${typography.transform.none};
   text-decoration: ${typography.decoration.none};
 
@@ -86,90 +135,100 @@ const Emphasis = styled.em<TextProps>`
 `;
 
 const Italic = styled.i<TextProps>`
-  font-family: ${typography.type.primary};
+${(props) =>
+  props.fontType
+    ? `font-family: ${props.fontType};`
+    : `font-family: ${typography.type.primary};`}
+
   text-transform: ${typography.transform.none};
   text-decoration: ${typography.decoration.none};
 
   font-style: italic;
 
-  ${(props) => props.bold && `font-weight: ${typography.weight.bold};`}
+  ${FontWeight}
 `;
 
-export const Text: FC<TextProps> = ({ children, type, bold, ...props }) => {
+export const Text: FC<TextProps> = ({
+  children,
+  type,
+  fontType,
+  weight,
+  ...props
+}) => {
   switch (type) {
     case TextTypes.blockquote: {
       return (
-        <Blockquote bold={bold} {...props}>
+        <Blockquote weight={weight} fontType={fontType} {...props}>
           {children}
         </Blockquote>
       );
     }
     case TextTypes.caption: {
       return (
-        <Caption bold={bold} {...props}>
+        <Caption weight={weight} fontType={fontType} {...props}>
           {children}
         </Caption>
       );
     }
     case TextTypes.emphasis: {
       return (
-        <Emphasis bold={bold} {...props}>
+        <Emphasis weight={weight} fontType={fontType} {...props}>
           {children}
         </Emphasis>
       );
     }
     case TextTypes.italic: {
       return (
-        <Italic bold={bold} {...props}>
+        <Italic weight={weight} fontType={fontType} {...props}>
           {children}
         </Italic>
       );
     }
     case TextTypes.label: {
       return (
-        <Label bold={bold} {...props}>
+        <Label weight={weight} fontType={fontType} {...props}>
           {children}
         </Label>
       );
     }
     case TextTypes.paragraph: {
       return (
-        <Paragraph bold={bold} {...props}>
+        <Paragraph weight={weight} fontType={fontType} {...props}>
           {children}
         </Paragraph>
       );
     }
     case TextTypes.pre: {
       return (
-        <Pre bold={bold} {...props}>
+        <Pre weight={weight} fontType={fontType} {...props}>
           {children}
         </Pre>
       );
     }
     case TextTypes.span: {
       return (
-        <Span bold={bold} {...props}>
+        <Span weight={weight} fontType={fontType} {...props}>
           {children}
         </Span>
       );
     }
     case TextTypes.sub: {
       return (
-        <Sub bold={bold} {...props}>
+        <Sub weight={weight} fontType={fontType} {...props}>
           {children}
         </Sub>
       );
     }
     case TextTypes.sup: {
       return (
-        <Sup bold={bold} {...props}>
+        <Sup weight={weight} fontType={fontType} {...props}>
           {children}
         </Sup>
       );
     }
     default: {
       return (
-        <Paragraph bold={bold} {...props}>
+        <Paragraph weight={weight} fontType={fontType} {...props}>
           {children}
         </Paragraph>
       );

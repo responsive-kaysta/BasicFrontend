@@ -12,6 +12,7 @@ import {
   Square,
   Text,
   TextTypes,
+  typography,
 } from "responsive-it-common";
 
 storiesOf("01: Identity", module).add(
@@ -26,10 +27,10 @@ storiesOf("01: Identity", module).add(
 
       <FlexBoxContainer flexDirection="row" flexWrap="nowrap" withMargin>
         <FlexBoxContainer flexDirection="column" width="40%">
-          <Text bold>Name</Text>
+          <Text weight={typography.weight.bold}>Name</Text>
         </FlexBoxContainer>
         <FlexBoxContainer flexDirection="column" width="60%">
-          <Text bold>Swatches</Text>
+          <Text weight={typography.weight.bold}>Swatches</Text>
         </FlexBoxContainer>
       </FlexBoxContainer>
 
@@ -119,10 +120,10 @@ storiesOf("01: Identity", module).add(
 
       <FlexBoxContainer flexDirection="row" flexWrap="nowrap" withMargin>
         <FlexBoxContainer flexDirection="column" width="40%">
-          <Text bold>Name</Text>
+          <Text weight={typography.weight.bold}>Name</Text>
         </FlexBoxContainer>
         <FlexBoxContainer flexDirection="column" width="60%">
-          <Text bold>Swatches</Text>
+          <Text weight={typography.weight.bold}>Swatches</Text>
         </FlexBoxContainer>
       </FlexBoxContainer>
 
@@ -269,10 +270,10 @@ storiesOf("01: Identity", module).add(
 
       <FlexBoxContainer flexDirection="row" flexWrap="nowrap" withMargin>
         <FlexBoxContainer flexDirection="column" width="40%">
-          <Text bold>Name</Text>
+          <Text weight={typography.weight.bold}>Name</Text>
         </FlexBoxContainer>
         <FlexBoxContainer flexDirection="column" width="60%">
-          <Text bold>Swatches</Text>
+          <Text weight={typography.weight.bold}>Swatches</Text>
         </FlexBoxContainer>
       </FlexBoxContainer>
 

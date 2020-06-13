@@ -1,8 +1,6 @@
 import { storiesOf } from "@storybook/react";
 import * as React from "react";
 import {
-  Box,
-  BoxSizes,
   FlexBoxContainer,
   Header,
   Heading,
@@ -10,24 +8,25 @@ import {
   LayoutContainer,
   Text,
   TextTypes,
+  typography,
 } from "responsive-it-common";
 
 storiesOf("02: Typography", module).add(
-  "Text Elements",
+  "Headings",
   () => (
     <LayoutContainer padding>
       <Header withRuler withMargin>
-        <Heading type={HeadingTypes.h1}>Typography - TextTypes</Heading>
+        <Heading type={HeadingTypes.h1}>Headings</Heading>
       </Header>
 
       {/* ------------------------------------------------------------ */}
 
       <FlexBoxContainer flexDirection="row" flexWrap="nowrap" withMargin>
         <FlexBoxContainer flexDirection="column" width="40%">
-          <Text bold>Name</Text>
+          <Text weight={typography.weight.bold}>Name</Text>
         </FlexBoxContainer>
         <FlexBoxContainer flexDirection="column" width="60%">
-          <Text bold>Swatches</Text>
+          <Text weight={typography.weight.bold}>Swatches</Text>
         </FlexBoxContainer>
       </FlexBoxContainer>
 
