@@ -179,8 +179,6 @@ storiesOf("02: Typography", module).add(
           </Box>
         </FlexBoxContainer>
       </FlexBoxContainer>
-
-      {/* ------------------------------------------------------------ */}
     </LayoutContainer>
   ),
   {

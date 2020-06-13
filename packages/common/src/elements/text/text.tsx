@@ -29,7 +29,7 @@ const FontSize = css<TextProps>`
   ${(props) =>
     props.fontSize
       ? `font-size: calc(${props.fontSize} + 1vmin);`
-      : `font-size: ${typography.size.s3};`}
+      : `font-size: ${typography.size.m2};`}
 `;
 
 const Label = styled.label<TextProps>`

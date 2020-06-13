@@ -1,6 +1,7 @@
 import { withInfo } from "@storybook/addon-info";
 import { withKnobs } from "@storybook/addon-knobs";
 import { addDecorator, addParameters, configure } from "@storybook/react";
+import { withA11y } from "@storybook/addon-a11y";
 
 addParameters({
   options: {

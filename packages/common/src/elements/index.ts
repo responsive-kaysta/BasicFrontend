@@ -6,5 +6,6 @@ export * from "./icon";
 export * from "./link";
 export * from "./pictogram";
 export * from "./spinner";
-export * from "./text";
 export * from "./square";
+export * from "./subheading";
+export * from "./text";

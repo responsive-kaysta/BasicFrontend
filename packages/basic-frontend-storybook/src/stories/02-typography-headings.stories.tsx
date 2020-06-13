@@ -9,6 +9,9 @@ import {
   Text,
   TextTypes,
   typography,
+  color,
+  SubHeading,
+  SubheadingTypes,
 } from "responsive-it-common";
 
 storiesOf("02: Typography", module).add(
@@ -43,7 +46,7 @@ storiesOf("02: Typography", module).add(
           alignItems="flex-start"
           justifyContent="center"
         >
-          <Text type={TextTypes.emphasis}>TextTypes.blockquote</Text>
+          <Text type={TextTypes.emphasis}>HeadingTypes.h1</Text>
         </FlexBoxContainer>
         <FlexBoxContainer
           flexDirection="column"
@@ -51,7 +54,7 @@ storiesOf("02: Typography", module).add(
           alignItems="flex-start"
           justifyContent="center"
         >
-          <Text type={TextTypes.blockquote}>Lorem ipsum dolor sit amet</Text>
+          <Heading type={HeadingTypes.h1}>Lorem ipsum dolor sit amet</Heading>
         </FlexBoxContainer>
       </FlexBoxContainer>
 
@@ -68,7 +71,7 @@ storiesOf("02: Typography", module).add(
           alignItems="flex-start"
           justifyContent="center"
         >
-          <Text type={TextTypes.emphasis}>TextTypes.caption</Text>
+          <Text type={TextTypes.emphasis}>HeadingTypes.h2</Text>
         </FlexBoxContainer>
         <FlexBoxContainer
           flexDirection="column"
@@ -76,7 +79,7 @@ storiesOf("02: Typography", module).add(
           alignItems="flex-start"
           justifyContent="center"
         >
-          <Text type={TextTypes.caption}>Lorem ipsum dolor sit amet</Text>
+          <Heading type={HeadingTypes.h2}>Lorem ipsum dolor sit amet</Heading>
         </FlexBoxContainer>
       </FlexBoxContainer>
 
@@ -93,7 +96,7 @@ storiesOf("02: Typography", module).add(
           alignItems="flex-start"
           justifyContent="center"
         >
-          <Text type={TextTypes.emphasis}>TextTypes.emphasis</Text>
+          <Text type={TextTypes.emphasis}>HeadingTypes.h3</Text>
         </FlexBoxContainer>
         <FlexBoxContainer
           flexDirection="column"
@@ -101,7 +104,7 @@ storiesOf("02: Typography", module).add(
           alignItems="flex-start"
           justifyContent="center"
         >
-          <Text type={TextTypes.emphasis}>Lorem ipsum dolor sit amet</Text>
+          <Heading type={HeadingTypes.h3}>Lorem ipsum dolor sit amet</Heading>
         </FlexBoxContainer>
       </FlexBoxContainer>
 
@@ -118,7 +121,7 @@ storiesOf("02: Typography", module).add(
           alignItems="flex-start"
           justifyContent="center"
         >
-          <Text type={TextTypes.emphasis}>TextTypes.italic</Text>
+          <Text type={TextTypes.emphasis}>HeadingTypes.h4</Text>
         </FlexBoxContainer>
         <FlexBoxContainer
           flexDirection="column"
@@ -126,7 +129,7 @@ storiesOf("02: Typography", module).add(
           alignItems="flex-start"
           justifyContent="center"
         >
-          <Text type={TextTypes.italic}>Lorem ipsum dolor sit amet</Text>
+          <Heading type={HeadingTypes.h4}>Lorem ipsum dolor sit amet</Heading>
         </FlexBoxContainer>
       </FlexBoxContainer>
 
@@ -143,7 +146,7 @@ storiesOf("02: Typography", module).add(
           alignItems="flex-start"
           justifyContent="center"
         >
-          <Text type={TextTypes.emphasis}>TextTypes.label</Text>
+          <Text type={TextTypes.emphasis}>HeadingTypes.h5</Text>
         </FlexBoxContainer>
         <FlexBoxContainer
           flexDirection="column"
@@ -151,7 +154,7 @@ storiesOf("02: Typography", module).add(
           alignItems="flex-start"
           justifyContent="center"
         >
-          <Text type={TextTypes.label}>Lorem ipsum dolor sit amet</Text>
+          <Heading type={HeadingTypes.h5}>Lorem ipsum dolor sit amet</Heading>
         </FlexBoxContainer>
       </FlexBoxContainer>
 
@@ -168,7 +171,7 @@ storiesOf("02: Typography", module).add(
           alignItems="flex-start"
           justifyContent="center"
         >
-          <Text type={TextTypes.emphasis}>TextTypes.paragraph</Text>
+          <Text type={TextTypes.emphasis}>HeadingTypes.h6</Text>
         </FlexBoxContainer>
         <FlexBoxContainer
           flexDirection="column"
@@ -176,7 +179,22 @@ storiesOf("02: Typography", module).add(
           alignItems="flex-start"
           justifyContent="center"
         >
-          <Text type={TextTypes.paragraph}>Lorem ipsum dolor sit amet</Text>
+          <Heading type={HeadingTypes.h6}>Lorem ipsum dolor sit amet</Heading>
+        </FlexBoxContainer>
+      </FlexBoxContainer>
+
+      {/* ------------------------------------------------------------ */}
+
+      <Header withRuler rulerColor={color.darkest} withMargin>
+        <Heading type={HeadingTypes.h3}>Text Sizes</Heading>
+      </Header>
+
+      <FlexBoxContainer flexDirection="row" flexWrap="nowrap" withMargin>
+        <FlexBoxContainer flexDirection="column" width="40%">
+          <Text weight={typography.weight.bold}>Name</Text>
+        </FlexBoxContainer>
+        <FlexBoxContainer flexDirection="column" width="60%">
+          <Text weight={typography.weight.bold}>Swatches</Text>
         </FlexBoxContainer>
       </FlexBoxContainer>
 
@@ -193,7 +211,7 @@ storiesOf("02: Typography", module).add(
           alignItems="flex-start"
           justifyContent="center"
         >
-          <Text type={TextTypes.emphasis}>TextTypes.pre</Text>
+          <Text type={TextTypes.emphasis}>SubheadingTypes.abstract</Text>
         </FlexBoxContainer>
         <FlexBoxContainer
           flexDirection="column"
@@ -201,7 +219,9 @@ storiesOf("02: Typography", module).add(
           alignItems="flex-start"
           justifyContent="center"
         >
-          <Text type={TextTypes.pre}>Lorem ipsum dolor sit amet</Text>
+          <SubHeading type={SubheadingTypes.abstract}>
+            Lorem ipsum dolor sit amet
+          </SubHeading>
         </FlexBoxContainer>
       </FlexBoxContainer>
 
@@ -218,7 +238,7 @@ storiesOf("02: Typography", module).add(
           alignItems="flex-start"
           justifyContent="center"
         >
-          <Text type={TextTypes.emphasis}>TextTypes.span</Text>
+          <Text type={TextTypes.emphasis}>SubheadingTypes.headline</Text>
         </FlexBoxContainer>
         <FlexBoxContainer
           flexDirection="column"
@@ -226,7 +246,9 @@ storiesOf("02: Typography", module).add(
           alignItems="flex-start"
           justifyContent="center"
         >
-          <Text type={TextTypes.span}>Lorem ipsum dolor sit amet</Text>
+          <SubHeading type={SubheadingTypes.headline}>
+            Lorem ipsum dolor sit amet
+          </SubHeading>
         </FlexBoxContainer>
       </FlexBoxContainer>
 
@@ -243,7 +265,7 @@ storiesOf("02: Typography", module).add(
           alignItems="flex-start"
           justifyContent="center"
         >
-          <Text type={TextTypes.emphasis}>TextTypes.sub</Text>
+          <Text type={TextTypes.emphasis}>SubheadingTypes.lead</Text>
         </FlexBoxContainer>
         <FlexBoxContainer
           flexDirection="column"
@@ -251,7 +273,9 @@ storiesOf("02: Typography", module).add(
           alignItems="flex-start"
           justifyContent="center"
         >
-          <Text type={TextTypes.sub}>Lorem ipsum dolor sit amet</Text>
+          <SubHeading type={SubheadingTypes.lead}>
+            Lorem ipsum dolor sit amet
+          </SubHeading>
         </FlexBoxContainer>
       </FlexBoxContainer>
 
@@ -268,7 +292,7 @@ storiesOf("02: Typography", module).add(
           alignItems="flex-start"
           justifyContent="center"
         >
-          <Text type={TextTypes.emphasis}>TextTypes.sup</Text>
+          <Text type={TextTypes.emphasis}>SubheadingTypes.tagline</Text>
         </FlexBoxContainer>
         <FlexBoxContainer
           flexDirection="column"
@@ -276,7 +300,9 @@ storiesOf("02: Typography", module).add(
           alignItems="flex-start"
           justifyContent="center"
         >
-          <Text type={TextTypes.sup}>Lorem ipsum dolor sit amet</Text>
+          <SubHeading type={SubheadingTypes.tagline}>
+            Lorem ipsum dolor sit amet
+          </SubHeading>
         </FlexBoxContainer>
       </FlexBoxContainer>
     </LayoutContainer>

@@ -12,37 +12,37 @@ const style = css`
 `;
 
 const StyledH1 = styled.h1`
-${style}
+  ${style}
   font-size: ${typography.size.l3};
   font-weight: ${typography.weight.extrabold};
 `;
 
 const StyledH2 = styled.h2`
-${style}
+  ${style}
   font-size: ${typography.size.l2};
   font-weight: ${typography.weight.extrabold};
 `;
 
 const StyledH3 = styled.h3`
-${style}
+  ${style}
   font-size: ${typography.size.l1};
   font-weight: ${typography.weight.extrabold};
 `;
 
 const StyledH4 = styled.h4`
-${style}
+  ${style}
   font-size: ${typography.size.m3};
   font-weight: ${typography.weight.extrabold};
 `;
 
 const StyledH5 = styled.h5`
-${style}
+  ${style}
   font-size: ${typography.size.m2};
   font-weight: ${typography.weight.extrabold};
 `;
 
 const StyledH6 = styled.h6`
-${style}
+  ${style}
   font-size: ${typography.size.m1};
   font-weight: ${typography.weight.extrabold};
 `;
