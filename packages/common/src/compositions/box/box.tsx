@@ -1,7 +1,13 @@
 import * as React from "react";
 import { FC } from "react";
 import styled, { css } from "styled-components";
-import { breakpoint, color, spacing } from "../../identity";
+import {
+  breakpoint,
+  color,
+  contentMargin,
+  contentPadding,
+  spacing,
+} from "../../identity";
 import { BoxProps } from "./box-props";
 import { BoxSizes } from "./box-sizes";
 
@@ -46,12 +52,18 @@ const StyledBox = styled.div<BoxProps>`
   ${(props) => props.minHeight && `min-height: ${props.minHeight};`}
 
   ${(props) =>
-    props.backgroundColor && `background-color: ${props.backgroundColor};`}`;
+    props.backgroundColor && `background-color: ${props.backgroundColor};`}
+    
+  ${contentPadding}
+
+  ${(props) => props.widthMargin && contentMargin}
+`;
 
 export const Box: FC<BoxProps> = ({
   children,
   size,
   minHeight,
+  widthMargin,
   backgroundColor,
 }) => {
   return (
@@ -61,6 +73,7 @@ export const Box: FC<BoxProps> = ({
         backgroundColor={backgroundColor}
         size={size}
         minHeight={minHeight}
+        widthMargin={widthMargin}
       >
         {children}
       </StyledBox>

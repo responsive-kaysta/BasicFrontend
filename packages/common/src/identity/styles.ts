@@ -48,11 +48,11 @@ export enum color {
 
 export const spacing = {
   padding: {
-    xsmall: 5,
-    small: 10,
-    medium: 20,
-    large: 30,
-    xlarge: 40,
+    xsmall: 1,
+    small: 1.125,
+    medium: 1.5,
+    large: 1.625,
+    xlarge: 1.75,
   },
   margin: {
     xsmall: 1,
@@ -155,27 +155,27 @@ export const pageMargins = css`
 
 export const contentPadding = css`
   @media (min-width: ${breakpoint}px) {
-    padding-bottom: ${spacing.padding.xsmall}px;
+    padding: ${spacing.padding.xsmall}rem;
   }
 
   @media (min-width: ${breakpoint * 2}px) {
-    padding-bottom: ${spacing.padding.small}px;
+    padding: ${spacing.padding.small}rem;
   }
 
   @media (min-width: ${breakpoint * 3}px) {
-    padding-bottom: ${spacing.padding.medium}px;
+    padding: ${spacing.padding.medium}rem;
   }
 
   @media (min-width: ${breakpoint * 4}px) {
-    padding-bottom: ${spacing.padding.large}px;
+    padding: ${spacing.padding.large}rem;
   }
 
   @media (min-width: ${breakpoint * 5}px) {
-    padding-bottom: ${spacing.padding.large}px;
+    padding: ${spacing.padding.large}rem;
   }
 
   @media (min-width: ${breakpoint * 6}px) {
-    padding-bottom: ${spacing.padding.xlarge}px;
+    padding: ${spacing.padding.xlarge}rem;
   }
 `;
 

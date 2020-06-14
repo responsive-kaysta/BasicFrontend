@@ -89,11 +89,25 @@ const Blockquote = styled.blockquote<TextProps>`
   text-decoration: ${typography.decoration.none};
 
   ${FontWeight}
+
+  text-align: center;
+  position: relative;
+
+  &:after {
+    display: inline-block;
+    content: '"';
+  }
+
+  &:before {
+    display: inline-block;
+    content: '"';
+  }
 `;
 
 const Caption = styled.caption<TextProps>`
   ${FontFamily}
-  ${FontSize}
+  
+  font-size: ${typography.size.m1};
 
   text-transform: ${typography.transform.none};
   text-decoration: ${typography.decoration.none};
@@ -145,8 +159,7 @@ const Italic = styled.i<TextProps>`
   text-decoration: ${typography.decoration.none};
 
   font-style: italic;
-
-  ${FontWeight}
+  font-weight: 100;
 `;
 
 export const Text: FC<TextProps> = ({

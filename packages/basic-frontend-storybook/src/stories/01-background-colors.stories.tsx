@@ -57,6 +57,7 @@ storiesOf("01: Identity", module).add(
             backgroundColor={background.app}
             size={BoxSizes.full}
             minHeight="35px"
+            widthMargin
           />
         </FlexBoxContainer>
       </FlexBoxContainer>
@@ -87,6 +88,7 @@ storiesOf("01: Identity", module).add(
             backgroundColor={background.appInverse}
             size={BoxSizes.full}
             minHeight="35px"
+            widthMargin
           />
         </FlexBoxContainer>
       </FlexBoxContainer>
@@ -117,6 +119,7 @@ storiesOf("01: Identity", module).add(
             backgroundColor={background.positive}
             size={BoxSizes.full}
             minHeight="35px"
+            widthMargin
           />
         </FlexBoxContainer>
       </FlexBoxContainer>
@@ -147,6 +150,7 @@ storiesOf("01: Identity", module).add(
             backgroundColor={background.negative}
             size={BoxSizes.full}
             minHeight="35px"
+            widthMargin
           />
         </FlexBoxContainer>
       </FlexBoxContainer>
@@ -177,6 +181,7 @@ storiesOf("01: Identity", module).add(
             backgroundColor={background.warning}
             size={BoxSizes.full}
             minHeight="35px"
+            widthMargin
           />
         </FlexBoxContainer>
       </FlexBoxContainer>
@@ -207,6 +212,7 @@ storiesOf("01: Identity", module).add(
             backgroundColor={background.white}
             size={BoxSizes.full}
             minHeight="35px"
+            widthMargin
           />
         </FlexBoxContainer>
       </FlexBoxContainer>
@@ -237,6 +243,7 @@ storiesOf("01: Identity", module).add(
             backgroundColor={background.transparent}
             size={BoxSizes.full}
             minHeight="35px"
+            widthMargin
           />
         </FlexBoxContainer>
       </FlexBoxContainer>
@@ -267,6 +274,7 @@ storiesOf("01: Identity", module).add(
             backgroundColor={background.whitesmoke}
             size={BoxSizes.full}
             minHeight="35px"
+            widthMargin
           />
         </FlexBoxContainer>
       </FlexBoxContainer>

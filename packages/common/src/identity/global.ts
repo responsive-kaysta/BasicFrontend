@@ -102,19 +102,6 @@ export const bodyStyles = css`
     padding: 0;
   }
 
-  button,
-  input,
-  textarea,
-  select {
-    outline: none;
-    font-family: ${typography.type.primary};
-  }
-
-  b,
-  em {
-    font-weight: ${typography.weight.bold};
-  }
-
   code {
     font-family: ${typography.type.code};
     font-size: ${typography.size.s2};
