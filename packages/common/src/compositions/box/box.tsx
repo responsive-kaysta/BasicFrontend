@@ -5,38 +5,6 @@ import { breakpoint, color, spacing } from "../../identity";
 import { BoxProps } from "./box-props";
 import { BoxSizes } from "./box-sizes";
 
-const boxMargins = css`
-  @media (min-width: ${breakpoint}px) {
-    margin-bottom: ${spacing.margin.xsmall * 2}rem;
-    padding: ${spacing.padding.xsmall * 2}px;
-  }
-
-  @media (min-width: ${breakpoint * 2}px) {
-    margin-bottom: ${spacing.margin.xsmall * 2}rem;
-    padding: ${spacing.padding.small * 2}px;
-  }
-
-  @media (min-width: ${breakpoint * 3}px) {
-    margin-bottom: ${spacing.margin.medium * 2}rem;
-    padding: ${spacing.padding.medium}px;
-  }
-
-  @media (min-width: ${breakpoint * 4}px) {
-    margin-bottom: ${spacing.margin.large}rem;
-    padding: ${spacing.padding.large}px;
-  }
-
-  @media (min-width: ${breakpoint * 5}px) {
-    margin-bottom: ${spacing.margin.xlarge}rem;
-    padding: ${spacing.padding.large}px;
-  }
-
-  @media (min-width: ${breakpoint * 6}px) {
-    margin-bottom: ${spacing.margin.xlarge}rem;
-    padding: ${spacing.padding.xlarge}px;
-  }
-`;
-
 const boxFull = css`
   width: 100%;
 `;
@@ -75,21 +43,25 @@ const StyledBox = styled.div<BoxProps>`
   border: ${spacing.borderSize.small}px ${color.border} solid;
   border-radius: ${spacing.borderRadius.default}px;
 
+  ${(props) => props.minHeight && `min-height: ${props.minHeight};`}
+
   ${(props) =>
-    props.backgroundColor &&
-    `
-    background-color: ${props.backgroundColor};
-    `}
+    props.backgroundColor && `background-color: ${props.backgroundColor};`}`;
 
-  min-height: ${spacing.margin.xlarge}rem;
-
-  ${boxMargins}
-`;
-
-export const Box: FC<BoxProps> = ({ children, backgroundColor, size }) => {
+export const Box: FC<BoxProps> = ({
+  children,
+  size,
+  minHeight,
+  backgroundColor,
+}) => {
   return (
     <>
-      <StyledBox id="layout-box" backgroundColor={backgroundColor} size={size}>
+      <StyledBox
+        id="layout-box"
+        backgroundColor={backgroundColor}
+        size={size}
+        minHeight={minHeight}
+      >
         {children}
       </StyledBox>
     </>

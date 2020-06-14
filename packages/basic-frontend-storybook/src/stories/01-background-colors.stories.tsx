@@ -53,7 +53,11 @@ storiesOf("01: Identity", module).add(
           alignItems="flex-start"
           justifyContent="center"
         >
-          <Box backgroundColor={background.app} size={BoxSizes.full} />
+          <Box
+            backgroundColor={background.app}
+            size={BoxSizes.full}
+            minHeight="35px"
+          />
         </FlexBoxContainer>
       </FlexBoxContainer>
 
@@ -79,7 +83,11 @@ storiesOf("01: Identity", module).add(
           alignItems="flex-start"
           justifyContent="center"
         >
-          <Box backgroundColor={background.appInverse} size={BoxSizes.full} />
+          <Box
+            backgroundColor={background.appInverse}
+            size={BoxSizes.full}
+            minHeight="35px"
+          />
         </FlexBoxContainer>
       </FlexBoxContainer>
 
@@ -105,7 +113,11 @@ storiesOf("01: Identity", module).add(
           alignItems="flex-start"
           justifyContent="center"
         >
-          <Box backgroundColor={background.positive} size={BoxSizes.full} />
+          <Box
+            backgroundColor={background.positive}
+            size={BoxSizes.full}
+            minHeight="35px"
+          />
         </FlexBoxContainer>
       </FlexBoxContainer>
 
@@ -131,7 +143,11 @@ storiesOf("01: Identity", module).add(
           alignItems="flex-start"
           justifyContent="center"
         >
-          <Box backgroundColor={background.negative} size={BoxSizes.full} />
+          <Box
+            backgroundColor={background.negative}
+            size={BoxSizes.full}
+            minHeight="35px"
+          />
         </FlexBoxContainer>
       </FlexBoxContainer>
 
@@ -157,7 +173,11 @@ storiesOf("01: Identity", module).add(
           alignItems="flex-start"
           justifyContent="center"
         >
-          <Box backgroundColor={background.warning} size={BoxSizes.full} />
+          <Box
+            backgroundColor={background.warning}
+            size={BoxSizes.full}
+            minHeight="35px"
+          />
         </FlexBoxContainer>
       </FlexBoxContainer>
 
@@ -183,7 +203,11 @@ storiesOf("01: Identity", module).add(
           alignItems="flex-start"
           justifyContent="center"
         >
-          <Box backgroundColor={background.white} size={BoxSizes.full} />
+          <Box
+            backgroundColor={background.white}
+            size={BoxSizes.full}
+            minHeight="35px"
+          />
         </FlexBoxContainer>
       </FlexBoxContainer>
 
@@ -209,7 +233,11 @@ storiesOf("01: Identity", module).add(
           alignItems="flex-start"
           justifyContent="center"
         >
-          <Box backgroundColor={background.transparent} size={BoxSizes.full} />
+          <Box
+            backgroundColor={background.transparent}
+            size={BoxSizes.full}
+            minHeight="35px"
+          />
         </FlexBoxContainer>
       </FlexBoxContainer>
 
@@ -235,7 +263,11 @@ storiesOf("01: Identity", module).add(
           alignItems="flex-start"
           justifyContent="center"
         >
-          <Box backgroundColor={background.whitesmoke} size={BoxSizes.full} />
+          <Box
+            backgroundColor={background.whitesmoke}
+            size={BoxSizes.full}
+            minHeight="35px"
+          />
         </FlexBoxContainer>
       </FlexBoxContainer>
     </LayoutContainer>
