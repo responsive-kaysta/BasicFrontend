@@ -13,8 +13,8 @@ import {
   Square,
   Text,
   TextTypes,
-  typography,
 } from "responsive-it-common";
+import { SwatchesHeader } from "./swatches-header";
 
 storiesOf("01: Identity", module).add(
   "Colors",
@@ -27,14 +27,7 @@ storiesOf("01: Identity", module).add(
       {/* ------------------------------------------------------------ */}
 
       <Section withMargin>
-        <FlexBoxContainer flexDirection="row" flexWrap="nowrap" withMargin>
-          <FlexBoxContainer flexDirection="column" width="40%">
-            <Text weight={typography.weight.bold}>Name</Text>
-          </FlexBoxContainer>
-          <FlexBoxContainer flexDirection="column" width="60%">
-            <Text weight={typography.weight.bold}>Swatches</Text>
-          </FlexBoxContainer>
-        </FlexBoxContainer>
+        <SwatchesHeader />
 
         <FlexBoxContainer
           withMargin
@@ -136,14 +129,7 @@ storiesOf("01: Identity", module).add(
           <Heading type={HeadingTypes.h3}>Status</Heading>
         </Header>
 
-        <FlexBoxContainer flexDirection="row" flexWrap="nowrap" withMargin>
-          <FlexBoxContainer flexDirection="column" width="40%">
-            <Text weight={typography.weight.bold}>Name</Text>
-          </FlexBoxContainer>
-          <FlexBoxContainer flexDirection="column" width="60%">
-            <Text weight={typography.weight.bold}>Swatches</Text>
-          </FlexBoxContainer>
-        </FlexBoxContainer>
+        <SwatchesHeader />
 
         <FlexBoxContainer
           withMargin
@@ -308,14 +294,7 @@ storiesOf("01: Identity", module).add(
           <Heading type={HeadingTypes.h3}>Palette</Heading>
         </Header>
 
-        <FlexBoxContainer flexDirection="row" flexWrap="nowrap" withMargin>
-          <FlexBoxContainer flexDirection="column" width="40%">
-            <Text weight={typography.weight.bold}>Name</Text>
-          </FlexBoxContainer>
-          <FlexBoxContainer flexDirection="column" width="60%">
-            <Text weight={typography.weight.bold}>Swatches</Text>
-          </FlexBoxContainer>
-        </FlexBoxContainer>
+        <SwatchesHeader />
 
         <FlexBoxContainer
           withMargin

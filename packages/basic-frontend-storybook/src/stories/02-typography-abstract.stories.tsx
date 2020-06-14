@@ -9,11 +9,12 @@ import {
   Heading,
   HeadingTypes,
   LayoutContainer,
+  Section,
   Text,
   TextTypes,
   typography,
-  Section,
 } from "responsive-it-common";
+import { SwatchesHeader } from "./swatches-header";
 
 storiesOf("02: Typography", module).add(
   "Abstract",
@@ -25,14 +26,7 @@ storiesOf("02: Typography", module).add(
 
       {/* ------------------------------------------------------------ */}
       <Section withMargin>
-        <FlexBoxContainer flexDirection="row" flexWrap="nowrap" withMargin>
-          <FlexBoxContainer flexDirection="column" width="40%">
-            <Text weight={typography.weight.bold}>Name</Text>
-          </FlexBoxContainer>
-          <FlexBoxContainer flexDirection="column" width="60%">
-            <Text weight={typography.weight.bold}>Swatches</Text>
-          </FlexBoxContainer>
-        </FlexBoxContainer>
+        <SwatchesHeader />
 
         <FlexBoxContainer
           withMargin
@@ -96,20 +90,15 @@ storiesOf("02: Typography", module).add(
           </FlexBoxContainer>
         </FlexBoxContainer>
       </Section>
+
       {/* ------------------------------------------------------------ */}
+
       <Section withMargin>
         <Header withRuler rulerColor={color.darkest} withMargin>
           <Heading type={HeadingTypes.h3}>Text Sizes</Heading>
         </Header>
 
-        <FlexBoxContainer flexDirection="row" flexWrap="nowrap" withMargin>
-          <FlexBoxContainer flexDirection="column" width="40%">
-            <Text weight={typography.weight.bold}>Name</Text>
-          </FlexBoxContainer>
-          <FlexBoxContainer flexDirection="column" width="60%">
-            <Text weight={typography.weight.bold}>Swatches</Text>
-          </FlexBoxContainer>
-        </FlexBoxContainer>
+        <SwatchesHeader />
 
         <FlexBoxContainer
           withMargin
@@ -188,6 +177,14 @@ storiesOf("02: Typography", module).add(
             </Box>
           </FlexBoxContainer>
         </FlexBoxContainer>
+      </Section>
+
+      {/* ------------------------------------------------------------ */}
+
+      <Section withMargin>
+        <Header withRuler rulerColor={color.darkest} withMargin>
+          <Heading type={HeadingTypes.h3}>Text Decorations</Heading>
+        </Header>
       </Section>
     </LayoutContainer>
   ),

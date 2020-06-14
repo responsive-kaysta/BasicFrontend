@@ -8,8 +8,8 @@ import {
   LayoutContainer,
   Text,
   TextTypes,
-  typography,
 } from "responsive-it-common";
+import { SwatchesHeader } from "./swatches-header";
 
 storiesOf("02: Typography", module).add(
   "Text Elements",
@@ -21,14 +21,7 @@ storiesOf("02: Typography", module).add(
 
       {/* ------------------------------------------------------------ */}
 
-      <FlexBoxContainer flexDirection="row" flexWrap="nowrap" withMargin>
-        <FlexBoxContainer flexDirection="column" width="40%">
-          <Text weight={typography.weight.bold}>Name</Text>
-        </FlexBoxContainer>
-        <FlexBoxContainer flexDirection="column" width="60%">
-          <Text weight={typography.weight.bold}>Swatches</Text>
-        </FlexBoxContainer>
-      </FlexBoxContainer>
+      <SwatchesHeader />
 
       <FlexBoxContainer
         withMargin
