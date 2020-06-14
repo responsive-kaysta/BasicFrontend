@@ -3,6 +3,7 @@ import * as React from "react";
 import {
   background,
   Box,
+  BoxSizes,
   FlexBoxContainer,
   Header,
   Heading,
@@ -12,7 +13,6 @@ import {
   TextTypes,
   typography,
 } from "responsive-it-common";
-import { BoxSizes } from "responsive-it-common/dist/compositions/box/box-sizes";
 
 storiesOf("01: Identity", module).add(
   "Background-Colors",

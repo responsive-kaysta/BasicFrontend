@@ -4,13 +4,13 @@ import {
   background,
   Box,
   BoxContainer,
+  BoxSizes,
   color,
   Header,
   Heading,
   HeadingTypes,
   LayoutContainer,
 } from "responsive-it-common";
-import { BoxSizes } from "responsive-it-common/dist/compositions/box/box-sizes";
 
 storiesOf("03: Compositions", module).add(
   "Box",
@@ -27,7 +27,7 @@ storiesOf("03: Compositions", module).add(
           widthMargin
           widthShadow
         >
-          Box 1 half
+          BoxSizes.half, background.app, widthMargin, widthShadow
         </Box>
         <Box size={BoxSizes.half} widthMargin>
           Box 2 half

@@ -1,7 +1,7 @@
 {
   "name": "responsive-it-common",
   "version": "0.1.0",
-  "main": "dist/index.js",
+  "main": "build/index.js",
   "description": "This package provides commonly used components for the responsive-it apps.",
   "scripts": {
     "develop": "tsc --watch",
@@ -13,7 +13,7 @@
   "author": "responsive-it <dev-guru@responsive-it>",
   "license": "MIT",
   "files": [
-    "dist",
+    "build",
     "assets"
   ],
   "devDependencies": {

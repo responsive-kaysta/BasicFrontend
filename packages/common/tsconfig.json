@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "outDir": "./dist",
+    "outDir": "./build",
     "declaration": true,
     "module": "commonjs",
     "target": "es5",
@@ -27,7 +27,7 @@
     "/src/assets/**/*.png",
     "/src/assets/**/*.svg"
   ],
-  "exclude": ["./node_modules", "./dist", "./**/*.test.ts", "./**/*.test.tsx"],
+  "exclude": ["./node_modules", "./build", "./**/*.test.ts", "./**/*.test.tsx"],
   "plugins": [
     {
       "name": "typescript-styled-plugin"

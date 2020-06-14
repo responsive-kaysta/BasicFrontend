@@ -2,7 +2,7 @@
   "name": "basic-frontend-storybook",
   "private": false,
   "version": "0.0.2-development",
-  "main": "dist/index.js",
+  "main": "build/index.js",
   "description": "This application demonstrates the possibilities of the responsiv IT Basic Frontend / Storybook.",
   "author": "responsive-it <dev-guru@responsive-it>",
   "license": "MIT",
