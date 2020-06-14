@@ -4,7 +4,7 @@ import { background, color } from "../../identity";
 export type BoxProps = {
   size?: BoxSizes;
   minHeight?: string;
-  widthMargin?: boolean;
-  widthShadow?: boolean;
+  withMargin?: boolean;
+  withShadow?: boolean;
   backgroundColor?: background | color;
 };

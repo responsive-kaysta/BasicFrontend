@@ -56,7 +56,7 @@ storiesOf("02: Typography", module).add(
             alignItems="flex-start"
             justifyContent="center"
           >
-            <Box widthMargin>
+            <Box withMargin>
               <Text>
                 "Trebuchet MS", "Lucida Sans Unicode", Helvetica, Arial,
                 sans-serif
@@ -87,7 +87,7 @@ storiesOf("02: Typography", module).add(
             alignItems="flex-start"
             justifyContent="center"
           >
-            <Box widthMargin>
+            <Box withMargin>
               <Text fontType={typography.type.code}>
                 "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier,
                 monospace
@@ -133,55 +133,55 @@ storiesOf("02: Typography", module).add(
             alignItems="flex-start"
             justifyContent="center"
           >
-            <Box size={BoxSizes.full} minHeight="35px" widthMargin>
+            <Box size={BoxSizes.full} minHeight="35px" withMargin>
               <Text fontSize={typography.size.s1}>
                 size.s1 {typography.size.s1}
               </Text>
             </Box>
 
-            <Box size={BoxSizes.full} minHeight="35px" widthMargin>
+            <Box size={BoxSizes.full} minHeight="35px" withMargin>
               <Text fontSize={typography.size.s2}>
                 size.s2 {typography.size.s2}
               </Text>
             </Box>
 
-            <Box size={BoxSizes.full} minHeight="35px" widthMargin>
+            <Box size={BoxSizes.full} minHeight="35px" withMargin>
               <Text fontSize={typography.size.s3}>
                 size.s3 {typography.size.s3}
               </Text>
             </Box>
 
-            <Box size={BoxSizes.full} minHeight="35px" widthMargin>
+            <Box size={BoxSizes.full} minHeight="35px" withMargin>
               <Text fontSize={typography.size.m1}>
                 size.m1 {typography.size.m1}
               </Text>
             </Box>
 
-            <Box size={BoxSizes.full} minHeight="35px" widthMargin>
+            <Box size={BoxSizes.full} minHeight="35px" withMargin>
               <Text fontSize={typography.size.m2}>
                 size.m2 {typography.size.m2}
               </Text>
             </Box>
 
-            <Box size={BoxSizes.full} minHeight="35px" widthMargin>
+            <Box size={BoxSizes.full} minHeight="35px" withMargin>
               <Text fontSize={typography.size.m3}>
                 size.m3 {typography.size.m3}
               </Text>
             </Box>
 
-            <Box size={BoxSizes.full} minHeight="35px" widthMargin>
+            <Box size={BoxSizes.full} minHeight="35px" withMargin>
               <Text fontSize={typography.size.l1}>
                 size.l1 {typography.size.l1}
               </Text>
             </Box>
 
-            <Box size={BoxSizes.full} minHeight="35px" widthMargin>
+            <Box size={BoxSizes.full} minHeight="35px" withMargin>
               <Text fontSize={typography.size.l2}>
                 size.l2 {typography.size.l2}
               </Text>
             </Box>
 
-            <Box size={BoxSizes.full} minHeight="35px" widthMargin>
+            <Box size={BoxSizes.full} minHeight="35px" withMargin>
               <Text fontSize={typography.size.l3}>
                 size.l3 {typography.size.l3}
               </Text>

@@ -38,16 +38,16 @@ const boxThird = css`
 
 const boxShadow = css<BoxProps>`
   ${(props) =>
-    props.widthShadow &&
+    props.withShadow &&
     `
-    box-shadow: ${rgba(color.primary, 0.2)} 0 4px 9px 0px;
+    box-shadow: ${rgba(color.primary, 0.2)} 0 4px 9px 0;
 
     &:hover {
-      box-shadow: ${rgba(color.primary, 0.2)} 0 12px 18px 0px;
+      box-shadow: ${rgba(color.primary, 0.2)} 0 12px 18px 0;
       transform: scale(1.01);
     }
     &:active {
-      box-shadow: ${rgba(color.primary, 0.1)} 0 0 0 3em inset;
+      box-shadow: ${rgba(color.primary, 0.3)} 0 2px 5px 0;
       transform: scale(0.98);
     }
     &:focus {
@@ -84,15 +84,15 @@ const StyledBox = styled.div<BoxProps>`
     
   ${contentPadding}
 
-  ${(props) => props.widthMargin && contentMargin}
+  ${(props) => props.withMargin && contentMargin}
 `;
 
 export const Box: FC<BoxProps> = ({
   children,
   size,
   minHeight,
-  widthMargin,
-  widthShadow,
+  withMargin,
+  withShadow,
   backgroundColor,
 }) => {
   return (
@@ -102,8 +102,8 @@ export const Box: FC<BoxProps> = ({
         backgroundColor={backgroundColor}
         size={size}
         minHeight={minHeight}
-        widthMargin={widthMargin}
-        widthShadow={widthShadow}
+        withMargin={withMargin}
+        withShadow={withShadow}
       >
         {children}
       </StyledBox>

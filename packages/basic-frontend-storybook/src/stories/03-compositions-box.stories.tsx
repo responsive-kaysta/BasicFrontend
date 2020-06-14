@@ -24,22 +24,22 @@ storiesOf("03: Compositions", module).add(
         <Box
           size={BoxSizes.half}
           backgroundColor={background.app}
-          widthMargin
-          widthShadow
+          withMargin
+          withShadow
         >
-          BoxSizes.half, background.app, widthMargin, widthShadow
+          BoxSizes.half, background.app, withMargin, withShadow
         </Box>
-        <Box size={BoxSizes.half} widthMargin>
-          Box 2 half
+        <Box size={BoxSizes.half} withMargin>
+          BoxSizes.half, withMargin
         </Box>
 
-        <Box size={BoxSizes.third} widthMargin>
-          Box 3 third
+        <Box size={BoxSizes.third} withMargin>
+          BoxSizes.third, withMargin
         </Box>
-        <Box size={BoxSizes.third} widthMargin>
+        <Box size={BoxSizes.third} withMargin>
           Box 4 third
         </Box>
-        <Box size={BoxSizes.third} widthMargin>
+        <Box size={BoxSizes.third} withMargin>
           Box 5 third
         </Box>
       </BoxContainer>
