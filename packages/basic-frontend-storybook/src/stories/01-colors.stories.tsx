@@ -19,7 +19,7 @@ import {
 storiesOf("01: Identity", module).add(
   "Colors",
   () => (
-    <LayoutContainer padding>
+    <LayoutContainer withPageMargin>
       <Header withRuler withMargin>
         <Heading type={HeadingTypes.h1}>Color Palette</Heading>
       </Header>

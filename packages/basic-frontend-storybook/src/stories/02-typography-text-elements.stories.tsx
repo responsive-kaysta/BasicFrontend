@@ -14,7 +14,7 @@ import {
 storiesOf("02: Typography", module).add(
   "Text Elements",
   () => (
-    <LayoutContainer padding>
+    <LayoutContainer withPageMargin>
       <Header withRuler withMargin>
         <Heading type={HeadingTypes.h1}>Text-Elements</Heading>
       </Header>

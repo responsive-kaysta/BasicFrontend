@@ -41,7 +41,7 @@ const Meta = styled.div`
 storiesOf("01: Identity", module).add(
   "Pictograms",
   () => (
-    <LayoutContainer padding>
+    <LayoutContainer withPageMargin>
       <Header withRuler withMargin>
         <Heading type={HeadingTypes.h1}>Pictograms</Heading>
       </Header>

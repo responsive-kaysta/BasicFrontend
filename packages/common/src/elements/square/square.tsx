@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import styled from "styled-components";
-import { contentMargin, spacing } from "../../identity";
+import { contentMarginSmall, spacing } from "../../identity";
 import { Text, TextTypes } from "../text";
 import { SquareProps } from "./square-props";
 
@@ -9,7 +9,7 @@ const SquareWrapper = styled.div<SquareProps>`
   flex-direction: column;
 
   &:not(:last-child) {
-    ${contentMargin}
+    ${contentMarginSmall}
   }
 `;
 
@@ -63,11 +63,7 @@ export const Square: FC<SquareProps> = ({
       >
         {children}
       </StyledSquare>
-      {captionText && (
-        <span>
-          <Text type={TextTypes.caption}>{captionText}</Text>
-        </span>
-      )}
+      {captionText && <Text type={TextTypes.label}>{captionText}</Text>}
     </SquareWrapper>
   );
 };

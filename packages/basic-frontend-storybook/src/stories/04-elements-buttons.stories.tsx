@@ -8,7 +8,7 @@ import {
 } from "responsive-it-common";
 
 storiesOf("02: Elements", module).add("Buttons", () => (
-  <LayoutContainer>
+  <LayoutContainer withPageMargin>
     <Heading type={HeadingTypes.h2}>Some Heading</Heading>
     <Hr />
   </LayoutContainer>

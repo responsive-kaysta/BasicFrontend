@@ -17,7 +17,7 @@ import {
 storiesOf("02: Typography", module).add(
   "Abstract",
   () => (
-    <LayoutContainer padding>
+    <LayoutContainer withPageMargin>
       <Header withRuler withMargin>
         <Heading type={HeadingTypes.h1}>Abstract</Heading>
       </Header>

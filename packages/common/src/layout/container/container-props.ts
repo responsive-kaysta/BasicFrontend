@@ -1,6 +1,6 @@
 import { background } from "../../identity";
 
 export type ContainerProps = {
-  padding?: boolean;
+  withPageMargin?: boolean;
   backgroundColor?: background;
 };

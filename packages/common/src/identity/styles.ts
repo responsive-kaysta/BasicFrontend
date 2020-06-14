@@ -123,51 +123,33 @@ export const pageMargins = css`
   padding-right: 0;
 
   @media (min-width: ${breakpoint}px) {
-    margin-left: ${pageMargin * 1}%;
-    margin-right: ${pageMargin * 1}%;
-
-    padding-top: ${spacing.padding.xsmall}px;
-    padding-bottom: ${spacing.padding.xsmall}px;
+    margin-left: ${pageMargin}%;
+    margin-right: ${pageMargin}%;
   }
 
   @media (min-width: ${breakpoint * 2}px) {
     margin-left: ${pageMargin * 2}%;
     margin-right: ${pageMargin * 2}%;
-
-    padding-top: ${spacing.padding.small}px;
-    padding-bottom: ${spacing.padding.small}px;
   }
 
   @media (min-width: ${breakpoint * 3}px) {
     margin-left: ${pageMargin * 3}%;
     margin-right: ${pageMargin * 3}%;
-
-    padding-top: ${spacing.padding.medium}px;
-    padding-bottom: ${spacing.padding.medium}px;
   }
 
   @media (min-width: ${breakpoint * 4}px) {
     margin-left: ${pageMargin * 4}%;
     margin-right: ${pageMargin * 4}%;
-
-    padding-top: ${spacing.padding.large}px;
-    padding-bottom: ${spacing.padding.large}px;
   }
 
   @media (min-width: ${breakpoint * 5}px) {
     margin-left: ${pageMargin * 5}%;
     margin-right: ${pageMargin * 5}%;
-
-    padding-top: ${spacing.padding.xlarge}px;
-    padding-bottom: ${spacing.padding.xlarge}px;
   }
 
   @media (min-width: ${breakpoint * 6}px) {
     margin-left: ${pageMargin * 5}%;
     margin-right: ${pageMargin * 5}%;
-
-    padding-top: ${spacing.padding.xlarge}px;
-    padding-bottom: ${spacing.padding.xlarge}px;
   }
 `;
 

@@ -17,7 +17,7 @@ import { BoxSizes } from "responsive-it-common/dist/compositions/box/box-sizes";
 storiesOf("01: Identity", module).add(
   "Background-Colors",
   () => (
-    <LayoutContainer padding>
+    <LayoutContainer withPageMargin>
       <Header withMargin withRuler>
         <Heading type={HeadingTypes.h1}>Background-Colors</Heading>
       </Header>

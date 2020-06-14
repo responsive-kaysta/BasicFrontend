@@ -1,7 +1,7 @@
 import * as React from "react";
 import { FC } from "react";
 import styled from "styled-components";
-import { GlobalStyle, pageMargins } from "../../identity";
+import { GlobalStyle, pageMargins, spacing } from "../../identity";
 import { ContainerProps } from "./container-props";
 
 const StyledMain = styled.main<ContainerProps>`
@@ -10,22 +10,25 @@ const StyledMain = styled.main<ContainerProps>`
     `
     background-color: ${props.backgroundColor};
     `}
+    margin-top: ${spacing.margin.xlarge}rem;
 `;
 
 const StyledArticle = styled.article<ContainerProps>`
-  ${(props) => props.padding && pageMargins}
+  ${(props) => props.withPageMargin && pageMargins}
 `;
 
 export const LayoutContainer: FC<ContainerProps> = ({
   children,
   backgroundColor,
-  padding,
+  withPageMargin,
 }) => {
   return (
     <>
       <GlobalStyle />
       <StyledMain id="layout-container" backgroundColor={backgroundColor}>
-        <StyledArticle padding={padding}>{children}</StyledArticle>
+        <StyledArticle withPageMargin={withPageMargin}>
+          {children}
+        </StyledArticle>
       </StyledMain>
     </>
   );

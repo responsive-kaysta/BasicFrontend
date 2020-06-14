@@ -13,7 +13,7 @@ import {
 import { BoxSizes } from "responsive-it-common/dist/compositions/box/box-sizes";
 
 storiesOf("03: Compositions", module).add("Flex-Box", () => (
-  <LayoutContainer padding>
+  <LayoutContainer withPageMargin>
     <Header withRuler={true} rulerColor={color.darkest}>
       <Heading type={HeadingTypes.h1}>Colors</Heading>
     </Header>

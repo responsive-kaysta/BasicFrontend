@@ -11,7 +11,7 @@ import {
 storiesOf("00: Application", module).add(
   "Intro",
   () => (
-    <LayoutContainer padding>
+    <LayoutContainer withPageMargin>
       <Header withMargin>
         <Heading type={HeadingTypes.h1}>Basic Frontend</Heading>
       </Header>
