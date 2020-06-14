@@ -5,6 +5,13 @@
     "lerna": "^3.22.1"
   },
   "scripts": {
-    "version": "lerna version --conventional-commits"
+    "version": "lerna version --conventional-commits",
+    "build": "lerna run build --stream",
+    "bootstrap": "npm install && lerna bootstrap --hoist",
+    "predevelop": "npm run build -- --scope '{responsive-it-common}'",
+    "develop": "lerna run develop --parallel",
+    "clean": "lerna clean",
+    "lint": "lerna run lint --parallel",
+    "types:check": "lerna run types:check --stream"
   }
 }

@@ -20,8 +20,15 @@
     "prismjs": "1.20.0"
   },
   "devDependencies": {
-    "babel-loader": "^8.1.0",
-    "babel-plugin-styled-components": "^1.10.7",
+    "@babel/cli": "7.10.1",
+    "@babel/core": "7.10.2",
+    "@babel/plugin-proposal-class-properties": "7.10.1",
+    "@babel/plugin-proposal-object-rest-spread": "7.10.1",
+    "@babel/plugin-transform-async-to-generator": "7.10.1",
+    "@babel/plugin-transform-modules-commonjs": "7.10.1",
+    "@babel/preset-env": "7.10.2",
+    "@babel/preset-react": "7.10.1",
+    "@babel/preset-typescript": "7.10.1",
     "@storybook/addon-a11y": "6.0.0-beta.20",
     "@storybook/addon-actions": "6.0.0-beta.20",
     "@storybook/addon-docs": "6.0.0-beta.20",
@@ -37,6 +44,8 @@
     "@types/storybook__addon-knobs": "5.2.1",
     "@types/storybook__react": "5.2.1",
     "@types/styled-components": "5.1.0",
+    "babel-loader": "8.1.0",
+    "babel-plugin-styled-components": "1.10.0",
     "rimraf": "^3.0.2"
   },
   "peerDependencies": {
