@@ -185,6 +185,34 @@ storiesOf("02: Typography", module).add(
         <Header withRuler rulerColor={color.darkest} withMargin>
           <Heading type={HeadingTypes.h3}>Text Decorations</Heading>
         </Header>
+
+        <FlexBoxContainer
+          withMargin
+          flexDirection="row"
+          flexWrap="nowrap"
+          alignItems="flex-start"
+          justifyContent="center"
+        >
+          <FlexBoxContainer
+            flexDirection="column"
+            width="40%"
+            alignItems="flex-start"
+            justifyContent="center"
+          >
+            <Text type={TextTypes.emphasis}>Typography</Text>
+            <Text type={TextTypes.italic}>decoration</Text>
+          </FlexBoxContainer>
+          <FlexBoxContainer
+            flexDirection="column"
+            width="60%"
+            alignItems="flex-start"
+            justifyContent="center"
+          >
+            <Box withMargin>
+              <Text>Lorem ipsum dolor sit amet</Text>
+            </Box>
+          </FlexBoxContainer>
+        </FlexBoxContainer>
       </Section>
     </LayoutContainer>
   ),
