@@ -5,5 +5,6 @@ export type BoxProps = {
   size?: BoxSizes;
   minHeight?: string;
   widthMargin?: boolean;
+  widthShadow?: boolean;
   backgroundColor?: background | color;
 };

@@ -122,7 +122,6 @@ const Sub = styled.sub<TextProps>`
   text-transform: ${typography.transform.none};
   text-decoration: ${typography.decoration.none};
 
-  font-size: 0.8em;
   bottom: -0.2em;
 
   ${FontWeight}
@@ -135,7 +134,6 @@ const Sup = styled.sup<TextProps>`
   text-transform: ${typography.transform.none};
   text-decoration: ${typography.decoration.none};
 
-  font-size: 0.8em;
   top: -0.2em;
 
   ${FontWeight}

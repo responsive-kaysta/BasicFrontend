@@ -187,7 +187,7 @@ storiesOf("02: Typography", module).add(
       {/* ------------------------------------------------------------ */}
       <Section withMargin>
         <Header withRuler rulerColor={color.darkest} withMargin>
-          <Heading type={HeadingTypes.h3}>Text Sizes</Heading>
+          <Heading type={HeadingTypes.h3}>Sub-Headings</Heading>
         </Header>
 
         <FlexBoxContainer flexDirection="row" flexWrap="nowrap" withMargin>

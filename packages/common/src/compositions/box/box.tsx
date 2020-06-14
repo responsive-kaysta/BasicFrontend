@@ -1,3 +1,4 @@
+import { rgba } from "polished";
 import * as React from "react";
 import { FC } from "react";
 import styled, { css } from "styled-components";
@@ -35,6 +36,31 @@ const boxThird = css`
   }
 `;
 
+const boxShadow = css<BoxProps>`
+  ${(props) =>
+    props.widthShadow &&
+    `
+    box-shadow: ${rgba(color.primary, 0.2)} 0 4px 9px 0px;
+
+    &:hover {
+      box-shadow: ${rgba(color.primary, 0.2)} 0 12px 18px 0px;
+      transform: scale(1.01);
+    }
+    &:active {
+      box-shadow: ${rgba(color.primary, 0.1)} 0 0 0 3em inset;
+      transform: scale(0.98);
+    }
+    &:focus {
+      box-shadow: ${rgba(color.primary, 0.4)} 0 1px 9px 2px;
+      transform: scale(0.98);
+    }
+    &:focus:hover {
+      box-shadow: ${rgba(color.primary, 0.2)} 0 8px 18px 0px;
+      transform: scale(0.98);
+    }  
+  `}
+`;
+
 const StyledBox = styled.div<BoxProps>`
   display: flex;
   justify-content: center;
@@ -53,6 +79,8 @@ const StyledBox = styled.div<BoxProps>`
 
   ${(props) =>
     props.backgroundColor && `background-color: ${props.backgroundColor};`}
+
+  ${boxShadow}
     
   ${contentPadding}
 
@@ -64,6 +92,7 @@ export const Box: FC<BoxProps> = ({
   size,
   minHeight,
   widthMargin,
+  widthShadow,
   backgroundColor,
 }) => {
   return (
@@ -74,6 +103,7 @@ export const Box: FC<BoxProps> = ({
         size={size}
         minHeight={minHeight}
         widthMargin={widthMargin}
+        widthShadow={widthShadow}
       >
         {children}
       </StyledBox>
