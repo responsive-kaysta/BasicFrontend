@@ -29,7 +29,6 @@
     "babel-loader": "^8.1.0",
     "babel-plugin-styled-components": "^1.10.7",
     "copy-webpack-plugin": "^6.0.2",
-    "rimraf": "^3.0.2",
     "typescript": "^3.9.5"
   },
   "dependencies": {
@@ -40,7 +39,7 @@
     "jwt-decode": "^2.2.0",
     "polished": "^3.6.5",
     "prismjs": "1.20.0",
-    "prop-types": "^15.7.2",
+    "rimraf": "^3.0.2",
     "qs": "^6.9.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
