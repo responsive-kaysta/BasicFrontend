@@ -12,6 +12,7 @@
     "develop": "lerna run develop --parallel",
     "clean": "lerna clean",
     "lint": "lerna run lint --parallel",
-    "types:check": "lerna run types:check --stream"
+    "types:check": "lerna run types:check --stream",
+    "postinstall": "npm install rimraf -g"
   }
 }
