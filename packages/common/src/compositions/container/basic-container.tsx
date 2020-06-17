@@ -10,6 +10,8 @@ export const BasicContainer: FC<BasicContainerProps> = ({
   cssStyle,
 }) => {
   return (
-    <div className={`container mx-auto ${cssStyle || ""}`}>{children}</div>
+    <div className={`container md:w-3/4 lg:w-3/5 mx-auto ${cssStyle || ""}`}>
+      {children}
+    </div>
   );
 };
