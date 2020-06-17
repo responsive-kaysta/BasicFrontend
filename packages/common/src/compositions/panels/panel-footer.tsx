@@ -16,9 +16,19 @@ export const PanelFooter: FC<PanelFooterProps> = ({
   wrapperCss,
 }) => {
   return (
-    <div className="bg-white overflow-hidden overflow-hidden shadow rounded-lg">
-      <div className="px-4 py-5 sm:p-6">{content}</div>
-      <div className="border-t border-gray-200 px-4 py-4 sm:px-6">{footer}</div>
+    <div
+      className={`overflow-hidden overflow-hidden shadow rounded-lg ${
+        wrapperCss || "bg-white"
+      }`}
+    >
+      <div className={`px-4 py-5 sm:p-6 ${contentCss || ""}`}>{content}</div>
+      <div
+        className={`border-t px-4 py-4 sm:px-6 ${
+          footerCss || "border-gray-200"
+        }`}
+      >
+        {footer}
+      </div>
     </div>
   );
 };

@@ -12,8 +12,12 @@ export const PanelBasic: FC<PanelBasicProps> = ({
   wrapperCss,
 }) => {
   return (
-    <div className="bg-white overflow-hidden shadow sm:rounded-lg">
-      <div className="px-4 py-5 sm:p-6">{content}</div>
+    <div
+      className={`overflow-hidden shadow rounded-lg ${
+        wrapperCss || "bg-white"
+      }`}
+    >
+      <div className={`px-4 py-5 sm:p-6 ${contentCss || ""}`}>{content}</div>
     </div>
   );
 };
