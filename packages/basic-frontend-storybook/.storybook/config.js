@@ -3,6 +3,8 @@ import { withKnobs } from "@storybook/addon-knobs";
 import { addDecorator, addParameters, configure } from "@storybook/react";
 import { withA11y } from "@storybook/addon-a11y";
 
+require("./generated-tailwind.css");
+
 addParameters({
   options: {
     name: "Basic Frontend",

@@ -6,7 +6,8 @@
   "scripts": {
     "develop": "tsc --watch",
     "prebuild": "rimraf ./build",
-    "build": "tsc",
+    "build": "npm run build:tailwind && tsc",
+    "build:tailwind": "tailwindcss build src/tailwind.css -o ../basic-frontend-storybook/.storybook/generated-tailwind.css",
     "lint": "npm run lint:ts && npm run lint:prettier",
     "types:check": "tsc --noEmit"
   },
