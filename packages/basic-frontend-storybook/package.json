@@ -13,11 +13,8 @@
     "react-docgen-typescript-webpack-plugin": "^1.1.0",
     "react-dom": "^16.13.1",
     "responsive-it-common": "file:../common",
-    "styled-components": "^5.1.1",
     "prettier": "^2.0.5",
     "typescript": "^3.9.5",
-    "polished": "^3.6.5",
-    "prismjs": "1.20.0",
     "rimraf": "^3.0.2"
   },
   "devDependencies": {
@@ -44,7 +41,6 @@
     "@types/storybook__addon-info": "5.2.1",
     "@types/storybook__addon-knobs": "5.2.1",
     "@types/storybook__react": "5.2.1",
-    "@types/styled-components": "5.1.0",
     "babel-loader": "8.1.0",
     "babel-plugin-styled-components": "1.10.7"
   },
@@ -56,9 +52,8 @@
     "start": "start-storybook -s ./public -p 9001 -c .storybook",
     "develop": "tsc --watch",
     "prebuild": "rimraf ./build",
-    "build": "npm run build:types && npm run build:js",
+    "build": "npm run build:types",
     "build:types": "tsc --emitDeclarationOnly",
-    "build:js": "babel src --ignore \"src/**/*.test.tsx?\" --out-dir build --extensions \".ts,.tsx\" --source-maps",
     "build:storybook": "build-storybook -c config/storybook"
   }
 }
