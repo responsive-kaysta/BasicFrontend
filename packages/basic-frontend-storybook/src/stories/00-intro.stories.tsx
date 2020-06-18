@@ -1,14 +1,14 @@
 import { storiesOf } from "@storybook/react";
 import * as React from "react";
 
-import { BasicContainer, PanelBasic } from "responsive-it-common";
+import { ContainerMain, PanelBasic } from "responsive-it-common";
 
 storiesOf("00: Intro", module).add(
   "Abstract",
   () => (
-    <BasicContainer>
+    <ContainerMain>
       <PanelBasic content="some content" />
-    </BasicContainer>
+    </ContainerMain>
   ),
   {
     info: { source: false, inline: false },
