@@ -1,13 +1,12 @@
 import { storiesOf } from "@storybook/react";
 import * as React from "react";
-
-import { ContainerMain, PanelBasic } from "responsive-it-common";
+import { ContainerMain, PanelBasic, ThemeLight } from "responsive-it-common";
 
 storiesOf("00: Intro", module).add(
   "Abstract",
   () => (
-    <ContainerMain>
-      <PanelBasic content="some content" />
+    <ContainerMain theme={ThemeLight}>
+      <PanelBasic theme={ThemeLight} content="some content" />
     </ContainerMain>
   ),
   {
