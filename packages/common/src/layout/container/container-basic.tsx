@@ -8,13 +8,13 @@ type BasicContainerProps = {
   backgroundImage?: string;
 };
 
-export const ContainerMain: FC<BasicContainerProps> = ({
+export const ContainerBasic: FC<BasicContainerProps> = ({
   children,
   cssWidth,
   theme,
   backgroundImage,
 }) => {
-  const style = `container mx-auto ${cssWidth || "md:w-3/4 lg:w-3/5 "} ${
+  const style = `container mx-auto z-10 ${cssWidth || "md:w-3/4 lg:w-3/5 "} ${
     theme
       ? `${theme.bgColor} ${theme.textColor} ${theme.shadowColor}`
       : "bg-gray-100 text-gray-900 "
@@ -25,5 +25,5 @@ export const ContainerMain: FC<BasicContainerProps> = ({
     document.body.style.backgroundAttachment = "fixed";
   }
 
-  return <main className={style}>{children}</main>;
+  return <div className={style}>{children}</div>;
 };
