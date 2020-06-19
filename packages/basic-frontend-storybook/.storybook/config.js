@@ -1,7 +1,4 @@
-import { withInfo } from "@storybook/addon-info";
-import { withKnobs } from "@storybook/addon-knobs";
 import { addDecorator, addParameters, configure } from "@storybook/react";
-import { withA11y } from "@storybook/addon-a11y";
 
 require("./generated-tailwind.css");
 
@@ -12,17 +9,7 @@ addParameters({
   },
 });
 
-addDecorator(
-  withInfo({
-    inline: true,
-    header: false,
-    propTables: false,
-  })
-);
-
 addDecorator((story) => story());
-
-addDecorator(withKnobs);
 
 // reference implementation from https://github.com/storybooks/storybook/blob/next/examples/official-storybook/config.js
 function importAll(context) {
