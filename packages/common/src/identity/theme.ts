@@ -20,6 +20,28 @@ export const ThemeLight: ThemeType = {
   linkVisitedColor: "text-blue-600",
 };
 
+export const ThemeGreen: ThemeType = {
+  textColor: "text-gray-200",
+  bgColor: "bg-green-600",
+  borderColor: "border-gray-200",
+  shadowColor: "",
+  linkColor: "text-blue-200",
+  linkHoverColor: "text-blue-400",
+  linkActiveColor: "text-blue-600",
+  linkVisitedColor: "text-blue-600",
+};
+
+export const ThemePurple: ThemeType = {
+  textColor: "text-gray-200",
+  bgColor: "bg-purple-600",
+  borderColor: "border-gray-200",
+  shadowColor: "",
+  linkColor: "text-blue-200",
+  linkHoverColor: "text-blue-400",
+  linkActiveColor: "text-blue-600",
+  linkVisitedColor: "text-blue-600",
+};
+
 export type ThemeType = {
   textColor: string;
   bgColor: string;
