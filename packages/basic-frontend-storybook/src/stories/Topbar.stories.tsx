@@ -1,14 +1,32 @@
 import React from 'react';
 import { action } from '@storybook/addon-actions';
-import { Topbar } from 'responsive-it-common';
+import { Topbar, NavigationItems } from 'responsive-it-common';
 
 const onChange = action('change');
+
+const navigationItems: NavigationItems[] = [
+  {
+    text: 'foo',
+    title: 'foo',
+    link: '#',
+  },
+  {
+    text: 'man',
+    title: 'man',
+    link: '#',
+  },
+  {
+    text: 'chu',
+    title: 'chu',
+    link: '#',
+  },
+];
 
 export default {
   title: 'Design System/layout/Topbar',
   component: Topbar,
 };
 
-export const defaultStory = () => <Topbar>Inhalte</Topbar>;
+export const defaultStory = () => <Topbar menuItems={navigationItems}>Inhalte</Topbar>;
 
 defaultStory.storyName = 'default';
