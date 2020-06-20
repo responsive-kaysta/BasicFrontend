@@ -28,9 +28,14 @@ export const Topbar: FC<TopbarProps> = ({
     document.body.style.backgroundAttachment = "fixed";
   }
 
+  const wrapperTheme = theme
+    ? `${theme.bgColor} ${theme.textColor}`
+    : "bg-gray-100 text-gray-800";
+
   return (
     <div
-      className="flex flex-col h-screen overflow-hidden bg-gray-100"
+      className={`flex flex-col h-screen overflow-hidden ${wrapperTheme}`}
+      id="topbar-main-wrapper"
       {...props}
     >
       <HorizontalNavbar
@@ -42,6 +47,7 @@ export const Topbar: FC<TopbarProps> = ({
       />
       <main
         className="flex flex-col flex-1 relative z-0 overflow-hidden "
+        id="topbar-main"
         tabIndex={0}
       >
         <div className="max-w-7xl mx-auto">

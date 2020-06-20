@@ -22,6 +22,20 @@ export const HorizontalNavbar: FC<HorizontalNavbarProps> = ({
   console.log(theme);
   console.log(withSearch);
 
+  const mobileMenuTheme = theme
+    ? `${theme.bgColor} ${theme.textColor} ${theme.bgMenuColor}`
+    : "bg-gray-300";
+
+  const buttonCloseTheme = theme ? `${theme.textColor}` : "text-gray-500";
+
+  const staticMenuTheme = theme
+    ? `${theme.bgColor} ${theme.textColor}`
+    : "bg-gray-300";
+
+  const menuLinkTheme = theme
+    ? `${theme.linkColor} hover:${theme.linkHoverColor} focus:${theme.linkFocusColor} active:${theme.linkActiveColor} visited:${theme.linkVisitedColor}`
+    : "text-blue-200";
+
   return (
     <header id="horizontal-navbar-header">
       <div className="md:hidden flex flex-row justify-between h-12">
@@ -31,7 +45,7 @@ export const HorizontalNavbar: FC<HorizontalNavbarProps> = ({
         {!isMenuVisible && (
           <div className="flex">
             <button
-              className="m-0 p-0 h-6 w-6 text-gray-500"
+              className={`m-0 p-0 h-6 w-6 ${buttonCloseTheme}`}
               aria-label="Open sidebar"
               onClick={() => toggleMenuVisible(true)}
             >
@@ -54,14 +68,18 @@ export const HorizontalNavbar: FC<HorizontalNavbarProps> = ({
         {isMenuVisible && (
           <nav
             id="horizontal-navbar-mobile-nav"
-            className="fixed flex top-0 right-0 w-1/2 z-40 bg-gray-300"
+            className={`fixed flex top-0 right-0 w-1/2 z-40 ${mobileMenuTheme}`}
             onClick={() => toggleMenuVisible(false)}
           >
             <ul>
               {menuItems.map((item) => {
                 return (
                   <li key={item.title}>
-                    <a href={item.link} title={item.title}>
+                    <a
+                      href={item.link}
+                      title={item.title}
+                      className={`${menuLinkTheme}`}
+                    >
                       {item.text}
                     </a>
                   </li>
@@ -72,14 +90,18 @@ export const HorizontalNavbar: FC<HorizontalNavbarProps> = ({
         )}
       </div>
 
-      <div className="hidden md:flex flex-row md:h-12">
+      <div className={`hidden md:flex flex-row md:h-12 ${staticMenuTheme}`}>
         <div id="horizontal-navbar-logo">{logo}</div>
         <nav id="horizontal-navbar-nav">
           <ul className="flex flex-row">
             {menuItems.map((item) => {
               return (
                 <li key={item.title}>
-                  <a href={item.link} title={item.title}>
+                  <a
+                    href={item.link}
+                    title={item.title}
+                    className={`${menuLinkTheme}`}
+                  >
                     {item.text}
                   </a>
                 </li>

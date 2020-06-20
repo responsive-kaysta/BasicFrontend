@@ -1,6 +1,6 @@
 import React from 'react';
 import { action } from '@storybook/addon-actions';
-import { Topbar, NavigationItems } from 'responsive-it-common';
+import { Topbar, NavigationItems, ThemeLight } from 'responsive-it-common';
 
 const onChange = action('change');
 
@@ -28,7 +28,7 @@ export default {
 };
 
 export const defaultStory = () => (
-  <Topbar menuItems={navigationItems} logo="responsive IT">
+  <Topbar menuItems={navigationItems} logo="responsive IT" theme={ThemeLight}>
     Inhalte
   </Topbar>
 );
