@@ -1,32 +1,27 @@
 {
+  "compileOnSave": false,
   "compilerOptions": {
-    "outDir": "./build",
-    "declaration": true,
-    "module": "commonjs",
-    "target": "es5",
-    "lib": ["es2017", "dom"],
-    "sourceMap": true,
-    "allowJs": false,
-    "jsx": "react",
-    "moduleResolution": "node",
-    "forceConsistentCasingInFileNames": true,
-    "noImplicitReturns": true,
-    "noImplicitThis": true,
+    "baseUrl": ".",
+    "incremental": false,
     "noImplicitAny": true,
-    "strict": true,
-    "suppressImplicitAnyIndexErrors": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "jsx": "react",
+    "module": "commonjs",
+    "skipDefaultLibCheck": true,
     "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
-    "types": ["node"],
-    "typeRoots": ["node_modules/@types"]
+    "target": "es5",
+    "types": ["jest"],
+    "lib": ["es2017", "dom"]
   },
-  "include": ["./src/**/*.ts", "./src/**/*.tsx"],
-  "exclude": ["./node_modules", "./build", "./**/*.test.ts", "./**/*.test.tsx"],
-  "plugins": [
-    {
-      "name": "typescript-styled-plugin"
-    }
+  "exclude": [
+    "**/dist",
+    "node_modules",
+    "**/node_modules",
+    "**/*.spec.ts",
+    "**/__tests__",
+    "**/*.test.ts"
   ]
 }
