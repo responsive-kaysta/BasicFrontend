@@ -22,7 +22,6 @@ export const Topbar: FC<TopbarProps> = ({
   console.log("theme: ", theme);
 
   const [isMenuVisible, toggleMenuVisible] = useState<boolean>(false);
-  console.log("isMenuVisible: ", isMenuVisible);
 
   if (backgroundImage) {
     document.body.style.backgroundImage = `url(${backgroundImage})`;

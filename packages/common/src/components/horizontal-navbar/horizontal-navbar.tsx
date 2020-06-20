@@ -19,21 +19,15 @@ export const HorizontalNavbar: FC<HorizontalNavbarProps> = ({
   withSearch,
   logo,
 }) => {
-  // const [menuVisible, setMenuVisible] = useState<boolean>(false);
-  // const [profileVisible, setProfileVisible] = useState<boolean>(false);
-
-  // console.log("menuVisible", menuVisible);
-  // console.log("profileVisible", profileVisible);
-
-  console.log(menuItems);
   console.log(theme);
   console.log(withSearch);
-  console.log(logo);
 
   return (
-    <header>
+    <header id="horizontal-navbar-header">
       <div className="md:hidden flex flex-row justify-between h-12">
-        <div className="flex">Logo</div>
+        <div className="flex" id="horizontal-navbar-mobile-logo">
+          {logo}
+        </div>
         {!isMenuVisible && (
           <div className="flex">
             <button
@@ -59,25 +53,38 @@ export const HorizontalNavbar: FC<HorizontalNavbarProps> = ({
         )}
         {isMenuVisible && (
           <nav
+            id="horizontal-navbar-mobile-nav"
             className="fixed flex top-0 right-0 w-1/2 z-40 bg-gray-300"
             onClick={() => toggleMenuVisible(false)}
           >
             <ul>
-              <li>foo</li>
-              <li>man</li>
-              <li>chu</li>
+              {menuItems.map((item) => {
+                return (
+                  <li key={item.title}>
+                    <a href={item.link} title={item.title}>
+                      {item.text}
+                    </a>
+                  </li>
+                );
+              })}
             </ul>
           </nav>
         )}
       </div>
 
       <div className="hidden md:flex flex-row md:h-12">
-        <div>Logo</div>
-        <nav onClick={() => toggleMenuVisible(false)}>
+        <div id="horizontal-navbar-logo">{logo}</div>
+        <nav id="horizontal-navbar-nav">
           <ul className="flex flex-row">
-            <li>foo</li>
-            <li>man</li>
-            <li>chu</li>
+            {menuItems.map((item) => {
+              return (
+                <li key={item.title}>
+                  <a href={item.link} title={item.title}>
+                    {item.text}
+                  </a>
+                </li>
+              );
+            })}
           </ul>
         </nav>
       </div>

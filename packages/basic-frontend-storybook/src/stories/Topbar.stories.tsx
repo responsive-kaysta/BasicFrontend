@@ -23,10 +23,14 @@ const navigationItems: NavigationItems[] = [
 ];
 
 export default {
-  title: 'Design System/layout/Topbar',
+  title: 'Design System / Layout/ Topbar',
   component: Topbar,
 };
 
-export const defaultStory = () => <Topbar menuItems={navigationItems}>Inhalte</Topbar>;
+export const defaultStory = () => (
+  <Topbar menuItems={navigationItems} logo="responsive IT">
+    Inhalte
+  </Topbar>
+);
 
 defaultStory.storyName = 'default';
