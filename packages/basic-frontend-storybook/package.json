@@ -25,11 +25,6 @@
     "release": "dotenv yarn build && npx ts-node ./scripts/update-chromatic-url.ts && npx sort-package-json && ./scripts/release.sh",
     "storybook": "start-storybook -p 6006"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "yarn lint-staged"
-    }
-  },
   "lint-staged": {
     "*.html": [
       "yarn lint:js --fix"
