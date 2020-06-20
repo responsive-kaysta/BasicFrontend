@@ -5,7 +5,7 @@ import { Topbar } from 'responsive-it-common';
 const onChange = action('change');
 
 export default {
-  title: 'Design System/forms/Textarea',
+  title: 'Design System/layout/Topbar',
   component: Topbar,
 };
 
