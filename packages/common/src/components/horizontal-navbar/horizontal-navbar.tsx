@@ -91,10 +91,12 @@ export const HorizontalNavbar: FC<HorizontalNavbarProps> = ({
         {isMenuVisible && (
           <nav
             id="horizontal-navbar-mobile-nav"
-            className={`fixed flex top-0 right-0 w-2/3 h-screen z-40 ${mobileNavTheme} bg-opacity-75 transition-opacity duration-500`}
+            className={`fixed flex top-0 right-0 w-2/3 h-screen z-40 ${mobileNavTheme} transition-opacity duration-300 ${
+              isMenuVisible ? "bg-opacity-75" : "bg-opacity-0"
+            }`}
             onClick={() => toggleMenuVisible(false)}
           >
-            <ul className="pl-6 w-10/12">
+            <ul className="px-6 w-full">
               {menuItems.map((item) => {
                 return (
                   <li
