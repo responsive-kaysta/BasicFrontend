@@ -7,7 +7,6 @@ type HorizontalNavbarProps = {
   isMenuVisible: boolean;
   toggleMenuVisible: (visible: boolean) => void;
   theme?: ThemeType;
-  withSearch?: boolean;
   logo?: ReactNode;
 };
 
@@ -16,34 +15,36 @@ export const HorizontalNavbar: FC<HorizontalNavbarProps> = ({
   isMenuVisible,
   toggleMenuVisible,
   theme,
-  withSearch,
   logo,
 }) => {
-  console.log(theme);
-  console.log(withSearch);
-
-  const mobileMenuTheme = theme
-    ? `${theme.bgColor} ${theme.textColor} ${theme.bgMenuColor}`
+  const mobileNavTheme = theme
+    ? `${theme.bgMenuColor} ${theme.textColor}`
     : "bg-gray-300";
 
-  const buttonCloseTheme = theme ? `${theme.textColor}` : "text-gray-500";
-
-  const staticMenuTheme = theme
-    ? `${theme.bgColor} ${theme.textColor}`
+  const headerTheme = theme
+    ? `${theme.bgHeaderColor} ${theme.textHeaderColor}`
     : "bg-gray-300";
+
+  const buttonCloseTheme = theme ? `${theme.textHeaderColor}` : "text-gray-500";
 
   const menuLinkTheme = theme
     ? `${theme.linkColor} hover:${theme.linkHoverColor} focus:${theme.linkFocusColor} active:${theme.linkActiveColor} visited:${theme.linkVisitedColor}`
     : "text-blue-200";
 
+  const logoComp = (
+    <div className="flex px-5 md:px-8" id="navbar-logo">
+      {logo}
+    </div>
+  );
+
   return (
     <header id="horizontal-navbar-header">
-      <div className="md:hidden flex flex-row justify-between h-12">
-        <div className="flex" id="horizontal-navbar-mobile-logo">
-          {logo}
-        </div>
+      <div
+        className={`md:hidden flex flex-row items-center justify-between h-12 md:h-16 ${headerTheme}`}
+      >
+        {logoComp}
         {!isMenuVisible && (
-          <div className="flex">
+          <div className="flex pr-3">
             <button
               className={`m-0 p-0 h-6 w-6 ${buttonCloseTheme}`}
               aria-label="Open sidebar"
@@ -66,15 +67,42 @@ export const HorizontalNavbar: FC<HorizontalNavbarProps> = ({
           </div>
         )}
         {isMenuVisible && (
+          <div className="flex pr-3">
+            <button
+              className={`m-0 p-0 h-6 w-6 ${buttonCloseTheme}`}
+              aria-label="Close sidebar"
+            >
+              <svg
+                className="m-0 p-0 h-6 w-6"
+                stroke="currentColor"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
+        )}
+        {isMenuVisible && (
           <nav
             id="horizontal-navbar-mobile-nav"
-            className={`fixed flex top-0 right-0 w-1/2 z-40 ${mobileMenuTheme}`}
+            className={`fixed flex top-0 right-0 w-2/3 h-screen z-40 ${mobileNavTheme} bg-opacity-75 transition-opacity duration-500`}
             onClick={() => toggleMenuVisible(false)}
           >
-            <ul>
+            <ul className="pl-6 w-10/12">
               {menuItems.map((item) => {
                 return (
-                  <li key={item.title}>
+                  <li
+                    key={item.title}
+                    className={`pt-6 pb-2 w-full border-b-2 ${
+                      theme ? theme.borderColor : "border-gray-400"
+                    }`}
+                  >
                     <a
                       href={item.link}
                       title={item.title}
@@ -90,13 +118,15 @@ export const HorizontalNavbar: FC<HorizontalNavbarProps> = ({
         )}
       </div>
 
-      <div className={`hidden md:flex flex-row md:h-12 ${staticMenuTheme}`}>
-        <div id="horizontal-navbar-logo">{logo}</div>
-        <nav id="horizontal-navbar-nav">
+      <div
+        className={`hidden md:flex flex-row items-center h-12 md:h-16 ${headerTheme}`}
+      >
+        {logoComp}
+        <nav id="horizontal-navbar-nav" className="flex">
           <ul className="flex flex-row">
             {menuItems.map((item) => {
               return (
-                <li key={item.title}>
+                <li key={item.title} className="px-8">
                   <a
                     href={item.link}
                     title={item.title}
