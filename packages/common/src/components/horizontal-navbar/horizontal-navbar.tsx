@@ -19,11 +19,11 @@ export const HorizontalNavbar: FC<HorizontalNavbarProps> = ({
 }) => {
   const mobileNavTheme = theme
     ? `${theme.bgMenuColor} ${theme.textColor}`
-    : "bg-gray-300";
+    : "bg-gray-600";
 
   const headerTheme = theme
     ? `${theme.bgHeaderColor} ${theme.textHeaderColor}`
-    : "bg-gray-300";
+    : "bg-gray-600";
 
   const buttonCloseTheme = theme ? `${theme.textHeaderColor}` : "text-gray-500";
 
@@ -32,7 +32,12 @@ export const HorizontalNavbar: FC<HorizontalNavbarProps> = ({
     : "text-blue-200";
 
   const logoComp = (
-    <div className="flex px-5 md:px-8" id="navbar-logo">
+    <div
+      className={`flex px-5 md:px-8 ${
+        theme ? theme.textHeaderColor : "text-gray-100"
+      }`}
+      id="navbar-logo"
+    >
       {logo}
     </div>
   );
@@ -67,7 +72,7 @@ export const HorizontalNavbar: FC<HorizontalNavbarProps> = ({
           </div>
         )}
         {isMenuVisible && (
-          <div className="flex pr-3">
+          <div className="flex m-0 p-0 h-6 w-6">
             <button
               className={`m-0 p-0 h-6 w-6 ${buttonCloseTheme}`}
               aria-label="Close sidebar"

@@ -28,9 +28,17 @@ export default {
 };
 
 export const defaultStory = () => (
-  <Topbar menuItems={navigationItems} logo="responsive IT" theme={ThemeLight}>
+  <Topbar menuItems={navigationItems} logo="responsive IT">
     Inhalte
   </Topbar>
 );
 
 defaultStory.storyName = 'default';
+
+export const themeLightStory = () => (
+  <Topbar menuItems={navigationItems} logo="responsive IT" theme={ThemeLight}>
+    Inhalte
+  </Topbar>
+);
+
+defaultStory.storyName = 'themeLightStory';
