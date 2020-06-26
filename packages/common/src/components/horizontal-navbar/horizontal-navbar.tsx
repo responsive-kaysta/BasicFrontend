@@ -16,7 +16,11 @@ export const HorizontalNavbar: FC<HorizontalNavbarProps> = ({
   logo,
 }) => {
   const logoComp = (
-    <div className={`flex px-5 md:px-8 text-lg text-gray-100`} id="navbar-logo">
+    <div
+      className={`flex px-5 md:px-8 text-base sm:text-xl font-semibold sm:font-bold text-gray-100`}
+      id="navbar-logo"
+      title={`Branding`}
+    >
       {logo}
     </div>
   );
@@ -40,7 +44,7 @@ export const HorizontalNavbar: FC<HorizontalNavbarProps> = ({
         )}
         {isMenuVisible && (
           <nav
-            id="horizontal-navbar-mobile-nav"
+            id="horizontal-navbar-mobile"
             className={`fixed flex flex-col top-0 right-0 w-2/3 h-screen z-40 bg-gray-700 text-gray-100 transition-all duration-300 ease-in-out ${
               isMenuVisible ? "bg-opacity-75" : "bg-opacity-0"
             }`}
@@ -65,7 +69,11 @@ export const HorizontalNavbar: FC<HorizontalNavbarProps> = ({
                     key={item.title}
                     className={`pt-6 pb-2 w-full border-b border-gray-300`}
                   >
-                    <a href={item.link} title={item.title} className={``}>
+                    <a
+                      href={item.link}
+                      title={`Navigate to ${item.title}`}
+                      className={`text-gray-100 text-md`}
+                    >
                       {item.text}
                     </a>
                   </li>
@@ -77,15 +85,19 @@ export const HorizontalNavbar: FC<HorizontalNavbarProps> = ({
       </div>
 
       <div
-        className={`hidden md:flex flex-row items-center h-12 md:h-16 bg-gray-700 text-gray-100`}
+        className={`hidden md:flex flex-row items-center h-16 md:h-20 bg-gray-700 text-gray-100`}
       >
         {logoComp}
-        <nav id="horizontal-navbar-nav" className="flex">
+        <nav id="horizontal-navbar-static" className="flex">
           <ul className="flex flex-row">
             {menuItems.map((item) => {
               return (
                 <li key={item.title} className="px-8">
-                  <a href={item.link} title={item.title} className={``}>
+                  <a
+                    href={item.link}
+                    title={`Navigate to ${item.title}`}
+                    className={``}
+                  >
                     {item.text}
                   </a>
                 </li>

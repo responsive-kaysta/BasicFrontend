@@ -9,5 +9,9 @@ export const ContainerArticle: FC<BasicContainerProps> = ({
   children,
   cssStyle,
 }) => {
-  return <article className={`${cssStyle || "container"}`}>{children}</article>;
+  return (
+    <article className={`max-w-7xl mx-auto ${cssStyle || "container"}`}>
+      {children}
+    </article>
+  );
 };

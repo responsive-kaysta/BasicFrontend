@@ -4,6 +4,7 @@ import { NavigationItems } from "../../typings";
 
 type TopbarProps = {
   children: ReactNode;
+  footer?: ReactNode;
   menuItems: NavigationItems[];
   logo?: string;
   backgroundImage?: string;
@@ -11,6 +12,7 @@ type TopbarProps = {
 
 export const Topbar: FC<TopbarProps> = ({
   children,
+  footer,
   menuItems,
   logo,
   backgroundImage,
@@ -27,7 +29,7 @@ export const Topbar: FC<TopbarProps> = ({
 
   return (
     <div
-      className={`flex flex-col h-screen overflow-hidden bg-gray-100 text-gray-800`}
+      className={`flex flex-col w-full h-screen overflow-hidden`}
       id="topbar-main-wrapper"
       {...props}
     >
@@ -38,23 +40,13 @@ export const Topbar: FC<TopbarProps> = ({
         logo={logo}
       />
       <main
-        className="flex flex-col flex-1 relative z-0 overflow-hidden "
+        className="flex flex-col flex-1 relative z-0 overflow-hidden bg-gray-100 text-gray-800"
         id="topbar-main"
         tabIndex={0}
       >
-        {/* <!-- Replace with your content --> */}
-        <div className="max-w-7xl mx-auto">
-          <h1 className="text-2xl font-semibold text-gray-800">Dashboard</h1>
-        </div>
-        <div className="max-w-7xl mx-auto">
-          <div className="m-0 p-0 overflow-y-auto">
-            <div className="border-4 border-dashed border-gray-200 rounded-lg h-96">
-              {children}
-            </div>
-          </div>
-        </div>
-        {/* <!-- /End replace --> */}
+        {children}
       </main>
+      {footer}
     </div>
   );
 };
