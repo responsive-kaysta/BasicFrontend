@@ -1,4 +1,6 @@
-export const pictograms = {
+import React, { FC } from "react";
+
+const iconMap = {
   mobile:
     "M648 64h-272c-66.274 0-120 53.726-120 120v656c0 66.274 53.726 120 120 120h272c66.274 0 120-53.726 120-120v-656c0-66.274-53.726-120-120-120zM376 144h272c22.056 0 40 17.944 40 40v495.968h-352v-495.968c0-22.056 17.946-40 40-40zM648 880h-272c-22.054 0-40-17.944-40-40v-80.032h352v80.032c0 22.056-17.944 40-40 40zM544.034 819.962c0 17.676-14.33 32.002-32.004 32.002-17.67 0-32-14.326-32-32.002 0-17.672 14.33-31.998 32-31.998 17.674-0 32.004 14.326 32.004 31.998z",
   watch:
@@ -312,3 +314,45 @@ export const pictograms = {
   accessibility:
     "M512 0a512 512 0 110 1024A512 512 0 01512 0zm0 89.6a422.4 422.4 0 100 844.8 422.4 422.4 0 000-844.8zm262.2 250a40.9 40.9 0 01-27.5 49.3l-169.1 50.7c-8.2 2.7-15.1 11-13.7 20.5 1.3 27.4 1.5 76.5 7 98.4 12.9 59 82.4 214.4 91 233.6a56 56 0 014.9 19 40 40 0 01-40 40c-18 0-30.3-12.7-38.2-28.4A34096 34096 0 01510.9 664l-77.7 165.7-1.3 2.1a40 40 0 01-69.3-39.7c8.6-19 78-174.5 90.8-233.6 5.5-21.9 6-71 7.3-98.4a21 21 0 00-13.7-20.5l-169.1-50.7a40.7 40.7 0 01-27.5-50.7c6.9-20.5 30.2-30.1 50.9-24.6 0 0 154.6 49.3 209.6 49.3s213.8-50.7 213.8-50.7c20.6-5.5 44 6.8 49.5 27.4zm-264-171.2a76.7 76.7 0 110 153.4c-42.6 0-77-34.2-77-76.7 0-41 34.4-76.7 77-76.7z",
 } as const;
+
+export const allIconNames = Object.keys(iconMap);
+
+export enum IconSize {
+  xs = 32,
+  sm = 48,
+  md = 64,
+  lg = 72,
+  xl = 96,
+}
+
+export type IconName = keyof typeof iconMap;
+
+export type IconProps = {
+  name: IconName;
+  className?: string;
+  size?: IconSize;
+};
+
+export const Icon: FC<IconProps> = ({
+  name,
+  className = "",
+  size = IconSize.sm,
+}) => {
+  if (!iconMap[name]) {
+    console.warn(`No Icon with name '${name}' found!`);
+    return null;
+  }
+
+  return (
+    <svg
+      viewBox="0 0 1024 1024"
+      width={size}
+      height={size}
+      className={className}
+      fill="inherit"
+      stroke="currentColor"
+    >
+      <path d={iconMap[name]} />
+    </svg>
+  );
+};
