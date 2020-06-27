@@ -1,6 +1,13 @@
 import { action } from '@storybook/addon-actions';
 import React, { FC } from 'react';
-import { ContainerBasic, Footer, NavigationItems, Topbar } from 'responsive-it-common';
+import {
+  ContainerBasic,
+  Footer,
+  NavigationItems,
+  Topbar,
+  Pictogram,
+  PictogramSize,
+} from 'responsive-it-common';
 
 const onChange = action('change');
 
@@ -23,18 +30,17 @@ const navigationItems: NavigationItems[] = [
 ];
 
 export default {
-  title: 'Design System / Layout/ Topbar',
+  title: 'Design System / Layout / Topbar',
   component: Topbar,
 };
 
 const CompFooter: FC = () => {
   return (
     <Footer>
-      <div className="pt-2 text-xs sm:text-base">
-        <span>1</span>
-        <span>2</span>
-        <span>3</span>
-        <span>4</span>
+      <div className="flex flex-row pt-2 text-xs sm:text-base">
+        <span>
+          <Pictogram name="xing_logo" size={PictogramSize.xs} />
+        </span>
       </div>
       <div className="pt-2 pb-2 text-xs sm:text-base">
         2020 &copy responsive IT - finest full-stack development

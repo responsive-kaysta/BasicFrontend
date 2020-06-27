@@ -28,7 +28,7 @@ export const HorizontalNavbar: FC<HorizontalNavbarProps> = ({
   return (
     <header id="horizontal-navbar-header">
       <div
-        className={`md:hidden flex flex-row items-center justify-between h-12 md:h-16 bg-gray-700 text-gray-100`}
+        className={`flex flex-row items-center justify-between h-12 md:h-16 bg-gray-700 text-gray-100`}
       >
         {logoComp}
         {!isMenuVisible && (
@@ -44,8 +44,8 @@ export const HorizontalNavbar: FC<HorizontalNavbarProps> = ({
         )}
         {isMenuVisible && (
           <nav
-            id="horizontal-navbar-mobile"
-            className={`fixed flex flex-col top-0 right-0 w-2/3 h-screen z-40 bg-gray-700 text-gray-100 transition-all duration-300 ease-in-out ${
+            id="horizontal-navbar"
+            className={`fixed flex flex-col top-0 right-0 w-2/3 md:w-1/3 h-screen z-40 bg-gray-700 text-gray-100 transition-all duration-300 ease-in-out ${
               isMenuVisible ? "bg-opacity-75" : "bg-opacity-0"
             }`}
             onClick={() => toggleMenuVisible(false)}
@@ -82,29 +82,6 @@ export const HorizontalNavbar: FC<HorizontalNavbarProps> = ({
             </ul>
           </nav>
         )}
-      </div>
-
-      <div
-        className={`hidden md:flex flex-row items-center h-16 md:h-20 bg-gray-700 text-gray-100`}
-      >
-        {logoComp}
-        <nav id="horizontal-navbar-static" className="flex">
-          <ul className="flex flex-row">
-            {menuItems.map((item) => {
-              return (
-                <li key={item.title} className="px-8">
-                  <a
-                    href={item.link}
-                    title={`Navigate to ${item.title}`}
-                    className={``}
-                  >
-                    {item.text}
-                  </a>
-                </li>
-              );
-            })}
-          </ul>
-        </nav>
       </div>
     </header>
   );

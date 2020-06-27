@@ -30,7 +30,7 @@ export const Topbar: FC<TopbarProps> = ({
   return (
     <div
       className={`flex flex-col w-full h-screen overflow-hidden`}
-      id="topbar-main-wrapper"
+      id="body-wrapper"
       {...props}
     >
       <HorizontalNavbar
@@ -40,8 +40,8 @@ export const Topbar: FC<TopbarProps> = ({
         logo={logo}
       />
       <main
-        className="flex flex-col flex-1 relative z-0 overflow-hidden bg-gray-100 text-gray-800"
-        id="topbar-main"
+        className={`flex flex-col flex-1 relative z-0 overflow-hidden bg-gray-100 text-gray-800`}
+        id="main-container"
         tabIndex={0}
       >
         {children}
