@@ -71,7 +71,7 @@ export const HorizontalNavbar: FC<HorizontalNavbarProps> = ({
                   >
                     <a
                       href={item.link}
-                      title={`Navigate to ${item.title}`}
+                      title={item.title}
                       className={`text-gray-100 text-md`}
                     >
                       {item.text}

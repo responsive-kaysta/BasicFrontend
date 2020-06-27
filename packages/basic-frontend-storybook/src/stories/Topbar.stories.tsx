@@ -7,17 +7,17 @@ const onChange = action('change');
 const navigationItems: NavigationItems[] = [
   {
     text: 'foo',
-    title: 'foo',
+    title: 'navigate to foo',
     link: '#',
   },
   {
     text: 'man',
-    title: 'man',
+    title: 'navigate to man',
     link: '#',
   },
   {
     text: 'chu',
-    title: 'chu',
+    title: 'navigate to chu',
     link: '#',
   },
 ];
