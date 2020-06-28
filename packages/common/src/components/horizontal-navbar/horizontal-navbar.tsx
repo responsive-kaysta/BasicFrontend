@@ -16,13 +16,13 @@ export const HorizontalNavbar: FC<HorizontalNavbarProps> = ({
   logo,
 }) => {
   const logoComp = (
-    <div
+    <span
       className={`flex px-5 md:px-8 text-base sm:text-xl font-semibold sm:font-bold text-gray-100`}
       id="navbar-logo"
       title={`Branding`}
     >
       {logo}
-    </div>
+    </span>
   );
 
   return (

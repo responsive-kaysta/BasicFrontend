@@ -1,6 +1,5 @@
 export * from "./hr";
 export * from "./link";
-export * from "./text-caption";
 export * from "./text-column";
 export * from "./text-lead";
 export * from "./text-regular";

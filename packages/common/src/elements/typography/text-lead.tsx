@@ -1,5 +1,9 @@
 import React, { FC } from "react";
 
 export const TextLead: FC = ({ children }) => {
-  return <div>{children}</div>;
+  return (
+    <p className="text-lg font-medium md:text-xl md:font-semibold">
+      {children}
+    </p>
+  );
 };

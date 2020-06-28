@@ -1,22 +1,15 @@
 import React, { FC, ReactNode } from "react";
-import { ThemeType } from "../../identity";
 
 type PanelBasicProps = {
-  content: ReactNode;
-  theme?: ThemeType;
+  children: ReactNode;
 };
 
-export const PanelBasic: FC<PanelBasicProps> = ({ content, theme }) => {
-  const style = `${
-    theme
-      ? `${theme.bgColor} ${theme.textColor} ${theme.shadowColor}`
-      : "bg-white"
-  }`;
+export const PanelBasic: FC<PanelBasicProps> = ({ children }) => {
   return (
-    <div className={`overflow-hidden shadow rounded-lg ${style}`}>
-      <div className={`px-4 py-5 sm:p-6 ${theme ? `${theme.textColor}` : ""}`}>
-        {content}
-      </div>
+    <div
+      className={`bg-white border-gray-300 overflow-hidden shadow rounded-lg`}
+    >
+      <div className={`px-4 py-5 sm:p-6`}>{children}</div>
     </div>
   );
 };
