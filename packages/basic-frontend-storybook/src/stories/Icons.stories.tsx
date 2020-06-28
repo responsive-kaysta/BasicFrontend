@@ -14,7 +14,7 @@ export const defaultStory = () => (
     <ul className="flex flex-row flex-wrap">
       {allIconNames.map((key) => (
         <li key={key} className="flex flex-col items-center mb-8 mr-8">
-          <Icon name={key} aria-label={key} size={IconSize.sm} />
+          <Icon name={key} aria-label={key} size={IconSize.sm} className="" />
           <div className="mt-2">{key}</div>
         </li>
       ))}

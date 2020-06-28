@@ -13,7 +13,7 @@ export const defaultStory = () => (
   <div>
     <ul className="flex flex-row flex-wrap">
       {allPictogramNames.map((key) => (
-        <li key={key} className="flex flex-col items-center mb-8 mr-8">
+        <li key={key} className="flex flex-col items-center mb-8 mr-8 text-gray-900">
           <Pictogram name={key} aria-label={key} size={PictogramSize.sm} />
           <div className="mt-2">{key}</div>
         </li>
