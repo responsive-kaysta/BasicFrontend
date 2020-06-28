@@ -17,7 +17,18 @@ const onChange = action('change');
 
 export default {
   title: 'Design System / Elements / Typography',
-  component: PanelHeader,
+  component: [
+    ContainerBasic,
+    Hruler,
+    Link,
+    PanelHeader,
+    TextColumn,
+    TextLead,
+    TextRegular,
+    Title,
+    TitleAbstract,
+    TitleSub,
+  ],
 };
 
 export const defaultStory = () => (
