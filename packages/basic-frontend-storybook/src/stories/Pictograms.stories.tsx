@@ -1,6 +1,6 @@
 import { action } from '@storybook/addon-actions';
 import React from 'react';
-import { Pictogram, allPictogramNames, PictogramSize } from 'responsive-it-common';
+import { allPictogramNames, Pictogram, PictogramSize } from 'responsive-it-common';
 
 const onChange = action('change');
 

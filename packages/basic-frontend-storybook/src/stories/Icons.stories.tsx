@@ -1,6 +1,6 @@
 import { action } from '@storybook/addon-actions';
 import React from 'react';
-import { Icon, iconMap, allIconNames, IconSize } from 'responsive-it-common';
+import { allIconNames, Icon, IconSize } from 'responsive-it-common';
 
 const onChange = action('change');
 

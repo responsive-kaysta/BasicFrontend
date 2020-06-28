@@ -4,9 +4,9 @@ import {
   ContainerBasic,
   Footer,
   NavigationItems,
-  Topbar,
   Pictogram,
   PictogramSize,
+  Topbar,
 } from 'responsive-it-common';
 
 const onChange = action('change');
@@ -37,13 +37,19 @@ export default {
 const CompFooter: FC = () => {
   return (
     <Footer>
-      <div className="flex flex-row pt-2 text-xs sm:text-base">
-        <span>
-          <Pictogram name="xing_logo" size={PictogramSize.xs} />
-        </span>
+      <section className="flex flex-row mt-4 text-xs sm:text-base">
+        <button className="mr-4">
+          <Pictogram name="xing_logo_box" size={PictogramSize.xs} />
+        </button>
+        <button className="mr-4">
+          <Pictogram name="linkedin_logo_box" size={PictogramSize.xs} />
+        </button>
+      </section>
+      <div className="mt-2 text-xs sm:text-sm">
+        <button>2020 - responsive IT</button>
       </div>
-      <div className="pt-2 pb-2 text-xs sm:text-base">
-        2020 &copy responsive IT - finest full-stack development
+      <div className="mt-2 mb-4 text-xs sm:text-sm">
+        <button>finest full-stack development</button>
       </div>
     </Footer>
   );

@@ -2181,3 +2181,8 @@ export const Pictogram: FC<PictogramProps> = ({
 
   return pictogramMap[name](size, `fill-current ${className}`);
 };
+
+// more prictograms
+// https://www.flaticon.com/packs/programming-87?word=programming
+// https://www.flaticon.com/packs/encryption?word=programming
+// https://www.flaticon.com/packs/interface-107?word=programming

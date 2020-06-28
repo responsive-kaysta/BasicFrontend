@@ -17,7 +17,7 @@ export const PanelFooter: FC<PanelFooterProps> = ({
 }) => {
   return (
     <div
-      className={`overflow-hidden overflow-hidden shadow rounded-lg ${
+      className={`overflow-hidden shadow rounded-lg ${
         wrapperCss || "bg-white"
       }`}
     >
