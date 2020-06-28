@@ -2,6 +2,8 @@ import { action } from '@storybook/addon-actions';
 import React from 'react';
 import {
   ContainerBasic,
+  Hruler,
+  Link,
   PanelHeader,
   TextColumn,
   TextLead,
@@ -9,7 +11,6 @@ import {
   Title,
   TitleAbstract,
   TitleSub,
-  Hruler,
 } from 'responsive-it-common';
 
 const onChange = action('change');
@@ -56,6 +57,14 @@ export const defaultStory = () => (
           invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
           accusam et justo duo dolores et ea rebum.
         </TextLead>
+      </PanelHeader>
+
+      <Hruler />
+
+      <PanelHeader header="Component: Link">
+        <Link text="Regular Link Element" href="#" />
+        <br />
+        <Link text="Link new Window" href="https://responsive-it.biz" newWindow />
       </PanelHeader>
 
       <Hruler />
