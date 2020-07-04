@@ -1,9 +1,6 @@
 import React, { FC } from "react";
-
-export enum ButtonType {
-  primary,
-  secondary,
-}
+import { stylePrimary, styleSecondary, buttonWrapper } from "./button-styles";
+import { ButtonType } from "./button-types";
 
 type ButtonRegularProps = {
   text: string;
@@ -18,15 +15,10 @@ export const ButtonRegular: FC<ButtonRegularProps> = ({
   onClick,
   disabled = false,
 }) => {
-  const stylePrimary =
-    "inline-flex items-center px-2 py-2 md:px-4 md:py-4 border-2 border-gray-400 rounded-lg text-sm leading-4 font-medium text-gray-700 bg-gray-100 active:bg-gray-200 hover:bg-gray-300 transition ease-in-out duration-150";
-  const styleSecondary =
-    "inline-flex items-center px-2 py-2 md:px-4 md:py-4 border-2 border-gray-600 rounded-lg text-sm leading-4 font-medium text-white bg-orange-400 active:bg-orange-600 hover:bg-orange-500 transition ease-in-out duration-150";
-
   switch (type) {
     case ButtonType.primary: {
       return (
-        <span className="inline-flex shadow-md rounded-lg hover:shadow-lg">
+        <span className={buttonWrapper}>
           <button
             onClick={onClick}
             disabled={disabled}
@@ -40,7 +32,7 @@ export const ButtonRegular: FC<ButtonRegularProps> = ({
     }
     case ButtonType.secondary: {
       return (
-        <span className="inline-flex shadow-md rounded-lg hover:shadow-lg">
+        <span className={buttonWrapper}>
           <button
             onClick={onClick}
             disabled={disabled}
@@ -54,7 +46,7 @@ export const ButtonRegular: FC<ButtonRegularProps> = ({
     }
     default: {
       return (
-        <span className="inline-flex shadow-md rounded-lg hover:shadow-lg">
+        <span className={buttonWrapper}>
           <button
             onClick={onClick}
             disabled={disabled}
