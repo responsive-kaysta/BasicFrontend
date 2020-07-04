@@ -1,5 +1,13 @@
 import React, { FC } from "react";
-import { stylePrimary, styleSecondary, buttonWrapper } from "./button-styles";
+import {
+  buttonWrapper,
+  styleAlarm,
+  stylePrimary,
+  styleSecondary,
+  styleSpecial,
+  styleTertiary,
+  styleTransparent,
+} from "./button-styles";
 import { ButtonType } from "./button-types";
 
 type ButtonRegularProps = {
@@ -38,6 +46,62 @@ export const ButtonRegular: FC<ButtonRegularProps> = ({
             disabled={disabled}
             type="button"
             className={styleSecondary}
+          >
+            {text}
+          </button>
+        </span>
+      );
+    }
+    case ButtonType.tertiary: {
+      return (
+        <span className={buttonWrapper}>
+          <button
+            onClick={onClick}
+            disabled={disabled}
+            type="button"
+            className={styleTertiary}
+          >
+            {text}
+          </button>
+        </span>
+      );
+    }
+    case ButtonType.transparent: {
+      return (
+        <span className={buttonWrapper}>
+          <button
+            onClick={onClick}
+            disabled={disabled}
+            type="button"
+            className={styleTransparent}
+          >
+            {text}
+          </button>
+        </span>
+      );
+    }
+    case ButtonType.alarm: {
+      return (
+        <span className={buttonWrapper}>
+          <button
+            onClick={onClick}
+            disabled={disabled}
+            type="button"
+            className={styleAlarm}
+          >
+            {text}
+          </button>
+        </span>
+      );
+    }
+    case ButtonType.special: {
+      return (
+        <span className={buttonWrapper}>
+          <button
+            onClick={onClick}
+            disabled={disabled}
+            type="button"
+            className={styleSpecial}
           >
             {text}
           </button>

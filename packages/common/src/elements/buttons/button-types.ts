@@ -3,4 +3,6 @@ export enum ButtonType {
   secondary,
   tertiary,
   transparent,
+  alarm,
+  special,
 }

@@ -23,11 +23,6 @@ module.exports = {
         ],
         code: ["Courier New", "Courier", "monospace"],
       },
-      colors: {
-        primary: "transparent",
-        secondary: "currentColor",
-        tertiary: "",
-      },
     },
   },
   variants: {},
