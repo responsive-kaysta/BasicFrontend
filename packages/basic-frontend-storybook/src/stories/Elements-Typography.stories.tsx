@@ -62,7 +62,7 @@ export const defaultStory = () => (
     <Hruler />
 
     <div>
-      <Link text="Regular Link Element" href="#" />
+      <Link text="Regular Link Element" href="https://responsive-it.biz" />
       <br />
       <Link text="Link new Window" href="https://responsive-it.biz" newWindow />
     </div>

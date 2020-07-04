@@ -1,5 +1,5 @@
 import React, { FC } from "react";
 
-export const Section: FC = ({ children }) => {
+export const SectionContainer: FC = ({ children }) => {
   return <section>{children}</section>;
 };
