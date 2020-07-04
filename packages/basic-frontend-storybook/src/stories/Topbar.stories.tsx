@@ -38,18 +38,18 @@ const CompFooter: FC = () => {
   return (
     <Footer>
       <section className="flex flex-row mt-4 text-xs sm:text-base">
-        <button className="mr-4">
+        <button className="mr-4" type="button">
           <Pictogram name="xing_logo_box" size={PictogramSize.xs} />
         </button>
-        <button className="mr-4">
+        <button className="mr-4" type="button">
           <Pictogram name="linkedin_logo_box" size={PictogramSize.xs} />
         </button>
       </section>
       <div className="mt-2 text-xs sm:text-sm">
-        <button>2020 - responsive IT</button>
+        <button type="button">2020 - responsive IT</button>
       </div>
       <div className="mt-2 mb-4 text-xs sm:text-sm">
-        <button>finest full-stack development</button>
+        <button type="button">finest full-stack development</button>
       </div>
     </Footer>
   );

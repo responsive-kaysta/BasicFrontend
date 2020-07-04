@@ -1,4 +1,4 @@
-export * from "./article-section";
+export * from "./sections";
 export * from "./features";
 export * from "./footer";
 export * from "./modal";

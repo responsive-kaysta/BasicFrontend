@@ -23,7 +23,7 @@ export const PanelFooter: FC<PanelFooterProps> = ({
     >
       <div className={`px-4 py-5 sm:p-6 ${contentCss || ""}`}>{content}</div>
       <div
-        className={`border-t px-4 py-4 sm:px-6 ${
+        className={`border-t px-4 py-4 sm:px-6 text-sm ${
           footerCss || "border-gray-200"
         }`}
       >

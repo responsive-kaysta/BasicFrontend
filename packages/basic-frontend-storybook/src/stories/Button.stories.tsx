@@ -1,6 +1,6 @@
 import { action } from '@storybook/addon-actions';
 import React from 'react';
-import { ButtonRegular, ButtonType } from 'responsive-it-common';
+import { ButtonRegular, ButtonType, Hruler } from 'responsive-it-common';
 
 export default {
   title: 'Design System / Elements / Buttons',
@@ -54,4 +54,4 @@ export const defaultStory = () => (
   </div>
 );
 
-defaultStory.storyName = 'All Icons';
+defaultStory.storyName = 'All Buttons';
