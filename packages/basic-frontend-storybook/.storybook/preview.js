@@ -1,4 +1,8 @@
 import React from "react";
+import { withInfo } from "@storybook/addon-info";
+import { withKnobs } from "@storybook/addon-knobs";
+import { addDecorator, addParameters, configure } from "@storybook/react";
+
 require("./generated-tailwind.css");
 
 export const parameters = {
@@ -21,3 +25,22 @@ export const parameters = {
 const withGlobalStyle = (storyFn) => <>{storyFn()}</>;
 
 export const decorators = [withGlobalStyle];
+
+addParameters({
+  options: {
+    name: "Basic-Frontend UI Kit",
+    sortStoriesByKind: true,
+  },
+});
+
+addDecorator(
+  withInfo({
+    inline: false,
+    header: false,
+    propTables: true,
+  })
+);
+
+addDecorator((story) => story());
+
+addDecorator(withKnobs);
