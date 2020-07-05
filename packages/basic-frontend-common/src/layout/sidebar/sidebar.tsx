@@ -1,26 +1,23 @@
 import React, { FC, ReactNode } from "react";
-import { ThemeType } from "../../identity";
 import { NavMobile } from "./nav-mobile";
 import { NavStatic } from "./nav-static";
 
 type BasicContainerProps = {
   children: ReactNode;
-  theme?: ThemeType;
   backgroundImage?: string;
 };
 
 export const Sidebar: FC<BasicContainerProps> = ({
   children,
-  theme,
   backgroundImage,
 }) => {
-  const style = `container mx-auto z-10 ${
-    theme
-      ? `${theme.bgColor} ${theme.textColor} ${theme.shadowColor}`
-      : "bg-gray-100 text-gray-900"
-  }`;
+  // const style = `container mx-auto z-10 ${
+  //   theme
+  //     ? `${theme.bgColor} ${theme.textColor} ${theme.shadowColor}`
+  //     : "bg-gray-100 text-gray-900"
+  // }`;
 
-  console.log("style: ", style);
+  // console.log("style: ", style);
 
   if (backgroundImage) {
     document.body.style.backgroundImage = `url(${backgroundImage})`;

@@ -20,11 +20,15 @@ export const parameters = {
     // by default this is false
     hideEmpty: true,
   },
+  isFullscreen: true,
+  showNav: true,
+  showPanel: true,
+  panelPosition: "bottom",
 };
 
 const withGlobalStyle = (storyFn) => (
-  <div className="bg-gray-200 w-full h-full">
-    <div>Styled Storybook Canvas with m-10 and bg-gray-200</div>
+  <div className="w-full h-full bg-blue-100">
+    <div>Styled Storybook Canvas with m-10 and bg-blue-100</div>
     <div className="m-10 h-full">{storyFn()}</div>
   </div>
 );
@@ -40,10 +44,12 @@ addDecorator(
   withInfo({
     inline: false,
     header: false,
-    propTables: true,
+    propTables: false,
   })
 );
 
 addDecorator((story) => story());
 
 addDecorator(withGlobalStyle);
+
+addDecorator(withKnobs);
