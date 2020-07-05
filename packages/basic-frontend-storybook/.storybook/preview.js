@@ -22,13 +22,16 @@ export const parameters = {
   },
 };
 
-const withGlobalStyle = (storyFn) => <>{storyFn()}</>;
-
-export const decorators = [withGlobalStyle];
+const withGlobalStyle = (storyFn) => (
+  <div className="bg-gray-200 w-full h-full">
+    <div>Styled Storybook Canvas with m-10 and bg-gray-200</div>
+    <div className="m-10 h-full">{storyFn()}</div>
+  </div>
+);
 
 addParameters({
   options: {
-    name: "Basic-Frontend UI Kit",
+    name: "Basic-Frontend Storybook",
     sortStoriesByKind: true,
   },
 });
@@ -43,4 +46,4 @@ addDecorator(
 
 addDecorator((story) => story());
 
-addDecorator(withKnobs);
+addDecorator(withGlobalStyle);
