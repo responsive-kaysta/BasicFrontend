@@ -25,7 +25,7 @@ export const CallToAction: FC<CallToActionProps> = ({
 }) => {
   return (
     <div className="bg-white">
-      <div className="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 md:py-16 lg:px-8 lg:py-20">
+      <div className="">
         <TitleAbstract>{ctaHeader}</TitleAbstract>
         <TextLead>{ctaText}</TextLead>
         <div className="mt-6 flex">

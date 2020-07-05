@@ -1,6 +1,6 @@
 {
-  "name": "responsive-it-common",
-  "version": "0.1.0",
+  "name": "basic-frontend-common",
+  "version": "0.1.2",
   "main": "build/index.js",
   "description": "This package provides commonly used components for the responsive-it apps.",
   "scripts": {
@@ -27,7 +27,9 @@
     "@types/react-dom": "^16.9.8",
     "@types/react-scroll": "^1.5.5",
     "copy-webpack-plugin": "^6.0.3",
-    "typescript": "^3.9.6"
+    "typescript": "^3.9.6",
+    "prettier": "2.0.5",
+    "rimraf": "3.0.2"
   },
   "dependencies": {
     "@tailwindcss/ui": "^0.3.0",
@@ -36,15 +38,12 @@
     "downloadjs": "^1.4.7",
     "js-sha256": "^0.9.0",
     "jwt-decode": "^2.2.0",
+    "prettier": "^2.0.5",
     "qs": "^6.9.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scroll": "^1.7.16",
     "rimraf": "^3.0.2",
     "tailwindcss": "^1.4.6"
-  },
-  "peerDependencies": {
-    "react": "^15.0.0 || ^16.0.0",
-    "react-dom": "^15.0.0 || ^16.0.0"
   }
 }
