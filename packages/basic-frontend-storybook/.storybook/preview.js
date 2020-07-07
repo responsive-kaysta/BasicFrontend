@@ -7,7 +7,11 @@ require("./generated-tailwind.css");
 
 export const parameters = {
   options: {
-    showRoots: true,
+    /**
+     * display the top-level grouping as a "root" in the sidebar
+     * @type {Boolean}
+     */
+    showRoots: false,
   },
   // automatically create action args for all props that start with "on"
   actions: { argTypesRegex: "^on.*" },
@@ -27,8 +31,7 @@ export const parameters = {
 };
 
 const withGlobalStyle = (storyFn) => (
-  <div className="w-full h-full bg-blue-100">
-    <div>Styled Storybook Canvas with m-10 and bg-blue-100</div>
+  <div className="w-full h-full bg-white">
     <div className="m-10 h-full">{storyFn()}</div>
   </div>
 );
