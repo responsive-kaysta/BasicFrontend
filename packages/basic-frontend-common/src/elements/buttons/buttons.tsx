@@ -8,30 +8,37 @@ import {
   styleTertiary,
   styleTransparent,
 } from "./button-styles";
-import { ButtonType } from "./button-types";
+import { ButtonType, ButtonSize } from "./button-types";
 
 type ButtonRegularProps = {
   text: string;
-  type: ButtonType;
-  onClick: () => void;
+
+  type?: ButtonType;
+  size?: ButtonSize;
   disabled?: boolean;
+
+  onClick: () => void;
 };
 
 export const ButtonRegular: FC<ButtonRegularProps> = ({
   text,
+
   type,
-  onClick,
+  size = ButtonSize.normal,
+
   disabled = false,
+
+  onClick,
 }) => {
   switch (type) {
     case ButtonType.primary: {
       return (
-        <span className={buttonWrapper}>
+        <span className={buttonWrapper(size)}>
           <button
             onClick={onClick}
             disabled={disabled}
             type="button"
-            className={stylePrimary}
+            className={stylePrimary(size)}
           >
             {text}
           </button>
@@ -40,12 +47,12 @@ export const ButtonRegular: FC<ButtonRegularProps> = ({
     }
     case ButtonType.secondary: {
       return (
-        <span className={buttonWrapper}>
+        <span className={buttonWrapper(size)}>
           <button
             onClick={onClick}
             disabled={disabled}
             type="button"
-            className={styleSecondary}
+            className={styleSecondary(size)}
           >
             {text}
           </button>
@@ -54,12 +61,12 @@ export const ButtonRegular: FC<ButtonRegularProps> = ({
     }
     case ButtonType.tertiary: {
       return (
-        <span className={buttonWrapper}>
+        <span className={buttonWrapper(size)}>
           <button
             onClick={onClick}
             disabled={disabled}
             type="button"
-            className={styleTertiary}
+            className={styleTertiary(size)}
           >
             {text}
           </button>
@@ -68,12 +75,12 @@ export const ButtonRegular: FC<ButtonRegularProps> = ({
     }
     case ButtonType.transparent: {
       return (
-        <span className={buttonWrapper}>
+        <span className={buttonWrapper(size)}>
           <button
             onClick={onClick}
             disabled={disabled}
             type="button"
-            className={styleTransparent}
+            className={styleTransparent(size)}
           >
             {text}
           </button>
@@ -82,12 +89,12 @@ export const ButtonRegular: FC<ButtonRegularProps> = ({
     }
     case ButtonType.alarm: {
       return (
-        <span className={buttonWrapper}>
+        <span className={buttonWrapper(size)}>
           <button
             onClick={onClick}
             disabled={disabled}
             type="button"
-            className={styleAlarm}
+            className={styleAlarm(size)}
           >
             {text}
           </button>
@@ -96,12 +103,12 @@ export const ButtonRegular: FC<ButtonRegularProps> = ({
     }
     case ButtonType.special: {
       return (
-        <span className={buttonWrapper}>
+        <span className={buttonWrapper(size)}>
           <button
             onClick={onClick}
             disabled={disabled}
             type="button"
-            className={styleSpecial}
+            className={styleSpecial(size)}
           >
             {text}
           </button>
@@ -110,12 +117,12 @@ export const ButtonRegular: FC<ButtonRegularProps> = ({
     }
     default: {
       return (
-        <span className={buttonWrapper}>
+        <span className={buttonWrapper(ButtonSize.normal)}>
           <button
             onClick={onClick}
             disabled={disabled}
             type="button"
-            className={stylePrimary}
+            className={stylePrimary(size)}
           >
             {text}
           </button>

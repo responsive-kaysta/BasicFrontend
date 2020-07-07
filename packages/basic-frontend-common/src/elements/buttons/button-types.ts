@@ -6,3 +6,8 @@ export enum ButtonType {
   alarm,
   special,
 }
+
+export enum ButtonSize {
+  small,
+  normal,
+}
