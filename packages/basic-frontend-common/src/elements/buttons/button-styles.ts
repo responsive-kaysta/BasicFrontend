@@ -61,7 +61,7 @@ export const styleTransparent = (size: ButtonSize) => {
     size
   )} text-gray-900 ${buttonTextStyle(
     size
-  )} bg-transparent hover:bg-gray-100 hover:shadow-lg focus:outline-none focus:border-indigo-300 focus:shadow-outline-indigo active:bg-transparent transition ease-in-out duration-150`;
+  )} bg-transparent hover:bg-gray-50 hover:shadow-lg focus:outline-none focus:border-indigo-300 focus:shadow-outline-indigo active:bg-transparent transition ease-in-out duration-150`;
 };
 
 export const styleAlarm = (size: ButtonSize) => {

@@ -1,72 +1,39 @@
-import {
-  ContainerBasic,
-  Hruler,
-  Link,
-  PanelHeader,
-  TextColumn,
-  TextLead,
-  TextRegular,
-  Title,
-  TitleAbstract,
-  TitleSub,
-} from "basic-frontend-common";
+import { action } from "@storybook/addon-actions";
+import { boolean } from "@storybook/addon-knobs";
+import { storiesOf } from "@storybook/react";
+import { ButtonRegular, ButtonSize, ButtonType } from "basic-frontend-common";
 import React from "react";
 
-export default {
-  title: "Design System / 02 Elements / Typography",
-  component: [
-    ContainerBasic,
-    Hruler,
-    Link,
-    PanelHeader,
-    TextColumn,
-    TextLead,
-    TextRegular,
-    Title,
-    TitleAbstract,
-    TitleSub,
-  ],
-};
+storiesOf("Design System / 02 Elements", module).add("Typography", () => (
+  <div className="container">
+    <section className="flex flex-row mb-10">
+      <div className="w-1/3 text-xl">Button-Type</div>
+      <div className="w-2/3 text-xl">Example</div>
+    </section>
 
-export const defaultStory = () => (
-  <div className="flex flex-col">
-    <Title>Title: Lorem ipsum dolor sit amet</Title>
-
-    <Hruler />
-
-    <TitleSub>TitleSub: Lorem ipsum dolor sit amet</TitleSub>
-
-    <Hruler />
-
-    <TitleAbstract>TitleAbstract: Lorem ipsum dolor sit amet</TitleAbstract>
-
-    <Hruler />
-
-    <TextRegular>
-      TextRegular: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-      diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-      erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
-      rebum.
-    </TextRegular>
-
-    <Hruler />
-
-    <TextLead>
-      TextLead: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-      diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-      erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
-      rebum.
-    </TextLead>
-
-    <Hruler />
-
-    <div>
-      <Link text="Regular Link Element" href="https://responsive-it.biz" />
-      <br />
-      <Link text="Link new Window" href="https://responsive-it.biz" newWindow />
-    </div>
-    <Hruler />
+    <section className="flex flex-row mb-10">
+      <div className="w-1/3">Button primary</div>
+      <div className="w-2/3 flex flex-row justify-between">
+        <ButtonRegular
+          text="Size normal"
+          size={ButtonSize.normal}
+          type={ButtonType.primary}
+          onClick={action("clicked")}
+        />
+        <ButtonRegular
+          text="Size small"
+          size={ButtonSize.small}
+          type={ButtonType.primary}
+          onClick={action("clicked")}
+        />
+        <ButtonRegular
+          text="Disabled"
+          type={ButtonType.primary}
+          size={ButtonSize.normal}
+          disabled={boolean("Disabled", true)}
+          onClick={action("clicked")}
+        />
+      </div>
+    </section>
   </div>
-);
-
-defaultStory.storyName = "Text-Elements";
+));
