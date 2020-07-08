@@ -1,7 +1,7 @@
 import React, { FC, useState, useEffect } from "react";
-import { RadioButton } from "./radio-button";
+import { RadioButton } from "./radiobutton";
 
-type RadiobuttonGroupProps = {
+type RadioButtonGroupProps = {
   id: string;
   name: string;
 
@@ -17,7 +17,7 @@ type RadiobuttonGroupProps = {
   selectedItem?: string;
 };
 
-export const RadiobuttonGroup: FC<RadiobuttonGroupProps> = ({
+export const RadioButtonGroup: FC<RadioButtonGroupProps> = ({
   id,
   name,
   legend,
@@ -30,7 +30,7 @@ export const RadiobuttonGroup: FC<RadiobuttonGroupProps> = ({
   useEffect(() => setSelected(selectedItem || null), [selectedItem]);
 
   return (
-    <fieldset className="mt-6" id={id} name={name}>
+    <fieldset className="" id={id} name={name}>
       <legend className="text-base font-medium text-gray-900">{legend}</legend>
       {comment && <p className="text-sm leading-5 text-gray-500">{comment}</p>}
       {options.map((item) => {

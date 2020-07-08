@@ -2,10 +2,10 @@ import { action } from "@storybook/addon-actions";
 import { select } from "@storybook/addon-knobs";
 import { storiesOf } from "@storybook/react";
 import {
-  Checkbox,
+  CheckBoxGroup,
   Dropdown,
   Input,
-  RadiobuttonGroup,
+  RadioButtonGroup,
 } from "basic-frontend-common";
 import React from "react";
 
@@ -24,33 +24,41 @@ const optionsDropdown: { value: string; label: string }[] = [
   },
 ];
 
-const optionsRadio: {
-  id: string;
-  name: string;
+const optionsCheckBox: {
   value: string;
   label: string;
-  checked: boolean;
+  checked?: boolean;
 }[] = [
   {
-    id: "id1",
-    name: "radio1",
     value: "value1",
     label: "Label 1",
-    checked: false,
-  },
-  {
-    id: "id2",
-    name: "radio2",
-    value: "value2",
-    label: "Label 2",
     checked: true,
   },
   {
-    id: "id3",
-    name: "radio3",
+    value: "value2",
+    label: "Label 2",
+  },
+  {
     value: "value3",
     label: "Label 3",
-    checked: false,
+  },
+];
+
+const optionsRadioButton: {
+  value: string;
+  label: string;
+}[] = [
+  {
+    value: "value1",
+    label: "Label 1",
+  },
+  {
+    value: "value2",
+    label: "Label 2",
+  },
+  {
+    value: "value3",
+    label: "Label 3",
   },
 ];
 
@@ -62,21 +70,28 @@ storiesOf("Design System / 02 Elements", module).add("Form", () => (
     </section>
 
     <section className="flex flex-row mb-10">
-      <div className="w-1/3">Checkbox</div>
+      <div className="w-1/3">CheckBoxGroup</div>
       <div className="w-2/3 flex flex-row justify-between">
-        <Checkbox />
+        <CheckBoxGroup
+          id="TheId"
+          name="TheName"
+          legend="CheckBoxGroup Legend"
+          comment="CheckBoxGroup Comment"
+          options={optionsCheckBox}
+          onChange={action(`Checked`)}
+        />
       </div>
     </section>
 
     <section className="flex flex-row mb-10">
-      <div className="w-1/3">Checkbox</div>
+      <div className="w-1/3">RadioButtonGroup</div>
       <div className="w-2/3 flex flex-row justify-between">
-        <RadiobuttonGroup
+        <RadioButtonGroup
           id="TheId"
           name="TheName"
-          legend="Radio-Button Legend"
-          comment="Radio-Button Comment"
-          options={optionsRadio}
+          legend="RadioButtonGroup Legend"
+          comment="RadioButtonGroup Comment"
+          options={optionsRadioButton}
           onChange={action("onChecked")}
           selectedItem="value2"
         />
