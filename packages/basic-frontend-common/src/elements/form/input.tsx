@@ -16,7 +16,6 @@ export const Input: FC<InputProps> = ({
   label,
   placeholderText,
   onInputChanged,
-  ...props
 }) => {
   return (
     <div>
@@ -34,7 +33,6 @@ export const Input: FC<InputProps> = ({
           onChange={({ target: { value } }) => onInputChanged(value)}
           className="form-input block w-full sm:text-sm sm:leading-5"
           placeholder={placeholderText}
-          {...props}
         />
       </div>
     </div>
