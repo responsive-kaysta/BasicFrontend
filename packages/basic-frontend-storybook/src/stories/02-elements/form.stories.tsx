@@ -128,7 +128,7 @@ storiesOf("Design System / 02 Elements", module).add("Form", () => (
     </section>
 
     <section className="flex flex-row mb-10">
-      <div className="w-1/3">Input</div>
+      <div className="w-1/3">Textarea</div>
       <div className="w-2/3 flex flex-row justify-between">
         <Textarea
           id="TheId"

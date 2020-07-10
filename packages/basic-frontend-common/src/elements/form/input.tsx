@@ -18,7 +18,7 @@ export const Input: FC<InputProps> = ({
   onInputChanged,
 }) => {
   return (
-    <div>
+    <div className="w-full">
       <label
         htmlFor={id}
         className="block text-sm font-medium leading-5 text-gray-700"

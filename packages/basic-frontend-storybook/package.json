@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "start-storybook -p 6006",
-    "build": "build-storybook"
+    "start": "start-storybook -s ./public -p 6006",
+    "build": "build-storybook",
+    "copy-storybook-assets": "copyfiles -f \"**/assets/*\" -u 1 .out"
   },
   "keywords": [],
   "author": "",
