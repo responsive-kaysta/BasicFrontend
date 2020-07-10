@@ -18,12 +18,12 @@
     "assets"
   ],
   "devDependencies": {
-    "@types/auth0-js": "^9.13.2",
+    "@types/auth0-js": "^9.13.3",
     "@types/downloadjs": "^1.4.2",
     "@types/enzyme": "^3.10.5",
     "@types/jwt-decode": "^2.2.1",
     "@types/qs": "^6.9.3",
-    "@types/react": "^16.9.41",
+    "@types/react": "^16.9.42",
     "@types/react-dom": "^16.9.8",
     "@types/react-scroll": "^1.5.5",
     "copy-webpack-plugin": "^6.0.3",
@@ -42,7 +42,7 @@
     "qs": "^6.9.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scroll": "^1.7.16",
+    "react-scroll": "^1.8.0",
     "rimraf": "^3.0.2",
     "tailwindcss": "^1.4.6"
   }

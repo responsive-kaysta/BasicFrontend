@@ -1,3 +1,5 @@
+// const CopyPlugin = require("copy-webpack-plugin");
+
 module.exports = ({ config }) => {
   config.module.rules.push({
     test: /\.(ts|tsx)$/,
