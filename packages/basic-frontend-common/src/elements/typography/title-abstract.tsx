@@ -1,9 +1,14 @@
-import React, { FC } from "react";
+import React, { FC, ReactNode } from "react";
+import { ThemeType } from "../../identity";
 
-export const TitleAbstract: FC = ({ children }) => {
-  return (
-    <h3 className="text-lg font-semibold md:text-xl md:font-bold uppercase tracking-wider">
-      {children}
-    </h3>
-  );
+type TitleAbstractProps = {
+  children: ReactNode;
+  theme?: ThemeType;
+};
+
+export const TitleAbstract: FC<TitleAbstractProps> = ({ children, theme }) => {
+  const style = `${
+    theme ? theme.body.textColor : "text-gray-800"
+  } text-lg font-semibold md:text-xl md:font-bold uppercase tracking-wider`;
+  return <h3 className={style}>{children}</h3>;
 };

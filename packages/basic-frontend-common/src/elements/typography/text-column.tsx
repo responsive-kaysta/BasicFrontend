@@ -1,9 +1,14 @@
-import React, { FC } from "react";
+import React, { FC, ReactNode } from "react";
+import { ThemeType } from "../../identity";
 
-export const TextColumn: FC = ({ children }) => {
-  return (
-    <p className="text-base font-normal md:text-lg md:font-medium">
-      {children}
-    </p>
-  );
+type TextColumnProps = {
+  children: ReactNode;
+  theme?: ThemeType;
+};
+
+export const TextColumn: FC<TextColumnProps> = ({ children, theme }) => {
+  const style = `${
+    theme ? theme.body.textColor : "text-gray-800"
+  } text-base font-normal md:text-lg md:font-medium`;
+  return <p className={style}>{children}</p>;
 };

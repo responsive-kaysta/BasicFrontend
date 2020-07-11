@@ -1,5 +1,5 @@
 import React, { FC } from "react";
 
-export const Spacer: FC = ({ children }) => {
-  return <div>{children}</div>;
+export const Spacer: FC = () => {
+  return <br />;
 };
