@@ -11,8 +11,8 @@ import React from "react";
 storiesOf("Design System / 02 Elements", module).add("Text-Elements", () => (
   <div className="container">
     <section className="flex flex-row mb-10">
-      <div className="w-1/3 text-xl">Text-Element-Type</div>
-      <div className="w-2/3 text-xl">Example</div>
+      <div className="w-1/3 text-xl">Type</div>
+      <div className="w-2/3 text-xl">Swarm</div>
     </section>
 
     <section className="flex flex-row mb-10">

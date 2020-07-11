@@ -1,3 +1,4 @@
-export * from "./article-section";
-export * from "./section-container";
-export * from "./section-header";
+export * from "./article";
+export * from "./footer";
+export * from "./header";
+export * from "./section";
