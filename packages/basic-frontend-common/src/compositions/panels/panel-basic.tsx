@@ -1,15 +1,16 @@
 import React, { FC, ReactNode } from "react";
+import { ThemeType } from "../../identity";
+import { contentStyle, wrapperStyle } from "./styles";
 
 type PanelBasicProps = {
   children: ReactNode;
+  theme?: ThemeType;
 };
 
-export const PanelBasic: FC<PanelBasicProps> = ({ children }) => {
+export const PanelBasic: FC<PanelBasicProps> = ({ children, theme }) => {
   return (
-    <div
-      className={`bg-white border-gray-300 overflow-hidden shadow rounded-lg`}
-    >
-      <div className={`px-4 py-5 sm:p-6`}>{children}</div>
+    <div className={wrapperStyle(theme)}>
+      <div className={contentStyle()}>{children}</div>
     </div>
   );
 };

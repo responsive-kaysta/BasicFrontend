@@ -14,8 +14,8 @@ export const EyeCatcher: FC<EyeCatcherProps> = ({
   theme,
 }) => {
   const style = `w-full p-4 md:p-6 text-center ${
-    theme ? theme.body.backgroundColor : "bg-gray-100"
-  }`;
+    theme ? theme.body.backgroundColor : "bg-gray-50"
+  } overflow-hidden shadow-lg rounded-lg`;
   return (
     <section className={style}>
       <TitleSub theme={theme}>{contentTop}</TitleSub>

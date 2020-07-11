@@ -1,45 +1,25 @@
 import React, { FC, ReactNode } from "react";
+import { ThemeType } from "../../identity";
+import { contentStyle, footerStyle, headerStyle, wrapperStyle } from "./styles";
 
 type PanelHeaderFooterProps = {
+  children: ReactNode;
   header: ReactNode;
-  content: ReactNode;
   footer: ReactNode;
-  contentCss?: string;
-  headerCss?: string;
-  footerCss?: string;
-  wrapperCss?: string;
+  theme?: ThemeType;
 };
 
 export const PanelHeaderFooter: FC<PanelHeaderFooterProps> = ({
   header,
-  content,
+  children,
   footer,
-  contentCss,
-  headerCss,
-  footerCss,
-  wrapperCss,
+  theme,
 }) => {
   return (
-    <div
-      className={`overflow-hidden shadow rounded-lg ${
-        wrapperCss || "bg-white"
-      }`}
-    >
-      <div
-        className={`border-b px-4 py-5 sm:px-6 text-lg font-semibold leading-5 ${
-          headerCss || "border-gray-200"
-        }`}
-      >
-        {header}
-      </div>
-      <div className={`px-4 py-5 sm:p-6 ${contentCss || ""}`}>{content}</div>
-      <div
-        className={`border-t px-4 py-4 sm:px-6 text-sm ${
-          footerCss || "border-gray-200"
-        }`}
-      >
-        {footer}
-      </div>
+    <div className={wrapperStyle(theme)}>
+      <div className={headerStyle(theme)}>{header}</div>
+      <div className={contentStyle()}>{children}</div>
+      <div className={footerStyle(theme)}>{footer}</div>
     </div>
   );
 };

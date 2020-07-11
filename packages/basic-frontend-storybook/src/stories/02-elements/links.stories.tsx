@@ -5,7 +5,7 @@ import React from "react";
 storiesOf("Design System / 02 Elements", module).add("Links", () => (
   <div className="container">
     <section className="flex flex-row mb-10">
-      <div className="w-1/3 text-xl">Link</div>
+      <div className="w-1/3 text-xl">Links</div>
       <div className="w-2/3 text-xl">Example</div>
     </section>
 
