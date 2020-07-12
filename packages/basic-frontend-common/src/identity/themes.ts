@@ -16,4 +16,9 @@ export type ThemeType = {
     backgroundColor: string;
     borderColor: string;
   };
+  format: {
+    codeTextColor: string;
+    codeBorderColor: string;
+    codeBackgroundColor: string;
+  };
 };

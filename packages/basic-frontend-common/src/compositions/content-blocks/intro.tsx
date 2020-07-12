@@ -6,8 +6,8 @@ import { TextLead } from "../../elements";
 
 type IntroProps = {
   title: string;
-  subTitle: string;
-  lead: string;
+  subTitle?: string;
+  lead?: string;
   theme?: ThemeType;
 };
 
@@ -15,7 +15,7 @@ export const Intro: FC<IntroProps> = ({ title, subTitle, lead, theme }) => {
   return (
     <SectionHeader>
       <PageTitle title={title} subTitle={subTitle} theme={theme} />
-      <TextLead theme={theme}>{lead}</TextLead>
+      {lead && <TextLead theme={theme}>{lead}</TextLead>}
     </SectionHeader>
   );
 };
