@@ -7,5 +7,6 @@ type ArticleSectionProps = {
 };
 
 export const SectionArticle: FC<ArticleSectionProps> = ({ children }) => {
-  return <article>{children}</article>;
+  const style = `w-full`;
+  return <article className={style}>{children}</article>;
 };

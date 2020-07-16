@@ -7,5 +7,6 @@ type SectionFooterProps = {
 };
 
 export const SectionFooter: FC<SectionFooterProps> = ({ children }) => {
-  return <footer>{children}</footer>;
+  const style = `w-full`;
+  return <footer className={style}>{children}</footer>;
 };

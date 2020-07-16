@@ -27,7 +27,7 @@ export const Product: FC<ProductProps> = ({
         <Hruler theme={theme} />
         <TextRegular theme={theme}>{content}</TextRegular>
       </div>
-      <div className="w-2/4 ml-4">
+      <div className="w-2/4 ml-4 md:ml-8">
         <Image src={src} alt={alt} caption={caption} />
       </div>
     </div>

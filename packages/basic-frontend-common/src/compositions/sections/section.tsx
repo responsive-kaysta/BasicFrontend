@@ -7,6 +7,6 @@ type SectionProps = {
 };
 
 export const Section: FC<SectionProps> = ({ children, theme }) => {
-  const style = `${theme ? theme.body.backgroundColor : ""}`;
+  const style = `w-full ${theme ? theme.body.backgroundColor : ""}`;
   return <section className={style}>{children}</section>;
 };

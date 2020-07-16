@@ -1,5 +1,5 @@
 import { storiesOf } from "@storybook/react";
-import { Intro, Product } from "basic-frontend-common";
+import { Intro, Product, IntroAbstract, TagCloud } from "basic-frontend-common";
 import React from "react";
 
 storiesOf("Design System / 03 Compositions", module).add(
@@ -19,6 +19,24 @@ storiesOf("Design System / 03 Compositions", module).add(
             subTitle="Lorem ipsum dolor sit amet, consetetur sadipscing elitr"
             lead="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
           />
+        </div>
+      </section>
+
+      <section className="flex flex-row mb-10">
+        <div className="w-1/3">Intro-Abstract without Theme</div>
+        <div className="w-2/3 flex flex-row justify-between">
+          <IntroAbstract
+            title="Lorem ipsum dolor sit amet"
+            hruler
+            lead="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+          />
+        </div>
+      </section>
+
+      <section className="flex flex-row mb-10">
+        <div className="w-1/3">Tag-Cloud without Theme</div>
+        <div className="w-2/3 flex flex-row justify-between">
+          <TagCloud title="Lorem ipsum dolor sit amet" hruler tags={[]} />
         </div>
       </section>
 

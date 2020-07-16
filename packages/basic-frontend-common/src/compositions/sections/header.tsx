@@ -5,6 +5,6 @@ type SectionHeaderProps = {
 };
 
 export const SectionHeader: FC<SectionHeaderProps> = ({ children }) => {
-  const style = `mb-2 md:mb-4`;
+  const style = `w-full mb-2 md:mb-4`;
   return <header className={style}>{children}</header>;
 };
