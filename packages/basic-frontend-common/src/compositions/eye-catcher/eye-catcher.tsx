@@ -16,7 +16,7 @@ export const EyeCatcher: FC<EyeCatcherProps> = ({
   theme,
 }) => {
   const style = `w-full p-4 md:p-6 text-center ${
-    theme ? theme.body.backgroundColor : "bg-gray-50"
+    theme ? theme.body.backgroundColor : "bg-gray-100"
   } overflow-hidden ${shadow ? "shadow-lg" : ""} `;
   return (
     <section className={style}>
