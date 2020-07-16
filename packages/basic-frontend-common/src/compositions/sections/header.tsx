@@ -9,7 +9,7 @@ type SectionHeaderProps = {
 export const SectionHeader: FC<SectionHeaderProps> = ({ children, theme }) => {
   const style = `w-full ${
     theme
-      ? `${theme.body.headerBackgroundColor} ${theme.body.headerTextColor}`
+      ? `${theme.body.backgroundColor} ${theme.body.textColor}`
       : "bg-gray-50 text-gray-800"
   }`;
   return <header className={style}>{children}</header>;

@@ -3,10 +3,6 @@ export type ThemeType = {
     textColor: string;
     backgroundColor: string;
     borderColor: string;
-    headerBackgroundColor: string;
-    headerTextColor: string;
-    footerBackgroundColor: string;
-    footerTextColor: string;
   };
   link: {
     textColor: string;
