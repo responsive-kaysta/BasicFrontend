@@ -6,7 +6,11 @@ type SectionFooterProps = {
   theme?: ThemeType;
 };
 
-export const SectionFooter: FC<SectionFooterProps> = ({ children }) => {
-  const style = `w-full`;
+export const SectionFooter: FC<SectionFooterProps> = ({ children, theme }) => {
+  const style = `w-full ${
+    theme
+      ? `${theme.body.footerBackgroundColor} ${theme.body.footerTextColor}`
+      : "bg-gray-50 text-gray-800"
+  }`;
   return <footer className={style}>{children}</footer>;
 };

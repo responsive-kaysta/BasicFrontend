@@ -5,6 +5,7 @@ import {
   IntroAbstract,
   TagCloud,
   TagItem,
+  IntroComplex,
 } from "basic-frontend-common";
 import React from "react";
 
@@ -56,7 +57,7 @@ storiesOf("Design System / 03 Compositions", module).add(
       </section>
 
       <section className="flex flex-row mb-10">
-        <div className="w-1/3">Intro-Abstract without Theme</div>
+        <div className="w-1/3">IntroAbstract without Theme</div>
         <div className="w-2/3 flex flex-row justify-between">
           <IntroAbstract
             title="Lorem ipsum dolor sit amet"
@@ -67,9 +68,21 @@ storiesOf("Design System / 03 Compositions", module).add(
       </section>
 
       <section className="flex flex-row mb-10">
-        <div className="w-1/3">Tag-Cloud without Theme</div>
+        <div className="w-1/3">TagCloud without Theme</div>
         <div className="w-2/3 flex flex-row justify-between">
           <TagCloud title="Lorem ipsum dolor sit amet" hruler tags={tagList} />
+        </div>
+      </section>
+
+      <section className="flex flex-row mb-10">
+        <div className="w-1/3">IntroComplex without Theme</div>
+        <div className="w-2/3 flex flex-row justify-between">
+          <IntroComplex
+            title="Lorem ipsum dolor sit amet"
+            titleComponent={<div>Div inside</div>}
+            hruler
+            lead="At vero eos et accusam et justo duo dolores et ea rebum."
+          />
         </div>
       </section>
 

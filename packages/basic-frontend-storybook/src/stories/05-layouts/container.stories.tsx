@@ -1,25 +1,22 @@
 import { storiesOf } from "@storybook/react";
-import {
-  ContainerBasic,
-  TextLead,
-  TextRegular,
-  Title,
-} from "basic-frontend-common";
+import { ContainerArticle } from "basic-frontend-common";
 import React from "react";
 
 storiesOf("Design System / 05 Layouts / Container", module).add(
-  "ContainerBasic, no Theme",
+  "Container's",
   () => (
-    <ContainerBasic>
-      <Title>ContainerBasic component</Title>
-      <TextLead>container mx-auto bg-gray-100 (default) text-gray-800</TextLead>
-      <TextRegular>
-        Contains the following components: [ContainerBasic] &gt; [Title] -
-        [TextLead] - [TextRegular]
-      </TextRegular>
-    </ContainerBasic>
-  ),
-  {
-    info: { source: true, inline: false },
-  }
+    <div className="container">
+      <section className="flex flex-row mb-10">
+        <div className="w-1/3 text-xl">Type</div>
+        <div className="w-2/3 text-xl">Swarm</div>
+      </section>
+
+      <section className="flex flex-row mb-10">
+        <div className="w-1/3">ContainerArticle without Theme</div>
+        <div className="w-2/3 flex flex-row justify-between">
+          <ContainerArticle>Container Content</ContainerArticle>
+        </div>
+      </section>
+    </div>
+  )
 );

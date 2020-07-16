@@ -6,7 +6,14 @@ type ArticleSectionProps = {
   theme?: ThemeType;
 };
 
-export const SectionArticle: FC<ArticleSectionProps> = ({ children }) => {
-  const style = `w-full`;
+export const SectionArticle: FC<ArticleSectionProps> = ({
+  children,
+  theme,
+}) => {
+  const style = `w-full ${
+    theme
+      ? `${theme.body.backgroundColor} ${theme.body.textColor}`
+      : "bg-gray-50 text-gray-800"
+  }`;
   return <article className={style}>{children}</article>;
 };
