@@ -15,7 +15,7 @@ export const ContainerBody: FC<BasicContainerProps> = ({
   const style = `w-screen h-screen ${
     theme
       ? `${theme.body.backgroundColor} ${theme.body.textColor}`
-      : "bg-gray-50 text-gray-800"
+      : "bg-gray-100 text-gray-800"
   }`;
 
   if (backgroundImage) {

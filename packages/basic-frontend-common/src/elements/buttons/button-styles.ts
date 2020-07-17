@@ -31,7 +31,7 @@ export const stylePrimary = (size: ButtonSize) => {
     size
   )} text-gray-700 ${buttonTextStyle(
     size
-  )} bg-gray-100 hover:text-gray-500 hover:shadow-lg focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:text-gray-800 active:bg-gray-50 transition ease-in-out duration-150`;
+  )} bg-gray-100 hover:text-gray-500 hover:shadow-lg focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:text-gray-800 active:bg-gray-100 transition ease-in-out duration-150`;
 };
 
 export const styleSecondary = (size: ButtonSize) => {
@@ -61,7 +61,7 @@ export const styleTransparent = (size: ButtonSize) => {
     size
   )} text-gray-900 ${buttonTextStyle(
     size
-  )} bg-transparent hover:bg-gray-50 hover:shadow-lg focus:outline-none focus:border-indigo-300 focus:shadow-outline-indigo active:bg-transparent transition ease-in-out duration-150`;
+  )} bg-transparent hover:bg-gray-100 hover:shadow-lg focus:outline-none focus:border-indigo-300 focus:shadow-outline-indigo active:bg-transparent transition ease-in-out duration-150`;
 };
 
 export const styleAlarm = (size: ButtonSize) => {

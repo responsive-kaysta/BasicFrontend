@@ -10,7 +10,7 @@ export const Section: FC<SectionProps> = ({ children, theme }) => {
   const style = `w-full ${
     theme
       ? `${theme.body.backgroundColor} ${theme.body.textColor}`
-      : "bg-gray-50 text-gray-800"
+      : "bg-gray-100 text-gray-800"
   }`;
   return <section className={style}>{children}</section>;
 };

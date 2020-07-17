@@ -15,7 +15,7 @@ export const ContainerSection: FC<BasicContainerProps> = ({
   const style = `container ${cssStyle ? cssStyle : ""} ${
     theme
       ? `${theme.body.backgroundColor} ${theme.body.textColor}`
-      : "bg-gray-50 text-gray-800"
+      : "bg-gray-100 text-gray-800"
   }`;
   return <section className={style}>{children}</section>;
 };

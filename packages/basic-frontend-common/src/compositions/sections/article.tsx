@@ -13,7 +13,7 @@ export const SectionArticle: FC<ArticleSectionProps> = ({
   const style = `w-full ${
     theme
       ? `${theme.body.backgroundColor} ${theme.body.textColor}`
-      : "bg-gray-50 text-gray-800"
+      : "bg-gray-100 text-gray-800"
   }`;
   return <article className={style}>{children}</article>;
 };

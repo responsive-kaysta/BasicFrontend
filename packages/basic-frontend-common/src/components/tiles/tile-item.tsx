@@ -20,7 +20,7 @@ export const TileItem: FC<TileElementProps> = ({
   theme,
 }) => {
   const style = `table-cell p-2 md:p-4 lg:p-6 mr-2 mb-2 md:mr-4 md:mb-4 lg:mr-6 lg:mb-6 rounded-lg border-2 shadow-md hover:shadow-lg ${
-    theme ? theme.body.backgroundColor : "bg-gray-50"
+    theme ? theme.body.backgroundColor : "bg-gray-100"
   } ${theme ? theme.body.textColor : "text-gray-800"} ${
     theme ? theme.body.borderColor : "border-gray-400"
   }`;

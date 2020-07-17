@@ -3,7 +3,7 @@ import { ThemeType } from "../../identity";
 export const wrapperStyle = (theme?: ThemeType) => {
   return theme
     ? `${theme.body.backgroundColor} ${theme.body.borderColor} ${theme.body.textColor} overflow-hidden shadow-lg rounded-lg`
-    : "bg-gray-50 border-gray-300 text-gray-800 overflow-hidden shadow-lg rounded-lg";
+    : "bg-gray-100 border-gray-300 text-gray-800 overflow-hidden shadow-lg rounded-lg";
 };
 
 export const headerStyle = (theme?: ThemeType) => {
