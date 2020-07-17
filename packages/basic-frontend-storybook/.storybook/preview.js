@@ -31,7 +31,7 @@ export const parameters = {
 };
 
 const withGlobalStyle = (storyFn) => (
-  <div className="w-full h-full bg-white">
+  <div className="w-full h-full">
     <div className="m-10 h-full">{storyFn()}</div>
   </div>
 );
