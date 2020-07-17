@@ -3,14 +3,16 @@ import { ThemeType } from "../../identity";
 
 type BasicContainerProps = {
   children: ReactNode;
+  cssStyle?: string;
   theme?: ThemeType;
 };
 
 export const ContainerSection: FC<BasicContainerProps> = ({
   children,
+  cssStyle,
   theme,
 }) => {
-  const style = `container ${
+  const style = `container ${cssStyle ? cssStyle : ""} ${
     theme
       ? `${theme.body.backgroundColor} ${theme.body.textColor}`
       : "bg-gray-50 text-gray-800"

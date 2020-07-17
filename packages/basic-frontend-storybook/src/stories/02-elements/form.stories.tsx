@@ -66,13 +66,13 @@ const optionsRadioButton: {
 storiesOf("Design System / 02 Elements", module).add("Form", () => (
   <div className="container">
     <section className="flex flex-row mb-10">
-      <div className="w-1/3 text-xl">Type</div>
-      <div className="w-2/3 text-xl">Swarm</div>
+      <div className="w-1/4 text-xl">Type</div>
+      <div className="w-3/4 text-xl">Swarm</div>
     </section>
 
     <section className="flex flex-row mb-10">
-      <div className="w-1/3">CheckBoxGroup</div>
-      <div className="w-2/3 flex flex-row justify-between">
+      <div className="w-1/4">CheckBoxGroup</div>
+      <div className="w-3/4 flex flex-row justify-between">
         <CheckBoxGroup
           id="TheId"
           name="TheName"
@@ -85,8 +85,8 @@ storiesOf("Design System / 02 Elements", module).add("Form", () => (
     </section>
 
     <section className="flex flex-row mb-10">
-      <div className="w-1/3">RadioButtonGroup</div>
-      <div className="w-2/3 flex flex-row justify-between">
+      <div className="w-1/4">RadioButtonGroup</div>
+      <div className="w-3/4 flex flex-row justify-between">
         <RadioButtonGroup
           id="TheId"
           name="TheName"
@@ -100,8 +100,8 @@ storiesOf("Design System / 02 Elements", module).add("Form", () => (
     </section>
 
     <section className="flex flex-row mb-10">
-      <div className="w-1/3">Dropdown</div>
-      <div className="w-2/3 flex flex-row justify-between">
+      <div className="w-1/4">Dropdown</div>
+      <div className="w-3/4 flex flex-row justify-between">
         <Dropdown
           id="TheId"
           name="TheName"
@@ -114,8 +114,8 @@ storiesOf("Design System / 02 Elements", module).add("Form", () => (
     </section>
 
     <section className="flex flex-row mb-10">
-      <div className="w-1/3">Input</div>
-      <div className="w-2/3 flex flex-row justify-between">
+      <div className="w-1/4">Input</div>
+      <div className="w-3/4 flex flex-row justify-between">
         <Input
           id="TheId"
           name="TheName"
@@ -128,8 +128,8 @@ storiesOf("Design System / 02 Elements", module).add("Form", () => (
     </section>
 
     <section className="flex flex-row mb-10">
-      <div className="w-1/3">Textarea</div>
-      <div className="w-2/3 flex flex-row justify-between">
+      <div className="w-1/4">Textarea</div>
+      <div className="w-3/4 flex flex-row justify-between">
         <Textarea
           id="TheId"
           name="TheName"

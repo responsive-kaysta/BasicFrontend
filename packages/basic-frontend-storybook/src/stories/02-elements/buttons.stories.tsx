@@ -7,13 +7,13 @@ import React from "react";
 storiesOf("Design System / 02 Elements", module).add("Buttons", () => (
   <div className="container">
     <section className="flex flex-row mb-10">
-      <div className="w-1/3 text-xl">Type</div>
-      <div className="w-2/3 text-xl">Swarm</div>
+      <div className="w-1/4 text-xl">Type</div>
+      <div className="w-3/4 text-xl">Swarm</div>
     </section>
 
     <section className="flex flex-row mb-10">
-      <div className="w-1/3">Button primary</div>
-      <div className="w-2/3 flex flex-row justify-between">
+      <div className="w-1/4">Button primary</div>
+      <div className="w-3/4 flex flex-row justify-between">
         <ButtonRegular
           text="Size normal"
           size={ButtonSize.normal}
@@ -37,8 +37,8 @@ storiesOf("Design System / 02 Elements", module).add("Buttons", () => (
     </section>
 
     <section className="flex flex-row mb-10">
-      <div className="w-1/3">Button secondary</div>
-      <div className="w-2/3 flex flex-row justify-between">
+      <div className="w-1/4">Button secondary</div>
+      <div className="w-3/4 flex flex-row justify-between">
         <ButtonRegular
           text="Size normal"
           size={ButtonSize.normal}
@@ -62,8 +62,8 @@ storiesOf("Design System / 02 Elements", module).add("Buttons", () => (
     </section>
 
     <section className="flex flex-row mb-10">
-      <div className="w-1/3">Button tertiary</div>
-      <div className="w-2/3 flex flex-row justify-between">
+      <div className="w-1/4">Button tertiary</div>
+      <div className="w-3/4 flex flex-row justify-between">
         <ButtonRegular
           text="Size normal"
           size={ButtonSize.normal}
@@ -87,8 +87,8 @@ storiesOf("Design System / 02 Elements", module).add("Buttons", () => (
     </section>
 
     <section className="flex flex-row mb-10">
-      <div className="w-1/3">Button transparent</div>
-      <div className="w-2/3 flex flex-row justify-between">
+      <div className="w-1/4">Button transparent</div>
+      <div className="w-3/4 flex flex-row justify-between">
         <ButtonRegular
           text="Size normal"
           size={ButtonSize.normal}
@@ -112,8 +112,8 @@ storiesOf("Design System / 02 Elements", module).add("Buttons", () => (
     </section>
 
     <section className="flex flex-row mb-10">
-      <div className="w-1/3">Button alarm</div>
-      <div className="w-2/3 flex flex-row justify-between">
+      <div className="w-1/4">Button alarm</div>
+      <div className="w-3/4 flex flex-row justify-between">
         <ButtonRegular
           text="Size normal"
           size={ButtonSize.normal}
@@ -137,8 +137,8 @@ storiesOf("Design System / 02 Elements", module).add("Buttons", () => (
     </section>
 
     <section className="flex flex-row mb-10">
-      <div className="w-1/3">Button special</div>
-      <div className="w-2/3 flex flex-row justify-between">
+      <div className="w-1/4">Button special</div>
+      <div className="w-3/4 flex flex-row justify-between">
         <ButtonRegular
           text="Size normal"
           size={ButtonSize.normal}

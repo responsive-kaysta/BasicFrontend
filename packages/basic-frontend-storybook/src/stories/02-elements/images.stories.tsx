@@ -5,20 +5,20 @@ import React from "react";
 storiesOf("Design System / 02 Elements", module).add("Images", () => (
   <div className="container">
     <section className="flex flex-row mb-10">
-      <div className="w-1/3 text-xl">Type</div>
-      <div className="w-2/3 text-xl">Swarm</div>
+      <div className="w-1/4 text-xl">Type</div>
+      <div className="w-3/4 text-xl">Swarm</div>
     </section>
 
     <section className="flex flex-row mb-10">
-      <div className="w-1/3">Simple Image</div>
-      <div className="w-2/3 flex flex-row justify-between">
+      <div className="w-1/4">Simple Image</div>
+      <div className="w-3/4 flex flex-row justify-between">
         <Image src="/AdobeStock_103620070.jpg" alt="some alt text" />
       </div>
     </section>
 
     <section className="flex flex-row mb-10">
-      <div className="w-1/3">Image with Caption</div>
-      <div className="w-2/3 flex flex-row justify-between">
+      <div className="w-1/4">Image with Caption</div>
+      <div className="w-3/4 flex flex-row justify-between">
         <Image
           src="/AdobeStock_103620070.jpg"
           alt="some alt text"

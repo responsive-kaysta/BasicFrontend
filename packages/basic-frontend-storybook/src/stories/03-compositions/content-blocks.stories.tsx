@@ -42,13 +42,13 @@ storiesOf("Design System / 03 Compositions", module).add(
   () => (
     <div className="container">
       <section className="flex flex-row mb-10">
-        <div className="w-1/3 text-xl">Type</div>
-        <div className="w-2/3 text-xl">Swarm</div>
+        <div className="w-1/4 text-xl">Type</div>
+        <div className="w-3/4 text-xl">Swarm</div>
       </section>
 
       <section className="flex flex-row mb-10">
-        <div className="w-1/3">Intro without Theme</div>
-        <div className="w-2/3 flex flex-row justify-between">
+        <div className="w-1/4">Intro without Theme</div>
+        <div className="w-3/4 flex flex-row justify-between">
           <Intro
             title="Lorem ipsum dolor sit amet"
             subTitle="Lorem ipsum dolor sit amet, consetetur sadipscing elitr"
@@ -58,8 +58,8 @@ storiesOf("Design System / 03 Compositions", module).add(
       </section>
 
       <section className="flex flex-row mb-10">
-        <div className="w-1/3">IntroAbstract without Theme</div>
-        <div className="w-2/3 flex flex-row justify-between">
+        <div className="w-1/4">IntroAbstract without Theme</div>
+        <div className="w-3/4 flex flex-row justify-between">
           <IntroAbstract
             title="Lorem ipsum dolor sit amet"
             hruler
@@ -69,15 +69,15 @@ storiesOf("Design System / 03 Compositions", module).add(
       </section>
 
       <section className="flex flex-row mb-10">
-        <div className="w-1/3">TagCloud without Theme</div>
-        <div className="w-2/3 flex flex-row justify-between">
+        <div className="w-1/4">TagCloud without Theme</div>
+        <div className="w-3/4 flex flex-row justify-between">
           <TagCloud title="Lorem ipsum dolor sit amet" hruler tags={tagList} />
         </div>
       </section>
 
       <section className="flex flex-row mb-10">
-        <div className="w-1/3">IntroComplex without Theme</div>
-        <div className="w-2/3 flex flex-row justify-between">
+        <div className="w-1/4">IntroComplex without Theme</div>
+        <div className="w-3/4 flex flex-row justify-between">
           <IntroComplex
             title="Lorem ipsum dolor sit amet"
             titleComponent={<div>Div inside</div>}
@@ -88,8 +88,8 @@ storiesOf("Design System / 03 Compositions", module).add(
       </section>
 
       <section className="flex flex-row mb-10">
-        <div className="w-1/3">Product, right alignment, no Theme</div>
-        <div className="w-2/3 flex flex-row justify-between">
+        <div className="w-1/4">Product, right alignment, no Theme</div>
+        <div className="w-3/4 flex flex-row justify-between">
           <Product
             title="Lorem ipsum dolor sit amet"
             content="At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
@@ -101,8 +101,8 @@ storiesOf("Design System / 03 Compositions", module).add(
       </section>
 
       <section className="flex flex-row mb-10">
-        <div className="w-1/3">Product, left alignment, no Theme</div>
-        <div className="w-2/3 flex flex-row justify-between">
+        <div className="w-1/4">Product, left alignment, no Theme</div>
+        <div className="w-3/4 flex flex-row justify-between">
           <Product
             title="Lorem ipsum dolor sit amet"
             content="At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
