@@ -6,6 +6,7 @@ import {
   TagCloud,
   TagItem,
   IntroComplex,
+  ImageOrientation,
 } from "basic-frontend-common";
 import React from "react";
 
@@ -87,13 +88,27 @@ storiesOf("Design System / 03 Compositions", module).add(
       </section>
 
       <section className="flex flex-row mb-10">
-        <div className="w-1/3">Product without Theme</div>
+        <div className="w-1/3">Product, right alignment, no Theme</div>
         <div className="w-2/3 flex flex-row justify-between">
           <Product
             title="Lorem ipsum dolor sit amet"
             content="At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
             src="/AdobeStock_103620070.jpg"
             alt="Alt text"
+            caption="At vero eos et accusam et justo duo dolores et ea rebum"
+          />
+        </div>
+      </section>
+
+      <section className="flex flex-row mb-10">
+        <div className="w-1/3">Product, left alignment, no Theme</div>
+        <div className="w-2/3 flex flex-row justify-between">
+          <Product
+            title="Lorem ipsum dolor sit amet"
+            content="At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+            src="/AdobeStock_103620070.jpg"
+            alt="Alt text"
+            orientation={ImageOrientation.left}
             caption="At vero eos et accusam et justo duo dolores et ea rebum"
           />
         </div>
