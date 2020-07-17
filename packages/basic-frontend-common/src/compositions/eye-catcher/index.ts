@@ -1,1 +1,2 @@
-export * from "./eye-catcher";
+export * from "./simple";
+export * from "./promo";

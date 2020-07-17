@@ -9,7 +9,7 @@ type EyeCatcherProps = {
   theme?: ThemeType;
 };
 
-export const EyeCatcher: FC<EyeCatcherProps> = ({
+export const PromoEyeCatcher: FC<EyeCatcherProps> = ({
   contentTop,
   contentBottom,
   shadow = false,

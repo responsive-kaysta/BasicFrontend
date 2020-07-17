@@ -12,7 +12,7 @@ export const ContainerBody: FC<BasicContainerProps> = ({
   backgroundImage,
   theme,
 }) => {
-  const style = `w-screen h-screen ${
+  const style = `w-full h-full ${
     theme
       ? `${theme.body.backgroundColor} ${theme.body.textColor}`
       : "bg-gray-100 text-gray-800"
@@ -21,6 +21,8 @@ export const ContainerBody: FC<BasicContainerProps> = ({
   if (backgroundImage) {
     document.body.style.backgroundImage = `url(${backgroundImage})`;
     document.body.style.backgroundAttachment = "fixed";
+    document.body.style.backgroundRepeat = "no-repeat";
+    document.body.style.backgroundSize = "cover";
   }
 
   return <article className={style}>{children}</article>;

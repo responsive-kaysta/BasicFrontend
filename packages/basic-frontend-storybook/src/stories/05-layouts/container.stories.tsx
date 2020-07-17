@@ -4,6 +4,7 @@ import {
   ContainerBody,
   ContainerSection,
   ThemeTransparent,
+  PromoEyeCatcher,
 } from "basic-frontend-common";
 import React from "react";
 
@@ -43,22 +44,14 @@ storiesOf("Design System / 05 Layouts", module)
     </div>
   ))
   .add("ContainerBody", () => (
-    <div className="container bg-transparent text-gray-100 border-gray-100">
-      <section className="flex flex-row mb-10">
-        <div className="w-1/4 text-xl">Type</div>
-        <div className="w-3/4 text-xl">Swarm</div>
-      </section>
-
-      <section className="flex flex-row mb-10">
-        <div className="w-1/4">ContainerBody, ThemeTransparent</div>
-        <div className="w-3/4 flex flex-row justify-between">
-          <ContainerBody
-            theme={ThemeTransparent}
-            backgroundImage="/images/mainboard-1174219.jpg"
-          >
-            <div>Container Content</div>
-          </ContainerBody>
-        </div>
-      </section>
-    </div>
+    <ContainerBody
+      theme={ThemeTransparent}
+      backgroundImage="/images/mainboard-1174219.jpg"
+    >
+      <PromoEyeCatcher
+        contentTop="Lorem ipsum dolor sit amet"
+        contentBottom="At vero eos et accusam et justo duo dolores et ea rebum"
+        theme={ThemeTransparent}
+      />
+    </ContainerBody>
   ));
