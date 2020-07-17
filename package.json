@@ -2,16 +2,16 @@
   "name": "basic-frontend",
   "private": true,
   "devDependencies": {
-    "lerna": "^3.20.2"
+    "lerna": "^3.22.1"
   },
   "scripts": {
-    "start": "lerna run start",
+    "version": "lerna version --conventional-commits",
+    "predevelop": "npm run build -- --scope '{basic-frontend-common,basic-frontend-storybook}'",
+    "develop": "lerna run develop --parallel",
+    "types:check": "lerna run types:check --stream",
+    "clean": "rimraf \"node_modules/!(rimraf|.bin)\"",
     "build": "lerna run build --stream",
     "bootstrap": "npm install && lerna bootstrap --hoist",
-    "develop": "lerna run develop --parallel",
-    "clean": "lerna clean",
-    "lint": "lerna run lint --parallel",
-    "types:check": "lerna run types:check --stream",
-    "version": "lerna version --conventional-commits"
+    "lint": "lerna run lint --parallel"
   }
 }

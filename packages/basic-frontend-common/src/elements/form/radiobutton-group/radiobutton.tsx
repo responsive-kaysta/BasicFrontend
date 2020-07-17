@@ -1,0 +1,40 @@
+import React, { FC, ChangeEvent } from "react";
+
+type RadioButtonProps = {
+  label: string;
+  value: string;
+  onChange: (checked: boolean) => void;
+  checked?: boolean;
+  disabled?: boolean;
+};
+
+export const RadioButton: FC<RadioButtonProps> = ({
+  label,
+  value,
+  onChange,
+  checked,
+  disabled,
+}) => {
+  return (
+    <div className="mt-4">
+      <div className="flex items-center">
+        <input
+          id={value}
+          value={value}
+          type="radio"
+          checked={checked}
+          disabled={disabled}
+          onChange={({ target: { checked } }: ChangeEvent<HTMLInputElement>) =>
+            onChange(checked)
+          }
+          className="form-radio h-4 w-4 text-indigo-600 transition duration-150 ease-in-out"
+        />
+        <label htmlFor={value} className="ml-3">
+          <span className="block text-sm leading-5 font-medium text-gray-700">
+            {label}
+          </span>
+        </label>
+      </div>
+    </div>
+  );
+};
