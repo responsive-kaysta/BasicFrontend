@@ -15,24 +15,18 @@ export const IntroEyeCatcher: FC<IntroEyeCatcherProps> = ({
   shadow = false,
   theme,
 }) => {
-  const style = `text-center ${
+  const style = `m-auto text-center ${
     theme ? theme.body.backgroundColor : "bg-gray-100"
   } ${theme ? theme.body.textColor : "text-gray-800"} overflow-hidden ${
     shadow ? "shadow-lg" : ""
   } `;
 
-  const styleObj = {
-    top: "50%",
-  };
-
   return (
-    <header style={styleObj}>
-      <div className={style}>
-        <Hruler theme={theme} />
-        <TitleSub theme={theme}>{contentTop}</TitleSub>
-        <Hruler theme={theme} />
-        <TextLead theme={theme}>{contentBottom}</TextLead>
-      </div>
+    <header className={style}>
+      <Hruler theme={theme} />
+      <TitleSub theme={theme}>{contentTop}</TitleSub>
+      <Hruler theme={theme} />
+      <TextLead theme={theme}>{contentBottom}</TextLead>
     </header>
   );
 };

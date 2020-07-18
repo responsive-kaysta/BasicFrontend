@@ -12,7 +12,7 @@ export const ContainerBody: FC<BasicContainerProps> = ({
   backgroundImage,
   theme,
 }) => {
-  const style = `flex flex-col items-center w-full h-full ${
+  const style = `flex flex-col items-center w-screen h-screen ${
     theme
       ? `${theme.body.backgroundColor} ${theme.body.textColor}`
       : "bg-gray-100 text-gray-800"
