@@ -3,8 +3,8 @@ import {
   ContainerArticle,
   ContainerBody,
   ContainerSection,
+  IntroEyeCatcher,
   ThemeTransparent,
-  PromoEyeCatcher,
 } from "basic-frontend-common";
 import React from "react";
 
@@ -48,7 +48,7 @@ storiesOf("Design System / 05 Layouts", module)
       theme={ThemeTransparent}
       backgroundImage="/images/mainboard-1174219.jpg"
     >
-      <PromoEyeCatcher
+      <IntroEyeCatcher
         contentTop="Lorem ipsum dolor sit amet"
         contentBottom="At vero eos et accusam et justo duo dolores et ea rebum"
         theme={ThemeTransparent}

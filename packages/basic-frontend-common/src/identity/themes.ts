@@ -5,21 +5,21 @@ export const ThemeTransparent = {
     borderColor: "border-gray-100",
   },
   link: {
-    textColor: "",
-    focusColor: "",
-    hoverColor: "",
-    activeColor: "",
-    visitedColor: "",
+    textColor: "text-gray-100",
+    focusColor: "text-gray-100",
+    hoverColor: "text-gray-100",
+    activeColor: "text-gray-100",
+    visitedColor: "text-gray-100",
   },
   form: {
-    textColor: "",
-    backgroundColor: "",
-    borderColor: "",
+    textColor: "text-gray-100",
+    backgroundColor: "bg-transparent",
+    borderColor: "border-gray-100",
   },
   format: {
-    codeTextColor: "",
-    codeBorderColor: "",
-    codeBackgroundColor: "",
+    codeTextColor: "text-gray-100",
+    codeBorderColor: "bg-transparent",
+    codeBackgroundColor: "border-gray-100",
   },
 };
 

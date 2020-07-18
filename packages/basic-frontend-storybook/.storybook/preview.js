@@ -30,11 +30,7 @@ export const parameters = {
   panelPosition: "bottom",
 };
 
-const withGlobalStyle = (storyFn) => (
-  <div className="w-full h-full">
-    <div className="m-10 h-full">{storyFn()}</div>
-  </div>
-);
+const withGlobalStyle = (storyFn) => storyFn();
 
 addParameters({
   options: {
