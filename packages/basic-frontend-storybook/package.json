@@ -11,7 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "basic-frontend-common": "^0.2.1",
+    "basic-frontend-common": "^0.2.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
