@@ -12,7 +12,7 @@ export const ContainerSection: FC<BasicContainerProps> = ({
   cssStyle,
   theme,
 }) => {
-  const style = `container ${cssStyle ? cssStyle : ""} ${
+  const style = `container mx-auto ${cssStyle ? cssStyle : ""} ${
     theme
       ? `${theme.body.backgroundColor} ${theme.body.textColor}`
       : "bg-gray-100 text-gray-800"

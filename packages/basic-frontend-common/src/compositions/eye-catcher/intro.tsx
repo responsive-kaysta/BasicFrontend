@@ -15,7 +15,7 @@ export const IntroEyeCatcher: FC<IntroEyeCatcherProps> = ({
   shadow = false,
   theme,
 }) => {
-  const style = `m-auto text-center ${
+  const style = `m-auto w-1/3 text-center ${
     theme ? theme.body.backgroundColor : "bg-gray-100"
   } ${theme ? theme.body.textColor : "text-gray-800"} overflow-hidden ${
     shadow ? "shadow-lg" : ""
