@@ -9,6 +9,7 @@ type IntroAbstractProps = {
   lead?: string;
   hruler?: boolean;
   theme?: ThemeType;
+  elementId?: string;
 };
 
 export const IntroAbstract: FC<IntroAbstractProps> = ({
@@ -16,9 +17,10 @@ export const IntroAbstract: FC<IntroAbstractProps> = ({
   lead,
   hruler,
   theme,
+  elementId,
 }) => {
   return (
-    <SectionHeader>
+    <SectionHeader elementId={elementId}>
       <AbstractTitle title={title} hruler={hruler} theme={theme} />
       {lead && <TextLead theme={theme}>{lead}</TextLead>}
     </SectionHeader>

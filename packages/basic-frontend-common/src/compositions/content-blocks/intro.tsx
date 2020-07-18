@@ -9,11 +9,18 @@ type IntroProps = {
   subTitle?: string;
   lead?: string;
   theme?: ThemeType;
+  elementId?: string;
 };
 
-export const Intro: FC<IntroProps> = ({ title, subTitle, lead, theme }) => {
+export const Intro: FC<IntroProps> = ({
+  title,
+  subTitle,
+  lead,
+  theme,
+  elementId,
+}) => {
   return (
-    <SectionHeader>
+    <SectionHeader elementId={elementId}>
       <PageTitle title={title} subTitle={subTitle} theme={theme} />
       {lead && <TextLead theme={theme}>{lead}</TextLead>}
     </SectionHeader>

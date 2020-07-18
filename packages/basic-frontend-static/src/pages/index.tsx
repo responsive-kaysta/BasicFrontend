@@ -27,17 +27,18 @@ class Index extends React.Component {
             theme={ThemeTransparent}
           />
           <Link
-            className={`bg-transparent ${ThemeTransparent.body.textColor} text-center font-semibold py-2 px-2`}
+            className={`bg-transparent ${ThemeTransparent.body.textColor} hover:${ThemeGreen.link.hoverColor} text-center font-semibold py-2 px-2`}
             to="first-eye-catcher"
             spy={true}
             smooth="easeInOutQuint"
-            duration={1000}
+            duration={2500}
             offset={0}
           >
-            <div className="mb-4">weiter</div>
-            <div className="block">&#x2B07;</div>
+            <span className="block mb-4">weiter</span>
+            <span className="block">&#x2B07;</span>
           </Link>
         </ContainerBody>
+
         <SimpleEyeCatcher
           theme={ThemeGreen}
           elementId="first-eye-catcher"

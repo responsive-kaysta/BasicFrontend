@@ -9,6 +9,7 @@ type IntroComplexProps = {
   lead?: string;
   hruler?: boolean;
   theme?: ThemeType;
+  elementId?: string;
 };
 
 export const IntroComplex: FC<IntroComplexProps> = ({
@@ -17,9 +18,10 @@ export const IntroComplex: FC<IntroComplexProps> = ({
   lead,
   hruler,
   theme,
+  elementId,
 }) => {
   return (
-    <SectionHeader>
+    <SectionHeader elementId={elementId}>
       <div className="flex flex-row justify-between items-baseline">
         <Title theme={theme}>{title}</Title> {titleComponent}
       </div>

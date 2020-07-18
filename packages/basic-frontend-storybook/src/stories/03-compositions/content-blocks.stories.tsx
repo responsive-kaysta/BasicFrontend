@@ -93,7 +93,7 @@ storiesOf("Design System / 03 Compositions", module).add(
           <Product
             title="Lorem ipsum dolor sit amet"
             content="At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
-            src="/AdobeStock_103620070.jpg"
+            src="/images/AdobeStock_103620070.jpg"
             alt="Alt text"
             caption="At vero eos et accusam et justo duo dolores et ea rebum"
           />
@@ -106,7 +106,7 @@ storiesOf("Design System / 03 Compositions", module).add(
           <Product
             title="Lorem ipsum dolor sit amet"
             content="At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
-            src="/AdobeStock_103620070.jpg"
+            src="/images/AdobeStock_103620070.jpg"
             alt="Alt text"
             orientation={ImageOrientation.left}
             caption="At vero eos et accusam et justo duo dolores et ea rebum"

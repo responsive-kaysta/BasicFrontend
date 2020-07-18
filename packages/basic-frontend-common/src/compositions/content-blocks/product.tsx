@@ -16,6 +16,7 @@ type ProductProps = {
   caption?: string;
   orientation?: ImageOrientation;
   theme?: ThemeType;
+  elementId?: string;
 };
 
 export const Product: FC<ProductProps> = ({
@@ -26,6 +27,7 @@ export const Product: FC<ProductProps> = ({
   caption,
   orientation = ImageOrientation.right,
   theme,
+  elementId,
 }) => {
   const contentBlock = (
     <>
@@ -38,7 +40,7 @@ export const Product: FC<ProductProps> = ({
   const imageBlock = <Image src={src} alt={alt} caption={caption} />;
 
   return (
-    <div className="flex flex-row">
+    <div className="flex flex-row" id={elementId}>
       <div className="w-2/4">
         {orientation === ImageOrientation.right ? contentBlock : imageBlock}
       </div>

@@ -6,11 +6,17 @@ type PageTitleProps = {
   title: string;
   subTitle?: string;
   theme?: ThemeType;
+  elementId?: string;
 };
 
-export const PageTitle: FC<PageTitleProps> = ({ title, subTitle, theme }) => {
+export const PageTitle: FC<PageTitleProps> = ({
+  title,
+  subTitle,
+  theme,
+  elementId,
+}) => {
   return (
-    <div className="mb-2 md:mb-4">
+    <div className="mb-2 md:mb-4" id={elementId}>
       <Title theme={theme}>{title}</Title>
       <Hruler theme={theme} />
       {subTitle && <TitleSub theme={theme}>{subTitle}</TitleSub>}

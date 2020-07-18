@@ -9,11 +9,18 @@ type TagCloudProps = {
   tags: TagItem[];
   hruler?: boolean;
   theme?: ThemeType;
+  elementId?: string;
 };
 
-export const TagCloud: FC<TagCloudProps> = ({ title, tags, hruler, theme }) => {
+export const TagCloud: FC<TagCloudProps> = ({
+  title,
+  tags,
+  hruler,
+  theme,
+  elementId,
+}) => {
   return (
-    <Section theme={theme}>
+    <Section theme={theme} elementId={elementId}>
       <AbstractTitle title={title} hruler={hruler} theme={theme} />
       <div className="text-center">
         {tags.map((tag) => {

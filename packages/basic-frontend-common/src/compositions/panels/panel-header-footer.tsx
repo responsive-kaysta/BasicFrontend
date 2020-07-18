@@ -7,6 +7,7 @@ type PanelHeaderFooterProps = {
   header: ReactNode;
   footer: ReactNode;
   theme?: ThemeType;
+  elementId?: string;
 };
 
 export const PanelHeaderFooter: FC<PanelHeaderFooterProps> = ({
@@ -14,9 +15,10 @@ export const PanelHeaderFooter: FC<PanelHeaderFooterProps> = ({
   children,
   footer,
   theme,
+  elementId,
 }) => {
   return (
-    <div className={wrapperStyle(theme)}>
+    <div className={wrapperStyle(theme)} id={elementId}>
       <div className={headerStyle(theme)}>{header}</div>
       <div className={contentStyle()}>{children}</div>
       <div className={footerStyle(theme)}>{footer}</div>

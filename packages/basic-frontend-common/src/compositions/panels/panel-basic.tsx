@@ -5,11 +5,16 @@ import { contentStyle, wrapperStyle } from "./styles";
 type PanelBasicProps = {
   children: ReactNode;
   theme?: ThemeType;
+  elementId?: string;
 };
 
-export const PanelBasic: FC<PanelBasicProps> = ({ children, theme }) => {
+export const PanelBasic: FC<PanelBasicProps> = ({
+  children,
+  theme,
+  elementId,
+}) => {
   return (
-    <div className={wrapperStyle(theme)}>
+    <div className={wrapperStyle(theme)} id={elementId}>
       <div className={contentStyle()}>{children}</div>
     </div>
   );
