@@ -20,7 +20,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-static": "^7.4.2",
-    "react-scroll": "^1.7.16",
+    "react-scroll": "^1.8.0",
     "react-static-plugin-reach-router": "^7.4.2",
     "react-static-plugin-sitemap": "^7.4.2",
     "react-static-plugin-source-filesystem": "^7.4.2",

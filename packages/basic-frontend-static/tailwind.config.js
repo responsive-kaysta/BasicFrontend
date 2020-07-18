@@ -2,6 +2,12 @@ module.exports = {
   purge: [],
   theme: {
     extend: {
+      colors: {
+        greener: {
+          100: "#1a867d",
+        },
+        textColor: (theme) => theme("colors"),
+      },
       fontFamily: {
         sans: [
           "Trebuchet MS",

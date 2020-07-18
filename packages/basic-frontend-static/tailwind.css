@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body #root {
+  background: -moz-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)),
+    url("/images/mainboard-1174219.jpg");
+  background: -webkit-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)),
+    url("/images/mainboard-1174219.jpg");
+  background-image: -ms-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)),
+    url("/assets/images/mainboard-1174219.jpg");
+  background: linear-gradient(to bottom, #0b3536 0%, rgba(125, 185, 232, 0)),
+    url("/images/mainboard-1174219.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: transparent;
+}

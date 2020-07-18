@@ -7,6 +7,7 @@ type EyeCatcherProps = {
   contentBottom: string;
   shadow?: boolean;
   theme?: ThemeType;
+  elementId?: string;
 };
 
 export const SimpleEyeCatcher: FC<EyeCatcherProps> = ({
@@ -14,6 +15,7 @@ export const SimpleEyeCatcher: FC<EyeCatcherProps> = ({
   contentBottom,
   shadow = false,
   theme,
+  elementId,
 }) => {
   const style = `w-full text-center py-6 px-6 md:py-10 md:px-16 ${
     theme ? theme.body.backgroundColor : "bg-gray-100"
@@ -21,7 +23,7 @@ export const SimpleEyeCatcher: FC<EyeCatcherProps> = ({
     shadow ? "shadow-lg" : ""
   } `;
   return (
-    <section className={style}>
+    <section className={style} id={elementId}>
       <TitleSub theme={theme}>{contentTop}</TitleSub>
       <Hruler theme={theme} />
       <TextLead theme={theme}>{contentBottom}</TextLead>

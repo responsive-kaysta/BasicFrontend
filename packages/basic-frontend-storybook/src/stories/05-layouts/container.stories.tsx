@@ -44,10 +44,7 @@ storiesOf("Design System / 05 Layouts", module)
     </div>
   ))
   .add("ContainerBody", () => (
-    <ContainerBody
-      theme={ThemeTransparent}
-      backgroundImage="/images/mainboard-1174219.jpg"
-    >
+    <ContainerBody theme={ThemeTransparent}>
       <IntroEyeCatcher
         contentTop="Lorem ipsum dolor sit amet"
         contentBottom="At vero eos et accusam et justo duo dolores et ea rebum"

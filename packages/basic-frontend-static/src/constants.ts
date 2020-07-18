@@ -7,7 +7,7 @@ export const PAGE_KEYWORDS = "reactjs, css3, html5, responsive";
 export const ThemeGreen = {
   body: {
     textColor: "text-gray-400",
-    backgroundColor: "bg-green-900",
+    backgroundColor: "bg-greener-100",
     borderColor: "border-gray-400",
   },
   link: {
