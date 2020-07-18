@@ -1,6 +1,7 @@
 import {
   ContainerBody,
   ContainerSection,
+  Footer,
   IntroEyeCatcher,
   SimpleEyeCatcher,
   ThemeTransparent,
@@ -10,7 +11,7 @@ import * as Scroll from "react-scroll";
 import { ThemeGreen } from "../constants";
 
 var scroll = Scroll.animateScroll;
-var Link = Scroll.Link;
+var ScrollLink = Scroll.Link;
 
 class Index extends React.Component {
   componentDidMount() {
@@ -26,7 +27,8 @@ class Index extends React.Component {
             contentBottom="finest full stack development"
             theme={ThemeTransparent}
           />
-          <Link
+
+          <ScrollLink
             className={`bg-transparent ${ThemeTransparent.body.textColor} hover:${ThemeGreen.link.hoverColor} text-center font-semibold py-2 px-2`}
             to="first-eye-catcher"
             spy={true}
@@ -36,7 +38,7 @@ class Index extends React.Component {
           >
             <span className="block mb-4">weiter</span>
             <span className="block">&#x2B07;</span>
-          </Link>
+          </ScrollLink>
         </ContainerBody>
 
         <SimpleEyeCatcher
@@ -48,38 +50,11 @@ class Index extends React.Component {
 
         <ContainerSection theme={ThemeTransparent}>
           <div>Some Content</div>
-          <div>Some Content</div>
-          <div>Some Content</div>
-          <div>Some Content</div>
-          <div>Some Content</div>
-          <div>Some Content</div>
-          <div>Some Content</div>
-          <div>Some Content</div>
-          <div>Some Content</div>
-          <div>Some Content</div>
-          <div>Some Content</div>
-          <div>Some Content</div>
-          <div>Some Content</div>
-          <div>Some Content</div>
-          <div>Some Content</div>
-          <div>Some Content</div>
-          <div>Some Content</div>
-          <div>Some Content</div>
-          <div>Some Content</div>
-          <div>Some Content</div>
-          <div>Some Content</div>
-          <div>Some Content</div>
-          <div>Some Content</div>
-          <div>Some Content</div>
-          <div>Some Content</div>
-          <div>Some Content</div>
-          <div>Some Content</div>
-          <div>Some Content</div>
-          <div>Some Content</div>
-          <div>Some Content</div>
-          <div>Some Content</div>
-          <div>Some Content</div>
         </ContainerSection>
+
+        <Footer>
+          <div>footer content</div>
+        </Footer>
       </>
     );
   }
