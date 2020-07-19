@@ -75,7 +75,8 @@ storiesOf("Design System / 02 Elements", module).add("Form", () => (
       <div className="w-3/4 flex flex-row justify-between">
         <CheckBoxGroup
           id="TheId"
-          name="TheName"
+          name="CheckBoxGroup"
+          label="CheckBoxGroup"
           legend="CheckBoxGroup Legend"
           comment="CheckBoxGroup Comment"
           options={optionsCheckBox}
@@ -89,7 +90,8 @@ storiesOf("Design System / 02 Elements", module).add("Form", () => (
       <div className="w-3/4 flex flex-row justify-between">
         <RadioButtonGroup
           id="TheId"
-          name="TheName"
+          name="RadioButtonGroup"
+          label="RadioButtonGroup Label"
           legend="RadioButtonGroup Legend"
           comment="RadioButtonGroup Comment"
           options={optionsRadioButton}
@@ -104,10 +106,10 @@ storiesOf("Design System / 02 Elements", module).add("Form", () => (
       <div className="w-3/4 flex flex-row justify-between">
         <Dropdown
           id="TheId"
-          name="TheName"
-          label="Some Label Text"
-          legend="Some Legend Text"
-          comment="Some Comment Text"
+          name="Dropdown"
+          label="Dropdown Label"
+          legend="Dropdown Legend"
+          comment="Dropdown Comment"
           defaultOption={true}
           options={optionsDropdown}
           onSelectionChanged={action("onSelectionChanged")}
@@ -120,10 +122,12 @@ storiesOf("Design System / 02 Elements", module).add("Form", () => (
       <div className="w-3/4 flex flex-row justify-between">
         <Input
           id="TheId"
-          name="TheName"
+          name="Input"
+          label="Input Label"
+          legend="Input Legend"
+          comment="Input Comment"
           type={select("Input Type", ["text", "email", "password"], "text")}
-          label="Some Label Text"
-          placeholderText="Placeholder"
+          placeholderText="Input Placeholder"
           onInputChanged={action("onInputChanged")}
         />
       </div>
@@ -134,11 +138,11 @@ storiesOf("Design System / 02 Elements", module).add("Form", () => (
       <div className="w-3/4 flex flex-row justify-between">
         <Textarea
           id="TheId"
-          name="TheName"
-          label="Some Label Text"
-          legend="Some Legend Text"
-          comment="Some Comment Text"
-          placeholderText="Placeholder"
+          name="Textarea"
+          label="Textarea Label"
+          legend="Textarea Legend"
+          comment="Textarea Comment"
+          placeholderText="Textarea Placeholder"
           onInputChanged={action("onInputChanged")}
         />
       </div>

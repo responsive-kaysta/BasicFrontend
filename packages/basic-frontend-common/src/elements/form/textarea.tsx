@@ -26,7 +26,13 @@ export const Textarea: FC<TextareaProps> = ({
   placeholderText,
   onInputChanged,
 }) => {
-  const style = `form-textarea block w-full rounded border border-gray-300 shadow focus:outline-none focus:shadow-outline p-2 transition duration-150 ease-in-out sm:text-sm sm:leading-5`;
+  const style = `block appearance-none w-full ${
+    theme ? theme.form.backgroundColor : "bg-white"
+  } rounded border ${
+    theme ? theme.form.borderColor : "border-gray-400"
+  } hover:${
+    theme ? theme.form.borderHoverColor : "border-gray-500"
+  } shadow focus:outline-none focus:shadow-outline p-2 transition duration-150 ease-in-out sm:text-sm sm:leading-5`;
 
   return (
     <FormBase label={label} legend={legend} theme={theme}>

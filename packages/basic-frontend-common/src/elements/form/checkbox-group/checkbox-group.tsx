@@ -1,13 +1,14 @@
 import React, { FC } from "react";
 import { ThemeType } from "../../../identity";
-import { Comment, Legend } from "../../typography";
+import { FormBase } from "../form-base";
 import { CheckBox } from "./checkbox";
 
 type CheckBoxGroupProps = {
   id: string;
   name: string;
 
-  legend: string;
+  label?: string;
+  legend?: string;
   comment?: string;
 
   options: {
@@ -23,6 +24,7 @@ type CheckBoxGroupProps = {
 export const CheckBoxGroup: FC<CheckBoxGroupProps> = ({
   id,
   name,
+  label,
   legend,
   comment,
   options,
@@ -30,20 +32,20 @@ export const CheckBoxGroup: FC<CheckBoxGroupProps> = ({
   theme,
 }) => {
   return (
-    <fieldset className="" id={id} name={name}>
-      <Legend theme={theme}>{legend}</Legend>
-      {comment && <Comment theme={theme}>{comment}</Comment>}
-      {options.map((item) => {
-        return (
-          <CheckBox
-            key={item.value}
-            value={item.value}
-            label={item.label}
-            checked={item.checked}
-            onChange={onChange}
-          />
-        );
-      })}
-    </fieldset>
+    <FormBase comment={comment} label={label} legend={legend} theme={theme}>
+      <fieldset id={id} name={name}>
+        {options.map((item) => {
+          return (
+            <CheckBox
+              key={item.value}
+              value={item.value}
+              label={item.label}
+              checked={item.checked}
+              onChange={onChange}
+            />
+          );
+        })}
+      </fieldset>
+    </FormBase>
   );
 };

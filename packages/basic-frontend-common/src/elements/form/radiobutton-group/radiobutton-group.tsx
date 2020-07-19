@@ -1,13 +1,14 @@
 import React, { FC, useEffect, useState } from "react";
 import { ThemeType } from "../../../identity";
-import { Comment, Legend } from "../../typography";
+import { FormBase } from "../form-base";
 import { RadioButton } from "./radiobutton";
 
 type RadioButtonGroupProps = {
   id: string;
   name: string;
 
-  legend: string;
+  label?: string;
+  legend?: string;
   comment?: string;
 
   options: {
@@ -23,6 +24,7 @@ type RadioButtonGroupProps = {
 export const RadioButtonGroup: FC<RadioButtonGroupProps> = ({
   id,
   name,
+  label,
   legend,
   comment,
   options,
@@ -34,23 +36,23 @@ export const RadioButtonGroup: FC<RadioButtonGroupProps> = ({
   useEffect(() => setSelected(selectedItem || null), [selectedItem]);
 
   return (
-    <fieldset className="" id={id} name={name}>
-      <Legend theme={theme}>{legend}</Legend>
-      {comment && <Comment theme={theme}>{comment}</Comment>}
-      {options.map((item) => {
-        return (
-          <RadioButton
-            key={item.value}
-            value={item.value}
-            label={item.label}
-            checked={selected === item.value}
-            onChange={() => {
-              setSelected(item.value);
-              onChange && onChange(item.value);
-            }}
-          />
-        );
-      })}
-    </fieldset>
+    <FormBase comment={comment} label={label} legend={legend} theme={theme}>
+      <fieldset id={id} name={name}>
+        {options.map((item) => {
+          return (
+            <RadioButton
+              key={item.value}
+              value={item.value}
+              label={item.label}
+              checked={selected === item.value}
+              onChange={() => {
+                setSelected(item.value);
+                onChange && onChange(item.value);
+              }}
+            />
+          );
+        })}
+      </fieldset>
+    </FormBase>
   );
 };
