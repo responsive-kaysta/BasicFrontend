@@ -106,6 +106,8 @@ storiesOf("Design System / 02 Elements", module).add("Form", () => (
           id="TheId"
           name="TheName"
           label="Some Label Text"
+          legend="Some Legend Text"
+          comment="Some Comment Text"
           defaultOption={true}
           options={optionsDropdown}
           onSelectionChanged={action("onSelectionChanged")}
@@ -133,8 +135,9 @@ storiesOf("Design System / 02 Elements", module).add("Form", () => (
         <Textarea
           id="TheId"
           name="TheName"
-          comment="Some Comment describing the Textarea"
           label="Some Label Text"
+          legend="Some Legend Text"
+          comment="Some Comment Text"
           placeholderText="Placeholder"
           onInputChanged={action("onInputChanged")}
         />

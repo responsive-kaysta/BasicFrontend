@@ -1,6 +1,7 @@
 export const ThemeTransparent = {
   body: {
     textColor: "text-gray-100",
+    secondaryText: "text-gray-100",
     backgroundColor: "bg-transparent",
     borderColor: "border-gray-100",
   },
@@ -14,7 +15,8 @@ export const ThemeTransparent = {
   form: {
     textColor: "text-gray-100",
     backgroundColor: "bg-transparent",
-    borderColor: "border-gray-100",
+    borderColor: "border-gray-200",
+    borderHoverColor: "border-gray-300",
   },
   format: {
     codeTextColor: "text-gray-100",
@@ -26,6 +28,7 @@ export const ThemeTransparent = {
 export type ThemeType = {
   body: {
     textColor: string;
+    secondaryText: string;
     backgroundColor: string;
     borderColor: string;
   };
@@ -40,6 +43,7 @@ export type ThemeType = {
     textColor: string;
     backgroundColor: string;
     borderColor: string;
+    borderHoverColor: string;
   };
   format: {
     codeTextColor: string;

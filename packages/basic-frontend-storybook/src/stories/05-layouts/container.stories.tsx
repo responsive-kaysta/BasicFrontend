@@ -1,11 +1,5 @@
 import { storiesOf } from "@storybook/react";
-import {
-  ContainerArticle,
-  ContainerBody,
-  ContainerSection,
-  IntroEyeCatcher,
-  ThemeTransparent,
-} from "basic-frontend-common";
+import { ContainerArticle, ContainerSection } from "basic-frontend-common";
 import React from "react";
 
 storiesOf("Design System / 05 Layouts", module)
@@ -42,13 +36,4 @@ storiesOf("Design System / 05 Layouts", module)
         </div>
       </section>
     </div>
-  ))
-  .add("ContainerBody", () => (
-    <ContainerBody theme={ThemeTransparent}>
-      <IntroEyeCatcher
-        contentTop="Lorem ipsum dolor sit amet"
-        contentBottom="At vero eos et accusam et justo duo dolores et ea rebum"
-        theme={ThemeTransparent}
-      />
-    </ContainerBody>
   ));

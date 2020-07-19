@@ -12,7 +12,7 @@ storiesOf("Design System / 02 Elements", module).add("Images", () => (
     <section className="flex flex-row mb-10">
       <div className="w-1/4">Simple Image</div>
       <div className="w-3/4 flex flex-row justify-between">
-        <Image src="/AdobeStock_103620070.jpg" alt="some alt text" />
+        <Image src="/images/AdobeStock_103620070.jpg" alt="some alt text" />
       </div>
     </section>
 
@@ -20,7 +20,7 @@ storiesOf("Design System / 02 Elements", module).add("Images", () => (
       <div className="w-1/4">Image with Caption</div>
       <div className="w-3/4 flex flex-row justify-between">
         <Image
-          src="/AdobeStock_103620070.jpg"
+          src="/images/AdobeStock_103620070.jpg"
           alt="some alt text"
           caption="Image Caption Text"
         />

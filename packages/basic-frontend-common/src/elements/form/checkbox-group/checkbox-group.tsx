@@ -1,4 +1,6 @@
 import React, { FC } from "react";
+import { ThemeType } from "../../../identity";
+import { Comment, Legend } from "../../typography";
 import { CheckBox } from "./checkbox";
 
 type CheckBoxGroupProps = {
@@ -15,6 +17,7 @@ type CheckBoxGroupProps = {
   }[];
 
   onChange: (value: string, checked: boolean) => void;
+  theme?: ThemeType;
 };
 
 export const CheckBoxGroup: FC<CheckBoxGroupProps> = ({
@@ -24,11 +27,12 @@ export const CheckBoxGroup: FC<CheckBoxGroupProps> = ({
   comment,
   options,
   onChange,
+  theme,
 }) => {
   return (
     <fieldset className="" id={id} name={name}>
-      <legend className="text-base font-medium text-gray-900">{legend}</legend>
-      {comment && <p className="text-sm leading-5 text-gray-500">{comment}</p>}
+      <Legend theme={theme}>{legend}</Legend>
+      {comment && <Comment theme={theme}>{comment}</Comment>}
       {options.map((item) => {
         return (
           <CheckBox

@@ -1,4 +1,6 @@
-import React, { FC, useState, useEffect } from "react";
+import React, { FC, useEffect, useState } from "react";
+import { ThemeType } from "../../../identity";
+import { Comment, Legend } from "../../typography";
 import { RadioButton } from "./radiobutton";
 
 type RadioButtonGroupProps = {
@@ -15,6 +17,7 @@ type RadioButtonGroupProps = {
 
   onChange?: (value: string) => void;
   selectedItem?: string;
+  theme?: ThemeType;
 };
 
 export const RadioButtonGroup: FC<RadioButtonGroupProps> = ({
@@ -25,14 +28,15 @@ export const RadioButtonGroup: FC<RadioButtonGroupProps> = ({
   options,
   onChange,
   selectedItem,
+  theme,
 }) => {
   const [selected, setSelected] = useState<string | null>(selectedItem || null);
   useEffect(() => setSelected(selectedItem || null), [selectedItem]);
 
   return (
     <fieldset className="" id={id} name={name}>
-      <legend className="text-base font-medium text-gray-900">{legend}</legend>
-      {comment && <p className="text-sm leading-5 text-gray-500">{comment}</p>}
+      <Legend theme={theme}>{legend}</Legend>
+      {comment && <Comment theme={theme}>{comment}</Comment>}
       {options.map((item) => {
         return (
           <RadioButton
