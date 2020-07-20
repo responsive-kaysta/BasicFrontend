@@ -1,5 +1,5 @@
 import React, { FC, ReactNode } from "react";
-import { ThemeType } from "../../identity";
+import { defComment, ThemeType } from "../../identity";
 
 type CommentProps = {
   children: ReactNode;
@@ -9,7 +9,7 @@ type CommentProps = {
 export const Comment: FC<CommentProps> = ({ children, theme }) => {
   const style = `${
     theme ? theme.body.textColor : "text-gray-500"
-  } text-sm leading-5`;
+  } ${defComment}`;
 
   return <p className={style}>{children}</p>;
 };

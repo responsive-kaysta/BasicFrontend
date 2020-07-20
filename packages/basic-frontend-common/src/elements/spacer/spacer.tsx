@@ -1,5 +1,5 @@
 import React, { FC } from "react";
 
 export const Spacer: FC = () => {
-  return <br />;
+  return <div className="mt-2 mb-2" />;
 };

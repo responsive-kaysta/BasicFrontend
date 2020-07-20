@@ -1,5 +1,5 @@
 import React, { FC, ReactNode } from "react";
-import { ThemeType } from "../../identity";
+import { defLabel, ThemeType } from "../../identity";
 
 type LabelProps = {
   children: ReactNode;
@@ -8,9 +8,7 @@ type LabelProps = {
 };
 
 export const Label: FC<LabelProps> = ({ children, htmlFor, theme }) => {
-  const style = `${
-    theme ? theme.body.textColor : "text-gray-800"
-  } text-sm font-medium leading-5`;
+  const style = `${theme ? theme.body.textColor : "text-gray-800"} ${defLabel}`;
 
   return (
     <label htmlFor={htmlFor} className={style}>

@@ -1,5 +1,5 @@
 import React, { FC, ReactNode } from "react";
-import { ThemeType } from "../../identity";
+import { ThemeType, defTitleSub } from "../../identity";
 
 type TitleSubProps = {
   children: ReactNode;
@@ -9,7 +9,7 @@ type TitleSubProps = {
 export const TitleSub: FC<TitleSubProps> = ({ children, theme }) => {
   const style = `${
     theme ? theme.body.textColor : "text-gray-800"
-  } text-xl font-semibold md:text-2xl md:font-bold tracking-wider`;
+  } ${defTitleSub}`;
 
   return <h2 className={style}>{children}</h2>;
 };

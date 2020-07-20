@@ -2,7 +2,6 @@ export * from "./comment";
 export * from "./hr";
 export * from "./label";
 export * from "./legend";
-export * from "./text-column";
 export * from "./text-lead";
 export * from "./text-regular";
 export * from "./title";

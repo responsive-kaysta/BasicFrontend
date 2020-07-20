@@ -1,5 +1,5 @@
 import React, { FC, ReactNode } from "react";
-import { ThemeType } from "../../identity";
+import { ThemeType, defTitle } from "../../identity";
 
 type TitleProps = {
   children: ReactNode;
@@ -7,8 +7,6 @@ type TitleProps = {
 };
 
 export const Title: FC<TitleProps> = ({ children, theme }) => {
-  const style = `${
-    theme ? theme.body.textColor : "text-gray-800"
-  } text-2xl md:text-3xl font-semibold md:font-bold tracking-wider`;
+  const style = `${theme ? theme.body.textColor : "text-gray-800"} ${defTitle}`;
   return <h1 className={style}>{children}</h1>;
 };
