@@ -25,6 +25,33 @@ export const ThemeTransparent = {
   },
 };
 
+export const ThemeGreen = {
+  body: {
+    textColor: "text-gray-400",
+    secondaryText: "text-gray-200",
+    backgroundColor: "bg-greener-100",
+    borderColor: "border-gray-400",
+  },
+  link: {
+    textColor: "text-gray-400",
+    focusColor: "text-red-500",
+    hoverColor: "text-red-500",
+    activeColor: "text-red-500",
+    visitedColor: "text-gray-400",
+  },
+  form: {
+    textColor: "text-gray-100",
+    backgroundColor: "bg-transparent",
+    borderColor: "border-gray-100",
+    borderHoverColor: "border-gray-200",
+  },
+  format: {
+    codeTextColor: "text-gray-100",
+    codeBorderColor: "bg-transparent",
+    codeBackgroundColor: "border-gray-100",
+  },
+};
+
 export type ThemeType = {
   body: {
     textColor: string;

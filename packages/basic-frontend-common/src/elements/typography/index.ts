@@ -1,3 +1,4 @@
+export * from "./caption";
 export * from "./comment";
 export * from "./hr";
 export * from "./label";

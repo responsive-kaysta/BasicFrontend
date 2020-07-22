@@ -17989,7 +17989,10 @@ video {
   transition-delay: 1000ms;
 }
 
+/*
 body #root {
+  background: -moz-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)),
+    url("/images/mainboard-1174219.jpg");
   background: -webkit-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)),
     url("/images/mainboard-1174219.jpg");
   background-image: -ms-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)),
@@ -18001,6 +18004,7 @@ body #root {
   background-size: cover;
   background-color: transparent;
 }
+*/
 
 @media (min-width: 640px) {
   .sm\:container {

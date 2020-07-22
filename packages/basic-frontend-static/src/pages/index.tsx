@@ -4,11 +4,11 @@ import {
   Footer,
   IntroEyeCatcher,
   SimpleEyeCatcher,
+  ThemeGreen,
   ThemeTransparent,
 } from "basic-frontend-common";
 import React from "react";
 import * as Scroll from "react-scroll";
-import { ThemeGreen } from "../constants";
 
 var scroll = Scroll.animateScroll;
 var ScrollLink = Scroll.Link;
@@ -21,7 +21,10 @@ class Index extends React.Component {
   public render() {
     return (
       <>
-        <ContainerBody theme={ThemeTransparent}>
+        <ContainerBody
+          theme={ThemeTransparent}
+          backgroundImage="/images/mainboard-1174219.jpg"
+        >
           <IntroEyeCatcher
             contentTop="responsive kaysta"
             contentBottom="finest full stack development"

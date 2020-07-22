@@ -26,3 +26,8 @@ export const defLegend = "text-base font-medium";
 export const defLabel = "text-sm font-medium leading-5";
 
 export const defComment = "text-sm leading-5";
+
+export const defLink =
+  "text-base font-normal md:text-lg md:font-medium tracking-wide";
+
+export const defCaption = "text-base";
