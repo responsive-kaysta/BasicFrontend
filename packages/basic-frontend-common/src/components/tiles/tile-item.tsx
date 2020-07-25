@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import { ThemeType } from "../../identity";
-import { TitleSub, TextRegular } from "../../elements";
+import { TitleSub, TextRegular, Comment } from "../../elements";
 
 type TileElementProps = {
   headline: string;
@@ -35,10 +35,10 @@ export const TileItem: FC<TileElementProps> = ({
       }}
     >
       <div className="flex flex-row justify-between">
-        <TitleSub>{headline}</TitleSub>
-        <span>{date}</span>
+        <TitleSub theme={theme}>{headline}</TitleSub>
+        <Comment theme={theme}>{date}</Comment>
       </div>
-      <TextRegular>{description}</TextRegular>
+      <TextRegular theme={theme}>{description}</TextRegular>
     </a>
   );
 };

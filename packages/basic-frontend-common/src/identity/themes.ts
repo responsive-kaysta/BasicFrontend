@@ -1,27 +1,27 @@
 export const ThemeTransparent = {
   body: {
-    textColor: "text-gray-100",
+    textColor: "text-gray-300",
     secondaryText: "text-gray-100",
     backgroundColor: "bg-transparent",
-    borderColor: "border-gray-100",
+    borderColor: "border-gray-500",
   },
   link: {
-    textColor: "text-gray-100",
-    focusColor: "text-gray-100",
-    hoverColor: "text-gray-100",
-    activeColor: "text-gray-100",
-    visitedColor: "text-gray-100",
+    textColor: "text-gray-300",
+    focusColor: "text-gray-300",
+    hoverColor: "text-gray-300",
+    activeColor: "text-gray-300",
+    visitedColor: "text-gray-300",
   },
   form: {
-    textColor: "text-gray-100",
+    textColor: "text-gray-300",
     backgroundColor: "bg-transparent",
-    borderColor: "border-gray-200",
+    borderColor: "border-gray-500",
     borderHoverColor: "border-gray-300",
   },
   format: {
-    codeTextColor: "text-gray-100",
+    codeTextColor: "text-gray-300",
     codeBorderColor: "bg-transparent",
-    codeBackgroundColor: "border-gray-100",
+    codeBackgroundColor: "border-gray-500",
   },
 };
 

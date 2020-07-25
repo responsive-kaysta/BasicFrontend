@@ -1,5 +1,5 @@
 import { storiesOf } from "@storybook/react";
-import { TileSection, TileItem } from "basic-frontend-common";
+import { ThemeTransparent, TileItem, TileSection } from "basic-frontend-common";
 import React from "react";
 
 storiesOf("Design System / 04 Components", module).add("Tiles", () => (
@@ -30,7 +30,8 @@ storiesOf("Design System / 04 Components", module).add("Tiles", () => (
             description="At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
             date="21.04.2020"
             link="#"
-            bgImage="/AdobeStock_103620070.jpg"
+            bgImage="/images/AdobeStock_103620070.jpg"
+            theme={ThemeTransparent}
           />
 
           <TileItem

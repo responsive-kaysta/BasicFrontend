@@ -1,10 +1,11 @@
 import React, { FC } from "react";
 import {
-  TextLead,
-  TitleAbstract,
   ButtonRegular,
   ButtonType,
+  TextLead,
+  TitleAbstract,
 } from "../../elements";
+import { ThemeType } from "../../identity";
 
 type CallToActionProps = {
   ctaHeader: string;
@@ -13,6 +14,7 @@ type CallToActionProps = {
   primaryButtonAction: () => void;
   secondaryButtonText: string;
   secondaryButtonAction: () => void;
+  theme?: ThemeType;
 };
 
 export const CallToAction: FC<CallToActionProps> = ({
@@ -22,12 +24,16 @@ export const CallToAction: FC<CallToActionProps> = ({
   primaryButtonAction,
   secondaryButtonText,
   secondaryButtonAction,
+  theme,
 }) => {
+  const style = `${theme ? theme.body.backgroundColor : "bg-gray-100"} ${
+    theme ? theme.body.textColor : "text-gray-800"
+  }`;
   return (
-    <div className="bg-white">
+    <div className={style}>
       <div className="">
-        <TitleAbstract>{ctaHeader}</TitleAbstract>
-        <TextLead>{ctaText}</TextLead>
+        <TitleAbstract theme={theme}>{ctaHeader}</TitleAbstract>
+        <TextLead theme={theme}>{ctaText}</TextLead>
         <div className="mt-6 flex">
           <span className="mr-6">
             <ButtonRegular

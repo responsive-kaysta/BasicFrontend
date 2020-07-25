@@ -3,6 +3,7 @@ import {
   ContainerArticle,
   ContainerSection,
   ContainerBody,
+  ThemeTransparent,
 } from "basic-frontend-common";
 import React from "react";
 
@@ -52,7 +53,10 @@ storiesOf("Design System / 05 Layouts", module)
       <section className="flex flex-row mb-10 text-gray-100">
         <div className="w-1/4">ContainerBody without Theme</div>
         <div className="w-3/4 flex flex-row justify-between">
-          <ContainerBody backgroundImage="/images/mainboard-1174219.jpg">
+          <ContainerBody
+            backgroundImage="/images/mainboard-1174219.jpg"
+            theme={ThemeTransparent}
+          >
             <div>Container Content</div>
           </ContainerBody>
         </div>
