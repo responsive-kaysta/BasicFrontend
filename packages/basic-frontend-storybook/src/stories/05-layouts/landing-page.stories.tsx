@@ -11,16 +11,16 @@ import {
   Link,
   Pictogram,
   PictogramSize,
+  ScrollLink,
   SimpleEyeCatcher,
   Spotlight,
   ThemeGray,
   ThemeGreen,
+  ThemeLight,
   ThemeTransparent,
+  ToTopLink,
 } from "basic-frontend-common";
 import React from "react";
-import * as Scroll from "react-scroll";
-
-var ScrollLink = Scroll.Link;
 
 storiesOf("Design System / 05 Layouts", module).add("Landing Page", () => (
   <>
@@ -33,16 +33,9 @@ storiesOf("Design System / 05 Layouts", module).add("Landing Page", () => (
         contentTop="Fancy landing Page"
         contentBottom="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor"
       />
-      <ScrollLink
-        className={`bg-transparent ${ThemeTransparent.body.textColor} hover:${ThemeGreen.link.hoverColor} text-center font-semibold py-2 px-2`}
-        to="first-eye-catcher"
-        spy={true}
-        smooth="easeInOutQuint"
-        duration={2500}
-        offset={0}
-      >
+      <ScrollLink elementId="first-eye-catcher">
         <span className="block mb-4">weiter</span>
-        <span className="block">&#x2B07;</span>
+        <span className="block">&#x2193;</span>
       </ScrollLink>
     </ContainerBody>
 
@@ -98,6 +91,11 @@ storiesOf("Design System / 05 Layouts", module).add("Landing Page", () => (
           secondaryButtonType={ButtonType.secondary}
           secondaryButtonText="secondaryButtonText"
         />
+
+        <ToTopLink theme={ThemeLight}>
+          <span className="block">&#x2191;</span>
+          <span className="block mb-4">to top</span>
+        </ToTopLink>
       </ContainerSection>
     </ContainerArticle>
 

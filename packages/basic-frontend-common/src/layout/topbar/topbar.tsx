@@ -22,9 +22,11 @@ export const Topbar: FC<TopbarProps> = ({
 
   const [isMenuVisible, toggleMenuVisible] = useState<boolean>(false);
 
-  if (backgroundImage) {
-    document.body.style.backgroundImage = `url(${backgroundImage})`;
+  if (typeof window !== "undefined" && backgroundImage) {
+    // document.body.style.background = `linear-gradient(to bottom, #0b3536 0%, rgba(125, 185, 232, 0)), url(${backgroundImage})`;
+    document.body.style.backgroundImage = `linear-gradient(to bottom, #0b3536 0%, rgba(125, 185, 232, 0)), url(${backgroundImage})`;
     document.body.style.backgroundAttachment = "fixed";
+    document.body.style.backgroundSize = "cover";
   }
 
   return (
@@ -40,7 +42,7 @@ export const Topbar: FC<TopbarProps> = ({
         logo={logo}
       />
       <main
-        className={`flex flex-col flex-1 relative z-0 overflow-hidden bg-gray-100 text-gray-800`}
+        className={`flex flex-col flex-1 relative z-0 overflow-hidden`}
         id="main-container"
         tabIndex={0}
       >

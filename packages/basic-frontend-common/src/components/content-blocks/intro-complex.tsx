@@ -8,6 +8,7 @@ type IntroComplexProps = {
   titleComponent: ReactNode;
   lead?: string;
   hruler?: boolean;
+  centerContent?: boolean;
   theme?: ThemeType;
   elementId?: string;
   children?: ReactNode;
@@ -18,12 +19,17 @@ export const IntroComplex: FC<IntroComplexProps> = ({
   titleComponent,
   lead,
   hruler,
+  centerContent = false,
   theme,
   elementId,
   children,
 }) => {
   return (
-    <SectionHeader elementId={elementId}>
+    <SectionHeader
+      elementId={elementId}
+      theme={theme}
+      centerContent={centerContent}
+    >
       <div className="flex flex-row justify-between items-baseline">
         <Title theme={theme}>{title}</Title> {titleComponent}
       </div>

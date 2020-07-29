@@ -4,6 +4,7 @@ import {
   IntroAbstract,
   IntroComplex,
   Spacer,
+  IntroSimple,
 } from "basic-frontend-common";
 import React from "react";
 
@@ -48,6 +49,20 @@ storiesOf("Design System / 04 Components", module).add("Content-Blocks", () => (
         <IntroComplex
           title="Lorem ipsum dolor sit amet"
           titleComponent={<div>Div inside</div>}
+          hruler
+          lead="At vero eos et accusam et justo duo dolores et ea rebum."
+        />
+      </div>
+    </section>
+
+    <Spacer />
+    <Spacer />
+
+    <section className="flex flex-row mb-10">
+      <div className="w-1/4">IntroSimple</div>
+      <div className="w-3/4 flex flex-row justify-between">
+        <IntroSimple
+          title="Lorem ipsum dolor sit amet"
           hruler
           lead="At vero eos et accusam et justo duo dolores et ea rebum."
         />

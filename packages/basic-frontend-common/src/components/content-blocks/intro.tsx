@@ -9,6 +9,7 @@ type IntroProps = {
   subTitle?: string;
   lead?: string;
   theme?: ThemeType;
+  centerContent?: boolean;
   elementId?: string;
   children?: ReactNode;
 };
@@ -18,11 +19,16 @@ export const Intro: FC<IntroProps> = ({
   subTitle,
   lead,
   theme,
+  centerContent = false,
   elementId,
   children,
 }) => {
   return (
-    <SectionHeader elementId={elementId} theme={theme}>
+    <SectionHeader
+      elementId={elementId}
+      theme={theme}
+      centerContent={centerContent}
+    >
       <PageTitle title={title} subTitle={subTitle} theme={theme} />
       {lead && <TextLead theme={theme}>{lead}</TextLead>}
       {children}
