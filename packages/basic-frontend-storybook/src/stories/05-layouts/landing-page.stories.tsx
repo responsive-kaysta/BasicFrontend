@@ -14,6 +14,8 @@ import {
   ThemeGreen,
   ThemeTransparent,
   IntroSimple,
+  CallToAction,
+  ButtonType,
 } from "basic-frontend-common";
 import React from "react";
 import * as Scroll from "react-scroll";
@@ -55,7 +57,7 @@ storiesOf("Design System / 05 Layouts", module).add("Landing Page", () => (
       title="At vero eos et accusam et justo duo dolores et ea rebum."
       content="Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
       pictogram="ai_nano_technology"
-      pictogramSize={PictogramSize.xxxl}
+      pictogramSize={PictogramSize.xl}
     />
 
     <ContainerCover>
@@ -72,6 +74,34 @@ storiesOf("Design System / 05 Layouts", module).add("Landing Page", () => (
       </ContainerSection>
     </ContainerCover>
 
+    <Spotlight
+      theme={ThemeGray}
+      title="At vero eos et accusam et justo duo dolores et ea rebum."
+      content="Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+      pictogram="ai_cloud"
+      pictogramSize={PictogramSize.xl}
+    />
+
+    <ContainerCover>
+      <ContainerSection>
+        <IntroSimple
+          hruler
+          title="At vero eos et accusam et justo duo dolores et ea rebum"
+          lead="Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+        />
+        <CallToAction
+          ctaHeader="Call to action"
+          ctaText="At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+          primaryButtonAction="/"
+          primaryButtonType={ButtonType.primary}
+          primaryButtonText="primaryButtonText"
+          secondaryButtonAction="/"
+          secondaryButtonType={ButtonType.secondary}
+          secondaryButtonText="secondaryButtonText"
+        />
+      </ContainerSection>
+    </ContainerCover>
+
     <Footer>
       <ul className="flex flex-row mt-2 mb-1 md:mb-2 md:mt-4">
         <li className="m-1 md:m-2">
@@ -80,7 +110,7 @@ storiesOf("Design System / 05 Layouts", module).add("Landing Page", () => (
             theme={ThemeTransparent}
             newWindow
           >
-            <Pictogram name="xing_logo" size={PictogramSize.xs} />
+            <Pictogram name="xing_logo" size={PictogramSize.xxxs} />
           </Link>
         </li>
         <li className="m-1 md:m-2">
@@ -89,7 +119,7 @@ storiesOf("Design System / 05 Layouts", module).add("Landing Page", () => (
             theme={ThemeTransparent}
             newWindow
           >
-            <Pictogram name="linkedin_logo" size={PictogramSize.xs} />
+            <Pictogram name="linkedin_logo" size={PictogramSize.xxxs} />
           </Link>
         </li>
         <li className="m-1 md:m-2">
@@ -98,7 +128,7 @@ storiesOf("Design System / 05 Layouts", module).add("Landing Page", () => (
             theme={ThemeTransparent}
             newWindow
           >
-            <Pictogram name="github_logo" size={PictogramSize.xs} />
+            <Pictogram name="github_logo" size={PictogramSize.xxxs} />
           </Link>
         </li>
       </ul>

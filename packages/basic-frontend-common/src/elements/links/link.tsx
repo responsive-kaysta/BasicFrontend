@@ -1,5 +1,6 @@
 import React, { FC, ReactNode } from "react";
 import { defLink, ThemeType } from "../../identity";
+import { openUrl, openWindow } from "../../utils";
 import { ButtonSize } from "../buttons";
 import { buttonWrapper, styleSpecial } from "../buttons/button-styles";
 
@@ -23,14 +24,6 @@ export const Link: FC<LinkProps> = ({
       ? `${theme.link.textColor} hover:${theme.link.hoverColor} active:${theme.link.activeColor} visited:${theme.link.visitedColor} focus:${theme.link.focusColor}`
       : "text-gray-800 hover:text-blue-800 active:text-blue-800 visited:text-blue-800 "
   } ${defLink}`;
-
-  const openWindow = (url: string) => {
-    window.open(url);
-  };
-
-  const openUrl = (url: string) => {
-    window.location.href = url;
-  };
 
   if (newWindow) {
     return (

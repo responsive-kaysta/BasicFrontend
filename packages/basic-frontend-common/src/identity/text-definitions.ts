@@ -31,3 +31,7 @@ export const defLink =
   "text-base font-normal md:text-lg md:font-medium tracking-wide";
 
 export const defCaption = "text-base";
+
+// -------------------------------------------------------------------------------
+// buttons ->
+// -------------------------------------------------------------------------------

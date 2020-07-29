@@ -6,15 +6,16 @@ import {
   TitleAbstract,
 } from "../../elements";
 import { ThemeType } from "../../identity";
+import { openUrl } from "../../utils";
 
 type CallToActionProps = {
   ctaHeader: string;
   ctaText: string;
   primaryButtonText: string;
-  primaryButtonAction: () => void;
+  primaryButtonAction: string;
   primaryButtonType?: ButtonType;
   secondaryButtonText: string;
-  secondaryButtonAction: () => void;
+  secondaryButtonAction: string;
   secondaryButtonType?: ButtonType;
   theme?: ThemeType;
 };
@@ -30,25 +31,29 @@ export const CallToAction: FC<CallToActionProps> = ({
   secondaryButtonType,
   theme,
 }) => {
-  const style = `${theme ? theme.body.backgroundColor : "bg-gray-100"} ${
-    theme ? theme.body.textColor : "text-gray-800"
-  }`;
+  const style = `flex flex-col md:flex-row ${
+    theme ? theme.body.backgroundColor : "bg-gray-100"
+  } ${theme ? theme.body.textColor : "text-gray-800"}`;
+
   return (
     <div className={style}>
-      <div className="">
+      <div className="w-full md:w-3/4">
         <TitleAbstract theme={theme}>{ctaHeader}</TitleAbstract>
         <TextLead theme={theme}>{ctaText}</TextLead>
-        <div className="mt-6 flex">
-          <span className="mr-6">
-            <ButtonRegular
-              text={primaryButtonText}
-              onClick={primaryButtonAction}
-              type={primaryButtonType ? primaryButtonType : ButtonType.tertiary}
-            />
-          </span>
+      </div>
+
+      <div className="flex flex-col justify-center items-center w-full md:w-1/4">
+        <div className="mb-2 md:mb-4">
+          <ButtonRegular
+            text={primaryButtonText}
+            onClick={() => openUrl(primaryButtonAction)}
+            type={primaryButtonType ? primaryButtonType : ButtonType.tertiary}
+          />
+        </div>
+        <div>
           <ButtonRegular
             text={secondaryButtonText}
-            onClick={secondaryButtonAction}
+            onClick={() => openUrl(secondaryButtonAction)}
             type={
               secondaryButtonType ? secondaryButtonType : ButtonType.primary
             }

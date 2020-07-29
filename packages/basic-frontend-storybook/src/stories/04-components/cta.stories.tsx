@@ -16,9 +16,9 @@ storiesOf("Design System / 04 Components", module).add("Call to Action", () => (
           ctaHeader="Lorem ipsum dolor sit amet"
           ctaText="At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
           primaryButtonText="ButtonType.tertiary"
-          primaryButtonAction={() => null}
+          primaryButtonAction="/"
           secondaryButtonText="ButtonType.primary"
-          secondaryButtonAction={() => null}
+          secondaryButtonAction="/"
         />
       </div>
     </section>
@@ -30,10 +30,10 @@ storiesOf("Design System / 04 Components", module).add("Call to Action", () => (
           ctaHeader="Lorem ipsum dolor sit amet"
           ctaText="At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
           primaryButtonText="ButtonType.special"
-          primaryButtonAction={() => null}
+          primaryButtonAction="/"
           primaryButtonType={ButtonType.special}
           secondaryButtonText="ButtonType.transparent"
-          secondaryButtonAction={() => null}
+          secondaryButtonAction="/"
           secondaryButtonType={ButtonType.transparent}
         />
       </div>

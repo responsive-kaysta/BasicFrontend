@@ -2148,16 +2148,17 @@ const pictogramMap = {
 export const allPictogramNames = Object.keys(pictogramMap);
 
 export enum PictogramSize {
+  xxxs = 18,
   xxs = 24,
   xs = 36,
   sm = 48,
-  md = 64,
-  lg = 72,
-  xl = 96,
-  xxl = 114,
-  xxxl = 192,
-  xxxxl = 228,
-  xxxxxl = 384,
+  md = 72,
+  lg = 96,
+  xl = 144,
+  xxl = 192,
+  xxxl = 288,
+  xxxxl = 384,
+  xxxxxl = 596,
 }
 
 export type PictogramName = keyof typeof pictogramMap;

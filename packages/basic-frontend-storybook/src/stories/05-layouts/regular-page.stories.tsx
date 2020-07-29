@@ -16,9 +16,9 @@ storiesOf("Design System / 05 Layouts", module).add("Regular Page", () => (
           ctaHeader="Lorem ipsum dolor sit amet"
           ctaText="At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
           primaryButtonText="primaryButtonText"
-          primaryButtonAction={() => null}
+          primaryButtonAction="/"
           secondaryButtonText="secondaryButtonText"
-          secondaryButtonAction={() => null}
+          secondaryButtonAction="/"
         />
       </div>
     </section>
