@@ -50,7 +50,9 @@ storiesOf("Design System / 05 Layouts", module).add("Landing Page", () => (
       <Spotlight
         theme={ThemeGray}
         title="At vero eos et accusam et justo duo dolores et ea rebum."
-        content="Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+        content="Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut 
+        labore et dolore magna aliquyam erat, sed diam voluptua."
         pictogram="ai_nano_technology"
         pictogramSize={PictogramSize.xl}
       />
@@ -59,7 +61,9 @@ storiesOf("Design System / 05 Layouts", module).add("Landing Page", () => (
         <IntroSimple
           hruler
           title="At vero eos et accusam et justo duo dolores et ea rebum"
-          lead="Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+          lead="Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut 
+          labore et dolore magna aliquyam erat, sed diam voluptua."
         >
           <Link href="http://localhost:6006" buttonLink>
             weiter ...
@@ -70,7 +74,9 @@ storiesOf("Design System / 05 Layouts", module).add("Landing Page", () => (
       <Spotlight
         theme={ThemeGray}
         title="At vero eos et accusam et justo duo dolores et ea rebum."
-        content="Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+        content="Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut 
+        labore et dolore magna aliquyam erat, sed diam voluptua."
         pictogram="ai_cloud"
         pictogramSize={PictogramSize.xl}
       />
@@ -79,11 +85,14 @@ storiesOf("Design System / 05 Layouts", module).add("Landing Page", () => (
         <IntroSimple
           hruler
           title="At vero eos et accusam et justo duo dolores et ea rebum"
-          lead="Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+          lead="Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut 
+          labore et dolore magna aliquyam erat, sed diam voluptua."
         />
         <CallToAction
           ctaHeader="Call to action"
-          ctaText="At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+          ctaText="At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea 
+          takimata sanctus est Lorem ipsum dolor sit amet."
           primaryButtonAction="/"
           primaryButtonType={ButtonType.primary}
           primaryButtonText="primaryButtonText"

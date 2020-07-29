@@ -44,7 +44,9 @@ export const Spotlight: FC<SpotlightProps> = ({
   );
 
   const pictogramBlock = (
-    <div className="m-2 md:m-4">
+    <div
+      className={`m-2 md:m-4 ${theme ? theme.body.textColor : "text-gray-800"}`}
+    >
       <Pictogram name={pictogram} size={pictogramSize} />
     </div>
   );

@@ -16,11 +16,10 @@ export const Topbar: FC<TopbarProps> = ({
   menuItems,
   logo,
   backgroundImage,
-  ...props
 }) => {
-  // console.log("theme: ", theme);
-
   const [isMenuVisible, toggleMenuVisible] = useState<boolean>(false);
+
+  console.log(footer);
 
   if (typeof window !== "undefined" && backgroundImage) {
     // document.body.style.background = `linear-gradient(to bottom, #0b3536 0%, rgba(125, 185, 232, 0)), url(${backgroundImage})`;
@@ -30,11 +29,7 @@ export const Topbar: FC<TopbarProps> = ({
   }
 
   return (
-    <div
-      className={`flex flex-col w-full h-screen overflow-hidden`}
-      id="body-wrapper"
-      {...props}
-    >
+    <div className={`flex flex-col w-full min-h-screen`} id="body-wrapper">
       <HorizontalNavbar
         isMenuVisible={isMenuVisible}
         toggleMenuVisible={toggleMenuVisible}
@@ -42,7 +37,7 @@ export const Topbar: FC<TopbarProps> = ({
         logo={logo}
       />
       <main
-        className={`flex flex-col flex-1 relative z-0 overflow-hidden`}
+        className={`flex flex-col flex-1 relative z-0`}
         id="main-container"
         tabIndex={0}
       >
