@@ -1,27 +1,27 @@
 import React, { FC } from "react";
-import { SectionHeader } from "../sections";
-import { ThemeType } from "../../identity";
+import { SectionHeader } from "../../compositions/sections";
+import { PageTitle } from "../../compositions/title-blocks";
 import { TextLead } from "../../elements";
-import { AbstractTitle } from "../title-blocks";
+import { ThemeType } from "../../identity";
 
-type IntroAbstractProps = {
+type IntroProps = {
   title: string;
+  subTitle?: string;
   lead?: string;
-  hruler?: boolean;
   theme?: ThemeType;
   elementId?: string;
 };
 
-export const IntroAbstract: FC<IntroAbstractProps> = ({
+export const Intro: FC<IntroProps> = ({
   title,
+  subTitle,
   lead,
-  hruler,
   theme,
   elementId,
 }) => {
   return (
     <SectionHeader elementId={elementId}>
-      <AbstractTitle title={title} hruler={hruler} theme={theme} />
+      <PageTitle title={title} subTitle={subTitle} theme={theme} />
       {lead && <TextLead theme={theme}>{lead}</TextLead>}
     </SectionHeader>
   );

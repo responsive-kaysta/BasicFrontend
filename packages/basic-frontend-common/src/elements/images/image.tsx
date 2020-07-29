@@ -11,7 +11,11 @@ type ImageProps = {
 
 export const Image: FC<ImageProps> = ({ src, alt, caption, theme }) => {
   return (
-    <div className={`${theme ? theme.body.backgroundColor : "bg-gray-100"}`}>
+    <div
+      className={`flex flex-col w-full ${
+        theme ? theme.body.backgroundColor : "bg-gray-100"
+      }`}
+    >
       <img src={src} alt={alt} className="rounded-md md:rounded-lg" />
       {caption && <Caption theme={theme}>{caption}</Caption>}
     </div>

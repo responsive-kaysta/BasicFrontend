@@ -1,8 +1,8 @@
 import React, { FC } from "react";
+import { Section } from "../../compositions/sections";
+import { AbstractTitle } from "../../compositions/title-blocks";
 import { ThemeType } from "../../identity";
 import { TagItem } from "../../typings";
-import { Section } from "../sections";
-import { AbstractTitle } from "../title-blocks";
 
 type TagCloudProps = {
   title: string;
