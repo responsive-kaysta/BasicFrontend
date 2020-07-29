@@ -1,3 +1,30 @@
+export const ThemeGray = {
+  body: {
+    textColor: "text-gray-100",
+    secondaryText: "text-gray-200",
+    backgroundColor: "bg-gray-500",
+    borderColor: "border-gray-100",
+  },
+  link: {
+    textColor: "text-gray-100",
+    focusColor: "text-red-500",
+    hoverColor: "text-red-500",
+    activeColor: "text-red-500",
+    visitedColor: "text-gray-400",
+  },
+  form: {
+    textColor: "text-white",
+    backgroundColor: "bg-transparent",
+    borderColor: "bg-gray-200",
+    borderHoverColor: "border-gray-100",
+  },
+  format: {
+    codeTextColor: "text-gray-100",
+    codeBorderColor: "bg-transparent",
+    codeBackgroundColor: "border-gray-100",
+  },
+};
+
 export const ThemeTransparent = {
   body: {
     textColor: "text-gray-300",
@@ -7,9 +34,9 @@ export const ThemeTransparent = {
   },
   link: {
     textColor: "text-gray-300",
-    focusColor: "text-gray-300",
-    hoverColor: "text-gray-300",
-    activeColor: "text-gray-300",
+    focusColor: "text-red-500",
+    hoverColor: "text-red-500",
+    activeColor: "text-red-500",
     visitedColor: "text-gray-300",
   },
   form: {
@@ -29,7 +56,7 @@ export const ThemeGreen = {
   body: {
     textColor: "text-gray-400",
     secondaryText: "text-gray-200",
-    backgroundColor: "bg-greener-100",
+    backgroundColor: "bg-sgreen-100",
     borderColor: "border-gray-400",
   },
   link: {

@@ -7,7 +7,7 @@ type TextLeadProps = {
 };
 
 export const TextLead: FC<TextLeadProps> = ({ children, theme }) => {
-  const style = `${
+  const style = `mb-2 ${
     theme ? theme.body.textColor : "text-gray-800"
   } ${defTextLead}`;
 

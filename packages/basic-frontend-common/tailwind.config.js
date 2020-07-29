@@ -25,8 +25,12 @@ module.exports = {
       },
 
       colors: {
-        greener: {
+        sgreen: {
           100: "#1a867d",
+        },
+        sred: {
+          100: "#ed4933",
+          200: "#ef5e4a",
         },
 
         textColor: (theme) => theme("colors"),

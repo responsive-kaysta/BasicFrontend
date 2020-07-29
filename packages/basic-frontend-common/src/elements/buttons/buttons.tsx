@@ -12,22 +12,17 @@ import { ButtonType, ButtonSize } from "./button-types";
 
 type ButtonRegularProps = {
   text: string;
-
   type?: ButtonType;
   size?: ButtonSize;
   disabled?: boolean;
-
   onClick: () => void;
 };
 
 export const ButtonRegular: FC<ButtonRegularProps> = ({
   text,
-
   type,
   size = ButtonSize.normal,
-
   disabled = false,
-
   onClick,
 }) => {
   switch (type) {

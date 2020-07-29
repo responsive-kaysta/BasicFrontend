@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { TextRegular, TitleAbstract } from "../../elements";
+import { TextRegular, TitleSub } from "../../elements";
 import {
   Pictogram,
   PictogramName,
@@ -33,14 +33,18 @@ export const Spotlight: FC<SpotlightProps> = ({
   elementId,
 }) => {
   const contentBlock = (
-    <div className="flex flex-col w-full m-2 md:m-4">
-      <TitleAbstract theme={theme}>{title}</TitleAbstract>
+    <div
+      className={`flex flex-col w-full m-2 md:m-4 ${
+        orientation === Orientation.left ? "ml-2 md:ml-4" : "mr-2 md:mr-4"
+      }`}
+    >
+      <TitleSub theme={theme}>{title}</TitleSub>
       <TextRegular theme={theme}>{content}</TextRegular>
     </div>
   );
 
   const pictogramBlock = (
-    <div className="m-1 md:m-2">
+    <div className="m-2 md:m-4">
       <Pictogram name={pictogram} size={pictogramSize} />
     </div>
   );

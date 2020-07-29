@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { TextRegular, TitleAbstract, Hruler } from "../../elements";
+import { Hruler, TextRegular, TitleAbstract } from "../../elements";
 import { Image } from "../../elements/images";
 import { ThemeType } from "../../identity";
 import { Orientation } from "../../typings";

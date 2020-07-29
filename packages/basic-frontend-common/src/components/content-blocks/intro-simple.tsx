@@ -1,10 +1,9 @@
 import React, { FC, ReactNode } from "react";
 import { SectionHeader } from "../../compositions/sections";
-import { AbstractTitle } from "../../compositions/title-blocks";
-import { TextLead } from "../../elements";
+import { Hruler, TextLead, Title } from "../../elements";
 import { ThemeType } from "../../identity";
 
-type IntroAbstractProps = {
+type IntroSimpleProps = {
   title: string;
   lead?: string;
   hruler?: boolean;
@@ -13,7 +12,7 @@ type IntroAbstractProps = {
   children?: ReactNode;
 };
 
-export const IntroAbstract: FC<IntroAbstractProps> = ({
+export const IntroSimple: FC<IntroSimpleProps> = ({
   title,
   lead,
   hruler,
@@ -23,7 +22,8 @@ export const IntroAbstract: FC<IntroAbstractProps> = ({
 }) => {
   return (
     <SectionHeader elementId={elementId}>
-      <AbstractTitle title={title} hruler={hruler} theme={theme} />
+      <Title theme={theme}>{title}</Title>
+      {hruler && <Hruler theme={theme} noMarginTop />}
       {lead && <TextLead theme={theme}>{lead}</TextLead>}
       {children}
     </SectionHeader>

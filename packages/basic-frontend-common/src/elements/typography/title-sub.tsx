@@ -7,7 +7,7 @@ type TitleSubProps = {
 };
 
 export const TitleSub: FC<TitleSubProps> = ({ children, theme }) => {
-  const style = `${
+  const style = `mb-2 ${
     theme ? theme.body.textColor : "text-gray-800"
   } ${defTitleSub}`;
 

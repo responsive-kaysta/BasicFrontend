@@ -1,10 +1,13 @@
 import React, { FC, ReactNode } from "react";
 import { defLink, ThemeType } from "../../identity";
+import { ButtonSize } from "../buttons";
+import { buttonWrapper, styleSpecial } from "../buttons/button-styles";
 
 type LinkProps = {
   children: ReactNode;
   href: string;
   newWindow?: boolean;
+  buttonLink?: boolean;
   theme?: ThemeType;
 };
 
@@ -12,6 +15,7 @@ export const Link: FC<LinkProps> = ({
   children,
   href,
   newWindow = false,
+  buttonLink = false,
   theme,
 }) => {
   const style = `${
@@ -23,16 +27,33 @@ export const Link: FC<LinkProps> = ({
   const openWindow = (url: string) => {
     window.open(url);
   };
+
+  const openUrl = (url: string) => {
+    window.location.href = url;
+  };
+
   if (newWindow) {
     return (
       <button onClick={() => openWindow(href)} className={style}>
         {children}
       </button>
     );
-  }
-  return (
-    <a href={href} className={style}>
-      {children}
-    </a>
-  );
+  } else if (buttonLink) {
+    return (
+      <span className={buttonWrapper(ButtonSize.normal)}>
+        <button
+          onClick={() => (newWindow ? openWindow(href) : openUrl(href))}
+          type="button"
+          className={styleSpecial(ButtonSize.normal)}
+        >
+          {children}
+        </button>
+      </span>
+    );
+  } else
+    return (
+      <a href={href} className={style}>
+        {children}
+      </a>
+    );
 };

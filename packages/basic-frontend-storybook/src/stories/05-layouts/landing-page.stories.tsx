@@ -2,15 +2,18 @@ import { storiesOf } from "@storybook/react";
 import {
   ContainerBody,
   ContainerSection,
+  ContainerCover,
   Footer,
   IntroEyeCatcher,
-  SimpleEyeCatcher,
-  ThemeGreen,
-  ThemeTransparent,
+  Link,
   Pictogram,
   PictogramSize,
-  Link,
-  TextRegular,
+  SimpleEyeCatcher,
+  Spotlight,
+  ThemeGray,
+  ThemeGreen,
+  ThemeTransparent,
+  IntroSimple,
 } from "basic-frontend-common";
 import React from "react";
 import * as Scroll from "react-scroll";
@@ -47,15 +50,30 @@ storiesOf("Design System / 05 Layouts", module).add("Landing Page", () => (
       contentTop="At vero eos et accusam et justo duo dolores et ea rebum"
     />
 
-    <ContainerSection theme={ThemeTransparent}>
-      <div>Some Content</div>
-    </ContainerSection>
+    <Spotlight
+      theme={ThemeGray}
+      title="At vero eos et accusam et justo duo dolores et ea rebum."
+      content="Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+      pictogram="ai_nano_technology"
+      pictogramSize={PictogramSize.xxxl}
+    />
+
+    <ContainerCover>
+      <ContainerSection>
+        <IntroSimple
+          hruler
+          title="At vero eos et accusam et justo duo dolores et ea rebum"
+          lead="Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+        >
+          <Link href="http://localhost:6006" buttonLink>
+            weiter ...
+          </Link>
+        </IntroSimple>
+      </ContainerSection>
+    </ContainerCover>
 
     <Footer>
-      <span className="mt-2 mb-2 md:mt-4 md:mb-4">
-        <TextRegular theme={ThemeTransparent}>Find us on</TextRegular>
-      </span>
-      <ul className="flex flex-row mb-1 md:mb-2">
+      <ul className="flex flex-row mt-2 mb-1 md:mb-2 md:mt-4">
         <li className="m-1 md:m-2">
           <Link
             href="https://github.com/responsive-kaysta"
@@ -84,7 +102,7 @@ storiesOf("Design System / 05 Layouts", module).add("Landing Page", () => (
           </Link>
         </li>
       </ul>
-      <span>
+      <span className="mb-2 md:mb-4">
         <Link
           href="https://responsive-it.biz"
           theme={ThemeTransparent}

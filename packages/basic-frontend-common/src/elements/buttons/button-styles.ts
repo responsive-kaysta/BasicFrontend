@@ -77,9 +77,9 @@ export const styleAlarm = (size: ButtonSize) => {
 export const styleSpecial = (size: ButtonSize) => {
   return `inline-flex items-center ${buttonPadding(
     size
-  )} border-2 border-orange-600 ${buttonBorderStyle(
+  )} border-1 border-gray-400 ${buttonBorderStyle(
     size
-  )} text-gray-800 ${buttonTextStyle(
+  )} text-gray-100 ${buttonTextStyle(
     size
-  )} bg-transparent hover:text-gray-900 hover:bg-gray-100 hover:shadow-lg focus:outline-none focus:border-orange-900 focus:shadow-outline-gray active:bg-transparent transition ease-in-out duration-150`;
+  )} bg-sred-100 hover:text-gray-200 hover:bg-sred-200 hover:shadow-lg focus:outline-none focus:border-gray-500 focus:shadow-outline-gray active:bg-sred-200 transition ease-in-out duration-150`;
 };

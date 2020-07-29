@@ -10,6 +10,7 @@ type IntroComplexProps = {
   hruler?: boolean;
   theme?: ThemeType;
   elementId?: string;
+  children?: ReactNode;
 };
 
 export const IntroComplex: FC<IntroComplexProps> = ({
@@ -19,14 +20,16 @@ export const IntroComplex: FC<IntroComplexProps> = ({
   hruler,
   theme,
   elementId,
+  children,
 }) => {
   return (
     <SectionHeader elementId={elementId}>
       <div className="flex flex-row justify-between items-baseline">
         <Title theme={theme}>{title}</Title> {titleComponent}
       </div>
-      {hruler && <Hruler theme={theme} />}
+      {hruler && <Hruler theme={theme} noMarginTop />}
       {lead && <TextLead theme={theme}>{lead}</TextLead>}
+      {children}
     </SectionHeader>
   );
 };
