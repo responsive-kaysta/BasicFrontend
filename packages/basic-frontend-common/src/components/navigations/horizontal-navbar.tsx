@@ -1,18 +1,14 @@
-import React, { FC, ReactNode } from "react";
+import React, { FC, ReactNode, useState } from "react";
 import { Pictogram, PictogramSize } from "../../identity";
 import { NavigationItems } from "../../typings";
 
 type HorizontalNavbarProps = {
   menuItems: NavigationItems[];
-  isMenuVisible: boolean;
-  toggleMenuVisible: (visible: boolean) => void;
   logo?: ReactNode;
 };
 
 export const HorizontalNavbar: FC<HorizontalNavbarProps> = ({
   menuItems,
-  isMenuVisible,
-  toggleMenuVisible,
   logo,
 }) => {
   const logoComp = (
@@ -25,36 +21,38 @@ export const HorizontalNavbar: FC<HorizontalNavbarProps> = ({
     </span>
   );
 
+  const [menuVisible, setMenuVisible] = useState<boolean>(false);
+
   return (
     <header id="horizontal-navbar-header">
       <div
-        className={`flex flex-row items-center justify-between h-12 md:h-16 bg-gray-700 text-gray-100`}
+        className={`flex flex-row items-center justify-between h-12 md:h-16 bg-gray-800 text-gray-100`}
       >
         {logoComp}
-        {!isMenuVisible && (
+        {!menuVisible && (
           <div className="flex pr-3">
             <button
               className={`text-gray-100`}
               aria-label="Open sidebar"
-              onClick={() => toggleMenuVisible(true)}
+              onClick={() => setMenuVisible(true)}
             >
               <Pictogram name="hamburger_menu" size={PictogramSize.xs} />
             </button>
           </div>
         )}
-        {isMenuVisible && (
+        {menuVisible && (
           <nav
             id="horizontal-navbar"
-            className={`fixed flex flex-col top-0 right-0 w-2/3 md:w-1/3 h-screen z-40 bg-gray-700 text-gray-100 transition-all duration-300 ease-in-out ${
-              isMenuVisible ? "bg-opacity-75" : "bg-opacity-0"
+            className={`fixed flex flex-col top-0 right-0 w-2/3 md:w-1/3 h-screen z-40 bg-sgreen-100 text-gray-100 transition-all duration-300 ease-in-out ${
+              menuVisible ? "bg-opacity-75" : "bg-opacity-0"
             }`}
-            onClick={() => toggleMenuVisible(false)}
+            onClick={() => setMenuVisible(false)}
           >
             <div className="flex">
               <button
                 className={`text-gray-100`}
                 aria-label="Close sidebar"
-                onClick={() => toggleMenuVisible(false)}
+                onClick={() => setMenuVisible(false)}
               >
                 <Pictogram
                   name="hamburger_menu_close"

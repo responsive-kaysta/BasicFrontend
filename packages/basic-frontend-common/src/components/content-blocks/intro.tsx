@@ -22,7 +22,7 @@ export const Intro: FC<IntroProps> = ({
   children,
 }) => {
   return (
-    <SectionHeader elementId={elementId}>
+    <SectionHeader elementId={elementId} theme={theme}>
       <PageTitle title={title} subTitle={subTitle} theme={theme} />
       {lead && <TextLead theme={theme}>{lead}</TextLead>}
       {children}
