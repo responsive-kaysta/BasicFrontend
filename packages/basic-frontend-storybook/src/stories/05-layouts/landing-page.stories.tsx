@@ -1,10 +1,13 @@
 import { storiesOf } from "@storybook/react";
 import {
+  ButtonType,
+  CallToAction,
+  ContainerArticle,
   ContainerBody,
   ContainerSection,
-  ContainerCover,
   Footer,
   IntroEyeCatcher,
+  IntroSimple,
   Link,
   Pictogram,
   PictogramSize,
@@ -13,9 +16,6 @@ import {
   ThemeGray,
   ThemeGreen,
   ThemeTransparent,
-  IntroSimple,
-  CallToAction,
-  ButtonType,
 } from "basic-frontend-common";
 import React from "react";
 import * as Scroll from "react-scroll";
@@ -45,22 +45,23 @@ storiesOf("Design System / 05 Layouts", module).add("Landing Page", () => (
         <span className="block">&#x2B07;</span>
       </ScrollLink>
     </ContainerBody>
-    <SimpleEyeCatcher
-      theme={ThemeGreen}
-      elementId="first-eye-catcher"
-      contentBottom="Lorem ipsum dolor sit amet"
-      contentTop="At vero eos et accusam et justo duo dolores et ea rebum"
-    />
 
-    <Spotlight
-      theme={ThemeGray}
-      title="At vero eos et accusam et justo duo dolores et ea rebum."
-      content="Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
-      pictogram="ai_nano_technology"
-      pictogramSize={PictogramSize.xl}
-    />
+    <ContainerArticle>
+      <SimpleEyeCatcher
+        theme={ThemeGreen}
+        elementId="first-eye-catcher"
+        contentBottom="Lorem ipsum dolor sit amet"
+        contentTop="At vero eos et accusam et justo duo dolores et ea rebum"
+      />
 
-    <ContainerCover>
+      <Spotlight
+        theme={ThemeGray}
+        title="At vero eos et accusam et justo duo dolores et ea rebum."
+        content="Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+        pictogram="ai_nano_technology"
+        pictogramSize={PictogramSize.xl}
+      />
+
       <ContainerSection>
         <IntroSimple
           hruler
@@ -72,17 +73,15 @@ storiesOf("Design System / 05 Layouts", module).add("Landing Page", () => (
           </Link>
         </IntroSimple>
       </ContainerSection>
-    </ContainerCover>
 
-    <Spotlight
-      theme={ThemeGray}
-      title="At vero eos et accusam et justo duo dolores et ea rebum."
-      content="Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
-      pictogram="ai_cloud"
-      pictogramSize={PictogramSize.xl}
-    />
+      <Spotlight
+        theme={ThemeGray}
+        title="At vero eos et accusam et justo duo dolores et ea rebum."
+        content="Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+        pictogram="ai_cloud"
+        pictogramSize={PictogramSize.xl}
+      />
 
-    <ContainerCover>
       <ContainerSection>
         <IntroSimple
           hruler
@@ -100,7 +99,7 @@ storiesOf("Design System / 05 Layouts", module).add("Landing Page", () => (
           secondaryButtonText="secondaryButtonText"
         />
       </ContainerSection>
-    </ContainerCover>
+    </ContainerArticle>
 
     <Footer>
       <ul className="flex flex-row mt-2 mb-1 md:mb-2 md:mt-4">

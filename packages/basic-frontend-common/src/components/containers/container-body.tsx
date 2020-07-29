@@ -25,5 +25,5 @@ export const ContainerBody: FC<BasicContainerProps> = ({
     document.body.style.backgroundSize = "cover";
   }
 
-  return <article className={style}>{children}</article>;
+  return <main className={style}>{children}</main>;
 };
