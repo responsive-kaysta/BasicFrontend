@@ -12,8 +12,10 @@ type CallToActionProps = {
   ctaText: string;
   primaryButtonText: string;
   primaryButtonAction: () => void;
+  primaryButtonType?: ButtonType;
   secondaryButtonText: string;
   secondaryButtonAction: () => void;
+  secondaryButtonType?: ButtonType;
   theme?: ThemeType;
 };
 
@@ -22,8 +24,10 @@ export const CallToAction: FC<CallToActionProps> = ({
   ctaText,
   primaryButtonText,
   primaryButtonAction,
+  primaryButtonType,
   secondaryButtonText,
   secondaryButtonAction,
+  secondaryButtonType,
   theme,
 }) => {
   const style = `${theme ? theme.body.backgroundColor : "bg-gray-100"} ${
@@ -39,13 +43,15 @@ export const CallToAction: FC<CallToActionProps> = ({
             <ButtonRegular
               text={primaryButtonText}
               onClick={primaryButtonAction}
-              type={ButtonType.tertiary}
+              type={primaryButtonType ? primaryButtonType : ButtonType.tertiary}
             />
           </span>
           <ButtonRegular
             text={secondaryButtonText}
             onClick={secondaryButtonAction}
-            type={ButtonType.primary}
+            type={
+              secondaryButtonType ? secondaryButtonType : ButtonType.primary
+            }
           />
         </div>
       </div>

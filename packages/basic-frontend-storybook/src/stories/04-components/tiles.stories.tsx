@@ -10,7 +10,7 @@ storiesOf("Design System / 04 Components", module).add("Tiles", () => (
     </section>
 
     <section className="flex flex-row mb-10">
-      <div className="w-1/4">Tiles without Theme</div>
+      <div className="w-1/4">TileSection</div>
       <div className="w-3/4 flex flex-row justify-between">
         <TileSection>
           <TileItem

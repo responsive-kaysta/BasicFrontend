@@ -13,7 +13,8 @@
   "dependencies": {
     "basic-frontend-common": "^0.2.7",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "react-scroll": "^1.8.0"
   },
   "devDependencies": {
     "@babel/core": "^7.10.5",
@@ -35,6 +36,6 @@
     "awesome-typescript-loader": "^5.2.1",
     "babel-loader": "^8.1.0",
     "copy-webpack-plugin": "^6.0.3",
-    "tailwindcss": "^1.5.1"
+    "tailwindcss": "^1.5.2"
   }
 }

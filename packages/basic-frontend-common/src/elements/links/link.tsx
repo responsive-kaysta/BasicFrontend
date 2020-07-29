@@ -1,15 +1,15 @@
-import React, { FC } from "react";
+import React, { FC, ReactNode } from "react";
 import { defLink, ThemeType } from "../../identity";
 
 type LinkProps = {
-  text: string;
+  children: ReactNode;
   href: string;
   newWindow?: boolean;
   theme?: ThemeType;
 };
 
 export const Link: FC<LinkProps> = ({
-  text,
+  children,
   href,
   newWindow = false,
   theme,
@@ -26,13 +26,13 @@ export const Link: FC<LinkProps> = ({
   if (newWindow) {
     return (
       <button onClick={() => openWindow(href)} className={style}>
-        {text}
+        {children}
       </button>
     );
   }
   return (
     <a href={href} className={style}>
-      {text}
+      {children}
     </a>
   );
 };

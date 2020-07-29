@@ -1,5 +1,10 @@
 import { storiesOf } from "@storybook/react";
 import {
+  Caption,
+  Comment,
+  Hruler,
+  Label,
+  Legend,
   TextLead,
   TextRegular,
   Title,
@@ -59,6 +64,44 @@ storiesOf("Design System / 02 Elements", module).add("Text-Elements", () => (
           nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
           sed diam voluptua.
         </TextRegular>
+      </div>
+    </section>
+
+    <Hruler />
+
+    <section className="flex flex-row mb-10">
+      <div className="w-1/4">Caption</div>
+      <div className="w-3/4 flex flex-row justify-between">
+        <Caption>
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+        </Caption>
+      </div>
+    </section>
+
+    <section className="flex flex-row mb-10">
+      <div className="w-1/4">Comment</div>
+      <div className="w-3/4 flex flex-row justify-between">
+        <Comment>
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+        </Comment>
+      </div>
+    </section>
+
+    <section className="flex flex-row mb-10">
+      <div className="w-1/4">Label</div>
+      <div className="w-3/4 flex flex-row justify-between">
+        <Label>
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+        </Label>
+      </div>
+    </section>
+
+    <section className="flex flex-row mb-10">
+      <div className="w-1/4">Legend</div>
+      <div className="w-3/4 flex flex-row justify-between">
+        <Legend>
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+        </Legend>
       </div>
     </section>
   </div>

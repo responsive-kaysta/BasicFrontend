@@ -1,12 +1,13 @@
 import { storiesOf } from "@storybook/react";
 import {
+  ImageOrientation,
   Intro,
-  Product,
   IntroAbstract,
+  IntroComplex,
+  Product,
+  Spacer,
   TagCloud,
   TagItem,
-  IntroComplex,
-  ImageOrientation,
 } from "basic-frontend-common";
 import React from "react";
 
@@ -47,7 +48,7 @@ storiesOf("Design System / 03 Compositions", module).add(
       </section>
 
       <section className="flex flex-row mb-10">
-        <div className="w-1/4">Intro without Theme</div>
+        <div className="w-1/4">Intro</div>
         <div className="w-3/4 flex flex-row justify-between">
           <Intro
             title="Lorem ipsum dolor sit amet"
@@ -57,8 +58,11 @@ storiesOf("Design System / 03 Compositions", module).add(
         </div>
       </section>
 
+      <Spacer />
+      <Spacer />
+
       <section className="flex flex-row mb-10">
-        <div className="w-1/4">IntroAbstract without Theme</div>
+        <div className="w-1/4">IntroAbstract</div>
         <div className="w-3/4 flex flex-row justify-between">
           <IntroAbstract
             title="Lorem ipsum dolor sit amet"
@@ -68,15 +72,21 @@ storiesOf("Design System / 03 Compositions", module).add(
         </div>
       </section>
 
+      <Spacer />
+      <Spacer />
+
       <section className="flex flex-row mb-10">
-        <div className="w-1/4">TagCloud without Theme</div>
+        <div className="w-1/4">TagCloud</div>
         <div className="w-3/4 flex flex-row justify-between">
           <TagCloud title="Lorem ipsum dolor sit amet" hruler tags={tagList} />
         </div>
       </section>
 
+      <Spacer />
+      <Spacer />
+
       <section className="flex flex-row mb-10">
-        <div className="w-1/4">IntroComplex without Theme</div>
+        <div className="w-1/4">IntroComplex</div>
         <div className="w-3/4 flex flex-row justify-between">
           <IntroComplex
             title="Lorem ipsum dolor sit amet"
@@ -87,8 +97,11 @@ storiesOf("Design System / 03 Compositions", module).add(
         </div>
       </section>
 
+      <Spacer />
+      <Spacer />
+
       <section className="flex flex-row mb-10">
-        <div className="w-1/4">Product, right alignment, no Theme</div>
+        <div className="w-1/4">Product, right alignment</div>
         <div className="w-3/4 flex flex-row justify-between">
           <Product
             title="Lorem ipsum dolor sit amet"
@@ -100,8 +113,11 @@ storiesOf("Design System / 03 Compositions", module).add(
         </div>
       </section>
 
+      <Spacer />
+      <Spacer />
+
       <section className="flex flex-row mb-10">
-        <div className="w-1/4">Product, left alignment, no Theme</div>
+        <div className="w-1/4">Product, left alignment</div>
         <div className="w-3/4 flex flex-row justify-between">
           <Product
             title="Lorem ipsum dolor sit amet"

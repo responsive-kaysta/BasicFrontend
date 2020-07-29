@@ -10,14 +10,14 @@ storiesOf("Design System / 03 Compositions", module).add("Eye-Catcher", () => (
     </section>
 
     <section className="flex flex-row mb-10">
-      <div className="w-1/4">SimpleEyeCatcher without Theme</div>
+      <div className="w-1/4">SimpleEyeCatcher</div>
       <div className="w-3/4 flex flex-row justify-between">
         <SimpleEyeCatcher contentTop="Top" contentBottom="Bottom" />
       </div>
     </section>
 
     <section className="flex flex-row mb-10">
-      <div className="w-1/4">IntroEyeCatcher without Theme</div>
+      <div className="w-1/4">IntroEyeCatcher</div>
       <div className="w-3/4 flex flex-row justify-between">
         <IntroEyeCatcher contentTop="Top" contentBottom="Bottom" />
       </div>
