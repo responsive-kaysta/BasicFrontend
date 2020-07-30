@@ -72,10 +72,7 @@ storiesOf("Design System / 05 Layouts", module).add("Regular Page", () => (
     backgroundImage="/images/mainboard-1174219.jpg"
     logo="Fancy Branding"
   >
-    <ContainerArticle
-      theme={ThemeTransparent}
-      backgroundImage="/images/mainboard-1174219.jpg"
-    >
+    <ContainerArticle theme={ThemeTransparent}>
       <IntroSimple
         theme={ThemeTransparent}
         centerContent

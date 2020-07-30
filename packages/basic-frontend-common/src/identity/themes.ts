@@ -81,17 +81,17 @@ export const ThemeTransparent = {
 
 export const ThemeGreen = {
   body: {
-    textColor: "text-gray-400",
+    textColor: "text-gray-100",
     secondaryText: "text-gray-200",
     backgroundColor: "bg-sgreen-100",
-    borderColor: "border-gray-400",
+    borderColor: "border-gray-100",
   },
   link: {
-    textColor: "text-gray-400",
+    textColor: "text-gray-100",
     focusColor: "text-red-500",
     hoverColor: "text-red-500",
     activeColor: "text-red-500",
-    visitedColor: "text-gray-400",
+    visitedColor: "text-gray-100",
   },
   form: {
     textColor: "text-gray-100",
