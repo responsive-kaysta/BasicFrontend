@@ -22,7 +22,8 @@ storiesOf("Design System / 05 Layouts", module).add("Regular Page", () => (
     menuItems={menuItems}
     footer={footerComponent(ThemeDarkgray)}
     backgroundImage="/images/mainboard-1174219.jpg"
-    logo="Fancy Branding"
+    branding="Fancy Branding"
+    theme={ThemeDarkgray}
   >
     <ContainerArticle theme={ThemeTransparent}>
       <IntroSimple

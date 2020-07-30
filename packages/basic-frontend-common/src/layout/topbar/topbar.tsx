@@ -1,21 +1,23 @@
 import React, { FC, ReactNode, useState } from "react";
-import { NavigationItems } from "../../typings";
+import { NavigationItems, ThemeType } from "../../typings";
 import { HorizontalNavbar } from "./horizontal-navbar";
 
 type TopbarProps = {
   children: ReactNode;
   footer?: ReactNode;
   menuItems: NavigationItems[];
-  logo?: string;
+  branding?: string;
   backgroundImage?: string;
+  theme?: ThemeType;
 };
 
 export const Topbar: FC<TopbarProps> = ({
   children,
   footer,
   menuItems,
-  logo,
+  branding,
   backgroundImage,
+  theme,
 }) => {
   const [isMenuVisible, toggleMenuVisible] = useState<boolean>(false);
 
@@ -32,7 +34,8 @@ export const Topbar: FC<TopbarProps> = ({
         isMenuVisible={isMenuVisible}
         toggleMenuVisible={toggleMenuVisible}
         menuItems={menuItems}
-        logo={logo}
+        branding={branding}
+        theme={theme}
       />
       <main
         className={`flex flex-col flex-1 relative z-0`}

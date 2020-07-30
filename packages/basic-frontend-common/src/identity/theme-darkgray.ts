@@ -4,7 +4,7 @@ export const ThemeDarkgray: ThemeType = {
   body: {
     textColor: "text-gray-100",
     secondaryText: "text-gray-200",
-    backgroundColor: "bg-gray-800",
+    backgroundColor: "bg-gray-700",
     borderColor: "border-gray-100",
   },
   link: {
@@ -18,7 +18,7 @@ export const ThemeDarkgray: ThemeType = {
     textColor: "text-white",
     backgroundColor: "bg-transparent",
     borderColor: "bg-gray-200",
-    borderHoverColor: "border-gray-100",
+    borderHoverColor: "border-red-500",
   },
   format: {
     codeTextColor: "text-gray-100",
