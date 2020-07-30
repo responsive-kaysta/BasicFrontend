@@ -1,6 +1,7 @@
 import React, { FC, ReactNode } from "react";
 import { Pictogram, PictogramSize } from "../../identity";
 import { NavigationItems } from "../../typings";
+import { openUrl } from "../../utils";
 
 type HorizontalNavbarProps = {
   menuItems: NavigationItems[];
@@ -45,7 +46,7 @@ export const HorizontalNavbar: FC<HorizontalNavbarProps> = ({
         {isMenuVisible && (
           <nav
             id="horizontal-navbar"
-            className={`fixed flex flex-col top-0 right-0 w-2/3 md:w-1/3 h-screen z-40 bg-gray-700 text-gray-100 transition-all duration-300 ease-in-out ${
+            className={`fixed flex flex-col top-0 right-0 w-2/3 md:w-1/3 h-screen z-40 bg-sgreen-100 text-gray-100 transition-all duration-300 ease-in-out ${
               isMenuVisible ? "bg-opacity-75" : "bg-opacity-0"
             }`}
             onClick={() => toggleMenuVisible(false)}
@@ -67,12 +68,13 @@ export const HorizontalNavbar: FC<HorizontalNavbarProps> = ({
                 return (
                   <li
                     key={item.title}
-                    className={`pt-6 pb-2 w-full border-b border-gray-300`}
+                    onClick={() => openUrl(item.link)}
+                    className={`pt-6 pb-2 w-full border-b border-gray-300 text-gray-100 hover:text-red-500 hover:border-red-500 cursor-pointer`}
                   >
                     <a
                       href={item.link}
                       title={item.title}
-                      className={`text-gray-100 text-md`}
+                      className={`text-md`}
                     >
                       {item.text}
                     </a>
