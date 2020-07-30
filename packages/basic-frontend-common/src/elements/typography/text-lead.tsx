@@ -1,5 +1,6 @@
 import React, { FC, ReactNode } from "react";
-import { defTextLead, ThemeType } from "../../identity";
+import { defTextLead } from "../../identity";
+import { ThemeType } from "../../typings";
 
 type TextLeadProps = {
   children: ReactNode;

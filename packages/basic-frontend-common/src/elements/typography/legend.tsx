@@ -1,5 +1,6 @@
 import React, { FC, ReactNode } from "react";
-import { defLegend, ThemeType } from "../../identity";
+import { defLegend } from "../../identity";
+import { ThemeType } from "../../typings";
 
 type LegendProps = {
   children: ReactNode;

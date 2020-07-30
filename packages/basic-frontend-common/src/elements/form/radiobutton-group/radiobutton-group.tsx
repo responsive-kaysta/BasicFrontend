@@ -1,5 +1,5 @@
 import React, { FC, useEffect, useState } from "react";
-import { ThemeType } from "../../../identity";
+import { ThemeType } from "../../../typings";
 import { FormBase } from "../form-base";
 import { RadioButton } from "./radiobutton";
 

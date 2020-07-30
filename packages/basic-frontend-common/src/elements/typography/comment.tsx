@@ -1,5 +1,6 @@
 import React, { FC, ReactNode } from "react";
-import { defComment, ThemeType } from "../../identity";
+import { defComment } from "../../identity";
+import { ThemeType } from "../../typings";
 
 type CommentProps = {
   children: ReactNode;

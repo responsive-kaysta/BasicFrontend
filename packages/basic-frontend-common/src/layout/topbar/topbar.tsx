@@ -1,6 +1,6 @@
 import React, { FC, ReactNode, useState } from "react";
-import { HorizontalNavbar } from "../../components";
 import { NavigationItems } from "../../typings";
+import { HorizontalNavbar } from "./horizontal-navbar";
 
 type TopbarProps = {
   children: ReactNode;
@@ -18,8 +18,6 @@ export const Topbar: FC<TopbarProps> = ({
   backgroundImage,
 }) => {
   const [isMenuVisible, toggleMenuVisible] = useState<boolean>(false);
-
-  console.log(footer);
 
   if (typeof window !== "undefined" && backgroundImage) {
     // document.body.style.background = `linear-gradient(to bottom, #0b3536 0%, rgba(125, 185, 232, 0)), url(${backgroundImage})`;

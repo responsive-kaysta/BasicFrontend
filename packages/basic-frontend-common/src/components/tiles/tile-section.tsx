@@ -1,6 +1,6 @@
 import React, { FC, ReactNode } from "react";
 import { ContainerSection } from "../containers";
-import { ThemeType } from "../../identity";
+import { ThemeType } from "../../typings";
 
 type TileSectionProps = {
   children: ReactNode;

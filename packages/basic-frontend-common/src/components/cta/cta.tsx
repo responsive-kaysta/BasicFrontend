@@ -5,7 +5,7 @@ import {
   TextLead,
   TitleAbstract,
 } from "../../elements";
-import { ThemeType } from "../../identity";
+import { ThemeType } from "../../typings";
 import { openUrl } from "../../utils";
 
 type CallToActionProps = {

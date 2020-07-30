@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import { Hruler, Title, TitleSub } from "../../elements";
-import { ThemeType } from "../../identity";
+import { ThemeType } from "../../typings";
 
 type PageTitleProps = {
   title: string;

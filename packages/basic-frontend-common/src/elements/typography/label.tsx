@@ -1,5 +1,6 @@
 import React, { FC, ReactNode } from "react";
-import { defLabel, ThemeType } from "../../identity";
+import { defLabel } from "../../identity";
+import { ThemeType } from "../../typings";
 
 type LabelProps = {
   children: ReactNode;

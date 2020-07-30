@@ -1,6 +1,6 @@
 import React, { FC, ReactNode } from "react";
 import { animateScroll as scroll } from "react-scroll";
-import { ThemeType } from "../../identity";
+import { ThemeType } from "../../typings";
 
 type ToTopLinkProps = {
   children: ReactNode;

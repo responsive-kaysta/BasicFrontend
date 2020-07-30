@@ -1,5 +1,6 @@
 import React, { FC, ReactNode } from "react";
-import { defTitleAbstract, ThemeType } from "../../identity";
+import { defTitleAbstract } from "../../identity";
+import { ThemeType } from "../../typings";
 
 type TitleAbstractProps = {
   children: ReactNode;

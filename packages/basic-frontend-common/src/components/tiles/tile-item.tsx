@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { ThemeType } from "../../identity";
+import { ThemeType } from "../../typings";
 import { TitleSub, TextRegular, Comment } from "../../elements";
 
 type TileElementProps = {

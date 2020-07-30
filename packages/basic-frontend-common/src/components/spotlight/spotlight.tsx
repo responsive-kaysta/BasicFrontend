@@ -1,12 +1,7 @@
 import React, { FC } from "react";
 import { TextRegular, TitleSub } from "../../elements";
-import {
-  Pictogram,
-  PictogramName,
-  PictogramSize,
-  ThemeType,
-} from "../../identity";
-import { Orientation } from "../../typings";
+import { Pictogram, PictogramName, PictogramSize } from "../../identity";
+import { Orientation, ThemeType } from "../../typings";
 
 export enum PictogramOrientation {
   left,

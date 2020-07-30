@@ -1,5 +1,6 @@
 import React, { FC, ReactNode } from "react";
-import { ThemeType, defTitleSub } from "../../identity";
+import { defTitleSub } from "../../identity";
+import { ThemeType } from "../../typings";
 
 type TitleSubProps = {
   children: ReactNode;

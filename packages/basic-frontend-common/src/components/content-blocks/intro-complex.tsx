@@ -1,7 +1,7 @@
 import React, { FC, ReactNode } from "react";
 import { SectionHeader } from "../../compositions/sections";
 import { Hruler, TextLead, Title } from "../../elements";
-import { ThemeType } from "../../identity";
+import { ThemeType } from "../../typings";
 
 type IntroComplexProps = {
   title: string;

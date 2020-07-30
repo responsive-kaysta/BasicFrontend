@@ -1,6 +1,6 @@
 import React, { FC, ReactNode } from "react";
 import * as Scroll from "react-scroll";
-import { ThemeType } from "../../identity";
+import { ThemeType } from "../../typings";
 
 var ScrollLinkElement = Scroll.Link;
 

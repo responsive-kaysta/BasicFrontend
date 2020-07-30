@@ -1,5 +1,6 @@
 import React, { FC, ReactNode } from "react";
-import { defCaption, ThemeType } from "../../identity";
+import { defCaption } from "../../identity";
+import { ThemeType } from "../../typings";
 
 type CaptionProps = {
   children: ReactNode;

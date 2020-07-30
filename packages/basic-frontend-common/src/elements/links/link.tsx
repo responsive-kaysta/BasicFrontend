@@ -1,8 +1,9 @@
 import React, { FC, ReactNode } from "react";
-import { defLink, ThemeType } from "../../identity";
+import { defLink } from "../../identity";
 import { openUrl, openWindow } from "../../utils";
 import { ButtonSize } from "../buttons";
 import { buttonWrapper, styleSpecial } from "../buttons/button-styles";
+import { ThemeType } from "../../typings";
 
 type LinkProps = {
   children: ReactNode;

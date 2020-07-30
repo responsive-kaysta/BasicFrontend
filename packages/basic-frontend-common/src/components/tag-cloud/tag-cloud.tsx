@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import { Section } from "../../compositions/sections";
 import { AbstractTitle } from "../../compositions/title-blocks";
-import { ThemeType } from "../../identity";
+import { ThemeType } from "../../typings";
 import { TagItem } from "../../typings";
 import { Link } from "../../elements";
 

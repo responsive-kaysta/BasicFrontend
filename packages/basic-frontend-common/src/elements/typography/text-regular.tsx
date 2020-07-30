@@ -1,5 +1,6 @@
 import React, { FC, ReactNode } from "react";
-import { defTextRegular, ThemeType } from "../../identity";
+import { defTextRegular } from "../../identity";
+import { ThemeType } from "../../typings";
 
 type TextRegularProps = {
   children: ReactNode;

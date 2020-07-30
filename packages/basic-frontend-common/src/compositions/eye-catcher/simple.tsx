@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import { Hruler, TitleSub, TextLead } from "../../elements";
-import { ThemeType } from "../../identity";
+import { ThemeType } from "../../typings";
 
 type EyeCatcherProps = {
   contentTop: string;

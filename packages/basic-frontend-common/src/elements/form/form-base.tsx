@@ -1,5 +1,5 @@
 import React, { FC, ReactNode } from "react";
-import { ThemeType } from "../../identity";
+import { ThemeType } from "../../typings";
 import { Comment, Label, Legend } from "../typography";
 
 type FormBaseProps = {

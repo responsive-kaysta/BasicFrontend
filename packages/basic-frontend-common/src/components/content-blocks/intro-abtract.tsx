@@ -2,7 +2,7 @@ import React, { FC, ReactNode } from "react";
 import { SectionHeader } from "../../compositions/sections";
 import { AbstractTitle } from "../../compositions/title-blocks";
 import { TextLead } from "../../elements";
-import { ThemeType } from "../../identity";
+import { ThemeType } from "../../typings";
 
 type IntroAbstractProps = {
   title: string;

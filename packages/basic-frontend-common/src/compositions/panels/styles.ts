@@ -1,4 +1,4 @@
-import { ThemeType } from "../../identity";
+import { ThemeType } from "../../typings";
 
 export const wrapperStyle = (theme?: ThemeType) => {
   return theme

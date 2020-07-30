@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import { Hruler, TextRegular, TitleAbstract } from "../../elements";
 import { Image } from "../../elements/images";
-import { ThemeType } from "../../identity";
+import { ThemeType } from "../../typings";
 import { Orientation } from "../../typings";
 
 type ProductProps = {
