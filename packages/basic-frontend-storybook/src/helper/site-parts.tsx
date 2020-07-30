@@ -8,6 +8,7 @@ import {
 } from "basic-frontend-common";
 import React, { useState, useEffect } from "react";
 
+// https://itnext.io/responsive-background-images-using-react-hooks-941af365ea1f
 export const footerComponent = (theme: ThemeType) => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const pictogramSize =

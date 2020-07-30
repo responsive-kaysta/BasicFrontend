@@ -56,7 +56,8 @@ storiesOf("Design System / 05 Layouts", module).add("Regular Page", () => (
               sanctus est Lorem ipsum dolor sit amet.
             </TextRegular>
           </IntroSimple>
-          {/*    */}
+        </ContainerSection>
+        <ContainerSection>
           <IntroSimple
             hruler
             title="Fancy Title"
@@ -70,7 +71,8 @@ storiesOf("Design System / 05 Layouts", module).add("Regular Page", () => (
               sanctus est Lorem ipsum dolor sit amet.
             </TextRegular>
           </IntroSimple>
-          {/*    */}
+        </ContainerSection>
+        <ContainerSection>
           <IntroSimple
             hruler
             title="Fancy Title"
@@ -84,7 +86,8 @@ storiesOf("Design System / 05 Layouts", module).add("Regular Page", () => (
               sanctus est Lorem ipsum dolor sit amet.
             </TextRegular>
           </IntroSimple>
-          {/*    */}
+        </ContainerSection>
+        <ContainerSection>
           <IntroSimple
             hruler
             title="Fancy Title"
@@ -98,7 +101,6 @@ storiesOf("Design System / 05 Layouts", module).add("Regular Page", () => (
               sanctus est Lorem ipsum dolor sit amet.
             </TextRegular>
           </IntroSimple>
-          {/*    */}
           <ToTopLink theme={ThemeLight}>
             <span className="block">&#x2191;</span>
             <span className="block mb-4">to top</span>

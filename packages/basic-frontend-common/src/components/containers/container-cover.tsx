@@ -3,16 +3,14 @@ import { ThemeType } from "../../typings";
 
 type BasicContainerProps = {
   children: ReactNode;
-  cssStyle?: string;
   theme?: ThemeType;
 };
 
 export const ContainerCover: FC<BasicContainerProps> = ({
   children,
-  cssStyle,
   theme,
 }) => {
-  const style = `w-full ${cssStyle ? cssStyle : ""} ${
+  const style = `w-full ${
     theme
       ? `${theme.body.backgroundColor} ${theme.body.textColor}`
       : "bg-gray-100 text-gray-800"
