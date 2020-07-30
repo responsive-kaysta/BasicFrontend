@@ -5,11 +5,9 @@ import {
   ContainerArticle,
   ContainerBody,
   ContainerSection,
-  Footer,
   IntroEyeCatcher,
   IntroSimple,
   Link,
-  Pictogram,
   PictogramSize,
   ScrollLink,
   SimpleEyeCatcher,
@@ -19,8 +17,10 @@ import {
   ThemeLight,
   ThemeTransparent,
   ToTopLink,
+  ThemeDarkgray,
 } from "basic-frontend-common";
 import React from "react";
+import { footerComponent } from "../../helper";
 
 storiesOf("Design System / 05 Layouts", module).add("Landing Page", () => (
   <>
@@ -108,45 +108,6 @@ storiesOf("Design System / 05 Layouts", module).add("Landing Page", () => (
       </ContainerSection>
     </ContainerArticle>
 
-    <Footer>
-      <ul className="flex flex-row mt-2 mb-1 md:mb-2 md:mt-4">
-        <li className="m-1 md:m-2">
-          <Link
-            href="https://github.com/responsive-kaysta"
-            theme={ThemeTransparent}
-            newWindow
-          >
-            <Pictogram name="xing_logo" size={PictogramSize.xxxs} />
-          </Link>
-        </li>
-        <li className="m-1 md:m-2">
-          <Link
-            href="https://www.xing.com/profile/Kay_Stuckenschmidt/cv"
-            theme={ThemeTransparent}
-            newWindow
-          >
-            <Pictogram name="linkedin_logo" size={PictogramSize.xxxs} />
-          </Link>
-        </li>
-        <li className="m-1 md:m-2">
-          <Link
-            href="https://www.linkedin.com/in/responsivekaysta/"
-            theme={ThemeTransparent}
-            newWindow
-          >
-            <Pictogram name="github_logo" size={PictogramSize.xxxs} />
-          </Link>
-        </li>
-      </ul>
-      <span className="mb-2 md:mb-4">
-        <Link
-          href="https://responsive-it.biz"
-          theme={ThemeTransparent}
-          newWindow
-        >
-          2020 responsive IT
-        </Link>
-      </span>
-    </Footer>
+    {footerComponent(ThemeDarkgray)}
   </>
 ));
