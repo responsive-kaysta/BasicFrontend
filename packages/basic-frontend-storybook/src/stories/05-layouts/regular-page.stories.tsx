@@ -31,7 +31,7 @@ storiesOf("Design System / 05 Layouts", module).add("Regular Page", () => (
         theme={ThemeTransparent}
         centerContent
         containerContent
-        title="Fancy landing Page"
+        title="Fancy Regular Page"
         lead="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor"
       />
       <Spotlight

@@ -37,20 +37,20 @@ export const CallToAction: FC<CallToActionProps> = ({
 
   return (
     <div className={style}>
-      <div className="w-full md:w-3/4">
+      <div className="w-full md:w-3/4 md:pr-6">
         <TitleAbstract theme={theme}>{ctaHeader}</TitleAbstract>
         <TextLead theme={theme}>{ctaText}</TextLead>
       </div>
 
-      <div className="flex flex-col justify-center items-center w-full md:w-1/4">
-        <div className="mb-2 md:mb-4">
+      <div className="flex flex-col justify-center items-center w-full md:w-1/4 md:pt-5">
+        <div className="mb-4 mt-4 md:mb-6 md:mt-6">
           <ButtonRegular
             text={primaryButtonText}
             onClick={() => openUrl(primaryButtonAction)}
             type={primaryButtonType ? primaryButtonType : ButtonType.tertiary}
           />
         </div>
-        <div>
+        <div className="mb-4 md:mb-6">
           <ButtonRegular
             text={secondaryButtonText}
             onClick={() => openUrl(secondaryButtonAction)}

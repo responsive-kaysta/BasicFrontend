@@ -28,7 +28,7 @@ export const footerComponent = (theme: ThemeType) => {
 
   return (
     <Footer>
-      <ul className="flex flex-row mt-2 md:mt-4">
+      <ul className="flex flex-row mt-4 md:mt-6">
         <li className="ml-2 mr-2 md:ml-4 md:mr-4">
           <Link
             href="https://github.com/responsive-kaysta"
@@ -57,7 +57,7 @@ export const footerComponent = (theme: ThemeType) => {
           </Link>
         </li>
       </ul>
-      <span className="mb-1 md:mb-2">
+      <span className="mb-2 md:mb-4">
         <Link href="https://responsive-it.biz" theme={theme} newWindow>
           2020 responsive IT
         </Link>

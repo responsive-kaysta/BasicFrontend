@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React, { FC, useState, useEffect } from "react";
 import { TextRegular, TitleSub } from "../../elements";
 import { Pictogram, PictogramName, PictogramSize } from "../../identity";
 import { Orientation, ThemeType } from "../../typings";
@@ -27,14 +27,33 @@ export const Spotlight: FC<SpotlightProps> = ({
   theme,
   elementId,
 }) => {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const pictogramResponsiveSize =
+    windowWidth >= 650 ? pictogramSize : PictogramSize.lg;
+  const showRegularText = windowWidth >= 650 ? true : false;
+  const titleText = showRegularText ? "" : content;
+
+  useEffect(() => {
+    const handleWindowResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleWindowResize);
+
+    return () => {
+      window.removeEventListener("resize", handleWindowResize);
+    };
+  }, []);
+
   const contentBlock = (
     <div
+      title={titleText}
       className={`flex flex-col w-full m-2 md:m-4 ${
         orientation === Orientation.left ? "ml-2 md:ml-4" : "mr-2 md:mr-4"
       }`}
     >
       <TitleSub theme={theme}>{title}</TitleSub>
-      <TextRegular theme={theme}>{content}</TextRegular>
+      {showRegularText && <TextRegular theme={theme}>{content}</TextRegular>}
     </div>
   );
 
@@ -42,7 +61,7 @@ export const Spotlight: FC<SpotlightProps> = ({
     <div
       className={`m-2 md:m-4 ${theme ? theme.body.textColor : "text-gray-800"}`}
     >
-      <Pictogram name={pictogram} size={pictogramSize} />
+      <Pictogram name={pictogram} size={pictogramResponsiveSize} />
     </div>
   );
 

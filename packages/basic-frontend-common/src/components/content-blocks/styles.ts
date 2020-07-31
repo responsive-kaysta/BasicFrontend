@@ -6,7 +6,7 @@ export const headerStyle = (
   containerContent?: boolean
 ) => {
   return `${
-    containerContent ? "container" : ""
+    containerContent ? "container" : "w-full"
   } pb-4 pt-4 md:pb-6 md:pt-6 xl:pb-8 xl:pt-8 ${
     centerContent ? "text-center" : "text-left"
   } ${

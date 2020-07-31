@@ -18,6 +18,7 @@ import {
   ThemeTransparent,
   ToTopLink,
   ThemeDarkgray,
+  Spacer,
 } from "basic-frontend-common";
 import React from "react";
 import { footerComponent } from "../../helper";
@@ -64,11 +65,11 @@ storiesOf("Design System / 05 Layouts", module).add("Landing Page", () => (
           lead="Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut 
           labore et dolore magna aliquyam erat, sed diam voluptua."
-        >
-          <Link href="http://localhost:6006" buttonLink>
-            weiter ...
-          </Link>
-        </IntroSimple>
+        />
+        <Link href="http://localhost:6006" buttonLink>
+          weiter ...
+        </Link>
+        <Spacer />
       </ContainerSection>
 
       <Spotlight
@@ -89,6 +90,9 @@ storiesOf("Design System / 05 Layouts", module).add("Landing Page", () => (
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut 
           labore et dolore magna aliquyam erat, sed diam voluptua."
         />
+      </ContainerSection>
+
+      <ContainerSection>
         <CallToAction
           ctaHeader="Call to action"
           ctaText="At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea 
@@ -100,7 +104,8 @@ storiesOf("Design System / 05 Layouts", module).add("Landing Page", () => (
           secondaryButtonType={ButtonType.secondary}
           secondaryButtonText="secondaryButtonText"
         />
-
+      </ContainerSection>
+      <ContainerSection>
         <ToTopLink theme={ThemeLight}>
           <span className="block">&#x2191;</span>
           <span className="block mb-4">to top</span>
