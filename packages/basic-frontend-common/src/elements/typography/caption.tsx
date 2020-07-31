@@ -8,7 +8,7 @@ type CaptionProps = {
 };
 
 export const Caption: FC<CaptionProps> = ({ children, theme }) => {
-  const style = `w-full mt-2 ${
+  const style = `w-full ${
     theme ? theme.body.textColor : "text-gray-500"
   } ${defCaption}`;
 

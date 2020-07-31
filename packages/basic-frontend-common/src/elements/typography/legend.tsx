@@ -8,7 +8,7 @@ type LegendProps = {
 };
 
 export const Legend: FC<LegendProps> = ({ children, theme }) => {
-  const style = `mb-2 ${
+  const style = `${
     theme ? theme.body.textColor : "text-gray-800"
   } ${defLegend}`;
 

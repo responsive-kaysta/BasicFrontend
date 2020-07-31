@@ -8,8 +8,6 @@ type TitleProps = {
 };
 
 export const Title: FC<TitleProps> = ({ children, theme }) => {
-  const style = `mb-4 ${
-    theme ? theme.body.textColor : "text-gray-800"
-  } ${defTitle}`;
+  const style = `${theme ? theme.body.textColor : "text-gray-800"} ${defTitle}`;
   return <h1 className={style}>{children}</h1>;
 };

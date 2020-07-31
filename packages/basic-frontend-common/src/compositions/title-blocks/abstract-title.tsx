@@ -16,7 +16,7 @@ export const AbstractTitle: FC<AbstractTitleProps> = ({
   elementId,
 }) => {
   return (
-    <div className="mb-2 md:mb-4" id={elementId}>
+    <div className="pt-4 md:pt-4 lg:pt-6 xl:pt-8" id={elementId}>
       <TitleAbstract theme={theme}>{title}</TitleAbstract>
       {hruler && <Hruler theme={theme} />}
     </div>

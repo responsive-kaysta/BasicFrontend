@@ -8,7 +8,7 @@ type TextRegularProps = {
 };
 
 export const TextRegular: FC<TextRegularProps> = ({ children, theme }) => {
-  const style = `mb-2 ${
+  const style = `${
     theme ? theme.body.textColor : "text-gray-800"
   } ${defTextRegular}`;
   return <p className={style}>{children}</p>;

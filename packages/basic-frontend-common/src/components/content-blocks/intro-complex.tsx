@@ -30,10 +30,10 @@ export const IntroComplex: FC<IntroComplexProps> = ({
       theme={theme}
       centerContent={centerContent}
     >
-      <div className="flex flex-row justify-between items-baseline">
+      <div className="flex flex-row justify-between items-baseline pt-4 md:pt-4 lg:pt-6 xl:pt-8">
         <Title theme={theme}>{title}</Title> {titleComponent}
       </div>
-      {hruler && <Hruler theme={theme} noMarginTop />}
+      {hruler && <Hruler theme={theme} />}
       {lead && <TextLead theme={theme}>{lead}</TextLead>}
       {children}
     </SectionHeader>

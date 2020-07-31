@@ -8,7 +8,7 @@ type CommentProps = {
 };
 
 export const Comment: FC<CommentProps> = ({ children, theme }) => {
-  const style = `mb-2 ${
+  const style = `${
     theme ? theme.body.textColor : "text-gray-500"
   } ${defComment}`;
 

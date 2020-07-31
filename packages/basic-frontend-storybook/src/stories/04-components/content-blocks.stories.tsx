@@ -7,6 +7,7 @@ import {
   IntroSimple,
 } from "basic-frontend-common";
 import React from "react";
+import { boolean } from "@storybook/addon-knobs";
 
 storiesOf("Design System / 04 Components", module).add("Content-Blocks", () => (
   <div className="container">
@@ -34,7 +35,7 @@ storiesOf("Design System / 04 Components", module).add("Content-Blocks", () => (
       <div className="w-3/4 flex flex-row justify-between">
         <IntroAbstract
           title="Lorem ipsum dolor sit amet"
-          hruler
+          hruler={boolean("IntroAbstract Hruler", true)}
           lead="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
         />
       </div>
@@ -49,7 +50,7 @@ storiesOf("Design System / 04 Components", module).add("Content-Blocks", () => (
         <IntroComplex
           title="Lorem ipsum dolor sit amet"
           titleComponent={<div>Div inside</div>}
-          hruler
+          hruler={boolean("IntroComplex Hruler", true)}
           lead="At vero eos et accusam et justo duo dolores et ea rebum."
         />
       </div>
@@ -63,7 +64,7 @@ storiesOf("Design System / 04 Components", module).add("Content-Blocks", () => (
       <div className="w-3/4 flex flex-row justify-between">
         <IntroSimple
           title="Lorem ipsum dolor sit amet"
-          hruler
+          hruler={boolean("IntroSimple Hruler", true)}
           lead="At vero eos et accusam et justo duo dolores et ea rebum."
         />
       </div>

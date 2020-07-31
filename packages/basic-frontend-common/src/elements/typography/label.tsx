@@ -9,9 +9,7 @@ type LabelProps = {
 };
 
 export const Label: FC<LabelProps> = ({ children, htmlFor, theme }) => {
-  const style = `mb-2 ${
-    theme ? theme.body.textColor : "text-gray-800"
-  } ${defLabel}`;
+  const style = `${theme ? theme.body.textColor : "text-gray-800"} ${defLabel}`;
 
   return (
     <label htmlFor={htmlFor} className={style}>

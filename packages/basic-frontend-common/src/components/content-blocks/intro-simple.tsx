@@ -28,8 +28,10 @@ export const IntroSimple: FC<IntroSimpleProps> = ({
       theme={theme}
       centerContent={centerContent}
     >
-      <Title theme={theme}>{title}</Title>
-      {hruler && <Hruler theme={theme} noMarginTop />}
+      <div className="pt-4 md:pt-4 lg:pt-6 xl:pt-8">
+        <Title theme={theme}>{title}</Title>
+      </div>
+      {hruler && <Hruler theme={theme} />}
       {lead && <TextLead theme={theme}>{lead}</TextLead>}
       {children}
     </SectionHeader>

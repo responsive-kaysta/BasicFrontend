@@ -1,25 +1,25 @@
 import React, { FC } from "react";
-import { Hruler, Title, TitleSub } from "../../elements";
+import { Hruler, TextLead, TitleSub } from "../../elements";
 import { ThemeType } from "../../typings";
 
 type PageTitleProps = {
   title: string;
-  subTitle?: string;
+  leadText?: string;
   theme?: ThemeType;
   elementId?: string;
 };
 
-export const PageTitle: FC<PageTitleProps> = ({
+export const SubTitle: FC<PageTitleProps> = ({
   title,
-  subTitle,
+  leadText,
   theme,
   elementId,
 }) => {
   return (
     <div className="pt-4 md:pt-4 lg:pt-6 xl:pt-8" id={elementId}>
-      <Title theme={theme}>{title}</Title>
+      <TitleSub theme={theme}>{title}</TitleSub>
       <Hruler theme={theme} />
-      {subTitle && <TitleSub theme={theme}>{subTitle}</TitleSub>}
+      {leadText && <TextLead theme={theme}>{leadText}</TextLead>}
     </div>
   );
 };
