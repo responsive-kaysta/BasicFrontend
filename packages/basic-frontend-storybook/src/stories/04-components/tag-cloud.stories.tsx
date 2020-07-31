@@ -30,7 +30,7 @@ const tagList: TagItem[] = [
 ];
 
 storiesOf("Design System / 04 Components", module).add("Tag Cloud", () => (
-  <div className="container">
+  <div>
     <section className="flex flex-row mb-10">
       <div className="w-1/4 text-xl">Type</div>
       <div className="w-3/4 text-xl">Swarm</div>

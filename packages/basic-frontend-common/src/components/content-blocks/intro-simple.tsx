@@ -1,13 +1,14 @@
 import React, { FC, ReactNode } from "react";
-import { SectionHeader } from "../../compositions/sections";
 import { Hruler, TextLead, Title } from "../../elements";
 import { ThemeType } from "../../typings";
+import { headerStyle } from "./styles";
 
 type IntroSimpleProps = {
   title: string;
   lead?: string;
   hruler?: boolean;
   centerContent?: boolean;
+  containerContent?: boolean;
   theme?: ThemeType;
   elementId?: string;
   children?: ReactNode;
@@ -18,22 +19,20 @@ export const IntroSimple: FC<IntroSimpleProps> = ({
   lead,
   hruler,
   centerContent = false,
+  containerContent = false,
   theme,
   elementId,
   children,
 }) => {
   return (
-    <SectionHeader
-      elementId={elementId}
-      theme={theme}
-      centerContent={centerContent}
+    <header
+      className={headerStyle(theme, centerContent, containerContent)}
+      id={elementId}
     >
-      <div className="pt-4 md:pt-4 lg:pt-6 xl:pt-8">
-        <Title theme={theme}>{title}</Title>
-      </div>
+      <Title theme={theme}>{title}</Title>
       {hruler && <Hruler theme={theme} />}
       {lead && <TextLead theme={theme}>{lead}</TextLead>}
       {children}
-    </SectionHeader>
+    </header>
   );
 };

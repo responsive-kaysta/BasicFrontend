@@ -3,7 +3,7 @@ import { IntroEyeCatcher, SimpleEyeCatcher } from "basic-frontend-common";
 import React from "react";
 
 storiesOf("Design System / 03 Compositions", module).add("Eye-Catcher", () => (
-  <div className="container">
+  <div>
     <section className="flex flex-row mb-10">
       <div className="w-1/4 text-xl">Type</div>
       <div className="w-3/4 text-xl">Swarm</div>

@@ -1,7 +1,7 @@
 import React, { FC, ReactNode } from "react";
-import { SectionHeader } from "../../compositions/sections";
 import { Hruler, TextLead, Title } from "../../elements";
 import { ThemeType } from "../../typings";
+import { headerStyle } from "./styles";
 
 type IntroComplexProps = {
   title: string;
@@ -9,6 +9,7 @@ type IntroComplexProps = {
   lead?: string;
   hruler?: boolean;
   centerContent?: boolean;
+  containerContent?: boolean;
   theme?: ThemeType;
   elementId?: string;
   children?: ReactNode;
@@ -20,22 +21,22 @@ export const IntroComplex: FC<IntroComplexProps> = ({
   lead,
   hruler,
   centerContent = false,
+  containerContent = false,
   theme,
   elementId,
   children,
 }) => {
   return (
-    <SectionHeader
-      elementId={elementId}
-      theme={theme}
-      centerContent={centerContent}
+    <header
+      className={headerStyle(theme, centerContent, containerContent)}
+      id={elementId}
     >
-      <div className="flex flex-row justify-between items-baseline pt-4 md:pt-4 lg:pt-6 xl:pt-8">
+      <div className="flex flex-row justify-between items-baseline">
         <Title theme={theme}>{title}</Title> {titleComponent}
       </div>
       {hruler && <Hruler theme={theme} />}
       {lead && <TextLead theme={theme}>{lead}</TextLead>}
       {children}
-    </SectionHeader>
+    </header>
   );
 };

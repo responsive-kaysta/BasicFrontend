@@ -3,7 +3,7 @@ import { Orientation, Product, Spacer } from "basic-frontend-common";
 import React from "react";
 
 storiesOf("Design System / 04 Components", module).add("Product", () => (
-  <div className="container">
+  <div>
     <section className="flex flex-row mb-10">
       <div className="w-1/4 text-xl">Type</div>
       <div className="w-3/4 text-xl">Swarm</div>

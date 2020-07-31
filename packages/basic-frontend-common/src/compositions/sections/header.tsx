@@ -14,7 +14,7 @@ export const SectionHeader: FC<SectionHeaderProps> = ({
   theme,
   elementId,
 }) => {
-  const style = `w-full ${centerContent ? "text-center" : "text-left"} ${
+  const style = `${centerContent ? "text-center" : "text-left"} ${
     theme
       ? `${theme.body.backgroundColor} ${theme.body.textColor}`
       : "bg-gray-100 text-gray-800"

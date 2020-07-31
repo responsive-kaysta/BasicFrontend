@@ -8,7 +8,7 @@ type SectionProps = {
 };
 
 export const Section: FC<SectionProps> = ({ children, theme, elementId }) => {
-  const style = `w-full ${
+  const style = ` ${
     theme
       ? `${theme.body.backgroundColor} ${theme.body.textColor}`
       : "bg-gray-100 text-gray-800"

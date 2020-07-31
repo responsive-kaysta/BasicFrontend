@@ -7,6 +7,7 @@ import {
   PictogramSize,
   Spotlight,
   SubTitle,
+  TextRegular,
   ThemeDarkgray,
   ThemeGray,
   ThemeLight,
@@ -29,6 +30,7 @@ storiesOf("Design System / 05 Layouts", module).add("Regular Page", () => (
       <IntroSimple
         theme={ThemeTransparent}
         centerContent
+        containerContent
         title="Fancy landing Page"
         lead="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor"
       />
@@ -48,6 +50,27 @@ storiesOf("Design System / 05 Layouts", module).add("Regular Page", () => (
             title="At vero eos et accusam et justo duo dolores et ea rebum"
             leadText="Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet"
           />
+          <TextRegular>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+            Lorem ipsum dolor sit amet.
+          </TextRegular>
+        </ContainerSection>
+        <ContainerSection>
+          <SubTitle
+            theme={ThemeLight}
+            title="At vero eos et accusam et justo duo dolores et ea rebum"
+            leadText="Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet"
+          />
+          <TextRegular>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+            Lorem ipsum dolor sit amet.
+          </TextRegular>
           <ToTopLink theme={ThemeLight}>
             <span className="block">&#x2191;</span>
             <span className="block mb-4">to top</span>

@@ -1,8 +1,8 @@
 import React, { FC, ReactNode } from "react";
-import { SectionHeader } from "../../compositions/sections";
 import { PageTitle } from "../../compositions/title-blocks";
 import { TextLead } from "../../elements";
 import { ThemeType } from "../../typings";
+import { headerStyle } from "./styles";
 
 type IntroProps = {
   title: string;
@@ -10,6 +10,7 @@ type IntroProps = {
   lead?: string;
   theme?: ThemeType;
   centerContent?: boolean;
+  containerContent?: boolean;
   elementId?: string;
   children?: ReactNode;
 };
@@ -20,18 +21,18 @@ export const Intro: FC<IntroProps> = ({
   lead,
   theme,
   centerContent = false,
+  containerContent = false,
   elementId,
   children,
 }) => {
   return (
-    <SectionHeader
-      elementId={elementId}
-      theme={theme}
-      centerContent={centerContent}
+    <header
+      className={headerStyle(theme, centerContent, containerContent)}
+      id={elementId}
     >
       <PageTitle title={title} subTitle={subTitle} theme={theme} />
       {lead && <TextLead theme={theme}>{lead}</TextLead>}
       {children}
-    </SectionHeader>
+    </header>
   );
 };
