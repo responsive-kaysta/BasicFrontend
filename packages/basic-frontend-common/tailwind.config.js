@@ -1,5 +1,4 @@
 module.exports = {
-  purge: { enabled: true, content: ["./src/**/*.ts", "./src/**/*.tsx"] },
   theme: {
     extend: {
       fontFamily: {
@@ -39,4 +38,7 @@ module.exports = {
   },
   variants: {},
   plugins: [],
+  corePlugins: {
+    container: false,
+  },
 };
