@@ -1,4 +1,5 @@
 import React, { FC } from "react";
+import download from "/pictograms/file-and-document/001-download.svg";
 
 const pictogramMap = {
   hamburger_menu: (size: number, className: string) => (
@@ -79,6 +80,15 @@ const pictogramMap = {
         <path d="m225.875 301.125h60.25c24.882 0 45.125-20.243 45.125-45.125s-20.243-45.125-45.125-45.125h-60.25c-24.882 0-45.125 20.243-45.125 45.125s20.243 45.125 45.125 45.125zm0-60.25h60.25c8.34 0 15.125 6.785 15.125 15.125s-6.785 15.125-15.125 15.125h-60.25c-8.34 0-15.125-6.785-15.125-15.125s6.785-15.125 15.125-15.125z" />
       </g>
     </svg>
+  ),
+  download: (size: number, className: string) => (
+    <img
+      src={download}
+      alt="React Logo"
+      className={className}
+      width={size}
+      height={size}
+    />
   ),
 };
 
