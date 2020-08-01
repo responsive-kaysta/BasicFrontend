@@ -2,29 +2,26 @@ import {
   Footer,
   Link,
   NavigationItems,
-  Pictogram,
-  PictogramSize,
   ThemeType,
 } from "basic-frontend-common";
-import React, { useState, useEffect } from "react";
+import React from "react";
 
 // https://itnext.io/responsive-background-images-using-react-hooks-941af365ea1f
 export const footerComponent = (theme: ThemeType) => {
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-  const pictogramSize =
-    windowWidth >= 650 ? PictogramSize.xxs : PictogramSize.xxxs;
+  // const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  // const pictogramSize = windowWidth >= 650 ? PictogramSize.xxs : PictogramSize.xxxs;
 
-  useEffect(() => {
-    const handleWindowResize = () => {
-      setWindowWidth(window.innerWidth);
-    };
+  // useEffect(() => {
+  //   const handleWindowResize = () => {
+  //     setWindowWidth(window.innerWidth);
+  //   };
 
-    window.addEventListener("resize", handleWindowResize);
+  //   window.addEventListener("resize", handleWindowResize);
 
-    return () => {
-      window.removeEventListener("resize", handleWindowResize);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener("resize", handleWindowResize);
+  //   };
+  // }, []);
 
   return (
     <Footer>
@@ -35,7 +32,7 @@ export const footerComponent = (theme: ThemeType) => {
             theme={theme}
             newWindow
           >
-            <Pictogram name="xing_logo" size={pictogramSize} />
+            {/* <Pictogram name="xing_logo" size={pictogramSize} /> */}
           </Link>
         </li>
         <li className="ml-2 mr-2 md:ml-4 md:mr-4">
@@ -44,7 +41,7 @@ export const footerComponent = (theme: ThemeType) => {
             theme={theme}
             newWindow
           >
-            <Pictogram name="linkedin_logo" size={pictogramSize} />
+            {/* <Pictogram name="linkedin_logo" size={pictogramSize} /> */}
           </Link>
         </li>
         <li className="ml-2 mr-2 md:ml-4 md:mr-4">
@@ -53,7 +50,7 @@ export const footerComponent = (theme: ThemeType) => {
             theme={theme}
             newWindow
           >
-            <Pictogram name="github_logo" size={pictogramSize} />
+            {/* <Pictogram name="github_logo" size={pictogramSize} /> */}
           </Link>
         </li>
       </ul>

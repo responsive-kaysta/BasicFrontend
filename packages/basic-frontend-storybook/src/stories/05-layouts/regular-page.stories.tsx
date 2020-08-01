@@ -4,12 +4,9 @@ import {
   ContainerCover,
   ContainerSection,
   IntroSimple,
-  PictogramSize,
-  Spotlight,
   SubTitle,
   TextRegular,
   ThemeDarkgray,
-  ThemeGray,
   ThemeLight,
   ThemeTransparent,
   Topbar,
@@ -34,7 +31,7 @@ storiesOf("Design System / 05 Layouts", module).add("Regular Page", () => (
         title="Fancy Regular Page"
         lead="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor"
       />
-      <Spotlight
+      {/* <Spotlight
         theme={ThemeGray}
         title="At vero eos et accusam et justo duo dolores et ea rebum."
         content="Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, 
@@ -42,7 +39,7 @@ storiesOf("Design System / 05 Layouts", module).add("Regular Page", () => (
         sed diam voluptua."
         pictogram="ai_nano_technology"
         pictogramSize={PictogramSize.xl}
-      />
+      /> */}
       <ContainerCover>
         <ContainerSection>
           <SubTitle

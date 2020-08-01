@@ -8,17 +8,14 @@ import {
   IntroEyeCatcher,
   IntroSimple,
   Link,
-  PictogramSize,
   ScrollLink,
   SimpleEyeCatcher,
-  Spotlight,
-  ThemeGray,
+  Spacer,
+  ThemeDarkgray,
   ThemeGreen,
   ThemeLight,
   ThemeTransparent,
   ToTopLink,
-  ThemeDarkgray,
-  Spacer,
 } from "basic-frontend-common";
 import React from "react";
 import { footerComponent } from "../../helper";
@@ -48,7 +45,7 @@ storiesOf("Design System / 05 Layouts", module).add("Landing Page", () => (
         contentTop="At vero eos et accusam et justo duo dolores et ea rebum"
       />
 
-      <Spotlight
+      {/* <Spotlight
         theme={ThemeGray}
         title="At vero eos et accusam et justo duo dolores et ea rebum."
         content="Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
@@ -56,7 +53,7 @@ storiesOf("Design System / 05 Layouts", module).add("Landing Page", () => (
         labore et dolore magna aliquyam erat, sed diam voluptua."
         pictogram="ai_nano_technology"
         pictogramSize={PictogramSize.xl}
-      />
+      /> */}
 
       <ContainerSection>
         <IntroSimple
@@ -72,7 +69,7 @@ storiesOf("Design System / 05 Layouts", module).add("Landing Page", () => (
         <Spacer />
       </ContainerSection>
 
-      <Spotlight
+      {/* <Spotlight
         theme={ThemeGray}
         title="At vero eos et accusam et justo duo dolores et ea rebum."
         content="Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
@@ -80,7 +77,7 @@ storiesOf("Design System / 05 Layouts", module).add("Landing Page", () => (
         labore et dolore magna aliquyam erat, sed diam voluptua."
         pictogram="ai_cloud"
         pictogramSize={PictogramSize.xl}
-      />
+      /> */}
 
       <ContainerSection>
         <IntroSimple

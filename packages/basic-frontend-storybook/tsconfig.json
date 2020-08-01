@@ -22,7 +22,12 @@
     "types": ["node"],
     "typeRoots": ["node_modules/@types"]
   },
-  "include": ["./src/**/*.ts", "./src/**/*.tsx"],
+  "include": [
+    "./src/**/*.ts",
+    "./src/**/*.tsx",
+    "./public/**/*.png",
+    "./public/**/*.svg"
+  ],
   "exclude": ["./node_modules", "./build", "./**/*.test.ts", "./**/*.test.tsx"],
   "plugins": [
     {
