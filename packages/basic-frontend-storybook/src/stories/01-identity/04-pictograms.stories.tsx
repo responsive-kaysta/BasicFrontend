@@ -25,7 +25,7 @@ storiesOf("Design System / 01 Identity", module).add("Pictograms", () => (
         {pictos.map((key) => (
           <li
             key={key}
-            className="flex flex-col items-center mb-8 mr-8 text-gray-900"
+            className="flex flex-col items-center mb-8 mr-8 text-gray-700"
           >
             <Pictogram
               name={key as PictogramName}
@@ -44,7 +44,7 @@ storiesOf("Design System / 01 Identity", module).add("Pictograms", () => (
         {artificial_intelligence.map((key) => (
           <li
             key={key}
-            className="flex flex-col items-center mb-8 mr-8 text-gray-900"
+            className="flex flex-col items-center mb-8 mr-8 text-gray-700"
           >
             <Pictogram
               name={key as PictogramName}
@@ -63,7 +63,7 @@ storiesOf("Design System / 01 Identity", module).add("Pictograms", () => (
         {cloud.map((key) => (
           <li
             key={key}
-            className="flex flex-col items-center mb-8 mr-8 text-gray-900"
+            className="flex flex-col items-center mb-8 mr-8 text-gray-700"
           >
             <Pictogram
               name={key as PictogramName}

@@ -15,7 +15,7 @@ storiesOf("Design System / 01 Identity", module).add("Icons", () => (
       {allIconNames.map((key) => (
         <li
           key={key}
-          className="flex flex-col items-center mb-8 mr-8 text-gray-900"
+          className="flex flex-col items-center mb-8 mr-8 text-gray-700"
         >
           <Icon name={key as IconName} aria-label={key} size={IconSize.sm} />
           <div className="mt-2">{key}</div>
