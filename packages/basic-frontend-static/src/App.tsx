@@ -1,8 +1,7 @@
 import { Router } from "@reach/router";
 import { Spinner, ThemeTransparent } from "basic-frontend-common";
-import Dynamic from "containers/Dynamic";
 import React from "react";
-import { addPrefetchExcludes, Head, Root, Routes } from "react-static";
+import { Head, Root, Routes } from "react-static";
 import {
   PAGE_AUTHOR,
   PAGE_DESCRIPTION,
@@ -12,13 +11,14 @@ import {
 } from "./constants";
 import "./generated-tailwind.css";
 
-// Any routes that start with 'dynamic' will be treated as non-static routes
-addPrefetchExcludes(["dynamic"]);
-
 function App() {
   return (
     <Root>
       <Head>
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-4DXLE712B1"
+        ></script>
         <meta charSet="UTF-8" />
         <link rel="icon" href="/icon.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -32,13 +32,10 @@ function App() {
         <meta http-equiv="expires" content="1 day" />
         <meta http-equiv="cache-control" content="no-cache" />
         <meta name="msvalidate.01" content="1D150EFBAA80F83F5DB962EEEC207A71" />
-        <meta
-          name="google-site-verification"
-          content="BssuUU-ydAdC_X5jgGXcGxJuiuDXgum3LFW2vfUxMeM"
-        />
         <meta name="description" content={`${PAGE_NAME} ${PAGE_DESCRIPTION}`} />
         <meta name="keywords" content={PAGE_KEYWORDS} />
         <meta name="author" content={PAGE_AUTHOR} />
+        <script>{`window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-4DXLE712B1');`}</script>
       </Head>
       <React.Suspense
         fallback={
@@ -49,7 +46,6 @@ function App() {
         }
       >
         <Router>
-          <Dynamic path="dynamic" />
           <Routes path="*" />
         </Router>
       </React.Suspense>

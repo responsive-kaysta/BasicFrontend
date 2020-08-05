@@ -20,6 +20,7 @@ import {
   ToTopLink,
 } from "basic-frontend-common";
 import React from "react";
+import { PAGE_NAME } from "../constants";
 import { FooterComponent } from "../includes/site-parts";
 
 class Index extends React.Component {
@@ -34,7 +35,7 @@ class Index extends React.Component {
             >
               <IntroEyeCatcher
                 theme={ThemeTransparent}
-                contentTop="Basic Frontend"
+                contentTop={PAGE_NAME}
                 contentBottom="Example Page(s) showing the power of ReactJS, TailwindCSS, Skills and Love"
               />
 

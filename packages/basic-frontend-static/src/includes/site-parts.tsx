@@ -7,6 +7,7 @@ import {
   ThemeType,
 } from "basic-frontend-common";
 import React, { useEffect, useState, FC } from "react";
+import { PAGE_AUTHOR } from "../constants";
 
 type FooterComponentProps = {
   theme: ThemeType;
@@ -62,7 +63,7 @@ export const FooterComponent: FC<FooterComponentProps> = ({ theme }) => {
       </ul>
       <span className="mb-2 md:mb-4">
         <Link href="https://responsive-it.biz" theme={theme} newWindow>
-          2020 responsive IT
+          2020 {PAGE_AUTHOR}
         </Link>
       </span>
     </Footer>
