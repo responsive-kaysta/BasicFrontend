@@ -38,20 +38,22 @@ class Index extends React.Component {
                 contentBottom="Example Page(s) showing the power of ReactJS, TailwindCSS, Skills and Love"
               />
 
-              <ScrollLink elementId="first-eye-catcher">weiter</ScrollLink>
+              <ScrollLink elementId="first-eye-catcher">
+                continue ...
+              </ScrollLink>
             </ContainerBody>
 
             <ContainerArticle>
               <SimpleEyeCatcher
                 theme={ThemeGreen}
                 elementId="first-eye-catcher"
-                contentBottom="Lorem ipsum dolor sit amet"
-                contentTop="At vero eos et accusam et justo duo dolores et ea rebum"
+                contentTop="SimpleEyeCatcher"
+                contentBottom="At vero eos et accusam et justo duo dolores et ea rebum"
               />
 
               <Spotlight
                 theme={ThemeGray}
-                title="At vero eos et accusam et justo duo dolores et ea rebum."
+                title="Spotlight"
                 content="Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut 
         labore et dolore magna aliquyam erat, sed diam voluptua."
@@ -62,20 +64,20 @@ class Index extends React.Component {
               <ContainerSection>
                 <IntroSimple
                   hruler
-                  title="At vero eos et accusam et justo duo dolores et ea rebum"
+                  title="IntroSimple"
                   lead="Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut 
           labore et dolore magna aliquyam erat, sed diam voluptua."
                 />
-                <Link href="http://localhost:6006" buttonLink>
-                  weiter ...
+                <Link href="/product-page" buttonLink>
+                  Product-Page
                 </Link>
                 <Spacer />
               </ContainerSection>
 
               <Spotlight
                 theme={ThemeGray}
-                title="At vero eos et accusam et justo duo dolores et ea rebum."
+                title="Spotlight"
                 content="Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut 
         labore et dolore magna aliquyam erat, sed diam voluptua."
@@ -86,7 +88,7 @@ class Index extends React.Component {
               <ContainerSection>
                 <IntroSimple
                   hruler
-                  title="At vero eos et accusam et justo duo dolores et ea rebum"
+                  title="IntroSimple"
                   lead="Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut 
           labore et dolore magna aliquyam erat, sed diam voluptua."
@@ -95,15 +97,15 @@ class Index extends React.Component {
 
               <ContainerSection>
                 <CallToAction
-                  ctaHeader="Call to action"
+                  ctaHeader="CallToAction"
                   ctaText="At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea 
           takimata sanctus est Lorem ipsum dolor sit amet."
-                  primaryButtonAction="/"
+                  primaryButtonAction="/text-page"
                   primaryButtonType={ButtonType.primary}
-                  primaryButtonText="primaryButtonText"
-                  secondaryButtonAction="/"
+                  primaryButtonText="Text-Page"
+                  secondaryButtonAction="/tiles-page"
                   secondaryButtonType={ButtonType.secondary}
-                  secondaryButtonText="secondaryButtonText"
+                  secondaryButtonText="Tiles-Page"
                 />
               </ContainerSection>
               <ContainerSection>
@@ -113,7 +115,7 @@ class Index extends React.Component {
 
             <FooterComponent theme={ThemeDarkgray} />
           </>
-        ) : null}{" "}
+        ) : null}
       </>
     );
   }

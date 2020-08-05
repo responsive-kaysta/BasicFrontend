@@ -70,8 +70,16 @@ export const FooterComponent: FC<FooterComponentProps> = ({ theme }) => {
 };
 
 export const menuItems: NavigationItems[] = [
-  { link: "/", text: "Menu-Item 1", title: "Menu-Item 1" },
-  { link: "/", text: "Menu-Item 2", title: "Menu-Item 2" },
-  { link: "/", text: "Menu-Item 3", title: "Menu-Item 3" },
-  { link: "/", text: "Menu-Item 4", title: "Menu-Item 4" },
+  { link: "/", text: "Home", title: "Navigate to the home-page" },
+  {
+    link: "/tiles-page",
+    text: "Tiles-Page",
+    title: "Navigate to the tiles-page",
+  },
+  {
+    link: "/product-page",
+    text: "Product-Page",
+    title: "Navigate to the product-page",
+  },
+  { link: "/text-page", text: "Text-Page", title: "Navigate to the text-page" },
 ];
