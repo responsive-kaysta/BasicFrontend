@@ -8,10 +8,13 @@ import {
   IntroEyeCatcher,
   IntroSimple,
   Link,
+  PictogramSize,
   ScrollLink,
   SimpleEyeCatcher,
   Spacer,
+  Spotlight,
   ThemeDarkgray,
+  ThemeGray,
   ThemeGreen,
   ThemeLight,
   ThemeTransparent,
@@ -31,10 +34,7 @@ storiesOf("Design System / 05 Layouts", module).add("Landing Page", () => (
         contentTop="Fancy landing Page"
         contentBottom="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor"
       />
-      <ScrollLink elementId="first-eye-catcher">
-        <span className="block mb-4">weiter</span>
-        <span className="block">&#x2193;</span>
-      </ScrollLink>
+      <ScrollLink elementId="first-eye-catcher">weiter</ScrollLink>
     </ContainerBody>
 
     <ContainerArticle>
@@ -45,15 +45,15 @@ storiesOf("Design System / 05 Layouts", module).add("Landing Page", () => (
         contentTop="At vero eos et accusam et justo duo dolores et ea rebum"
       />
 
-      {/* <Spotlight
+      <Spotlight
         theme={ThemeGray}
         title="At vero eos et accusam et justo duo dolores et ea rebum."
         content="Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut 
         labore et dolore magna aliquyam erat, sed diam voluptua."
-        pictogram="ai_nano_technology"
+        pictogram="ai_chip"
         pictogramSize={PictogramSize.xl}
-      /> */}
+      />
 
       <ContainerSection>
         <IntroSimple
@@ -69,7 +69,7 @@ storiesOf("Design System / 05 Layouts", module).add("Landing Page", () => (
         <Spacer />
       </ContainerSection>
 
-      {/* <Spotlight
+      <Spotlight
         theme={ThemeGray}
         title="At vero eos et accusam et justo duo dolores et ea rebum."
         content="Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
@@ -77,7 +77,7 @@ storiesOf("Design System / 05 Layouts", module).add("Landing Page", () => (
         labore et dolore magna aliquyam erat, sed diam voluptua."
         pictogram="ai_cloud"
         pictogramSize={PictogramSize.xl}
-      /> */}
+      />
 
       <ContainerSection>
         <IntroSimple
@@ -103,10 +103,7 @@ storiesOf("Design System / 05 Layouts", module).add("Landing Page", () => (
         />
       </ContainerSection>
       <ContainerSection>
-        <ToTopLink theme={ThemeLight}>
-          <span className="block">&#x2191;</span>
-          <span className="block mb-4">to top</span>
-        </ToTopLink>
+        <ToTopLink theme={ThemeLight}>to top</ToTopLink>
       </ContainerSection>
     </ContainerArticle>
 

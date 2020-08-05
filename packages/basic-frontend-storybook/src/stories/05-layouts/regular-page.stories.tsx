@@ -4,9 +4,12 @@ import {
   ContainerCover,
   ContainerSection,
   IntroSimple,
+  PictogramSize,
+  Spotlight,
   SubTitle,
   TextRegular,
   ThemeDarkgray,
+  ThemeGray,
   ThemeLight,
   ThemeTransparent,
   Topbar,
@@ -31,15 +34,15 @@ storiesOf("Design System / 05 Layouts", module).add("Regular Page", () => (
         title="Fancy Regular Page"
         lead="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor"
       />
-      {/* <Spotlight
+      <Spotlight
         theme={ThemeGray}
         title="At vero eos et accusam et justo duo dolores et ea rebum."
         content="Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, 
         consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
         sed diam voluptua."
-        pictogram="ai_nano_technology"
+        pictogram="ai_nanotechnology"
         pictogramSize={PictogramSize.xl}
-      /> */}
+      />
       <ContainerCover>
         <ContainerSection>
           <SubTitle
@@ -68,10 +71,7 @@ storiesOf("Design System / 05 Layouts", module).add("Regular Page", () => (
             et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
             Lorem ipsum dolor sit amet.
           </TextRegular>
-          <ToTopLink theme={ThemeLight}>
-            <span className="block">&#x2191;</span>
-            <span className="block mb-4">to top</span>
-          </ToTopLink>
+          <ToTopLink theme={ThemeLight}>to top</ToTopLink>
         </ContainerSection>
       </ContainerCover>
     </ContainerArticle>
