@@ -1,5 +1,5 @@
 import React, { FC, ReactNode } from "react";
-import { ThemeType } from "../../identity";
+import { ThemeType } from "../../typings";
 
 type BasicContainerProps = {
   children: ReactNode;
@@ -12,16 +12,18 @@ export const ContainerBody: FC<BasicContainerProps> = ({
   backgroundImage,
   theme,
 }) => {
-  const style = `w-screen h-screen ${
+  const style = `flex flex-col items-center w-full h-screen ${
     theme
       ? `${theme.body.backgroundColor} ${theme.body.textColor}`
       : "bg-gray-100 text-gray-800"
   }`;
 
-  if (backgroundImage) {
-    document.body.style.backgroundImage = `url(${backgroundImage})`;
+  if (typeof window !== "undefined" && backgroundImage) {
+    // document.body.style.background = `linear-gradient(to bottom, #0b3536 0%, rgba(125, 185, 232, 0)), url(${backgroundImage})`;
+    document.body.style.backgroundImage = `linear-gradient(to bottom, #0b3536 0%, rgba(125, 185, 232, 0)), url(${backgroundImage})`;
     document.body.style.backgroundAttachment = "fixed";
+    document.body.style.backgroundSize = "cover";
   }
 
-  return <article className={style}>{children}</article>;
+  return <main className={style}>{children}</main>;
 };

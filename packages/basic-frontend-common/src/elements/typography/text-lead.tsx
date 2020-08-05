@@ -1,5 +1,6 @@
 import React, { FC, ReactNode } from "react";
-import { ThemeType } from "../../identity";
+import { defTextLead } from "../../identity";
+import { ThemeType } from "../../typings";
 
 type TextLeadProps = {
   children: ReactNode;
@@ -9,7 +10,7 @@ type TextLeadProps = {
 export const TextLead: FC<TextLeadProps> = ({ children, theme }) => {
   const style = `${
     theme ? theme.body.textColor : "text-gray-800"
-  } text-lg font-medium md:text-xl md:font-semibold tracking-wider`;
+  } ${defTextLead}`;
 
   return <p className={style}>{children}</p>;
 };

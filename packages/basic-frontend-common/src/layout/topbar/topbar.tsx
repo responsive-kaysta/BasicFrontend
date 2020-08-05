@@ -1,46 +1,44 @@
 import React, { FC, ReactNode, useState } from "react";
-import { HorizontalNavbar } from "../../components";
-import { NavigationItems } from "../../typings";
+import { NavigationItems, ThemeType } from "../../typings";
+import { HorizontalNavbar } from "./horizontal-navbar";
 
 type TopbarProps = {
   children: ReactNode;
   footer?: ReactNode;
   menuItems: NavigationItems[];
-  logo?: string;
+  branding?: string;
   backgroundImage?: string;
+  theme?: ThemeType;
 };
 
 export const Topbar: FC<TopbarProps> = ({
   children,
   footer,
   menuItems,
-  logo,
+  branding,
   backgroundImage,
-  ...props
+  theme,
 }) => {
-  // console.log("theme: ", theme);
-
   const [isMenuVisible, toggleMenuVisible] = useState<boolean>(false);
 
-  if (backgroundImage) {
-    document.body.style.backgroundImage = `url(${backgroundImage})`;
+  if (typeof window !== "undefined" && backgroundImage) {
+    // document.body.style.background = `linear-gradient(to bottom, #0b3536 0%, rgba(125, 185, 232, 0)), url(${backgroundImage})`;
+    document.body.style.backgroundImage = `linear-gradient(to bottom, #0b3536 0%, rgba(125, 185, 232, 0)), url(${backgroundImage})`;
     document.body.style.backgroundAttachment = "fixed";
+    document.body.style.backgroundSize = "cover";
   }
 
   return (
-    <div
-      className={`flex flex-col w-full h-screen overflow-hidden`}
-      id="body-wrapper"
-      {...props}
-    >
+    <div className={`flex flex-col w-full min-h-screen`} id="body-wrapper">
       <HorizontalNavbar
         isMenuVisible={isMenuVisible}
         toggleMenuVisible={toggleMenuVisible}
         menuItems={menuItems}
-        logo={logo}
+        branding={branding}
+        theme={theme}
       />
       <main
-        className={`flex flex-col flex-1 relative z-0 overflow-hidden bg-gray-100 text-gray-800`}
+        className={`flex flex-col flex-1 relative z-0`}
         id="main-container"
         tabIndex={0}
       >

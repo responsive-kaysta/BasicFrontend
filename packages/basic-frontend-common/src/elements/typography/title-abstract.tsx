@@ -1,5 +1,6 @@
 import React, { FC, ReactNode } from "react";
-import { ThemeType } from "../../identity";
+import { defTitleAbstract } from "../../identity";
+import { ThemeType } from "../../typings";
 
 type TitleAbstractProps = {
   children: ReactNode;
@@ -9,6 +10,6 @@ type TitleAbstractProps = {
 export const TitleAbstract: FC<TitleAbstractProps> = ({ children, theme }) => {
   const style = `${
     theme ? theme.body.textColor : "text-gray-800"
-  } text-lg font-semibold md:text-xl md:font-bold uppercase tracking-wider`;
+  } ${defTitleAbstract}`;
   return <h3 className={style}>{children}</h3>;
 };

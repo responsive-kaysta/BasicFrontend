@@ -1,8 +1,10 @@
 import { storiesOf } from "@storybook/react";
 import React from "react";
 
+// https://coderrocketfuel.com/article/get-all-of-the-files-in-a-directory-using-node-js
+
 storiesOf("Design System / 01 Identity", module).add("Typography", () => (
-  <div className="container">
+  <div>
     <section className="flex flex-row mb-10">
       <div className="w-1/4 text-xl">Type</div>
       <div className="w-3/4 text-xl">Swarm</div>

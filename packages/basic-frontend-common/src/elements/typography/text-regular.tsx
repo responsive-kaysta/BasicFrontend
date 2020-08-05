@@ -1,5 +1,6 @@
 import React, { FC, ReactNode } from "react";
-import { ThemeType } from "../../identity";
+import { defTextRegular } from "../../identity";
+import { ThemeType } from "../../typings";
 
 type TextRegularProps = {
   children: ReactNode;
@@ -9,6 +10,6 @@ type TextRegularProps = {
 export const TextRegular: FC<TextRegularProps> = ({ children, theme }) => {
   const style = `${
     theme ? theme.body.textColor : "text-gray-800"
-  } text-base font-normal md:text-lg md:font-medium tracking-wide`;
+  } ${defTextRegular}`;
   return <p className={style}>{children}</p>;
 };

@@ -31,7 +31,7 @@ export const stylePrimary = (size: ButtonSize) => {
     size
   )} text-gray-700 ${buttonTextStyle(
     size
-  )} bg-gray-100 hover:text-gray-500 hover:shadow-lg focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:text-gray-800 active:bg-gray-100 transition ease-in-out duration-150`;
+  )} bg-gray-100 hover:text-gray-900 hover:shadow-lg focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:text-gray-800 active:bg-gray-100 transition ease-in-out duration-150`;
 };
 
 export const styleSecondary = (size: ButtonSize) => {
@@ -59,9 +59,9 @@ export const styleTransparent = (size: ButtonSize) => {
     size
   )} border border-transparent ${buttonBorderStyle(
     size
-  )} text-gray-900 ${buttonTextStyle(
+  )} text-gray-800 ${buttonTextStyle(
     size
-  )} bg-transparent hover:bg-gray-100 hover:shadow-lg focus:outline-none focus:border-indigo-300 focus:shadow-outline-indigo active:bg-transparent transition ease-in-out duration-150`;
+  )} bg-transparent hover:text-gray-900 hover:bg-gray-100 hover:shadow-lg focus:outline-none focus:border-indigo-300 focus:shadow-outline-indigo active:bg-transparent transition ease-in-out duration-150`;
 };
 
 export const styleAlarm = (size: ButtonSize) => {
@@ -71,15 +71,15 @@ export const styleAlarm = (size: ButtonSize) => {
     size
   )} text-white ${buttonTextStyle(
     size
-  )} bg-red-600 hover:bg-red-500 hover:shadow-lg focus:outline-none focus:border-red-600 focus:shadow-outline-indigo active:bg-red-500 transition ease-in-out duration-150`;
+  )} bg-red-600 hover:bg-red-500 hover:text-gray-100 hover:shadow-lg focus:outline-none focus:border-red-600 focus:shadow-outline-indigo active:bg-red-500 transition ease-in-out duration-150`;
 };
 
 export const styleSpecial = (size: ButtonSize) => {
   return `inline-flex items-center ${buttonPadding(
     size
-  )} border border-transparent ${buttonBorderStyle(
+  )} border-1 border-gray-400 ${buttonBorderStyle(
     size
-  )} text-white ${buttonTextStyle(
+  )} text-gray-100 ${buttonTextStyle(
     size
-  )} bg-orange-500 hover:bg-orange-400 hover:shadow-lg focus:outline-none focus:border-oreange-600 focus:shadow-outline-indigo active:bg-orange-500 transition ease-in-out duration-150`;
+  )} bg-sred-100 hover:text-gray-200 hover:bg-sred-200 hover:shadow-lg focus:outline-none focus:border-gray-500 focus:shadow-outline-gray active:bg-sred-200 transition ease-in-out duration-150`;
 };

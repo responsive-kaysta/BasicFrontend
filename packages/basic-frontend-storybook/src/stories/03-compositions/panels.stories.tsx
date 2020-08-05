@@ -8,14 +8,14 @@ import {
 import React from "react";
 
 storiesOf("Design System / 03 Compositions", module).add("Panels", () => (
-  <div className="container">
+  <div>
     <section className="flex flex-row mb-10">
       <div className="w-1/4 text-xl">Type</div>
       <div className="w-3/4 text-xl">Swarm</div>
     </section>
 
     <section className="flex flex-row mb-10">
-      <div className="w-1/4">PanelBasic without Theme</div>
+      <div className="w-1/4">PanelBasic</div>
       <div className="w-3/4 flex flex-row justify-between">
         <PanelBasic>
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
@@ -26,7 +26,7 @@ storiesOf("Design System / 03 Compositions", module).add("Panels", () => (
     </section>
 
     <section className="flex flex-row mb-10">
-      <div className="w-1/4">PanelHeader without Theme</div>
+      <div className="w-1/4">PanelHeader</div>
       <div className="w-3/4 flex flex-row justify-between">
         <PanelHeader header="Header content">
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
@@ -37,7 +37,7 @@ storiesOf("Design System / 03 Compositions", module).add("Panels", () => (
     </section>
 
     <section className="flex flex-row mb-10">
-      <div className="w-1/4">PanelFooter without Theme</div>
+      <div className="w-1/4">PanelFooter</div>
       <div className="w-3/4 flex flex-row justify-between">
         <PanelFooter footer="Footer content">
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
@@ -48,7 +48,7 @@ storiesOf("Design System / 03 Compositions", module).add("Panels", () => (
     </section>
 
     <section className="flex flex-row mb-10">
-      <div className="w-1/4">PanelHeaderFooter without Theme</div>
+      <div className="w-1/4">PanelHeaderFooter</div>
       <div className="w-3/4 flex flex-row justify-between">
         <PanelHeaderFooter header="Header content" footer="Footer content">
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam

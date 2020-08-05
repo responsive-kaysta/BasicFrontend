@@ -6,3 +6,11 @@ export const getUrlParameter = (name: string) => {
     ? ""
     : decodeURIComponent(results[1].replace(/\+/g, " "));
 };
+
+export const openWindow = (url: string) => {
+  window.open(url);
+};
+
+export const openUrl = (url: string) => {
+  window.location.href = url;
+};
