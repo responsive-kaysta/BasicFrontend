@@ -3,4 +3,5 @@ export * from "./form";
 export * from "./images";
 export * from "./links";
 export * from "./spacer";
+export * from "./spinner";
 export * from "./typography";

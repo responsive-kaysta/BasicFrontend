@@ -1,4 +1,4 @@
-import React, { FC, ReactNode } from "react";
+import React, { FC } from "react";
 import * as Scroll from "react-scroll";
 import { Icon, IconSize } from "../../identity";
 import { ThemeType } from "../../typings";
@@ -6,17 +6,12 @@ import { ThemeType } from "../../typings";
 var ScrollLinkElement = Scroll.Link;
 
 type ScrollLinkProps = {
-  children?: ReactNode;
   elementId: string;
   theme?: ThemeType;
 };
 
-export const ScrollLink: FC<ScrollLinkProps> = ({
-  children,
-  elementId,
-  theme,
-}) => {
-  const style = `py-2 md:py-4 ${
+export const ScrollLink: FC<ScrollLinkProps> = ({ elementId, theme }) => {
+  const style = `animate-bounce duration-1000 w-6 h-12 mb-4 ${
     theme ? theme.body.textColor : "text-gray-100"
   } hover:${
     theme ? theme.link.hoverColor : "text-red-500"
@@ -34,7 +29,6 @@ export const ScrollLink: FC<ScrollLinkProps> = ({
         duration={2500}
         offset={0}
       >
-        {children}
         <Icon name="down_arrow" size={IconSize.xs} />
       </ScrollLinkElement>
     </div>

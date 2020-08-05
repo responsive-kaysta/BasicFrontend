@@ -34,7 +34,7 @@ storiesOf("Design System / 05 Layouts", module).add("Landing Page", () => (
         contentTop="Fancy landing Page"
         contentBottom="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor"
       />
-      <ScrollLink elementId="first-eye-catcher">weiter</ScrollLink>
+      <ScrollLink elementId="first-eye-catcher" />
     </ContainerBody>
 
     <ContainerArticle>
@@ -103,7 +103,7 @@ storiesOf("Design System / 05 Layouts", module).add("Landing Page", () => (
         />
       </ContainerSection>
       <ContainerSection>
-        <ToTopLink theme={ThemeLight}>to top</ToTopLink>
+        <ToTopLink theme={ThemeLight} />
       </ContainerSection>
     </ContainerArticle>
 

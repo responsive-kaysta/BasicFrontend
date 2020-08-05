@@ -38,9 +38,7 @@ class Index extends React.Component {
                 contentBottom="Example Page(s) showing the power of ReactJS, TailwindCSS, Skills and Love"
               />
 
-              <ScrollLink elementId="first-eye-catcher">
-                continue ...
-              </ScrollLink>
+              <ScrollLink elementId="first-eye-catcher" />
             </ContainerBody>
 
             <ContainerArticle>
@@ -109,7 +107,7 @@ class Index extends React.Component {
                 />
               </ContainerSection>
               <ContainerSection>
-                <ToTopLink theme={ThemeLight}>to top</ToTopLink>
+                <ToTopLink theme={ThemeLight} />
               </ContainerSection>
             </ContainerArticle>
 

@@ -25,7 +25,7 @@
     "react-static-plugin-sitemap": "^7.4.2",
     "react-static-plugin-source-filesystem": "^7.4.2",
     "react-static-plugin-typescript": "^7.4.2",
-    "basic-frontend-common": "^0.3.1",
+    "basic-frontend-common": "^0.3.2",
     "tailwindcss": "^1.6.2"
   },
   "devDependencies": {

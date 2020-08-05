@@ -1,4 +1,5 @@
 import { Router } from "@reach/router";
+import { Spinner, ThemeTransparent } from "basic-frontend-common";
 import Dynamic from "containers/Dynamic";
 import React from "react";
 import { addPrefetchExcludes, Head, Root, Routes } from "react-static";
@@ -39,7 +40,14 @@ function App() {
         <meta name="keywords" content={PAGE_KEYWORDS} />
         <meta name="author" content={PAGE_AUTHOR} />
       </Head>
-      <React.Suspense fallback={<em>Loading...</em>}>
+      <React.Suspense
+        fallback={
+          <Spinner
+            backgroundImage="/backgrounds/Website-Design-Background.png"
+            theme={ThemeTransparent}
+          />
+        }
+      >
         <Router>
           <Dynamic path="dynamic" />
           <Routes path="*" />
