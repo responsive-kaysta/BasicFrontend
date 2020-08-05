@@ -11,13 +11,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "basic-frontend-common": "^0.2.7",
+    "basic-frontend-common": "^0.3.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scroll": "^1.8.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.10.5",
+    "@babel/core": "^7.11.1",
     "@storybook/addon-a11y": "6.0.0-beta.20",
     "@storybook/addon-actions": "6.0.0-beta.20",
     "@storybook/addon-docs": "6.0.0-beta.20",
@@ -36,6 +36,6 @@
     "awesome-typescript-loader": "^5.2.1",
     "babel-loader": "^8.1.0",
     "copy-webpack-plugin": "^6.0.3",
-    "tailwindcss": "^1.5.2"
+    "tailwindcss": "^1.6.2"
   }
 }

@@ -1,63 +1,119 @@
 import {
+  ButtonType,
+  CallToAction,
+  ContainerArticle,
   ContainerBody,
   ContainerSection,
-  Footer,
   IntroEyeCatcher,
+  IntroSimple,
+  Link,
+  PictogramSize,
+  ScrollLink,
   SimpleEyeCatcher,
+  Spacer,
+  Spotlight,
+  ThemeDarkgray,
+  ThemeGray,
   ThemeGreen,
+  ThemeLight,
   ThemeTransparent,
+  ToTopLink,
 } from "basic-frontend-common";
 import React from "react";
-import * as Scroll from "react-scroll";
-
-var scroll = Scroll.animateScroll;
-var ScrollLink = Scroll.Link;
+import { FooterComponent } from "../includes/site-parts";
 
 class Index extends React.Component {
-  componentDidMount() {
-    scroll.scrollToTop();
-  }
-
   public render() {
     return (
       <>
-        <ContainerBody
-          theme={ThemeTransparent}
-          backgroundImage="/images/mainboard-1174219.jpg"
-        >
-          <IntroEyeCatcher
-            contentTop="responsive kaysta"
-            contentBottom="finest full stack development"
-            theme={ThemeTransparent}
-          />
+        {typeof window !== "undefined" ? (
+          <>
+            <ContainerBody
+              theme={ThemeTransparent}
+              backgroundImage="/backgrounds/Website-Design-Background.png"
+            >
+              <IntroEyeCatcher
+                theme={ThemeTransparent}
+                contentTop="Basic Frontend"
+                contentBottom="Example Page(s) showing the power of ReactJS, TailwindCSS, Skills and Love"
+              />
 
-          <ScrollLink
-            className={`bg-transparent ${ThemeTransparent.body.textColor} hover:${ThemeGreen.link.hoverColor} text-center font-semibold py-2 px-2`}
-            to="first-eye-catcher"
-            spy={true}
-            smooth="easeInOutQuint"
-            duration={2500}
-            offset={0}
-          >
-            <span className="block mb-4">weiter</span>
-            <span className="block">&#x2B07;</span>
-          </ScrollLink>
-        </ContainerBody>
+              <ScrollLink elementId="first-eye-catcher">weiter</ScrollLink>
+            </ContainerBody>
 
-        <SimpleEyeCatcher
-          theme={ThemeGreen}
-          elementId="first-eye-catcher"
-          contentBottom="Lorem ipsum dolor sit amet"
-          contentTop="At vero eos et accusam et justo duo dolores et ea rebum"
-        />
+            <ContainerArticle>
+              <SimpleEyeCatcher
+                theme={ThemeGreen}
+                elementId="first-eye-catcher"
+                contentBottom="Lorem ipsum dolor sit amet"
+                contentTop="At vero eos et accusam et justo duo dolores et ea rebum"
+              />
 
-        <ContainerSection theme={ThemeTransparent}>
-          <div>Some Content</div>
-        </ContainerSection>
+              <Spotlight
+                theme={ThemeGray}
+                title="At vero eos et accusam et justo duo dolores et ea rebum."
+                content="Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut 
+        labore et dolore magna aliquyam erat, sed diam voluptua."
+                pictogram="ai_chip"
+                pictogramSize={PictogramSize.xl}
+              />
 
-        <Footer>
-          <div>footer content</div>
-        </Footer>
+              <ContainerSection>
+                <IntroSimple
+                  hruler
+                  title="At vero eos et accusam et justo duo dolores et ea rebum"
+                  lead="Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut 
+          labore et dolore magna aliquyam erat, sed diam voluptua."
+                />
+                <Link href="http://localhost:6006" buttonLink>
+                  weiter ...
+                </Link>
+                <Spacer />
+              </ContainerSection>
+
+              <Spotlight
+                theme={ThemeGray}
+                title="At vero eos et accusam et justo duo dolores et ea rebum."
+                content="Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut 
+        labore et dolore magna aliquyam erat, sed diam voluptua."
+                pictogram="ai_cloud"
+                pictogramSize={PictogramSize.xl}
+              />
+
+              <ContainerSection>
+                <IntroSimple
+                  hruler
+                  title="At vero eos et accusam et justo duo dolores et ea rebum"
+                  lead="Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut 
+          labore et dolore magna aliquyam erat, sed diam voluptua."
+                />
+              </ContainerSection>
+
+              <ContainerSection>
+                <CallToAction
+                  ctaHeader="Call to action"
+                  ctaText="At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea 
+          takimata sanctus est Lorem ipsum dolor sit amet."
+                  primaryButtonAction="/"
+                  primaryButtonType={ButtonType.primary}
+                  primaryButtonText="primaryButtonText"
+                  secondaryButtonAction="/"
+                  secondaryButtonType={ButtonType.secondary}
+                  secondaryButtonText="secondaryButtonText"
+                />
+              </ContainerSection>
+              <ContainerSection>
+                <ToTopLink theme={ThemeLight}>to top</ToTopLink>
+              </ContainerSection>
+            </ContainerArticle>
+
+            <FooterComponent theme={ThemeDarkgray} />
+          </>
+        ) : null}{" "}
       </>
     );
   }

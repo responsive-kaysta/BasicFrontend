@@ -2,19 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
-/*
-body #root {
-  background: -moz-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)),
-    url("/images/mainboard-1174219.jpg");
-  background: -webkit-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)),
-    url("/images/mainboard-1174219.jpg");
-  background-image: -ms-linear-gradient(top, #0b3536 0%, rgba(125, 185, 232, 0)),
-    url("/assets/images/mainboard-1174219.jpg");
-  background: linear-gradient(to bottom, #0b3536 0%, rgba(125, 185, 232, 0)),
-    url("/images/mainboard-1174219.jpg");
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: transparent;
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
-*/
+
+@media (max-width: 640px) {
+  .container {
+    max-width: 90%;
+  }
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 90%;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 75%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 60%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 50%;
+  }
+}

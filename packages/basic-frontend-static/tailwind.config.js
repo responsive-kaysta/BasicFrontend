@@ -1,13 +1,6 @@
 module.exports = {
-  purge: [],
   theme: {
     extend: {
-      colors: {
-        greener: {
-          100: "#1a867d",
-        },
-        textColor: (theme) => theme("colors"),
-      },
       fontFamily: {
         sans: [
           "Trebuchet MS",
@@ -29,8 +22,23 @@ module.exports = {
         ],
         code: ["Courier New", "Courier", "monospace"],
       },
+
+      colors: {
+        sgreen: {
+          100: "#1a867d",
+        },
+        sred: {
+          100: "#ed4933",
+          200: "#ef5e4a",
+        },
+
+        textColor: (theme) => theme("colors"),
+      },
     },
   },
   variants: {},
   plugins: [],
+  corePlugins: {
+    container: false,
+  },
 };
