@@ -16,7 +16,11 @@ export const Image: FC<ImageProps> = ({ src, alt, caption, theme }) => {
         theme ? theme.body.backgroundColor : "bg-gray-100"
       }`}
     >
-      <img src={src} alt={alt} className="rounded-md md:rounded-lg" />
+      <img
+        src={src}
+        alt={alt}
+        className="rounded-md md:rounded-lg mb-4 md:mb-6"
+      />
       {caption && <Caption theme={theme}>{caption}</Caption>}
     </div>
   );

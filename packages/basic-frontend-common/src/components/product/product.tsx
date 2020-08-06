@@ -37,7 +37,7 @@ export const Product: FC<ProductProps> = ({
 
   const style = `${theme ? theme.body.backgroundColor : "bg-gray-100"}`;
   return (
-    <div className={`flex flex-row ${style}`} id={elementId}>
+    <div className={`flex flex-row items-center ${style}`} id={elementId}>
       <div className="w-2/4">
         {orientation === Orientation.right ? contentBlock : imageBlock}
       </div>
