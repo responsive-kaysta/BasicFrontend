@@ -8,13 +8,12 @@ import {
   Spotlight,
   SubTitle,
   ThemeDarkgray,
-  ThemeGray,
   ThemeLight,
   ThemeTransparent,
+  TileItem,
+  TileSection,
   Topbar,
   ToTopLink,
-  TileSection,
-  TileItem,
 } from "basic-frontend-common";
 import React from "react";
 import { PAGE_NAME } from "../constants";
@@ -42,8 +41,8 @@ class TilesPage extends React.Component {
                   lead="Lorem ipsum dolor sit amet, consetetur sadipscing elitr"
                 />
                 <Spotlight
-                  theme={ThemeGray}
-                  title="An example Page describing an Overview"
+                  theme={ThemeLight}
+                  title="An example of an Overview page"
                   content="Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, 
                   consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
                   sed diam voluptua."
@@ -62,7 +61,7 @@ class TilesPage extends React.Component {
 
                   <TileSection theme={ThemeTransparent}>
                     <TileItem
-                      headline="Tile 6"
+                      headline="Text Page"
                       date="Aug. 1. 2020"
                       description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr"
                       link="/text-page"
@@ -71,7 +70,7 @@ class TilesPage extends React.Component {
                     />
 
                     <TileItem
-                      headline="Tile 5"
+                      headline="Text Page"
                       date="Aug. 1. 2020"
                       description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr"
                       link="/text-page"
@@ -80,7 +79,7 @@ class TilesPage extends React.Component {
                     />
 
                     <TileItem
-                      headline="Tile 4"
+                      headline="Text Page"
                       date="Aug. 1. 2020"
                       description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr"
                       link="/text-page"
@@ -89,7 +88,7 @@ class TilesPage extends React.Component {
                     />
 
                     <TileItem
-                      headline="Tile 3"
+                      headline="Text Page"
                       date="Aug. 1. 2020"
                       description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr"
                       link="/text-page"
@@ -98,7 +97,7 @@ class TilesPage extends React.Component {
                     />
 
                     <TileItem
-                      headline="Tile 2"
+                      headline="Tiles Page"
                       date="Aug. 1. 2020"
                       description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr"
                       link="/tiles-page"
@@ -107,7 +106,7 @@ class TilesPage extends React.Component {
                     />
 
                     <TileItem
-                      headline="Tile 1"
+                      headline="Product Page"
                       date="Aug. 1. 2020"
                       description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr"
                       link="/product-page"

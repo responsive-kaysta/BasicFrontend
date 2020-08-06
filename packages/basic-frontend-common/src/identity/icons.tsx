@@ -5049,7 +5049,7 @@ const iconMap = {
       </g>
     </svg>
   ),
-  github_logo: (size: number, className: string) => (
+  github_circular_logo: (size: number, className: string) => (
     <svg
       version="1.1"
       id="Capa_1"
@@ -5090,7 +5090,7 @@ const iconMap = {
       </g>
     </svg>
   ),
-  github_sign: (size: number, className: string) => (
+  github_logo: (size: number, className: string) => (
     <svg
       version="1.1"
       id="Capa_1"

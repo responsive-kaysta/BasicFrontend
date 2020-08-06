@@ -83,4 +83,6 @@ export const menuItems: NavigationItems[] = [
     title: "Navigate to the product-page",
   },
   { link: "/text-page", text: "Text-Page", title: "Navigate to the text-page" },
+  { link: "/text-page", text: "Legal", title: "Navigate to the legal-page" },
+  { link: "/text-page", text: "Links", title: "Navigate to the links-page" },
 ];
