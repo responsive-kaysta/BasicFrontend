@@ -36,7 +36,7 @@ class Index extends React.Component {
               <IntroEyeCatcher
                 theme={ThemeTransparent}
                 contentTop={PAGE_NAME}
-                contentBottom="Example Page(s) showing the power of ReactJS, TailwindCSS, Skills and Love"
+                contentBottom="Example Page(s) showing the power of ReactJS, Skills and Passion"
               />
 
               <ScrollLink elementId="first-eye-catcher" />
@@ -54,9 +54,9 @@ class Index extends React.Component {
                 theme={ThemeGray}
                 title="Spotlight"
                 content="Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut 
-        labore et dolore magna aliquyam erat, sed diam voluptua."
-                pictogram="ai_chip"
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor 
+                invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+                pictogram="robotics_robot2"
                 pictogramSize={PictogramSize.xl}
               />
 
@@ -65,8 +65,8 @@ class Index extends React.Component {
                   hruler
                   title="IntroSimple"
                   lead="Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut 
-          labore et dolore magna aliquyam erat, sed diam voluptua."
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut 
+                  labore et dolore magna aliquyam erat, sed diam voluptua."
                 />
                 <Link href="/product-page" buttonLink>
                   Product-Page
@@ -78,9 +78,9 @@ class Index extends React.Component {
                 theme={ThemeGray}
                 title="Spotlight"
                 content="Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut 
-        labore et dolore magna aliquyam erat, sed diam voluptua."
-                pictogram="ai_cloud"
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut 
+                labore et dolore magna aliquyam erat, sed diam voluptua."
+                pictogram="robotics_rechargeable"
                 pictogramSize={PictogramSize.xl}
               />
 
@@ -89,8 +89,8 @@ class Index extends React.Component {
                   hruler
                   title="IntroSimple"
                   lead="Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut 
-          labore et dolore magna aliquyam erat, sed diam voluptua."
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut 
+                  labore et dolore magna aliquyam erat, sed diam voluptua."
                 />
               </ContainerSection>
 
@@ -98,13 +98,13 @@ class Index extends React.Component {
                 <CallToAction
                   ctaHeader="CallToAction"
                   ctaText="At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea 
-          takimata sanctus est Lorem ipsum dolor sit amet."
-                  primaryButtonAction="/text-page"
+                  takimata sanctus est Lorem ipsum dolor sit amet."
+                  primaryButtonAction="/about-page"
                   primaryButtonType={ButtonType.primary}
-                  primaryButtonText="Text-Page"
+                  primaryButtonText="About"
                   secondaryButtonAction="/tiles-page"
                   secondaryButtonType={ButtonType.secondary}
-                  secondaryButtonText="Tiles-Page"
+                  secondaryButtonText="Tiles"
                 />
               </ContainerSection>
               <ContainerSection>

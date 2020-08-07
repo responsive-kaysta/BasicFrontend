@@ -21,7 +21,7 @@ import React from "react";
 import { PAGE_NAME } from "../constants";
 import { FooterComponent, menuItems } from "../includes/site-parts";
 
-class ProductPage extends React.Component {
+class LinksPage extends React.Component {
   public render() {
     return (
       <>
@@ -39,7 +39,7 @@ class ProductPage extends React.Component {
                   theme={ThemeTransparent}
                   centerContent
                   containerContent
-                  title="Fancy Product Page"
+                  title="Fancy Links Page"
                   lead="Lorem ipsum dolor sit amet, consetetur sadipscing elitr"
                 />
                 <Spotlight
@@ -48,7 +48,7 @@ class ProductPage extends React.Component {
                   content="Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, 
                   consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
                   sed diam voluptua."
-                  pictogram="robotics_prosthetic"
+                  pictogram="cloud_hardware"
                   pictogramSize={PictogramSize.xl}
                 />
 
@@ -75,7 +75,7 @@ class ProductPage extends React.Component {
                       content="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor 
                       invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo 
                       duo dolores et ea rebum."
-                      src="/backgrounds/planning.png"
+                      src="/backgrounds/engineer.png"
                       caption="Stet clita kasd gubergren, no sea takimata sanctus est"
                       alt="Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
                       orientation={Orientation.right}
@@ -105,7 +105,7 @@ class ProductPage extends React.Component {
                       content="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor 
                       invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo 
                       duo dolores et ea rebum."
-                      src="/backgrounds/assembly.png"
+                      src="/backgrounds/innovation.png"
                       caption="Stet clita kasd gubergren, no sea takimata sanctus est"
                       alt="Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
                       orientation={Orientation.left}
@@ -124,4 +124,4 @@ class ProductPage extends React.Component {
   }
 }
 
-export default ProductPage;
+export default LinksPage;

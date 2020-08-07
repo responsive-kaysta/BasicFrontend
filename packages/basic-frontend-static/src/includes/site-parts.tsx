@@ -63,7 +63,7 @@ export const FooterComponent: FC<FooterComponentProps> = ({ theme }) => {
       </ul>
       <span className="mb-2 md:mb-4">
         <Link href="https://responsive-it.biz" theme={theme} newWindow>
-          2020 {PAGE_AUTHOR}
+          2020 {PAGE_AUTHOR} - v 0.3.7
         </Link>
       </span>
     </Footer>
@@ -72,17 +72,22 @@ export const FooterComponent: FC<FooterComponentProps> = ({ theme }) => {
 
 export const menuItems: NavigationItems[] = [
   { link: "/", text: "Home", title: "Navigate to the home-page" },
+  { link: "/about-page", text: "About", title: "Navigate to the about-page" },
   {
     link: "/tiles-page",
-    text: "Tiles-Page",
+    text: "Tiles",
     title: "Navigate to the tiles-page",
   },
   {
     link: "/product-page",
-    text: "Product-Page",
+    text: "Product",
     title: "Navigate to the product-page",
   },
-  { link: "/text-page", text: "Text-Page", title: "Navigate to the text-page" },
-  { link: "/text-page", text: "Legal", title: "Navigate to the legal-page" },
-  { link: "/text-page", text: "Links", title: "Navigate to the links-page" },
+  { link: "/legal-page", text: "Legal", title: "Navigate to the legal-page" },
+  { link: "/links-page", text: "Links", title: "Navigate to the links-page" },
+  {
+    link: "/contact-page",
+    text: "Contact",
+    title: "Navigate to the contact-page",
+  },
 ];

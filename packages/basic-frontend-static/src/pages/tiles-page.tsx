@@ -3,9 +3,7 @@ import {
   ContainerCover,
   ContainerSection,
   IntroSimple,
-  PictogramSize,
   Spacer,
-  Spotlight,
   SubTitle,
   ThemeDarkgray,
   ThemeLight,
@@ -37,17 +35,8 @@ class TilesPage extends React.Component {
                   theme={ThemeTransparent}
                   centerContent
                   containerContent
-                  title="Fancy Overview Page"
+                  title="Fancy Tiles Page"
                   lead="Lorem ipsum dolor sit amet, consetetur sadipscing elitr"
-                />
-                <Spotlight
-                  theme={ThemeLight}
-                  title="An example of an Overview page"
-                  content="Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, 
-                  consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
-                  sed diam voluptua."
-                  pictogram="cloud_global_network"
-                  pictogramSize={PictogramSize.xl}
                 />
 
                 <ContainerCover theme={ThemeTransparent}>
@@ -61,37 +50,37 @@ class TilesPage extends React.Component {
 
                   <TileSection theme={ThemeTransparent}>
                     <TileItem
-                      headline="Text Page"
+                      headline="Product Page"
                       date="Aug. 1. 2020"
                       description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr"
-                      link="/text-page"
+                      link="/product-page"
                       bgImage="/backgrounds/team.png"
                       theme={ThemeTransparent}
                     />
 
                     <TileItem
-                      headline="Text Page"
+                      headline="Contact Page"
                       date="Aug. 1. 2020"
                       description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr"
-                      link="/text-page"
+                      link="/contact-page"
                       bgImage="/backgrounds/internet_1.png"
                       theme={ThemeTransparent}
                     />
 
                     <TileItem
-                      headline="Text Page"
+                      headline="Links Page"
                       date="Aug. 1. 2020"
                       description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr"
-                      link="/text-page"
+                      link="/links-page"
                       bgImage="/backgrounds/settings-gears.png"
                       theme={ThemeTransparent}
                     />
 
                     <TileItem
-                      headline="Text Page"
+                      headline="Legal Page"
                       date="Aug. 1. 2020"
                       description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr"
-                      link="/text-page"
+                      link="/legal-page"
                       bgImage="/backgrounds/hosting.png"
                       theme={ThemeTransparent}
                     />
@@ -106,10 +95,10 @@ class TilesPage extends React.Component {
                     />
 
                     <TileItem
-                      headline="Product Page"
+                      headline="About Page"
                       date="Aug. 1. 2020"
                       description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr"
-                      link="/product-page"
+                      link="/about-page"
                       bgImage="/backgrounds/planning.png"
                       theme={ThemeTransparent}
                     />
