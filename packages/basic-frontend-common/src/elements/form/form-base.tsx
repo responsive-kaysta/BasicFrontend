@@ -19,7 +19,7 @@ export const FormBase: FC<FormBaseProps> = ({
   theme,
 }) => {
   return (
-    <div className="w-full">
+    <div className="">
       {label && (
         <div>
           <Label theme={theme}>{label}</Label>
