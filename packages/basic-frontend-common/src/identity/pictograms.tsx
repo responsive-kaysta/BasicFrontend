@@ -82,7 +82,7 @@ const pictogramMap = {
   ai_artificial_intelligence1: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -101,7 +101,7 @@ const pictogramMap = {
   ai_bulb: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -120,7 +120,7 @@ const pictogramMap = {
   ai_vision: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -139,7 +139,7 @@ const pictogramMap = {
   ai_robot1: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -161,7 +161,7 @@ const pictogramMap = {
   ai_chip: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -182,7 +182,7 @@ const pictogramMap = {
   ai_brain1: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -200,7 +200,7 @@ const pictogramMap = {
   ai_folder: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -221,7 +221,7 @@ const pictogramMap = {
   ai_analysis: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 511.998 511.998"
+      enableBackground="new 0 0 511.998 511.998"
       height={size}
       viewBox="0 0 511.998 511.998"
       width={size}
@@ -240,7 +240,7 @@ const pictogramMap = {
   ai_cloud: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -259,7 +259,7 @@ const pictogramMap = {
   ai_smartphone: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -278,7 +278,7 @@ const pictogramMap = {
   ai_big_data: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -304,7 +304,7 @@ const pictogramMap = {
   ai_learning: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -323,7 +323,7 @@ const pictogramMap = {
   ai_robot2: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 511.98 511.98"
+      enableBackground="new 0 0 511.98 511.98"
       height={size}
       viewBox="0 0 511.98 511.98"
       width={size}
@@ -344,7 +344,7 @@ const pictogramMap = {
   ai_innovation: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -364,7 +364,7 @@ const pictogramMap = {
   ai_smartwatch: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -385,7 +385,7 @@ const pictogramMap = {
   ai_smarthome: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -404,7 +404,7 @@ const pictogramMap = {
   ai_robot3: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -431,7 +431,7 @@ const pictogramMap = {
   ai_super_intelligence: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -450,7 +450,7 @@ const pictogramMap = {
   ai_chatbot: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -477,7 +477,7 @@ const pictogramMap = {
   ai_flowchart: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -495,7 +495,7 @@ const pictogramMap = {
   ai_monitor: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -514,7 +514,7 @@ const pictogramMap = {
   ai_robotic_arm: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -535,7 +535,7 @@ const pictogramMap = {
   ai_research: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -554,7 +554,7 @@ const pictogramMap = {
   ai_algorithm: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -573,7 +573,7 @@ const pictogramMap = {
   ai_deep_learning: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -593,7 +593,7 @@ const pictogramMap = {
   ai_machine_learning: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -613,7 +613,7 @@ const pictogramMap = {
   ai_fingerprint: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -640,7 +640,7 @@ const pictogramMap = {
   ai_coding: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -673,7 +673,7 @@ const pictogramMap = {
   ai_artificial_intelligence2: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -693,7 +693,7 @@ const pictogramMap = {
   ai_hologram: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -719,7 +719,7 @@ const pictogramMap = {
   ai_nanotechnology: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -739,7 +739,7 @@ const pictogramMap = {
   ai_drone: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -757,7 +757,7 @@ const pictogramMap = {
   ai_vr_glasses: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -779,7 +779,7 @@ const pictogramMap = {
   ai_car: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -804,7 +804,7 @@ const pictogramMap = {
   ai_automation: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -827,7 +827,7 @@ const pictogramMap = {
   ai_security: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -849,7 +849,7 @@ const pictogramMap = {
   ai_brain2: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -870,7 +870,7 @@ const pictogramMap = {
   ai_dna: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -889,7 +889,7 @@ const pictogramMap = {
   ai_file_management: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -910,7 +910,7 @@ const pictogramMap = {
   ai_transfer: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -933,7 +933,7 @@ const pictogramMap = {
   ai_conveyor: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -958,7 +958,7 @@ const pictogramMap = {
   ai_filter: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -977,7 +977,7 @@ const pictogramMap = {
   ai_binary_code: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1008,7 +1008,7 @@ const pictogramMap = {
   ai_robot_hand: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1026,7 +1026,7 @@ const pictogramMap = {
   ai_battery: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1045,7 +1045,7 @@ const pictogramMap = {
   ai_gaming: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1074,7 +1074,7 @@ const pictogramMap = {
   ai_remote_control: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1103,7 +1103,7 @@ const pictogramMap = {
   ai_healthcare: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1124,7 +1124,7 @@ const pictogramMap = {
   ai_brain3: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1144,7 +1144,7 @@ const pictogramMap = {
   ai_network: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1163,7 +1163,7 @@ const pictogramMap = {
   cloud_time: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1181,7 +1181,7 @@ const pictogramMap = {
   cloud_storage: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1198,7 +1198,7 @@ const pictogramMap = {
   cloud_download: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1216,7 +1216,7 @@ const pictogramMap = {
   cloud_internet: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1235,7 +1235,7 @@ const pictogramMap = {
   cloud_satellite: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1256,7 +1256,7 @@ const pictogramMap = {
   cloud_connection_error: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1274,7 +1274,7 @@ const pictogramMap = {
   cloud_connection1: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1292,7 +1292,7 @@ const pictogramMap = {
   cloud_email: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1309,7 +1309,7 @@ const pictogramMap = {
   cloud_sharing: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1327,7 +1327,7 @@ const pictogramMap = {
   cloud_hardware: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1345,7 +1345,7 @@ const pictogramMap = {
   cloud_settings: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1363,7 +1363,7 @@ const pictogramMap = {
   cloud_gamepad: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1382,7 +1382,7 @@ const pictogramMap = {
   cloud_folder: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1400,7 +1400,7 @@ const pictogramMap = {
   cloud_syncing: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1417,7 +1417,7 @@ const pictogramMap = {
   cloud_server: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1434,7 +1434,7 @@ const pictogramMap = {
   cloud_paper_bin: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1453,7 +1453,7 @@ const pictogramMap = {
   cloud_database: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1473,7 +1473,7 @@ const pictogramMap = {
   cloud_data_transfer: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1490,7 +1490,7 @@ const pictogramMap = {
   cloud_document: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1507,7 +1507,7 @@ const pictogramMap = {
   cloud_local_network: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1524,7 +1524,7 @@ const pictogramMap = {
   cloud_connection2: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1543,7 +1543,7 @@ const pictogramMap = {
   cloud_search: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1562,7 +1562,7 @@ const pictogramMap = {
   cloud_favorite: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1579,7 +1579,7 @@ const pictogramMap = {
   cloud_network1: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1596,7 +1596,7 @@ const pictogramMap = {
   cloud_security: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1611,7 +1611,7 @@ const pictogramMap = {
   cloud_account: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1638,7 +1638,7 @@ const pictogramMap = {
   cloud_access_denied: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1658,7 +1658,7 @@ const pictogramMap = {
   cloud_uploading: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1679,7 +1679,7 @@ const pictogramMap = {
   cloud_report: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1696,7 +1696,7 @@ const pictogramMap = {
   cloud_network2: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1713,7 +1713,7 @@ const pictogramMap = {
   cloud_uploading2: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1730,7 +1730,7 @@ const pictogramMap = {
   cloud_downloading2: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1747,7 +1747,7 @@ const pictogramMap = {
   cloud_user: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1764,7 +1764,7 @@ const pictogramMap = {
   cloud_calendar: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1784,7 +1784,7 @@ const pictogramMap = {
   cloud_tap: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1801,7 +1801,7 @@ const pictogramMap = {
   cloud_sync: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1818,7 +1818,7 @@ const pictogramMap = {
   cloud_protection: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1836,7 +1836,7 @@ const pictogramMap = {
   cloud_banking: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1854,7 +1854,7 @@ const pictogramMap = {
   cloud_printing: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1871,7 +1871,7 @@ const pictogramMap = {
   cloud_chat: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1893,7 +1893,7 @@ const pictogramMap = {
   cloud_password: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1913,7 +1913,7 @@ const pictogramMap = {
   cloud_support: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1930,7 +1930,7 @@ const pictogramMap = {
   cloud_wireless_connection: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1954,7 +1954,7 @@ const pictogramMap = {
   cloud_security2: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1976,7 +1976,7 @@ const pictogramMap = {
   cloud_chronometer: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1996,7 +1996,7 @@ const pictogramMap = {
   cloud_e_learning: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -2014,7 +2014,7 @@ const pictogramMap = {
   cloud_computer: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -2034,7 +2034,7 @@ const pictogramMap = {
   cloud_pie_chart: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -2054,7 +2054,7 @@ const pictogramMap = {
   cloud_global_network: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -2071,7 +2071,7 @@ const pictogramMap = {
   cloud_hosting: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -2088,7 +2088,7 @@ const pictogramMap = {
   robotics_3d_sensor: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 64 64"
+      enableBackground="new 0 0 64 64"
       height={size}
       viewBox="0 0 64 64"
       width={size}
@@ -2133,7 +2133,7 @@ const pictogramMap = {
   robotics_ai: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 64 64"
+      enableBackground="new 0 0 64 64"
       height={size}
       viewBox="0 0 64 64"
       width={size}
@@ -2153,7 +2153,7 @@ const pictogramMap = {
   robotics_assembly: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 64 64"
+      enableBackground="new 0 0 64 64"
       height={size}
       viewBox="0 0 64 64"
       width={size}
@@ -2174,7 +2174,7 @@ const pictogramMap = {
   robotics_binary_code: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 64 64"
+      enableBackground="new 0 0 64 64"
       height={size}
       viewBox="0 0 64 64"
       width={size}
@@ -2211,7 +2211,7 @@ const pictogramMap = {
   robotics_circuit_board: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 64 64"
+      enableBackground="new 0 0 64 64"
       height={size}
       viewBox="0 0 64 64"
       width={size}
@@ -2257,7 +2257,7 @@ const pictogramMap = {
   robotics_code: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 64 64"
+      enableBackground="new 0 0 64 64"
       height={size}
       viewBox="0 0 64 64"
       width={size}
@@ -2290,7 +2290,7 @@ const pictogramMap = {
   robotics_configuration: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 64 64"
+      enableBackground="new 0 0 64 64"
       height={size}
       viewBox="0 0 64 64"
       width={size}
@@ -2313,7 +2313,7 @@ const pictogramMap = {
   robotics_control1: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 64 64"
+      enableBackground="new 0 0 64 64"
       height={size}
       viewBox="0 0 64 64"
       width={size}
@@ -2337,7 +2337,7 @@ const pictogramMap = {
   robotics_control2: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 64 64"
+      enableBackground="new 0 0 64 64"
       height={size}
       viewBox="0 0 64 64"
       width={size}
@@ -2369,7 +2369,7 @@ const pictogramMap = {
   robotics_cost: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 64 64"
+      enableBackground="new 0 0 64 64"
       height={size}
       viewBox="0 0 64 64"
       width={size}
@@ -2392,7 +2392,7 @@ const pictogramMap = {
   robotics_drone: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 64 64"
+      enableBackground="new 0 0 64 64"
       height={size}
       viewBox="0 0 64 64"
       width={size}
@@ -2417,7 +2417,7 @@ const pictogramMap = {
   robotics_arm: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 64 64"
+      enableBackground="new 0 0 64 64"
       height={size}
       viewBox="0 0 64 64"
       width={size}
@@ -2438,7 +2438,7 @@ const pictogramMap = {
   robotics_intelligence: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 64 64"
+      enableBackground="new 0 0 64 64"
       height={size}
       viewBox="0 0 64 64"
       width={size}
@@ -2468,7 +2468,7 @@ const pictogramMap = {
   robotics_robot1: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 64 64"
+      enableBackground="new 0 0 64 64"
       height={size}
       viewBox="0 0 64 64"
       width={size}
@@ -2490,7 +2490,7 @@ const pictogramMap = {
   robotics_maintenance: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 64 64"
+      enableBackground="new 0 0 64 64"
       height={size}
       viewBox="0 0 64 64"
       width={size}
@@ -2524,7 +2524,7 @@ const pictogramMap = {
   robotics_procedure: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 64 64"
+      enableBackground="new 0 0 64 64"
       height={size}
       viewBox="0 0 64 64"
       width={size}
@@ -2554,7 +2554,7 @@ const pictogramMap = {
   robotics_mandatory: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 64 64"
+      enableBackground="new 0 0 64 64"
       height={size}
       viewBox="0 0 64 64"
       width={size}
@@ -2587,7 +2587,7 @@ const pictogramMap = {
   robotics_microcontroller: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 64 64"
+      enableBackground="new 0 0 64 64"
       height={size}
       viewBox="0 0 64 64"
       width={size}
@@ -2615,7 +2615,7 @@ const pictogramMap = {
   robotics_robot2: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 64 64"
+      enableBackground="new 0 0 64 64"
       height={size}
       viewBox="0 0 64 64"
       width={size}
@@ -2639,7 +2639,7 @@ const pictogramMap = {
   robotics_programming: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 64 64"
+      enableBackground="new 0 0 64 64"
       height={size}
       viewBox="0 0 64 64"
       width={size}
@@ -2682,7 +2682,7 @@ const pictogramMap = {
   robotics_prosthetic: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 64 64"
+      enableBackground="new 0 0 64 64"
       height={size}
       viewBox="0 0 64 64"
       width={size}
@@ -2701,7 +2701,7 @@ const pictogramMap = {
   robotics_prototype: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 64 64"
+      enableBackground="new 0 0 64 64"
       height={size}
       viewBox="0 0 64 64"
       width={size}
@@ -2735,7 +2735,7 @@ const pictogramMap = {
   robotics_rechargeable: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 64 64"
+      enableBackground="new 0 0 64 64"
       height={size}
       viewBox="0 0 64 64"
       width={size}
@@ -2762,7 +2762,7 @@ const pictogramMap = {
   robotics_remote_control: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 64 64"
+      enableBackground="new 0 0 64 64"
       height={size}
       viewBox="0 0 64 64"
       width={size}
@@ -2791,7 +2791,7 @@ const pictogramMap = {
   robotics_repair: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 64 64"
+      enableBackground="new 0 0 64 64"
       height={size}
       viewBox="0 0 64 64"
       width={size}
@@ -2818,7 +2818,7 @@ const pictogramMap = {
   robotics_design: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 64 64"
+      enableBackground="new 0 0 64 64"
       height={size}
       viewBox="0 0 64 64"
       width={size}
@@ -2845,7 +2845,7 @@ const pictogramMap = {
   robotics_robot_kit: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 64 64"
+      enableBackground="new 0 0 64 64"
       height={size}
       viewBox="0 0 64 64"
       width={size}
@@ -2876,7 +2876,7 @@ const pictogramMap = {
   robotics_robot3: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 64 64"
+      enableBackground="new 0 0 64 64"
       height={size}
       viewBox="0 0 64 64"
       width={size}
@@ -2901,7 +2901,7 @@ const pictogramMap = {
   robotics_simulation: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 64 64"
+      enableBackground="new 0 0 64 64"
       height={size}
       viewBox="0 0 64 64"
       width={size}
@@ -2919,7 +2919,7 @@ const pictogramMap = {
   fd_download: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -2959,7 +2959,7 @@ const pictogramMap = {
   fd_statistics: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -3017,7 +3017,7 @@ const pictogramMap = {
   fd_document1: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -3050,7 +3050,7 @@ const pictogramMap = {
   fd_picture: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -3089,7 +3089,7 @@ const pictogramMap = {
   fd_archive: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -3130,7 +3130,7 @@ const pictogramMap = {
   fd_cloud: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -3174,7 +3174,7 @@ const pictogramMap = {
   fd_search: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -3218,7 +3218,7 @@ const pictogramMap = {
   fd_exchange: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -3272,7 +3272,7 @@ const pictogramMap = {
   fd_upload: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -3312,7 +3312,7 @@ const pictogramMap = {
   fd_video: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -3346,7 +3346,7 @@ const pictogramMap = {
   fd_document2: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -3384,7 +3384,7 @@ const pictogramMap = {
   fd_locked: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -3422,7 +3422,7 @@ const pictogramMap = {
   fd_typography: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -3457,7 +3457,7 @@ const pictogramMap = {
   fd_volume: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -3502,7 +3502,7 @@ const pictogramMap = {
   fd_warning: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -3546,7 +3546,7 @@ const pictogramMap = {
   fd_save: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -3583,7 +3583,7 @@ const pictogramMap = {
   fd_report: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -3618,7 +3618,7 @@ const pictogramMap = {
   fd_medical_report: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -3688,7 +3688,7 @@ const pictogramMap = {
   fd_financial_report: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -3743,7 +3743,7 @@ const pictogramMap = {
   fd_table: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -3779,7 +3779,7 @@ const pictogramMap = {
   fd_design: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -3825,7 +3825,7 @@ const pictogramMap = {
   fd_copy: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -3867,7 +3867,7 @@ const pictogramMap = {
   fd_document3: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -3907,7 +3907,7 @@ const pictogramMap = {
   fd_music: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -3951,7 +3951,7 @@ const pictogramMap = {
   fd_certification: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -3997,7 +3997,7 @@ const pictogramMap = {
   fd_coding: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -4051,7 +4051,7 @@ const pictogramMap = {
   fd_key: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -4093,7 +4093,7 @@ const pictogramMap = {
   fd_database: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -4131,7 +4131,7 @@ const pictogramMap = {
   fd_sheet: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -4173,7 +4173,7 @@ const pictogramMap = {
   fd_data: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -4212,7 +4212,7 @@ const pictogramMap = {
   fd_multimedia: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -4254,7 +4254,7 @@ const pictogramMap = {
   fd_schedule: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -4291,7 +4291,7 @@ const pictogramMap = {
   fd_add: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -4330,7 +4330,7 @@ const pictogramMap = {
   fd_delete: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -4369,7 +4369,7 @@ const pictogramMap = {
   fd_zip: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -4406,7 +4406,7 @@ const pictogramMap = {
   fd_mail: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -4439,7 +4439,7 @@ const pictogramMap = {
   fd_edition: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}

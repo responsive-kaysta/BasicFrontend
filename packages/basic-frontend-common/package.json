@@ -1,6 +1,6 @@
 {
   "name": "basic-frontend-common",
-  "version": "0.3.7",
+  "version": "0.3.8",
   "main": "build/index.js",
   "description": "This package provides commonly used components for the responsive-it apps.",
   "scripts": {

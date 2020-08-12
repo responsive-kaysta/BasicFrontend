@@ -63,7 +63,7 @@ export const FooterComponent: FC<FooterComponentProps> = ({ theme }) => {
       </ul>
       <span className="mb-2 md:mb-4">
         <Link href="https://responsive-it.biz" theme={theme} newWindow>
-          2020 {PAGE_AUTHOR} - v 0.3.7
+          2020 {PAGE_AUTHOR} - v 0.3.8
         </Link>
       </span>
     </Footer>
