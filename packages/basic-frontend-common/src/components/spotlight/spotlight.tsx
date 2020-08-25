@@ -10,7 +10,7 @@ export enum PictogramOrientation {
 
 type SpotlightProps = {
   title: string;
-  content: string;
+  content?: string;
   pictogram: PictogramName;
   pictogramSize?: PictogramSize;
   orientation?: Orientation;

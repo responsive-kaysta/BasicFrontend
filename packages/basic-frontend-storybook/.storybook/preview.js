@@ -32,23 +32,20 @@ export const parameters = {
 
 const withGlobalStyle = (storyFn) => storyFn();
 
+addDecorator(withGlobalStyle);
+addDecorator(withKnobs);
+
+addDecorator(
+  withInfo({
+    inline: false,
+    header: false,
+    propTables: true,
+  })
+);
+
 addParameters({
   options: {
     name: "Basic-Frontend Storybook",
     sortStoriesByKind: true,
   },
 });
-
-addDecorator(
-  withInfo({
-    inline: false,
-    header: false,
-    propTables: false,
-  })
-);
-
-addDecorator((story) => story());
-
-addDecorator(withGlobalStyle);
-
-addDecorator(withKnobs);

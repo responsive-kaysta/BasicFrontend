@@ -14,6 +14,7 @@ type DropdownProps = {
   options: { value: string; label: string }[];
   onSelectionChanged: (value: string | null) => void;
   defaultOption?: boolean;
+  defaultValue?: string | number | string[] | undefined;
 };
 
 export const Dropdown: FC<DropdownProps> = ({
@@ -23,10 +24,10 @@ export const Dropdown: FC<DropdownProps> = ({
   legend,
   comment,
   theme,
-
   options,
   defaultOption = true,
   onSelectionChanged,
+  defaultValue,
 }) => {
   const style = `block appearance-none w-full ${
     theme ? theme.form.backgroundColor : "bg-white"
@@ -42,10 +43,16 @@ export const Dropdown: FC<DropdownProps> = ({
           name={name}
           onChange={({ target: { value } }) => onSelectionChanged(value)}
           className={style}
+          defaultValue={defaultValue}
         >
           {defaultOption && <option>Please select</option>}
-          {options.map((item) => {
-            return <option value={item.value}>{item.label}</option>;
+
+          {options.map((item, index) => {
+            return (
+              <option key={index} value={item.value}>
+                {item.label}
+              </option>
+            );
           })}
         </select>
         <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">

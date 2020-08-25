@@ -82,7 +82,7 @@ const pictogramMap = {
   ai_artificial_intelligence1: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -101,7 +101,7 @@ const pictogramMap = {
   ai_bulb: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -120,7 +120,7 @@ const pictogramMap = {
   ai_vision: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -139,7 +139,7 @@ const pictogramMap = {
   ai_robot1: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -161,7 +161,7 @@ const pictogramMap = {
   ai_chip: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -182,7 +182,7 @@ const pictogramMap = {
   ai_brain1: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -200,7 +200,7 @@ const pictogramMap = {
   ai_folder: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -221,7 +221,7 @@ const pictogramMap = {
   ai_analysis: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 511.998 511.998"
+      enableBackground="new 0 0 511.998 511.998"
       height={size}
       viewBox="0 0 511.998 511.998"
       width={size}
@@ -240,7 +240,7 @@ const pictogramMap = {
   ai_cloud: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -259,7 +259,7 @@ const pictogramMap = {
   ai_smartphone: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -278,7 +278,7 @@ const pictogramMap = {
   ai_big_data: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -304,7 +304,7 @@ const pictogramMap = {
   ai_learning: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -323,7 +323,7 @@ const pictogramMap = {
   ai_robot2: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 511.98 511.98"
+      enableBackground="new 0 0 511.98 511.98"
       height={size}
       viewBox="0 0 511.98 511.98"
       width={size}
@@ -344,7 +344,7 @@ const pictogramMap = {
   ai_innovation: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -364,7 +364,7 @@ const pictogramMap = {
   ai_smartwatch: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -385,7 +385,7 @@ const pictogramMap = {
   ai_smarthome: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -404,7 +404,7 @@ const pictogramMap = {
   ai_robot3: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -431,7 +431,7 @@ const pictogramMap = {
   ai_super_intelligence: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -450,7 +450,7 @@ const pictogramMap = {
   ai_chatbot: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -477,7 +477,7 @@ const pictogramMap = {
   ai_flowchart: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -495,7 +495,7 @@ const pictogramMap = {
   ai_monitor: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -514,7 +514,7 @@ const pictogramMap = {
   ai_robotic_arm: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -535,7 +535,7 @@ const pictogramMap = {
   ai_research: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -554,7 +554,7 @@ const pictogramMap = {
   ai_algorithm: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -573,7 +573,7 @@ const pictogramMap = {
   ai_deep_learning: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -593,7 +593,7 @@ const pictogramMap = {
   ai_machine_learning: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -613,7 +613,7 @@ const pictogramMap = {
   ai_fingerprint: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -640,7 +640,7 @@ const pictogramMap = {
   ai_coding: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -673,7 +673,7 @@ const pictogramMap = {
   ai_artificial_intelligence2: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -693,7 +693,7 @@ const pictogramMap = {
   ai_hologram: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -719,7 +719,7 @@ const pictogramMap = {
   ai_nanotechnology: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -739,7 +739,7 @@ const pictogramMap = {
   ai_drone: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -757,7 +757,7 @@ const pictogramMap = {
   ai_vr_glasses: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -779,7 +779,7 @@ const pictogramMap = {
   ai_car: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -804,7 +804,7 @@ const pictogramMap = {
   ai_automation: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -827,7 +827,7 @@ const pictogramMap = {
   ai_security: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -849,7 +849,7 @@ const pictogramMap = {
   ai_brain2: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -870,7 +870,7 @@ const pictogramMap = {
   ai_dna: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -889,7 +889,7 @@ const pictogramMap = {
   ai_file_management: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -910,7 +910,7 @@ const pictogramMap = {
   ai_transfer: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -933,7 +933,7 @@ const pictogramMap = {
   ai_conveyor: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -958,7 +958,7 @@ const pictogramMap = {
   ai_filter: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -977,7 +977,7 @@ const pictogramMap = {
   ai_binary_code: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1008,7 +1008,7 @@ const pictogramMap = {
   ai_robot_hand: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1026,7 +1026,7 @@ const pictogramMap = {
   ai_battery: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1045,7 +1045,7 @@ const pictogramMap = {
   ai_gaming: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1074,7 +1074,7 @@ const pictogramMap = {
   ai_remote_control: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1103,7 +1103,7 @@ const pictogramMap = {
   ai_healthcare: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1124,7 +1124,7 @@ const pictogramMap = {
   ai_brain3: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1144,7 +1144,7 @@ const pictogramMap = {
   ai_network: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1163,7 +1163,7 @@ const pictogramMap = {
   cloud_time: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1181,7 +1181,7 @@ const pictogramMap = {
   cloud_storage: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1198,7 +1198,7 @@ const pictogramMap = {
   cloud_download: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1216,7 +1216,7 @@ const pictogramMap = {
   cloud_internet: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1235,7 +1235,7 @@ const pictogramMap = {
   cloud_satellite: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1256,7 +1256,7 @@ const pictogramMap = {
   cloud_connection_error: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1274,7 +1274,7 @@ const pictogramMap = {
   cloud_connection1: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1292,7 +1292,7 @@ const pictogramMap = {
   cloud_email: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1309,7 +1309,7 @@ const pictogramMap = {
   cloud_sharing: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1327,7 +1327,7 @@ const pictogramMap = {
   cloud_hardware: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1345,7 +1345,7 @@ const pictogramMap = {
   cloud_settings: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1363,7 +1363,7 @@ const pictogramMap = {
   cloud_gamepad: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1382,7 +1382,7 @@ const pictogramMap = {
   cloud_folder: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1400,7 +1400,7 @@ const pictogramMap = {
   cloud_syncing: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1417,7 +1417,7 @@ const pictogramMap = {
   cloud_server: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1434,7 +1434,7 @@ const pictogramMap = {
   cloud_paper_bin: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1453,7 +1453,7 @@ const pictogramMap = {
   cloud_database: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1473,7 +1473,7 @@ const pictogramMap = {
   cloud_data_transfer: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1490,7 +1490,7 @@ const pictogramMap = {
   cloud_document: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1507,7 +1507,7 @@ const pictogramMap = {
   cloud_local_network: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1524,7 +1524,7 @@ const pictogramMap = {
   cloud_connection2: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1543,7 +1543,7 @@ const pictogramMap = {
   cloud_search: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1562,7 +1562,7 @@ const pictogramMap = {
   cloud_favorite: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1579,7 +1579,7 @@ const pictogramMap = {
   cloud_network1: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1596,7 +1596,7 @@ const pictogramMap = {
   cloud_security: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1611,7 +1611,7 @@ const pictogramMap = {
   cloud_account: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1638,7 +1638,7 @@ const pictogramMap = {
   cloud_access_denied: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1658,7 +1658,7 @@ const pictogramMap = {
   cloud_uploading: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1679,7 +1679,7 @@ const pictogramMap = {
   cloud_report: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1696,7 +1696,7 @@ const pictogramMap = {
   cloud_network2: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1713,7 +1713,7 @@ const pictogramMap = {
   cloud_uploading2: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1730,7 +1730,7 @@ const pictogramMap = {
   cloud_downloading2: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1747,7 +1747,7 @@ const pictogramMap = {
   cloud_user: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1764,7 +1764,7 @@ const pictogramMap = {
   cloud_calendar: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1784,7 +1784,7 @@ const pictogramMap = {
   cloud_tap: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1801,7 +1801,7 @@ const pictogramMap = {
   cloud_sync: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1818,7 +1818,7 @@ const pictogramMap = {
   cloud_protection: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1836,7 +1836,7 @@ const pictogramMap = {
   cloud_banking: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1854,7 +1854,7 @@ const pictogramMap = {
   cloud_printing: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1871,7 +1871,7 @@ const pictogramMap = {
   cloud_chat: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1893,7 +1893,7 @@ const pictogramMap = {
   cloud_password: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1913,7 +1913,7 @@ const pictogramMap = {
   cloud_support: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1930,7 +1930,7 @@ const pictogramMap = {
   cloud_wireless_connection: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1954,7 +1954,7 @@ const pictogramMap = {
   cloud_security2: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1976,7 +1976,7 @@ const pictogramMap = {
   cloud_chronometer: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -1996,7 +1996,7 @@ const pictogramMap = {
   cloud_e_learning: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -2014,7 +2014,7 @@ const pictogramMap = {
   cloud_computer: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -2034,7 +2034,7 @@ const pictogramMap = {
   cloud_pie_chart: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -2054,7 +2054,7 @@ const pictogramMap = {
   cloud_global_network: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -2071,7 +2071,7 @@ const pictogramMap = {
   cloud_hosting: (size: number, className: string) => (
     <svg
       id="Capa_1"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       height={size}
       viewBox="0 0 512 512"
       width={size}
@@ -2082,6 +2082,2405 @@ const pictogramMap = {
     >
       <g>
         <path d="m455.477 398.803c-25.981 0-47.91 17.649-54.493 41.599h-90.406c-5.269-19.169-20.369-34.289-39.513-39.566v-57.142h148.732c49.92 0 90.532-40.667 90.532-90.653 0-47.68-36.953-86.88-83.686-90.396-3.867-40.845-38.314-72.901-80.1-72.901-8.187 0-16.195 1.216-23.834 3.585-1.519-51.722-44.011-93.329-96.025-93.329-52.971 0-96.066 43.152-96.066 96.194v6.727h-8.551c-66.294 0-120.227 54.005-120.227 120.387s53.933 120.386 120.226 120.386h119.038v57.142c-19.144 5.276-34.244 20.397-39.513 39.566h-90.574c-6.583-23.949-28.512-41.599-54.493-41.599-31.167 0-56.524 25.39-56.524 56.598s25.357 56.599 56.524 56.599c25.981 0 47.91-17.649 54.493-41.599h90.574c6.583 23.95 28.512 41.599 54.493 41.599s47.91-17.649 54.493-41.599h90.406c6.584 23.95 28.512 41.599 54.494 41.599 31.167 0 56.523-25.39 56.523-56.599s-25.356-56.598-56.523-56.598zm-423.676-175.495c0-49.839 40.493-90.387 90.267-90.387h38.511v-36.727c0-36.5 29.655-66.194 66.106-66.194s66.106 29.695 66.106 66.194v50.954l23.861-17.587c8.713-6.422 19.05-9.817 29.892-9.817 27.846 0 50.5 22.685 50.5 50.567 0 1.774-.101 3.618-.3 5.48l-1.774 16.597h24.827c33.399 0 60.572 27.209 60.572 60.653s-27.173 60.652-60.572 60.652h-297.73c-49.774.001-90.266-40.546-90.266-90.385zm24.723 258.692c-14.647 0-26.564-11.932-26.564-26.599s11.917-26.599 26.564-26.599c14.648 0 26.563 11.932 26.563 26.599s-11.915 26.599-26.563 26.599zm199.56 0c-14.648 0-26.563-11.932-26.563-26.599s11.916-26.599 26.563-26.599 26.563 11.932 26.563 26.599-11.915 26.599-26.563 26.599zm199.393 0c-14.648 0-26.563-11.932-26.563-26.599s11.916-26.599 26.563-26.599 26.563 11.932 26.563 26.599-11.916 26.599-26.563 26.599z" />
+      </g>
+    </svg>
+  ),
+  robotics_3d_sensor: (size: number, className: string) => (
+    <svg
+      id="Capa_1"
+      enableBackground="new 0 0 64 64"
+      height={size}
+      viewBox="0 0 64 64"
+      width={size}
+      xmlns="http://www.w3.org/2000/svg"
+      fill="inherit"
+      stroke="currentColor"
+      className={className}
+    >
+      <g>
+        <path d="m32 15c-1.654 0-3 1.346-3 3s1.346 3 3 3 3-1.346 3-3-1.346-3-3-3zm0 4c-.551 0-1-.449-1-1s.449-1 1-1 1 .449 1 1-.449 1-1 1z" />
+        <path d="m43.25 20.927.623-.519c.716-.597 1.127-1.475 1.127-2.408s-.411-1.811-1.128-2.409l-.623-.518c-3.151-2.627-7.146-4.073-11.249-4.073s-8.098 1.446-11.25 4.073l-.623.519c-.716.597-1.127 1.475-1.127 2.408s.411 1.811 1.128 2.409l.623.518c3.151 2.627 7.146 4.073 11.249 4.073s8.098-1.446 11.25-4.073zm-16.25-2.927c0-2.757 2.243-5 5-5s5 2.243 5 5-2.243 5-5 5-5-2.243-5-5zm15.592-.872c.259.216.408.534.408.872s-.149.656-.408.872l-.623.519c-1.245 1.037-2.643 1.853-4.126 2.454.729-1.105 1.157-2.425 1.157-3.845s-.427-2.74-1.157-3.845c1.483.601 2.881 1.417 4.126 2.454zm-21.184 1.744c-.259-.216-.408-.534-.408-.872s.149-.656.408-.872l.623-.519c1.245-1.037 2.643-1.853 4.126-2.454-.729 1.105-1.157 2.425-1.157 3.845s.427 2.74 1.157 3.845c-1.483-.601-2.881-1.417-4.126-2.454z" />
+        <path d="m16 33c-2.757 0-5 2.243-5 5s2.243 5 5 5 5-2.243 5-5-2.243-5-5-5zm0 8c-1.654 0-3-1.346-3-3s1.346-3 3-3 3 1.346 3 3-1.346 3-3 3z" />
+        <circle cx="16" cy="38" r="1" />
+        <circle cx="36" cy="38" r="1" />
+        <path d="m48 33c-2.757 0-5 2.243-5 5s2.243 5 5 5 5-2.243 5-5-2.243-5-5-5zm0 8c-1.654 0-3-1.346-3-3s1.346-3 3-3 3 1.346 3 3-1.346 3-3 3z" />
+        <circle cx="48" cy="38" r="1" />
+        <path d="m50 29h-5.062c2.527-2.968 4.062-6.805 4.062-11 0-9.374-7.626-17-17-17s-17 7.626-17 17c0 4.195 1.535 8.032 4.062 11h-5.062c-4.962 0-9 4.038-9 9s4.038 9 9 9h3v8h-1c-2.757 0-5 2.243-5 5v3h42v-3c0-2.757-2.243-5-5-5h-1v-8h3c4.962 0 9-4.038 9-9s-4.038-9-9-9zm-18-26c8.271 0 15 6.729 15 15s-6.729 15-15 15-15-6.729-15-15 6.729-15 15-15zm7 35c0 1.654-1.346 3-3 3s-3-1.346-3-3 1.346-3 3-3 3 1.346 3 3zm-20 9h4v8h-4zm6 8v-8h14v8zm26 5v1h-38v-1c0-1.654 1.346-3 3-3h32c1.654 0 3 1.346 3 3zm-6-5h-4v-8h4zm5-10h-36c-3.86 0-7-3.14-7-7s3.14-7 7-7h7.068c2.958 2.492 6.77 4 10.932 4 .009 0 .018-.001.027-.001-.636.838-1.027 1.87-1.027 3.001 0 2.757 2.243 5 5 5s5-2.243 5-5c0-1.839-1.009-3.432-2.492-4.3 1.616-.672 3.104-1.588 4.424-2.7h7.068c3.86 0 7 3.14 7 7s-3.14 7-7 7z" />
+        <path d="m32.001 7-.002-2c-.634 0-1.284.063-1.933.187l.374 1.965c.527-.101 1.052-.152 1.561-.152z" />
+        <path d="m28.694 7.657-.719-1.866c-.652.251-1.305.563-1.94.926l.992 1.736c.548-.313 1.109-.581 1.667-.796z" />
+        <path d="m25.472 9.485-1.212-1.59c-.56.427-1.1.895-1.605 1.392l1.402 1.426c.445-.439.922-.852 1.415-1.228z" />
+        <path d="m51 17h8v2h-8z" />
+        <path
+          d="m50.558 12.513h8v2h-8z"
+          transform="matrix(.981 -.195 .195 .981 -1.588 10.914)"
+        />
+        <path
+          d="m8.442 9.513h2v8h-2z"
+          transform="matrix(.195 -.981 .981 .195 -5.654 20.137)"
+        />
+        <path d="m5 17h8v2h-8z" />
+        <path
+          d="m5.442 21.487h8v2h-8z"
+          transform="matrix(.981 -.195 .195 .981 -4.209 2.277)"
+        />
+        <path
+          d="m53.558 18.487h2v8h-2z"
+          transform="matrix(.195 -.981 .981 .195 21.858 71.609)"
+        />
+      </g>
+    </svg>
+  ),
+  robotics_ai: (size: number, className: string) => (
+    <svg
+      id="Capa_1"
+      enableBackground="new 0 0 64 64"
+      height={size}
+      viewBox="0 0 64 64"
+      width={size}
+      xmlns="http://www.w3.org/2000/svg"
+      fill="inherit"
+      stroke="currentColor"
+      className={className}
+    >
+      <g>
+        <path d="m35 53h18v-18h-18zm2-16h14v14h-14z" />
+        <path d="m55 31v-6h-6v6h-2v-6h-3.765c1.102-1.371 1.765-3.109 1.765-5 0-2.367-1.055-4.519-2.749-6h7.749c.551 0 1 .449 1 1v2.184c-1.161.414-2 1.514-2 2.816 0 1.654 1.346 3 3 3s3-1.346 3-3c0-1.302-.839-2.402-2-2.816v-2.184c0-1.654-1.346-3-3-3h-10.696c-.359-.757-.839-1.431-1.422-2h20.118c.551 0 1 .449 1 1v2.184c-1.161.414-2 1.514-2 2.816 0 1.654 1.346 3 3 3s3-1.346 3-3c0-1.302-.839-2.402-2-2.816v-2.184c0-1.654-1.346-3-3-3h-25v.014c-.076 0-.149-.013-.226-.01-.914-4.056-4.525-7.004-8.774-7.004-3.553 0-6.722 2.069-8.176 5.242-.593-.161-1.203-.242-1.824-.242-3.579 0-6.54 2.701-6.948 6.249-3.502.88-6.052 4.077-6.052 7.751 0 2.953 1.613 5.532 4 6.918v23.082c0 1.654 1.346 3 3 3h5.184c.414 1.161 1.514 2 2.816 2 1.654 0 3-1.346 3-3s-1.346-3-3-3c-1.302 0-2.402.839-2.816 2h-5.184c-.551 0-1-.449-1-1v-22.263c.641.166 1.308.263 2 .263v14c0 1.654 1.346 3 3 3h3.184c.414 1.161 1.514 2 2.816 2 1.654 0 3-1.346 3-3s-1.346-3-3-3c-1.302 0-2.402.839-2.816 2h-3.184c-.551 0-1-.449-1-1v-14h2v6c0 1.654 1.346 3 3 3h1.184c.414 1.161 1.514 2 2.816 2 1.654 0 3-1.346 3-3s-1.346-3-3-3c-1.302 0-2.402.839-2.816 2h-1.184c-.551 0-1-.449-1-1v-6h18v3c-1.103 0-2 .897-2 2h-6v6h6v2h-6v6h6v2h-6v6h6c0 1.103.897 2 2 2v6h6v-6h2v6h6v-6h2v6h6v-6c1.103 0 2-.897 2-2h6v-6h-6v-2h6v-6h-6v-2h6v-6h-6c0-1.103-.897-2-2-2zm-3-10c-.551 0-1-.449-1-1s.449-1 1-1 1 .449 1 1-.449 1-1 1zm8-4c-.551 0-1-.449-1-1s.449-1 1-1 1 .449 1 1-.449 1-1 1zm-44 34c.551 0 1 .449 1 1s-.449 1-1 1-1-.449-1-1 .449-1 1-1zm2-8c.551 0 1 .449 1 1s-.449 1-1 1-1-.449-1-1 .449-1 1-1zm2-8c.551 0 1 .449 1 1s-.449 1-1 1-1-.449-1-1 .449-1 1-1zm7 2v-2h4v2zm0 8v-2h4v2zm0 8v-2h4v2zm24-26h2v4h-2zm-6 4h-2v-4h2zm-4-4.082v4.082h-2v-3.263c.71-.184 1.381-.46 2-.819zm-38-6.918c0-2.962 2.212-5.512 5.145-5.931l.855-.202v-.867c0-2.757 2.243-5 5-5 .692 0 1.365.141 2.001.42l1.008.441.344-1.045c.946-2.88 3.617-4.816 6.647-4.816 3.565 0 6.554 2.669 6.952 6.21l.119 1.06 1.05-.187c.313-.056.6-.083.879-.083 2.206 0 4.126 1.415 4.777 3.521l.166.535.543.138c2.658.678 4.514 3.066 4.514 5.806 0 3.309-2.691 6-6 6h-28c-3.309 0-6-2.691-6-6zm32 8h2v3h-2zm2 33h-2v-4h2zm8 0h-2v-4h2zm8 0h-2v-4h2zm-20-6v-22h22l.001 22zm28-4v2h-4v-2zm0-8v2h-4v-2zm0-8v2h-4v-2z" />
+        <path d="m16.031 20h3.938l1.061 4.243 1.94-.485-3.189-12.758h-3.562l-3.189 12.757 1.94.485zm2.188-7 1.25 5h-2.938l1.25-5z" />
+        <path d="m31 22h-2v-9h2v-2h-6v2h2v9h-2v2h6z" />
+      </g>
+    </svg>
+  ),
+  robotics_assembly: (size: number, className: string) => (
+    <svg
+      id="Capa_1"
+      enableBackground="new 0 0 64 64"
+      height={size}
+      viewBox="0 0 64 64"
+      width={size}
+      xmlns="http://www.w3.org/2000/svg"
+      fill="inherit"
+      stroke="currentColor"
+      className={className}
+    >
+      <g>
+        <path d="m63 43.294c0-3.729-1.976-7.128-5.037-9.044.63-.55 1.037-1.35 1.037-2.25 0-1.349-.901-2.48-2.129-2.856l-1.467-8.802c-.323-1.936-1.982-3.342-3.945-3.342h-6.918c-.838 0-1.612.268-2.259.712l-4.88-2.147c.393-1.143.598-2.337.598-3.565 0-6.065-4.935-11-11-11-3.451 0-6.647 1.616-8.725 4.334-.722-.214-1.484-.334-2.275-.334-2.073 0-3.958.799-5.38 2.097-5.506.687-9.62 5.308-9.62 10.903 0 4.797 3.065 8.973 7.55 10.446l-1.455 14.554h-2.788l-1.839 4.904c-.974 2.597-1.468 5.321-1.468 8.096v1h30v-1c0-2.775-.494-5.499-1.468-8.096l-.075-.201c.966-1.322 1.543-2.944 1.543-4.703 0-1.435-.385-2.779-1.049-3.945 1.323-1.736 2.049-3.856 2.049-6.055 0-5.207-4.002-9.492-9.091-9.954l-.204-2.046h.079l16.456 7.48-.111.664c-1.228.376-2.129 1.507-2.129 2.856 0 .904.41 1.706 1.045 2.257-3.066 1.914-5.045 5.314-5.045 9.048v1.197l2.515 1.874c-.332 1.154-.515 2.368-.515 3.624 0 7.168 5.832 13 13 13s13-5.832 13-13c0-1.256-.183-2.471-.515-3.625l2.515-1.873zm-15 17.706c-1.075 0-2.22-1.527-3.009-4h6.019c-.79 2.473-1.935 4-3.01 4zm-3.519-6c-.244-1.209-.408-2.553-.46-4h7.958c-.052 1.447-.217 2.791-.46 4zm-7.43-4h4.971c.046 1.419.184 2.763.409 4h-4.216c-.627-1.221-1.035-2.57-1.164-4zm10.949-4c1.654 0 3-1.346 3-3v-1c.517 1.596.883 3.626.967 6h-7.947c.082-2.224.432-4.324.98-6.032v1.032c0 1.654 1.346 3 3 3zm1-3c0 .551-.448 1-1 1s-1-.449-1-1v-9h2zm-4-6.642c-.692.163-1.359.38-2 .646v-3.004h2zm-.692 2.276c-.563.933-1.046 2.061-1.414 3.366h-3.39c1.245-1.513 2.891-2.691 4.804-3.366zm-6.108 5.366h4.242c-.228 1.251-.365 2.596-.412 4h-4.986c.128-1.427.534-2.776 1.156-4zm15.778 6h4.971c-.13 1.43-.537 2.779-1.164 4h-4.216c.225-1.237.364-2.581.409-4zm-.009-2c-.046-1.406-.184-2.75-.411-4h4.242c.622 1.224 1.028 2.573 1.156 4zm-.86-6c-.369-1.307-.854-2.433-1.419-3.366 1.913.675 3.56 1.853 4.805 3.366zm-2.109-5.642v-2.358h2v3.004c-.641-.265-1.308-.483-2-.646zm-6.459-18.358h6.918c.981 0 1.812.703 1.973 1.671l1.388 8.329h-13.64l1.388-8.329c.161-.968.992-1.671 1.973-1.671zm-12.676-5.872-8.8-3.872c-.034-.064-.071-.127-.107-.19.935-1.284 2.435-2.066 4.042-2.066 2.757 0 5 2.243 5 5 0 .385-.05.761-.135 1.128zm-7.964-1.319 17.033 7.495c-.152.325-.276.668-.338 1.039l-.241 1.448-16.355-7.435v-1.356c0-.406-.04-.801-.099-1.191zm3.099-8.809c4.963 0 9 4.038 9 9 0 .948-.146 1.872-.432 2.758l-1.851-.814c.182-.629.283-1.278.283-1.944 0-3.86-3.141-7-7-7-2.045 0-3.959.91-5.276 2.423-.47-.482-1.003-.901-1.581-1.253 1.702-2.002 4.192-3.17 6.857-3.17zm-11 4c3.309 0 6 2.691 6 6v6h-6c-3.309 0-6-2.691-6-6s2.691-6 6-6zm-7.799 7.758c.253 1.122.744 2.152 1.414 3.042l-.432 4.318c-1.337-.917-2.183-2.441-2.183-4.118 0-1.219.438-2.352 1.201-3.242zm-5.201 3.242c0-3.834 2.36-7.112 5.772-8.407-.388.819-.646 1.711-.734 2.653-1.878 1.299-3.038 3.458-3.038 5.754 0 2.708 1.57 5.136 3.966 6.292l-.21 2.099c-3.438-1.321-5.756-4.619-5.756-8.391zm.023 37c.104-2.188.545-4.334 1.317-6.394l1.353-3.606h9.57c.892 3.445 4.017 6 7.737 6 1.844 0 3.539-.633 4.894-1.686.618 1.843.991 3.746 1.083 5.686zm22.216-19.675c-.365-.107-.741-.184-1.126-.238l-.576-5.761c1.445.61 2.463 2.035 2.463 3.674 0 .847-.274 1.649-.761 2.325zm-2.239 1.675c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6zm7-4c0 1.568-.465 3.085-1.314 4.38-.471-.476-1.004-.888-1.581-1.234.579-.938.895-2.018.895-3.146 0-2.82-1.998-5.237-4.68-5.846l-.207-2.067c3.885.545 6.887 3.881 6.887 7.913zm-7.9 2.054c-3.988.449-7.1 3.839-7.1 7.946h-5.895l2.343-23.43c1.294.899 2.861 1.43 4.552 1.43h4.695zm1.9-15.698v-2.803l16.014 7.279-.434 2.606zm16 11.644h16c.552 0 1 .449 1 1s-.448 1-1 1h-13-1.945-1.055c-.552 0-1-.449-1-1s.448-1 1-1zm-5 12.498v-.193c0-3.744 2.442-7.084 6-8.244v3.982c-2.062 1.313-3.715 3.175-4.756 5.381zm4.521 13.502h3.373c.368 1.295.837 2.422 1.391 3.341-1.873-.676-3.517-1.834-4.764-3.341zm12.193 3.341c.553-.919 1.023-2.046 1.391-3.341h3.373c-1.246 1.507-2.89 2.665-4.764 3.341zm9.286-16.843-1.244.926c-1.041-2.206-2.695-4.067-4.756-5.38v-3.994c3.548 1.148 6 4.495 6 8.245z" />
+        <path d="m45 23h2v2h-2z" />
+        <path d="m49 23h2v2h-2z" />
+        <path d="m23 47c2.206 0 4-1.794 4-4s-1.794-4-4-4-4 1.794-4 4 1.794 4 4 4zm0-6c1.103 0 2 .897 2 2s-.897 2-2 2-2-.897-2-2 .897-2 2-2z" />
+        <path d="m16 17c2.206 0 4-1.794 4-4s-1.794-4-4-4-4 1.794-4 4 1.794 4 4 4zm0-6c1.103 0 2 .897 2 2s-.897 2-2 2-2-.897-2-2 .897-2 2-2z" />
+      </g>
+    </svg>
+  ),
+  robotics_binary_code: (size: number, className: string) => (
+    <svg
+      id="Capa_1"
+      enableBackground="new 0 0 64 64"
+      height={size}
+      viewBox="0 0 64 64"
+      width={size}
+      xmlns="http://www.w3.org/2000/svg"
+      fill="inherit"
+      stroke="currentColor"
+      className={className}
+    >
+      <g>
+        <path d="m63 1h-62v44h12.101c.247 1.213.946 2.253 1.899 2.974v15.026h34v-15.026c.953-.721 1.652-1.762 1.899-2.974h12.101zm-2 2v6h-58v-6zm-38 41c0-.342-.035-.677-.101-1h18.202c-.066.323-.101.658-.101 1 0 1.627.793 3.061 2 3.974v13.026h-22v-13.026c1.207-.913 2-2.347 2-3.974zm3-7c-.552 0-1-.449-1-1v-8c0-.551.448-1 1-1h12c.552 0 1 .449 1 1v8c0 .551-.448 1-1 1zm9 2v2h-6v-2zm-17 8c-1.654 0-3-1.346-3-3s1.346-3 3-3 3 1.346 3 3-1.346 3-3 3zm-1 1.899c.323.066.658.101 1 .101s.677-.035 1-.101v12.101h-2zm30 12.101h-2v-12.101c.323.066.658.101 1 .101s.677-.035 1-.101zm-1-14c-1.654 0-3-1.346-3-3s1.346-3 3-3 3 1.346 3 3-1.346 3-3 3zm4.899-4c-.465-2.279-2.484-4-4.899-4-1.627 0-3.061.793-3.974 2h-5.026v-2h1c1.302 0 2.402-.839 2.816-2h1.184c1.654 0 3-1.346 3-3v-4c0-1.654-1.346-3-3-3h-1.184c-.414-1.161-1.514-2-2.816-2h-12c-1.302 0-2.402.839-2.816 2h-1.184c-1.654 0-3 1.346-3 3v4c0 1.654 1.346 3 3 3h1.184c.414 1.161 1.514 2 2.816 2h1v2h-5.026c-.914-1.207-2.348-2-3.974-2-2.414 0-4.434 1.721-4.899 4h-10.101v-32h58v32zm-9.899-14h1c.552 0 1 .449 1 1v4c0 .551-.448 1-1 1h-1zm-18 6h-1c-.552 0-1-.449-1-1v-4c0-.551.448-1 1-1h1z" />
+        <path d="m5 5h2v2h-2z" />
+        <path d="m9 5h2v2h-2z" />
+        <path d="m13 5h2v2h-2z" />
+        <path d="m5 13h2v8h-2z" />
+        <path d="m9 21h6v-8h-6zm2-6h2v4h-2z" />
+        <path d="m5 25h2v8h-2z" />
+        <path d="m9 33h6v-8h-6zm2-6h2v4h-2z" />
+        <path d="m17 13h2v8h-2z" />
+        <path d="m21 21h6v-8h-6zm2-6h2v4h-2z" />
+        <path d="m29 13h2v8h-2z" />
+        <path d="m33 13h2v8h-2z" />
+        <path d="m37 21h6v-8h-6zm2-6h2v4h-2z" />
+        <path d="m45 13h2v8h-2z" />
+        <path d="m49 21h6v-8h-6zm2-6h2v4h-2z" />
+        <path d="m57 13h2v8h-2z" />
+        <path d="m49 33h6v-8h-6zm2-6h2v4h-2z" />
+        <path d="m57 25h2v8h-2z" />
+        <path d="m26 59h12c1.654 0 3-1.346 3-3v-4c0-1.654-1.346-3-3-3h-12c-1.654 0-3 1.346-3 3v4c0 1.654 1.346 3 3 3zm-1-7c0-.551.448-1 1-1h12c.552 0 1 .449 1 1v4c0 .551-.448 1-1 1h-12c-.552 0-1-.449-1-1z" />
+        <path d="m27 29h2v2h-2z" />
+        <path d="m35 29h2v2h-2z" />
+      </g>
+    </svg>
+  ),
+  robotics_circuit_board: (size: number, className: string) => (
+    <svg
+      id="Capa_1"
+      enableBackground="new 0 0 64 64"
+      height={size}
+      viewBox="0 0 64 64"
+      width={size}
+      xmlns="http://www.w3.org/2000/svg"
+      fill="inherit"
+      stroke="currentColor"
+      className={className}
+    >
+      <g>
+        <path d="m38 23c-1.654 0-3 1.346-3 3s1.346 3 3 3 3-1.346 3-3-1.346-3-3-3zm0 4c-.552 0-1-.449-1-1s.448-1 1-1 1 .449 1 1-.448 1-1 1z" />
+        <path d="m26 35c-1.654 0-3 1.346-3 3s1.346 3 3 3 3-1.346 3-3-1.346-3-3-3zm0 4c-.552 0-1-.449-1-1s.448-1 1-1 1 .449 1 1-.448 1-1 1z" />
+        <path d="m20 53c-1.654 0-3 1.346-3 3s1.346 3 3 3 3-1.346 3-3-1.346-3-3-3zm0 4c-.552 0-1-.449-1-1s.448-1 1-1 1 .449 1 1-.448 1-1 1z" />
+        <path d="m28 53c-1.654 0-3 1.346-3 3s1.346 3 3 3 3-1.346 3-3-1.346-3-3-3zm0 4c-.552 0-1-.449-1-1s.448-1 1-1 1 .449 1 1-.448 1-1 1z" />
+        <path d="m37 37h-6v2h8v-8h-2z" />
+        <path d="m27 27h6v-2h-8v8h2z" />
+        <path d="m33 45v4h2v-4h2v4h2v-4h2v4h2v-4c1.103 0 2-.897 2-2h4v-2h-4v-2h4v-2h-4v-2h4v-2h-4v-2h4v-2h-4v-2h4v-2h-4v-2h4v-2h-4c0-1.103-.897-2-2-2v-4h-2v4h-2v-4h-2v4h-2v-4h-2v4h-2v-4h-2v4h-2v-4h-2v4h-2v-4h-2v4c-1.103 0-2 .897-2 2h-4v2h4v2h-4v2h4v2h-4v2h4v2h-4v2h4v2h-4v2h4v2h-4v2h4c0 1.103.897 2 2 2v4h2v-4h2v4h2v-4h2v4h2v-4zm-12-24h22l.001 22h-22.001z" />
+        <path d="m5 55h2v2h-2z" />
+        <path d="m9 55h2v2h-2z" />
+        <path d="m51 5h2v2h-2z" />
+        <path d="m55 5h2v2h-2z" />
+        <path d="m45 7h2v4h14v-10h-14v4h-2v-4h-14v10h14zm4-4h10v6h-10zm-6 6h-10v-6h10z" />
+        <path d="m35 5h2v2h-2z" />
+        <path d="m39 5h2v2h-2z" />
+        <path d="m13 49h-2v2h-2v-2h-2v2h-2v-2h-2v2h-2v10h2v2h2v-2h2v2h2v-2h2v2h2v-2h2v-10h-2zm0 10h-10v-6h10z" />
+        <path d="m60 57c-1.654 0-3 1.346-3 3s1.346 3 3 3 3-1.346 3-3-1.346-3-3-3zm0 4c-.552 0-1-.449-1-1s.448-1 1-1 1 .449 1 1-.448 1-1 1z" />
+        <path d="m41 59h14v2h-14z" />
+        <path d="m59 33v22h2v-24h-4.184c-.414-1.161-1.514-2-2.816-2-1.654 0-3 1.346-3 3s1.346 3 3 3c1.302 0 2.402-.839 2.816-2zm-5 0c-.552 0-1-.449-1-1s.448-1 1-1 1 .449 1 1-.448 1-1 1z" />
+        <path d="m53 55h-20v2h22v-20h-2z" />
+        <path d="m53 13h2v14h-2z" />
+        <path d="m57 26c0 1.654 1.346 3 3 3s3-1.346 3-3-1.346-3-3-3-3 1.346-3 3zm4 0c0 .551-.448 1-1 1s-1-.449-1-1 .448-1 1-1 1 .449 1 1z" />
+        <path d="m59 13h2v8h-2z" />
+        <path d="m4 47c1.654 0 3-1.346 3-3s-1.346-3-3-3-3 1.346-3 3 1.346 3 3 3zm0-4c.552 0 1 .449 1 1s-.448 1-1 1-1-.449-1-1 .448-1 1-1z" />
+        <path d="m11 21h-2v3h-6v15h2v-13h6z" />
+        <path d="m7 31c0 1.654 1.346 3 3 3s3-1.346 3-3-1.346-3-3-3-3 1.346-3 3zm4 0c0 .551-.448 1-1 1s-1-.449-1-1 .448-1 1-1 1 .449 1 1z" />
+        <path d="m9 36h2v10h-2z" />
+        <path d="m4 7c1.654 0 3-1.346 3-3s-1.346-3-3-3-3 1.346-3 3 1.346 3 3 3zm0-4c.552 0 1 .449 1 1s-.448 1-1 1-1-.449-1-1 .448-1 1-1z" />
+        <path d="m26 9c1.654 0 3-1.346 3-3s-1.346-3-3-3-3 1.346-3 3 1.346 3 3 3zm0-4c.552 0 1 .449 1 1s-.448 1-1 1-1-.449-1-1 .448-1 1-1z" />
+        <path d="m15 14h4v-7h2v-2h-4v7h-4v7h2z" />
+        <path d="m5 8h-2v8h6v3h2v-5h-6z" />
+      </g>
+    </svg>
+  ),
+  robotics_code: (size: number, className: string) => (
+    <svg
+      id="Capa_1"
+      enableBackground="new 0 0 64 64"
+      height={size}
+      viewBox="0 0 64 64"
+      width={size}
+      xmlns="http://www.w3.org/2000/svg"
+      fill="inherit"
+      stroke="currentColor"
+      className={className}
+    >
+      <g>
+        <path d="m55 35c-2.838 0-5.542 1.365-7.234 3.652-.633.857-1.545 1.348-2.5 1.348h-7.102l-1.817-.612c-.362-1.285-.874-2.521-1.527-3.685l1.244-2.509-5.258-5.258-2.509 1.244c-1.164-.653-2.399-1.165-3.685-1.527l-.894-2.653h-7.437l-.894 2.653c-1.285.362-2.521.874-3.685 1.527l-2.509-1.244-5.258 5.258 1.244 2.509c-.653 1.164-1.165 2.399-1.527 3.685l-2.652.894v7.437l2.653.894c.362 1.285.874 2.521 1.527 3.685l-1.244 2.509 5.258 5.258 2.509-1.244c1.164.653 2.399 1.165 3.685 1.527l.894 2.652h7.437l.894-2.653c1.285-.362 2.521-.874 3.685-1.527l2.509 1.244 5.258-5.258-1.244-2.509c.653-1.164 1.165-2.399 1.527-3.685l1.816-.612h7.102c.955 0 1.867.491 2.5 1.348 1.692 2.287 4.396 3.652 7.234 3.652 3.244 0 6.258-1.724 7.865-4.499l.135-.232v-2.269h-6.271c-.402 0-.729-.327-.729-.729v-2.543c0-.401.327-.728.729-.728h6.271v-2.269l-.135-.233c-1.607-2.774-4.621-4.498-7.865-4.498zm-18 11.282-2.322.782-.131.533c-.36 1.462-.938 2.856-1.718 4.144l-.285.47 1.09 2.196-3.227 3.227-2.196-1.09-.47.285c-1.288.779-2.682 1.357-4.144 1.718l-.533.131-.782 2.322h-4.563l-.782-2.322-.533-.131c-1.462-.36-2.856-.938-4.144-1.718l-.47-.285-2.196 1.09-3.227-3.227 1.09-2.196-.285-.47c-.779-1.288-1.357-2.682-1.718-4.144l-.131-.533-2.323-.782v-4.563l2.322-.782.131-.533c.36-1.462.938-2.856 1.718-4.144l.285-.47-1.09-2.196 3.227-3.227 2.196 1.09.47-.285c1.288-.779 2.682-1.357 4.144-1.718l.533-.131.782-2.323h4.563l.782 2.322.533.131c1.462.36 2.856.938 4.144 1.718l.47.285 2.196-1.09 3.227 3.227-1.09 2.196.285.47c.779 1.288 1.357 2.682 1.718 4.144l.131.533 2.323.782zm19.729-6.282c-1.505 0-2.729 1.224-2.729 2.729v2.543c0 1.504 1.224 2.728 2.729 2.728h4.086c-1.307 1.864-3.483 3-5.814 3-2.24 0-4.29-1.036-5.625-2.841-1.016-1.372-2.514-2.159-4.11-2.159h-6.266v-4h6.266c1.596 0 3.094-.787 4.108-2.159 1.336-1.805 3.386-2.841 5.626-2.841 2.331 0 4.507 1.136 5.814 3z" />
+        <path d="m20 31c-7.168 0-13 5.832-13 13s5.832 13 13 13 13-5.832 13-13-5.832-13-13-13zm0 24c-6.065 0-11-4.935-11-11s4.935-11 11-11 11 4.935 11 11-4.935 11-11 11z" />
+        <path d="m23.293 40.707 3.293 3.293-3.293 3.293 1.414 1.414 4.707-4.707-4.707-4.707z" />
+        <path d="m13.414 44 3.293-3.293-1.414-1.414-4.707 4.707 4.707 4.707 1.414-1.414z" />
+        <path
+          d="m11.456 43h17.088v2h-17.088z"
+          transform="matrix(.351 -.936 .936 .351 -28.221 47.277)"
+        />
+        <path d="m27 7.5c0 .276-.224.5-.5.5h-1.5v2h1.5c.276 0 .5.224.5.5 0 1.378 1.122 2.5 2.5 2.5h1.5v-2h-1.5c-.276 0-.5-.224-.5-.5 0-.565-.195-1.081-.513-1.5.318-.419.513-.935.513-1.5 0-.276.224-.5.5-.5h1.5v-2h-1.5c-1.378 0-2.5 1.122-2.5 2.5z" />
+        <path d="m57 13.5c0-1.378-1.122-2.5-2.5-2.5h-1.5v2h1.5c.276 0 .5.224.5.5 0 .565.195 1.081.513 1.5-.318.419-.513.935-.513 1.5 0 .276-.224.5-.5.5h-1.5v2h1.5c1.378 0 2.5-1.122 2.5-2.5 0-.276.224-.5.5-.5h1.5v-2h-1.5c-.276 0-.5-.224-.5-.5z" />
+        <path d="m33 5h2v2h-2z" />
+        <path d="m37 5h14v2h-14z" />
+        <path d="m33 9h18v2h-18z" />
+        <path d="m33 13h18v2h-18z" />
+        <path d="m49 17h2v2h-2z" />
+        <path d="m33 17h14v2h-14z" />
+        <path d="m58 1h-32c-2.757 0-5 2.243-5 5v12c0 2.757 2.243 5 5 5h16v3.586c0 1.331 1.083 2.414 2.414 2.414.645 0 1.251-.251 1.707-.707l5.293-5.293h6.586c2.757 0 5-2.243 5-5v-12c0-2.757-2.243-5-5-5zm3 17c0 1.654-1.346 3-3 3h-7.414l-5.879 5.879c-.239.238-.707.045-.707-.293v-5.586h-18c-1.654 0-3-1.346-3-3v-12c0-1.654 1.346-3 3-3h32c1.654 0 3 1.346 3 3z" />
+      </g>
+    </svg>
+  ),
+  robotics_configuration: (size: number, className: string) => (
+    <svg
+      id="Capa_1"
+      enableBackground="new 0 0 64 64"
+      height={size}
+      viewBox="0 0 64 64"
+      width={size}
+      xmlns="http://www.w3.org/2000/svg"
+      fill="inherit"
+      stroke="currentColor"
+      className={className}
+    >
+      <g>
+        <path d="m34.349 55.272c-.334-1.337-1.532-2.272-2.911-2.272h-.591l-1.705-10.229c.782-.323 1.388-.971 1.673-1.771h14.185v2h2v4h6v-4h2v-7c0-1.654-1.346-3-3-3h-4c-1.302 0-2.402.839-2.816 2h-2.716l-4.1-4.92c-.571-.686-1.412-1.08-2.305-1.08h-10.063c-1.654 0-3 1.346-3 3v1h-3c-1.654 0-3 1.346-3 3v4c0 1.25.769 2.321 1.858 2.771l-1.705 10.229h-.591c-1.379 0-2.576.935-2.91 2.272l-.932 3.728h22.56zm-3.349-16.272v-2h14v2zm20 6h-2v-2h2zm-4-9c0-.551.448-1 1-1h4c.552 0 1 .449 1 1v5h-6zm-22-4c0-.551.448-1 1-1h10.063c.298 0 .577.131.768.36l3.034 3.64h-9.049c-.414-1.161-1.514-2-2.816-2h-3zm-6 4c0-.551.448-1 1-1h8c.552 0 1 .449 1 1v4c0 .551-.448 1-1 1h-8c-.552 0-1-.449-1-1zm1.847 7h6.306l1.667 10h-9.64zm-5.567 14 .311-1.242c.112-.446.511-.758.971-.758h14.877c.46 0 .858.312.971.758l.31 1.242z" />
+        <path d="m49.431 25-.085-.165c.362-.709.67-1.456.919-2.229l2.735-.877v-7.459l-2.734-.876c-.249-.774-.557-1.52-.919-2.229l1.312-2.549-5.274-5.274-2.549 1.312c-.711-.363-1.457-.671-2.229-.919l-.878-2.735h-7.459l-.876 2.734c-.772.248-1.519.556-2.229.919l-2.549-1.312-5.274 5.274 1.312 2.549c-.362.709-.67 1.455-.919 2.229l-2.735.878v7.459l2.734.876c.249.774.557 1.52.919 2.229l-.084.165h-11.569v-8h-5c-2.757 0-5 2.243-5 5v36c0 2.757 2.243 5 5 5h57v-38zm-24.777-.662c-.484-.867-.872-1.807-1.152-2.796l-.146-.517-2.356-.754v-4.541l2.356-.755.146-.517c.28-.989.668-1.929 1.152-2.796l.263-.468-1.13-2.195 3.212-3.211 2.194 1.129.469-.262c.87-.487 1.811-.875 2.797-1.153l.517-.146.753-2.356h4.541l.754 2.356.517.146c.986.278 1.927.667 2.797 1.153l.469.262 2.194-1.129 3.212 3.211-1.13 2.195.263.468c.484.867.872 1.807 1.152 2.796l.146.517 2.356.754v4.541l-2.356.755-.146.517c-.28.989-.668 1.929-1.152 2.796l-.263.468.1.194h-2.693c1.615-1.947 2.51-4.394 2.51-7 0-6.065-4.935-11-11-11s-11 4.935-11 11c0 2.606.895 5.053 2.51 7h-2.693l.1-.194zm5.709.662c-2.135-1.719-3.363-4.247-3.363-7 0-4.962 4.037-9 9-9s9 4.038 9 9c0 2.753-1.228 5.281-3.363 7zm-27.363-3c0-1.654 1.346-3 3-3h3v34h-3c-1.125 0-2.164.374-3 1.002zm58 39h-55c-1.654 0-3-1.346-3-3s1.346-3 3-3h5v-28h50z" />
+        <path d="m36 13c-2.757 0-5 2.243-5 5s2.243 5 5 5 5-2.243 5-5-2.243-5-5-5zm0 8c-1.654 0-3-1.346-3-3s1.346-3 3-3 3 1.346 3 3-1.346 3-3 3z" />
+        <path d="m57 57h2v2h-2z" />
+        <path d="m53 57h2v2h-2z" />
+        <path d="m49 57h2v2h-2z" />
+        <path d="m49 53h10v2h-10z" />
+      </g>
+    </svg>
+  ),
+  robotics_control1: (size: number, className: string) => (
+    <svg
+      id="Capa_1"
+      enableBackground="new 0 0 64 64"
+      height={size}
+      viewBox="0 0 64 64"
+      width={size}
+      xmlns="http://www.w3.org/2000/svg"
+      fill="inherit"
+      stroke="currentColor"
+      className={className}
+    >
+      <g>
+        <path d="m32 7c1.728 0 3.337.498 4.709 1.345l-4.346 8.692c-.12-.015-.239-.037-.363-.037-1.654 0-3 1.346-3 3s1.346 3 3 3 3-1.346 3-3c0-.807-.324-1.537-.844-2.077l4.162-8.323c1.654 1.633 2.682 3.898 2.682 6.4h2c0-6.065-4.935-11-11-11s-11 4.935-11 11h2c0-4.962 4.038-9 9-9zm0 14c-.551 0-1-.449-1-1s.449-1 1-1 1 .449 1 1-.449 1-1 1z" />
+        <path d="m22 37h2v2h-2z" />
+        <path d="m26 37h16v2h-16z" />
+        <path d="m22 41h20v2h-20z" />
+        <path d="m22 53h2v2h-2z" />
+        <path d="m26 53h16v2h-16z" />
+        <path d="m22 57h20v2h-20z" />
+        <path d="m60 39h-2.184c-.302-.847-.969-1.514-1.816-1.816v-19.184c0-1.654-1.346-3-3-3h-6.051c-.518-7.805-7.016-14-14.949-14s-14.431 6.195-14.949 14h-6.051c-1.654 0-3 1.346-3 3v19.184c-.847.302-1.514.969-1.816 1.816h-2.184c-1.654 0-3 1.346-3 3v12c0 1.654 1.346 3 3 3h2.184c.414 1.161 1.514 2 2.816 2s2.402-.839 2.816-2h6.184v3c0 1.654 1.346 3 3 3h22c1.654 0 3-1.346 3-3v-3h6.184c.414 1.161 1.514 2 2.816 2s2.402-.839 2.816-2h2.184c1.654 0 3-1.346 3-3v-12c0-1.654-1.346-3-3-3zm-4 1c0 .551-.449 1-1 1s-1-.449-1-1 .449-1 1-1 1 .449 1 1zm-24-37c7.168 0 13 5.832 13 13s-5.832 13-13 13-13-5.832-13-13 5.832-13 13-13zm-21 14h6.051c.518 7.805 7.016 14 14.949 14s14.431-6.195 14.949-14h6.051c.551 0 1 .449 1 1v19.184c-.847.302-1.514.969-1.816 1.816h-6.184v-3c0-1.654-1.346-3-3-3h-22c-1.654 0-3 1.346-3 3v3h-6.184c-.302-.847-.969-1.514-1.816-1.816v-19.184c0-.551.449-1 1-1zm33 19v8c0 .551-.449 1-1 1h-22c-.551 0-1-.449-1-1v-8c0-.551.449-1 1-1h22c.551 0 1 .449 1 1zm-35 3c.551 0 1 .449 1 1s-.449 1-1 1-1-.449-1-1 .449-1 1-1zm0 18c-.551 0-1-.449-1-1s.449-1 1-1 1 .449 1 1-.449 1-1 1zm35 3c0 .551-.449 1-1 1h-22c-.551 0-1-.449-1-1v-8c0-.551.449-1 1-1h22c.551 0 1 .449 1 1zm11-3c-.551 0-1-.449-1-1s.449-1 1-1 1 .449 1 1-.449 1-1 1zm6-3c0 .551-.449 1-1 1h-2.184c-.414-1.161-1.514-2-2.816-2s-2.402.839-2.816 2h-6.184v-3c0-1.654-1.346-3-3-3h-22c-1.654 0-3 1.346-3 3v3h-6.184c-.414-1.161-1.514-2-2.816-2s-2.402.839-2.816 2h-2.184c-.551 0-1-.449-1-1v-12c0-.551.449-1 1-1h2.184c.414 1.161 1.514 2 2.816 2s2.402-.839 2.816-2h6.184v3c0 1.654 1.346 3 3 3h22c1.654 0 3-1.346 3-3v-3h6.184c.414 1.161 1.514 2 2.816 2s2.402-.839 2.816-2h2.184c.551 0 1 .449 1 1z" />
+      </g>
+    </svg>
+  ),
+  robotics_control2: (size: number, className: string) => (
+    <svg
+      id="Capa_1"
+      enableBackground="new 0 0 64 64"
+      height={size}
+      viewBox="0 0 64 64"
+      width={size}
+      xmlns="http://www.w3.org/2000/svg"
+      fill="inherit"
+      stroke="currentColor"
+      className={className}
+    >
+      <g>
+        <path d="m23 22h4v2h-4z" />
+        <path d="m13 22h4v2h-4z" />
+        <path d="m13 59h14v-10h-14zm2-8h10v6h-10z" />
+        <path d="m21 53h2v2h-2z" />
+        <path d="m17 53h2v2h-2z" />
+        <path d="m13 45h14v2h-14z" />
+        <path d="m58 1h-38c-2.757 0-5 2.243-5 5v6.214c-2.688 1.379-4.733 3.828-5.574 6.786h-1.426c-1.654 0-3 1.346-3 3v4c0 1.654 1.346 3 3 3h1.426c.805 2.832 2.711 5.201 5.232 6.608l-.508 2.542-6.728 1.346c-1.93.386-3.643 1.466-4.825 3.041-1.03 1.374-1.597 3.076-1.597 4.793v5.67c0 1.302.839 2.402 2 2.816v7.184h34v-7.184c1.161-.414 2-1.514 2-2.816v-5.67c0-.791-.133-1.575-.364-2.33h14.364v-2h-4v-4h9c2.757 0 5-2.243 5-5v-28c0-2.757-2.243-5-5-5zm3 5v11h-22v-14h19c1.654 0 3 1.346 3 3zm-22 13h22v10h-22zm-22-13c0-1.654 1.346-3 3-3h17v26h-5c1.654 0 3-1.346 3-3v-4c0-1.654-1.346-3-3-3h-1.426c-1.31-4.61-5.549-8-10.574-8-1.041 0-2.045.155-3 .426zm13.949 15h1.051c.551 0 1 .449 1 1v4c0 .551-.449 1-1 1h-1.051c.03-.33.051-.662.051-1v-4c0-.338-.021-.67-.051-1zm-10.949-8c1.314 0 2.56.29 3.686.799l-.394 2.366c-.081.483-.496.835-.986.835h-4.611c-.491 0-.906-.352-.986-.836l-.394-2.366c1.125-.508 2.371-.798 3.685-.798zm-12 14c-.551 0-1-.449-1-1v-4c0-.551.449-1 1-1h1.051c-.03.33-.051.662-.051 1v4c0 .338.021.67.051 1zm3-1v-4c0-2.878 1.363-5.438 3.472-7.087l.263 1.58c.242 1.453 1.487 2.507 2.959 2.507h4.611c1.473 0 2.717-1.054 2.959-2.507l.263-1.58c2.11 1.649 3.473 4.209 3.473 7.087v4c0 2.878-1.363 5.438-3.472 7.087l-.263-1.58c-.242-1.453-1.487-2.507-2.959-2.507h-4.611c-1.473 0-2.717 1.054-2.959 2.507l-.263 1.58c-2.11-1.649-3.473-4.209-3.473-7.087zm5.314 8.201.394-2.366c.081-.483.496-.835.986-.835h4.611c.491 0 .906.352.986.836l.394 2.366c-1.125.508-2.371.798-3.685.798s-2.56-.29-3.686-.799zm3.686 2.799c1.212 0 2.375-.205 3.467-.568l.422 2.108-2.192 1.46h-3.395l-2.191-1.461.422-2.108c1.092.364 2.255.569 3.467.569zm-15 19h4v5h-4zm26 5v-5h4v5zm6-8c0 .551-.449 1-1 1h-5v-9h-2v16h-18v-16h-2v9h-5c-.551 0-1-.449-1-1v-5.67c0-1.287.425-2.563 1.198-3.593.886-1.181 2.17-1.99 3.617-2.28l6.975-1.395 2.907 1.938h4.605l2.907-1.938 6.975 1.395c1.447.29 2.731 1.099 3.617 2.28.774 1.03 1.199 2.305 1.199 3.593zm10-10h-9.306c-.099-.154-.182-.317-.292-.464-1.181-1.575-2.895-2.654-4.824-3.041l-2.478-.495h16.9zm11-6h-32.38l-.278-1.392c1.9-1.06 3.449-2.668 4.444-4.608h31.214v3c0 1.654-1.346 3-3 3z" />
+        <path d="m55 33h2v2h-2z" />
+        <path d="m47 33h2v2h-2z" />
+        <path d="m51 33h2v2h-2z" />
+        <path d="m19 5h13v2h-13z" />
+        <path d="m41 13h2v2h2v-2h2v-2h-2v-6h-2v6h-2z" />
+        <path d="m49 15h2v-6h2v-2h-2v-2h-2v2h-2v2h2z" />
+        <path d="m53 11v2h2v2h2v-2h2v-2h-2v-6h-2v6z" />
+        <path d="m44 21c-1.654 0-3 1.346-3 3s1.346 3 3 3 3-1.346 3-3-1.346-3-3-3zm0 4c-.551 0-1-.449-1-1s.449-1 1-1 1 .449 1 1-.449 1-1 1z" />
+        <path d="m52 21c-1.654 0-3 1.346-3 3s1.346 3 3 3 3-1.346 3-3-1.346-3-3-3zm0 4c-.551 0-1-.449-1-1s.449-1 1-1 1 .449 1 1-.449 1-1 1z" />
+      </g>
+    </svg>
+  ),
+  robotics_cost: (size: number, className: string) => (
+    <svg
+      id="Capa_1"
+      enableBackground="new 0 0 64 64"
+      height={size}
+      viewBox="0 0 64 64"
+      width={size}
+      xmlns="http://www.w3.org/2000/svg"
+      fill="inherit"
+      stroke="currentColor"
+      className={className}
+    >
+      <g>
+        <path d="m19 15h12c2.757 0 5-2.243 5-5s-2.243-5-5-5h-12c-2.757 0-5 2.243-5 5s2.243 5 5 5zm0-8h12c1.654 0 3 1.346 3 3s-1.346 3-3 3h-12c-1.654 0-3-1.346-3-3s1.346-3 3-3z" />
+        <path d="m52 11c.552 0 1 .449 1 1h2c0-1.302-.839-2.402-2-2.816v-2.184h-2v2.184c-1.161.414-2 1.514-2 2.816 0 1.654 1.346 3 3 3 .552 0 1 .449 1 1s-.448 1-1 1-1-.449-1-1h-2c0 1.302.839 2.402 2 2.816v2.184h2v-2.184c1.161-.414 2-1.514 2-2.816 0-1.654-1.346-3-3-3-.552 0-1-.449-1-1s.448-1 1-1z" />
+        <path d="m46 38.142v-10.142c0-2.757-2.243-5-5-5h-2.202c-.57-1.112-1.332-2.127-2.269-3.002 2.131-2.008 3.471-4.846 3.471-7.998v-2c0-4.962-4.037-9-9-9h-12c-4.963 0-9 4.038-9 9v2c0 3.152 1.34 5.99 3.471 7.998-.936.875-1.699 1.89-2.269 3.002h-2.202c-2.757 0-5 2.243-5 5v10.142c-1.721.447-3 2-3 3.858v1c0 1.654 1.346 3 3 3v-2c-.552 0-1-.449-1-1v-1c0-1.103.897-2 2-2s2 .897 2 2v1c0 .551-.448 1-1 1v2c1.654 0 3-1.346 3-3v-1c0-1.858-1.279-3.411-3-3.858v-6.168c.838.635 1.87 1.026 3 1.026h1v3c0 5.024 3.39 9.263 8 10.574v4.426h-2v-2c0-2.206-1.794-4-4-4s-4 1.794-4 4v10c0 2.206 1.794 4 4 4s4-1.794 4-4v-2h18v2c0 2.206 1.794 4 4 4s4-1.794 4-4v-10c0-2.206-1.794-4-4-4s-4 1.794-4 4v2h-2v-4.426c4.61-1.31 8-5.549 8-10.574v-3h1c1.13 0 2.162-.391 3-1.026v6.168c-1.721.447-3 2-3 3.858v1c0 1.654 1.346 3 3 3v-2c-.552 0-1-.449-1-1v-1c0-1.103.897-2 2-2s2 .897 2 2v1c0 .551-.448 1-1 1v2c1.654 0 3-1.346 3-3v-1c0-1.858-1.279-3.411-3-3.858zm-32 20.858c0 1.103-.897 2-2 2s-2-.897-2-2v-10c0-1.103.897-2 2-2s2 .897 2 2zm22-10c0-1.103.897-2 2-2s2 .897 2 2v10c0 1.103-.897 2-2 2s-2-.897-2-2zm-24-37v-2c0-3.86 3.141-7 7-7h12c3.859 0 7 3.14 7 7v2c0 4.962-4.037 9-9 9h-8c-4.963 0-9-4.038-9-9zm-3 19c-1.654 0-3-1.346-3-3s1.346-3 3-3h1.43c-.272.963-.43 1.966-.43 3v3zm23 13.475c-.94.334-1.947.525-3 .525h-8c-1.053 0-2.06-.191-3-.525v-14.475c0-1.654 1.346-3 3-3h8c1.654 0 3 1.346 3 3zm2 10.525h-18v-2h18zm-4-4h-10v-4.051c.33.03.662.051 1 .051h8c.338 0 .67-.021 1-.051zm8-15c0 3.113-1.59 5.862-4 7.478v-13.478c0-2.757-2.243-5-5-5h-8c-2.757 0-5 2.243-5 5v13.478c-2.41-1.617-4-4.365-4-7.478v-8c0-2.617 1.12-5.033 3.078-6.745 1.712 1.099 3.741 1.745 5.922 1.745h8c2.181 0 4.21-.646 5.922-1.745 1.958 1.712 3.078 4.128 3.078 6.745zm3-5h-1v-3c0-1.034-.158-2.037-.429-3h1.429c1.654 0 3 1.346 3 3s-1.346 3-3 3z" />
+        <path d="m52 3c-6.065 0-11 4.935-11 11s4.935 11 11 11 11-4.935 11-11-4.935-11-11-11zm0 20c-4.963 0-9-4.038-9-9s4.037-9 9-9 9 4.038 9 9-4.037 9-9 9z" />
+        <path d="m20 30h2v2h-2z" />
+        <path d="m24 30h2v2h-2z" />
+        <path d="m28 30h2v2h-2z" />
+      </g>
+    </svg>
+  ),
+  robotics_drone: (size: number, className: string) => (
+    <svg
+      id="Capa_1"
+      enableBackground="new 0 0 64 64"
+      height={size}
+      viewBox="0 0 64 64"
+      width={size}
+      xmlns="http://www.w3.org/2000/svg"
+      fill="inherit"
+      stroke="currentColor"
+      className={className}
+    >
+      <g>
+        <circle cx="30" cy="57" r="1" />
+        <path d="m33.109 33.213c-.743-.295-1.559-.285-2.296.032-.736.316-1.305.901-1.601 1.646-.296.744-.285 1.56.031 2.295.317.736.901 1.305 1.646 1.602.359.143.734.214 1.11.214.402 0 .805-.082 1.186-.246.736-.316 1.305-.901 1.601-1.646.296-.744.285-1.56-.031-2.295-.317-.737-.901-1.306-1.646-1.602zm-.18 3.157c-.099.248-.288.443-.533.548-.244.105-.516.109-.766.011-.248-.099-.442-.289-.548-.534-.106-.246-.109-.518-.011-.766s.288-.443.533-.548c.127-.054.261-.081.396-.081.125 0 .25.024.37.071.248.099.442.289.548.534s.109.517.011.765z" />
+        <path d="m32 29c-3.859 0-7 3.14-7 7s3.141 7 7 7 7-3.14 7-7-3.141-7-7-7zm0 12c-2.757 0-5-2.243-5-5s2.243-5 5-5 5 2.243 5 5-2.243 5-5 5z" />
+        <path d="m60 49h-3.54l-11.502-13.419-1.017-8.647 8.378-12.246c.528.19 1.088.312 1.681.312 2.757 0 5-2.243 5-5 0-.352-.072-.686-.184-1h1.184c1.654 0 3-1.346 3-3s-1.346-3-3-3h-12c-1.654 0-3 1.346-3 3s1.346 3 3 3h1.184c-.018.049-.032.1-.047.15l-6.571 6.102-1.157-9.836c-.297-2.518-2.431-4.416-4.966-4.416h-8.887c-2.534 0-4.669 1.898-4.966 4.416l-1.157 9.836-6.571-6.102c-.015-.05-.029-.101-.046-.15h1.184c1.654 0 3-1.346 3-3s-1.346-3-3-3h-12c-1.654 0-3 1.346-3 3s1.346 3 3 3h1.184c-.112.314-.184.648-.184 1 0 2.757 2.243 5 5 5 .592 0 1.153-.122 1.681-.312l8.379 12.246-1.017 8.647-11.503 13.419h-3.54c-1.654 0-3 1.346-3 3s1.346 3 3 3h1.184c-.112.314-.184.648-.184 1 0 2.757 2.243 5 5 5s5-2.243 5-5c0-.352-.072-.686-.184-1h1.184c1.654 0 3-1.346 3-3s-1.346-3-3-3h-.768l8.083-5.53 2.119 3.53h2.386l-.667 4h-3.153c-1.654 0-3 1.346-3 3v6c0 1.654 1.346 3 3 3h16c1.654 0 3-1.346 3-3v-6c0-1.654-1.346-3-3-3h-3.153l-.667-4h2.386l2.118-3.53 8.084 5.53h-.768c-1.654 0-3 1.346-3 3s1.346 3 3 3h1.184c-.112.314-.184.648-.184 1 0 2.757 2.243 5 5 5s5-2.243 5-5c0-.352-.072-.686-.184-1h1.184c1.654 0 3-1.346 3-3s-1.346-3-3-3zm-3-39c0 1.654-1.346 3-3 3s-3-1.346-3-3c0-.551.448-1 1-1h4c.552 0 1 .449 1 1zm-10-4c0-.551.448-1 1-1h12c.552 0 1 .449 1 1s-.448 1-1 1h-4-4-4c-.552 0-1-.449-1-1zm2.321 5.71c.274.747.714 1.408 1.286 1.94l-7.021 10.263-.729-6.2zm-20.321-8.71h6v15c0 1.654-1.346 3-3 3s-3-1.346-3-3zm-4.423 2.65c.156-1.322 1.156-2.36 2.423-2.598v14.948c0 2.757 2.243 5 5 5s5-2.243 5-5v-14.948c1.267.238 2.267 1.276 2.423 2.598l3.04 25.845-3.897-6.495h-13.132l-3.897 6.494zm-21.577.35c0-.551.448-1 1-1h12c.552 0 1 .449 1 1s-.448 1-1 1h-4-4-4c-.552 0-1-.449-1-1zm4 4c0-.551.448-1 1-1h4c.552 0 1 .449 1 1 0 1.654-1.346 3-3 3s-3-1.346-3-3zm6.393 3.65c.572-.532 1.012-1.193 1.286-1.94l6.465 6.003-.729 6.2zm-.393 42.35c0 1.654-1.346 3-3 3s-3-1.346-3-3c0-.551.448-1 1-1h4c.552 0 1 .449 1 1zm4-4c0 .551-.448 1-1 1h-4-4-4c-.552 0-1-.449-1-1s.448-1 1-1h12c.552 0 1 .449 1 1zm-5.309-3h-1.517l9.682-11.296 2.429 4.048zm18.309 11c-1.654 0-3-1.346-3-3s1.346-3 3-3 3 1.346 3 3-1.346 3-3 3zm-7 0v-6c0-.551.448-1 1-1h3.031c-1.225.912-2.031 2.359-2.031 4s.806 3.088 2.031 4h-3.031c-.552 0-1-.449-1-1zm18-6v6c0 .551-.448 1-1 1h-7.031c1.225-.912 2.031-2.359 2.031-4s-.806-3.088-2.031-4h7.031c.552 0 1 .449 1 1zm-6.18-3h-5.64l.667-4h4.306zm2.614-6h-10.868l-5.4-9 5.4-9h10.867l5.4 9zm4.281-3.248 2.429-4.048 9.682 11.296h-1.517zm15.285 14.248c0 1.654-1.346 3-3 3s-3-1.346-3-3c0-.551.448-1 1-1h4c.552 0 1 .449 1 1zm3-3h-4-4-4c-.552 0-1-.449-1-1s.448-1 1-1h12c.552 0 1 .449 1 1s-.448 1-1 1z" />
+        <path d="m37 55h2v4h-2z" />
+        <path d="m31 5h2v2h-2z" />
+        <path d="m31 17h2v2h-2z" />
+        <path d="m31 13h2v2h-2z" />
+        <path d="m31 9h2v2h-2z" />
+      </g>
+    </svg>
+  ),
+  robotics_arm: (size: number, className: string) => (
+    <svg
+      id="Capa_1"
+      enableBackground="new 0 0 64 64"
+      height={size}
+      viewBox="0 0 64 64"
+      width={size}
+      xmlns="http://www.w3.org/2000/svg"
+      fill="inherit"
+      stroke="currentColor"
+      className={className}
+    >
+      <g>
+        <path d="m45 23h2v2h-2z" />
+        <path d="m49 23h2v2h-2z" />
+        <path d="m23 47c2.206 0 4-1.794 4-4s-1.794-4-4-4-4 1.794-4 4 1.794 4 4 4zm0-6c1.103 0 2 .897 2 2s-.897 2-2 2-2-.897-2-2 .897-2 2-2z" />
+        <path d="m16 17c2.206 0 4-1.794 4-4s-1.794-4-4-4-4 1.794-4 4 1.794 4 4 4zm0-6c1.103 0 2 .897 2 2s-.897 2-2 2-2-.897-2-2 .897-2 2-2z" />
+        <path d="m63 38.029c0-3.94-2.541-7.29-6.068-8.52l-1.528-9.167c-.322-1.936-1.982-3.342-3.946-3.342h-6.917c-.838 0-1.612.268-2.259.712l-4.88-2.147c.393-1.143.598-2.337.598-3.565 0-6.065-4.935-11-11-11-3.451 0-6.648 1.616-8.725 4.334-.722-.214-1.484-.334-2.275-.334-2.073 0-3.958.799-5.38 2.097-5.506.687-9.62 5.308-9.62 10.903 0 4.797 3.064 8.973 7.55 10.446l-1.532 15.325-1.55 4.132c-.856 2.284-1.319 4.669-1.423 7.097h-1.045c-1.103 0-2 .897-2 2v6h34v-6c0-1.103-.897-2-2-2h-1.064c-.21-1.831-.944-3.581-1.664-5.281-.259-.612-.516-1.218-.74-1.815l-.075-.2c.966-1.322 1.543-2.945 1.543-4.704 0-1.435-.385-2.779-1.049-3.945 1.323-1.735 2.049-3.856 2.049-6.055 0-5.207-4.001-9.492-9.09-9.954l-.205-2.046h.079l16.455 7.48-.172 1.03c-3.526 1.23-6.068 4.58-6.068 8.52 0 2.154.772 4.241 2.174 5.876l3.827 4.464v3.63c0 1.654 1.346 3 3 3h12c1.654 0 3-1.346 3-3v-3.63l3.826-4.463c1.402-1.636 2.174-3.723 2.174-5.878zm-22.404-17.687-.241 1.448-16.355-7.434v-1.356c0-.406-.04-.801-.099-1.191l17.032 7.494c-.152.326-.276.669-.337 1.039zm-8.73-7.214-8.801-3.872c-.034-.064-.071-.126-.107-.189.935-1.285 2.434-2.067 4.042-2.067 2.757 0 5 2.243 5 5 0 .385-.05.761-.134 1.128zm-4.866-10.128c4.962 0 9 4.038 9 9 0 .948-.146 1.872-.432 2.757l-1.851-.814c.182-.628.283-1.277.283-1.943 0-3.86-3.14-7-7-7-2.045 0-3.96.91-5.276 2.423-.47-.482-1.002-.901-1.581-1.253 1.701-2.002 4.192-3.17 6.857-3.17zm-11 4c3.309 0 6 2.691 6 6v6h-6c-3.309 0-6-2.691-6-6s2.691-6 6-6zm-7.799 7.759c.253 1.122.743 2.151 1.414 3.041l-.432 4.318c-1.338-.917-2.183-2.441-2.183-4.118 0-1.218.438-2.352 1.201-3.241zm-5.201 3.241c0-3.834 2.36-7.111 5.772-8.406-.388.819-.646 1.711-.734 2.654-1.878 1.298-3.038 3.456-3.038 5.752 0 2.707 1.57 5.135 3.966 6.291l-.21 2.1c-3.438-1.321-5.756-4.619-5.756-8.391zm30 43h-30v-4h30zm-3.084-6h-23.871c.103-2.187.524-4.335 1.296-6.394l1.352-3.606h6.57c.892 3.445 4.017 6 7.737 6 1.862 0 3.574-.645 4.935-1.716.163.403.321.804.495 1.214.629 1.488 1.269 3.017 1.486 4.502zm-4.676-19.675c-.365-.107-.742-.184-1.126-.238l-.576-5.761c1.444.61 2.462 2.035 2.462 3.674 0 .847-.274 1.649-.76 2.325zm-2.24 1.675c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6zm7-4c0 1.569-.465 3.085-1.314 4.38-.471-.476-1.004-.887-1.581-1.234.58-.938.895-2.018.895-3.146 0-2.82-1.998-5.237-4.68-5.846l-.207-2.067c3.885.545 6.887 3.881 6.887 7.913zm-7.9 2.054c-3.988.449-7.1 3.839-7.1 7.946h-5.895l2.343-23.43c1.293.899 2.861 1.43 4.552 1.43h4.695zm1.9-15.698v-2.804l16.014 7.279-.434 2.606zm17.181 9.644 1.388-8.329c.161-.968.991-1.671 1.973-1.671h6.917c.982 0 1.812.703 1.973 1.671l1.387 8.329h-.849-11.94zm13.819 10.184c-.314-.112-.648-.184-1-.184h-12c-.352 0-.686.072-1 .184v-1.184c0-.552.449-1 1-1h12c.551 0 1 .448 1 1zm-10 1.816h6v2h-6zm10 11c0 .552-.449 1-1 1h-12c-.551 0-1-.448-1-1v-10c0-.552.449-1 1-1h1v4h10v-4h1c.551 0 1 .448 1 1v1zm2-6.703v-2.297-1-4c0-1.654-1.346-3-3-3h-12c-1.654 0-3 1.346-3 3v4 3.297l-2.308-2.693c-1.091-1.273-1.692-2.898-1.692-4.575 0-3.876 3.153-7.029 7.03-7.029h11.94c3.876 0 7.03 3.153 7.03 7.029 0 1.677-.601 3.302-1.692 4.575z" />
+      </g>
+    </svg>
+  ),
+  robotics_intelligence: (size: number, className: string) => (
+    <svg
+      id="Capa_1"
+      enableBackground="new 0 0 64 64"
+      height={size}
+      viewBox="0 0 64 64"
+      width={size}
+      xmlns="http://www.w3.org/2000/svg"
+      fill="inherit"
+      stroke="currentColor"
+      className={className}
+    >
+      <g>
+        <path d="m47 30c2.206 0 4-1.794 4-4h-2c0 1.103-.897 2-2 2z" />
+        <path d="m17 12c-2.206 0-4 1.794-4 4h2c0-1.103.897-2 2-2z" />
+        <path d="m15 26h-2c0 1.654 1.346 3 3 3v-2c-.551 0-1-.449-1-1z" />
+        <path d="m25 24c-1.103 0-2-.897-2-2h-2c0 2.206 1.794 4 4 4z" />
+        <path d="m46 20h2c0-2.206-1.794-4-4-4v2c1.103 0 2 .897 2 2z" />
+        <path d="m40 12h2c0-2.243-1.318-4-3-4v2c.408 0 1 .779 1 2z" />
+        <path d="m39 17v-2c-2.206 0-4 1.794-4 4h2c0-1.103.897-2 2-2z" />
+        <path d="m27 7v-2c-2.206 0-4 1.794-4 4h2c0-1.103.897-2 2-2z" />
+        <path d="m24 32v2c1.103 0 2 .897 2 2h2c0-2.206-1.794-4-4-4z" />
+        <path d="m37 31v2c.408 0 1 .779 1 2h2c0-2.243-1.318-4-3-4z" />
+        <path d="m45 26v-2c-1.103 0-2-.897-2-2h-2c0 2.206 1.794 4 4 4z" />
+        <path d="m21 17c-2.206 0-4 1.794-4 4h2c0-1.103.897-2 2-2z" />
+        <path d="m54.637 49c.229-.965.363-1.966.363-3v-1h-11c-4.634 0-8.698 2.444-11 6.104v-12.842c1.467 1.671 3.607 2.738 6 2.738 4.048 0 7.396-3.026 7.92-7.004.027 0 .053.004.08.004 4.411 0 8-3.589 8-8 0-1.842-.618-3.585-1.757-5 1.139-1.415 1.757-3.158 1.757-5 0-4.411-3.589-8-8-8-.021 0-.042 0-.062 0-.494-3.941-3.865-7-7.938-7-3.008 0-5.634 1.669-7 4.13-1.366-2.461-3.992-4.13-7-4.13-4.073 0-7.438 3.062-7.931 7.003-.023 0-.046-.003-.069-.003-4.411 0-8 3.589-8 8 0 1.842.618 3.585 1.757 5-1.139 1.415-1.757 3.158-1.757 5 0 4.411 3.589 8 8 8h.062c.494 3.941 3.865 7 7.938 7 2.393 0 4.533-1.067 6-2.738v12.841c-2.302-3.659-6.366-6.103-11-6.103h-11v1c0 1.034.134 2.035.363 3h-8.363v2h9.003c1.963 4.693 6.6 8 11.997 8h9 2 9c5.397 0 10.034-3.307 11.997-8h9.003v-2zm-15.637-46c3.309 0 6 2.691 6 5.967l-.004 1.268 1.143-.165c.33-.048.604-.07.861-.07 3.309 0 6 2.691 6 6 0 1.624-.641 3.146-1.805 4.286l-.73.714.73.714c1.164 1.14 1.805 2.662 1.805 4.286 0 3.309-2.691 6-6 6s-6-2.691-6-6h-2c0 3.702 2.532 6.816 5.952 7.724-.359 2.968-2.889 5.276-5.952 5.276-3.309 0-6-2.691-6-6v-24c0-3.309 2.691-6 6-6zm-14 36c-3.309 0-6-2.691-6-5.967l.004-1.268-1.143.165c-.33.048-.604.07-.861.07-3.309 0-6-2.691-6-6 0-1.624.641-3.146 1.805-4.286l.73-.714-.73-.714c-1.164-1.14-1.805-2.662-1.805-4.286 0-3.309 2.691-6 6-6s6 2.691 6 6h2c0-3.702-2.532-6.816-5.952-7.724.359-2.968 2.889-5.276 5.952-5.276 3.309 0 6 2.691 6 6v24c0 3.309-2.691 6-6 6zm-13.955 8h8.955c4.869 0 8.999 3.185 10.443 7.577-4.326-3.061-12.941-5.642-16.175-6.54l-.535 1.928c7.076 1.966 14.555 4.982 16.665 7.036h-8.398c-5.729-.001-10.448-4.402-10.955-10.001zm30.955 10h-8.396c2.111-2.053 9.589-5.07 16.664-7.036l-.535-1.928c-3.234.898-11.849 3.48-16.175 6.54 1.443-4.391 5.573-7.576 10.442-7.576h8.955c-.507 5.599-5.226 10-10.955 10z" />
+        <path d="m1 61h62v2h-62z" />
+      </g>
+    </svg>
+  ),
+  robotics_robot1: (size: number, className: string) => (
+    <svg
+      id="Capa_1"
+      enableBackground="new 0 0 64 64"
+      height={size}
+      viewBox="0 0 64 64"
+      width={size}
+      xmlns="http://www.w3.org/2000/svg"
+      fill="inherit"
+      stroke="currentColor"
+      className={className}
+    >
+      <g>
+        <path d="m23 22h4v2h-4z" />
+        <path d="m13 22h4v2h-4z" />
+        <path d="m41 21h2v2h-2z" />
+        <path d="m45 21h14v2h-14z" />
+        <path d="m59 7h-2.08c-.488-3.387-3.401-6-6.92-6s-6.432 2.613-6.92 6h-2.08c-2.206 0-4 1.794-4 4v12c0 2.206 1.794 4 4 4h8v1.586c0 1.331 1.083 2.414 2.414 2.414.637 0 1.259-.258 1.707-.707l3.293-3.293h2.586c2.206 0 4-1.794 4-4v-12c0-2.206-1.794-4-4-4zm-14 1c0-2.757 2.243-5 5-5s5 2.243 5 5v.515c0 1.336-.521 2.592-1.465 3.536l-.949.949h-1.586v-2.184c1.161-.414 2-1.514 2-2.816 0-1.654-1.346-3-3-3s-3 1.346-3 3c0 1.302.839 2.402 2 2.816v2.184h-1.586l-.95-.95c-.943-.944-1.464-2.199-1.464-3.535zm3 7h4v1c0 .551-.448 1-1 1h-2c-.552 0-1-.449-1-1zm1-7c0-.551.448-1 1-1s1 .449 1 1-.448 1-1 1-1-.449-1-1zm12 15c0 1.103-.897 2-2 2h-3.414l-3.88 3.879c-.235.237-.706.045-.706-.293v-3.586h-10c-1.103 0-2-.897-2-2v-12c0-1.103.897-2 2-2h2.024c.115 1.687.82 3.258 2.027 4.464l.949.95v1.586c0 1.654 1.346 3 3 3h2c1.654 0 3-1.346 3-3v-1.586l.949-.949c1.207-1.206 1.912-2.778 2.027-4.465h2.024c1.103 0 2 .897 2 2z" />
+        <path d="m54.798 40.554 1.479-2.489-5.342-5.342-2.489 1.479c-.317-.147-.638-.281-.956-.4l-.713-2.802h-7.555l-.713 2.802c-.317.118-.636.251-.952.398l-2.652-1.604c.057-.529.095-1.06.095-1.596v-12c0-8.271-6.729-15-15-15s-15 6.729-15 15v12c0 3.033.928 5.976 2.623 8.456l-.201.04c-1.93.386-3.643 1.466-4.824 3.04-1.031 1.373-1.598 3.075-1.598 4.794v5.67c0 1.302.839 2.402 2 2.816v7.184h34v-5.471c.518.231 1.077.475 1.505.649l.718 2.822h7.555l.713-2.802c.318-.119.639-.253.956-.4l2.489 1.479 5.342-5.342-1.479-2.489c.147-.317.281-.638.4-.956l2.801-.713v-7.555l-2.802-.713c-.119-.318-.253-.638-.4-.955zm-47.798-9.554v-12c0-7.168 5.832-13 13-13s13 5.832 13 13v12c0 2.919-.993 5.741-2.787 8.023l-4.399-.88-.623-2.449c3.454-1.857 5.809-5.505 5.809-9.694v-5.292c0-2.056-1.233-3.878-3.144-4.643l-7.856-3.142-7.856 3.143c-1.911.764-3.144 2.586-3.144 4.642v5.292c0 4.189 2.355 7.837 5.81 9.694l-.623 2.449-4.399.88c-1.795-2.282-2.788-5.104-2.788-8.023zm7 9.22.739-.148 4.261 3.408v12.385c-3.152-2.95-5-7.097-5-11.468zm7-15.22v-9.523l6.114 2.446c1.146.458 1.886 1.551 1.886 2.785v5.292c0 2.554-1.074 4.857-2.789 6.497l-.062-.745c-.128-1.544-1.441-2.752-2.989-2.752h-2.16v-2h-2v2h-2.16c-1.548 0-2.861 1.208-2.988 2.75l-.062.747c-1.716-1.639-2.79-3.943-2.79-6.497v-5.292c0-1.234.74-2.327 1.886-2.785l6.114-2.446v9.523zm2.16 6c.516 0 .953.403.996.917l.165 1.974c-1.283.706-2.756 1.109-4.321 1.109s-3.038-.403-4.321-1.109l.166-1.975c.042-.513.479-.916.995-.916zm-3.16 6c1.16 0 2.277-.183 3.328-.518l.544 2.139-3.872 3.099-3.872-3.098.544-2.139c1.051.334 2.168.517 3.328.517zm1 6.48 4.261-3.408.739.148v4.177c0 4.372-1.848 8.519-5 11.468zm-18 3.85c0-1.288.425-2.564 1.197-3.594.886-1.181 2.171-1.99 3.617-2.279l4.186-.837v3.777c0 5.709 2.773 11.098 7.419 14.416l.581.416.581-.415c4.646-3.319 7.419-8.708 7.419-14.417v-3.777l4.186.837c1.446.289 2.731 1.099 3.617 2.28.772 1.029 1.197 2.305 1.197 3.593v5.67c0 .552-.448 1-1 1h-4.013c.651-1.164 1.013-2.485 1.013-3.828v-.104c0-1.55-.454-3.051-1.314-4.343l-.854-1.279-1.664 1.109.854 1.279c.64.961.979 2.08.979 3.233v.104c0 1.534-.622 3.036-1.707 4.121l-.294.294v6.414h-18v-6.414l-.293-.293c-1.085-1.085-1.707-2.587-1.707-4.121v-.104c0-1.153.339-2.272.979-3.233l.854-1.279-1.664-1.109-.854 1.28c-.861 1.29-1.315 2.791-1.315 4.34v.104c0 1.344.362 2.665 1.013 3.829h-4.013c-.552 0-1-.448-1-1zm34.402-4.793c-.086-.114-.18-.22-.271-.329 1.284-1.989 3.469-3.208 5.869-3.208 3.859 0 7 3.141 7 7s-3.141 7-7 7c-1.457 0-2.824-.456-4-1.283v-4.387c0-1.719-.567-3.421-1.598-4.793zm-32.402 13.463h4v5h-4zm26 5v-5h4v5zm25-12.777-2.354.598-.168.528c-.179.559-.416 1.125-.705 1.685l-.255.493 1.246 2.095-3.143 3.143-2.095-1.246-.493.255c-.56.289-1.126.526-1.685.705l-.528.168-.597 2.353h-4.445l-.598-2.354-.528-.168c-.293-.094-1.236-.505-2.131-.906.608-.361 1.073-.926 1.306-1.606 1.28.669 2.714 1.034 4.173 1.034 4.963 0 9-4.037 9-9s-4.037-9-9-9c-2.968 0-5.691 1.44-7.364 3.825-.908-.646-1.945-1.106-3.058-1.329l-.201-.04c.991-1.45 1.718-3.058 2.149-4.752l2.943 1.781.497-.257c.56-.289 1.126-.526 1.685-.705l.528-.168.598-2.355h4.445l.598 2.354.528.168c.559.179 1.125.416 1.685.705l.493.255 2.095-1.246 3.143 3.143-1.246 2.095.255.493c.289.56.526 1.126.705 1.685l.168.528 2.354.597z" />
+      </g>
+    </svg>
+  ),
+  robotics_maintenance: (size: number, className: string) => (
+    <svg
+      id="Capa_1"
+      enableBackground="new 0 0 64 64"
+      height={size}
+      viewBox="0 0 64 64"
+      width={size}
+      xmlns="http://www.w3.org/2000/svg"
+      fill="inherit"
+      stroke="currentColor"
+      className={className}
+    >
+      <g>
+        <path d="m12 49c2.757 0 5-2.243 5-5s-2.243-5-5-5-5 2.243-5 5 2.243 5 5 5zm0-8c1.654 0 3 1.346 3 3s-1.346 3-3 3-3-1.346-3-3 1.346-3 3-3z" />
+        <path d="m63 49.729v-7.459l-2.734-.876c-.249-.773-.557-1.52-.919-2.229l1.312-2.549-5.274-5.274-1.76.906c-.593-.951-1.355-1.801-2.276-2.481-.858-.634-1.349-1.546-1.349-2.501v-8.266c1.103 0 2-.897 2-2v-2c0-1.103-.897-2-2-2v-8c0-2.206-1.794-4-4-4s-4 1.794-4 4v8h-4.184c-.414-1.161-1.514-2-2.816-2h-11.449c-.127-.357-.311-.695-.568-.985-.569-.645-1.388-1.015-2.249-1.015h-4.198c-1.356 0-2.548.916-2.897 2.227l-6.771 25.39c-2.335 1.627-3.868 4.328-3.868 7.383 0 2.137.752 4.099 2 5.645v7.355h-1c-1.654 0-3 1.346-3 3v3h26v-3c0-1.654-1.346-3-3-3h-1.323l-3.203-7.994c.963-1.432 1.526-3.154 1.526-5.006 0-1.303-.284-2.539-.785-3.658l2.418-19.342h12.367c1.302 0 2.402-.839 2.816-2h4.184v8.266c0 .955-.491 1.867-1.348 2.5-.92.681-1.683 1.53-2.276 2.482l-1.76-.906-5.274 5.274 1.312 2.549c-.362.71-.67 1.456-.919 2.229l-2.735.877v7.459l2.734.876c.249.774.557 1.521.919 2.229l-1.312 2.549 5.274 5.273 2.549-1.311c.708.362 1.455.67 2.229.919l.878 2.735h7.459l.876-2.734c.774-.249 1.521-.557 2.229-.919l2.549 1.311 5.274-5.273-1.312-2.549c.362-.709.67-1.455.919-2.229zm-21.501-4.864.232.135h2.269v-6.271c0-.402.327-.729.729-.729h2.543c.401 0 .728.327.728.729v6.271h2.269l.232-.135c1.394-.807 2.521-1.97 3.299-3.337.779 1.355 1.2 2.896 1.2 4.472 0 4.963-4.037 9-9 9s-9-4.037-9-9c0-1.576.421-3.117 1.2-4.472.778 1.368 1.905 2.53 3.299 3.337zm8.501-27.865h-12v-2h12zm-6-12c0-1.103.897-2 2-2s2 .897 2 2v8h-4zm-27.464 6h4.198c.291 0 .558.12.75.338s.278.497.242.786l-.359 2.876h-6.665l.869-3.257c.116-.438.513-.743.965-.743zm-4.536 26c3.859 0 7 3.141 7 7s-3.141 7-7 7-7-3.141-7-7 3.141-7 7-7zm13 23v1h-22v-1c0-.552.448-1 1-1h20c.552 0 1 .448 1 1zm-18-3v-5.522c1.431.96 3.151 1.522 5 1.522 2.304 0 4.401-.877 5.995-2.306l2.527 6.306zm5-22c-.958 0-1.88.154-2.747.432l4.915-18.432h6.949l-2.601 20.81c-1.64-1.727-3.952-2.81-6.516-2.81zm24-17c0 .551-.448 1-1 1h-12.117l.75-6h11.367c.552 0 1 .449 1 1zm5.842 13.374c1.372-1.015 2.158-2.512 2.158-4.108v-8.266h4v8.266c0 1.596.786 3.093 2.158 4.108 1.806 1.335 2.842 3.386 2.842 5.626 0 2.331-1.136 4.507-3 5.814v-4.086c0-1.504-1.224-2.728-2.729-2.728h-2.543c-1.504 0-2.728 1.224-2.728 2.729v4.086c-1.864-1.308-3-3.483-3-5.814 0-2.241 1.036-4.292 2.842-5.627zm16.802 17.65-.146.517c-.28.99-.668 1.931-1.152 2.797l-.263.468 1.13 2.195-3.212 3.211-2.195-1.129-.468.263c-.866.484-1.807.872-2.797 1.152l-.517.146-.753 2.356h-4.541l-.754-2.356-.517-.146c-.99-.28-1.931-.668-2.797-1.152l-.468-.263-2.195 1.129-3.212-3.211 1.13-2.195-.263-.468c-.484-.866-.872-1.807-1.152-2.797l-.146-.517-2.356-.753v-4.541l2.356-.754.146-.517c.279-.988.667-1.93 1.153-2.797l.262-.469-1.13-2.194 3.212-3.211.511.263c-.329.94-.51 1.935-.51 2.949 0 .786.105 1.557.298 2.299-1.48 1.92-2.298 4.274-2.298 6.701 0 6.065 4.935 11 11 11s11-4.935 11-11c0-2.427-.818-4.781-2.298-6.701.193-.742.298-1.513.298-2.299 0-1.014-.181-2.009-.51-2.949l.511-.263 3.212 3.211-1.13 2.194.262.469c.486.867.874 1.809 1.153 2.797l.146.517 2.356.753v4.541z" />
+        <path
+          d="m15.791 18.978h2v1.999h-2z"
+          transform="matrix(.21 -.978 .978 .21 -6.262 32.21)"
+        />
+        <path
+          d="m13.276 30.712h2v1.999h-2z"
+          transform="matrix(.21 -.978 .978 .21 -19.723 39.026)"
+        />
+        <path
+          d="m14.953 22.889h2v1.999h-2z"
+          transform="matrix(.21 -.978 .978 .21 -10.749 34.482)"
+        />
+        <path
+          d="m14.114 26.8h2v2h-2z"
+          transform="matrix(.21 -.978 .978 .21 -15.24 36.739)"
+        />
+      </g>
+    </svg>
+  ),
+  robotics_procedure: (size: number, className: string) => (
+    <svg
+      id="Capa_1"
+      enableBackground="new 0 0 64 64"
+      height={size}
+      viewBox="0 0 64 64"
+      width={size}
+      xmlns="http://www.w3.org/2000/svg"
+      fill="inherit"
+      stroke="currentColor"
+      className={className}
+    >
+      <g>
+        <path d="m10 51c2.757 0 5-2.243 5-5s-2.243-5-5-5-5 2.243-5 5 2.243 5 5 5zm0-8c1.654 0 3 1.346 3 3s-1.346 3-3 3-3-1.346-3-3 1.346-3 3-3z" />
+        <path d="m60 1h-50c-1.654 0-3 1.346-3 3v2c0 1.302.839 2.402 2 2.816v12.184h-4c-1.654 0-3 1.346-3 3v4c0 1.302.839 2.402 2 2.816v8.495c-1.836 1.648-3 4.032-3 6.689s1.164 5.041 3 6.689v4.311c-1.654 0-3 1.346-3 3v3h26v-3c0-1.654-1.346-3-3-3h-2.382l-1-2h40.382v-46.184c1.161-.414 2-1.514 2-2.816v-2c0-1.654-1.346-3-3-3zm-56 23c0-.551.448-1 1-1h12c.552 0 1 .449 1 1v4c0 .551-.448 1-1 1h-12c-.552 0-1-.449-1-1zm2 7h9.78l-1.426 7.129c-1.291-.717-2.775-1.129-4.354-1.129-1.438 0-2.793.347-4 .95zm-3 15c0-3.859 3.141-7 7-7s7 3.141 7 7-3.141 7-7 7-7-3.141-7-7zm22 14v1h-22v-1c0-.552.448-1 1-1h20c.552 0 1 .448 1 1zm-19-3v-2.95c1.207.603 2.562.95 4 .95 2.723 0 5.162-1.22 6.814-3.137l2.568 5.137zm13.618-4-1.534-3.069c.581-1.19.916-2.52.916-3.931 0-2.592-1.108-4.924-2.867-6.568l1.714-8.569c.918-.273 1.649-.966 1.969-1.863h6.833l5.129 4.104 7.496-2.142-.549-1.923-6.504 1.858-2.495-1.996c1.303-.327 2.274-1.499 2.274-2.901s-.971-2.574-2.273-2.901l2.473-1.979 4.8 1.6v4.28h16v-3h2v5h-7v4h-7v8h7v2h-7v8h16v-8h-7v-2h7v-8h-7v-2h7v-9h-4v-3h-16v1.613l-5.2-1.733-5.151 4.12h-6.833c-.414-1.161-1.514-2-2.816-2h-6v-12h48v44zm.382-28h9c.552 0 1 .449 1 1s-.448 1-1 1h-9zm19 0v-4h12v4zm4 14v-4h12v4zm12 6v4h-12v-4zm6-39c0 .551-.448 1-1 1h-50c-.552 0-1-.449-1-1v-2c0-.551.448-1 1-1h50c.552 0 1 .449 1 1z" />
+        <path d="m31 49h2v2h-2z" />
+        <path d="m35 49h2v2h-2z" />
+        <path d="m27 49h2v2h-2z" />
+        <path d="m23 49h2v2h-2z" />
+        <path d="m23 45h14v2h-14z" />
+        <path d="m23 41h14v2h-14z" />
+        <path d="m23 37h14v2h-14z" />
+        <path d="m13 11h14v2h-14z" />
+        <path d="m17 15h2v2h-2z" />
+        <path d="m25 15h2v2h-2z" />
+        <path d="m21 15h2v2h-2z" />
+        <path d="m13 15h2v2h-2z" />
+      </g>
+    </svg>
+  ),
+  robotics_mandatory: (size: number, className: string) => (
+    <svg
+      id="Capa_1"
+      enableBackground="new 0 0 64 64"
+      height={size}
+      viewBox="0 0 64 64"
+      width={size}
+      xmlns="http://www.w3.org/2000/svg"
+      fill="inherit"
+      stroke="currentColor"
+      className={className}
+    >
+      <g>
+        <path d="m63 19.777v-7.555l-2.802-.713c-.119-.318-.252-.639-.4-.956l1.48-2.489-5.342-5.342-2.489 1.479c-.317-.147-.637-.281-.956-.4l-.714-2.801h-7.555l-.712 2.802c-.319.119-.639.253-.956.4l-2.489-1.479-5.342 5.342 1.48 2.489c-.147.317-.281.638-.4.956l-2.803.713v2.777h-1c-1.641 0-3.088.806-4 2.031-.912-1.225-2.359-2.031-4-2.031h-3v-7c0-1.654-1.346-3-3-3h-14c-1.654 0-3 1.346-3 3v8c0 1.654 1.346 3 3 3h1v2h-4v35c0 1.654 1.346 3 3 3h19.101c.464 2.279 2.485 4 4.899 4s4.435-1.721 4.899-4h19.101c1.654 0 3-1.346 3-3v-27.279l.936.556 5.342-5.342-1.48-2.489c.147-.317.281-.638.4-.956zm-31-2.777h1v2.777l2.802.713c.119.318.252.639.4.956l-1.48 2.489 5.342 5.342 2.489-1.479c.317.147.637.281.956.4l.714 2.802h4.777v22h-20v-33c0-1.654 1.346-3 3-3zm-29-1v-8c0-.552.449-1 1-1h14c.551 0 1 .448 1 1v8c0 .552-.449 1-1 1h-3v3.586c0 .337-.468.531-.707.293l-3.879-3.879h-6.414c-.551 0-1-.448-1-1zm6.586 3 3.293 3.294c.45.448 1.072.706 1.707.706 1.331 0 2.414-1.083 2.414-2.414v-1.586h1c1.302 0 2.402-.839 2.816-2h3.184c1.654 0 3 1.346 3 3v33h-20v-34zm42.414 38h-21v1c0 1.654-1.346 3-3 3s-3-1.346-3-3v-1h-21c-.551 0-1-.448-1-1v-33h2v32h22 2 22v-24h.777l.713-2.802c.17-.064.34-.142.51-.214v28.016c0 .552-.449 1-1 1zm6.764-33.379-3.143 3.143-2.096-1.246-.493.256c-.558.288-1.124.525-1.683.704l-.528.168-.598 2.354h-4.445l-.599-2.354-.528-.168c-.559-.179-1.125-.416-1.683-.704l-.493-.256-2.096 1.246-3.143-3.143 1.246-2.095-.254-.492c-.289-.56-.525-1.126-.704-1.686l-.169-.528-2.355-.597v-4.445l2.354-.598.169-.528c.179-.56.415-1.126.704-1.686l.254-.492-1.246-2.095 3.143-3.143 2.096 1.246.493-.256c.558-.288 1.124-.525 1.683-.704l.528-.168.599-2.354h4.445l.599 2.354.528.168c.559.179 1.125.416 1.683.704l.493.256 2.096-1.246 3.143 3.143-1.246 2.095.254.492c.289.56.525 1.126.704 1.686l.169.528 2.355.597v4.445l-2.354.598-.169.528c-.179.56-.415 1.126-.704 1.686l-.254.492z" />
+        <path d="m48 7c-4.962 0-9 4.037-9 9s4.038 9 9 9 9-4.037 9-9-4.038-9-9-9zm0 16c-3.86 0-7-3.141-7-7s3.14-7 7-7 7 3.141 7 7-3.14 7-7 7z" />
+        <path d="m48 11c-2.757 0-5 2.243-5 5s2.243 5 5 5 5-2.243 5-5-2.243-5-5-5zm0 8c-1.654 0-3-1.346-3-3s1.346-3 3-3 3 1.346 3 3-1.346 3-3 3z" />
+        <path d="m25 43c0-3.232-1.93-6.016-4.695-7.277 1.031-.917 1.695-2.238 1.695-3.723 0-2.757-2.243-5-5-5s-5 2.243-5 5c0 1.485.664 2.806 1.695 3.723-2.765 1.261-4.695 4.045-4.695 7.277v4h16zm-11-11c0-1.654 1.346-3 3-3s3 1.346 3 3-1.346 3-3 3-3-1.346-3-3zm9 13h-12v-2c0-3.309 2.691-6 6-6s6 2.691 6 6z" />
+        <path d="m5 9h12v2h-12z" />
+        <path d="m5 13h8v2h-8z" />
+        <path d="m15 13h2v2h-2z" />
+        <path d="m47 37h-16v10h16zm-2 8h-12v-6h12z" />
+        <path d="m31 33h2v2h-2z" />
+        <path d="m35 33h12v2h-12z" />
+        <path d="m31 29h6v2h-6z" />
+        <path d="m21 19h4v2h-4z" />
+        <path d="m19 23h6v2h-6z" />
+        <path d="m45 49h2v2h-2z" />
+        <path d="m31 49h12v2h-12z" />
+        <path d="m23 49h2v2h-2z" />
+        <path d="m9 49h12v2h-12z" />
+      </g>
+    </svg>
+  ),
+  robotics_microcontroller: (size: number, className: string) => (
+    <svg
+      id="Capa_1"
+      enableBackground="new 0 0 64 64"
+      height={size}
+      viewBox="0 0 64 64"
+      width={size}
+      xmlns="http://www.w3.org/2000/svg"
+      fill="inherit"
+      stroke="currentColor"
+      className={className}
+    >
+      <g>
+        <path d="m58 13h-1v-1c0-1.654-1.346-3-3-3h-12c-1.654 0-3 1.346-3 3v1h-33c-2.757 0-5 2.243-5 5v32c0 2.757 2.243 5 5 5h52c2.757 0 5-2.243 5-5v-32c0-2.757-2.243-5-5-5zm-17-1c0-.552.449-1 1-1h12c.551 0 1 .448 1 1v4c0 .552-.449 1-1 1h-12c-.551 0-1-.448-1-1zm-38 38v-32c0-1.654 1.346-3 3-3h33v1c0 1.654 1.346 3 3 3h12c1.654 0 3-1.346 3-3v-1h1c1.654 0 3 1.346 3 3v23h-12v12h-43c-1.654 0-3-1.346-3-3zm55 3h-7v-10h10v7c0 1.654-1.346 3-3 3z" />
+        <path d="m11 20c0-1.654-1.346-3-3-3s-3 1.346-3 3 1.346 3 3 3 3-1.346 3-3zm-4 0c0-.552.449-1 1-1s1 .448 1 1-.449 1-1 1-1-.448-1-1z" />
+        <path d="m56 45c-1.654 0-3 1.346-3 3s1.346 3 3 3 3-1.346 3-3-1.346-3-3-3zm0 4c-.551 0-1-.448-1-1s.449-1 1-1 1 .448 1 1-.449 1-1 1z" />
+        <path d="m15 43h14v-14h-14zm2-12h10v10h-10z" />
+        <path d="m31 25v-4h-2v4h-2v-4h-2v4h-2v-4h-2v4h-2v-4h-2v4h-2v-4h-2v4c-1.103 0-2 .897-2 2h-4v2h4v2h-4v2h4v2h-4v2h4v2h-4v2h4v2h-4v2h4c0 1.103.897 2 2 2v4h2v-4h2v4h2v-4h2v4h2v-4h2v4h2v-4h2v4h2v-4c1.103 0 2-.897 2-2h4v-2h-4v-2h4v-2h-4v-2h4v-2h-4v-2h4v-2h-4v-2h4v-2h-4c0-1.103-.897-2-2-2zm-18 20v-18h18l.001 18z" />
+        <path d="m45 29c2.206 0 4-1.794 4-4s-1.794-4-4-4-4 1.794-4 4 1.794 4 4 4zm0-6c1.103 0 2 .897 2 2s-.897 2-2 2-2-.897-2-2 .897-2 2-2z" />
+        <path d="m55 29c2.206 0 4-1.794 4-4s-1.794-4-4-4-4 1.794-4 4 1.794 4 4 4zm0-6c1.103 0 2 .897 2 2s-.897 2-2 2-2-.897-2-2 .897-2 2-2z" />
+        <path d="m59 31h-18v8h18zm-2 6h-14v-4h14z" />
+        <path d="m43 43c-2.206 0-4 1.794-4 4s1.794 4 4 4 4-1.794 4-4-1.794-4-4-4zm0 6c-1.103 0-2-.897-2-2s.897-2 2-2 2 .897 2 2-.897 2-2 2z" />
+        <path d="m47 13h2v2h-2z" />
+        <path d="m51 13h2v2h-2z" />
+        <path d="m43 13h2v2h-2z" />
+      </g>
+    </svg>
+  ),
+  robotics_robot2: (size: number, className: string) => (
+    <svg
+      id="Capa_1"
+      enableBackground="new 0 0 64 64"
+      height={size}
+      viewBox="0 0 64 64"
+      width={size}
+      xmlns="http://www.w3.org/2000/svg"
+      fill="inherit"
+      stroke="currentColor"
+      className={className}
+    >
+      <g>
+        <path d="m59.972 34.768-3.079-8.006c.697-1.087 1.107-2.377 1.107-3.762 0-3.859-3.14-7-7-7-.1 0-.198.011-.297.015.195-.649.297-1.326.297-2.015v-4c0-3.859-3.14-7-7-7h-18c-3.86 0-7 3.141-7 7v4c0 .874.168 1.707.462 2.479-.794.31-1.511.762-2.129 1.319l-2.92-1.835.64-.548-1.178-10.591-1.958.356c-.394-2.366-2.441-4.18-4.917-4.18-2.757 0-5 2.243-5 5 0 .328.037.65.099.965l-1.174.214.079.907c.032.373.84 9.173 5.289 13.621l.655.655 2.272-1.947 5.822 3.316c.294 2.844 2.285 5.216 5.032 5.997l3.098 16.272h1.918c-.716 1.56-1.09 3.26-1.09 5 0 6.617 5.383 12 12 12s12-5.383 12-12c0-1.74-.374-3.44-1.09-5h.191c.465 2.279 2.484 4 4.899 4 1.428 0 2.769-.622 3.707-1.66l1.486.991.575-.689c.214-.258 5.232-6.352 5.232-12.642v-.896zm-38.877-10.364 4.294-3.435c.202.018.405.031.611.031h18c.102 0 .201-.023.302-.027-.195.642-.302 1.322-.302 2.027 0 3.142 2.082 5.807 4.939 6.689l-.692 8.311h-24.562zm29.241 12.605.584-7.013c.027 0 .053.004.08.004.235 0 .466-.013.695-.035l1.561 4.057-.728-.081zm5.158-2.738-1.844-4.795c.634-.26 1.221-.61 1.745-1.035l2.338 6.079zm.506-11.271c0 2.757-2.243 5-5 5s-5-2.243-5-5 2.243-5 5-5 5 2.243 5 5zm-35-13c0-2.757 2.243-5 5-5h18c2.757 0 5 2.243 5 5v4c0 .906-.253 1.777-.712 2.547-1.137.479-2.115 1.255-2.853 2.224-.465.14-.943.229-1.435.229h-18c-2.757 0-5-2.243-5-5zm-17-4c0-1.654 1.346-3 3-3 1.496 0 2.729 1.104 2.953 2.537l-5.885 1.07c-.041-.198-.068-.4-.068-.607zm.178 7.706 4.535-1.681-.695-1.875-4.358 1.615c-.282-1.206-.456-2.255-.553-2.95l9.019-1.64.155 1.396-2.497.925.695 1.875 2.028-.751.441 3.965-5.86 5.022c-1.362-1.661-2.288-3.859-2.91-5.901zm8.644 3.62 3.227 2.028c-.405.659-.698 1.384-.868 2.154l-4.348-2.476zm4.178 5.674c0-2.177 1.429-4.078 3.459-4.739.672.871 1.542 1.578 2.544 2.056l-4.099 3.279.723 3.797c-1.58-.851-2.627-2.507-2.627-4.393zm7.066 17h24.014l-.016.189-1.478 2.07.913.609c-.172.362-.31.738-.39 1.132h-22.281zm21.934 11c0 5.514-4.486 10-10 10s-10-4.486-10-10c0-1.771.485-3.482 1.365-5h8.635 8.635c.88 1.518 1.365 3.229 1.365 5zm6-3c-1.654 0-3-1.346-3-3 0-.348.064-.69.18-1.012l4.828 3.219c-.545.494-1.253.793-2.008.793zm7.462-5.889-4.185-1.86-.813 1.828 4.083 1.815c-.668 1.185-1.328 2.148-1.772 2.755l-7.362-4.907 1.034-1.448 2.122.943.813-1.828-1.747-.776 1.838-2.573 7.488.832c-.156 1.822-.767 3.63-1.499 5.219z" />
+        <path d="m29 15c2.206 0 4-1.794 4-4s-1.794-4-4-4-4 1.794-4 4 1.794 4 4 4zm0-6c1.103 0 2 .897 2 2s-.897 2-2 2-2-.897-2-2 .897-2 2-2z" />
+        <path d="m41 15c2.206 0 4-1.794 4-4s-1.794-4-4-4-4 1.794-4 4 1.794 4 4 4zm0-6c1.103 0 2 .897 2 2s-.897 2-2 2-2-.897-2-2 .897-2 2-2z" />
+        <path d="m38 24h-8c-1.654 0-3 1.346-3 3s1.346 3 3 3h8c1.654 0 3-1.346 3-3s-1.346-3-3-3zm0 4h-8c-.551 0-1-.448-1-1s.449-1 1-1h8c.551 0 1 .448 1 1s-.449 1-1 1z" />
+        <path d="m29 32h2v2h-2z" />
+        <path d="m33 32h2v2h-2z" />
+        <path d="m37 32h2v2h-2z" />
+        <path d="m31 51c0 2.757 2.243 5 5 5s5-2.243 5-5-2.243-5-5-5-5 2.243-5 5zm5-3c1.654 0 3 1.346 3 3s-1.346 3-3 3-3-1.346-3-3 1.346-3 3-3z" />
+      </g>
+    </svg>
+  ),
+  robotics_programming: (size: number, className: string) => (
+    <svg
+      id="Capa_1"
+      enableBackground="new 0 0 64 64"
+      height={size}
+      viewBox="0 0 64 64"
+      width={size}
+      xmlns="http://www.w3.org/2000/svg"
+      fill="inherit"
+      stroke="currentColor"
+      className={className}
+    >
+      <g>
+        <path d="m20 31c-7.168 0-13 5.832-13 13s5.832 13 13 13 13-5.832 13-13-5.832-13-13-13zm0 24c-6.065 0-11-4.935-11-11s4.935-11 11-11 11 4.935 11 11-4.935 11-11 11z" />
+        <path d="m60 1h-50c-1.654 0-3 1.346-3 3v26.13l-3.064 3.064 1.244 2.509c-.652 1.163-1.165 2.398-1.526 3.685l-2.654.893v7.438l2.653.894c.361 1.286.874 2.521 1.526 3.685l-1.244 2.509 5.259 5.259 2.509-1.245c1.165.654 2.4 1.166 3.685 1.527l.893 2.652h7.438l.894-2.653c1.284-.361 2.52-.873 3.685-1.527l2.509 1.245 5.063-5.065h24.13c1.654 0 3-1.346 3-3v-48c0-1.654-1.346-3-3-3zm-50 2h50c.552 0 1 .448 1 1v9h-52v-9c0-.552.448-1 1-1zm23.635 51.407-3.228 3.228-2.196-1.09-.47.284c-1.289.779-2.684 1.357-4.145 1.718l-.533.131-.782 2.322h-4.563l-.782-2.322-.533-.131c-1.461-.36-2.855-.938-4.145-1.718l-.47-.284-2.196 1.09-3.228-3.228 1.09-2.196-.284-.47c-.779-1.287-1.356-2.682-1.718-4.145l-.131-.533-2.321-.782v-4.563l2.322-.782.131-.533c.361-1.463.938-2.857 1.718-4.145l.284-.47-1.09-2.196 3.228-3.228 2.196 1.09.47-.284c1.287-.779 2.682-1.356 4.145-1.718l.533-.131.782-2.321h4.563l.782 2.322.533.131c1.463.361 2.857.938 4.145 1.718l.47.284 2.196-1.09 3.228 3.228-1.09 2.196.284.47c.779 1.287 1.356 2.682 1.718 4.145l.131.533 2.321.782v4.563l-2.322.782-.131.533c-.361 1.463-.938 2.857-1.718 4.145l-.284.47zm26.365-1.407h-24.831l-.349-.703c.652-1.163 1.165-2.398 1.526-3.685l2.654-.893v-7.438l-2.653-.894c-.361-1.286-.874-2.521-1.526-3.685l1.244-2.509-5.259-5.259-2.509 1.244c-1.163-.652-2.398-1.165-3.685-1.526l-.893-2.652h-7.438l-.894 2.653c-1.286.361-2.521.874-3.685 1.526l-2.509-1.244-.193.195v-13.13h52v37c0 .552-.448 1-1 1z" />
+        <path d="m24.707 39.293-1.414 1.414 3.293 3.293-3.293 3.293 1.414 1.414 4.707-4.707z" />
+        <path d="m13.414 44 3.293-3.293-1.414-1.414-4.707 4.707 4.707 4.707 1.414-1.414z" />
+        <path
+          d="m11.456 43h17.088v2.001h-17.088z"
+          transform="matrix(.351 -.936 .936 .351 -28.221 47.277)"
+        />
+        <path d="m17 5h-6v6h6zm-2 4h-2v-2h2z" />
+        <path d="m25 5h-6v6h6zm-2 4h-2v-2h2z" />
+        <path d="m33 5h-6v6h6zm-2 4h-2v-2h2z" />
+        <path d="m41 27h18v-10h-18zm2-8h14v6h-14z" />
+        <path d="m53 21h2v2h-2z" />
+        <path d="m49 21h2v2h-2z" />
+        <path d="m45 21h2v2h-2z" />
+        <path d="m41 39h18v-10h-18zm2-8h14v6h-14z" />
+        <path d="m53 33h2v2h-2z" />
+        <path d="m49 33h2v2h-2z" />
+        <path d="m45 33h2v2h-2z" />
+        <path d="m41 51h18v-10h-18zm2-8h14v6h-14z" />
+        <path d="m45 45h2v2h-2z" />
+        <path d="m49 45h2v2h-2z" />
+        <path d="m53 45h2v2h-2z" />
+        <path d="m11 17h2v2h-2z" />
+        <path d="m15 17h18v2h-18z" />
+        <path d="m11 21h22v2h-22z" />
+        <path d="m46 11h10c1.654 0 3-1.346 3-3s-1.346-3-3-3h-10c-1.654 0-3 1.346-3 3s1.346 3 3 3zm5.414-2-2-2h2.172l2 2zm5.586-1c0 .43-.275.789-.656.93l-1.93-1.93h1.586c.552 0 1 .448 1 1zm-11-1h.586l2 2h-2.586c-.552 0-1-.448-1-1s.448-1 1-1z" />
+      </g>
+    </svg>
+  ),
+  robotics_prosthetic: (size: number, className: string) => (
+    <svg
+      id="Capa_1"
+      enableBackground="new 0 0 64 64"
+      height={size}
+      viewBox="0 0 64 64"
+      width={size}
+      xmlns="http://www.w3.org/2000/svg"
+      fill="inherit"
+      stroke="currentColor"
+      className={className}
+    >
+      <g>
+        <path d="m54.454 25.726-1.273.595-.48-1.321h-5.401l-.48 1.321-1.273-.595-3.82 3.82.595 1.273-1.322.48v5.401l1.321.48-.595 1.273 3.82 3.82 1.273-.595.48 1.322h5.401l.48-1.321 1.273.595 3.82-3.82-.595-1.273 1.322-.48v-5.401l-1.321-.48.595-1.273zm2.546 9.573-.823.299-.448.214-.422 1.019.561 1.201-1.837 1.837-1.201-.561-1.079.447-.452 1.245h-2.599l-.299-.823-.214-.448-1.019-.422-1.201.561-1.837-1.837.561-1.201-.447-1.079-1.244-.452v-2.599l.823-.299.448-.214.422-1.019-.561-1.201 1.837-1.837 1.202.562 1.077-.447.453-1.245h2.599l.299.823.212.447 1.019.423 1.202-.562 1.837 1.837-.561 1.201.447 1.079 1.245.453z" />
+        <path d="m50 29c-2.757 0-5 2.243-5 5s2.243 5 5 5 5-2.243 5-5-2.243-5-5-5zm0 8c-1.654 0-3-1.346-3-3s1.346-3 3-3 3 1.346 3 3-1.346 3-3 3z" />
+        <path d="m50 21c-7.168 0-13 5.832-13 13v8.465c-.396-.407-.84-.771-1.332-1.074l-9.863-6.069-.898-2.245c-.705-1.761-1.86-3.319-3.342-4.504l-2.445-1.956c5.695-1.405 9.88-6.552 9.88-12.617 0-7.168-5.832-13-13-13-6.251 0-11.508 4.347-12.728 10.409-1.339.647-2.272 2.007-2.272 3.591v13.393c0 1.857.35 3.674 1.04 5.398.735 1.838 1.818 3.48 3.218 4.88l4.203 4.203c1.319 1.319 2.964 2.287 4.756 2.799l4.302 1.229 15.27 12.859c2.481 2.089 5.632 3.239 8.874 3.239 5.461 0 10.411-3.23 12.61-8.228l6.626-15.06c.731-1.66 1.101-3.422 1.101-5.235v-.477c0-7.168-5.832-13-13-13zm2.917 34h-3.839l4.545-5h1.563l-1.745 3.966c-.156.357-.335.699-.524 1.034zm-6.541 0h-.376c-.974 0-1.821-.151-2.567-.39l4.58-5.037c.984.161 1.975.29 2.972.357zm-4.82-1.298c-.891-.602-1.527-1.31-1.946-1.898l3.446-3.446c.878.295 1.772.538 2.672.755zm-2.556-4.116v-2.233c0-.241-.022-.48-.047-.718.674.339 1.356.658 2.051.948zm-23-46.586c1.075 0 2.22 1.527 3.009 4h-6.018c.789-2.473 1.934-4 3.009-4zm3.519 6c.244 1.209.408 2.553.46 4h-7.958c.052-1.447.217-2.791.46-4zm7.43 4h-4.971c-.046-1.419-.184-2.763-.409-4h4.217c.626 1.221 1.034 2.57 1.163 4zm-17.949 2h1.023c.047 1.389.19 2.737.421 4h-1.444zm3.022 0h7.958c-.051 1.459-.212 2.802-.452 4h-7.053c-.248-1.243-.402-2.595-.453-4zm9.958 0h4.971c-.129 1.427-.531 2.778-1.157 4h-4.226c.226-1.241.367-2.583.412-4zm-11.958-2h-1.578c-.628-1.077-1.736-1.824-3.035-1.959.197-.715.464-1.397.79-2.041h4.232c-.225 1.237-.364 2.581-.409 4zm-1.022 8h1.908c.099.349.205.687.318 1.013-.819.025-1.58.272-2.226.69zm4.507 1.355c-.188-.422-.364-.871-.52-1.355h6.028c-.607 1.895-1.422 3.208-2.245 3.736l-2.227-1.781c-.314-.252-.667-.445-1.036-.6zm6.21 1.999c.556-.923 1.027-2.055 1.394-3.354h3.359c-1.244 1.505-2.875 2.679-4.753 3.354zm4.762-17.354h-3.374c-.368-1.295-.838-2.422-1.391-3.341 1.874.675 3.518 1.834 4.765 3.341zm-12.179-3.364c-.559.923-1.034 2.058-1.405 3.364h-3.404c1.255-1.531 2.916-2.696 4.809-3.364zm-5.628 33.622c-1.203-1.203-2.133-2.613-2.767-4.192 2.007.231 3.867 1.12 5.317 2.57l2.143 2.143c1.539 1.539 2.444 3.539 2.603 5.688-1.154-.452-2.214-1.127-3.093-2.006zm11.328 5.742v1.674l-2.002-.572c-.01-2.923-1.151-5.67-3.22-7.738l-2.143-2.143c-1.975-1.975-4.572-3.094-7.348-3.201-.184-.86-.287-1.737-.287-2.627v-13.393c0-1.103.897-2 2-2s2 .897 2 2v11.358c0 1.354.613 2.608 1.683 3.44l7.704 5.992 1.228-1.579-7.705-5.992c-.578-.45-.91-1.128-.91-1.861 0-1.3 1.058-2.358 2.358-2.358h.464c.533 0 1.057.184 1.473.517l7.021 5.617c1.212.97 2.158 2.245 2.734 3.686l.825 2.064-1.432 2.148c-2.495.276-4.443 2.399-4.443 4.968zm24.663 18c-2.771 0-5.465-.983-7.586-2.769l-15.077-12.696v-2.535c0-1.654 1.346-3 3-3h.535l1.762-2.643 9.323 5.737c1.468.904 2.38 2.535 2.38 4.258v3.84l.071.179c.093.23 2.328 5.629 8.929 5.629h5.5c-2.199 2.498-5.397 4-8.837 4zm18.337-26.523c0 1.535-.313 3.025-.932 4.43l-4.001 9.093h-3.005c-4.91 0-9.755-1.251-14.062-3.602v-10.398c0-6.065 4.935-11 11-11s11 4.935 11 11z" />
+      </g>
+    </svg>
+  ),
+  robotics_prototype: (size: number, className: string) => (
+    <svg
+      id="Capa_1"
+      enableBackground="new 0 0 64 64"
+      height={size}
+      viewBox="0 0 64 64"
+      width={size}
+      xmlns="http://www.w3.org/2000/svg"
+      fill="inherit"
+      stroke="currentColor"
+      className={className}
+    >
+      <g>
+        <path d="m36 15c1.654 0 3-1.346 3-3v-5c0-1.103-.897-2-2-2h-10c-1.103 0-2 .897-2 2v5c0 1.654 1.346 3 3 3zm-9-3v-5h10v5c0 .552-.448 1-1 1h-8c-.552 0-1-.448-1-1z" />
+        <path d="m38 25h-12c-1.103 0-2 .897-2 2v6c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2v-6c0-1.103-.897-2-2-2zm-12 8v-6h12l.002 6z" />
+        <path d="m28 29h8v2h-8z" />
+        <path d="m37 37h2v2h-2z" />
+        <path d="m25 37h2v2h-2z" />
+        <path d="m33 37h2v2h-2z" />
+        <path d="m29 37h2v2h-2z" />
+        <path d="m49 5h10v2h-10z" />
+        <path d="m49 9h2v2h-2z" />
+        <path d="m53 9h2v2h-2z" />
+        <path d="m57 9h2v2h-2z" />
+        <path d="m8 49c-3.859 0-7 3.141-7 7s3.141 7 7 7 7-3.141 7-7-3.141-7-7-7zm-5 7c0-2.414 1.721-4.434 4-4.899v5.313l3.753 3.753c-.791.524-1.736.833-2.753.833-2.757 0-5-2.243-5-5zm9.167 2.753-3.167-3.167v-4.485c2.279.465 4 2.484 4 4.899 0 1.017-.309 1.962-.833 2.753z" />
+        <path d="m61 61h-2v-8h-2v8h-2v-4h-2v4h-2v-6h-2v6h-2v2h16v-12h-2z" />
+        <path d="m60 1h-12c-1.654 0-3 1.346-3 3v8c0 1.654 1.346 3 3 3h5v2.586l-5.414 5.414h-4.612c-.914-1.207-2.348-2-3.974-2h-2v-2.08c3.386-.488 6-3.401 6-6.92v-6c0-2.757-2.243-5-5-5h-12c-2.757 0-5 2.243-5 5v6c0 3.519 2.614 6.432 6 6.92v2.08h-2c-1.627 0-3.061.793-3.974 2h-4.612l-5.414-5.414v-2.586h5c1.654 0 3-1.346 3-3v-8c0-1.654-1.346-3-3-3h-12c-1.654 0-3 1.346-3 3v8c0 1.654 1.346 3 3 3h5v3.414l4.76 4.76c-2.155.556-3.76 2.5-3.76 4.826 0 1.627.793 3.061 2 3.974v12.408c-.615.703-1 1.612-1 2.618v.236l1.105 2.211 1.789-.895-.883-1.767c.107-1.001.959-1.785 1.989-1.785s1.882.784 1.988 1.786l-.883 1.767 1.789.895 1.106-2.212v-.236c0-1.006-.385-1.915-1-2.618v-11.382h2v5c0 2.372 1.189 4.469 3 5.736v12.804c-1.224 1.099-2 2.688-2 4.46v2h10 2 10v-2c0-1.771-.776-3.36-2-4.46v-12.804c1.811-1.267 3-3.364 3-5.736v-5h2v11.382c-.615.703-1 1.612-1 2.618v.236l1.105 2.211 1.789-.895-.883-1.767c.107-1.001.959-1.785 1.989-1.785s1.882.784 1.988 1.786l-.883 1.767 1.789.895 1.106-2.212v-.236c0-1.006-.385-1.915-1-2.618v-12.408c1.207-.914 2-2.348 2-3.974 0-2.326-1.605-4.27-3.76-4.826l4.76-4.76v-3.414h5c1.654 0 3-1.346 3-3v-8c0-1.654-1.346-3-3-3zm-57 11v-8c0-.552.448-1 1-1h12c.552 0 1 .448 1 1v8c0 .552-.448 1-1 1h-12c-.552 0-1-.448-1-1zm20 0v-6c0-1.654 1.346-3 3-3h12c1.654 0 3 1.346 3 3v6c0 2.757-2.243 5-5 5h-8c-2.757 0-5-2.243-5-5zm6 7h6v2h-6zm-13 24.142c-.322-.084-.653-.142-1-.142s-.678.058-1 .142v-10.243c.323.066.658.101 1 .101h1zm-1-12.142c-1.654 0-3-1.346-3-3s1.346-3 3-3h5.101c-.066.323-.101.658-.101 1v5zm10 13.705c.634.19 1.305.295 2 .295h2v10.35c-.627-.222-1.298-.35-2-.35s-1.373.128-2 .35zm7 12.985c-.283-.426-.621-.81-1-1.15v-11.54h2v11.54c-.379.341-.717.725-1 1.15zm-9 3.31c0-2.206 1.794-4 4-4s4 1.794 4 4zm10 0c0-2.206 1.794-4 4-4s4 1.794 4 4zm6-5.65c-.627-.222-1.298-.35-2-.35s-1.373.128-2 .35v-10.35h2c.695 0 1.366-.105 2-.295zm3-17.35c0 2.757-2.243 5-5 5h-10c-2.757 0-5-2.243-5-5v-12c0-1.654 1.346-3 3-3h14c1.654 0 3 1.346 3 3zm8 5.142c-.322-.084-.653-.142-1-.142s-.678.058-1 .142v-10.142h1c.342 0 .677-.035 1-.101zm2-15.142c0 1.654-1.346 3-3 3h-5v-5c0-.342-.035-.677-.101-1h5.101c1.654 0 3 1.346 3 3zm9-16c0 .552-.448 1-1 1h-12c-.552 0-1-.448-1-1v-8c0-.552.448-1 1-1h12c.552 0 1 .448 1 1z" />
+        <path d="m5 5h10v2h-10z" />
+        <path d="m5 9h2v2h-2z" />
+        <path d="m13 9h2v2h-2z" />
+        <path d="m9 9h2v2h-2z" />
+      </g>
+    </svg>
+  ),
+  robotics_rechargeable: (size: number, className: string) => (
+    <svg
+      id="Capa_1"
+      enableBackground="new 0 0 64 64"
+      height={size}
+      viewBox="0 0 64 64"
+      width={size}
+      xmlns="http://www.w3.org/2000/svg"
+      fill="inherit"
+      stroke="currentColor"
+      className={className}
+    >
+      <g>
+        <path d="m60 35c1.654 0 3-1.346 3-3v-24c0-1.654-1.346-3-3-3h-1v-1c0-1.654-1.346-3-3-3h-6c-1.654 0-3 1.346-3 3v1h-1c-1.654 0-3 1.346-3 3v24c0 1.654 1.346 3 3 3h6v8c0 2.206 1.794 4 4 4h3c1.103 0 2 .897 2 2s-.897 2-2 2h-6c-2.206 0-4 1.794-4 4 0 1.103-.897 2-2 2h-8.101c-.465-2.279-2.484-4-4.899-4h-7v-8.111c.214-.219.41-.454.594-.7.681.521 1.517.811 2.406.811 2.206 0 4-1.794 4-4 0-1.005-.385-1.914-1-2.618v-5.382h2v-5c0-2.757-2.243-5-5-5h-2.026c-.914-1.207-2.348-2-3.974-2h-.219l-.5-2h.719c2.414 0 4.434-1.721 4.899-4h1.101c1.654 0 3-1.346 3-3v-2c0-1.302-.839-2.402-2-2.816v-4.184h-2v4h-.525c-1.24-3.49-4.566-6-8.475-6s-7.235 2.51-8.475 6h-.525v-4h-2v4.184c-1.161.414-2 1.514-2 2.816v2c0 1.654 1.346 3 3 3h1.101c.465 2.279 2.484 4 4.899 4h.719l-.5 2h-.219c-1.627 0-3.061.793-3.974 2h-2.026c-2.757 0-5 2.243-5 5v5h2v5.382c-.615.704-1 1.613-1 2.618 0 2.206 1.794 4 4 4 .889 0 1.725-.29 2.406-.81.184.245.38.481.594.7v8.11h-7c-2.757 0-5 2.243-5 5v5h38v-4h8c2.206 0 4-1.794 4-4 0-1.103.897-2 2-2h6c2.206 0 4-1.794 4-4s-1.794-4-4-4h-3c-1.103 0-2-.897-2-2v-8zm-30-26c.551 0 1 .448 1 1v2c0 .552-.449 1-1 1h-1v-3c0-.338-.022-.671-.059-1zm-21 3v-2c0-.552.449-1 1-1h1.059c-.037.329-.059.662-.059 1v3h-1c-.551 0-1-.448-1-1zm12 41v-6h1c1.075 0 2.089-.251 3-.685v6.685zm-8-13c0-.336.045-.669.113-.998 1.262 1.234 2.986 1.998 4.887 1.998h4c1.901 0 3.625-.764 4.887-1.998.068.328.113.661.113.998 0 2.757-2.243 5-5 5h-4c-2.757 0-5-2.243-5-5zm17 3c-.549 0-1.054-.23-1.425-.621.27-.744.425-1.543.425-2.379 0-.234-.023-.466-.046-.699.312-.193.67-.301 1.046-.301 1.103 0 2 .897 2 2s-.897 2-2 2zm1-5.858c-.322-.084-.653-.142-1-.142-.539 0-1.06.107-1.543.308-.043-.102-.1-.198-.148-.298.438-.913.691-1.931.691-3.01v-1h2zm-1-12.142c1.654 0 3 1.346 3 3v3h-4v-5c0-.342-.035-.677-.101-1zm-13-2h6v7c0 1.654-1.346 3-3 3s-3-1.346-3-3zm.281-6 .5-2h4.438l.5 2zm4.69-13.713c-.141.966-.966 1.713-1.971 1.713s-1.83-.747-1.971-1.713c.626-.184 1.286-.287 1.971-.287s1.345.103 1.971.287zm-8.971 10.713v-4c0-2.452 1.27-4.611 3.185-5.861.494 1.649 2.008 2.861 3.815 2.861s3.321-1.212 3.815-2.861c1.915 1.25 3.185 3.409 3.185 5.861v4c0 1.392-.958 2.556-2.246 2.892l-.973-3.892h-7.562l-.973 3.892c-1.288-.336-2.246-1.5-2.246-2.892zm5.781 5h2.438l.5 2h-3.438zm-5.781 7c0-1.302.839-2.402 2-2.816v6.816c0 2.757 2.243 5 5 5s5-2.243 5-5v-6.816c1.161.414 2 1.514 2 2.816v8c0 2.757-2.243 5-5 5h-4c-2.757 0-5-2.243-5-5zm-6 2c0-1.654 1.346-3 3-3h1.101c-.066.323-.101.658-.101 1v5h-4zm4 5v1c0 1.079.253 2.097.69 3.011-.047.1-.105.196-.147.298-.482-.202-1.004-.309-1.543-.309-.347 0-.678.058-1 .142v-4.142zm-1 10c-1.103 0-2-.897-2-2s.897-2 2-2c.376 0 .734.109 1.046.301-.023.233-.046.465-.046.699 0 .836.155 1.635.425 2.379-.371.391-.876.621-1.425.621zm5 3.315c.911.434 1.925.685 3 .685h1v6h-4zm22 14.685h-34v-3c0-1.654 1.346-3 3-3h28c1.654 0 3 1.346 3 3zm12-57c0-.552.449-1 1-1h6c.551 0 1 .448 1 1v1h-8zm-4 28v-24c0-.552.449-1 1-1h14c.551 0 1 .448 1 1v24c0 .552-.449 1-1 1h-14c-.551 0-1-.448-1-1z" />
+        <path d="m55.387 15 2-6h-7.064l-4.8 12h6.133l-2.036 6.785c-.229.764-.087 1.568.389 2.208s1.206 1.007 2.004 1.007c1 0 1.9-.594 2.295-1.513l6.209-14.487zm-2.917 13.698c-.079.184-.258.302-.457.302-.218 0-.344-.126-.399-.2-.056-.075-.14-.231-.077-.44l2.807-9.36h-5.867l3.2-8h2.936l-2 6h4.871z" />
+        <path d="m23 8h2v2h-2z" />
+        <path d="m15 8h2v2h-2z" />
+        <path d="m23 57h2v2h-2z" />
+        <path d="m19 57h2v2h-2z" />
+        <path d="m27 57h2v2h-2z" />
+        <path d="m15 57h2v2h-2z" />
+        <path d="m11 57h2v2h-2z" />
+        <path d="m19 25h2v2h-2z" />
+        <path d="m19 29h2v2h-2z" />
+      </g>
+    </svg>
+  ),
+  robotics_remote_control: (size: number, className: string) => (
+    <svg
+      id="Capa_1"
+      enableBackground="new 0 0 64 64"
+      height={size}
+      viewBox="0 0 64 64"
+      width={size}
+      xmlns="http://www.w3.org/2000/svg"
+      fill="inherit"
+      stroke="currentColor"
+      className={className}
+    >
+      <g>
+        <path d="m58 27h-1v-3.303l-.168-.252c-1.199-1.798-1.832-3.889-1.832-6.05v-13.395c0-1.654-1.346-3-3-3s-3 1.346-3 3v13.395c0 2.161-.633 4.253-1.832 6.051l-.168.251v3.303h-30v-3.303l-.168-.252c-1.199-1.798-1.832-3.889-1.832-6.05v-13.395c0-1.654-1.346-3-3-3s-3 1.346-3 3v13.395c0 2.161-.633 4.253-1.832 6.051l-.168.251v3.303h-1c-2.757 0-5 2.243-5 5v26c0 2.757 2.243 5 5 5h52c2.757 0 5-2.243 5-5v-26c0-2.757-2.243-5-5-5zm-7-9.605v-13.395c0-.552.449-1 1-1s1 .448 1 1v13.395c0 1.957.446 3.864 1.288 5.605h-4.576c.842-1.742 1.288-3.649 1.288-5.605zm-2 7.605h6v2h-6zm-5.618 4-1 2h-20.764l-1-2zm-32.382-11.605v-13.395c0-.552.449-1 1-1s1 .448 1 1v13.395c0 1.957.446 3.864 1.288 5.605h-4.576c.842-1.742 1.288-3.649 1.288-5.605zm-2 7.605h6v2h-6zm-3 4h12.382l2 4h23.236l2-4h12.382c1.654 0 3 1.346 3 3v25h-58v-25c0-1.654 1.346-3 3-3zm52 32h-52c-1.302 0-2.402-.839-2.816-2h57.631c-.413 1.161-1.513 2-2.815 2z" />
+        <path d="m50 55c5.131 0 9-2.149 9-5 0-2.204-2.377-4.042-6-4.721v-1.304c1.207-.914 2-2.348 2-3.974 0-2.757-2.243-5-5-5s-5 2.243-5 5c0 1.627.793 3.061 2 3.974v1.304c-3.623.679-6 2.517-6 4.721 0 2.851 3.869 5 9 5zm0-18c1.654 0 3 1.346 3 3s-1.346 3-3 3-3-1.346-3-3 1.346-3 3-3zm0 8c.342 0 .677-.035 1-.101v4.101h-2v-4.101c.323.066.658.101 1 .101zm-3 2.318v3.682h6v-3.682c2.526.554 4 1.727 4 2.682 0 1.416-2.994 3-7 3s-7-1.584-7-3c0-.954 1.474-2.128 4-2.682z" />
+        <path d="m14 55c5.131 0 9-2.149 9-5 0-2.204-2.377-4.042-6-4.721v-1.304c1.207-.914 2-2.348 2-3.974 0-2.757-2.243-5-5-5s-5 2.243-5 5c0 1.627.793 3.061 2 3.974v1.304c-3.623.679-6 2.517-6 4.721 0 2.851 3.869 5 9 5zm0-18c1.654 0 3 1.346 3 3s-1.346 3-3 3-3-1.346-3-3 1.346-3 3-3zm0 8c.342 0 .677-.035 1-.101v4.101h-2v-4.101c.323.066.658.101 1 .101zm-3 2.318v3.682h6v-3.682c2.526.554 4 1.727 4 2.682 0 1.416-2.994 3-7 3s-7-1.584-7-3c0-.954 1.474-2.128 4-2.682z" />
+        <path d="m40 35h-16v10h16zm-2 8h-12v-6h12z" />
+        <path d="m28 49c-1.654 0-3 1.346-3 3s1.346 3 3 3 3-1.346 3-3-1.346-3-3-3zm0 4c-.551 0-1-.448-1-1s.449-1 1-1 1 .448 1 1-.449 1-1 1z" />
+        <path d="m36 49c-1.654 0-3 1.346-3 3s1.346 3 3 3 3-1.346 3-3-1.346-3-3-3zm0 4c-.551 0-1-.448-1-1s.449-1 1-1 1 .448 1 1-.449 1-1 1z" />
+        <path d="m27.757 23.758 1.414 1.414c1.512-1.512 4.146-1.512 5.657 0l1.414-1.414c-1.133-1.134-2.639-1.758-4.242-1.758s-3.109.624-4.243 1.758z" />
+        <path d="m39.071 20.929c-3.898-3.898-10.243-3.898-14.142 0l1.414 1.414c3.119-3.119 8.194-3.119 11.313 0z" />
+        <path d="m32 16c3.206 0 6.219 1.248 8.485 3.515l1.414-1.414c-2.644-2.645-6.159-4.101-9.899-4.101s-7.255 1.456-9.899 4.101l1.414 1.414c2.266-2.267 5.279-3.515 8.485-3.515z" />
+        <path d="m57 31h2v2h-2z" />
+        <path d="m53 31h2v2h-2z" />
+        <path d="m5 31h2v2h-2z" />
+        <path d="m9 31h2v2h-2z" />
+      </g>
+    </svg>
+  ),
+  robotics_repair: (size: number, className: string) => (
+    <svg
+      id="Capa_1"
+      enableBackground="new 0 0 64 64"
+      height={size}
+      viewBox="0 0 64 64"
+      width={size}
+      xmlns="http://www.w3.org/2000/svg"
+      fill="inherit"
+      stroke="currentColor"
+      className={className}
+    >
+      <g>
+        <path d="m23 22h4v2h-4z" />
+        <path d="m13 22h4v2h-4z" />
+        <path d="m13 59h14v-10h-14zm2-8h10v6h-10z" />
+        <path d="m21 53h2v2h-2z" />
+        <path d="m17 53h2v2h-2z" />
+        <path d="m13 45h14v2h-14z" />
+        <path d="m60.509 20.442c-.561-2.669-1.593-5.164-3.074-7.436l1.164-2.349-5.258-5.257-2.349 1.164c-2.273-1.482-4.769-2.514-7.435-3.073l-.839-2.491h-7.437l-.84 2.491c-2.666.56-5.162 1.591-7.435 3.073l-2.347-1.164-5.259 5.258.18.363c-4.838.184-8.88 3.499-10.154 7.979h-1.426c-1.654 0-3 1.346-3 3v4c0 1.654 1.346 3 3 3h1.426c.805 2.832 2.711 5.201 5.232 6.608l-.508 2.542-6.728 1.346c-1.93.386-3.644 1.466-4.825 3.04-1.03 1.374-1.597 3.076-1.597 4.794v5.67c0 1.302.839 2.402 2 2.816v7.184h34v-7.184c1.161-.414 2-1.514 2-2.816v-4h3.718l.84-2.491c2.666-.56 5.162-1.591 7.435-3.073l2.349 1.164 5.258-5.258-1.164-2.349c1.481-2.271 2.513-4.767 3.074-7.436l2.49-.839v-7.436zm-25.274 20.108c-.808-.504-1.706-.864-2.657-1.054l-2.117-.423 8.624-8.506c3.232 1.095 6.796.28 9.239-2.162 2.294-2.294 3.207-5.644 2.38-8.742l-.054-.203-1.567-1.955-4.497 4.495h-1.172l-1.414-1.414v-1.172l4.496-4.496-1.955-1.567-.204-.054c-3.097-.829-6.448.086-8.743 2.38-1.043 1.043-1.797 2.3-2.224 3.67-.412-.214-.873-.347-1.37-.347h-1.426c-.558-1.965-1.649-3.702-3.108-5.055 3.013-3.143 7.153-4.945 11.534-4.945 8.822 0 16 7.178 16 16s-7.178 16-16 16c-1.274 0-2.539-.154-3.765-.45zm-18.922-6.349.015-.092c.301-1.801 1.845-3.109 3.672-3.109s3.371 1.308 3.671 3.109l.015.092c-1.126.509-2.372.799-3.686.799s-2.56-.29-3.687-.799zm5.993-15.201c1.473 0 2.717-1.054 2.959-2.507l.263-1.58c2.109 1.649 3.472 4.209 3.472 7.087v4c0 2.902-1.387 5.48-3.526 7.127-.609-2.102-2.337-3.664-4.474-4.038v-10.089zm.404 20.552-.818-2.726c.539-.094 1.065-.224 1.575-.394l.434 2.167zm-1.684 1.347-1.026.821-1.026-.821 1.026-3.418zm4.315-5.291c2.521-1.407 4.427-3.776 5.232-6.608h1.427c1.654 0 3-1.346 3-3v-4c0-.082-.018-.16-.024-.24.068-1.764.78-3.414 2.034-4.669 1.698-1.697 4.136-2.425 6.437-1.951l-3.447 3.446v2.828l2.586 2.586h2.828l3.446-3.446c.477 2.304-.253 4.738-1.951 6.437-2.025 2.025-5.04 2.612-7.681 1.493l-.616-.261-10.52 10.376-2.242-.449zm5.608-14.608h1.051c.499 0 .897.374.97.854-.001.048-.007.095-.008.142h.036c.001.002.002.003.002.004v4c0 .552-.449 1-1 1h-1.051c.03-.33.051-.662.051-1v-4c0-.338-.021-.67-.051-1zm-7.657-4.835c-.081.483-.496.835-.986.835h-4.611c-.491 0-.906-.352-.986-.835l-.395-2.367c1.126-.508 2.372-.798 3.686-.798s2.56.29 3.687.798zm-15.292 10.835c-.551 0-1-.448-1-1v-4c0-.552.449-1 1-1h1.051c-.03.33-.051.662-.051 1v4c0 .338.021.67.051 1zm3-1v-4c0-2.878 1.363-5.438 3.472-7.087l.263 1.58c.243 1.453 1.487 2.507 2.959 2.507h1.306v10.089c-2.137.374-3.865 1.936-4.474 4.038-2.139-1.647-3.526-4.225-3.526-7.127zm7.108 10.826-.818 2.726-1.19-.953.434-2.167c.509.169 1.035.299 1.574.394zm-13.108 19.174h4v5h-4zm26 5v-5h4v5zm6-8c0 .552-.449 1-1 1h-5v-9h-2v16h-18v-16h-2v9h-5c-.551 0-1-.448-1-1v-5.67c0-1.288.425-2.563 1.198-3.594.885-1.181 2.169-1.99 3.617-2.279l6.924-1.385 5.261 4.208 5.261-4.208 6.924 1.385c1.447.289 2.731 1.099 3.617 2.28.773 1.03 1.198 2.305 1.198 3.593zm24-25.718-2.237.754-.106.58c-.513 2.803-1.588 5.404-3.197 7.732l-.335.484 1.045 2.11-3.227 3.227-2.109-1.045-.485.334c-2.331 1.61-4.933 2.686-7.732 3.197l-.58.105-.755 2.24h-2.309c-.061-1.443-.52-2.85-1.314-4.055.446.033.893.055 1.341.055 9.925 0 18-8.075 18-18s-8.075-18-18-18c-5 0-9.722 2.086-13.122 5.718-1.195-.759-2.543-1.292-3.99-1.544l-.058-.117 3.227-3.227 2.109 1.045.485-.334c2.331-1.61 4.933-2.686 7.732-3.197l.58-.105.755-2.239h4.563l.755 2.238.58.105c2.8.512 5.401 1.587 7.732 3.197l.485.334 2.109-1.045 3.227 3.227-1.045 2.11.335.484c1.608 2.328 2.684 4.93 3.197 7.732l.106.58 2.238.756z" />
+        <path d="m51.328 31.643-1.76-.951c-.292.54-.628 1.062-.998 1.55l1.594 1.209c.432-.57.823-1.179 1.164-1.808z" />
+        <path d="m48.737 35.061-1.392-1.438c-.44.427-.918.823-1.419 1.178l1.155 1.633c.586-.414 1.142-.876 1.656-1.373z" />
+        <path d="m40.84 36.86c-.605.093-1.224.14-1.84.14v2c.717 0 1.438-.055 2.144-.163z" />
+        <path d="m45.236 37.538-.893-1.789c-.547.272-1.122.506-1.708.691l.604 1.906c.685-.216 1.357-.489 1.997-.808z" />
+      </g>
+    </svg>
+  ),
+  robotics_design: (size: number, className: string) => (
+    <svg
+      id="Capa_1"
+      enableBackground="new 0 0 64 64"
+      height={size}
+      viewBox="0 0 64 64"
+      width={size}
+      xmlns="http://www.w3.org/2000/svg"
+      fill="inherit"
+      stroke="currentColor"
+      className={className}
+    >
+      <g>
+        <path d="m63 26.95c0-3.281-2.669-5.95-5.95-5.95-.711 0-1.401.131-2.05.369v-17.369c0-1.654-1.346-3-3-3h-41.172c-.801 0-1.555.313-2.121.879l-6.828 6.828c-.567.566-.879 1.32-.879 2.121v49.172c0 1.654 1.346 3 3 3h48c1.654 0 3-1.346 3-3v-22.586l6.257-6.257c1.124-1.124 1.743-2.618 1.743-4.207zm-54-22.536v4.586h-4.586zm44 55.586c0 .552-.448 1-1 1h-48c-.552 0-1-.448-1-1v-49h8v-8h41c.552 0 1 .448 1 1v18.601c-.052.048-.107.092-.157.143l-11.843 11.842v-.586c0-2.757-2.243-5-5-5h-2.671c-1.139-1.227-2.76-2-4.562-2h-.767v-2h2c2.757 0 5-2.243 5-5v-3c0-6.617-5.383-12-12-12s-12 5.383-12 12v3c0 2.757 2.243 5 5 5h2v2h-.768c-1.802 0-3.423.773-4.562 2h-2.67c-2.757 0-5 2.243-5 5v5h2v6h7.256.744 15.586l-3.477 3.477-2.004 7.013c-.07.245-.105.5-.105.757 0 1.518 1.235 2.753 2.754 2.753.257 0 .512-.035.757-.105l7.013-2.004 17.476-17.477zm-24.505-9.091 4.596 4.596-5.129 1.466c-.465.135-.962-.239-.962-.725 0-.07.01-.141.029-.208zm6.505 3.677-2.086-2.086 21.586-21.586 2.086 2.086zm-3.5-3.5-2.086-2.086 21.586-21.586 2.086 2.086zm-20.237-16.064.593 1.978h-4.856v-3c0-1.654 1.346-3 3-3h1.42c-.267.694-.42 1.445-.42 2.232 0 .608.089 1.21.263 1.79zm-2.263 3.978h3.456l1.2 4h-4.656zm4.179-4.553c-.119-.393-.179-.802-.179-1.215 0-2.334 1.898-4.232 4.232-4.232h11.535c2.335 0 4.233 1.898 4.233 4.232 0 .412-.06.821-.179 1.216l-2.565 8.552h-14.512zm5.821-26.606c1.226-.538 2.578-.841 4-.841s2.774.303 4 .841v1.159h-8zm-1.998 1.177c.01 1.094.902 1.982 1.998 1.982h8c1.096 0 1.988-.888 1.998-1.982 2.425 1.826 4.002 4.72 4.002 7.982v3c0 1.654-1.346 3-3 3h-14c-1.654 0-3-1.346-3-3v-3c0-3.262 1.577-6.156 4.002-7.982zm8.998 15.982v2h-6v-2zm13 11.586-.414.414h-4.442l.593-1.977c.174-.581.263-1.183.263-1.791 0-.787-.153-1.538-.42-2.232h1.42c1.654 0 3 1.346 3 3zm-5.456 2.414h3.042l-4.345 4.345zm26.299-9.257-1.843 1.843-5.586-5.586 1.843-1.843c.746-.746 1.738-1.157 2.793-1.157 2.178 0 3.95 1.772 3.95 3.95 0 1.055-.411 2.047-1.157 2.793z" />
+        <path d="m28 19c1.654 0 3-1.346 3-3s-1.346-3-3-3-3 1.346-3 3 1.346 3 3 3zm0-4c.552 0 1 .448 1 1s-.448 1-1 1-1-.448-1-1 .448-1 1-1z" />
+        <path d="m15 16c0 1.654 1.346 3 3 3s3-1.346 3-3-1.346-3-3-3-3 1.346-3 3zm3-1c.552 0 1 .448 1 1s-.448 1-1 1-1-.448-1-1 .448-1 1-1z" />
+        <path d="m19 41h8c1.103 0 2-.897 2-2v-6c0-1.103-.897-2-2-2h-8c-1.103 0-2 .897-2 2v6c0 1.103.897 2 2 2zm0-8h8l.002 6h-8.002z" />
+        <path d="m22 57h2v2h-2z" />
+        <path d="m5 57h15v2h-15z" />
+        <path d="m5 53h19v2h-19z" />
+        <path d="m51 5h-14v18h14zm-2 16h-10v-14h10z" />
+        <path d="m41 9h6v2h-6z" />
+        <path d="m41 13h6v2h-6z" />
+        <path d="m41 17h6v2h-6z" />
+      </g>
+    </svg>
+  ),
+  robotics_robot_kit: (size: number, className: string) => (
+    <svg
+      id="Capa_1"
+      enableBackground="new 0 0 64 64"
+      height={size}
+      viewBox="0 0 64 64"
+      width={size}
+      xmlns="http://www.w3.org/2000/svg"
+      fill="inherit"
+      stroke="currentColor"
+      className={className}
+    >
+      <g>
+        <path d="m60 1h-56c-1.654 0-3 1.346-3 3v56c0 1.654 1.346 3 3 3h56c1.654 0 3-1.346 3-3v-56c0-1.654-1.346-3-3-3zm1 3v13h-28v-14h27c.552 0 1 .448 1 1zm-24 33v12h-4v-4h-10v4h-4v-4h-10v4h-6v-14h58v2zm-6 10v6h-6v-6zm-14 0v6h-6v-6zm16-14v-14h28v14zm-29-30h27v30h-28v-29c0-.552.448-1 1-1zm-1 57v-9h6v4h10v-4h4v4h10v-4h4v10h-33c-.552 0-1-.448-1-1zm57 1h-21v-22h22v21c0 .552-.448 1-1 1z" />
+        <path d="m50 41c-4.963 0-9 4.037-9 9s4.037 9 9 9 9-4.037 9-9-4.037-9-9-9zm6.92 8h-4.104c-.302-.847-.969-1.514-1.816-1.816v-4.104c3.059.441 5.479 2.861 5.92 5.92zm-6.92 2c-.552 0-1-.448-1-1s.448-1 1-1 1 .448 1 1-.448 1-1 1zm-1-7.92v4.104c-.847.302-1.514.969-1.816 1.816h-4.104c.441-3.059 2.861-5.479 5.92-5.92zm-5.92 7.92h4.104c.302.847.969 1.514 1.816 1.816v4.104c-3.059-.441-5.479-2.861-5.92-5.92zm7.92 5.92v-4.104c.847-.302 1.514-.969 1.816-1.816h4.104c-.441 3.059-2.861 5.479-5.92 5.92z" />
+        <circle cx="28" cy="50" r="1" />
+        <circle cx="14" cy="50" r="1" />
+        <path d="m17 29c5.514 0 10-4.935 10-11s-4.486-11-10-11-10 4.935-10 11 4.486 11 10 11zm-3.831-3.102 1.449-2.898h4.764l1.449 2.898c-1.139.702-2.444 1.102-3.831 1.102s-2.692-.4-3.831-1.102zm11.831-7.898c0 2.61-.999 4.956-2.581 6.602l-1.801-3.602h-2.618v-11.922c3.94.556 7 4.341 7 8.922zm-9-8.922v11.922h-2.618l-1.801 3.602c-1.582-1.646-2.581-3.992-2.581-6.602 0-4.581 3.06-8.366 7-8.922z" />
+        <circle cx="21" cy="15" r="1" />
+        <circle cx="13" cy="15" r="1" />
+        <circle cx="6" cy="6" r="1" />
+        <circle cx="28" cy="6" r="1" />
+        <circle cx="6" cy="30" r="1" />
+        <circle cx="28" cy="30" r="1" />
+        <path d="m40 15c1.563 0 3.04-.754 3.979-2h6.041c.939 1.246 2.416 2 3.979 2 2.757 0 5-2.243 5-5s-2.243-5-5-5c-1.563 0-3.04.754-3.979 2h-6.041c-.939-1.246-2.416-2-3.979-2-2.757 0-5 2.243-5 5s2.243 5 5 5zm0-8c1.068 0 2.033.562 2.581 1.503l.289.497h8.26l.289-.497c.548-.941 1.513-1.503 2.581-1.503 1.654 0 3 1.346 3 3s-1.346 3-3 3c-1.068 0-2.033-.562-2.581-1.503l-.289-.497h-8.26l-.289.497c-.548.941-1.513 1.503-2.581 1.503-1.654 0-3-1.346-3-3s1.346-3 3-3z" />
+        <path d="m39 21h-2v6h-2v2h2v2h2v-2h2v-2h-2z" />
+        <path d="m47 21h-2v2h-2v2h2v6h2v-6h2v-2h-2z" />
+        <path d="m57 27h-2v-6h-2v6h-2v2h2v2h2v-2h2z" />
+      </g>
+    </svg>
+  ),
+  robotics_robot3: (size: number, className: string) => (
+    <svg
+      id="Capa_1"
+      enableBackground="new 0 0 64 64"
+      height={size}
+      viewBox="0 0 64 64"
+      width={size}
+      xmlns="http://www.w3.org/2000/svg"
+      fill="inherit"
+      stroke="currentColor"
+      className={className}
+    >
+      <g>
+        <path d="m58 35c1.654 0 3-1.346 3-3v-5h2v-3c0-2.757-2.243-5-5-5h-2.026c-.287-.379-.624-.716-1.005-1 .97-.722 1.68-1.774 1.93-3h.101c2.206 0 4-1.794 4-4s-1.794-4-4-4h-.525c-1.239-3.49-4.565-6-8.475-6s-7.236 2.51-8.475 6h-.525c-2.206 0-4 1.794-4 4s1.794 4 4 4h.101c.25 1.226.96 2.278 1.93 3-.382.284-.718.621-1.005 1h-2.026c-2.757 0-5 2.243-5 5v3h2v5c0 1.654 1.346 3 3 3h3.111c.096.094.198.183.299.272-.258.537-.41 1.123-.41 1.728v10h-2v-2h-6v18h6v-2h18v2h6v-18h-6v2h-2v-10c0-.605-.151-1.191-.41-1.728.102-.089.203-.178.299-.272zm-1-26c1.103 0 2 .897 2 2s-.897 2-2 2v-3c0-.338-.022-.671-.059-1zm-20 2c0-1.103.897-2 2-2h.059c-.037.329-.059.662-.059 1v3c-1.103 0-2-.897-2-2zm22 21c0 .552-.448 1-1 1h-1.685c.434-.911.685-1.926.685-3v-3h2zm-1-11c1.654 0 3 1.346 3 3v1h-4v-3c0-.342-.035-.677-.101-1zm-7.781-6 .501 2h-5.439l.501-2zm-5.219 4h6v7c0 1.654-1.346 3-3 3s-3-1.346-3-3zm10-9v4c0 1.393-.958 2.556-2.246 2.892l-.973-3.892h-2.781v-6.142c1.352-.351 2.416-1.387 2.815-2.719 1.915 1.25 3.185 3.409 3.185 5.861zm-5.029-6.713c-.141.966-.967 1.713-1.971 1.713s-1.83-.747-1.971-1.713c.626-.184 1.286-.287 1.971-.287s1.345.103 1.971.287zm-8.971 6.713c0-2.452 1.271-4.611 3.185-5.861.399 1.332 1.463 2.368 2.815 2.719v6.142h-2.781l-.972 3.892c-1.289-.336-2.247-1.499-2.247-2.892zm0 12c0-1.302.839-2.402 2-2.816v6.816c0 2.757 2.243 5 5 5s5-2.243 5-5v-6.816c1.161.414 2 1.514 2 2.816v8c0 2.757-2.243 5-5 5h-4c-2.757 0-5-2.243-5-5zm6 17c-.552 0-1-.448-1-1v-1h4v1c0 .552-.448 1-1 1zm-12-15c0-1.654 1.346-3 3-3h1.101c-.066.323-.101.658-.101 1v3h-4zm2 8v-5h2v3c0 1.074.251 2.089.685 3h-1.685c-.552 0-1-.448-1-1zm6 5c0-.218.04-.43.108-.633.288.131.585.246.892.338v1.295c0 1.654 1.346 3 3 3v6h-4zm-4 16h18v2h-18zm-2 8h-2v-14h2zm2-2v-2h18v2zm20-12h2v14h-2zm-2 4h-18v-2h18zm-4-14v10h-4v-6c1.654 0 3-1.346 3-3v-1.295c.307-.092.604-.207.892-.338.068.203.108.415.108.633z" />
+        <path d="m26 19h-3.111c-.203-.199-.421-.382-.648-.555 1.342-.68 2.348-1.93 2.657-3.445h.102c2.206 0 4-1.794 4-4s-1.794-4-4-4h-.525c-1.239-3.49-4.565-6-8.475-6s-7.236 2.51-8.475 6h-.525c-2.206 0-4 1.794-4 4s1.794 4 4 4h.101c.309 1.515 1.315 2.765 2.657 3.445-.226.173-.444.356-.647.555h-3.111c-2.757 0-5 2.243-5 5v3h2v7c0 1.654 1.346 3 3 3h1.08c.216 1.502.906 2.852 1.92 3.889v6.111h-2v-2h-6v18h6v-2h18v2h6v-18h-6v2h-2v-6.111c1.014-1.037 1.704-2.387 1.92-3.889h1.08c1.654 0 3-1.346 3-3v-7h2v-3c0-2.757-2.243-5-5-5zm-1-10c1.103 0 2 .897 2 2s-.897 2-2 2v-3c0-.338-.022-.671-.059-1zm-20 2c0-1.103.897-2 2-2h.059c-.037.329-.059.662-.059 1v3c-1.103 0-2-.897-2-2zm4 19v-6c0-2.757 2.243-5 5-5h4c2.757 0 5 2.243 5 5v6c0 2.757-2.243 5-5 5h-4c-2.757 0-5-2.243-5-5zm9-15v2h-4v-2zm5-5v4c0 1.654-1.346 3-3 3v-4h-3v-6.142c1.352-.351 2.416-1.387 2.815-2.719 1.915 1.25 3.185 3.409 3.185 5.861zm-5.029-6.713c-.141.966-.967 1.713-1.971 1.713s-1.83-.747-1.971-1.713c.626-.184 1.286-.287 1.971-.287s1.345.103 1.971.287zm-8.971 6.713c0-2.452 1.271-4.611 3.185-5.861.399 1.332 1.463 2.368 2.815 2.719v6.142h-3v4c-1.654 0-3-1.346-3-3zm-6 14c0-1.654 1.346-3 3-3h1.685c-.434.911-.685 1.926-.685 3v1h-4zm2 10v-7h2v3c0 1.079.253 2.097.69 3.011-.3.632-.512 1.3-.613 1.989h-1.077c-.552 0-1-.448-1-1zm6 8.315c.911.434 1.926.685 3 .685h1v4h-4zm-4 10.685h18v2h-18zm-2 8h-2v-14h2zm2-2v-2h18v2zm20-12h2v14h-2zm-2 4h-18v-2h18zm-8-4v-4h1c1.074 0 2.089-.251 3-.685v4.685zm1-6h-4c-2.757 0-5-2.243-5-5 0-.336.045-.67.113-.998 1.263 1.234 2.987 1.998 4.887 1.998h4c1.901 0 3.624-.764 4.887-1.998.068.328.113.662.113.998 0 2.757-2.243 5-5 5zm9-7c0 .552-.448 1-1 1h-1.078c-.101-.689-.312-1.357-.613-1.989.438-.914.691-1.932.691-3.011v-3h2zm2-9h-4v-1c0-1.074-.251-2.089-.685-3h1.685c1.654 0 3 1.346 3 3z" />
+        <path d="m19 8h2v2h-2z" />
+        <path d="m11 8h2v2h-2z" />
+        <path d="m51 8h2v2h-2z" />
+        <path d="m43 8h2v2h-2z" />
+        <path d="m13 33h6c1.103 0 2-.897 2-2v-8c0-1.103-.897-2-2-2h-6c-1.103 0-2 .897-2 2v8c0 1.103.897 2 2 2zm0-10h6l.002 8h-6.002z" />
+        <path d="m47 25h2v2h-2z" />
+        <path d="m47 21h2v2h-2z" />
+      </g>
+    </svg>
+  ),
+  robotics_simulation: (size: number, className: string) => (
+    <svg
+      id="Capa_1"
+      enableBackground="new 0 0 64 64"
+      height={size}
+      viewBox="0 0 64 64"
+      width={size}
+      xmlns="http://www.w3.org/2000/svg"
+      fill="inherit"
+      stroke="currentColor"
+      className={className}
+    >
+      <g>
+        <path d="m58 1h-51v9.552c-3.622 2.544-6 6.745-6 11.497 0 2.782.815 5.478 2.359 7.793l1.641 2.461v.697c0 1.654 1.346 3 3 3h1v5.616c-1.931 2.083-3 4.771-3 7.628 0 3.299.925 6.522 2.675 9.322 1.734 2.776 4.726 4.434 8 4.434h10.325c2.206 0 4-1.794 4-4s-1.794-4-4-4h-2.22l-1.124-4.498c-.492-1.971-1.512-3.771-2.949-5.209-.52-.52-1.101-.964-1.707-1.37v-.923h34v8h5c2.757 0 5-2.243 5-5v-40c0-2.757-2.243-5-5-5zm-21 8.051c5.598.507 10 5.221 10 10.949 0 .32-.022.654-.057 1h-2.002c.037-.329.059-.662.059-1 0-4.625-3.507-8.442-8-8.941zm-2 21.903c-2.244-.203-4.361-1.097-6.089-2.557-.045-.762-.112-1.614-.192-2.519.129-.032.256-.069.378-.118 1.489 1.783 3.599 2.921 5.903 3.178zm1-17.954c3.859 0 7 3.141 7 7s-3.141 7-7 7c-2.106 0-4.074-.95-5.399-2.559.247-.436.399-.931.399-1.466v-2.975-1.025c0-.945-.448-1.779-1.133-2.33 1.217-2.235 3.534-3.645 6.133-3.645zm-8 4.975c.552 0 1 .448 1 1v4c0 .552-.448 1-1 1h-6c-.552 0-1-.448-1-1v-4c0-.552.448-1 1-1zm9 10.966c3.47-.386 6.343-2.753 7.475-5.941h4.159c-1.293 5.454-6.036 9.524-11.634 9.961zm-2-17.866c-3.031.333-5.649 2.156-7.019 4.89-.584-1.387-1.391-2.64-2.376-3.717 2.249-3.024 5.653-4.923 9.395-5.21zm-9.22 4.9h-3.78c-1.302 0-2.402.839-2.816 2h-6.184v-.144c0-3.12 1.607-6.049 4.202-7.757 3.666.405 6.896 2.632 8.578 5.901zm-6.78 6h-6v-2h6zm-4 3.025v8c0 .552-.448 1-1 1h-1v-10h1c.552 0 1 .448 1 1zm-4-7.169v4.169h-2v-5c0-2.487 1.039-4.858 2.847-6.555.735-.203 1.495-.339 2.278-.399-1.969 2.078-3.125 4.866-3.125 7.785zm-8 4.218c0-4.059 2.023-7.648 5.108-9.832-.714 1.477-1.108 3.107-1.108 4.783v5.184c-1.161.414-2 1.514-2 2.816v3.694c-1.307-1.978-2-4.273-2-6.645zm4 10.951v-8c0-.552.448-1 1-1h3v10h-3c-.552 0-1-.448-1-1zm20 24c1.103 0 2 .897 2 2s-.897 2-2 2h-4v-4zm-5.284-6.014 1.003 4.014h-6.101l-2.724-5.447-1.789.895 2.724 5.446c.34.682 1.025 1.106 1.789 1.106h4.382v4h-4.325c-2.58 0-4.938-1.307-6.306-3.495-1.55-2.481-2.369-5.337-2.369-8.261 0-2.283.821-4.44 2.325-6.132l4.688 1.173c1.619.403 3.099 1.241 4.279 2.422s2.02 2.66 2.424 4.279zm-6.218-8.641-4.498-1.126v-5.219h3c1.654 0 3-1.346 3-3v-8c0-.362-.074-.704-.192-1.025h2.376c.414 1.161 1.514 2 2.816 2h4.721c.154 1.731.248 3.212.272 4.386l-1.993.995v.618c0 2.914-2.188 5.311-5.092 5.575l-4.999.454.182 1.992 1.909-.172v3.016c-.487-.198-.988-.366-1.502-.494zm45.502 3.655c0 1.654-1.346 3-3 3h-3v-38h3c1.125 0 2.164-.373 3-1.002zm-3-37h-5v32h-34v-1.359l1.09-.099c3.728-.34 6.588-3.271 6.885-6.937l2.025-1.012v-.618c0-.009-.001-.02-.001-.028 1.799 1.152 3.855 1.843 6.001 2.008v2.045h1c7.403 0 13.779-5.527 14.831-12.858l.163-1.142h-2.04c.029-.342.046-.675.046-1 0-6.83-5.299-12.435-12-12.949v-2.051h-1c-4.689 0-9.048 2.174-11.877 5.862-2.258-1.806-5.103-2.862-8.123-2.862h-.951c-2.168 0-4.214.508-6.049 1.388v-6.388h49c1.654 0 3 1.346 3 3s-1.346 3-3 3z" />
+        <path d="m36 25c2.757 0 5-2.243 5-5s-2.243-5-5-5-5 2.243-5 5 2.243 5 5 5zm0-8c1.654 0 3 1.346 3 3s-1.346 3-3 3-3-1.346-3-3 1.346-3 3-3z" />
+      </g>
+    </svg>
+  ),
+  fd_download: (size: number, className: string) => (
+    <svg
+      id="Capa_1"
+      enableBackground="new 0 0 512 512"
+      height={size}
+      viewBox="0 0 512 512"
+      width={size}
+      xmlns="http://www.w3.org/2000/svg"
+      fill="inherit"
+      stroke="currentColor"
+      className={className}
+    >
+      <g>
+        <path d="m464 86v368h-320v-448h240z" fill="#fff" />
+        <path d="m384 86h80v16h-80z" fill="#dce1e7" />
+        <path d="m144 438h320v16h-320z" fill="#dce1e7" />
+        <path d="m464 86h-80v-80" fill="#95a4b6" />
+        <g>
+          <circle cx="144" cy="410" fill="#b9c2cf" r="96" />
+          <path
+            d="m144 490c-50.325 0-91.6-38.724-95.666-88-.218 2.638-.334 5.305-.334 8 0 53.019 42.981 96 96 96s96-42.981 96-96c0-2.695-.117-5.362-.334-8-4.066 49.276-45.341 88-95.666 88z"
+            fill="#95a4b6"
+          />
+          <g fill="#012d4a">
+            <path d="m470 83.515-83.515-83.515h-248.485v308.181c-53.461 3.117-96 47.59-96 101.819 0 56.243 45.757 102 102 102 38.087 0 71.36-20.987 88.876-52h237.124zm-80-63.03 59.515 59.515h-59.515zm-246 479.515c-49.626 0-90-40.374-90-90s40.374-90 90-90 90 40.374 90 90-40.374 90-90 90zm94.653-52c4.734-11.75 7.347-24.575 7.347-38 0-54.229-42.539-98.702-96-101.819v-296.181h228v80h80v356z" />
+            <path d="m192 64h96v12h-96z" />
+            <path d="m192 96h64v12h-64z" />
+            <path d="m192 144h224v12h-224z" />
+            <path d="m192 176h224v12h-224z" />
+            <path d="m192 240h224v12h-224z" />
+            <path d="m192 272h160v12h-160z" />
+            <path d="m192 208h224v12h-224z" />
+            <path d="m336 320h80v12h-80z" />
+            <path d="m180.243 398.243-8.486-8.486-21.757 21.758v-65.515h-12v65.515l-21.757-21.758-8.486 8.486 36.243 36.242z" />
+            <path d="m178 452h-68v-26h-12v38h92v-38h-12z" />
+          </g>
+        </g>
+      </g>
+    </svg>
+  ),
+  fd_statistics: (size: number, className: string) => (
+    <svg
+      id="Capa_1"
+      enableBackground="new 0 0 512 512"
+      height={size}
+      viewBox="0 0 512 512"
+      width={size}
+      xmlns="http://www.w3.org/2000/svg"
+      fill="inherit"
+      stroke="currentColor"
+      className={className}
+    >
+      <g>
+        <path d="m464.017 86v368h-320v-448h240z" fill="#fff" />
+        <path d="m384.017 86h80v16h-80z" fill="#dce1e7" />
+        <path d="m144.017 438h320v16h-320z" fill="#dce1e7" />
+        <path d="m464.017 86h-80v-80" fill="#95a4b6" />
+        <g>
+          <path d="m200.017 214h48v80h-48z" fill="#fff" />
+          <path d="m232.017 214h16v80h-16z" fill="#dce1e7" />
+          <path d="m360.017 182h48v112h-48z" fill="#95a4b6" />
+          <path d="m392.017 182h16v112h-16z" fill="#72869e" />
+          <path d="m280.017 150h48v144h-48z" fill="#b9c2cf" />
+          <path d="m312.017 150h16v144h-16z" fill="#95a4b6" />
+        </g>
+        <g>
+          <path
+            d="m144.042 362.059c13.255 0 25.255 5.372 33.941 14.059l33.941-33.941c-17.373-17.372-41.373-28.118-67.882-28.118-53.019 0-96 42.981-96 96h48c-.001-26.51 21.49-48 48-48z"
+            fill="#95a4b6"
+          />
+          <path
+            d="m240.042 410.059c0-26.51-10.745-50.51-28.118-67.882l-33.941 33.941c8.686 8.686 14.059 20.686 14.059 33.941 0 26.51-21.49 48-48 48v48c53.019 0 96-42.981 96-96z"
+            fill="#b9c2cf"
+          />
+          <path
+            d="m96.041 410.059h-48c0 53.019 42.981 96 96 96v-48c-26.509 0-48-21.49-48-48z"
+            fill="#fff"
+          />
+          <path
+            d="m48.376 402.059c-.218 2.638-.334 5.305-.334 8 0 53.011 42.968 95.987 95.976 96v-16c-50.314-.013-91.577-38.733-95.642-88z"
+            fill="#dce1e7"
+          />
+          <path
+            d="m239.707 402.059c-4.066 49.275-45.341 88-95.666 88-.008 0-.016-.001-.024-.001v16h.024c53.019 0 96-42.981 96-96 .001-2.694-.116-5.361-.334-7.999z"
+            fill="#95a4b6"
+          />
+        </g>
+        <g fill="#012d4a">
+          <path d="m470.018 83.515-83.515-83.515h-248.485v308.241c-53.45 3.129-95.977 47.597-95.977 101.817 0 56.243 45.757 102 102 102 38.111 0 71.401-21.013 88.909-52.059h237.068zm-80-63.03 59.514 59.515h-59.515v-59.515zm-245.977 299.574c22.658 0 43.385 8.42 59.224 22.291l-25.524 25.524c-21.18-16.946-52.263-15.619-71.883 4.001-9.002 9.002-14.142 20.418-15.446 32.184h-36.166c3.099-46.839 42.186-84 89.795-84zm-6.023 131.549c-8.668-1.246-17.019-5.196-23.674-11.851-16.376-16.376-16.376-43.021-.001-59.397 6.655-6.655 15.006-10.605 23.675-11.851zm12 .006v-83.111c8.686 1.238 17.055 5.19 23.723 11.857 16.375 16.375 16.375 43.021 0 59.397-6.668 6.667-15.038 10.619-23.723 11.857zm-95.772-35.555h36.167c1.304 11.765 6.444 23.182 15.446 32.184 9.001 9.002 20.418 14.142 32.183 15.446v36.165c-44.856-2.967-80.829-38.941-83.796-83.795zm95.795 83.795v-36.165c11.766-1.304 23.182-6.444 32.184-15.446h.001c19.619-19.621 20.947-50.702 4-71.884l25.524-25.524c13.871 15.839 22.291 36.565 22.291 59.224 0 47.609-37.161 86.696-84 89.795zm88.677-51.854c4.719-11.734 7.323-24.539 7.323-37.941 0-54.237-42.552-98.715-96.023-101.82v-296.239h228v80h80v356z" />
+          <path d="m192.018 64h160v12h-160z" />
+          <path d="m192.018 96h128v12h-128z" />
+          <path d="m414.018 176h-60v112h-20v-144h-60v144h-20v-80h-60v92h220zm-172 112h-36v-68h36zm44-132h36v132h-36zm116 132h-36v-100h36z" />
+          <path d="m256.018 336h160v12h-160z" />
+          <path d="m288.018 368h128v12h-128z" />
+        </g>
+      </g>
+    </svg>
+  ),
+  fd_document1: (size: number, className: string) => (
+    <svg
+      id="Capa_1"
+      enableBackground="new 0 0 512 512"
+      height={size}
+      viewBox="0 0 512 512"
+      width={size}
+      xmlns="http://www.w3.org/2000/svg"
+      fill="inherit"
+      stroke="currentColor"
+      className={className}
+    >
+      <g>
+        <path d="m122 6h320v448h-320z" fill="#b9c2cf" />
+        <path d="m122 438h320v16h-320z" fill="#95a4b6" />
+        <path d="m390 138v368h-320v-448h240z" fill="#fff" />
+        <path d="m310 138h80v16h-80z" fill="#dce1e7" />
+        <path d="m70 490h320v16h-320z" fill="#dce1e7" />
+        <path d="m390 138h-80v-80" fill="#95a4b6" />
+        <g fill="#012d4a">
+          <path d="m116 0v52h-52v460h332v-52h52v-460zm268 500h-308v-436h228v80h80zm-68-368v-59.515l59.515 59.515zm120 316h-40v-312.485l-83.515-83.515h-184.485v-40h308z" />
+          <path d="m118 116h96v12h-96z" />
+          <path d="m118 148h64v12h-64z" />
+          <path d="m118 196h224v12h-224z" />
+          <path d="m118 228h224v12h-224z" />
+          <path d="m118 292h224v12h-224z" />
+          <path d="m118 324h160v12h-160z" />
+          <path d="m118 260h224v12h-224z" />
+          <path d="m262 372h80v12h-80z" />
+        </g>
+      </g>
+    </svg>
+  ),
+  fd_picture: (size: number, className: string) => (
+    <svg
+      id="Capa_1"
+      enableBackground="new 0 0 512 512"
+      height={size}
+      viewBox="0 0 512 512"
+      width={size}
+      xmlns="http://www.w3.org/2000/svg"
+      fill="inherit"
+      stroke="currentColor"
+      className={className}
+    >
+      <g>
+        <path d="m122 6h320v448h-320z" fill="#b9c2cf" />
+        <path d="m122 438h320v16h-320z" fill="#95a4b6" />
+        <path d="m70 426v-368h320v448h-240z" fill="#fff" />
+        <path d="m150 490h240v16h-240z" fill="#dce1e7" />
+        <path d="m70 426h80v80" fill="#95a4b6" />
+        <g>
+          <g>
+            <path d="m118 186h224v160h-224z" fill="#dce1e7" />
+            <path d="m262 250-40 40-24-24-80 80h224v-16z" fill="#95a4b6" />
+            <path d="m342 330v16h-224l16-16z" fill="#72869e" />
+          </g>
+        </g>
+        <g fill="#012d4a">
+          <path d="m448 0h-332v52h-52v376.485l83.515 83.515h248.485v-52h52zm-304 491.515-59.515-59.515h59.515zm240 8.485h-228v-80h-80v-356h308zm52-52h-40v-396h-268v-40h308z" />
+          <path d="m118 116h96v12h-96z" />
+          <path d="m118 148h96v12h-96z" />
+          <path d="m246 116h96v12h-96z" />
+          <path d="m246 148h96v12h-96z" />
+          <path d="m348 180h-236v172h236zm-12 12v123.515l-74-74.001-40 40-24-24-74 74v-139.514zm-203.515 148 65.515-65.515 51.757 51.757 8.485-8.485-27.757-27.757 31.515-31.515 74 73.999v7.516z" />
+          <path d="m118 372h224v12h-224z" />
+          <path d="m182 404h160v12h-160z" />
+          <path d="m182 436h160v12h-160z" />
+        </g>
+      </g>
+    </svg>
+  ),
+  fd_archive: (size: number, className: string) => (
+    <svg
+      id="Capa_1"
+      enableBackground="new 0 0 512 512"
+      height={size}
+      viewBox="0 0 512 512"
+      width={size}
+      xmlns="http://www.w3.org/2000/svg"
+      fill="inherit"
+      stroke="currentColor"
+      className={className}
+    >
+      <g>
+        <path d="m144 6h256v294h-256z" fill="#b9c2cf" />
+        <path d="m144 284h256v16h-256z" fill="#95a4b6" />
+        <path d="m368 118v214h-256v-294h176z" fill="#fff" />
+        <g fill="#dce1e7">
+          <path d="m112 284.002h80v16h-80z" />
+          <path d="m320.001 284.002h48v16h-48z" />
+          <path d="m288 118h80v16h-80z" />
+        </g>
+        <path d="m368 118h-80v-80" fill="#95a4b6" />
+        <path d="m144 86h48v48h-48z" fill="#95a4b6" />
+        <path d="m191.999 315.999h128v16h-128z" fill="#dce1e7" />
+        <g>
+          <path d="m320 300v32h-128v-32h-112v206h352v-206z" fill="#dce1e7" />
+          <path d="m80 480h352v26h-352z" fill="#b9c2cf" />
+          <path d="m192 374h128v32h-128z" fill="#fff" />
+          <g fill="#012d4a">
+            <path d="m144 160h192v12h-192z" />
+            <path d="m144 224h192v12h-192z" />
+            <path d="m144 256h128v12h-128z" />
+            <path d="m144 192h192v12h-192z" />
+            <path d="m198 80h-60v60h60zm-12 48h-36v-36h36z" />
+            <path d="m406 294v-294h-268v32h-32v262h-32v218h364v-218zm-256-282h244v282h-20v-178.485l-83.515-83.515h-140.485zm203.515 100h-59.515v-59.515zm-235.515-68h164v80h80v170h-48v32h-116v-32h-80zm308 456h-340v-14h340zm0-26h-340v-168h100v32h140v-32h100z" />
+            <path d="m186 412h140v-44h-140zm12-32h116v20h-116z" />
+          </g>
+        </g>
+      </g>
+    </svg>
+  ),
+  fd_cloud: (size: number, className: string) => (
+    <svg
+      id="Capa_1"
+      enableBackground="new 0 0 512 512"
+      height={size}
+      viewBox="0 0 512 512"
+      width={size}
+      xmlns="http://www.w3.org/2000/svg"
+      fill="inherit"
+      stroke="currentColor"
+      className={className}
+    >
+      <g>
+        <path d="m464 86v368h-320v-448h240z" fill="#fff" />
+        <path d="m384 86h80v16h-80z" fill="#dce1e7" />
+        <path d="m144 438h320v16h-320z" fill="#dce1e7" />
+        <path d="m464 86h-80v-80" fill="#95a4b6" />
+        <g>
+          <circle cx="304" cy="230" fill="#b9c2cf" r="96" />
+          <path
+            d="m304 310c-50.325 0-91.6-38.725-95.666-88-.218 2.638-.334 5.305-.334 8 0 53.019 42.981 96 96 96s96-42.981 96-96c0-2.695-.117-5.362-.334-8-4.066 49.275-45.341 88-95.666 88z"
+            fill="#95a4b6"
+          />
+        </g>
+        <g>
+          <path
+            d="m80.069 412.719c-.03-.904-.069-1.807-.069-2.719 0-44.183 35.817-80 80-80 27.146 0 51.117 13.533 65.581 34.207 4.552-1.432 9.394-2.207 14.419-2.207 26.51 0 48 21.49 48 48h10c26.51 0 48 21.49 48 48 0 26.51-21.49 48-48 48h-202c-26.51 0-48-21.49-48-48 0-20.923 13.392-38.71 32.069-45.281z"
+            fill="#dce1e7"
+          />
+          <path
+            d="m298 490h-202c-23.789 0-43.525-17.31-47.327-40.019-.439 2.608-.673 5.286-.673 8.019 0 26.51 21.49 48 48 48h202c26.51 0 48-21.49 48-48 0-2.727-.239-5.397-.676-8-3.811 22.7-23.541 40-47.324 40z"
+            fill="#b9c2cf"
+          />
+          <g fill="#012d4a">
+            <path d="m470 83.515-83.515-83.515h-248.485v326.864c-36.389 9.638-63.374 42.585-63.967 81.825-18.855 8.432-32.033 27.355-32.033 49.311 0 29.776 24.224 54 54 54h202c29.105 0 52.892-23.148 53.949-52h118.051zm-80-63.03 59.515 59.515h-59.515zm-92 479.515h-202c-23.159 0-42-18.841-42-42s18.841-42 42-42 42 18.841 42 42h12c0-29.776-24.224-54-54-54-3.349 0-6.623.322-9.805.908 2.233-32.672 25.756-59.571 56.776-66.908h7.029v-1.306c3.273-.444 6.607-.694 10-.694 21.791 0 41.93 9.286 56.011 25.64-17.769 8.85-30.011 27.198-30.011 48.36h12c0-23.159 18.841-42 42-42s42 18.841 42 42-18.841 42-42 42v12c27.669 0 50.532-20.922 53.63-47.774 1.449-.149 2.908-.226 4.37-.226 23.159 0 42 18.841 42 42s-18.841 42-42 42zm53.057-52c-4.705-25.013-26.698-44-53.057-44-1.442 0-2.882.076-4.317.19-2.908-27.053-25.871-48.19-53.683-48.19-4.125 0-8.137.48-11.999 1.36-16.427-21.214-41.132-33.36-68.001-33.36-3.384 0-6.717.218-10 .6v-312.6h228v80h80v356z" />
+            <path d="m192 64h160v12h-160z" />
+            <path d="m192 96h128v12h-128z" />
+            <path d="m267.757 209.757 8.486 8.486 21.757-21.758v81.515h12v-81.515l21.757 21.758 8.486-8.486-36.243-36.242z" />
+            <path d="m304 128c-56.243 0-102 45.757-102 102s45.757 102 102 102 102-45.757 102-102-45.757-102-102-102zm0 192c-49.626 0-90-40.374-90-90s40.374-90 90-90 90 40.374 90 90-40.374 90-90 90z" />
+          </g>
+        </g>
+      </g>
+    </svg>
+  ),
+  fd_search: (size: number, className: string) => (
+    <svg
+      id="Capa_1"
+      enableBackground="new 0 0 512 512"
+      height={size}
+      viewBox="0 0 512 512"
+      width={size}
+      xmlns="http://www.w3.org/2000/svg"
+      fill="inherit"
+      stroke="currentColor"
+      className={className}
+    >
+      <g>
+        <path d="m464 86v368h-320v-448h240z" fill="#fff" />
+        <path d="m144 438h320v16h-320z" fill="#dce1e7" />
+        <path d="m384 86h80v16h-80z" fill="#dce1e7" />
+        <path d="m464 86h-80v-80" fill="#95a4b6" />
+        <g>
+          <path d="m192 150h224v32h-224z" fill="#95a4b6" />
+          <path d="m192 150h48v32h-48z" fill="#fff" />
+        </g>
+        <g>
+          <circle cx="144" cy="410" fill="#b9c2cf" r="96" />
+          <path
+            d="m144 490c-50.325 0-91.6-38.725-95.666-88-.218 2.638-.334 5.305-.334 8 0 53.019 42.981 96 96 96s96-42.981 96-96c0-2.695-.117-5.362-.334-8-4.066 49.275-45.341 88-95.666 88z"
+            fill="#95a4b6"
+          />
+          <circle cx="128" cy="394" fill="#fff" r="32" />
+        </g>
+        <g fill="#012d4a">
+          <path d="m470 83.515-83.515-83.515h-248.485v308.181c-53.461 3.117-96 47.591-96 101.819 0 56.243 45.757 102 102 102 38.087 0 71.36-20.987 88.876-52h237.124zm-80-63.03 59.515 59.515h-59.515zm-246 479.515c-49.626 0-90-40.374-90-90s40.374-90 90-90 90 40.374 90 90-40.374 90-90 90zm94.653-52c4.734-11.75 7.347-24.575 7.347-38 0-54.228-42.539-98.702-96-101.819v-296.181h228v80h80v356z" />
+          <path d="m192 64h160v12h-160z" />
+          <path d="m192 96h128v12h-128z" />
+          <path d="m186 188h236v-44h-236zm224-12h-164v-20h164zm-212-20h36v20h-36z" />
+          <path d="m192 288h224v12h-224z" />
+          <path d="m192 256h224v12h-224z" />
+          <path d="m192 224h224v12h-224z" />
+          <path d="m240 320h176v12h-176z" />
+          <path d="m352 352h64v12h-64z" />
+          <path d="m166 394c0-20.953-17.047-38-38-38s-38 17.047-38 38 17.047 38 38 38c8.316 0 16.01-2.692 22.274-7.241l37.483 37.483 8.485-8.485-37.483-37.483c4.549-6.264 7.241-13.959 7.241-22.274zm-38 26c-14.336 0-26-11.664-26-26s11.664-26 26-26 26 11.664 26 26-11.664 26-26 26z" />
+        </g>
+      </g>
+    </svg>
+  ),
+  fd_exchange: (size: number, className: string) => (
+    <svg
+      id="Capa_1"
+      enableBackground="new 0 0 512 512"
+      height={size}
+      viewBox="0 0 512 512"
+      width={size}
+      xmlns="http://www.w3.org/2000/svg"
+      fill="inherit"
+      stroke="currentColor"
+      className={className}
+    >
+      <g>
+        <g>
+          <g>
+            <path d="m330 48h176v240h-176z" fill="#b9c2cf" />
+            <path d="m314 272h192v16h-192z" fill="#95a4b6" />
+            <g>
+              <path d="m474 128v208h-192v-256h144z" fill="#fff" />
+              <path d="m282 320h192v16h-192z" fill="#dce1e7" />
+              <path d="m426 128h48v16h-48z" fill="#dce1e7" />
+              <path d="m474 128h-48v-48" fill="#95a4b6" />
+            </g>
+          </g>
+          <g>
+            <path d="m314 128h64v32h-64z" fill="#b9c2cf" />
+          </g>
+        </g>
+        <path d="m198 256v208h-192v-256h144z" fill="#fff" />
+        <path d="m6 448h192v16h-192z" fill="#dce1e7" />
+        <path d="m150 256h48v16h-48z" fill="#dce1e7" />
+        <path d="m198 256h-48v-48" fill="#95a4b6" />
+        <g>
+          <path d="m38 256h64v32h-64z" fill="#b9c2cf" />
+        </g>
+        <g fill="#012d4a">
+          <path d="m228.243 11.757-8.486 8.486 21.758 21.757h-119.515v134h12v-122h107.515l-21.758 21.757 8.486 8.486 36.242-36.243z" />
+          <path d="m378 458h-107.515l21.757-21.757-8.484-8.486-36.243 36.243 36.243 36.243 8.484-8.486-21.757-21.757h119.515v-102h-12z" />
+          <path d="m512 42h-188v32h-48v268h204v-48h32zm-224 288v-244h132v48h48v196zm144-235.515 27.515 27.515h-27.515zm68 187.515h-20v-156.485l-51.515-51.515h-92.485v-20h164z" />
+          <path d="m384 122h-76v44h76zm-12 32h-52v-20h52z" />
+          <path d="m314 218h128v12h-128z" />
+          <path d="m314 186h128v12h-128z" />
+          <path d="m314 250h128v12h-128z" />
+          <path d="m314 282h96v12h-96z" />
+          <path d="m0 202v268h204v-216.485l-51.515-51.515zm156 20.485 27.515 27.515h-27.515zm-144 235.515v-244h132v48h48v196z" />
+          <path d="m108 250h-76v44h76zm-12 32h-52v-20h52z" />
+          <path d="m38 346h128v12h-128z" />
+          <path d="m38 314h128v12h-128z" />
+          <path d="m38 378h128v12h-128z" />
+          <path d="m38 410h96v12h-96z" />
+        </g>
+      </g>
+    </svg>
+  ),
+  fd_upload: (size: number, className: string) => (
+    <svg
+      id="Capa_1"
+      enableBackground="new 0 0 512 512"
+      height={size}
+      viewBox="0 0 512 512"
+      width={size}
+      xmlns="http://www.w3.org/2000/svg"
+      fill="inherit"
+      stroke="currentColor"
+      className={className}
+    >
+      <g>
+        <path d="m464 86v368h-320v-448h240z" fill="#fff" />
+        <path d="m384 86h80v16h-80z" fill="#dce1e7" />
+        <path d="m144 438h320v16h-320z" fill="#dce1e7" />
+        <path d="m464 86h-80v-80" fill="#95a4b6" />
+        <g>
+          <circle cx="144" cy="410" fill="#b9c2cf" r="96" />
+          <path
+            d="m144 490c-50.325 0-91.6-38.724-95.666-88-.218 2.638-.334 5.305-.334 8 0 53.019 42.981 96 96 96s96-42.981 96-96c0-2.695-.117-5.362-.334-8-4.066 49.276-45.341 88-95.666 88z"
+            fill="#95a4b6"
+          />
+          <g fill="#012d4a">
+            <path d="m470 83.515-83.515-83.515h-248.485v308.181c-53.461 3.117-96 47.59-96 101.819 0 56.243 45.757 102 102 102 38.087 0 71.36-20.987 88.876-52h237.124zm-80-63.03 59.515 59.515h-59.515zm-246 479.515c-49.626 0-90-40.374-90-90s40.374-90 90-90 90 40.374 90 90-40.374 90-90 90zm94.653-52c4.734-11.75 7.347-24.575 7.347-38 0-54.229-42.539-98.702-96-101.819v-296.181h228v80h80v356z" />
+            <path d="m192 64h96v12h-96z" />
+            <path d="m192 96h64v12h-64z" />
+            <path d="m192 144h224v12h-224z" />
+            <path d="m192 176h224v12h-224z" />
+            <path d="m192 240h224v12h-224z" />
+            <path d="m192 272h160v12h-160z" />
+            <path d="m192 208h224v12h-224z" />
+            <path d="m336 320h80v12h-80z" />
+            <path d="m138 360.485v65.515h12v-65.515l21.757 21.758 8.486-8.486-36.243-36.242-36.243 36.242 8.486 8.486z" />
+            <path d="m178 452h-68v-26h-12v38h92v-38h-12z" />
+          </g>
+        </g>
+      </g>
+    </svg>
+  ),
+  fd_video: (size: number, className: string) => (
+    <svg
+      id="Capa_1"
+      enableBackground="new 0 0 512 512"
+      height={size}
+      viewBox="0 0 512 512"
+      width={size}
+      xmlns="http://www.w3.org/2000/svg"
+      fill="inherit"
+      stroke="currentColor"
+      className={className}
+    >
+      <g>
+        <path d="m122 6h320v448h-320z" fill="#b9c2cf" />
+        <path d="m122 438h320v16h-320z" fill="#95a4b6" />
+        <path d="m70 426v-368h320v448h-240z" fill="#fff" />
+        <path d="m118 186h224v144h-224z" fill="#dce1e7" />
+        <path d="m118 314h224v16h-224z" fill="#b9c2cf" />
+        <path d="m206 217.432 64.569 40.568-64.569 40.569z" fill="#fff" />
+        <path d="m150 490h240v16h-240z" fill="#dce1e7" />
+        <path d="m70 426h80v80" fill="#95a4b6" />
+        <g fill="#012d4a">
+          <path d="m448 0h-332v52h-52v376.485l83.515 83.515h248.485v-52h52zm-304 491.515-59.515-59.515h59.515zm240 8.485h-228v-80h-80v-356h308zm52-52h-40v-396h-268v-40h308z" />
+          <path d="m118 116h160v12h-160z" />
+          <path d="m118 148h128v12h-128z" />
+          <path d="m118 356h224v12h-224z" />
+          <path d="m118 388h224v12h-224z" />
+          <path d="m182 420h160v12h-160z" />
+          <path d="m348 180h-236v156h236zm-12 144h-212v-132h212z" />
+          <path d="m200 206.576v102.849l81.847-51.425zm12 21.712 47.29 29.712-47.29 29.712z" />
+        </g>
+      </g>
+    </svg>
+  ),
+  fd_document2: (size: number, className: string) => (
+    <svg
+      id="Capa_1"
+      enableBackground="new 0 0 512 512"
+      height={size}
+      viewBox="0 0 512 512"
+      width={size}
+      xmlns="http://www.w3.org/2000/svg"
+      fill="inherit"
+      stroke="currentColor"
+      className={className}
+    >
+      <g>
+        <path d="m208 266v-260h256v260" fill="#b9c2cf" />
+        <path d="m208 250h256v16h-256z" fill="#95a4b6" />
+        <path d="m432 506h-400v-320h112v32h288z" fill="#95a4b6" />
+        <path d="m32 490h448v16h-448z" fill="#72869e" />
+        <path d="m432 118v148h-256v-228h176z" fill="#fff" />
+        <g fill="#dce1e7">
+          <path d="m352 118h80v16h-80z" />
+          <path d="m176 250h256v16h-256z" />
+          <path d="m80 266h400v240h-400z" />
+        </g>
+        <path d="m80 490h400v16h-400z" fill="#b9c2cf" />
+        <path d="m368 442h80v32h-80z" fill="#fff" />
+        <path d="m432 118h-80v-80" fill="#95a4b6" />
+        <g fill="#012d4a">
+          <path d="m208 160h192v12h-192z" />
+          <path d="m208 224h144v12h-144z" />
+          <path d="m208 192h192v12h-192z" />
+          <path d="m208 112h64v12h-64z" />
+          <path d="m208 80h96v12h-96z" />
+          <path d="m470 260v-260h-268v32h-32v180h-20v-32h-124v332h460v-252zm-256-248h244v248h-20v-144.485l-83.515-83.515h-140.485zm144 40.485 59.515 59.515h-59.515zm-12-8.485v80h80v136h-244v-216zm-272 456h-36v-308h100v20h-74v12h106v36h-96zm400 0h-388v-228h388z" />
+          <path d="m454 436h-92v44h92zm-12 32h-68v-20h68z" />
+        </g>
+      </g>
+    </svg>
+  ),
+  fd_locked: (size: number, className: string) => (
+    <svg
+      id="Capa_1"
+      enableBackground="new 0 0 512 512"
+      height={size}
+      viewBox="0 0 512 512"
+      width={size}
+      xmlns="http://www.w3.org/2000/svg"
+      fill="inherit"
+      stroke="currentColor"
+      className={className}
+    >
+      <g>
+        <path d="m208 266v-260h256v260" fill="#b9c2cf" />
+        <path d="m208 250h256v16h-256z" fill="#95a4b6" />
+        <path d="m432 506h-400v-320h112v32h288z" fill="#95a4b6" />
+        <path d="m32 490h448v16h-448z" fill="#72869e" />
+        <path d="m432 118v148h-256v-228h176z" fill="#fff" />
+        <path d="m352 118h80v16h-80z" fill="#dce1e7" />
+        <path d="m176 250h256v16h-256z" fill="#dce1e7" />
+        <g>
+          <path d="m208 150h112v80h-112z" fill="#dce1e7" />
+          <path d="m304 150h16v80h-16z" fill="#b9c2cf" />
+          <path d="m208 150h112v32h-112z" fill="#95a4b6" />
+          <path d="m304 150h16v32h-16z" fill="#72869e" />
+        </g>
+        <path d="m80 266h400v240h-400z" fill="#dce1e7" />
+        <path d="m80 490h400v16h-400z" fill="#b9c2cf" />
+        <path d="m368 442h80v32h-80z" fill="#fff" />
+        <path d="m432 118h-80v-80" fill="#95a4b6" />
+        <g fill="#012d4a">
+          <path d="m326 144h-16v-50c0-7.72-6.28-14-14-14h-64c-7.72 0-14 6.28-14 14v50h-16v92h124zm-96-50c0-1.103.897-2 2-2h64c1.103 0 2 .897 2 2v50h-68zm84 62v20h-100v-20zm-100 68v-36h100v36z" />
+          <path d="m470 260v-260h-268v32h-32v180h-20v-32h-124v332h460v-252zm-256-248h244v248h-20v-144.485l-83.515-83.515h-140.485zm144 40.485 59.515 59.515h-59.515zm-12-8.485v80h80v136h-244v-216zm-272 456h-36v-308h100v20h-74v12h106v36h-96zm400 0h-388v-228h388z" />
+          <path d="m454 436h-92v44h92zm-12 32h-68v-20h68z" />
+        </g>
+      </g>
+    </svg>
+  ),
+  fd_typography: (size: number, className: string) => (
+    <svg
+      id="Capa_1"
+      enableBackground="new 0 0 512 512"
+      height={size}
+      viewBox="0 0 512 512"
+      width={size}
+      xmlns="http://www.w3.org/2000/svg"
+      fill="inherit"
+      stroke="currentColor"
+      className={className}
+    >
+      <g>
+        <path d="m122 6h320v448h-320z" fill="#b9c2cf" />
+        <path d="m122 438h320v16h-320z" fill="#95a4b6" />
+        <path d="m70 426v-368h320v448h-240z" fill="#fff" />
+        <path d="m150 490h240v16h-240z" fill="#dce1e7" />
+        <path d="m70 426h80v80" fill="#95a4b6" />
+        <g>
+          <path d="m118 170h224v160h-224z" fill="#dce1e7" />
+          <path d="m118 314h224v16h-224z" fill="#b9c2cf" />
+          <g fill="#012d4a">
+            <path d="m116 0v52h-52v376.485l83.515 83.515h248.485v-52h52v-460zm28 491.515-59.515-59.515h59.515zm240 8.485h-228v-80h-80v-356h308zm52-52h-40v-396h-268v-40h308z" />
+            <path d="m118 356h224v12h-224z" />
+            <path d="m182 388h160v12h-160z" />
+            <path d="m182 420h160v12h-160z" />
+            <path d="m188 208h36v84h-18v12h48v-12h-18v-84h36v10h12v-22h-108v22h12z" />
+            <path d="m348 164h-236v172h236zm-12 160h-212v-148h212z" />
+            <path d="m118 100h160v12h-160z" />
+            <path d="m118 132h128v12h-128z" />
+          </g>
+        </g>
+      </g>
+    </svg>
+  ),
+  fd_volume: (size: number, className: string) => (
+    <svg
+      id="Capa_1"
+      enableBackground="new 0 0 512 512"
+      height={size}
+      viewBox="0 0 512 512"
+      width={size}
+      xmlns="http://www.w3.org/2000/svg"
+      fill="inherit"
+      stroke="currentColor"
+      className={className}
+    >
+      <g>
+        <path d="m122 6h320v448h-320z" fill="#b9c2cf" />
+        <path d="m122 438h320v16h-320z" fill="#95a4b6" />
+        <path d="m70 426v-368h320v448h-240z" fill="#fff" />
+        <path d="m150 490h240v16h-240z" fill="#dce1e7" />
+        <path d="m70 426h80v80" fill="#95a4b6" />
+        <g>
+          <g>
+            <path d="m118 186h224v160h-224z" fill="#dce1e7" />
+            <path d="m118 330h224v16h-224z" fill="#b9c2cf" />
+            <path d="m198 282 32 32v-96l-32 32" fill="#95a4b6" />
+            <path d="m198 282 32 32v-20l-32-32z" fill="#72869e" />
+            <path d="m166 250h32v32h-32z" fill="#95a4b6" />
+            <path d="m166 266h32v16h-32z" fill="#72869e" />
+          </g>
+          <g fill="#012d4a">
+            <path d="m116 0v52h-52v376.485l83.515 83.515h248.485v-52h52v-460zm28 491.515-59.515-59.515h59.515zm240 8.485h-228v-80h-80v-356h308zm52-52h-40v-396h-268v-40h308z" />
+            <path d="m118 116h96v12h-96z" />
+            <path d="m118 148h96v12h-96z" />
+            <path d="m246 116h96v12h-96z" />
+            <path d="m246 148h96v12h-96z" />
+            <path d="m348 180h-236v172h236zm-12 160h-212v-148h212z" />
+            <path d="m236 328.485v-124.97l-40.485 40.485h-35.515v44h35.515zm-32-76 20-19.999v67.029l-20-19.999zm-12 23.515h-20v-20h20z" />
+            <path d="m268 266c0-12.131-9.869-22-22-22v12c5.514 0 10 4.486 10 10s-4.486 10-10 10v12c12.131 0 22-9.869 22-22z" />
+            <path d="m300 266c0-29.776-24.225-54-54-54v12c23.159 0 42 18.841 42 42s-18.841 42-42 42v12c29.775 0 54-24.224 54-54z" />
+            <path d="m118 372h224v12h-224z" />
+            <path d="m182 404h160v12h-160z" />
+            <path d="m182 436h160v12h-160z" />
+          </g>
+        </g>
+      </g>
+    </svg>
+  ),
+  fd_warning: (size: number, className: string) => (
+    <svg
+      id="Capa_1"
+      enableBackground="new 0 0 512 512"
+      height={size}
+      viewBox="0 0 512 512"
+      width={size}
+      xmlns="http://www.w3.org/2000/svg"
+      fill="inherit"
+      stroke="currentColor"
+      className={className}
+    >
+      <g>
+        <path d="m464 86v368h-320v-448h240z" fill="#fff" />
+        <path d="m144 438h320v16h-320z" fill="#dce1e7" />
+        <path d="m384 86h80v16h-80z" fill="#dce1e7" />
+        <path d="m464 86h-80v-80" fill="#95a4b6" />
+        <g>
+          <circle cx="144" cy="410" fill="#b9c2cf" r="96" />
+          <path
+            d="m144 490c-50.325 0-91.6-38.725-95.665-88-.218 2.638-.334 5.305-.334 8 0 53.019 42.981 96 96 96s96-42.981 96-96c0-2.695-.117-5.362-.335-8-4.066 49.275-45.341 88-95.666 88z"
+            fill="#95a4b6"
+          />
+          <g>
+            <path d="m132 346h24v80h-24z" fill="#fff" />
+            <path d="m132 450h24v24h-24z" fill="#fff" />
+            <g fill="#012d4a">
+              <path d="m386.485 0h-248.485v308.181c-53.46 3.117-96 47.591-96 101.819 0 56.243 45.757 102 102 102 38.087 0 71.36-20.987 88.876-52h237.124v-376.485zm3.515 20.485 59.515 59.515h-59.515zm-246 479.515c-49.626 0-90-40.374-90-90s40.374-90 90-90 90 40.374 90 90-40.374 90-90 90zm314-52h-219.347c4.734-11.75 7.347-24.575 7.347-38 0-54.228-42.54-98.702-96-101.819v-296.181h228v80h80z" />
+              <path d="m192 64h160v12h-160z" />
+              <path d="m192 96h128v12h-128z" />
+              <path d="m192 176h192v12h-192z" />
+              <path d="m192 144h224v12h-224z" />
+              <path d="m192 256h192v12h-192z" />
+              <path d="m192 224h224v12h-224z" />
+              <path d="m256 336h128v12h-128z" />
+              <path d="m224 304h192v12h-192z" />
+              <path d="m126 432h36v-92h-36zm12-80h12v68h-12z" />
+              <path d="m126 480h36v-36h-36zm12-24h12v12h-12z" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </svg>
+  ),
+  fd_save: (size: number, className: string) => (
+    <svg
+      id="Capa_1"
+      enableBackground="new 0 0 512 512"
+      height={size}
+      viewBox="0 0 512 512"
+      width={size}
+      xmlns="http://www.w3.org/2000/svg"
+      fill="inherit"
+      stroke="currentColor"
+      className={className}
+    >
+      <g>
+        <path d="m122 6h320v448h-320z" fill="#b9c2cf" />
+        <path d="m122 438h320v16h-320z" fill="#95a4b6" />
+        <path d="m70 426v-368h320v448h-240z" fill="#fff" />
+        <path d="m150 490h240v16h-240z" fill="#dce1e7" />
+        <path d="m70 426h80v80" fill="#95a4b6" />
+        <path d="m326 234v144h-192v-192h144z" fill="#dce1e7" />
+        <path d="m134 362h192v16h-192z" fill="#b9c2cf" />
+        <path d="m166 378v-96h128v96" fill="#fff" />
+        <path d="m165.999 378v-16h128v16" fill="#dce1e7" />
+        <path d="m278 186v48h-96v-48" fill="#95a4b6" />
+        <path d="m278 186v48h-32v-48" fill="#fff" />
+        <g fill="#012d4a">
+          <path d="m116 0v52h-52v376.485l83.515 83.515h248.485v-52h52v-460zm28 491.515-59.515-59.515h59.515zm240 8.485h-228v-80h-80v-356h308zm52-52h-40v-396h-268v-40h308z" />
+          <path d="m190 340h80v12h-80z" />
+          <path d="m190 308h80v12h-80z" />
+          <path d="m128 384h204v-152.485l-51.515-51.515h-152.485zm160-12h-116v-84h116zm-36-180h20v36h-20zm-64 0h52v36h-52zm-48 0h36v48h108v-39.515l36 36v135.515h-20v-96h-140v96h-20z" />
+          <path d="m182 404h160v12h-160z" />
+          <path d="m214 436h128v12h-128z" />
+          <path d="m118 116h160v12h-160z" />
+          <path d="m118 148h128v12h-128z" />
+        </g>
+      </g>
+    </svg>
+  ),
+  fd_report: (size: number, className: string) => (
+    <svg
+      id="Capa_1"
+      enableBackground="new 0 0 512 512"
+      height={size}
+      viewBox="0 0 512 512"
+      width={size}
+      xmlns="http://www.w3.org/2000/svg"
+      fill="inherit"
+      stroke="currentColor"
+      className={className}
+    >
+      <g>
+        <path d="m96 74h320v432h-320z" fill="#b9c2cf" />
+        <path d="m96 490h320v16h-320z" fill="#95a4b6" />
+        <g>
+          <path d="m128 122h256v352h-256z" fill="#fff" />
+          <path d="m128 458h256v16h-256z" fill="#dce1e7" />
+        </g>
+        <path d="m224 38v-32h64v32h32v52h-128v-52z" fill="#dce1e7" />
+        <path d="m192 74h128v16h-128z" fill="#b9c2cf" />
+        <g fill="#012d4a">
+          <path d="m122 480h268v-364h-268zm12-352h244v340h-244z" />
+          <path d="m160 180h112v12h-112z" />
+          <path d="m160 212h80v12h-80z" />
+          <path d="m160 260h192v12h-192z" />
+          <path d="m160 292h192v12h-192z" />
+          <path d="m160 356h192v12h-192z" />
+          <path d="m192 388h128v12h-128z" />
+          <path d="m160 324h192v12h-192z" />
+          <path d="m326 68v-36h-32v-32h-76v32h-32v36h-96v444h332v-444zm-128-24h32v-32h52v32h32v40h-116zm212 456h-308v-420h84v16h140v-16h84z" />
+        </g>
+      </g>
+    </svg>
+  ),
+  fd_medical_report: (size: number, className: string) => (
+    <svg
+      id="Capa_1"
+      enableBackground="new 0 0 512 512"
+      height={size}
+      viewBox="0 0 512 512"
+      width={size}
+      xmlns="http://www.w3.org/2000/svg"
+      fill="inherit"
+      stroke="currentColor"
+      className={className}
+    >
+      <g>
+        <path d="m122 454v-448h320v144l-20 20v284h-32" fill="#b9c2cf" />
+        <path d="m122 438h300v16h-300z" fill="#95a4b6" />
+        <g>
+          <path d="m70 58h320v448h-320z" fill="#fff" />
+          <path d="m70 490h320v16h-320z" fill="#dce1e7" />
+          <path
+            d="m358 58h32v64h-32z"
+            fill="#dce1e7"
+            transform="matrix(-1 0 0 -1 748 180)"
+          />
+          <path
+            d="m358 106h32v16h-32z"
+            fill="#b9c2cf"
+            transform="matrix(-1 0 0 -1 748 228)"
+          />
+          <path
+            d="m358 122h32v64h-32z"
+            fill="#b9c2cf"
+            transform="matrix(-1 0 0 -1 748 308)"
+          />
+          <path
+            d="m358 170h32v16h-32z"
+            fill="#95a4b6"
+            transform="matrix(-1 0 0 -1 748 356)"
+          />
+          <path
+            d="m358 186h32v64h-32z"
+            fill="#95a4b6"
+            transform="matrix(-1 0 0 -1 748 436)"
+          />
+          <path
+            d="m358 234h32v16h-32z"
+            fill="#72869e"
+            transform="matrix(-1 0 0 -1 748 484)"
+          />
+          <circle cx="230" cy="194" fill="#dce1e7" r="88" />
+          <path
+            d="m230 266c-45.904 0-83.591-35.149-87.634-80-.238 2.635-.366 5.303-.366 8 0 48.601 39.399 88 88 88s88-39.399 88-88c0-2.697-.128-5.365-.366-8-4.043 44.851-41.73 80-87.634 80z"
+            fill="#b9c2cf"
+          />
+          <path
+            d="m286 178h-40v-40h-32v40h-40v32h40v40h32v-40h40z"
+            fill="#95a4b6"
+          />
+          <g fill="#012d4a">
+            <path d="m116 0v52h-52v460h332v-52h32v-287.515l20-20v-152.485zm268 500h-308v-436h276v192h32zm0-256h-20v-52h20zm0-64h-20v-52h20zm0-64h-20v-52h20zm52 31.515-20 20v280.485h-20v-396h-268v-40h308z" />
+            <path d="m230 288c51.832 0 94-42.168 94-94s-42.168-94-94-94c-51.831 0-94 42.168-94 94s42.169 94 94 94zm0-176c45.215 0 82 36.785 82 82s-36.785 82-82 82-82-36.785-82-82 36.785-82 82-82z" />
+            <path d="m208 256h44v-40h40v-44h-40v-40h-44v40h-40v44h40zm-28-52v-20h40v-40h20v40h40v20h-40v40h-20v-40z" />
+            <path d="m118 324h224v12h-224z" />
+            <path d="m118 356h224v12h-224z" />
+            <path d="m118 388h224v12h-224z" />
+            <path d="m150 420h160v12h-160z" />
+          </g>
+        </g>
+      </g>
+    </svg>
+  ),
+  fd_financial_report: (size: number, className: string) => (
+    <svg
+      id="Capa_1"
+      enableBackground="new 0 0 512 512"
+      height={size}
+      viewBox="0 0 512 512"
+      width={size}
+      xmlns="http://www.w3.org/2000/svg"
+      fill="inherit"
+      stroke="currentColor"
+      className={className}
+    >
+      <g>
+        <g>
+          <path d="m464 86v368h-320v-448h240z" fill="#fff" />
+          <path d="m384 86h80v16h-80z" fill="#dce1e7" />
+          <path
+            d="m144 438h320v16h-320z"
+            fill="#dce1e7"
+            transform="matrix(-1 0 0 -1 608 892)"
+          />
+          <path d="m464 86h-80v-80" fill="#95a4b6" />
+          <g>
+            <path d="m192 134h224v192h-224z" fill="#dce1e7" />
+            <path d="m192 310h224v16h-224z" fill="#b9c2cf" />
+            <g>
+              <circle cx="304" cy="230" fill="#95a4b6" r="64" />
+              <path
+                d="m304 278c-32.635 0-59.545-24.432-63.484-56-.327 2.623-.516 5.289-.516 8 0 35.346 28.654 64 64 64s64-28.654 64-64c0-2.711-.188-5.377-.516-8-3.939 31.568-30.849 56-63.484 56z"
+                fill="#72869e"
+              />
+            </g>
+          </g>
+        </g>
+        <g>
+          <path d="m48 410h96v96h-96z" fill="#b9c2cf" />
+          <path d="m128 410h16v96h-16z" fill="#95a4b6" />
+          <path d="m240 442h96v64h-96z" fill="#b9c2cf" />
+          <path d="m320 442h16v64h-16z" fill="#95a4b6" />
+          <path d="m144 378h96v128h-96z" fill="#b9c2cf" />
+          <path d="m224 378h16v128h-16z" fill="#95a4b6" />
+        </g>
+        <g fill="#012d4a">
+          <path d="m310 190h-12v10h-16v36h32v12h-34v12h18v10h12v-10h16v-36h-32v-12h34v-12h-18z" />
+          <path d="m304 160c-38.598 0-70 31.402-70 70s31.402 70 70 70 70-31.402 70-70-31.402-70-70-70zm0 128c-31.981 0-58-26.019-58-58s26.019-58 58-58 58 26.019 58 58-26.019 58-58 58z" />
+          <path d="m186 332h236v-204h-236zm12-192h212v180h-212z" />
+          <path d="m256 352h160v12h-160z" />
+          <path d="m272 384h144v12h-144z" />
+          <path d="m192 64h160v12h-160z" />
+          <path d="m192 96h128v12h-128z" />
+          <path d="m470 83.515-83.515-83.515h-248.485v404h-96v108h300v-52h128zm-80-63.03 59.515 59.515h-59.515zm-240 363.515h84v20h-84zm180 84h-84v-20h84zm-96 0h-84v-20h84zm0 12v20h-84v-20zm-84-44v-20h84v20zm-96-20h84v20h-84zm84 32v20h-84v-20zm-84 32h84v20h-84zm192 20v-20h84v20zm96-52v-12h-96v-64h-96v-360h228v80h80v356z" />
+        </g>
+      </g>
+    </svg>
+  ),
+  fd_table: (size: number, className: string) => (
+    <svg
+      id="Capa_1"
+      enableBackground="new 0 0 512 512"
+      height={size}
+      viewBox="0 0 512 512"
+      width={size}
+      xmlns="http://www.w3.org/2000/svg"
+      fill="inherit"
+      stroke="currentColor"
+      className={className}
+    >
+      <g>
+        <path d="m122 6h320v448h-320z" fill="#b9c2cf" />
+        <path d="m122 438h320v16h-320z" fill="#95a4b6" />
+        <path d="m390 138v368h-320v-448h240z" fill="#fff" />
+        <path d="m310 138h80v16h-80z" fill="#dce1e7" />
+        <path d="m70 490h320v16h-320z" fill="#dce1e7" />
+        <path d="m390 138h-80v-80" fill="#95a4b6" />
+        <g>
+          <path d="m118 218h224v160h-224z" fill="#dce1e7" />
+          <path d="m118 186h224v32h-224z" fill="#95a4b6" />
+          <g fill="#012d4a">
+            <path d="m448 0h-332v52h-52v460h332v-52h52zm-372 500v-436h228v80h80v356zm240-427.515 59.515 59.515h-59.515zm120 375.515h-40v-312.485l-83.515-83.515h-184.485v-40h308z" />
+            <path d="m118 116h160v12h-160z" />
+            <path d="m118 148h128v12h-128z" />
+            <path d="m118 192h42v20h-42v12h42v148h-42v12h224v-12h-42v-148h42v-12h-42v-20h42v-12h-224zm170 180h-116v-148h116zm0-160h-116v-20h116z" />
+            <path d="m118 404h104v12h-104z" />
+            <path d="m238 404h104v12h-104z" />
+            <path d="m118 436h104v12h-104z" />
+            <path d="m238 436h104v12h-104z" />
+          </g>
+        </g>
+      </g>
+    </svg>
+  ),
+  fd_design: (size: number, className: string) => (
+    <svg
+      id="Capa_1"
+      enableBackground="new 0 0 512 512"
+      height={size}
+      viewBox="0 0 512 512"
+      width={size}
+      xmlns="http://www.w3.org/2000/svg"
+      fill="inherit"
+      stroke="currentColor"
+      className={className}
+    >
+      <g>
+        <path d="m122 6h320v448h-320z" fill="#b9c2cf" />
+        <path
+          d="m122 438h320v16h-320z"
+          fill="#95a4b6"
+          transform="matrix(-1 0 0 -1 564 892)"
+        />
+        <path d="m70 426v-368h320v448h-240z" fill="#fff" />
+        <path d="m150 490h240v16h-240z" fill="#dce1e7" />
+        <path d="m70 426h80v80" fill="#95a4b6" />
+        <g>
+          <path d="m118 186h224v160h-224z" fill="#dce1e7" />
+          <path d="m118 330h224v16h-224z" fill="#b9c2cf" />
+          <path d="m214 346v-54h32v54" fill="#b9c2cf" />
+          <path d="m214 346v-16h32v16" fill="#95a4b6" />
+          <path d="m214 314v-22h32v22" fill="#fff" />
+          <path d="m246 292 16-16-32-32-32 32 16 16" fill="#95a4b6" />
+          <path d="m150 218h32v32h-32z" fill="#fff" />
+          <path d="m278 218h32v32h-32z" fill="#fff" />
+          <g fill="#012d4a">
+            <path d="m448 0h-332v52h-52v376.485l83.515 83.515h248.485v-52h52zm-304 491.515-59.515-59.515h59.515zm240 8.485h-228v-80h-80v-356h308zm52-52h-40v-396h-268v-40h308z" />
+            <path d="m118 116h96v12h-96z" />
+            <path d="m118 148h96v12h-96z" />
+            <path d="m246 116h96v12h-96z" />
+            <path d="m246 148h96v12h-96z" />
+            <path d="m348 180h-236v172h236zm-112 96v-17.515l17.515 17.515-9.999 10h-27.031l-9.999-10 17.514-17.515v17.515zm4 32h-20v-10h20zm-20 12h20v20h-20zm116 20h-84v-45.516l18.485-18.484-36-36h37.515v16h44v-44h-44v16h-84v-16h-44v44h44v-16h37.515l-36 36 18.485 18.484v45.516h-84v-148h212zm-52-96v-20h20v20zm-108-20v20h-20v-20z" />
+            <path d="m118 372h224v12h-224z" />
+            <path d="m182 404h160v12h-160z" />
+            <path d="m182 436h160v12h-160z" />
+          </g>
+        </g>
+      </g>
+    </svg>
+  ),
+  fd_copy: (size: number, className: string) => (
+    <svg
+      id="Capa_1"
+      enableBackground="new 0 0 512 512"
+      height={size}
+      viewBox="0 0 512 512"
+      width={size}
+      xmlns="http://www.w3.org/2000/svg"
+      fill="inherit"
+      stroke="currentColor"
+      className={className}
+    >
+      <g>
+        <g>
+          <path d="m262 506h-256v-240h96v32h160z" fill="#95a4b6" />
+          <path d="m6 490h256v16h-256z" fill="#72869e" />
+          <path d="m38 330h256v176h-256z" fill="#dce1e7" />
+          <path d="m38 490h256v16h-256z" fill="#b9c2cf" />
+          <path d="m198 442h64v32h-64z" fill="#fff" />
+        </g>
+        <g>
+          <path d="m506 54v208h-192v-256h144z" fill="#fff" />
+          <path d="m314 246h192v16h-192z" fill="#dce1e7" />
+          <path d="m458 54h48v16h-48z" fill="#dce1e7" />
+          <path d="m506 54h-48v-48" fill="#95a4b6" />
+          <path d="m346 54h64v32h-64z" fill="#b9c2cf" />
+        </g>
+        <g fill="#012d4a">
+          <path d="m180.243 244.242 69.757-69.757v33.515h12v-54h-54v12h33.515l-69.758 69.758z" />
+          <path d="m268 436h-76v44h76zm-12 32h-52v-20h52z" />
+          <path d="m268 292h-160v-32h-108v252h300v-188h-32zm-236 208h-20v-228h84v20h-58v12h218v20h-224zm256-164v164h-244v-164z" />
+          <path d="m460.485 0h-152.485v268h204v-216.485zm3.515 20.485 27.515 27.515h-27.515zm36 235.515h-180v-244h132v48h48z" />
+          <path d="m416 48h-76v44h76zm-12 32h-52v-20h52z" />
+          <path d="m346 144h128v12h-128z" />
+          <path d="m346 112h128v12h-128z" />
+          <path d="m346 176h128v12h-128z" />
+          <path d="m346 208h96v12h-96z" />
+          <path d="m427.757 299.758-69.757 69.757v-33.515h-12v54h54v-12h-33.515l69.758-69.758z" />
+        </g>
+      </g>
+    </svg>
+  ),
+  fd_document3: (size: number, className: string) => (
+    <svg
+      id="Capa_1"
+      enableBackground="new 0 0 512 512"
+      height={size}
+      viewBox="0 0 512 512"
+      width={size}
+      xmlns="http://www.w3.org/2000/svg"
+      fill="inherit"
+      stroke="currentColor"
+      className={className}
+    >
+      <g>
+        <path d="m122 6h320v448h-320z" fill="#b9c2cf" />
+        <path d="m122 438h320v16h-320z" fill="#95a4b6" />
+        <path d="m390 138v368h-320v-448h240z" fill="#fff" />
+        <path d="m310 138h80v16h-80z" fill="#dce1e7" />
+        <path d="m70 490h320v16h-320z" fill="#dce1e7" />
+        <path d="m390 138h-80v-80" fill="#95a4b6" />
+        <g>
+          <path d="m118 138h80v96h-80z" fill="#b9c2cf" />
+          <path d="m262 330h80v96h-80z" fill="#b9c2cf" />
+          <g fill="#012d4a">
+            <path d="m448 0h-332v52h-52v460h332v-52h52zm-372 500v-436h228v80h80v356zm240-427.515 59.515 59.515h-59.515zm120 375.515h-40v-312.485l-83.515-83.515h-184.485v-40h308z" />
+            <path d="m230 196h112v12h-112z" />
+            <path d="m230 164h112v12h-112z" />
+            <path d="m230 228h112v12h-112z" />
+            <path d="m118 292h224v12h-224z" />
+            <path d="m118 324h112v12h-112z" />
+            <path d="m118 356h112v12h-112z" />
+            <path d="m118 388h112v12h-112z" />
+            <path d="m118 420h112v12h-112z" />
+            <path d="m118 260h224v12h-224z" />
+            <path d="m204 132h-92v108h92zm-12 85.428-61.19-73.428h61.19zm-68-62.856 61.19 73.428h-61.19z" />
+            <path d="m256 432h92v-108h-92zm12-85.428 61.19 73.428h-61.19zm68 62.856-61.19-73.428h61.19z" />
+          </g>
+        </g>
+      </g>
+    </svg>
+  ),
+  fd_music: (size: number, className: string) => (
+    <svg
+      id="Capa_1"
+      enableBackground="new 0 0 512 512"
+      height={size}
+      viewBox="0 0 512 512"
+      width={size}
+      xmlns="http://www.w3.org/2000/svg"
+      fill="inherit"
+      stroke="currentColor"
+      className={className}
+    >
+      <g>
+        <path d="m122 6h320v448h-320z" fill="#b9c2cf" />
+        <path d="m122 438h320v16h-320z" fill="#95a4b6" />
+        <path d="m70 426v-368h320v448h-240z" fill="#fff" />
+        <path d="m150 490h240v16h-240z" fill="#dce1e7" />
+        <path d="m70 426h80v80" fill="#95a4b6" />
+        <g>
+          <g>
+            <path d="m118 186h224v160h-224z" fill="#dce1e7" />
+            <path d="m118 330h224v16h-224z" fill="#b9c2cf" />
+            <g fill="#95a4b6">
+              <path d="m198 218h96v32h-96z" />
+              <path d="m166 282h32v32h-32z" />
+              <path d="m262 282h32v32h-32z" />
+            </g>
+          </g>
+          <g fill="#012d4a">
+            <path d="m116 0v52h-52v376.485l83.515 83.515h248.485v-52h52v-460zm28 491.515-59.515-59.515h59.515zm240 8.485h-228v-80h-80v-356h308zm52-52h-40v-396h-268v-40h308z" />
+            <path d="m118 116h96v12h-96z" />
+            <path d="m118 148h96v12h-96z" />
+            <path d="m246 116h96v12h-96z" />
+            <path d="m246 148h96v12h-96z" />
+            <path d="m348 180h-236v172h236zm-12 160h-212v-148h212z" />
+            <path d="m204 256h84v20h-32v44h44v-108h-108v64h-32v44h44zm84 52h-20v-20h20zm-84-84h84v20h-84zm-12 84h-20v-20h20z" />
+            <path d="m118 372h224v12h-224z" />
+            <path d="m182 404h160v12h-160z" />
+            <path d="m182 436h160v12h-160z" />
+          </g>
+        </g>
+      </g>
+    </svg>
+  ),
+  fd_certification: (size: number, className: string) => (
+    <svg
+      id="Capa_1"
+      enableBackground="new 0 0 512 512"
+      height={size}
+      viewBox="0 0 512 512"
+      width={size}
+      xmlns="http://www.w3.org/2000/svg"
+      fill="inherit"
+      stroke="currentColor"
+      className={className}
+    >
+      <g>
+        <path d="m448 86v368h-320v-448h240z" fill="#fff" />
+        <path d="m368 86h80v16h-80z" fill="#dce1e7" />
+        <path d="m128 438h320v16h-320z" fill="#dce1e7" />
+        <path d="m448 86h-80v-80" fill="#95a4b6" />
+        <g>
+          <path d="m168 390v116h-8l-32-32-32 32h-8v-116" fill="#95a4b6" />
+          <path
+            d="m88 411.271c11.77 6.811 25.423 10.729 40 10.729s28.23-3.918 40-10.729v-21.271h-80z"
+            fill="#72869e"
+          />
+          <circle cx="128" cy="342" fill="#dce1e7" r="64" />
+          <path
+            d="m128 390c-32.635 0-59.545-24.433-63.484-56-.327 2.623-.516 5.289-.516 8 0 35.346 28.654 64 64 64s64-28.654 64-64c0-2.711-.188-5.377-.516-8-3.939 31.567-30.849 56-63.484 56z"
+            fill="#b9c2cf"
+          />
+          <circle cx="128" cy="342" fill="#b9c2cf" r="32" />
+          <g fill="#012d4a">
+            <path d="m370.485 0h-248.485v272.274c-35.797 3.056-64 33.15-64 69.726 0 21 9.308 39.854 24 52.696v117.304h16.485l29.515-29.515 29.515 29.515h16.485v-52h280v-376.485zm3.515 20.485 59.515 59.515h-59.515zm-212 479.03-34-34-34 34v-96.356c10.075 5.623 21.666 8.842 34 8.842s23.925-3.219 34-8.842zm-34-99.515c-31.981 0-58-26.019-58-58s26.019-58 58-58 58 26.019 58 58-26.019 58-58 58zm314 48h-268v-53.304c14.692-12.842 24-31.696 24-52.696 0-36.575-28.203-66.669-64-69.726v-260.274h228v80h80z" />
+            <path d="m176 64h96v12h-96z" />
+            <path d="m176 96h64v12h-64z" />
+            <path d="m176 144h224v12h-224z" />
+            <path d="m176 176h224v12h-224z" />
+            <path d="m176 240h224v12h-224z" />
+            <path d="m208 272h160v12h-160z" />
+            <path d="m176 208h224v12h-224z" />
+            <path d="m304 320h96v12h-96z" />
+            <path d="m336 352h64v12h-64z" />
+            <path d="m128 304c-20.953 0-38 17.047-38 38s17.047 38 38 38 38-17.047 38-38-17.047-38-38-38zm0 64c-14.337 0-26-11.663-26-26s11.663-26 26-26 26 11.663 26 26-11.663 26-26 26z" />
+          </g>
+        </g>
+      </g>
+    </svg>
+  ),
+  fd_coding: (size: number, className: string) => (
+    <svg
+      id="Capa_1"
+      enableBackground="new 0 0 512 512"
+      height={size}
+      viewBox="0 0 512 512"
+      width={size}
+      xmlns="http://www.w3.org/2000/svg"
+      fill="inherit"
+      stroke="currentColor"
+      className={className}
+    >
+      <g>
+        <path d="m464 86v368h-320v-448h240z" fill="#fff" />
+        <path d="m144 438h320v16h-320z" fill="#dce1e7" />
+        <path d="m384 86h80v16h-80z" fill="#dce1e7" />
+        <path d="m464 86h-80v-80" fill="#95a4b6" />
+        <g>
+          <circle cx="144" cy="410" fill="#b9c2cf" r="96" />
+          <path
+            d="m144 490c-50.325 0-91.6-38.725-95.665-88-.218 2.638-.334 5.306-.334 8 0 53.02 42.981 96 96 96s96-42.98 96-96c0-2.694-.117-5.362-.335-8-4.066 49.275-45.341 88-95.666 88z"
+            fill="#95a4b6"
+          />
+          <g fill="#012d4a">
+            <path d="m470 83.515-83.515-83.515h-248.485v308.181c-53.46 3.117-96 47.591-96 101.819 0 56.243 45.757 102 102 102 38.087 0 71.36-20.987 88.876-52h237.124zm-80-63.03 59.515 59.515h-59.515zm-246 479.515c-49.626 0-90-40.374-90-90s40.374-90 90-90 90 40.374 90 90-40.374 90-90 90zm94.653-52c4.734-11.75 7.347-24.575 7.347-38 0-54.228-42.54-98.702-96-101.819v-296.181h228v80h80v356z" />
+            <path d="m240 64h112v12h-112z" />
+            <path d="m192 64h32v12h-32z" />
+            <path d="m240 96h80v12h-80z" />
+            <path d="m192 96h32v12h-32z" />
+            <path d="m288 128h128v12h-128z" />
+            <path d="m240 128h32v12h-32z" />
+            <path d="m240 160h128v12h-128z" />
+            <path d="m192 160h32v12h-32z" />
+            <path d="m240 272h176v12h-176z" />
+            <path d="m288 240h80v12h-80z" />
+            <path d="m192 272h32v12h-32z" />
+            <path d="m240 208h176v12h-176z" />
+            <path d="m192 208h32v12h-32z" />
+            <path d="m240 240h32v12h-32z" />
+            <path d="m288 304h80v12h-80z" />
+            <path d="m240 304h32v12h-32z" />
+            <path d="m240 336h32v12h-32z" />
+            <path d="m288 336h128v12h-128z" />
+            <path d="m107.758 373.758-36.243 36.242 36.243 36.242 8.484-8.484-27.757-27.758 27.757-27.758z" />
+            <path d="m180.242 373.758-8.484 8.484 27.757 27.758-27.757 27.758 8.484 8.484 36.243-36.242z" />
+            <path
+              d="m92 404h104v11.999h-104z"
+              transform="matrix(.385 -.923 .923 .385 -289.846 385.227)"
+            />
+          </g>
+        </g>
+      </g>
+    </svg>
+  ),
+  fd_key: (size: number, className: string) => (
+    <svg
+      id="Capa_1"
+      enableBackground="new 0 0 512 512"
+      height={size}
+      viewBox="0 0 512 512"
+      width={size}
+      xmlns="http://www.w3.org/2000/svg"
+      fill="inherit"
+      stroke="currentColor"
+      className={className}
+    >
+      <g>
+        <path d="m122 6h320v448h-320z" fill="#b9c2cf" />
+        <path d="m122 438h320v16h-320z" fill="#95a4b6" />
+        <path d="m70 426v-368h320v448h-240z" fill="#fff" />
+        <path d="m150 490h240v16h-240z" fill="#dce1e7" />
+        <path d="m70 426h80v80" fill="#95a4b6" />
+        <g>
+          <g>
+            <path d="m242 254 68 68-24 24-68-68" fill="#95a4b6" />
+            <circle cx="198" cy="234" fill="#b9c2cf" r="48" />
+            <path
+              d="m198 266c-23.783 0-43.513-17.3-47.324-40-.437 2.603-.676 5.273-.676 8 0 26.51 21.49 48 48 48s48-21.49 48-48c0-2.727-.239-5.397-.676-8-3.811 22.7-23.541 40-47.324 40z"
+              fill="#95a4b6"
+            />
+            <circle cx="192" cy="228" fill="#fff" r="16" />
+          </g>
+          <g fill="#012d4a">
+            <path d="m448 0h-332v52h-52v376.485l83.515 83.515h248.485v-52h52zm-304 491.515-59.515-59.515h59.515zm240 8.485h-228v-80h-80v-356h308zm52-52h-40v-396h-268v-40h308z" />
+            <path d="m198 180c-29.776 0-54 24.225-54 54s24.224 54 54 54c6.426 0 12.591-1.133 18.313-3.202l69.687 69.687 32.485-32.485-69.688-69.688c2.07-5.721 3.203-11.886 3.203-18.312 0-29.775-24.224-54-54-54zm-42 54c0-23.159 18.841-42 42-42s42 18.841 42 42-18.841 42-42 42-42-18.841-42-42zm109.515 52-7.758 7.758 8.485 8.484 7.757-7.757 9.515 9.515-7.758 7.758 8.485 8.484 7.757-7.757 9.515 9.515-15.513 15.515-58.39-58.39c6.167-4.06 11.454-9.348 15.515-15.515z" />
+            <path d="m192 206c-12.131 0-22 9.869-22 22s9.869 22 22 22 22-9.869 22-22-9.869-22-22-22zm0 32c-5.514 0-10-4.486-10-10s4.486-10 10-10 10 4.486 10 10-4.486 10-10 10z" />
+            <path d="m118 372h224v12h-224z" />
+            <path d="m182 404h160v12h-160z" />
+            <path d="m182 436h160v12h-160z" />
+            <path d="m118 116h160v12h-160z" />
+            <path d="m118 148h128v12h-128z" />
+          </g>
+        </g>
+      </g>
+    </svg>
+  ),
+  fd_database: (size: number, className: string) => (
+    <svg
+      id="Capa_1"
+      enableBackground="new 0 0 512 512"
+      height={size}
+      viewBox="0 0 512 512"
+      width={size}
+      xmlns="http://www.w3.org/2000/svg"
+      fill="inherit"
+      stroke="currentColor"
+      className={className}
+    >
+      <g>
+        <path d="m208 266v-260h256v260" fill="#b9c2cf" />
+        <path d="m208 250h256v16h-256z" fill="#95a4b6" />
+        <path d="m432 506h-400v-320h112v32h288z" fill="#95a4b6" />
+        <path d="m32 490h448v16h-448z" fill="#72869e" />
+        <path d="m432 118v148h-256v-228h176z" fill="#fff" />
+        <path d="m352 118h80v16h-80z" fill="#dce1e7" />
+        <path d="m176 250h256v16h-256z" fill="#dce1e7" />
+        <g>
+          <path d="m208 142h112v96h-112z" fill="#b9c2cf" />
+          <path d="m304 142h16v96h-16z" fill="#95a4b6" />
+        </g>
+        <path d="m80 266h400v240h-400z" fill="#dce1e7" />
+        <path d="m80 490h400v16h-400z" fill="#b9c2cf" />
+        <path d="m368 442h80v32h-80z" fill="#fff" />
+        <path d="m432 118h-80v-80" fill="#95a4b6" />
+        <g fill="#012d4a">
+          <path d="m208 104h64v12h-64z" />
+          <path d="m208 72h96v12h-96z" />
+          <path d="m326 136h-124v108h124zm-12 12v20h-68v-10h-12v10h-20v-20zm-80 42v10h-20v-20h100v20h-68v-10zm12 42v-10h-12v10h-20v-20h100v20z" />
+          <path d="m470 260v-260h-268v32h-32v180h-20v-32h-124v332h460v-252zm-256-248h244v248h-20v-144.485l-83.515-83.515h-140.485zm144 40.485 59.515 59.515h-59.515zm-12-8.485v80h80v136h-244v-216zm-272 456h-36v-308h100v20h-74v12h106v36h-96zm400 0h-388v-228h388z" />
+          <path d="m454 436h-92v44h92zm-12 32h-68v-20h68z" />
+        </g>
+      </g>
+    </svg>
+  ),
+  fd_sheet: (size: number, className: string) => (
+    <svg
+      id="Capa_1"
+      enableBackground="new 0 0 512 512"
+      height={size}
+      viewBox="0 0 512 512"
+      width={size}
+      xmlns="http://www.w3.org/2000/svg"
+      fill="inherit"
+      stroke="currentColor"
+      className={className}
+    >
+      <g>
+        <path d="m208 266v-260h256v260" fill="#b9c2cf" />
+        <path d="m208 250h256v16h-256z" fill="#95a4b6" />
+        <path d="m432 506h-400v-320h112v32h288z" fill="#95a4b6" />
+        <path d="m32 490h448v16h-448z" fill="#72869e" />
+        <path d="m432 118v148h-256v-228h176z" fill="#fff" />
+        <g fill="#dce1e7">
+          <path d="m352 118h80v16h-80z" />
+          <path d="m176 250h256v16h-256z" />
+          <path d="m80 266h400v240h-400z" />
+        </g>
+        <path d="m80 490h400v16h-400z" fill="#b9c2cf" />
+        <path d="m368 442h80v32h-80z" fill="#fff" />
+        <path d="m432 118h-80v-80" fill="#95a4b6" />
+        <g>
+          <path d="m208 144h176v96h-176z" fill="#fff" />
+          <path d="m288 144h96v32h-96z" fill="#95a4b6" />
+          <path d="m208 176h176v64h-176z" fill="#dce1e7" />
+          <path d="m208 176h32v64h-32z" fill="#95a4b6" />
+          <g fill="#012d4a">
+            <path d="m470 260v-260h-268v32h-32v180h-20v-32h-124v332h460v-252zm-256-248h244v248h-20v-144.485l-83.515-83.515h-140.485zm144 40.485 59.515 59.515h-59.515zm-12-8.485v80h80v136h-244v-216zm-272 456h-36v-308h100v20h-74v12h106v36h-96zm400 0h-388v-228h388z" />
+            <path d="m454 436h-92v44h92zm-12 32h-68v-20h68z" />
+            <path d="m208 104h64v12h-64z" />
+            <path d="m208 72h96v12h-96z" />
+            <path d="m390 138h-188v108h188zm-12 32h-36v-20h36zm-132 12h36v20h-36zm-12 20h-20v-20h20zm48 12v20h-36v-20zm12 0h36v20h-36zm0-12v-20h36v20zm0-32v-20h36v20zm48 12h36v20h-36zm-60-32v20h-68v-20zm-68 64h20v20h-20zm128 20v-20h36v20z" />
+          </g>
+        </g>
+      </g>
+    </svg>
+  ),
+  fd_data: (size: number, className: string) => (
+    <svg
+      id="Capa_1"
+      enableBackground="new 0 0 512 512"
+      height={size}
+      viewBox="0 0 512 512"
+      width={size}
+      xmlns="http://www.w3.org/2000/svg"
+      fill="inherit"
+      stroke="currentColor"
+      className={className}
+    >
+      <g>
+        <path d="m122 6h320v448h-320z" fill="#b9c2cf" />
+        <path d="m122 438h320v16h-320z" fill="#b9c2cf" />
+        <path d="m122 438h320v16h-320z" fill="#95a4b6" />
+        <path d="m390 138v368h-320v-448h240z" fill="#fff" />
+        <path d="m310 138h80v16h-80z" fill="#dce1e7" />
+        <path d="m70 490h320v16h-320z" fill="#dce1e7" />
+        <path d="m390 138h-80v-80" fill="#95a4b6" />
+        <g>
+          <path d="m118 250h224v112h-224z" fill="#dce1e7" />
+          <path d="m118 250h224v32h-224z" fill="#95a4b6" />
+          <circle cx="150" cy="154" fill="#95a4b6" r="32" />
+          <path d="m182 154c0-17.673-14.327-32-32-32v32z" fill="#fff" />
+          <g fill="#012d4a">
+            <path d="m448 0h-332v52h-52v460h332v-52h52zm-372 500v-436h228v80h80v356zm240-427.515 59.515 59.515h-59.515zm120 375.515h-40v-312.485l-83.515-83.515h-184.485v-40h308z" />
+            <path d="m150 192c20.953 0 38-17.047 38-38s-17.047-38-38-38-38 17.047-38 38 17.047 38 38 38zm25.294-44h-19.294v-19.294c9.525 2.26 17.034 9.769 19.294 19.294zm-31.294-19.294v31.294h31.294c-2.717 11.453-13.022 20-25.294 20-14.337 0-26-11.663-26-26 0-12.271 8.548-22.577 20-25.294z" />
+            <path d="m118 212h224v12h-224z" />
+            <path d="m206 180h136v12h-136z" />
+            <path d="m206 148h80v12h-80z" />
+            <path d="m118 256h26v20h-26v12h26v68h-26v12h224v-12h-90v-68h90v-12h-90v-20h90v-12h-224zm122 100h-84v-68h84zm0-80h-84v-20h84z" />
+            <path d="m182 388h160v12h-160z" />
+            <path d="m214 420h128v12h-128z" />
+          </g>
+        </g>
+      </g>
+    </svg>
+  ),
+  fd_multimedia: (size: number, className: string) => (
+    <svg
+      id="Capa_1"
+      enableBackground="new 0 0 512 512"
+      height={size}
+      viewBox="0 0 512 512"
+      width={size}
+      xmlns="http://www.w3.org/2000/svg"
+      fill="inherit"
+      stroke="currentColor"
+      className={className}
+    >
+      <g>
+        <path d="m122 6h320v448h-320z" fill="#b9c2cf" />
+        <path d="m122 438h320v16h-320z" fill="#95a4b6" />
+        <path d="m390 138v368h-320v-448h240z" fill="#fff" />
+        <path d="m310 138h80v16h-80z" fill="#dce1e7" />
+        <path d="m70 490h320v16h-320z" fill="#dce1e7" />
+        <path d="m390 138h-80v-80" fill="#95a4b6" />
+        <g>
+          <g>
+            <path d="m150 186h160v192h-160z" fill="#dce1e7" />
+            <path d="m150 362h160v16h-160z" fill="#b9c2cf" />
+            <path d="m150 186h32v192h-32z" fill="#95a4b6" />
+            <path d="m150 362h32v16h-32z" fill="#72869e" />
+            <path d="m278 186h32v192h-32z" fill="#95a4b6" />
+            <path d="m278 362h32v16h-32z" fill="#72869e" />
+          </g>
+          <g fill="#012d4a">
+            <path d="m448 0h-332v52h-52v460h332v-52h52zm-372 500v-436h228v80h80v356zm240-427.515 59.515 59.515h-59.515zm120 375.515h-40v-312.485l-83.515-83.515h-184.485v-40h308z" />
+            <path d="m118 116h160v12h-160z" />
+            <path d="m118 148h128v12h-128z" />
+            <path d="m144 384h172v-204h-172zm12-32h20v20h-20zm32-64h84v84h-84zm96 32h20v20h-20zm0-12v-20h20v20zm0-32v-20h20v20zm0-32v-20h20v20zm-12 32h-84v-84h84zm-96-32h-20v-20h20zm0 12v20h-20v-20zm0 32v20h-20v-20zm0 32v20h-20v-20zm108 52v-20h20v20zm20-160h-20v-20h20zm-128-20v20h-20v-20z" />
+            <path d="m120 404h104v12h-104z" />
+            <path d="m240 404h104v12h-104z" />
+            <path d="m120 436h104v12h-104z" />
+            <path d="m240 436h104v12h-104z" />
+          </g>
+        </g>
+      </g>
+    </svg>
+  ),
+  fd_schedule: (size: number, className: string) => (
+    <svg
+      id="Capa_1"
+      enableBackground="new 0 0 512 512"
+      height={size}
+      viewBox="0 0 512 512"
+      width={size}
+      xmlns="http://www.w3.org/2000/svg"
+      fill="inherit"
+      stroke="currentColor"
+      className={className}
+    >
+      <g>
+        <path d="m208 266v-260h256v260" fill="#b9c2cf" />
+        <path d="m208 250h256v16h-256z" fill="#95a4b6" />
+        <path d="m432 506h-400v-320h112v32h288z" fill="#95a4b6" />
+        <path d="m32 490h448v16h-448z" fill="#72869e" />
+        <path d="m176 38h256v228h-256z" fill="#fff" />
+        <path d="m176 250h256v16h-256z" fill="#dce1e7" />
+        <path d="m80 266h400v240h-400z" fill="#dce1e7" />
+        <path d="m80 490h400v16h-400z" fill="#b9c2cf" />
+        <path d="m368 442h80v32h-80z" fill="#fff" />
+        <g>
+          <path d="m224 78h160v160h-160z" fill="#fff" />
+          <path d="m224 110h160v16h-160z" fill="#dce1e7" />
+          <path d="m256 142h96v64h-96z" fill="#b9c2cf" />
+          <path d="m224 78h160v32h-160z" fill="#95a4b6" />
+          <g fill="#012d4a">
+            <path d="m470 260v-260h-268v32h-32v180h-20v-32h-124v332h460v-252zm-256-248h244v248h-20v-228h-224zm212 32v216h-244v-216zm-352 456h-36v-308h100v20h-74v12h106v36h-96zm400 0h-388v-228h388z" />
+            <path d="m454 436h-92v44h92zm-12 32h-68v-20h68z" />
+            <path d="m390 72h-32v-10h-12v10h-84v-10h-12v10h-32v172h172zm-140 12v10h12v-10h84v10h12v-10h20v20h-148v-20zm-20 148v-116h148v116z" />
+            <path d="m250 212h108v-76h-108zm12-32h20v20h-20zm52 0v20h-20v-20zm-20-12v-20h20v20zm32 32v-20h20v20zm20-32h-20v-20h20zm-64-20v20h-20v-20z" />
+          </g>
+        </g>
+      </g>
+    </svg>
+  ),
+  fd_add: (size: number, className: string) => (
+    <svg
+      id="Capa_1"
+      enableBackground="new 0 0 512 512"
+      height={size}
+      viewBox="0 0 512 512"
+      width={size}
+      xmlns="http://www.w3.org/2000/svg"
+      fill="inherit"
+      stroke="currentColor"
+      className={className}
+    >
+      <g>
+        <path d="m464 86v368h-320v-448h240z" fill="#fff" />
+        <path d="m144 438h320v16h-320z" fill="#dce1e7" />
+        <path d="m384 86h80v16h-80z" fill="#dce1e7" />
+        <path d="m464 86h-80v-80" fill="#95a4b6" />
+        <g>
+          <circle cx="144" cy="410" fill="#b9c2cf" r="96" />
+          <path
+            d="m144 490c-50.325 0-91.6-38.724-95.666-88-.218 2.638-.334 5.305-.334 8 0 53.019 42.981 96 96 96s96-42.981 96-96c0-2.695-.117-5.362-.334-8-4.066 49.276-45.341 88-95.666 88z"
+            fill="#95a4b6"
+          />
+          <g fill="#012d4a">
+            <path d="m386.485 0h-248.485v308.181c-53.46 3.117-96 47.59-96 101.819 0 56.243 45.757 102 102 102 38.087 0 71.36-20.987 88.876-52h237.124v-376.485zm3.515 20.485 59.515 59.515h-59.515zm-246 479.515c-49.626 0-90-40.374-90-90s40.374-90 90-90 90 40.374 90 90-40.374 90-90 90zm314-52h-219.347c4.734-11.75 7.347-24.575 7.347-38 0-54.229-42.54-98.702-96-101.819v-296.181h228v80h80z" />
+            <path d="m192 64h96v12h-96z" />
+            <path d="m192 96h64v12h-64z" />
+            <path d="m192 144h224v12h-224z" />
+            <path d="m192 176h224v12h-224z" />
+            <path d="m192 240h224v12h-224z" />
+            <path d="m192 272h160v12h-160z" />
+            <path d="m192 208h224v12h-224z" />
+            <path d="m336 320h80v12h-80z" />
+            <path d="m150 346h-12v58h-58v12h58v58h12v-58h58v-12h-58z" />
+          </g>
+        </g>
+      </g>
+    </svg>
+  ),
+  fd_delete: (size: number, className: string) => (
+    <svg
+      id="Capa_1"
+      enableBackground="new 0 0 512 512"
+      height={size}
+      viewBox="0 0 512 512"
+      width={size}
+      xmlns="http://www.w3.org/2000/svg"
+      fill="inherit"
+      stroke="currentColor"
+      className={className}
+    >
+      <g>
+        <path d="m464 86v368h-320v-448h240z" fill="#fff" />
+        <path d="m384 86h80v16h-80z" fill="#dce1e7" />
+        <path d="m144 438h320v16h-320z" fill="#dce1e7" />
+        <path d="m464 86h-80v-80" fill="#95a4b6" />
+        <g>
+          <circle cx="144" cy="410" fill="#b9c2cf" r="96" />
+          <path
+            d="m144 490c-50.325 0-91.6-38.724-95.666-88-.218 2.638-.334 5.305-.334 8 0 53.019 42.981 96 96 96s96-42.981 96-96c0-2.695-.117-5.362-.334-8-4.066 49.276-45.341 88-95.666 88z"
+            fill="#95a4b6"
+          />
+          <g fill="#012d4a">
+            <path d="m386.485 0h-248.485v308.181c-53.461 3.117-96 47.591-96 101.819 0 56.243 45.757 102 102 102 38.087 0 71.36-20.987 88.876-52h237.124v-376.485zm3.515 20.485 59.515 59.515h-59.515zm-246 479.515c-49.626 0-90-40.374-90-90s40.374-90 90-90 90 40.374 90 90-40.374 90-90 90zm314-52h-219.347c4.734-11.75 7.347-24.575 7.347-38 0-54.228-42.539-98.702-96-101.819v-296.181h228v80h80z" />
+            <path d="m192 64h96v12h-96z" />
+            <path d="m192 96h64v12h-64z" />
+            <path d="m192 144h224v12h-224z" />
+            <path d="m192 176h224v12h-224z" />
+            <path d="m192 240h224v12h-224z" />
+            <path d="m192 272h160v12h-160z" />
+            <path d="m192 208h224v12h-224z" />
+            <path d="m336 320h80v12h-80z" />
+            <path d="m185.012 360.502-41.012 41.013-41.012-41.013-8.486 8.486 41.013 41.012-41.013 41.012 8.486 8.486 41.012-41.013 41.012 41.013 8.486-8.486-41.013-41.012 41.013-41.012z" />
+          </g>
+        </g>
+      </g>
+    </svg>
+  ),
+  fd_zip: (size: number, className: string) => (
+    <svg
+      id="Capa_1"
+      enableBackground="new 0 0 512 512"
+      height={size}
+      viewBox="0 0 512 512"
+      width={size}
+      xmlns="http://www.w3.org/2000/svg"
+      fill="inherit"
+      stroke="currentColor"
+      className={className}
+    >
+      <g>
+        <path d="m122 6h320v448h-320z" fill="#b9c2cf" />
+        <path d="m122 438h320v16h-320z" fill="#95a4b6" />
+        <path d="m390 138v368h-320v-448h240z" fill="#fff" />
+        <path d="m310 138h80v16h-80z" fill="#dce1e7" />
+        <path d="m70 490h320v16h-320z" fill="#dce1e7" />
+        <g fill="#95a4b6">
+          <path d="m390 138h-80v-80" />
+          <path d="m198 114h32v32h-32z" />
+          <path d="m230 146h32v32h-32z" />
+          <path d="m198 178h32v32h-32z" />
+          <path d="m230 210h32v32h-32z" />
+          <path d="m198 242h32v32h-32z" transform="matrix(-1 0 0 -1 428 516)" />
+          <path d="m230 274h32v32h-32z" transform="matrix(-1 0 0 -1 492 580)" />
+          <path d="m198 306h32v32h-32z" transform="matrix(-1 0 0 -1 428 644)" />
+        </g>
+        <path d="m254 450h-48v-56l24-24 24 24z" fill="#b9c2cf" />
+        <path d="m206 426h48v24h-48z" fill="#fff" />
+        <g fill="#012d4a">
+          <path d="m448 0h-332v52h-52v460h332v-52h52zm-372 500v-436h228v80h80v356zm240-427.515 59.515 59.515h-59.515zm120 375.515h-40v-312.485l-83.515-83.515h-184.485v-40h308z" />
+          <path d="m236 108h-44v44h32v20h-32v44h32v20h-32v44h32v20h-32v44h32v23.515l-24 24v64.485h60v-64.485l-24-24v-55.515h32v-44h-32v-20h32v-44h-32v-20h32v-44h-32zm-32 32v-20h20v20zm0 64v-20h20v20zm0 64v-20h20v20zm0 64v-20h20v20zm8 112v-12h36v12zm36-24h-36v-23.515l18-18 18 18zm8-140v20h-20v-20zm0-64v20h-20v-20zm0-64v20h-20v-20z" />
+        </g>
+      </g>
+    </svg>
+  ),
+  fd_mail: (size: number, className: string) => (
+    <svg
+      id="Capa_1"
+      enableBackground="new 0 0 512 512"
+      height={size}
+      viewBox="0 0 512 512"
+      width={size}
+      xmlns="http://www.w3.org/2000/svg"
+      fill="inherit"
+      stroke="currentColor"
+      className={className}
+    >
+      <path d="m464 86v368h-320v-448h240z" fill="#fff" />
+      <path d="m384 86h80v16h-80z" fill="#dce1e7" />
+      <path d="m464 86h-80v-80" fill="#95a4b6" />
+      <g>
+        <path d="m190 182h224v100h-224z" fill="#dce1e7" />
+        <path d="m190 150h224v32h-224z" fill="#95a4b6" />
+      </g>
+      <path d="m144 438h320v16h-320z" fill="#dce1e7" />
+      <path d="m48 314h256v192h-256z" fill="#b9c2cf" />
+      <path d="m48 314h256v192h-256z" fill="#b9c2cf" />
+      <path d="m48 490h256v16h-256z" fill="#95a4b6" />
+      <g fill="#012d4a">
+        <path d="m192 64h160v12h-160z" />
+        <path d="m192 96h128v12h-128z" />
+        <path d="m190 156h42v20h-42v12h42v88h-42v12h224v-12h-42v-88h42v-12h-42v-20h42v-12h-224zm54 0h116v20h-116zm0 32h116v88h-116z" />
+        <path d="m386.485 0h-248.485v308h-96v204h268v-52h160v-376.485zm3.515 20.485 59.515 59.515h-59.515zm-100.485 299.515-113.515 113.515-113.515-113.515zm-235.515 8.485 81.515 81.515-81.515 81.515zm8.485 171.515 81.515-81.515 32 32 32-32 81.515 81.515zm235.515-8.485-81.515-81.515 81.515-81.515zm160-43.515h-148v-140h-160v-296h228v80h80z" />
+        <path d="m336 320h80v12h-80z" />
+        <path d="m336 352h80v12h-80z" />
+      </g>
+    </svg>
+  ),
+  fd_edition: (size: number, className: string) => (
+    <svg
+      id="Capa_1"
+      enableBackground="new 0 0 512 512"
+      height={size}
+      viewBox="0 0 512 512"
+      width={size}
+      xmlns="http://www.w3.org/2000/svg"
+      fill="inherit"
+      stroke="currentColor"
+      className={className}
+    >
+      <g>
+        <path d="m122 6h320v448h-320z" fill="#b9c2cf" />
+        <path d="m122 438h320v16h-320z" fill="#95a4b6" />
+        <path d="m390 138v368h-320v-448h240z" fill="#fff" />
+        <path d="m310 138h80v16h-80z" fill="#dce1e7" />
+        <path d="m70 490h320v16h-320z" fill="#dce1e7" />
+        <path d="m390 138h-80v-80" fill="#95a4b6" />
+        <g>
+          <path d="m290 218v-24h24v24" fill="#b9c2cf" />
+          <path d="m302 218v-24h12v24" fill="#95a4b6" />
+          <path d="m278 418 24 40 24-40v-200h-48z" fill="#95a4b6" />
+          <path d="m310 250h16v168h-16z" fill="#72869e" />
+          <path d="m278 218h48v32h-48z" fill="#fff" />
+          <path d="m310 218h16v32h-16z" fill="#dce1e7" />
+          <path d="m326 418-24 40-24-40z" fill="#fff" />
+          <path d="m310 418-16 26.667 8 13.333 24-40z" fill="#dce1e7" />
+        </g>
+        <path d="m118 202h64v64h-64z" fill="#95a4b6" />
+        <g fill="#012d4a">
+          <path d="m448 0h-332v52h-52v460h332v-52h52zm-372 500v-436h228v80h80v356zm240-427.515 59.515 59.515h-59.515zm120 375.515h-40v-312.485l-83.515-83.515h-184.485v-40h308z" />
+          <path d="m118 116h160v12h-160z" />
+          <path d="m118 148h128v12h-128z" />
+          <path d="m206 196h52v12h-52z" />
+          <path d="m206 228h52v12h-52z" />
+          <path d="m118 292h140v12h-140z" />
+          <path d="m118 356h140v12h-140z" />
+          <path d="m206 260h52v12h-52z" />
+          <path d="m118 388h140v12h-140z" />
+          <path d="m118 420h112v12h-112z" />
+          <path d="m118 324h140v12h-140z" />
+          <path d="m332 212h-12v-24h-36v24h-12v207.662l30 50 30-50v-179.662h12v74h12v-86h-24zm-36-12h12v12h-12zm24 24v20h-36v-20zm-36 188v-156h36v156zm4.597 12h26.806l-13.403 22.338z" />
+          <path d="m188 196h-76v76h76zm-12 64h-52v-52h52z" />
+        </g>
       </g>
     </svg>
   ),

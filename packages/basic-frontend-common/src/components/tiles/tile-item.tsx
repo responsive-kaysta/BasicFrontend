@@ -30,7 +30,7 @@ export const TileItem: FC<TileElementProps> = ({
       href={link}
       className={style}
       style={{
-        backgroundImage: `url(${bgImage})`,
+        backgroundImage: `linear-gradient(to bottom, #0b3536 0%, rgba(125, 185, 232, 0)), url(${bgImage})`,
         backgroundSize: "cover",
       }}
     >

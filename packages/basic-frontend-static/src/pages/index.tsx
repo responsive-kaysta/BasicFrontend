@@ -20,6 +20,7 @@ import {
   ToTopLink,
 } from "basic-frontend-common";
 import React from "react";
+import { PAGE_NAME } from "../constants";
 import { FooterComponent } from "../includes/site-parts";
 
 class Index extends React.Component {
@@ -34,86 +35,86 @@ class Index extends React.Component {
             >
               <IntroEyeCatcher
                 theme={ThemeTransparent}
-                contentTop="Basic Frontend"
-                contentBottom="Example Page(s) showing the power of ReactJS, TailwindCSS, Skills and Love"
+                contentTop={PAGE_NAME}
+                contentBottom="Example Page(s) showing the power of ReactJS, Skills and Passion"
               />
 
-              <ScrollLink elementId="first-eye-catcher">weiter</ScrollLink>
+              <ScrollLink elementId="first-eye-catcher" />
             </ContainerBody>
 
             <ContainerArticle>
               <SimpleEyeCatcher
                 theme={ThemeGreen}
                 elementId="first-eye-catcher"
-                contentBottom="Lorem ipsum dolor sit amet"
-                contentTop="At vero eos et accusam et justo duo dolores et ea rebum"
+                contentTop="SimpleEyeCatcher"
+                contentBottom="At vero eos et accusam et justo duo dolores et ea rebum"
               />
 
               <Spotlight
                 theme={ThemeGray}
-                title="At vero eos et accusam et justo duo dolores et ea rebum."
+                title="Spotlight"
                 content="Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut 
-        labore et dolore magna aliquyam erat, sed diam voluptua."
-                pictogram="ai_chip"
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor 
+                invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+                pictogram="robotics_robot2"
                 pictogramSize={PictogramSize.xl}
               />
 
               <ContainerSection>
                 <IntroSimple
                   hruler
-                  title="At vero eos et accusam et justo duo dolores et ea rebum"
+                  title="IntroSimple"
                   lead="Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut 
-          labore et dolore magna aliquyam erat, sed diam voluptua."
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut 
+                  labore et dolore magna aliquyam erat, sed diam voluptua."
                 />
-                <Link href="http://localhost:6006" buttonLink>
-                  weiter ...
+                <Link href="/product-page" buttonLink>
+                  Product-Page
                 </Link>
                 <Spacer />
               </ContainerSection>
 
               <Spotlight
                 theme={ThemeGray}
-                title="At vero eos et accusam et justo duo dolores et ea rebum."
+                title="Spotlight"
                 content="Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut 
-        labore et dolore magna aliquyam erat, sed diam voluptua."
-                pictogram="ai_cloud"
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut 
+                labore et dolore magna aliquyam erat, sed diam voluptua."
+                pictogram="robotics_rechargeable"
                 pictogramSize={PictogramSize.xl}
               />
 
               <ContainerSection>
                 <IntroSimple
                   hruler
-                  title="At vero eos et accusam et justo duo dolores et ea rebum"
+                  title="IntroSimple"
                   lead="Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut 
-          labore et dolore magna aliquyam erat, sed diam voluptua."
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut 
+                  labore et dolore magna aliquyam erat, sed diam voluptua."
                 />
               </ContainerSection>
 
               <ContainerSection>
                 <CallToAction
-                  ctaHeader="Call to action"
+                  ctaHeader="CallToAction"
                   ctaText="At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea 
-          takimata sanctus est Lorem ipsum dolor sit amet."
-                  primaryButtonAction="/"
+                  takimata sanctus est Lorem ipsum dolor sit amet."
+                  primaryButtonAction="/about-page"
                   primaryButtonType={ButtonType.primary}
-                  primaryButtonText="primaryButtonText"
-                  secondaryButtonAction="/"
+                  primaryButtonText="About"
+                  secondaryButtonAction="/tiles-page"
                   secondaryButtonType={ButtonType.secondary}
-                  secondaryButtonText="secondaryButtonText"
+                  secondaryButtonText="Tiles"
                 />
               </ContainerSection>
               <ContainerSection>
-                <ToTopLink theme={ThemeLight}>to top</ToTopLink>
+                <ToTopLink theme={ThemeLight} />
               </ContainerSection>
             </ContainerArticle>
 
             <FooterComponent theme={ThemeDarkgray} />
           </>
-        ) : null}{" "}
+        ) : null}
       </>
     );
   }

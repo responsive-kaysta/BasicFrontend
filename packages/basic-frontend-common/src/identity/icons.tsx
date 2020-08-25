@@ -3,14 +3,11 @@ import React, { FC } from "react";
 const iconMap = {
   add_square_button: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       width={size}
       height={size}
       viewBox="0 0 328.911 328.911"
-      enable-background="new 0 0 328.911 328.911;"
+      enableBackground="new 0 0 328.911 328.911;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -41,14 +38,11 @@ const iconMap = {
   ),
   adjust_contrast: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.533 438.533"
       width={size}
       height={size}
-      enable-background="new 0 0 438.533 438.533;"
+      enableBackground="new 0 0 438.533 438.533"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -69,14 +63,11 @@ const iconMap = {
   ),
   align_justify: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 511.63 511.631"
       width={size}
       height={size}
-      enable-background="new 0 0 511.63 511.631;"
+      enableBackground="new 0 0 511.63 511.631;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -111,14 +102,11 @@ const iconMap = {
   ),
   align_left: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 511.63 511.631"
       width={size}
       height={size}
-      enable-background="new 0 0 511.63 511.631;"
+      enableBackground="new 0 0 511.63 511.631;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -152,14 +140,11 @@ const iconMap = {
   ),
   align_right: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 511.63 511.631"
       width={size}
       height={size}
-      enable-background="new 0 0 511.63 511.631;"
+      enableBackground="new 0 0 511.63 511.631;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -194,14 +179,11 @@ const iconMap = {
   ),
   align_text_center: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 511.63 511.631"
       width={size}
       height={size}
-      enable-background="new 0 0 511.63 511.631;"
+      enableBackground="new 0 0 511.63 511.631;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -227,14 +209,11 @@ const iconMap = {
   ),
   ambulance: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 529.901 529.901"
       width={size}
       height={size}
-      enable-background="new 0 0 529.901 529.901;"
+      enableBackground="new 0 0 529.901 529.901;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -269,14 +248,11 @@ const iconMap = {
   ),
   anchor_shape: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 511.626 511.626"
       width={size}
       height={size}
-      enable-background="new 0 0 511.626 511.626;"
+      enableBackground="new 0 0 511.626 511.626;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -308,14 +284,11 @@ const iconMap = {
   ),
   android_character_shape: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 475.071 475.071"
       width={size}
       height={size}
-      enable-background="new 0 0 475.071 475.071;"
+      enableBackground="new 0 0 475.071 475.071;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -361,14 +334,11 @@ const iconMap = {
   ),
   arrow_down1: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 284.929 284.929"
       width={size}
       height={size}
-      enable-background="new 0 0 284.929 284.929;"
+      enableBackground="new 0 0 284.929 284.929;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -386,14 +356,11 @@ const iconMap = {
   ),
   arrow_right1: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 284.935 284.936"
       width={size}
       height={size}
-      enable-background="new 0 0 284.935 284.936;"
+      enableBackground="new 0 0 284.935 284.936;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -411,14 +378,11 @@ const iconMap = {
   ),
   arrow_left1: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 284.935 284.936"
       width={size}
       height={size}
-      enable-background="new 0 0 284.935 284.936;"
+      enableBackground="new 0 0 284.935 284.936;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -436,14 +400,11 @@ const iconMap = {
   ),
   arrow_up: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 284.929 284.929"
       width={size}
       height={size}
-      enable-background="new 0 0 284.929 284.929;"
+      enableBackground="new 0 0 284.929 284.929;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -462,14 +423,11 @@ const iconMap = {
   ),
   apple_logo: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 475.088 475.088"
       width={size}
       height={size}
-      enable-background="new 0 0 475.088 475.088;"
+      enableBackground="new 0 0 475.088 475.088;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -499,14 +457,11 @@ const iconMap = {
   ),
   archive_black_box: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 475.078 475.077"
       width={size}
       height={size}
-      enable-background="new 0 0 475.078 475.077;"
+      enableBackground="new 0 0 475.078 475.077;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -533,14 +488,11 @@ const iconMap = {
   ),
   angle_arrow_down: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 401.994 401.994"
       width={size}
       height={size}
-      enable-background="new 0 0 401.994 401.994;"
+      enableBackground="new 0 0 401.994 401.994;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -559,14 +511,11 @@ const iconMap = {
   ),
   arrow_down_circular: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.533 438.533"
       width={size}
       height={size}
-      enable-background="new 0 0 438.533 438.533;"
+      enableBackground="new 0 0 438.533 438.533;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -591,14 +540,11 @@ const iconMap = {
   ),
   arrowhead_right: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 292.359 292.359"
       width={size}
       height={size}
-      enable-background="new 0 0 292.359 292.359;"
+      enableBackground="new 0 0 292.359 292.359;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -616,14 +562,11 @@ const iconMap = {
   ),
   arrowhead_up_square_box_outline: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.536 438.536"
       width={size}
       height={size}
-      enable-background="new 0 0 438.536 438.536;"
+      enableBackground="new 0 0 438.536 438.536;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -651,14 +594,11 @@ const iconMap = {
   ),
   arrowheads_left: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 440.25 440.251"
       width={size}
       height={size}
-      enable-background="new 0 0 440.25 440.251;"
+      enableBackground="new 0 0 440.25 440.251;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -677,14 +617,11 @@ const iconMap = {
   ),
   arrow_down2: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 444.819 444.819"
       width={size}
       height={size}
-      enable-background="new 0 0 444.819 444.819;"
+      enableBackground="new 0 0 444.819 444.819;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -705,14 +642,11 @@ const iconMap = {
   ),
   arrow_right_circular: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.533 438.533"
       width={size}
       height={size}
-      enable-background="new 0 0 438.533 438.533;"
+      enableBackground="new 0 0 438.533 438.533;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -737,14 +671,11 @@ const iconMap = {
   ),
   arrow_left2: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 444.822 444.822"
       width={size}
       height={size}
-      enable-background="new 0 0 444.822 444.822;"
+      enableBackground="new 0 0 444.822 444.822;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -765,14 +696,11 @@ const iconMap = {
   ),
   arrow_right2: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 444.815 444.815"
       width={size}
       height={size}
-      enable-background="new 0 0 444.815 444.815;"
+      enableBackground="new 0 0 444.815 444.815;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -792,14 +720,11 @@ const iconMap = {
   ),
   arrow_up2: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 444.819 444.819"
       width={size}
       height={size}
-      enable-background="new 0 0 444.819 444.819;"
+      enableBackground="new 0 0 444.819 444.819;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -820,14 +745,11 @@ const iconMap = {
   ),
   arrow_up_circular: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.533 438.533"
       width={size}
       height={size}
-      enable-background="new 0 0 438.533 438.533;"
+      enableBackground="new 0 0 438.533 438.533;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -852,14 +774,11 @@ const iconMap = {
   ),
   asterisk: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.529 438.529"
       width={size}
       height={size}
-      enable-background="new 0 0 438.529 438.529;"
+      enableBackground="new 0 0 438.529 438.529;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -885,14 +804,11 @@ const iconMap = {
   ),
   ban_circle: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 439.963 439.963"
       width={size}
       height={size}
-      enable-background="new 0 0 439.963 439.963;"
+      enableBackground="new 0 0 439.963 439.963;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -917,14 +833,11 @@ const iconMap = {
   ),
   barcode: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 511.626 511.627"
       width={size}
       height={size}
-      enable-background="new 0 0 511.626 511.627;"
+      enableBackground="new 0 0 511.626 511.627;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -954,14 +867,11 @@ const iconMap = {
   ),
   bargraph: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 548.176 548.176"
       width={size}
       height={size}
-      enable-background="new 0 0 548.176 548.176;"
+      enableBackground="new 0 0 548.176 548.176;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -988,14 +898,11 @@ const iconMap = {
   ),
   beaker: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.536 438.536"
       width={size}
       height={size}
-      enable-background="new 0 0 438.536 438.536;"
+      enableBackground="new 0 0 438.536 438.536;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -1015,14 +922,11 @@ const iconMap = {
   ),
   beer_jar: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 456.817 456.818"
       width={size}
       height={size}
-      enable-background="new 0 0 456.817 456.818;"
+      enableBackground="new 0 0 456.817 456.818;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -1040,14 +944,11 @@ const iconMap = {
   ),
   bell: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 511.63 511.63"
       width={size}
       height={size}
-      enable-background="new 0 0 511.63 511.63;"
+      enableBackground="new 0 0 511.63 511.63;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -1072,14 +973,11 @@ const iconMap = {
   ),
   bitbucket_sign: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 465.27 465.269"
       width={size}
       height={size}
-      enable-background="new 0 0 465.27 465.269;"
+      enableBackground="new 0 0 465.27 465.269;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -1127,14 +1025,11 @@ const iconMap = {
   ),
   bitbucket_logo: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.536 438.536"
       width={size}
       height={size}
-      enable-background="new 0 0 438.536 438.536;"
+      enableBackground="new 0 0 438.536 438.536;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -1180,14 +1075,11 @@ const iconMap = {
   ),
   bitcoin_logo: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 475.074 475.074"
       width={size}
       height={size}
-      enable-background="new 0 0 475.074 475.074;"
+      enableBackground="new 0 0 475.074 475.074;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -1222,14 +1114,11 @@ const iconMap = {
   ),
   blank_file: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.533 438.533"
       width={size}
       height={size}
-      enable-background="new 0 0 438.533 438.533;"
+      enableBackground="new 0 0 438.533 438.533;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -1249,14 +1138,11 @@ const iconMap = {
   ),
   bold_text: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.543 438.543"
       width={size}
       height={size}
-      enable-background="new 0 0 438.543 438.543;"
+      enableBackground="new 0 0 438.543 438.543;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -1289,14 +1175,11 @@ const iconMap = {
   ),
   book: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 475.452 475.451"
       width={size}
       height={size}
-      enable-background="new 0 0 475.452 475.451;"
+      enableBackground="new 0 0 475.452 475.451;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -1334,14 +1217,11 @@ const iconMap = {
   ),
   bookmark_black_shape: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 431.972 431.972"
       width={size}
       height={size}
-      enable-background="new 0 0 431.972 431.972;"
+      enableBackground="new 0 0 431.972 431.972;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -1361,14 +1241,11 @@ const iconMap = {
   ),
   bookmark_shape: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 431.972 431.972"
       width={size}
       height={size}
-      enable-background="new 0 0 431.972 431.972;"
+      enableBackground="new 0 0 431.972 431.972;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -1389,14 +1266,11 @@ const iconMap = {
   ),
   branch_black_shape: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 511.63 511.63"
       width={size}
       height={size}
-      enable-background="new 0 0 511.63 511.63;"
+      enableBackground="new 0 0 511.63 511.63;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -1440,14 +1314,11 @@ const iconMap = {
   ),
   briefcase: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 511.626 511.627"
       width={size}
       height={size}
-      enable-background="new 0 0 511.626 511.627;"
+      enableBackground="new 0 0 511.626 511.627;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -1474,14 +1345,11 @@ const iconMap = {
   ),
   bug: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 456.828 456.828"
       width={size}
       height={size}
-      enable-background="new 0 0 456.828 456.828;"
+      enableBackground="new 0 0 456.828 456.828;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -1515,14 +1383,11 @@ const iconMap = {
   ),
   bull_horn: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 511.626 511.626"
       width={size}
       height={size}
-      enable-background="new 0 0 511.626 511.626;"
+      enableBackground="new 0 0 511.626 511.626;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -1548,14 +1413,11 @@ const iconMap = {
   ),
   bullseye: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.533 438.533"
       width={size}
       height={size}
-      enable-background="new 0 0 438.533 438.533;"
+      enableBackground="new 0 0 438.533 438.533;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -1596,14 +1458,11 @@ const iconMap = {
   ),
   calendar_page_empty: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 511.634 511.634"
       width={size}
       height={size}
-      enable-background="new 0 0 511.634 511.634;"
+      enableBackground="new 0 0 511.634 511.634;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -1630,14 +1489,11 @@ const iconMap = {
   ),
   calendar_page_date_blocks: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 511.634 511.634"
       width={size}
       height={size}
-      enable-background="new 0 0 511.634 511.634;"
+      enableBackground="new 0 0 511.634 511.634;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -1668,14 +1524,11 @@ const iconMap = {
   ),
   camera_retro: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 511.626 511.627"
       width={size}
       height={size}
-      enable-background="new 0 0 511.626 511.627;"
+      enableBackground="new 0 0 511.626 511.627;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -1709,14 +1562,11 @@ const iconMap = {
   ),
   carret_arrow_up: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 292.362 292.361"
       width={size}
       height={size}
-      enable-background="new 0 0 292.362 292.361;"
+      enableBackground="new 0 0 292.362 292.361;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -1733,14 +1583,11 @@ const iconMap = {
   ),
   carret_arrow_down: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 292.362 292.362"
       width={size}
       height={size}
-      enable-background="new 0 0 292.362 292.362;"
+      enableBackground="new 0 0 292.362 292.362;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -1757,14 +1604,11 @@ const iconMap = {
   ),
   certificate_shape: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.821 438.82"
       width={size}
       height={size}
-      enable-background="new 0 0 438.821 438.82;"
+      enableBackground="new 0 0 438.821 438.82;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -1791,14 +1635,11 @@ const iconMap = {
   ),
   check: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 474.8 474.801"
       width={size}
       height={size}
-      enable-background="new 0 0 474.8 474.801;"
+      enableBackground="new 0 0 474.8 474.801;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -1829,14 +1670,11 @@ const iconMap = {
   ),
   checkbox_empty: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 401.998 401.998"
       width={size}
       height={size}
-      enable-background="new 0 0 401.998 401.998;"
+      enableBackground="new 0 0 401.998 401.998;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -1857,14 +1695,11 @@ const iconMap = {
   ),
   checked_symbol: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.533 438.533"
       width={size}
       height={size}
-      enable-background="new 0 0 438.533 438.533;"
+      enableBackground="new 0 0 438.533 438.533;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -1887,14 +1722,11 @@ const iconMap = {
   ),
   checkered_flag: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 493.349 493.349"
       width={size}
       height={size}
-      enable-background="new 0 0 493.349 493.349;"
+      enableBackground="new 0 0 493.349 493.349;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -1935,14 +1767,11 @@ const iconMap = {
   ),
   check_mark: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.533 438.533"
       width={size}
       height={size}
-      enable-background="new 0 0 438.533 438.533;"
+      enableBackground="new 0 0 438.533 438.533;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -1973,14 +1802,11 @@ const iconMap = {
   ),
   check_sign: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.536 438.536"
       width={size}
       height={size}
-      enable-background="new 0 0 438.536 438.536;"
+      enableBackground="new 0 0 438.536 438.536;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -2002,14 +1828,11 @@ const iconMap = {
   ),
   chevron_arrow_down: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 444.819 444.819"
       width={size}
       height={size}
-      enable-background="new 0 0 444.819 444.819;"
+      enableBackground="new 0 0 444.819 444.819;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -2028,14 +1851,11 @@ const iconMap = {
   ),
   chevron_arrow_up: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 444.819 444.819"
       width={size}
       height={size}
-      enable-background="new 0 0 444.819 444.819;"
+      enableBackground="new 0 0 444.819 444.819;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -2054,14 +1874,11 @@ const iconMap = {
   ),
   chevron_arrow_left: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 444.531 444.531"
       width={size}
       height={size}
-      enable-background="new 0 0 444.531 444.531;"
+      enableBackground="new 0 0 444.531 444.531;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -2080,14 +1897,11 @@ const iconMap = {
   ),
   chevron_sign_down: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.533 438.533"
       width={size}
       height={size}
-      enable-background="new 0 0 438.533 438.533;"
+      enableBackground="new 0 0 438.533 438.533;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -2110,14 +1924,11 @@ const iconMap = {
   ),
   chevron_sign_left: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.533 438.533"
       width={size}
       height={size}
-      enable-background="new 0 0 438.533 438.533;"
+      enableBackground="new 0 0 438.533 438.533;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -2140,14 +1951,11 @@ const iconMap = {
   ),
   chevron_sign_right: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.533 438.533"
       width={size}
       height={size}
-      enable-background="new 0 0 438.533 438.533;"
+      enableBackground="new 0 0 438.533 438.533;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -2170,14 +1978,11 @@ const iconMap = {
   ),
   chevron_up: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 284.929 284.929"
       width={size}
       height={size}
-      enable-background="new 0 0 284.929 284.929;"
+      enableBackground="new 0 0 284.929 284.929;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -2204,14 +2009,11 @@ const iconMap = {
   ),
   circle_shape: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.533 438.533"
       width={size}
       height={size}
-      enable-background="new 0 0 438.533 438.533;"
+      enableBackground="new 0 0 438.533 438.533;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -2234,14 +2036,11 @@ const iconMap = {
   ),
   circle_arrow_left: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.533 438.533"
       width={size}
       height={size}
-      enable-background="new 0 0 438.533 438.533;"
+      enableBackground="new 0 0 438.533 438.533;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -2266,14 +2065,11 @@ const iconMap = {
   ),
   circular_shape: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.533 438.533"
       width={size}
       height={size}
-      enable-background="new 0 0 438.533 438.533;"
+      enableBackground="new 0 0 438.533 438.533;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -2292,14 +2088,11 @@ const iconMap = {
   ),
   cloud_storage_down: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 548.176 548.176"
       width={size}
       height={size}
-      enable-background="new 0 0 548.176 548.176;"
+      enableBackground="new 0 0 548.176 548.176;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -2324,14 +2117,11 @@ const iconMap = {
   ),
   cloud_storage_up: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 548.176 548.176"
       width={size}
       height={size}
-      enable-background="new 0 0 548.176 548.176;"
+      enableBackground="new 0 0 548.176 548.176;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -2356,14 +2146,11 @@ const iconMap = {
   ),
   coctail_glass: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 475.085 475.085"
       width={size}
       height={size}
-      enable-background="new 0 0 475.085 475.085;"
+      enableBackground="new 0 0 475.085 475.085;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -2383,14 +2170,11 @@ const iconMap = {
   ),
   code: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 522.468 522.469"
       width={size}
       height={size}
-      enable-background="new 0 0 522.468 522.469;"
+      enableBackground="new 0 0 522.468 522.469;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -2423,14 +2207,11 @@ const iconMap = {
   ),
   code_fork: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.529 438.529"
       width={size}
       height={size}
-      enable-background="new 0 0 438.529 438.529;"
+      enableBackground="new 0 0 438.529 438.529;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -2465,14 +2246,11 @@ const iconMap = {
   ),
   coffee_cup: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 529.901 529.901"
       width={size}
       height={size}
-      enable-background="new 0 0 529.901 529.901;"
+      enableBackground="new 0 0 529.901 529.901;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -2498,14 +2276,11 @@ const iconMap = {
   ),
   cog_wheel: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.529 438.529"
       width={size}
       height={size}
-      enable-background="new 0 0 438.529 438.529;"
+      enableBackground="new 0 0 438.529 438.529;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -2541,14 +2316,11 @@ const iconMap = {
   ),
   collapse_window: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.536 438.536"
       width={size}
       height={size}
-      enable-background="new 0 0 438.536 438.536;"
+      enableBackground="new 0 0 438.536 438.536;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -2576,14 +2348,11 @@ const iconMap = {
   ),
   comment_black_bubble: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 511.626 511.626"
       width={size}
       height={size}
-      enable-background="new 0 0 511.626 511.626;"
+      enableBackground="new 0 0 511.626 511.626;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -2607,14 +2376,11 @@ const iconMap = {
   ),
   comments: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 511.62 511.619"
       width={size}
       height={size}
-      enable-background="new 0 0 511.62 511.619;"
+      enableBackground="new 0 0 511.62 511.619;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -2657,14 +2423,11 @@ const iconMap = {
   ),
   comment_white_bubble: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 511.626 511.627"
       width={size}
       height={size}
-      enable-background="new 0 0 511.626 511.627;"
+      enableBackground="new 0 0 511.626 511.627;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -2693,14 +2456,11 @@ const iconMap = {
   ),
   compas_circular: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.533 438.533"
       width={size}
       height={size}
-      enable-background="new 0 0 438.533 438.533;"
+      enableBackground="new 0 0 438.533 438.533;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -2729,14 +2489,11 @@ const iconMap = {
   ),
   computer_tablet: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 401.991 401.991"
       width={size}
       height={size}
-      enable-background="new 0 0 401.991 401.991;"
+      enableBackground="new 0 0 401.991 401.991;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -2760,14 +2517,11 @@ const iconMap = {
   ),
   copy_document: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 511.627 511.627"
       width={size}
       height={size}
-      enable-background="new 0 0 511.627 511.627;"
+      enableBackground="new 0 0 511.627 511.627;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -2791,14 +2545,11 @@ const iconMap = {
   ),
   correct_symbol: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 442.533 442.533"
       width={size}
       height={size}
-      enable-background="new 0 0 442.533 442.533;"
+      enableBackground="new 0 0 442.533 442.533;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -2817,14 +2568,11 @@ const iconMap = {
   ),
   crossing_arrows: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 511.626 511.626"
       width={size}
       height={size}
-      enable-background="new 0 0 511.626 511.626;"
+      enableBackground="new 0 0 511.626 511.626;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -2870,14 +2618,11 @@ const iconMap = {
   ),
   credit_card: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 548.176 548.176"
       width={size}
       height={size}
-      enable-background="new 0 0 548.176 548.176;"
+      enableBackground="new 0 0 548.176 548.176;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -2902,14 +2647,11 @@ const iconMap = {
   ),
   crop_symbol: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 475.078 475.078"
       width={size}
       height={size}
-      enable-background="new 0 0 475.078 475.078;"
+      enableBackground="new 0 0 475.078 475.078;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -2932,14 +2674,11 @@ const iconMap = {
   ),
   cross_mark: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.533 438.533"
       width={size}
       height={size}
-      enable-background="new 0 0 438.533 438.533;"
+      enableBackground="new 0 0 438.533 438.533;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -2965,14 +2704,11 @@ const iconMap = {
   ),
   css_3: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 504.771 504.771"
       width={size}
       height={size}
-      enable-background="new 0 0 504.771 504.771;"
+      enableBackground="new 0 0 504.771 504.771;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -2989,14 +2725,11 @@ const iconMap = {
   ),
   cursor: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 402.046 402.045"
       width={size}
       height={size}
-      enable-background="new 0 0 402.046 402.045;"
+      enableBackground="new 0 0 402.046 402.045;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -3015,14 +2748,11 @@ const iconMap = {
   ),
   cut: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 511.763 511.763"
       width={size}
       height={size}
-      enable-background="new 0 0 511.763 511.763;"
+      enableBackground="new 0 0 511.763 511.763;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -3068,14 +2798,11 @@ const iconMap = {
   ),
   dashboard: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 511.626 511.627"
       width={size}
       height={size}
-      enable-background="new 0 0 511.626 511.627;"
+      enableBackground="new 0 0 511.626 511.627;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -3112,14 +2839,11 @@ const iconMap = {
   ),
   delivery_truck: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 493.349 493.349"
       width={size}
       height={size}
-      enable-background="new 0 0 493.349 493.349;"
+      enableBackground="new 0 0 493.349 493.349;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -3152,14 +2876,11 @@ const iconMap = {
   ),
   desktop_monitor: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 548.172 548.172"
       width={size}
       height={size}
-      enable-background="new 0 0 548.172 548.172;"
+      enableBackground="new 0 0 548.172 548.172;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -3183,14 +2904,11 @@ const iconMap = {
   ),
   dollar_currency_symbol: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 511.613 511.613"
       width={size}
       height={size}
-      enable-background="new 0 0 511.613 511.613;"
+      enableBackground="new 0 0 511.613 511.613;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -3227,14 +2945,11 @@ const iconMap = {
   ),
   dot_circle: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 511.613 511.613"
       width={size}
       height={size}
-      enable-background="new 0 0 511.613 511.613;"
+      enableBackground="new 0 0 511.613 511.613;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -3265,14 +2980,11 @@ const iconMap = {
   ),
   double_arrow_right: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 284.936 284.936"
       width={size}
       height={size}
-      enable-background="new 0 0 284.936 284.936;"
+      enableBackground="new 0 0 284.936 284.936;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -3298,14 +3010,11 @@ const iconMap = {
   ),
   double_arrow_left: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 284.929 284.929"
       width={size}
       height={size}
-      enable-background="new 0 0 284.929 284.929;"
+      enableBackground="new 0 0 284.929 284.929;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -3331,14 +3040,11 @@ const iconMap = {
   ),
   double_sided_eraser: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 548.157 548.157"
       width={size}
       height={size}
-      enable-background="new 0 0 548.157 548.157;"
+      enableBackground="new 0 0 548.157 548.157;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -3357,14 +3063,11 @@ const iconMap = {
   ),
   double_strikethrough_option: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 511.62 511.62"
       width={size}
       height={size}
-      enable-background="new 0 0 511.62 511.62;"
+      enableBackground="new 0 0 511.62 511.62;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -3395,14 +3098,11 @@ const iconMap = {
   ),
   down_arrow: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 493.356 493.355"
       width={size}
       height={size}
-      enable-background="new 0 0 493.356 493.355;"
+      enableBackground="new 0 0 493.356 493.355;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -3420,14 +3120,11 @@ const iconMap = {
   ),
   download_symbol: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.533 438.533"
       width={size}
       height={size}
-      enable-background="new 0 0 438.533 438.533;"
+      enableBackground="new 0 0 438.533 438.533;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -3459,14 +3156,11 @@ const iconMap = {
   ),
   download_to_storage: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 475.078 475.077"
       width={size}
       height={size}
-      enable-background="new 0 0 475.078 475.077;"
+      enableBackground="new 0 0 475.078 475.077;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -3498,14 +3192,11 @@ const iconMap = {
   ),
   dribble_logo: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.533 438.533"
       width={size}
       height={size}
-      enable-background="new 0 0 438.533 438.533;"
+      enableBackground="new 0 0 438.533 438.533;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -3545,14 +3236,11 @@ const iconMap = {
   ),
   dropbox_logo: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 475.078 475.077"
       width={size}
       height={size}
-      enable-background="new 0 0 475.078 475.077;"
+      enableBackground="new 0 0 475.078 475.077;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -3575,14 +3263,11 @@ const iconMap = {
   ),
   earth_globe: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.533 438.533"
       width={size}
       height={size}
-      enable-background="new 0 0 438.533 438.533;"
+      enableBackground="new 0 0 438.533 438.533;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -3715,14 +3400,11 @@ const iconMap = {
   ),
   edit_sign: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.536 438.536"
       width={size}
       height={size}
-      enable-background="new 0 0 438.536 438.536;"
+      enableBackground="new 0 0 438.536 438.536;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -3753,14 +3435,11 @@ const iconMap = {
   ),
   eject_symbol: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 439.362 439.361"
       width={size}
       height={size}
-      enable-background="new 0 0 439.362 439.361;"
+      enableBackground="new 0 0 439.362 439.361;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -3785,14 +3464,11 @@ const iconMap = {
   ),
   envelope: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 511.626 511.626"
       width={size}
       height={size}
-      enable-background="new 0 0 511.626 511.626;"
+      enableBackground="new 0 0 511.626 511.626;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -3824,14 +3500,11 @@ const iconMap = {
   ),
   envelope_white: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 511.626 511.627"
       width={size}
       height={size}
-      enable-background="new 0 0 511.626 511.627;"
+      enableBackground="new 0 0 511.626 511.627;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -3862,14 +3535,11 @@ const iconMap = {
   ),
   euro_currency_symbol: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 401.987 401.987"
       width={size}
       height={size}
-      enable-background="new 0 0 401.987 401.987;"
+      enableBackground="new 0 0 401.987 401.987;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -3901,14 +3571,11 @@ const iconMap = {
   ),
   exchange_arrows: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 511.624 511.623"
       width={size}
       height={size}
-      enable-background="new 0 0 511.624 511.623;"
+      enableBackground="new 0 0 511.624 511.623;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -3936,14 +3603,11 @@ const iconMap = {
   ),
   exclamation: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 401.999 401.998"
       width={size}
       height={size}
-      enable-background="new 0 0 401.999 401.998;"
+      enableBackground="new 0 0 401.999 401.998;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -3968,14 +3632,11 @@ const iconMap = {
   ),
   exclamation_sign: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.533 438.533"
       width={size}
       height={size}
-      enable-background="new 0 0 438.533 438.533;"
+      enableBackground="new 0 0 438.533 438.533;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -3999,14 +3660,11 @@ const iconMap = {
   ),
   external_link_arrow_right: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.536 438.536"
       width={size}
       height={size}
-      enable-background="new 0 0 438.536 438.536;"
+      enableBackground="new 0 0 438.536 438.536;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -4028,14 +3686,11 @@ const iconMap = {
   ),
   external_link_symbol: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 511.626 511.627"
       width={size}
       height={size}
-      enable-background="new 0 0 511.626 511.627;"
+      enableBackground="new 0 0 511.626 511.627;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -4066,14 +3721,11 @@ const iconMap = {
   ),
   eye_open: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 511.626 511.626"
       width={size}
       height={size}
-      enable-background="new 0 0 511.626 511.626;"
+      enableBackground="new 0 0 511.626 511.626;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -4101,14 +3753,11 @@ const iconMap = {
   ),
   eye_diagonal_line_symbol_invisibility: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 511.626 511.627"
       width={size}
       height={size}
-      enable-background="new 0 0 511.626 511.627;"
+      enableBackground="new 0 0 511.626 511.627;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -4149,14 +3798,11 @@ const iconMap = {
   ),
   facebook_sign: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 470.513 470.513"
       width={size}
       height={size}
-      enable-background="new 0 0 470.513 470.513;"
+      enableBackground="new 0 0 470.513 470.513;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -4173,14 +3819,11 @@ const iconMap = {
   ),
   facebook_logo: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.536 438.536"
       width={size}
       height={size}
-      enable-background="new 0 0 438.536 438.536;"
+      enableBackground="new 0 0 438.536 438.536;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -4200,14 +3843,11 @@ const iconMap = {
   ),
   facetime_button: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 511.626 511.627"
       width={size}
       height={size}
-      enable-background="new 0 0 511.626 511.627;"
+      enableBackground="new 0 0 511.626 511.627;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -4227,14 +3867,11 @@ const iconMap = {
   ),
   fastforward_arrows: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 511.63 511.63"
       width={size}
       height={size}
-      enable-background="new 0 0 511.63 511.63;"
+      enableBackground="new 0 0 511.63 511.63;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -4256,14 +3893,11 @@ const iconMap = {
   ),
   female_silhoutte: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 502.479 502.479"
       width={size}
       height={size}
-      enable-background="new 0 0 502.479 502.479;"
+      enableBackground="new 0 0 502.479 502.479;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -4292,14 +3926,11 @@ const iconMap = {
   ),
   figther_jet_silhoutte: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 548.179 548.179"
       width={size}
       height={size}
-      enable-background="new 0 0 548.179 548.179;"
+      enableBackground="new 0 0 548.179 548.179;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -4320,14 +3951,11 @@ const iconMap = {
   ),
   file: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.533 438.533"
       width={size}
       height={size}
-      enable-background="new 0 0 438.533 438.533;"
+      enableBackground="new 0 0 438.533 438.533;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -4351,14 +3979,11 @@ const iconMap = {
   ),
   film_strip: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 548.176 548.176"
       width={size}
       height={size}
-      enable-background="new 0 0 548.176 548.176;"
+      enableBackground="new 0 0 548.176 548.176;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -4405,14 +4030,11 @@ const iconMap = {
   ),
   filter_tool: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 402.577 402.577"
       width={size}
       height={size}
-      enable-background="new 0 0 402.577 402.577;"
+      enableBackground="new 0 0 402.577 402.577;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -4430,14 +4052,11 @@ const iconMap = {
   ),
   fire_extinguisher: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 465.951 465.951"
       width={size}
       height={size}
-      enable-background="new 0 0 465.951 465.951;"
+      enableBackground="new 0 0 465.951 465.951;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -4468,14 +4087,11 @@ const iconMap = {
   ),
   fire_symbol: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 511.62 511.62"
       width={size}
       height={size}
-      enable-background="new 0 0 511.62 511.62;"
+      enableBackground="new 0 0 511.62 511.62;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -4506,14 +4122,11 @@ const iconMap = {
   ),
   black_flag_shape: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 493.353 493.353"
       width={size}
       height={size}
-      enable-background="new 0 0 493.353 493.353;"
+      enableBackground="new 0 0 493.353 493.353;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -4543,14 +4156,11 @@ const iconMap = {
   ),
   flickr_logo: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.536 438.536"
       width={size}
       height={size}
-      enable-background="new 0 0 438.536 438.536;"
+      enableBackground="new 0 0 438.536 438.536;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -4574,14 +4184,11 @@ const iconMap = {
   ),
   fluffy_cloud: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 548.176 548.176"
       width={size}
       height={size}
-      enable-background="new 0 0 548.176 548.176;"
+      enableBackground="new 0 0 548.176 548.176;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -4602,14 +4209,11 @@ const iconMap = {
   ),
   folder_black_shape: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 475.082 475.082"
       width={size}
       height={size}
-      enable-background="new 0 0 475.082 475.082;"
+      enableBackground="new 0 0 475.082 475.082;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -4627,14 +4231,11 @@ const iconMap = {
   ),
   folder_white_shape: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 475.082 475.082"
       width={size}
       height={size}
-      enable-background="new 0 0 475.082 475.082;"
+      enableBackground="new 0 0 475.082 475.082;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -4657,14 +4258,11 @@ const iconMap = {
   ),
   font_symbol: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 475.082 475.082"
       width={size}
       height={size}
-      enable-background="new 0 0 475.082 475.082;"
+      enableBackground="new 0 0 475.082 475.082;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -4693,14 +4291,11 @@ const iconMap = {
   ),
   fork_knife: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 511.627 511.627"
       width={size}
       height={size}
-      enable-background="new 0 0 511.627 511.627;"
+      enableBackground="new 0 0 511.627 511.627;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -4732,14 +4327,11 @@ const iconMap = {
   ),
   fast_forward: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 440.25 440.25"
       width={size}
       height={size}
-      enable-background="new 0 0 440.25 440.25;"
+      enableBackground="new 0 0 440.25 440.25;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -4758,14 +4350,11 @@ const iconMap = {
   ),
   four_black_squares: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 475.082 475.082"
       width={size}
       height={size}
-      enable-background="new 0 0 475.082 475.082;"
+      enableBackground="new 0 0 475.082 475.082;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -4803,14 +4392,11 @@ const iconMap = {
   ),
   four_square_button: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 439.679 439.679"
       width={size}
       height={size}
-      enable-background="new 0 0 439.679 439.679;"
+      enableBackground="new 0 0 439.679 439.679;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -4840,14 +4426,11 @@ const iconMap = {
   ),
   frown: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.533 438.533"
       width={size}
       height={size}
-      enable-background="new 0 0 438.533 438.533;"
+      enableBackground="new 0 0 438.533 438.533;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -4893,14 +4476,11 @@ const iconMap = {
   ),
   fullscreen_symbol: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.543 438.543"
       width={size}
       height={size}
-      enable-background="new 0 0 438.543 438.543;"
+      enableBackground="new 0 0 438.543 438.543;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -4926,14 +4506,11 @@ const iconMap = {
   ),
   gamepad: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 548.176 548.176"
       width={size}
       height={size}
-      enable-background="new 0 0 548.176 548.176;"
+      enableBackground="new 0 0 548.176 548.176;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -4963,14 +4540,11 @@ const iconMap = {
   ),
   giftbox: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.526 438.526"
       width={size}
       height={size}
-      enable-background="new 0 0 438.526 438.526;"
+      enableBackground="new 0 0 438.526 438.526;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -4998,14 +4572,11 @@ const iconMap = {
   ),
   github_character: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 475.084 475.084"
       width={size}
       height={size}
-      enable-background="new 0 0 475.084 475.084;"
+      enableBackground="new 0 0 475.084 475.084;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -5049,16 +4620,13 @@ const iconMap = {
       </g>
     </svg>
   ),
-  github_logo: (size: number, className: string) => (
+  github_circular_logo: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.549 438.549"
       width={size}
       height={size}
-      enable-background="new 0 0 438.549 438.549;"
+      enableBackground="new 0 0 438.549 438.549;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -5090,16 +4658,13 @@ const iconMap = {
       </g>
     </svg>
   ),
-  github_sign: (size: number, className: string) => (
+  github_logo: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.536 438.536"
       width={size}
       height={size}
-      enable-background="new 0 0 438.536 438.536;"
+      enableBackground="new 0 0 438.536 438.536;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -5163,14 +4728,11 @@ const iconMap = {
   ),
   gittip_logo: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.533 438.533"
       width={size}
       height={size}
-      enable-background="new 0 0 438.533 438.533;"
+      enableBackground="new 0 0 438.533 438.533;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -5194,14 +4756,11 @@ const iconMap = {
   ),
   google_plus_sign: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.536 438.536"
       width={size}
       height={size}
-      enable-background="new 0 0 438.536 438.536;"
+      enableBackground="new 0 0 438.536 438.536;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -5238,14 +4797,11 @@ const iconMap = {
   ),
   google_plus_logo: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 475.092 475.092"
       width={size}
       height={size}
-      enable-background="new 0 0 475.092 475.092;"
+      enableBackground="new 0 0 475.092 475.092;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -5291,14 +4847,11 @@ const iconMap = {
   ),
   british_pound_currency_symbol: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 401.987 401.987"
       width={size}
       height={size}
-      enable-background="new 0 0 401.987 401.987;"
+      enableBackground="new 0 0 401.987 401.987;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -5323,14 +4876,11 @@ const iconMap = {
   ),
   group_profile: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 548.169 548.169"
       width={size}
       height={size}
-      enable-background="new 0 0 548.169 548.169;"
+      enableBackground="new 0 0 548.169 548.169;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -5385,14 +4935,11 @@ const iconMap = {
   ),
   half_star_shape: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 453.098 453.098"
       width={size}
       height={size}
-      enable-background="new 0 0 453.098 453.098;"
+      enableBackground="new 0 0 453.098 453.098;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -5410,14 +4957,11 @@ const iconMap = {
   ),
   finger_point_right: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 511.63 511.631"
       width={size}
       height={size}
-      enable-background="new 0 0 511.63 511.631;"
+      enableBackground="new 0 0 511.63 511.631;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -5454,14 +4998,11 @@ const iconMap = {
   ),
   finger_point_down: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 511.623 511.623"
       width={size}
       height={size}
-      enable-background="new 0 0 511.623 511.623;"
+      enableBackground="new 0 0 511.623 511.623;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -5501,14 +5042,11 @@ const iconMap = {
   ),
   finger_point_left: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 511.63 511.63"
       width={size}
       height={size}
-      enable-background="new 0 0 511.63 511.63;"
+      enableBackground="new 0 0 511.63 511.63;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -5549,14 +5087,11 @@ const iconMap = {
   ),
   finger_point_up: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 511.63 511.63"
       width={size}
       height={size}
-      enable-background="new 0 0 511.63 511.63;"
+      enableBackground="new 0 0 511.63 511.63;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -5593,14 +5128,11 @@ const iconMap = {
   ),
   hard_drive: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.533 438.532"
       width={size}
       height={size}
-      enable-background="new 0 0 438.533 438.532;"
+      enableBackground="new 0 0 438.533 438.532;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -5636,14 +5168,11 @@ const iconMap = {
   ),
   heart_shape_outline: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 511.626 511.626"
       width={size}
       height={size}
-      enable-background="new 0 0 511.626 511.626;"
+      enableBackground="new 0 0 511.626 511.626;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -5673,14 +5202,11 @@ const iconMap = {
   ),
   heart_shape_filled: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 511.626 511.627"
       width={size}
       height={size}
-      enable-background="new 0 0 511.626 511.627;"
+      enableBackground="new 0 0 511.626 511.627;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -5702,14 +5228,11 @@ const iconMap = {
   ),
   home_symbol: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 460.298 460.297"
       width={size}
       height={size}
-      enable-background="new 0 0 460.298 460.297;"
+      enableBackground="new 0 0 460.298 460.297;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -5737,14 +5260,11 @@ const iconMap = {
   ),
   horizontal_resize: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 511.626 511.627"
       width={size}
       height={size}
-      enable-background="new 0 0 511.626 511.627;"
+      enableBackground="new 0 0 511.626 511.627;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -5765,14 +5285,11 @@ const iconMap = {
   ),
   hospital_building: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 511.627 511.627"
       width={size}
       height={size}
-      enable-background="new 0 0 511.627 511.627;"
+      enableBackground="new 0 0 511.627 511.627;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -5852,14 +5369,11 @@ const iconMap = {
   ),
   hotel_symbol: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.536 438.536"
       width={size}
       height={size}
-      enable-background="new 0 0 438.536 438.536;"
+      enableBackground="new 0 0 438.536 438.536;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -5882,14 +5396,11 @@ const iconMap = {
   ),
   html_5: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 456.804 456.804"
       width={size}
       height={size}
-      enable-background="new 0 0 456.804 456.804;"
+      enableBackground="new 0 0 456.804 456.804;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -5906,14 +5417,11 @@ const iconMap = {
   ),
   inbox: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.533 438.533"
       width={size}
       height={size}
-      enable-background="new 0 0 438.533 438.533;"
+      enableBackground="new 0 0 438.533 438.533;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -5933,14 +5441,11 @@ const iconMap = {
   ),
   increase_symbol: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.529 438.529"
       width={size}
       height={size}
-      enable-background="new 0 0 438.529 438.529;"
+      enableBackground="new 0 0 438.529 438.529;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -5968,14 +5473,11 @@ const iconMap = {
   ),
   right_identation_option: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 511.626 511.626"
       width={size}
       height={size}
-      enable-background="new 0 0 511.626 511.626;"
+      enableBackground="new 0 0 511.626 511.626;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -6014,14 +5516,11 @@ const iconMap = {
   ),
   information_symbol: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.533 438.533"
       width={size}
       height={size}
-      enable-background="new 0 0 438.533 438.533;"
+      enableBackground="new 0 0 438.533 438.533;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -6048,14 +5547,11 @@ const iconMap = {
   ),
   information_button: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.533 438.533"
       width={size}
       height={size}
-      enable-background="new 0 0 438.533 438.533;"
+      enableBackground="new 0 0 438.533 438.533;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -6082,14 +5578,11 @@ const iconMap = {
   ),
   instagram_logo: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.536 438.536"
       width={size}
       height={size}
-      enable-background="new 0 0 438.536 438.536;"
+      enableBackground="new 0 0 438.536 438.536;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -6117,14 +5610,11 @@ const iconMap = {
   ),
   italic_text: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.543 438.543"
       width={size}
       height={size}
-      enable-background="new 0 0 438.543 438.543;"
+      enableBackground="new 0 0 438.543 438.543;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -6151,14 +5641,11 @@ const iconMap = {
   ),
   keyboard: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 548.176 548.176"
       width={size}
       height={size}
-      enable-background="new 0 0 548.176 548.176;"
+      enableBackground="new 0 0 548.176 548.176;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -6231,14 +5718,11 @@ const iconMap = {
   ),
   left_arrow: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 292.359 292.359"
       width={size}
       height={size}
-      enable-background="new 0 0 292.359 292.359;"
+      enableBackground="new 0 0 292.359 292.359;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -6255,14 +5739,11 @@ const iconMap = {
   ),
   left_arrow_circular: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.533 438.533"
       width={size}
       height={size}
-      enable-background="new 0 0 438.533 438.533;"
+      enableBackground="new 0 0 438.533 438.533;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -6294,14 +5775,11 @@ const iconMap = {
   ),
   left_identation_option: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 511.626 511.626"
       width={size}
       height={size}
-      enable-background="new 0 0 511.626 511.626;"
+      enableBackground="new 0 0 511.626 511.626;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -6341,14 +5819,11 @@ const iconMap = {
   ),
   legal_hammer: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 494.212 494.212"
       width={size}
       height={size}
-      enable-background="new 0 0 494.212 494.212;"
+      enableBackground="new 0 0 494.212 494.212;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -6389,14 +5864,11 @@ const iconMap = {
   ),
   lemon: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.526 438.526"
       width={size}
       height={size}
-      enable-background="new 0 0 438.526 438.526;"
+      enableBackground="new 0 0 438.526 438.526;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -6434,14 +5906,11 @@ const iconMap = {
   ),
   letter_p_symbol: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 401.984 401.984"
       width={size}
       height={size}
-      enable-background="new 0 0 401.984 401.984;"
+      enableBackground="new 0 0 401.984 401.984;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -6465,14 +5934,11 @@ const iconMap = {
   ),
   level_up: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 401.71 401.71"
       width={size}
       height={size}
-      enable-background="new 0 0 401.71 401.71;"
+      enableBackground="new 0 0 401.71 401.71;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -6491,14 +5957,11 @@ const iconMap = {
   ),
   light_bulb: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.536 438.536"
       width={size}
       height={size}
-      enable-background="new 0 0 438.536 438.536;"
+      enableBackground="new 0 0 438.536 438.536;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -6539,14 +6002,11 @@ const iconMap = {
   ),
   lightning_bolt: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 475.084 475.085"
       width={size}
       height={size}
-      enable-background="new 0 0 475.084 475.085;"
+      enableBackground="new 0 0 475.084 475.085;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -6566,14 +6026,11 @@ const iconMap = {
   ),
   linkedin_symbol: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.536 438.535"
       width={size}
       height={size}
-      enable-background="new 0 0 438.536 438.535;"
+      enableBackground="new 0 0 438.536 438.535;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -6601,14 +6058,11 @@ const iconMap = {
   ),
   linkedin_logo: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.536 438.536"
       width={size}
       height={size}
-      enable-background="new 0 0 438.536 438.536;"
+      enableBackground="new 0 0 438.536 438.536;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -6633,14 +6087,11 @@ const iconMap = {
   ),
   link_symbol: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 465.951 465.951"
       width={size}
       height={size}
-      enable-background="new 0 0 465.951 465.951;"
+      enableBackground="new 0 0 465.951 465.951;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -6676,14 +6127,11 @@ const iconMap = {
   ),
   linux_logo: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 511.655 511.655"
       width={size}
       height={size}
-      enable-background="new 0 0 511.655 511.655;"
+      enableBackground="new 0 0 511.655 511.655;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -6819,14 +6267,11 @@ const iconMap = {
   ),
   list: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 511.63 511.63"
       width={size}
       height={size}
-      enable-background="new 0 0 511.63 511.63;"
+      enableBackground="new 0 0 511.63 511.63;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -6872,14 +6317,11 @@ const iconMap = {
   ),
   list_option: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 511.626 511.626"
       width={size}
       height={size}
-      enable-background="new 0 0 511.626 511.626;"
+      enableBackground="new 0 0 511.626 511.626;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -6933,14 +6375,11 @@ const iconMap = {
   ),
   list_on_window: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 511.626 511.627"
       width={size}
       height={size}
-      enable-background="new 0 0 511.626 511.627;"
+      enableBackground="new 0 0 511.626 511.627;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -6995,14 +6434,11 @@ const iconMap = {
   ),
   list_with_dots: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 511.626 511.626"
       width={size}
       height={size}
-      enable-background="new 0 0 511.626 511.626;"
+      enableBackground="new 0 0 511.626 511.626;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -7046,14 +6482,11 @@ const iconMap = {
   ),
   long_arrow_left: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 493.353 493.352"
       width={size}
       height={size}
-      enable-background="new 0 0 493.353 493.352;"
+      enableBackground="new 0 0 493.353 493.352;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -7071,14 +6504,11 @@ const iconMap = {
   ),
   long_arrow_right: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 493.356 493.356"
       width={size}
       height={size}
-      enable-background="new 0 0 493.356 493.356;"
+      enableBackground="new 0 0 493.356 493.356;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -7096,14 +6526,11 @@ const iconMap = {
   ),
   long_arrow_up: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 493.348 493.349"
       width={size}
       height={size}
-      enable-background="new 0 0 493.348 493.349;"
+      enableBackground="new 0 0 493.348 493.349;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -7121,14 +6548,11 @@ const iconMap = {
   ),
   magic_wand: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 467.374 467.374"
       width={size}
       height={size}
-      enable-background="new 0 0 467.374 467.374;"
+      enableBackground="new 0 0 467.374 467.374;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -7164,14 +6588,11 @@ const iconMap = {
   ),
   magnifying_glass: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 475.084 475.084"
       width={size}
       height={size}
-      enable-background="new 0 0 475.084 475.084;"
+      enableBackground="new 0 0 475.084 475.084;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -7196,14 +6617,11 @@ const iconMap = {
   ),
   man_shape: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 502.496 502.497"
       width={size}
       height={size}
-      enable-background="new 0 0 502.496 502.497;"
+      enableBackground="new 0 0 502.496 502.497;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -7233,14 +6651,11 @@ const iconMap = {
   ),
   map_marker: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.536 438.536"
       width={size}
       height={size}
-      enable-background="new 0 0 438.536 438.536;"
+      enableBackground="new 0 0 438.536 438.536;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -7262,14 +6677,11 @@ const iconMap = {
   ),
   maxcdn_logo: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 501.21 501.21"
       width={size}
       height={size}
-      enable-background="new 0 0 501.21 501.21;"
+      enableBackground="new 0 0 501.21 501.21;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -7287,14 +6699,11 @@ const iconMap = {
   ),
   medical_kit: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 511.626 511.627"
       width={size}
       height={size}
-      enable-background="new 0 0 511.626 511.627;"
+      enableBackground="new 0 0 511.626 511.627;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -7327,14 +6736,11 @@ const iconMap = {
   ),
   meh_face: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.533 438.533"
       width={size}
       height={size}
-      enable-background="new 0 0 438.533 438.533;"
+      enableBackground="new 0 0 438.533 438.533;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -7377,14 +6783,11 @@ const iconMap = {
   ),
   microfone_shape: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 475.085 475.085"
       width={size}
       height={size}
-      enable-background="new 0 0 475.085 475.085;"
+      enableBackground="new 0 0 475.085 475.085;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -7416,14 +6819,11 @@ const iconMap = {
   ),
   microfone_off_shape: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 475.092 475.092"
       width={size}
       height={size}
-      enable-background="new 0 0 475.092 475.092;"
+      enableBackground="new 0 0 475.092 475.092;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -7460,14 +6860,11 @@ const iconMap = {
   ),
   minus_button: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 401.998 401.998"
       width={size}
       height={size}
-      enable-background="new 0 0 401.998 401.998;"
+      enableBackground="new 0 0 401.998 401.998;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -7495,14 +6892,11 @@ const iconMap = {
   ),
   minus_sign_circular: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.533 438.533"
       width={size}
       height={size}
-      enable-background="new 0 0 438.533 438.533;"
+      enableBackground="new 0 0 438.533 438.533;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -7524,14 +6918,11 @@ const iconMap = {
   ),
   minus_sign_square: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.536 438.536"
       width={size}
       height={size}
-      enable-background="new 0 0 438.536 438.536;"
+      enableBackground="new 0 0 438.536 438.536;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -7552,14 +6943,11 @@ const iconMap = {
   ),
   minus_sign_square_outline: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 328.911 328.911"
       width={size}
       height={size}
-      enable-background="new 0 0 328.911 328.911;"
+      enableBackground="new 0 0 328.911 328.911;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -7588,14 +6976,11 @@ const iconMap = {
   ),
   minus_symbol: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 401.991 401.991"
       width={size}
       height={size}
-      enable-background="new 0 0 401.991 401.991;"
+      enableBackground="new 0 0 401.991 401.991;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -7612,14 +6997,11 @@ const iconMap = {
   ),
   mobile_phone: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 365.449 365.449"
       width={size}
       height={size}
-      enable-background="new 0 0 365.449 365.449;"
+      enableBackground="new 0 0 365.449 365.449;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -7644,14 +7026,11 @@ const iconMap = {
   ),
   moon_phase_outline: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.277 438.277"
       width={size}
       height={size}
-      enable-background="new 0 0 438.277 438.277;"
+      enableBackground="new 0 0 438.277 438.277;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -7677,14 +7056,11 @@ const iconMap = {
   ),
   move_option: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 511.626 511.626"
       width={size}
       height={size}
-      enable-background="new 0 0 511.626 511.626;"
+      enableBackground="new 0 0 511.626 511.626;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -7711,14 +7087,11 @@ const iconMap = {
   ),
   bell_outline: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 511.63 511.63"
       width={size}
       height={size}
-      enable-background="new 0 0 511.63 511.63;"
+      enableBackground="new 0 0 511.63 511.63;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -7745,14 +7118,11 @@ const iconMap = {
   ),
   headphones: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 475.082 475.081"
       width={size}
       height={size}
-      enable-background="new 0 0 475.082 475.081;"
+      enableBackground="new 0 0 475.082 475.081;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -7782,14 +7152,11 @@ const iconMap = {
   ),
   music_note: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 475.071 475.071"
       width={size}
       height={size}
-      enable-background="new 0 0 475.071 475.071;"
+      enableBackground="new 0 0 475.071 475.071;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -7815,14 +7182,11 @@ const iconMap = {
   ),
   nine_black_tiles: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 511.626 511.627"
       width={size}
       height={size}
-      enable-background="new 0 0 511.626 511.627;"
+      enableBackground="new 0 0 511.626 511.627;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -7882,14 +7246,11 @@ const iconMap = {
   ),
   numbered_list: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 509.054 509.054"
       width={size}
       height={size}
-      enable-background="new 0 0 509.054 509.054;"
+      enableBackground="new 0 0 509.054 509.054;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -7939,14 +7300,11 @@ const iconMap = {
   ),
   open_folder: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 536.461 536.46"
       width={size}
       height={size}
-      enable-background="new 0 0 536.461 536.46;"
+      enableBackground="new 0 0 536.461 536.46;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -7974,14 +7332,11 @@ const iconMap = {
   ),
   open_folder_outline: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 545.027 545.027"
       width={size}
       height={size}
-      enable-background="new 0 0 545.027 545.027;"
+      enableBackground="new 0 0 545.027 545.027;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -8008,14 +7363,11 @@ const iconMap = {
   ),
   open_laptop: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 548.176 548.175"
       width={size}
       height={size}
-      enable-background="new 0 0 548.176 548.175;"
+      enableBackground="new 0 0 548.176 548.175;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -8044,14 +7396,11 @@ const iconMap = {
   ),
   open_padlock: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 475.078 475.078"
       width={size}
       height={size}
-      enable-background="new 0 0 475.078 475.078;"
+      enableBackground="new 0 0 475.078 475.078;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -8072,14 +7421,11 @@ const iconMap = {
   ),
   wrench_tool: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 469.09 469.089"
       width={size}
       height={size}
-      enable-background="new 0 0 469.09 469.089;"
+      enableBackground="new 0 0 469.09 469.089;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -8110,14 +7456,11 @@ const iconMap = {
   ),
   locked_padlock: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 401.998 401.998"
       width={size}
       height={size}
-      enable-background="new 0 0 401.998 401.998;"
+      enableBackground="new 0 0 401.998 401.998;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -8138,14 +7481,11 @@ const iconMap = {
   ),
   paper_bill: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 548.176 548.176"
       width={size}
       height={size}
-      enable-background="new 0 0 548.176 548.176;"
+      enableBackground="new 0 0 548.176 548.176;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -8177,14 +7517,11 @@ const iconMap = {
   ),
   paper_clip: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 436.256 436.257"
       width={size}
       height={size}
-      enable-background="new 0 0 436.256 436.257;"
+      enableBackground="new 0 0 436.256 436.257;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -8211,14 +7548,11 @@ const iconMap = {
   ),
   paper_push_pin: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 475.085 475.085"
       width={size}
       height={size}
-      enable-background="new 0 0 475.085 475.085;"
+      enableBackground="new 0 0 475.085 475.085;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -8242,14 +7576,11 @@ const iconMap = {
   ),
   paste_from_clipboard: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 511.626 511.626"
       width={size}
       height={size}
-      enable-background="new 0 0 511.626 511.626;"
+      enableBackground="new 0 0 511.626 511.626;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -8273,14 +7604,11 @@ const iconMap = {
   ),
   pause_symbol: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.536 438.536"
       width={size}
       height={size}
-      enable-background="new 0 0 438.536 438.536;"
+      enableBackground="new 0 0 438.536 438.536;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -8304,14 +7632,11 @@ const iconMap = {
   ),
   pencil: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 432.544 432.544"
       width={size}
       height={size}
-      enable-background="new 0 0 432.544 432.544;"
+      enableBackground="new 0 0 432.544 432.544;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -8335,14 +7660,11 @@ const iconMap = {
   ),
   photo_camera: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 548.165 548.165"
       width={size}
       height={size}
-      enable-background="new 0 0 548.165 548.165;"
+      enableBackground="new 0 0 548.165 548.165;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -8373,14 +7695,11 @@ const iconMap = {
   ),
   picture: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 548.176 548.176"
       width={size}
       height={size}
-      enable-background="new 0 0 548.176 548.176;"
+      enableBackground="new 0 0 548.176 548.176;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -8413,14 +7732,11 @@ const iconMap = {
   ),
   pinterest_logo: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.529 438.529"
       width={size}
       height={size}
-      enable-background="new 0 0 438.529 438.529;"
+      enableBackground="new 0 0 438.529 438.529;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -8452,14 +7768,11 @@ const iconMap = {
   ),
   pinterest_sign: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.557 438.557"
       width={size}
       height={size}
-      enable-background="new 0 0 438.557 438.557;"
+      enableBackground="new 0 0 438.557 438.557;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -8490,14 +7803,11 @@ const iconMap = {
   ),
   plane: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 400.156 400.155"
       width={size}
       height={size}
-      enable-background="new 0 0 400.156 400.155;"
+      enableBackground="new 0 0 400.156 400.155;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -8519,14 +7829,11 @@ const iconMap = {
   ),
   plant_leaf: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 511.617 511.616"
       width={size}
       height={size}
-      enable-background="new 0 0 511.617 511.616;"
+      enableBackground="new 0 0 511.617 511.616;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -8560,14 +7867,11 @@ const iconMap = {
   ),
   play_button: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 443.307 443.306"
       width={size}
       height={size}
-      enable-background="new 0 0 443.307 443.306;"
+      enableBackground="new 0 0 443.307 443.306;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -8584,14 +7888,11 @@ const iconMap = {
   ),
   play_circle: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.533 438.533"
       width={size}
       height={size}
-      enable-background="new 0 0 438.533 438.533;"
+      enableBackground="new 0 0 438.533 438.533;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -8621,14 +7922,11 @@ const iconMap = {
   ),
   play_sign: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.533 438.533"
       width={size}
       height={size}
-      enable-background="new 0 0 438.533 438.533;"
+      enableBackground="new 0 0 438.533 438.533;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -8650,14 +7948,11 @@ const iconMap = {
   ),
   play_video_button: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.536 438.536"
       width={size}
       height={size}
-      enable-background="new 0 0 438.536 438.536;"
+      enableBackground="new 0 0 438.536 438.536;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -8685,14 +7980,11 @@ const iconMap = {
   ),
   plus_sign: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 401.994 401.994"
       width={size}
       height={size}
-      enable-background="new 0 0 401.994 401.994;"
+      enableBackground="new 0 0 401.994 401.994;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -8712,14 +8004,11 @@ const iconMap = {
   ),
   plus_sign_circular: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.533 438.533"
       width={size}
       height={size}
-      enable-background="new 0 0 438.533 438.533;"
+      enableBackground="new 0 0 438.533 438.533;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -8744,14 +8033,11 @@ const iconMap = {
   ),
   plus_sign_square: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.536 438.536"
       width={size}
       height={size}
-      enable-background="new 0 0 438.536 438.536;"
+      enableBackground="new 0 0 438.536 438.536;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -8775,14 +8061,11 @@ const iconMap = {
   ),
   power_button: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 475.085 475.085"
       width={size}
       height={size}
-      enable-background="new 0 0 438.536 438.536;"
+      enableBackground="new 0 0 438.536 438.536;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -8815,14 +8098,11 @@ const iconMap = {
   ),
   printing_tool: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 475.078 475.077"
       width={size}
       height={size}
-      enable-background="new 0 0 475.078 475.077;"
+      enableBackground="new 0 0 475.078 475.077;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -8848,14 +8128,11 @@ const iconMap = {
   ),
   puzzle_piece: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 475.078 475.077"
       width={size}
       height={size}
-      enable-background="new 0 0 475.078 475.077;"
+      enableBackground="new 0 0 475.078 475.077;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -8893,14 +8170,11 @@ const iconMap = {
   ),
   qr_code: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 401.994 401.994"
       width={size}
       height={size}
-      enable-background="new 0 0 401.994 401.994;"
+      enableBackground="new 0 0 401.994 401.994;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -8926,14 +8200,11 @@ const iconMap = {
   ),
   question_sign_circular: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.533 438.533"
       width={size}
       height={size}
-      enable-background="new 0 0 438.533 438.533;"
+      enableBackground="new 0 0 438.533 438.533;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -8964,14 +8235,11 @@ const iconMap = {
   ),
   question_sign: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 365.442 365.442"
       width={size}
       height={size}
-      enable-background="new 0 0 365.442 365.442;"
+      enableBackground="new 0 0 365.442 365.442;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -9002,14 +8270,11 @@ const iconMap = {
   ),
   reduced_volume: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 347.182 347.182"
       width={size}
       height={size}
-      enable-background="new 0 0 347.182 347.182;"
+      enableBackground="new 0 0 347.182 347.182;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -9039,14 +8304,11 @@ const iconMap = {
   ),
   refresh_arrow: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.542 438.542"
       width={size}
       height={size}
-      enable-background="new 0 0 438.542 438.542;"
+      enableBackground="new 0 0 438.542 438.542;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -9072,14 +8334,11 @@ const iconMap = {
   ),
   refresh_page: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.529 438.528"
       width={size}
       height={size}
-      enable-background="new 0 0 438.529 438.528;"
+      enableBackground="new 0 0 438.529 438.528;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -9112,14 +8371,11 @@ const iconMap = {
   ),
   remove_button: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.533 438.533"
       width={size}
       height={size}
-      enable-background="new 0 0 438.533 438.533;"
+      enableBackground="new 0 0 438.533 438.533;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -9153,14 +8409,11 @@ const iconMap = {
   ),
   remove_sign: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 339.177 339.177"
       width={size}
       height={size}
-      enable-background="new 0 0 339.177 339.177;"
+      enableBackground="new 0 0 339.177 339.177;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -9181,14 +8434,11 @@ const iconMap = {
   ),
   renren_logo: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.54 438.539"
       width={size}
       height={size}
-      enable-background="new 0 0 438.54 438.539;"
+      enableBackground="new 0 0 438.54 438.539;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -9217,14 +8467,11 @@ const iconMap = {
   ),
   reorder_option: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.533 438.533"
       width={size}
       height={size}
-      enable-background="new 0 0 438.533 438.533;"
+      enableBackground="new 0 0 438.533 438.533;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -9254,14 +8501,11 @@ const iconMap = {
   ),
   reply: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 511.63 511.631"
       width={size}
       height={size}
-      enable-background="new 0 0 511.63 511.631;"
+      enableBackground="new 0 0 511.63 511.631;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -9285,14 +8529,11 @@ const iconMap = {
   ),
   reply_arrow: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 511.633 511.633"
       width={size}
       height={size}
-      enable-background="new 0 0 511.633 511.633;"
+      enableBackground="new 0 0 511.633 511.633;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -9322,14 +8563,11 @@ const iconMap = {
   ),
   resize: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 431.12 431.12"
       width={size}
       height={size}
-      enable-background="new 0 0 431.12 431.12;"
+      enableBackground="new 0 0 431.12 431.12;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -9357,14 +8595,11 @@ const iconMap = {
   ),
   retweet_arrows: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 548.172 548.172"
       width={size}
       height={size}
-      enable-background="new 0 0 548.172 548.172;"
+      enableBackground="new 0 0 548.172 548.172;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -9396,14 +8631,11 @@ const iconMap = {
   ),
   rewind_button: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 511.633 511.634"
       width={size}
       height={size}
-      enable-background="new 0 0 511.633 511.634;"
+      enableBackground="new 0 0 511.633 511.634;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -9425,14 +8657,11 @@ const iconMap = {
   ),
   arrow_right_circle: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.533 438.533"
       width={size}
       height={size}
-      enable-background="new 0 0 438.533 438.533;"
+      enableBackground="new 0 0 438.533 438.533;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -9464,14 +8693,11 @@ const iconMap = {
   ),
   chevron_right: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 444.819 444.819"
       width={size}
       height={size}
-      enable-background="new 0 0 444.819 444.819;"
+      enableBackground="new 0 0 444.819 444.819;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -9490,14 +8716,11 @@ const iconMap = {
   ),
   quote_right: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 475.082 475.081"
       width={size}
       height={size}
-      enable-background="new 0 0 475.082 475.081;"
+      enableBackground="new 0 0 475.082 475.081;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -9529,14 +8752,11 @@ const iconMap = {
   ),
   quote_left: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 475.082 475.081"
       width={size}
       height={size}
-      enable-background="new 0 0 475.082 475.081;"
+      enableBackground="new 0 0 475.082 475.081;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -9568,14 +8788,11 @@ const iconMap = {
   ),
   road_perspective: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 519.625 519.625"
       width={size}
       height={size}
-      enable-background="new 0 0 519.625 519.625;"
+      enableBackground="new 0 0 519.625 519.625;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -9601,14 +8818,11 @@ const iconMap = {
   ),
   black_square: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.536 438.536"
       width={size}
       height={size}
-      enable-background="new 0 0 438.536 438.536;"
+      enableBackground="new 0 0 438.536 438.536;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -9626,14 +8840,11 @@ const iconMap = {
   ),
   rss_feed_sign: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.536 438.536"
       width={size}
       height={size}
-      enable-background="new 0 0 438.536 438.536;"
+      enableBackground="new 0 0 438.536 438.536;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -9664,14 +8875,11 @@ const iconMap = {
   ),
   rss_feed: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 402.041 402.04"
       width={size}
       height={size}
-      enable-background="new 0 0 402.041 402.04;"
+      enableBackground="new 0 0 402.041 402.04;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -9706,14 +8914,11 @@ const iconMap = {
   ),
   rupee_currency_symbol: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 402.041 402.04"
       width={size}
       height={size}
-      enable-background="new 0 0 402.041 402.04;"
+      enableBackground="new 0 0 402.041 402.04;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -9738,14 +8943,11 @@ const iconMap = {
   ),
   safe_file: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.533 438.533"
       width={size}
       height={size}
-      enable-background="new 0 0 438.533 438.533;"
+      enableBackground="new 0 0 438.533 438.533;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -9771,14 +8973,11 @@ const iconMap = {
   ),
   screenshot_symbol: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.529 438.529"
       width={size}
       height={size}
-      enable-background="new 0 0 438.529 438.529;"
+      enableBackground="new 0 0 438.529 438.529;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -9809,14 +9008,11 @@ const iconMap = {
   ),
   settings_symbol: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 548.172 548.172"
       width={size}
       height={size}
-      enable-background="new 0 0 548.172 548.172;"
+      enableBackground="new 0 0 548.172 548.172;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -9887,14 +9083,11 @@ const iconMap = {
   ),
   share_option: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 511.626 511.627"
       width={size}
       height={size}
-      enable-background="new 0 0 511.626 511.627;"
+      enableBackground="new 0 0 511.626 511.627;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -9918,14 +9111,11 @@ const iconMap = {
   ),
   share_post_symbol: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.536 438.536"
       width={size}
       height={size}
-      enable-background="new 0 0 438.536 438.536;"
+      enableBackground="new 0 0 438.536 438.536;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -9950,14 +9140,11 @@ const iconMap = {
   ),
   share_symbol: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 475.082 475.081"
       width={size}
       height={size}
-      enable-background="new 0 0 475.082 475.081;"
+      enableBackground="new 0 0 475.082 475.081;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -9993,14 +9180,11 @@ const iconMap = {
   ),
   shield: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.543 438.543"
       width={size}
       height={size}
-      enable-background="new 0 0 438.543 438.543;"
+      enableBackground="new 0 0 438.543 438.543;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -10023,14 +9207,11 @@ const iconMap = {
   ),
   shopping_cart_shape: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 475.084 475.085"
       width={size}
       height={size}
-      enable-background="new 0 0 475.084 475.085;"
+      enableBackground="new 0 0 475.084 475.085;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -10068,14 +9249,11 @@ const iconMap = {
   ),
   signal_bars: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 511.626 511.627"
       width={size}
       height={size}
-      enable-background="new 0 0 511.626 511.627;"
+      enableBackground="new 0 0 511.626 511.627;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -10114,14 +9292,11 @@ const iconMap = {
   ),
   sign_in: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.542 438.542"
       width={size}
       height={size}
-      enable-background="new 0 0 438.542 438.542;"
+      enableBackground="new 0 0 438.542 438.542;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -10153,14 +9328,11 @@ const iconMap = {
   ),
   sign_out: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 447.674 447.674"
       width={size}
       height={size}
-      enable-background="new 0 0 447.674 447.674;"
+      enableBackground="new 0 0 447.674 447.674;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -10192,14 +9364,11 @@ const iconMap = {
   ),
   sitemap: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 511.626 511.627"
       width={size}
       height={size}
-      enable-background="new 0 0 511.626 511.627;"
+      enableBackground="new 0 0 511.626 511.627;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -10227,14 +9396,11 @@ const iconMap = {
   ),
   skype_logo: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.536 438.536"
       width={size}
       height={size}
-      enable-background="new 0 0 438.536 438.536;"
+      enableBackground="new 0 0 438.536 438.536;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -10272,14 +9438,11 @@ const iconMap = {
   ),
   rocket: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 466.227 466.227"
       width={size}
       height={size}
-      enable-background="new 0 0 466.227 466.227;"
+      enableBackground="new 0 0 466.227 466.227;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -10303,14 +9466,11 @@ const iconMap = {
   ),
   smile: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.533 438.533"
       width={size}
       height={size}
-      enable-background="new 0 0 438.533 438.533;"
+      enableBackground="new 0 0 438.533 438.533;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -10356,14 +9516,11 @@ const iconMap = {
   ),
   sort_arrows: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 401.998 401.998"
       width={size}
       height={size}
-      enable-background="new 0 0 401.998 401.998;"
+      enableBackground="new 0 0 401.998 401.998;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -10387,14 +9544,11 @@ const iconMap = {
   ),
   sort_by_alphabet_asc: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 511.626 511.627"
       width={size}
       height={size}
-      enable-background="new 0 0 511.626 511.627;"
+      enableBackground="new 0 0 511.626 511.627;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -10426,14 +9580,11 @@ const iconMap = {
   ),
   sort_by_attributes_desc: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 511.627 511.627"
       width={size}
       height={size}
-      enable-background="new 0 0 511.627 511.627;"
+      enableBackground="new 0 0 511.627 511.627;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -10474,14 +9625,11 @@ const iconMap = {
   ),
   sort_by_attributes_asc: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 511.627 511.627"
       width={size}
       height={size}
-      enable-background="new 0 0 511.627 511.627;"
+      enableBackground="new 0 0 511.627 511.627;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -10522,14 +9670,11 @@ const iconMap = {
   ),
   sort_by_numeric_asc: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 511.63 511.63"
       width={size}
       height={size}
-      enable-background="new 0 0 511.63 511.63;"
+      enableBackground="new 0 0 511.63 511.63;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -10567,14 +9712,11 @@ const iconMap = {
   ),
   sort_by_numeric_desc: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 511.63 511.63"
       width={size}
       height={size}
-      enable-background="new 0 0 511.63 511.63;"
+      enableBackground="new 0 0 511.63 511.63;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -10612,14 +9754,11 @@ const iconMap = {
   ),
   sort_down: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 292.362 292.362"
       width={size}
       height={size}
-      enable-background="new 0 0 292.362 292.362;"
+      enableBackground="new 0 0 292.362 292.362;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -10636,14 +9775,11 @@ const iconMap = {
   ),
   sort_by_alphabet_desc: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 511.626 511.627"
       width={size}
       height={size}
-      enable-background="new 0 0 511.626 511.627;"
+      enableBackground="new 0 0 511.626 511.627;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -10675,14 +9811,11 @@ const iconMap = {
   ),
   sort_up: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 292.362 292.362"
       width={size}
       height={size}
-      enable-background="new 0 0 292.362 292.362;"
+      enableBackground="new 0 0 292.362 292.362;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -10699,14 +9832,11 @@ const iconMap = {
   ),
   spinner_of_dots: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 456.817 456.817"
       width={size}
       height={size}
-      enable-background="new 0 0 456.817 456.817;"
+      enableBackground="new 0 0 456.817 456.817;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -10760,14 +9890,11 @@ const iconMap = {
   ),
   square_shape: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.536 438.536"
       width={size}
       height={size}
-      enable-background="new 0 0 438.536 438.536;"
+      enableBackground="new 0 0 438.536 438.536;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -10784,14 +9911,11 @@ const iconMap = {
   ),
   stack_exchange_logo: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.53 438.529"
       width={size}
       height={size}
-      enable-background="new 0 0 438.53 438.529;"
+      enableBackground="new 0 0 438.53 438.529;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -10815,14 +9939,11 @@ const iconMap = {
   ),
   stack_exchange_symbol: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 511.627 511.627"
       width={size}
       height={size}
-      enable-background="new 0 0 511.627 511.627;"
+      enableBackground="new 0 0 511.627 511.627;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -10846,14 +9967,11 @@ const iconMap = {
   ),
   star_shape: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 475.075 475.075"
       width={size}
       height={size}
-      enable-background="new 0 0 475.075 475.075;"
+      enableBackground="new 0 0 475.075 475.075;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -10873,14 +9991,11 @@ const iconMap = {
   ),
   star_outline: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 475.075 475.075"
       width={size}
       height={size}
-      enable-background="new 0 0 475.075 475.075;"
+      enableBackground="new 0 0 475.075 475.075;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -10901,14 +10016,11 @@ const iconMap = {
   ),
   star_half: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 475.044 475.044"
       width={size}
       height={size}
-      enable-background="new 0 0 475.044 475.044;"
+      enableBackground="new 0 0 475.044 475.044;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -10929,14 +10041,11 @@ const iconMap = {
   ),
   step_backward: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 439.362 439.362"
       width={size}
       height={size}
-      enable-background="new 0 0 439.362 439.362;"
+      enableBackground="new 0 0 439.362 439.362;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -10955,14 +10064,11 @@ const iconMap = {
   ),
   step_forward: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 439.357 439.357"
       width={size}
       height={size}
-      enable-background="new 0 0 439.357 439.357;"
+      enableBackground="new 0 0 439.357 439.357;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -10982,14 +10088,11 @@ const iconMap = {
   ),
   stethoscope: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.536 438.536"
       width={size}
       height={size}
-      enable-background="new 0 0 438.536 438.536;"
+      enableBackground="new 0 0 438.536 438.536;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -11022,14 +10125,11 @@ const iconMap = {
   ),
   strikethrough: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 511.626 511.626"
       width={size}
       height={size}
-      enable-background="new 0 0 511.626 511.626;"
+      enableBackground="new 0 0 511.626 511.626;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -11068,14 +10168,11 @@ const iconMap = {
   ),
   sun: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 511.34 511.34"
       width={size}
       height={size}
-      enable-background="new 0 0 511.34 511.34;"
+      enableBackground="new 0 0 511.34 511.34;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -11104,14 +10201,11 @@ const iconMap = {
   ),
   superscript: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 436.544 436.544"
       width={size}
       height={size}
-      enable-background="new 0 0 436.544 436.544;"
+      enableBackground="new 0 0 436.544 436.544;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -11141,14 +10235,11 @@ const iconMap = {
   ),
   tablegrid: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 475.082 475.081"
       width={size}
       height={size}
-      enable-background="new 0 0 475.082 475.081;"
+      enableBackground="new 0 0 475.082 475.081;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -11192,14 +10283,11 @@ const iconMap = {
   ),
   tag: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 432.544 432.544"
       width={size}
       height={size}
-      enable-background="new 0 0 432.544 432.544;"
+      enableBackground="new 0 0 432.544 432.544;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -11220,14 +10308,11 @@ const iconMap = {
   ),
   tags: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 542.183 542.183"
       width={size}
       height={size}
-      enable-background="new 0 0 542.183 542.183;"
+      enableBackground="new 0 0 542.183 542.183;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -11258,14 +10343,11 @@ const iconMap = {
   ),
   task_list: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 511.63 511.631"
       width={size}
       height={size}
-      enable-background="new 0 0 511.63 511.631;"
+      enableBackground="new 0 0 511.63 511.631;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -11297,14 +10379,11 @@ const iconMap = {
   ),
   telephone_shape: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 401.998 401.998"
       width={size}
       height={size}
-      enable-background="new 0 0 401.998 401.998;"
+      enableBackground="new 0 0 401.998 401.998;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -11337,14 +10416,11 @@ const iconMap = {
   ),
   telephone_button: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.536 438.536"
       width={size}
       height={size}
-      enable-background="new 0 0 438.536 438.536;"
+      enableBackground="new 0 0 438.536 438.536;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -11379,14 +10455,11 @@ const iconMap = {
   ),
   terminal: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 471.362 471.362"
       width={size}
       height={size}
-      enable-background="new 0 0 471.362 471.362;"
+      enableBackground="new 0 0 471.362 471.362;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -11411,14 +10484,11 @@ const iconMap = {
   ),
   text_file_outline: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.533 438.533"
       width={size}
       height={size}
-      enable-background="new 0 0 438.533 438.533;"
+      enableBackground="new 0 0 438.533 438.533;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -11450,14 +10520,11 @@ const iconMap = {
   ),
   text_file_shape: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.533 438.533"
       width={size}
       height={size}
-      enable-background="new 0 0 438.533 438.533;"
+      enableBackground="new 0 0 438.533 438.533;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -11486,14 +10553,11 @@ const iconMap = {
   ),
   text_height: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 510.714 510.714"
       width={size}
       height={size}
-      enable-background="new 0 0 510.714 510.714;"
+      enableBackground="new 0 0 510.714 510.714;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -11536,14 +10600,11 @@ const iconMap = {
   ),
   text_width: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.526 438.525"
       width={size}
       height={size}
-      enable-background="new 0 0 438.526 438.525;"
+      enableBackground="new 0 0 438.526 438.525;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -11585,14 +10646,11 @@ const iconMap = {
   ),
   thin_arrows_down: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 284.929 284.929"
       width={size}
       height={size}
-      enable-background="new 0 0 284.929 284.929;"
+      enableBackground="new 0 0 284.929 284.929;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -11618,14 +10676,11 @@ const iconMap = {
   ),
   three_small_squares: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 401.991 401.991"
       width={size}
       height={size}
-      enable-background="new 0 0 401.991 401.991;"
+      enableBackground="new 0 0 401.991 401.991;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -11655,14 +10710,11 @@ const iconMap = {
   ),
   thumbs_down_outline: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 475.092 475.092"
       width={size}
       height={size}
-      enable-background="new 0 0 475.092 475.092;"
+      enableBackground="new 0 0 475.092 475.092;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -11701,14 +10753,11 @@ const iconMap = {
   ),
   thumbs_down_shape: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 456.824 456.824"
       width={size}
       height={size}
-      enable-background="new 0 0 456.824 456.824;"
+      enableBackground="new 0 0 456.824 456.824;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -11747,14 +10796,11 @@ const iconMap = {
   ),
   thumbs_up_outline: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 475.099 475.099"
       width={size}
       height={size}
-      enable-background="new 0 0 475.099 475.099;"
+      enableBackground="new 0 0 475.099 475.099;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -11793,14 +10839,11 @@ const iconMap = {
   ),
   thumbs_up_shape: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 456.814 456.814"
       width={size}
       height={size}
-      enable-background="new 0 0 456.814 456.814;"
+      enableBackground="new 0 0 456.814 456.814;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -11838,14 +10881,11 @@ const iconMap = {
   ),
   ticket: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 481.08 481.08"
       width={size}
       height={size}
-      enable-background="new 0 0 481.08 481.08;"
+      enableBackground="new 0 0 481.08 481.08;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -11872,14 +10912,11 @@ const iconMap = {
   ),
   time: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.533 438.533"
       width={size}
       height={size}
-      enable-background="new 0 0 438.533 438.533;"
+      enableBackground="new 0 0 438.533 438.533;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -11910,14 +10947,11 @@ const iconMap = {
   ),
   tint_drop: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 420.266 420.266"
       width={size}
       height={size}
-      enable-background="new 0 0 420.266 420.266;"
+      enableBackground="new 0 0 420.266 420.266;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -11943,14 +10977,11 @@ const iconMap = {
   ),
   trash: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.529 438.529"
       width={size}
       height={size}
-      enable-background="new 0 0 438.529 438.529;"
+      enableBackground="new 0 0 438.529 438.529;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -11992,14 +11023,11 @@ const iconMap = {
   ),
   trello_logo: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.536 438.536"
       width={size}
       height={size}
-      enable-background="new 0 0 438.536 438.536;"
+      enableBackground="new 0 0 438.536 438.536;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -12022,14 +11050,11 @@ const iconMap = {
   ),
   trophy: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 475.084 475.084"
       width={size}
       height={size}
-      enable-background="new 0 0 475.084 475.084;"
+      enableBackground="new 0 0 475.084 475.084;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -12059,14 +11084,11 @@ const iconMap = {
   ),
   tumblr_sign: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.542 438.543"
       width={size}
       height={size}
-      enable-background="new 0 0 438.542 438.543;"
+      enableBackground="new 0 0 438.542 438.543;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -12086,14 +11108,11 @@ const iconMap = {
   ),
   tumblr_logo: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.536 438.536"
       width={size}
       height={size}
-      enable-background="new 0 0 438.536 438.536;"
+      enableBackground="new 0 0 438.536 438.536;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -12116,14 +11135,11 @@ const iconMap = {
   ),
   turkish_lire_currency_symbol: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 401.987 401.987"
       width={size}
       height={size}
-      enable-background="new 0 0 401.987 401.987;"
+      enableBackground="new 0 0 401.987 401.987;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -12149,14 +11165,11 @@ const iconMap = {
   ),
   twitter_symbol: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 449.956 449.956"
       width={size}
       height={size}
-      enable-background="new 0 0 449.956 449.956;"
+      enableBackground="new 0 0 449.956 449.956;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -12180,14 +11193,11 @@ const iconMap = {
   ),
   twitter_logo: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.536 438.536"
       width={size}
       height={size}
-      enable-background="new 0 0 438.536 438.536;"
+      enableBackground="new 0 0 438.536 438.536;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -12215,14 +11225,11 @@ const iconMap = {
   ),
   two_columns: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 475.082 475.082"
       width={size}
       height={size}
-      enable-background="new 0 0 475.082 475.082;"
+      enableBackground="new 0 0 475.082 475.082;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -12242,14 +11249,11 @@ const iconMap = {
   ),
   umbrella: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 475.098 475.099"
       width={size}
       height={size}
-      enable-background="new 0 0 475.098 475.099;"
+      enableBackground="new 0 0 475.098 475.099;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -12292,14 +11296,11 @@ const iconMap = {
   ),
   underline: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.543 438.543"
       width={size}
       height={size}
-      enable-background="new 0 0 438.543 438.543;"
+      enableBackground="new 0 0 438.543 438.543;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -12337,14 +11338,11 @@ const iconMap = {
   ),
   undo_arrow: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.536 438.536"
       width={size}
       height={size}
-      enable-background="new 0 0 438.536 438.536;"
+      enableBackground="new 0 0 438.536 438.536;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -12371,14 +11369,11 @@ const iconMap = {
   ),
   unlink: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 475.082 475.082"
       width={size}
       height={size}
-      enable-background="new 0 0 475.082 475.082;"
+      enableBackground="new 0 0 475.082 475.082;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -12437,14 +11432,11 @@ const iconMap = {
   ),
   up_chevron: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.533 438.533"
       width={size}
       height={size}
-      enable-background="new 0 0 438.533 438.533;"
+      enableBackground="new 0 0 438.533 438.533;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -12467,14 +11459,11 @@ const iconMap = {
   ),
   upload: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 475.078 475.077"
       width={size}
       height={size}
-      enable-background="new 0 0 475.078 475.077;"
+      enableBackground="new 0 0 475.078 475.077;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -12506,14 +11495,11 @@ const iconMap = {
   ),
   upload_button: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.533 438.533"
       width={size}
       height={size}
-      enable-background="new 0 0 438.533 438.533;"
+      enableBackground="new 0 0 438.533 438.533;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -12545,14 +11531,11 @@ const iconMap = {
   ),
   user_md_symbol: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.529 438.529"
       width={size}
       height={size}
-      enable-background="new 0 0 438.529 438.529;"
+      enableBackground="new 0 0 438.529 438.529;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -12597,14 +11580,11 @@ const iconMap = {
   ),
   user_symbol: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.529 438.529"
       width={size}
       height={size}
-      enable-background="new 0 0 438.529 438.529;"
+      enableBackground="new 0 0 438.529 438.529;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -12636,14 +11616,11 @@ const iconMap = {
   ),
   magnet: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.533 438.533"
       width={size}
       height={size}
-      enable-background="new 0 0 438.533 438.533;"
+      enableBackground="new 0 0 438.533 438.533;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -12678,14 +11655,11 @@ const iconMap = {
   ),
   vertical_ellipsis: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 401.991 401.991"
       width={size}
       height={size}
-      enable-background="new 0 0 401.991 401.991;"
+      enableBackground="new 0 0 401.991 401.991;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -12715,14 +11689,11 @@ const iconMap = {
   ),
   vertical_resize: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 511.626 511.627"
       width={size}
       height={size}
-      enable-background="new 0 0 511.626 511.627;"
+      enableBackground="new 0 0 511.626 511.627;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -12743,14 +11714,11 @@ const iconMap = {
   ),
   video_play_button: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.536 438.536"
       width={size}
       height={size}
-      enable-background="new 0 0 438.536 438.536;"
+      enableBackground="new 0 0 438.536 438.536;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -12779,14 +11747,11 @@ const iconMap = {
   ),
   vimeo_logo: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.536 438.536"
       width={size}
       height={size}
-      enable-background="new 0 0 438.536 438.536;"
+      enableBackground="new 0 0 438.536 438.536;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -12817,14 +11782,11 @@ const iconMap = {
   ),
   vintage_key: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 480.509 480.509"
       width={size}
       height={size}
-      enable-background="new 0 0 480.509 480.509;"
+      enableBackground="new 0 0 480.509 480.509;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -12856,14 +11818,11 @@ const iconMap = {
   ),
   vk_social_network_logo: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 548.358 548.358"
       width={size}
       height={size}
-      enable-background="new 0 0 548.358 548.358;"
+      enableBackground="new 0 0 548.358 548.358;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -12908,14 +11867,11 @@ const iconMap = {
   ),
   volume_off: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 347.182 347.182"
       width={size}
       height={size}
-      enable-background="new 0 0 347.182 347.182;"
+      enableBackground="new 0 0 347.182 347.182;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -12933,14 +11889,11 @@ const iconMap = {
   ),
   volume_up: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 475.082 475.081"
       width={size}
       height={size}
-      enable-background="new 0 0 475.082 475.081;"
+      enableBackground="new 0 0 475.082 475.081;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -12988,14 +11941,11 @@ const iconMap = {
   ),
   warning_symbol: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 512.209 512.209"
       width={size}
       height={size}
-      enable-background="new 0 0 512.209 512.209;"
+      enableBackground="new 0 0 512.209 512.209;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -13019,14 +11969,11 @@ const iconMap = {
   ),
   weibo_logo: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 511.794 511.795"
       width={size}
       height={size}
-      enable-background="new 0 0 511.794 511.795;"
+      enableBackground="new 0 0 511.794 511.795;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -13083,14 +12030,11 @@ const iconMap = {
   ),
   wheelchair: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 502.483 502.483"
       width={size}
       height={size}
-      enable-background="new 0 0 502.483 502.483;"
+      enableBackground="new 0 0 502.483 502.483;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -13120,14 +12064,11 @@ const iconMap = {
   ),
   white_flag: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 493.349 493.349"
       width={size}
       height={size}
-      enable-background="new 0 0 493.349 493.349;"
+      enableBackground="new 0 0 493.349 493.349;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -13163,14 +12104,11 @@ const iconMap = {
   ),
   x2_symbol: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 437.116 437.116"
       width={size}
       height={size}
-      enable-background="new 0 0 437.116 437.116;"
+      enableBackground="new 0 0 437.116 437.116;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -13200,14 +12138,11 @@ const iconMap = {
   ),
   xing_logo: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.536 438.536"
       width={size}
       height={size}
-      enable-background="new 0 0 438.536 438.536;"
+      enableBackground="new 0 0 438.536 438.536;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -13231,14 +12166,11 @@ const iconMap = {
   ),
   xing_sign: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 472.23 472.23"
       width={size}
       height={size}
-      enable-background="new 0 0 472.23 472.23;"
+      enableBackground="new 0 0 472.23 472.23;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -13264,14 +12196,11 @@ const iconMap = {
   ),
   yen_currency_symbol: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 401.991 401.991"
       width={size}
       height={size}
-      enable-background="new 0 0 401.991 401.991;"
+      enableBackground="new 0 0 401.991 401.991;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -13296,14 +12225,11 @@ const iconMap = {
   ),
   youtube_play_logo: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 511.626 511.627"
       width={size}
       height={size}
-      enable-background="new 0 0 511.626 511.627;"
+      enableBackground="new 0 0 511.626 511.627;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -13329,14 +12255,11 @@ const iconMap = {
   ),
   youtube_logo: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 438.536 438.536"
       width={size}
       height={size}
-      enable-background="new 0 0 438.536 438.536;"
+      enableBackground="new 0 0 438.536 438.536;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -13398,14 +12321,11 @@ const iconMap = {
   ),
   youtube_sign: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 511.627 511.627"
       width={size}
       height={size}
-      enable-background="new 0 0 511.627 511.627;"
+      enableBackground="new 0 0 511.627 511.627;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -13462,14 +12382,11 @@ const iconMap = {
   ),
   zoom_in: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 475.084 475.084"
       width={size}
       height={size}
-      enable-background="new 0 0 475.084 475.084;"
+      enableBackground="new 0 0 475.084 475.084;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"
@@ -13504,14 +12421,11 @@ const iconMap = {
   ),
   zoom_out: (size: number, className: string) => (
     <svg
-      version="1.1"
       id="Capa_1"
-      x="0px"
-      y="0px"
       viewBox="0 0 475.084 475.084"
       width={size}
       height={size}
-      enable-background="new 0 0 475.084 475.084;"
+      enableBackground="new 0 0 475.084 475.084;"
       xmlns="http://www.w3.org/2000/svg"
       fill="inherit"
       stroke="currentColor"

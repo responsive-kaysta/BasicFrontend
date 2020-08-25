@@ -7,6 +7,7 @@ import {
   ThemeType,
 } from "basic-frontend-common";
 import React, { useEffect, useState, FC } from "react";
+import { PAGE_AUTHOR } from "../constants";
 
 type FooterComponentProps = {
   theme: ThemeType;
@@ -62,7 +63,7 @@ export const FooterComponent: FC<FooterComponentProps> = ({ theme }) => {
       </ul>
       <span className="mb-2 md:mb-4">
         <Link href="https://responsive-it.biz" theme={theme} newWindow>
-          2020 responsive IT
+          2020 {PAGE_AUTHOR} - v 0.3.8
         </Link>
       </span>
     </Footer>
@@ -70,8 +71,23 @@ export const FooterComponent: FC<FooterComponentProps> = ({ theme }) => {
 };
 
 export const menuItems: NavigationItems[] = [
-  { link: "/", text: "Menu-Item 1", title: "Menu-Item 1" },
-  { link: "/", text: "Menu-Item 2", title: "Menu-Item 2" },
-  { link: "/", text: "Menu-Item 3", title: "Menu-Item 3" },
-  { link: "/", text: "Menu-Item 4", title: "Menu-Item 4" },
+  { link: "/", text: "Home", title: "Navigate to the home-page" },
+  { link: "/about-page", text: "About", title: "Navigate to the about-page" },
+  {
+    link: "/tiles-page",
+    text: "Tiles",
+    title: "Navigate to the tiles-page",
+  },
+  {
+    link: "/product-page",
+    text: "Product",
+    title: "Navigate to the product-page",
+  },
+  { link: "/legal-page", text: "Legal", title: "Navigate to the legal-page" },
+  { link: "/links-page", text: "Links", title: "Navigate to the links-page" },
+  {
+    link: "/contact-page",
+    text: "Contact",
+    title: "Navigate to the contact-page",
+  },
 ];

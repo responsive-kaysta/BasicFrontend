@@ -71,7 +71,7 @@ storiesOf("Design System / 05 Layouts", module).add("Regular Page", () => (
             et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
             Lorem ipsum dolor sit amet.
           </TextRegular>
-          <ToTopLink theme={ThemeLight}>to top</ToTopLink>
+          <ToTopLink theme={ThemeLight} />
         </ContainerSection>
       </ContainerCover>
     </ContainerArticle>
