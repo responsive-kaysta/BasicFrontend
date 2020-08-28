@@ -1,6 +1,5 @@
 import React, { FC, ReactNode } from "react";
-import { AbstractTitle } from "../../compositions/title-blocks";
-import { TextLead } from "../../elements";
+import { Hruler, TextLead, TitleAbstract } from "../../elements";
 import { ThemeType } from "../../typings";
 import { headerStyle } from "./styles";
 
@@ -18,7 +17,7 @@ type IntroAbstractProps = {
 export const IntroAbstract: FC<IntroAbstractProps> = ({
   title,
   lead,
-  hruler,
+  hruler = true,
   centerContent = false,
   containerContent = false,
   theme,
@@ -30,7 +29,8 @@ export const IntroAbstract: FC<IntroAbstractProps> = ({
       className={headerStyle(theme, centerContent, containerContent)}
       id={elementId}
     >
-      <AbstractTitle title={title} hruler={hruler} theme={theme} />
+      <TitleAbstract theme={theme}>{title}</TitleAbstract>
+      {hruler && <Hruler theme={theme} />}
       {lead && <TextLead theme={theme}>{lead}</TextLead>}
       {children}
     </header>
