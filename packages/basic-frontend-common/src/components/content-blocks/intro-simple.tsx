@@ -17,7 +17,7 @@ type IntroSimpleProps = {
 export const IntroSimple: FC<IntroSimpleProps> = ({
   title,
   lead,
-  hruler,
+  hruler = true,
   centerContent = false,
   containerContent = false,
   theme,
