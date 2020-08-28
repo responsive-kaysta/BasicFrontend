@@ -25,13 +25,13 @@
     "react-static-plugin-sitemap": "^7.4.2",
     "react-static-plugin-source-filesystem": "^7.4.2",
     "react-static-plugin-typescript": "^7.4.2",
-    "basic-frontend-common": "^0.3.10",
-    "tailwindcss": "^1.7.3"
+    "basic-frontend-common": "^0.3.12",
+    "tailwindcss": "^1.7.5"
   },
   "devDependencies": {
-    "@types/node": "^14.6.0",
+    "@types/node": "^14.6.1",
     "@types/reach__router": "^1.3",
-    "@types/react": "^16.9.47",
+    "@types/react": "^16.9.48",
     "@types/react-dom": "^16.9.8",
     "@types/react-hot-loader": "^4.1.1",
     "@types/webpack-env": "^1.15.2",
