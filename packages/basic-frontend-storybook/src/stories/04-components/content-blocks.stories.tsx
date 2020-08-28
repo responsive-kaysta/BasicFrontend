@@ -9,7 +9,7 @@ import {
   Orientation,
 } from "basic-frontend-common";
 import React from "react";
-import { boolean, text } from "@storybook/addon-knobs";
+import { boolean, text, select } from "@storybook/addon-knobs";
 
 storiesOf("Design System / 04 Components / Content-Blocks", module)
   .add("All", () => (
@@ -165,7 +165,11 @@ storiesOf("Design System / 04 Components / Content-Blocks", module)
             theme={ThemeGray}
             hruler={boolean("hruler", true)}
             title={text("title", "Lorem ipsum dolor sit amet")}
-            componentOrientation={Orientation.right}
+            componentOrientation={select(
+              "componentOrientation",
+              [Orientation.right, Orientation.left],
+              Orientation.right
+            )}
             component={
               <div className="flex flex-row justify-between items-baseline">
                 <span>Span 1 inside</span>

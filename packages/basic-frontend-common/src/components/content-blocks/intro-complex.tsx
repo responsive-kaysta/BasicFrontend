@@ -58,8 +58,8 @@ const titleComponent = (
     case Orientation.right:
       return (
         <>
-          {component}
           {title && title.length > 0 && <Title theme={theme}>{title}</Title>}
+          {component}
         </>
       );
 
