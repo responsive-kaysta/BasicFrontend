@@ -33,8 +33,16 @@ export const Intro: FC<IntroProps> = ({
     >
       <Title theme={theme}>{title}</Title>
       {hruler && <Hruler theme={theme} />}
-      {subTitle && <TitleSub theme={theme}>{subTitle}</TitleSub>}
-      {lead && <TextLead theme={theme}>{lead}</TextLead>}
+      {subTitle && subTitle.length > 0 && (
+        <TitleSub theme={theme} cssStyle={!hruler ? "mt-4" : ""}>
+          {subTitle}
+        </TitleSub>
+      )}
+      {lead && lead.length > 0 && (
+        <div className="mt-4">
+          <TextLead theme={theme}>{lead}</TextLead>
+        </div>
+      )}
       {children}
     </header>
   );
