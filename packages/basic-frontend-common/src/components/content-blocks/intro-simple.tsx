@@ -1,5 +1,6 @@
 import React, { FC, ReactNode } from "react";
 import { Hruler, TextLead, Title } from "../../elements";
+import { defTopMaring } from "../../identity";
 import { ThemeType } from "../../typings";
 import { headerStyle } from "./styles";
 
@@ -31,7 +32,11 @@ export const IntroSimple: FC<IntroSimpleProps> = ({
     >
       <Title theme={theme}>{title}</Title>
       {hruler && <Hruler theme={theme} />}
-      {lead && <TextLead theme={theme}>{lead}</TextLead>}
+      {lead && (
+        <TextLead theme={theme} cssStyle={!hruler ? `${defTopMaring}` : ""}>
+          {lead}
+        </TextLead>
+      )}
       {children}
     </header>
   );

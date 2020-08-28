@@ -7,7 +7,7 @@ export const headerStyle = (
 ) => {
   return `${
     containerContent ? "container" : "w-full"
-  } pb-4 pt-4 md:pb-6 md:pt-6 xl:pb-8 xl:pt-8 ${
+  } pb-2 pt-2 md:pb-4 md:pt-4 xl:pb-6 xl:pt-6 ${
     centerContent ? "text-center" : "text-left"
   } ${
     theme

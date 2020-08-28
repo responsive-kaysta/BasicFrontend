@@ -2,6 +2,7 @@ import React, { FC, ReactNode } from "react";
 import { Hruler, TextLead, Title, TitleSub } from "../../elements";
 import { ThemeType } from "../../typings";
 import { headerStyle } from "./styles";
+import { defTopMaring } from "../../identity";
 
 type IntroProps = {
   title: string;
@@ -34,12 +35,12 @@ export const Intro: FC<IntroProps> = ({
       <Title theme={theme}>{title}</Title>
       {hruler && <Hruler theme={theme} />}
       {subTitle && subTitle.length > 0 && (
-        <TitleSub theme={theme} cssStyle={!hruler ? "mt-4" : ""}>
+        <TitleSub theme={theme} cssStyle={!hruler ? `${defTopMaring}` : ""}>
           {subTitle}
         </TitleSub>
       )}
       {lead && lead.length > 0 && (
-        <div className="mt-4">
+        <div className={`${defTopMaring}`}>
           <TextLead theme={theme}>{lead}</TextLead>
         </div>
       )}

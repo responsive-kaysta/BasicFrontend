@@ -1,11 +1,13 @@
 import React, { FC, ReactNode } from "react";
 import { Hruler, TextLead, Title } from "../../elements";
-import { ThemeType } from "../../typings";
+import { ThemeType, Orientation } from "../../typings";
 import { headerStyle } from "./styles";
+import { defTopMaring } from "../../identity";
 
 type IntroComplexProps = {
-  title: string;
-  titleComponent: ReactNode;
+  component: ReactNode;
+  title?: string;
+  componentOrientation?: Orientation;
   lead?: string;
   hruler?: boolean;
   centerContent?: boolean;
@@ -16,8 +18,9 @@ type IntroComplexProps = {
 };
 
 export const IntroComplex: FC<IntroComplexProps> = ({
+  component,
   title,
-  titleComponent,
+  componentOrientation,
   lead,
   hruler,
   centerContent = false,
@@ -32,11 +35,41 @@ export const IntroComplex: FC<IntroComplexProps> = ({
       id={elementId}
     >
       <div className="flex flex-row justify-between items-baseline">
-        <Title theme={theme}>{title}</Title> {titleComponent}
+        {titleComponent(component, componentOrientation, title, theme)}
       </div>
       {hruler && <Hruler theme={theme} />}
-      {lead && <TextLead theme={theme}>{lead}</TextLead>}
+      {lead && (
+        <TextLead theme={theme} cssStyle={!hruler ? `${defTopMaring}` : ""}>
+          {lead}
+        </TextLead>
+      )}
       {children}
     </header>
   );
+};
+
+const titleComponent = (
+  component: ReactNode,
+  componentOrientation?: Orientation,
+  title?: string,
+  theme?: ThemeType
+) => {
+  switch (componentOrientation) {
+    case Orientation.right:
+      return (
+        <>
+          {component}
+          {title && title.length > 0 && <Title theme={theme}>{title}</Title>}
+        </>
+      );
+
+    case Orientation.left:
+    default:
+      return (
+        <>
+          {component}
+          {title && title.length > 0 && <Title theme={theme}>{title}</Title>}
+        </>
+      );
+  }
 };

@@ -2,6 +2,7 @@ import React, { FC, ReactNode } from "react";
 import { Hruler, TextLead, TitleAbstract } from "../../elements";
 import { ThemeType } from "../../typings";
 import { headerStyle } from "./styles";
+import { defTopMaring } from "../../identity";
 
 type IntroAbstractProps = {
   title: string;
@@ -31,7 +32,11 @@ export const IntroAbstract: FC<IntroAbstractProps> = ({
     >
       <TitleAbstract theme={theme}>{title}</TitleAbstract>
       {hruler && <Hruler theme={theme} />}
-      {lead && <TextLead theme={theme}>{lead}</TextLead>}
+      {lead && (
+        <TextLead theme={theme} cssStyle={!hruler ? `${defTopMaring}` : ""}>
+          {lead}
+        </TextLead>
+      )}
       {children}
     </header>
   );

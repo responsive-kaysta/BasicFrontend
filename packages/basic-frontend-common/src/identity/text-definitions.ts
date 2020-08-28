@@ -33,5 +33,7 @@ export const defLink =
 export const defCaption = "text-base leading-normal";
 
 // -------------------------------------------------------------------------------
-// buttons ->
+// maring / padding
 // -------------------------------------------------------------------------------
+
+export const defTopMaring = "mt-4";
