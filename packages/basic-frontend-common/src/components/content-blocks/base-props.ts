@@ -1,11 +1,6 @@
-import { ThemeType } from "../../typings";
+import { BasePropsType } from "../../typings";
 
-export type IntroBaseProps = {
-  theme?: ThemeType;
-  paddingTop?: boolean;
-  paddingBottom?: boolean;
-  marginTop?: boolean;
-  marginBottom?: boolean;
+export type IntroBaseProps = BasePropsType & {
   centerContent?: boolean;
   containerContent?: boolean;
   elementId?: string;

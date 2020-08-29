@@ -1,6 +1,6 @@
 import React, { FC, ReactNode } from "react";
 import { Hruler, TextLead, Title } from "../../elements";
-import { defTopMaring, ThemeLight } from "../../identity";
+import { ThemeLight } from "../../identity";
 import { Orientation, ThemeType } from "../../typings";
 import { IntroBase } from "./base";
 import { IntroBaseProps } from "./base-props";
@@ -46,7 +46,7 @@ export const IntroComplex: FC<IntroComplexProps> = ({
       </div>
       {hruler && <Hruler theme={theme} />}
       {lead && (
-        <TextLead theme={theme} cssStyle={!hruler ? `${defTopMaring}` : ""}>
+        <TextLead theme={theme} marginTop={hruler ? false : true}>
           {lead}
         </TextLead>
       )}

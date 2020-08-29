@@ -1,16 +1,30 @@
 import React, { FC, ReactNode } from "react";
-import { defComment } from "../../identity";
-import { ThemeType } from "../../typings";
+import {
+  defComment,
+  defTextMargin,
+  defTextPadding,
+  ThemeLight,
+} from "../../identity";
+import { BaseProps } from "./base-props";
 
-type CommentProps = {
+type CommentProps = BaseProps & {
   children: ReactNode;
-  theme?: ThemeType;
 };
 
-export const Comment: FC<CommentProps> = ({ children, theme }) => {
+export const Comment: FC<CommentProps> = ({
+  children,
+  marginBottom = false,
+  marginTop = false,
+  paddingBottom = false,
+  paddingTop = false,
+  theme = ThemeLight,
+}) => {
   const style = `${
     theme ? theme.body.textColor : "text-gray-500"
-  } ${defComment}`;
+  } ${defComment} ${defTextMargin(marginBottom, marginTop)} ${defTextPadding(
+    paddingBottom,
+    paddingTop
+  )}`;
 
   return <p className={style}>{children}</p>;
 };

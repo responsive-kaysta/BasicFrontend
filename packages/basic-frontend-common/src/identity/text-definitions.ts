@@ -33,7 +33,15 @@ export const defLink =
 export const defCaption = "text-base leading-normal";
 
 // -------------------------------------------------------------------------------
-// maring / padding
+// margin / padding
 // -------------------------------------------------------------------------------
 
 export const defTopMaring = "mt-4";
+
+export const defTextMargin = (marginBottom: boolean, marginTop: boolean) => {
+  return `${marginBottom ? "mb-2" : ""} ${marginTop ? "mt-2" : ""}`;
+};
+
+export const defTextPadding = (paddingBottom: boolean, paddingTop: boolean) => {
+  return `${paddingBottom ? "pb-2" : ""} ${paddingTop ? "pt-2" : ""}`;
+};
