@@ -1,20 +1,16 @@
 import React, { FC, ReactNode } from "react";
 import { Hruler, TextLead, Title } from "../../elements";
-import { ThemeType, Orientation } from "../../typings";
-import { headerStyle } from "./styles";
-import { defTopMaring } from "../../identity";
+import { defTopMaring, ThemeLight } from "../../identity";
+import { Orientation, ThemeType } from "../../typings";
+import { IntroBase } from "./base";
+import { IntroBaseProps } from "./base-props";
 
-type IntroComplexProps = {
+type IntroComplexProps = IntroBaseProps & {
   component: ReactNode;
   title?: string;
   componentOrientation?: Orientation;
   lead?: string;
   hruler?: boolean;
-  centerContent?: boolean;
-  containerContent?: boolean;
-  theme?: ThemeType;
-  elementId?: string;
-  children?: ReactNode;
 };
 
 export const IntroComplex: FC<IntroComplexProps> = ({
@@ -22,17 +18,28 @@ export const IntroComplex: FC<IntroComplexProps> = ({
   title,
   componentOrientation,
   lead,
-  hruler,
+  hruler = true,
+  cssStyle,
+  elementId,
+  paddingTop = true,
+  paddingBottom = true,
+  marginTop = false,
+  marginBottom = false,
+  theme = ThemeLight,
   centerContent = false,
   containerContent = false,
-  theme,
-  elementId,
-  children,
 }) => {
   return (
-    <header
-      className={headerStyle(theme, centerContent, containerContent)}
-      id={elementId}
+    <IntroBase
+      centerContent={centerContent}
+      containerContent={containerContent}
+      cssStyle={cssStyle}
+      marginBottom={marginBottom}
+      marginTop={marginTop}
+      paddingBottom={paddingBottom}
+      paddingTop={paddingTop}
+      theme={theme}
+      elementId={elementId}
     >
       <div className="flex flex-row justify-between items-baseline">
         {titleComponent(component, componentOrientation, title, theme)}
@@ -43,8 +50,7 @@ export const IntroComplex: FC<IntroComplexProps> = ({
           {lead}
         </TextLead>
       )}
-      {children}
-    </header>
+    </IntroBase>
   );
 };
 

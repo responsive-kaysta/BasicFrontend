@@ -7,9 +7,11 @@ import {
   Spacer,
   ThemeGray,
   Orientation,
+  Input,
 } from "basic-frontend-common";
 import React from "react";
 import { boolean, text, select } from "@storybook/addon-knobs";
+import { action } from "@storybook/addon-actions";
 
 storiesOf("Design System / 04 Components / Content-Blocks", module)
   .add("All", () => (
@@ -91,6 +93,14 @@ storiesOf("Design System / 04 Components / Content-Blocks", module)
           <Intro
             theme={ThemeGray}
             hruler={boolean("hruler", true)}
+            centerContent={boolean("centerContent", false)}
+            containerContent={boolean("containerContent", false)}
+            cssStyle={text("cssStyle", "")}
+            elementId={text("elementId", "intro-element-id")}
+            marginBottom={boolean("marginBottom", false)}
+            marginTop={boolean("marginTop", false)}
+            paddingBottom={boolean("paddingBottom", true)}
+            paddingTop={boolean("paddingTop", true)}
             title={text("title", "Lorem ipsum dolor sit amet")}
             subTitle={text(
               "subTitle",
@@ -118,6 +128,14 @@ storiesOf("Design System / 04 Components / Content-Blocks", module)
           <IntroAbstract
             theme={ThemeGray}
             hruler={boolean("hruler", true)}
+            centerContent={boolean("centerContent", false)}
+            containerContent={boolean("containerContent", false)}
+            cssStyle={text("cssStyle", "")}
+            elementId={text("elementId", "intro-abstract-element-id")}
+            marginBottom={boolean("marginBottom", false)}
+            marginTop={boolean("marginTop", false)}
+            paddingBottom={boolean("paddingBottom", true)}
+            paddingTop={boolean("paddingTop", true)}
             title={text("title", "Lorem ipsum dolor sit amet")}
             lead={text(
               "lead",
@@ -141,6 +159,14 @@ storiesOf("Design System / 04 Components / Content-Blocks", module)
           <IntroSimple
             theme={ThemeGray}
             hruler={boolean("hruler", true)}
+            centerContent={boolean("centerContent", false)}
+            containerContent={boolean("containerContent", false)}
+            cssStyle={text("cssStyle", "")}
+            elementId={text("elementId", "intro-simple-element-id")}
+            marginBottom={boolean("marginBottom", false)}
+            marginTop={boolean("marginTop", false)}
+            paddingBottom={boolean("paddingBottom", true)}
+            paddingTop={boolean("paddingTop", true)}
             title={text("title", "Lorem ipsum dolor sit amet")}
             lead={text(
               "lead",
@@ -164,16 +190,31 @@ storiesOf("Design System / 04 Components / Content-Blocks", module)
           <IntroComplex
             theme={ThemeGray}
             hruler={boolean("hruler", true)}
-            title={text("title", "Lorem ipsum dolor sit amet")}
+            centerContent={boolean("centerContent", false)}
+            containerContent={boolean("containerContent", false)}
+            cssStyle={text("cssStyle", "")}
+            elementId={text("elementId", "intro-complex-element-id")}
+            marginBottom={boolean("marginBottom", false)}
+            marginTop={boolean("marginTop", false)}
+            paddingBottom={boolean("paddingBottom", true)}
+            paddingTop={boolean("paddingTop", true)}
+            title={text("title", "Lorem ipsum")}
             componentOrientation={select(
               "componentOrientation",
               [Orientation.right, Orientation.left],
               Orientation.right
             )}
             component={
-              <div className="flex flex-row justify-between items-baseline">
-                <span>Span 1 inside</span>
-                <span>Span 2 inside</span>
+              <div className="flex flex-row items-center self-center">
+                <span className="mr-3">Description</span>
+                <Input
+                  id="Input"
+                  name="Input"
+                  onInputChanged={(value) => action(`onInputChanged: ${value}`)}
+                  placeholderText={text("placeholderText", "Input Placeholder")}
+                  type="text"
+                  theme={ThemeGray}
+                />
               </div>
             }
             lead={text(

@@ -27,10 +27,10 @@ export const parameters = {
   isFullscreen: true,
   showNav: true,
   showPanel: true,
-  panelPosition: "bottom",
+  panelPosition: "right",
 };
 
-const withGlobalStyle = (storyFn) => storyFn();
+const withGlobalStyle = (storyFn) => <div className="m-0 p-0">{storyFn()}</div>;
 
 addDecorator(withGlobalStyle);
 addDecorator(withKnobs);
