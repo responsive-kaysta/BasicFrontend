@@ -25,7 +25,7 @@ export const buttonBorderStyle = (size: ButtonSize) => {
 };
 
 export const stylePrimary = (size: ButtonSize) => {
-  return `inline-flex items-center ${buttonPadding(
+  return `inline-flex justify-center items-center ${buttonPadding(
     size
   )} border border-gray-300 ${buttonBorderStyle(
     size
@@ -35,7 +35,7 @@ export const stylePrimary = (size: ButtonSize) => {
 };
 
 export const styleSecondary = (size: ButtonSize) => {
-  return `inline-flex items-center ${buttonPadding(
+  return `inline-flex justify-center items-center ${buttonPadding(
     size
   )} border border-transparent ${buttonBorderStyle(
     size
@@ -45,7 +45,7 @@ export const styleSecondary = (size: ButtonSize) => {
 };
 
 export const styleTertiary = (size: ButtonSize) => {
-  return `inline-flex items-center ${buttonPadding(
+  return `inline-flex justify-center items-center ${buttonPadding(
     size
   )} border border-transparent ${buttonBorderStyle(
     size
@@ -55,7 +55,7 @@ export const styleTertiary = (size: ButtonSize) => {
 };
 
 export const styleTransparent = (size: ButtonSize) => {
-  return `inline-flex items-center ${buttonPadding(
+  return `inline-flex justify-center items-center ${buttonPadding(
     size
   )} border border-transparent ${buttonBorderStyle(
     size
@@ -65,7 +65,7 @@ export const styleTransparent = (size: ButtonSize) => {
 };
 
 export const styleAlarm = (size: ButtonSize) => {
-  return `inline-flex items-center ${buttonPadding(
+  return `inline-flex justify-center items-center ${buttonPadding(
     size
   )} border border-transparent ${buttonBorderStyle(
     size
@@ -75,7 +75,7 @@ export const styleAlarm = (size: ButtonSize) => {
 };
 
 export const styleSpecial = (size: ButtonSize) => {
-  return `inline-flex items-center ${buttonPadding(
+  return `inline-flex justify-center items-center ${buttonPadding(
     size
   )} border-1 border-gray-400 ${buttonBorderStyle(
     size
