@@ -11,7 +11,7 @@ type ScrollLinkProps = {
 };
 
 export const ScrollLink: FC<ScrollLinkProps> = ({ elementId, theme }) => {
-  const style = `animate-bounce duration-1000 w-6 h-12 mb-4 ${
+  const style = `w-6 h-12 mb-4 ${
     theme ? theme.body.textColor : "text-gray-100"
   } hover:${
     theme ? theme.link.hoverColor : "text-red-500"
@@ -29,7 +29,7 @@ export const ScrollLink: FC<ScrollLinkProps> = ({ elementId, theme }) => {
         duration={2500}
         offset={0}
       >
-        <Icon name="down_arrow" size={IconSize.xs} />
+        <Icon name="arrow_down2" size={IconSize.xs} />
       </ScrollLinkElement>
     </div>
   );
