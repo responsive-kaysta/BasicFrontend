@@ -41,7 +41,7 @@ export const Intro: FC<IntroProps> = ({
       <Title theme={theme}>{title}</Title>
       {hruler && <Hruler theme={theme} />}
       {subTitle && subTitle.length > 0 && (
-        <TitleSub theme={theme} cssStyle={!hruler ? `${defTopMaring}` : ""}>
+        <TitleSub theme={theme} marginTop={hruler ? false : true}>
           {subTitle}
         </TitleSub>
       )}
