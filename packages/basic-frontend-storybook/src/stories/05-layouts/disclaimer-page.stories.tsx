@@ -8,6 +8,8 @@ import {
   ThemeDarkgray,
   ThemeTransparent,
   Topbar,
+  ToTopLink,
+  Spacer,
 } from "basic-frontend-common";
 import React from "react";
 import { footerComponent, menuItems } from "../../helper";
@@ -135,6 +137,8 @@ storiesOf("Design System / 05 Layouts", module).add("Disclaimer Page", () => (
           title="Rechtswirksamkeit dieses Haftungsausschlusses"
           leadText="Dieser Haftungsausschluss/Disclaimer ist als Teil des Internetangebotes zu betrachten, von dem aus auf diese Seite verwiesen wurde. Sofern Teile oder einzelne Formulierungen dieses Textes der geltenden Rechtslage nicht, nicht mehr oder nicht vollständig entsprechen sollten, bleiben die übrigen Teile des Dokumentes in ihrem Inhalt und ihrer Gültigkeit davon unberührt."
         />
+        <Spacer />
+        <ToTopLink />
       </ContainerSection>
     </ContainerArticle>
   </Topbar>
