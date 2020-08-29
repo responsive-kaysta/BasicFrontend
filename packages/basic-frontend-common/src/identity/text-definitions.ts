@@ -33,6 +33,14 @@ export const defLink =
 export const defCaption = "text-base leading-normal";
 
 // -------------------------------------------------------------------------------
+// buttons
+// -------------------------------------------------------------------------------
+
+export const defButtonSmall = "text-base leading-4";
+
+export const defButtonNormal = "text-lg leading-5 font-medium";
+
+// -------------------------------------------------------------------------------
 // margin / padding
 // -------------------------------------------------------------------------------
 

@@ -1,4 +1,6 @@
 import { ButtonSize } from "./button-types";
+import { defButtonSmall } from "../../identity";
+import { ThemeType } from "../../typings";
 
 export const buttonWrapper = (size: ButtonSize) => {
   return `inline-flex ${
@@ -9,15 +11,11 @@ export const buttonWrapper = (size: ButtonSize) => {
 };
 
 export const buttonPadding = (size: ButtonSize) => {
-  return `${size === ButtonSize.normal ? "w-32 px-4 py-2" : "w-20 px-2 py-0"}`;
+  return `${size === ButtonSize.normal ? "w-48 px-6 py-4" : "w-32 px-4 py-2"}`;
 };
 
 export const buttonTextStyle = (size: ButtonSize) => {
-  return `${
-    size === ButtonSize.normal
-      ? "text-sm leading-5 font-medium"
-      : "text-xs leading-4"
-  }`;
+  return `${size === ButtonSize.normal ? defButtonSmall : defButtonSmall}`;
 };
 
 export const buttonBorderStyle = (size: ButtonSize) => {
@@ -54,12 +52,14 @@ export const styleTertiary = (size: ButtonSize) => {
   )} bg-indigo-600 hover:bg-indigo-500 hover:shadow-lg focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition ease-in-out duration-150`;
 };
 
-export const styleTransparent = (size: ButtonSize) => {
+export const styleTransparent = (size: ButtonSize, theme: ThemeType) => {
   return `inline-flex justify-center items-center ${buttonPadding(
     size
-  )} border border-transparent ${buttonBorderStyle(
-    size
-  )} text-gray-800 ${buttonTextStyle(
+  )} border ${
+    theme ? theme.body.borderColor : "border-transparent"
+  } ${buttonBorderStyle(size)} ${
+    theme ? theme.body.textColor : "text-gray-800"
+  } ${buttonTextStyle(
     size
   )} bg-transparent hover:text-gray-900 hover:bg-gray-100 hover:shadow-lg focus:outline-none focus:border-indigo-300 focus:shadow-outline-indigo active:bg-transparent transition ease-in-out duration-150`;
 };
