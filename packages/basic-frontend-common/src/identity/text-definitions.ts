@@ -39,9 +39,9 @@ export const defCaption = "text-base leading-normal";
 export const defTopMaring = "mt-4";
 
 export const defTextMargin = (marginBottom: boolean, marginTop: boolean) => {
-  return `${marginBottom ? "mb-2" : ""} ${marginTop ? "mt-2" : ""}`;
+  return `${marginBottom ? "mb-4" : ""} ${marginTop ? "mt-4" : ""}`;
 };
 
 export const defTextPadding = (paddingBottom: boolean, paddingTop: boolean) => {
-  return `${paddingBottom ? "pb-2" : ""} ${paddingTop ? "pt-2" : ""}`;
+  return `${paddingBottom ? "pb-4" : ""} ${paddingTop ? "pt-4" : ""}`;
 };

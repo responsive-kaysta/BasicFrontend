@@ -27,10 +27,12 @@ storiesOf("Design System / 05 Layouts", module).add("Disclaimer Page", () => (
         lead="Der Autor übernimmt keinerlei Gewähr für die Aktualität, Richtigkeit und Vollständigkeit der bereitgestellten Informationen auf unserer Website."
         theme={ThemeTransparent}
         containerContent
+        marginBottom={false}
+        paddingBottom={false}
       />
 
       <ContainerSection theme={ThemeTransparent}>
-        <TextRegular theme={ThemeTransparent}>
+        <TextRegular theme={ThemeTransparent} paddingBottom>
           Haftungsansprüche gegen den Autor, welche sich auf Schäden materieller
           oder ideeller Art beziehen, die durch die Nutzung oder Nichtnutzung
           der dargebotenen Informationen bzw. durch die Nutzung fehlerhafter und
@@ -38,9 +40,8 @@ storiesOf("Design System / 05 Layouts", module).add("Disclaimer Page", () => (
           ausgeschlossen, sofern seitens des Autors kein nachweislich
           vorsätzliches oder grob fahrlässiges Verschulden vorliegt.
         </TextRegular>
-      </ContainerSection>
-      <ContainerSection theme={ThemeTransparent}>
-        <TextRegular theme={ThemeTransparent}>
+
+        <TextRegular theme={ThemeTransparent} paddingTop>
           Alle Angebote sind freibleibend und unverbindlich. Der Autor behält es
           sich ausdrücklich vor, Teile der Seiten oder das gesamte Angebot ohne
           gesonderte Ankündigung zu verändern, zu ergänzen, zu löschen oder die
@@ -54,7 +55,7 @@ storiesOf("Design System / 05 Layouts", module).add("Disclaimer Page", () => (
           title="Verweise und Links"
           leadText="Bei direkten oder indirekten Verweisen auf fremde Webseiten (“Hyperlinks”), die außerhalb des Verantwortungsbereiches des Autors liegen, würde eine Haftungsverpflichtung ausschließlich in dem Fall in Kraft treten, in dem der Autor von den Inhalten Kenntnis hat und es ihm technisch möglich und zumutbar wäre, die Nutzung im Falle rechtswidriger Inhalte zu verhindern."
         />
-        <TextRegular theme={ThemeTransparent}>
+        <TextRegular theme={ThemeTransparent} paddingTop paddingBottom>
           Der Autor erklärt hiermit ausdrücklich, dass zum Zeitpunkt der
           Linksetzung keine illegalen Inhalte auf den zu verlinkenden Seiten
           erkennbar waren. Auf die aktuelle und zukünftige Gestaltung, die
@@ -63,18 +64,16 @@ storiesOf("Design System / 05 Layouts", module).add("Disclaimer Page", () => (
           ausdrücklich von allen Inhalten aller verlinkten /verknüpften Seiten,
           die nach der Linksetzung verändert wurden.
         </TextRegular>
-      </ContainerSection>
-      <ContainerSection theme={ThemeTransparent}>
-        <TextRegular theme={ThemeTransparent}>
+
+        <TextRegular theme={ThemeTransparent} paddingTop paddingBottom>
           Diese Feststellung gilt für alle innerhalb des eigenen
           Internetangebotes gesetzten Links und Verweise sowie für Fremdeinträge
           in vom Autor eingerichteten Gästebüchern, Diskussionsforen,
           Linkverzeichnissen, Mailinglisten und in allen anderen Formen von
           Datenbanken, auf deren Inhalt externe Schreibzugriffe möglich sind.
         </TextRegular>
-      </ContainerSection>
-      <ContainerSection theme={ThemeTransparent}>
-        <TextRegular theme={ThemeTransparent}>
+
+        <TextRegular theme={ThemeTransparent} paddingTop>
           Für illegale, fehlerhafte oder unvollständige Inhalte und insbesondere
           für Schäden, die aus der Nutzung oder Nichtnutzung solcherart
           dargebotener Informationen entstehen, haftet allein der Anbieter der
@@ -89,7 +88,7 @@ storiesOf("Design System / 05 Layouts", module).add("Disclaimer Page", () => (
           title="Urheber- und Kennzeichenrecht"
           leadText="Der Autor ist bestrebt, in allen Publikationen die Urheberrechte der verwendeten Bilder, Grafiken, Tondokumente, Videosequenzen und Texte zu beachten, von ihm selbst erstellte Bilder, Grafiken, Tondokumente, Videosequenzen und Texte zu nutzen oder auf lizenzfreie Grafiken, Tondokumente, Videosequenzen und Texte zurückzugreifen."
         />
-        <TextRegular theme={ThemeTransparent}>
+        <TextRegular theme={ThemeTransparent} paddingTop paddingBottom>
           Alle innerhalb des Internetangebotes genannten und ggf. durch Dritte
           geschützten Marken- und Warenzeichen unterliegen uneingeschränkt den
           Bestimmungen des jeweils gültigen Kennzeichenrechts und den
@@ -97,9 +96,8 @@ storiesOf("Design System / 05 Layouts", module).add("Disclaimer Page", () => (
           der bloßen Nennung ist nicht der Schluss zu ziehen, dass Markenzeichen
           nicht durch Rechte Dritter geschützt sind!
         </TextRegular>
-      </ContainerSection>
-      <ContainerSection theme={ThemeTransparent}>
-        <TextRegular theme={ThemeTransparent}>
+
+        <TextRegular theme={ThemeTransparent} paddingTop>
           Das Copyright für veröffentlichte, vom Autor selbst erstellte Objekte
           bleibt allein beim Autor der Seiten. Eine Vervielfältigung oder
           Verwendung solcher Grafiken, Tondokumente, Videosequenzen und Texte in
@@ -114,7 +112,7 @@ storiesOf("Design System / 05 Layouts", module).add("Disclaimer Page", () => (
           title="Datenschutz"
           leadText="Sofern innerhalb des Internetangebotes die Möglichkeit zur Eingabe persönlicher oder geschäftlicher Daten (Emailadressen, Namen, Anschriften) besteht, so erfolgt die Preisgabe dieser Daten seitens des Nutzers auf ausdrücklich freiwilliger Basis."
         />
-        <TextRegular theme={ThemeTransparent}>
+        <TextRegular theme={ThemeTransparent} paddingTop paddingBottom>
           Die Inanspruchnahme und Bezahlung aller angebotenen Dienste ist –
           soweit technisch möglich und zumutbar – auch ohne Angabe solcher Daten
           bzw. unter Angabe anonymisierter Daten oder eines Pseudonyms
@@ -124,9 +122,8 @@ storiesOf("Design System / 05 Layouts", module).add("Disclaimer Page", () => (
           Dritte zur Übersendung von nicht ausdrücklich angeforderten
           Informationen ist nicht gestattet.
         </TextRegular>
-      </ContainerSection>
-      <ContainerSection theme={ThemeTransparent}>
-        <TextRegular theme={ThemeTransparent}>
+
+        <TextRegular theme={ThemeTransparent} paddingTop>
           Rechtliche Schritte gegen die Versender von sogenannten Spam-Mails bei
           Verstössen gegen dieses Verbot sind ausdrücklich vorbehalten.
         </TextRegular>
