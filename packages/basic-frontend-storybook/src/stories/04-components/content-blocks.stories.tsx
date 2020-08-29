@@ -205,7 +205,7 @@ storiesOf("Design System / 04 Components / Content-Blocks", module)
               Orientation.right
             )}
             component={
-              <div className="flex flex-row items-center self-center">
+              <div className="flex flex-row items-center self-end">
                 <span className="mr-3">Description</span>
                 <Input
                   id="Input"
