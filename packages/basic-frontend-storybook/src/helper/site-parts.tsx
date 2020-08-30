@@ -71,3 +71,56 @@ export const menuItems: NavigationItems[] = [
   { link: "/", text: "Menu-Item 3", title: "Menu-Item 3" },
   { link: "/", text: "Menu-Item 4", title: "Menu-Item 4" },
 ];
+
+export const optionsDropdown: { value: string; label: string }[] = [
+  {
+    label: "Value 1",
+    value: "1",
+  },
+  {
+    label: "Value 2",
+    value: "2",
+  },
+  {
+    label: "Value 3",
+    value: "3",
+  },
+];
+
+export const optionsCheckBox: {
+  value: string;
+  label: string;
+  checked?: boolean;
+}[] = [
+  {
+    value: "value1",
+    label: "Label 1",
+    checked: true,
+  },
+  {
+    value: "value2",
+    label: "Label 2",
+  },
+  {
+    value: "value3",
+    label: "Label 3",
+  },
+];
+
+export const optionsRadioButton: {
+  value: string;
+  label: string;
+}[] = [
+  {
+    value: "value1",
+    label: "Label 1",
+  },
+  {
+    value: "value2",
+    label: "Label 2",
+  },
+  {
+    value: "value3",
+    label: "Label 3",
+  },
+];

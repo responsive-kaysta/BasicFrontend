@@ -15,7 +15,7 @@ export const ThemeLight: ThemeType = {
     visitedColor: "text-gray-800",
   },
   form: {
-    textColor: "text-white",
+    textColor: "text-gray-800",
     textSecondaryColor: "text-gray-100",
     textErrorColor: "text-red-600",
     backgroundColor: "bg-transparent",

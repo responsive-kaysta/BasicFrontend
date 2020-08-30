@@ -1,18 +1,26 @@
+import { action } from "@storybook/addon-actions";
 import { storiesOf } from "@storybook/react";
 import {
+  CheckBoxGroup,
   ContainerArticle,
   ContainerSection,
+  defComment,
+  Dropdown,
+  Input,
   Intro,
+  RadioButtonGroup,
+  Textarea,
   ThemeDarkgray,
   ThemeTransparent,
   Topbar,
-  Input,
-  Dropdown,
-  defComment,
 } from "basic-frontend-common";
 import React from "react";
-import { footerComponent, menuItems } from "../../helper";
-import { action } from "@storybook/addon-actions";
+import {
+  footerComponent,
+  menuItems,
+  optionsCheckBox,
+  optionsRadioButton,
+} from "../../helper";
 
 storiesOf("Design System / 05 Layouts", module).add("Contact Page", () => (
   <Topbar
@@ -44,7 +52,6 @@ storiesOf("Design System / 05 Layouts", module).add("Contact Page", () => (
                 placeholderText=""
                 type="text"
                 comment="Comment"
-                label="First Name"
                 legend="Legend"
                 theme={ThemeTransparent}
               />
@@ -60,12 +67,12 @@ storiesOf("Design System / 05 Layouts", module).add("Contact Page", () => (
                 placeholderText=""
                 type="text"
                 comment="Comment"
-                label="Last Name"
                 legend="Legend"
                 theme={ThemeTransparent}
               />
             </div>
           </div>
+
           <div className="flex flex-wrap -mx-3 mb-6">
             <div className="w-full px-3">
               <Input
@@ -75,7 +82,6 @@ storiesOf("Design System / 05 Layouts", module).add("Contact Page", () => (
                 placeholderText="******************"
                 type="password"
                 comment="Comment"
-                label="Password"
                 legend="Legend"
                 theme={ThemeTransparent}
               />
@@ -84,7 +90,34 @@ storiesOf("Design System / 05 Layouts", module).add("Contact Page", () => (
               </p>
             </div>
           </div>
-          <div className="flex flex-wrap -mx-3 mb-2">
+
+          <div className="flex flex-wrap -mx-3 mb-6">
+            <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+              <CheckBoxGroup
+                id="TheId"
+                name="CheckBoxGroup"
+                legend="CheckBoxGroup Legend"
+                comment="CheckBoxGroup Comment"
+                options={optionsCheckBox}
+                onChange={action(`Checked`)}
+                theme={ThemeTransparent}
+              />
+            </div>
+            <div className="w-full md:w-1/2 px-3">
+              <RadioButtonGroup
+                id="TheId"
+                name="RadioButtonGroup"
+                legend="RadioButtonGroup Legend"
+                comment="RadioButtonGroup Comment"
+                options={optionsRadioButton}
+                onChange={action("onChecked")}
+                selectedItem="value2"
+                theme={ThemeTransparent}
+              />
+            </div>
+          </div>
+
+          <div className="flex flex-wrap -mx-3 mb-6">
             <div className="w-full md:w-1/3 px-3 mb-6 md:mb-0">
               <Input
                 id="grid-city"
@@ -93,7 +126,6 @@ storiesOf("Design System / 05 Layouts", module).add("Contact Page", () => (
                 placeholderText=""
                 type="text"
                 comment="Comment"
-                label="City"
                 legend="Legend"
                 theme={ThemeTransparent}
               />
@@ -124,7 +156,6 @@ storiesOf("Design System / 05 Layouts", module).add("Contact Page", () => (
                 comment="Comment"
                 defaultOption
                 defaultValue="0"
-                label="State"
                 legend="Legend"
                 theme={ThemeTransparent}
               />
@@ -137,8 +168,22 @@ storiesOf("Design System / 05 Layouts", module).add("Contact Page", () => (
                 placeholderText=""
                 type="text"
                 comment="Comment"
-                label="Zip"
                 legend="Legend"
+                theme={ThemeTransparent}
+              />
+            </div>
+          </div>
+
+          <div className="flex flex-wrap -mx-3 mb-6">
+            <div className="w-full px-3">
+              <Textarea
+                id="grid-comment"
+                name="grid-comment"
+                onInputChanged={action("")}
+                placeholderText=""
+                comment=""
+                legend=""
+                rows={5}
                 theme={ThemeTransparent}
               />
             </div>
