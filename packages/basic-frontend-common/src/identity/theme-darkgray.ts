@@ -16,6 +16,8 @@ export const ThemeDarkgray: ThemeType = {
   },
   form: {
     textColor: "text-white",
+    textSecondaryColor: "text-gray-100",
+    textErrorColor: "text-red-600",
     backgroundColor: "bg-transparent",
     borderColor: "bg-gray-200",
     borderHoverColor: "border-red-500",

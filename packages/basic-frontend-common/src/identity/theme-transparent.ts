@@ -16,6 +16,8 @@ export const ThemeTransparent: ThemeType = {
   },
   form: {
     textColor: "text-gray-300",
+    textSecondaryColor: "text-gray-100",
+    textErrorColor: "text-red-600",
     backgroundColor: "bg-transparent",
     borderColor: "border-gray-500",
     borderHoverColor: "border-gray-300",

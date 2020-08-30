@@ -1,6 +1,6 @@
-import { ButtonSize } from "./button-types";
-import { defButtonSmall } from "../../identity";
+import { defButtonNormal, defButtonSmall } from "../../identity";
 import { ThemeType } from "../../typings";
+import { ButtonSize } from "./button-types";
 
 export const buttonWrapper = (size: ButtonSize) => {
   return `inline-flex ${
@@ -15,7 +15,7 @@ export const buttonPadding = (size: ButtonSize) => {
 };
 
 export const buttonTextStyle = (size: ButtonSize) => {
-  return `${size === ButtonSize.normal ? defButtonSmall : defButtonSmall}`;
+  return `${size === ButtonSize.normal ? defButtonNormal : defButtonSmall}`;
 };
 
 export const buttonBorderStyle = (size: ButtonSize) => {

@@ -14,6 +14,8 @@ export type ThemeType = {
   };
   form: {
     textColor: string;
+    textSecondaryColor: string;
+    textErrorColor: string;
     backgroundColor: string;
     borderColor: string;
     borderHoverColor: string;

@@ -21,16 +21,20 @@ export const defTextRegular =
 export const defTextLead =
   "text-lg font-medium md:text-xl md:font-semibold tracking-wider leading-normal";
 
-export const defLegend = "text-base font-medium leading-normal";
+export const defLegend =
+  "text-base font-medium md:text-lg md:font-medium leading-normal";
 
-export const defLabel = "text-sm font-medium leading-normal";
+export const defLabel =
+  "text-base font-medium md:text-lg md:font-medium leading-normal uppercase";
 
-export const defComment = "text-sm leading-normal";
+export const defComment =
+  "text-base font-medium md:text-lg md:font-medium leading-normal italic";
 
 export const defLink =
   "text-base font-normal md:text-lg md:font-medium tracking-wide leading-normal";
 
-export const defCaption = "text-base leading-normal";
+export const defCaption =
+  "text-base font-normal md:text-lg md:font-medium leading-normal";
 
 // -------------------------------------------------------------------------------
 // buttons
