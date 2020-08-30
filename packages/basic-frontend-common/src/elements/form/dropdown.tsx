@@ -1,16 +1,10 @@
 import React, { FC } from "react";
-import { ThemeType } from "../../typings";
 import { FormBase } from "./form-base";
+import { FormBaseProps } from "./form-base-props";
 
-type DropdownProps = {
+type DropdownProps = FormBaseProps & {
   id: string;
   name: string;
-
-  label?: string;
-  legend?: string;
-  comment?: string;
-  theme?: ThemeType;
-
   options: { value: string; label: string }[];
   onSelectionChanged: (value: string | null) => void;
   defaultOption?: boolean;
@@ -20,7 +14,6 @@ type DropdownProps = {
 export const Dropdown: FC<DropdownProps> = ({
   id,
   name,
-  label,
   legend,
   comment,
   theme,
@@ -36,7 +29,7 @@ export const Dropdown: FC<DropdownProps> = ({
   } px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline`;
 
   return (
-    <FormBase comment={comment} label={label} legend={legend} theme={theme}>
+    <FormBase legend={legend} comment={comment} theme={theme}>
       <div className="mt-1 inline-block relative">
         <select
           id={id}

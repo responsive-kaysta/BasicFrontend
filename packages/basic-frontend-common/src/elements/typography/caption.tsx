@@ -20,7 +20,7 @@ export const Caption: FC<CaptionProps> = ({
   theme = ThemeLight,
 }) => {
   const style = `w-full ${
-    theme ? theme.body.secondaryText : "text-gray-500"
+    theme ? theme.body.textSecondaryColor : "text-gray-500"
   } ${defCaption} ${defTextMargin(marginBottom, marginTop)} ${defTextPadding(
     paddingBottom,
     paddingTop

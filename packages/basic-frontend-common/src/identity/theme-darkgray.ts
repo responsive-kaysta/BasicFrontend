@@ -3,7 +3,7 @@ import { ThemeType } from "../typings";
 export const ThemeDarkgray: ThemeType = {
   body: {
     textColor: "text-gray-100",
-    secondaryText: "text-gray-200",
+    textSecondaryColor: "text-gray-200",
     backgroundColor: "bg-gray-700",
     borderColor: "border-gray-100",
   },

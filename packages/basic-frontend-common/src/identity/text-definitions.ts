@@ -22,10 +22,10 @@ export const defTextLead =
   "text-lg font-medium md:text-xl md:font-semibold tracking-wider leading-normal";
 
 export const defLegend =
-  "text-base font-medium md:text-lg md:font-medium leading-normal";
+  "text-base font-medium md:text-lg md:font-medium leading-normal uppercase";
 
 export const defLabel =
-  "text-base font-medium md:text-lg md:font-medium leading-normal uppercase";
+  "text-base font-medium md:text-lg md:font-medium leading-normal";
 
 export const defComment =
   "text-base font-medium md:text-lg md:font-medium leading-normal italic";

@@ -20,7 +20,7 @@ export const Comment: FC<CommentProps> = ({
   theme = ThemeLight,
 }) => {
   const style = `${
-    theme ? theme.body.textColor : "text-gray-500"
+    theme ? theme.body.textSecondaryColor : "text-gray-500"
   } ${defComment} ${defTextMargin(marginBottom, marginTop)} ${defTextPadding(
     paddingBottom,
     paddingTop

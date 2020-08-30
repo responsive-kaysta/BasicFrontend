@@ -1,16 +1,11 @@
 import React, { FC } from "react";
-import { ThemeType } from "../../typings";
 import { FormBase } from "./form-base";
-import { Comment } from "../typography";
+import { FormBaseProps } from "./form-base-props";
 
-type InputProps = {
+type InputProps = FormBaseProps & {
   id: string;
   name: string;
   type: string;
-  label?: string;
-  legend?: string;
-  comment?: string;
-  theme?: ThemeType;
   placeholderText: string;
   onInputChanged: (value: string | null) => void;
 };
@@ -19,7 +14,6 @@ export const Input: FC<InputProps> = ({
   id,
   name,
   type,
-  label,
   legend,
   comment,
   theme,
@@ -35,7 +29,7 @@ export const Input: FC<InputProps> = ({
   } shadow focus:outline-none focus:shadow-outline p-2 transition duration-150 ease-in-out sm:text-sm sm:leading-5`;
 
   return (
-    <FormBase label={label} legend={legend} theme={theme}>
+    <FormBase legend={legend} comment={comment} theme={theme}>
       <div className="w-full mt-1 mb-1 rounded-md shadow-sm">
         <input
           id={id}
@@ -46,7 +40,6 @@ export const Input: FC<InputProps> = ({
           placeholder={placeholderText}
         />
       </div>
-      {comment && <Comment>{comment}</Comment>}
     </FormBase>
   );
 };

@@ -12,7 +12,7 @@ import { ButtonType, ButtonSize } from "./button-types";
 import { ThemeType } from "../../typings";
 import { ThemeLight } from "../../identity";
 
-type ButtonRegularProps = {
+type ButtonProps = {
   text: string;
   type?: ButtonType;
   size?: ButtonSize;
@@ -21,7 +21,7 @@ type ButtonRegularProps = {
   onClick: () => void;
 };
 
-export const ButtonRegular: FC<ButtonRegularProps> = ({
+export const ButtonRegular: FC<ButtonProps> = ({
   text,
   type,
   size = ButtonSize.normal,

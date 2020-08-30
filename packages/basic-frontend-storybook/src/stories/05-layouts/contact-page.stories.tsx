@@ -8,6 +8,7 @@ import {
   Topbar,
   Input,
   Dropdown,
+  defComment,
 } from "basic-frontend-common";
 import React from "react";
 import { footerComponent, menuItems } from "../../helper";
@@ -47,7 +48,7 @@ storiesOf("Design System / 05 Layouts", module).add("Contact Page", () => (
                 legend="Legend"
                 theme={ThemeTransparent}
               />
-              <p className="text-red-500 text-xs italic">
+              <p className={`text-red-500 text-xs italic ${defComment}`}>
                 Please fill out this field.
               </p>
             </div>
@@ -78,8 +79,8 @@ storiesOf("Design System / 05 Layouts", module).add("Contact Page", () => (
                 legend="Legend"
                 theme={ThemeTransparent}
               />
-              <p className="text-gray-600 text-xs italic">
-                Make it as long and as crazy as you'd like
+              <p className={`text-red-500 text-xs italic ${defComment}`}>
+                Please fill out this field.
               </p>
             </div>
           </div>

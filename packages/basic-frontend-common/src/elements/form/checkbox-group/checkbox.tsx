@@ -1,6 +1,7 @@
-import React, { FC, ChangeEvent, useEffect, useState } from "react";
+import React, { ChangeEvent, FC, useEffect, useState } from "react";
+import { FormBaseProps } from "../form-base-props";
 
-type CheckBoxProps = {
+type CheckBoxProps = FormBaseProps & {
   label: string;
   value: string;
   onChange: (value: string, checked: boolean) => void;

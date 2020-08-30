@@ -1,7 +1,7 @@
 export type ThemeType = {
   body: {
     textColor: string;
-    secondaryText: string;
+    textSecondaryColor: string;
     backgroundColor: string;
     borderColor: string;
   };

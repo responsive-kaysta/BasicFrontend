@@ -1,6 +1,7 @@
-import React, { FC, ChangeEvent } from "react";
+import React, { ChangeEvent, FC } from "react";
+import { FormBaseProps } from "../form-base-props";
 
-type RadioButtonProps = {
+type RadioButtonProps = FormBaseProps & {
   label: string;
   value: string;
   onChange: (checked: boolean) => void;
