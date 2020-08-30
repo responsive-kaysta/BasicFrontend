@@ -24,10 +24,11 @@ storiesOf("Design System / 02 Elements", module).add("Form", () => (
 
     <section className="flex flex-row mb-10">
       <div className="w-1/4">CheckBoxGroup</div>
-      <div className="w-3/4 flex flex-row justify-between">
+      <div className="w-3/4">
         <CheckBoxGroup
           id="TheId"
           name="CheckBoxGroup"
+          label="Label"
           legend="CheckBoxGroup Legend"
           comment="CheckBoxGroup Comment"
           options={optionsCheckBox}
@@ -38,10 +39,11 @@ storiesOf("Design System / 02 Elements", module).add("Form", () => (
 
     <section className="flex flex-row mb-10">
       <div className="w-1/4">RadioButtonGroup</div>
-      <div className="w-3/4 flex flex-row justify-between">
+      <div className="w-3/4">
         <RadioButtonGroup
           id="TheId"
           name="RadioButtonGroup"
+          label="Label"
           legend="RadioButtonGroup Legend"
           comment="RadioButtonGroup Comment"
           options={optionsRadioButton}
@@ -53,10 +55,11 @@ storiesOf("Design System / 02 Elements", module).add("Form", () => (
 
     <section className="flex flex-row mb-10">
       <div className="w-1/4">Dropdown</div>
-      <div className="w-3/4 flex flex-row justify-between">
+      <div className="w-3/4">
         <Dropdown
           id="TheId"
           name="Dropdown"
+          label="Label"
           legend="Dropdown Legend"
           comment="Dropdown Comment"
           defaultOption={true}
@@ -68,10 +71,11 @@ storiesOf("Design System / 02 Elements", module).add("Form", () => (
 
     <section className="flex flex-row mb-10">
       <div className="w-1/4">Input</div>
-      <div className="w-3/4 flex flex-row justify-between">
+      <div className="w-3/4">
         <Input
           id="TheId"
           name="Input"
+          label="Label"
           legend="Input Legend"
           comment="Input Comment"
           type={select("Input Type", ["text", "email", "password"], "text")}
@@ -83,10 +87,11 @@ storiesOf("Design System / 02 Elements", module).add("Form", () => (
 
     <section className="flex flex-row mb-10">
       <div className="w-1/4">Textarea</div>
-      <div className="w-3/4 flex flex-row justify-between">
+      <div className="w-3/4">
         <Textarea
           id="TheId"
           name="Textarea"
+          label="Label"
           legend="Textarea Legend"
           comment="Textarea Comment"
           placeholderText="Textarea Placeholder"

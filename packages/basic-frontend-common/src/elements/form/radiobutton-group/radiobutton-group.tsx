@@ -7,6 +7,7 @@ import { ThemeLight } from "../../../identity";
 type RadioButtonGroupProps = {
   id: string;
   name: string;
+  label?: string;
   legend?: string;
   comment?: string;
   options: {
@@ -21,6 +22,7 @@ type RadioButtonGroupProps = {
 export const RadioButtonGroup: FC<RadioButtonGroupProps> = ({
   id,
   name,
+  label,
   legend,
   comment,
   options,
@@ -32,7 +34,13 @@ export const RadioButtonGroup: FC<RadioButtonGroupProps> = ({
   useEffect(() => setSelected(selectedItem || null), [selectedItem]);
 
   return (
-    <FormBase comment={comment} legend={legend} theme={theme}>
+    <FormBase
+      label={label}
+      htmlFor={id}
+      comment={comment}
+      legend={legend}
+      theme={theme}
+    >
       <fieldset id={id} name={name}>
         {options.map((item) => {
           return (

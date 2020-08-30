@@ -14,6 +14,7 @@ export const Input: FC<InputProps> = ({
   id,
   name,
   type,
+  label,
   legend,
   comment,
   theme,
@@ -29,7 +30,13 @@ export const Input: FC<InputProps> = ({
   } shadow focus:outline-none focus:shadow-outline p-2 transition duration-150 ease-in-out sm:text-sm sm:leading-5`;
 
   return (
-    <FormBase legend={legend} comment={comment} theme={theme}>
+    <FormBase
+      label={label}
+      htmlFor={id}
+      legend={legend}
+      comment={comment}
+      theme={theme}
+    >
       <div className="w-full mt-1 mb-1 rounded-md shadow-sm">
         <input
           id={id}

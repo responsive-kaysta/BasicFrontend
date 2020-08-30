@@ -7,6 +7,7 @@ import { ThemeLight } from "../../../identity";
 type CheckBoxGroupProps = {
   id: string;
   name: string;
+  label?: string;
   legend?: string;
   comment?: string;
   options: {
@@ -22,13 +23,20 @@ export const CheckBoxGroup: FC<CheckBoxGroupProps> = ({
   id,
   name,
   legend,
+  label,
   comment,
   options,
   onChange,
   theme = ThemeLight,
 }) => {
   return (
-    <FormBase comment={comment} legend={legend} theme={theme}>
+    <FormBase
+      label={label}
+      htmlFor={id}
+      comment={comment}
+      legend={legend}
+      theme={theme}
+    >
       <fieldset id={id} name={name}>
         {options.map((item) => {
           return (

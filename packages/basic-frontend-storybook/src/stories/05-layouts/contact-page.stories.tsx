@@ -19,6 +19,7 @@ import {
   footerComponent,
   menuItems,
   optionsCheckBox,
+  optionsDropdown,
   optionsRadioButton,
 } from "../../helper";
 
@@ -48,6 +49,7 @@ storiesOf("Design System / 05 Layouts", module).add("Contact Page", () => (
               <Input
                 id="grid-first-name"
                 name="grid-first-name"
+                label="Label"
                 onInputChanged={action("")}
                 placeholderText=""
                 type="text"
@@ -63,6 +65,7 @@ storiesOf("Design System / 05 Layouts", module).add("Contact Page", () => (
               <Input
                 id="grid-last-name"
                 name="grid-first-name"
+                label="Label"
                 onInputChanged={action("")}
                 placeholderText=""
                 type="text"
@@ -78,6 +81,7 @@ storiesOf("Design System / 05 Layouts", module).add("Contact Page", () => (
               <Input
                 id="grid-password"
                 name="grid-password"
+                label="Label"
                 onInputChanged={action("")}
                 placeholderText="******************"
                 type="password"
@@ -96,6 +100,7 @@ storiesOf("Design System / 05 Layouts", module).add("Contact Page", () => (
               <CheckBoxGroup
                 id="TheId"
                 name="CheckBoxGroup"
+                label="Label"
                 legend="CheckBoxGroup Legend"
                 comment="CheckBoxGroup Comment"
                 options={optionsCheckBox}
@@ -107,6 +112,7 @@ storiesOf("Design System / 05 Layouts", module).add("Contact Page", () => (
               <RadioButtonGroup
                 id="TheId"
                 name="RadioButtonGroup"
+                label="Label"
                 legend="RadioButtonGroup Legend"
                 comment="RadioButtonGroup Comment"
                 options={optionsRadioButton}
@@ -135,24 +141,7 @@ storiesOf("Design System / 05 Layouts", module).add("Contact Page", () => (
                 id="grid-state"
                 name="grid-state"
                 onSelectionChanged={action("")}
-                options={[
-                  {
-                    label: "Select",
-                    value: "0",
-                  },
-                  {
-                    label: "Germany",
-                    value: "1",
-                  },
-                  {
-                    label: "Austria",
-                    value: "2",
-                  },
-                  {
-                    label: "Switzerland",
-                    value: "3",
-                  },
-                ]}
+                options={optionsDropdown}
                 comment="Comment"
                 defaultOption
                 defaultValue="0"

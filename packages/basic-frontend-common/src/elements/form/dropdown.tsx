@@ -15,6 +15,7 @@ export const Dropdown: FC<DropdownProps> = ({
   id,
   name,
   legend,
+  label,
   comment,
   theme,
   options,
@@ -29,7 +30,13 @@ export const Dropdown: FC<DropdownProps> = ({
   } px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline`;
 
   return (
-    <FormBase legend={legend} comment={comment} theme={theme}>
+    <FormBase
+      label={label}
+      htmlFor={id}
+      legend={legend}
+      comment={comment}
+      theme={theme}
+    >
       <div className="mt-1 inline-block relative">
         <select
           id={id}
