@@ -1,18 +1,14 @@
-import React, { FC, ReactNode } from "react";
+import React, { FC } from "react";
 import { Hruler, TextLead, Title, TitleSub } from "../../elements";
-import { ThemeType } from "../../typings";
-import { headerStyle } from "./styles";
+import { defTopMaring, ThemeLight } from "../../identity";
+import { IntroBaseProps } from "./base-props";
+import { IntroBase } from "./base";
 
-type IntroProps = {
+type IntroProps = IntroBaseProps & {
   title: string;
   subTitle?: string;
   lead?: string;
   hruler?: boolean;
-  theme?: ThemeType;
-  centerContent?: boolean;
-  containerContent?: boolean;
-  elementId?: string;
-  children?: ReactNode;
 };
 
 export const Intro: FC<IntroProps> = ({
@@ -20,22 +16,40 @@ export const Intro: FC<IntroProps> = ({
   subTitle,
   lead,
   hruler = true,
-  theme,
+  cssStyle,
+  elementId,
+  paddingTop = true,
+  paddingBottom = true,
+  marginTop = false,
+  marginBottom = false,
+  theme = ThemeLight,
   centerContent = false,
   containerContent = false,
-  elementId,
-  children,
 }) => {
   return (
-    <header
-      className={headerStyle(theme, centerContent, containerContent)}
-      id={elementId}
+    <IntroBase
+      centerContent={centerContent}
+      containerContent={containerContent}
+      cssStyle={cssStyle}
+      marginBottom={marginBottom}
+      marginTop={marginTop}
+      paddingBottom={paddingBottom}
+      paddingTop={paddingTop}
+      theme={theme}
+      elementId={elementId}
     >
       <Title theme={theme}>{title}</Title>
       {hruler && <Hruler theme={theme} />}
-      {subTitle && <TitleSub theme={theme}>{subTitle}</TitleSub>}
-      {lead && <TextLead theme={theme}>{lead}</TextLead>}
-      {children}
-    </header>
+      {subTitle && subTitle.length > 0 && (
+        <TitleSub theme={theme} marginTop={hruler ? false : true}>
+          {subTitle}
+        </TitleSub>
+      )}
+      {lead && lead.length > 0 && (
+        <div className={`${defTopMaring}`}>
+          <TextLead theme={theme}>{lead}</TextLead>
+        </div>
+      )}
+    </IntroBase>
   );
 };

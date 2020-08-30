@@ -1,16 +1,30 @@
 import React, { FC, ReactNode } from "react";
-import { defTextLead } from "../../identity";
-import { ThemeType } from "../../typings";
+import {
+  defTextLead,
+  defTextMargin,
+  defTextPadding,
+  ThemeLight,
+} from "../../identity";
+import { BaseProps } from "./base-props";
 
-type TextLeadProps = {
+type TextLeadProps = BaseProps & {
   children: ReactNode;
-  theme?: ThemeType;
 };
 
-export const TextLead: FC<TextLeadProps> = ({ children, theme }) => {
+export const TextLead: FC<TextLeadProps> = ({
+  children,
+  marginBottom = false,
+  marginTop = false,
+  paddingBottom = false,
+  paddingTop = false,
+  theme = ThemeLight,
+}) => {
   const style = `${
     theme ? theme.body.textColor : "text-gray-800"
-  } ${defTextLead}`;
+  } ${defTextLead} ${defTextMargin(marginBottom, marginTop)} ${defTextPadding(
+    paddingBottom,
+    paddingTop
+  )}`;
 
   return <p className={style}>{children}</p>;
 };

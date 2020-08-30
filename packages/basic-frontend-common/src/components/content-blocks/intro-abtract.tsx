@@ -1,38 +1,48 @@
-import React, { FC, ReactNode } from "react";
+import React, { FC } from "react";
 import { Hruler, TextLead, TitleAbstract } from "../../elements";
-import { ThemeType } from "../../typings";
-import { headerStyle } from "./styles";
+import { ThemeLight } from "../../identity";
+import { IntroBase } from "./base";
+import { IntroBaseProps } from "./base-props";
 
-type IntroAbstractProps = {
+type IntroAbstractProps = IntroBaseProps & {
   title: string;
   lead?: string;
   hruler?: boolean;
-  centerContent?: boolean;
-  containerContent?: boolean;
-  theme?: ThemeType;
-  elementId?: string;
-  children?: ReactNode;
 };
 
 export const IntroAbstract: FC<IntroAbstractProps> = ({
   title,
   lead,
   hruler = true,
+  cssStyle,
+  elementId,
+  paddingTop = true,
+  paddingBottom = true,
+  marginTop = false,
+  marginBottom = false,
+  theme = ThemeLight,
   centerContent = false,
   containerContent = false,
-  theme,
-  elementId,
-  children,
 }) => {
   return (
-    <header
-      className={headerStyle(theme, centerContent, containerContent)}
-      id={elementId}
+    <IntroBase
+      centerContent={centerContent}
+      containerContent={containerContent}
+      cssStyle={cssStyle}
+      marginBottom={marginBottom}
+      marginTop={marginTop}
+      paddingBottom={paddingBottom}
+      paddingTop={paddingTop}
+      theme={theme}
+      elementId={elementId}
     >
       <TitleAbstract theme={theme}>{title}</TitleAbstract>
       {hruler && <Hruler theme={theme} />}
-      {lead && <TextLead theme={theme}>{lead}</TextLead>}
-      {children}
-    </header>
+      {lead && (
+        <TextLead theme={theme} marginTop={hruler ? false : true}>
+          {lead}
+        </TextLead>
+      )}
+    </IntroBase>
   );
 };

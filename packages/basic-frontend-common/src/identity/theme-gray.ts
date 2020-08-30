@@ -3,7 +3,7 @@ import { ThemeType } from "../typings";
 export const ThemeGray: ThemeType = {
   body: {
     textColor: "text-gray-100",
-    secondaryText: "text-gray-200",
+    textSecondaryColor: "text-gray-200",
     backgroundColor: "bg-gray-500",
     borderColor: "border-gray-100",
   },
@@ -16,6 +16,8 @@ export const ThemeGray: ThemeType = {
   },
   form: {
     textColor: "text-white",
+    textSecondaryColor: "text-gray-100",
+    textErrorColor: "text-red-600",
     backgroundColor: "bg-transparent",
     borderColor: "bg-gray-200",
     borderHoverColor: "border-gray-100",
