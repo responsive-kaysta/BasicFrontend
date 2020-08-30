@@ -8,7 +8,7 @@ type ToTopLinkProps = {
 };
 
 export const ToTopLink: FC<ToTopLinkProps> = ({ theme }) => {
-  const style = `animate-bounce duration-1000 w-6 h-12 mb-4 ${
+  const style = `w-6 h-12 mb-4 ${
     theme ? theme.body.textColor : "text-gray-100"
   } hover:${
     theme ? theme.link.hoverColor : "text-red-500"
@@ -22,7 +22,7 @@ export const ToTopLink: FC<ToTopLinkProps> = ({ theme }) => {
   return (
     <div className={wrapper}>
       <a onClick={() => scrollToTop()} className={style}>
-        <Icon name="long_arrow_up" size={IconSize.xs} />
+        <Icon name="arrow_up2" size={IconSize.xs} />
       </a>
     </div>
   );

@@ -1,7 +1,7 @@
 export type ThemeType = {
   body: {
     textColor: string;
-    secondaryText: string;
+    textSecondaryColor: string;
     backgroundColor: string;
     borderColor: string;
   };
@@ -14,6 +14,8 @@ export type ThemeType = {
   };
   form: {
     textColor: string;
+    textSecondaryColor: string;
+    textErrorColor: string;
     backgroundColor: string;
     borderColor: string;
     borderHoverColor: string;

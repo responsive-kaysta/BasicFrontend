@@ -1,4 +1,6 @@
-import React, { FC, ChangeEvent } from "react";
+import React, { ChangeEvent, FC } from "react";
+import { ThemeLight } from "../../../identity";
+import { ThemeType } from "../../../typings";
 
 type RadioButtonProps = {
   label: string;
@@ -6,6 +8,7 @@ type RadioButtonProps = {
   onChange: (checked: boolean) => void;
   checked?: boolean;
   disabled?: boolean;
+  theme?: ThemeType;
 };
 
 export const RadioButton: FC<RadioButtonProps> = ({
@@ -14,6 +17,7 @@ export const RadioButton: FC<RadioButtonProps> = ({
   onChange,
   checked,
   disabled,
+  theme = ThemeLight,
 }) => {
   return (
     <div className="mt-4">
@@ -27,10 +31,16 @@ export const RadioButton: FC<RadioButtonProps> = ({
           onChange={({ target: { checked } }: ChangeEvent<HTMLInputElement>) =>
             onChange(checked)
           }
-          className="form-radio h-4 w-4 text-indigo-600 transition duration-150 ease-in-out"
+          className={`form-radio h-4 w-4 ${
+            theme ? theme.form.textColor : "text-gray-800"
+          } transition duration-150 ease-in-out`}
         />
         <label htmlFor={value} className="ml-3">
-          <span className="block text-sm leading-5 font-medium text-gray-700">
+          <span
+            className={`block text-sm leading-5 font-medium ${
+              theme ? theme.form.textColor : "text-gray-800"
+            }`}
+          >
             {label}
           </span>
         </label>

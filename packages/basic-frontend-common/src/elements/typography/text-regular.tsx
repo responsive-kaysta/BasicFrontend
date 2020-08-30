@@ -1,15 +1,29 @@
 import React, { FC, ReactNode } from "react";
-import { defTextRegular } from "../../identity";
-import { ThemeType } from "../../typings";
+import {
+  defTextMargin,
+  defTextPadding,
+  defTextRegular,
+  ThemeLight,
+} from "../../identity";
+import { BaseProps } from "./base-props";
 
-type TextRegularProps = {
+type TextRegularProps = BaseProps & {
   children: ReactNode;
-  theme?: ThemeType;
 };
 
-export const TextRegular: FC<TextRegularProps> = ({ children, theme }) => {
+export const TextRegular: FC<TextRegularProps> = ({
+  children,
+  marginBottom = false,
+  marginTop = false,
+  paddingBottom = false,
+  paddingTop = false,
+  theme = ThemeLight,
+}) => {
   const style = `${
     theme ? theme.body.textColor : "text-gray-800"
-  } ${defTextRegular}`;
+  } ${defTextRegular} ${defTextMargin(
+    marginBottom,
+    marginTop
+  )} ${defTextPadding(paddingBottom, paddingTop)}`;
   return <p className={style}>{children}</p>;
 };

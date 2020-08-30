@@ -19,7 +19,7 @@ export const HorizontalNavbar: FC<HorizontalNavbarProps> = ({
   theme,
 }) => {
   const brandingStyle = `flex px-5 md:px-8 text-base sm:text-xl font-semibold sm:font-bold ${
-    theme ? theme.body.secondaryText : "text-gray-200"
+    theme ? theme.body.textSecondaryColor : "text-gray-200"
   }`;
 
   const brandingComp = (
@@ -32,10 +32,10 @@ export const HorizontalNavbar: FC<HorizontalNavbarProps> = ({
 
   const wrapperStyle = `flex flex-row items-center justify-between h-12 md:h-16 ${
     theme ? theme.body.backgroundColor : "bg-gray-800"
-  } ${theme ? theme.body.secondaryText : "text-gray-200"}`;
+  } ${theme ? theme.body.textSecondaryColor : "text-gray-200"}`;
 
   const navStyle = `fixed flex flex-col top-0 right-0 w-2/3 md:w-1/3 h-screen z-40 bg-sgreen-100 ${
-    theme ? theme.body.secondaryText : "text-gray-200"
+    theme ? theme.body.textSecondaryColor : "text-gray-200"
   } transition-all duration-300 ease-in-out ${
     isMenuVisible ? "bg-opacity-75" : "bg-opacity-0"
   }`;
@@ -43,7 +43,7 @@ export const HorizontalNavbar: FC<HorizontalNavbarProps> = ({
   const menuItemStyle = `pt-6 pb-2 w-full border-b ${
     theme ? theme.body.borderColor : "border-gray-300"
   } hover:${theme ? theme.form.borderHoverColor : "border-red-600"} ${
-    theme ? theme.body.secondaryText : "text-gray-200"
+    theme ? theme.body.textSecondaryColor : "text-gray-200"
   } hover:${theme ? theme.link.hoverColor : "text-red-600"} cursor-pointer`;
 
   return (
@@ -54,7 +54,7 @@ export const HorizontalNavbar: FC<HorizontalNavbarProps> = ({
           <div className="flex pr-3">
             <button
               className={`${
-                theme ? theme.body.secondaryText : "text-gray-200"
+                theme ? theme.body.textSecondaryColor : "text-gray-200"
               }`}
               aria-label="Open sidebar"
               title="Open sidebar"
@@ -73,7 +73,7 @@ export const HorizontalNavbar: FC<HorizontalNavbarProps> = ({
             <div className="flex">
               <button
                 className={`${
-                  theme ? theme.body.secondaryText : "text-gray-200"
+                  theme ? theme.body.textSecondaryColor : "text-gray-200"
                 }`}
                 aria-label="Close sidebar"
                 title="Close sidebar"

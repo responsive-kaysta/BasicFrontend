@@ -1,15 +1,6 @@
-import React, { FC, ReactNode } from "react";
-import { ThemeType } from "../../typings";
-import { Comment, Label, Legend } from "../typography";
-
-type FormBaseProps = {
-  children: ReactNode;
-
-  label?: string;
-  legend?: string;
-  comment?: string;
-  theme?: ThemeType;
-};
+import React, { FC } from "react";
+import { Comment, Legend, Label } from "../typography";
+import { FormBaseProps } from "./form-base-props";
 
 export const FormBase: FC<FormBaseProps> = ({
   children,
@@ -17,17 +8,22 @@ export const FormBase: FC<FormBaseProps> = ({
   legend,
   comment,
   theme,
+  htmlFor,
 }) => {
   return (
-    <div className="">
-      {label && (
-        <div>
-          <Label theme={theme}>{label}</Label>
-        </div>
-      )}
+    <div className="flex flex-col">
       {legend && <Legend theme={theme}>{legend}</Legend>}
-      {comment && <Comment theme={theme}>{comment}</Comment>}
+      {label && (
+        <Label theme={theme} htmlFor={htmlFor}>
+          {label}
+        </Label>
+      )}
       {children}
+      {comment && (
+        <Comment theme={theme} marginTop>
+          {comment}
+        </Comment>
+      )}
     </div>
   );
 };

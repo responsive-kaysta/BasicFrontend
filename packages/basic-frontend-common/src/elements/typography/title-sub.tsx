@@ -1,16 +1,30 @@
 import React, { FC, ReactNode } from "react";
-import { defTitleSub } from "../../identity";
-import { ThemeType } from "../../typings";
+import {
+  defTextMargin,
+  defTextPadding,
+  defTitleSub,
+  ThemeLight,
+} from "../../identity";
+import { BaseProps } from "./base-props";
 
-type TitleSubProps = {
+type TitleSubProps = BaseProps & {
   children: ReactNode;
-  theme?: ThemeType;
 };
 
-export const TitleSub: FC<TitleSubProps> = ({ children, theme }) => {
+export const TitleSub: FC<TitleSubProps> = ({
+  children,
+  marginBottom = false,
+  marginTop = false,
+  paddingBottom = false,
+  paddingTop = false,
+  theme = ThemeLight,
+}) => {
   const style = `${
     theme ? theme.body.textColor : "text-gray-800"
-  } ${defTitleSub}`;
+  } ${defTitleSub} ${defTextMargin(marginBottom, marginTop)} ${defTextPadding(
+    paddingBottom,
+    paddingTop
+  )}`;
 
   return <h2 className={style}>{children}</h2>;
 };

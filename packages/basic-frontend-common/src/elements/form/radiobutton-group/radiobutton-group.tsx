@@ -2,20 +2,18 @@ import React, { FC, useEffect, useState } from "react";
 import { ThemeType } from "../../../typings";
 import { FormBase } from "../form-base";
 import { RadioButton } from "./radiobutton";
+import { ThemeLight } from "../../../identity";
 
 type RadioButtonGroupProps = {
   id: string;
   name: string;
-
   label?: string;
   legend?: string;
   comment?: string;
-
   options: {
     label: string;
     value: string;
   }[];
-
   onChange?: (value: string) => void;
   selectedItem?: string;
   theme?: ThemeType;
@@ -30,13 +28,19 @@ export const RadioButtonGroup: FC<RadioButtonGroupProps> = ({
   options,
   onChange,
   selectedItem,
-  theme,
+  theme = ThemeLight,
 }) => {
   const [selected, setSelected] = useState<string | null>(selectedItem || null);
   useEffect(() => setSelected(selectedItem || null), [selectedItem]);
 
   return (
-    <FormBase comment={comment} label={label} legend={legend} theme={theme}>
+    <FormBase
+      label={label}
+      htmlFor={id}
+      comment={comment}
+      legend={legend}
+      theme={theme}
+    >
       <fieldset id={id} name={name}>
         {options.map((item) => {
           return (
@@ -44,6 +48,7 @@ export const RadioButtonGroup: FC<RadioButtonGroupProps> = ({
               key={item.value}
               value={item.value}
               label={item.label}
+              theme={theme}
               checked={selected === item.value}
               onChange={() => {
                 setSelected(item.value);

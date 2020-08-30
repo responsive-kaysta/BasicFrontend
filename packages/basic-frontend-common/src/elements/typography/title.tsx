@@ -1,13 +1,29 @@
 import React, { FC, ReactNode } from "react";
-import { defTitle } from "../../identity";
-import { ThemeType } from "../../typings";
+import {
+  defTextMargin,
+  defTextPadding,
+  defTitle,
+  ThemeLight,
+} from "../../identity";
+import { BaseProps } from "./base-props";
 
-type TitleProps = {
+type TitleProps = BaseProps & {
   children: ReactNode;
-  theme?: ThemeType;
 };
 
-export const Title: FC<TitleProps> = ({ children, theme }) => {
-  const style = `${theme ? theme.body.textColor : "text-gray-800"} ${defTitle}`;
+export const Title: FC<TitleProps> = ({
+  children,
+  marginBottom = false,
+  marginTop = false,
+  paddingBottom = false,
+  paddingTop = false,
+  theme = ThemeLight,
+}) => {
+  const style = `${
+    theme ? theme.body.textColor : "text-gray-800"
+  } ${defTitle} ${defTextMargin(marginBottom, marginTop)} ${defTextPadding(
+    paddingBottom,
+    paddingTop
+  )}`;
   return <h1 className={style}>{children}</h1>;
 };

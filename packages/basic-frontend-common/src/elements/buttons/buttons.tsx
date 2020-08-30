@@ -9,20 +9,24 @@ import {
   styleTransparent,
 } from "./button-styles";
 import { ButtonType, ButtonSize } from "./button-types";
+import { ThemeType } from "../../typings";
+import { ThemeLight } from "../../identity";
 
-type ButtonRegularProps = {
+type ButtonProps = {
   text: string;
   type?: ButtonType;
   size?: ButtonSize;
   disabled?: boolean;
+  theme?: ThemeType;
   onClick: () => void;
 };
 
-export const ButtonRegular: FC<ButtonRegularProps> = ({
+export const ButtonRegular: FC<ButtonProps> = ({
   text,
   type,
   size = ButtonSize.normal,
   disabled = false,
+  theme = ThemeLight,
   onClick,
 }) => {
   switch (type) {
@@ -33,7 +37,9 @@ export const ButtonRegular: FC<ButtonRegularProps> = ({
             onClick={onClick}
             disabled={disabled}
             type="button"
-            className={stylePrimary(size)}
+            className={`${stylePrimary(size)} ${
+              disabled ? "cursor-not-allowed" : ""
+            }`}
           >
             {text}
           </button>
@@ -47,7 +53,9 @@ export const ButtonRegular: FC<ButtonRegularProps> = ({
             onClick={onClick}
             disabled={disabled}
             type="button"
-            className={styleSecondary(size)}
+            className={`${styleSecondary(size)} ${
+              disabled ? "cursor-not-allowed" : ""
+            }`}
           >
             {text}
           </button>
@@ -61,7 +69,9 @@ export const ButtonRegular: FC<ButtonRegularProps> = ({
             onClick={onClick}
             disabled={disabled}
             type="button"
-            className={styleTertiary(size)}
+            className={`${styleTertiary(size)} ${
+              disabled ? "cursor-not-allowed" : ""
+            }`}
           >
             {text}
           </button>
@@ -75,7 +85,9 @@ export const ButtonRegular: FC<ButtonRegularProps> = ({
             onClick={onClick}
             disabled={disabled}
             type="button"
-            className={styleTransparent(size)}
+            className={`${styleTransparent(size, theme)} ${
+              disabled ? "cursor-not-allowed" : ""
+            }`}
           >
             {text}
           </button>
@@ -89,7 +101,9 @@ export const ButtonRegular: FC<ButtonRegularProps> = ({
             onClick={onClick}
             disabled={disabled}
             type="button"
-            className={styleAlarm(size)}
+            className={`${styleAlarm(size)} ${
+              disabled ? "cursor-not-allowed" : ""
+            }`}
           >
             {text}
           </button>
@@ -103,7 +117,9 @@ export const ButtonRegular: FC<ButtonRegularProps> = ({
             onClick={onClick}
             disabled={disabled}
             type="button"
-            className={styleSpecial(size)}
+            className={`${styleSpecial(size)} ${
+              disabled ? "cursor-not-allowed" : ""
+            }`}
           >
             {text}
           </button>
@@ -117,7 +133,9 @@ export const ButtonRegular: FC<ButtonRegularProps> = ({
             onClick={onClick}
             disabled={disabled}
             type="button"
-            className={stylePrimary(size)}
+            className={`${stylePrimary(size)} ${
+              disabled ? "cursor-not-allowed" : ""
+            }`}
           >
             {text}
           </button>
