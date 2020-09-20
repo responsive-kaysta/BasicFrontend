@@ -1,5 +1,6 @@
 export * from "./caption";
 export * from "./comment";
+export * from "./error";
 export * from "./hr";
 export * from "./label";
 export * from "./legend";

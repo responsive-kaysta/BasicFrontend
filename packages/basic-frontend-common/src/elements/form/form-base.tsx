@@ -1,11 +1,12 @@
 import React, { FC } from "react";
-import { Comment, Legend, Label } from "../typography";
+import { Comment, Error, Label, Legend } from "../typography";
 import { FormBaseProps } from "./form-base-props";
 
 export const FormBase: FC<FormBaseProps> = ({
   children,
   label,
   legend,
+  error,
   comment,
   theme,
   htmlFor,
@@ -19,6 +20,11 @@ export const FormBase: FC<FormBaseProps> = ({
         </Label>
       )}
       {children}
+      {error && (
+        <Error theme={theme} marginTop>
+          {error}
+        </Error>
+      )}
       {comment && (
         <Comment theme={theme} marginTop>
           {comment}

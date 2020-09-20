@@ -6,6 +6,8 @@ type InputProps = FormBaseProps & {
   id: string;
   name: string;
   type: string;
+  value: string;
+  error?: string;
   placeholderText: string;
   onInputChanged: (value: string | null) => void;
 };
@@ -14,6 +16,8 @@ export const Input: FC<InputProps> = ({
   id,
   name,
   type,
+  value,
+  error,
   label,
   legend,
   comment,
@@ -36,12 +40,14 @@ export const Input: FC<InputProps> = ({
       legend={legend}
       comment={comment}
       theme={theme}
+      error={error}
     >
       <div className="w-full mt-1 mb-1 rounded-md shadow-sm">
         <input
           id={id}
           name={name}
           type={type}
+          value={value}
           onChange={({ target: { value } }) => onInputChanged(value)}
           className={style}
           placeholder={placeholderText}

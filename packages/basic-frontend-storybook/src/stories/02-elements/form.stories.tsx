@@ -1,5 +1,5 @@
 import { action } from "@storybook/addon-actions";
-import { select } from "@storybook/addon-knobs";
+import { select, text } from "@storybook/addon-knobs";
 import { storiesOf } from "@storybook/react";
 import {
   CheckBoxGroup,
@@ -78,6 +78,8 @@ storiesOf("Design System / 02 Elements", module).add("Form", () => (
           label="Label"
           legend="Input Legend"
           comment="Input Comment"
+          error="Error Message"
+          value={text("Input", "Some Value")}
           type={select("Input Type", ["text", "email", "password"], "text")}
           placeholderText="Input Placeholder"
           onInputChanged={action("onInputChanged")}

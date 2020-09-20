@@ -1,4 +1,5 @@
 import { action } from "@storybook/addon-actions";
+import { text } from "@storybook/addon-knobs";
 import { storiesOf } from "@storybook/react";
 import {
   CheckBoxGroup,
@@ -55,6 +56,7 @@ storiesOf("Design System / 05 Layouts", module).add("Contact Page", () => (
                 type="text"
                 comment="Comment"
                 legend="Legend"
+                value={text("first-name", "Harald")}
                 theme={ThemeTransparent}
               />
               <p className={`text-red-500 text-xs italic ${defComment}`}>
@@ -64,13 +66,14 @@ storiesOf("Design System / 05 Layouts", module).add("Contact Page", () => (
             <div className="w-full md:w-1/2 px-3">
               <Input
                 id="grid-last-name"
-                name="grid-first-name"
+                name="grid-last-name"
                 label="Label"
                 onInputChanged={action("")}
                 placeholderText=""
                 type="text"
                 comment="Comment"
                 legend="Legend"
+                value={text("last-name", "Hendrikson")}
                 theme={ThemeTransparent}
               />
             </div>
@@ -87,6 +90,7 @@ storiesOf("Design System / 05 Layouts", module).add("Contact Page", () => (
                 type="password"
                 comment="Comment"
                 legend="Legend"
+                value={text("password", "1234567890")}
                 theme={ThemeTransparent}
               />
               <p className={`text-red-500 text-xs italic ${defComment}`}>
@@ -133,6 +137,7 @@ storiesOf("Design System / 05 Layouts", module).add("Contact Page", () => (
                 type="text"
                 comment="Comment"
                 legend="Legend"
+                value={text("city", "London")}
                 theme={ThemeTransparent}
               />
             </div>
@@ -158,6 +163,7 @@ storiesOf("Design System / 05 Layouts", module).add("Contact Page", () => (
                 type="text"
                 comment="Comment"
                 legend="Legend"
+                value={text("zip", "FXY 123 MB")}
                 theme={ThemeTransparent}
               />
             </div>
