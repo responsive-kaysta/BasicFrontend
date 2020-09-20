@@ -19,24 +19,24 @@
   ],
   "devDependencies": {
     "@types/downloadjs": "^1.4.2",
-    "@types/enzyme": "^3.10.5",
-    "@types/qs": "^6.9.4",
-    "@types/react": "^16.9.48",
+    "@types/enzyme": "^3.10.6",
+    "@types/qs": "^6.9.5",
+    "@types/react": "^16.9.49",
     "@types/react-dom": "^16.9.8",
     "@types/react-scroll": "^1.8.0",
     "prettier": "2.0.5",
     "rimraf": "3.0.2",
-    "typescript": "^4.0.2"
+    "typescript": "^4.0.3"
   },
   "dependencies": {
-    "date-fns": "^2.16.0",
+    "date-fns": "^2.16.1",
     "downloadjs": "^1.4.7",
-    "prettier": "2.1.1",
+    "prettier": "2.1.2",
     "qs": "^6.9.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scroll": "^1.8.1",
     "rimraf": "^3.0.2",
-    "tailwindcss": "^1.7.5"
+    "tailwindcss": "^1.8.10"
   }
 }

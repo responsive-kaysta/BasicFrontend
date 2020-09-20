@@ -11,28 +11,28 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "basic-frontend-common": "^0.3.12",
+    "basic-frontend-common": "^0.3.13",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scroll": "^1.8.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.11.4",
-    "@storybook/addon-actions": "6.0.20",
+    "@babel/core": "^7.11.6",
+    "@storybook/addon-actions": "6.0.21",
     "@storybook/addon-info": "5.3.21",
-    "@storybook/addon-knobs": "6.0.20",
-    "@storybook/addon-links": "^6.0.20",
-    "@storybook/addon-storysource": "6.0.20",
-    "@storybook/addons": "^6.0.20",
+    "@storybook/addon-knobs": "6.0.21",
+    "@storybook/addon-links": "^6.0.21",
+    "@storybook/addon-storysource": "6.0.21",
+    "@storybook/addons": "^6.0.21",
     "@storybook/eslint-config-storybook": "^2.4.0",
-    "@storybook/react": "^6.0.20",
+    "@storybook/react": "^6.0.21",
     "@types/storybook__addon-actions": "5.2.1",
     "@types/storybook__addon-info": "5.2.1",
     "@types/storybook__addon-knobs": "5.2.1",
     "@types/storybook__react": "5.2.1",
     "awesome-typescript-loader": "^5.2.1",
     "babel-loader": "^8.1.0",
-    "copy-webpack-plugin": "^6.0.3",
-    "tailwindcss": "^1.7.5"
+    "copy-webpack-plugin": "^6.1.1",
+    "tailwindcss": "^1.8.10"
   }
 }
