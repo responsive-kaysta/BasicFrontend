@@ -18,6 +18,7 @@ export const ThemeGreen: ThemeType = {
     textColor: "text-gray-100",
     textSecondaryColor: "text-gray-100",
     textErrorColor: "text-red-600",
+    placeholderColor: "placeholder-gray-100",
     backgroundColor: "bg-transparent",
     borderColor: "border-gray-100",
     borderHoverColor: "border-gray-200",

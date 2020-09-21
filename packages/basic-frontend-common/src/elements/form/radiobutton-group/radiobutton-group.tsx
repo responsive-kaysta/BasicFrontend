@@ -1,15 +1,14 @@
 import React, { FC, useEffect, useState } from "react";
+import { ThemeLight } from "../../../identity";
 import { ThemeType } from "../../../typings";
 import { FormBase } from "../form-base";
 import { RadioButton } from "./radiobutton";
-import { ThemeLight } from "../../../identity";
 
 type RadioButtonGroupProps = {
   id: string;
   name: string;
   label?: string;
   legend?: string;
-  comment?: string;
   options: {
     label: string;
     value: string;
@@ -24,7 +23,6 @@ export const RadioButtonGroup: FC<RadioButtonGroupProps> = ({
   name,
   label,
   legend,
-  comment,
   options,
   onChange,
   selectedItem,
@@ -34,13 +32,7 @@ export const RadioButtonGroup: FC<RadioButtonGroupProps> = ({
   useEffect(() => setSelected(selectedItem || null), [selectedItem]);
 
   return (
-    <FormBase
-      label={label}
-      htmlFor={id}
-      comment={comment}
-      legend={legend}
-      theme={theme}
-    >
+    <FormBase label={label} htmlFor={id} legend={legend} theme={theme}>
       <fieldset id={id} name={name}>
         {options.map((item) => {
           return (

@@ -3,7 +3,7 @@ import { ThemeType } from "../../typings";
 export type FormBaseProps = {
   label?: string;
   legend?: string;
-  comment?: string;
-  theme?: ThemeType;
+  error?: string;
   htmlFor?: string;
+  theme?: ThemeType;
 };

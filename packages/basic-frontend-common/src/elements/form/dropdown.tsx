@@ -16,7 +16,6 @@ export const Dropdown: FC<DropdownProps> = ({
   name,
   legend,
   label,
-  comment,
   theme,
   options,
   defaultOption = true,
@@ -29,14 +28,12 @@ export const Dropdown: FC<DropdownProps> = ({
     theme ? theme.form.borderHoverColor : "border-gray-500"
   } px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline`;
 
+  const optionStyle = `${theme ? theme.form.backgroundColor : "bg-white"} ${
+    theme ? theme.form.textColor : "text-gray-800"
+  }`;
+
   return (
-    <FormBase
-      label={label}
-      htmlFor={id}
-      legend={legend}
-      comment={comment}
-      theme={theme}
-    >
+    <FormBase label={label} htmlFor={id} legend={legend} theme={theme}>
       <div className="mt-1 inline-block relative">
         <select
           id={id}
@@ -45,11 +42,13 @@ export const Dropdown: FC<DropdownProps> = ({
           className={style}
           defaultValue={defaultValue}
         >
-          {defaultOption && <option>Please select</option>}
+          {defaultOption && (
+            <option className={optionStyle}>Please select</option>
+          )}
 
           {options.map((item, index) => {
             return (
-              <option key={index} value={item.value}>
+              <option key={index} value={item.value} className={optionStyle}>
                 {item.label}
               </option>
             );

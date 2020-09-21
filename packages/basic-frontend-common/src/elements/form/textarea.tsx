@@ -15,7 +15,6 @@ export const Textarea: FC<TextareaProps> = ({
   name,
   legend,
   label,
-  comment,
   theme,
   rows,
   placeholderText,
@@ -27,16 +26,12 @@ export const Textarea: FC<TextareaProps> = ({
     theme ? theme.form.borderColor : "border-gray-400"
   } hover:${
     theme ? theme.form.borderHoverColor : "border-gray-500"
-  } shadow focus:outline-none focus:shadow-outline p-2 transition duration-150 ease-in-out sm:text-sm sm:leading-5`;
+  } shadow focus:outline-none focus:shadow-outline p-2 transition duration-150 ease-in-out sm:text-sm sm:leading-5 ${
+    theme ? theme.form.placeholderColor : "placeholder-gray-800"
+  }`;
 
   return (
-    <FormBase
-      label={label}
-      htmlFor={id}
-      legend={legend}
-      comment={comment}
-      theme={theme}
-    >
+    <FormBase label={label} htmlFor={id} legend={legend} theme={theme}>
       <div className="w-full mt-1 mb-1 rounded-md shadow-sm">
         <textarea
           id={id}
