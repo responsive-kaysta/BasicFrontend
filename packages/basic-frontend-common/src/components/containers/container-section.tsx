@@ -1,21 +1,26 @@
 import React, { FC, ReactNode } from "react";
-import { ThemeType } from "../../typings";
+import { defTextMargin, defTextPadding } from "../../identity";
+import { BasePropsType } from "../../typings";
 
-type BasicContainerProps = {
+type BasicContainerProps = BasePropsType & {
   children: ReactNode;
   cssStyle?: string;
-  theme?: ThemeType;
 };
 
 export const ContainerSection: FC<BasicContainerProps> = ({
   children,
   cssStyle,
   theme,
+  marginBottom = false,
+  marginTop = false,
+  paddingBottom = false,
+  paddingTop = false,
 }) => {
-  const style = `container mx-auto pt-4 md:pt-6 xl:pt-8 ${
-    cssStyle ? cssStyle : ""
-  } ${theme ? theme.body.backgroundColor : "bg-gray-100"} ${
-    theme ? theme.body.textColor : "text-gray-800"
-  }`;
+  const style = `container mx-auto ${defTextMargin(
+    marginBottom,
+    marginTop
+  )} ${defTextPadding(paddingBottom, paddingTop)} ${cssStyle ? cssStyle : ""} ${
+    theme ? theme.body.backgroundColor : "bg-gray-100"
+  } ${theme ? theme.body.textColor : "text-gray-800"}`;
   return <section className={style}>{children}</section>;
 };
