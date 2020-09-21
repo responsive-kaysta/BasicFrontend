@@ -1,5 +1,5 @@
 import { action } from "@storybook/addon-actions";
-import { select } from "@storybook/addon-knobs";
+import { select, text } from "@storybook/addon-knobs";
 import { storiesOf } from "@storybook/react";
 import {
   CheckBoxGroup,
@@ -30,7 +30,6 @@ storiesOf("Design System / 02 Elements", module).add("Form", () => (
           name="CheckBoxGroup"
           label="Label"
           legend="CheckBoxGroup Legend"
-          comment="CheckBoxGroup Comment"
           options={optionsCheckBox}
           onChange={action(`Checked`)}
         />
@@ -45,7 +44,6 @@ storiesOf("Design System / 02 Elements", module).add("Form", () => (
           name="RadioButtonGroup"
           label="Label"
           legend="RadioButtonGroup Legend"
-          comment="RadioButtonGroup Comment"
           options={optionsRadioButton}
           onChange={action("onChecked")}
           selectedItem="value2"
@@ -61,7 +59,6 @@ storiesOf("Design System / 02 Elements", module).add("Form", () => (
           name="Dropdown"
           label="Label"
           legend="Dropdown Legend"
-          comment="Dropdown Comment"
           defaultOption={true}
           options={optionsDropdown}
           onSelectionChanged={action("onSelectionChanged")}
@@ -77,7 +74,8 @@ storiesOf("Design System / 02 Elements", module).add("Form", () => (
           name="Input"
           label="Label"
           legend="Input Legend"
-          comment="Input Comment"
+          error="Error Message"
+          value={text("Input", "Some Value")}
           type={select("Input Type", ["text", "email", "password"], "text")}
           placeholderText="Input Placeholder"
           onInputChanged={action("onInputChanged")}
@@ -93,7 +91,6 @@ storiesOf("Design System / 02 Elements", module).add("Form", () => (
           name="Textarea"
           label="Label"
           legend="Textarea Legend"
-          comment="Textarea Comment"
           placeholderText="Textarea Placeholder"
           onInputChanged={action("onInputChanged")}
         />

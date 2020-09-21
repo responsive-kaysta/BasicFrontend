@@ -213,6 +213,7 @@ storiesOf("Design System / 04 Components / Content-Blocks", module)
                   onInputChanged={(value) => action(`onInputChanged: ${value}`)}
                   placeholderText={text("placeholderText", "Input Placeholder")}
                   type="text"
+                  value={text("Input", "Input")}
                   theme={ThemeGray}
                 />
               </div>

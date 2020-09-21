@@ -35,7 +35,7 @@ module.exports = {
           200: "#ef5e4a",
         },
 
-        // textColor: theme => theme('colors'),
+        // textColor: (theme) => theme("colors"),
       },
     },
   },

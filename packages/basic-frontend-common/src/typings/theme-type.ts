@@ -16,6 +16,7 @@ export type ThemeType = {
     textColor: string;
     textSecondaryColor: string;
     textErrorColor: string;
+    placeholderColor: string;
     backgroundColor: string;
     borderColor: string;
     borderHoverColor: string;
