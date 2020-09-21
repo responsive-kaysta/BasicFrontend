@@ -33,7 +33,7 @@ storiesOf("Design System / 05 Layouts", module).add("Disclaimer Page", () => (
         paddingBottom={false}
       />
 
-      <ContainerSection theme={ThemeTransparent}>
+      <ContainerSection theme={ThemeTransparent} marginTop>
         <TextRegular theme={ThemeTransparent} paddingBottom>
           Haftungsansprüche gegen den Autor, welche sich auf Schäden materieller
           oder ideeller Art beziehen, die durch die Nutzung oder Nichtnutzung

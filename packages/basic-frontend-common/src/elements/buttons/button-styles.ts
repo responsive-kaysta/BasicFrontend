@@ -11,7 +11,7 @@ export const buttonWrapper = (size: ButtonSize) => {
 };
 
 export const buttonPadding = (size: ButtonSize) => {
-  return `${size === ButtonSize.normal ? "w-48 px-6 py-4" : "w-32 px-4 py-2"}`;
+  return `${size === ButtonSize.normal ? "w-40 px-4 py-2" : "w-24 px-2 py-1"}`;
 };
 
 export const buttonTextStyle = (size: ButtonSize) => {
