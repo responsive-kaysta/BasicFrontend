@@ -20,7 +20,6 @@ export const Input: FC<InputProps> = ({
   error,
   label,
   legend,
-  comment,
   theme,
   placeholderText,
   onInputChanged,
@@ -31,14 +30,15 @@ export const Input: FC<InputProps> = ({
     theme ? theme.form.borderColor : "border-gray-400"
   } hover:${
     theme ? theme.form.borderHoverColor : "border-gray-500"
-  } shadow focus:outline-none focus:shadow-outline p-2 transition duration-150 ease-in-out sm:text-sm sm:leading-5`;
+  } shadow focus:outline-none focus:shadow-outline p-2 transition duration-150 ease-in-out sm:text-sm sm:leading-5 ${
+    theme ? theme.form.placeholderColor : "placeholder-gray-800"
+  }`;
 
   return (
     <FormBase
       label={label}
       htmlFor={id}
       legend={legend}
-      comment={comment}
       theme={theme}
       error={error}
     >

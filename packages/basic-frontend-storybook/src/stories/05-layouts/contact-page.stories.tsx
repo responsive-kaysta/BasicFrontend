@@ -5,7 +5,6 @@ import {
   CheckBoxGroup,
   ContainerArticle,
   ContainerSection,
-  defComment,
   Dropdown,
   Input,
   Intro,
@@ -45,8 +44,8 @@ storiesOf("Design System / 05 Layouts", module).add("Contact Page", () => (
 
       <ContainerSection theme={ThemeTransparent}>
         <form className="w-full">
-          <div className="flex flex-wrap -mx-3 mb-6">
-            <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+          <div className="flex flex-wrap">
+            <div className="w-full md:w-1/2 md:pr-1 mb-4">
               <Input
                 id="grid-first-name"
                 name="grid-first-name"
@@ -54,16 +53,12 @@ storiesOf("Design System / 05 Layouts", module).add("Contact Page", () => (
                 onInputChanged={action("")}
                 placeholderText=""
                 type="text"
-                comment="Comment"
                 legend="Legend"
                 value={text("first-name", "Harald")}
                 theme={ThemeTransparent}
               />
-              <p className={`text-red-500 text-xs italic ${defComment}`}>
-                Please fill out this field.
-              </p>
             </div>
-            <div className="w-full md:w-1/2 px-3">
+            <div className="w-full md:w-1/2 md:pl-1 mb-4">
               <Input
                 id="grid-last-name"
                 name="grid-last-name"
@@ -71,7 +66,6 @@ storiesOf("Design System / 05 Layouts", module).add("Contact Page", () => (
                 onInputChanged={action("")}
                 placeholderText=""
                 type="text"
-                comment="Comment"
                 legend="Legend"
                 value={text("last-name", "Hendrikson")}
                 theme={ThemeTransparent}
@@ -79,8 +73,8 @@ storiesOf("Design System / 05 Layouts", module).add("Contact Page", () => (
             </div>
           </div>
 
-          <div className="flex flex-wrap -mx-3 mb-6">
-            <div className="w-full px-3">
+          <div className="flex flex-wrap mb-4">
+            <div className="w-full">
               <Input
                 id="grid-password"
                 name="grid-password"
@@ -88,37 +82,31 @@ storiesOf("Design System / 05 Layouts", module).add("Contact Page", () => (
                 onInputChanged={action("")}
                 placeholderText="******************"
                 type="password"
-                comment="Comment"
                 legend="Legend"
                 value={text("password", "1234567890")}
                 theme={ThemeTransparent}
               />
-              <p className={`text-red-500 text-xs italic ${defComment}`}>
-                Please fill out this field.
-              </p>
             </div>
           </div>
 
-          <div className="flex flex-wrap -mx-3 mb-6">
-            <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+          <div className="flex flex-wrap">
+            <div className="w-full md:w-1/2 mb-4">
               <CheckBoxGroup
                 id="TheId"
                 name="CheckBoxGroup"
                 label="Label"
                 legend="CheckBoxGroup Legend"
-                comment="CheckBoxGroup Comment"
                 options={optionsCheckBox}
                 onChange={action(`Checked`)}
                 theme={ThemeTransparent}
               />
             </div>
-            <div className="w-full md:w-1/2 px-3">
+            <div className="w-full md:w-1/2 mb-4">
               <RadioButtonGroup
                 id="TheId"
                 name="RadioButtonGroup"
                 label="Label"
                 legend="RadioButtonGroup Legend"
-                comment="RadioButtonGroup Comment"
                 options={optionsRadioButton}
                 onChange={action("onChecked")}
                 selectedItem="value2"
@@ -127,41 +115,38 @@ storiesOf("Design System / 05 Layouts", module).add("Contact Page", () => (
             </div>
           </div>
 
-          <div className="flex flex-wrap -mx-3 mb-6">
-            <div className="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+          <div className="flex flex-wrap">
+            <div className="w-full md:w-1/3 md:pr-1 mb-4">
               <Input
                 id="grid-city"
                 name="grid-city"
                 onInputChanged={action("")}
                 placeholderText=""
                 type="text"
-                comment="Comment"
                 legend="Legend"
                 value={text("city", "London")}
                 theme={ThemeTransparent}
               />
             </div>
-            <div className="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+            <div className="w-full md:w-1/3 md:pr-1 md:pl-1 mb-4">
               <Dropdown
                 id="grid-state"
                 name="grid-state"
                 onSelectionChanged={action("")}
                 options={optionsDropdown}
-                comment="Comment"
                 defaultOption
                 defaultValue="0"
                 legend="Legend"
                 theme={ThemeTransparent}
               />
             </div>
-            <div className="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+            <div className="w-full md:w-1/3 md:pl-1 mb-4">
               <Input
                 id="grid-zip"
                 name="grid-zip"
                 onInputChanged={action("")}
                 placeholderText=""
                 type="text"
-                comment="Comment"
                 legend="Legend"
                 value={text("zip", "FXY 123 MB")}
                 theme={ThemeTransparent}
@@ -169,14 +154,13 @@ storiesOf("Design System / 05 Layouts", module).add("Contact Page", () => (
             </div>
           </div>
 
-          <div className="flex flex-wrap -mx-3 mb-6">
-            <div className="w-full px-3">
+          <div className="flex flex-wrap mb-4">
+            <div className="w-full">
               <Textarea
                 id="grid-comment"
                 name="grid-comment"
                 onInputChanged={action("")}
                 placeholderText=""
-                comment=""
                 legend=""
                 rows={5}
                 theme={ThemeTransparent}

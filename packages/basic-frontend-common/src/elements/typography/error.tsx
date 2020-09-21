@@ -1,6 +1,6 @@
 import React, { FC, ReactNode } from "react";
 import {
-  defComment,
+  defLabel,
   defTextMargin,
   defTextPadding,
   ThemeLight,
@@ -20,8 +20,8 @@ export const Error: FC<ErrorProps> = ({
   theme = ThemeLight,
 }) => {
   const style = `${
-    theme ? theme.form.textErrorColor : "text-red-200"
-  } ${defComment} ${defTextMargin(marginBottom, marginTop)} ${defTextPadding(
+    theme ? theme.form.textErrorColor : "text-red-500"
+  } ${defLabel} ${defTextMargin(marginBottom, marginTop)} ${defTextPadding(
     paddingBottom,
     paddingTop
   )}`;

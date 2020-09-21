@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { Comment, Error, Label, Legend } from "../typography";
+import { Error, Label, Legend } from "../typography";
 import { FormBaseProps } from "./form-base-props";
 
 export const FormBase: FC<FormBaseProps> = ({
@@ -7,12 +7,12 @@ export const FormBase: FC<FormBaseProps> = ({
   label,
   legend,
   error,
-  comment,
   theme,
   htmlFor,
 }) => {
+  const style = `flex flex-col`;
   return (
-    <div className="flex flex-col">
+    <div className={style}>
       {legend && <Legend theme={theme}>{legend}</Legend>}
       {label && (
         <Label theme={theme} htmlFor={htmlFor}>
@@ -24,11 +24,6 @@ export const FormBase: FC<FormBaseProps> = ({
         <Error theme={theme} marginTop>
           {error}
         </Error>
-      )}
-      {comment && (
-        <Comment theme={theme} marginTop>
-          {comment}
-        </Comment>
       )}
     </div>
   );
