@@ -37,6 +37,7 @@
     "react-dom": "^16.13.1",
     "react-scroll": "^1.8.1",
     "rimraf": "^3.0.2",
-    "tailwindcss": "^1.9.1"
+    "tailwindcss": "^1.9.1",
+    "axios": "^0.20.0"
   }
 }
