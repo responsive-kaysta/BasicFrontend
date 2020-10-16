@@ -1,7 +1,6 @@
-import React, { FC, useEffect, useRef, useState } from "react";
-import { ReCAPTCHA } from "react-google-recaptcha";
-import LocalizedStrings from "react-localization";
-import { ContainerArticle, ContainerSection, Intro } from "../../components";
+import React, { FC, useEffect, useState } from 'react';
+import LocalizedStrings from 'react-localization';
+import { ContainerSection } from '../../components';
 import {
   ButtonRegular,
   ButtonSize,
@@ -12,11 +11,11 @@ import {
   TextRegular,
   Title,
   TitleAbstract,
-} from "../../elements";
-import { ThemeType } from "../../typings";
-import { FormFieldType, FormFieldValidation } from "../../utils";
-import { EmailForm, sendEmail } from "./email-form";
-import * as json from "./localization.json";
+} from '../../elements';
+import { ThemeType } from '../../typings';
+import { FormFieldType, FormFieldValidation } from '../../utils';
+import { EmailForm, sendEmail } from './email-form';
+import * as json from './localization.json';
 
 type ContactFormRegularProps = {
   theme: ThemeType;
@@ -24,7 +23,6 @@ type ContactFormRegularProps = {
   reasonsDropdown: { value: string; label: string }[];
   pageOrigin: string;
   apiHost: string;
-  reCaptchaSiteKey: string;
 };
 
 export const ContactFormRegular: FC<ContactFormRegularProps> = ({
@@ -33,20 +31,18 @@ export const ContactFormRegular: FC<ContactFormRegularProps> = ({
   reasonsDropdown,
   pageOrigin,
   apiHost,
-  reCaptchaSiteKey,
 }) => {
   const localizedStrings = new LocalizedStrings(json);
   localizedStrings.setLanguage(language);
 
   const [emailFormState, setEmailFormState] = useState<EmailForm>({});
-  const [reCaptchaToken, setReCaptchaToken] = useState<string>("");
   const [isFormValid, setIsFormValid] = useState<boolean>(false);
   const [isEmailSent, setIsEmailSent] = useState<boolean>(false);
 
   const optionsDropdown: {
     value: string;
     label: string;
-  }[] = reasonsDropdown.map((item) => {
+  }[] = reasonsDropdown.map((item: { value: any; label: any }) => {
     return { value: item.value, label: item.label };
   });
 
@@ -54,35 +50,19 @@ export const ContactFormRegular: FC<ContactFormRegularProps> = ({
     return opt.value === emailFormState.Reason;
   });
 
-  const onSendEmailClicked = async () => {
-    emailFormState.Origin = pageOrigin;
-    emailFormState.Reason = optionSelected.label;
-
-    const mailSent = await sendEmail(emailFormState, apiHost);
-    setIsEmailSent(mailSent);
-  };
-
   // https://github.com/dozoisch/react-google-recaptcha
-  // https://www.google.com/u/0/recaptcha/admin/site/432868004
-  const recaptchaRef = useRef(null);
+  // https://www.google.com/u/0/recaptcha/admin/site/433601432
 
   const onSubmitWithReCAPTCHA = async () => {
     if (!isFormValid) {
       return;
     }
 
-    // const reCaptchaValue = recaptchaRef.current.getValue();
-    const reCaptchaValue = await recaptchaRef.current.executeAsync();
-    setReCaptchaToken(reCaptchaValue);
-    console.log("onSubmitWithReCAPTCHA - reCaptchaToken: ", reCaptchaToken);
+    emailFormState.Origin = pageOrigin;
+    emailFormState.Reason = optionSelected.label;
 
-    // process.env.NODE_ENV !== "development" &&
-    if (reCaptchaToken === undefined || reCaptchaToken === "") {
-      setIsFormValid(false);
-      throw new Error("Empty Token provided!");
-    }
-
-    await onSendEmailClicked();
+    const mailSent = await sendEmail(emailFormState, apiHost);
+    setIsEmailSent(mailSent);
   };
 
   const formValidation = () => {
@@ -96,19 +76,11 @@ export const ContactFormRegular: FC<ContactFormRegularProps> = ({
   };
 
   useEffect(() => {
-    console.log("useEffect emailFormState: ", emailFormState);
     formValidation();
   }, [emailFormState]);
 
   return (
-    <ContainerArticle theme={theme}>
-      <Intro
-        title={localizedStrings.sharedContent.pages.pageContact.title}
-        subTitle={localizedStrings.sharedContent.pages.pageContact.subTitle}
-        lead={localizedStrings.sharedContent.pages.pageContact.leadText}
-        theme={theme}
-        containerContent
-      />
+    <>
       {isEmailSent && (
         <ContainerSection theme={theme} marginTop>
           <Title theme={theme} marginBottom={true}>
@@ -331,12 +303,10 @@ export const ContactFormRegular: FC<ContactFormRegularProps> = ({
               />
             </div>
 
-            <div className="flex justify-center w-full mt-8 mb-8">
-              <ReCAPTCHA ref={recaptchaRef} sitekey={reCaptchaSiteKey} />
-            </div>
+            <div className="flex justify-center w-full mt-8 mb-8">empty</div>
           </ContainerSection>
         </>
       )}
-    </ContainerArticle>
+    </>
   );
 };

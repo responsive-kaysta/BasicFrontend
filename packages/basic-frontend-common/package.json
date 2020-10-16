@@ -18,13 +18,12 @@
     "assets"
   ],
   "devDependencies": {
-    "@types/react-google-recaptcha": "^2.1.0",
     "@types/downloadjs": "^1.4.2",
     "@types/enzyme": "^3.10.7",
     "@types/qs": "^6.9.5",
-    "@types/react": "^16.9.52",
+    "@types/react": "^16.9.53",
     "@types/react-dom": "^16.9.8",
-    "@types/react-scroll": "^1.8.1",
+    "@types/react-scroll": "^1.8.2",
     "prettier": "2.0.5",
     "rimraf": "3.0.2",
     "typescript": "^4.0.3"
@@ -34,13 +33,12 @@
     "downloadjs": "^1.4.7",
     "prettier": "2.1.2",
     "qs": "^6.9.4",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
     "react-scroll": "^1.8.1",
     "rimraf": "^3.0.2",
-    "tailwindcss": "^1.9.1",
+    "tailwindcss": "^1.9.3",
     "axios": "^0.20.0",
-    "react-google-recaptcha": "^2.1.0",
     "react-localization": "^1.0.15"
   }
 }
