@@ -6,19 +6,21 @@ export enum FormFieldType {
 }
 
 export const typeOfStringCheck = (value: any) => {
-  return typeof value === "string";
+  return typeof value === 'string';
 };
 
 export const typeOfNumberCheck = (value: any) => {
-  return typeof value === "number";
+  return typeof value === 'number';
 };
 
 export const FormFieldValidation = (
   fieldType: FormFieldType,
-  fieldValue: any
+  fieldValue: any,
+  minLength?: number,
+  maxLength?: number
 ) => {
-  const fieldMinLength = 1;
-  const fieldMaxLength = 128;
+  const fieldMinLength = minLength ? minLength : 1;
+  const fieldMaxLength = maxLength ? maxLength : 64;
 
   switch (fieldType) {
     case FormFieldType.Email:

@@ -50,10 +50,9 @@ export const ContactFormRegular: FC<ContactFormRegularProps> = ({
     return opt.value === emailFormState.Reason;
   });
 
-  // https://github.com/dozoisch/react-google-recaptcha
-  // https://www.google.com/u/0/recaptcha/admin/site/433601432
+  // https://dummyimage.com/
 
-  const onSubmitWithReCAPTCHA = async () => {
+  const onSubmit = async () => {
     if (!isFormValid) {
       return;
     }
@@ -67,7 +66,12 @@ export const ContactFormRegular: FC<ContactFormRegularProps> = ({
 
   const formValidation = () => {
     const isValidForm =
-      FormFieldValidation(FormFieldType.String, emailFormState.FirstName) &&
+      FormFieldValidation(
+        FormFieldType.String,
+        emailFormState.FirstName,
+        3,
+        48
+      ) &&
       FormFieldValidation(FormFieldType.String, emailFormState.SurName) &&
       FormFieldValidation(FormFieldType.Email, emailFormState.EmailAddress) &&
       FormFieldValidation(FormFieldType.String, emailFormState.Reason) &&
@@ -291,7 +295,7 @@ export const ContactFormRegular: FC<ContactFormRegularProps> = ({
           <ContainerSection theme={theme} marginTop>
             <div className="flex justify-center w-full">
               <ButtonRegular
-                onClick={onSubmitWithReCAPTCHA}
+                onClick={onSubmit}
                 text={
                   localizedStrings.sharedContent.pages.pageContact
                     .formButtonSend
