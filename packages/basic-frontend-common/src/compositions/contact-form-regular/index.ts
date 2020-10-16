@@ -1,2 +1,1 @@
-export * from './contact-form-regular';
-export * from './localization';
+export * from "./contact-form-regular";

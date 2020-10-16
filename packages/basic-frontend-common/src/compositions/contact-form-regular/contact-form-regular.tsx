@@ -1,32 +1,342 @@
-import React, { FC } from 'react';
-import { ThemeType } from '../../typings';
-import { FormLocalization } from './localization';
+import React, { FC, useEffect, useRef, useState } from "react";
+import { ReCAPTCHA } from "react-google-recaptcha";
+import LocalizedStrings from "react-localization";
+import { ContainerArticle, ContainerSection, Intro } from "../../components";
+import {
+  ButtonRegular,
+  ButtonSize,
+  ButtonType,
+  Dropdown,
+  Input,
+  Textarea,
+  TextRegular,
+  Title,
+  TitleAbstract,
+} from "../../elements";
+import { ThemeType } from "../../typings";
+import { FormFieldType, FormFieldValidation } from "../../utils";
+import { EmailForm, sendEmail } from "./email-form";
+import * as json from "./localization.json";
 
 type ContactFormRegularProps = {
-  language: string;
-  pageOrigin: string;
   theme: ThemeType;
-  localization: FormLocalization;
+  language: string;
   reasonsDropdown: { value: string; label: string }[];
+  pageOrigin: string;
+  apiHost: string;
   reCaptchaSiteKey: string;
 };
 
 export const ContactFormRegular: FC<ContactFormRegularProps> = ({
   language,
-  localization,
-  pageOrigin,
   theme,
   reasonsDropdown,
+  pageOrigin,
+  apiHost,
+  reCaptchaSiteKey,
 }) => {
-  console.log('language: ', language);
-  console.log('localization: ', localization);
-  console.log('pageOrigin: ', pageOrigin);
-  console.log('theme: ', theme);
-  console.log('reasonsDropdown: ', reasonsDropdown);
+  const localizedStrings = new LocalizedStrings(json);
+  localizedStrings.setLanguage(language);
+
+  const [emailFormState, setEmailFormState] = useState<EmailForm>({});
+  const [reCaptchaToken, setReCaptchaToken] = useState<string>("");
+  const [isFormValid, setIsFormValid] = useState<boolean>(false);
+  const [isEmailSent, setIsEmailSent] = useState<boolean>(false);
+
+  const optionsDropdown: {
+    value: string;
+    label: string;
+  }[] = reasonsDropdown.map((item) => {
+    return { value: item.value, label: item.label };
+  });
+
+  const optionSelected = optionsDropdown.find((opt) => {
+    return opt.value === emailFormState.Reason;
+  });
+
+  const onSendEmailClicked = async () => {
+    emailFormState.Origin = pageOrigin;
+    emailFormState.Reason = optionSelected.label;
+
+    const mailSent = await sendEmail(emailFormState, apiHost);
+    setIsEmailSent(mailSent);
+  };
+
+  // https://github.com/dozoisch/react-google-recaptcha
+  // https://www.google.com/u/0/recaptcha/admin/site/432868004
+  const recaptchaRef = useRef(null);
+
+  const onSubmitWithReCAPTCHA = async () => {
+    if (!isFormValid) {
+      return;
+    }
+
+    // const reCaptchaValue = recaptchaRef.current.getValue();
+    const reCaptchaValue = await recaptchaRef.current.executeAsync();
+    setReCaptchaToken(reCaptchaValue);
+    console.log("onSubmitWithReCAPTCHA - reCaptchaToken: ", reCaptchaToken);
+
+    // process.env.NODE_ENV !== "development" &&
+    if (reCaptchaToken === undefined || reCaptchaToken === "") {
+      setIsFormValid(false);
+      throw new Error("Empty Token provided!");
+    }
+
+    await onSendEmailClicked();
+  };
+
+  const formValidation = () => {
+    const isValidForm =
+      FormFieldValidation(FormFieldType.String, emailFormState.FirstName) &&
+      FormFieldValidation(FormFieldType.String, emailFormState.SurName) &&
+      FormFieldValidation(FormFieldType.Email, emailFormState.EmailAddress) &&
+      FormFieldValidation(FormFieldType.String, emailFormState.Reason) &&
+      FormFieldValidation(FormFieldType.String, emailFormState.Message);
+    setIsFormValid(isValidForm);
+  };
+
+  useEffect(() => {
+    console.log("useEffect emailFormState: ", emailFormState);
+    formValidation();
+  }, [emailFormState]);
 
   return (
-    <section>
-      <div>Contact Form Regular</div>
-    </section>
+    <ContainerArticle theme={theme}>
+      <Intro
+        title={localizedStrings.sharedContent.pages.pageContact.title}
+        subTitle={localizedStrings.sharedContent.pages.pageContact.subTitle}
+        lead={localizedStrings.sharedContent.pages.pageContact.leadText}
+        theme={theme}
+        containerContent
+      />
+      {isEmailSent && (
+        <ContainerSection theme={theme} marginTop>
+          <Title theme={theme} marginBottom={true}>
+            {localizedStrings.sharedContent.pages.pageContact.sentEmailTitle}
+          </Title>
+          <TextRegular theme={theme}>
+            {localizedStrings.sharedContent.pages.pageContact.sentEmailText}
+          </TextRegular>
+        </ContainerSection>
+      )}
+      {!isEmailSent && (
+        <>
+          <ContainerSection theme={theme} marginTop>
+            <fieldset className="flex flex-col w-full">
+              <TitleAbstract theme={theme} marginBottom={true}>
+                {localizedStrings.sharedContent.pages.pageContact.legendPerson}
+              </TitleAbstract>
+              <div className="flex flex-col md:flex-row">
+                <div className="w-full md:w-1/2 md:mr-2">
+                  <Input
+                    theme={theme}
+                    label={
+                      localizedStrings.sharedContent.pages.pageContact
+                        .formFirstname
+                    }
+                    type="text"
+                    id="firstName"
+                    name="firstName"
+                    value={emailFormState.FirstName}
+                    placeholderText={
+                      localizedStrings.sharedContent.pages.pageContact
+                        .formFirstnamePlaceholder
+                    }
+                    onInputChanged={(FirstName: string) =>
+                      setEmailFormState({ ...emailFormState, FirstName })
+                    }
+                  />
+                </div>
+                <div className="w-full md:w-1/2 md:ml-2 mt-6 md:mt-0">
+                  <Input
+                    theme={theme}
+                    label={
+                      localizedStrings.sharedContent.pages.pageContact
+                        .formSurname
+                    }
+                    type="text"
+                    id="surName"
+                    name="surName"
+                    value={emailFormState.SurName}
+                    placeholderText={
+                      localizedStrings.sharedContent.pages.pageContact
+                        .formSurnamePlaceholder
+                    }
+                    onInputChanged={(SurName: string) =>
+                      setEmailFormState({ ...emailFormState, SurName })
+                    }
+                  />
+                </div>
+              </div>
+
+              <div className="w-full mt-6">
+                <Input
+                  theme={theme}
+                  label={
+                    localizedStrings.sharedContent.pages.pageContact.formEmail
+                  }
+                  type="email"
+                  id="emailAddress"
+                  name="emailAddress"
+                  value={emailFormState.EmailAddress}
+                  placeholderText={
+                    localizedStrings.sharedContent.pages.pageContact
+                      .formEmailPlaceholder
+                  }
+                  onInputChanged={(EmailAddress: string) =>
+                    setEmailFormState({ ...emailFormState, EmailAddress })
+                  }
+                />
+              </div>
+
+              <div className="flex flex-col md:flex-row mt-6">
+                <div className="w-full md:w-2/3 md:mr-2">
+                  <Input
+                    theme={theme}
+                    label={
+                      localizedStrings.sharedContent.pages.pageContact
+                        .formStreet
+                    }
+                    type="text"
+                    id="street"
+                    name="street"
+                    value={emailFormState.Street}
+                    placeholderText={
+                      localizedStrings.sharedContent.pages.pageContact
+                        .formStreetPlaceholder
+                    }
+                    onInputChanged={(Street: string) =>
+                      setEmailFormState({ ...emailFormState, Street })
+                    }
+                  />
+                </div>
+                <div className="w-full md:w-1/3 md:ml-2 mt-6 md:mt-0">
+                  <Input
+                    theme={theme}
+                    label={
+                      localizedStrings.sharedContent.pages.pageContact
+                        .formNumber
+                    }
+                    type="number"
+                    id="number"
+                    name="number"
+                    value={emailFormState.Number}
+                    placeholderText={
+                      localizedStrings.sharedContent.pages.pageContact
+                        .formNumberPlaceholder
+                    }
+                    onInputChanged={(Number: string) =>
+                      setEmailFormState({ ...emailFormState, Number })
+                    }
+                  />
+                </div>
+              </div>
+
+              <div className="flex flex-col md:flex-row mt-6">
+                <div className="w-full md:w-2/3 md:mr-2">
+                  <Input
+                    theme={theme}
+                    label={
+                      localizedStrings.sharedContent.pages.pageContact.formCity
+                    }
+                    type="text"
+                    id="city"
+                    name="city"
+                    value={emailFormState.City}
+                    placeholderText={
+                      localizedStrings.sharedContent.pages.pageContact
+                        .formCityPlaceholder
+                    }
+                    onInputChanged={(City: string) =>
+                      setEmailFormState({ ...emailFormState, City })
+                    }
+                  />
+                </div>
+                <div className="w-full md:w-1/3 md:ml-2 mt-6 md:mt-0">
+                  <Input
+                    theme={theme}
+                    label={
+                      localizedStrings.sharedContent.pages.pageContact
+                        .formPostcode
+                    }
+                    type="text"
+                    id="postcode"
+                    name="postcode"
+                    value={emailFormState.PostCode}
+                    placeholderText={
+                      localizedStrings.sharedContent.pages.pageContact
+                        .formPostcodePlaceholder
+                    }
+                    onInputChanged={(PostCode: string) =>
+                      setEmailFormState({ ...emailFormState, PostCode })
+                    }
+                  />
+                </div>
+              </div>
+            </fieldset>
+          </ContainerSection>
+
+          <ContainerSection theme={theme} marginTop>
+            <fieldset className="flex flex-col w-full">
+              <TitleAbstract theme={theme} marginBottom={true} marginTop={true}>
+                {localizedStrings.sharedContent.pages.pageContact.legendReason}
+              </TitleAbstract>
+              <div className="w-full">
+                <Dropdown
+                  label={
+                    localizedStrings.sharedContent.pages.pageContact.formReason
+                  }
+                  id="reason"
+                  name="reason"
+                  theme={theme}
+                  options={optionsDropdown}
+                  onSelectionChanged={(Reason: string) =>
+                    setEmailFormState({ ...emailFormState, Reason })
+                  }
+                />
+              </div>
+
+              <div className="w-full mt-6">
+                <Textarea
+                  id="message"
+                  name="message"
+                  label={
+                    localizedStrings.sharedContent.pages.pageContact.formMessage
+                  }
+                  theme={theme}
+                  placeholderText={
+                    localizedStrings.sharedContent.pages.pageContact
+                      .formMessagePlaceholder
+                  }
+                  onInputChanged={(Message: string) =>
+                    setEmailFormState({ ...emailFormState, Message })
+                  }
+                />
+              </div>
+            </fieldset>
+          </ContainerSection>
+
+          <ContainerSection theme={theme} marginTop>
+            <div className="flex justify-center w-full">
+              <ButtonRegular
+                onClick={onSubmitWithReCAPTCHA}
+                text={
+                  localizedStrings.sharedContent.pages.pageContact
+                    .formButtonSend
+                }
+                size={ButtonSize.small}
+                type={
+                  isFormValid ? ButtonType.secondary : ButtonType.transparent
+                }
+              />
+            </div>
+
+            <div className="flex justify-center w-full mt-8 mb-8">
+              <ReCAPTCHA ref={recaptchaRef} sitekey={reCaptchaSiteKey} />
+            </div>
+          </ContainerSection>
+        </>
+      )}
+    </ContainerArticle>
   );
 };
