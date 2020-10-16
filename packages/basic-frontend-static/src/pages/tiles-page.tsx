@@ -12,19 +12,19 @@ import {
   TileSection,
   Topbar,
   ToTopLink,
-} from "basic-frontend-common";
-import React from "react";
-import { PAGE_NAME } from "../constants";
-import { FooterComponent, menuItems } from "../includes/site-parts";
+} from 'basic-frontend-common';
+import React from 'react';
+import { BG_IMAGE, PAGE_NAME } from '../constants';
+import { FooterComponent, menuItems } from '../includes/site-parts';
 
 class TilesPage extends React.Component {
   public render() {
     return (
       <>
-        {typeof window !== "undefined" ? (
+        {typeof window !== 'undefined' ? (
           <>
             <Topbar
-              backgroundImage="/backgrounds/Website-Design-Background.png"
+              backgroundImage={BG_IMAGE}
               branding={PAGE_NAME}
               theme={ThemeDarkgray}
               menuItems={menuItems}

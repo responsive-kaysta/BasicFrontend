@@ -14,7 +14,7 @@ import {
   ToTopLink,
 } from 'basic-frontend-common';
 import React from 'react';
-import { PAGE_NAME } from '../constants';
+import { BG_IMAGE, PAGE_NAME } from '../constants';
 import { FooterComponent, menuItems } from '../includes/site-parts';
 
 class ContactPage extends React.Component {
@@ -24,7 +24,7 @@ class ContactPage extends React.Component {
         {typeof window !== 'undefined' ? (
           <>
             <Topbar
-              backgroundImage="/backgrounds/Website-Design-Background.png"
+              backgroundImage={BG_IMAGE}
               branding={PAGE_NAME}
               theme={ThemeDarkgray}
               menuItems={menuItems}
@@ -48,13 +48,13 @@ class ContactPage extends React.Component {
                   pictogramSize={PictogramSize.xl}
                 />
 
-                <ContainerCover theme={ThemeTransparent}>
+                <ContainerCover theme={ThemeLight}>
                   <ContactFormRegular
                     apiHost="http://api.master-archive.local"
                     language="en"
                     pageOrigin="storybook.responsive-kaysta.local"
                     reasonsDropdown={[{ value: '1', label: 'Value 1' }]}
-                    theme={ThemeTransparent}
+                    theme={ThemeLight}
                   />
 
                   <Spacer />

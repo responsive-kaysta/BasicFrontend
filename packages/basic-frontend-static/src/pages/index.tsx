@@ -18,21 +18,18 @@ import {
   ThemeLight,
   ThemeTransparent,
   ToTopLink,
-} from "basic-frontend-common";
-import React from "react";
-import { PAGE_NAME } from "../constants";
-import { FooterComponent } from "../includes/site-parts";
+} from 'basic-frontend-common';
+import React from 'react';
+import { BG_IMAGE, PAGE_NAME } from '../constants';
+import { FooterComponent } from '../includes/site-parts';
 
 class Index extends React.Component {
   public render() {
     return (
       <>
-        {typeof window !== "undefined" ? (
+        {typeof window !== 'undefined' ? (
           <>
-            <ContainerBody
-              theme={ThemeTransparent}
-              backgroundImage="/backgrounds/Website-Design-Background.png"
-            >
+            <ContainerBody theme={ThemeTransparent} backgroundImage={BG_IMAGE}>
               <IntroEyeCatcher
                 theme={ThemeTransparent}
                 contentTop={PAGE_NAME}

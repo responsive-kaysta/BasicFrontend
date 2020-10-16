@@ -1,15 +1,17 @@
-import { Router } from "@reach/router";
-import { Spinner, ThemeTransparent } from "basic-frontend-common";
-import React from "react";
-import { Head, Root, Routes } from "react-static";
+import { Router } from '@reach/router';
+import { Spinner, ThemeTransparent } from 'basic-frontend-common';
+import React from 'react';
+import { Head, Root, Routes } from 'react-static';
 import {
+  BG_IMAGE,
+  ICON,
   PAGE_AUTHOR,
   PAGE_DESCRIPTION,
   PAGE_KEYWORDS,
   PAGE_NAME,
   PAGE_TOPIC,
-} from "./constants";
-import "./generated-tailwind.css";
+} from './constants';
+import './generated-tailwind.css';
 
 function App() {
   return (
@@ -23,7 +25,7 @@ function App() {
         <link rel="icon" href="/icon.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#000000" />
-        <link rel="apple-touch-icon" href="/logo192.png" />
+        <link rel="apple-touch-icon" href={ICON} />
         {/* <link rel="manifest" href="/manifest.json" /> */}
         <meta name="page-topic" content={PAGE_TOPIC} />
         <meta name="robots" content="all" />
@@ -39,10 +41,7 @@ function App() {
       </Head>
       <React.Suspense
         fallback={
-          <Spinner
-            backgroundImage="/backgrounds/Website-Design-Background.png"
-            theme={ThemeTransparent}
-          />
+          <Spinner backgroundImage={BG_IMAGE} theme={ThemeTransparent} />
         }
       >
         <Router>

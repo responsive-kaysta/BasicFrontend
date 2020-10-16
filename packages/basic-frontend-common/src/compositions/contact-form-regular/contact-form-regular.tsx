@@ -72,10 +72,15 @@ export const ContactFormRegular: FC<ContactFormRegularProps> = ({
         3,
         48
       ) &&
-      FormFieldValidation(FormFieldType.String, emailFormState.SurName) &&
+      FormFieldValidation(
+        FormFieldType.String,
+        emailFormState.SurName,
+        3,
+        64
+      ) &&
       FormFieldValidation(FormFieldType.Email, emailFormState.EmailAddress) &&
       FormFieldValidation(FormFieldType.String, emailFormState.Reason) &&
-      FormFieldValidation(FormFieldType.String, emailFormState.Message);
+      FormFieldValidation(FormFieldType.String, emailFormState.Message, 8, 512);
     setIsFormValid(isValidForm);
   };
 
@@ -86,8 +91,8 @@ export const ContactFormRegular: FC<ContactFormRegularProps> = ({
   return (
     <>
       {isEmailSent && (
-        <ContainerSection theme={theme} marginTop>
-          <Title theme={theme} marginBottom={true}>
+        <ContainerSection theme={theme}>
+          <Title theme={theme} marginBottom paddingTop>
             {localizedStrings.sharedContent.pages.pageContact.sentEmailTitle}
           </Title>
           <TextRegular theme={theme}>
@@ -96,10 +101,10 @@ export const ContactFormRegular: FC<ContactFormRegularProps> = ({
         </ContainerSection>
       )}
       {!isEmailSent && (
-        <>
-          <ContainerSection theme={theme} marginTop>
+        <form onSubmit={onSubmit}>
+          <ContainerSection theme={theme} paddingTop>
             <fieldset className="flex flex-col w-full">
-              <TitleAbstract theme={theme} marginBottom={true}>
+              <TitleAbstract theme={theme} marginBottom marginTop>
                 {localizedStrings.sharedContent.pages.pageContact.legendPerson}
               </TitleAbstract>
               <div className="flex flex-col md:flex-row">
@@ -309,7 +314,7 @@ export const ContactFormRegular: FC<ContactFormRegularProps> = ({
 
             <div className="flex justify-center w-full mt-8 mb-8">empty</div>
           </ContainerSection>
-        </>
+        </form>
       )}
     </>
   );
