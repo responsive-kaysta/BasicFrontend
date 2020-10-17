@@ -34,7 +34,7 @@
 
           "formReason": "Grund *",
 
-          "formMessage": "Nachricht *",
+          "formMessage": "Nachricht * (max. 512)",
           "formMessagePlaceholder": "Pflichtfeld: Nachricht eintragen",
 
           "formButtonSend": "Senden",
@@ -87,7 +87,7 @@
 
           "formReason": "Grund *",
 
-          "formMessage": "Nachricht *",
+          "formMessage": "Nachricht * (max. 512)",
           "formMessagePlaceholder": "Pflichtfeld: Nachricht eintragen",
 
           "formButtonSend": "Senden",

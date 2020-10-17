@@ -51,6 +51,9 @@ export const ContactFormRegular: FC<ContactFormRegularProps> = ({
   });
 
   // https://dummyimage.com/
+  // https://dummyimage.com/300x60.png&text=dummyimage.com+rocks!
+
+  // https://www.npmjs.com/package/crypto-random-string
 
   const onSubmit = async () => {
     if (!isFormValid) {
@@ -70,7 +73,7 @@ export const ContactFormRegular: FC<ContactFormRegularProps> = ({
         FormFieldType.String,
         emailFormState.FirstName,
         3,
-        48
+        24
       ) &&
       FormFieldValidation(
         FormFieldType.String,
