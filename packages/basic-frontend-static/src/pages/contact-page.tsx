@@ -15,7 +15,7 @@ import {
 } from 'basic-frontend-common';
 import React from 'react';
 import { BG_IMAGE, PAGE_NAME } from '../constants';
-import { FooterComponent, menuItems } from '../includes/site-parts';
+import { FooterComponent, MenuItems } from '../includes/site-parts';
 
 class ContactPage extends React.Component {
   public render() {
@@ -27,7 +27,7 @@ class ContactPage extends React.Component {
               backgroundImage={BG_IMAGE}
               branding={PAGE_NAME}
               theme={ThemeDarkgray}
-              menuItems={menuItems}
+              menuItems={MenuItems()}
               footer={<FooterComponent theme={ThemeDarkgray} />}
             >
               <ContainerArticle theme={ThemeTransparent}>
@@ -44,7 +44,7 @@ class ContactPage extends React.Component {
                   content="Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, 
                   consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
                   sed diam voluptua."
-                  pictogram="cloud_hardware"
+                  pictogram="robotics_design"
                   pictogramSize={PictogramSize.xl}
                 />
 

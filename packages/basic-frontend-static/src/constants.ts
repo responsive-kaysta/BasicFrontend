@@ -8,3 +8,5 @@ export const BG_IMAGE =
   'https://cdn.responsive-it.biz/assets/bg-images/Website-Design-Background.png';
 
 export const ICON = 'https://cdn.responsive-it.biz/assets/icons/icon.png';
+
+export const MOBILE_VIEW_WIDTH = 640;

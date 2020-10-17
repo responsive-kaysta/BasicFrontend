@@ -17,7 +17,7 @@ import {
 } from 'basic-frontend-common';
 import React from 'react';
 import { BG_IMAGE, PAGE_NAME } from '../constants';
-import { FooterComponent, menuItems } from '../includes/site-parts';
+import { FooterComponent, MenuItems } from '../includes/site-parts';
 
 class LegalPage extends React.Component {
   public render() {
@@ -29,7 +29,7 @@ class LegalPage extends React.Component {
               backgroundImage={BG_IMAGE}
               branding={PAGE_NAME}
               theme={ThemeDarkgray}
-              menuItems={menuItems}
+              menuItems={MenuItems()}
               footer={<FooterComponent theme={ThemeDarkgray} />}
             >
               <ContainerArticle theme={ThemeTransparent}>
