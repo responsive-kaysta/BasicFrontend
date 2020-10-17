@@ -2,10 +2,10 @@ import {
   Footer,
   Icon,
   IconSize,
+  isMobileView,
   Link,
   NavigationItems,
   ThemeType,
-  useResize,
 } from 'basic-frontend-common';
 import React, { FC } from 'react';
 import { MOBILE_VIEW_WIDTH, PAGE_AUTHOR } from '../constants';
@@ -16,8 +16,9 @@ type FooterComponentProps = {
 };
 
 export const FooterComponent: FC<FooterComponentProps> = ({ theme }) => {
-  const iconSize =
-    useResize().windowWidth >= MOBILE_VIEW_WIDTH ? IconSize.xxs : IconSize.xxxs;
+  const iconSize = isMobileView(MOBILE_VIEW_WIDTH)
+    ? IconSize.xxxs
+    : IconSize.xs;
 
   return (
     <Footer>
@@ -50,7 +51,7 @@ export const FooterComponent: FC<FooterComponentProps> = ({ theme }) => {
           </Link>
         </li>
       </ul>
-      <span className="mb-2 md:mb-4">
+      <span className="mb-6 md:mb-8">
         <Link href="https://responsive-it.biz" theme={theme} newWindow>
           2020 {PAGE_AUTHOR} - v 0.5.0
         </Link>
@@ -67,7 +68,7 @@ export const MenuItems = () => {
       title: TEXTS.siteParts.menuItems.linkHomeTitle,
     },
     {
-      link: '/about',
+      link: '/about-page',
       text: TEXTS.siteParts.menuItems.linkAbout,
       title: TEXTS.siteParts.menuItems.linkAboutTitle,
     },
