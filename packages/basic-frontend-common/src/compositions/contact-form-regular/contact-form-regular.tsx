@@ -1,4 +1,4 @@
-import React, { FC, useEffect, useState } from 'react';
+import React, { FC, useState } from 'react';
 import LocalizedStrings from 'react-localization';
 import { ContainerSection } from '../../components';
 import {
@@ -13,7 +13,7 @@ import {
   TitleAbstract,
 } from '../../elements';
 import { ThemeType } from '../../typings';
-import { FormFieldType, FormFieldValidation } from '../../utils';
+import { InputEmailValidation, InputTextValidation } from '../../utils';
 import { EmailForm, sendEmail } from './email-form';
 import * as json from './localization.json';
 
@@ -36,8 +36,13 @@ export const ContactFormRegular: FC<ContactFormRegularProps> = ({
   localizedStrings.setLanguage(language);
 
   const [emailFormState, setEmailFormState] = useState<EmailForm>({});
-  const [isFormValid, setIsFormValid] = useState<boolean>(false);
   const [isEmailSent, setIsEmailSent] = useState<boolean>(false);
+
+  const [errorFirstName, setErrorFirstName] = useState<string>(null);
+  const [errorSurName, setErrorSurName] = useState<string>(null);
+  const [errorEmailAddress, setErrorEmailAddress] = useState<string>(null);
+  const [errorReason, setErrorReason] = useState<string>(null);
+  const [errorMessage, setErrorMessage] = useState<string>(null);
 
   const optionsDropdown: {
     value: string;
@@ -46,9 +51,9 @@ export const ContactFormRegular: FC<ContactFormRegularProps> = ({
     return { value: item.value, label: item.label };
   });
 
-  const optionSelected = optionsDropdown.find((opt) => {
-    return opt.value === emailFormState.Reason;
-  });
+  // const optionSelected = optionsDropdown.find((opt) => {
+  //   return opt.value === emailFormState.Reason;
+  // });
 
   // https://dummyimage.com/
   // https://dummyimage.com/300x60.png&text=dummyimage.com+rocks!
@@ -56,40 +61,33 @@ export const ContactFormRegular: FC<ContactFormRegularProps> = ({
   // https://www.npmjs.com/package/crypto-random-string
 
   const onSubmit = async () => {
-    if (!isFormValid) {
-      return;
+    const eFirstName = InputTextValidation(emailFormState.FirstName, 3, 24);
+    setErrorFirstName(eFirstName);
+
+    const eSurName = InputTextValidation(emailFormState.SurName, 8, 64);
+    setErrorSurName(eSurName);
+
+    const eMessage = InputTextValidation(emailFormState.Message, 1, 512);
+    setErrorMessage(eMessage);
+
+    const eReason = InputTextValidation(emailFormState.Reason, 1, 64);
+    setErrorReason(eReason);
+
+    const eEmailAddress = InputEmailValidation(emailFormState.EmailAddress);
+    setErrorEmailAddress(eEmailAddress);
+
+    console.log('eFirstName: ', eFirstName);
+    console.log('eSurName: ', eSurName);
+    console.log('eMessage: ', eMessage);
+    console.log('eReason: ', eReason);
+    console.log('eEmailAddress: ', eEmailAddress);
+
+    if (!eFirstName && !eSurName && !eMessage && !eReason && !eEmailAddress) {
+      emailFormState.Origin = pageOrigin;
+      const mailSent = await sendEmail(emailFormState, apiHost);
+      setIsEmailSent(mailSent);
     }
-
-    emailFormState.Origin = pageOrigin;
-    emailFormState.Reason = optionSelected.label;
-
-    const mailSent = await sendEmail(emailFormState, apiHost);
-    setIsEmailSent(mailSent);
   };
-
-  const formValidation = () => {
-    const isValidForm =
-      FormFieldValidation(
-        FormFieldType.String,
-        emailFormState.FirstName,
-        3,
-        24
-      ) &&
-      FormFieldValidation(
-        FormFieldType.String,
-        emailFormState.SurName,
-        3,
-        64
-      ) &&
-      FormFieldValidation(FormFieldType.Email, emailFormState.EmailAddress) &&
-      FormFieldValidation(FormFieldType.String, emailFormState.Reason) &&
-      FormFieldValidation(FormFieldType.String, emailFormState.Message, 8, 512);
-    setIsFormValid(isValidForm);
-  };
-
-  useEffect(() => {
-    formValidation();
-  }, [emailFormState]);
 
   return (
     <>
@@ -121,7 +119,7 @@ export const ContactFormRegular: FC<ContactFormRegularProps> = ({
                     type="text"
                     id="firstName"
                     name="firstName"
-                    value={emailFormState.FirstName}
+                    value={emailFormState.FirstName || ''}
                     placeholderText={
                       localizedStrings.sharedContent.pages.pageContact
                         .formFirstnamePlaceholder
@@ -129,6 +127,7 @@ export const ContactFormRegular: FC<ContactFormRegularProps> = ({
                     onInputChanged={(FirstName: string) =>
                       setEmailFormState({ ...emailFormState, FirstName })
                     }
+                    error={errorFirstName}
                   />
                 </div>
                 <div className="w-full md:w-1/2 md:ml-2 mt-6 md:mt-0">
@@ -141,7 +140,7 @@ export const ContactFormRegular: FC<ContactFormRegularProps> = ({
                     type="text"
                     id="surName"
                     name="surName"
-                    value={emailFormState.SurName}
+                    value={emailFormState.SurName || ''}
                     placeholderText={
                       localizedStrings.sharedContent.pages.pageContact
                         .formSurnamePlaceholder
@@ -149,6 +148,7 @@ export const ContactFormRegular: FC<ContactFormRegularProps> = ({
                     onInputChanged={(SurName: string) =>
                       setEmailFormState({ ...emailFormState, SurName })
                     }
+                    error={errorSurName}
                   />
                 </div>
               </div>
@@ -162,7 +162,7 @@ export const ContactFormRegular: FC<ContactFormRegularProps> = ({
                   type="email"
                   id="emailAddress"
                   name="emailAddress"
-                  value={emailFormState.EmailAddress}
+                  value={emailFormState.EmailAddress || ''}
                   placeholderText={
                     localizedStrings.sharedContent.pages.pageContact
                       .formEmailPlaceholder
@@ -170,6 +170,7 @@ export const ContactFormRegular: FC<ContactFormRegularProps> = ({
                   onInputChanged={(EmailAddress: string) =>
                     setEmailFormState({ ...emailFormState, EmailAddress })
                   }
+                  error={errorEmailAddress}
                 />
               </div>
 
@@ -277,6 +278,7 @@ export const ContactFormRegular: FC<ContactFormRegularProps> = ({
                   onSelectionChanged={(Reason: string) =>
                     setEmailFormState({ ...emailFormState, Reason })
                   }
+                  error={errorReason}
                 />
               </div>
 
@@ -295,6 +297,7 @@ export const ContactFormRegular: FC<ContactFormRegularProps> = ({
                   onInputChanged={(Message: string) =>
                     setEmailFormState({ ...emailFormState, Message })
                   }
+                  error={errorMessage}
                 />
               </div>
             </fieldset>
@@ -309,9 +312,7 @@ export const ContactFormRegular: FC<ContactFormRegularProps> = ({
                     .formButtonSend
                 }
                 size={ButtonSize.small}
-                type={
-                  isFormValid ? ButtonType.secondary : ButtonType.transparent
-                }
+                type={ButtonType.secondary}
               />
             </div>
 

@@ -1,6 +1,6 @@
-import React, { FC } from "react";
-import { Error, Label, Legend } from "../typography";
-import { FormBaseProps } from "./form-base-props";
+import React, { FC } from 'react';
+import { Error, Label, Legend } from '../typography';
+import { FormBaseProps } from './form-base-props';
 
 export const FormBase: FC<FormBaseProps> = ({
   children,
@@ -20,11 +20,7 @@ export const FormBase: FC<FormBaseProps> = ({
         </Label>
       )}
       {children}
-      {error && (
-        <Error theme={theme} marginTop>
-          {error}
-        </Error>
-      )}
+      {error && <Error theme={theme}>{error}</Error>}
     </div>
   );
 };

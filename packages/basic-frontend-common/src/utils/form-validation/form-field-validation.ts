@@ -3,6 +3,8 @@ export enum FormFieldType {
   Number,
   Password,
   Email,
+  Message,
+  Dropdown,
 }
 
 export const typeOfStringCheck = (value: any) => {

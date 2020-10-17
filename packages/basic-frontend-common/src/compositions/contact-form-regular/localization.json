@@ -43,9 +43,6 @@
           "formDropdownValue_2": "Neue Quelle erfassen",
           "formDropdownValue_3": "Weitere Informationen",
 
-          "formFieldEmpty": "{0} ist ein Pflichtfeld!",
-          "formEmailInvalid": "{0} ist ungültig!",
-
           "sentEmailTitle": "Ihre Nachricht wurde erfolgreich gesendet",
           "sentEmailText": "Schnellstöglich bla bla bla "
         }
@@ -95,9 +92,6 @@
           "formDropdownValue_1": "Benutzer Account anlegen",
           "formDropdownValue_2": "Neue Quelle erfassen",
           "formDropdownValue_3": "Weitere Informationen",
-
-          "formFieldEmpty": "{0} ist ein Pflichtfeld!",
-          "formEmailInvalid": "{0} ist ungültig!",
 
           "sentEmailTitle": "Ihre Nachricht wurde erfolgreich gesendet",
           "sentEmailText": "Schnellstöglich bla bla bla "

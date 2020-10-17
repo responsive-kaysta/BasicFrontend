@@ -1,0 +1,18 @@
+{
+  "en": {
+    "formValidation": {
+      "formFieldEmpty": "{0} ist ein Pflichtfeld!",
+      "incorrectEmailField": "Email [{0}] ist ungültig, erwartet wird [exp@mail.com]!",
+      "incorrectFormFieldType": "Feld-Typ [{0}] erwartet!",
+      "incorrectLength": "Zeichenlänge zwischen [{0}] und [{1}] erwartet!"
+    }
+  },
+  "de": {
+    "formValidation": {
+      "formFieldEmpty": "{0} ist ein Pflichtfeld!",
+      "incorrectEmailField": "Email [{0}] ist ungültig, erwartet wird [exp@mail.com]!",
+      "incorrectFormFieldType": "Feld-Typ [{0}] erwartet!",
+      "incorrectLength": "Zeichenlänge zwischen [{0}] und [{1}] erwartet!"
+    }
+  }
+}
