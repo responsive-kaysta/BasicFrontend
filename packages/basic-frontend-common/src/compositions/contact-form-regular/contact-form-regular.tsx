@@ -18,6 +18,7 @@ import {
   InputEmailValidation,
   InputTextValidation,
 } from '../../utils';
+import { ImageCaptcha } from '../image-captcha';
 import { EmailForm, sendEmail } from './email-form';
 import * as json from './localization.json';
 
@@ -68,7 +69,7 @@ export const ContactFormRegular: FC<ContactFormRegularProps> = ({
     const eFirstName = InputTextValidation(emailFormState.FirstName, 3, 24);
     setErrorFirstName(eFirstName);
 
-    const eSurName = InputTextValidation(emailFormState.SurName, 8, 64);
+    const eSurName = InputTextValidation(emailFormState.SurName, 4, 64);
     setErrorSurName(eSurName);
 
     const eMessage = InputTextValidation(emailFormState.Message, 1, 512);
@@ -316,7 +317,9 @@ export const ContactFormRegular: FC<ContactFormRegularProps> = ({
               />
             </div>
 
-            <div className="flex justify-center w-full mt-8 mb-8">empty</div>
+            <div className="flex justify-center w-full mt-8 mb-8">
+              <ImageCaptcha />
+            </div>
           </ContainerSection>
         </form>
       )}
