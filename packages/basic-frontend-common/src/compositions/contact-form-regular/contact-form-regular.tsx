@@ -17,10 +17,17 @@ import {
   DropdownValidation,
   InputEmailValidation,
   InputTextValidation,
+  isMobileView,
 } from '../../utils';
 import { ImageCaptcha } from '../image-captcha';
 import { EmailForm, sendEmail } from './email-form';
 import * as json from './localization.json';
+import crs from 'crypto-random-string';
+
+// https://dummyimage.com/
+// https://dummyimage.com/300x60.png&text=dummyimage.com+rocks!
+// https://www.npmjs.com/package/crypto-random-string
+const captcha = crs({ length: 6, type: 'alphanumeric' });
 
 type ContactFormRegularProps = {
   theme: ThemeType;
@@ -48,6 +55,11 @@ export const ContactFormRegular: FC<ContactFormRegularProps> = ({
   const [errorEmailAddress, setErrorEmailAddress] = useState<string>(null);
   const [errorReason, setErrorReason] = useState<string>(null);
   const [errorMessage, setErrorMessage] = useState<string>(null);
+  const [errorCaptcha, setErrorCaptcha] = useState<boolean>(false);
+
+  const [captchaMatch, setCaptchaMatch] = useState<boolean>(false);
+  const [captchaInput, setCaptchaInput] = useState<string>();
+  const [captchaValue, setCaptchaValue] = useState<string>(captcha);
 
   const optionsDropdown: {
     value: string;
@@ -59,11 +71,6 @@ export const ContactFormRegular: FC<ContactFormRegularProps> = ({
   const optionSelected = optionsDropdown.find((opt) => {
     return opt.value === emailFormState.Reason;
   });
-
-  // https://dummyimage.com/
-  // https://dummyimage.com/300x60.png&text=dummyimage.com+rocks!
-
-  // https://www.npmjs.com/package/crypto-random-string
 
   const onSubmit = async () => {
     const eFirstName = InputTextValidation(emailFormState.FirstName, 3, 24);
@@ -81,13 +88,30 @@ export const ContactFormRegular: FC<ContactFormRegularProps> = ({
     const eEmailAddress = InputEmailValidation(emailFormState.EmailAddress);
     setErrorEmailAddress(eEmailAddress);
 
-    if (!eFirstName && !eSurName && !eMessage && !eReason && !eEmailAddress) {
+    setCaptchaMatch(captcha === captchaInput);
+    console.log('captchaInput: ', captchaInput);
+    console.log('captchaMatch: ', captchaMatch);
+    setErrorCaptcha(!captchaMatch);
+    console.log('errorCaptcha: ', errorCaptcha);
+
+    if (
+      !eFirstName &&
+      !eSurName &&
+      !eMessage &&
+      !eReason &&
+      !eEmailAddress &&
+      captchaMatch
+    ) {
       emailFormState.Origin = pageOrigin;
       emailFormState.Reason = optionSelected.label;
 
       const mailSent = await sendEmail(emailFormState, apiHost);
       setIsEmailSent(mailSent);
     }
+  };
+
+  const onCaptchaRefresh = () => {
+    setCaptchaValue(crs({ length: 6, type: 'alphanumeric' }));
   };
 
   return (
@@ -305,6 +329,17 @@ export const ContactFormRegular: FC<ContactFormRegularProps> = ({
           </ContainerSection>
 
           <ContainerSection theme={theme} marginTop>
+            <div className="flex justify-center w-full mt-8 mb-8">
+              <ImageCaptcha
+                theme={theme}
+                value={captchaValue}
+                captchaInput={captchaInput}
+                onCaptchaChange={setCaptchaInput}
+                onCaptchaRefresh={onCaptchaRefresh}
+                error={errorCaptcha}
+              />
+            </div>
+
             <div className="flex justify-center w-full">
               <ButtonRegular
                 onClick={onSubmit}
@@ -312,13 +347,9 @@ export const ContactFormRegular: FC<ContactFormRegularProps> = ({
                   localizedStrings.sharedContent.pages.pageContact
                     .formButtonSend
                 }
-                size={ButtonSize.small}
+                size={ButtonSize.normal}
                 type={ButtonType.secondary}
               />
-            </div>
-
-            <div className="flex justify-center w-full mt-8 mb-8">
-              <ImageCaptcha />
             </div>
           </ContainerSection>
         </form>
