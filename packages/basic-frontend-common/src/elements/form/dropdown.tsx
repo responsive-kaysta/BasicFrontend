@@ -1,12 +1,13 @@
-import React, { FC } from "react";
-import { FormBase } from "./form-base";
-import { FormBaseProps } from "./form-base-props";
+import React, { FC } from 'react';
+import { FormBase } from './form-base';
+import { FormBaseProps } from './form-base-props';
 
 type DropdownProps = FormBaseProps & {
   id: string;
   name: string;
   options: { value: string; label: string }[];
   onSelectionChanged: (value: string | null) => void;
+  error?: string;
   defaultOption?: boolean;
   defaultValue?: string | number | string[] | undefined;
 };
@@ -18,22 +19,29 @@ export const Dropdown: FC<DropdownProps> = ({
   label,
   theme,
   options,
+  error,
   defaultOption = true,
   onSelectionChanged,
   defaultValue,
 }) => {
   const style = `block appearance-none w-full ${
-    theme ? theme.form.backgroundColor : "bg-white"
-  } border ${theme ? theme.form.borderColor : "border-gray-400"} hover:${
-    theme ? theme.form.borderHoverColor : "border-gray-500"
+    theme ? theme.form.backgroundColor : 'bg-white'
+  } border ${theme ? theme.form.borderColor : 'border-gray-400'} hover:${
+    theme ? theme.form.borderHoverColor : 'border-gray-500'
   } px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline`;
 
-  const optionStyle = `${theme ? theme.form.backgroundColor : "bg-white"} ${
-    theme ? theme.form.textColor : "text-gray-800"
+  const optionStyle = `${theme ? theme.form.backgroundColor : 'bg-white'} ${
+    theme ? theme.form.textColor : 'text-gray-800'
   }`;
 
   return (
-    <FormBase label={label} htmlFor={id} legend={legend} theme={theme}>
+    <FormBase
+      label={label}
+      htmlFor={id}
+      legend={legend}
+      theme={theme}
+      error={error}
+    >
       <div className="mt-1 inline-block relative">
         <select
           id={id}

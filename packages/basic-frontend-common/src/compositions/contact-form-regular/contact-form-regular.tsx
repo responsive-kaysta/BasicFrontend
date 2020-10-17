@@ -13,7 +13,11 @@ import {
   TitleAbstract,
 } from '../../elements';
 import { ThemeType } from '../../typings';
-import { InputEmailValidation, InputTextValidation } from '../../utils';
+import {
+  DropdownValidation,
+  InputEmailValidation,
+  InputTextValidation,
+} from '../../utils';
 import { EmailForm, sendEmail } from './email-form';
 import * as json from './localization.json';
 
@@ -51,9 +55,9 @@ export const ContactFormRegular: FC<ContactFormRegularProps> = ({
     return { value: item.value, label: item.label };
   });
 
-  // const optionSelected = optionsDropdown.find((opt) => {
-  //   return opt.value === emailFormState.Reason;
-  // });
+  const optionSelected = optionsDropdown.find((opt) => {
+    return opt.value === emailFormState.Reason;
+  });
 
   // https://dummyimage.com/
   // https://dummyimage.com/300x60.png&text=dummyimage.com+rocks!
@@ -70,20 +74,16 @@ export const ContactFormRegular: FC<ContactFormRegularProps> = ({
     const eMessage = InputTextValidation(emailFormState.Message, 1, 512);
     setErrorMessage(eMessage);
 
-    const eReason = InputTextValidation(emailFormState.Reason, 1, 64);
+    const eReason = DropdownValidation(emailFormState.Reason);
     setErrorReason(eReason);
 
     const eEmailAddress = InputEmailValidation(emailFormState.EmailAddress);
     setErrorEmailAddress(eEmailAddress);
 
-    console.log('eFirstName: ', eFirstName);
-    console.log('eSurName: ', eSurName);
-    console.log('eMessage: ', eMessage);
-    console.log('eReason: ', eReason);
-    console.log('eEmailAddress: ', eEmailAddress);
-
     if (!eFirstName && !eSurName && !eMessage && !eReason && !eEmailAddress) {
       emailFormState.Origin = pageOrigin;
+      emailFormState.Reason = optionSelected.label;
+
       const mailSent = await sendEmail(emailFormState, apiHost);
       setIsEmailSent(mailSent);
     }

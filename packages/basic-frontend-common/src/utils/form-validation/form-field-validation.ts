@@ -3,7 +3,6 @@ export enum FormFieldType {
   Number,
   Password,
   Email,
-  Message,
   Dropdown,
 }
 
@@ -39,6 +38,13 @@ export const FormFieldValidation = (
       );
 
     case FormFieldType.String:
+      return (
+        typeOfStringCheck(fieldValue) &&
+        fieldValue.length >= fieldMinLength &&
+        fieldValue.length <= fieldMaxLength
+      );
+
+    case FormFieldType.Dropdown:
       return (
         typeOfStringCheck(fieldValue) &&
         fieldValue.length >= fieldMinLength &&

@@ -42,13 +42,38 @@ export const InputTextValidation = (
 export const InputEmailValidation = (value: string): string | null => {
   if (!value) {
     return localizedStrings
-      .formatString(localizedStrings.formValidation.formFieldEmpty, 'Email')
+      .formatString(
+        localizedStrings.formValidation.formFieldEmpty,
+        'FormFieldType.Email'
+      )
       .toString();
   }
 
   if (!FormFieldValidation(FormFieldType.Email, value)) {
     return localizedStrings
       .formatString(localizedStrings.formValidation.incorrectEmailField, value)
+      .toString();
+  }
+
+  return null;
+};
+
+export const DropdownValidation = (value: string): string | null => {
+  if (!value) {
+    return localizedStrings
+      .formatString(
+        localizedStrings.formValidation.formFieldEmpty,
+        'FormFieldType.Dropdown'
+      )
+      .toString();
+  }
+
+  if (!FormFieldValidation(FormFieldType.Dropdown, value)) {
+    return localizedStrings
+      .formatString(
+        localizedStrings.formValidation.incorrectFormFieldType,
+        'FormFieldType.Dropdown'
+      )
       .toString();
   }
 
