@@ -42,7 +42,6 @@ export const isAnalyticsSet = () => {
     return true;
   } else {
     const value = JSON.parse(cookie);
-
     return value.analytics === true;
   }
 };

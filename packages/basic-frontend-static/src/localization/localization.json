@@ -15,6 +15,11 @@
       }
     },
     "siteParts": {
+      "updateBanner": {
+        "title": "updateBanner title",
+        "comment": "updateBanner comment",
+        "buttonText": "Reload"
+      },
       "menuItems": {
         "linkHome": "Home",
         "linkHomeTitle": "Navigate to Home",
@@ -43,6 +48,11 @@
       }
     },
     "siteParts": {
+      "updateBanner": {
+        "title": "updateBanner Titel",
+        "comment": "updateBanner Kommentar",
+        "buttonText": "Reload"
+      },
       "menuItems": {
         "linkHome": "Startseite",
         "linkHomeTitle": "Navigiere zur Startseite",
