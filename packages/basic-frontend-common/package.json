@@ -37,9 +37,10 @@
     "react-dom": "^16.14.0",
     "react-scroll": "^1.8.1",
     "rimraf": "^3.0.2",
-    "tailwindcss": "^1.9.3",
+    "tailwindcss": "^1.9.5",
     "axios": "^0.20.0",
     "react-localization": "^1.0.15",
-    "crypto-random-string": "^3.3.0"
+    "crypto-random-string": "^3.3.0",
+    "@smartive/react-pwa-toolbox": "^1.1.0"
   }
 }
