@@ -1,3 +1,4 @@
+import crs from 'crypto-random-string';
 import React, { FC, useState } from 'react';
 import LocalizedStrings from 'react-localization';
 import { ContainerSection } from '../../components';
@@ -17,12 +18,10 @@ import {
   DropdownValidation,
   InputEmailValidation,
   InputTextValidation,
-  isMobileView,
 } from '../../utils';
 import { ImageCaptcha } from '../image-captcha';
 import { EmailForm, sendEmail } from './email-form';
 import * as json from './localization.json';
-import crs from 'crypto-random-string';
 
 // https://dummyimage.com/
 // https://dummyimage.com/300x60.png&text=dummyimage.com+rocks!
@@ -88,11 +87,8 @@ export const ContactFormRegular: FC<ContactFormRegularProps> = ({
     const eEmailAddress = InputEmailValidation(emailFormState.EmailAddress);
     setErrorEmailAddress(eEmailAddress);
 
-    setCaptchaMatch(captcha === captchaInput);
-    console.log('captchaInput: ', captchaInput);
-    console.log('captchaMatch: ', captchaMatch);
+    setCaptchaMatch(captchaValue === captchaInput);
     setErrorCaptcha(!captchaMatch);
-    console.log('errorCaptcha: ', errorCaptcha);
 
     if (
       !eFirstName &&
