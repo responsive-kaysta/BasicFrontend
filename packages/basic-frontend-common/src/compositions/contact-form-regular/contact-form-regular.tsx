@@ -13,7 +13,7 @@ import {
   Title,
   TitleAbstract,
 } from '../../elements';
-import { Orientation, ThemeType } from '../../typings';
+import { ThemeType } from '../../typings';
 import {
   DropdownValidation,
   InputEmailValidation,
