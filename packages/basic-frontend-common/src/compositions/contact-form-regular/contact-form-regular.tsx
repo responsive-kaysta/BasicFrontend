@@ -111,7 +111,7 @@ export const ContactFormRegular: FC<ContactFormRegularProps> = ({
   };
 
   return (
-    <>
+    <section className="w-full">
       {isEmailSent && (
         <ContainerSection theme={theme}>
           <Title theme={theme} marginBottom paddingTop>
@@ -350,6 +350,6 @@ export const ContactFormRegular: FC<ContactFormRegularProps> = ({
           </ContainerSection>
         </form>
       )}
-    </>
+    </section>
   );
 };
