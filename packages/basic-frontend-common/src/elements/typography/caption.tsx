@@ -1,11 +1,11 @@
-import React, { FC, ReactNode } from "react";
+import React, { FC, ReactNode } from 'react';
 import {
   defCaption,
   defTextMargin,
   defTextPadding,
   ThemeLight,
-} from "../../identity";
-import { BaseProps } from "./base-props";
+} from '../../identity';
+import { BaseProps } from './base-props';
 
 type CaptionProps = BaseProps & {
   children: ReactNode;
@@ -20,11 +20,11 @@ export const Caption: FC<CaptionProps> = ({
   theme = ThemeLight,
 }) => {
   const style = `w-full ${
-    theme ? theme.body.textSecondaryColor : "text-gray-500"
+    theme ? theme.body.textSecondaryColor : 'text-gray-500'
   } ${defCaption} ${defTextMargin(marginBottom, marginTop)} ${defTextPadding(
     paddingBottom,
     paddingTop
   )}`;
 
-  return <caption className={style}>{children}</caption>;
+  return <figcaption className={style}>{children}</figcaption>;
 };

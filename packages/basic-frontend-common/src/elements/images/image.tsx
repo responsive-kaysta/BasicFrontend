@@ -1,6 +1,6 @@
-import React, { FC } from "react";
-import { Caption } from "../typography/caption";
-import { ThemeType } from "../../typings";
+import React, { FC } from 'react';
+import { Caption } from '../typography/caption';
+import { ThemeType } from '../../typings';
 
 type ImageProps = {
   src: string;
@@ -11,9 +11,9 @@ type ImageProps = {
 
 export const Image: FC<ImageProps> = ({ src, alt, caption, theme }) => {
   return (
-    <div
+    <figure
       className={`flex flex-col w-full ${
-        theme ? theme.body.backgroundColor : "bg-gray-100"
+        theme ? theme.body.backgroundColor : 'bg-gray-100'
       }`}
     >
       <img
@@ -22,6 +22,6 @@ export const Image: FC<ImageProps> = ({ src, alt, caption, theme }) => {
         className="rounded-md md:rounded-lg mb-4 md:mb-6"
       />
       {caption && <Caption theme={theme}>{caption}</Caption>}
-    </div>
+    </figure>
   );
 };

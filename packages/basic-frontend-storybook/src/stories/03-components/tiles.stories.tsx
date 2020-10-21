@@ -1,8 +1,8 @@
-import { storiesOf } from "@storybook/react";
-import { ThemeTransparent, TileItem, TileSection } from "basic-frontend-common";
-import React from "react";
+import { storiesOf } from '@storybook/react';
+import { ThemeTransparent, TileItem, TileSection } from 'basic-frontend-common';
+import React from 'react';
 
-storiesOf("Design System / 03 Components", module).add("Tiles", () => (
+storiesOf('Design System / 03 Components', module).add('Tiles', () => (
   <div>
     <section className="flex flex-row mb-10">
       <div className="w-1/4 text-xl">Type</div>
@@ -27,7 +27,7 @@ storiesOf("Design System / 03 Components", module).add("Tiles", () => (
         description="At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
         date="21.04.2020"
         link="#"
-        bgImage="/images/AdobeStock_103620070.jpg"
+        bgImage="https://cdn.responsive-it.biz/assets/bg-images/AdobeStock_103620070.jpg"
         theme={ThemeTransparent}
       />
 

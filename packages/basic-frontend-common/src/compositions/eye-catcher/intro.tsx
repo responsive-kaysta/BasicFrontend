@@ -1,6 +1,6 @@
-import React, { FC } from "react";
-import { Hruler, TitleSub, TextLead } from "../../elements";
-import { ThemeType } from "../../typings";
+import React, { FC } from 'react';
+import { Hruler, TitleSub, TextLead } from '../../elements';
+import { ThemeType } from '../../typings';
 
 type IntroEyeCatcherProps = {
   contentTop: string;
@@ -20,10 +20,10 @@ export const IntroEyeCatcher: FC<IntroEyeCatcherProps> = ({
   cssStyle,
 }) => {
   const style = `m-auto w-10/12 md:w-3/4 text-center ${
-    theme ? theme.body.backgroundColor : "bg-gray-100"
-  } ${theme ? theme.body.textColor : "text-gray-800"} overflow-hidden ${
-    shadow ? "shadow-lg" : ""
-  } ${cssStyle ? cssStyle : ""}`;
+    theme ? theme.body.backgroundColor : 'bg-gray-100'
+  } ${theme ? theme.body.textColor : 'text-gray-800'} overflow-hidden ${
+    shadow ? 'shadow-lg' : ''
+  } ${cssStyle ? cssStyle : ''}`;
 
   return (
     <header className={style} id={elementId}>
