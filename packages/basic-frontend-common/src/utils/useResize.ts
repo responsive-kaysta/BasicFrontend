@@ -1,21 +1,21 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from 'react';
 
-export const useResize = (myRef: any) => {
-  const [width, setWidth] = useState(0);
-  const [height, setHeight] = useState(0);
+export const useResize = () => {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [windowHeight, setWindowHeight] = useState(window.innerHeight);
 
   useEffect(() => {
     const handleResize = () => {
-      setWidth(myRef.current.offsetWidth);
-      setHeight(myRef.current.offsetHeight);
+      setWindowWidth(window.innerWidth);
+      setWindowHeight(window.innerHeight);
     };
 
-    window.addEventListener("resize", handleResize);
+    window.addEventListener('resize', handleResize);
 
     return () => {
-      window.removeEventListener("resize", handleResize);
+      window.removeEventListener('resize', handleResize);
     };
-  }, [myRef]);
+  }, []);
 
-  return { width, height };
+  return { windowWidth, windowHeight };
 };

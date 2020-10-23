@@ -1,4 +1,4 @@
-import { ThemeType } from "../../typings";
+import { Orientation, ThemeType } from '../../typings';
 
 export type FormBaseProps = {
   label?: string;
@@ -6,4 +6,5 @@ export type FormBaseProps = {
   error?: string;
   htmlFor?: string;
   theme?: ThemeType;
+  orientation?: Orientation;
 };

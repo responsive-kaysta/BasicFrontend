@@ -1,121 +1,79 @@
 import {
-  ThemeDarkgray,
-  Topbar,
+  ContactFormRegular,
   ContainerArticle,
-  ThemeTransparent,
-  IntroSimple,
-  Spotlight,
-  ThemeGray,
-  PictogramSize,
   ContainerCover,
-  ContainerSection,
-  SubTitle,
-  ThemeLight,
-  TextRegular,
-  Product,
-  Orientation,
+  CookieBanner,
+  getLanguage,
+  IntroSimple,
+  isCookieSet,
+  PictogramSize,
   Spacer,
+  Spotlight,
+  ThemeDarkgray,
+  ThemeGray,
+  ThemeLight,
+  ThemeTransparent,
+  Topbar,
   ToTopLink,
-} from "basic-frontend-common";
-import React from "react";
-import { PAGE_NAME } from "../constants";
-import { FooterComponent, menuItems } from "../includes/site-parts";
+} from 'basic-frontend-common';
+import React from 'react';
+import { TEXTS } from '../localization';
+import { BG_IMAGE, PAGE_NAME } from '../constants';
+import { FooterComponent, MenuItems } from '../includes/site-parts';
 
 class ContactPage extends React.Component {
   public render() {
     return (
       <>
-        {typeof window !== "undefined" ? (
+        {typeof window !== 'undefined' ? (
           <>
+            <title>
+              {TEXTS.pages.contact.title} - {PAGE_NAME}
+            </title>
             <Topbar
-              backgroundImage="/backgrounds/Website-Design-Background.png"
+              backgroundImage={BG_IMAGE}
               branding={PAGE_NAME}
               theme={ThemeDarkgray}
-              menuItems={menuItems}
+              menuItems={MenuItems()}
               footer={<FooterComponent theme={ThemeDarkgray} />}
             >
-              <ContainerArticle theme={ThemeTransparent}>
-                <IntroSimple
-                  theme={ThemeTransparent}
-                  centerContent
-                  containerContent
-                  title="Fancy Contact Page"
-                  lead="Lorem ipsum dolor sit amet, consetetur sadipscing elitr"
-                />
-                <Spotlight
-                  theme={ThemeGray}
-                  title="An example Page describing a fancy Product"
-                  content="Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, 
+              <CookieBanner
+                theme={ThemeTransparent}
+                language={getLanguage()}
+                isCookieSet={isCookieSet()}
+              >
+                <ContainerArticle theme={ThemeTransparent}>
+                  <IntroSimple
+                    theme={ThemeTransparent}
+                    centerContent
+                    containerContent
+                    title="Fancy Contact Page"
+                    lead="Lorem ipsum dolor sit amet, consetetur sadipscing elitr"
+                  />
+                  <Spotlight
+                    theme={ThemeGray}
+                    title="An example Page describing a fancy Product"
+                    content="Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, 
                   consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
                   sed diam voluptua."
-                  pictogram="cloud_hardware"
-                  pictogramSize={PictogramSize.xl}
-                />
+                    pictogram="robotics_design"
+                    pictogramSize={PictogramSize.xl}
+                  />
 
-                <ContainerCover>
-                  <ContainerSection>
-                    <SubTitle
-                      theme={ThemeLight}
-                      title="Little Effort, maximum Result"
-                      leadText="Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet"
-                    />
-                    <TextRegular>
-                      Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                      sed diam nonumy eirmod tempor invidunt ut labore et dolore
-                      magna aliquyam erat, sed diam voluptua. At vero eos et
-                      accusam et justo duo dolores et ea rebum. Stet clita kasd
-                      gubergren, no sea takimata sanctus est Lorem ipsum dolor
-                      sit amet.
-                    </TextRegular>
-                  </ContainerSection>
-                  <Spacer />
-                  <ContainerSection>
-                    <Product
-                      title="Engineering of cloud based Software and Services"
-                      content="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor 
-                      invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo 
-                      duo dolores et ea rebum."
-                      src="/backgrounds/engineer.png"
-                      caption="Stet clita kasd gubergren, no sea takimata sanctus est"
-                      alt="Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
-                      orientation={Orientation.right}
+                  <ContainerCover theme={ThemeLight}>
+                    <ContactFormRegular
+                      apiHost="http://api.master-archive.local"
+                      language="en"
+                      pageOrigin="storybook.responsive-kaysta.local"
+                      reasonsDropdown={[{ value: '1', label: 'Value 1' }]}
                       theme={ThemeLight}
                     />
-                  </ContainerSection>
-                  <Spacer />
-                  <ContainerSection>
-                    <SubTitle
-                      theme={ThemeLight}
-                      title="Save, reliable and scalable"
-                      leadText="Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet"
-                    />
-                    <TextRegular>
-                      Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                      sed diam nonumy eirmod tempor invidunt ut labore et dolore
-                      magna aliquyam erat, sed diam voluptua. At vero eos et
-                      accusam et justo duo dolores et ea rebum. Stet clita kasd
-                      gubergren, no sea takimata sanctus est Lorem ipsum dolor
-                      sit amet.
-                    </TextRegular>
-                  </ContainerSection>
-                  <Spacer />
-                  <ContainerSection>
-                    <Product
-                      title="Innovative engineered cloud based Software and Services"
-                      content="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor 
-                      invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo 
-                      duo dolores et ea rebum."
-                      src="/backgrounds/innovation.png"
-                      caption="Stet clita kasd gubergren, no sea takimata sanctus est"
-                      alt="Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
-                      orientation={Orientation.left}
-                      theme={ThemeLight}
-                    />
-                  </ContainerSection>
-                  <Spacer />
-                  <ToTopLink theme={ThemeLight} />
-                </ContainerCover>
-              </ContainerArticle>
+
+                    <Spacer />
+                    <ToTopLink theme={ThemeLight} />
+                  </ContainerCover>
+                </ContainerArticle>
+              </CookieBanner>
             </Topbar>
           </>
         ) : null}
