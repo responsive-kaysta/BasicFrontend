@@ -1,37 +1,37 @@
 import {
-  ThemeDarkgray,
-  Topbar,
   ContainerArticle,
-  ThemeTransparent,
-  IntroSimple,
-  Spotlight,
-  ThemeGray,
-  PictogramSize,
   ContainerCover,
   ContainerSection,
-  SubTitle,
-  ThemeLight,
-  TextRegular,
-  Product,
+  IntroSimple,
   Orientation,
+  PictogramSize,
+  Product,
   Spacer,
+  Spotlight,
+  SubTitle,
+  TextRegular,
+  ThemeDarkgray,
+  ThemeGray,
+  ThemeLight,
+  ThemeTransparent,
+  Topbar,
   ToTopLink,
-} from "basic-frontend-common";
-import React from "react";
-import { PAGE_NAME } from "../constants";
-import { FooterComponent, menuItems } from "../includes/site-parts";
+} from 'basic-frontend-common';
+import React from 'react';
+import { BG_IMAGE, PAGE_NAME } from '../constants';
+import { FooterComponent, MenuItems } from '../includes/site-parts';
 
 class AboutPage extends React.Component {
   public render() {
     return (
       <>
-        {typeof window !== "undefined" ? (
+        {typeof window !== 'undefined' ? (
           <>
             <Topbar
-              backgroundImage="/backgrounds/Website-Design-Background.png"
+              backgroundImage={BG_IMAGE}
               branding={PAGE_NAME}
               theme={ThemeDarkgray}
-              menuItems={menuItems}
+              menuItems={MenuItems()}
               footer={<FooterComponent theme={ThemeDarkgray} />}
             >
               <ContainerArticle theme={ThemeTransparent}>
@@ -41,6 +41,10 @@ class AboutPage extends React.Component {
                   containerContent
                   title="Fancy About Page"
                   lead="Lorem ipsum dolor sit amet, consetetur sadipscing elitr"
+                  marginBottom
+                  marginTop
+                  paddingBottom
+                  paddingTop
                 />
                 <Spotlight
                   theme={ThemeGray}
@@ -53,7 +57,7 @@ class AboutPage extends React.Component {
                 />
 
                 <ContainerCover>
-                  <ContainerSection>
+                  <ContainerSection paddingTop>
                     <SubTitle
                       theme={ThemeLight}
                       title="Little Effort, maximum Result"
@@ -69,13 +73,13 @@ class AboutPage extends React.Component {
                     </TextRegular>
                   </ContainerSection>
                   <Spacer />
-                  <ContainerSection>
+                  <ContainerSection paddingTop>
                     <Product
                       title="Engineering of cloud based Software and Services"
                       content="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor 
                       invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo 
                       duo dolores et ea rebum."
-                      src="/backgrounds/engineer.png"
+                      src="https://cdn.responsive-it.biz/assets/bg-images/engineer.png"
                       caption="Stet clita kasd gubergren, no sea takimata sanctus est"
                       alt="Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
                       orientation={Orientation.right}
@@ -83,7 +87,7 @@ class AboutPage extends React.Component {
                     />
                   </ContainerSection>
                   <Spacer />
-                  <ContainerSection>
+                  <ContainerSection paddingTop>
                     <SubTitle
                       theme={ThemeLight}
                       title="Save, reliable and scalable"
@@ -99,13 +103,13 @@ class AboutPage extends React.Component {
                     </TextRegular>
                   </ContainerSection>
                   <Spacer />
-                  <ContainerSection>
+                  <ContainerSection paddingTop>
                     <Product
                       title="Innovative engineered cloud based Software and Services"
                       content="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor 
                       invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo 
                       duo dolores et ea rebum."
-                      src="/backgrounds/innovation.png"
+                      src="https://cdn.responsive-it.biz/assets/bg-images/innovation.png"
                       caption="Stet clita kasd gubergren, no sea takimata sanctus est"
                       alt="Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
                       orientation={Orientation.left}

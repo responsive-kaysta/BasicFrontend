@@ -2,33 +2,23 @@ import {
   Footer,
   Icon,
   IconSize,
+  isMobileView,
   Link,
   NavigationItems,
   ThemeType,
-} from "basic-frontend-common";
-import React, { useEffect, useState, FC } from "react";
-import { PAGE_AUTHOR } from "../constants";
+} from 'basic-frontend-common';
+import React, { FC } from 'react';
+import { MOBILE_VIEW_WIDTH, PAGE_AUTHOR } from '../constants';
+import { TEXTS } from '../localization';
 
 type FooterComponentProps = {
   theme: ThemeType;
 };
 
-// https://itnext.io/responsive-background-images-using-react-hooks-941af365ea1f
 export const FooterComponent: FC<FooterComponentProps> = ({ theme }) => {
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-  const iconSize = windowWidth >= 650 ? IconSize.xxs : IconSize.xxxs;
-
-  useEffect(() => {
-    const handleWindowResize = () => {
-      setWindowWidth(window.innerWidth);
-    };
-
-    window.addEventListener("resize", handleWindowResize);
-
-    return () => {
-      window.removeEventListener("resize", handleWindowResize);
-    };
-  }, []);
+  const iconSize = isMobileView(MOBILE_VIEW_WIDTH)
+    ? IconSize.xxxs
+    : IconSize.xs;
 
   return (
     <Footer>
@@ -61,33 +51,32 @@ export const FooterComponent: FC<FooterComponentProps> = ({ theme }) => {
           </Link>
         </li>
       </ul>
-      <span className="mb-2 md:mb-4">
+      <span className="mb-6 md:mb-8">
         <Link href="https://responsive-it.biz" theme={theme} newWindow>
-          2020 {PAGE_AUTHOR} - v 0.3.8
+          2020 {PAGE_AUTHOR} - v 0.5.0
         </Link>
       </span>
     </Footer>
   );
 };
 
-export const menuItems: NavigationItems[] = [
-  { link: "/", text: "Home", title: "Navigate to the home-page" },
-  { link: "/about-page", text: "About", title: "Navigate to the about-page" },
-  {
-    link: "/tiles-page",
-    text: "Tiles",
-    title: "Navigate to the tiles-page",
-  },
-  {
-    link: "/product-page",
-    text: "Product",
-    title: "Navigate to the product-page",
-  },
-  { link: "/legal-page", text: "Legal", title: "Navigate to the legal-page" },
-  { link: "/links-page", text: "Links", title: "Navigate to the links-page" },
-  {
-    link: "/contact-page",
-    text: "Contact",
-    title: "Navigate to the contact-page",
-  },
-];
+export const MenuItems = () => {
+  const menuItems: NavigationItems[] = [
+    {
+      link: '/',
+      text: TEXTS.siteParts.menuItems.linkHome,
+      title: TEXTS.siteParts.menuItems.linkHomeTitle,
+    },
+    {
+      link: '/about-page',
+      text: TEXTS.siteParts.menuItems.linkAbout,
+      title: TEXTS.siteParts.menuItems.linkAboutTitle,
+    },
+    {
+      link: '/contact-page',
+      text: TEXTS.siteParts.menuItems.linkContact,
+      title: TEXTS.siteParts.menuItems.linkContactTitle,
+    },
+  ];
+  return menuItems;
+};

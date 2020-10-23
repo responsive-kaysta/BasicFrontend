@@ -1,5 +1,5 @@
-import React, { FC } from "react";
-import { ThemeType } from "../../typings";
+import React, { FC } from 'react';
+import { ThemeType } from '../../typings';
 
 type HrulerProps = {
   theme?: ThemeType;
@@ -8,8 +8,8 @@ type HrulerProps = {
 export const Hruler: FC<HrulerProps> = ({ theme }) => {
   return (
     <hr
-      className={`mt-2 mb-3 md:mt-4 md:mb-5 xl:mt-6 xl:mb-7 ${
-        theme ? theme.body.borderColor : "border-gray-300"
+      className={`mt-3 mb-3 md:mt-5 md:mb-5 xl:mt-7 xl:mb-7 ${
+        theme ? theme.body.borderColor : 'border-gray-300'
       }`}
     />
   );

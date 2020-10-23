@@ -1,4 +1,4 @@
-import { ThemeType } from "../../typings";
+import { ThemeType } from '../../typings';
 
 export const baseStyles = (
   cssStyle?: string,
@@ -10,15 +10,15 @@ export const baseStyles = (
   centerContent?: boolean,
   containerContent?: boolean
 ) => {
-  return `${containerContent ? "container" : "w-full"} ${
-    paddingTop ? "pt-2 md:pt-4 xl:pt-6" : ""
-  } ${paddingBottom ? "pb-2 md:pb-4 xl:pb-6" : ""} ${
-    marginTop ? "mt-2 md:mt-4 xl:mt-6" : ""
-  } ${marginBottom ? "mb-2 md:mb-4 xl:mb-6" : ""} ${
-    centerContent ? "text-center" : "text-left"
+  return `${containerContent ? 'container' : 'w-full'} ${
+    paddingTop ? 'pt-4 md:pt-6 xl:pt-8' : ''
+  } ${paddingBottom ? 'pb-4 md:pb-6 xl:pb-8' : ''} ${
+    marginTop ? 'mt-4 md:mt-6 xl:mt-8' : ''
+  } ${marginBottom ? 'mb-4 md:mb-6 xl:mb-8' : ''} ${
+    centerContent ? 'text-center' : 'text-left'
   } ${
     theme
       ? `${theme.body.backgroundColor} ${theme.body.textColor}`
-      : "bg-gray-100 text-gray-800"
-  } ${cssStyle ? cssStyle : ""}`;
+      : 'bg-gray-100 text-gray-800'
+  } ${cssStyle ? cssStyle : ''}`;
 };

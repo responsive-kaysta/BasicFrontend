@@ -1,0 +1,102 @@
+{
+  "en": {
+    "sharedContent": {
+      "pages": {
+        "pageContact": {
+          "title": "Contact",
+          "subTitle": "Question, Anregung, Wunsch, Kritik?",
+          "leadText": "LeadText: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. ",
+
+          "legendPerson": "Persönliche Informationen",
+
+          "formFirstname": "Vorname *",
+          "formFirstnamePlaceholder": "Pflichtfeld: Vorname eintragen",
+
+          "formSurname": "Nachname *",
+          "formSurnamePlaceholder": "Pflichtfeld: Nachname eintragen",
+
+          "formEmail": "Email Adresse *",
+          "formEmailPlaceholder": "Pflichtfeld: Email Adresse eintragen",
+
+          "formStreet": "Strasse",
+          "formStreetPlaceholder": "Strasse eintragen",
+
+          "formNumber": "Nummer",
+          "formNumberPlaceholder": "Nummer eintragen",
+
+          "formCity": "City",
+          "formCityPlaceholder": "City eintragen",
+
+          "formPostcode": "Postleitzahl",
+          "formPostcodePlaceholder": "Postleitzahl eintragen",
+
+          "legendReason": "Grund der Kontaktaufnahme",
+
+          "formReason": "Grund *",
+
+          "formMessage": "Nachricht * (max. 512)",
+          "formMessagePlaceholder": "Pflichtfeld: Nachricht eintragen",
+
+          "formButtonSend": "Senden",
+
+          "formDropdownValue_1": "Benutzer Account anlegen",
+          "formDropdownValue_2": "Neue Quelle erfassen",
+          "formDropdownValue_3": "Weitere Informationen",
+
+          "sentEmailTitle": "Ihre Nachricht wurde erfolgreich gesendet",
+          "sentEmailText": "Schnellstöglich bla bla bla "
+        }
+      }
+    }
+  },
+  "de": {
+    "sharedContent": {
+      "pages": {
+        "pageContact": {
+          "title": "Kontakt",
+          "subTitle": "Frage, Anregung, Wunsch, Kritik?",
+          "leadText": "LeadText: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. ",
+
+          "legendPerson": "Persönliche Informationen",
+
+          "formFirstname": "Vorname *",
+          "formFirstnamePlaceholder": "Pflichtfeld: Vorname eintragen",
+
+          "formSurname": "Nachname *",
+          "formSurnamePlaceholder": "Pflichtfeld: Nachname eintragen",
+
+          "formEmail": "Email Adresse *",
+          "formEmailPlaceholder": "Pflichtfeld: Email Adresse eintragen",
+
+          "formStreet": "Strasse",
+          "formStreetPlaceholder": "Strasse eintragen",
+
+          "formNumber": "Nummer",
+          "formNumberPlaceholder": "Nummer eintragen",
+
+          "formCity": "Ortschaft",
+          "formCityPlaceholder": "Ortschaft eintragen",
+
+          "formPostcode": "Postleitzahl",
+          "formPostcodePlaceholder": "Postleitzahl eintragen",
+
+          "legendReason": "Grund der Kontaktaufnahme",
+
+          "formReason": "Grund *",
+
+          "formMessage": "Nachricht * (max. 512)",
+          "formMessagePlaceholder": "Pflichtfeld: Nachricht eintragen",
+
+          "formButtonSend": "Senden",
+
+          "formDropdownValue_1": "Benutzer Account anlegen",
+          "formDropdownValue_2": "Neue Quelle erfassen",
+          "formDropdownValue_3": "Weitere Informationen",
+
+          "sentEmailTitle": "Ihre Nachricht wurde erfolgreich gesendet",
+          "sentEmailText": "Schnellstöglich bla bla bla "
+        }
+      }
+    }
+  }
+}
