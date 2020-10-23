@@ -40,10 +40,10 @@ export const Product: FC<ProductProps> = ({
   const isImageIsLeft = orientation === Orientation.left;
   return (
     <div className={`flex flex-row items-center ${style}`} id={elementId}>
-      <div className={`${isImageIsLeft ? 'w-2/5' : 'w-3/5'} mr-4`}>
+      <div className={`${isImageIsLeft ? 'w-2/5' : 'w-3/5'} mr-8`}>
         {isImageIsLeft ? imageBlock : contentBlock}
       </div>
-      <div className={`${isImageIsLeft ? 'w-3/5' : 'w-2/5'} ml-4`}>
+      <div className={`${isImageIsLeft ? 'w-3/5' : 'w-2/5'} ml-8`}>
         {isImageIsLeft ? contentBlock : imageBlock}
       </div>
     </div>

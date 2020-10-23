@@ -23,7 +23,6 @@ import { FooterComponent, MenuItems } from '../includes/site-parts';
 
 class ContactPage extends React.Component {
   public render() {
-    const language = getLanguage();
     return (
       <>
         {typeof window !== 'undefined' ? (
@@ -40,7 +39,7 @@ class ContactPage extends React.Component {
             >
               <CookieBanner
                 theme={ThemeTransparent}
-                language={language}
+                language={getLanguage()}
                 isCookieSet={isCookieSet()}
               >
                 <ContainerArticle theme={ThemeTransparent}>

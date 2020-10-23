@@ -8,7 +8,9 @@ import {
 import * as json from './localization.json';
 
 const localizedStrings = new LocalizedStrings(json);
-localizedStrings.setLanguage(getLanguage());
+if (typeof window !== 'undefined') {
+  localizedStrings.setLanguage(getLanguage());
+}
 
 export const InputTextValidation = (
   value: string,

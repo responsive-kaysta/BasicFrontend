@@ -33,7 +33,10 @@ export const isCookieSet = () => {
 };
 
 export const getLanguage = () => {
-  return navigator.language;
+  if (typeof window !== 'undefined') {
+    return navigator.language;
+  }
+  return null;
 };
 
 export const isAnalyticsSet = () => {

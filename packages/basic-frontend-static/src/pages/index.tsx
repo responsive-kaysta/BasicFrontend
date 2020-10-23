@@ -29,7 +29,6 @@ import { TEXTS } from '../localization';
 
 class Index extends React.Component {
   public render() {
-    const language = getLanguage();
     return (
       <>
         {typeof window !== 'undefined' ? (
@@ -39,7 +38,7 @@ class Index extends React.Component {
             </title>
             <CookieBanner
               theme={ThemeTransparent}
-              language={language}
+              language={getLanguage()}
               isCookieSet={isCookieSet()}
             >
               <ContainerBody
@@ -73,7 +72,7 @@ class Index extends React.Component {
                   pictogramSize={PictogramSize.xl}
                 />
 
-                <ContainerSection>
+                <ContainerSection paddingTop>
                   <IntroSimple
                     hruler
                     title="IntroSimple"
@@ -97,7 +96,7 @@ class Index extends React.Component {
                   pictogramSize={PictogramSize.xl}
                 />
 
-                <ContainerSection>
+                <ContainerSection paddingTop>
                   <IntroSimple
                     hruler
                     title="IntroSimple"
@@ -107,7 +106,7 @@ class Index extends React.Component {
                   />
                 </ContainerSection>
 
-                <ContainerSection>
+                <ContainerSection paddingTop>
                   <CallToAction
                     ctaHeader="CallToAction"
                     ctaText="At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea 
