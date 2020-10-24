@@ -22,6 +22,8 @@ type CookieBannerProps = {
   buttonDeclineType?: ButtonType;
 };
 
+// https://www.cookiepolicygenerator.com/
+
 export const CookieBanner: FC<CookieBannerProps> = ({
   children,
   theme,
