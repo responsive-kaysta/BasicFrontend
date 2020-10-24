@@ -62,7 +62,7 @@ export const PwaUpdateBanner: FC<PwaUpdateBannerProps> = ({
             <span className="mr-1">
               <ButtonRegular
                 onClick={installUpdate}
-                text="Accept"
+                text="Update"
                 size={ButtonSize.small}
                 type={buttonAcceptStyle}
               />
