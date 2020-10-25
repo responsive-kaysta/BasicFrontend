@@ -20,6 +20,7 @@ type CookieBannerProps = {
   text?: string;
   buttonAcceptType?: ButtonType;
   buttonDeclineType?: ButtonType;
+  cookieKey?: string;
 };
 
 // https://www.cookiepolicygenerator.com/
@@ -33,6 +34,7 @@ export const CookieBanner: FC<CookieBannerProps> = ({
   text,
   buttonAcceptType,
   buttonDeclineType,
+  cookieKey,
 }) => {
   const localizedStrings = new LocalizedStrings(json);
   localizedStrings.setLanguage(language);
@@ -45,15 +47,17 @@ export const CookieBanner: FC<CookieBannerProps> = ({
     theme ? theme.body.textColor : 'text-gray-800'
   }`;
 
+  const key = cookieKey ? cookieKey : COOKIE_KEY;
+
   const onAcceptClicked = () => {
     const cookie = JSON.stringify({ analytics: true });
-    setStorageItem(COOKIE_KEY, cookie);
+    setStorageItem(key, cookie);
     setIsCookieSetState(true);
   };
 
   const onDeclineClicked = () => {
     const cookie = JSON.stringify({ analytics: false });
-    setStorageItem(COOKIE_KEY, cookie);
+    setStorageItem(key, cookie);
     setIsCookieSetState(true);
   };
 
