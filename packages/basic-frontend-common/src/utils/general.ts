@@ -24,8 +24,9 @@ export const clearLocalStorage = () => {
   localStorage.clear();
 };
 
-export const isCookieSet = () => {
-  const cookie = getStorageItem(COOKIE_KEY);
+export const isCookieSet = (cookieKey?: string) => {
+  const key = cookieKey ? cookieKey : COOKIE_KEY;
+  const cookie = getStorageItem(key);
   if (!cookie) {
     return false;
   }
@@ -39,8 +40,9 @@ export const getLanguage = () => {
   return null;
 };
 
-export const isAnalyticsSet = () => {
-  const cookie = getStorageItem(COOKIE_KEY);
+export const isAnalyticsSet = (cookieKey?: string) => {
+  const key = cookieKey ? cookieKey : COOKIE_KEY;
+  const cookie = getStorageItem(key);
   if (!cookie) {
     return true;
   } else {
