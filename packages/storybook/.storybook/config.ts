@@ -1,5 +1,7 @@
 import { configure } from '@storybook/react';
 
+require('./generated-tailwind.css');
+
 const req = require.context('../src', true, /\.stories\.tsx$/);
 
 function loadStories() {
