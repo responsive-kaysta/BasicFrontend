@@ -1,5 +1,5 @@
 import crs from 'crypto-random-string';
-import React, { FC, useEffect, useRef, useState } from 'react';
+import React, { FC, useState } from 'react';
 import LocalizedStrings from 'react-localization';
 import { ContainerSection } from '../../components';
 import {
@@ -173,11 +173,6 @@ export const ContactFormRegular: FC<ContactFormRegularProps> = ({
   const onCaptchaRefresh = () => {
     setCaptchaValue(crs({ length: 6, type: 'alphanumeric' }));
   };
-
-  useEffect(() => {
-    // Effect goes here
-  }, [isSingleOption]);
-
   return (
     <section className="w-full">
       {isEmailSent && (
