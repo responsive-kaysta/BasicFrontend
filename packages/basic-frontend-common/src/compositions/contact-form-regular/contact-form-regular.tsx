@@ -1,5 +1,5 @@
 import crs from 'crypto-random-string';
-import React, { FC, useState } from 'react';
+import React, { FC, useEffect, useRef, useState } from 'react';
 import LocalizedStrings from 'react-localization';
 import { ContainerSection } from '../../components';
 import {
@@ -8,6 +8,7 @@ import {
   ButtonType,
   Dropdown,
   Input,
+  Label,
   Textarea,
   TextRegular,
   Title,
@@ -22,6 +23,7 @@ import {
 import { ImageCaptcha } from '../image-captcha';
 import { EmailForm, sendEmail } from './email-form';
 import * as json from './localization.json';
+import { LocalizedTexts } from './localized-texts.type';
 
 // https://dummyimage.com/
 // https://dummyimage.com/300x60.png&text=dummyimage.com+rocks!
@@ -34,6 +36,8 @@ type ContactFormRegularProps = {
   reasonsDropdown: { value: string; label: string }[];
   pageOrigin: string;
   apiHost: string;
+  localizedTexts?: LocalizedTexts;
+  isSingleOption?: boolean;
 };
 
 export const ContactFormRegular: FC<ContactFormRegularProps> = ({
@@ -42,9 +46,58 @@ export const ContactFormRegular: FC<ContactFormRegularProps> = ({
   reasonsDropdown,
   pageOrigin,
   apiHost,
+  localizedTexts,
+  isSingleOption = false,
 }) => {
   const localizedStrings = new LocalizedStrings(json);
   localizedStrings.setLanguage(language);
+
+  if (!localizedTexts) {
+    localizedTexts = {
+      formButtonSend:
+        localizedStrings.sharedContent.pages.pageContact.formButtonSend,
+      formCity: localizedStrings.sharedContent.pages.pageContact.formCity,
+      formCityPlaceholder:
+        localizedStrings.sharedContent.pages.pageContact.formCityPlaceholder,
+      formEmail: localizedStrings.sharedContent.pages.pageContact.formEmail,
+      formEmailPlaceholder:
+        localizedStrings.sharedContent.pages.pageContact.formEmailPlaceholder,
+      formFirstname:
+        localizedStrings.sharedContent.pages.pageContact.formFirstname,
+      formFirstnamePlaceholder:
+        localizedStrings.sharedContent.pages.pageContact
+          .formFirstnamePlaceholder,
+      formMessage: localizedStrings.sharedContent.pages.pageContact.formMessage,
+      formMessagePlaceholder:
+        localizedStrings.sharedContent.pages.pageContact.formMessagePlaceholder,
+      formNumber: localizedStrings.sharedContent.pages.pageContact.formNumber,
+      formNumberPlaceholder:
+        localizedStrings.sharedContent.pages.pageContact.formNumberPlaceholder,
+      formPostcode:
+        localizedStrings.sharedContent.pages.pageContact.formPostcode,
+      formPostcodePlaceholder:
+        localizedStrings.sharedContent.pages.pageContact
+          .formPostcodePlaceholder,
+      formReason: localizedStrings.sharedContent.pages.pageContact.formReason,
+      formStreet: localizedStrings.sharedContent.pages.pageContact.formStreet,
+      formStreetPlaceholder:
+        localizedStrings.sharedContent.pages.pageContact.formStreetPlaceholder,
+      formSurname: localizedStrings.sharedContent.pages.pageContact.formSurname,
+      formSurnamePlaceholder:
+        localizedStrings.sharedContent.pages.pageContact.formSurnamePlaceholder,
+      leadText: localizedStrings.sharedContent.pages.pageContact.leadText,
+      legendPerson:
+        localizedStrings.sharedContent.pages.pageContact.legendPerson,
+      legendReason:
+        localizedStrings.sharedContent.pages.pageContact.legendReason,
+      sentEmailText:
+        localizedStrings.sharedContent.pages.pageContact.sentEmailText,
+      sentEmailTitle:
+        localizedStrings.sharedContent.pages.pageContact.sentEmailTitle,
+      subTitle: localizedStrings.sharedContent.pages.pageContact.subTitle,
+      title: localizedStrings.sharedContent.pages.pageContact.title,
+    };
+  }
 
   const [emailFormState, setEmailFormState] = useState<EmailForm>({});
   const [isEmailSent, setIsEmailSent] = useState<boolean>(false);
@@ -81,8 +134,14 @@ export const ContactFormRegular: FC<ContactFormRegularProps> = ({
     const eMessage = InputTextValidation(emailFormState.Message, 1, 512);
     setErrorMessage(eMessage);
 
-    const eReason = DropdownValidation(emailFormState.Reason);
-    setErrorReason(eReason);
+    let eReason = '';
+    if (!isSingleOption) {
+      eReason = DropdownValidation(emailFormState.Reason);
+      setErrorReason(eReason);
+    } else {
+      eReason = InputTextValidation(reasonsDropdown[0].label);
+      setErrorReason(eReason);
+    }
 
     const eEmailAddress = InputEmailValidation(emailFormState.EmailAddress);
     setErrorEmailAddress(eEmailAddress);
@@ -99,7 +158,12 @@ export const ContactFormRegular: FC<ContactFormRegularProps> = ({
       captchaMatch
     ) {
       emailFormState.Origin = pageOrigin;
-      emailFormState.Reason = optionSelected.label;
+
+      if (!isSingleOption) {
+        emailFormState.Reason = optionSelected.label;
+      } else {
+        emailFormState.Reason = reasonsDropdown[0].label;
+      }
 
       const mailSent = await sendEmail(emailFormState, apiHost);
       setIsEmailSent(mailSent);
@@ -110,15 +174,19 @@ export const ContactFormRegular: FC<ContactFormRegularProps> = ({
     setCaptchaValue(crs({ length: 6, type: 'alphanumeric' }));
   };
 
+  useEffect(() => {
+    // Effect goes here
+  }, [isSingleOption]);
+
   return (
     <section className="w-full">
       {isEmailSent && (
         <ContainerSection theme={theme}>
           <Title theme={theme} marginBottom paddingTop>
-            {localizedStrings.sharedContent.pages.pageContact.sentEmailTitle}
+            {localizedTexts.sentEmailTitle}
           </Title>
           <TextRegular theme={theme}>
-            {localizedStrings.sharedContent.pages.pageContact.sentEmailText}
+            {localizedTexts.sentEmailText}
           </TextRegular>
         </ContainerSection>
       )}
@@ -127,24 +195,18 @@ export const ContactFormRegular: FC<ContactFormRegularProps> = ({
           <ContainerSection theme={theme} paddingTop>
             <fieldset className="flex flex-col w-full">
               <TitleAbstract theme={theme} marginBottom marginTop>
-                {localizedStrings.sharedContent.pages.pageContact.legendPerson}
+                {localizedTexts.legendPerson}
               </TitleAbstract>
               <div className="flex flex-col md:flex-row">
                 <div className="w-full md:w-1/2 md:mr-2">
                   <Input
                     theme={theme}
-                    label={
-                      localizedStrings.sharedContent.pages.pageContact
-                        .formFirstname
-                    }
+                    label={localizedTexts.formFirstname}
                     type="text"
                     id="firstName"
                     name="firstName"
                     value={emailFormState.FirstName || ''}
-                    placeholderText={
-                      localizedStrings.sharedContent.pages.pageContact
-                        .formFirstnamePlaceholder
-                    }
+                    placeholderText={localizedTexts.formFirstnamePlaceholder}
                     onInputChanged={(FirstName: string) =>
                       setEmailFormState({ ...emailFormState, FirstName })
                     }
@@ -154,18 +216,12 @@ export const ContactFormRegular: FC<ContactFormRegularProps> = ({
                 <div className="w-full md:w-1/2 md:ml-2 mt-6 md:mt-0">
                   <Input
                     theme={theme}
-                    label={
-                      localizedStrings.sharedContent.pages.pageContact
-                        .formSurname
-                    }
+                    label={localizedTexts.formSurname}
                     type="text"
                     id="surName"
                     name="surName"
                     value={emailFormState.SurName || ''}
-                    placeholderText={
-                      localizedStrings.sharedContent.pages.pageContact
-                        .formSurnamePlaceholder
-                    }
+                    placeholderText={localizedTexts.formSurnamePlaceholder}
                     onInputChanged={(SurName: string) =>
                       setEmailFormState({ ...emailFormState, SurName })
                     }
@@ -177,17 +233,12 @@ export const ContactFormRegular: FC<ContactFormRegularProps> = ({
               <div className="w-full mt-6">
                 <Input
                   theme={theme}
-                  label={
-                    localizedStrings.sharedContent.pages.pageContact.formEmail
-                  }
+                  label={localizedTexts.formEmail}
                   type="email"
                   id="emailAddress"
                   name="emailAddress"
                   value={emailFormState.EmailAddress || ''}
-                  placeholderText={
-                    localizedStrings.sharedContent.pages.pageContact
-                      .formEmailPlaceholder
-                  }
+                  placeholderText={localizedTexts.formEmailPlaceholder}
                   onInputChanged={(EmailAddress: string) =>
                     setEmailFormState({ ...emailFormState, EmailAddress })
                   }
@@ -199,18 +250,12 @@ export const ContactFormRegular: FC<ContactFormRegularProps> = ({
                 <div className="w-full md:w-2/3 md:mr-2">
                   <Input
                     theme={theme}
-                    label={
-                      localizedStrings.sharedContent.pages.pageContact
-                        .formStreet
-                    }
+                    label={localizedTexts.formStreet}
                     type="text"
                     id="street"
                     name="street"
                     value={emailFormState.Street}
-                    placeholderText={
-                      localizedStrings.sharedContent.pages.pageContact
-                        .formStreetPlaceholder
-                    }
+                    placeholderText={localizedTexts.formStreetPlaceholder}
                     onInputChanged={(Street: string) =>
                       setEmailFormState({ ...emailFormState, Street })
                     }
@@ -219,18 +264,12 @@ export const ContactFormRegular: FC<ContactFormRegularProps> = ({
                 <div className="w-full md:w-1/3 md:ml-2 mt-6 md:mt-0">
                   <Input
                     theme={theme}
-                    label={
-                      localizedStrings.sharedContent.pages.pageContact
-                        .formNumber
-                    }
+                    label={localizedTexts.formNumber}
                     type="number"
                     id="number"
                     name="number"
                     value={emailFormState.Number}
-                    placeholderText={
-                      localizedStrings.sharedContent.pages.pageContact
-                        .formNumberPlaceholder
-                    }
+                    placeholderText={localizedTexts.formNumberPlaceholder}
                     onInputChanged={(Number: string) =>
                       setEmailFormState({ ...emailFormState, Number })
                     }
@@ -242,17 +281,12 @@ export const ContactFormRegular: FC<ContactFormRegularProps> = ({
                 <div className="w-full md:w-2/3 md:mr-2">
                   <Input
                     theme={theme}
-                    label={
-                      localizedStrings.sharedContent.pages.pageContact.formCity
-                    }
+                    label={localizedTexts.formCity}
                     type="text"
                     id="city"
                     name="city"
                     value={emailFormState.City}
-                    placeholderText={
-                      localizedStrings.sharedContent.pages.pageContact
-                        .formCityPlaceholder
-                    }
+                    placeholderText={localizedTexts.formCityPlaceholder}
                     onInputChanged={(City: string) =>
                       setEmailFormState({ ...emailFormState, City })
                     }
@@ -261,18 +295,12 @@ export const ContactFormRegular: FC<ContactFormRegularProps> = ({
                 <div className="w-full md:w-1/3 md:ml-2 mt-6 md:mt-0">
                   <Input
                     theme={theme}
-                    label={
-                      localizedStrings.sharedContent.pages.pageContact
-                        .formPostcode
-                    }
+                    label={localizedTexts.formPostcode}
                     type="text"
                     id="postcode"
                     name="postcode"
                     value={emailFormState.PostCode}
-                    placeholderText={
-                      localizedStrings.sharedContent.pages.pageContact
-                        .formPostcodePlaceholder
-                    }
+                    placeholderText={localizedTexts.formPostcodePlaceholder}
                     onInputChanged={(PostCode: string) =>
                       setEmailFormState({ ...emailFormState, PostCode })
                     }
@@ -285,36 +313,37 @@ export const ContactFormRegular: FC<ContactFormRegularProps> = ({
           <ContainerSection theme={theme} marginTop>
             <fieldset className="flex flex-col w-full">
               <TitleAbstract theme={theme} marginBottom={true} marginTop={true}>
-                {localizedStrings.sharedContent.pages.pageContact.legendReason}
+                {localizedTexts.legendReason}
               </TitleAbstract>
               <div className="w-full">
-                <Dropdown
-                  label={
-                    localizedStrings.sharedContent.pages.pageContact.formReason
-                  }
-                  id="reason"
-                  name="reason"
-                  theme={theme}
-                  options={optionsDropdown}
-                  onSelectionChanged={(Reason: string) =>
-                    setEmailFormState({ ...emailFormState, Reason })
-                  }
-                  error={errorReason}
-                />
+                {isSingleOption ? (
+                  <span>
+                    <Label
+                      theme={theme}
+                    >{`${localizedTexts.formReason}: ${optionsDropdown[0].label}`}</Label>{' '}
+                  </span>
+                ) : (
+                  <Dropdown
+                    label={localizedTexts.formReason}
+                    id="reason"
+                    name="reason"
+                    theme={theme}
+                    options={optionsDropdown}
+                    onSelectionChanged={(Reason: string) =>
+                      setEmailFormState({ ...emailFormState, Reason })
+                    }
+                    error={errorReason}
+                  />
+                )}
               </div>
 
               <div className="w-full mt-6">
                 <Textarea
                   id="message"
                   name="message"
-                  label={
-                    localizedStrings.sharedContent.pages.pageContact.formMessage
-                  }
+                  label={localizedTexts.formMessage}
                   theme={theme}
-                  placeholderText={
-                    localizedStrings.sharedContent.pages.pageContact
-                      .formMessagePlaceholder
-                  }
+                  placeholderText={localizedTexts.formMessagePlaceholder}
                   onInputChanged={(Message: string) =>
                     setEmailFormState({ ...emailFormState, Message })
                   }
@@ -339,10 +368,7 @@ export const ContactFormRegular: FC<ContactFormRegularProps> = ({
             <div className="flex justify-center w-full">
               <ButtonRegular
                 onClick={onSubmit}
-                text={
-                  localizedStrings.sharedContent.pages.pageContact
-                    .formButtonSend
-                }
+                text={localizedTexts.formButtonSend}
                 size={ButtonSize.normal}
                 type={ButtonType.secondary}
               />

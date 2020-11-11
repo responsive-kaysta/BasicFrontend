@@ -32,7 +32,7 @@
 
           "legendReason": "Grund der Kontaktaufnahme",
 
-          "formReason": "Grund *",
+          "formReason": "Grund",
 
           "formMessage": "Nachricht * (max. 512)",
           "formMessagePlaceholder": "Pflichtfeld: Nachricht eintragen",
