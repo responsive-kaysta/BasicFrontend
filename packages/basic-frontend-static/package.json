@@ -1,7 +1,7 @@
 {
   "name": "responsive-kaysta-basic-frontend",
   "private": false,
-  "version": "0.7.0-development",
+  "version": "0.7.1-development",
   "description": "finest responsive - reactive development",
   "author": "dev-guru@responsive-it.biz",
   "license": "MIT",
@@ -25,7 +25,7 @@
     "react-static-plugin-sitemap": "^7.4.2",
     "react-static-plugin-source-filesystem": "^7.4.2",
     "react-static-plugin-typescript": "^7.4.2",
-    "basic-frontend-common": "^0.4.3",
+    "basic-frontend-common": "^0.4.5",
     "tailwindcss": "^1.9.6"
   },
   "devDependencies": {
