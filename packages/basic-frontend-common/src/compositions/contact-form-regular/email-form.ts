@@ -36,6 +36,5 @@ export const sendEmail = async (
   formData.append("Message", form.Message);
 
   let res = await axios.post(`${apiHost}/api/sendEmail`, formData);
-
   return res.status === 200;
 };

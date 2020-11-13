@@ -352,6 +352,7 @@ export const ContactFormRegular: FC<ContactFormRegularProps> = ({
             <div className="flex justify-center w-full mt-8 mb-8">
               <ImageCaptcha
                 apiHost={apiHost}
+                pageOrigin={pageOrigin}
                 theme={theme}
                 value={captchaValue}
                 captchaInput={captchaInput}

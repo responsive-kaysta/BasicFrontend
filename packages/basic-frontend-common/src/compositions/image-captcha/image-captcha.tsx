@@ -13,6 +13,7 @@ type ImageCaptchaProps = {
   value: string;
   theme: ThemeType;
   captchaInput: string;
+  pageOrigin: string;
   onCaptchaChange: (captcha: string) => void;
   onCaptchaRefresh: () => void;
   error?: boolean;
@@ -23,16 +24,15 @@ export const ImageCaptcha: FC<ImageCaptchaProps> = ({
   value,
   theme,
   captchaInput,
+  pageOrigin,
   onCaptchaChange,
   onCaptchaRefresh,
   error = false,
 }) => {
   const [captchaState, setCaptchaState] = useState<string>();
-  console.log("value: ", value);
 
   useEffect(() => {
-    getCaptcha(apiHost).then((res) => setCaptchaState(res));
-    console.log("captchaState: ", captchaState);
+    getCaptcha(apiHost, pageOrigin, value).then((res) => setCaptchaState(res));
   }, [value]);
 
   return (
