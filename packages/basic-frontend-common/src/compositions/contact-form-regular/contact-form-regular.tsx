@@ -1,7 +1,7 @@
-import crs from 'crypto-random-string';
-import React, { FC, useState } from 'react';
-import LocalizedStrings from 'react-localization';
-import { ContainerSection } from '../../components';
+import crs from "crypto-random-string";
+import React, { FC, useState } from "react";
+import LocalizedStrings from "react-localization";
+import { ContainerSection } from "../../components";
 import {
   ButtonRegular,
   ButtonSize,
@@ -13,22 +13,22 @@ import {
   TextRegular,
   Title,
   TitleAbstract,
-} from '../../elements';
-import { ThemeType } from '../../typings';
+} from "../../elements";
+import { ThemeType } from "../../typings";
 import {
   DropdownValidation,
   InputEmailValidation,
   InputTextValidation,
-} from '../../utils';
-import { ImageCaptcha } from '../image-captcha';
-import { EmailForm, sendEmail } from './email-form';
-import * as json from './localization.json';
-import { LocalizedTexts } from './localized-texts.type';
+} from "../../utils";
+import { ImageCaptcha } from "../image-captcha";
+import { EmailForm, sendEmail } from "./email-form";
+import * as json from "./localization.json";
+import { LocalizedTexts } from "./localized-texts.type";
 
 // https://dummyimage.com/
 // https://dummyimage.com/300x60.png&text=dummyimage.com+rocks!
 // https://www.npmjs.com/package/crypto-random-string
-const captcha = crs({ length: 6, type: 'alphanumeric' });
+const captcha = crs({ length: 6, type: "alphanumeric" });
 
 type ContactFormRegularProps = {
   theme: ThemeType;
@@ -134,7 +134,7 @@ export const ContactFormRegular: FC<ContactFormRegularProps> = ({
     const eMessage = InputTextValidation(emailFormState.Message, 1, 512);
     setErrorMessage(eMessage);
 
-    let eReason = '';
+    let eReason = "";
     if (!isSingleOption) {
       eReason = DropdownValidation(emailFormState.Reason);
       setErrorReason(eReason);
@@ -171,7 +171,7 @@ export const ContactFormRegular: FC<ContactFormRegularProps> = ({
   };
 
   const onCaptchaRefresh = () => {
-    setCaptchaValue(crs({ length: 6, type: 'alphanumeric' }));
+    setCaptchaValue(crs({ length: 6, type: "alphanumeric" }));
   };
   return (
     <section className="w-full">
@@ -200,7 +200,7 @@ export const ContactFormRegular: FC<ContactFormRegularProps> = ({
                     type="text"
                     id="firstName"
                     name="firstName"
-                    value={emailFormState.FirstName || ''}
+                    value={emailFormState.FirstName || ""}
                     placeholderText={localizedTexts.formFirstnamePlaceholder}
                     onInputChanged={(FirstName: string) =>
                       setEmailFormState({ ...emailFormState, FirstName })
@@ -215,7 +215,7 @@ export const ContactFormRegular: FC<ContactFormRegularProps> = ({
                     type="text"
                     id="surName"
                     name="surName"
-                    value={emailFormState.SurName || ''}
+                    value={emailFormState.SurName || ""}
                     placeholderText={localizedTexts.formSurnamePlaceholder}
                     onInputChanged={(SurName: string) =>
                       setEmailFormState({ ...emailFormState, SurName })
@@ -232,7 +232,7 @@ export const ContactFormRegular: FC<ContactFormRegularProps> = ({
                   type="email"
                   id="emailAddress"
                   name="emailAddress"
-                  value={emailFormState.EmailAddress || ''}
+                  value={emailFormState.EmailAddress || ""}
                   placeholderText={localizedTexts.formEmailPlaceholder}
                   onInputChanged={(EmailAddress: string) =>
                     setEmailFormState({ ...emailFormState, EmailAddress })
@@ -315,7 +315,7 @@ export const ContactFormRegular: FC<ContactFormRegularProps> = ({
                   <span>
                     <Label
                       theme={theme}
-                    >{`${localizedTexts.formReason}: ${optionsDropdown[0].label}`}</Label>{' '}
+                    >{`${localizedTexts.formReason}: ${optionsDropdown[0].label}`}</Label>{" "}
                   </span>
                 ) : (
                   <Dropdown
@@ -351,6 +351,7 @@ export const ContactFormRegular: FC<ContactFormRegularProps> = ({
           <ContainerSection theme={theme} marginTop>
             <div className="flex justify-center w-full mt-8 mb-8">
               <ImageCaptcha
+                apiHost={apiHost}
                 theme={theme}
                 value={captchaValue}
                 captchaInput={captchaInput}
