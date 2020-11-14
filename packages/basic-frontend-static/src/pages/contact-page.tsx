@@ -15,17 +15,17 @@ import {
   ThemeTransparent,
   Topbar,
   ToTopLink,
-} from 'basic-frontend-common';
-import React from 'react';
-import { TEXTS } from '../localization';
-import { BG_IMAGE, PAGE_NAME } from '../constants';
-import { FooterComponent, MenuItems } from '../includes/site-parts';
+} from "basic-frontend-common";
+import React from "react";
+import { TEXTS } from "../localization";
+import { BG_IMAGE, PAGE_NAME } from "../constants";
+import { FooterComponent, MenuItems } from "../includes/site-parts";
 
 class ContactPage extends React.Component {
   public render() {
     return (
       <>
-        {typeof window !== 'undefined' ? (
+        {typeof window !== "undefined" ? (
           <>
             <title>
               {TEXTS.pages.contact.title} - {PAGE_NAME}
@@ -64,8 +64,8 @@ class ContactPage extends React.Component {
                     <ContactFormRegular
                       apiHost="http://api.master-archive.local"
                       language={getLanguage()}
-                      pageOrigin="storybook.responsive-kaysta.local"
-                      reasonsDropdown={[{ value: '1', label: 'Some Option' }]}
+                      pageOrigin="basic-frontend.responsive-kaysta.ch"
+                      reasonsDropdown={[{ value: "1", label: "Some Option" }]}
                       theme={ThemeLight}
                       isSingleOption
                     />

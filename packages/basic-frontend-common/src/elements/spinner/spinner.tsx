@@ -14,7 +14,7 @@ export const Spinner: FC<SpinnerProps> = ({ theme, backgroundImage }) => {
     document.body.style.backgroundSize = "cover";
   }
 
-  const wrapper = `flex h-screen`;
+  const wrapper = `z-50 flex flex-col h-screen my-auto items-center`;
 
   const style = `m-auto animate-spin duration-1000 ${
     theme ? `${theme.body.textColor}` : "text-gray-800"
