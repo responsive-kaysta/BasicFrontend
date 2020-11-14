@@ -1,5 +1,11 @@
 import React, { FC, useEffect, useState } from "react";
-import { ButtonRegular, ButtonSize, ButtonType, Input } from "../../elements";
+import {
+  ButtonRegular,
+  ButtonSize,
+  ButtonType,
+  Input,
+  Spinner,
+} from "../../elements";
 import { Error } from "../../elements/typography";
 import { ThemeType } from "../../typings";
 import { getCaptcha } from "./captcha-service";
@@ -30,9 +36,14 @@ export const ImageCaptcha: FC<ImageCaptchaProps> = ({
   error = false,
 }) => {
   const [captchaState, setCaptchaState] = useState<string>();
+  const [isLoadingState, setLoadingState] = useState<boolean>();
 
   useEffect(() => {
-    getCaptcha(apiHost, pageOrigin, value).then((res) => setCaptchaState(res));
+    setLoadingState(true);
+    getCaptcha(apiHost, pageOrigin, value).then((res) => {
+      setCaptchaState(res);
+      setLoadingState(false);
+    });
   }, [value]);
 
   return (
@@ -57,15 +68,21 @@ export const ImageCaptcha: FC<ImageCaptchaProps> = ({
         </div>
 
         <div className="flex w-full justify-between md:w-1/2 md:ml-2 mt-2 md:mt-0">
-          <img src={`data:image/png;base64,${captchaState}`} />
-          <div className="flex items-center ml-2">
-            <ButtonRegular
-              text="Refresh"
-              size={ButtonSize.small}
-              type={ButtonType.primary}
-              onClick={onCaptchaRefresh}
-            />
-          </div>
+          {isLoadingState ? (
+            <Spinner theme={theme} />
+          ) : (
+            <>
+              <img src={`data:image/png;base64,${captchaState}`} />
+              <div className="flex items-center ml-2">
+                <ButtonRegular
+                  text="Refresh"
+                  size={ButtonSize.small}
+                  type={ButtonType.primary}
+                  onClick={onCaptchaRefresh}
+                />
+              </div>
+            </>
+          )}
         </div>
       </div>
     </section>
