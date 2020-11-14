@@ -11,9 +11,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "basic-frontend-common": "^0.4.1",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
+    "basic-frontend-common": "^0.4.3",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
     "react-scroll": "^1.8.1"
   },
   "devDependencies": {

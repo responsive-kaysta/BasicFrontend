@@ -1,0 +1,27 @@
+export type LocalizedTexts = {
+  title: string;
+  subTitle: string;
+  leadText: string;
+  legendPerson: string;
+  formFirstname: string;
+  formFirstnamePlaceholder: string;
+  formSurname: string;
+  formSurnamePlaceholder: string;
+  formEmail: string;
+  formEmailPlaceholder: string;
+  formStreet: string;
+  formStreetPlaceholder: string;
+  formNumber: string;
+  formNumberPlaceholder: string;
+  formCity: string;
+  formCityPlaceholder: string;
+  formPostcode: string;
+  formPostcodePlaceholder: string;
+  legendReason: string;
+  formReason: string;
+  formMessage: string;
+  formMessagePlaceholder: string;
+  formButtonSend: string;
+  sentEmailTitle: string;
+  sentEmailText: string;
+};

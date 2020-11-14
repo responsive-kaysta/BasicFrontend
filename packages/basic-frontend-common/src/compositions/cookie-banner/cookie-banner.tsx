@@ -1,15 +1,15 @@
-import React, { FC, ReactNode, useState } from 'react';
-import LocalizedStrings from 'react-localization';
+import React, { FC, ReactNode, useState } from "react";
+import LocalizedStrings from "react-localization";
 import {
   ButtonRegular,
   ButtonSize,
   ButtonType,
   Comment,
   TitleAbstract,
-} from '../../elements';
-import { ThemeType } from '../../typings';
-import { COOKIE_KEY, setStorageItem } from '../../utils';
-import * as json from './localization.json';
+} from "../../elements";
+import { ThemeType } from "../../typings";
+import { COOKIE_KEY, setStorageItem } from "../../utils";
+import * as json from "./localization.json";
 
 type CookieBannerProps = {
   children: ReactNode;
@@ -24,6 +24,8 @@ type CookieBannerProps = {
 };
 
 // https://www.cookiepolicygenerator.com/
+// https://eigene-homepage.net/cookie-hinweis
+// https://www.termsfeed.com/cookie-consent/
 
 export const CookieBanner: FC<CookieBannerProps> = ({
   children,
@@ -44,7 +46,7 @@ export const CookieBanner: FC<CookieBannerProps> = ({
   );
 
   const style = `z-0 bg-teal-100 bg-opacity-25 rounded-lg m-4 p-4 text-center ${
-    theme ? theme.body.textColor : 'text-gray-800'
+    theme ? theme.body.textColor : "text-gray-800"
   }`;
 
   const key = cookieKey ? cookieKey : COOKIE_KEY;

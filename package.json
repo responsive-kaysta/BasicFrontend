@@ -1,9 +1,6 @@
 {
   "name": "basic-frontend",
   "private": true,
-  "devDependencies": {
-    "lerna": "^3.22.1"
-  },
   "scripts": {
     "version": "lerna version --conventional-commits",
     "predevelop": "npm run build -- --scope '{basic-frontend-common,basic-frontend-storybook}'",
@@ -13,5 +10,8 @@
     "build": "npm install && lerna bootstrap --hoist && lerna run build --stream",
     "bootstrap": "npm install && lerna bootstrap --hoist",
     "lint": "lerna run lint --parallel"
+  },
+  "dependencies": {
+    "lerna": "^3.22.1"
   }
 }

@@ -1,0 +1,14 @@
+{
+  "name": "basic-frontend",
+  "private": true,
+  "devDependencies": {
+    "@storybook/react": "^6.0.27",
+    "@types/storybook__react": "^5.2.1",
+    "prop-types": "^15.7.2",
+    "basic-frontend-common": "^0.4.3"
+  },
+  "scripts": {
+    "storybook": "start-storybook -s ./public -p 6006",
+    "build": "build-storybook"
+  }
+}

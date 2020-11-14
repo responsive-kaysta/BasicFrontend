@@ -1,6 +1,6 @@
-import React, { FC } from 'react';
-import { FormBase } from './form-base';
-import { FormBaseProps } from './form-base-props';
+import React, { FC } from "react";
+import { FormBase } from "./form-base";
+import { FormBaseProps } from "./form-base-props";
 
 type DropdownProps = FormBaseProps & {
   id: string;
@@ -25,13 +25,13 @@ export const Dropdown: FC<DropdownProps> = ({
   defaultValue,
 }) => {
   const style = `block appearance-none w-full ${
-    theme ? theme.form.backgroundColor : 'bg-white'
-  } border ${theme ? theme.form.borderColor : 'border-gray-400'} hover:${
-    theme ? theme.form.borderHoverColor : 'border-gray-500'
+    theme ? theme.form.backgroundColor : "bg-white"
+  } border ${theme ? theme.form.borderColor : "border-gray-400"} hover:${
+    theme ? theme.form.borderHoverColor : "border-gray-500"
   } px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline`;
 
-  const optionStyle = `${theme ? theme.form.backgroundColor : 'bg-white'} ${
-    theme ? theme.form.textColor : 'text-gray-800'
+  const optionStyle = `${theme ? theme.form.backgroundColor : "bg-white"} ${
+    theme ? theme.form.textColor : "text-gray-800"
   }`;
 
   return (
@@ -56,7 +56,7 @@ export const Dropdown: FC<DropdownProps> = ({
 
           {options.map((item, index) => {
             return (
-              <option key={index} value={item.value} className={optionStyle}>
+              <option key={index} value={item.value}>
                 {item.label}
               </option>
             );
