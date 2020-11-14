@@ -173,6 +173,7 @@ export const ContactFormRegular: FC<ContactFormRegularProps> = ({
   const onCaptchaRefresh = () => {
     setCaptchaValue(crs({ length: 6, type: "alphanumeric" }));
   };
+
   return (
     <section className="w-full">
       {isEmailSent && (
