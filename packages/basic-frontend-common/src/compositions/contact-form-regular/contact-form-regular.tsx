@@ -38,6 +38,7 @@ type ContactFormRegularProps = {
   apiHost: string;
   localizedTexts?: LocalizedTexts;
   isSingleOption?: boolean;
+  version?: string;
 };
 
 export const ContactFormRegular: FC<ContactFormRegularProps> = ({

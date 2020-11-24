@@ -6,10 +6,14 @@ import {
   Link,
   NavigationItems,
   ThemeType,
-} from 'basic-frontend-common';
-import React, { FC } from 'react';
-import { MOBILE_VIEW_WIDTH, PAGE_AUTHOR } from '../constants';
-import { TEXTS } from '../localization';
+} from "basic-frontend-common";
+import React, { FC } from "react";
+import {
+  APPLICATION_VERSION,
+  MOBILE_VIEW_WIDTH,
+  PAGE_AUTHOR,
+} from "../constants";
+import { TEXTS } from "../localization";
 
 type FooterComponentProps = {
   theme: ThemeType;
@@ -53,7 +57,7 @@ export const FooterComponent: FC<FooterComponentProps> = ({ theme }) => {
       </ul>
       <span className="mb-6 md:mb-8">
         <Link href="https://responsive-it.biz" theme={theme} newWindow>
-          2020 {PAGE_AUTHOR} - v 0.7.2-development
+          2020 {PAGE_AUTHOR} - {APPLICATION_VERSION}
         </Link>
       </span>
     </Footer>
@@ -63,17 +67,17 @@ export const FooterComponent: FC<FooterComponentProps> = ({ theme }) => {
 export const MenuItems = () => {
   const menuItems: NavigationItems[] = [
     {
-      link: '/',
+      link: "/",
       text: TEXTS.siteParts.menuItems.linkHome,
       title: TEXTS.siteParts.menuItems.linkHomeTitle,
     },
     {
-      link: '/about-page',
+      link: "/about-page",
       text: TEXTS.siteParts.menuItems.linkAbout,
       title: TEXTS.siteParts.menuItems.linkAboutTitle,
     },
     {
-      link: '/contact-page',
+      link: "/contact-page",
       text: TEXTS.siteParts.menuItems.linkContact,
       title: TEXTS.siteParts.menuItems.linkContactTitle,
     },

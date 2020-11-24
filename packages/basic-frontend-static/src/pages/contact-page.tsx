@@ -18,7 +18,7 @@ import {
 } from "basic-frontend-common";
 import React from "react";
 import { TEXTS } from "../localization";
-import { BG_IMAGE, PAGE_NAME } from "../constants";
+import { BASIC_FRONTEND_VERSION, BG_IMAGE, PAGE_NAME } from "../constants";
 import { FooterComponent, MenuItems } from "../includes/site-parts";
 
 class ContactPage extends React.Component {
@@ -68,6 +68,7 @@ class ContactPage extends React.Component {
                       reasonsDropdown={[{ value: "1", label: "Some Option" }]}
                       theme={ThemeLight}
                       isSingleOption
+                      version={BASIC_FRONTEND_VERSION}
                     />
 
                     <Spacer />
