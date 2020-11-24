@@ -23,7 +23,7 @@ import {
   ToTopLink,
 } from "basic-frontend-common";
 import React from "react";
-import { BG_IMAGE, PAGE_NAME } from "../constants";
+import { PAGE_NAME } from "../constants";
 import { FooterComponent } from "../includes/site-parts";
 import { TEXTS } from "../localization";
 
@@ -41,10 +41,7 @@ class Index extends React.Component {
               language={getLanguage()}
               isCookieSet={isCookieSet()}
             >
-              <ContainerBody
-                theme={ThemeTransparent}
-                backgroundImage={BG_IMAGE}
-              >
+              <ContainerBody theme={ThemeTransparent}>
                 <IntroEyeCatcher
                   theme={ThemeTransparent}
                   contentTop={PAGE_NAME}

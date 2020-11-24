@@ -72,6 +72,11 @@ export const MenuItems = () => {
       title: TEXTS.siteParts.menuItems.linkHomeTitle,
     },
     {
+      link: "/product-page",
+      text: TEXTS.siteParts.menuItems.linkProduct,
+      title: TEXTS.siteParts.menuItems.linkProductTitle,
+    },
+    {
       link: "/about-page",
       text: TEXTS.siteParts.menuItems.linkAbout,
       title: TEXTS.siteParts.menuItems.linkAboutTitle,
