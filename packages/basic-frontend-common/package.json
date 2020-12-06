@@ -1,6 +1,6 @@
 {
   "name": "basic-frontend-common",
-  "version": "0.4.9",
+  "version": "0.4.10",
   "main": "build/index.js",
   "description": "This package provides commonly used components for the responsive-it apps.",
   "scripts": {
@@ -27,12 +27,12 @@
     "prettier": "2.0.5",
     "rimraf": "3.0.2",
     "typescript": "^4.1.2",
-    "postcss": "^8.1.10"
+    "postcss": "^8.1.14"
   },
   "dependencies": {
     "date-fns": "^2.16.1",
     "downloadjs": "^1.4.7",
-    "prettier": "2.2.0",
+    "prettier": "2.2.1",
     "qs": "^6.9.4",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
