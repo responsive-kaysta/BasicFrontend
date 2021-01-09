@@ -15,7 +15,6 @@ import {
   SimpleEyeCatcher,
   Spacer,
   Spotlight,
-  ThemeDarkgray,
   ThemeGray,
   ThemeGreen,
   ThemeLight,
@@ -24,7 +23,6 @@ import {
 } from 'basic-frontend-common';
 import React from 'react';
 import { PAGE_NAME } from '../constants';
-import { FooterComponent } from '../includes/site-parts';
 import { TEXTS } from '../localization';
 
 class Index extends React.Component {
@@ -120,8 +118,6 @@ class Index extends React.Component {
                   <ToTopLink theme={ThemeLight} />
                 </ContainerSection>
               </ContainerArticle>
-
-              <FooterComponent theme={ThemeDarkgray} />
             </CookieBanner>
           </>
         ) : null}
