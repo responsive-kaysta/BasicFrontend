@@ -22,6 +22,9 @@
         "linkAbout": "About",
         "linkAboutTitle": "Navigate to About",
 
+        "linkProduct": "Produkt",
+        "linkProductTitle": "Navigiere zu Produkt",
+
         "linkContact": "Contact",
         "linkContactTitle": "Navigate to Contact"
       }
@@ -49,6 +52,9 @@
 
         "linkAbout": "Über",
         "linkAboutTitle": "Navigiere zu Über",
+
+        "linkProduct": "Produkt",
+        "linkProductTitle": "Navigiere zu Produkt",
 
         "linkContact": "Kontakt",
         "linkContactTitle": "Navigiere zu Kontakt"

@@ -38,6 +38,7 @@ type ContactFormRegularProps = {
   apiHost: string;
   localizedTexts?: LocalizedTexts;
   isSingleOption?: boolean;
+  version?: string;
 };
 
 export const ContactFormRegular: FC<ContactFormRegularProps> = ({
@@ -48,6 +49,7 @@ export const ContactFormRegular: FC<ContactFormRegularProps> = ({
   apiHost,
   localizedTexts,
   isSingleOption = false,
+  version,
 }) => {
   const localizedStrings = new LocalizedStrings(json);
   localizedStrings.setLanguage(language);
@@ -158,6 +160,7 @@ export const ContactFormRegular: FC<ContactFormRegularProps> = ({
       captchaMatch
     ) {
       emailFormState.Origin = pageOrigin;
+      emailFormState.Version = version;
 
       if (!isSingleOption) {
         emailFormState.Reason = optionSelected.label;

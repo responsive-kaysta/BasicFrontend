@@ -14,19 +14,18 @@ import {
   ThemeTransparent,
   Topbar,
   ToTopLink,
-} from 'basic-frontend-common';
-import React from 'react';
-import { BG_IMAGE, PAGE_NAME } from '../constants';
-import { FooterComponent, MenuItems } from '../includes/site-parts';
+} from "basic-frontend-common";
+import React from "react";
+import { PAGE_NAME } from "../constants";
+import { FooterComponent, MenuItems } from "../includes/site-parts";
 
 class LegalPage extends React.Component {
   public render() {
     return (
       <>
-        {typeof window !== 'undefined' ? (
+        {typeof window !== "undefined" ? (
           <>
             <Topbar
-              backgroundImage={BG_IMAGE}
               branding={PAGE_NAME}
               theme={ThemeDarkgray}
               menuItems={MenuItems()}

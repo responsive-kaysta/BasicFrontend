@@ -7,7 +7,6 @@ type TopbarProps = {
   footer?: ReactNode;
   menuItems: NavigationItems[];
   branding?: string;
-  backgroundImage?: string;
   theme?: ThemeType;
 };
 
@@ -16,18 +15,9 @@ export const Topbar: FC<TopbarProps> = ({
   footer,
   menuItems,
   branding,
-  backgroundImage,
   theme,
 }) => {
   const [isMenuVisible, toggleMenuVisible] = useState<boolean>(false);
-
-  if (typeof window !== "undefined" && backgroundImage) {
-    // document.body.style.background = `linear-gradient(to bottom, #0b3536 0%, rgba(125, 185, 232, 0)), url(${backgroundImage})`;
-    document.body.style.backgroundImage = `linear-gradient(to bottom, #0b3536 0%, rgba(125, 185, 232, 0)), url(${backgroundImage})`;
-    document.body.style.backgroundAttachment = "fixed";
-    document.body.style.backgroundSize = "cover";
-  }
-
   return (
     <div className={`flex flex-col w-full min-h-screen`} id="body-wrapper">
       <HorizontalNavbar
