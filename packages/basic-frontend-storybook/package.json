@@ -1,6 +1,6 @@
 {
   "name": "basic-frontend-storybook",
-  "version": "1.0.5",
+  "version": "1.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -11,7 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "basic-frontend-common": "^0.4.11",
+    "basic-frontend-common": "^0.5.0",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-scroll": "^1.8.1"

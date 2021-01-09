@@ -1,13 +1,13 @@
-import { Router } from "@reach/router";
+import { Router } from '@reach/router';
 import {
   isAnalyticsSet,
   Spinner,
   ThemeDarkgray,
   ThemeTransparent,
   Topbar,
-} from "basic-frontend-common";
-import React from "react";
-import { Head, Root, Routes } from "react-static";
+} from 'basic-frontend-common';
+import React from 'react';
+import { Head, Root, Routes } from 'react-static';
 import {
   BG_IMAGE,
   ICON,
@@ -16,19 +16,19 @@ import {
   PAGE_KEYWORDS,
   PAGE_NAME,
   PAGE_TOPIC,
-} from "./constants";
-import "./generated-tailwind.css";
-import { FooterComponent, MenuItems } from "./includes/site-parts";
+} from './constants';
+import './generated-tailwind.css';
+import { FooterComponent, MenuItems } from './includes/site-parts';
 
 function App() {
-  if (typeof window !== "undefined" && BG_IMAGE) {
+  if (typeof window !== 'undefined' && BG_IMAGE) {
     document.body.style.backgroundImage = `linear-gradient(to bottom, #0b3536 0%, rgba(125, 185, 232, 0)), url(${BG_IMAGE})`;
-    document.body.style.backgroundAttachment = "fixed";
-    document.body.style.backgroundSize = "cover";
+    document.body.style.backgroundAttachment = 'fixed';
+    document.body.style.backgroundSize = 'cover';
   }
   return (
     <>
-      {typeof window !== "undefined" ? (
+      {typeof window !== 'undefined' ? (
         <Root>
           <Head>
             {isAnalyticsSet() && (
@@ -73,6 +73,7 @@ function App() {
             theme={ThemeDarkgray}
             menuItems={MenuItems()}
             footer={<FooterComponent theme={ThemeDarkgray} />}
+            stickyHeader
           >
             <React.Suspense
               fallback={
