@@ -5,14 +5,14 @@ import { ButtonSize } from './button-types';
 export const buttonWrapper = (size: ButtonSize) => {
   return `inline-flex ${
     size === ButtonSize.normal
-      ? 'shadow-md rounded-xl hover:shadow-lg'
-      : 'shadow-md rounded-lg hover:shadow-lg max-h-12'
+      ? 'shadow-md rounded-xl hover:shadow-2xl'
+      : 'shadow-md rounded-lg hover:shadow-xl max-h-12'
   } `;
 };
 
 export const buttonPadding = (size: ButtonSize) => {
   return `${
-    size === ButtonSize.normal ? 'w-max px-6 py-6' : 'w-max max-h-12 px-4 py-1'
+    size === ButtonSize.normal ? 'w-48 px-6 py-6' : 'w-32 max-h-12 px-4 py-1'
   }`;
 };
 
@@ -41,7 +41,7 @@ export const styleSecondary = (size: ButtonSize) => {
     size
   )} text-white ${buttonTextStyle(
     size
-  )} bg-green-400 hover:bg-green-300 hover:shadow-lg focus:outline-none focus:border-green-500 focus:shadow-outline-green active:bg-green-400 transition ease-in-out duration-150`;
+  )} bg-green-400 hover:bg-green-500 hover:shadow-lg focus:outline-none focus:border-green-500 focus:shadow-outline-green active:bg-green-400 transition ease-in-out duration-150`;
 };
 
 export const styleTertiary = (size: ButtonSize) => {
@@ -51,7 +51,7 @@ export const styleTertiary = (size: ButtonSize) => {
     size
   )} text-white ${buttonTextStyle(
     size
-  )} bg-indigo-600 hover:bg-indigo-500 hover:shadow-lg focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition ease-in-out duration-150`;
+  )} bg-indigo-600 hover:bg-indigo-700 hover:shadow-lg focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition ease-in-out duration-150`;
 };
 
 export const styleTransparent = (size: ButtonSize, theme: ThemeType) => {
@@ -73,7 +73,7 @@ export const styleAlarm = (size: ButtonSize) => {
     size
   )} text-white ${buttonTextStyle(
     size
-  )} bg-red-600 hover:bg-red-500 hover:text-gray-100 hover:shadow-lg focus:outline-none focus:border-red-600 focus:shadow-outline-indigo active:bg-red-500 transition ease-in-out duration-150`;
+  )} bg-red-500 hover:bg-red-600 hover:text-gray-100 hover:shadow-lg focus:outline-none focus:border-red-600 focus:shadow-outline-indigo active:bg-red-500 transition ease-in-out duration-150`;
 };
 
 export const styleSpecial = (size: ButtonSize) => {
