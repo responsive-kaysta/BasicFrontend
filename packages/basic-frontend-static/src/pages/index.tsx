@@ -21,17 +21,17 @@ import {
   ThemeLight,
   ThemeTransparent,
   ToTopLink,
-} from 'basic-frontend-common';
-import React from 'react';
-import { BG_IMAGE, PAGE_NAME } from '../constants';
-import { FooterComponent } from '../includes/site-parts';
-import { TEXTS } from '../localization';
+} from "basic-frontend-common";
+import React from "react";
+import { PAGE_NAME } from "../constants";
+import { FooterComponent } from "../includes/site-parts";
+import { TEXTS } from "../localization";
 
 class Index extends React.Component {
   public render() {
     return (
       <>
-        {typeof window !== 'undefined' ? (
+        {typeof window !== "undefined" ? (
           <>
             <title>
               {TEXTS.pages.home.title} - {PAGE_NAME}
@@ -41,10 +41,7 @@ class Index extends React.Component {
               language={getLanguage()}
               isCookieSet={isCookieSet()}
             >
-              <ContainerBody
-                theme={ThemeTransparent}
-                backgroundImage={BG_IMAGE}
-              >
+              <ContainerBody theme={ThemeTransparent}>
                 <IntroEyeCatcher
                   theme={ThemeTransparent}
                   contentTop={PAGE_NAME}

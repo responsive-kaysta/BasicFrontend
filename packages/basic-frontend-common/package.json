@@ -1,6 +1,6 @@
 {
   "name": "basic-frontend-common",
-  "version": "0.4.8",
+  "version": "0.4.11",
   "main": "build/index.js",
   "description": "This package provides commonly used components for the responsive-it apps.",
   "scripts": {
@@ -26,20 +26,20 @@
     "@types/react-scroll": "^1.8.2",
     "prettier": "2.0.5",
     "rimraf": "3.0.2",
-    "typescript": "^4.1.2",
-    "postcss": "^8.1.9"
+    "typescript": "^4.1.3",
+    "postcss": "^8.2.1"
   },
   "dependencies": {
     "date-fns": "^2.16.1",
     "downloadjs": "^1.4.7",
-    "prettier": "2.2.0",
+    "prettier": "2.2.1",
     "qs": "^6.9.4",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scroll": "^1.8.1",
     "rimraf": "^3.0.2",
-    "tailwindcss": "^2.0.1",
-    "axios": "^0.21.0",
+    "tailwindcss": "^2.0.2",
+    "axios": "^0.21.1",
     "react-localization": "^1.0.15",
     "crypto-random-string": "^3.3.0"
   }

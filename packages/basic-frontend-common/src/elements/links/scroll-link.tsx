@@ -11,7 +11,7 @@ type ScrollLinkProps = {
 };
 
 export const ScrollLink: FC<ScrollLinkProps> = ({ elementId, theme }) => {
-  const style = `w-6 h-12 mb-4 ${
+  const style = `w-6 h-12 mb-16 ${
     theme ? theme.body.textColor : "text-gray-100"
   } hover:${
     theme ? theme.link.hoverColor : "text-red-500"

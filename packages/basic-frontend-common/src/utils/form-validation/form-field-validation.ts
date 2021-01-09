@@ -7,11 +7,11 @@ export enum FormFieldType {
 }
 
 export const typeOfStringCheck = (value: any) => {
-  return typeof value === 'string';
+  return typeof value === "string";
 };
 
 export const typeOfNumberCheck = (value: any) => {
-  return typeof value === 'number';
+  return typeof value === "number";
 };
 
 export const FormFieldValidation = (
@@ -52,7 +52,7 @@ export const FormFieldValidation = (
       );
 
     case FormFieldType.Number:
-      return typeOfNumberCheck(fieldValue) && fieldValue > 0;
+      return typeOfNumberCheck(fieldValue);
 
     default:
       return false;
