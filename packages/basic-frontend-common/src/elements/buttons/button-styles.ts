@@ -1,17 +1,19 @@
-import { defButtonNormal, defButtonSmall } from "../../identity";
-import { ThemeType } from "../../typings";
-import { ButtonSize } from "./button-types";
+import { defButtonNormal, defButtonSmall } from '../../identity';
+import { ThemeType } from '../../typings';
+import { ButtonSize } from './button-types';
 
 export const buttonWrapper = (size: ButtonSize) => {
   return `inline-flex ${
     size === ButtonSize.normal
-      ? "shadow-md rounded-lg hover:shadow-lg"
-      : "shadow-md rounded-md hover:shadow-lg"
+      ? 'shadow-md rounded-xl hover:shadow-lg'
+      : 'shadow-md rounded-lg hover:shadow-lg max-h-12'
   } `;
 };
 
 export const buttonPadding = (size: ButtonSize) => {
-  return `${size === ButtonSize.normal ? "w-40 px-4 py-2" : "w-24 px-2 py-1"}`;
+  return `${
+    size === ButtonSize.normal ? 'w-max px-6 py-6' : 'w-max max-h-12 px-4 py-1'
+  }`;
 };
 
 export const buttonTextStyle = (size: ButtonSize) => {
@@ -19,7 +21,7 @@ export const buttonTextStyle = (size: ButtonSize) => {
 };
 
 export const buttonBorderStyle = (size: ButtonSize) => {
-  return `${size === ButtonSize.normal ? "rounded-md" : "rounded"}`;
+  return `${size === ButtonSize.normal ? 'rounded-md' : 'rounded'}`;
 };
 
 export const stylePrimary = (size: ButtonSize) => {
@@ -56,9 +58,9 @@ export const styleTransparent = (size: ButtonSize, theme: ThemeType) => {
   return `inline-flex justify-center items-center ${buttonPadding(
     size
   )} border ${
-    theme ? theme.body.borderColor : "border-transparent"
+    theme ? theme.body.borderColor : 'border-transparent'
   } ${buttonBorderStyle(size)} ${
-    theme ? theme.body.textColor : "text-gray-800"
+    theme ? theme.body.textColor : 'text-gray-800'
   } ${buttonTextStyle(
     size
   )} bg-transparent hover:text-gray-900 hover:bg-gray-100 hover:shadow-lg focus:outline-none focus:border-indigo-300 focus:shadow-outline-indigo active:bg-transparent transition ease-in-out duration-150`;
@@ -77,7 +79,7 @@ export const styleAlarm = (size: ButtonSize) => {
 export const styleSpecial = (size: ButtonSize) => {
   return `inline-flex justify-center items-center ${buttonPadding(
     size
-  )} border-1 border-gray-400 ${buttonBorderStyle(
+  )} border-2 border-gray-300 ${buttonBorderStyle(
     size
   )} text-gray-100 ${buttonTextStyle(
     size

@@ -43,7 +43,7 @@ export const defFormError =
 // buttons
 // -------------------------------------------------------------------------------
 
-export const defButtonSmall = 'text-lg leading-4';
+export const defButtonSmall = 'text-base leading-4';
 
 export const defButtonNormal = 'text-xl leading-5 font-medium';
 
