@@ -26,7 +26,7 @@ export const ScrollLink: FC<ScrollLinkProps> = ({
   const wrapper = `flex flex-col items-center w-20 mx-auto bg-transparent text-center`;
 
   const mobile = isMobileView(640);
-  const offset = stickyHeader && mobile ? -48 : -58;
+  const offset = stickyHeader && mobile ? -45 : -55;
 
   return (
     <div className={wrapper}>

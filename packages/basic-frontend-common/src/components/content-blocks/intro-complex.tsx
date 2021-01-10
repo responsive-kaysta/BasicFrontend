@@ -1,9 +1,9 @@
-import React, { FC, ReactNode } from "react";
-import { Hruler, TextLead, Title } from "../../elements";
-import { ThemeLight } from "../../identity";
-import { Orientation, ThemeType } from "../../typings";
-import { IntroBase } from "./base";
-import { IntroBaseProps } from "./base-props";
+import React, { FC, ReactNode } from 'react';
+import { Hruler, TextLead, Title } from '../../elements';
+import { ThemeLight } from '../../identity';
+import { Orientation, ThemeType } from '../../typings';
+import { IntroBase } from './base';
+import { IntroBaseProps } from './base-props';
 
 type IntroComplexProps = IntroBaseProps & {
   component: ReactNode;
