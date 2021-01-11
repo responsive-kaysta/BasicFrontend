@@ -12,7 +12,7 @@ export const buttonWrapper = (size: ButtonSize) => {
 
 export const buttonPadding = (size: ButtonSize) => {
   return `${
-    size === ButtonSize.normal ? 'w-48 px-6 py-6' : 'w-32 max-h-12 px-4 py-1'
+    size === ButtonSize.normal ? 'w-44 px-4 py-4' : 'w-30 max-h-12 px-4 py-2'
   }`;
 };
 
