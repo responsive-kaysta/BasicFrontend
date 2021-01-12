@@ -26,7 +26,7 @@ export const ScrollLink: FC<ScrollLinkProps> = ({
   const wrapper = `flex flex-col items-center w-20 mx-auto bg-transparent text-center`;
 
   const mobile = isMobileView(640);
-  const offset = stickyHeader && mobile ? -45 : -55;
+  const offset = mobile ? -45 : -55;
 
   return (
     <div className={wrapper}>
@@ -36,7 +36,7 @@ export const ScrollLink: FC<ScrollLinkProps> = ({
         spy={true}
         smooth="easeInOutQuint"
         duration={2500}
-        offset={offset}
+        offset={stickyHeader ? offset : 0}
       >
         <Icon name="arrow_down2" size={IconSize.xs} />
       </ScrollLinkElement>
