@@ -19,24 +19,12 @@ export const sendEmail = async (
 ): Promise<boolean> => {
   const axios = require("axios");
 
-  const formData = new FormData();
-  formData.append("UserName", "anonymous");
-  formData.append("EmailAddress", "anonymous");
-  formData.append("Sub", "anonymous");
-
-  formData.append("PageOrigin", form.Origin);
-  formData.append("FirstName", form.FirstName);
-  formData.append("SurName", form.SurName);
-  formData.append("EmailAddress", form.EmailAddress);
-  formData.append("Street", form.Street ? form.Street : "");
-  formData.append("Number", form.Number ? form.Number : "");
-  formData.append("City", form.City ? form.City : "");
-  formData.append("PostCode", form.PostCode ? form.PostCode : "");
-  formData.append("Country", form.Country ? form.Country : "");
-  formData.append("Reason", form.Reason);
-  formData.append("Message", form.Message);
-  formData.append("Version", form.Version ? form.Version : "");
-
-  let res = await axios.post(`${apiHost}/api/sendEmail`, formData);
+  let res = await axios.post(`${apiHost}/api/Email/sendEmail`, form, {
+    headers: {
+      "Access-Control-Allow-Origin": true,
+      parcel:
+        "80Muze3fQb9acFuJDzgOehjTx6DyRb0iCfiOWufHIZK7udecUndiRu8iq2Eevq3pZAPufYoUnmPf6ZTNZ9wPsTzeA/Btf41pNLLxGvmOlb57eAn5XeB552Zuslo4zBzlzB8DzZLwNNRsLa3/7+ICclj3HDxmHRimG9XgphjA+TRBtWOK64YBlK0o2O6+v/RwqdhfW0+NGWLiIrZxasiGQnVUbkbzYgFURS/P4GX0MCf4EyRn9YK34L6S8/GL3TXn",
+    },
+  });
   return res.status === 200;
 };

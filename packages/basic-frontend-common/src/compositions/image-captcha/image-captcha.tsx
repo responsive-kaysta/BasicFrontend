@@ -30,17 +30,16 @@ export const ImageCaptcha: FC<ImageCaptchaProps> = ({
   value,
   theme,
   captchaInput,
-  pageOrigin,
   onCaptchaChange,
   onCaptchaRefresh,
   error = false,
 }) => {
-  const [captchaState, setCaptchaState] = useState<string>();
+  const [captchaState, setCaptchaState] = useState<any>();
   const [isLoadingState, setLoadingState] = useState<boolean>();
 
   useEffect(() => {
     setLoadingState(true);
-    getCaptcha(apiHost, pageOrigin, value).then((res) => {
+    getCaptcha(apiHost, value).then((res) => {
       setCaptchaState(res);
       setLoadingState(false);
     });
@@ -72,7 +71,11 @@ export const ImageCaptcha: FC<ImageCaptchaProps> = ({
             <Spinner theme={theme} />
           ) : (
             <>
-              <img src={`data:image/png;base64,${captchaState}`} />
+              <img
+                src={`data:image/png;base64,${
+                  captchaState ? captchaState.payload : undefined
+                }`}
+              />
               <div className="flex items-center ml-2">
                 <ButtonRegular
                   text="Refresh"
