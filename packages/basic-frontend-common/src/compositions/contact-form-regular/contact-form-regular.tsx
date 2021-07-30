@@ -36,6 +36,7 @@ type ContactFormRegularProps = {
   reasonsDropdown: { value: string; label: string }[];
   pageOrigin: string;
   apiHost: string;
+  apiParcel: string;
   localizedTexts?: LocalizedTexts;
   isSingleOption?: boolean;
   version?: string;
@@ -47,6 +48,7 @@ export const ContactFormRegular: FC<ContactFormRegularProps> = ({
   reasonsDropdown,
   pageOrigin,
   apiHost,
+  apiParcel,
   localizedTexts,
   isSingleOption = false,
   version,
@@ -168,7 +170,7 @@ export const ContactFormRegular: FC<ContactFormRegularProps> = ({
         emailFormState.Reason = reasonsDropdown[0].label;
       }
 
-      const mailSent = await sendEmail(emailFormState, apiHost);
+      const mailSent = await sendEmail(emailFormState, apiHost, apiParcel);
       setIsEmailSent(mailSent);
     }
   };
@@ -356,7 +358,7 @@ export const ContactFormRegular: FC<ContactFormRegularProps> = ({
             <div className="flex justify-center w-full mt-8 mb-8">
               <ImageCaptcha
                 apiHost={apiHost}
-                pageOrigin={pageOrigin}
+                apiParcel={apiParcel}
                 theme={theme}
                 value={captchaValue}
                 captchaInput={captchaInput}

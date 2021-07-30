@@ -1,5 +1,6 @@
 {
   "name": "basic-frontend",
+  "version": "0.5.17",
   "private": true,
   "scripts": {
     "version": "lerna version --conventional-commits",

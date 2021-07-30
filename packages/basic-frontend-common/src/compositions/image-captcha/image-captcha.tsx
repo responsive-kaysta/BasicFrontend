@@ -19,7 +19,7 @@ type ImageCaptchaProps = {
   value: string;
   theme: ThemeType;
   captchaInput: string;
-  pageOrigin: string;
+  apiParcel: string;
   onCaptchaChange: (captcha: string) => void;
   onCaptchaRefresh: () => void;
   error?: boolean;
@@ -30,6 +30,7 @@ export const ImageCaptcha: FC<ImageCaptchaProps> = ({
   value,
   theme,
   captchaInput,
+  apiParcel,
   onCaptchaChange,
   onCaptchaRefresh,
   error = false,
@@ -39,7 +40,7 @@ export const ImageCaptcha: FC<ImageCaptchaProps> = ({
 
   useEffect(() => {
     setLoadingState(true);
-    getCaptcha(apiHost, value).then((res) => {
+    getCaptcha(apiHost, value, apiParcel).then((res) => {
       setCaptchaState(res);
       setLoadingState(false);
     });
