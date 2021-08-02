@@ -1,6 +1,6 @@
 {
   "name": "basic-frontend-common",
-  "version": "0.5.17",
+  "version": "0.5.18",
   "main": "build/index.js",
   "description": "This package provides commonly used components for the responsive-it apps.",
   "scripts": {
@@ -40,7 +40,6 @@
     "rimraf": "^3.0.2",
     "tailwindcss": "^2.2.7",
     "axios": "^0.21.1",
-    "react-localization": "^1.0.17",
-    "crypto-random-string": "^4.0.0"
+    "react-localization": "^1.0.17"
   }
 }

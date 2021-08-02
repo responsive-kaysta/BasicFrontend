@@ -10,10 +10,6 @@ import { Error } from "../../elements/typography";
 import { ThemeType } from "../../typings";
 import { getCaptcha } from "./captcha-service";
 
-// https://dummyimage.com/
-// https://dummyimage.com/300x60.png&text=dummyimage.com+rocks!
-// https://www.npmjs.com/package/crypto-random-string
-
 type ImageCaptchaProps = {
   apiHost: string;
   value: string;

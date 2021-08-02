@@ -1,4 +1,3 @@
-import crs from "crypto-random-string";
 import React, { FC, useState } from "react";
 import LocalizedStrings from "react-localization";
 import { ContainerSection } from "../../components";
@@ -19,16 +18,12 @@ import {
   DropdownValidation,
   InputEmailValidation,
   InputTextValidation,
+  randomString,
 } from "../../utils";
 import { ImageCaptcha } from "../image-captcha";
 import { EmailForm, sendEmail } from "./email-form";
 import * as json from "./localization.json";
 import { LocalizedTexts } from "./localized-texts.type";
-
-// https://dummyimage.com/
-// https://dummyimage.com/300x60.png&text=dummyimage.com+rocks!
-// https://www.npmjs.com/package/crypto-random-string
-const captcha = crs({ length: 6, type: "alphanumeric" });
 
 type ContactFormRegularProps = {
   theme: ThemeType;
@@ -115,7 +110,7 @@ export const ContactFormRegular: FC<ContactFormRegularProps> = ({
 
   const [captchaMatch, setCaptchaMatch] = useState<boolean>(false);
   const [captchaInput, setCaptchaInput] = useState<string>();
-  const [captchaValue, setCaptchaValue] = useState<string>(captcha);
+  const [captchaValue, setCaptchaValue] = useState<string>(randomString(6));
 
   const optionsDropdown: {
     value: string;
@@ -176,7 +171,7 @@ export const ContactFormRegular: FC<ContactFormRegularProps> = ({
   };
 
   const onCaptchaRefresh = () => {
-    setCaptchaValue(crs({ length: 6, type: "alphanumeric" }));
+    setCaptchaValue(randomString(6));
   };
 
   return (
