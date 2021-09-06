@@ -15,23 +15,21 @@ import {
   SimpleEyeCatcher,
   Spacer,
   Spotlight,
-  ThemeDarkgray,
   ThemeGray,
   ThemeGreen,
   ThemeLight,
   ThemeTransparent,
   ToTopLink,
-} from "basic-frontend-common";
-import React from "react";
-import { PAGE_NAME } from "../constants";
-import { FooterComponent } from "../includes/site-parts";
-import { TEXTS } from "../localization";
+} from 'basic-frontend-common';
+import React from 'react';
+import { PAGE_NAME } from '../constants';
+import { TEXTS } from '../localization';
 
 class Index extends React.Component {
   public render() {
     return (
       <>
-        {typeof window !== "undefined" ? (
+        {typeof window !== 'undefined' ? (
           <>
             <title>
               {TEXTS.pages.home.title} - {PAGE_NAME}
@@ -48,7 +46,7 @@ class Index extends React.Component {
                   contentBottom="Example Page(s) showing the power of ReactJS, Skills and Passion"
                 />
 
-                <ScrollLink elementId="first-eye-catcher" />
+                <ScrollLink elementId="first-eye-catcher" stickyHeader />
               </ContainerBody>
 
               <ContainerArticle>
@@ -120,8 +118,6 @@ class Index extends React.Component {
                   <ToTopLink theme={ThemeLight} />
                 </ContainerSection>
               </ContainerArticle>
-
-              <FooterComponent theme={ThemeDarkgray} />
             </CookieBanner>
           </>
         ) : null}

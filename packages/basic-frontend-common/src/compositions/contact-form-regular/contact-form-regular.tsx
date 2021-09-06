@@ -1,4 +1,3 @@
-import crs from "crypto-random-string";
 import React, { FC, useState } from "react";
 import LocalizedStrings from "react-localization";
 import { ContainerSection } from "../../components";
@@ -19,16 +18,12 @@ import {
   DropdownValidation,
   InputEmailValidation,
   InputTextValidation,
+  randomString,
 } from "../../utils";
 import { ImageCaptcha } from "../image-captcha";
 import { EmailForm, sendEmail } from "./email-form";
 import * as json from "./localization.json";
 import { LocalizedTexts } from "./localized-texts.type";
-
-// https://dummyimage.com/
-// https://dummyimage.com/300x60.png&text=dummyimage.com+rocks!
-// https://www.npmjs.com/package/crypto-random-string
-const captcha = crs({ length: 6, type: "alphanumeric" });
 
 type ContactFormRegularProps = {
   theme: ThemeType;
@@ -36,6 +31,7 @@ type ContactFormRegularProps = {
   reasonsDropdown: { value: string; label: string }[];
   pageOrigin: string;
   apiHost: string;
+  apiParcel: string;
   localizedTexts?: LocalizedTexts;
   isSingleOption?: boolean;
   version?: string;
@@ -47,6 +43,7 @@ export const ContactFormRegular: FC<ContactFormRegularProps> = ({
   reasonsDropdown,
   pageOrigin,
   apiHost,
+  apiParcel,
   localizedTexts,
   isSingleOption = false,
   version,
@@ -113,7 +110,7 @@ export const ContactFormRegular: FC<ContactFormRegularProps> = ({
 
   const [captchaMatch, setCaptchaMatch] = useState<boolean>(false);
   const [captchaInput, setCaptchaInput] = useState<string>();
-  const [captchaValue, setCaptchaValue] = useState<string>(captcha);
+  const [captchaValue, setCaptchaValue] = useState<string>(randomString(6));
 
   const optionsDropdown: {
     value: string;
@@ -168,13 +165,13 @@ export const ContactFormRegular: FC<ContactFormRegularProps> = ({
         emailFormState.Reason = reasonsDropdown[0].label;
       }
 
-      const mailSent = await sendEmail(emailFormState, apiHost);
+      const mailSent = await sendEmail(emailFormState, apiHost, apiParcel);
       setIsEmailSent(mailSent);
     }
   };
 
   const onCaptchaRefresh = () => {
-    setCaptchaValue(crs({ length: 6, type: "alphanumeric" }));
+    setCaptchaValue(randomString(6));
   };
 
   return (
@@ -356,7 +353,7 @@ export const ContactFormRegular: FC<ContactFormRegularProps> = ({
             <div className="flex justify-center w-full mt-8 mb-8">
               <ImageCaptcha
                 apiHost={apiHost}
-                pageOrigin={pageOrigin}
+                apiParcel={apiParcel}
                 theme={theme}
                 value={captchaValue}
                 captchaInput={captchaInput}

@@ -1,6 +1,6 @@
-import React, { FC } from "react";
-import { ThemeType } from "../../typings";
-import { TitleSub, TextRegular, Comment } from "../../elements";
+import React, { FC } from 'react';
+import { ThemeType } from '../../typings';
+import { TitleSub, TextRegular, Comment } from '../../elements';
 
 type TileElementProps = {
   headline: string;
@@ -19,11 +19,11 @@ export const TileItem: FC<TileElementProps> = ({
   bgImage,
   theme,
 }) => {
-  const style = `table-cell p-2 md:p-4 lg:p-6 mr-2 mb-2 md:mr-4 md:mb-4 lg:mr-6 lg:mb-6 rounded-lg border-2 shadow-md hover:shadow-lg ${
-    theme ? theme.body.backgroundColor : "bg-gray-100"
-  } ${theme ? theme.body.textColor : "text-gray-800"} ${
-    theme ? theme.body.borderColor : "border-gray-400"
-  }`;
+  const style = `table-cell rounded-lg border-2 shadow-md hover:shadow-lg ${
+    theme ? theme.body.backgroundColor : 'bg-gray-100'
+  } ${theme ? theme.body.textColor : 'text-gray-800'} ${
+    theme ? theme.body.borderColor : 'border-gray-400'
+  } p-4 mb-8 ml-4 mr-4`;
 
   return (
     <a
@@ -31,7 +31,7 @@ export const TileItem: FC<TileElementProps> = ({
       className={style}
       style={{
         backgroundImage: `linear-gradient(to bottom, #0b3536 0%, rgba(125, 185, 232, 0)), url(${bgImage})`,
-        backgroundSize: "cover",
+        backgroundSize: 'cover',
       }}
     >
       <div className="flex flex-row justify-between">
