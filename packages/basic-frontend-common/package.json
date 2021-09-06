@@ -1,13 +1,13 @@
 {
   "name": "basic-frontend-common",
-  "version": "0.5.18",
+  "version": "0.6.0",
   "main": "build/index.js",
   "description": "This package provides commonly used components for the responsive-it apps.",
   "scripts": {
     "develop": "tsc --watch",
     "prebuild": "rimraf ./build",
     "build": "npm run build:tailwind && tsc",
-    "build:tailwind": "tailwindcss build src/tailwind.css -o ../basic-frontend-storybook/.storybook/generated-tailwind.css",
+    "build:tailwind": "tailwindcss build -i src/tailwind.css -o ../basic-frontend-storybook/.storybook/generated-tailwind.css",
     "lint": "npm run lint:ts && npm run lint:prettier",
     "types:check": "tsc --noEmit"
   },
@@ -38,8 +38,8 @@
     "react-dom": "^17.0.2",
     "react-scroll": "^1.8.4",
     "rimraf": "^3.0.2",
-    "tailwindcss": "^2.2.9",
-    "axios": "^0.21.3",
+    "tailwindcss": "^2.2.10",
+    "axios": "^0.21.4",
     "react-localization": "^1.0.17"
   }
 }

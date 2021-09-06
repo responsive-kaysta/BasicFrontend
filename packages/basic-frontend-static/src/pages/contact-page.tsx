@@ -54,6 +54,7 @@ class ContactPage extends React.Component {
                 <ContainerCover theme={ThemeLight}>
                   <ContactFormRegular
                     apiHost="http://api.master-archive.local"
+                    apiParcel=""
                     language={getLanguage()}
                     pageOrigin="basic-frontend.responsive-kaysta.ch"
                     reasonsDropdown={[{ value: "1", label: "Some Option" }]}

@@ -11,7 +11,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "basic-frontend-common": "^0.5.18",
+    "basic-frontend-common": "^0.6.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-scroll": "^1.8.4"
@@ -33,6 +33,6 @@
     "awesome-typescript-loader": "^5.2.1",
     "babel-loader": "^8.2.2",
     "copy-webpack-plugin": "^9.0.1",
-    "tailwindcss": "^2.2.9"
+    "tailwindcss": "^2.2.10"
   }
 }
