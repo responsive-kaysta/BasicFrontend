@@ -1,6 +1,6 @@
-import React, { FC, ReactNode, useState } from "react";
-import { NavigationItems, ThemeType } from "../../typings";
-import { HorizontalNavbar } from "./horizontal-navbar";
+import React, { FC, ReactNode, useState } from 'react';
+import { NavigationItems, ThemeType } from '../../typings';
+import { HorizontalNavbar } from './horizontal-navbar';
 
 type TopbarProps = {
   children: ReactNode;
@@ -8,6 +8,7 @@ type TopbarProps = {
   menuItems: NavigationItems[];
   branding?: string;
   theme?: ThemeType;
+  stickyHeader?: boolean;
 };
 
 export const Topbar: FC<TopbarProps> = ({
@@ -16,6 +17,7 @@ export const Topbar: FC<TopbarProps> = ({
   menuItems,
   branding,
   theme,
+  stickyHeader = false,
 }) => {
   const [isMenuVisible, toggleMenuVisible] = useState<boolean>(false);
   return (
@@ -26,9 +28,10 @@ export const Topbar: FC<TopbarProps> = ({
         menuItems={menuItems}
         branding={branding}
         theme={theme}
+        stickyHeader={stickyHeader}
       />
       <main
-        className={`flex flex-col flex-1 relative z-0`}
+        className={`flex flex-col flex-1 z-0 ${stickyHeader ? '' : ''}`}
         id="main-container"
         tabIndex={0}
       >

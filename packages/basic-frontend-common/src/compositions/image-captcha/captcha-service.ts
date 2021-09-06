@@ -1,18 +1,24 @@
+export type CaptchaResponse = {
+  payload: string;
+  error: any;
+  meta: any;
+};
+
 export const getCaptcha = async (
   apiHost: string,
-  pageOrigin: string,
-  captchaText: string
-): Promise<string> => {
+  captchaText: string,
+  apiParcel: string
+): Promise<any> => {
   const axios = require("axios");
 
-  const formData = new FormData();
-  formData.append("UserName", "anonymous");
-  formData.append("EmailAddress", "anonymous");
-  formData.append("Sub", "anonymous");
-
-  formData.append("PageOrigin", pageOrigin);
-  formData.append("CaptchaText", captchaText);
-
-  let res = await axios.post(`${apiHost}/api/getCaptcha`, formData);
+  let res = await axios.get(
+    `${apiHost}/api/Email/getCaptcha?text=${captchaText}`,
+    {
+      headers: {
+        "Access-Control-Allow-Origin": true,
+        parcel: apiParcel
+      },
+    }
+  );
   return res.data;
 };

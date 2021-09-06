@@ -10,16 +10,12 @@ import { Error } from "../../elements/typography";
 import { ThemeType } from "../../typings";
 import { getCaptcha } from "./captcha-service";
 
-// https://dummyimage.com/
-// https://dummyimage.com/300x60.png&text=dummyimage.com+rocks!
-// https://www.npmjs.com/package/crypto-random-string
-
 type ImageCaptchaProps = {
   apiHost: string;
   value: string;
   theme: ThemeType;
   captchaInput: string;
-  pageOrigin: string;
+  apiParcel: string;
   onCaptchaChange: (captcha: string) => void;
   onCaptchaRefresh: () => void;
   error?: boolean;
@@ -30,17 +26,17 @@ export const ImageCaptcha: FC<ImageCaptchaProps> = ({
   value,
   theme,
   captchaInput,
-  pageOrigin,
+  apiParcel,
   onCaptchaChange,
   onCaptchaRefresh,
   error = false,
 }) => {
-  const [captchaState, setCaptchaState] = useState<string>();
+  const [captchaState, setCaptchaState] = useState<any>();
   const [isLoadingState, setLoadingState] = useState<boolean>();
 
   useEffect(() => {
     setLoadingState(true);
-    getCaptcha(apiHost, pageOrigin, value).then((res) => {
+    getCaptcha(apiHost, value, apiParcel).then((res) => {
       setCaptchaState(res);
       setLoadingState(false);
     });
@@ -72,7 +68,11 @@ export const ImageCaptcha: FC<ImageCaptchaProps> = ({
             <Spinner theme={theme} />
           ) : (
             <>
-              <img src={`data:image/png;base64,${captchaState}`} />
+              <img
+                src={`data:image/png;base64,${
+                  captchaState ? captchaState.payload : undefined
+                }`}
+              />
               <div className="flex items-center ml-2">
                 <ButtonRegular
                   text="Refresh"
