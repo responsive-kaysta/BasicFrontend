@@ -1,13 +1,12 @@
-import { Router } from '@reach/router';
 import {
   isAnalyticsSet,
   Spinner,
   ThemeDarkgray,
   ThemeTransparent,
-  Topbar,
+  Topbar
 } from 'basic-frontend-common';
 import React from 'react';
-import { Head, Root, Routes } from 'react-static';
+import { Head, Root } from 'react-static'
 import {
   BG_IMAGE,
   ICON,
@@ -15,10 +14,15 @@ import {
   PAGE_DESCRIPTION,
   PAGE_KEYWORDS,
   PAGE_NAME,
-  PAGE_TOPIC,
+  PAGE_TOPIC
 } from './constants';
 import './generated-tailwind.css';
 import { FooterComponent, MenuItems } from './includes/site-parts';
+import {
+  BrowserRouter,
+  Routes,
+  Route
+} from "react-router-dom";
 
 function App() {
   if (typeof window !== 'undefined' && BG_IMAGE) {
@@ -80,9 +84,13 @@ function App() {
                 <Spinner theme={ThemeTransparent} backgroundImage={BG_IMAGE} />
               }
             >
-              <Router>
-                <Routes path="*" />
-              </Router>
+              
+            <BrowserRouter>
+              <Routes>
+               <Route path="*" />
+              </Routes>
+            </BrowserRouter>
+
             </React.Suspense>
           </Topbar>
         </Root>

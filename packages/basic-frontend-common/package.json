@@ -7,7 +7,7 @@
     "develop": "tsc --watch",
     "prebuild": "rimraf ./build",
     "build": "npm run build:tailwind && tsc",
-    "build:tailwind": "tailwindcss build -i src/tailwind.css -o ../basic-frontend-storybook/.storybook/generated-tailwind.css",
+    "build:tailwind": "tailwindcss -i src/tailwind.css -o src/generated-tailwind.css",
     "lint": "npm run lint:ts && npm run lint:prettier",
     "types:check": "tsc --noEmit"
   },
@@ -19,27 +19,27 @@
   ],
   "devDependencies": {
     "@types/downloadjs": "^1.4.2",
-    "@types/enzyme": "^3.10.9",
+    "@types/enzyme": "^3.10.10",
     "@types/qs": "^6.9.7",
-    "@types/react": "^16.9.56",
-    "@types/react-dom": "^16.9.8",
+    "@types/react": "^17.0.37",
+    "@types/react-dom": "^17.0.11",
     "@types/react-scroll": "^1.8.3",
     "prettier": "2.0.5",
     "rimraf": "3.0.2",
-    "typescript": "^4.1.3",
-    "postcss": "^8.3.6"
+    "typescript": "^4.5.4",
+    "postcss": "^8.4.5"
   },
   "dependencies": {
-    "date-fns": "^2.23.0",
+    "date-fns": "^2.27.0",
     "downloadjs": "^1.4.7",
-    "prettier": "2.3.2",
-    "qs": "^6.10.1",
-    "react": "^16.14.0",
-    "react-dom": "^16.14.0",
+    "prettier": "2.5.1",
+    "qs": "^6.10.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "react-scroll": "^1.8.4",
     "rimraf": "^3.0.2",
-    "tailwindcss": "^2.2.10",
-    "axios": "^0.21.4",
+    "tailwindcss": "^3.0.6",
+    "axios": "^0.24.0",
     "react-localization": "^1.0.17"
   }
 }

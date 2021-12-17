@@ -1,0 +1,64 @@
+{
+  "en": {
+    "pages": {
+      "home": {
+        "title": "Home"
+      },
+      "about": {
+        "title": "About"
+      },
+      "legal": {
+        "title": "Legal"
+      },
+      "contact": {
+        "title": "Contact"
+      }
+    },
+    "siteParts": {
+      "menuItems": {
+        "linkHome": "Home",
+        "linkHomeTitle": "Navigate to Home",
+
+        "linkAbout": "About",
+        "linkAboutTitle": "Navigate to About",
+
+        "linkProduct": "Produkt",
+        "linkProductTitle": "Navigiere zu Produkt",
+
+        "linkContact": "Contact",
+        "linkContactTitle": "Navigate to Contact"
+      }
+    }
+  },
+  "de": {
+    "pages": {
+      "home": {
+        "title": "Startseite"
+      },
+      "about": {
+        "title": "Über"
+      },
+      "legal": {
+        "title": "Legal"
+      },
+      "contact": {
+        "title": "Contact"
+      }
+    },
+    "siteParts": {
+      "menuItems": {
+        "linkHome": "Startseite",
+        "linkHomeTitle": "Navigiere zur Startseite",
+
+        "linkAbout": "Über",
+        "linkAboutTitle": "Navigiere zu Über",
+
+        "linkProduct": "Produkt",
+        "linkProductTitle": "Navigiere zu Produkt",
+
+        "linkContact": "Kontakt",
+        "linkContactTitle": "Navigiere zu Kontakt"
+      }
+    }
+  }
+}

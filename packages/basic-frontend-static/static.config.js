@@ -21,7 +21,15 @@ export default {
         location: path.resolve("./src/pages"),
       },
     ],
-    require.resolve("react-static-plugin-reach-router"),
+    [
+      'react-static-plugin-react-router',
+      {
+        RouterProps: {
+          // These props will be passed to the underlying `Router` component
+        },
+      },
+    ],
+    // require.resolve("react-static-plugin-react-router"),
     require.resolve("react-static-plugin-sitemap"),
   ],
 };
